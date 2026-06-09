@@ -213,7 +213,31 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
   main{padding:18px 14px 70px}
   .carrier .src{min-width:0}
 }
+
+/* ---------- globe hero (persists outside #app) ---------- */
+#globeWrap{display:none; max-width:1340px; margin:20px auto 0; padding:0 22px}
+#globeWrap.show{display:block}
+#globeWrap.globe-failed{display:none !important}
+#globeStage{position:relative; height:clamp(340px,50vh,540px); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+  background:radial-gradient(circle at 50% 58%, #0e1014 0%, #070708 72%)}
+#globe{position:absolute; inset:0}
+#globe canvas{display:block; outline:none}
+.globe-corner{position:absolute; top:14px; left:16px; font-family:var(--mono); font-size:.68rem; letter-spacing:.14em; color:var(--mute); text-transform:uppercase; pointer-events:none}
+.globe-corner b{color:var(--ink)}
+.globe-ov{position:absolute; left:0; right:0; bottom:0; display:flex; align-items:flex-end; justify-content:space-between; gap:14px; padding:16px; pointer-events:none;
+  background:linear-gradient(transparent, rgba(7,7,8,.6))}
+.globe-ov .l{font-family:var(--mono); font-size:.7rem; letter-spacing:.1em; color:var(--mute2); text-transform:uppercase}
+.globe-ov .l b{color:var(--red)}
+.globe-ov .hint{font-family:var(--mono); font-size:.66rem; letter-spacing:.06em; color:var(--mute); text-align:right}
+
+/* ---------- where it stands now (situation header) ---------- */
+.standsnow{margin-top:14px; border-left:2px solid var(--red); padding:7px 0 7px 13px}
+.standsnow .snlbl{display:block; font-family:var(--mono); font-size:.62rem; letter-spacing:.14em; color:var(--red); text-transform:uppercase; margin-bottom:4px}
+.standsnow .sntxt{font-size:.92rem; color:var(--mute2); line-height:1.45}
+.standsnow .snd{font-family:var(--mono); font-size:.74rem; color:var(--cyan); margin-right:7px}
+@media(max-width:640px){ #globeWrap{padding:0 14px} #globeStage{height:clamp(280px,44vh,420px)} .globe-ov .hint{display:none} }
 </style>
+<script defer src="https://unpkg.com/globe.gl"></script>
 </head>
 <body>
 
@@ -240,6 +264,18 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
   </div>
   <div class="noverdict" id="taglineBadge">NO VERDICT</div>
 </header>
+
+<!-- ============ GLOBE HERO (persists outside #app, never re-rendered) ============ -->
+<section id="globeWrap" aria-label="Live situation globe">
+  <div id="globeStage">
+    <div id="globe"></div>
+    <div class="globe-corner">LIVE <b>// SITUATION MONITOR</b></div>
+    <div class="globe-ov">
+      <div class="l"><b>&#9679;</b> <span id="globeCount">0</span> situations tracked</div>
+      <div class="hint">drag to rotate &nbsp;//&nbsp; click a marker to open</div>
+    </div>
+  </div>
+</section>
 
 <main id="app"><!-- rendered by JS --></main>
 
@@ -719,7 +755,12 @@ const SEED = {
           "note": "Unfalsifiable unless principal is identified or contractor operatives surface. Becomes explanatory only if source of funding/authorization is named. Alone, attributes to non-state actor while leaving geopolitical question unresolved."
         }
       ],
-      "manufacturedConsensus": "\"US responsibility / NATO-directed operation\" narrative: Originated with Hersh's single-source account (February 2023), echoed widely in German left-wing media (Die Linke, some SPD), Polish defense commentary, and Russian state messaging. Repetition across these distinct carriers created appearance of independent corroboration despite single original source. No new sources emerged post-Hersh; all subsequent attribution to US derives from Hersh reporting or speculation building on Hersh framework. This pattern (one origin → echo across ideologically diverse outlets → appearance of consensus) matches manufactured consensus profile."
+      "manufacturedConsensus": "\"US responsibility / NATO-directed operation\" narrative: Originated with Hersh's single-source account (February 2023), echoed widely in German left-wing media (Die Linke, some SPD), Polish defense commentary, and Russian state messaging. Repetition across these distinct carriers created appearance of independent corroboration despite single original source. No new sources emerged post-Hersh; all subsequent attribution to US derives from Hersh reporting or speculation building on Hersh framework. This pattern (one origin → echo across ideologically diverse outlets → appearance of consensus) matches manufactured consensus profile.",
+      "geo": {
+        "lat": 55.5,
+        "lng": 15.65,
+        "place": "Baltic Sea, off Bornholm"
+      }
     },
     {
       "id": "covid-19-origins-tech-scope-2026-06-09",
@@ -1191,7 +1232,12 @@ const SEED = {
           "note": "This scenario is speculative about classified content and rests on negative evidence (lack of declassification). It does not establish which hypothesis the classified evidence supports-could favor lab-leak or zoonotic spillover depending on data. Resolves only through executive declassification or archival release after political pressure subsides."
         }
       ],
-      "manufacturedConsensus": null
+      "manufacturedConsensus": null,
+      "geo": {
+        "lat": 30.59,
+        "lng": 114.3,
+        "place": "Wuhan, China"
+      }
     },
     {
       "id": "al-ahli-hospital-oct-17-2023",
@@ -1629,7 +1675,12 @@ const SEED = {
           "note": "This scenario preserves technical ambiguity and suggests the forensic consensus, while not illegitimate, overstates confidence in a conclusion that remains genuinely underdetermined by publicly available evidence."
         }
       ],
-      "manufacturedConsensus": "\"Initial Palestinian claim (Israeli airstrike) amplified by aggregation across wire services and social media Oct 17-18 without independent verification, creating appearance of corroborated reporting when original source was single Gaza Health Ministry statement. Consensus was manufactured by media cascade (original claim → wire services → social media echo), not by convergence of independent evidence sources. Forensic reanalysis Oct 18+ challenged this consensus, but the initial consensus was real and it shaped early global perception.\""
+      "manufacturedConsensus": "\"Initial Palestinian claim (Israeli airstrike) amplified by aggregation across wire services and social media Oct 17-18 without independent verification, creating appearance of corroborated reporting when original source was single Gaza Health Ministry statement. Consensus was manufactured by media cascade (original claim → wire services → social media echo), not by convergence of independent evidence sources. Forensic reanalysis Oct 18+ challenged this consensus, but the initial consensus was real and it shaped early global perception.\"",
+      "geo": {
+        "lat": 31.52,
+        "lng": 34.45,
+        "place": "Gaza City"
+      }
     },
     {
       "id": "svb-collapse-2023-03",
@@ -1982,7 +2033,12 @@ const SEED = {
           "note": "Scenario explores Fed response timing vs. SVB's inherent insolvency. Lower confidence: BTFP might not have stopped a true panic if VC community had coordinated withdrawal earlier. But available evidence suggests panic was reactive to March 8 bond-loss sale announcement, not pre-emptive."
         }
       ],
-      "manufacturedConsensus": null
+      "manufacturedConsensus": null,
+      "geo": {
+        "lat": 37.39,
+        "lng": -121.96,
+        "place": "Santa Clara, USA"
+      }
     },
     {
       "id": "prigozhin-wagner-2023",
@@ -2351,7 +2407,12 @@ const SEED = {
           ],
           "note": "Least parsimonious given Kremlin's historical pattern and Prigozhin's vulnerability, but does not require coordinated Kremlin lie or accident cover-up as strike claim."
         }
-      ]
+      ],
+      "geo": {
+        "lat": 55.75,
+        "lng": 37.62,
+        "place": "Moscow, Russia"
+      }
     }
   ]
 };
@@ -2385,6 +2446,8 @@ function render(){
   document.getElementById("tFree").classList.toggle("on", state.mode==="free");
   document.getElementById("tPro").classList.toggle("on", state.mode==="pro");
   document.getElementById("taglineBadge").textContent = "NO VERDICT";
+  const gw=document.getElementById("globeWrap");
+  if(gw) gw.classList.toggle("show", state.view==="board"); // globe is the board hero only; never leaks onto event view
   if(state.view==="board") renderBoard(); else renderEvent(state.eventId);
   window.scrollTo({top:0,behavior:"instant"});
 }
@@ -2401,14 +2464,14 @@ function renderBoard(){
   const mc = SEED.microcopy;
 
   app().innerHTML = `
-    <div class="kicker"><span class="n">//</span> 01 &nbsp; EVENT BOARD</div>
+    <div class="kicker"><span class="n">//</span> 01 &nbsp; SITUATION MONITOR</div>
     <div class="board-head">
       <div>
         <h1>What the world is arguing about</h1>
         <p>${esc(mc.noVerdictExplainer)}</p>
       </div>
       <div class="statrow">
-        <div class="stat"><div class="v">${SEED.events.length}</div><div class="l">events tracked</div></div>
+        <div class="stat"><div class="v">${SEED.events.length}</div><div class="l">situations tracked</div></div>
         <div class="stat"><div class="v">${totalClaims}</div><div class="l">competing claims</div></div>
         <div class="stat"><div class="v">8</div><div class="l">source kinds</div></div>
       </div>
@@ -2419,7 +2482,7 @@ function renderBoard(){
       </div>
       <label class="search">
         <span class="mute mono">⌕</span>
-        <input id="searchInput" placeholder="search events" value="${esc(state.query)}" oninput="onSearch(this.value)">
+        <input id="searchInput" placeholder="search situations" value="${esc(state.query)}" oninput="onSearch(this.value)">
       </label>
     </div>
     <div class="grid">
@@ -2507,18 +2570,31 @@ function renderEvent(id){
 
   const locked = depthLocked(id);
 
-  // SUMMARY (always free): the claims + statements + who carries (breadth).
-  // DEPTH (pro / free-report): provenance detail, opposition, manufactured-consensus, timeline, scenarios.
+  // FREE: the history spine + the spectrum of claims (with provenance + opposition).
+  // GATED: manufactured-consensus watch + forward scenarios.
   const claimsBlock = e.claims.map(claimHTML).join("");
-  const mfgBlock = e.manufacturedConsensus ? `
-    <div class="mfg"><div class="lbl">⚠ manufactured consensus watch</div>${esc(e.manufacturedConsensus)}</div>` : "";
-  const timelineBlock = `
+
+  // WHERE IT STANDS NOW = the most recent recorded beat on the timeline (no synthesis, no verdict).
+  const latest = (e.timeline&&e.timeline.length)
+    ? e.timeline.reduce((a,b)=> (b.date>a.date ? b : a))
+    : null;
+  const standsNow = latest ? `
+      <div class="standsnow">
+        <span class="snlbl">where it stands now</span>
+        <span class="sntxt"><span class="snd">${esc(latest.date)}</span>${esc(latest.event)}</span>
+      </div>` : "";
+
+  // HOW IT GOT HERE = the situation's history, promoted to a FREE primary section under the header.
+  const timelineBlock = (e.timeline&&e.timeline.length) ? `
+    <div class="kicker"><span class="n">//</span> HOW IT GOT HERE &nbsp; the situation's history</div>
     <div class="section">
-      <div class="section-h"><h2>How it aged</h2><span class="sub">// the temporal thread</span></div>
       <div class="timeline">
         ${e.timeline.map(t=>`<div class="tl-item"><div class="d">${esc(t.date)}</div><div class="e">${esc(t.event)}</div><div class="s">${esc(t.shift)}</div></div>`).join("")}
       </div>
-    </div>`;
+    </div>` : "";
+
+  const mfgBlock = e.manufacturedConsensus ? `
+    <div class="mfg"><div class="lbl">⚠ manufactured consensus watch</div>${esc(e.manufacturedConsensus)}</div>` : "";
   const scenBlock = (e.scenarios&&e.scenarios.length) ? `
     <div class="section">
       <div class="section-h"><h2>Scenarios</h2><span class="sub">// theories, never predictions</span></div>
@@ -2531,11 +2607,8 @@ function renderEvent(id){
         </div>`).join("")}
     </div>` : "";
 
-  const depthInner = `
-    ${mfgBlock}
-    ${timelineBlock}
-    ${scenBlock}
-  `;
+  const hasDepth = !!mfgBlock || !!(e.scenarios&&e.scenarios.length);
+  const depthInner = `${mfgBlock}${scenBlock}`;
 
   const gate = state.freeReportUsed
     ? `<div class="gate-card">
@@ -2549,13 +2622,19 @@ function renderEvent(id){
     : `<div class="gate-card">
          <div class="glbl">free report</div>
          <h3>Open your one free full report</h3>
-         <p>The breadth above is always free. Unlock the full depth - provenance, the strongest opposition, the timeline - on this event, on the house.</p>
+         <p>The history and every side above are always free. Unlock the last layer - the manufactured-consensus watch and the forward scenarios - on this situation, on the house.</p>
          <button class="btn primary" data-act="askEmail" data-id="${esc(id)}">Unlock the full report - free</button>
          <div class="fine">No card. Email only. ${esc(mc.methodologyNote)}</div>
        </div>`;
 
+  const depthSection = hasDepth ? `
+    <div class="kicker"><span class="n">//</span> THE DEPTH &nbsp; the consensus watch + the scenarios${locked?` <span class="mute">- ${state.mode==="free"?"free/Pro":"locked"}</span>`:""}</div>
+    ${locked
+      ? `<div class="locked-wrap"><div class="blurred">${depthInner}</div><div class="gate">${gate}</div></div>`
+      : depthInner}` : "";
+
   app().innerHTML = `
-    <div class="back" onclick="goBoard()">← &nbsp; back to event board</div>
+    <div class="back" onclick="goBoard()">← &nbsp; back to monitor</div>
     <div class="ev-head">
       <div class="toprow">
         <span class="tag ${e.scope}">${esc(e.scope)}</span>
@@ -2564,20 +2643,20 @@ function renderEvent(id){
       </div>
       <h1>${esc(e.title)}</h1>
       <div class="neutral">${esc(e.neutralLine)}</div>
+      ${standsNow}
       <div class="att-line">
         <span><span class="dotpulse"></span> &nbsp;${fmtNum(e.watchers)} watching <span class="mute">(attention shape, not credibility)</span></span>
         <span>${e.claims.length} competing claims</span>
       </div>
     </div>
 
+    ${timelineBlock}
+
     <div class="kicker"><span class="n">//</span> THE SPECTRUM &nbsp; every side, side by side</div>
     ${legendHTML()}
     <div class="section">${claimsBlock}</div>
 
-    <div class="kicker"><span class="n">//</span> THE DEPTH &nbsp; provenance, opposition, history${locked?` <span class="mute">- ${state.mode==="free"?"free/Pro":"locked"}</span>`:""}</div>
-    ${locked
-      ? `<div class="locked-wrap"><div class="blurred">${depthInner}</div><div class="gate">${gate}</div></div>`
-      : depthInner}
+    ${depthSection}
   `;
 }
 
@@ -2626,6 +2705,53 @@ document.getElementById("app").addEventListener("click", (ev)=>{
   else if(act==="askEmail") askEmail(id);
 });
 document.getElementById("footMeta").textContent = SEED.microcopy.tagline + "  //  seeded demo";
+
+/* ===================== GLOBE HERO ===================== */
+/* The globe is the WRAPPER (the way in). The evidence engine below is the PRODUCT. */
+const GEO_MARKERS = SEED.events.filter(e=>e.geo).map(e=>({
+  id:e.id, lat:e.geo.lat, lng:e.geo.lng, place:e.geo.place,
+  title:e.title, scope:e.scope, status:e.status
+}));
+let globeInstance=null;
+function webglOK(){
+  try{ const c=document.createElement("canvas");
+    return !!(window.WebGLRenderingContext && (c.getContext("webgl")||c.getContext("experimental-webgl"))); }
+  catch(_){ return false; }
+}
+function initGlobe(){
+  const wrap=document.getElementById("globeWrap");
+  const stage=document.getElementById("globeStage");
+  const host=document.getElementById("globe");
+  const cnt=document.getElementById("globeCount");
+  if(cnt) cnt.textContent=GEO_MARKERS.length;
+  if(!wrap||!stage||!host) return;
+  if(typeof Globe==="undefined" || !webglOK()){ wrap.classList.add("globe-failed"); return; } // fall back to the list below
+  try{
+    globeInstance=Globe()(host)
+      .width(stage.clientWidth).height(stage.clientHeight)
+      .backgroundColor("rgba(0,0,0,0)")
+      .globeImageUrl("https://unpkg.com/three-globe/example/img/earth-dark.jpg")
+      .showAtmosphere(true).atmosphereColor("#E5342B").atmosphereAltitude(0.16)
+      .pointsData(GEO_MARKERS).pointLat("lat").pointLng("lng")
+      .pointColor(()=> "#E5342B").pointAltitude(0.06).pointRadius(0.55)
+      .pointLabel(d=>`<div style="background:#111317;border:1px solid #23262E;border-radius:8px;padding:8px 10px;max-width:240px;box-shadow:0 6px 24px rgba(0,0,0,.5)"><div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#E5342B;text-transform:uppercase;margin-bottom:3px">${d.scope} // ${d.place}</div><div style="font-family:Inter,sans-serif;font-size:12.5px;line-height:1.35;color:#EDEEF0">${d.title}</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8A8F98;margin-top:5px">click to open</div></div>`)
+      .onPointClick(d=> openEvent(d.id))
+      .ringsData(GEO_MARKERS).ringLat("lat").ringLng("lng")
+      .ringColor(()=> (t)=> `rgba(229,52,43,${1-t})`)
+      .ringMaxRadius(4.5).ringPropagationSpeed(1.4).ringRepeatPeriod(1300);
+    globeInstance.pointOfView({lat:25,lng:12,altitude:2.3},0);
+    const ctr=globeInstance.controls();
+    ctr.autoRotate=true; ctr.autoRotateSpeed=0.5; ctr.enableZoom=false; // wheel scrolls the page, not the globe
+  }catch(err){ console.warn("globe init failed:",err); wrap.classList.add("globe-failed"); globeInstance=null; }
+}
+window.addEventListener("load", initGlobe);
+window.addEventListener("resize", ()=>{
+  if(!globeInstance) return;
+  const stage=document.getElementById("globeStage");
+  if(!stage || stage.offsetParent===null) return; // skip while hidden (event view)
+  globeInstance.width(stage.clientWidth).height(stage.clientHeight);
+});
+
 render();
 </script>
 </body>
