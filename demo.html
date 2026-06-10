@@ -96,7 +96,12 @@ main{max-width:1340px; margin:0 auto; padding:26px 22px 90px}
 .tag.markets{color:var(--cyan); border-color:rgba(63,182,200,.35)}
 .tag.tech{color:#b9a9e6; border-color:#3a3553}
 .tag.conflict{color:#e7b07f; border-color:#4a3a2c}
+.tag.power-money{color:#e6c87f; border-color:#4a3f23}
+.tag.economy{color:var(--cyan); border-color:rgba(63,182,200,.35)}
+.tag.tech-science-health{color:#b9a9e6; border-color:#3a3553}
+.tag.info-wars{color:#e7b07f; border-color:#4a3a2c}
 .pill{font-family:var(--mono); font-size:.6rem; letter-spacing:.1em; padding:3px 8px; border-radius:99px; text-transform:uppercase}
+.pill.disco{color:var(--cyan); background:rgba(63,182,200,.12)}
 .pill.developing{color:var(--red); background:rgba(229,52,43,.12)}
 .pill.aged{color:var(--mute); background:rgba(138,143,152,.12)}
 .card h3{font-family:var(--display); font-weight:600; font-size:1.12rem; line-height:1.25; letter-spacing:-.01em}
@@ -1513,6 +1518,18 @@ const KIND_ABBR = {
   "independent OSINT":"OSINT","research paper":"PAPER","market research":"MARKET","public debate":"DEBATE"
 };
 
+/* Phase C0: the engine discovers stories on its own. SEED ids map to the seeded
+   brief; everything else in feed.json renders live-only (cabinet-backed). */
+const SEED_BY_ID = {}; SEED.events.forEach(e=>SEED_BY_ID[e.id]=e);
+const BUCKET_OF_SCOPE = {geopolitics:"geopolitics", markets:"economy", tech:"tech-science-health", conflict:"geopolitics"};
+const BUCKET_LABEL = {"geopolitics":"geopolitics","power-money":"power &amp; money","economy":"economy","tech-science-health":"tech/sci/health","info-wars":"info wars"};
+function liveOnly(){ return (LIVE && LIVE.situations) ? LIVE.situations.filter(s=>!SEED_BY_ID[s.id]) : []; }
+function nameOf(id){
+  const lv = liveFor(id); if(lv && lv.name) return lv.name;
+  const se = SEED_BY_ID[id]; if(se) return se.title;
+  return id;
+}
+
 /* ===================== LIVE FEED (Phase A) =====================
    feed.json is written by tools/syi/horus_feed_loop.py (GDELT + RSS, all sides).
    No feed.json (file:// open, first deploy) -> page runs on the seeded brief alone. */
@@ -1564,7 +1581,7 @@ function render(){
 
 function renderBoard(){
   const evs = SEED.events.filter(e=>{
-    const okScope = state.filter==="all" || e.scope===state.filter;
+    const okScope = state.filter==="all" || e.scope===state.filter || BUCKET_OF_SCOPE[e.scope]===state.filter;
     const q = state.query.trim().toLowerCase();
     const okQ = !q || (e.title+" "+e.neutralLine).toLowerCase().includes(q);
     const okKind = !state.kinds.length || cardKinds(e).some(k=>state.kinds.includes(k));
@@ -1572,8 +1589,19 @@ function renderBoard(){
   });
   /* river order = traction (live item counts), never source quality */
   const traction = e=>{ const lv=liveFor(e.id); return lv ? (lv.items_24h||0)*1e6 + (lv.items_48h||0) : 0; };
-  evs.sort((a,b)=> (traction(b)-traction(a)) || (b.watchers-a.watchers));
-  const scopes = ["all","geopolitics","markets","tech","conflict"];
+  /* Phase C0: stories the engine discovered on its own join the river (cabinet-backed) */
+  const lives = liveOnly().filter(s=>{
+    const okScope = state.filter==="all" || s.bucket===state.filter;
+    const q = state.query.trim().toLowerCase();
+    const sp = s.split || {};
+    const okQ = !q || (s.name+" "+(sp.a||"")+" "+(sp.b||"")).toLowerCase().includes(q);
+    const okKind = !state.kinds.length || (s.kinds||[]).some(k=>state.kinds.includes(k));
+    return okScope && okQ && okKind;
+  });
+  const river = evs.map(e=>({t:"seed", v:e, tr:traction(e), w:e.watchers}))
+    .concat(lives.map(s=>({t:"live", v:s, tr:(s.items_24h||0)*1e6+(s.items_48h||0), w:0})));
+  river.sort((a,b)=> (b.tr-a.tr) || (b.w-a.w));
+  const scopes = ["all","geopolitics","power-money","economy","tech-science-health","info-wars"];
   const totalClaims = SEED.events.reduce((a,e)=>a+e.claims.length,0);
   const items24 = LIVE ? LIVE.situations.reduce((a,s)=>a+(s.items_24h||0),0) : null;
   const okL = LIVE ? LIVE.lenses.ok.length : 0;
@@ -1591,7 +1619,7 @@ function renderBoard(){
         <p>${esc(mc.noVerdictExplainer)}</p>
       </div>
       <div class="statrow">
-        <div class="stat"><div class="v">${SEED.events.length}</div><div class="l">situations tracked</div></div>
+        <div class="stat"><div class="v">${SEED.events.length + liveOnly().length}</div><div class="l">situations tracked</div></div>
         ${items24!==null
           ? `<div class="stat"><div class="v">${items24}</div><div class="l">items / 24h</div></div>`
           : `<div class="stat"><div class="v">${totalClaims}</div><div class="l">competing claims</div></div>`}
@@ -1602,7 +1630,7 @@ function renderBoard(){
       <aside class="rail left">
         <div class="railbox">
           <div class="railh">pillar</div>
-          <div class="vfilters">${scopes.map(s=>`<div class="chip ${state.filter===s?"on":""}" onclick="setFilter('${s}')">${s}</div>`).join("")}</div>
+          <div class="vfilters">${scopes.map(s=>`<div class="chip ${state.filter===s?"on":""}" onclick="setFilter('${s}')">${BUCKET_LABEL[s]||s}</div>`).join("")}</div>
         </div>
         <div class="railbox">
           <div class="railh">kind of evidence</div>
@@ -1618,9 +1646,10 @@ function renderBoard(){
         </div>
       </aside>
       <div class="river">
-        ${evs.map((e,i)=>{
-          const pin = i===0 && traction(e)>0;
-          return (pin?`<div class="pinlabel">// today's top situation by traction</div>`:"") + cardHTML(e, pin);
+        ${river.map((r,i)=>{
+          const pin = i===0 && r.tr>0;
+          const html = r.t==="seed" ? cardHTML(r.v, pin) : liveCardHTML(r.v, pin);
+          return (pin?`<div class="pinlabel">// today's top situation by traction</div>`:"") + html;
         }).join("") || `<p class="mute">No situations match.</p>`}
       </div>
       <aside class="rail right">
@@ -1640,6 +1669,24 @@ function renderBoard(){
             <div class="railnote">a dark lens is reported, never papered over - we don't know what we don't know</div>
           ` : `<div class="lensrow">seeded demo - live lenses connect on the next loop run</div>`}
         </div>
+        ${LIVE && LIVE.cabinet ? `
+        <div class="railbox">
+          <div class="railh">the cabinet</div>
+          <div class="lensrow">${fmtNum(LIVE.cabinet.items)} items remembered</div>
+          <div class="lensrow">${LIVE.cabinet.situations} stories (${LIVE.cabinet.discovered} discovered by the engine)</div>
+          <div class="lensrow">${LIVE.cabinet.claims} claims // ${LIVE.cabinet.entities} entities linked</div>
+          <div class="lensrow">${LIVE.cabinet.history_nodes} history nodes // ${LIVE.cabinet.runs} runs</div>
+          <div class="railnote">stored once, remembered forever - history is never re-fetched, nothing is ever deleted</div>
+        </div>
+        <div class="railbox">
+          <div class="railh">at the gate</div>
+          ${(LIVE.candidates&&LIVE.candidates.length) ? LIVE.candidates.slice(0,5).map(c=>`
+            <div class="devitem">
+              <div class="t">${esc(c.sample)}</div>
+              <div class="m"><span>${c.count} items</span><span>${c.outlets} outlets</span><span class="o">${esc(c.status||"watching")}</span></div>
+            </div>`).join("") : `<div class="railnote">no clusters at the discovery gate right now</div>`}
+          ${LIVE.gate?`<div class="railnote">this run: ${LIVE.gate.accepted||0} accepted / ${LIVE.gate.rejected||0} rejected - gossip, sport and local crime never enter; rejections are logged, not hidden</div>`:""}
+        </div>` : ``}
       </aside>
     </div>
   `;
@@ -1673,6 +1720,32 @@ function cardHTML(e, pinned){
       <div class="card-foot">
         <span>${foot}</span>
         <span class="att" title="Attention shape - NOT a credibility signal."><span class="dotpulse"></span>${fmtNum(e.watchers)} watching</span>
+      </div>
+    </div>`;
+}
+
+/* Phase C0: card for a situation the engine DISCOVERED on its own (cabinet-backed, no seed brief) */
+function liveCardHTML(s, pinned){
+  const kinds = s.kinds || [];
+  const sp = s.split;
+  const newest = s.latest && s.latest[0];
+  return `
+    <div class="card${pinned?" pinned":""}" data-act="open" data-id="${esc(s.id)}">
+      <div class="card-top">
+        <span style="display:flex;gap:8px;align-items:center"><span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span><span class="pill disco">discovered</span></span>
+        <span class="ago">${newest?esc(agoStr(newest.ts)):""}</span>
+      </div>
+      <h3>${esc(s.name)}</h3>
+      ${sp&&sp.a&&sp.b?`
+      <div class="splitbox">
+        <div class="sl">the split</div>
+        <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
+        <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
+      </div>`:(newest?`<div class="line">${esc(newest.title)}</div>`:"")}
+      <div class="kindchips">${kinds.map(k=>`<span class="kind">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
+      <div class="card-foot">
+        <span>${s.items_24h} items / 24h &nbsp;//&nbsp; ${s.outlets} outlets</span>
+        <span class="att" title="Surfaced by traction across outlets - never a credibility score."><span class="dotpulse"></span>engine find</span>
       </div>
     </div>`;
 }
@@ -1796,10 +1869,68 @@ function historyHTML(e){
   </details>`;
 }
 
+/* Phase C0: detail for a discovered (live-only) situation. No seed brief yet -
+   the cabinet remembers every beat from first sighting; depth layers (spectrum,
+   provenance, deep history) build as the story lives. */
+function renderLiveEvent(s){
+  const safeUrl = u=>/^https?:\/\//i.test(u||"") ? u : "";
+  const newest = s.latest && s.latest[0];
+  const sp = s.split;
+  app().innerHTML = `
+    <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
+    <div class="ev-head">
+      <div class="toprow">
+        <span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span>
+        <span class="pill disco">discovered by the engine</span>
+        <span class="noverdict">NO VERDICT</span>
+      </div>
+      <h1>${esc(s.name)}</h1>
+      ${newest?`
+      <div class="thenews">
+        <span class="snlbl">the news &nbsp;//&nbsp; latest</span>
+        <span class="sntxt"><span class="snd">${esc(newest.ts.slice(0,10))} &middot; ${esc(agoStr(newest.ts))}</span>${esc(newest.title)}</span>
+      </div>`:""}
+      <div class="att-line">
+        <span>${s.items_24h} items / 24h</span>
+        <span>${s.outlets} outlets</span>
+        <span class="mute">tracked since the engine first sighted it - every beat is kept</span>
+      </div>
+    </div>
+    ${sp&&sp.a&&sp.b?`
+    <div class="splitbox">
+      <div class="sl">the split</div>
+      <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
+      <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
+    </div>`:""}
+    ${(s.latest&&s.latest.length)?`
+    <div class="kicker" style="margin-top:22px"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
+    <div class="beats">
+      ${s.latest.map(b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet||"")} &middot; ${esc(b.kind||"")}</span></div>`).join("")}
+    </div>`:""}
+    ${(s.links&&s.links.length)?`
+    <div class="kicker" style="margin-top:22px"><span class="n">//</span> CONNECTED DOTS &nbsp; shared actors across situations</div>
+    <div class="unkbox">
+      <ul>${s.links.map(l=>`<li><b>${esc(l.entity)}</b> also figures in: ${l.situations.map(x=>esc(nameOf(x))).join(", ")}</li>`).join("")}</ul>
+      <div class="fine">descriptive links between stories - never a judgment</div>
+    </div>`:""}
+    <div class="kicker" style="margin-top:22px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
+    <div class="unkbox">
+      <ul>
+        ${(s.unknowns||[]).map(u=>`<li>${esc(u)}</li>`).join("")}
+        <li>This story was discovered automatically - the deep history axis and the full spectrum build as it lives. The cabinet remembers every beat from here on.</li>
+        <li>Anything with no public trace is invisible to HORUS - absence of evidence here is not evidence of absence.</li>
+      </ul>
+      <div class="fine">we don't know what we don't know - gaps are reported, never papered over</div>
+    </div>`;
+}
+
 function renderEvent(id){
   const e = SEED.events.find(x=>x.id===id);
   const mc = SEED.microcopy;
-  if(!e){ app().innerHTML = `<p class="mute">${esc(mc.emptyState)}</p>`; return; }
+  if(!e){
+    const lv = liveFor(id);
+    if(lv){ renderLiveEvent(lv); return; }
+    app().innerHTML = `<p class="mute">${esc(mc.emptyState)}</p>`; return; }
 
   const locked = depthLocked(id);
 

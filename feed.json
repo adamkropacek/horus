@@ -1,12 +1,11 @@
 {
- "generated_utc": "2026-06-10T15:53:04Z",
+ "generated_utc": "2026-06-10T20:51:16Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
    "aljazeera",
    "bbc-world",
    "fox-world",
-   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -40,26 +39,6 @@
     "id": "unnews",
     "label": "UN News",
     "reason": "not well-formed (invalid token): line 1, column 0"
-   },
-   {
-    "id": "gdelt:russia-ukraine-war-current",
-    "label": "GDELT Russia-Ukraine",
-    "reason": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "id": "gdelt:gaza-israel-war-current",
-    "label": "GDELT Israel-Gaza",
-    "reason": "<urlopen error _ssl.c:993: The handshake operation timed out>"
-   },
-   {
-    "id": "gdelt:taiwan-strait-tensions-current",
-    "label": "GDELT Taiwan Strait",
-    "reason": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "id": "gdelt:sudan-civil-war-current",
-    "label": "GDELT Sudan",
-    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -67,9 +46,11 @@
   {
    "id": "russia-ukraine-war-current",
    "name": "Russia-Ukraine",
-   "items_24h": 71,
-   "items_48h": 95,
-   "outlets": 49,
+   "bucket": "geopolitics",
+   "discovered": false,
+   "items_24h": 103,
+   "items_48h": 130,
+   "outlets": 69,
    "kinds": [
     "journalist",
     "state media",
@@ -77,237 +58,261 @@
    ],
    "latest": [
     {
-     "ts": "2026-06-10T14:59:08Z",
-     "title": "First Missile Alert Since War Start Sounds in Russia\u2019s Omsk, Over 2,500 km From Ukraine",
-     "outlet": "\u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439",
+     "ts": "2026-06-10T20:40:39Z",
+     "title": "Russia accuses UN Secretariat of bias over Ukraine conflict reporting",
+     "outlet": "T\u00fcrkiye Today",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX19YdlNEcE83SmU3MXJNRlhCQ3A3M2k2YTFMSUNCX052aUdmTlAxN1ZfLUlzejR4T01rRDBycmkzZXU2V25MT0M0TV9sUTQ0dUFsYTBpV2tiOTZNZ250aGNPWFlYR0pwellkT0w0TENCWm9aRUdZWDJ3LWFRSC1SYy04MlJlVFhCM3d0YmhHaUVUNUpVZFcwRXFEUjFWTm5TNlJQNUg4YW96VUJzZEVNMDVkOS1CU3JKZlE?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZzFKaFRKS0c2TU43YjF6LW9taGJjbEJUS1VmRkdlN2twUDNENTI0WWVJRWdveVdLX2txeDFTbTU4WXpLXzYxWHhMZXpiYW1tY1RiNGh5UEJWdTJ5cDhhdTVKX0lVSk1qY3B5S1R2NG5IWHBKQ0ZiZ2tGNGlvRHFhS3BoYXI5cVBWWGZlRVJNUFVwUFdkdlBvQXpCeDRkQWN5OVFVbGhKbUFRaWU2OU1IeHAxMA?oc=5"
     },
     {
-     "ts": "2026-06-10T14:58:15Z",
-     "title": "Russia, Ukraine trade accusations of overnight strikes targeting infrastructure",
+     "ts": "2026-06-10T20:09:07Z",
+     "title": "Russia calls Canada a \u2018warmonger\u2019 for new drone deal with Ukraine",
+     "outlet": "CTV News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYjFITnFGZDVrQ3prRzVNRnlLNlhGc0NVY1VpUm5NVFEtbGVVRkNEeU1HYzlqZEdGR25xenEycDI4Qkg5SmNJRXdlVEJPODlBbmFkR05xUThGTGUtb1poRF9BS1dkeUZWY2JnU0s5dW5WMWRIcHU3d0hXTmxRWVdRZ29YSS1DMENsc3IteUlyTk1keFNISUFPME95R2Z1Nk12NDlPcVJOSTZwdmVYc3pJcW4wZHZULWZqUGFyQQ?oc=5"
+    },
+    {
+     "ts": "2026-06-10T19:44:34Z",
+     "title": "Zelensky In London: Ukraine And E3 Allies Set Five Conditions For Peace As Russia Rebuffs Direct Talks",
+     "outlet": "Modern Ghana",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSVU1NHJlQ19ydE0xQ2JaNktkWEJsY2c5cXNTNENVbHVVbC1LQXMwdkFRdkNDMXR2NnVkRWs4ejNnQ2g1Wl82MzMtU1RNcDZmcTM2NGVIUGdZZXdOQmxvbEc3Njg0TjBleXBZdG5qMGp3RkZBQWl2SVlzNFUzTkVMUnpSWTM4UWdPWVAzbXNLOHlNZTA1dWMyVElFc9IBmgFBVV95cUxQeU1mbGVrc3JQRXNlUmJ5aEFtdW02ODFWZmRIbVlGQzhUWUg4LXhCOG1PaUlPOHItWkNxWS1Iak1tZmZVaUl5cmoydGEyM3llcmJKR0RLMVAwb2ctM2Q5bi05aVJ1ME5KV1FrNGZ3SnZLOFVkTm93SVVlclBsRVljZDNmZXRWUlJ3MS02TFMtR2RvQkRRbFdMaUdR?oc=5"
+    },
+    {
+     "ts": "2026-06-10T19:32:58Z",
+     "title": "Russia accuses UN Secretariat of 'institutional bias' over Ukraine reporting",
      "outlet": "Anadolu Ajans\u0131",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNX28yNEpMNXNPR2FLMGgtVUNQdjdRaFBPTkpacHZJc29wNEtVMUZtanJTTE5vdHBqZFVtb001SDE4cTFvS1pWVW5OTG40YS1RbnVBbHRrNGRoRkhuLXE0VVdIdVlDVGdwcnpJd3RJb1htOEc0c045QXFMVWJhWDFlMXVfbTU1bU9rRnpheGxhcUVOWmhrOEdOeWw3ZFdwTks5ZFRpREFueFY2THBkVDRWazJCNU41cTE4b2JqUkdQRUUtNHNzejFZN3N3?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZ255UEtPLTRnczk4bzNHWGgtRTA0V0FzdzhJY0tMUlp3YkJGWW1GaWt3ckMtcy1hRTNGdjhlOHF1clFSM01rWFhXMXJwVlB6TWpBcGpsRXdyc0pfbV9lZ0I4UlFHYW8tTlVMY3lQc3FicFBXOW5zUDFXMDNkYk9iNmYzTWtJSy12MlFMQmlYV1ZTaVNxeHlpWXl6TmFiejEwcVpfUC15c1VaaUJwQTlUVnFCaTJrc3c0eG9tanRFZw?oc=5"
     },
     {
-     "ts": "2026-06-10T14:48:09Z",
-     "title": "Putin\u2019s invasion of Ukraine has now lasted longer than World War I (Ukraine Battlefield update, Day 1,567)",
-     "outlet": "EUobserver",
+     "ts": "2026-06-10T19:08:00Z",
+     "title": "Putin planning Hail Mary winter offensive against Ukraine, experts say",
+     "outlet": "New York Post",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdVBIVGppUW1tVVBUaXRHODFhYnkzdmpnWEJwOENMc2dsNUV6MGFRa29MUWpwMXcxVDlKVmxyYVpWMUtEZ0ZEVGNHUXRhMlRyaTdVdlVfQUVNMVh5Ul9EQjNId2RWLUNDM3U2RV8yNmFTMHFIZl9Jd04weGpDWnVQdEtWR0EzejlwSm9ic0t4LUpvdnlva1JYWk9hQ0Nic0FkZXN4WXduYjZyYXI3MFdraG1ZTTBMRzVmVmRJTmV3b0dyTU5yb3lVbHRQNFY?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMkRsZWRLTVVfSXN6TjAzVEpfX2drdU11VFhPaFRlVGJ5YnJwSEJFXy10dU9HWWRYYTI5NTNvZng4S2tPTnRpSnJpYWhnVVNvcWRMUGpzVS1PQzhlWm9ic3Z5dHJwNWsycndYQXFPZ2ZOZE9tS0JZZG5rTjAxS1g3cDlzbGJDNV9zcjFBbWhFVTdRakRIb3d0RVY5SUVfazMxY3BJTVBnVnkyMkN3TmpXWA?oc=5"
     },
     {
-     "ts": "2026-06-10T14:46:09Z",
-     "title": "Letter from Kyiv: The messed-up day-to-day of living under Putin\u2019s cruel air war",
-     "outlet": "Guardian World",
+     "ts": "2026-06-10T18:53:39Z",
+     "title": "Ukraine strikes occupied Mariupol port, Russia\u2019s key oil refineries",
+     "outlet": "Al Jazeera",
      "kind": "journalist",
-     "url": "https://www.theguardian.com/world/2026/jun/10/years-on-i-still-marvel-at-the-resilience-of-day-to-day-life-under-putins-cruel-air-war"
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeU9xcGJfcHRNQ3RydDNXbjc1NXFQbkdId2hlVnVYamxWWV9YRkdKc2lGby1mdEtNWV9INXJQNkUzcUladkRFaDJaZnBUdWM0blVIcW5PdVZDOFlNdXJrWlJxWDJLb0hxTjJ4WnhadThWOGpPU2JzYml4am0tdVNDWlJTQ29uaThhTUlmdDltSjNKVXk2Vm9LbFJTZDhXOHdRcTNxWjZjZUZaWkFGeHBRaXVrNNIBuAFBVV95cUxON1hwLVN2elBTdDJNVnZ2a0hrdVAzRFVpeThuVk9UUFIzbnVoZDFxLTJFaUFqZmJVUlM3Mm11YXBMU1lpQW9VUWQ0TUhFZEVqWll3WXFYSXRSLWJIUVQwUmJGd2FGMExmSXlOX3QtckFJNWtPb3FXTkZON2RxZ3FlR0VseGV6ZjVfTFRqdnA4US1ESWIwdGVpd0lPVFpEVkV4OGdRZ3pscW9lY2VrM1JFVnI3T0xuS0M0?oc=5"
     },
     {
-     "ts": "2026-06-10T14:30:13Z",
-     "title": "FACTBOX: What we know about Ukrainian drone attack on Panorama of Siege of Sevastopol",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/emergencies/2145101"
+     "ts": "2026-06-10T18:49:24Z",
+     "title": "Russia calls Canada \u2018warmonger\u2019 over Ukraine drone deal, threatens response",
+     "outlet": "Global News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1jM0YwUDVzLTlOVWR5S1FKRlhUdzVzeXY1dHZCZzhXR2dUSVAwWmViX1VURDkxZHRQQ3ZaSUM1aG9yZUxhNU5zMkNFbGJLRDFjbGJtWHJDN1FpUTdrT2Z0ZXc0Sm85YXNzek9pWmFuWGlGR243d2pxY2NSNA?oc=5"
     },
     {
-     "ts": "2026-06-10T14:16:29Z",
-     "title": "Russia's War Against Ukraine Enters Day 1,568-Matching the Length of World War I",
+     "ts": "2026-06-10T18:40:10Z",
+     "title": "Ukraine\u2019s Drone Force Destroys $40 Billion in Russian Assets in First Year, Zelenskyy Said",
      "outlet": "UNITED24 Media",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcm5xM2JIYUtEZVp4NDZRVmtRai1vUkszNm5sRUxyOHYwd2dWMXE1OGpqcGNIYVU5N1gxYkhaUjhhUHVidTFCcXZSajNIeFFZcWNqZHN2Rnplcm5GSVptQWN1aVJBRF9nMmVZWmxSay1lSzR0QXBkNjF5ZlpEZ0lWS0hWaWxoY190SmZzUzE4X1pPQUpMcmpGRzRVN0FvNDBYTjJPNFhWNDJRLU0xaElOQnljYXdkeU54Ni1LMVhzSzktaUE?oc=5"
-    },
-    {
-     "ts": "2026-06-10T14:12:36Z",
-     "title": "Poland refuses to send 20-year-old buses to Ukrainian city under Russian strikes because of street name",
-     "outlet": "Euromaidan Press",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQlFBaW44QzY0UWw0SDAtbGw3Y1E1WDN2YkhpOG9KYS12bnlWby1XV2g1Qm5jRHpONmYtT0MwcjN1V0t0U2c4QjZIU1dBVW92Y0JmNFBzSWI4TFU3TVlwZGNuaUkxVFV6WmZfNmdCQ0Rfd3lSV3FVZ1RuSlRFTE9JTmU4N1hsQmpFOHhmSVM4SURVQ1pTVnhkb2F1S01yVUdIN05FWnBoamZYNWREd3FndmhvajlfV1ZqZUpsUHItNzhFb1BVRlRBb0VGY1dBSGhNR1BYaDBtcUpqY1E?oc=5"
-    },
-    {
-     "ts": "2026-06-10T13:58:27Z",
-     "title": "Ukraine's $700,000 Answer To $3.8 Million Patriot Problem",
-     "outlet": "NDTV",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNSFVZVjhEa1k0QmNJY3pUZ2ZXUkxLd1BveVI3Q2VGMUhLRTdDX3FydXQ1VDIwb0FOdHlNZUxjRHJVeHpRSkdrenJ3QTJUTm5EM20xd1FZcHg0dDJvbFZCVjBXUm9qRjZjUkczV3hVNmdoQWg1YktqQmdNUnU4cXFtVjNxMkNraDNqdUh1SElpNjdQZEN5SnRWb0xNUjA0VDlVX0FZU3ZGb0tnYlBNTHZLdEExYUR0YlNYc2RFVmpuQkl4TWlvX2U4WEJhXzBPQ2xwRHNz?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOaEtvSXhsMGJoUGlJakNUaE9fVVpZMzYxVjZKYno2NXU1WG9KMUhVcVlLTjZQTnoweVp4SzQ3OW1uSVVIY1I3cFFzTXdUa0tIVVU5dmdReTdEQkpvd21GS2RMRzdXQWszSkJGaXlIQ3Rhd0xKdE96SEpsZGh4RnFWNndvdHJtVFdNUi1DckdyYkE0RDhqOVdsQjhuU1RDTmVlU1dfRUZmeExiLVFhRE1vLWR3STFKVFB1eW9jZnJCeXZUOE82SHFZMEg3MVdsaTA?oc=5"
     }
    ],
    "split": {
-    "a": "Ukraine reports Russian overnight strikes targeting its infrastructure, citing Russia as the attacking party.",
-    "b": "Russia (TASS) accuses Ukraine of a drone attack on Sevastopol and long-range strikes on Russian military and energy sites.",
+    "a": "Russia accuses the UN Secretariat of institutional bias over Ukraine reporting and labels Canada a warmonger for its drone deal.",
+    "b": "Ukraine and E3 allies set five peace conditions in London as Russia rebuffs direct talks; Ukraine strikes Mariupol port and Russian refineries.",
     "basis": "extracted from live headlines 2026-06-10"
    },
+   "links": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
    ]
   },
   {
    "id": "gaza-israel-war-current",
    "name": "Israel-Gaza",
-   "items_24h": 59,
-   "items_48h": 85,
-   "outlets": 53,
+   "bucket": "geopolitics",
+   "discovered": false,
+   "items_24h": 61,
+   "items_48h": 98,
+   "outlets": 62,
    "kinds": [
     "journalist",
-    "state media",
-    "wire service"
+    "official record",
+    "state media"
    ],
    "latest": [
     {
-     "ts": "2026-06-10T15:33:22Z",
-     "title": "Gwyneth Paltrow facing backlash for Israel housing ad amid Gaza war",
+     "ts": "2026-06-10T20:28:10Z",
+     "title": "Colombia's president at UN, after slamming Gaza war, appears to lament return to 'era of the Nazis'",
+     "outlet": "The Times of Israel",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNaThtdDZ5Uk1fOUw2YXU5dGF1a254U3d0eEVza0s5S0pKa3piZl9wRFJKYmFKSVREVGlzTU84ejhJeFVkS2lSdVVPSzd5THo5aVFIejZMY0xpWGZtZnRMSkpwcWhkdm02N1U2UVFUWXF1VWZINTZ2TER0MlFtSXNhNGJwTk1lZ1h0bG14bFhGQkthYWVCWVU2NE04ODMtSDBVYXZoVHlHZkhIOXJRNEJ5RnkxODZKc3JVQ1pGOFAwdFFJeHdtMmhMbERmUVQ2aEhfRzMyTGpTVQ?oc=5"
+    },
+    {
+     "ts": "2026-06-10T20:07:04Z",
+     "title": "US building military base on Gaza border with no clear purpose",
+     "outlet": "www.israelhayom.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORVIzdHFzd29LYmNYNnFXZV8ydi1QYUxNSXdjYzNOYnRHc1dMNE41ZWtBR3pTQXI1bjZzb3g2TlJGbHlsYWRMM0wwVk9oSkJRamxkRDg4ckFoYTNmd21vUkdBS2JYTDFfYTlqYm1oYkRsRXQyYi1RbmxMeUllRVlrcFRQSVp4YThUaTZxcHpjd1lkaWpFaE9MS1VHMVlIVE9FY1FWeQ?oc=5"
+    },
+    {
+     "ts": "2026-06-10T19:48:03Z",
+     "title": "Detained Gaza hospital director Abu Safiya appeals for his immediate release, calls detention \u2018unjust\u2019",
      "outlet": "Anadolu Ajans\u0131",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWGh6by1xQVhlSjg2Unlpb2hlU3gyV0ZTWGo4TFBtdS1uLTBSdjRQa0gwRHVBWllfYWtTd3BOamxpbFhGNzlHYjdUdVFBdWEyNFdNTGpJMENOMVlkM1FkR2NPZHZLalVFaWNfa2ppNG41eTJfTmVVbUhnVmk0SHBnUkRSVWlUVEJ4eFRYUDVKemlOTzhkampNS3JseXY3NklKekhGLVFLM1I0S0hnX0E?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVlRwQ3dubjRObmMtREc3OHZvOG5MVWkzR2RoSmYxNDlrbHh4UVc0T21OVXV0N3ZBWnByXzdKLVRudTRjWlVGSE9jRGJRMy1KQUYzdlhTWTVOXzc5eU9SN1BUc25pRzdOX08wbC1VY2Vpa3FQVW93U1h6aVZHUGIzVHVheUk5NzBWWWdkZmp1ZkE1S0ZCRkttNld2dXkyQnExdmhFSHBtNHdIRWhVaVZacTJHWEZWZlFtMG9CMnNRUWdFV05wMlFIQlA1Yk1rQ1JnUkM1bWhOZXo5aE1PNlE?oc=5"
     },
     {
-     "ts": "2026-06-10T15:13:01Z",
-     "title": "Torture, abuse, sexual violence: Freed Gaza flotilla activists speak",
-     "outlet": "The Real News Network",
+     "ts": "2026-06-10T19:42:51Z",
+     "title": "Gaza: Palestinian Dies of Wounds Amid Israeli Violations",
+     "outlet": "- IMEMC News",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVTFXcnZGQ1ltWTgzcXdreG4tU1MyRmFveWZnbWdyZ3ZKU244M3EzUUNHV1BwU3Z5djE1UmdJU3BCY0dOVC1VTjgxLXFGLWtkaHZ6LWNYWVFRSmdkQkdDR3pVenBzWFVLa3NlMTF6SnF2UktsLTBCaWZNYlZQcVN3X1Mwc0ZJX1EzTXJkS1dmNDNHR0U?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQ3hkQ0JwNFR6WktuWE5iSEJJMlBqalZYRTIyRmxJZUQtMzMySGZsSHFfbmRtVDBLamhvTDhfWm41WlBSV0dZR25Ka1FtVFI1aTlURmJTQ0owR2ZadUdBd2tIcTJYNnJNTktyWVdFejZFcUx0SUcwMWhmd2RiTm45N2tBQ0t2SG5Nc3c?oc=5"
     },
     {
-     "ts": "2026-06-10T14:28:57Z",
-     "title": "U.N. Report: Armed Groups in Gaza Have Beaten, Maimed and Executed Dozens of Palestinians",
-     "outlet": "Democracy Now!",
+     "ts": "2026-06-10T19:39:49Z",
+     "title": "World court prosecutor who went after Netanyahu for war crimes suspended over sexual misconduct",
+     "outlet": "Fox News World",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTmY0blJIZlFqcjdJcnlLcU1SWVlrU2JHeElOSUk1ZmNJMTViVDhDelR6Zzd5Mllna3QtQVEtQmZrNVpTd3NBSGhjUnBaTTdZdEZDcnp6bFRHc2FjaUY0WmdmQlJIZHRTZGRLbnFnRlA0Q0pRVW1TeTVDaEsySXZ6bXZ0Qnhjd1ZYNkR2VlRSZ09hRjVKWlp0THJ4Yy1hdGstTEVGRDdWVHhmS0FEbFVKNDkza1lXX3Y2NDk2cGhEMElReVNQYVlvcTYyMmZra00?oc=5"
+     "url": "https://www.foxnews.com/world/world-court-prosecutor-who-went-after-netanyahu-war-crimes-suspended-over-sexual-misconduct"
     },
     {
-     "ts": "2026-06-10T14:06:47Z",
-     "title": "Gaza death toll nears 73,000 as total casualties exceed 246,000",
-     "outlet": "\u0633\u0627\u0646\u0627",
+     "ts": "2026-06-10T19:38:10Z",
+     "title": "Gaza hospital chief Abu Safiya, a Hamas officer held in Israel, looks thinner in 1st photo since Feb. 2025",
+     "outlet": "The Times of Israel",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE04V3lXRm1FY3RQNmM3dHE3b3B5c1pDSXN1NzhwQlI2Q0tfZGYwYzZOVHptN1FRM0IweXprZEw3cFVuR01QaW9nX3hLaG9FMjI0T0M0?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOd2hqYTFNbnNUMHY4NkowaG9ITzlSMUU1cHpaOHBkNTRWZUJBeXR6YU9UY2Y1SXRxanhfTkxlUTRfMm1UcW80bzVtQ2VkY2pDTlF4SG9lTnp3MmlwLXpScUt4X3RoelQ3Sm5hUm5wOFBDM1RsRFB5MDdURGIwekVDR2hPbG9YWUo2dGwxRUFaNW5wYk01Z25kVkZLU3FSNi1oMHNvSDBpVFFpRUpDZTFOdzA1Q054X3FSMmFJZmFOcUVvZ1daTjFkLVkzMmZUWVZueG1JdzRta0RzaG1iTjF5QXR3cw?oc=5"
     },
     {
-     "ts": "2026-06-10T13:39:58Z",
-     "title": "Trump might just be getting tired of Netanyahu - and so might Israel",
+     "ts": "2026-06-10T19:32:16Z",
+     "title": "Netanyahu urges Lebanese people to \u2018join Israel\u2019 in peace, reject Hezbollah and Iran",
      "outlet": "Times of Israel",
      "kind": "journalist",
-     "url": "https://www.timesofisrael.com/trump-might-just-be-getting-tired-of-netanyahu-and-so-might-israel/"
+     "url": "https://www.timesofisrael.com/netanyahu-urges-lebanese-people-to-join-israel-in-peace-reject-hezbollah-and-iran/"
     },
     {
-     "ts": "2026-06-10T13:30:00Z",
-     "title": "To stop Hezbollah, Trump must prevent Israel from creating another Gaza in Lebanon",
-     "outlet": "Inquirer.com",
+     "ts": "2026-06-10T19:24:56Z",
+     "title": "Israel Palestinians Gaza",
+     "outlet": "The Herald Journal",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWExieGdhUXZISXczb0NpSjZyZVo4R29rZm54eVdtRTZPWUt0WWdGTnBvamEzeEJ0dGgxQTBOa0FRRUJGRmpiZnZDM0hWOXppaHB2VVVzR0ZfN3BJSFNqZUo1Wi1HZURIaXg5czJIOVdRanpwM3ZuQzk1MktnYVByUWxybUdrd1JqYlIxVlMyZ1dHbmtGbDNEYQ?oc=5"
-    },
-    {
-     "ts": "2026-06-10T12:38:18Z",
-     "title": "Unfolding catastrophe: Israel cuts off Gaza again, deepens humanitarian crisis in devastated enclave",
-     "outlet": "TRT World",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KWkM4WDRBZnNXZHMxMWI3WWdTZ3FJdWNLSVlLRzNEQUcxdEwyeFlLY1hkMDRrM25GR2NUZmhqdnZMZFFaODZHeWV5ZV96Y2xqSldYaGo3Xy0?oc=5"
-    },
-    {
-     "ts": "2026-06-10T12:17:52Z",
-     "title": "Netanyahu will seek reelection in Israel\u2019s next national vote, Likud says",
-     "outlet": "T\u00fcrkiye Today",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeFQtOVBkMDdpbFJnNi04VHdCVlJMUEtUaHpNRlByZ0xDRVhIaFRieG9ZZnBtblRVbGlFLXl5NHpBYmlaNXFGVTJCU2F2RHBQd2wyYk5EcmJjdGJBZUVOYzBra25wdlZ3SmVVUUdFMi1yb0FhRGFSZHpQNUZMMnZTYjJKWHFaVzRZeVhxZld2VkJSOUhYN2tqckIyb3BDaFk4OFJ3Q3NLRjJFcjNYZmJuZ0hzNmlRZw?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdlhFY05ON0FhTms3cDA1Y3hUN0dJQ1pTaDdrbDFLSWFIcE1jaHAwUjNSbFJkaHNSd3Fpbkl3aWEtYTBlaHF5OGZfZDlHbTBrNUlTQTRzWVIyYUlMUVBwRXN0eWhsYkdqNjJQMTVYTFE1Wmxtc3hnOHVqSXhPVXdXeGlJMHVIZkFoeGllOGJXVFR1aDhaM1otcDJNRTFDNjBYQ3Jn?oc=5"
     }
    ],
    "split": {
-    "a": "Amnesty International accuses Israel of conducting state-led ethnic cleansing in the West Bank.",
-    "b": "Israel's IDF rejects Amnesty's ethnic cleansing charge against its West Bank operations.",
+    "a": "Detained Gaza hospital director Hussam Abu Safiya calls his detention unjust and appeals for immediate release.",
+    "b": "Israel holds Abu Safiya, identifying him as a Hamas officer, as he is scheduled to appear before an Israeli court.",
     "basis": "extracted from live headlines 2026-06-10"
    },
+   "links": [
+    {
+     "entity": "israel",
+     "situations": [
+      "red-sea-houthi-shipping-current",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    }
+   ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
    ]
   },
   {
    "id": "taiwan-strait-tensions-current",
    "name": "Taiwan Strait",
-   "items_24h": 34,
-   "items_48h": 52,
-   "outlets": 37,
+   "bucket": "geopolitics",
+   "discovered": false,
+   "items_24h": 47,
+   "items_48h": 65,
+   "outlets": 41,
    "kinds": [
     "journalist",
     "wire service"
    ],
    "latest": [
     {
-     "ts": "2026-06-10T14:18:20Z",
-     "title": "Taiwan Fires HIMARS Missiles in Drill Simulating Chinese Invasion",
-     "outlet": "Kursiv Media",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "World News Quick Take",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT3NTZjVEdTZ0STgtem55UDlXX09WUWF0R0lrWlFwd2ZKZUg4T282YXJ4Z1pZRlZIU24xZUpCYlRVdDRHeUxYRzB3czhkd2NWdnE4Q190cmo1ejNUNlB0ekJ1OGxNR2VHZXRlUWlHWE96Z0EzWjAza2tlSjFYZVk3eDhNSEJpZVFQNUZqbkdNc3o3NHdfMmJfal9hNVBTamwzVmE0YkJORQ?oc=5"
+     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/11/2003858922"
     },
     {
-     "ts": "2026-06-10T12:55:03Z",
-     "title": "Taiwan targets China with US missiles in the strait",
-     "outlet": "\u0635\u0648\u062a \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "Book review: Sex, family and the Taiwanese psyche",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNUxpMHM1RHA0My1qOVdZcGlSREFETjJPMnAxeFlaa2ZXczNMaGJBZXduYzIzRW0xS3o0NkZoQzA1Ynh1aFVJellYdWRJRXNCcXNzRERzMG9QU0FLTHNyMlhidzdKcDg3eUJTWHBWYnJ0RmZPRFZBUU1YdFRVR3p4a29Ob2RiLXV2QWxMdUx1WHNZN0J1X2N6NGcyaTBfVFczdUVmN1VB?oc=5"
+     "url": "https://www.taipeitimes.com/News/feat/archives/2026/06/11/2003858892"
     },
     {
-     "ts": "2026-06-10T12:41:24Z",
-     "title": "Taiwan tests U.S.-made missiles on China-facing coast in signal to Beijing (LMT:NYSE)",
-     "outlet": "Seeking Alpha",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "Notes from Central Taiwan: The unexamined Cheng Li-wun",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMG9iVHpxVjJTQzJHMEo3ZlBGVW1MSlVqS2RjNDVoWkdJaGZQbTBwdVQzd1FKUm9aWmFRTkF0TmRRa2FCNDZ1S3ZnQVAwZTltWEVvT1ZvOHpRbVNoQU9qX3VQdldvUlFfNkhhcWlUUkNuT1M1SlRkZ0lzOFJNd0lBMTZkbXQzT3VvUnVrb200ZzdPRkxhZ3JiTU91MEJfUGZURl9LTHd6WEZzLWFFTHNFNA?oc=5"
+     "url": "https://www.taipeitimes.com/News/feat/archives/2026/06/11/2003858890"
     },
     {
-     "ts": "2026-06-10T12:39:00Z",
-     "title": "Taiwan Test-Fires U.S.-Supplied Missile Launcher Toward China",
-     "outlet": "WSJ",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "Taiwan did not \u2018steal\u2019 US technology",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNV0doRWl1QS1ta3d0dXhHeGMzejBSZ0lwcFd0ZU5LbFVsUGRRNG12TnpRanFoOGlUZzJQOE5McWxrSWFLdDZRSTJPVThUa1FONERIR2tYSmhlcXQ1NERSelpZLUF4YnUxRkVHaDBHUVIxQm4xcFpJVV93YnJvdC16aXR6cUZZbFlQVU1qUFdCRHFSdjM1OUlRWWFhRVY4Rk5rVE1R?oc=5"
+     "url": "https://www.taipeitimes.com/News/editorials/archives/2026/06/11/2003858884"
     },
     {
-     "ts": "2026-06-10T12:20:02Z",
-     "title": "Taiwan fires dozens of US-made missiles towards China from \u2018shoot and scoot\u2019 launchers for first time in show of force",
-     "outlet": "the-sun.com",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "Taiwan needs maritime culture law",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lUE8xVnZUdWl2N3ZOUXpXcXBKdHlKWkd3VHRmUm9kVlFRNVdtR2g3N0NrdDV1MFFXQ25WS3hQTFA2Zng1R0hxTS1oM0lfVm80Vi1NNzNndXhHemxjRDZWRXBqNGt3NmVxelFHVkxDRk1oaTJXZWJPWQ?oc=5"
+     "url": "https://www.taipeitimes.com/News/editorials/archives/2026/06/11/2003858882"
     },
     {
-     "ts": "2026-06-10T11:46:12Z",
-     "title": "China Unveils HQ-16F Missile Shield Facing Taiwan as PLA Accelerates War Readiness Across Taiwan Strait",
-     "outlet": "Defence Security Asia",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "Taiwan News Quick Take",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQkU3SUxZWllsVHhHU3FiaDh2SExxSjNJRTQyVmY4dm5CdlY3NXptRUlmN1BwZnlHLW1EWGhSdG5ieXZMcktKRFl0Y0JZS1BjcmVLY3BubGlaazhTbi1FRGJkOVZ3ZDNzRUFDQ3ZmanpRaWRXQWxXRzZ4M3ZtMWVzMnlQQWozd21mUkQwbWs3NGQ?oc=5"
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/06/11/2003858913"
     },
     {
-     "ts": "2026-06-10T11:44:00Z",
-     "title": "Taiwan Conducts First Test-Firing of U.S.-Supplied Missile Launchers Facing China",
-     "outlet": "HOKANEWS.COM",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "Taiwanese literature translators discuss language, culture in Poland",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQlZZMEpPVnluRFVSbk1JMFRGTTNseThyU3VSQ2dBTVM4QmRLcV9pOHFxanNPX1BteWRBMnNnclRuOEQ0ajNvNUFGZ0dDYmRrUkhFamdLbUNNa1VlV1BJeU52VWlqSVlyd0RpOFczR0p4NlVEcVAyX0lmdW9maU5ic2lFQQ?oc=5"
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/06/11/2003858912"
     },
     {
-     "ts": "2026-06-10T11:43:00Z",
-     "title": "Taiwan prepares for a possible invasion by China",
-     "outlet": "Gazeta Express",
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "Taiwan should do better in e-sports, minister says",
+     "outlet": "Taipei Times",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOU2ZFcnBRa21sZmFWVkRkUzI5RDJJeExJa0J1NHB3M1hpVWZKUGdoTW5OS0dfZjNlZVBmeVI4Tk00cGpYQ09YQTVNYXh4WVpNQ1V1TlFjX1lLTzVpUG45SEFRX3pyekRpS3JDMXR0LTV2bjBqeEF6bkMzaVJjZGEyV2UxM0VnbllmTkE?oc=5"
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/06/11/2003858909"
     }
    ],
    "split": {
-    "a": "Taiwan test-fires US-supplied missile launchers toward China in a first-ever live drill, framing it as a deterrence signal.",
-    "b": "China conducts maritime law enforcement east of what it calls its Taiwan island and unveils new missile shields facing Taiwan.",
+    "a": "Taiwan fires HIMARS in its first coast-facing drills, framed explicitly as asymmetric deterrence against China.",
+    "b": "Taiwan denies stealing US technology while a US defense report flags ongoing vulnerabilities in its defense posture.",
     "basis": "extracted from live headlines 2026-06-10"
    },
+   "links": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Taiwan Strait, Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
    ]
   },
   {
    "id": "red-sea-houthi-shipping-current",
    "name": "Red Sea",
-   "items_24h": 17,
-   "items_48h": 68,
-   "outlets": 52,
+   "bucket": "geopolitics",
+   "discovered": false,
+   "items_24h": 42,
+   "items_48h": 85,
+   "outlets": 67,
    "kinds": [
-    "journalist",
-    "state media"
+    "journalist"
    ],
    "latest": [
+    {
+     "ts": "2026-06-10T15:25:53Z",
+     "title": "Yemen\u2019s Houthis Ready to Join Iran War if Needed, Raising New Shipping Risk",
+     "outlet": "EnergyNow",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeFJUdEstYWRWaXFweFNEbFNDZ3BhcXh6YndhZVg1QXJnbXFFSmhIbGQyLUpySHc5c2xyZUtEMGdIeWh4S1puZDBBWllGNVk3ZzhycHVrekMtaE9hZkF2VmRXbjJDWEp6Wl9QMUtqcjRqQ3dtdlUtbjI1dGlzTXVraVVCMUR2c0psMnZRcWhRVWhUa2Z1VW9TM0FBMGpnMmZYbHNVMTVn?oc=5"
+    },
     {
      "ts": "2026-06-10T14:39:43Z",
      "title": "Houthi Shipping Threat Explained: Impact On Trade And Oil Amid Iran war | Firstpost America",
@@ -324,52 +329,156 @@
     },
     {
      "ts": "2026-06-10T13:30:00Z",
+     "title": "Cargo vessel exchanges fire with armed craft southwest of Yemen : UKMTO",
+     "outlet": "batonrougepost.com",
+     "kind": "journalist",
+     "url": "http://www.batonrougepost.com/news/279113709/cargo-vessel-exchanges-fire-with-armed-craft-southwest-of-yemen-ukmto"
+    },
+    {
+     "ts": "2026-06-10T13:30:00Z",
+     "title": "Cargo vessel exchanges fire with armed craft southwest of Yemen : UKMTO",
+     "outlet": "shanghainews.net",
+     "kind": "journalist",
+     "url": "http://www.shanghainews.net/news/279113709/cargo-vessel-exchanges-fire-with-armed-craft-southwest-of-yemen-ukmto"
+    },
+    {
+     "ts": "2026-06-10T13:30:00Z",
+     "title": "Cargo vessel exchanges fire with armed craft southwest of Yemen : UKMTO",
+     "outlet": "northkoreatimes.com",
+     "kind": "journalist",
+     "url": "http://www.northkoreatimes.com/news/279113709/cargo-vessel-exchanges-fire-with-armed-craft-southwest-of-yemen-ukmto"
+    },
+    {
+     "ts": "2026-06-10T13:30:00Z",
      "title": "Bani Matar Tribes Accuse Houthi Officials of Seizing Farmland",
      "outlet": "khabaragency.net",
      "kind": "journalist",
      "url": "https://www.khabaragency.net/news248301.html"
     },
     {
-     "ts": "2026-06-10T12:24:01Z",
-     "title": "Guards on cargo vessel fight off attack from small boat near Yemeni coast",
-     "outlet": "The National",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPRmR2WXRHeHJmUi1nV2JWMlhqN1BUWEdKZWduYVVYc2d2SzZzcVhZODgta05RbGJjaHFHUHVGTjJKUlA3WWRGeVoxRkpmYVdSU2pJMW5lWjRMMjlaamlna0IxRDF4dXdfZjU4Z18zQmk4MXZ0UVJwTVoxWWRDcTFCVjdZa2RyQWZXVnZrQXZNbnhoWU5zd0JSSmRtRWh6eERIdTBZVjRBN0R4S0JWd3RUaEtDSVFWUWpsc0wtNmRFY1dNcGQ5?oc=5"
-    },
-    {
-     "ts": "2026-06-10T12:00:00Z",
-     "title": "Cargo ship comes under attack in Gulf of Aden off Yemen",
-     "outlet": "siasat.com",
-     "kind": "journalist",
-     "url": "https://www.siasat.com/cargo-ship-comes-under-attack-in-gulf-of-aden-off-yemen-3486366/"
-    },
-    {
-     "ts": "2026-06-10T12:00:00Z",
+     "ts": "2026-06-10T13:15:00Z",
      "title": "Cargo vessel exchanges fire with armed craft southwest of Yemen : UKMTO",
-     "outlet": "ohiostandard.com",
+     "outlet": "birminghamstar.com",
      "kind": "journalist",
-     "url": "http://www.ohiostandard.com/news/279113709/cargo-vessel-exchanges-fire-with-armed-craft-southwest-of-yemen-ukmto"
-    },
-    {
-     "ts": "2026-06-10T11:45:00Z",
-     "title": "Houthis Use  Espionage  Charges against Relief Agencies to Cripple Humanitarian Aid in Yemen",
-     "outlet": "english.aawsat.com",
-     "kind": "journalist",
-     "url": "https://english.aawsat.com/arab-world/5282376-houthis-use-%E2%80%98espionage%E2%80%99-charges-against-relief-agencies-cripple-humanitarian-aid"
-    },
-    {
-     "ts": "2026-06-10T11:45:00Z",
-     "title": "British Army : Guards on Cargo Ship off Yemen Aden Exchange Fire with Gunmen in Small Boat",
-     "outlet": "english.aawsat.com",
-     "kind": "journalist",
-     "url": "https://english.aawsat.com/arab-world/5282369-british-army-guards-cargo-ship-yemen%E2%80%99s-aden-exchange-fire-gunmen-small-boat"
+     "url": "http://www.birminghamstar.com/news/279113709/cargo-vessel-exchanges-fire-with-armed-craft-southwest-of-yemen-ukmto"
     }
    ],
    "split": {
-    "a": "Houthis announce a ban on Israeli Red Sea shipping and claim their armed-boat attacks specifically target Israeli-linked vessels.",
-    "b": "UKMTO and shipping sources describe cargo ships exchanging fire with armed boats, framing the threat as broad danger to international shipping.",
+    "a": "Houthis ban Israeli ships from the Red Sea, threaten to join the Iran war, and conduct armed attacks on cargo vessels.",
+    "b": "EU calls on Houthis to halt Red Sea threats while shipping firms warn of renewed global trade disruption.",
     "basis": "extracted from live headlines 2026-06-10"
    },
+   "links": [
+    {
+     "entity": "iran",
+     "situations": [
+      "us-iran-strikes-israel-lebanon-escalation"
+     ]
+    },
+    {
+     "entity": "israel",
+     "situations": [
+      "gaza-israel-war-current",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
+   ]
+  },
+  {
+   "id": "us-iran-strikes-israel-lebanon-escalation",
+   "name": "US-Iran strikes Israel-Lebanon escalation",
+   "bucket": "geopolitics",
+   "discovered": true,
+   "items_24h": 36,
+   "items_48h": 46,
+   "outlets": 10,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-11T00:00:00Z",
+     "title": "US, Iran strike targets after crash of US helicopter",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/front/archives/2026/06/11/2003858896"
+    },
+    {
+     "ts": "2026-06-10T20:42:22Z",
+     "title": "Middle East crisis live: Iran accuses US of \u2018calculated war crime\u2019 as Trump teases another attack",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/world/live/2026/jun/10/iran-war-updates-missile-strikes-trump-us-retaliation-middle-east-crisis-war-live"
+    },
+    {
+     "ts": "2026-06-10T20:16:57Z",
+     "title": "Trump raised possibility of using nuclear weapons against Iran - Hersh",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2145227"
+    },
+    {
+     "ts": "2026-06-10T20:13:42Z",
+     "title": "Iran War Live Updates: A Day After Predicting Peace, Trump Says U.S. Will Strike Iran Again",
+     "outlet": "NYT World",
+     "kind": "journalist",
+     "url": "https://www.nytimes.com/live/2026/06/10/world/iran-war-trump-us"
+    },
+    {
+     "ts": "2026-06-10T19:45:30Z",
+     "title": "Guterres warns of risk of new full-scale war in Gulf region",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2145223"
+    },
+    {
+     "ts": "2026-06-10T19:35:21Z",
+     "title": "Trump Threatens More Strikes Against Iran, Citing Stalled Peace Talks",
+     "outlet": "NYT World",
+     "kind": "journalist",
+     "url": "https://www.nytimes.com/2026/06/10/world/middleeast/us-iran-strikes.html"
+    },
+    {
+     "ts": "2026-06-10T19:23:23Z",
+     "title": "Israeli strike on a car kills two in Sidon, Lebanon",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/10/israeli-strike-on-a-car-kills-two-in-sidon-lebanon?traffic_source=rss"
+    },
+    {
+     "ts": "2026-06-10T19:13:49Z",
+     "title": "Gulf states declare right to collective response to Iranian attacks",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2145219"
+    }
+   ],
+   "split": {
+    "a": "Iran calls US strikes a calculated war crime and says it will not hesitate to defend itself against further attacks.",
+    "b": "Trump threatens additional strikes on Iran, citing stalled peace talks and the downing of a US Apache helicopter.",
+    "basis": "extracted from live headlines 2026-06-10"
+   },
+   "links": [
+    {
+     "entity": "iran",
+     "situations": [
+      "red-sea-houthi-shipping-current"
+     ]
+    },
+    {
+     "entity": "israel",
+     "situations": [
+      "gaza-israel-war-current",
+      "red-sea-houthi-shipping-current",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    }
+   ],
    "unknowns": [
     "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
    ]
@@ -377,13 +486,37 @@
   {
    "id": "sudan-civil-war-current",
    "name": "Sudan",
-   "items_24h": 15,
-   "items_48h": 20,
-   "outlets": 15,
+   "bucket": "geopolitics",
+   "discovered": false,
+   "items_24h": 11,
+   "items_48h": 23,
+   "outlets": 18,
    "kinds": [
-    "journalist"
+    "journalist",
+    "official record"
    ],
    "latest": [
+    {
+     "ts": "2026-06-10T19:32:36Z",
+     "title": "4 killed, 12 injured in RSF drone strikes in Sudan\u2019s Kordofan, medics say",
+     "outlet": "Anadolu Ajans\u0131",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOajNqMmxvOU5UWENUQ295aEhVMmxickVodUtTcWEzRDBNWnJrbnFlTE1UZWtNbnV0b2tfQ2Ric3VvYlozbzk0ZEJfSmUzaG9zNlFMekUxNG9vSm5nYjdPYkpIN2dHNEpxdlZJRVBPZk5NZHFhVGU3WjJxT0RfekkxYWlQajBoWVNISkhIWUgxSENqYmJOdmVQX2ZHLV9OVUVRaVZ4dkY1d3FKQ0JVM0dOOFpxTTBTWjg?oc=5"
+    },
+    {
+     "ts": "2026-06-10T14:54:27Z",
+     "title": "Complaint Filed Before Kenyan Courts Against RSF Over Alleged War Crimes",
+     "outlet": "Sudan Horizon",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdlhKT2Z1N2E3VDhUcFZ4RmRlM2xzREpSSUtYQ0xYS014TDQ2S1dLeUZ6T1BGX1ByS3A4VVpHakowczVBWkZPc3VBSG1fZmRlVzRlNzJHY1BGR20td0J3elVvOGFPWi14VThJdTI3ekR1RUZCSVRFRHpWdnBaSlJWSGptQ3BMV2FGVDlvTUljSFR0Nmp5WTMwd0Z0cGo1RjA?oc=5"
+    },
+    {
+     "ts": "2026-06-10T14:31:42Z",
+     "title": "\u2018War crimes complaint filed in Kenya against Sudan\u2019s RSF, landmark moment in country\u2019s legal history\u2019",
+     "outlet": "Channel Africa",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQaFRXdXJiLXJhdjUyWjZYMTZPdVdwQWdONUd4WGxLaEJqaUl0WS1nS1d0WU81SWFLZFdKT28wYlFoa0R4UF9UaTcycVpfcmFfemVTWk1VYzNCZlB1M18wYWlVUHdCWHJXYVB3SkVsTmJIOUFVVWp0a0JPNlFLbng4Y1ZTVzVsVUd4X0o3SEFfT1B3c0tlNXRqYURCeFBxQU9Ja2RFQ0RhTHlsbEdjSGNTcXVCNWd0Q05GQzRNSGg4aWdFbk1YTjdQdGNwV01SMDhJVnBMR1p5bVB6R0g1dDdoT013?oc=5"
+    },
     {
      "ts": "2026-06-10T12:32:21Z",
      "title": "Sudan Escalates Drone Campaign to Retake Kurmuk as Khartoum-Addis Ababa Rift Deepens",
@@ -418,38 +551,165 @@
      "outlet": "The Eastleigh Voice",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWmg2UjBIeTROVnQxSHBkRWlRbHlQdGpxS256UVE3Y1Vfcm5MNklVcmMtR3k3NFhCVGxqZU5QeGNRQ0ZZbXItanhVLVMzQlpYczB3aE9FVjE5UVlHTTFLMGc0eV80VmpYOUJxQVljOWpXakJxR1NUUWU2dXU2Z25YUF9PbHl4VjI0WlM3X3I3b01QWHJlMkJFekNRTkd0ZGdWbEdXMlFGUFNlNU5BcVRka29RaFJteXhRT3hlejZiLUhTZVBrM0lkcmhFQjEtdUEybkFV?oc=5"
-    },
-    {
-     "ts": "2026-06-10T08:29:20Z",
-     "title": "First war crimes complaint against Sudan's paramilitary forces filed in Kenya",
-     "outlet": "Stamford Advocate",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMXRPejhSWjQtTEFkYlk0SkNHQXlOd21TTUFUQ3lPRURZSVNiR3BTTUhtWUlLT2o5dFktS3ByTFFWaUxRZ3VJTVlOMlBGQlN5c2xBZGtvaWRKVXdXQWk3a1prbnFWY0ppQTZTYURLckNrMDFBbUg1clZaUW53UVRJWDRKekYzai1jSlhjcGsyTGdQUkh5cDB5a0ZZQmR5a3J1aG04NzVLNTFhbnc?oc=5"
-    },
-    {
-     "ts": "2026-06-09T21:58:04Z",
-     "title": "Sudan: First War Crimes Case Filed Against Paramilitary RSF",
-     "outlet": "Heritage Times",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaEZxLWI1cTJMMENOMkhTbzZibm1jMDg3LXk2RFIyak1qYXl6N0lROWxrYkFoYVV2UzZWS09QVThHRTlfdy0tS2tKQ0V1OHVJMWRsREZtVkJLakRvYzhTR21GTi1zdFN1TGl2S3Z3WVRyVG9SZGdBOXZuUEh1N2FWUjg3RWwxRjhMUFNWQkxZaFNxbkJDVFhB?oc=5"
-    },
-    {
-     "ts": "2026-06-09T21:02:14Z",
-     "title": "Complaint against Sudan's RSF filed in Kenya seeking justice for victims of war crimes",
-     "outlet": "standardmedia.co.ke",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbkdvWlB3WVotWUNxRXVKVEgtWXh3dEdwWTFPWTFyTkQ4c2FmbkE1TktTOEVkSnRBYzctbnNnVXowQVI2b1hHUDlBdS1YTHpaTC1YNkR6MThxQl9jYVZ0UnNGdmpZNHRIYXQzQUJURUVMajNFSXp5LW9RZU9KYl9WX3JabnVQOXBITzVURVVaRGtoYVVrOXN5TDFtNTBQVW1mQXloR1NmamYweUhpOEtxMTNkUVctLUNfdkcwRGNyNTRLckN1RkJnUUl2SGhibDAwSU5fR0hPNnQwbjQ?oc=5"
     }
    ],
    "split": {
-    "a": "Sudan's army escalates drone strikes to retake territory and reports intercepting RSF drones over Khartoum.",
-    "b": "HRW and Kenya court filings accuse RSF of war crimes, while sources allege RSF is intensifying suicide drone attacks sourced via Ethiopia.",
+    "a": "War crimes complaints filed in Kenyan courts accuse Sudan's RSF of drone strikes on civilians and systematic atrocities.",
+    "b": "RSF intensifies drone attacks, with reports of UAE-sourced supply via Ethiopia, as Sudan's army escalates its counter-campaign.",
     "basis": "extracted from live headlines 2026-06-10"
    },
+   "links": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Sudan, Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
+   ]
+  },
+  {
+   "id": "west-bank-settler-sanctions-ethnic-cleansing",
+   "name": "West Bank settler sanctions ethnic cleansing",
+   "bucket": "geopolitics",
+   "discovered": true,
+   "items_24h": 6,
+   "items_48h": 9,
+   "outlets": 8,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-10T19:57:04Z",
+     "title": "\u2018Jews are allowed, Arabs have to get out,\u2019 armed settler tells Palestinians, activists",
+     "outlet": "Times of Israel",
+     "kind": "journalist",
+     "url": "https://www.timesofisrael.com/jews-are-allowed-arabs-have-to-get-out-armed-settler-tells-palestinians-activists/"
+    },
+    {
+     "ts": "2026-06-10T17:07:00Z",
+     "title": "Sam Harris: Why It\u2019s Futile to Debate Israel\u2019s Enemies",
+     "outlet": "The Free Press",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Gd1Z2cXpicng3Z2ZOZjBCVzdIdkFFcmxQdXZyc21ORnlpeDJuNWF4NE1uNTdMQWQ4Z2ZMSTBFbW85NzJVNjhNZnpOeHFJZTEwSXAzZWRoaTlfU2hoX0tGUEp6WjhUeG9HTDdMMmRyQnE0YzB3d1N2ZG14aU1IN2c?oc=5"
+    },
+    {
+     "ts": "2026-06-10T15:30:42Z",
+     "title": "Sanctions on settlers not enough: Target Israeli gov\u2019t, say campaigners",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/6/10/sanctions-on-settlers-not-enough-target-israeli-govt-say-campaigners?traffic_source=rss"
+    },
+    {
+     "ts": "2026-06-10T15:02:20Z",
+     "title": "The real anti-Zionists are at the highest levels of the Israeli government",
+     "outlet": "The Forward",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9fMThOSXhNdEtuV21GeFZYQzN4Nkc3N0U4M3Izdkd1enhGRUJaR2JMU0MxSExKT2hKSkVWUmItSF9NbUVzSDIydFppVDBsRFlMY0YzWXFjeFVyVDdMOHpDc1RqTXZxZw?oc=5"
+    },
+    {
+     "ts": "2026-06-10T09:00:00Z",
+     "title": "Israel\u2019s ethnic cleansing of West Bank Bedouin and herding communities",
+     "outlet": "Amnesty International",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOEtjZGlsMmdadnNzSlZjRmxTZjRGcmNZYnBfMW9UZHYwYmdqQjBWMUhDQThmbGNQTTZGcVRwZXN2QjE4bVpQU3RTNjFtYy1PZjRNUUZycHMyV01ZQXpVd0YweUhfUlQwQW5LdU9NVi1HNWFKOGRHTGNOZnBhbkFyS2dZZF9sc2JLOWtRMC1B?oc=5"
+    },
+    {
+     "ts": "2026-06-10T07:11:40Z",
+     "title": "Hannah Thomas: NSW admits to police \u2018battery and false imprisonment\u2019 of pro-Palestine protester",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/australia-news/2026/jun/10/hannah-thomas-pro-palestine-protester-assaulted-by-police-officers-falsely-imprisoned-ntwnfb"
+    },
+    {
+     "ts": "2026-06-09T18:29:15Z",
+     "title": "Report reveals prison crowding complicate Israel\u2019s security operations",
+     "outlet": "The Jerusalem Post",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qNTZDRkl1RjU0eEFTMjNaaDVMcXRIT0NzTUh5VDRHQlFrZld0ZVB0UldZX28zTTJvMDJRWnN6bHJpMjlwbGF4cGNVejV2bDFCMmkxb09OcTAxWUJ6?oc=5"
+    },
+    {
+     "ts": "2026-06-09T17:56:31Z",
+     "title": "6 Countries Announce Sanctions Targeting Israeli Settler Networks",
+     "outlet": "NYT World",
+     "kind": "journalist",
+     "url": "https://www.nytimes.com/2026/06/09/world/middleeast/west-bank-israeli-settlers-sanction.html"
+    }
+   ],
+   "split": {
+    "a": "Amnesty International reports Israel is ethnically cleansing West Bank Bedouin communities; six countries announce sanctions on settler networks.",
+    "b": "Campaigners argue settler sanctions are insufficient and demand measures targeting the Israeli government directly.",
+    "basis": "extracted from live headlines 2026-06-10"
+   },
+   "links": [
+    {
+     "entity": "israel",
+     "situations": [
+      "gaza-israel-war-current",
+      "red-sea-houthi-shipping-current",
+      "us-iran-strikes-israel-lebanon-escalation"
+     ]
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, RT, Sudan Tribune, UN News."
    ]
   }
  ],
- "candidates": []
+ "candidates": [
+  {
+   "sample": "Three Indian sailors missing after US says it hit tanker in Gulf of Oman",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Manhunt under way in South Africa after 12 killed in mass shooting in Johannesburg",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Man reportedly shot at Kenya protest against US Ebola quarantine centre",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Night of Violence Grips Belfast After Stabbing Attack",
+   "outlets": 3,
+   "count": 5,
+   "status": "watching"
+  },
+  {
+   "sample": "On the Eve of the World Cup, U.S. Immigration Policy Turns Some Away",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Senior Russian Military Official Is Killed in Car Explosion Near Moscow",
+   "outlets": 4,
+   "count": 4,
+   "status": "watching"
+  }
+ ],
+ "cabinet": {
+  "situations": 7,
+  "situations_active": 7,
+  "discovered": 2,
+  "items": 456,
+  "developments": 456,
+  "claims": 48,
+  "entities": 40,
+  "edges": 210,
+  "history_nodes": 162,
+  "gate_rejects_7d": 0,
+  "runs": 4,
+  "backend": "st"
+ },
+ "gate": {
+  "clusters": 34,
+  "accepted": 2,
+  "rejected": 0,
+  "existing": 1,
+  "below": 31,
+  "pending": 0
+ }
 }
