@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-06-10T21:04:09Z",
+ "generated_utc": "2026-06-10T21:42:38Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
@@ -13,7 +13,8 @@
    "nyt-world",
    "rt",
    "taipeitimes",
-   "tass"
+   "tass",
+   "unnews"
   ],
   "failed": [
    {
@@ -37,9 +38,9 @@
     "reason": "HTTP Error 403: Forbidden"
    },
    {
-    "id": "unnews",
-    "label": "UN News",
-    "reason": "not well-formed (invalid token): line 1, column 0"
+    "id": "gdelt:us-iran-strikes-israel-lebanon-escalation",
+    "label": "GDELT US-Iran strikes Israel-Lebanon escalation",
+    "reason": "HTTP Error 429: Too Many Requests"
    },
    {
     "id": "gdelt:taiwan-strait-tensions-current",
@@ -47,9 +48,14 @@
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
-    "id": "gdelt:us-iran-strikes-israel-lebanon-escalation",
-    "label": "GDELT US-Iran strikes Israel-Lebanon escalation",
-    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+    "id": "gdelt:red-sea-houthi-shipping-current",
+    "label": "GDELT Red Sea",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT US tanker strike Gulf of Oman India sailors",
+    "reason": "HTTP Error 429: Too Many Requests"
    },
    {
     "id": "gdelt:sudan-civil-war-current",
@@ -64,11 +70,12 @@
    "name": "Russia-Ukraine",
    "bucket": "geopolitics",
    "discovered": false,
-   "items_24h": 145,
-   "items_48h": 207,
-   "outlets": 106,
+   "items_24h": 146,
+   "items_48h": 209,
+   "outlets": 108,
    "kinds": [
     "journalist",
+    "official record",
     "state media",
     "wire service"
    ],
@@ -131,13 +138,13 @@
     }
    ],
    "split": {
-    "a": "Russia's Lavrov says soldiers, not talks, will decide the war; Moscow rejects direct negotiations and accuses the UN of institutional bias",
-    "b": "Ukraine and E3 allies set five peace conditions in London while Zelensky continues drone strikes on Russian-occupied targets",
+    "a": "Ukraine and E3 allies set five conditions for peace in London, seeking a diplomatic end to the war.",
+    "b": "Russia's Lavrov says soldiers, not talks, will decide the war, as Moscow rebuffs direct negotiations.",
     "basis": "extracted from live headlines 2026-06-10"
    },
    "links": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
    ]
   },
   {
@@ -146,14 +153,22 @@
    "bucket": "geopolitics",
    "discovered": false,
    "items_24h": 91,
-   "items_48h": 170,
+   "items_48h": 171,
    "outlets": 107,
    "kinds": [
     "journalist",
     "official record",
-    "state media"
+    "state media",
+    "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-10T21:25:26Z",
+     "title": "Prominent Gazan doctor held by Israel without charge appears before Supreme Court",
+     "outlet": "Reuters",
+     "kind": "wire service",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQR2Fhdkt4c1NEa2xIYTFMS19CZEl4c3JXNFMzWmJTZzdHX3p2YkdFU2hMM3piUmI3amZ4RXJtSmRaTTZIWTVhVzNQSi03ZzlmeEwyaDh6U2ZRbnB4Mm4yVW84YVNhUHJXUURmOFNKNXBEUm1JOG5FS081b2lyMlhibmp3cE9Ja1Rad25SQlFLTkJkZkJSaEp6RGJhQmxNaFRhWERNa3Fnd2pjZTA0VTViZjdaZURDOXZmSHhxMExnangzaHpsbHpISQ?oc=5"
+    },
     {
      "ts": "2026-06-10T20:41:29Z",
      "title": "Gwyneth Paltrow\u2019s Israeli real estate ad goes viral",
@@ -202,18 +217,11 @@
      "outlet": "- IMEMC News",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQ3hkQ0JwNFR6WktuWE5iSEJJMlBqalZYRTIyRmxJZUQtMzMySGZsSHFfbmRtVDBLamhvTDhfWm41WlBSV0dZR25Ka1FtVFI1aTlURmJTQ0owR2ZadUdBd2tIcTJYNnJNTktyWVdFejZFcUx0SUcwMWhmd2RiTm45N2tBQ0t2SG5Nc3c?oc=5"
-    },
-    {
-     "ts": "2026-06-10T19:39:49Z",
-     "title": "World court prosecutor who went after Netanyahu for war crimes suspended over sexual misconduct",
-     "outlet": "Fox News World",
-     "kind": "journalist",
-     "url": "https://www.foxnews.com/world/world-court-prosecutor-who-went-after-netanyahu-war-crimes-suspended-over-sexual-misconduct"
     }
    ],
    "split": {
-    "a": "Freed Gaza flotilla activists allege torture, abuse, and sexual violence in Israeli detention; legal action has been filed against Israel",
-    "b": "Israel holds Gaza hospital director Abu Safiya as a Hamas officer; he calls his detention unjust and appeals for immediate release",
+    "a": "Israel holds Gaza hospital director Abu Safiya and a prominent Gazan doctor without formal charge, describing Abu Safiya as a Hamas officer.",
+    "b": "Abu Safiya appeals for release calling detention 'unjust'; freed flotilla activists allege torture, abuse, and sexual violence by Israeli forces.",
     "basis": "extracted from live headlines 2026-06-10"
    },
    "links": [
@@ -227,7 +235,107 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
+   ]
+  },
+  {
+   "id": "us-tanker-strike-gulf-of-oman-india-sailors",
+   "name": "US tanker strike Gulf of Oman India sailors",
+   "bucket": "geopolitics",
+   "discovered": true,
+   "items_24h": 76,
+   "items_48h": 166,
+   "outlets": 119,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-10T21:08:35Z",
+     "title": "\u2018We will be hitting Iran hard tonight\u2019 - US War Secretary",
+     "outlet": "RT",
+     "kind": "state media",
+     "url": "https://www.rt.com/news/641370-we-will-be-hitting-iran-hard-us-israel-live/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
+    },
+    {
+     "ts": "2026-06-10T21:00:34Z",
+     "title": "Britain introduces sweeping new powers to target foreign state-linked groups including Iran's IRGC",
+     "outlet": "Fox News World",
+     "kind": "journalist",
+     "url": "https://www.foxnews.com/world/britain-introduces-sweeping-new-powers-target-foreign-state-linked-groups-including-irans-irgc"
+    },
+    {
+     "ts": "2026-06-10T20:52:39Z",
+     "title": "Trump\u2019s \u2018Secret Mission\u2019 to Ferry Oil Past Iran Was Widely Disclosed",
+     "outlet": "NYT World",
+     "kind": "journalist",
+     "url": "https://www.nytimes.com/2026/06/10/world/middleeast/trump-oil-iran-strait-hormuz.html"
+    },
+    {
+     "ts": "2026-06-10T20:05:59Z",
+     "title": "India summons US envoy over attack on ship carrying Indian sailors off Oman",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/6/10/india-summons-us-envoy-over-ship-attack-that-left-three-indians-missing?traffic_source=rss"
+    },
+    {
+     "ts": "2026-06-10T20:00:05Z",
+     "title": "Live Updates: Latest from Israel, Iran, and Middle East",
+     "outlet": "The Jerusalem Post",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82QXpuRnhtLVlMZVI4MzBsN0xDMXVaOHdjWktINWJfZWllTmlCdEdyWGljSUF2MUFoSEhjd1RVOW9sWlVwRl9qVU5OSi1xSkphTWNWbFlvb083QV9vQWpqMmdNUzJEaHoxTXhMc09zdjBLSTB4QnFvTjVRTmZRbUk?oc=5"
+    },
+    {
+     "ts": "2026-06-10T19:52:02Z",
+     "title": "Israel threatens fresh strikes on Iran - Shafaq News | Latest breaking news in Iraq and the world",
+     "outlet": "\u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5uV28wbGpEaDdxbFB5MlRDSElNT0hRY1hKV0Ntd0RENzRpYjAzUDRzRVRTYUthWGJiLTl6T0ZVLVktTXdMcTVRMGFTS0NFRk8zaHBOZzF5bUxDTnJyLVZWZ0t0cFVpWXZ2Szc2UUFXNVZ3THZ3U3dxSFV2cEg?oc=5"
+    },
+    {
+     "ts": "2026-06-10T19:07:26Z",
+     "title": "Crisis in the Hormuz as US forces set Iranian-linked tanker ablaze while Trump announces fresh bombing campaign and B-52s deploy from Sicily",
+     "outlet": "Bankingnews",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQRXhHS29qZEtoMVRubkxjcm5CNThqclE5dkxURXpwcTh6YkVjZGNIYXA2NmNobWpONHhvTlJfN212YkNZZVhhNGVHWWVyMG1nczVQWkJkNXQzeGhKZmc3V0gyNVo4X2RhQVBLQW8xNHVGUlZ2NHBwSV9DbVhjVnA0TE83ZEtTZHJNeFRna3lZNEpJWXFVQzF3V3hDQUhoM0MzY09IeHlsSE9qTG9YR1RiWFBIVk9RNFZadmpfVzZtYTFOUUJxZmdaUjktZ2RNRjJ4enJ0VEFSbUMyRXdLQkwtY0ptNVZIenBWR0FTZzBCd3Y2SW54eFA3cDlkenpVN0lhd1ZIS0xOQWJvdWh5N1FjU3A0U2d4QXlTS0tz?oc=5"
+    },
+    {
+     "ts": "2026-06-10T19:06:07Z",
+     "title": "India protests US strike on tanker as 3 sailors missing",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxOWG9OcDB2b1lZNE50aWxNbnhlYi05RGMtMmQ3N3VPRElkYUVkbmt4Q2xBaDBPMDdWUTdsam5MbWk2c1RmeVI0SFFUTEtPZkloSzNhUXpSMGxPRnFVUExWdlpzbUxPQTVaSGxkWTdLcWZGa1FLODU1amZaZ0p6UDE0MzF2X2pXUzVWVjJHeE5GRHhabkM2U3VHRDRCeHJkUUNsN3o3NGxoQ2w1aEpHS19uNlI0RjBiLTdjR0dBVW10TmJIQUFKcGgzTEtYLTVYQzhYTnBIRjJTWV9xRUo2NFZNUWJqTGFtYUJvVGlGZTJuSlZZZHIxazVxWHpEWTFQOXFhcXZFeFZRaWFzNzAyTml3VUNFelo1VTlhdm55STFNRzQ?oc=5"
+    }
+   ],
+   "split": {
+    "a": "Trump and Hegseth say the US is striking Iran hard in retaliation for a downed US helicopter and stalled peace talks.",
+    "b": "Iran calls US strikes a 'calculated war crime'; India summons the US envoy over an attack on a ship carrying Indian sailors off Oman.",
+    "basis": "extracted from live headlines 2026-06-10"
+   },
+   "links": [
+    {
+     "entity": "donald trump",
+     "situations": [
+      "us-iran-strikes-israel-lebanon-escalation"
+     ]
+    },
+    {
+     "entity": "iran",
+     "situations": [
+      "red-sea-houthi-shipping-current",
+      "us-iran-strikes-israel-lebanon-escalation"
+     ]
+    },
+    {
+     "entity": "pete hegseth",
+     "situations": [
+      "us-iran-strikes-israel-lebanon-escalation"
+     ]
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
    ]
   },
   {
@@ -240,6 +348,7 @@
    "outlets": 39,
    "kinds": [
     "journalist",
+    "official record",
     "state media",
     "wire service"
    ],
@@ -302,8 +411,8 @@
     }
    ],
    "split": {
-    "a": "The US announces continued strikes on Iran, with Hegseth confirming tonight's attacks and Trump threatening more over stalled peace talks",
-    "b": "Iran accuses the US of a 'calculated war crime' and vows it will not hesitate to defend itself against further strikes",
+    "a": "The US struck Iran citing Tehran's downing of a US helicopter; Israel continued airstrikes killing dozens across south Lebanon and Tyre.",
+    "b": "Iran, Lebanon's health authorities, and UN Secretary-General Guterres warn of war crimes and the risk of a new full-scale Gulf war.",
     "basis": "extracted from live headlines 2026-06-10"
    },
    "links": [
@@ -327,10 +436,22 @@
       "red-sea-houthi-shipping-current",
       "west-bank-settler-sanctions-ethnic-cleansing"
      ]
+    },
+    {
+     "entity": "pete hegseth",
+     "situations": [
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    },
+    {
+     "entity": "united states",
+     "situations": [
+      "taiwan-strait-tensions-current"
+     ]
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US-Iran strikes Israel-Lebanon escalation, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US-Iran strikes Israel-Lebanon escalation, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
    ]
   },
   {
@@ -339,8 +460,8 @@
    "bucket": "geopolitics",
    "discovered": false,
    "items_24h": 47,
-   "items_48h": 66,
-   "outlets": 42,
+   "items_48h": 65,
+   "outlets": 41,
    "kinds": [
     "journalist",
     "state media",
@@ -409,103 +530,16 @@
     "b": "Taiwan denies stealing US technology while a US defense report flags ongoing vulnerabilities in its defense posture.",
     "basis": "extracted from live headlines 2026-06-10"
    },
-   "links": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Taiwan Strait, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
-   ]
-  },
-  {
-   "id": "us-tanker-strike-gulf-of-oman-india-sailors",
-   "name": "US tanker strike Gulf of Oman India sailors",
-   "bucket": "geopolitics",
-   "discovered": true,
-   "items_24h": 45,
-   "items_48h": 120,
-   "outlets": 93,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-06-10T20:52:39Z",
-     "title": "Trump\u2019s \u2018Secret Mission\u2019 to Ferry Oil Past Iran Was Widely Disclosed",
-     "outlet": "NYT World",
-     "kind": "journalist",
-     "url": "https://www.nytimes.com/2026/06/10/world/middleeast/trump-oil-iran-strait-hormuz.html"
-    },
-    {
-     "ts": "2026-06-10T20:05:59Z",
-     "title": "India summons US envoy over attack on ship carrying Indian sailors off Oman",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/news/2026/6/10/india-summons-us-envoy-over-ship-attack-that-left-three-indians-missing?traffic_source=rss"
-    },
-    {
-     "ts": "2026-06-10T20:00:05Z",
-     "title": "Live Updates: Latest from Israel, Iran, and Middle East",
-     "outlet": "The Jerusalem Post",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE82QXpuRnhtLVlMZVI4MzBsN0xDMXVaOHdjWktINWJfZWllTmlCdEdyWGljSUF2MUFoSEhjd1RVOW9sWlVwRl9qVU5OSi1xSkphTWNWbFlvb083QV9vQWpqMmdNUzJEaHoxTXhMc09zdjBLSTB4QnFvTjVRTmZRbUk?oc=5"
-    },
-    {
-     "ts": "2026-06-10T18:26:10Z",
-     "title": "US forces escort over 200 vessels through Strait of Hormuz, including tankers - Trump",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/world/2145209"
-    },
-    {
-     "ts": "2026-06-10T17:48:54Z",
-     "title": "Three Indian sailors missing after US says it hit tanker in Gulf of Oman",
-     "outlet": "BBC World",
-     "kind": "journalist",
-     "url": "https://www.bbc.com/news/articles/c0rygjw1kqxo?at_medium=RSS&at_campaign=rss"
-    },
-    {
-     "ts": "2026-06-10T17:19:00Z",
-     "title": "How Quiet Oman Landed Itself in Trump\u2019s Cross Hairs",
-     "outlet": "NYT World",
-     "kind": "journalist",
-     "url": "https://www.nytimes.com/2026/06/10/world/middleeast/oman-iran-trump-threat.html"
-    },
-    {
-     "ts": "2026-06-10T17:15:00Z",
-     "title": "Suez Canal Gets Oil Tanker Boost",
-     "outlet": "rigzone.com",
-     "kind": "journalist",
-     "url": "https://www.rigzone.com/news/wire/suez_canal_gets_oil_tanker_boost-10-jun-2026-183895-article/"
-    },
-    {
-     "ts": "2026-06-10T16:58:52Z",
-     "title": "Middle East \u2018bully is dead\u2019 - Trump",
-     "outlet": "RT",
-     "kind": "state media",
-     "url": "https://www.rt.com/news/641343-trump-iran-warnings-escalation/?utm_source=rss&utm_medium=rss&utm_campaign=RSS"
-    }
-   ],
-   "split": {
-    "a": "Trump frames the tanker strike as a legitimate operation, describing US forces as escorting over 200 vessels through the Strait of Hormuz",
-    "b": "India summons the US envoy demanding answers after three Indian sailors went missing following a US missile strike off Oman",
-    "basis": "extracted from live headlines 2026-06-10"
-   },
    "links": [
     {
-     "entity": "donald trump",
+     "entity": "united states",
      "situations": [
-      "us-iran-strikes-israel-lebanon-escalation"
-     ]
-    },
-    {
-     "entity": "iran",
-     "situations": [
-      "red-sea-houthi-shipping-current",
       "us-iran-strikes-israel-lebanon-escalation"
      ]
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Taiwan Strait, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
    ]
   },
   {
@@ -514,8 +548,8 @@
    "bucket": "geopolitics",
    "discovered": false,
    "items_24h": 44,
-   "items_48h": 88,
-   "outlets": 69,
+   "items_48h": 86,
+   "outlets": 67,
    "kinds": [
     "journalist"
    ],
@@ -578,8 +612,8 @@
     }
    ],
    "split": {
-    "a": "Houthis declare readiness to join the Iran war and expand Red Sea attacks, maintaining bans on Israeli shipping",
-    "b": "A cargo vessel exchanged fire with an armed craft off Yemen; the identity of the attacker remains disputed",
+    "a": "Yemen's Houthis have banned Israeli ships from the Red Sea, threatened to join the Iran-US conflict, and attacked a cargo vessel in the Gulf of Aden.",
+    "b": "The EU calls on Houthis to halt Red Sea threats; shipping analysts warn of severe global trade disruption compounded by Hormuz tensions.",
     "basis": "extracted from live headlines 2026-06-10"
    },
    "links": [
@@ -600,7 +634,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Red Sea, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
    ]
   },
   {
@@ -608,8 +642,8 @@
    "name": "West Bank settler sanctions ethnic cleansing",
    "bucket": "geopolitics",
    "discovered": true,
-   "items_24h": 43,
-   "items_48h": 114,
+   "items_24h": 42,
+   "items_48h": 115,
    "outlets": 87,
    "kinds": [
     "journalist",
@@ -675,8 +709,8 @@
     }
    ],
    "split": {
-    "a": "Amnesty International accuses Israel of state-led ethnic cleansing of West Bank Bedouins; campaigners demand sanctions target the Israeli government",
-    "b": "UK and Western allies impose sanctions on firms enabling settler violence, stopping short of sanctioning the Israeli government directly",
+    "a": "Amnesty International accuses Israel of state-led ethnic cleansing of West Bank Bedouins; settlers are also accused of blocking firefighting at a Christian village.",
+    "b": "Campaigners say UK-led sanctions on settler-linked firms are insufficient and demand the Israeli government itself be directly targeted.",
     "basis": "extracted from live headlines 2026-06-10"
    },
    "links": [
@@ -690,7 +724,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
    ]
   },
   {
@@ -765,17 +799,35 @@
     }
    ],
    "split": {
-    "a": "Sudan's RSF intensifies drone strikes killing civilians and damaging aid routes, with sources alleging supply support routed via UAE and Ethiopia",
-    "b": "Human rights groups and legal complainants file war crimes cases against RSF leadership in Kenyan courts, seeking criminal accountability",
+    "a": "Sudan's RSF is conducting intensified drone strikes in Kordofan and elsewhere, reportedly using suicide drones supplied via the UAE through Ethiopia.",
+    "b": "A war crimes complaint against RSF leadership has been filed in Kenyan courts; Human Rights Watch calls for prosecution of former RSF commanders.",
     "basis": "extracted from live headlines 2026-06-10"
    },
    "links": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Sudan, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Sudan, Kyiv Independent, Press TV, Sudan Tribune, Times of Israel."
    ]
   }
  ],
  "candidates": [
+  {
+   "sample": "Watch: Thousands fill Barcelona streets for Pope Leo visit",
+   "outlets": 3,
+   "count": 4,
+   "status": "watching"
+  },
+  {
+   "sample": "Bill Gates says Epstein wanted personal relationship, but he 'never reciprocated'",
+   "outlets": 3,
+   "count": 4,
+   "status": "watching"
+  },
+  {
+   "sample": "Pakistan launches deadly air strikes in Afghanistan, reigniting tensions",
+   "outlets": 3,
+   "count": 4,
+   "status": "watching"
+  },
   {
    "sample": "Manhunt under way in South Africa after 12 killed in mass shooting in Johannesburg",
    "outlets": 3,
@@ -784,8 +836,8 @@
   },
   {
    "sample": "Man reportedly shot at Kenya protest against US Ebola quarantine centre",
-   "outlets": 3,
-   "count": 3,
+   "outlets": 4,
+   "count": 4,
    "status": "watching"
   },
   {
@@ -795,21 +847,15 @@
    "status": "watching"
   },
   {
+   "sample": "Pro-Palestinian activists accused of intimidation campaign against University of Michigan officials",
+   "outlets": 9,
+   "count": 10,
+   "status": "watching"
+  },
+  {
    "sample": "On the Eve of the World Cup, U.S. Immigration Policy Turns Some Away",
    "outlets": 3,
    "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Somali World Cup Referee Denied Entry to U.S. Returns Home to Hero\u2019s Welcome",
-   "outlets": 3,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Serbia to maintain military neutrality while cooperating with NATO - Vucic",
-   "outlets": 3,
-   "count": 10,
    "status": "watching"
   }
  ],
@@ -817,22 +863,22 @@
   "situations": 8,
   "situations_active": 8,
   "discovered": 3,
-  "items": 884,
-  "developments": 884,
-  "claims": 62,
-  "entities": 50,
-  "edges": 282,
+  "items": 940,
+  "developments": 940,
+  "claims": 76,
+  "entities": 56,
+  "edges": 358,
   "history_nodes": 162,
-  "gate_rejects_7d": 1,
-  "runs": 5,
+  "gate_rejects_7d": 2,
+  "runs": 6,
   "backend": "st"
  },
  "gate": {
-  "clusters": 39,
-  "accepted": 1,
+  "clusters": 44,
+  "accepted": 0,
   "rejected": 1,
-  "existing": 2,
-  "below": 35,
+  "existing": 1,
+  "below": 42,
   "pending": 0
  }
 }
