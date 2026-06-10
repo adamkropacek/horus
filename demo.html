@@ -241,6 +241,54 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
 .tl-peek>summary:hover{color:var(--red)}
 .tl-peek[open]>summary{color:var(--ink); margin-bottom:8px}
 @media(max-width:640px){ #globeWrap{padding:0 14px} #globeStage{height:clamp(280px,44vh,420px)} .globe-ov .hint{display:none} }
+
+/* ===== Phase A: feed hero - THE SPLIT cards + rails ===== */
+.livechip{font-family:var(--mono); font-size:.6rem; letter-spacing:.12em; color:var(--red); border:1px solid rgba(229,52,43,.4); border-radius:99px; padding:2px 9px; margin-left:8px; vertical-align:1px}
+.feedwrap{display:grid; grid-template-columns:218px minmax(0,1fr) 286px; gap:16px; align-items:start; margin-top:18px}
+.rail{position:sticky; top:14px; display:flex; flex-direction:column; gap:14px}
+.railh{font-family:var(--mono); font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--mute); margin-bottom:9px}
+.railbox{border:1px solid var(--line); background:var(--surf); border-radius:var(--radius); padding:14px}
+.vfilters{display:flex; flex-direction:column; gap:6px}
+.vfilters .chip{text-align:left; border-radius:8px}
+.kindfilters{display:flex; flex-wrap:wrap; gap:5px}
+.kindfilters .chip{padding:5px 9px; font-size:.62rem}
+.river{display:flex; flex-direction:column; gap:13px; min-width:0}
+.pinlabel{font-family:var(--mono); font-size:.64rem; letter-spacing:.18em; color:var(--red); text-transform:uppercase; margin-bottom:-4px}
+.card.pinned{border-color:rgba(229,52,43,.45); background:linear-gradient(180deg,rgba(229,52,43,.05),var(--surf))}
+.card .ago{font-family:var(--mono); font-size:.62rem; color:var(--mute); white-space:nowrap}
+.splitbox{border:1px solid var(--line); border-left:2px solid var(--red); background:#0e1014; border-radius:8px; padding:10px 12px; display:flex; flex-direction:column; gap:7px}
+.splitbox .sl{font-family:var(--mono); font-size:.6rem; letter-spacing:.16em; color:var(--red); text-transform:uppercase}
+.sp{display:flex; gap:9px; font-size:.85rem; color:var(--mute2); line-height:1.4}
+.sp b{font-family:var(--mono); font-size:.66rem; color:var(--ink); border:1px solid var(--line); border-radius:4px; padding:1px 6px; height:fit-content; margin-top:1px}
+.sp.b b{color:var(--cyan)}
+.kindchips{display:flex; flex-wrap:wrap; gap:5px}
+.devitem{padding:9px 0; border-bottom:1px solid var(--line); cursor:pointer}
+.devitem:last-child{border-bottom:none}
+.devitem .t{font-size:.8rem; color:var(--mute2); line-height:1.35}
+.devitem:hover .t{color:var(--ink)}
+.devitem .m{font-family:var(--mono); font-size:.6rem; color:var(--mute); margin-top:4px; display:flex; gap:8px; flex-wrap:wrap}
+.devitem .m .o{color:var(--cyan)}
+.lensrow{font-family:var(--mono); font-size:.66rem; color:var(--mute2); line-height:1.6}
+.lensrow .bad{color:var(--red)}
+.railnote{font-family:var(--mono); font-size:.6rem; color:var(--mute); line-height:1.5; margin-top:8px}
+.beats{border:1px solid var(--line); background:var(--surf); border-radius:var(--radius); padding:6px 14px; margin-top:12px}
+.beat{display:flex; gap:10px; padding:9px 0; border-bottom:1px solid var(--line); font-size:.85rem; align-items:baseline}
+.beat:last-child{border-bottom:none}
+.beat .d{font-family:var(--mono); font-size:.64rem; color:var(--cyan); white-space:nowrap}
+.beat a{color:var(--mute2); text-decoration:none}
+.beat a:hover{color:var(--ink)}
+.beat .o{font-family:var(--mono); font-size:.62rem; color:var(--mute); white-space:nowrap; margin-left:auto}
+.unkbox{border:1px solid var(--line); border-left:2px solid var(--cyan); background:var(--surf); border-radius:var(--radius); padding:14px 16px; margin-top:10px}
+.unkbox ul{list-style:none}
+.unkbox li{color:var(--mute2); font-size:.85rem; margin:5px 0; padding-left:16px; position:relative; line-height:1.45}
+.unkbox li::before{content:"?"; position:absolute; left:0; color:var(--cyan); font-family:var(--mono)}
+.unkbox .fine{font-family:var(--mono); font-size:.62rem; color:var(--mute); margin-top:9px}
+@media(max-width:1080px){
+  .feedwrap{display:flex; flex-direction:column}
+  .rail{position:static}
+  .rail.left .vfilters{flex-direction:row; flex-wrap:wrap}
+  .beat .o{margin-left:0}
+}
 </style>
 </head>
 <body>
@@ -260,7 +308,7 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
     </svg>
     HORUS
   </div>
-  <div class="statusline"><b class="red">● LIVE</b> &nbsp;//&nbsp; refreshed 2026-06-10 &nbsp;//&nbsp; <span id="clock">--:--:-- UTC</span></div>
+  <div class="statusline"><b class="red">● LIVE</b> &nbsp;//&nbsp; <span id="refreshStamp">refreshed 2026-06-10 (seed)</span> &nbsp;//&nbsp; <span id="clock">--:--:-- UTC</span></div>
   <div class="spacer"></div>
   <div class="tier-toggle" title="Demo control: switch the viewing tier">
     <button id="tFree" class="on" onclick="setMode('free')">FREE</button>
@@ -1403,6 +1451,7 @@ const state = {
   view: "board",         // board | event
   eventId: null,
   filter: "all",
+  kinds: [],             // active KIND-of-evidence filters (empty = all)
   query: "",
   emailCaptured: false,
   freeReportUsed: false,
@@ -1414,6 +1463,41 @@ const KIND_ABBR = {
   "state media":"STATE","wire service":"WIRE","journalist":"JRNL","official record":"OFF.REC",
   "independent OSINT":"OSINT","research paper":"PAPER","market research":"MARKET","public debate":"DEBATE"
 };
+
+/* ===================== LIVE FEED (Phase A) =====================
+   feed.json is written by tools/syi/horus_feed_loop.py (GDELT + RSS, all sides).
+   No feed.json (file:// open, first deploy) -> page runs on the seeded brief alone. */
+let LIVE = null;
+function liveFor(id){ return (LIVE && LIVE.situations && LIVE.situations.find(s=>s.id===id)) || null; }
+function agoStr(ts){
+  const t = Date.parse(ts); if(!t) return "";
+  const m = Math.max(0, Math.round((Date.now()-t)/60000));
+  if(m<60) return m+"m ago";
+  const h = Math.round(m/60);
+  return h<48 ? h+"h ago" : Math.round(h/24)+"d ago";
+}
+function clip(s,n){ s=String(s||""); if(s.length<=n) return s; const c=s.slice(0,n); return c.slice(0, Math.max(40,c.lastIndexOf(" ")))+" ..."; }
+function seedSplit(e){
+  const c = e.claims && e.claims[0]; if(!c) return null;
+  const b = (c.opposition && c.opposition.statement) || (e.claims[1] && e.claims[1].statement);
+  return b ? {a:clip(c.statement,150), b:clip(b,150), basis:"seeded brief"} : null;
+}
+function splitFor(e){ const lv=liveFor(e.id); return (lv && lv.split && lv.split.a && lv.split.b) ? lv.split : seedSplit(e); }
+function cardKinds(e){
+  const lv = liveFor(e.id);
+  if(lv && lv.kinds && lv.kinds.length) return lv.kinds;
+  const ks = new Set(); e.claims.forEach(c=>c.carriers.forEach(cr=>ks.add(cr.kind))); return [...ks];
+}
+fetch("feed.json?v="+Date.now())
+  .then(r=>r.ok?r.json():null)
+  .then(j=>{
+    if(!j || !j.situations) return;
+    LIVE = j;
+    const st = document.getElementById("refreshStamp");
+    if(st && j.generated_utc) st.textContent = "refreshed "+j.generated_utc.slice(0,16).replace("T"," ")+" UTC // live loop";
+    document.getElementById("footMeta").textContent = SEED.microcopy.tagline + "  //  live wire + seeded brief";
+    render();
+  }).catch(()=>{});
 
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));}
 function fmtNum(n){if(n>=1e6)return (n/1e6).toFixed(n>=1e7?0:1)+"M";if(n>=1000)return (n/1000).toFixed(n>=10000?0:1)+"k";return String(n);}
@@ -1434,14 +1518,24 @@ function renderBoard(){
     const okScope = state.filter==="all" || e.scope===state.filter;
     const q = state.query.trim().toLowerCase();
     const okQ = !q || (e.title+" "+e.neutralLine).toLowerCase().includes(q);
-    return okScope && okQ;
+    const okKind = !state.kinds.length || cardKinds(e).some(k=>state.kinds.includes(k));
+    return okScope && okQ && okKind;
   });
+  /* river order = traction (live item counts), never source quality */
+  const traction = e=>{ const lv=liveFor(e.id); return lv ? (lv.items_24h||0)*1e6 + (lv.items_48h||0) : 0; };
+  evs.sort((a,b)=> (traction(b)-traction(a)) || (b.watchers-a.watchers));
   const scopes = ["all","geopolitics","markets","tech","conflict"];
   const totalClaims = SEED.events.reduce((a,e)=>a+e.claims.length,0);
+  const items24 = LIVE ? LIVE.situations.reduce((a,s)=>a+(s.items_24h||0),0) : null;
+  const okL = LIVE ? LIVE.lenses.ok.length : 0;
+  const failedL = LIVE ? LIVE.lenses.failed : [];
   const mc = SEED.microcopy;
 
+  const dev = LIVE ? LIVE.situations.flatMap(s=>(s.latest||[]).slice(0,3).map(b=>Object.assign({sid:s.id,sname:s.name},b))) : [];
+  dev.sort((a,b)=> a.ts<b.ts?1:-1);
+
   app().innerHTML = `
-    <div class="kicker"><span class="n">//</span> 01 &nbsp; SITUATION MONITOR</div>
+    <div class="kicker"><span class="n">//</span> 01 &nbsp; THE FEED${LIVE?`<span class="livechip">LIVE</span>`:`<span class="mute">&nbsp; seeded</span>`}</div>
     <div class="board-head">
       <div>
         <h1>What the world is arguing about</h1>
@@ -1449,42 +1543,85 @@ function renderBoard(){
       </div>
       <div class="statrow">
         <div class="stat"><div class="v">${SEED.events.length}</div><div class="l">situations tracked</div></div>
-        <div class="stat"><div class="v">${totalClaims}</div><div class="l">competing claims</div></div>
-        <div class="stat"><div class="v">8</div><div class="l">source kinds</div></div>
+        ${items24!==null
+          ? `<div class="stat"><div class="v">${items24}</div><div class="l">items / 24h</div></div>`
+          : `<div class="stat"><div class="v">${totalClaims}</div><div class="l">competing claims</div></div>`}
+        <div class="stat"><div class="v">${LIVE?okL+"/"+(okL+failedL.length):"8"}</div><div class="l">${LIVE?"lenses reporting":"source kinds"}</div></div>
       </div>
     </div>
-    <div class="controls">
-      <div class="filters">
-        ${scopes.map(s=>`<div class="chip ${state.filter===s?"on":""}" onclick="setFilter('${s}')">${s}</div>`).join("")}
+    <div class="feedwrap">
+      <aside class="rail left">
+        <div class="railbox">
+          <div class="railh">pillar</div>
+          <div class="vfilters">${scopes.map(s=>`<div class="chip ${state.filter===s?"on":""}" onclick="setFilter('${s}')">${s}</div>`).join("")}</div>
+        </div>
+        <div class="railbox">
+          <div class="railh">kind of evidence</div>
+          <div class="kindfilters">${Object.keys(KIND_ABBR).map(k=>`<div class="chip ${state.kinds.includes(k)?"on":""}" onclick="toggleKind('${esc(k)}')">${KIND_ABBR[k]}</div>`).join("")}</div>
+          <div class="railnote">descriptive evidence types - never a credibility score</div>
+        </div>
+        <div class="railbox">
+          <div class="railh">search</div>
+          <label class="search">
+            <span class="mute mono">&#8981;</span>
+            <input id="searchInput" placeholder="search situations" value="${esc(state.query)}" oninput="onSearch(this.value)">
+          </label>
+        </div>
+      </aside>
+      <div class="river">
+        ${evs.map((e,i)=>{
+          const pin = i===0 && traction(e)>0;
+          return (pin?`<div class="pinlabel">// today's top situation by traction</div>`:"") + cardHTML(e, pin);
+        }).join("") || `<p class="mute">No situations match.</p>`}
       </div>
-      <label class="search">
-        <span class="mute mono">⌕</span>
-        <input id="searchInput" placeholder="search situations" value="${esc(state.query)}" oninput="onSearch(this.value)">
-      </label>
-    </div>
-    <div class="grid">
-      ${evs.map(cardHTML).join("") || `<p class="mute">No events match.</p>`}
+      <aside class="rail right">
+        <div class="railbox">
+          <div class="railh">developing now</div>
+          ${dev.length ? dev.slice(0,7).map(b=>`
+            <div class="devitem" data-act="open" data-id="${esc(b.sid)}">
+              <div class="t">${esc(b.title)}</div>
+              <div class="m"><span class="o">${esc(b.sname)}</span><span>${esc(b.outlet)}</span><span>${esc(agoStr(b.ts))}</span></div>
+            </div>`).join("") : `<div class="railnote">The live wire connects when feed.json is served next to this page. Showing the seeded brief meanwhile.</div>`}
+        </div>
+        <div class="railbox">
+          <div class="railh">lens health</div>
+          ${LIVE ? `
+            <div class="lensrow">${okL} lenses reporting</div>
+            ${failedL.length?`<div class="lensrow bad">${failedL.length} dark: ${esc(failedL.map(f=>f.label||f.id).join(", "))}</div>`:""}
+            <div class="railnote">a dark lens is reported, never papered over - we don't know what we don't know</div>
+          ` : `<div class="lensrow">seeded demo - live lenses connect on the next loop run</div>`}
+        </div>
+      </aside>
     </div>
   `;
   const si = document.getElementById("searchInput");
   if(si && state.query){ si.focus(); si.setSelectionRange(si.value.length, si.value.length); }
 }
 
-function cardHTML(e){
-  const kinds = new Set();
-  e.claims.forEach(c=>c.carriers.forEach(cr=>kinds.add(cr.kind)));
-  const bars = Math.min(8, Math.max(3, kinds.size));
+function cardHTML(e, pinned){
+  const lv = liveFor(e.id);
+  const kinds = cardKinds(e);
+  const sp = splitFor(e);
+  const newest = lv && lv.latest && lv.latest[0];
+  const foot = lv
+    ? `${lv.items_24h} items / 24h &nbsp;//&nbsp; ${kinds.length} kinds`
+    : `${e.claims.length} claims &nbsp;//&nbsp; ${kinds.length} source kinds`;
   return `
-    <div class="card" data-act="open" data-id="${esc(e.id)}">
+    <div class="card${pinned?" pinned":""}" data-act="open" data-id="${esc(e.id)}">
       <div class="card-top">
-        <span class="tag ${e.scope}">${esc(e.scope)}</span>
-        <span class="pill ${e.status}">${esc(e.status)}</span>
+        <span style="display:flex;gap:8px;align-items:center"><span class="tag ${e.scope}">${esc(e.scope)}</span><span class="pill ${e.status}">${esc(e.status)}</span></span>
+        <span class="ago">${newest?esc(agoStr(newest.ts)):"seeded"}</span>
       </div>
       <h3>${esc(e.title)}</h3>
-      <div class="line">${esc(e.neutralLine)}</div>
-      <div class="spectrum-bar">${Array.from({length:8},(_,i)=>`<span style="background:${i<bars?(i%3===0?'var(--red)':i%3===1?'var(--cyan)':'var(--mute2)'):'var(--line)'}"></span>`).join("")}</div>
+      ${sp?`
+      <div class="splitbox">
+        <div class="sl">the split</div>
+        <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
+        <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
+      </div>`:`<div class="line">${esc(e.neutralLine)}</div>`}
+      <div class="kindchips">${kinds.map(k=>`<span class="kind">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
       <div class="card-foot">
-        <span>${e.claims.length} claims &nbsp;//&nbsp; ${kinds.size} source kinds</span>
+        <span>${foot}</span>
         <span class="att" title="Attention shape - NOT a credibility signal."><span class="dotpulse"></span>${fmtNum(e.watchers)} watching</span>
       </div>
     </div>`;
@@ -1551,16 +1688,38 @@ function renderEvent(id){
   // GATED: manufactured-consensus watch + forward scenarios.
   const claimsBlock = e.claims.map(claimHTML).join("");
 
-  // WHERE IT STANDS NOW = the most recent recorded beat on the timeline (no synthesis, no verdict).
-  const latest = (e.timeline&&e.timeline.length)
+  // WHERE IT STANDS NOW = the most recent recorded beat (live wire beats the seeded timeline when fresher).
+  const lv = liveFor(id);
+  const liveBeat = lv && lv.latest && lv.latest[0];
+  const seedLatest = (e.timeline&&e.timeline.length)
     ? e.timeline.reduce((a,b)=> (b.date>a.date ? b : a))
     : null;
+  const useLive = !!(liveBeat && (!seedLatest || liveBeat.ts.slice(0,10) >= seedLatest.date));
   // THE NEWS = the clearest, latest factual development (no synthesis, no verdict).
-  const standsNow = latest ? `
+  const standsNow = (liveBeat||seedLatest) ? `
       <div class="thenews">
         <span class="snlbl">the news &nbsp;//&nbsp; latest</span>
-        <span class="sntxt"><span class="snd">${esc(latest.date)}</span>${esc(latest.event)}</span>
+        <span class="sntxt"><span class="snd">${useLive?esc(liveBeat.ts.slice(0,10))+" &middot; "+esc(agoStr(liveBeat.ts)):esc(seedLatest.date)}</span>${useLive?esc(liveBeat.title):esc(seedLatest.event)}</span>
       </div>` : "";
+
+  // LATEST = the raw live wire, newest first (descriptive; the curated brief lives below).
+  const safeUrl = u=>/^https?:\/\//i.test(u||"") ? u : "";
+  const latestBlock = (lv && lv.latest && lv.latest.length) ? `
+    <div class="kicker"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
+    <div class="beats">
+      ${lv.latest.map(b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet)} &middot; ${esc(KIND_ABBR[b.kind]||b.kind)}</span></div>`).join("")}
+    </div>` : "";
+
+  // UNKNOWNS = mandatory honesty section: gaps reported, never papered over.
+  const unknownsBlock = `
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
+    <div class="unkbox">
+      <ul>
+        ${(lv && lv.unknowns ? lv.unknowns : []).map(u=>`<li>${esc(u)}</li>`).join("")}
+        <li>Anything with no public trace is invisible to HORUS - absence of evidence here is not evidence of absence.</li>
+      </ul>
+      <div class="fine">we don't know what we don't know - gaps are reported, never papered over</div>
+    </div>`;
 
   // HISTORY = collapsed by default; the user peeks in on click (no clutter up top).
   const timelineBlock = (e.timeline&&e.timeline.length) ? `
@@ -1627,14 +1786,19 @@ function renderEvent(id){
       <div class="att-line">
         <span><span class="dotpulse"></span> &nbsp;${fmtNum(e.watchers)} watching <span class="mute">(attention shape, not credibility)</span></span>
         <span>${e.claims.length} competing claims</span>
+        ${lv?`<span>${lv.items_24h} items / 24h on the wire</span>`:""}
       </div>
     </div>
 
-    <div class="kicker"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view</div>
+    ${latestBlock}
+
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view</div>
     ${legendHTML()}
     <div class="section">${claimsBlock}</div>
 
     ${timelineBlock}
+
+    ${unknownsBlock}
 
     ${depthSection}
   `;
@@ -1643,6 +1807,7 @@ function renderEvent(id){
 /* ===================== ACTIONS ===================== */
 function setMode(m){ state.mode=m; render(); }
 function setFilter(f){ state.filter=f; render(); }
+function toggleKind(k){ const i=state.kinds.indexOf(k); if(i>-1) state.kinds.splice(i,1); else state.kinds.push(k); render(); }
 function onSearch(v){ state.query=v; renderBoard(); }
 function openEvent(id){ state.view="event"; state.eventId=id; render(); }
 function goBoard(){ state.view="board"; render(); }
