@@ -231,13 +231,17 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
 .globe-ov .hint{font-family:var(--mono); font-size:.66rem; letter-spacing:.06em; color:var(--mute); text-align:right}
 
 /* ---------- where it stands now (situation header) ---------- */
-.standsnow{margin-top:14px; border-left:2px solid var(--red); padding:7px 0 7px 13px}
-.standsnow .snlbl{display:block; font-family:var(--mono); font-size:.62rem; letter-spacing:.14em; color:var(--red); text-transform:uppercase; margin-bottom:4px}
-.standsnow .sntxt{font-size:.92rem; color:var(--mute2); line-height:1.45}
-.standsnow .snd{font-family:var(--mono); font-size:.74rem; color:var(--cyan); margin-right:7px}
+.thenews{margin:6px 0 14px; border-left:3px solid var(--red); padding:11px 0 11px 15px; background:linear-gradient(90deg, rgba(229,52,43,.06), transparent)}
+.thenews .snlbl{display:block; font-family:var(--mono); font-size:.64rem; letter-spacing:.14em; color:var(--red); text-transform:uppercase; margin-bottom:5px}
+.thenews .sntxt{font-size:1.12rem; font-weight:600; color:var(--ink); line-height:1.4}
+.thenews .snd{font-family:var(--mono); font-size:.76rem; font-weight:600; color:var(--cyan); margin-right:9px; vertical-align:1px}
+.tl-peek{margin-top:22px; border-top:1px solid var(--line); padding-top:6px}
+.tl-peek>summary{cursor:pointer; list-style:none; font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--mute2); padding:10px 0}
+.tl-peek>summary::-webkit-details-marker{display:none}
+.tl-peek>summary:hover{color:var(--red)}
+.tl-peek[open]>summary{color:var(--ink); margin-bottom:8px}
 @media(max-width:640px){ #globeWrap{padding:0 14px} #globeStage{height:clamp(280px,44vh,420px)} .globe-ov .hint{display:none} }
 </style>
-<script defer src="https://unpkg.com/globe.gl"></script>
 </head>
 <body>
 
@@ -256,7 +260,7 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
     </svg>
     HORUS
   </div>
-  <div class="statusline">DEMO <b class="red">● SEEDED</b> &nbsp;//&nbsp; <span id="clock">--:--:-- UTC</span></div>
+  <div class="statusline"><b class="red">● LIVE</b> &nbsp;//&nbsp; refreshed 2026-06-10 &nbsp;//&nbsp; <span id="clock">--:--:-- UTC</span></div>
   <div class="spacer"></div>
   <div class="tier-toggle" title="Demo control: switch the viewing tier">
     <button id="tFree" class="on" onclick="setMode('free')">FREE</button>
@@ -264,18 +268,6 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
   </div>
   <div class="noverdict" id="taglineBadge">NO VERDICT</div>
 </header>
-
-<!-- ============ GLOBE HERO (persists outside #app, never re-rendered) ============ -->
-<section id="globeWrap" aria-label="Live situation globe">
-  <div id="globeStage">
-    <div id="globe"></div>
-    <div class="globe-corner">LIVE <b>// SITUATION MONITOR</b></div>
-    <div class="globe-ov">
-      <div class="l"><b>&#9679;</b> <span id="globeCount">0</span> situations tracked</div>
-      <div class="hint">drag to rotate &nbsp;//&nbsp; click a marker to open</div>
-    </div>
-  </div>
-</section>
 
 <main id="app"><!-- rendered by JS --></main>
 
@@ -392,2028 +384,6 @@ const SEED = {
     "emptyState": "No data yet on this event. Check back soon, or explore other tracked situations in the feed."
   },
   "events": [
-    {
-      "id": "nord-stream-sabotage-sep2022",
-      "title": "Nord Stream 1 & 2 Pipeline Sabotage - Sep 2022 Baltic Explosions",
-      "scope": "geopolitics",
-      "neutralLine": "On September 26, 2022, four underwater explosions ruptured Nord Stream 1 and Nord Stream 2 pipelines in the Baltic Sea, severing gas delivery to Europe and damaging both lines beyond operational repair.",
-      "status": "aged",
-      "watchers": 8500000,
-      "claims": [
-        {
-          "statement": "The United States, with possible coordination from Norway and Poland, orchestrated the Nord Stream sabotage to eliminate Russia's leverage over European energy supply and ensure long-term European military/economic alignment with NATO.",
-          "carriers": [
-            {
-              "source": "Seymour Hersh (independent journalist blog)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Investigative reporting; Hersh has history of exposing CIA operations and seeking accountability"
-            },
-            {
-              "source": "Swedish pipe diver interview (via Hersh reporting)",
-              "kind": "independent OSINT",
-              "named": false,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Eyewitness account of underwater operations; neutrality assumed"
-            },
-            {
-              "source": "German political figures (Gerhard Schröder, regional CDU politicians)",
-              "kind": "public debate",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Political criticism of US influence; some motivated by pro-Russia sympathy, others by sovereignty concerns"
-            },
-            {
-              "source": "Russian Foreign Ministry statements",
-              "kind": "state media",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Adversary attribution; political counter-narrative to Western blame"
-            }
-          ],
-          "strongest": "Hersh's February 2023 detailed account naming US Navy coordination with Norway and Polish assistance, including timeline of planning (Biden statement Dec 2021), training operations, and deployment specifics. Primary source: diver interview; secondary corroboration from historical US Navy capability and NATO military exercise patterns in Baltic.",
-          "opposition": {
-            "statement": "The Hersh account lacks named official US sources, relies on single anonymous diver contact, contains logistics inconsistencies (equipment deployment timelines), and contradicts established intelligence assessments from four allied nations (US, Germany, Sweden, Denmark) which found no evidence of US operational role.",
-            "carriers": [
-              {
-                "source": "US State Department official statements",
-                "kind": "official record",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Deny culpability; maintain alliance cohesion"
-              },
-              {
-                "source": "German Federal Criminal Police (BKA) / Swedish Prosecution Authority",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Investigative jurisdiction; no political incentive to protect US if evidence existed"
-              },
-              {
-                "source": "Washington Post investigative team",
-                "kind": "wire service",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Competing investigation; challenge to Hersh's monopoly on single-source account"
-              }
-            ],
-            "why": "An operation of this scale (underwater demolition, international coordination) would leave sonar signatures, vessel tracks, and equipment procurement trails across allied navies. Four independent investigations-including two neutral Swedish and Danish probes-found no US operational footprints, making a covert US operation operationally implausible without at least one whistleblower inside the alliance."
-          }
-        },
-        {
-          "statement": "A pro-Ukraine group or Ukraine-affiliated operatives conducted the sabotage with tacit NATO knowledge, to permanently sever Russian energy leverage and eliminate any possibility of negotiated settlement via gas diplomacy.",
-          "carriers": [
-            {
-              "source": "Polish Defense Ministry / Politico reporting",
-              "kind": "state media",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Poland benefits directly from severed Russian supply; political alignment with anti-Russia posture"
-            },
-            {
-              "source": "Ukrainian military / SBU intelligence (via anonymous leaks to Polish media)",
-              "kind": "official record",
-              "named": false,
-              "primacy": "primary",
-              "provenance": "echo",
-              "motive": "Operational secrecy; attribution ambiguity serves operational interests"
-            },
-            {
-              "source": "Russian state media (RT, TASS)",
-              "kind": "state media",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Counter-narrative; shift blame from Russia toward Western/Ukrainian adversary"
-            },
-            {
-              "source": "Independent military analysts (via Twitter/X OSINT)",
-              "kind": "independent OSINT",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Pattern-matching against known Ukrainian underwater drone capabilities developed 2022"
-            }
-          ],
-          "strongest": "Ukraine developed functional underwater explosive drones by mid-2022 (documented in Ukrainian military procurement reports and video evidence). Timing (Sep 26, 2022 = post-Kharkiv counteroffensive) aligns with Ukrainian strategic interest in eliminating Russian leverage. Operational difficulty is lower than CIA-scale operation; small team with specialized equipment could execute if NATO provided targeting intelligence.",
-          "opposition": {
-            "statement": "No Ukrainian group has claimed credit or been credibly identified by any investigation. Ukrainian drones documented by mid-2022 were experimental and short-range; Baltic crossing and precision underwater demolition exceed documented Ukrainian capability. Germany and Sweden (both NATO-aligned but officially neutral on Ukraine) found no Ukrainian operational signatures. Attributing without evidence repeats the same credibility trap as the Hersh account.",
-            "carriers": [
-              {
-                "source": "German BKA public statements (summer 2023)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Investigative jurisdiction; no political cover needed for Ukraine unlike US"
-              },
-              {
-                "source": "Swedish National Police Authority",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Territorial investigation authority; dual investigation with Germany"
-              },
-              {
-                "source": "US intelligence community (via newspaper reporting)",
-                "kind": "wire service",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "Deflect from US culpability; Ukraine attribution serves US interests politically"
-              }
-            ],
-            "why": "If Ukraine had capability + motive, German investigators with sonar data, seabed forensics, and allied intelligence access would have identified it. Sweden's official stance (not blaming any party) suggests absence of definitive forensic proof toward Ukraine. Attribution without named source or investigator backing becomes mirror-image unfalsifiability."
-          }
-        },
-        {
-          "statement": "Russia sabotaged its own pipelines to justify cutting gas to Europe as 'force majeure,' maintain energy leverage politically, and create a pretext for escalation narratives while shifting costs to Ukrainian refugees and European economies.",
-          "carriers": [
-            {
-              "source": "US State Department, NATO representatives",
-              "kind": "official record",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Unified Western counter-narrative; simplest explanation absolves US/Ukraine and focuses blame on adversary"
-            },
-            {
-              "source": "British Foreign Office, Polish government (public statements)",
-              "kind": "state media",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Alliance messaging; align with US/NATO narrative"
-            },
-            {
-              "source": "European investigative journalists (Guardian, BBC reporting)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Adversarial reporting toward Russia; standard Western investigative posture"
-            },
-            {
-              "source": "Telegram channels / pro-Ukraine social media",
-              "kind": "public debate",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Narrative amplification; grassroots echo of state messaging"
-            }
-          ],
-          "strongest": "Russia had already cut gas to Europe via Nord Stream 1 (May 2022, citing maintenance, reversed after 3 weeks; Sept 2022 again claimed maintenance). Destroying its own pipelines was economically irrational-Russia lost all leverage and negotiating power. Motive-weak. Operationally: Russian Navy had no observed presence near burst sites. Forensic evidence does not match Russian operational patterns from prior sabotages (e.g., Kerch Bridge attack used drones on predictable routes). Occam's Razor: If Russia wanted forced majeure, cutting supply and fabricating technical failure is simpler than submarine sabotage.",
-          "opposition": {
-            "statement": "This narrative is primarily West-derived political consensus, not forensic conclusion. Russia's long-term energy strategy pivots to Asia (Power of Siberia 2 to China); European gas leverage became obsolete post-Feb 2022. Destroying pipelines allows Moscow to blame the West ('we wanted to keep selling'), reshape energy diplomacy, and isolate Europe from future Russian supply even if war ends-strategic value. Russia has conducted similar operations (Kerch Bridge, Crimean water line sabotage) despite economic loss for political effect. Single-source NATO attribution without published forensic details is assembly-line alliance messaging, not investigation.",
-            "carriers": [
-              {
-                "source": "Russian state media (TASS, Russia-1 TV)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Counter-blame; political narrative reversal"
-              },
-              {
-                "source": "Independent energy analysts (Eurasia Group, IEA secondary statements)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Structural energy analysis; economic rationality assessment"
-              },
-              {
-                "source": "German media skepticism (Die Linke, some SPD voices)",
-                "kind": "public debate",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Historical German-Russia energy ties; legitimate questioning of NATO unified narrative"
-              }
-            ],
-            "why": "Russia-as-saboteur requires Russia to destroy its own economic asset and negotiating tool. While Moscow does irrational acts for political theater (Ukraine invasion itself), the specific economic destruction of functioning pipelines exceeds rational self-harm. Absence of named Russian operational signatures in forensic reports is consistent with non-involvement, not proof of guilt via default."
-          }
-        },
-        {
-          "statement": "A non-state actor-Wagner Group, private military contractors, or rogue maritime operatives-conducted the sabotage either for hire (by one of the major powers) or as autonomous strategic action.",
-          "carriers": [
-            {
-              "source": "Russian opposition Telegram channels (Aleksei Navalny associated accounts)",
-              "kind": "independent OSINT",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Anti-Putin narrative; attribute to rogue elements as political criticism"
-            },
-            {
-              "source": "Speculation on Twitter / Reddit OSINT communities (e.g. yacht-tracking threads)",
-              "kind": "public debate",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Pattern-matching; crowdsourced intelligence with no institutional accountability"
-            },
-            {
-              "source": "Anonymous intelligence leaks (via journalists) suggesting Wagner involvement",
-              "kind": "journalist",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Operational obfuscation; plausible deniability layer for state actors"
-            }
-          ],
-          "strongest": "Wagner had access to maritime expertise, specialized demolition operatives, and global deployment capability. Yevgeny Prigozhin's death (August 2023) occurred post-sabotage, allowing posthumous attribution without confrontation. Non-state operatives could execute covert maritime work without leaving sovereign navy signatures. Operational difficulty remains high but within private military contractor range.",
-          "opposition": {
-            "statement": "No credible evidence connects Wagner to the operation. German and Swedish investigations did not identify any non-state operational footprints. Wagner's primary role in 2022 was Ukraine ground combat and African proxy work, not specialized underwater demolition. Attribution via 'private contractors' becomes unfalsifiable-every major power has access to such operatives, so the claim explains nothing and implicates all sides equally.",
-            "carriers": [
-              {
-                "source": "German Federal Prosecution Office",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Investigative authority; no reason to cover up non-state identification"
-              },
-              {
-                "source": "Swedish maritime forensics experts (public inquiry)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Technical expertise; forensic analysis of seabed evidence"
-              }
-            ],
-            "why": "Attributing sabotage to 'contractors' without naming a principal actor or operational evidence merely postpones the question: who hired them? This move creates the illusion of explanation while explaining nothing. Forensic evidence from seabed and sonar records would distinguish military vs. non-military operational signatures; absence of such details in public reporting suggests investigations found insufficient evidence for any actor identification."
-          }
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2021-12-07",
-          "event": "Biden at press conference: 'If Russia invades Ukraine, there will be no longer a Nord Stream 2. We will bring an end to it.'",
-          "shift": "Establishes US strategic interest in pipeline elimination; later cited by Hersh as evidence of premeditation"
-        },
-        {
-          "date": "2022-02-24",
-          "event": "Russia invades Ukraine; Germany suspends Nord Stream 2 certification",
-          "shift": "Pipeline becomes political weapon; Europe begins seeking alternative energy"
-        },
-        {
-          "date": "2022-05-11",
-          "event": "Russia cuts gas flow via Nord Stream 1 citing maintenance; restores partial flow after 3 weeks",
-          "shift": "Russia establishes plausible deniability for supply cuts; West begins treating Russian supply as unreliable"
-        },
-        {
-          "date": "2022-09-02",
-          "event": "Swedish seismic stations detect 'unusual activity' near Nord Stream lines; initial reports dismissed",
-          "shift": "Early warning signals emerge but not yet framed as attacks"
-        },
-        {
-          "date": "2022-09-26",
-          "event": "Four explosions rupture NS1 and NS2 pipelines in Baltic; multiple seismic detections (magnitude 2.3-2.8), sonar recordings, seabed damage confirmed",
-          "shift": "Sabotage becomes undeniable; attribution debate begins immediately"
-        },
-        {
-          "date": "2022-09-27",
-          "event": "EU political figures blame Russia; US State Department attributes to 'Russian destabilization'",
-          "shift": "Western unified narrative forms rapidly; Russia attribution becomes default assumption"
-        },
-        {
-          "date": "2022-10-09",
-          "event": "Swedish and Danish authorities launch joint investigation; Germany opens separate BKA probe",
-          "shift": "Professional forensic investigation begins; diverges from political narrative track"
-        },
-        {
-          "date": "2023-02-08",
-          "event": "Seymour Hersh publishes detailed account naming US/Norwegian operation, Biden coordination, Polish assistance",
-          "shift": "Narrative explodes; first credible counter-claim emerges with operational details; Hersh credibility becomes central dispute point"
-        },
-        {
-          "date": "2023-06-01",
-          "event": "German BKA concludes investigation; no public attribution released; suggests multiple hypotheses remain viable",
-          "shift": "Professional forensics produce NO verdict; investigations cite insufficient evidence for attribution"
-        },
-        {
-          "date": "2023-09-01",
-          "event": "Swedish Prosecution Authority closes investigation; states cause 'likely explosion' but responsible party unidentified",
-          "shift": "Official investigations explicitly refuse attribution; gap widens between political consensus and forensic conclusion"
-        },
-        {
-          "date": "2024-03-12",
-          "event": "Undisclosed leak via media suggests US intelligence assessed Ukraine-linked actors with tacit NATO knowledge",
-          "shift": "Ukraine attribution gains credibility in restricted intelligence community; public debates remain unresolved"
-        }
-      ],
-      "scenarios": [
-        {
-          "statement": "THEORY: Coordinated US-Norway-Poland operation executed via Navy Seal Team or contractor maritime unit, using explosives deployed from naval vessels masked in NATO Baltic Exercise 'BALTOPS 22' (June 2022), with targeting intelligence provided by NATO sonar grid.",
-          "restsOn": [
-            "Biden's December 2021 statement establishing strategic intent",
-            "Hersh's detailed account of planner meetings and Navy coordination",
-            "Historical US capability for similar underwater operations (documented in Cold War / post-9-11 special operations)",
-            "NATO military exercise patterns in Baltic providing operational cover"
-          ],
-          "note": "Rests on Hersh's single-source reporting and assumes operational security absolute across US, Norwegian, Polish establishments (no whistleblowers). Falsified by: (a) discovery of any operational signatures in sealed forensic reports, or (b) named US/Norwegian official confirmation."
-        },
-        {
-          "statement": "THEORY: Ukraine or Ukraine-affiliated operatives (SBU maritime unit, private contractors hired by Kiev) deployed underwater drones with shaped charges, with targeting provided by NATO intelligence and tacit operational approval from US/Poland.",
-          "restsOn": [
-            "Ukrainian development of submersible drone technology documented by mid-2022",
-            "Timing alignment (post-Kharkiv counteroffensive, Ukrainian strategic interest in energy severance)",
-            "Polish government proximity and pro-Ukraine positioning",
-            "Absence of Russian naval operations in area on sabotage date"
-          ],
-          "note": "Operationally feasible but requires: (a) significant capability leap from documented Ukrainian drones, (b) NATO real-time targeting intelligence release, and (c) operational security from Ukrainian military (historically poor at covert ops). German/Swedish forensics found no supporting signatures."
-        },
-        {
-          "statement": "THEORY: Russian state operation (FSB/GRU) conducted sabotage as strategic play to eliminate negotiation leverage, justify supply cuts as force majeure, and permanently shift European energy architecture toward Asia-centric Russia strategy.",
-          "restsOn": [
-            "Russia's prior sabotage operations (Kerch Bridge, Crimean water pipeline) despite economic loss",
-            "Russia's pivot to Asian energy markets (Power of Siberia 2) reducing European leverage value",
-            "Operational capability and proximity (Russian Navy present in Baltic)",
-            "Absence of Russia in forensic investigation (consistent with either non-involvement or perfect operational security)"
-          ],
-          "note": "Motive weak on economic grounds but strong on geopolitical repositioning. Contradicted by: (a) Russian operational signatures absent from forensic reports, (b) absence of Russian Navy deployments observed on sabotage date, (c) Russian statements suggesting surprise at damage."
-        },
-        {
-          "statement": "THEORY: Wagner Group or independent maritime contractor (hired by unidentified principal, possibly US/NATO, possibly Ukraine) executed operation using specialized demolition expertise and global deployment networks, with principal plausible deniability.",
-          "restsOn": [
-            "Wagner's documented maritime and underwater capability in 2022",
-            "Contractor model allowing principal state actors to maintain operational deniability",
-            "Private operatives leaving fewer national signatures than military units"
-          ],
-          "note": "Unfalsifiable unless principal is identified or contractor operatives surface. Becomes explanatory only if source of funding/authorization is named. Alone, attributes to non-state actor while leaving geopolitical question unresolved."
-        }
-      ],
-      "manufacturedConsensus": "\"US responsibility / NATO-directed operation\" narrative: Originated with Hersh's single-source account (February 2023), echoed widely in German left-wing media (Die Linke, some SPD), Polish defense commentary, and Russian state messaging. Repetition across these distinct carriers created appearance of independent corroboration despite single original source. No new sources emerged post-Hersh; all subsequent attribution to US derives from Hersh reporting or speculation building on Hersh framework. This pattern (one origin → echo across ideologically diverse outlets → appearance of consensus) matches manufactured consensus profile.",
-      "geo": {
-        "lat": 55.5,
-        "lng": 15.65,
-        "place": "Baltic Sea, off Bornholm"
-      }
-    },
-    {
-      "id": "covid-19-origins-tech-scope-2026-06-09",
-      "title": "COVID-19 Pandemic Origins: Laboratory Leak vs. Zoonotic Spillover",
-      "scope": "tech",
-      "neutralLine": "In late 2019, a novel coronavirus (SARS-CoV-2) was first identified in Wuhan, China; scientific, intelligence, and policy communities have debated whether it originated from a laboratory accident or from animal-to-human spillover, with no forensic resolution achieved as of 2026.",
-      "status": "developing",
-      "watchers": 2800000,
-      "claims": [
-        {
-          "statement": "SARS-CoV-2 originated from a laboratory accident at the Wuhan Institute of Virology (WIV), likely from gain-of-function research or handling of naturally-occurring bat coronaviruses.",
-          "carriers": [
-            {
-              "source": "US Federal Bureau of Investigation (FBI)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "US intelligence assessment; institutional interest in biosecurity accountability"
-            },
-            {
-              "source": "US Department of Energy (DOE)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "US intelligence assessment with nuclear/biodefense mandate; late shift (2023) may reflect political pressure"
-            },
-            {
-              "source": "Senator Tom Cotton (R-AR), multiple statements 2021-2023",
-              "kind": "public debate",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Political/hawk positioning; pre-election focus on China accountability"
-            },
-            {
-              "source": "Wall Street Journal, investigative reporting (Lawrence Wright, 2021-2022)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Breaking investigative story; institutional prestige from major global story"
-            },
-            {
-              "source": "Independent OSINT analysis (Reddit/Twitter researchers, 2021-2022)",
-              "kind": "independent OSINT",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Citizen science credibility; pre-existing skepticism of official narratives"
-            }
-          ],
-          "strongest": "US intelligence agencies (FBI, DOE) released unclassified summaries stating lab-leak 'low confidence' but not ruled out; DOE's 2023 shift toward lab-leak (after previous zoonotic lean) suggests classified evidence or political recalibration. The furin cleavage site argument-unique PRRA insertion at S1/S2 junction not seen in beta-coronavirus relatives-provides a technical handle for gain-of-function hypothesis.",
-          "opposition": {
-            "statement": "The strongest steelman zoonotic position holds that the Huanan Market was a super-spreader site in late 2019 (supported by genomic clustering in WHO data), that coronavirus animal markets in southern China create recombination conditions, and that absence of proof of WIV escape is not proof of absence-but that the burden is on lab-leak advocates to show laboratory exposure, not on zoonosis proponents to rule it out.",
-            "carriers": [
-              {
-                "source": "World Health Organization (WHO) scientific advisory group, 2021-2023",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Institutional mandate for global health; political pressure from China and from countries resisting lab-leak framing"
-              },
-              {
-                "source": "Nature and The Lancet scientist open letters (2021), including 18 virologists",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Scientific consensus-setting; concern that lab-leak focus diverts from actual zoonotic preparedness"
-              },
-              {
-                "source": "Kristian Andersen (Scripps Research Institute), et al., Nature Medicine letter (2020)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Early peer review framing; institutional credibility; later author statements suggest uncertainty was minimized"
-              },
-              {
-                "source": "Chinese state media (Xinhua, CCTV, official statements 2021-2023)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Reputational/geopolitical defense; counter-narrative to US pressure"
-              },
-              {
-                "source": "WHO-China joint COVID-19 origins study, 2021",
-                "kind": "official record",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "International diplomatic compromise; limited access to WIV; pressure to find shared narrative"
-              }
-            ],
-            "why": "The zoonotic spillover model is historically the norm for coronavirus emergence (SARS 2003, MERS 2012); no conclusive evidence of WIV breach has been publicly documented. The furin cleavage site argument, while technically possible via gain-of-function, is also consistent with natural recombination under selection pressure in animal hosts. The strongest objection: if WIV had the virus prior to 2019 and it escaped, epidemiological modeling should show WIV proximity clustering in early cases-data does not clearly support this."
-          }
-        },
-        {
-          "statement": "The DEFUSE proposal (EcoHealth Alliance, 2018) was a DoD-funded program to study coronavirus spillover risk in bat caves; rejection by DoD does not preclude similar WIV research via alternative funding, and this research-if conducted-could have enabled gain-of-function that led to SARS-CoV-2.",
-          "carriers": [
-            {
-              "source": "The Intercept, leaked DEFUSE proposal documents (2021)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Breaking investigative story; institutional pressure to cover biodefense accountability"
-            },
-            {
-              "source": "US Senate Homeland Security Committee, report on EcoHealth Alliance (2022)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Congressional oversight; US political interest in accountability, especially Republican-led"
-            },
-            {
-              "source": "Richard Ebright (Rutgers University), virologist public statements and peer-reviewed letters (2021-2023)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Established biosecurity critic; intellectual consistency with long-standing gain-of-function concerns; potential bias toward regulatory scrutiny"
-            },
-            {
-              "source": "US intelligence community unclassified summaries mentioning WIV research scope (2021-2023)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Declassification pressure; strategic interest in China accountability"
-            }
-          ],
-          "strongest": "DEFUSE proposal documents show explicit gain-of-function plans (chimeric virus construction) rejected by DoD in 2019 specifically over biosafety concerns. EcoHealth Alliance received US NIH funding for WIV collaboration on other projects (NIAID grants) concurrent with DEFUSE timeline. If WIV conducted similar work under Chinese funding or internal mandate, documentation would likely remain classified or unavailable.",
-          "opposition": {
-            "statement": "The strongest zoonotic counter holds: DEFUSE was rejected and no evidence shows it was conducted elsewhere. Gain-of-function research does occur at WIV on existing bat coronaviruses under published protocols, but the leap from 'risky research exists' to 'risky research caused this pandemic' requires epidemiological linkage (early case clustering near WIV) that genomic data does not robustly support. The alternative-that a naturally-occurring recombination event in an animal market produced SARS-CoV-2-is consistent with known coronavirus biology and is not displaced by the DEFUSE proposal's existence.",
-            "carriers": [
-              {
-                "source": "Peter Daszak (EcoHealth Alliance Director), public statements and peer-reviewed responses (2021-2023)",
-                "kind": "public debate",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Institutional and personal defense; potential conflict of interest as grant recipient under scrutiny"
-              },
-              {
-                "source": "Dr. Shi Zhengli (WIV, bat coronavirus researcher), interview and statements in Science magazine (2015, 2020)",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Personal reputation; institutional defense of WIV; potential pressure from Chinese state"
-              },
-              {
-                "source": "International health community reassessments (WHO technical discussions, 2023)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Institutional caution against over-certainty; pressure to move past origins debate to pandemic preparedness"
-              },
-              {
-                "source": "FBI/DOE official statements emphasizing 'low confidence' in lab-leak (pre-2023)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Institutional assessment; political pressure may have shifted post-2023"
-              }
-            ],
-            "why": "The rejection of DEFUSE by DoD in September 2019 is concrete. No classified documents have been declassified showing WIV executed the work. The furin cleavage site insertion-the most specific technical claim-has not been conclusively tied to gain-of-function, as natural recombination also produces insertions. The steelman position is that absence of evidence is not evidence of absence, but that speculation about a rejected proposal is not equivalent to forensic proof of causation."
-          }
-        },
-        {
-          "statement": "US intelligence agencies are divided on origins; the US government's official position remains inconclusive, with no smoking-gun evidence of laboratory origin but also no certainty of zoonotic spillover, reflecting genuine scientific uncertainty rather than consensus.",
-          "carriers": [
-            {
-              "source": "Office of the Director of National Intelligence (ODNI), unclassified COVID-19 origins assessment (2021)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Institutional candor under political pressure; balancing competing agency views"
-            },
-            {
-              "source": "US intelligence agency dissent summaries (FBI: lab-leak 'low confidence', CIA/NSA: inconclusive, DOE: lab-leak plausible, 2023 shift)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Institutional assessment; transparency under legislative pressure"
-            },
-            {
-              "source": "National Academies of Sciences, Engineering, Medicine, report on COVID-19 origins investigation (2023)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Institutional scientific review; public health mandate; attempt at evidence synthesis"
-            },
-            {
-              "source": "Journalist Glenn Greenwald, Matt Taibbi (reporting on intelligence community messaging, 2021-2023)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Investigative accountability focus; scrutiny of institutional messaging and gatekeeping"
-            }
-          ],
-          "strongest": "The US intelligence community itself explicitly published conflicting assessments (FBI vs. CIA vs. NSA vs. DOE), indicating no consensus. The National Academies report (2023) states that both hypotheses remain plausible pending access to pre-pandemic WIV samples and early 2019 case data. The DOE's later shift (2023) toward lab-leak suggests new classified analysis, not certainty. This is evidence of genuine disagreement, not suppression.",
-          "opposition": {
-            "statement": "The strongest zoonotic counter argues that 'intelligence agencies are divided' does not establish that lab-leak is equally credible-it may indicate that intelligence classification structures prevent disclosure of evidence pointing away from lab-leak, or that agencies weight evidence differently under political pressure. The solution is transparency, not false balance. Zoonotic spillover from animal markets remains the baseline coronavirus hypothesis unless definitive laboratory evidence emerges.",
-            "carriers": [
-              {
-                "source": "Leading virologists and epidemiologists (Drosten, Holmes, Andersen, et al.), peer-reviewed and public statements (2020-2023)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Scientific consensus-building; concern that lab-leak focus diverts from actual pandemic preparedness"
-              },
-              {
-                "source": "WHO scientific advisory group consensus positions (2021-2023)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Institutional consensus; diplomatic pressure to avoid US-China escalation"
-              },
-              {
-                "source": "China Ministry of Foreign Affairs, official statements",
-                "kind": "state media",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Geopolitical defense; reputational protection"
-              }
-            ],
-            "why": "Intelligence agency 'inconclusion' may reflect political constraints rather than evidence weight. Classifying uncertainty itself as evidence ('inconclusive is meaningful') risks creating false balance. The steelman counter is: genuine uncertainty exists, but it should be resolved by forensic investigation (WIV sample access, early 2019 surveillance data), not by treating both poles as equally plausible absent new data."
-          }
-        },
-        {
-          "statement": "The furin cleavage site (PRRA insertion at the S1/S2 spike protein junction) is a signature of gain-of-function engineering, is absent in known bat coronaviruses, and strongly suggests laboratory manipulation.",
-          "carriers": [
-            {
-              "source": "Alina Chan (MIT-affiliated researcher), peer-reviewed and public commentary (2021-2023)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Scientific investigation; early attention to genomic signature; potential bias toward lab-leak interpretation"
-            },
-            {
-              "source": "Richard Ebright (Rutgers), published letters and statements in Nature, Science, and public forums",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Long-standing biosecurity focus; intellectual consistency; potential confirmation bias toward gain-of-function interpretation"
-            },
-            {
-              "source": "Baric lab publications (UNC, gain-of-function methodology 2015-2019)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Scientific publication; demonstration of feasibility (not causation)"
-            },
-            {
-              "source": "Independent OSINT genome analysts, Reddit/Twitter (2021-2022)",
-              "kind": "independent OSINT",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Citizen science; pre-existing skepticism of official narratives"
-            }
-          ],
-          "strongest": "The PRRA insertion at the furin cleavage site is structurally distinguishable in SARS-CoV-2 relative to closely-related bat coronaviruses (RaTG13, etc.). Furin recognition sites enhance human cell infectivity. Published gain-of-function literature (Baric lab, WIV collaborators) demonstrates feasibility of inserting such sites. This is not proof of causation, but it is a technical handle.",
-          "opposition": {
-            "statement": "The strongest lab-adjacent counter is that structural features consistent with natural evolution do not exclude engineered origins-engineering can be designed to avoid obvious signatures. But this requires proving that WIV possessed SARS-CoV-2 progenitors, that they conducted the specific insertion, and that an accident occurred, none of which has forensic documentation. The zoonotic alternative-recombination in animal populations under ecological pressure-requires fewer unstated assumptions.",
-            "carriers": [
-              {
-                "source": "Kristian Andersen, Andrew Rambaut, et al., Nature Medicine letter (2020)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Early peer review; scientific consensus-setting; later authors indicated pressure to downplay lab-leak"
-              },
-              {
-                "source": "Studies on natural coronavirus recombination (Zhu et al., 2021; others on recombination frequency in beta-coronaviruses)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Scientific documentation of natural mechanisms; institutional interest in zoonotic paradigm"
-              },
-              {
-                "source": "WHO technical advisory group, post-2021 statements emphasizing recombination mechanism",
-                "kind": "official record",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Institutional consensus; diplomatic pressure"
-              },
-              {
-                "source": "Ecological studies of coronavirus prevalence in animal markets (Qin et al., Chinese Academy of Sciences)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Documentation of zoonotic spillover conditions"
-              }
-            ],
-            "why": "Natural recombination is well-documented in coronaviruses; the presence of a 'gain-of-function-feasible' feature does not establish it was gain-of-function. The steelman position: the furin site is notable, but absence of other engineered markers (chimeric backbones, codon optimization signatures) is inconsistent with known gain-of-function pipelines. Evolutionary pressure in an infected intermediate host population could produce the same insertion."
-          }
-        },
-        {
-          "statement": "Early COVID-19 case clustering was not geographically concentrated around the Wuhan Institute of Virology, but around the Huanan Seafood Market, supporting zoonotic spillover at that location rather than laboratory accident.",
-          "carriers": [
-            {
-              "source": "WHO-China joint COVID-19 origins study, epidemiological data (2021)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "International investigation; limited access; diplomatic compromise"
-            },
-            {
-              "source": "Peer-reviewed studies on Huanan Market animal samples and early case mapping (Nature, Science, 2021-2022)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Scientific documentation; institutional interest in zoonotic evidence"
-            },
-            {
-              "source": "Genomic phylogenetic studies (Nextstrain, phylodynamic analyses, 2020-2023)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Scientific consensus-building; data-driven analysis"
-            },
-            {
-              "source": "WHO scientific advisory group statements, 2022-2023",
-              "kind": "official record",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Institutional consensus on epidemiological evidence"
-            }
-          ],
-          "strongest": "Multiple studies (including WHO-China joint work) document that December 2019 confirmed COVID-19 cases clustered at or near the Huanan Seafood Market, not at the WIV location (approximately 12 km away). This spatial pattern is more consistent with zoonotic spillover at a high-density animal-contact location than with a dispersed laboratory accident. Viral sequencing does not show an obvious single-origin founder effect, supporting polyphyletic introduction.",
-          "opposition": {
-            "statement": "The strongest lab-adjacent counter holds that epidemiological clustering establishes 'hotspot' identity, not origin. A virus released from WIV could have infected initial human hosts who attended the market, creating the observed cluster pattern. Absence of an animal origin at the market does not disprove the hypothesis; it could indicate that the market was a secondary site. This requires forensic evidence (WIV infection records, environmental sampling from 2019) to resolve.",
-            "carriers": [
-              {
-                "source": "Alina Chan, Matt Ridley, op-eds and peer-reviewed commentary (2021-2023)",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Investigative scrutiny; skepticism of market-origin narrative"
-              },
-              {
-                "source": "US intelligence summaries on early case data quality (2021-2023, unclassified)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Institutional assessment; access to classified data on case definitions"
-              },
-              {
-                "source": "Peer-reviewed critiques of WHO-China joint study methodology (Science, Nature, 2021-2022)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Scientific accountability; institutional critique of diplomatic compromise"
-              }
-            ],
-            "why": "The market-origin clustering could reflect where the virus became apparent due to testing access, not where it originated. No animal species at the market has been definitively identified as harboring a SARS-CoV-2 progenitor. The steelman lab-leak counter: early cases at the market could be a secondary cluster if an initial laboratory release occurred elsewhere and spread to the market through human-to-human transmission before being recognized."
-          }
-        }
-      ],
-      "timeline": [
-        {
-          "date": "December 2019",
-          "event": "First identified COVID-19 cases reported in Wuhan, China, many associated with Huanan Seafood Market.",
-          "shift": "Initial assumption: zoonotic spillover (unknown animal source, wet market exposure pattern)."
-        },
-        {
-          "date": "January 2020",
-          "event": "Chinese scientists publish initial SARS-CoV-2 genome; WHO declares Public Health Emergency of International Concern.",
-          "shift": "Scientific attention focuses on coronavirus phylogeny; early peer review emphasizes bat-origin and zoonotic spillover as baseline assumption."
-        },
-        {
-          "date": "March 2020",
-          "event": "Kristian Andersen et al. publish Nature Medicine letter concluding SARS-CoV-2 'most likely originated in bats' via natural evolution or gain-of-function as 'unlikely' based on genomic analysis.",
-          "shift": "Narrative solidifies around zoonotic spillover; lab-leak becomes marginalized in scientific discourse."
-        },
-        {
-          "date": "February 2021",
-          "event": "Wall Street Journal and others begin publishing investigative reports on WIV research and SARS-CoV-2 lab-leak possibility; US intelligence agencies begin declassifying COVID-19 origins assessments.",
-          "shift": "Narrative fractures: zoonotic spillover remains dominant scientific view, but lab-leak re-enters policy and media discourse. US intelligence agencies explicitly state lack of consensus."
-        },
-        {
-          "date": "June 2021",
-          "event": "WHO-China joint COVID-19 origins study released, concluding zoonotic spillover 'most likely' and lab-leak 'extremely unlikely'; simultaneously, 18 scientists publish open letter in The Lancet calling for investigation into lab-leak.",
-          "shift": "Polarization: official WHO/China position vs. growing scientific skepticism. 'Inconclusive' becomes accepted frame in US policy."
-        },
-        {
-          "date": "September 2021",
-          "event": "The Intercept publishes leaked DEFUSE proposal documents; US Senate Homeland Security Committee launches investigation into EcoHealth Alliance.",
-          "shift": "Narrative expands to include 'what research was being planned and by whom'; lab-leak gains credibility through institutional scrutiny of research programs."
-        },
-        {
-          "date": "August 2022",
-          "event": "US intelligence assessment on COVID-19 origins declassified; reiterates agency disagreement (FBI: lab-leak 'low-to-moderate confidence', CIA/NSA: inconclusive).",
-          "shift": "Inconclusion becomes official US position; no definitive resolution despite 2+ years of investigation."
-        },
-        {
-          "date": "February 2023",
-          "event": "US Department of Energy releases unclassified assessment concluding lab-leak 'most likely' explanation; simultaneously, National Academies of Sciences report emphasizes both hypotheses remain plausible pending access to pre-pandemic data.",
-          "shift": "Lab-leak gains significant institutional credibility; DOE shift suggests new classified evidence or political recalibration. Scientific community emphasizes need for further investigation."
-        },
-        {
-          "date": "2023-2024 (ongoing)",
-          "event": "Congressional hearings, continued calls for WIV access to samples and research records; China maintains resistance; scientific debate continues without definitive resolution.",
-          "shift": "Stalemate: lab-leak is credible hypothesis with institutional support, but forensic proof remains elusive. Narrative now framed around 'need for transparency' rather than 'which hypothesis is true'."
-        }
-      ],
-      "scenarios": [
-        {
-          "statement": "THEORY: WIV conducted gain-of-function research on bat coronavirus spike proteins (possibly chimeric constructs) either under the DEFUSE program framework or under an alternative funding source / internal mandate; a researcher or animal handler was infected in late 2019, transmitted the virus within WIV or Wuhan health facilities, and the virus subsequently spread to the general population.",
-          "restsOn": [
-            "DEFUSE proposal documents showing explicit gain-of-function plans rejected by DoD in 2019",
-            "WIV's known expertise in bat coronavirus collection and high-level BSL-4 virology",
-            "Temporal proximity between DEFUSE rejection (September 2019) and first identified cases (December 2019)",
-            "Furin cleavage site insertion consistent with gain-of-function techniques documented in peer-reviewed literature",
-            "FBI and DOE unclassified assessments listing lab-leak as plausible"
-          ],
-          "note": "This scenario requires several unstated assumptions: (1) that rejected DEFUSE was conducted anyway under different funding; (2) that a specific researcher was infected; (3) that no breach detection/documentation occurred at WIV. Circumstantial evidence is suggestive but not forensic. Resolves if classified intelligence on WIV infection records or environmental sampling is declassified, or if WIV provides transparent documentation of all research activities 2015-2019."
-        },
-        {
-          "statement": "THEORY: SARS-CoV-2 is a naturally occurring recombinant coronavirus that emerged in animal populations (possibly in bat populations in southern China, or in intermediate hosts at wet markets) through ecological recombination under zoonotic spillover pressure; the Huanan Seafood Market was a secondary amplification site where human-to-human transmission accelerated after initial animal-to-human spillover.",
-          "restsOn": [
-            "Documented precedent for natural coronavirus recombination producing clinically significant variants",
-            "Early case clustering at Huanan Market consistent with zoonotic spillover location",
-            "Ecological surveys showing high prevalence of coronaviruses in bat populations and animal markets in southern China",
-            "WHO-China joint investigation finding no definitive link between WIV and early cases",
-            "National Academies assessment acknowledging zoonotic spillover as plausible baseline"
-          ],
-          "note": "This scenario requires sustained absence of forensic evidence linking SARS-CoV-2 to any animal species or intermediate host-a gap that does not exclude the hypothesis but leaves it dependent on assumptions about ecological conditions. Resolves if animal sampling identifies a clear progenitor species or if early 2019 surveillance data from animal markets shows pre-pandemic circulation."
-        },
-        {
-          "statement": "THEORY: US intelligence agencies possess classified evidence (satellite imagery, human intelligence on WIV activities, early 2019 case data, or intercepted communications) that conclusively establishes either laboratory origin or zoonotic spillover, but classification restrictions and diplomatic considerations prevent full declassification; the 'inconclusive' public narrative masks institutional certainty.",
-          "restsOn": [
-            "Known existence of classified COVID-19 origins intelligence (confirmed by unclassified summaries referencing 'classified assessments')",
-            "US intelligence agency disagreement (FBI vs. DOE) potentially reflecting different classified data access",
-            "Congressional calls for declassification suggesting lawmakers believe withheld evidence exists",
-            "Diplomatic sensitivities between US and China making full declassification politically costly"
-          ],
-          "note": "This scenario is speculative about classified content and rests on negative evidence (lack of declassification). It does not establish which hypothesis the classified evidence supports-could favor lab-leak or zoonotic spillover depending on data. Resolves only through executive declassification or archival release after political pressure subsides."
-        }
-      ],
-      "manufacturedConsensus": null,
-      "geo": {
-        "lat": 30.59,
-        "lng": 114.3,
-        "place": "Wuhan, China"
-      }
-    },
-    {
-      "id": "al-ahli-hospital-oct-17-2023",
-      "title": "Al-Ahli Arab Hospital Explosion, Gaza - October 17, 2023",
-      "scope": "conflict",
-      "neutralLine": "An explosion at Al-Ahli Arab Hospital in Gaza City on October 17, 2023, killed dozens of people; competing claims about its cause-Israeli airstrike vs. failed Palestinian Islamic Jihad rocket-emerged within hours and diverged across forensic investigations.",
-      "status": "aged",
-      "watchers": 2100000,
-      "claims": [
-        {
-          "statement": "An Israeli airstrike directly struck the hospital parking lot, causing the explosion and mass casualties.",
-          "carriers": [
-            {
-              "source": "Gaza Health Ministry",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Palestinian authorities asserting responsibility attribution; institutional interest in casualty claims as humanitarian grievance"
-            },
-            {
-              "source": "Hamas Media Office",
-              "kind": "state media",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Hamas positioned to escalate narrative of Israeli targeting of civilians; strategic escalation narrative"
-            },
-            {
-              "source": "Al Jazeera (initial reporting, Oct 17-18)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Wire service amplifying Gaza Health Ministry claim in first-day fog; reliance on accessible Palestinian official sources"
-            },
-            {
-              "source": "BBC (initial reporting, Oct 17-18)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Wire service covering Gaza Health Ministry statement as breaking news; standard newswire attribution protocol"
-            },
-            {
-              "source": "CNN International (initial reporting, Oct 17-18)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "International news desk covering Hamas/Gaza Health Ministry claims in immediate aftermath; deadline pressure, limited on-ground verification"
-            }
-          ],
-          "strongest": "Satellite imagery from Planet Labs (Oct 17, before explosion) and comparison imagery after, analyzed by independent satellite imagery firms, showed the hospital building intact and parking lot area visible. Post-explosion imagery showed crater and blast pattern. However, civilian video from Gaza showing impact crater was geolocation-traced to hospital perimeter by independent OSINT (Bellingcat, Forensic Architecture initial pass).",
-          "opposition": {
-            "statement": "The explosion was caused by a malfunctioning Palestinian Islamic Jihad (PIJ) rocket or rocket malfunction, not an Israeli airstrike.",
-            "carriers": [
-              {
-                "source": "Israeli Defense Force (IDF) Spokesperson",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "IDF institutional interest in denying direct responsibility; claim made within 2 hours as information-warfare counter-narrative"
-              },
-              {
-                "source": "Israeli government ministry statements",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Israeli strategic narrative: PIJ rocket misfires frequently; deflecting civilian casualty attribution"
-              },
-              {
-                "source": "Associated Press (Oct 18-19, after analysis began)",
-                "kind": "wire service",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "AP investigative team reviewing IDF claim; editorial shift toward forensic scrutiny rather than attribution acceptance"
-              },
-              {
-                "source": "Independent weapons analysts (RAND, military analysts cited in press)",
-                "kind": "research paper",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "Technical analysis of rocket failure patterns; abstract institutional interest in weapon system failure modes"
-              }
-            ],
-            "why": "This opposition bites because: (1) PIJ *had* fired rockets into Israel that day, creating plausible technical scenario; (2) rocket misfires into Gaza territory *do* occur and have hit civilian areas historically; (3) IDF artillery/airstrike radar data would be unavailable to independent verification, creating asymmetric evidence burden; (4) early crater analysis was genuinely ambiguous-direct strike and rocket failure produce similar ground effects; (5) the claim deflects moral/legal responsibility even if not causally true, making strategic repetition likely regardless of truth."
-          }
-        },
-        {
-          "statement": "Forensic analysis of crater morphology, weapon fragments, and blast pattern indicates the explosion source was *not* a direct Israeli airstrike from above, but a ground-level or near-ground impact consistent with a rocket warhead detonation.",
-          "carriers": [
-            {
-              "source": "New York Times Visual Investigations (Oct 19-22)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "NYT investigative unit with forensic expertise; institutional reputation for verification; narrative clarification as counter to initial unexamined claims"
-            },
-            {
-              "source": "Channel 4 News (UK, Oct 20-23)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Channel 4 ballistics expert analysis; editorial mission of adversarial scrutiny of official claims on both sides"
-            },
-            {
-              "source": "Forensic Architecture (Goldsmiths, University of London)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Academic architectural forensics team; institutional independence; track record of accountability analysis in conflict zones; no direct political stake"
-            },
-            {
-              "source": "AP Verification (Oct 18-24, extended analysis)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "AP forensic team reversing initial reporting; institutional self-correction protocol; editorial credibility on high-stakes claims"
-            },
-            {
-              "source": "Bellingcat (open-source intelligence, Oct 18-20)",
-              "kind": "independent OSINT",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Bellingcat's mandate for conflict-zone OSINT; no affiliation with either side; public-source verification methodology"
-            }
-          ],
-          "strongest": "Crater analysis showing sideways blast pattern and fragmentation distribution consistent with warhead detonation near ground (not overhead strike signature). NYT analysis of hospital roof showing no direct impact damage. AP investigation of weapon fragments recovered from site. Multiple independent analysts (Forensic Architecture, Channel 4, Bellingcat) cross-referencing satellite imagery, video geolocation, eyewitness testimony, and acoustic estimates of blast radius-all converging on conclusion that the impact source was *not* directly overhead.",
-          "opposition": {
-            "statement": "Israeli airstrike is still the most probable cause; forensic 'signatures' cited by independent analysts reflect ambiguity in crater analysis, and the threshold for declaring 'not an airstrike' is artificially high given the fog of immediate conflict.",
-            "carriers": [
-              {
-                "source": "Gaza Health Ministry (Oct 18+, sustained claim)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Palestinian institutional authority; rebuttal to forensic reframing as threat to casualty narrative and Israeli accountability"
-              },
-              {
-                "source": "Hamas political figures and statements",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Hamas rejection of forensic evidence reframing; escalation of martyrdom narrative regardless of technical cause"
-              },
-              {
-                "source": "International human rights organizations (Amnesty International, Human Rights Watch statements Oct 18+)",
-                "kind": "journalist",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "HRO statements accepting Health Ministry account; organizational mandate to highlight civilian casualty patterns; limited independent forensic capacity"
-              },
-              {
-                "source": "Social media activism (Twitter/X, TikTok amplification, Oct 17-24)",
-                "kind": "public debate",
-                "named": false,
-                "primacy": "downstream",
-                "provenance": "echo",
-                "motive": "Activist networks repeating Gaza Health Ministry claim; moral narrative ('genocide') resistant to technical reframing"
-              }
-            ],
-            "why": "This opposition is substantive because: (1) crater morphology *is* ambiguous under conflict conditions-weapons vary, ground composition affects blast pattern interpretation; (2) the forensic counter-claim (rocket failure) came *from the accused party first* (IDF), making independent analysts' convergence on it look like vindication of propaganda even if technically sound; (3) the casualty count (474-500 dead per various counts) is real *regardless* of cause, and forensic reframing can appear to minimize that moral fact; (4) the timing (IDF claim within 2 hours, forensic reversal days later) creates perception that independent experts were 'correcting' in Israel's favor after initial truth-telling."
-          }
-        },
-        {
-          "statement": "The explosion killed approximately 474-500 people (most counts in that range by Oct 18); casualty figures were consistent across Gaza Health Ministry, WHO field counts, and eyewitness testimony, despite disagreement on *cause*.",
-          "carriers": [
-            {
-              "source": "Gaza Health Ministry (Oct 17, updated Oct 18)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Palestinian health authority body count; institutional duty to count casualties; interest in high figure for humanitarian claim"
-            },
-            {
-              "source": "World Health Organization (WHO field teams, Oct 18)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "WHO verification teams on ground; institutional mandate for health surveillance; independent from both combatants (formally neutral)"
-            },
-            {
-              "source": "Hospital staff and survivors (video testimony, Oct 17-18)",
-              "kind": "independent OSINT",
-              "named": false,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Direct witnesses; institutional trauma response; no strategic narrative beyond describing horror"
-            },
-            {
-              "source": "AP and BBC casualty verification (Oct 18-20)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Wire services cross-checking counts from hospital records, Health Ministry, eyewitness; institutional accuracy standard"
-            }
-          ],
-          "strongest": "Convergence across independent sources (WHO, AP, BBC, hospital staff accounts) on casualty range of 470-500. WHO presence on ground provided external verification. Hospital staff testimony consistent across multiple video accounts. Satellite thermal imagery (disputed interpretation) suggested mass fatality event. Even IDF did not dispute approximate casualty count, only *cause*.",
-          "opposition": {
-            "statement": "Casualty count figures are inflated and include pre-existing hospital mortality data or double-counting; actual death toll from the explosion itself was substantially lower.",
-            "carriers": [
-              {
-                "source": "Israeli government statements (Oct 18+)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Israeli narrative management; rhetorical minimization of casualty impact as counter to international pressure"
-              },
-              {
-                "source": "Some Israeli analysts and commentators",
-                "kind": "journalist",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "Domestic political narrative; reducing casualty count to reduce moral force of the event"
-              }
-            ],
-            "why": "This opposition carries minimal weight because casualty counts were the *least* disputed aspect of the event-even actors with strategic interest in denial (IDF) did not seriously challenge the scale of deaths, only the cause. WHO and multiple independent journalists converged on similar figures. The claim appears as rhetorical fig leaf rather than substantive evidence challenge."
-          }
-        },
-        {
-          "statement": "A manufacturing of consensus occurred: initial Palestinian claims (airstrike) were amplified by wire services and social media without verification, creating the appearance of confirmed reporting when independent forensic analysis later suggested a different cause.",
-          "carriers": [
-            {
-              "source": "Media criticism analysis (Oct 19+, retrospective)",
-              "kind": "journalist",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Editorial post-mortems on initial reporting; institutional self-reflection on verification failure"
-            },
-            {
-              "source": "Social media echo analysis (discourse tracking)",
-              "kind": "independent OSINT",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Mapping amplification patterns; showing how initial claim cascaded without fact-checking"
-            },
-            {
-              "source": "Press freedom organizations (CPJ, RSF commentary)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Media accountability; institutional focus on reporting standards in conflict zones"
-            }
-          ],
-          "strongest": "Timeline showing initial Gaza Health Ministry claim (Oct 17, ~3 PM) → wire service adoption without on-ground verification (Oct 17-18, 6 PM onward) → social media cascade (Oct 17-18) → international headlines stating 'Israeli airstrike' as fact (Oct 17-18 evening cycle) → *then* forensic reanalysis begins (Oct 18+). The appearance of consensus in early reporting was manufactured by aggregation and echo, not independent verification of the cause.",
-          "opposition": {
-            "statement": "Initial reporting of the Gaza Health Ministry claim was standard journalism practice-reporters relay official statements, especially in immediate crisis; the reanalysis that followed was methodical verification, not reversal of lies.",
-            "carriers": [
-              {
-                "source": "Journalism standards bodies (SPJ, ICFJ commentary)",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Media defense of reporting protocols; institutional stake in defending journalists' authority in crisis reporting"
-              },
-              {
-                "source": "News editors and journalists (retrospective interviews)",
-                "kind": "journalist",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "Professional self-defense; explaining deadline pressure and information asymmetry"
-              }
-            ],
-            "why": "This opposition is legitimate because: (1) relaying an official claim is not the same as vouching for it; wire services do distinguish 'Ministry says' vs. 'we confirmed'; (2) forensic verification *takes time*-the follow-up analysis was rigorous, not a coverup; (3) the fog of immediate conflict makes initial caution an unrealistic expectation; (4) the fact that independent forensic analysis later complicated the narrative shows the system worked, not that it failed."
-          }
-        },
-        {
-          "statement": "Multiple independent forensic teams (NYT, Channel 4, Forensic Architecture, AP, Bellingcat) all concluded by late October that the blast signature was most consistent with a failed Palestinian rocket, not an Israeli airstrike, despite initial Gaza Health Ministry claims of an airstrike.",
-          "carriers": [
-            {
-              "source": "New York Times investigations team",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "NYT forensic investigation; institutional commitment to verification; reputation for detailed conflict analysis"
-            },
-            {
-              "source": "Channel 4 News ballistics analysis",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Channel 4 investigative unit; adversarial reporting tradition; ballistics expertise"
-            },
-            {
-              "source": "Forensic Architecture (peer-reviewed analysis)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Academic forensics team; methodological rigor; no direct political stake in outcome"
-            },
-            {
-              "source": "Bellingcat open-source investigation",
-              "kind": "independent OSINT",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "OSINT collective; public-source transparency; track record of accountability analysis (Russia, Syria, MH17)"
-            },
-            {
-              "source": "AP Verification (extended investigation)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "AP self-correction; editorial integrity on major claims; institutional reputation for caution"
-            }
-          ],
-          "strongest": "Convergence of five independent, methodologically distinct teams (wire service, two broadcast journalists, academic institution, OSINT collective) all analyzing public-source evidence (video, satellite imagery, eyewitness testimony, weapon databases) and arriving at the same forensic conclusion: crater morphology, blast pattern, fragmentation distribution, and lack of overhead impact signature consistent with ground-level or near-ground warhead detonation, not vertical airstrike. None of these teams had access to classified targeting data or radar; all worked from publicly available evidence.",
-          "opposition": {
-            "statement": "The forensic consensus is hollow because the evidence is genuinely ambiguous, independent analysts are influenced by the IDF's early counter-narrative, and the absence of proof of an airstrike is not proof of absence.",
-            "carriers": [
-              {
-                "source": "Palestinian analysts and critics (public statements, Oct 20+)",
-                "kind": "public debate",
-                "named": false,
-                "primacy": "downstream",
-                "provenance": "echo",
-                "motive": "Skepticism of forensic reframing; defense of initial Gaza Health Ministry narrative as true regardless of proof standard"
-              },
-              {
-                "source": "International human rights organizations (secondary rejection of forensic consensus)",
-                "kind": "journalist",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "HRO institutional stakes in Israeli accountability narrative; organizational position on occupation; reluctance to accept forensic counter-claim"
-              },
-              {
-                "source": "Academic skeptics (fringe weapons analysts questioning crater interpretation)",
-                "kind": "research paper",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "Academic alternative interpretation; critique of forensic confidence levels in ambiguous evidence"
-              }
-            ],
-            "why": "This opposition bites because: (1) forensic crater analysis *is* genuinely ambiguous-different weapon systems and ground compositions produce overlapping signatures; (2) all five teams saw the IDF's early 'rocket failure' claim before conducting their analysis, creating logical possibility of unconscious bias toward conclusion consistent with that narrative; (3) proving 'not an airstrike' is not the same as proving 'definitely a rocket'-absence of evidence of one cause is not presence of evidence of another; (4) the political asymmetry (Gaza Health Ministry claim vs. IDF counter-claim, followed by forensic consensus with Israel) creates appearance that forensic analysis validated the accused party, regardless of methodological legitimacy."
-          }
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2023-10-17T15:00Z",
-          "event": "Explosion at Al-Ahli Arab Hospital, Gaza City",
-          "shift": "Immediate claims: Gaza Health Ministry and Hamas state 'Israeli airstrike'; IDF responds within 2 hours claiming 'failed PIJ rocket' - narrative forks from moment one"
-        },
-        {
-          "date": "2023-10-17T18:00Z",
-          "event": "International wire services (Al Jazeera, BBC, CNN) amplify Gaza Health Ministry claim on evening news cycles (US/EU evening, Middle East afternoon)",
-          "shift": "Initial Palestinian official narrative becomes international headline without verification; IDF counter-claim noted but presented as disputed assertion, not alternative fact"
-        },
-        {
-          "date": "2023-10-18T06:00Z",
-          "event": "Social media cascade reaches peak; #AlAhliHospital tweets cite 'Israeli airstrike' as established fact; activist networks amplify without source attribution",
-          "shift": "Consensus appearance emerges from aggregation; original Health Ministry claim loses attribution, becomes 'what happened'; IDF claim remains fringe counter-narrative"
-        },
-        {
-          "date": "2023-10-18T12:00Z",
-          "event": "AP Verification team begins analysis; NYT Visual Investigations begins crater analysis from satellite and eyewitness video",
-          "shift": "Professional verification begins; forensic investigation decoupled from diplomatic claims; narrative complexity re-enters"
-        },
-        {
-          "date": "2023-10-19T00:00Z",
-          "event": "NYT publishes detailed analysis suggesting crater morphology inconsistent with direct airstrike; Channel 4 investigates weapon fragments",
-          "shift": "Forensic reframing published; initial narrative challenged by methodical analysis; perception that initial reporting was incomplete or misleading"
-        },
-        {
-          "date": "2023-10-20T00:00Z",
-          "event": "Bellingcat and Forensic Architecture publish independent analyses converging on same conclusion; AP confirms verified findings",
-          "shift": "Consensus shifts from 'airstrike' to 'forensic ambiguity, most consistent with rocket failure'; Palestinian sources reject reframing; political interpretation of forensic evidence begins"
-        },
-        {
-          "date": "2023-10-22T00:00Z",
-          "event": "International media outlets publish retrospective analyses explaining initial reporting choices and forensic reanalysis",
-          "shift": "Meta-narrative of 'how we got the story wrong' competes with substantive forensic findings; media accountability becomes secondary narrative to cause of explosion"
-        }
-      ],
-      "scenarios": [
-        {
-          "statement": "THEORY: Initial Gaza Health Ministry claim was made in genuine belief of Israeli responsibility, based on pattern of recent strikes and immediate witnesses' assumption of source, without forensic verification; subsequent forensic reanalysis was legitimate technical correction, not political vindication.",
-          "restsOn": [
-            "Hospital staff witnessed explosion at ground level; assumption of overhead source (airstrike) is natural without weapon expertise",
-            "Palestinian authorities have legitimate interest in accurate casualty reporting; no incentive to lie about *number* of deaths",
-            "IDF had conducted airstrikes in Gaza in preceding days, making airstrike plausible baseline assumption",
-            "PIJ had fired rockets that same day, but PIJ rocket misfire into own territory is less known to civilian observers than Israeli strikes"
-          ],
-          "note": "This scenario explains the claim as reasonable inference from incomplete information, not deliberate propaganda. It requires accepting that Gaza Health Ministry made honest mistake, and forensic analysis corrected it."
-        },
-        {
-          "statement": "THEORY: Initial Gaza Health Ministry claim was made with political intent to attribute casualty event to Israeli action regardless of technical cause; subsequent forensic reanalysis was legitimate but vulnerable to misinterpretation as 'vindication of Israel' because the counter-claim originated from IDF.",
-          "restsOn": [
-            "Gaza Health Ministry has institutional interest in framing events as Israeli responsibility for humanitarian/accountability narrative",
-            "IDF's immediate counter-claim (within 2 hours) followed known information-warfare playbook of rapid narrative pre-emption",
-            "Forensic convergence on 'rocket' conclusion, while methodologically sound, coincidentally matches accusation from accused party",
-            "Palestinian political leadership rejected forensic findings, suggesting initial claim was navigable political position, not empirical inference",
-            "Social media amplification of initial claim suggests organized narrative strategy, not organic belief"
-          ],
-          "note": "This scenario attributes initial claim to strategic narrative, not innocent error. It requires accepting that forensic analysis, while technically valid, appears to validate party with clear strategic interest in the conclusion."
-        },
-        {
-          "statement": "THEORY: Crater analysis and forensic conclusions are genuinely ambiguous, and independent convergence on 'rocket failure' reflects unconscious bias from all teams toward IDF's early narrative, creating false consensus while evidence remains legitimately disputed.",
-          "restsOn": [
-            "All five forensic teams conducted analysis *after* encountering IDF's counter-claim, creating possibility of confirmation bias",
-            "Crater morphology in conflict zones is inherently ambiguous; different weapons and ground conditions produce overlapping signatures",
-            "Absence of direct airstrike evidence is not positive evidence of rocket failure; absence of proof is not proof of absence",
-            "None of the independent teams had access to IDF radar data, targeting logs, or actual weapon classification from fragments",
-            "Academic literature on forensic ballistics in conflict zones emphasizes high uncertainty; professional caution would mandate broader confidence intervals than published analyses suggest"
-          ],
-          "note": "This scenario preserves technical ambiguity and suggests the forensic consensus, while not illegitimate, overstates confidence in a conclusion that remains genuinely underdetermined by publicly available evidence."
-        }
-      ],
-      "manufacturedConsensus": "\"Initial Palestinian claim (Israeli airstrike) amplified by aggregation across wire services and social media Oct 17-18 without independent verification, creating appearance of corroborated reporting when original source was single Gaza Health Ministry statement. Consensus was manufactured by media cascade (original claim → wire services → social media echo), not by convergence of independent evidence sources. Forensic reanalysis Oct 18+ challenged this consensus, but the initial consensus was real and it shaped early global perception.\"",
-      "geo": {
-        "lat": 31.52,
-        "lng": 34.45,
-        "place": "Gaza City"
-      }
-    },
-    {
-      "id": "svb-collapse-2023-03",
-      "title": "Silicon Valley Bank Collapse (March 10, 2023)",
-      "scope": "markets",
-      "neutralLine": "Silicon Valley Bank, the 16th largest US bank with $209 billion in assets, failed on March 10, 2023, after a deposit run triggered by bond losses and rate-hike exposure, leading to FDIC takeover and emergency Fed lending facilities.",
-      "status": "aged",
-      "watchers": 8700000,
-      "claims": [
-        {
-          "statement": "SVB failed due to structural duration risk: the bank held $91 billion in held-to-maturity (HTM) bonds that declined sharply as the Fed raised rates, creating a massive unrealized loss position that was masked on balance sheet but triggered a death spiral when depositors lost confidence.",
-          "carriers": [
-            {
-              "source": "Federal Reserve San Francisco (District Bank Report, March 16, 2023)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Post-mortem analysis, regulatory accountability"
-            },
-            {
-              "source": "FDIC Failure Report, SVB collapse investigation (May 2023)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Statutory documentation of failure causation"
-            },
-            {
-              "source": "Bloomberg Markets desk (March 10-13, 2023, multiple reports on HTM bond portfolio)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Market intelligence on asset composition"
-            },
-            {
-              "source": "SVP Greg Becker (CEO, earnings call Feb 2023 + March 8-9 investor calls)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Management disclosure (attempted damage control)"
-            }
-          ],
-          "strongest": "FDIC and Fed official reports quantifying the $15.7 billion unrealized loss on HTM bonds as of Q4 2022 - a documented, disclosed (though downplayed) fact that SVB management knew and disclosed in 8-Ks",
-          "opposition": {
-            "statement": "The HTM loss position alone would not have caused failure; SVB's core issue was asset-liability management execution: the bank knowingly chose to concentrate 80% of assets in ultra-long duration bonds (avg 5.8 yr duration) despite being a VC bank with deposit bases known for volatility. The failure was management negligence + board oversight failure, not structural trap.",
-            "carriers": [
-              {
-                "source": "Peter Thiel + VC Twitter fintwit (March 10-15, March 2023 thread)",
-                "kind": "public debate",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "VC perspective defending sector, deflecting to management blame"
-              },
-              {
-                "source": "Patrick Boyle (YouTube finance channel 'Never Stop Learning', March 12 analysis)",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Educational analysis framing management error"
-              }
-            ],
-            "why": "This bites because SVB's board and management DID know rate-hike risk (visible from 2021 Fed rhetoric); choosing 80% HTM concentration was not inevitable - regional banks like PNC diversified earlier. The opposition correctly flags that duration mismatch was a choice, not an accident, making it a management failure narrative rather than a 'caught by surprise by rates' story."
-          }
-        },
-        {
-          "statement": "SVB failed because of a coordinated VC and fintwit-driven bank run, amplified by Twitter/social media panic, not fundamental insolvency - deposits fled due to fear-contagion, not because the bank was actually insolvent on a hold-to-maturity basis.",
-          "carriers": [
-            {
-              "source": "Packy McCormick (Not Boring, March 12 analysis 'The Untold Story of SVB')",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Defending VC sector, emphasizing panic narrative over fundamental weakness"
-            },
-            {
-              "source": "FTX bankruptcy creditor Twitter/X fintwit (March 10-11, coordinated deposit withdrawal posts, 'move your cash')",
-              "kind": "public debate",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Self-preservation (many had deposits at SVB post-FTX blow-up); information asymmetry/"
-            },
-            {
-              "source": "Wolf Richter (Wolfstreet blog, March 10-11 real-time deposit-flight documentation)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Market documentation of speed of deposit flight"
-            }
-          ],
-          "strongest": "Real-time fintwit evidence: March 10 morning, $42 billion in deposit withdrawals in a single day were announced publicly via Twitter before traditional news. Whistleblower SVB employee posts documented panic-driven behavior. SVB received 100k+ withdrawal requests in hours.",
-          "opposition": {
-            "statement": "The bank-run narrative is retrospective credit-taking by VCs to avoid accountability: depositors withdrew because they correctly perceived the bond losses were real and the bank was insolvent (negative equity on mark-to-market basis of ~$16 billion). Panic amplified the speed, but did not cause the failure - the failure caused the panic.",
-            "carriers": [
-              {
-                "source": "FDIC post-mortem report (explicit finding on causation chain)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Statutory analysis of failure sequence"
-              },
-              {
-                "source": "Matt Levine (Bloomberg Opinion, March 13, 'SVB Failed Because It Was a Bad Bank')",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Market commentary rejecting panic-primacy framing"
-              }
-            ],
-            "why": "This opposition is strong because the bank WAS technically insolvent on a mark-to-market basis before the run accelerated - the run didn't create the insolvency, it exposed it. The panic was rational fear, not irrational herd behavior. SVB's management knew the math and disclosed it; depositors acted on disclosed information, not rumor."
-          }
-        },
-        {
-          "statement": "Federal Reserve rate hikes (2022-2023) caused the SVB collapse by destroying the value of long-duration bond portfolios that banks had loaded into during the zero-rate era; the Fed's policy shift from accommodation to aggressive tightening created the conditions for cascading regional bank failures.",
-          "carriers": [
-            {
-              "source": "Richard Fisher (former Dallas Fed President, March 12 commentary)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Post-hoc policy commentary from Fed insider"
-            },
-            {
-              "source": "Financial Times (March 13 editorial, 'The Fed Rate-Hike Reckoning')",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Financial editorial perspective on Fed accountability"
-            },
-            {
-              "source": "Raoul Pal (fintwit/Real Vision, March 10-12 macro commentary)",
-              "kind": "journalist",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Macro analyst commentary critical of Fed pivot"
-            }
-          ],
-          "strongest": "Quantified causation: Fed raised rates from 0% (2021) to 4.25-4.5% (March 2023) in 12 months - historically aggressive. Bond prices fell ~40% for 10y+ duration assets. SVB's HTM book unrealized losses = $15.7B by Feb 2023. This is causal linkage, not correlation.",
-          "opposition": {
-            "statement": "Blaming the Fed is a misdirection: rate hikes were necessary inflation control, and banks CHOSE to load into long-duration HTM bonds during zero-rate era knowing rates would eventually normalize. The Fed did not force SVB to hold 80% of assets in 5.8-year duration bonds - that was management's risk choice. Other regional banks (First Republic, Comerica) managed rate risk without failing.",
-            "carriers": [
-              {
-                "source": "Jerome Powell (Fed Chair testimony, Senate Banking Committee, March 28, 2023)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Fed defense of policy continuity under pressure"
-              },
-              {
-                "source": "Sarah Bloom Raskin (former Fed Vice Chair, March 2023 commentary on asymmetric risk)",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Fed-sympathetic voice on rate-hike necessity"
-              }
-            ],
-            "why": "This opposition bites because PNC, Bank of America, and other regionals navigated identical rate shocks without failure - it falsifies the 'Fed caused it' monocausal narrative. Rate normalization was foreseeable; SVB's bond concentration was a choice, not a trap."
-          }
-        },
-        {
-          "statement": "The 2018 Dodd-Frank SIFI (Systemically Important Financial Institution) threshold rollback enabled SVB's failure: raising the threshold from $50 billion to $250 billion in assets exempted SVB (at $209 billion) from enhanced regulatory oversight, capital requirements, and stress testing that would have forced safer asset positioning.",
-          "carriers": [
-            {
-              "source": "Office of the Comptroller of the Currency (OCC) examination findings, post-mortem (disclosed March 2023)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Regulatory documentation of supervisory gaps"
-            },
-            {
-              "source": "Senator Sherrod Brown (D-Ohio) statement, Banking Committee, March 2023",
-              "kind": "official record",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Political criticism of 2018 rule change"
-            },
-            {
-              "source": "Reuters investigative piece (March 14, 'How Regulatory Change Opened Door to SVB')",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Post-mortem journalism connecting regulatory timeline"
-            }
-          ],
-          "strongest": "Documented regulatory fact: SVB would have been SIFI-classified under pre-2018 rules (asset threshold $50B), requiring quarterly stress tests, higher capital buffers, and resolution planning. OCC examination reports (2020-2022) show no stress testing of interest-rate scenarios despite 2018 removal of requirement. This is a clear, falsifiable policy consequence.",
-          "opposition": {
-            "statement": "The regulatory-rollback narrative is scapegoating: SVB's management and board ignored warnings regardless of SIFI classification. Stress testing would not have stopped the bank from making the duration choice; many SIFI banks (e.g., regional banks like Bank of New York Mellon) held duration risk without failing. The 2018 threshold change affected thousands of banks; SVB was the outlier in execution, not regulation.",
-            "carriers": [
-              {
-                "source": "Federal Reserve (internal research memo, leaked March 2023, on SIFI threshold justification)",
-                "kind": "official record",
-                "named": false,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Fed defense of 2018 policy continuity"
-              },
-              {
-                "source": "Glenn Hubbard (Columbia economist, Wall Street Journal op-ed, March 17)",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Conservative economist perspective opposing re-regulation"
-              }
-            ],
-            "why": "This opposition is credible because the causal link is not deterministic: stress testing might have been ignored (as it was in other institutions before 2008), and the real problem was management choice, not supervisory capability. Regulatory-rollback is a necessary-but-not-sufficient condition, not a cause."
-          }
-        },
-        {
-          "statement": "SVB's failure was a 'canary in the coal mine' for a broader regional banking sector crisis driven by the same rate-shock + duration mismatch across hundreds of smaller banks, and the failure triggered contagion fears (First Republic, Signature Bank follow-ups in March 2023) that risked systemic cascade if the Fed had not intervened with emergency liquidity.",
-          "carriers": [
-            {
-              "source": "Federal Reserve emergency statement (March 12, 2023, announcing Bank Term Funding Program)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Official Fed crisis response"
-            },
-            {
-              "source": "JPMorgan Chase research (March 13, 'Regional Banking Stress Test')",
-              "kind": "market research",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Market intelligence on sector systemic risk"
-            },
-            {
-              "source": "Bloomberg reporting on First Republic Bank deposit flight (March 13-14, real-time tracking)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Market documentation of contagion spread"
-            }
-          ],
-          "strongest": "Systemic evidence: within 48 hours of SVB failure, First Republic Bank (at $213 billion assets, also below SIFI threshold, also HTM-heavy) experienced $70 billion in deposit outflows. Signature Bank (crypto-friendly) collapsed the same week. Fed emergency BTFP program announced March 12 explicitly to prevent cascading failures - this is contemporaneous Fed assessment of contagion risk.",
-          "opposition": {
-            "statement": "Calling SVB a 'canary' misses the key point: it was the outlier, not the harbinger. Most regional banks did NOT have 80% of assets in long-duration HTM bonds. Most regional banks passed Fed stress tests (where they existed). First Republic's failure was specific to its own ultra-wealthy deposit base fleeing, not a systemic duration wave. The Fed's emergency lending program was precautionary, not evidence of imminent cascade.",
-            "carriers": [
-              {
-                "source": "Bank Policy Institute (March 15, sector analysis report)",
-                "kind": "market research",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Industry group defensive analysis of broader banking health"
-              },
-              {
-                "source": "FDIC internal risk assessment (post-failure, Q2 2023)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Regulatory retrospective assessment"
-              }
-            ],
-            "why": "This opposition is strong because the cascade did NOT occur - within 48 hours of BTFP announcement and Treasury/FDIC deposit-insurance pledges, deposit flight slowed dramatically. First Republic failed, but not due to SVB contagion alone (it had structural weakness in deposit concentration). The Fed's rapid intervention suggests they assessed contagion risk as real-but-manageable, not systemic."
-          }
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2021-2022",
-          "event": "Federal Reserve maintains zero rates; long-term Treasury yields at historic lows (10y ~1.5% in Aug 2021). SVB and regional banks flood into HTM bond portfolios seeking yield, locking in ultra-long duration (avg 5.8 yrs at SVB).",
-          "shift": "Baseline: rate normalization was a known risk; banks chose concentration despite foreseeable Fed pivot"
-        },
-        {
-          "date": "2022 March-December",
-          "event": "Fed initiates aggressive rate hike cycle (March 2022: 25 bps, then 50 bps, 75 bps each meeting through December 2022). 10y Treasury yields rise to ~4% by Dec. SVB's HTM bond portfolio declines ~$16 billion in market value; bank management discloses losses in quarterly filings (8-Ks).",
-          "shift": "Narrative formation: bond losses disclosed but downplayed. Market begins pricing regional bank duration risk; some investors (Bloomberg, credit analysts) flag HTM exposure"
-        },
-        {
-          "date": "2023 January-February",
-          "event": "Fed pauses rate hikes (January 2023). Narrative: pause may ease regional bank stress. SVB management signals confidence in earnings calls. Q4 2022 10-K filed; SVB reports $15.7 billion unrealized loss on HTM bonds. CEO Greg Becker and CFO Horn attempt investor reassurance ('we can absorb' the loss).",
-          "shift": "Reassurance narrative emerges from bank management; bond-loss disclosure seen as 'old news,' not actionable risk. VC and startup community largely ignores disclosure"
-        },
-        {
-          "date": "2023 March 8-9",
-          "event": "SVB announces $1.75 billion loss on HTM bond sale (attempting to reduce rate-sensitive duration, raises capital). Market reaction: sharp drop in SVB stock, 17% in-day decline. Analyst calls question HTM strategy; fintwit begins surface-level deposit-flight discussion.",
-          "shift": "Narrative inflection: bond losses move from 'disclosed but manageable' to 'active balance-sheet deterioration' in real-time. VC Twitter conversation turns to 'should I move deposits?'"
-        },
-        {
-          "date": "2023 March 10 morning (9am PT)",
-          "event": "SVB announces secondary offering at steep discount, attempting capital raise. Simultaneously, high-profile VC funds (Village Global, Khosla Ventures signal internally to portfolio companies: move deposits. First public fintwit warnings: 'SVB has a problem, move your money now.' $42 billion in deposit withdrawal requests arrive by end of business.",
-          "shift": "Panic acceleration: narrative flips from 'SVB has a manageable problem' to 'SVB is insolvent, run now.' Fintwit coordination (real or perceived) drives deposit flight. By 5pm PT, SVB announces deposit run to regulators."
-        },
-        {
-          "date": "2023 March 10 evening (5pm PT)",
-          "event": "SVB closes; California Department of Financial Protection orders closure. FDIC takes control. Media: 'SVB Failed Overnight.' Fed and Treasury emergency coordination begins.",
-          "shift": "Binary shift: SVB goes from 'troubled bank' to 'failed institution' within 8 hours. Regulatory narrative: caused by deposit run + duration mismatch. Market narrative: Fed-rate-hike shock + VC panic. Blame fragmentation begins."
-        },
-        {
-          "date": "2023 March 11-13",
-          "event": "Fed announces emergency Bank Term Funding Program (BTFP, March 12, $25B initial capacity). Treasury pledges FDIC backstop for all SVB deposits, not just insured amounts. First Republic Bank reports massive deposit outflows. Signature Bank (crypto) also targeted by deposit flight. Market stabilizes; broader banking index recovers by March 13.",
-          "shift": "Systemic containment narrative: Fed emergency action frames SVB as isolated (contained by BTFP) rather than contagion trigger. Blame shifts to Fed response-time (why no emergency lending before failure?) and regulatory gaps (SIFI threshold)."
-        },
-        {
-          "date": "2023 March 14-31",
-          "event": "First Republic fails (March 17). Signature Bank fails (March 12). Regional bank CDS spreads widen, then stabilize. By March 31, no further major failures announced. BTFP drawing rates remain low (0.35% vs market rates 4.75%+), dampening incentive for runs. Blame-assignment hardens around 4 narratives: (1) management negligence, (2) Fed rate hikes, (3) regulatory rollback (2018), (4) VC panic amplification.",
-          "shift": "Meta-narrative consensus: SVB was a multivariate failure (duration risk + rate shock + VC sector concentration + management missteps). But attribution splits along political/ideological lines. Fed-skeptics blame monetary policy; regulation-skeptics blame 2018 rollback; VC-adjacent actors blame panic contagion; market-oriented analysts blame SVB management."
-        }
-      ],
-      "scenarios": [
-        {
-          "statement": "THEORY: If the Fed had maintained zero rates or communicated rate guidance more clearly in 2021-2022, SVB would not have failed, because banks would not have loaded ultra-long HTM bonds expecting normalized yields + lower-for-longer rates.",
-          "restsOn": [
-            "Fed forward guidance 2021 described rates as staying low 'for a long time'",
-            "SVB's HTM allocation peaked in 2021-2022, when rate-hike probability was low in Fed communication",
-            "Bond purchases during zero-rate era were rational response to Fed guidance, not speculative error",
-            "FOMC pivoted in March 2022 (abrupt rate 'surprise' relative to 2021 guidance)"
-          ],
-          "note": "This scenario is testable but counterfactual - assumes Fed communication failure, not Fed policy necessity. Intermediate evidence: comparison with banks that DID hedge duration (e.g., PNC, BofA) would show whether hedging was feasible under identical Fed guidance."
-        },
-        {
-          "statement": "THEORY: If SVB's board and management had diversified duration (e.g., 50% HTM / 50% floating or duration ladder) despite zero-rate yields, the bank survives March 2023 even with identical Fed rate path and deposit mix.",
-          "restsOn": [
-            "SVB had competitive ability to refuse ultra-long HTM bonds (many peer banks did)",
-            "Board minutes (post-failure disclosure) show duration concentration was known and chosen, not accidental",
-            "Stress tests (if mandated by SIFI classification) would have flagged 80% HTM concentration as non-resilient",
-            "Other VC-serving banks (e.g., Silicon Valley Bank's pre-2008 peer Cross-continent Bank) did not hold 80% HTM"
-          ],
-          "note": "High-confidence scenario: management choice was driving variable, not rate shock alone. Tests: compare SVB's board compensation incentives (did they reward short-term yield targets?) vs. banks that survived."
-        },
-        {
-          "statement": "THEORY: If the Fed had announced BTFP one week BEFORE SVB failure (i.e., March 5 instead of March 12), emergency liquidity facility would have prevented deposit run by removing counterparty risk on mark-to-market losses.",
-          "restsOn": [
-            "BTFP eliminated incentive for runs: banks could borrow at par against HTM bonds, zeroing duration-loss risk",
-            "After BTFP announcement (March 12), regional bank deposit outflows slowed materially",
-            "First Republic's deposit flight (March 13-14) proved less intense after BTFP + Treasury backstop clarity",
-            "Fed did not anticipate SVB-specific urgency until March 10 deposit-flight materialized (reactive, not proactive)"
-          ],
-          "note": "Scenario explores Fed response timing vs. SVB's inherent insolvency. Lower confidence: BTFP might not have stopped a true panic if VC community had coordinated withdrawal earlier. But available evidence suggests panic was reactive to March 8 bond-loss sale announcement, not pre-emptive."
-        }
-      ],
-      "manufacturedConsensus": null,
-      "geo": {
-        "lat": 37.39,
-        "lng": -121.96,
-        "place": "Santa Clara, USA"
-      }
-    },
-    {
-      "id": "prigozhin-wagner-2023",
-      "title": "Wagner Mutiny & Prigozhin Death (June-August 2023)",
-      "scope": "geopolitics",
-      "neutralLine": "Russian military contractor Yevgeny Prigozhin led an armed march with Wagner forces toward Moscow in June 2023, halted the advance after 24 hours following a negotiated deal brokered by Belarus, and died in a plane crash on August 23, 2023.",
-      "status": "aged",
-      "watchers": 850000,
-      "manufacturedConsensus": null,
-      "claims": [
-        {
-          "statement": "Prigozhin launched a genuine armed rebellion against Putin, with Wagner forces moving toward Moscow in June 2023, intending to force change in Russian military leadership.",
-          "carriers": [
-            {
-              "source": "Institute for the Study of War (ISW)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "U.S.-aligned open-source intelligence, credible on conflict patterns, documents Kremlin instability"
-            },
-            {
-              "source": "Telegram milbloggers (@rybar, @grey_zone, @WarGonzo)",
-              "kind": "independent OSINT",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Russian military observers with ground access; accuracy motive maintains audience trust"
-            },
-            {
-              "source": "Reuters / AP / AFP (June 2023)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "International agencies report observed facts; neutral on outcome"
-            },
-            {
-              "source": "Prigozhin video statements (Telegram, June 23-24)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Direct participant communication; rallies fighters and pressures Kremlin"
-            }
-          ],
-          "strongest": "Real-time Telegram videos of Wagner convoy on M4 highway toward Moscow, time-stamped by independent OSINT (Jomini, CTP). Prigozhin's video demands for Shoigu/Gerasimov replacement, dated June 23-24. ISW corroborates convoy positions and stated objective.",
-          "opposition": {
-            "statement": "THEORY: Mutiny was staged negotiation theater orchestrated between Prigozhin and Kremlin factions. Real rebellion risked catastrophic response; rapid Belarus deal and pardon suggest collusion.",
-            "carriers": [
-              {
-                "source": "Novaya Gazeta, Echo of Moscow archives",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Kremlin-skeptical outlets infer from pattern; expose hidden deals"
-              },
-              {
-                "source": "Kremlin spokesperson Peskov (Jun 24)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Minimize existential threat; emphasize control"
-              },
-              {
-                "source": "Mark Galeotti, Dmitry Adamsky (published post-June)",
-                "kind": "research paper",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Academic nuance over dramatization"
-              }
-            ],
-            "why": "Rapid 24-48 hour collapse after Lukashenko offer, followed by immediate pardon and FSB protection, inconsistent with existential Kremlin threat. True rebellion triggers arrest or liquidation, not negotiated exit. Timing suggests prior back-channel negotiation."
-          }
-        },
-        {
-          "statement": "The Wagner mutiny was halted by a negotiated deal brokered by Belarus leader Lukashenko, in which Prigozhin agreed to stand down in exchange for safe passage and eventual pardon.",
-          "carriers": [
-            {
-              "source": "Lukashenko statements (Belarus state media, June 24, 2023)",
-              "kind": "state media",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Frames himself as peacemaker; claims credit for de-escalation"
-            },
-            {
-              "source": "Russian state media (TASS, RIA, Kremlin press releases)",
-              "kind": "state media",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Kremlin narrative control; present resolution as negotiated, not defeat"
-            },
-            {
-              "source": "Prigozhin video (June 24, 2023)",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Direct communication; justify retreat to supporters"
-            },
-            {
-              "source": "Western intelligence leaks (Reuters, BBC)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "U.S./UK officials confirm timeline"
-            }
-          ],
-          "strongest": "Dated Prigozhin video announcing stand-down June 24, immediately followed by Lukashenko confirmation. Kremlin pardon decree within days. Timeline consistent across Russian state media, Belarus, and Western intelligence leaks.",
-          "opposition": {
-            "statement": "THEORY: Lukashenko's role was decorative; Kremlin (likely FSB/Patrushev) forced stand-down using threats to Prigozhin's family or military encirclement. Pardon masked coercion; Prigozhin liquidated August 2023.",
-            "carriers": [
-              {
-                "source": "Ukrainian SBU/leaked intelligence (Telegram, Jul-Aug 2023)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Emphasize Putin's ruthlessness and instability"
-              },
-              {
-                "source": "Novaya Gazeta, independent Russian media",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Expose coercion masked as deals"
-              },
-              {
-                "source": "Anonymized FSB/Kremlin insiders in investigative pieces",
-                "kind": "journalist",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Complex (scoring, regime disillusionment, misinformation)"
-              }
-            ],
-            "why": "Prigozhin's death two months after pardon, plus continued inflammatory statements during interim, suggest provisional deal. Genuine lasting peace would not motivate Prigozhin to risk life returning to Russia or making public threats. Rapid liquidation indicates Kremlin never intended pardon as permanent."
-          }
-        },
-        {
-          "statement": "Prigozhin was killed in a targeted plane crash (Embraer Legacy 600) on August 23, 2023, most likely by Russian state action (Kremlin/FSB ordering a strike).",
-          "carriers": [
-            {
-              "source": "Russian state media (TASS, Kremlin statements)",
-              "kind": "state media",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Official acknowledgment of death; incentive to avoid blame attribution"
-            },
-            {
-              "source": "Ukrainian intelligence / SBU",
-              "kind": "state media",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Direct interest in documenting eliminations; credibility depends on accuracy"
-            },
-            {
-              "source": "FlightRadar24, public flight tracking records",
-              "kind": "official record",
-              "named": true,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Neutral technical record"
-            },
-            {
-              "source": "Reuters, BBC, international wire services (Aug 23-24, 2023)",
-              "kind": "wire service",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Report facts (crash, death, passenger list); neutral on causation"
-            },
-            {
-              "source": "ISW, military analysts (Aug-Oct 2023)",
-              "kind": "research paper",
-              "named": true,
-              "primacy": "secondary",
-              "provenance": "original",
-              "motive": "Evidence-based assessment"
-            }
-          ],
-          "strongest": "Confirmed crash on Aug 23, 2023. Prigozhin confirmed passenger. Ukrainian SBU claims strike within hours. No credible alternative explanation from independent investigators. Prigozhin's political liability and FSB historical pattern (Litvinenko, Navalny) provide strong motive and precedent.",
-          "opposition": {
-            "statement": "THEORY: Genuine accident (mechanical failure, pilot error, structural defect). Ukrainian strike claim is wartime propaganda. Kremlin's non-denial suggests surprise, not guilt. FSB wanted control, not elimination.",
-            "carriers": [
-              {
-                "source": "Russian state media (TASS, RIA, some analysts downplaying strike)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Avoid explicit admission of killing"
-              },
-              {
-                "source": "Aviation investigators (ICAO / Russian authorities reports)",
-                "kind": "official record",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Technical analysis; favor mechanical causation if evidence supports"
-              },
-              {
-                "source": "Aviation safety analysts (some pieces suggesting mechanical failure)",
-                "kind": "research paper",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Expertise; motive varies (accuracy vs. sensationalism)"
-              },
-              {
-                "source": "Telegram milbloggers (some voices suggesting accident)",
-                "kind": "independent OSINT",
-                "named": false,
-                "primacy": "secondary",
-                "provenance": "echo",
-                "motive": "Unclear"
-              }
-            ],
-            "why": "No published technical evidence of strike (no radar, no debris analysis, no explosive autopsy signature). Ukraine's immediate claim has geopolitical motive in wartime. Kremlin's non-denial consistent with both guilt and surprise. Absence of forensic evidence in public record means claim rests on motive/precedent inference, not proof."
-          }
-        },
-        {
-          "statement": "Prigozhin survived or faked his death and is still alive.",
-          "carriers": [
-            {
-              "source": "Fringe Telegram accounts, Russian conspiracy forums (Aug-Oct 2023)",
-              "kind": "public debate",
-              "named": false,
-              "primacy": "primary",
-              "provenance": "original",
-              "motive": "Speculation; unclear intent"
-            },
-            {
-              "source": "Independent Russian media (passing mentions of unverified sightings)",
-              "kind": "journalist",
-              "named": false,
-              "primacy": "secondary",
-              "provenance": "echo",
-              "motive": "Report discourse without endorsement"
-            }
-          ],
-          "strongest": "No credible primary evidence. OSINT observers noted crash location near known Prigozhin position and timeline match expected movements. No body public verification creates minimal epistemic gap for speculation.",
-          "opposition": {
-            "statement": "Prigozhin is dead. Multiple Russian state sources, Ukrainian intelligence, Western intelligence, and wire services confirmed death. Crash site documented, passenger list verified. No survival evidence in 12+ months. Public body absence is standard Russian practice for sensitive deaths.",
-            "carriers": [
-              {
-                "source": "Russian state media (TASS, RIA, Kremlin)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Official confirmation; regimes acknowledge major deaths to maintain credibility"
-              },
-              {
-                "source": "Ukrainian military intelligence (Aug 23, 2023)",
-                "kind": "state media",
-                "named": true,
-                "primacy": "primary",
-                "provenance": "original",
-                "motive": "Wartime verification; false claims undermine credibility"
-              },
-              {
-                "source": "Reuters, BBC, AP",
-                "kind": "wire service",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Standard verification of major news"
-              },
-              {
-                "source": "Novaya Gazeta, Russian independent media",
-                "kind": "journalist",
-                "named": true,
-                "primacy": "secondary",
-                "provenance": "original",
-                "motive": "Kremlin-critical outlets benefit from exposing fake-death narrative if true"
-              }
-            ],
-            "why": "Conspiracy theories thrive in information vacuums; Kremlin opacity creates minimal epistemic room. Kremlin would reveal Prigozhin alive to discredit Ukraine's strike claim. Prigozhin would signal survival. 12+ months silence across all parties indicates death most likely true."
-          }
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2023-06-23",
-          "event": "Prigozhin announces Wagner march toward Moscow via Telegram video, demands Shoigu and Gerasimov replacement",
-          "shift": "Narrative moves from internal discontent to open armed rebellion threat"
-        },
-        {
-          "date": "2023-06-24",
-          "event": "Wagner convoy reaches Rostov-on-Don; Lukashenko announces mediation; Prigozhin halts march for safe passage",
-          "shift": "Narrative flips from existential threat to negotiated crisis resolution; debate begins over genuine vs. staged mutiny"
-        },
-        {
-          "date": "2023-06-24-26",
-          "event": "Kremlin issues pardon; Wagner redeployed to Belarus under Lukashenko supervision; Shoigu remains in office",
-          "shift": "Western and Russian independent media question pardon sincerity; Ukraine frames as Kremlin weakness; coercion vs. genuine deal debate intensifies"
-        },
-        {
-          "date": "2023-06-27-08-22",
-          "event": "Prigozhin posts inflammatory statements from Belarus; 2 months of ambiguous status and increasing friction",
-          "shift": "Consensus settles on 'pardon was provisional' and 'liquidation likely'; Prigozhin appears under FSB surveillance"
-        },
-        {
-          "date": "2023-08-23",
-          "event": "Prigozhin's Embraer crashes near Moscow; all passengers killed. Ukrainian SBU claims Russian strike immediately",
-          "shift": "Narrative bifurcates: Western/Ukrainian = Putin liquidated rival; Russian state = minimal comment; Russian independent media = careful analysis; conspiracy theories begin"
-        },
-        {
-          "date": "2023-08-24-present",
-          "event": "No independent forensic investigation published; no Kremlin admission; no strike evidence. Narrative remains contested.",
-          "shift": "Western consensus stabilizes on 'Kremlin killed Prigozhin' based on motive/precedent; Russian state maintains ambiguity; no new technical data emerges"
-        }
-      ],
-      "scenarios": [
-        {
-          "statement": "THEORY: Prigozhin was always a proxy for Kremlin infighting. FSB sections (possibly Patrushev) orchestrated mutiny as move against Shoigu/Gerasimov using Prigozhin's ambition. Once power play resolved and Shoigu weakened, Prigozhin became expendable and was liquidated.",
-          "restsOn": [
-            "Prigozhin's rapid 24-hour stand-down with no visible military pressure",
-            "Kremlin's immediate pardon despite existential rebellion claim",
-            "FSB historical pattern of leveraging ambitious oligarchs in internal struggles (Khodorkovsky, Berezovsky)",
-            "Shoigu remained in office despite explicit demands",
-            "Prigozhin's death timing coincides with Kremlin stabilizing military hierarchy post-mutiny"
-          ],
-          "note": "Treats mutiny as symptom of Kremlin internal struggle, not genuine rebellion. Requires accepting Russian security apparatus can stage large-scale armed ops while maintaining control-high bar but consistent with Russian statecraft patterns."
-        },
-        {
-          "statement": "THEORY: Prigozhin genuinely sought to oust Shoigu and reshape military, but Kremlin was more fractured than anticipated. Lukashenko offered face-saving exit. Prigozhin believed pardon was real, but Putin/FSB considered him too destabilized and dangerous. Decision to liquidate came in late August, 2 months after crisis passed.",
-          "restsOn": [
-            "Prigozhin's detailed grievances on logistical Ukraine issues (tactically accurate)",
-            "Wagner's documented tactical competence and loyal following",
-            "Unexpectedness and speed of mutiny announcement",
-            "Prigozhin's willingness to travel back to Russia (belief in pardon)",
-            "Kremlin's historical pattern of eliminating threats after absorbing immediate crisis (Navalny, Litvinenko)"
-          ],
-          "note": "Treats mutiny as real but pardon as strategic pause, not lasting peace. Prigozhin's continued inflammatory rhetoric in 2-month interim supports idea he didn't believe liquidation-bound until late August."
-        },
-        {
-          "statement": "THEORY: Plane crash was genuine accident. Aging Embraer had mechanical issues; pilot error or structural failure coincided with Prigozhin returning to Russia. Ukraine's strike claim is wartime propaganda. Kremlin's non-denial reflects either satisfaction at accident or unwillingness to fuel purge rumors.",
-          "restsOn": [
-            "Absence of published technical strike evidence (no radar, no missile debris, no autopsy signatures)",
-            "Ukrainian wartime incentive to claim eliminations",
-            "Historical frequency of Russian civilian aircraft accidents",
-            "Kremlin opacity/non-denial consistent with both guilt and accident",
-            "Some aviation experts' published skepticism of strike narrative"
-          ],
-          "note": "Requires explaining 12+ months of Ukrainian/Western claims as propaganda or error, and Kremlin silence as ambiguity not admission. Most economical but faces motive/precedent argument (Kremlin eliminates rivals historically)."
-        },
-        {
-          "statement": "THEORY: Lukashenko brokered genuine peace between Putin and Prigozhin; pardon was sincere. Prigozhin killed in real accident or by rogue faction or Ukrainian strike (not Kremlin). Putin's non-admission suggests he did not order it.",
-          "restsOn": [
-            "Lukashenko's public track record as occasional mediator",
-            "Prigozhin's apparent confidence in returning to Russia",
-            "Kremlin's non-denial as possible innocence not guilt",
-            "Possibility of rogue security actors or Ukrainian operation",
-            "Absence of proof overriding burden-of-proof standards"
-          ],
-          "note": "Least parsimonious given Kremlin's historical pattern and Prigozhin's vulnerability, but does not require coordinated Kremlin lie or accident cover-up as strike claim."
-        }
-      ],
-      "geo": {
-        "lat": 55.75,
-        "lng": 37.62,
-        "place": "Moscow, Russia"
-      }
-    },
     {
       "id": "russia-ukraine-war-current",
       "title": "Russia-Ukraine War: Entrenched Front and the Negotiation Question",
@@ -2588,6 +558,31 @@ const SEED = {
           "date": "2025-01-20",
           "event": "A new US administration takes office prioritising rapid ceasefire diplomacy.",
           "shift": "Pressure for negotiations rises; the terms and the outcome remain contested."
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Moscow car bomb kills Russian ammunition chief, reports say",
+          "shift": "Live feed item // The Guardian // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Moscow 'ready to use nuclear weapons' for security as drone strikes choke supplies into Crimea",
+          "shift": "Live feed item // Sky News // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Russian attacks kill 5 in Ukraine as Zelenskyy hails talks with US envoys",
+          "shift": "Live feed item // Al Jazeera // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Russian Offensive Campaign Assessment, June 9, 2026",
+          "shift": "Live feed item // Institute for the Study of War // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Ukraine winning war with Russia, retired US generals say; top commander says over 230 square miles retaken",
+          "shift": "Live feed item // CBS News // pulled 2026-06-10"
         }
       ],
       "scenarios": [
@@ -2782,6 +777,36 @@ const SEED = {
           "date": "2025-01-19",
           "event": "A phased ceasefire and hostage-release framework takes effect.",
           "shift": "Partial de-escalation; full implementation and durability remain contested."
+        },
+        {
+          "date": "2026-06-06",
+          "event": "Israeli strike in Gaza kills seven people, including two women, medics say",
+          "shift": "Live feed item // Reuters // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Militants and police executed and maimed dozens of Palestinians in Gaza, UN report says",
+          "shift": "Live feed item // AP News // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "UN inquiry finds Israeli forces shield settlers during attacks on Palestinians",
+          "shift": "Live feed item // UN Commission of Inquiry // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "IDF eliminates two key Hamas financial officials in Gaza",
+          "shift": "Live feed item // i24news // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Gaza talks hosted by Egypt stall as Hamas disarmament remains only point of contention",
+          "shift": "Live feed item // Times of Israel // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Israeli strikes kill 11 people in Gaza City, medics say",
+          "shift": "Live feed item // BBC // pulled 2026-06-10"
         }
       ],
       "scenarios": [
@@ -2949,6 +974,26 @@ const SEED = {
           "date": "2025-01-01",
           "event": "Record grey-zone activity and cross-strait friction continue into 2025.",
           "shift": "Pressure sustained; the invasion debate remains unresolved."
+        },
+        {
+          "date": "2026-06-05",
+          "event": "China and Taiwan Update, June 5, 2026",
+          "shift": "Live feed item // Institute for the Study of War // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-07",
+          "event": "Beijing detects suspected Japanese spy jets near Taiwan",
+          "shift": "Live feed item // South China Morning Post // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Taiwan says China Coast Guard patrols to its east are a 'provocative act'",
+          "shift": "Live feed item // Taiwan Government via Yahoo // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Taiwan simulates destroying an invading Chinese force in coastal drill",
+          "shift": "Live feed item // Reuters // pulled 2026-06-10"
         }
       ],
       "scenarios": [
@@ -3113,6 +1158,31 @@ const SEED = {
           "date": "2025-01-19",
           "event": "Attack tempo tracks the Gaza ceasefire and the state of the wider conflict.",
           "shift": "Links the maritime crisis to the regional war rather than to strikes alone."
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Houthis to impose 'complete ban' on Israeli ships in the Red Sea",
+          "shift": "Live feed item // Bloomberg // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Yemen's Iran-backed Houthis threaten Israeli shipping in the Red Sea",
+          "shift": "Live feed item // Reuters // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Houthis threaten to widen Iran war by blocking Israeli shipping in Red Sea",
+          "shift": "Live feed item // The New York Times // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Suez Canal sees oil tanker surge amid Strait of Hormuz disruption",
+          "shift": "Live feed item // Economic Times // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-10",
+          "event": "Cargo vessel exchanges fire with armed craft southwest of Yemen",
+          "shift": "Live feed item // UKMTO via Africa Leader // pulled 2026-06-10"
         }
       ],
       "scenarios": [
@@ -3280,6 +1350,26 @@ const SEED = {
           "date": "2025-01-07",
           "event": "The US formally determines the RSF committed genocide; the UAE denies arming the RSF.",
           "shift": "Legal and diplomatic stakes formalised; the backer dispute sharpens."
+        },
+        {
+          "date": "2026-06-05",
+          "event": "Sudan's drone war: how unmanned aircraft became the deadliest weapon against civilians",
+          "shift": "Live feed item // Scripps News // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-08",
+          "event": "The war in Sudan is fought over the bodies of women",
+          "shift": "Live feed item // The Cairo Review of Global Affairs // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "First war crimes complaint against Sudan's paramilitary forces filed in Kenya",
+          "shift": "Live feed item // AP News // pulled 2026-06-10"
+        },
+        {
+          "date": "2026-06-09",
+          "event": "Eastern Chad an emerging frontline in Sudan war",
+          "shift": "Live feed item // Africa Defense Forum // pulled 2026-06-10"
         }
       ],
       "scenarios": [
@@ -3305,7 +1395,7 @@ const SEED = {
     }
   ]
 };
-/* SEED-END */
+/* SEED-END */ /* MARKETMOVERS-2026-06-10 */ /* LIVE-REFRESH-2026-06-10 */
 
 /* ===================== STATE ===================== */
 const state = {
@@ -3335,8 +1425,6 @@ function render(){
   document.getElementById("tFree").classList.toggle("on", state.mode==="free");
   document.getElementById("tPro").classList.toggle("on", state.mode==="pro");
   document.getElementById("taglineBadge").textContent = "NO VERDICT";
-  const gw=document.getElementById("globeWrap");
-  if(gw) gw.classList.toggle("show", state.view==="board"); // globe is the board hero only; never leaks onto event view
   if(state.view==="board") renderBoard(); else renderEvent(state.eventId);
   window.scrollTo({top:0,behavior:"instant"});
 }
@@ -3467,20 +1555,23 @@ function renderEvent(id){
   const latest = (e.timeline&&e.timeline.length)
     ? e.timeline.reduce((a,b)=> (b.date>a.date ? b : a))
     : null;
+  // THE NEWS = the clearest, latest factual development (no synthesis, no verdict).
   const standsNow = latest ? `
-      <div class="standsnow">
-        <span class="snlbl">where it stands now</span>
+      <div class="thenews">
+        <span class="snlbl">the news &nbsp;//&nbsp; latest</span>
         <span class="sntxt"><span class="snd">${esc(latest.date)}</span>${esc(latest.event)}</span>
       </div>` : "";
 
-  // HOW IT GOT HERE = the situation's history, promoted to a FREE primary section under the header.
+  // HISTORY = collapsed by default; the user peeks in on click (no clutter up top).
   const timelineBlock = (e.timeline&&e.timeline.length) ? `
-    <div class="kicker"><span class="n">//</span> HOW IT GOT HERE &nbsp; the situation's history</div>
-    <div class="section">
-      <div class="timeline">
-        ${e.timeline.map(t=>`<div class="tl-item"><div class="d">${esc(t.date)}</div><div class="e">${esc(t.event)}</div><div class="s">${esc(t.shift)}</div></div>`).join("")}
+    <details class="tl-peek">
+      <summary>&#9656;&nbsp; peek into the timeline &nbsp;//&nbsp; how it got here (${e.timeline.length} beats)</summary>
+      <div class="section">
+        <div class="timeline">
+          ${e.timeline.slice().sort((a,b)=> b.date<a.date?-1:1).map(t=>`<div class="tl-item"><div class="d">${esc(t.date)}</div><div class="e">${esc(t.event)}</div><div class="s">${esc(t.shift)}</div></div>`).join("")}
+        </div>
       </div>
-    </div>` : "";
+    </details>` : "";
 
   const mfgBlock = e.manufacturedConsensus ? `
     <div class="mfg"><div class="lbl">⚠ manufactured consensus watch</div>${esc(e.manufacturedConsensus)}</div>` : "";
@@ -3531,19 +1622,19 @@ function renderEvent(id){
         <span class="noverdict">NO VERDICT</span>
       </div>
       <h1>${esc(e.title)}</h1>
-      <div class="neutral">${esc(e.neutralLine)}</div>
       ${standsNow}
+      <div class="neutral">${esc(e.neutralLine)}</div>
       <div class="att-line">
         <span><span class="dotpulse"></span> &nbsp;${fmtNum(e.watchers)} watching <span class="mute">(attention shape, not credibility)</span></span>
         <span>${e.claims.length} competing claims</span>
       </div>
     </div>
 
-    ${timelineBlock}
-
-    <div class="kicker"><span class="n">//</span> THE SPECTRUM &nbsp; every side, side by side</div>
+    <div class="kicker"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view</div>
     ${legendHTML()}
     <div class="section">${claimsBlock}</div>
+
+    ${timelineBlock}
 
     ${depthSection}
   `;
@@ -3594,52 +1685,6 @@ document.getElementById("app").addEventListener("click", (ev)=>{
   else if(act==="askEmail") askEmail(id);
 });
 document.getElementById("footMeta").textContent = SEED.microcopy.tagline + "  //  seeded demo";
-
-/* ===================== GLOBE HERO ===================== */
-/* The globe is the WRAPPER (the way in). The evidence engine below is the PRODUCT. */
-const GEO_MARKERS = SEED.events.filter(e=>e.geo).map(e=>({
-  id:e.id, lat:e.geo.lat, lng:e.geo.lng, place:e.geo.place,
-  title:e.title, scope:e.scope, status:e.status
-}));
-let globeInstance=null;
-function webglOK(){
-  try{ const c=document.createElement("canvas");
-    return !!(window.WebGLRenderingContext && (c.getContext("webgl")||c.getContext("experimental-webgl"))); }
-  catch(_){ return false; }
-}
-function initGlobe(){
-  const wrap=document.getElementById("globeWrap");
-  const stage=document.getElementById("globeStage");
-  const host=document.getElementById("globe");
-  const cnt=document.getElementById("globeCount");
-  if(cnt) cnt.textContent=GEO_MARKERS.length;
-  if(!wrap||!stage||!host) return;
-  if(typeof Globe==="undefined" || !webglOK()){ wrap.classList.add("globe-failed"); return; } // fall back to the list below
-  try{
-    globeInstance=Globe()(host)
-      .width(stage.clientWidth).height(stage.clientHeight)
-      .backgroundColor("rgba(0,0,0,0)")
-      .globeImageUrl("https://unpkg.com/three-globe/example/img/earth-dark.jpg")
-      .showAtmosphere(true).atmosphereColor("#E5342B").atmosphereAltitude(0.16)
-      .pointsData(GEO_MARKERS).pointLat("lat").pointLng("lng")
-      .pointColor(()=> "#E5342B").pointAltitude(0.06).pointRadius(0.55)
-      .pointLabel(d=>`<div style="background:#111317;border:1px solid #23262E;border-radius:8px;padding:8px 10px;max-width:240px;box-shadow:0 6px 24px rgba(0,0,0,.5)"><div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#E5342B;text-transform:uppercase;margin-bottom:3px">${d.scope} // ${d.place}</div><div style="font-family:Inter,sans-serif;font-size:12.5px;line-height:1.35;color:#EDEEF0">${d.title}</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8A8F98;margin-top:5px">click to open</div></div>`)
-      .onPointClick(d=> openEvent(d.id))
-      .ringsData(GEO_MARKERS).ringLat("lat").ringLng("lng")
-      .ringColor(()=> (t)=> `rgba(229,52,43,${1-t})`)
-      .ringMaxRadius(4.5).ringPropagationSpeed(1.4).ringRepeatPeriod(1300);
-    globeInstance.pointOfView({lat:25,lng:12,altitude:2.3},0);
-    const ctr=globeInstance.controls();
-    ctr.autoRotate=true; ctr.autoRotateSpeed=0.5; ctr.enableZoom=false; // wheel scrolls the page, not the globe
-  }catch(err){ console.warn("globe init failed:",err); wrap.classList.add("globe-failed"); globeInstance=null; }
-}
-window.addEventListener("load", initGlobe);
-window.addEventListener("resize", ()=>{
-  if(!globeInstance) return;
-  const stage=document.getElementById("globeStage");
-  if(!stage || stage.offsetParent===null) return; // skip while hidden (event view)
-  globeInstance.width(stage.clientWidth).height(stage.clientHeight);
-});
 
 render();
 </script>
