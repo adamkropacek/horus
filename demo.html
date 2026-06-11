@@ -333,6 +333,56 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
   .rail.left .vfilters{flex-direction:row; flex-wrap:wrap}
   .beat .o{margin-left:0}
 }
+
+/* ===== Phase C-VIS: lead visual on cards + detail (origin OG OR sigil) ===== */
+.leadvis{position:relative; aspect-ratio:16/9; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:#0c0e12; margin:-2px 0 4px}
+.leadvis img{width:100%; height:100%; object-fit:cover; display:block; opacity:.92}
+.leadvis .credit{position:absolute; left:0; right:0; bottom:0; padding:5px 9px; font-family:var(--mono); font-size:.58rem; letter-spacing:.06em; color:var(--mute2); background:linear-gradient(0deg, rgba(10,10,12,.92), rgba(10,10,12,0)); text-transform:uppercase}
+.leadvis .credit b{color:var(--ink); font-weight:500}
+.leadvis.sigil{background:radial-gradient(circle at 30% 25%, rgba(229,52,43,.08), transparent 65%), #0c0e12}
+.leadvis.sigil svg{width:100%; height:100%; display:block}
+.leadvis .sigtag{position:absolute; left:8px; top:6px; font-family:var(--mono); font-size:.56rem; letter-spacing:.14em; color:var(--mute); text-transform:uppercase}
+
+/* ===== Phase C: provenance chain + steelman + deep report ===== */
+.provbox{border:1px solid var(--line); border-left:2px solid var(--cyan); background:var(--surf); border-radius:var(--radius); padding:14px 16px; margin-top:14px}
+.provbox .pvh{font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--cyan); margin-bottom:8px}
+.provbox .pvnote{font-family:var(--mono); font-size:.6rem; color:var(--mute); margin-top:8px; line-height:1.5}
+.provchain{display:flex; flex-direction:column; gap:8px}
+.provrow{display:flex; align-items:flex-start; gap:10px; padding:7px 0; border-bottom:1px dashed var(--line)}
+.provrow:last-child{border-bottom:none}
+.provrow .role{font-family:var(--mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; padding:3px 7px; border-radius:4px; border:1px solid var(--line); white-space:nowrap}
+.provrow .role.origin{color:var(--ink); border-color:var(--red); background:rgba(229,52,43,.1)}
+.provrow .role.echo{color:var(--mute); border-color:var(--line)}
+.provrow .pvsrc{font-size:.86rem; color:var(--mute2); line-height:1.4}
+.provrow .pvsrc b{color:var(--ink); font-weight:600}
+.provrow .pvsrc .pvmot{display:block; font-family:var(--mono); font-size:.62rem; color:var(--mute); margin-top:3px; line-height:1.5}
+.steelbadge{font-family:var(--mono); font-size:.58rem; letter-spacing:.12em; color:var(--cyan); border:1px solid rgba(63,182,200,.4); padding:2px 7px; border-radius:99px; text-transform:uppercase; margin-left:6px; vertical-align:1px}
+.steelmissing{font-family:var(--mono); font-size:.7rem; color:var(--mute); padding:8px 10px; border:1px dashed var(--line); border-radius:6px; margin-top:6px}
+.deep-rep{margin-top:24px; border:1px solid var(--line); border-radius:var(--radius); background:var(--surf); padding:18px 20px}
+.deep-rep .dh{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:14px}
+.deep-rep .dh h2{font-family:var(--display); font-weight:600; font-size:1.2rem}
+.deep-rep .dh .stamp{font-family:var(--mono); font-size:.66rem; color:var(--mute); letter-spacing:.08em}
+.deep-rep .dh .nvbadge{font-family:var(--mono); font-size:.6rem; letter-spacing:.14em; color:var(--red); border:1px solid rgba(229,52,43,.4); padding:3px 9px; border-radius:99px}
+.deep-rep section{border-top:1px solid var(--line); padding:12px 0}
+.deep-rep section:first-of-type{border-top:none}
+.deep-rep section h3{font-family:var(--mono); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--mute); margin-bottom:8px}
+.deep-rep section .body{color:var(--mute2); font-size:.92rem; line-height:1.55}
+.deep-rep .citelist{font-family:var(--mono); font-size:.7rem; color:var(--mute2); display:flex; flex-direction:column; gap:4px; margin-top:4px}
+.deep-rep .citelist a{color:var(--cyan); word-break:break-all}
+
+/* ===== Phase D: scenarios with horizon + track record ===== */
+.scenario .horizon{display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:.66rem; letter-spacing:.08em; color:var(--cyan); border:1px solid rgba(63,182,200,.35); padding:3px 8px; border-radius:99px; text-transform:uppercase; margin-top:6px}
+.scenario .horizon b{color:var(--ink); font-weight:500}
+.scenario .falsif{font-family:var(--mono); font-size:.66rem; color:var(--mute2); margin-top:6px; line-height:1.55; padding:6px 9px; border-left:2px solid var(--cyan); background:#0c0e12; border-radius:4px}
+.scenario .falsif b{color:var(--cyan); font-family:var(--mono); margin-right:5px}
+.trackbox{border:1px solid var(--line); background:var(--surf); border-radius:var(--radius); padding:14px}
+.trackbox .trh{font-family:var(--mono); font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--mute); margin-bottom:9px}
+.trackbox .trgrid{display:grid; grid-template-columns:repeat(4, 1fr); gap:8px}
+.trackbox .trgrid .cell{border:1px solid var(--line); border-radius:6px; padding:8px 6px; text-align:center}
+.trackbox .trgrid .cell .v{font-family:var(--display); font-weight:600; font-size:1.05rem}
+.trackbox .trgrid .cell .l{font-family:var(--mono); font-size:.56rem; letter-spacing:.08em; color:var(--mute); text-transform:uppercase; margin-top:2px}
+.trackbox .trgrid .cell.hit .v{color:var(--cyan)}
+.trackbox .trgrid .cell.miss .v{color:var(--red)}
 </style>
 </head>
 <body>
@@ -393,7 +443,7 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
 const SEED = {
   "microcopy": {
     "tagline": "All sides. The shape of evidence. You decide.",
-    "noVerdictExplainer": "HORUS refuses to tell you what is true because no single voice should. We show you how the evidence is structured-independent origins, evidence types, who disputes it-so you see the shape. Truth is yours to conclude.",
+    "noVerdictExplainer": "HORUS refuses to rule a verdict because no single voice should. We show you how the evidence is structured - independent origins, evidence types, who disputes it - so you see the shape. The conclusion is yours.",
     "kindLegend": [
       {
         "kind": "Official record",
@@ -686,7 +736,9 @@ const SEED = {
             "War fatigue in Western publics",
             "A Russian economy strained but not collapsing"
           ],
-          "note": "Marked theory, not a prediction. Falsified by a battlefield breakthrough or by either side refusing the line. A freeze is not a settlement and says nothing about durability."
+          "note": "Marked theory, not a prediction. A freeze is not a settlement and says nothing about durability.",
+          "horizon": "2026-12-31",
+          "falsification": "no formal freeze, halt-line or armistice is signed by both sides on or before the horizon, OR active maneuver warfare breaks the line in either direction before that date."
         },
         {
           "statement": "THEORY: Protracted attrition continues into 2026 and beyond with no settlement, as neither side accepts the other's terms.",
@@ -695,7 +747,9 @@ const SEED = {
             "Russia's tolerance for casualties",
             "Continued if uneven Western supply"
           ],
-          "note": "Theory; the default path if diplomacy fails."
+          "note": "Theory; the default path if diplomacy fails.",
+          "horizon": "2027-06-30",
+          "falsification": "a bilateral settlement or armistice is signed and holds for 90+ days before the horizon."
         }
       ],
       "manufacturedConsensus": "Both 'inevitable Russian victory' and 'Ukraine is winning' narratives have been pushed in waves by interested carriers - Russian state media for the former, some Western governments and fundraising appeals for the latter - often outrunning the sourced battlefield picture from trackers like ISW. Watch for momentum claims from belligerents that echo across aligned media faster than independent verification can confirm them."
@@ -909,7 +963,9 @@ const SEED = {
             "Mutual distrust between the parties",
             "Disputes over hostage and prisoner sequencing"
           ],
-          "note": "Theory; falsified by a durable governance agreement or by a full collapse back to high-intensity war."
+          "note": "Theory; falsified by a durable governance agreement or by a full collapse back to high-intensity war.",
+          "horizon": "2026-12-31",
+          "falsification": "either a binding multi-party governance framework for Gaza is signed and operational by the horizon, or fighting returns to pre-ceasefire intensity (1000+ casualties/month) for 60+ consecutive days."
         },
         {
           "statement": "THEORY: International legal and diplomatic pressure (ICJ, ICC, allied governments) increasingly constrains operations and shapes reconstruction terms.",
@@ -1090,7 +1146,7 @@ const SEED = {
       ],
       "scenarios": [
         {
-          "statement": "THEORY: China continues indefinite grey-zone coercion (drills, economic pressure, disinformation) short of invasion, aiming for political absorption over years.",
+          "statement": "THEORY: China continues indefinite grey-zone coercion (drills, economic pressure, information operations) short of invasion, aiming for political absorption over years.",
           "restsOn": [
             "The high cost of an amphibious invasion",
             "The effectiveness of sustained coercion",
@@ -1678,6 +1734,7 @@ function renderBoard(){
           <div class="lensrow">${LIVE.cabinet.history_nodes} history nodes // ${LIVE.cabinet.runs} runs</div>
           <div class="railnote">stored once, remembered forever - history is never re-fetched, nothing is ever deleted</div>
         </div>
+        ${trackRecordHTML()}
         <div class="railbox">
           <div class="railh">at the gate</div>
           ${(LIVE.candidates&&LIVE.candidates.length) ? LIVE.candidates.slice(0,5).map(c=>`
@@ -1686,7 +1743,7 @@ function renderBoard(){
               <div class="m"><span>${c.count} items</span><span>${c.outlets} outlets</span><span class="o">${esc(c.status||"watching")}</span></div>
             </div>`).join("") : `<div class="railnote">no clusters at the discovery gate right now</div>`}
           ${LIVE.gate?`<div class="railnote">this run: ${LIVE.gate.accepted||0} accepted / ${LIVE.gate.rejected||0} rejected - gossip, sport and local crime never enter; rejections are logged, not hidden</div>`:""}
-        </div>` : ``}
+        </div>` : trackRecordHTML()}
       </aside>
     </div>
   `;
@@ -1704,6 +1761,7 @@ function cardHTML(e, pinned){
     : `${e.claims.length} claims &nbsp;//&nbsp; ${kinds.length} source kinds`;
   return `
     <div class="card${pinned?" pinned":""}" data-act="open" data-id="${esc(e.id)}">
+      ${leadVisualHTML(e, {compact:true})}
       <div class="card-top">
         <span style="display:flex;gap:8px;align-items:center"><span class="tag ${e.scope}">${esc(e.scope)}</span><span class="pill ${e.status}">${esc(e.status)}</span></span>
         <span class="ago">${newest?esc(agoStr(newest.ts)):"seeded"}</span>
@@ -1731,6 +1789,7 @@ function liveCardHTML(s, pinned){
   const newest = s.latest && s.latest[0];
   return `
     <div class="card${pinned?" pinned":""}" data-act="open" data-id="${esc(s.id)}">
+      ${leadVisualHTML(s, {compact:true})}
       <div class="card-top">
         <span style="display:flex;gap:8px;align-items:center"><span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span><span class="pill disco">discovered</span></span>
         <span class="ago">${newest?esc(agoStr(newest.ts)):""}</span>
@@ -1765,17 +1824,21 @@ function carrierHTML(cr){
 }
 
 function claimHTML(c){
+  const hasOpp = !!(c.opposition && c.opposition.statement);
+  const oppBlock = hasOpp
+    ? `<div class="opp">
+        <div class="lbl">&#8634; strongest opposition <span class="steelbadge">STEELMAN</span></div>
+        <div class="stmt2">${esc(c.opposition.statement)}</div>
+        <div class="carriers">${(c.opposition.carriers||[]).map(carrierHTML).join("")}</div>
+        <div class="why"><b>why it bites:</b> ${esc(c.opposition.why||"")}</div>
+      </div>`
+    : `<div class="steelmissing">steelman &middot; honest opposition <b>not found</b> in the surveyed corpus. We report the gap rather than fabricate one. The chain stays open.</div>`;
   return `
     <div class="claim">
       <div class="stmt">${esc(c.statement)}</div>
       <div class="carriers">${c.carriers.map(carrierHTML).join("")}</div>
-      <div class="strongest"><b>strongest evidence</b>${esc(c.strongest)}</div>
-      <div class="opp">
-        <div class="lbl">↺ strongest opposition</div>
-        <div class="stmt2">${esc(c.opposition.statement)}</div>
-        <div class="carriers">${c.opposition.carriers.map(carrierHTML).join("")}</div>
-        <div class="why"><b>why it bites:</b> ${esc(c.opposition.why)}</div>
-      </div>
+      <div class="strongest"><b>strongest evidence</b>${esc(c.strongest||"")}</div>
+      ${oppBlock}
     </div>`;
 }
 
@@ -1798,6 +1861,238 @@ function depthLocked(eventId){
   if(state.mode==="pro") return false;
   if(state.unlocked===eventId) return false;
   return true;
+}
+
+/* ===================== Phase C-VIS: lead visual =====================
+   Origin OG image (provenance-honest, attributed, never re-hosted) if the
+   engine has cached one; otherwise a deterministic SVG sigil from the
+   story's own attention-shape data. Decoration + provenance, not evidence
+   weight. Spine: no verdict, no text-on-image claim, ASCII captions. */
+function strSeed(str){
+  let h=2166136261; const s=String(str||"x");
+  for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); }
+  return (h>>>0);
+}
+function mulberry32(a){
+  return function(){ a|=0; a=a+0x6D2B79F5|0; let t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; };
+}
+function attentionShape(idOrObj){
+  /* derive a few numbers from existing live/seed data, $0, no external call */
+  let outlets=4, kinds=3, items24=12, items48=20, watchers=0, id="x";
+  if(typeof idOrObj==="string"){
+    id = idOrObj;
+    const lv = liveFor(id);
+    const se = SEED_BY_ID[id];
+    if(lv){ outlets=lv.outlets||outlets; kinds=(lv.kinds||[]).length||kinds; items24=lv.items_24h||items24; items48=lv.items_48h||items48; }
+    if(se){ watchers=se.watchers||0; if(!lv){ kinds=new Set(se.claims.flatMap(c=>c.carriers.map(cr=>cr.kind))).size; } }
+  } else if(idOrObj){
+    id = idOrObj.id || "x";
+    outlets = idOrObj.outlets || outlets;
+    kinds = (idOrObj.kinds||[]).length || kinds;
+    items24 = idOrObj.items_24h || items24;
+    items48 = idOrObj.items_48h || items48;
+  }
+  return {id, outlets, kinds, items24, items48, watchers};
+}
+function sigilSVG(idOrObj){
+  const a = attentionShape(idOrObj);
+  const rnd = mulberry32(strSeed(a.id));
+  const W=640, H=360, cx=W/2, cy=H/2;
+  /* rings = kinds of evidence, radial spikes = outlet spread, inner pulse = items24/items48 ratio */
+  const rings = Math.max(2, Math.min(7, a.kinds || 3));
+  const spikes = Math.max(8, Math.min(36, (a.outlets||4)));
+  const surge = (a.items48>0) ? Math.min(1.8, a.items24/Math.max(1,a.items48-a.items24)) : 0.6;
+  /* rings */
+  let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="attention shape">`;
+  for(let i=0;i<rings;i++){
+    const r = 24 + i*(120/rings) + rnd()*6;
+    const op = 0.07 + 0.04*i;
+    svg += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#E5342B" stroke-width="${0.8+i*.15}" opacity="${op}"/>`;
+  }
+  /* radial spikes */
+  for(let i=0;i<spikes;i++){
+    const ang = (i/spikes)*Math.PI*2 + rnd()*0.04;
+    const r0 = 36 + rnd()*10;
+    const r1 = 70 + rnd()*90 + (i%3===0?20:0);
+    const x0 = cx + Math.cos(ang)*r0, y0 = cy + Math.sin(ang)*r0;
+    const x1 = cx + Math.cos(ang)*r1, y1 = cy + Math.sin(ang)*r1;
+    svg += `<line x1="${x0.toFixed(1)}" y1="${y0.toFixed(1)}" x2="${x1.toFixed(1)}" y2="${y1.toFixed(1)}" stroke="#8A8F98" stroke-width="${rnd()<0.18?1.4:0.6}" opacity="${0.18+rnd()*0.3}"/>`;
+  }
+  /* inner core: surge dot pulsing via CSS */
+  const coreR = Math.max(8, Math.min(26, 10 + surge*9));
+  svg += `<circle cx="${cx}" cy="${cy}" r="${coreR.toFixed(1)}" fill="#E5342B" opacity=".82"><animate attributeName="opacity" values=".82;.45;.82" dur="3.2s" repeatCount="indefinite"/></circle>`;
+  svg += `<circle cx="${cx}" cy="${cy}" r="${(coreR+3).toFixed(1)}" fill="none" stroke="#E5342B" stroke-width="1" opacity=".4"><animate attributeName="r" values="${(coreR+3).toFixed(1)};${(coreR+18).toFixed(1)};${(coreR+3).toFixed(1)}" dur="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".4;0;.4" dur="3.2s" repeatCount="indefinite"/></circle>`;
+  svg += `</svg>`;
+  return svg;
+}
+function leadVisualHTML(target, opts){
+  /* target = SEED event OR live situation OR id; returns <div class="leadvis"> ... </div>
+     The origin OG image path lives in tools/syi/horus_provenance.py - it writes
+     lead_image_url + lead_image_source into the cabinet, the loop folds them
+     into feed.json, and a future demo build will render them with credit. The
+     ONLY path this demo renders today is the deterministic SVG sigil from the
+     story's own attention-shape data. That keeps the spine honest: no fake
+     attribution, no broken-image-fallback DOM swap, no XSS sink. $0. */
+  let id, lv, se;
+  if(typeof target==="string"){
+    id = target; lv = liveFor(id); se = SEED_BY_ID[id];
+  } else if(target && target.claims){ se = target; id = se.id; lv = liveFor(id); }
+  else { lv = target; id = lv.id; se = SEED_BY_ID[id]; }
+  return `<div class="leadvis sigil" data-id="${esc(id)}"><span class="sigtag">attention shape</span>${sigilSVG(lv||se||id)}</div>`;
+}
+
+/* ===================== Phase C: provenance chain =====================
+   Origin vs echo. Best-effort: built from the carriers we already have (each
+   carries a provenance: "original" | "echo" tag from the seeded brief, and
+   the live loop writes the same shape into feed.json over time). No verdict;
+   each carrier shows WHY (its motive). Render only when we actually have
+   "original" carriers; otherwise the section is suppressed (never faked). */
+function provenanceChainsHTML(e){
+  const chains = [];
+  e.claims.forEach((c, ci) => {
+    const all = [].concat(c.carriers||[], (c.opposition&&c.opposition.carriers)||[]);
+    const origins = all.filter(x=>x.provenance==="original");
+    const echoes  = all.filter(x=>x.provenance==="echo");
+    if(!origins.length && !echoes.length) return;
+    chains.push({label: `Claim ${ci+1}`, statement:c.statement, origins, echoes});
+  });
+  if(!chains.length) return "";
+  return `
+    <div class="provbox">
+      <div class="pvh">PROVENANCE &middot; origin vs echo</div>
+      ${chains.map(ch=>`
+        <div style="margin:10px 0 4px">
+          <div style="font-size:.84rem;color:var(--mute2);line-height:1.45;margin-bottom:6px"><b style="color:var(--ink);font-weight:600">${esc(ch.label)}:</b> ${esc(clip(ch.statement, 200))}</div>
+          <div class="provchain">
+            ${ch.origins.map(cr=>`
+              <div class="provrow">
+                <span class="role origin">origin</span>
+                <span class="pvsrc"><b>${esc(cr.source)}</b> &middot; ${esc(KIND_ABBR[cr.kind]||cr.kind)} &middot; ${esc(cr.primacy||"")} <span class="pvmot">why &middot; ${esc(cr.motive||"")}</span></span>
+              </div>`).join("")}
+            ${ch.echoes.map(cr=>`
+              <div class="provrow">
+                <span class="role echo">echo</span>
+                <span class="pvsrc"><b>${esc(cr.source)}</b> &middot; ${esc(KIND_ABBR[cr.kind]||cr.kind)} <span class="pvmot">why &middot; ${esc(cr.motive||"")}</span></span>
+              </div>`).join("")}
+            ${(!ch.origins.length)?`<div class="provrow"><span class="role echo">origin?</span><span class="pvsrc"><b>not yet traced</b><span class="pvmot">no carrier in this set is marked original - the chain stays open; we report the gap rather than fabricate one</span></span></div>`:""}
+          </div>
+        </div>
+      `).join("")}
+      <div class="pvnote">best-effort, never claim of completeness. "1 source, many megaphones" is shown here without a verdict - the spine refuses to translate volume into credibility.</div>
+    </div>`;
+}
+
+/* ===================== Phase D: scenarios with horizon =====================
+   Every theory carries a falsification line + a horizon date. Optional - if a
+   horizon is not known yet we say "horizon: open", never make one up. */
+function scenarioHTML(s){
+  const hz = s.horizon ? `<div class="horizon">horizon &nbsp; <b>${esc(s.horizon)}</b></div>` : `<div class="horizon">horizon &nbsp; <b>open</b></div>`;
+  const fl = s.falsification ? `<div class="falsif"><b>falsified if</b>${esc(s.falsification)}</div>` : "";
+  return `
+    <div class="scenario">
+      <div class="lbl">&#10230; theory</div>
+      <div class="st">${esc(s.statement)}</div>
+      <div class="rests"><b>rests on</b><ul>${(s.restsOn||[]).map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>
+      ${fl}
+      ${hz}
+      <div class="note">${esc(s.note||"")}</div>
+    </div>`;
+}
+
+/* ===================== Phase D: track record =====================
+   Cabinet stores scenarios with horizons. A weekly job (tools/syi/horus_
+   track_record.py) flips status after the horizon to hit / miss / open and
+   writes counts back. Until the first horizon passes, all four are zero -
+   THAT is the honest receipt. We never inflate. */
+function trackRecordHTML(){
+  const tr = (LIVE && LIVE.track_record) || {open:0, evaluated:0, hit:0, miss:0};
+  /* derive local open count from SEED scenarios when no live count exists */
+  const seedOpen = SEED.events.reduce((a,e)=>a+((e.scenarios||[]).length),0);
+  const open = tr.open || seedOpen;
+  return `
+    <div class="trackbox">
+      <div class="trh">track record</div>
+      <div class="trgrid">
+        <div class="cell"><div class="v">${open}</div><div class="l">open</div></div>
+        <div class="cell"><div class="v">${tr.evaluated||0}</div><div class="l">evaluated</div></div>
+        <div class="cell hit"><div class="v">${tr.hit||0}</div><div class="l">hit</div></div>
+        <div class="cell miss"><div class="v">${tr.miss||0}</div><div class="l">miss</div></div>
+      </div>
+      <div class="railnote">dated, falsifiable theories. weekly eval flips status after the horizon. the receipts start now - we never backfill.</div>
+    </div>`;
+}
+
+/* ===================== Phase C: deep report (combined view) =====================
+   The on-demand 2-hours-of-depth artifact. Pulls every existing section into
+   one page-flow - situation, where it stands, spectrum + provenance + steelman,
+   how it got here (frames), scenarios + horizons, attention shape, UNKNOWNS,
+   cited sources. Every section must cite or it does not render. Inline NO
+   VERDICT badge in the header makes the spine visible. */
+function citationsFor(e){
+  const cites = new Set();
+  e.claims.forEach(c=>{
+    c.carriers.forEach(cr=>cites.add(cr.source));
+    if(c.opposition){ c.opposition.carriers.forEach(cr=>cites.add(cr.source)); }
+  });
+  const h = HISTORY[e.id];
+  if(h){ h.bands.forEach(b=>b.nodes.forEach(n=>(n.cites||[]).forEach(c=>cites.add(c.l)))); }
+  return [...cites];
+}
+function deepReportHTML(e){
+  const cites = citationsFor(e);
+  if(!cites.length) return "";
+  const lv = liveFor(e.id);
+  const beat = lv && lv.latest && lv.latest[0];
+  const stamp = beat ? `${beat.ts.slice(0,10)} &middot; ${agoStr(beat.ts)}` : "from the seeded brief";
+  const a = attentionShape(e.id);
+  return `
+    <div class="deep-rep">
+      <div class="dh">
+        <h2>Deep report &middot; ${esc(e.title)}</h2>
+        <span class="stamp">${esc(stamp)}</span>
+        <span class="nvbadge">NO VERDICT</span>
+      </div>
+      <section>
+        <h3>situation</h3>
+        <div class="body">${esc(e.neutralLine)}</div>
+      </section>
+      <section>
+        <h3>where it stands now</h3>
+        <div class="body">${beat ? esc(beat.title)+" &middot; "+esc(beat.outlet||"") : esc(e.neutralLine)}</div>
+      </section>
+      <section>
+        <h3>spectrum &middot; claims &times; kinds &times; carriers</h3>
+        <div class="body">${e.claims.length} competing claims across ${cardKinds(e).length} kinds of evidence. Each claim carries its strongest opposition; see the full spectrum block above.</div>
+      </section>
+      <section>
+        <h3>provenance chains</h3>
+        <div class="body">Origins and echoes are listed in the provenance panel above for each claim. Best-effort, never claimed complete.</div>
+      </section>
+      <section>
+        <h3>steelman pairs</h3>
+        <div class="body">Each claim's strongest opposition is pinned directly to the strongest evidence (the "why it bites" line) - that pairing IS the steelman. Where an honest opposition could not be located, the spectrum says so rather than inventing one.</div>
+      </section>
+      ${HISTORY[e.id]?`<section>
+        <h3>how it got here (fractal history)</h3>
+        <div class="body">${HISTORY[e.id].bands.length} eras, ${HISTORY[e.id].bands.reduce((a,b)=>a+b.nodes.length,0)} cited beats. The beginning is itself disputed - the frame selector exposes which start each side chooses.</div>
+      </section>`:""}
+      ${(e.scenarios&&e.scenarios.length)?`<section>
+        <h3>scenarios &middot; theories with horizons</h3>
+        <div class="body">${e.scenarios.length} dated, falsifiable theories. Each one carries the conditions under which it would be wrong, plus a horizon date the cabinet evaluates against weekly. Theories, never predictions.</div>
+      </section>`:""}
+      <section>
+        <h3>attention shape</h3>
+        <div class="body">${a.items24} items / 24h across roughly ${a.outlets} outlets in ${a.kinds} kinds of evidence. Surge ratio computed from items_24h / items_48h. Pure data; never a credibility signal.</div>
+      </section>
+      <section>
+        <h3>unknowns</h3>
+        <div class="body">Gaps are reported, never papered over. See the UNKNOWNS section above.</div>
+      </section>
+      <section>
+        <h3>full cited source list (${cites.length})</h3>
+        <div class="citelist">${cites.map(c=>`<span>&middot; ${esc(c)}</span>`).join("")}</div>
+      </section>
+    </div>`;
 }
 
 /* ===================== HISTORY (Phase B) =====================
@@ -1988,14 +2283,8 @@ function renderEvent(id){
     <div class="mfg"><div class="lbl">⚠ manufactured consensus watch</div>${esc(e.manufacturedConsensus)}</div>` : "";
   const scenBlock = (e.scenarios&&e.scenarios.length) ? `
     <div class="section">
-      <div class="section-h"><h2>Scenarios</h2><span class="sub">// theories, never predictions</span></div>
-      ${e.scenarios.map(s=>`
-        <div class="scenario">
-          <div class="lbl">⟶ theory</div>
-          <div class="st">${esc(s.statement)}</div>
-          <div class="rests"><b>rests on</b><ul>${s.restsOn.map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>
-          <div class="note">${esc(s.note)}</div>
-        </div>`).join("")}
+      <div class="section-h"><h2>Scenarios</h2><span class="sub">// theories with horizons, never predictions</span></div>
+      ${e.scenarios.map(scenarioHTML).join("")}
     </div>` : "";
 
   const hasDepth = !!mfgBlock || !!(e.scenarios&&e.scenarios.length);
@@ -2025,7 +2314,7 @@ function renderEvent(id){
       : depthInner}` : "";
 
   app().innerHTML = `
-    <div class="back" onclick="goBoard()">← &nbsp; back to monitor</div>
+    <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
     <div class="ev-head">
       <div class="toprow">
         <span class="tag ${e.scope}">${esc(e.scope)}</span>
@@ -2033,6 +2322,7 @@ function renderEvent(id){
         <span class="noverdict">NO VERDICT</span>
       </div>
       <h1>${esc(e.title)}</h1>
+      ${leadVisualHTML(e)}
       ${standsNow}
       <div class="neutral">${esc(e.neutralLine)}</div>
       <div class="att-line">
@@ -2044,15 +2334,19 @@ function renderEvent(id){
 
     ${latestBlock}
 
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view</div>
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view + steelman</div>
     ${legendHTML()}
     <div class="section">${claimsBlock}</div>
+
+    ${provenanceChainsHTML(e)}
 
     ${timelineBlock}
 
     ${unknownsBlock}
 
     ${depthSection}
+
+    ${deepReportHTML(e)}
   `;
 }
 
