@@ -284,6 +284,9 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
 .tl-peek>summary::-webkit-details-marker{display:none}
 .tl-peek>summary:hover{color:var(--red)}
 .tl-peek[open]>summary{color:var(--ink); margin-bottom:8px}
+.hist-ph-body{padding:6px 0 10px; color:var(--mute2); font-size:.92rem; line-height:1.55}
+.hist-ph-body p{margin:0 0 10px}
+.hist-ph-body p:last-child{margin-bottom:0}
 @media(max-width:640px){ #globeWrap{padding:0 14px} #globeStage{height:clamp(280px,44vh,420px)} .globe-ov .hint{display:none} }
 
 /* ===== Phase A: feed hero - THE SPLIT cards + rails ===== */
@@ -331,7 +334,8 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
   .feedwrap{display:flex; flex-direction:column}
   .rail{position:static}
   .rail.left .vfilters{flex-direction:row; flex-wrap:wrap}
-  .beat .o{margin-left:0}
+  .beat{flex-wrap:wrap}
+  .beat .o{margin-left:0; white-space:normal; overflow-wrap:anywhere}
 }
 
 /* ===== Phase C-VIS: lead visual on cards + detail (origin OG OR sigil) ===== */
@@ -383,6 +387,12 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
 .trackbox .trgrid .cell .l{font-family:var(--mono); font-size:.56rem; letter-spacing:.08em; color:var(--mute); text-transform:uppercase; margin-top:2px}
 .trackbox .trgrid .cell.hit .v{color:var(--cyan)}
 .trackbox .trgrid .cell.miss .v{color:var(--red)}
+
+/* ===== TODAY view mobile ===== */
+@media(max-width:390px){
+  main{padding:14px 14px 60px}
+  [style*="max-width:800px"]{margin:0 auto!important;width:100%!important}
+}
 </style>
 </head>
 <body>
@@ -515,7 +525,7 @@ const SEED = {
       "cta": "Upgrade to Pro",
       "bullets": [
         "Unlimited full-spectrum briefs on all tracked events",
-        "Real-time alerts when significant gaps appear (coverage silence or coordinated push)",
+        "Real-time alerts when a story's coverage shape changes - e.g. mainstream echo drops to zero",
         "Provenance chain: trace each claim to its origin and who disputes it",
         "Strongest opposition attached to strongest evidence-see what refutes the best case",
         "Temporal layer: watch how narratives evolve and collapse over weeks and months",
@@ -1555,7 +1565,7 @@ const HISTORY = {"gaza-israel-war-current":{"id":"gaza-israel-war-current","gene
 /* ===================== STATE ===================== */
 const state = {
   mode: "free",          // free | pro
-  view: "board",         // board | event
+  view: "today",         // today | board | event
   eventId: null,
   filter: "all",
   kinds: [],             // active KIND-of-evidence filters (empty = all)
@@ -1567,6 +1577,9 @@ const state = {
   histFrame: {},         // per-situation selected frame id (null/"" = all eras)
   histOpen: false,       // HOW IT GOT HERE peek state for the open situation
   histBands: new Set(),  // era bands the user has expanded
+  riverMode: "dev",      // dev | story (for board view)
+  utrFilter: false,      // UNDER THE RADAR filter toggle
+  riverSort: "traction", // traction | velocity (river sort order)
 };
 
 const KIND_ABBR = {
@@ -1610,6 +1623,8 @@ function cardKinds(e){
   if(lv && lv.kinds && lv.kinds.length) return lv.kinds;
   const ks = new Set(); e.claims.forEach(c=>c.carriers.forEach(cr=>ks.add(cr.kind))); return [...ks];
 }
+let SLATE = null;
+let SLATE_RESOLVED = false;   // slate fetch settled (success or genuinely absent)
 fetch("feed.json?v="+Date.now())
   .then(r=>r.ok?r.json():null)
   .then(j=>{
@@ -1618,8 +1633,16 @@ fetch("feed.json?v="+Date.now())
     const st = document.getElementById("refreshStamp");
     if(st && j.generated_utc) st.textContent = "refreshed "+j.generated_utc.slice(0,16).replace("T"," ")+" UTC // live loop";
     document.getElementById("footMeta").textContent = SEED.microcopy.tagline + "  //  live wire + seeded brief";
+    try{ routeHash(); }catch(_){}   // open a deep-linked story once the live ids are known
     render();
-  }).catch(()=>{});
+  });
+fetch("slate.json?v="+Date.now())
+  .then(r=>r.ok?r.json():null)
+  .then(j=>{
+    SLATE_RESOLVED = true;
+    if(j && j.panels){ SLATE = j; loadSlateState(); }
+    render();
+  }).catch(()=>{ SLATE_RESOLVED = true; render(); });
 
 /* ===================== Phase C: cached deep reports (stage 9) =====================
    reports/<id>.json is the engine's cached deep-report artifact - deterministic,
@@ -1639,6 +1662,88 @@ function loadReport(id){
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));}
 function fmtNum(n){if(n>=1e6)return (n/1e6).toFixed(n>=1e7?0:1)+"M";if(n>=1000)return (n/1000).toFixed(n>=10000?0:1)+"k";return String(n);}
 
+/* ===================== SLATE/TODAY HELPERS ===================== */
+const BUCKET_LABEL_FULL = {
+  "geopolitics": "GEOPOLITICS",
+  "power-money": "POWER + MONEY",
+  "economy": "ECONOMY",
+  "tech-science-health": "TECH / SCIENCE / HEALTH",
+  "info-wars": "INFO WARS"
+};
+
+function loadSlateState(){
+  const lv = localStorage.getItem("horus_last_visit");
+  const lastVisit = lv ? new Date(lv) : null;
+  const stars = localStorage.getItem("horus_stars");
+  const seenSplits = localStorage.getItem("horus_seen_splits");
+  // Track for per-panel delta markers below
+  window.slateLastVisit = lastVisit;
+  window.slateSeen = seenSplits ? JSON.parse(seenSplits) : {};
+}
+
+function saveSlateState(){
+  const now = new Date().toISOString();
+  localStorage.setItem("horus_last_visit", now);
+  // Save split shifts for starred situations
+  const stars = localStorage.getItem("horus_stars");
+  const starList = stars ? JSON.parse(stars) : [];
+  const seenSplits = {};
+  if(SLATE && SLATE.panels){
+    SLATE.panels.forEach(p=>{
+      if(starList.includes(p.id)){
+        const splitStr = (p.split ? (p.split.a || "") + "|" + (p.split.b || "") : "");
+        seenSplits[p.id] = splitStr;
+      }
+    });
+  }
+  localStorage.setItem("horus_seen_splits", JSON.stringify(seenSplits));
+}
+
+function toggleStar(sid){
+  const stars = localStorage.getItem("horus_stars");
+  let starList = stars ? JSON.parse(stars) : [];
+  if(starList.includes(sid)){
+    starList = starList.filter(s=>s!==sid);
+  } else {
+    starList.push(sid);
+  }
+  localStorage.setItem("horus_stars", JSON.stringify(starList));
+  render();
+}
+
+function isStar(sid){
+  const stars = localStorage.getItem("horus_stars");
+  const starList = stars ? JSON.parse(stars) : [];
+  return starList.includes(sid);
+}
+
+function getPanelDeltas(){
+  const stars = localStorage.getItem("horus_stars");
+  const starList = stars ? JSON.parse(stars) : [];
+  const seenSplits = localStorage.getItem("horus_seen_splits");
+  const seen = seenSplits ? JSON.parse(seenSplits) : {};
+  const result = {};
+  if(SLATE && SLATE.panels){
+    SLATE.panels.forEach(p=>{
+      if(starList.includes(p.id)){
+        const lastVisit = localStorage.getItem("horus_last_visit");
+        const lastVisitTime = lastVisit ? new Date(lastVisit).getTime() : 0;
+        const panelTime = new Date(p.dev.ts).getTime();
+        const newCount = SLATE.panels.filter(x=>{
+          if(!starList.includes(x.id)) return false;
+          const xt = new Date(x.dev.ts).getTime();
+          return xt > lastVisitTime;
+        }).length;
+        const prevSplit = seen[p.id] || "";
+        const currSplit = (p.split ? (p.split.a || "") + "|" + (p.split.b || "") : "");
+        const splitShifted = prevSplit && prevSplit !== currSplit;
+        result[p.id] = {newCount, splitShifted};
+      }
+    });
+  }
+  return result;
+}
+
 /* ===================== RENDER ===================== */
 const app = () => document.getElementById("app");
 
@@ -1646,8 +1751,293 @@ function render(){
   document.getElementById("tFree").classList.toggle("on", state.mode==="free");
   document.getElementById("tPro").classList.toggle("on", state.mode==="pro");
   document.getElementById("taglineBadge").textContent = "NO VERDICT";
-  if(state.view==="board") renderBoard(); else renderEvent(state.eventId);
+  if(state.view==="today") renderToday(); else if(state.view==="board") renderBoard(); else if(state.view==="machine") renderMachine(); else renderEvent(state.eventId);
   window.scrollTo({top:0,behavior:"instant"});
+}
+
+function renderToday(){
+  if(!SLATE || !SLATE.panels){
+    if(SLATE_RESOLVED){
+      // slate genuinely absent - fall back to THE RIVER (one warn, C.3), no error theater
+      if(!window.__slateWarned){ console.warn("slate.json missing or incomplete; falling back to river"); window.__slateWarned = true; }
+      state.view = "board";
+      renderBoard();
+      return;
+    }
+    renderBoard();   // still loading - show the river meanwhile, TODAY stays the default view
+    return;
+  }
+
+  const edition = SLATE.edition_utc || "2026-06-11";
+  const stamped = SLATE.stamped_utc || "";
+  const stampedTime = stamped ? stamped.slice(11,16) : "--:--";
+  const deltas = getPanelDeltas();
+  const stars = localStorage.getItem("horus_stars");
+  const starList = stars ? JSON.parse(stars) : [];
+
+  const panelsHTML = SLATE.panels.map(p=>{
+    const bucketLabel = BUCKET_LABEL_FULL[p.bucket] || p.bucket;
+    const splitHTML = p.split && p.split.a && p.split.b
+      ? `<div style="font-size:.95rem;margin-top:8px;color:var(--mute2)"><strong>Side A:</strong> ${esc(p.split.a)}</div><div style="font-size:.95rem;margin-top:6px;color:var(--mute2)"><strong>Side B:</strong> ${esc(p.split.b)}</div>`
+      : `<div style="font-size:.95rem;margin-top:8px;color:var(--mute)">Sides not yet mapped - the split for this story has not been extracted yet.</div>`;
+    const kindsStr = (p.kinds||[]).map(k=>KIND_ABBR[k]||k).join(" / ");
+    const kindsLine = `<div style="font-size:.9rem;margin-top:8px;color:var(--mute2)">${kindsStr || "---"} &nbsp;//&nbsp; ${p.items_24h} sources / ${(p.kinds||[]).length} kinds</div>`;
+    const dotHTML = p.dot && p.dot.entity && p.dot.situations && p.dot.situations[0]
+      ? `<div style="font-size:.9rem;margin-top:8px;color:var(--mute)">This connects: ${esc(p.dot.entity)} also appears in the <a href="javascript:openEvent('${esc(p.dot.situations[0].id)}')" style="color:var(--cyan)">${esc(p.dot.situations[0].name)}</a> story -></div>`
+      : "";
+    const isNewer = window.slateLastVisit && new Date(p.dev.ts) > window.slateLastVisit;
+    const newMarker = isNewer ? `<div style="font-size:.85rem;color:var(--red);font-weight:500;margin-top:8px">NEW SINCE YOUR LAST VISIT</div>` : "";
+    const isStar = starList.includes(p.id);
+    const starText = isStar ? "* STARRED" : "* STAR";
+    return `
+      <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:17px;margin-bottom:14px;position:relative">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <div>
+            <div style="font-family:var(--mono);font-size:.75rem;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px"><span style="border:1px solid var(--line);padding:3px 8px;border-radius:5px;display:inline-block">${esc(p.name)}</span> <span style="margin-left:8px;color:var(--cyan)">${bucketLabel}</span></div>
+            <div style="font-size:1rem;font-weight:500;color:var(--ink);margin-bottom:4px">${esc(p.dev.title)} <span style="color:var(--mute);font-weight:400">${esc(p.dev.outlet)}</span> <span style="color:var(--mute);font-size:.9rem">${esc(agoStr(p.dev.ts))}</span></div>
+          </div>
+          <button onclick="toggleStar('${esc(p.id)}')" style="background:transparent;border:1px solid var(--line);color:var(--mute);padding:6px 12px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:.8rem;white-space:nowrap;transition:.15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mute)'">${starText}</button>
+        </div>
+        ${splitHTML}
+        ${kindsLine}
+        ${dotHTML}
+        ${newMarker}
+      </div>
+    `;
+  }).join("");
+
+  const dotOfDayHTML = SLATE.dot_of_the_day
+    ? (() => {
+      const ent = SLATE.dot_of_the_day.entity || "";
+      const sits = SLATE.dot_of_the_day.situations || [];
+      let bodyLine = "";
+      if(sits.length === 2){
+        bodyLine = `${esc(ent)} now appears in both the <a href="javascript:openEvent('${esc(sits[0].id)}')" style="color:var(--cyan)">${esc(sits[0].name)}</a> and the <a href="javascript:openEvent('${esc(sits[1].id)}')" style="color:var(--cyan)">${esc(sits[1].name)}</a> story.`;
+      } else if(sits.length > 2){
+        const sitLinks = sits.slice(0,-1).map(s=>`<a href="javascript:openEvent('${esc(s.id)}')" style="color:var(--cyan)">${esc(s.name)}</a>`).join(", ");
+        const lastSit = sits[sits.length-1];
+        bodyLine = `${esc(ent)} now appears in the ${sitLinks} and <a href="javascript:openEvent('${esc(lastSit.id)}')" style="color:var(--cyan)">${esc(lastSit.name)}</a> stories.`;
+      }
+      return `
+        <div style="border:2px solid var(--line);background:rgba(63,182,200,.05);border-radius:var(--radius);padding:17px;margin:22px 0;text-align:center">
+          <div style="font-family:var(--mono);font-size:.75rem;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">DOT OF THE DAY</div>
+          <div style="font-size:1.05rem;color:var(--ink);margin-bottom:14px;font-weight:500">${bodyLine}</div>
+          <div style="font-size:.85rem;color:var(--mute)">A connection the engine recorded in the last 24 hours. Descriptive only - what appears where, never what it means.</div>
+        </div>
+      `;
+    })()
+    : "";
+
+  const appendixHTML = SLATE.appendix && SLATE.appendix.length > 0
+    ? `<details style="margin-top:22px;padding:14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)">
+        <summary style="cursor:pointer;font-family:var(--mono);font-size:.75rem;color:var(--mute);text-transform:uppercase;letter-spacing:.08em">DEVELOPING SINCE THIS MORNING (${SLATE.appendix.length})</summary>
+        <div style="margin-top:14px">
+          ${SLATE.appendix.map(a=>`
+            <div style="font-size:.9rem;color:var(--mute2);margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line)">
+              <div style="color:var(--ink);font-weight:500">${esc(a.name)} <span style="color:var(--cyan);font-weight:400">${BUCKET_LABEL_FULL[a.bucket] || a.bucket}</span></div>
+              <div style="margin-top:4px">${esc(a.dev.title)} <span style="color:var(--mute)">${esc(a.dev.outlet)}</span> <span style="color:var(--mute);font-size:.85rem">${esc(agoStr(a.dev.ts))}</span></div>
+            </div>
+          `).join("")}
+        </div>
+      </details>`
+    : "";
+
+  const overflowHTML = SLATE.overflow && SLATE.overflow.count > 0
+    ? `<div style="margin-top:22px;padding:14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)">
+        <div><a href="javascript:switchToRiver()" style="color:var(--cyan);text-decoration:none;font-weight:500">${SLATE.overflow.count} quieter developments in the river -></a></div>
+        <div style="font-size:.9rem;color:var(--mute);margin-top:8px">Cut by traction and impact, never by source quality. Nothing is hidden - the full river is one click away.</div>
+      </div>`
+    : "";
+
+  const railHTML = (() => {
+    const deltaMap = deltas;
+    const items = starList.map(sid=>{
+      const panel = SLATE.panels.find(p=>p.id===sid);
+      if(!panel) return null;
+      const delta = deltaMap[sid] || {};
+      const newCount = delta.newCount || 0;
+      let deltaLine = "";
+      if(window.slateLastVisit){
+        if(newCount > 0){
+          deltaLine = `${newCount} new development${newCount!==1?"s":""} since you were here`;
+          if(delta.splitShifted) deltaLine += ", split shifted";
+        }
+      }
+      return `<div style="padding:12px;border-bottom:1px solid var(--line);cursor:pointer" onclick="openEvent('${esc(sid)}')">
+        <div style="font-weight:500;color:var(--ink)">${esc(panel.name)}</div>
+        ${deltaLine ? `<div style="font-size:.9rem;color:var(--mute2);margin-top:4px">${deltaLine}</div>` : ""}
+      </div>`;
+    }).filter(x=>x);
+    return `
+      <div style="border:1px solid var(--line);border-radius:var(--radius);background:var(--surf);margin-top:22px;overflow:hidden">
+        <div style="padding:14px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);font-weight:500">YOUR STORIES</div>
+        ${items.length ? `<div>${items.join("")}</div>` : `<div style="padding:14px;font-size:.9rem;color:var(--mute)">Star a story and it lives here. Stored only in your browser - no account, nothing leaves your device.</div>`}
+      </div>
+    `;
+  })();
+
+  app().innerHTML = `
+    <div style="max-width:800px;margin:0 auto">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;border-bottom:1px solid var(--line);padding-bottom:18px">
+        <div>
+          <h1 style="font-family:var(--display);font-size:2rem;font-weight:700;color:var(--ink);margin:0 0 6px">TODAY</h1>
+          <p style="font-family:var(--mono);font-size:.85rem;color:var(--mute);margin:0">Edition ${edition}, compiled ${stampedTime} UTC.</p>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center">
+          <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden">
+            <button onclick="state.view='today';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:500;transition:.15s;background:rgba(229,52,43,.1);color:var(--ink);border-right:1px solid var(--line)">TODAY</button>
+            <button onclick="state.view='board';state.riverMode='story';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">THE RIVER</button>
+            <button onclick="openMachine()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:400;transition:.15s;opacity:.7">MACHINE ROOM</button>
+          </div>
+        </div>
+      </div>
+
+      ${panelsHTML}
+      ${dotOfDayHTML}
+
+      <div style="text-align:center;margin:42px 0;padding:28px 0;border-top:1px solid var(--line)">
+        <h2 style="font-size:1.5rem;font-weight:600;color:var(--ink);margin:0 0 12px">That is what moved the world today.</h2>
+        <p style="font-size:1.1rem;color:var(--ink);margin:0">You are caught up.</p>
+      </div>
+
+      ${overflowHTML}
+      ${appendixHTML}
+      ${railHTML}
+    </div>
+  `;
+  saveSlateState();   // C.2: write last-visit + seen-splits AFTER deltas were computed
+}
+
+function switchToRiver(){
+  state.view = "board";
+  state.riverMode = "story";
+  render();
+}
+
+function openMachine(){
+  state.view = "machine";
+  render();
+}
+
+function renderMachine(){
+  const liveA1 = [
+    {engine: "situation", surface: "story"},
+    {engine: "lens", surface: "source"},
+    {engine: "item", surface: "source (counted), report (singular)"},
+    {engine: "traction", surface: "attention"},
+    {engine: "carrier", surface: "source"},
+    {engine: "corpus", surface: "the sources we collected"},
+    {engine: "scenario", surface: "theory"},
+    {engine: "track record", surface: "receipts (label; \"track record\" allowed in explanatory prose)"},
+    {engine: "cabinet / gate / stage", surface: "(machine room only)"}
+  ];
+
+  const linesEC3 = [
+    "Intro: The plumbing, in the open. Everything here is how HORUS works on the inside - counts, formulas and checks, published so the cut is inspectable. Nothing on this page is a quality score.",
+    "On the surface we say stories, sources, sides, theories, receipts. In here they are situations, lenses, claims, scenarios, the track record. Same things, two registers.",
+    "Three machine lints run before anything is published: verdict-lint (no true/false rulings in the engine's voice), theory-lint (no prediction stated as fact), mirror-lint (no \"what they hide from you\" voice). A hit blocks the write."
+  ];
+
+  const cabinetHTML = LIVE && LIVE.cabinet ? `
+    <section style="margin-bottom:40px">
+      <h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:4px">THE CABINET</h2>
+      <div style="font-size:.95rem;color:var(--mute2);margin-bottom:18px;line-height:1.6">The Cabinet rows from the river: items remembered / stories + discovered / claims + entities / carriers + steelman rows / history nodes + runs.</div>
+      <div style="display:grid;gap:12px">
+        <div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)"><div style="font-family:var(--mono);font-size:.9rem;color:var(--ink)">Items remembered: ${fmtNum(LIVE.cabinet.items)}</div></div>
+        <div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)"><div style="font-family:var(--mono);font-size:.9rem;color:var(--ink)">Stories: ${LIVE.cabinet.situations} (${LIVE.cabinet.discovered} discovered)</div></div>
+        <div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)"><div style="font-family:var(--mono);font-size:.9rem;color:var(--ink)">Claims: ${LIVE.cabinet.claims} // Entities linked: ${LIVE.cabinet.entities}</div></div>
+        ${LIVE.cabinet.carriers?`<div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)"><div style="font-family:var(--mono);font-size:.9rem;color:var(--ink)">Carriers traced: ${LIVE.cabinet.carriers} // Steelman rows: ${LIVE.cabinet.steelmans||0}</div></div>`:""}
+        <div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)"><div style="font-family:var(--mono);font-size:.9rem;color:var(--ink)">History nodes: ${LIVE.cabinet.history_nodes} // Runs: ${LIVE.cabinet.runs}</div></div>
+      </div>
+      <div style="font-size:.85rem;color:var(--mute);margin-top:12px">Stored once, remembered forever - history is never re-fetched, nothing is ever deleted.</div>
+    </section>
+  ` : `<section style="margin-bottom:40px"><h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:12px">THE CABINET</h2><div style="color:var(--mute)">Live cabinet data not available yet.</div></section>`;
+
+  const gateHTML = LIVE ? `
+    <section style="margin-bottom:40px">
+      <h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:4px">AT THE GATE</h2>
+      <div style="font-size:.95rem;color:var(--mute2);margin-bottom:18px">Candidate clusters at the discovery gate.</div>
+      ${(LIVE.candidates&&LIVE.candidates.length) ? `<div style="display:grid;gap:12px;margin-bottom:12px">${LIVE.candidates.slice(0,5).map(c=>`
+        <div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf)">
+          <div style="font-family:var(--mono);font-size:.9rem;color:var(--ink);margin-bottom:4px">${esc(c.sample)}</div>
+          <div style="font-size:.85rem;color:var(--mute)">${c.count} items // ${c.outlets} outlets // ${esc(c.status||"watching")}</div>
+        </div>`).join("")}</div>` : `<div style="color:var(--mute);padding:12px">No clusters at the gate right now.</div>`}
+      ${LIVE.gate?`<div style="font-size:.85rem;color:var(--mute);margin-top:12px">This run: ${LIVE.gate.accepted||0} accepted / ${LIVE.gate.rejected||0} rejected. Gossip, sport and local crime never enter; rejections are logged, not hidden.</div>`:""}
+    </section>
+  ` : `<section style="margin-bottom:40px"><h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:12px">AT THE GATE</h2><div style="color:var(--mute)">Gate data not available yet.</div></section>`;
+
+  const graduationHTML = LIVE && LIVE.gate_summary ? `
+    <section style="margin-bottom:40px">
+      <h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:4px">GRADUATION SCORE</h2>
+      <div style="font-size:.95rem;color:var(--mute2);margin-bottom:18px">Can the engine take any story it discovered on its own to the full page - sides, sources, history, opposition, report - automatically? Each discovered story is scored 0-8 on exactly that, every hour.</div>
+      ${LIVE.gate_summary ? `<div style="color:var(--mute);padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf);font-family:var(--mono);font-size:.9rem">${esc(LIVE.gate_summary)}</div>` : ""}
+    </section>
+  ` : `<section style="margin-bottom:40px"><h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:12px">GRADUATION SCORE</h2><div style="color:var(--mute)">Gate scoring starts when the history builder ships.</div></section>`;
+
+  const slateHTML = SLATE && SLATE.formula ? `
+    <section style="margin-bottom:40px">
+      <h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:4px">THE SLATE FORMULA</h2>
+      <div style="font-size:.95rem;color:var(--mute2);margin-bottom:18px">How HORUS compiles the morning brief.</div>
+      <div style="color:var(--mute);padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf);font-family:var(--mono);font-size:.9rem;white-space:pre-wrap">${esc(JSON.stringify(SLATE.formula, null, 2))}</div>
+    </section>
+  ` : `<section style="margin-bottom:40px"><h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:12px">THE SLATE FORMULA</h2><div style="color:var(--mute)">The slate compiler has not shipped its first edition yet.</div></section>`;
+
+  const sourcesHTML = LIVE && LIVE.lenses ? `
+    <section style="margin-bottom:40px">
+      <h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:4px">SOURCES + CLASSES</h2>
+      <div style="font-size:.95rem;color:var(--mute2);margin-bottom:18px">The full lens list with distribution classes.</div>
+      ${LIVE.lenses.ok.length ? `<div style="display:grid;gap:12px;margin-bottom:12px">${LIVE.lenses.ok.map(l=>`<div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf);font-family:var(--mono);font-size:.9rem;color:var(--ink)">${esc(l.label||l.id)}</div>`).join("")}</div>` : ""}
+      ${LIVE.lenses.failed.length ? `<div style="margin-top:18px"><div style="font-weight:600;color:var(--mute2);margin-bottom:8px">Dark sources (not reporting):</div><div style="display:grid;gap:12px">${LIVE.lenses.failed.map(l=>`<div style="padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surf);font-family:var(--mono);font-size:.9rem;color:var(--red)">${esc(l.label||l.id)}</div>`).join("")}</div></div>` : ""}
+    </section>
+  ` : `<section style="margin-bottom:40px"><h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:12px">SOURCES + CLASSES</h2><div style="color:var(--mute)">Source data not available.</div></section>`;
+
+  const wordsHTML = `
+    <section style="margin-bottom:40px">
+      <h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:4px">THE WORDS</h2>
+      <div style="font-size:.95rem;color:var(--mute2);margin-bottom:18px">${linesEC3[1]}</div>
+      <div style="display:grid;gap:8px">
+        ${liveA1.map(row=>`<div style="display:grid;grid-template-columns:180px 1fr;gap:16px;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--surf);font-size:.9rem">
+          <div style="font-weight:500;font-family:var(--mono)">${esc(row.engine)}</div>
+          <div style="color:var(--mute2)">${esc(row.surface)}</div>
+        </div>`).join("")}
+      </div>
+    </section>
+  `;
+
+  const lintsHTML = `
+    <section style="margin-bottom:40px">
+      <h2 style="font-family:var(--display);font-size:1.3rem;font-weight:600;margin-bottom:4px">THE LINTS</h2>
+      <div style="font-size:.95rem;color:var(--mute2);line-height:1.6">${linesEC3[2]}</div>
+    </section>
+  `;
+
+  app().innerHTML = `
+    <div style="max-width:800px;margin:0 auto">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;border-bottom:1px solid var(--line);padding-bottom:18px">
+        <div>
+          <h1 style="font-family:var(--display);font-size:2rem;font-weight:700;color:var(--ink);margin:0 0 6px">MACHINE ROOM</h1>
+          <p style="font-family:var(--mono);font-size:.85rem;color:var(--mute);margin:0">The plumbing, in the open.</p>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center">
+          <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden">
+            <button onclick="state.view='today';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:500;transition:.15s;border-right:1px solid var(--line)">TODAY</button>
+            <button onclick="state.view='board';state.riverMode='story';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">THE RIVER</button>
+            <button onclick="openMachine()" style="background:transparent;color:var(--ink);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:500;transition:.15s;background:rgba(229,52,43,.1)">MACHINE ROOM</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size:.95rem;color:var(--mute2);margin-bottom:40px;line-height:1.6">${linesEC3[0]}</div>
+
+      ${cabinetHTML}
+      ${gateHTML}
+      ${graduationHTML}
+      ${slateHTML}
+      ${sourcesHTML}
+      ${wordsHTML}
+      ${lintsHTML}
+    </div>
+  `;
 }
 
 function renderBoard(){
@@ -1667,11 +2057,14 @@ function renderBoard(){
     const sp = s.split || {};
     const okQ = !q || (s.name+" "+(sp.a||"")+" "+(sp.b||"")).toLowerCase().includes(q);
     const okKind = !state.kinds.length || (s.kinds||[]).some(k=>state.kinds.includes(k));
-    return okScope && okQ && okKind;
+    const okUTR = !state.utrFilter || (s.under_radar === true);
+    return okScope && okQ && okKind && okUTR;
   });
   const river = evs.map(e=>({t:"seed", v:e, tr:traction(e), w:e.watchers}))
     .concat(lives.map(s=>({t:"live", v:s, tr:(s.items_24h||0)*1e6+(s.items_48h||0), w:0})));
-  river.sort((a,b)=> (b.tr-a.tr) || (b.w-a.w));
+  const velocity = r=>{ const i24 = (r.v.items_24h||0); const i48 = (r.v.items_48h||0); const i48prev = i48-i24; return i24 - i48prev; };
+  const sortByVelocity = state.riverSort==="velocity";
+  river.sort((a,b)=> sortByVelocity ? (velocity(b)-velocity(a)) : ((b.tr-a.tr) || (b.w-a.w)));
   const scopes = ["all","geopolitics","power-money","economy","tech-science-health","info-wars"];
   const totalClaims = SEED.events.reduce((a,e)=>a+e.claims.length,0);
   const items24 = LIVE ? LIVE.situations.reduce((a,s)=>a+(s.items_24h||0),0) : null;
@@ -1685,16 +2078,31 @@ function renderBoard(){
   app().innerHTML = `
     <div class="kicker"><span class="n">//</span> 01 &nbsp; THE FEED${LIVE?`<span class="livechip">LIVE</span>`:`<span class="mute">&nbsp; seeded</span>`}</div>
     <div class="board-head">
-      <div>
+      <div style="flex:1">
         <h1>What the world is arguing about</h1>
         <p>${esc(mc.noVerdictExplainer)}</p>
       </div>
-      <div class="statrow">
-        <div class="stat"><div class="v">${SEED.events.length + liveOnly().length}</div><div class="l">situations tracked</div></div>
-        ${items24!==null
-          ? `<div class="stat"><div class="v">${items24}</div><div class="l">items / 24h</div></div>`
-          : `<div class="stat"><div class="v">${totalClaims}</div><div class="l">competing claims</div></div>`}
-        <div class="stat"><div class="v">${LIVE?okL+"/"+(okL+failedL.length):"8"}</div><div class="l">${LIVE?"lenses reporting":"source kinds"}</div></div>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;font-family:var(--mono);font-size:.75rem">
+          <button onclick="state.view='today';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">TODAY</button>
+          <button onclick="state.view='board';state.riverMode='story';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;border-right:1px solid var(--line);transition:.15s">${state.riverMode==="dev"?"BY STORY":"BY TRACTION"}</button>
+          <button onclick="openMachine()" style="background:transparent;color:var(--mute);border:0;padding:8px 14px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:400;transition:.15s;opacity:.7">MACHINE ROOM</button>
+        </div>
+        <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;font-family:var(--mono);font-size:.75rem">
+          <button onclick="state.riverSort=state.riverSort==='velocity'?'traction':'velocity';render()" style="background:transparent;color:${state.riverSort==='velocity'?'var(--ink)':'var(--mute)'};border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;transition:.15s">${state.riverSort==="velocity"?"VELOCITY":"TRACTION"}</button>
+        </div>
+        <div style="font-family:var(--mono);font-size:.7rem;color:var(--mute);max-width:180px">Velocity = items in the last 24h minus the 24h before. What is accelerating, not what is true.</div>
+      </div>
+    </div>
+    <div class="board-head" style="margin-top:18px">
+      <div>
+        <div class="statrow">
+          <div class="stat"><div class="v">${SEED.events.length + liveOnly().length}</div><div class="l">situations tracked</div></div>
+          ${items24!==null
+            ? `<div class="stat"><div class="v">${items24}</div><div class="l">items / 24h</div></div>`
+            : `<div class="stat"><div class="v">${totalClaims}</div><div class="l">competing claims</div></div>`}
+          <div class="stat"><div class="v">${LIVE?okL+"/"+(okL+failedL.length):"8"}</div><div class="l">${LIVE?"sources reporting":"source kinds"}</div></div>
+        </div>
       </div>
     </div>
     <div class="feedwrap">
@@ -1702,6 +2110,11 @@ function renderBoard(){
         <div class="railbox">
           <div class="railh">pillar</div>
           <div class="vfilters">${scopes.map(s=>`<div class="chip ${state.filter===s?"on":""}" onclick="setFilter('${s}')">${BUCKET_LABEL[s]||s}</div>`).join("")}</div>
+        </div>
+        <div class="railbox">
+          <div class="railh">under the radar</div>
+          <div class="chip ${state.utrFilter?"on":""}" onclick="state.utrFilter=!state.utrFilter;render()">UNDER THE RADAR</div>
+          <div class="railnote">Stories with traction beyond the mainstream list and zero mainstream echo in the last 48 hours. The numbers are the whole statement.</div>
         </div>
         <div class="railbox">
           <div class="railh">kind of evidence</div>
@@ -1720,7 +2133,7 @@ function renderBoard(){
         ${river.map((r,i)=>{
           const pin = i===0 && r.tr>0;
           const html = r.t==="seed" ? cardHTML(r.v, pin) : liveCardHTML(r.v, pin);
-          return (pin?`<div class="pinlabel">// today's top situation by traction</div>`:"") + html;
+          return (pin?`<div class="pinlabel">// today's top story by attention</div>`:"") + html;
         }).join("") || `<p class="mute">No situations match.</p>`}
       </div>
       <aside class="rail right">
@@ -1733,34 +2146,18 @@ function renderBoard(){
             </div>`).join("") : `<div class="railnote">The live wire connects when feed.json is served next to this page. Showing the seeded brief meanwhile.</div>`}
         </div>
         <div class="railbox">
-          <div class="railh">lens health</div>
+          <div class="railh">source health</div>
           ${LIVE ? `
-            <div class="lensrow">${okL} lenses reporting</div>
+            <div class="lensrow">${okL} sources reporting</div>
             ${failedL.length?`<div class="lensrow bad">${failedL.length} dark: ${esc(failedL.map(f=>f.label||f.id).join(", "))}</div>`:""}
-            <div class="railnote">a dark lens is reported, never papered over - we don't know what we don't know</div>
+            <div class="railnote">a dark source is reported, never papered over - we don't know what we don't know</div>
           ` : `<div class="lensrow">seeded demo - live lenses connect on the next loop run</div>`}
         </div>
-        ${LIVE && LIVE.cabinet ? `
-        <div class="railbox">
-          <div class="railh">the cabinet</div>
-          <div class="lensrow">${fmtNum(LIVE.cabinet.items)} items remembered</div>
-          <div class="lensrow">${LIVE.cabinet.situations} stories (${LIVE.cabinet.discovered} discovered by the engine)</div>
-          <div class="lensrow">${LIVE.cabinet.claims} claims // ${LIVE.cabinet.entities} entities linked</div>
-          ${LIVE.cabinet.carriers?`<div class="lensrow">${LIVE.cabinet.carriers} carriers traced // ${LIVE.cabinet.steelmans||0} steelman rows</div>`:""}
-          <div class="lensrow">${LIVE.cabinet.history_nodes} history nodes // ${LIVE.cabinet.runs} runs</div>
-          <div class="railnote">stored once, remembered forever - history is never re-fetched, nothing is ever deleted</div>
-        </div>
         ${trackRecordHTML()}
-        <div class="railbox">
-          <div class="railh">at the gate</div>
-          ${(LIVE.candidates&&LIVE.candidates.length) ? LIVE.candidates.slice(0,5).map(c=>`
-            <div class="devitem">
-              <div class="t">${esc(c.sample)}</div>
-              <div class="m"><span>${c.count} items</span><span>${c.outlets} outlets</span><span class="o">${esc(c.status||"watching")}</span></div>
-            </div>`).join("") : `<div class="railnote">no clusters at the discovery gate right now</div>`}
-          ${LIVE.gate?`<div class="railnote">this run: ${LIVE.gate.accepted||0} accepted / ${LIVE.gate.rejected||0} rejected - gossip, sport and local crime never enter; rejections are logged, not hidden</div>`:""}
-        </div>` : trackRecordHTML()}
       </aside>
+    </div>
+    <div style="margin-top:40px;padding:20px;border-top:1px solid var(--line);color:var(--mute);font-size:.85rem;text-align:center">
+      <span onclick="openMachine()" style="cursor:pointer;text-decoration:underline">Mainstream = a published outlet list. A class describes distribution, never quality.</span>
     </div>
   `;
   const si = document.getElementById("searchInput");
@@ -1818,8 +2215,9 @@ function liveCardHTML(s, pinned){
         <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
       </div>`:(newest?`<div class="line">${esc(newest.title)}</div>`:"")}
       <div class="kindchips">${kinds.map(k=>`<span class="kind">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
+      ${coverageLineHTML(s)}
       <div class="card-foot">
-        <span>${s.items_24h} items / 24h &nbsp;//&nbsp; ${s.outlets} outlets</span>
+        <span>${s.items_24h} items / 24h &nbsp;//&nbsp; ${s.outlets} outlets${cardSparklineHTML(s)}</span>
         <span class="att" title="Surfaced by traction across outlets - never a credibility score."><span class="dotpulse"></span>engine find</span>
       </div>
     </div>`;
@@ -1848,7 +2246,7 @@ function claimHTML(c){
         <div class="carriers">${(c.opposition.carriers||[]).map(carrierHTML).join("")}</div>
         <div class="why"><b>why it bites:</b> ${esc(c.opposition.why||"")}</div>
       </div>`
-    : `<div class="steelmissing">steelman &middot; honest opposition <b>not found</b> in the surveyed corpus. We report the gap rather than fabricate one. The chain stays open.</div>`;
+    : `<div class="steelmissing">steelman &middot; honest opposition <b>not found</b> in the sources we collected. We report the gap rather than fabricate one. The chain stays open.</div>`;
   return `
     <div class="claim">
       <div class="stmt">${esc(c.statement)}</div>
@@ -1941,19 +2339,208 @@ function sigilSVG(idOrObj){
   svg += `</svg>`;
   return svg;
 }
+/* ===================== E2-C2: ATTENTION SHAPE panel - real telemetry chart ===== */
+function attentionShapeHTML(s){
+  if(!s || !s.attention || !s.attention.series || s.attention.series.length===0){
+    return `
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ATTENTION SHAPE &nbsp; where attention started, grew and spread</div>
+    <div style="color:var(--mute2);font-size:.95rem;padding:14px;border:1px solid var(--line);background:var(--surf);border-radius:var(--radius)">No telemetry yet - the attention log starts recording when a story enters the river.</div>`;
+  }
+  const attn = s.attention;
+  const series = attn.series || [];
+  const mix = attn.mix || {};
+  const firstSeen = attn.first_seen ? String(attn.first_seen).slice(0, 10) : "";
+  /* SVG sparklines */
+  const sparkW=340, sparkH=60, padX=40, padY=12;
+  const chartW=sparkW-2*padX, chartH=sparkH-2*padY;
+  const maxItems = Math.max(1, ...series.map(p=>p[1]||0));
+  const maxOutlets = Math.max(1, ...series.map(p=>p[2]||0));
+  const points1 = series.map((p, i)=>{ const x=padX+(i/(Math.max(1,series.length-1)))*chartW; const y=padY+chartH*(1-Math.min(1,p[1]/maxItems)); return `${x.toFixed(1)},${y.toFixed(1)}`; }).join(" ");
+  const points2 = series.map((p, i)=>{ const x=padX+(i/(Math.max(1,series.length-1)))*chartW; const y=padY+chartH*(1-Math.min(1,p[2]/maxOutlets)); return `${x.toFixed(1)},${y.toFixed(1)}`; }).join(" ");
+  const startDate = series.length>0 ? String(series[0][0]).slice(0, 10) : "";
+  const endDate = series.length>0 ? String(series[series.length-1][0]).slice(0, 10) : "";
+  /* source mix bars - read by class key, display the verbatim D.3 row label */
+  const mixKeys = ["mainstream", "state-media", "regional", "official", "other"];
+  const mixDisp = ["mainstream", "state media", "regional", "official", "other"];
+  const mixColors = ["#E5342B", "#8A5842", "#7FB580", "#6B8EB4", "#9B7CA4"];
+  const maxMix = Math.max(1, ...Object.values(mix));
+  const mixBars = mixKeys.map((key, idx)=>{
+    const count = mix[key] || 0;
+    const barWidth = (count / maxMix) * 200;
+    return `<div style="margin:6px 0;display:flex;gap:8px;align-items:center;font-size:.8rem">
+      <span style="color:var(--mute);min-width:90px">${mixDisp[idx]}</span>
+      <div style="display:flex;gap:4px;align-items:center">
+        <div style="height:12px;width:${barWidth}px;background:${mixColors[idx]};border-radius:2px"></div>
+        <span style="color:var(--mute2);min-width:24px;text-align:right">${count}</span>
+      </div>
+    </div>`;
+  }).join("");
+  return `
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ATTENTION SHAPE &nbsp; where attention started, grew and spread</div>
+    <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:14px">
+      <div style="margin-bottom:4px"><b style="color:var(--ink);font-size:.95rem">Where attention started, grew and spread - item and outlet counts from the engine's own collection record. Pure data, never a credibility signal.</b></div>
+      <div style="margin:16px 0">
+        <div style="font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--mute);margin-bottom:8px">ITEMS / 24H</div>
+        <svg viewBox="0 0 ${sparkW} ${sparkH}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;max-width:400px">
+          <polyline points="${points1}" fill="none" stroke="#E5342B" stroke-width="2" opacity=".8"/>
+          ${firstSeen?`<circle cx="${padX}" cy="${padY+chartH}" r="3" fill="#E5342B" opacity=".4"/><text x="${padX+8}" y="${padY+chartH+14}" font-size="10" fill="var(--mute)" text-anchor="start">First seen ${firstSeen}</text>`:""}
+          <text x="${padX}" y="${sparkH-2}" font-size="10" fill="var(--mute)" text-anchor="start">${startDate}</text>
+          <text x="${sparkW-padX}" y="${sparkH-2}" font-size="10" fill="var(--mute)" text-anchor="end">${endDate}</text>
+        </svg>
+      </div>
+      <div style="margin:16px 0">
+        <div style="font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--mute);margin-bottom:8px">DISTINCT OUTLETS</div>
+        <svg viewBox="0 0 ${sparkW} ${sparkH}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;max-width:400px">
+          <polyline points="${points2}" fill="none" stroke="#8A8F98" stroke-width="2" opacity=".6"/>
+          <text x="${padX}" y="${sparkH-2}" font-size="10" fill="var(--mute)" text-anchor="start">${startDate}</text>
+          <text x="${sparkW-padX}" y="${sparkH-2}" font-size="10" fill="var(--mute)" text-anchor="end">${endDate}</text>
+        </svg>
+      </div>
+      <div style="margin:16px 0">
+        <div style="font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--mute);margin-bottom:8px">SOURCE MIX (48H)</div>
+        ${mixBars}
+      </div>
+    </div>`;
+}
+
+/* ===================== E2-C2: POSITION DRIFT panel - store snapshots of drift ===== */
+function positionDriftHTML(s, isFree){
+  if(!s || !s.drift || s.drift.length<2){
+    const count = (s && s.drift) ? s.drift.length : 0;
+    const unit = count===1 ? "snapshot" : "snapshots";
+    const firstSnap = (s && s.drift && s.drift[0]) ? String(s.drift[0].captured_utc).slice(0, 10) : "";
+    return `
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> POSITION DRIFT &nbsp; what each side has said over time</div>
+    <div style="color:var(--mute2);font-size:.95rem;padding:14px;border:1px solid var(--line);background:var(--surf);border-radius:var(--radius)">Not enough recorded history yet. The engine stores a snapshot each time a side's stated wording changes - this story has ${count} ${unit} so far. Snapshots cannot be backfilled; the clock starts when recording starts.</div>`;
+  }
+  const drift = s.drift;
+  const K = drift.length - 1;
+  const firstDate = String(drift[0].captured_utc).slice(0, 10);
+  const plural = K === 1 ? "time" : "times";
+  const summaryLine = `The stated positions on this story have changed ${K} ${plural} since ${firstDate}.`;
+  if(isFree){
+    return `
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> POSITION DRIFT &nbsp; what each side has said over time</div>
+    <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:14px">
+      <div style="margin-bottom:14px"><b style="color:var(--ink);font-size:.95rem">What each side has said over time. Dated wording from stored snapshots - quotes and dates only.</b></div>
+      <div style="padding:10px;border-radius:6px;background:rgba(63,182,200,.1);border:1px solid rgba(63,182,200,.3);font-size:.9rem;margin-bottom:10px">
+        <div style="margin-bottom:4px">${summaryLine}</div>
+        <div style="color:var(--cyan);font-size:.85rem">The full dated trail is in PRO.</div>
+      </div>
+    </div>`;
+  }
+  /* PRO: full trail */
+  const trailHTML = drift.map((snap, idx)=>`
+    <div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)">
+      <div style="font-family:var(--mono);font-size:.8rem;color:var(--mute)">${esc(String(snap.captured_utc).slice(0, 16).replace("T", " "))} UTC</div>
+      <div>
+        <div style="font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--mute);margin-bottom:4px">SIDE A</div>
+        <div style="font-size:.9rem;line-height:1.5">${esc(snap.a)}</div>
+      </div>
+      <div>
+        <div style="font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--mute);margin-bottom:4px">SIDE B</div>
+        <div style="font-size:.9rem;line-height:1.5">${esc(snap.b)}</div>
+      </div>
+    </div>`).join("");
+  return `
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> POSITION DRIFT &nbsp; what each side has said over time</div>
+    <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:14px">
+      <div style="margin-bottom:14px"><b style="color:var(--ink);font-size:.95rem">What each side has said over time. Dated wording from stored snapshots - quotes and dates only.</b></div>
+      <div style="margin-bottom:10px;padding:10px;background:rgba(63,182,200,.05);border-radius:6px">${summaryLine}</div>
+      <div style="max-height:400px;overflow-y:auto">${trailHTML}</div>
+    </div>`;
+}
+
+/* ===================== E2-C2: Coverage stat line + UNDER THE RADAR data ===== */
+function coverageLineHTML(s){
+  if(!s || !s.coverage || typeof s.coverage.non_mainstream==="undefined") return "";
+  const nonMain = s.coverage.non_mainstream || 0;
+  const main = s.coverage.mainstream || 0;
+  return `<div style="color:var(--mute2);font-size:.9rem;margin:10px 0">Covered in ${nonMain} non-mainstream sources, ${main} mainstream echo (last 48h).</div>`;
+}
+
+/* ===================== E2-C2: Card sparkline (tiny items/24h for river) ===== */
+function cardSparklineHTML(s){
+  if(!s || !s.attention || !s.attention.series || s.attention.series.length<2) return "";
+  const series = s.attention.series.slice(-7); /* last 7 days */
+  if(series.length===0) return "";
+  const maxItems = Math.max(1, ...series.map(p=>p[1]||0));
+  const sparkW=80, sparkH=20, padX=4, padY=2;
+  const chartW=sparkW-2*padX, chartH=sparkH-2*padY;
+  const points = series.map((p, i)=>{ const x=padX+(i/(Math.max(1,series.length-1)))*chartW; const y=padY+chartH*(1-Math.min(1,p[1]/maxItems)); return `${x.toFixed(1)},${y.toFixed(1)}`; }).join(" ");
+  return `<svg viewBox="0 0 ${sparkW} ${sparkH}" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:60px;height:18px;display:inline-block;vertical-align:middle;margin-left:4px;opacity:.6">
+    <polyline points="${points}" fill="none" stroke="#E5342B" stroke-width="1.2"/>
+  </svg>`;
+}
+
+function swapToSigil(imgElement, storyId){
+  if(imgElement.dataset.swapped) return;
+  imgElement.dataset.swapped = "1";
+  imgElement.parentElement.classList.add("sigil");
+  imgElement.style.display = "none";
+  const tagSpan = document.createElement("span");
+  tagSpan.className = "sigtag";
+  tagSpan.textContent = "attention shape";
+  imgElement.parentElement.appendChild(tagSpan);
+  const sigilSpan = document.createElement("span");
+  sigilSpan.innerHTML = sigilSVG(storyId);
+  imgElement.parentElement.appendChild(sigilSpan);
+}
+
+function shareStory(storyId){
+  const url = `https://adamkropacek.github.io/horus/s/${encodeURIComponent(storyId)}.html`;
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(()=>{
+      showShareToast();
+    }).catch(()=>{
+      promptShareUrl(url);
+    });
+  } else {
+    promptShareUrl(url);
+  }
+}
+
+function promptShareUrl(url){
+  const userUrl = prompt("Copy the share link:", url);
+}
+
+function showShareToast(){
+  const toast = document.createElement("div");
+  toast.style.cssText = "position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:6px;font-size:.9rem;font-family:var(--mono);z-index:999;animation:fadeInOut 3s ease";
+  toast.textContent = "Link copied. The card shows what both sides say.";
+  document.body.appendChild(toast);
+  setTimeout(()=>toast.remove(), 3000);
+}
+
+if(!document.querySelector("style[data-toast]")){
+  const style = document.createElement("style");
+  style.dataset.toast = "1";
+  style.textContent = "@keyframes fadeInOut { 0%,100%{opacity:0} 10%,90%{opacity:1} }";
+  document.head.appendChild(style);
+}
+
 function leadVisualHTML(target, opts){
   /* target = SEED event OR live situation OR id; returns <div class="leadvis"> ... </div>
-     The origin OG image path lives in tools/syi/horus_provenance.py - it writes
-     lead_image_url + lead_image_source into the cabinet, the loop folds them
-     into feed.json, and a future demo build will render them with credit. The
-     ONLY path this demo renders today is the deterministic SVG sigil from the
-     story's own attention-shape data. That keeps the spine honest: no fake
-     attribution, no broken-image-fallback DOM swap, no XSS sink. $0. */
+     Renders lead_image when available (url + source credit), falls back to sigil.
+     Images are https-only; onerror swaps to sigil once (no retry loop). */
   let id, lv, se;
   if(typeof target==="string"){
     id = target; lv = liveFor(id); se = SEED_BY_ID[id];
   } else if(target && target.claims){ se = target; id = se.id; lv = liveFor(id); }
   else { lv = target; id = lv.id; se = SEED_BY_ID[id]; }
+
+  const liveData = lv || se;
+  const hasImage = liveData && liveData.lead_image && liveData.lead_image.url && /^https:\/\//i.test(liveData.lead_image.url);
+
+  if(hasImage){
+    const imgUrl = liveData.lead_image.url;
+    const imgSource = liveData.lead_image.source || "";
+    return `<div class="leadvis" data-id="${esc(id)}">
+      <img loading="lazy" src="${esc(imgUrl)}" alt="${esc(se?.title||liveData.name||id)}" onerror="swapToSigil(this,'${esc(id)}')">
+      <span class="credit">image: ${esc(imgSource)}</span>
+    </div>`;
+  }
+
   return `<div class="leadvis sigil" data-id="${esc(id)}"><span class="sigtag">attention shape</span>${sigilSVG(lv||se||id)}</div>`;
 }
 
@@ -2088,7 +2675,7 @@ function liveDeepReportHTML(id){
         ${(p.carriers||[]).length?`<div class="kindchips" style="margin:6px 0">${p.carriers.map(c=>safeUrl(c.url)?`<a class="kind" href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.outlet)}</a>`:`<span class="kind">${esc(c.outlet)}</span>`).join("")}</div>`:""}
         <div class="why"><b>why it bites:</b> ${esc(p.why||"")}</div>
       </div>`:`
-      <div class="steelmissing">side ${esc(p.side)} &middot; honest opposition <b>not found</b> in the surveyed corpus. We report the gap rather than fabricate one.</div>`).join("")}${repBasis(s5.basis)}`:"", s5.no_data);
+      <div class="steelmissing">side ${esc(p.side)} &middot; honest opposition <b>not found</b> in the sources we collected. We report the gap rather than fabricate one.</div>`).join("")}${repBasis(s5.basis)}`:"", s5.no_data);
   const sec6 = repSec("how it got here (fractal history)", s6.bands?`<div class="body">${s6.nodes_total} cited beats: ${s6.bands.map(b=>`${esc(b.era)} - ${esc(b.label)} (${b.nodes})`).join(" &middot; ")}.${s6.frames&&s6.frames.length?` Competing frames: ${s6.frames.map(f=>esc(f.label)).join(", ")} - where the story begins is itself disputed.`:""}${repBasis(s6.basis)}</div>`:"", s6.no_data);
   const sec7 = repSec("scenarios &middot; theories with horizons", s7.scenarios?`${s7.scenarios.map(sc=>`
       <div class="scenario">
@@ -2230,7 +2817,7 @@ function deepReportHTML(e){
       </section>`:""}
       ${(e.scenarios&&e.scenarios.length)?`<section>
         <h3>scenarios &middot; theories with horizons</h3>
-        <div class="body">${e.scenarios.length} dated, falsifiable theories. Each one carries the conditions under which it would be wrong, plus a horizon date the cabinet evaluates against weekly. Theories, never predictions.</div>
+        <div class="body">${e.scenarios.length} dated, falsifiable theories. Each one carries the conditions under which it would be wrong, plus a horizon date the engine evaluates against weekly. Theories, never predictions.</div>
       </section>`:""}
       <section>
         <h3>attention shape</h3>
@@ -2316,8 +2903,41 @@ function historyHTML(e){
   </details>`;
 }
 
+/* D2-C3: history for a discovered situation. If the engine has built it, lazy-fetch
+   history/<id>.json once and render through the unchanged historyHTML(); otherwise show
+   the honest "not yet built" placeholder. No change to seeded rendering. */
+const HIST_FETCHED = {};
+function historyPlaceholderHTML(h){
+  const n = (h && Number.isFinite(h.discovered_days)) ? h.discovered_days : 0;
+  const l1 = n===0
+    ? "History not yet built - this story was discovered today."
+    : "History not yet built - this story was discovered "+n+" days ago.";
+  return `
+  <details class="tl-peek hist-ph">
+    <summary>&#9656;&nbsp; HOW IT GOT HERE &nbsp;//&nbsp; fractal history (not yet built)</summary>
+    <div class="hist-ph-body">
+      <p>${l1}</p>
+      <p>HORUS writes the full how-we-got-here for every discovered story automatically: competing frames (even the start is disputed), era bands, cited beats. A beat ships only after every one of its citations is fetched live and resolves.</p>
+      <p>Nothing is withheld - there is honestly nothing verified to show yet.</p>
+    </div>
+  </details>`;
+}
+function liveHistoryHTML(s){
+  if(HISTORY[s.id]) return historyHTML(s);
+  return historyPlaceholderHTML(s.history);
+}
+function lazyHistory(s){
+  const id = s.id;
+  if(HISTORY[id] || HIST_FETCHED[id]) return;
+  if(!(s.history && s.history.built)) return;   // not built -> placeholder stays, no fetch
+  HIST_FETCHED[id] = 1;
+  fetch("history/"+encodeURIComponent(id)+".json").then(r=>r.ok?r.json():null).then(d=>{
+    if(d && d.bands){ HISTORY[id]=d; if(state.view==="event" && state.eventId===id) renderEvent(id); }
+  }).catch(()=>{});
+}
+
 /* Phase C0: detail for a discovered (live-only) situation. No seed brief yet -
-   the cabinet remembers every beat from first sighting; depth layers (spectrum,
+   the engine remembers every beat from first sighting; depth layers (spectrum,
    provenance, deep history) build as the story lives. */
 function renderLiveEvent(s){
   const safeUrl = u=>/^https?:\/\//i.test(u||"") ? u : "";
@@ -2326,12 +2946,16 @@ function renderLiveEvent(s){
   app().innerHTML = `
     <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
     <div class="ev-head">
-      <div class="toprow">
-        <span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span>
-        <span class="pill disco">discovered by the engine</span>
-        <span class="noverdict">NO VERDICT</span>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:12px">
+        <div class="toprow">
+          <span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span>
+          <span class="pill disco">discovered by the engine</span>
+          <span class="noverdict">NO VERDICT</span>
+        </div>
+        <button onclick="shareStory('${esc(s.id)}')" style="background:transparent;border:1px solid var(--line);color:var(--mute);padding:6px 12px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:.8rem;white-space:nowrap;transition:.15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mute)'">SHARE</button>
       </div>
       <h1>${esc(s.name)}</h1>
+      ${leadVisualHTML(s)}
       ${newest?`
       <div class="thenews">
         <span class="snlbl">the news &nbsp;//&nbsp; latest</span>
@@ -2355,22 +2979,26 @@ function renderLiveEvent(s){
     <div class="beats">
       ${s.latest.map(b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet||"")} &middot; ${esc(b.kind||"")}</span></div>`).join("")}
     </div>`:""}
+    ${liveHistoryHTML(s)}
     ${(s.links&&s.links.length)?`
     <div class="kicker" style="margin-top:22px"><span class="n">//</span> CONNECTED DOTS &nbsp; shared actors across situations</div>
     <div class="unkbox">
       <ul>${s.links.map(l=>`<li><b>${esc(l.entity)}</b> also figures in: ${l.situations.map(x=>esc(nameOf(x))).join(", ")}</li>`).join("")}</ul>
       <div class="fine">descriptive links between stories - never a judgment</div>
     </div>`:""}
+    ${positionDriftHTML(s, state.mode==="free")}
+    ${attentionShapeHTML(s)}
     <div class="kicker" style="margin-top:22px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
     <div class="unkbox">
       <ul>
         ${(s.unknowns||[]).map(u=>`<li>${esc(u)}</li>`).join("")}
-        <li>This story was discovered automatically - the deep history axis and the full spectrum build as it lives. The cabinet remembers every beat from here on.</li>
+        <li>This story was discovered automatically - the deep history axis and the full spectrum build as it lives. The engine remembers every beat from here on.</li>
         <li>Anything with no public trace is invisible to HORUS - absence of evidence here is not evidence of absence.</li>
       </ul>
       <div class="fine">we don't know what we don't know - gaps are reported, never papered over</div>
     </div>
     ${liveDeepReportHTML(s.id)}`;
+  lazyHistory(s);
 }
 
 function renderEvent(id){
@@ -2474,10 +3102,13 @@ function renderEvent(id){
   app().innerHTML = `
     <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
     <div class="ev-head">
-      <div class="toprow">
-        <span class="tag ${e.scope}">${esc(e.scope)}</span>
-        <span class="pill ${e.status}">${esc(e.status)}</span>
-        <span class="noverdict">NO VERDICT</span>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:12px">
+        <div class="toprow">
+          <span class="tag ${e.scope}">${esc(e.scope)}</span>
+          <span class="pill ${e.status}">${esc(e.status)}</span>
+          <span class="noverdict">NO VERDICT</span>
+        </div>
+        <button onclick="shareStory('${esc(e.id)}')" style="background:transparent;border:1px solid var(--line);color:var(--mute);padding:6px 12px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:.8rem;white-space:nowrap;transition:.15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mute)'">SHARE</button>
       </div>
       <h1>${esc(e.title)}</h1>
       ${leadVisualHTML(e)}
@@ -2500,6 +3131,10 @@ function renderEvent(id){
     ${liveProvenanceHTML(lv)}
 
     ${timelineBlock}
+
+    ${lv ? positionDriftHTML(lv, state.mode==="free") : ""}
+
+    ${lv ? attentionShapeHTML(lv) : ""}
 
     ${unknownsBlock}
 
@@ -2555,6 +3190,27 @@ document.getElementById("app").addEventListener("click", (ev)=>{
   else if(act==="askEmail") askEmail(id);
 });
 document.getElementById("footMeta").textContent = SEED.microcopy.tagline + "  //  seeded demo";
+
+/* Hash deep link routing: #s=<id> opens story if it exists */
+function routeHash(){
+  const hash = window.location.hash;
+  const match = hash.match(/^#s=([a-z0-9-]+)$/);
+  if(match){
+    const id = match[1];
+    const seedEvent = SEED.events.find(e => e.id === id);
+    const liveStory = LIVE && LIVE.situations && LIVE.situations.find(s => s.id === id);
+    if(seedEvent || liveStory){
+      openEvent(id);
+      return;
+    } else {
+      console.warn("Unknown story id in hash: " + id);
+      state.view = "board";
+    }
+  }
+}
+
+window.addEventListener("hashchange", ()=>{ try{ routeHash(); render(); }catch(_){} });
+window.addEventListener("load", ()=>{ try{ routeHash(); }catch(_){} });
 
 render();
 </script>
