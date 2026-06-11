@@ -2120,42 +2120,57 @@ function liveDeepReportHTML(id){
 }
 
 /* ===================== Phase D: scenarios with horizon =====================
-   Every theory carries a falsification line + a horizon date. Optional - if a
-   horizon is not known yet we say "horizon: open", never make one up. */
+   Scenarios from feed.json: statement, basis_kinds, falsification, horizon,
+   status (OPEN/HIT/MISS/UNCLEAR), logged, resolved, evidence_urls.
+   Verbatim copy from D1-contract.md section D. */
 function scenarioHTML(s){
-  const hz = s.horizon ? `<div class="horizon">horizon &nbsp; <b>${esc(s.horizon)}</b></div>` : `<div class="horizon">horizon &nbsp; <b>open</b></div>`;
-  const fl = s.falsification ? `<div class="falsif"><b>falsified if</b>${esc(s.falsification)}</div>` : "";
+  const basisKinds = (s.basis_kinds || []).length;
+  const basisChips = (s.basis_kinds || []).map(k=>
+    `<span class="kind">${KIND_ABBR[k] || esc(k)}</span>`).join("");
+  const statusBadge = s.status || "OPEN";
+  const loggedLine = s.logged ? `Logged ${esc(s.logged.split("T")[0])}` : "Logged unknown";
+  let resolutionLine = "";
+  if(s.resolved && s.status && s.status !== "OPEN"){
+    const resolvedDate = s.resolved.split("T")[0];
+    if(s.status === "UNCLEAR"){
+      resolutionLine = `Resolved ${esc(resolvedDate)} - UNCLEAR.`;
+    } else {
+      const evidence = (s.evidence_urls || []).map(u=>`<a href="${esc(u)}" target="_blank">${esc(u.split("/").pop())}</a>`).join(", ");
+      resolutionLine = `Resolved ${esc(resolvedDate)} - ${esc(s.status)}. Evidence: ${evidence}`;
+    }
+  }
   return `
     <div class="scenario">
-      <div class="lbl">&#10230; theory</div>
+      <div class="lbl">THEORY</div>
       <div class="st">${esc(s.statement)}</div>
-      <div class="rests"><b>rests on</b><ul>${(s.restsOn||[]).map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>
-      ${fl}
-      ${hz}
-      <div class="note">${esc(s.note||"")}</div>
+      ${basisKinds ? `<div class="rests"><b>Hangs on ${basisKinds} points:</b><div class="kindchips">${basisChips}</div></div>` : ""}
+      ${s.falsification ? `<div class="falsif"><b>Wrong if:</b>&nbsp; ${esc(s.falsification)}</div>` : ""}
+      <div class="horizon">Horizon: &nbsp; <b>${s.horizon ? esc(s.horizon) : "open"}</b></div>
+      <div style="font-family:var(--mono);font-size:.68rem;color:var(--mute);margin-top:8px">${loggedLine}</div>
+      ${resolutionLine ? `<div style="font-family:var(--mono);font-size:.68rem;color:var(--mute2);margin-top:6px">${resolutionLine}</div>` : ""}
+      <div style="display:inline-block;margin-top:8px;font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border:1px solid var(--line);border-radius:5px;color:var(--mute2)">${esc(statusBadge)}</div>
     </div>`;
 }
 
-/* ===================== Phase D: track record =====================
-   Cabinet stores scenarios with horizons. A weekly job (tools/syi/horus_
-   track_record.py) flips status after the horizon to hit / miss / open and
-   writes counts back. Until the first horizon passes, all four are zero -
-   THAT is the honest receipt. We never inflate. */
+/* ===================== Phase D: track record / RECEIPTS rail =====================
+   From feed.json.track_record: logged, resolved, hit, miss, unclear.
+   Verbatim copy from D1-contract.md section D. */
 function trackRecordHTML(){
-  const tr = (LIVE && LIVE.track_record) || {open:0, evaluated:0, hit:0, miss:0};
-  /* derive local open count from SEED scenarios when no live count exists */
-  const seedOpen = SEED.events.reduce((a,e)=>a+((e.scenarios||[]).length),0);
-  const open = tr.open || seedOpen;
+  const tr = (LIVE && LIVE.track_record) || {logged:0, resolved:0, hit:0, miss:0, unclear:0};
+  const logged = tr.logged || 0;
+  const resolved = tr.resolved || 0;
+  const hit = tr.hit || 0;
+  const miss = tr.miss || 0;
+  const unclear = tr.unclear || 0;
+  const hasReceipts = logged > 0;
   return `
-    <div class="trackbox">
-      <div class="trh">track record</div>
-      <div class="trgrid">
-        <div class="cell"><div class="v">${open}</div><div class="l">open</div></div>
-        <div class="cell"><div class="v">${tr.evaluated||0}</div><div class="l">evaluated</div></div>
-        <div class="cell hit"><div class="v">${tr.hit||0}</div><div class="l">hit</div></div>
-        <div class="cell miss"><div class="v">${tr.miss||0}</div><div class="l">miss</div></div>
-      </div>
-      <div class="railnote">dated, falsifiable theories. weekly eval flips status after the horizon. the receipts start now - we never backfill.</div>
+    <div class="railbox">
+      <div class="railh">RECEIPTS</div>
+      <div style="font-family:var(--mono);font-size:.75rem;color:var(--mute2);line-height:1.6;margin-bottom:10px">every call HORUS ever logged - dated, falsifiable, scored. Misses shown as loudly as hits.</div>
+      ${hasReceipts
+        ? `<div style="font-family:var(--mono);font-size:.82rem;color:var(--ink);margin:10px 0;line-height:1.6">${logged} theories logged // ${resolved} resolved: ${hit} hit / ${miss} miss / ${unclear} unclear</div>`
+        : `<div class="railnote">No receipts yet. The clock started now - receipts cannot be backfilled, only earned.</div>`}
+      <div class="railnote">HORUS scores its own theories, never the world's truth.</div>
     </div>`;
 }
 
@@ -2422,9 +2437,13 @@ function renderEvent(id){
     <div class="mfg"><div class="lbl">⚠ manufactured consensus watch</div>${esc(e.manufacturedConsensus)}</div>` : "";
   const scenBlock = (e.scenarios&&e.scenarios.length) ? `
     <div class="section">
-      <div class="section-h"><h2>Scenarios</h2><span class="sub">// theories with horizons, never predictions</span></div>
+      <div class="section-h"><h2>THEORIES</h2><span class="sub">competing readings of where this could go - never predictions. HORUS logs them dated, then scores itself.</span></div>
       ${e.scenarios.map(scenarioHTML).join("")}
-    </div>` : "";
+    </div>` : `
+    <div class="section">
+      <div class="section-h"><h2>THEORIES</h2><span class="sub">competing readings of where this could go - never predictions. HORUS logs them dated, then scores itself.</span></div>
+      <div style="color:var(--mute2);font-size:.95rem;padding:14px;border:1px solid var(--line);background:var(--surf);border-radius:var(--radius)">No theories logged. Zero is honest - HORUS does not invent scenarios to fill a panel.</div>
+    </div>`;
 
   const hasDepth = !!mfgBlock || !!(e.scenarios&&e.scenarios.length);
   const depthInner = `${mfgBlock}${scenBlock}`;
