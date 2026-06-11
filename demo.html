@@ -335,7 +335,7 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
 }
 
 /* ===== Phase C-VIS: lead visual on cards + detail (origin OG OR sigil) ===== */
-.leadvis{position:relative; aspect-ratio:16/9; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:#0c0e12; margin:-2px 0 4px}
+.leadvis{position:relative; aspect-ratio:16/9; max-height:260px; width:100%; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:#0c0e12; margin:-2px 0 4px}
 .leadvis img{width:100%; height:100%; object-fit:cover; display:block; opacity:.92}
 .leadvis .credit{position:absolute; left:0; right:0; bottom:0; padding:5px 9px; font-family:var(--mono); font-size:.58rem; letter-spacing:.06em; color:var(--mute2); background:linear-gradient(0deg, rgba(10,10,12,.92), rgba(10,10,12,0)); text-transform:uppercase}
 .leadvis .credit b{color:var(--ink); font-weight:500}
@@ -1621,6 +1621,21 @@ fetch("feed.json?v="+Date.now())
     render();
   }).catch(()=>{});
 
+/* ===================== Phase C: cached deep reports (stage 9) =====================
+   reports/<id>.json is the engine's cached deep-report artifact - deterministic,
+   every section cites or says "no data yet", verdict-linted before export.
+   Fetched lazily when a situation is opened; no report file -> the seeded
+   fallback (or nothing) renders instead. */
+const REPORTS = {};
+function loadReport(id){
+  if(id in REPORTS) return;
+  REPORTS[id] = undefined; // in flight
+  fetch("reports/"+encodeURIComponent(id)+".json?v="+Date.now())
+    .then(r=>r.ok?r.json():null)
+    .then(j=>{ REPORTS[id]=j||null; if(j && state.view==="event" && state.eventId===id) renderEvent(id); })
+    .catch(()=>{ REPORTS[id]=null; });
+}
+
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));}
 function fmtNum(n){if(n>=1e6)return (n/1e6).toFixed(n>=1e7?0:1)+"M";if(n>=1000)return (n/1000).toFixed(n>=10000?0:1)+"k";return String(n);}
 
@@ -1731,6 +1746,7 @@ function renderBoard(){
           <div class="lensrow">${fmtNum(LIVE.cabinet.items)} items remembered</div>
           <div class="lensrow">${LIVE.cabinet.situations} stories (${LIVE.cabinet.discovered} discovered by the engine)</div>
           <div class="lensrow">${LIVE.cabinet.claims} claims // ${LIVE.cabinet.entities} entities linked</div>
+          ${LIVE.cabinet.carriers?`<div class="lensrow">${LIVE.cabinet.carriers} carriers traced // ${LIVE.cabinet.steelmans||0} steelman rows</div>`:""}
           <div class="lensrow">${LIVE.cabinet.history_nodes} history nodes // ${LIVE.cabinet.runs} runs</div>
           <div class="railnote">stored once, remembered forever - history is never re-fetched, nothing is ever deleted</div>
         </div>
@@ -1959,7 +1975,7 @@ function provenanceChainsHTML(e){
   if(!chains.length) return "";
   return `
     <div class="provbox">
-      <div class="pvh">PROVENANCE &middot; origin vs echo</div>
+      <div class="pvh">PROVENANCE &middot; carrier roles &middot; from the seeded brief</div>
       ${chains.map(ch=>`
         <div style="margin:10px 0 4px">
           <div style="font-size:.84rem;color:var(--mute2);line-height:1.45;margin-bottom:6px"><b style="color:var(--ink);font-weight:600">${esc(ch.label)}:</b> ${esc(clip(ch.statement, 200))}</div>
@@ -1978,7 +1994,128 @@ function provenanceChainsHTML(e){
           </div>
         </div>
       `).join("")}
-      <div class="pvnote">best-effort, never claim of completeness. "1 source, many megaphones" is shown here without a verdict - the spine refuses to translate volume into credibility.</div>
+      <div class="pvnote">best-effort, never claim of completeness. Roles in THIS panel were characterized when the brief was written - they are editorial descriptions, not timestamp traces. The live engine's timestamp-traced chain renders in its own panel when the wire has data. "1 source, many megaphones" is shown without a verdict - the spine refuses to translate volume into credibility.</div>
+    </div>`;
+}
+
+/* ===================== Phase C: LIVE provenance (engine-traced) =====================
+   Real chains from feed.json: outlets ordered by the earliest PUBLISHED
+   timestamp HORUS collected for this situation (origin), the rest echoes.
+   Items without a published timestamp are "unplaced" - listed, never guessed
+   into the chain. Split carriers show who carried each SIDE, by publish time. */
+function fmtTs(ts){ return ts ? esc(String(ts).slice(0,16).replace("T"," "))+" UTC" : ""; }
+function liveProvenanceHTML(s){
+  if(!s) return "";
+  const p = s.provenance;
+  const hasChain = p && ((p.chain&&p.chain.length) || (p.unplaced&&p.unplaced.length));
+  const sc = s.split && s.split.carriers;
+  const hasCarr = sc && ((sc.a&&sc.a.length) || (sc.b&&sc.b.length));
+  if(!hasChain && !hasCarr) return "";
+  const row = r=>`
+        <div class="provrow">
+          <span class="role ${r.role==="origin"?"origin":"echo"}">${esc(r.role)}</span>
+          <span class="pvsrc"><b>${esc(r.outlet)}</b> &middot; ${fmtTs(r.ts)} &middot; ${esc(KIND_ABBR[r.kind]||r.kind||"")}${r.items>1?` &middot; ${r.items} items`:""} <span class="pvmot">why &middot; ${esc(r.motive_note||"")}</span></span>
+        </div>`;
+  const unp = (p&&p.unplaced||[]).map(r=>`
+        <div class="provrow">
+          <span class="role echo">unplaced</span>
+          <span class="pvsrc"><b>${esc(r.outlet)}</b> &middot; no published timestamp - cannot be placed in the chain <span class="pvmot">${esc(r.motive_note||"")}</span></span>
+        </div>`).join("");
+  const sideChain = (side,label)=>{
+    const rows = (sc&&sc[side])||[];
+    if(!rows.length) return "";
+    return `
+      <div style="margin:10px 0 2px">
+        <div style="font-size:.78rem;color:var(--mute2);margin-bottom:5px"><b style="color:var(--ink);font-weight:600">side ${label}</b> &middot; who carried this side, by publish time</div>
+        <div class="provchain">${rows.map(r=>`
+          <div class="provrow">
+            <span class="role ${r.provenance==="original"?"origin":"echo"}">${esc(r.provenance==="original"?"origin":r.provenance||"echo")}</span>
+            <span class="pvsrc"><b>${esc(r.outlet)}</b>${r.ts?` &middot; ${fmtTs(r.ts)}`:""} &middot; ${esc(KIND_ABBR[r.kind]||r.kind||"")} <span class="pvmot">why &middot; ${esc(r.motive_note||"")}</span></span>
+          </div>`).join("")}</div>
+      </div>`;
+  };
+  return `
+    <div class="provbox">
+      <div class="pvh">PROVENANCE &middot; traced live &middot; this cycle</div>
+      ${hasChain?`<div class="provchain">${(p.chain||[]).map(row).join("")}${unp}</div>`:""}
+      ${sideChain("a","A")}${sideChain("b","B")}
+      <div class="pvnote">${esc((p&&p.note)||"best-effort - ordered by publish timestamps HORUS collected; the true origin may precede our window.")}</div>
+    </div>`;
+}
+
+/* ===================== Phase C: LIVE deep report (cached stage-9 artifact) =====
+   Renders reports/<id>.json - the engine's cited, verdict-linted artifact.
+   Sections that carry no data say so honestly; nothing is invented to fill
+   the template. */
+function repSec(title, inner, nd){
+  if(nd) return `<section><h3>${title}</h3><div class="body" style="color:var(--mute2)">no data yet &middot; ${esc(nd)}</div></section>`;
+  return inner ? `<section><h3>${title}</h3>${inner}</section>` : "";
+}
+function repBasis(t){ return t?`<div class="pvnote" style="margin-top:6px">${esc(t)}</div>`:""; }
+function liveDeepReportHTML(id){
+  const rep = REPORTS[id];
+  if(!rep || !rep.sections) return "";
+  const S = rep.sections;
+  const safeUrl = u=>/^https?:\/\//i.test(u||"") ? u : "";
+  const s1=S["1_situation"]||{}, s2=S["2_where_it_stands"]||{}, s3=S["3_spectrum"]||{},
+        s4=S["4_provenance"]||{}, s5=S["5_steelman"]||{}, s6=S["6_how_it_got_here"]||{},
+        s7=S["7_scenarios"]||{}, s8=S["8_attention_shape"]||{}, s9=S["9_unknowns"]||{},
+        s10=S["10_sources"]||{};
+  const sec1 = repSec("situation", `<div class="body">${esc(s1.name||nameOf(id))} &middot; ${esc(BUCKET_LABEL[s1.bucket]||s1.bucket||"")} &middot; ${s1.discovered_by==="auto"?"discovered by the engine":"seeded"}. Tracked since ${esc(String(s1.tracked_since||"").slice(0,10))}; ${s1.items_total||0} items from ${s1.outlets_total||0} outlets remembered.${repBasis(s1.basis)}</div>`, s1.no_data);
+  const sec2 = repSec("where it stands now", s2.beats?`<div class="beats">${s2.beats.map(b=>`<div class="beat"><span class="d">${fmtTs(b.ts)}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet||"")} &middot; ${esc(b.kind||"")}</span></div>`).join("")}</div>${repBasis(s2.basis)}`:"", s2.no_data);
+  const carrChip = c=>`<span class="kind" title="${esc(c.motive_note||"")}">${esc(c.outlet)}${c.provenance==="original"?" &middot; origin":""}</span>`;
+  const sec3 = repSec("spectrum &middot; claims &times; kinds &times; carriers", s3.pairs?`${s3.pairs.map(p=>`
+      <div class="splitbox" style="margin:8px 0">
+        <div class="sl">axis of dispute &middot; ${fmtTs(p.ts)}</div>
+        <div class="sp a"><b>A</b><span>${esc(p.a.text)}</span></div>
+        ${(p.a.carriers&&p.a.carriers.length)?`<div class="kindchips" style="margin:4px 0 8px">${p.a.carriers.map(carrChip).join("")}</div>`:""}
+        <div class="sp b"><b>B</b><span>${esc(p.b.text)}</span></div>
+        ${(p.b.carriers&&p.b.carriers.length)?`<div class="kindchips" style="margin:4px 0 2px">${p.b.carriers.map(carrChip).join("")}</div>`:""}
+      </div>`).join("")}<div class="body">kinds present on the wire: ${(s3.kinds_present||[]).map(k=>esc(k)).join(", ")||"none recorded"}.${repBasis(s3.basis)}</div>`:"", s3.no_data);
+  const chainRows = ch=>(ch&&ch.chain||[]).slice(0,6).map(r=>`
+        <div class="provrow">
+          <span class="role ${r.role==="origin"?"origin":"echo"}">${esc(r.role)}</span>
+          <span class="pvsrc"><b>${esc(r.outlet)}</b> &middot; ${fmtTs(r.ts)} &middot; ${esc(r.kind||"")} <span class="pvmot">${esc(r.motive_note||"")}</span></span>
+        </div>`).join("");
+  const sec4 = repSec("provenance chains", (s4.current_cycle||s4.since_tracking)?`
+      ${s4.current_cycle?`<div class="body" style="margin-bottom:4px">current cycle (${s4.current_cycle.window_hours}h window, ${s4.current_cycle.outlets_timed} outlets placed):</div><div class="provchain">${chainRows(s4.current_cycle)}</div>`:""}
+      ${s4.since_tracking?`<div class="body" style="margin:8px 0 4px">since tracking began (${s4.since_tracking.outlets_timed} outlets placed):</div><div class="provchain">${chainRows(s4.since_tracking)}</div>`:""}
+      ${repBasis(s4.basis)}`:"", s4.no_data);
+  const sec5 = repSec("steelman pairs", s5.pairs?`${s5.pairs.map(p=>p.found?`
+      <div class="opp" style="margin:8px 0">
+        <div class="lbl">&#8634; strongest opposition to side ${esc(p.side)} <span class="steelbadge">STEELMAN</span></div>
+        <div class="stmt2">${esc(p.statement)}</div>
+        ${(p.carriers||[]).length?`<div class="kindchips" style="margin:6px 0">${p.carriers.map(c=>safeUrl(c.url)?`<a class="kind" href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">${esc(c.outlet)}</a>`:`<span class="kind">${esc(c.outlet)}</span>`).join("")}</div>`:""}
+        <div class="why"><b>why it bites:</b> ${esc(p.why||"")}</div>
+      </div>`:`
+      <div class="steelmissing">side ${esc(p.side)} &middot; honest opposition <b>not found</b> in the surveyed corpus. We report the gap rather than fabricate one.</div>`).join("")}${repBasis(s5.basis)}`:"", s5.no_data);
+  const sec6 = repSec("how it got here (fractal history)", s6.bands?`<div class="body">${s6.nodes_total} cited beats: ${s6.bands.map(b=>`${esc(b.era)} - ${esc(b.label)} (${b.nodes})`).join(" &middot; ")}.${s6.frames&&s6.frames.length?` Competing frames: ${s6.frames.map(f=>esc(f.label)).join(", ")} - where the story begins is itself disputed.`:""}${repBasis(s6.basis)}</div>`:"", s6.no_data);
+  const sec7 = repSec("scenarios &middot; theories with horizons", s7.scenarios?`${s7.scenarios.map(sc=>`
+      <div class="scenario">
+        <div class="lbl">&#10230; theory</div>
+        <div class="st">${esc(sc.theory)}</div>
+        ${sc.falsified_if?`<div class="falsif"><b>falsified if</b>${esc(sc.falsified_if)}</div>`:""}
+        <div class="horizon">horizon &nbsp; <b>${esc(String(sc.horizon||"open").slice(0,10))}</b> &middot; status &nbsp; <b>${esc(sc.status||"open")}</b> &middot; logged ${esc(String(sc.logged||"").slice(0,10))}</div>
+      </div>`).join("")}${repBasis(s7.basis)}`:"", s7.no_data);
+  const days = s8.daily||[];
+  const maxN = Math.max(1, ...days.map(d=>d.items||0));
+  const sec8 = repSec("attention shape", days.length?`<div class="body">${days.map(d=>`
+      <div style="display:flex;gap:10px;align-items:center;margin:2px 0;font-size:.8rem">
+        <span style="color:var(--mute2);min-width:74px">${esc(d.date)}</span>
+        <span style="display:inline-block;height:8px;background:#E5342B;opacity:.6;width:${Math.max(2,Math.round(140*(d.items||0)/maxN))}px"></span>
+        <span>${d.items} items &middot; ${d.outlets} outlets</span>
+      </div>`).join("")}<div style="margin-top:6px">kinds recorded: ${Object.entries(s8.kinds||{}).map(([k,n])=>esc(k)+" ("+n+")").join(", ")||"none"}.</div>${repBasis(s8.basis)}</div>`:"", s8.no_data);
+  const sec9 = repSec("unknowns", s9.notes?`<div class="unkbox" style="margin:0"><ul>${s9.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>${repBasis(s9.basis)}`:"", s9.no_data);
+  const sec10 = repSec(`full cited source list (${s10.count||0})`, s10.cited?`<div class="citelist">${s10.cited.map(c=>safeUrl(c.url)?`<a href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener" style="display:inline-block;margin:2px 10px 2px 0">&middot; ${esc(c.outlet||c.url)}</a>`:`<span>&middot; ${esc(c.outlet||"")}</span>`).join("")}</div>${repBasis(s10.basis)}`:"", s10.no_data);
+  return `
+    <div class="deep-rep">
+      <div class="dh">
+        <h2>Deep report &middot; ${esc(s1.name||nameOf(id))}</h2>
+        <span class="stamp">generated ${fmtTs(rep.generated_utc)} &middot; cached artifact, regenerated when the record changes</span>
+        <span class="nvbadge">NO VERDICT</span>
+      </div>
+      <div class="pvnote" style="margin-bottom:10px">${esc(rep.no_verdict||"")}</div>
+      ${sec1}${sec2}${sec3}${sec4}${sec5}${sec6}${sec7}${sec8}${sec9}${sec10}
     </div>`;
 }
 
@@ -2197,6 +2334,7 @@ function renderLiveEvent(s){
       <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
       <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
     </div>`:""}
+    ${liveProvenanceHTML(s)}
     ${(s.latest&&s.latest.length)?`
     <div class="kicker" style="margin-top:22px"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
     <div class="beats">
@@ -2216,7 +2354,8 @@ function renderLiveEvent(s){
         <li>Anything with no public trace is invisible to HORUS - absence of evidence here is not evidence of absence.</li>
       </ul>
       <div class="fine">we don't know what we don't know - gaps are reported, never papered over</div>
-    </div>`;
+    </div>
+    ${liveDeepReportHTML(s.id)}`;
 }
 
 function renderEvent(id){
@@ -2339,6 +2478,7 @@ function renderEvent(id){
     <div class="section">${claimsBlock}</div>
 
     ${provenanceChainsHTML(e)}
+    ${liveProvenanceHTML(lv)}
 
     ${timelineBlock}
 
@@ -2346,7 +2486,7 @@ function renderEvent(id){
 
     ${depthSection}
 
-    ${deepReportHTML(e)}
+    ${REPORTS[e.id] ? liveDeepReportHTML(e.id) : deepReportHTML(e)}
   `;
 }
 
@@ -2355,7 +2495,7 @@ function setMode(m){ state.mode=m; render(); }
 function setFilter(f){ state.filter=f; render(); }
 function toggleKind(k){ const i=state.kinds.indexOf(k); if(i>-1) state.kinds.splice(i,1); else state.kinds.push(k); render(); }
 function onSearch(v){ state.query=v; renderBoard(); }
-function openEvent(id){ state.view="event"; state.eventId=id; state.histOpen=false; state.histBands=new Set(); render(); }
+function openEvent(id){ state.view="event"; state.eventId=id; state.histOpen=false; state.histBands=new Set(); loadReport(id); render(); }
 function goBoard(){ state.view="board"; render(); }
 
 function askEmail(id){
