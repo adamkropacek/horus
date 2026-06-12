@@ -393,6 +393,55 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
   main{padding:14px 14px 60px}
   [style*="max-width:800px"]{margin:0 auto!important;width:100%!important}
 }
+
+/* ===== AUDIT FIX 2026-06-12: named sources strip (which, not just how many) ===== */
+.srcstrip{border:1px solid var(--line); background:var(--surf); border-radius:8px; padding:10px 12px; margin-top:10px}
+.srcstrip .sh{font-family:var(--mono); font-size:.6rem; letter-spacing:.16em; color:var(--mute); text-transform:uppercase; margin-bottom:7px; display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap}
+.classbar{display:flex; height:6px; border-radius:99px; overflow:hidden; margin-bottom:8px; background:#0c0e12}
+.classbar span{display:block; height:100%}
+.srcchips{display:flex; flex-wrap:wrap; gap:5px}
+.srcchips[hidden]{display:none}
+.srcchip{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:.62rem; color:var(--mute2); border:1px solid var(--line); border-radius:99px; padding:3px 9px; white-space:nowrap}
+.srcchip .cdot{width:6px; height:6px; border-radius:50%; flex:none}
+.srcchip .n{color:var(--mute)}
+.srcmore{font-family:var(--mono); font-size:.62rem; color:var(--cyan); border:1px dashed var(--line); border-radius:99px; padding:3px 9px; cursor:pointer; background:transparent}
+.srcfine{font-family:var(--mono); font-size:.58rem; color:var(--mute); margin-top:7px; line-height:1.5}
+.cardsrc{font-family:var(--mono); font-size:.62rem; color:var(--mute); line-height:1.6; overflow-wrap:anywhere}
+.cardsrc b{color:var(--mute2); font-weight:500}
+
+/* ===== AUDIT FIX: term tooltips (cold-reader jargon) ===== */
+.term{border-bottom:1px dotted var(--mute); cursor:help; position:relative}
+.term::after{content:attr(data-tip); position:absolute; left:0; bottom:calc(100% + 7px); z-index:60; width:min(290px,72vw);
+  background:#101216; color:var(--mute2); border:1px solid var(--line); border-radius:8px; padding:9px 11px;
+  font-family:var(--sans,inherit); font-size:.74rem; font-weight:400; letter-spacing:0; text-transform:none; line-height:1.5;
+  display:none; pointer-events:none; box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.term:hover::after, .term.tipon::after{display:block}
+
+/* ===== AUDIT FIX: detail section nav (scannability, esp. mobile) ===== */
+.secnav{position:sticky; top:0; z-index:40; display:flex; gap:6px; overflow-x:auto; padding:9px 0; margin:10px 0 4px;
+  background:linear-gradient(180deg, var(--bg) 82%, transparent); scrollbar-width:none}
+.secnav::-webkit-scrollbar{display:none}
+.secnav a{font-family:var(--mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--mute);
+  border:1px solid var(--line); border-radius:99px; padding:5px 11px; white-space:nowrap; text-decoration:none; flex:none}
+.secnav a:hover{color:var(--ink); border-color:var(--mute)}
+
+/* ===== AUDIT FIX: long beat lists clamp + expander ===== */
+.beats.clamped .beat:nth-child(n+7){display:none}
+.showbeats{display:block; width:100%; text-align:center; background:transparent; border:0; border-top:1px dashed var(--line);
+  color:var(--cyan); font-family:var(--mono); font-size:.64rem; letter-spacing:.1em; text-transform:uppercase; padding:10px 0 6px; cursor:pointer}
+
+/* ===== AUDIT FIX: TODAY panel thumb (story image, attributed) ===== */
+.panrow{display:flex; gap:14px; align-items:flex-start}
+.panthumb{width:172px; flex:none}
+.panthumb .leadvis{max-height:none; margin:0}
+.panbody{min-width:0; flex:1}
+@media(max-width:640px){
+  .panrow{flex-direction:column}
+  .panthumb{width:100%}
+  .thenews .sntxt{font-size:1rem}
+  .ev-head h1{font-size:1.45rem; line-height:1.25}
+  .att-line{flex-wrap:wrap; row-gap:4px}
+}
 </style>
 </head>
 <body>
@@ -1777,11 +1826,16 @@ function renderToday(){
 
   const panelsHTML = SLATE.panels.map(p=>{
     const bucketLabel = BUCKET_LABEL_FULL[p.bucket] || p.bucket;
+    const lvP = liveFor(p.id);
+    const thumb = (lvP && lvP.lead_image && lvP.lead_image.url)
+      ? `<div class="panthumb" style="cursor:pointer" onclick="openEvent('${esc(p.id)}')">${leadVisualHTML(lvP,{compact:true})}</div>`
+      : "";
     const splitHTML = p.split && p.split.a && p.split.b
       ? `<div style="font-size:.95rem;margin-top:8px;color:var(--mute2)"><strong>Side A:</strong> ${esc(p.split.a)}</div><div style="font-size:.95rem;margin-top:6px;color:var(--mute2)"><strong>Side B:</strong> ${esc(p.split.b)}</div>`
       : `<div style="font-size:.95rem;margin-top:8px;color:var(--mute)">Sides not yet mapped - the split for this story has not been extracted yet.</div>`;
     const kindsStr = (p.kinds||[]).map(k=>KIND_ABBR[k]||k).join(" / ");
-    const kindsLine = `<div style="font-size:.9rem;margin-top:8px;color:var(--mute2)">${kindsStr || "---"} &nbsp;//&nbsp; ${p.items_24h} sources / ${(p.kinds||[]).length} kinds</div>`;
+    const srcLine = lvP ? cardSourcesHTML(lvP) : "";
+    const kindsLine = `<div style="font-size:.9rem;margin-top:8px;color:var(--mute2)">${kindsStr || "---"} &nbsp;//&nbsp; ${p.items_24h} ${term("items / 24h","items24")} / ${(p.kinds||[]).length} ${term("kinds","kind")}</div>`;
     const dotHTML = p.dot && p.dot.entity && p.dot.situations && p.dot.situations[0]
       ? `<div style="font-size:.9rem;margin-top:8px;color:var(--mute)">This connects: ${esc(p.dot.entity)} also appears in the <a href="javascript:openEvent('${esc(p.dot.situations[0].id)}')" style="color:var(--cyan)">${esc(p.dot.situations[0].name)}</a> story -></div>`
       : "";
@@ -1798,10 +1852,16 @@ function renderToday(){
           </div>
           <button onclick="toggleStar('${esc(p.id)}')" style="background:transparent;border:1px solid var(--line);color:var(--mute);padding:6px 12px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:.8rem;white-space:nowrap;transition:.15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mute)'">${starText}</button>
         </div>
-        ${splitHTML}
-        ${kindsLine}
-        ${dotHTML}
-        ${newMarker}
+        <div class="panrow">
+          ${thumb}
+          <div class="panbody">
+            ${splitHTML}
+            ${srcLine}
+            ${kindsLine}
+            ${dotHTML}
+            ${newMarker}
+          </div>
+        </div>
       </div>
     `;
   }).join("");
@@ -2113,7 +2173,7 @@ function renderBoard(){
         </div>
         <div class="railbox">
           <div class="railh">under the radar</div>
-          <div class="chip ${state.utrFilter?"on":""}" onclick="state.utrFilter=!state.utrFilter;render()">UNDER THE RADAR</div>
+          <div class="chip ${state.utrFilter?"on":""}" title="Stories carried by several non-mainstream outlets while mainstream is quiet. A distribution fact - not a hidden truth." onclick="state.utrFilter=!state.utrFilter;render()">UNDER THE RADAR</div>
           <div class="railnote">Stories with traction beyond the mainstream list and zero mainstream echo in the last 48 hours. The numbers are the whole statement.</div>
         </div>
         <div class="railbox">
@@ -2164,6 +2224,86 @@ function renderBoard(){
   if(si && state.query){ si.focus(); si.setSelectionRange(si.value.length, si.value.length); }
 }
 
+/* ===== AUDIT FIX 2026-06-12: cold-reader glossary, named sources, scannability ===== */
+
+/* Lens-class hues: DESCRIPTIVE distribution markers only - deliberately neutral
+   (no red/green = no quality signal). Same hue everywhere a class appears. */
+const CLASS_HUE = {"mainstream":"#8fa3b8","state-media":"#b98a5f","regional":"#8fb89a","official":"#b3a878","other":"#6e6e76"};
+const CLASS_LABEL = {"mainstream":"mainstream","state-media":"state media","regional":"regional","official":"official","other":"other"};
+
+const TERMS = {
+  split: "The two main positions on this story, side by side, drawn from coverage. HORUS shows both - it never picks one.",
+  kind: "What TYPE of evidence something is: wire service, journalist report, official record, state media... Stories are ordered by kind of evidence, never by a trust score.",
+  traction: "How many outlets are on a story and how fresh it is. Traction decides what surfaces - never whether a claim is believed.",
+  lens: "A feed HORUS reads. Deliberately all sides - state media included, always labeled.",
+  origin: "origin = the earliest item we could place by timestamp; echo = coverage that followed. A timing fact, not credit or blame.",
+  steelman: "The strongest honest case AGAINST a side, retrieved from stored coverage. If none exists in our sources, we say so instead of inventing one.",
+  drift: "How each side's wording has moved over time, from dated snapshots.",
+  utr: "Carried by several non-mainstream outlets while mainstream is quiet. A distribution fact - not a hidden truth.",
+  attention: "How much coverage a story gets over time. Volume only - never credibility.",
+  items24: "Articles stored for this story in the last 24 hours.",
+  outlets: "Distinct publications seen on this story in the last 48 hours.",
+  provenance: "Who published first and who followed, ordered by publish timestamps. Items we cannot place by time are listed as unplaced, never guessed.",
+  dot: "The same actor (a person, ship, company...) appearing in more than one story. Descriptive only.",
+  river: "Every story HORUS is tracking, sorted by traction.",
+  edition: "TODAY is compiled once per day by a fixed formula and then frozen - same edition for everyone."
+};
+function term(label, key){
+  const tip = TERMS[key];
+  if(!tip) return esc(label);
+  return `<span class="term" data-tip="${esc(tip)}" onclick="this.classList.toggle('tipon');event.stopPropagation()">${esc(label)}</span>`;
+}
+document.addEventListener("click", ()=>document.querySelectorAll(".term.tipon").forEach(t=>t.classList.remove("tipon")));
+
+/* Named outlets + class distribution. "34 outlets" alone hides WHICH - this strip
+   names them. Distribution described, never scored. */
+function sourceStripHTML(s, opts){
+  const srcs = (s && s.sources) || [];
+  if(!srcs.length) return "";
+  const compact = opts && opts.compact;
+  const mix = (s.attention && s.attention.mix) || {};
+  const mixTotal = Object.values(mix).reduce((a,b)=>a+(b||0),0);
+  const bar = mixTotal ? `<div class="classbar" title="distribution of outlet classes - reach, never quality">${
+    Object.entries(mix).filter(([,n])=>n>0).map(([k,n])=>
+      `<span style="width:${(100*n/mixTotal).toFixed(1)}%;background:${CLASS_HUE[k]||CLASS_HUE.other}" title="${esc(CLASS_LABEL[k]||k)}: ${n}"></span>`).join("")
+  }</div>` : "";
+  const shown = compact ? srcs.slice(0,5) : srcs.slice(0,8);
+  const rest = srcs.length - shown.length;
+  const chip = c=>`<span class="srcchip" title="${esc(CLASS_LABEL[c.class]||c.class)} - ${c.n} item${c.n!==1?"s":""} in 48h"><span class="cdot" style="background:${CLASS_HUE[c.class]||CLASS_HUE.other}"></span>${esc(c.outlet)}<span class="n">${c.n}</span></span>`;
+  const hidden = rest>0 ? `<span class="srcchips" data-more hidden>${srcs.slice(shown.length).map(chip).join("")}</span><button class="srcmore" onclick="this.previousElementSibling.hidden=false;this.remove();event.stopPropagation()">+${rest} more</button>` : "";
+  const legend = mixTotal ? Object.entries(mix).filter(([,n])=>n>0).map(([k,n])=>`<span style="color:${CLASS_HUE[k]||CLASS_HUE.other}">${esc(CLASS_LABEL[k]||k)} ${n}</span>`).join(" &nbsp;") : "";
+  return `<div class="srcstrip">
+    <div class="sh"><span>who is carrying this &middot; last 48h</span><span>${legend}</span></div>
+    ${bar}
+    <div class="srcchips">${shown.map(chip).join("")}${hidden}</div>
+    ${compact?"":`<div class="srcfine">named outlets behind the counts - distribution of reach, never a quality score</div>`}
+  </div>`;
+}
+
+/* One-line top outlets for river cards. */
+function cardSourcesHTML(s){
+  const srcs = (s && s.sources) || [];
+  if(!srcs.length) return "";
+  const top = srcs.slice(0,3).map(c=>`<b>${esc(c.outlet)}</b>`).join(", ");
+  const rest = srcs.length>3 ? ` +${srcs.length-3} more` : "";
+  return `<div class="cardsrc">via ${top}${rest}</div>`;
+}
+
+/* Long beat lists render clamped to 6 with an honest expander (mobile wall-of-text fix). */
+function beatsListHTML(list, renderBeat){
+  if(!list || !list.length) return "";
+  const rows = list.map(renderBeat).join("");
+  if(list.length<=6) return `<div class="beats">${rows}</div>`;
+  return `<div class="beats clamped">${rows}<button class="showbeats" onclick="this.parentElement.classList.remove('clamped');this.remove();event.stopPropagation()">show all ${list.length} beats</button></div>`;
+}
+
+/* Sticky jump-nav so the structure of a story is visible at a glance. */
+function secNavHTML(items){
+  const present = items.filter(i=>i);
+  if(present.length<3) return "";
+  return `<nav class="secnav">${present.map(i=>`<a href="#${i.id}">${esc(i.label)}</a>`).join("")}</nav>`;
+}
+
 function cardHTML(e, pinned){
   const lv = liveFor(e.id);
   const kinds = cardKinds(e);
@@ -2182,11 +2322,12 @@ function cardHTML(e, pinned){
       <h3>${esc(e.title)}</h3>
       ${sp?`
       <div class="splitbox">
-        <div class="sl">the split</div>
+        <div class="sl" title="The two main positions, side by side, drawn from coverage. HORUS never picks one.">the split</div>
         <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
         <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
       </div>`:`<div class="line">${esc(e.neutralLine)}</div>`}
-      <div class="kindchips">${kinds.map(k=>`<span class="kind">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
+      <div class="kindchips">${kinds.map(k=>`<span class="kind" title="${esc(k)} - kind of evidence, never a trust score">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
+      ${lv?cardSourcesHTML(lv):""}
       ${HISTORY[e.id]?`<div class="roots-line">roots: ${HISTORY[e.id].frames.slice(1).map(f=>esc(f.label.toLowerCase())).join(" / ")} <span class="arr">-&gt;</span></div>`:""}
       <div class="card-foot">
         <span>${foot}</span>
@@ -2210,11 +2351,12 @@ function liveCardHTML(s, pinned){
       <h3>${esc(s.name)}</h3>
       ${sp&&sp.a&&sp.b?`
       <div class="splitbox">
-        <div class="sl">the split</div>
+        <div class="sl" title="The two main positions, side by side, drawn from coverage. HORUS never picks one.">the split</div>
         <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
         <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
       </div>`:(newest?`<div class="line">${esc(newest.title)}</div>`:"")}
-      <div class="kindchips">${kinds.map(k=>`<span class="kind">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
+      <div class="kindchips">${kinds.map(k=>`<span class="kind" title="${esc(k)} - kind of evidence, never a trust score">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
+      ${cardSourcesHTML(s)}
       ${coverageLineHTML(s)}
       <div class="card-foot">
         <span>${s.items_24h} items / 24h &nbsp;//&nbsp; ${s.outlets} outlets${cardSparklineHTML(s)}</span>
@@ -2343,7 +2485,7 @@ function sigilSVG(idOrObj){
 function attentionShapeHTML(s){
   if(!s || !s.attention || !s.attention.series || s.attention.series.length===0){
     return `
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ATTENTION SHAPE &nbsp; where attention started, grew and spread</div>
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ${term("ATTENTION SHAPE","attention")} &nbsp; where attention started, grew and spread</div>
     <div style="color:var(--mute2);font-size:.95rem;padding:14px;border:1px solid var(--line);background:var(--surf);border-radius:var(--radius)">No telemetry yet - the attention log starts recording when a story enters the river.</div>`;
   }
   const attn = s.attention;
@@ -2376,7 +2518,7 @@ function attentionShapeHTML(s){
     </div>`;
   }).join("");
   return `
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ATTENTION SHAPE &nbsp; where attention started, grew and spread</div>
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ${term("ATTENTION SHAPE","attention")} &nbsp; where attention started, grew and spread</div>
     <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:14px">
       <div style="margin-bottom:4px"><b style="color:var(--ink);font-size:.95rem">Where attention started, grew and spread - item and outlet counts from the engine's own collection record. Pure data, never a credibility signal.</b></div>
       <div style="margin:16px 0">
@@ -2410,7 +2552,7 @@ function positionDriftHTML(s, isFree){
     const unit = count===1 ? "snapshot" : "snapshots";
     const firstSnap = (s && s.drift && s.drift[0]) ? String(s.drift[0].captured_utc).slice(0, 10) : "";
     return `
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> POSITION DRIFT &nbsp; what each side has said over time</div>
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ${term("POSITION DRIFT","drift")} &nbsp; what each side has said over time</div>
     <div style="color:var(--mute2);font-size:.95rem;padding:14px;border:1px solid var(--line);background:var(--surf);border-radius:var(--radius)">Not enough recorded history yet. The engine stores a snapshot each time a side's stated wording changes - this story has ${count} ${unit} so far. Snapshots cannot be backfilled; the clock starts when recording starts.</div>`;
   }
   const drift = s.drift;
@@ -2420,7 +2562,7 @@ function positionDriftHTML(s, isFree){
   const summaryLine = `The stated positions on this story have changed ${K} ${plural} since ${firstDate}.`;
   if(isFree){
     return `
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> POSITION DRIFT &nbsp; what each side has said over time</div>
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ${term("POSITION DRIFT","drift")} &nbsp; what each side has said over time</div>
     <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:14px">
       <div style="margin-bottom:14px"><b style="color:var(--ink);font-size:.95rem">What each side has said over time. Dated wording from stored snapshots - quotes and dates only.</b></div>
       <div style="padding:10px;border-radius:6px;background:rgba(63,182,200,.1);border:1px solid rgba(63,182,200,.3);font-size:.9rem;margin-bottom:10px">
@@ -2443,7 +2585,7 @@ function positionDriftHTML(s, isFree){
       </div>
     </div>`).join("");
   return `
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> POSITION DRIFT &nbsp; what each side has said over time</div>
+    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ${term("POSITION DRIFT","drift")} &nbsp; what each side has said over time</div>
     <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:14px">
       <div style="margin-bottom:14px"><b style="color:var(--ink);font-size:.95rem">What each side has said over time. Dated wording from stored snapshots - quotes and dates only.</b></div>
       <div style="margin-bottom:10px;padding:10px;background:rgba(63,182,200,.05);border-radius:6px">${summaryLine}</div>
@@ -2943,6 +3085,15 @@ function renderLiveEvent(s){
   const safeUrl = u=>/^https?:\/\//i.test(u||"") ? u : "";
   const newest = s.latest && s.latest[0];
   const sp = s.split;
+  const nav = secNavHTML([
+    sp&&sp.a&&sp.b ? {id:"sec-split", label:"the split"} : null,
+    (s.sources&&s.sources.length) ? {id:"sec-sources", label:"sources"} : null,
+    (s.latest&&s.latest.length) ? {id:"sec-latest", label:"latest"} : null,
+    {id:"sec-history", label:"how it got here"},
+    (s.links&&s.links.length) ? {id:"sec-dots", label:"connected dots"} : null,
+    {id:"sec-unknowns", label:"unknowns"},
+    REPORTS[s.id] ? {id:"sec-report", label:"deep report"} : null,
+  ]);
   app().innerHTML = `
     <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
     <div class="ev-head">
@@ -2962,33 +3113,33 @@ function renderLiveEvent(s){
         <span class="sntxt"><span class="snd">${esc(newest.ts.slice(0,10))} &middot; ${esc(agoStr(newest.ts))}</span>${esc(newest.title)}</span>
       </div>`:""}
       <div class="att-line">
-        <span>${s.items_24h} items / 24h</span>
-        <span>${s.outlets} outlets</span>
+        <span>${s.items_24h} ${term("items / 24h","items24")}</span>
+        <span>${s.outlets} ${term("outlets","outlets")}</span>
         <span class="mute">tracked since the engine first sighted it - every beat is kept</span>
       </div>
     </div>
+    ${nav}
     ${sp&&sp.a&&sp.b?`
-    <div class="splitbox">
-      <div class="sl">the split</div>
+    <div class="splitbox" id="sec-split">
+      <div class="sl">${term("the split","split")}</div>
       <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
       <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
     </div>`:""}
+    <div id="sec-sources">${sourceStripHTML(s)}</div>
     ${liveProvenanceHTML(s)}
     ${(s.latest&&s.latest.length)?`
-    <div class="kicker" style="margin-top:22px"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
-    <div class="beats">
-      ${s.latest.map(b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet||"")} &middot; ${esc(b.kind||"")}</span></div>`).join("")}
-    </div>`:""}
-    ${liveHistoryHTML(s)}
+    <div class="kicker" id="sec-latest" style="margin-top:22px"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
+    ${beatsListHTML(s.latest, b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet||"")} &middot; ${esc(b.kind||"")}</span></div>`)}`:""}
+    <div id="sec-history">${liveHistoryHTML(s)}</div>
     ${(s.links&&s.links.length)?`
-    <div class="kicker" style="margin-top:22px"><span class="n">//</span> CONNECTED DOTS &nbsp; shared actors across situations</div>
+    <div class="kicker" id="sec-dots" style="margin-top:22px"><span class="n">//</span> CONNECTED DOTS &nbsp; ${term("shared actors across situations","dot")}</div>
     <div class="unkbox">
       <ul>${s.links.map(l=>`<li><b>${esc(l.entity)}</b> also figures in: ${l.situations.map(x=>esc(nameOf(x))).join(", ")}</li>`).join("")}</ul>
       <div class="fine">descriptive links between stories - never a judgment</div>
     </div>`:""}
     ${positionDriftHTML(s, state.mode==="free")}
     ${attentionShapeHTML(s)}
-    <div class="kicker" style="margin-top:22px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
+    <div class="kicker" id="sec-unknowns" style="margin-top:22px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
     <div class="unkbox">
       <ul>
         ${(s.unknowns||[]).map(u=>`<li>${esc(u)}</li>`).join("")}
@@ -2997,7 +3148,7 @@ function renderLiveEvent(s){
       </ul>
       <div class="fine">we don't know what we don't know - gaps are reported, never papered over</div>
     </div>
-    ${liveDeepReportHTML(s.id)}`;
+    <div id="sec-report">${liveDeepReportHTML(s.id)}</div>`;
   lazyHistory(s);
 }
 
@@ -3032,14 +3183,12 @@ function renderEvent(id){
   // LATEST = the raw live wire, newest first (descriptive; the curated brief lives below).
   const safeUrl = u=>/^https?:\/\//i.test(u||"") ? u : "";
   const latestBlock = (lv && lv.latest && lv.latest.length) ? `
-    <div class="kicker"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
-    <div class="beats">
-      ${lv.latest.map(b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet)} &middot; ${esc(KIND_ABBR[b.kind]||b.kind)}</span></div>`).join("")}
-    </div>` : "";
+    <div class="kicker" id="sec-latest"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
+    ${beatsListHTML(lv.latest, b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet)} &middot; ${esc(KIND_ABBR[b.kind]||b.kind)}</span></div>`)}` : "";
 
   // UNKNOWNS = mandatory honesty section: gaps reported, never papered over.
   const unknownsBlock = `
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
+    <div class="kicker" id="sec-unknowns" style="margin-top:26px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
     <div class="unkbox">
       <ul>
         ${(lv && lv.unknowns ? lv.unknowns : []).map(u=>`<li>${esc(u)}</li>`).join("")}
@@ -3052,7 +3201,7 @@ function renderEvent(id){
   // Phase B: fractal axis + competing frames when the stage-6 cache has this situation;
   // the flat seeded timeline stays as the fallback for situations without a cache entry.
   const timelineBlock = HISTORY[e.id] ? historyHTML(e) : ((e.timeline&&e.timeline.length) ? `
-    <details class="tl-peek">
+    <details class="tl-peek"${window.innerWidth>=900?" open":""}>
       <summary>&#9656;&nbsp; peek into the timeline &nbsp;//&nbsp; how it got here (${e.timeline.length} beats)</summary>
       <div class="section">
         <div class="timeline">
@@ -3094,7 +3243,7 @@ function renderEvent(id){
        </div>`;
 
   const depthSection = hasDepth ? `
-    <div class="kicker"><span class="n">//</span> THE DEPTH &nbsp; the consensus watch + the scenarios${locked?` <span class="mute">- ${state.mode==="free"?"free/Pro":"locked"}</span>`:""}</div>
+    <div class="kicker" id="sec-depth"><span class="n">//</span> THE DEPTH &nbsp; the consensus watch + the scenarios${locked?` <span class="mute">- ${state.mode==="free"?"free/Pro":"locked"}</span>`:""}</div>
     ${locked
       ? `<div class="locked-wrap"><div class="blurred">${depthInner}</div><div class="gate">${gate}</div></div>`
       : depthInner}` : "";
@@ -3115,22 +3264,32 @@ function renderEvent(id){
       ${standsNow}
       <div class="neutral">${esc(e.neutralLine)}</div>
       <div class="att-line">
-        <span><span class="dotpulse"></span> &nbsp;${fmtNum(e.watchers)} watching <span class="mute">(attention shape, not credibility)</span></span>
+        <span><span class="dotpulse"></span> &nbsp;${fmtNum(e.watchers)} watching <span class="mute">(${term("attention shape","attention")}, not credibility)</span></span>
         <span>${e.claims.length} competing claims</span>
-        ${lv?`<span>${lv.items_24h} items / 24h on the wire</span>`:""}
+        ${lv?`<span>${lv.items_24h} ${term("items / 24h","items24")} on the wire</span>`:""}
       </div>
     </div>
 
-    ${latestBlock}
+    ${secNavHTML([
+      (lv&&lv.latest&&lv.latest.length)?{id:"sec-latest",label:"latest"}:null,
+      (lv&&lv.sources&&lv.sources.length)?{id:"sec-sources",label:"sources"}:null,
+      {id:"sec-spectrum",label:"the spectrum"},
+      {id:"sec-history",label:"how it got here"},
+      {id:"sec-unknowns",label:"unknowns"},
+      hasDepth?{id:"sec-depth",label:"the depth"}:null,
+    ])}
 
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view + steelman</div>
+    ${latestBlock}
+    ${lv?`<div id="sec-sources">${sourceStripHTML(lv)}</div>`:""}
+
+    <div class="kicker" id="sec-spectrum" style="margin-top:26px"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view + ${term("steelman","steelman")}</div>
     ${legendHTML()}
     <div class="section">${claimsBlock}</div>
 
     ${provenanceChainsHTML(e)}
     ${liveProvenanceHTML(lv)}
 
-    ${timelineBlock}
+    <div id="sec-history">${timelineBlock}</div>
 
     ${lv ? positionDriftHTML(lv, state.mode==="free") : ""}
 
@@ -3149,7 +3308,9 @@ function setMode(m){ state.mode=m; render(); }
 function setFilter(f){ state.filter=f; render(); }
 function toggleKind(k){ const i=state.kinds.indexOf(k); if(i>-1) state.kinds.splice(i,1); else state.kinds.push(k); render(); }
 function onSearch(v){ state.query=v; renderBoard(); }
-function openEvent(id){ state.view="event"; state.eventId=id; state.histOpen=false; state.histBands=new Set(); loadReport(id); render(); }
+/* histOpen defaults open on desktop (audit: depth was hidden behind a click);
+   mobile keeps it collapsed so the story stays scannable. User toggle persists. */
+function openEvent(id){ state.view="event"; state.eventId=id; state.histOpen=window.innerWidth>=900; state.histBands=new Set(); loadReport(id); render(); }
 function goBoard(){ state.view="board"; render(); }
 
 function askEmail(id){
