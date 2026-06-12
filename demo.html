@@ -52,10 +52,7 @@ header{
 .statusline{font-family:var(--mono); font-size:.72rem; color:var(--mute); letter-spacing:.04em}
 .statusline b{color:var(--ink); font-weight:500}
 .spacer{flex:1}
-.tier-toggle{display:flex; border:1px solid var(--line); border-radius:99px; overflow:hidden; font-family:var(--mono); font-size:.7rem}
-.tier-toggle button{background:transparent; color:var(--mute); border:0; padding:7px 15px; cursor:pointer; letter-spacing:.08em; transition:.15s}
-.tier-toggle button.on{background:var(--red); color:#fff}
-.tier-toggle button.on.pro{background:var(--cyan); color:#06222a}
+/* R5 2026-06-12: the FREE/PRO tier toggle is gone - every layer renders open. */
 .noverdict{font-family:var(--mono); font-size:.68rem; letter-spacing:.12em; color:var(--red); border:1px solid rgba(229,52,43,.4); padding:5px 11px; border-radius:99px; white-space:nowrap}
 
 /* ---------- layout ---------- */
@@ -211,39 +208,47 @@ main{max-width:1340px; margin:0 auto; padding:26px 22px 90px}
 .scenario .note{font-size:.74rem; color:var(--mute); margin-top:9px; font-style:italic}
 
 /* ---------- gate / lock ---------- */
-.locked-wrap{position:relative}
-.locked-wrap .blurred{filter:blur(7px); opacity:.5; pointer-events:none; user-select:none}
-.gate{
-  position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:20px;
-  background:radial-gradient(circle at 50% 40%, rgba(10,10,11,.55), rgba(10,10,11,.92));
-}
-.gate-card{max-width:440px; text-align:center; border:1px solid var(--line); background:var(--surf); border-radius:var(--radius); padding:24px 24px 22px}
-.gate-card .glbl{font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; color:var(--cyan); text-transform:uppercase; margin-bottom:9px}
-.gate-card h3{font-family:var(--display); font-weight:600; font-size:1.3rem; margin-bottom:9px; letter-spacing:-.01em}
-.gate-card p{color:var(--mute2); font-size:.9rem; margin-bottom:14px}
-.gate-card ul{text-align:left; margin:0 auto 16px; max-width:330px; list-style:none}
-.gate-card li{font-size:.84rem; color:var(--mute2); padding:5px 0 5px 22px; position:relative}
-.gate-card li::before{content:"+"; position:absolute; left:2px; color:var(--cyan); font-family:var(--mono)}
 .btn{display:inline-flex; align-items:center; gap:8px; font-family:var(--mono); font-size:.78rem; letter-spacing:.05em; border:0; border-radius:99px; padding:11px 22px; cursor:pointer; transition:.15s}
 .btn.primary{background:var(--cyan); color:#06222a; font-weight:500}
 .btn.primary:hover{filter:brightness(1.08)}
 .btn.red{background:var(--red); color:#fff}
 .btn.ghost{background:transparent; border:1px solid var(--line); color:var(--mute2)}
 .btn.ghost:hover{color:var(--ink); border-color:#3a404c}
-.gate-card .fine{font-size:.7rem; color:var(--mute); margin-top:12px; font-family:var(--mono)}
 
-/* ---------- modal ---------- */
-.modal-bg{position:fixed; inset:0; z-index:100; background:rgba(5,5,6,.78); backdrop-filter:blur(5px); display:none; align-items:center; justify-content:center; padding:20px}
-.modal-bg.show{display:flex}
-.modal{max-width:430px; width:100%; border:1px solid var(--line); background:var(--surf); border-radius:14px; padding:26px}
-.modal .glbl{font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; color:var(--red); text-transform:uppercase; margin-bottom:9px}
-.modal h3{font-family:var(--display); font-weight:600; font-size:1.4rem; margin-bottom:8px; letter-spacing:-.01em}
-.modal p{color:var(--mute2); font-size:.9rem; margin-bottom:16px}
-.modal form{display:flex; flex-direction:column; gap:10px}
-.modal input{background:#0e1014; border:1px solid var(--line); border-radius:8px; padding:12px 14px; color:var(--ink); font-family:var(--mono); font-size:.85rem; outline:none}
-.modal input:focus{border-color:var(--cyan)}
-.modal .fine{font-size:.7rem; color:var(--mute); margin-top:6px; font-family:var(--mono)}
-.modal .x{float:right; cursor:pointer; color:var(--mute); font-family:var(--mono); font-size:.9rem; margin-top:-6px}
+/* ===== R1 2026-06-12: COMPOSED BRIEF - the primary reading layer ===== */
+.brief{margin:18px 0 6px; max-width:760px}
+.brief p{font-size:1.04rem; line-height:1.75; color:var(--ink); margin:0 0 14px}
+.brief .bhead{font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--mute); margin-bottom:10px; display:flex; gap:10px; align-items:center}
+.brief .bhead .livechip{margin-left:0}
+.bsent{position:relative}
+.bcite{background:transparent; border:0; color:var(--cyan); font-family:var(--mono); font-size:.62rem; vertical-align:super; cursor:pointer; padding:0 2px; letter-spacing:0}
+.bcite:hover{color:var(--ink)}
+.bcrefs{display:block; margin:6px 0 10px; padding:8px 12px; border:1px solid var(--line); border-left:2px solid var(--cyan); background:var(--surf); border-radius:6px; font-size:.8rem; font-family:var(--mono); color:var(--mute2)}
+.bcrefs a{color:var(--cyan); text-decoration:none}
+.bcrefs a:hover{text-decoration:underline}
+.bcrefs .k{color:var(--mute); font-size:.68rem; text-transform:uppercase; letter-spacing:.08em}
+.briefph{margin:18px 0 6px; padding:13px 16px; border:1px dashed var(--line); border-radius:var(--radius); color:var(--mute2); font-size:.92rem}
+.axisq{font-family:var(--display); font-weight:600; font-size:1.05rem; letter-spacing:-.01em; color:var(--ink); margin-bottom:8px}
+.axisnone{margin:14px 0; padding:11px 15px; border:1px solid var(--line); border-left:2px solid #8fb89a; background:var(--surf); border-radius:6px; color:var(--mute2); font-size:.92rem}
+
+/* ===== R3 2026-06-12: EVIDENCE ROOM - the apparatus, clearly separated ===== */
+.evroom{margin-top:30px; border:1px solid var(--line); border-radius:var(--radius); background:rgba(255,255,255,.012)}
+.evroom>summary{cursor:pointer; list-style:none; padding:14px 18px; font-family:var(--mono); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--mute); display:flex; gap:10px; align-items:center}
+.evroom>summary::-webkit-details-marker{display:none}
+.evroom>summary .n{color:var(--red)}
+.evroom>summary .hint{margin-left:auto; font-size:.66rem; letter-spacing:.08em; text-transform:none; color:var(--mute)}
+.evroom[open]>summary{border-bottom:1px solid var(--line)}
+.evroom .evbody{padding:4px 18px 18px}
+
+/* ===== R4 2026-06-12: river grouped by bucket + topic tags + sort ===== */
+.bucketsec{margin-bottom:14px; border:1px solid var(--line); border-radius:var(--radius); background:rgba(255,255,255,.008)}
+.bucketsec>summary{cursor:pointer; list-style:none; padding:12px 16px; font-family:var(--mono); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--mute2); display:flex; gap:10px; align-items:center}
+.bucketsec>summary::-webkit-details-marker{display:none}
+.bucketsec>summary .cnt{color:var(--mute); font-size:.66rem}
+.bucketsec>summary .quiet{margin-left:auto; color:var(--mute); font-size:.66rem; text-transform:none; letter-spacing:.04em}
+.bucketsec .bckbody{padding:0 14px 14px; display:flex; flex-direction:column; gap:13px}
+.topictag{font-family:var(--mono); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; padding:2px 7px; border-radius:4px; border:1px solid var(--line); color:var(--mute2)}
+.takeaway{font-size:.95rem; line-height:1.55; color:var(--mute2); margin:4px 0 8px}
 
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--line); margin-top:40px; padding:22px; text-align:center}
@@ -300,7 +305,6 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
 .kindfilters{display:flex; flex-wrap:wrap; gap:5px}
 .kindfilters .chip{padding:5px 9px; font-size:.62rem}
 .river{display:flex; flex-direction:column; gap:13px; min-width:0}
-.pinlabel{font-family:var(--mono); font-size:.64rem; letter-spacing:.18em; color:var(--red); text-transform:uppercase; margin-bottom:-4px}
 .card.pinned{border-color:rgba(229,52,43,.45); background:linear-gradient(180deg,rgba(229,52,43,.05),var(--surf))}
 .card .ago{font-family:var(--mono); font-size:.62rem; color:var(--mute); white-space:nowrap}
 .splitbox{border:1px solid var(--line); border-left:2px solid var(--red); background:#0e1014; border-radius:8px; padding:10px 12px; display:flex; flex-direction:column; gap:7px}
@@ -463,29 +467,10 @@ footer .meta{font-family:var(--mono); font-size:.7rem; color:var(--mute); margin
   </div>
   <div class="statusline"><b class="red">● LIVE</b> &nbsp;//&nbsp; <span id="refreshStamp">refreshed 2026-06-10 (seed)</span> &nbsp;//&nbsp; <span id="clock">--:--:-- UTC</span></div>
   <div class="spacer"></div>
-  <div class="tier-toggle" title="Demo control: switch the viewing tier">
-    <button id="tFree" class="on" onclick="setMode('free')">FREE</button>
-    <button id="tPro" class="pro" onclick="setMode('pro')">PRO</button>
-  </div>
   <div class="noverdict" id="taglineBadge">NO VERDICT</div>
 </header>
 
 <main id="app"><!-- rendered by JS --></main>
-
-<!-- ============ EMAIL MODAL ============ -->
-<div class="modal-bg" id="emailModal">
-  <div class="modal">
-    <span class="x" onclick="closeModal()">[ esc ]</span>
-    <div class="glbl" id="emGlbl">Free report</div>
-    <h3 id="emTitle">Open your free full report</h3>
-    <p id="emBody">You get one full-spectrum report on the house. Drop an email and the depth unlocks - provenance, the strongest opposition, the timeline.</p>
-    <form onsubmit="submitEmail(event)">
-      <input type="email" id="emailInput" placeholder="you@domain.com" required>
-      <button class="btn primary" type="submit" id="emCta">Unlock the full report</button>
-      <div class="fine">Demo only - no email is stored or sent.</div>
-    </form>
-  </div>
-</div>
 
 <!-- ============ FOOTER ============ -->
 <footer>
@@ -563,25 +548,6 @@ const SEED = {
         "def": "Outlet repeating a claim without independent investigation."
       }
     ],
-    "freeGate": {
-      "title": "Your one free full report",
-      "body": "You've just seen a complete Brief: all sides on this event, the strongest evidence, the opposition to it, and how it connects backward in time. This is what subscribers get on every event, unlimited. Free users see the significance feed (what matters) always, and can open one full Brief every month-enough to understand how HORUS works.",
-      "cta": "Create account to save and explore"
-    },
-    "proGate": {
-      "title": "Pro - $15/month. Unlimited Brief access.",
-      "body": "One brief showed you the shape. Pro gives you all of it: every event tracked, every claim sourced, every opposition steelmanned, every temporal connection laid bare. Plus alerts on consequential shifts you might miss. The difference between seeing that sources disagree and understanding precisely why.",
-      "cta": "Upgrade to Pro",
-      "bullets": [
-        "Unlimited full-spectrum briefs on all tracked events",
-        "Real-time alerts when a story's coverage shape changes - e.g. mainstream echo drops to zero",
-        "Provenance chain: trace each claim to its origin and who disputes it",
-        "Strongest opposition attached to strongest evidence-see what refutes the best case",
-        "Temporal layer: watch how narratives evolve and collapse over weeks and months",
-        "Track your reading history; export briefs and evidence chains"
-      ]
-    },
-    "methodologyNote": "This demo runs on real past events and live developments. The Brief methodology is seeded; production ingestion includes 50+ sources across all major camps. This is a proof of how the structure works-not yet the live feed.",
     "emptyState": "No data yet on this event. Check back soon, or explore other tracked situations in the feed."
   },
   "events": [
@@ -1613,22 +1579,17 @@ const HISTORY = {"gaza-israel-war-current":{"id":"gaza-israel-war-current","gene
 
 /* ===================== STATE ===================== */
 const state = {
-  mode: "free",          // free | pro
-  view: "today",         // today | board | event
+  view: "today",         // today | board | event   (R5: no free/pro tier - all open)
   eventId: null,
   filter: "all",
   kinds: [],             // active KIND-of-evidence filters (empty = all)
+  tags: [],              // R4a: active topic-tag filters (empty = all)
   query: "",
-  emailCaptured: false,
-  freeReportUsed: false,
-  unlocked: null,        // eventId that the free report was spent on
-  pendingUnlock: null,
   histFrame: {},         // per-situation selected frame id (null/"" = all eras)
   histOpen: false,       // HOW IT GOT HERE peek state for the open situation
   histBands: new Set(),  // era bands the user has expanded
-  riverMode: "dev",      // dev | story (for board view)
   utrFilter: false,      // UNDER THE RADAR filter toggle
-  riverSort: "traction", // traction | velocity (river sort order)
+  riverSort: "trending", // trending | recent (R4b - reader-facing sort)
 };
 
 const KIND_ABBR = {
@@ -1661,12 +1622,6 @@ function agoStr(ts){
   return h<48 ? h+"h ago" : Math.round(h/24)+"d ago";
 }
 function clip(s,n){ s=String(s||""); if(s.length<=n) return s; const c=s.slice(0,n); return c.slice(0, Math.max(40,c.lastIndexOf(" ")))+" ..."; }
-function seedSplit(e){
-  const c = e.claims && e.claims[0]; if(!c) return null;
-  const b = (c.opposition && c.opposition.statement) || (e.claims[1] && e.claims[1].statement);
-  return b ? {a:clip(c.statement,150), b:clip(b,150), basis:"seeded brief"} : null;
-}
-function splitFor(e){ const lv=liveFor(e.id); return (lv && lv.split && lv.split.a && lv.split.b) ? lv.split : seedSplit(e); }
 function cardKinds(e){
   const lv = liveFor(e.id);
   if(lv && lv.kinds && lv.kinds.length) return lv.kinds;
@@ -1797,8 +1752,6 @@ function getPanelDeltas(){
 const app = () => document.getElementById("app");
 
 function render(){
-  document.getElementById("tFree").classList.toggle("on", state.mode==="free");
-  document.getElementById("tPro").classList.toggle("on", state.mode==="pro");
   document.getElementById("taglineBadge").textContent = "NO VERDICT";
   if(state.view==="today") renderToday(); else if(state.view==="board") renderBoard(); else if(state.view==="machine") renderMachine(); else renderEvent(state.eventId);
   window.scrollTo({top:0,behavior:"instant"});
@@ -1946,7 +1899,7 @@ function renderToday(){
         <div style="display:flex;gap:14px;align-items:center">
           <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden">
             <button onclick="state.view='today';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:500;transition:.15s;background:rgba(229,52,43,.1);color:var(--ink);border-right:1px solid var(--line)">TODAY</button>
-            <button onclick="state.view='board';state.riverMode='story';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">THE RIVER</button>
+            <button onclick="state.view='board';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">THE RIVER</button>
             <button onclick="openMachine()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:400;transition:.15s;opacity:.7">MACHINE ROOM</button>
           </div>
         </div>
@@ -1970,7 +1923,6 @@ function renderToday(){
 
 function switchToRiver(){
   state.view = "board";
-  state.riverMode = "story";
   render();
 }
 
@@ -2081,7 +2033,7 @@ function renderMachine(){
         <div style="display:flex;gap:14px;align-items:center">
           <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden">
             <button onclick="state.view='today';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:500;transition:.15s;border-right:1px solid var(--line)">TODAY</button>
-            <button onclick="state.view='board';state.riverMode='story';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">THE RIVER</button>
+            <button onclick="state.view='board';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">THE RIVER</button>
             <button onclick="openMachine()" style="background:transparent;color:var(--ink);border:0;padding:8px 16px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:500;transition:.15s;background:rgba(229,52,43,.1)">MACHINE ROOM</button>
           </div>
         </div>
@@ -2101,31 +2053,38 @@ function renderMachine(){
 }
 
 function renderBoard(){
+  const q = state.query.trim().toLowerCase();
+  const tagsOf = x => (x && x.topic_tags) || [];
+  const okTags = lv => !state.tags.length || tagsOf(lv).some(t=>state.tags.includes(t));
   const evs = SEED.events.filter(e=>{
     const okScope = state.filter==="all" || e.scope===state.filter || BUCKET_OF_SCOPE[e.scope]===state.filter;
-    const q = state.query.trim().toLowerCase();
     const okQ = !q || (e.title+" "+e.neutralLine).toLowerCase().includes(q);
     const okKind = !state.kinds.length || cardKinds(e).some(k=>state.kinds.includes(k));
-    return okScope && okQ && okKind;
+    return okScope && okQ && okKind && okTags(liveFor(e.id));
   });
   /* river order = traction (live item counts), never source quality */
   const traction = e=>{ const lv=liveFor(e.id); return lv ? (lv.items_24h||0)*1e6 + (lv.items_48h||0) : 0; };
   /* Phase C0: stories the engine discovered on its own join the river (cabinet-backed) */
   const lives = liveOnly().filter(s=>{
     const okScope = state.filter==="all" || s.bucket===state.filter;
-    const q = state.query.trim().toLowerCase();
     const sp = s.split || {};
     const okQ = !q || (s.name+" "+(sp.a||"")+" "+(sp.b||"")).toLowerCase().includes(q);
     const okKind = !state.kinds.length || (s.kinds||[]).some(k=>state.kinds.includes(k));
     const okUTR = !state.utrFilter || (s.under_radar === true);
-    return okScope && okQ && okKind && okUTR;
+    return okScope && okQ && okKind && okUTR && okTags(s);
   });
+  const newestTs = r=>{ const lv = r.t==="seed" ? liveFor(r.v.id) : r.v;
+    const b = lv && lv.latest && lv.latest[0]; return (b && b.ts) || ""; };
+  const bucketOf = r=> r.t==="seed" ? (BUCKET_OF_SCOPE[r.v.scope]||r.v.scope) : r.v.bucket;
   const river = evs.map(e=>({t:"seed", v:e, tr:traction(e), w:e.watchers}))
     .concat(lives.map(s=>({t:"live", v:s, tr:(s.items_24h||0)*1e6+(s.items_48h||0), w:0})));
-  const velocity = r=>{ const i24 = (r.v.items_24h||0); const i48 = (r.v.items_48h||0); const i48prev = i48-i24; return i24 - i48prev; };
-  const sortByVelocity = state.riverSort==="velocity";
-  river.sort((a,b)=> sortByVelocity ? (velocity(b)-velocity(a)) : ((b.tr-a.tr) || (b.w-a.w)));
+  /* R4b: TRENDING = traction across outlets (never source quality);
+          RECENT  = newest development first. The reader picks. */
+  river.sort((a,b)=> state.riverSort==="recent"
+    ? (newestTs(b) > newestTs(a) ? 1 : newestTs(b) < newestTs(a) ? -1 : (b.tr-a.tr))
+    : ((b.tr-a.tr) || (b.w-a.w)));
   const scopes = ["all","geopolitics","power-money","economy","tech-science-health","info-wars"];
+  const allTags = [...new Set((LIVE?LIVE.situations:[]).flatMap(s=>tagsOf(s)))].sort();
   const totalClaims = SEED.events.reduce((a,e)=>a+e.claims.length,0);
   const items24 = LIVE ? LIVE.situations.reduce((a,s)=>a+(s.items_24h||0),0) : null;
   const okL = LIVE ? LIVE.lenses.ok.length : 0;
@@ -2134,6 +2093,28 @@ function renderBoard(){
 
   const dev = LIVE ? LIVE.situations.flatMap(s=>(s.latest||[]).slice(0,3).map(b=>Object.assign({sid:s.id,sname:s.name},b))) : [];
   dev.sort((a,b)=> a.ts<b.ts?1:-1);
+
+  /* R4c: THE RIVER is shelved by area of life - grouped bucket sections when
+     browsing everything; a flat list when one bucket is selected. */
+  const cardOf = r => r.t==="seed" ? cardHTML(r.v, false) : liveCardHTML(r.v, false);
+  let riverHTML;
+  if(state.filter==="all"){
+    riverHTML = scopes.slice(1).map(bk=>{
+      const rows = river.filter(r=>bucketOf(r)===bk);
+      const fresh = rows.some(r=>{ const ts=newestTs(r); return ts && (Date.now()-Date.parse(ts))<48*3600e3; });
+      if(!rows.length) return `
+        <details class="bucketsec">
+          <summary><span>${BUCKET_LABEL[bk]||bk}</span><span class="cnt">0</span><span class="quiet">nothing tracked here right now - quiet is reported, not hidden</span></summary>
+        </details>`;
+      return `
+        <details class="bucketsec"${fresh?" open":""}>
+          <summary><span>${BUCKET_LABEL[bk]||bk}</span><span class="cnt">${rows.length} stor${rows.length===1?"y":"ies"}</span>${fresh?"":`<span class="quiet">no fresh development in 48h</span>`}</summary>
+          <div class="bckbody">${rows.map(cardOf).join("")}</div>
+        </details>`;
+    }).join("");
+  } else {
+    riverHTML = river.map(cardOf).join("") || `<p class="mute">No situations match.</p>`;
+  }
 
   app().innerHTML = `
     <div class="kicker"><span class="n">//</span> 01 &nbsp; THE FEED${LIVE?`<span class="livechip">LIVE</span>`:`<span class="mute">&nbsp; seeded</span>`}</div>
@@ -2145,13 +2126,13 @@ function renderBoard(){
       <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
         <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;font-family:var(--mono);font-size:.75rem">
           <button onclick="state.view='today';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">TODAY</button>
-          <button onclick="state.view='board';state.riverMode='story';render()" style="background:transparent;color:var(--mute);border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;border-right:1px solid var(--line);transition:.15s">${state.riverMode==="dev"?"BY STORY":"BY TRACTION"}</button>
           <button onclick="openMachine()" style="background:transparent;color:var(--mute);border:0;padding:8px 14px;cursor:pointer;font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;font-weight:400;transition:.15s;opacity:.7">MACHINE ROOM</button>
         </div>
         <div style="display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;font-family:var(--mono);font-size:.75rem">
-          <button onclick="state.riverSort=state.riverSort==='velocity'?'traction':'velocity';render()" style="background:transparent;color:${state.riverSort==='velocity'?'var(--ink)':'var(--mute)'};border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;transition:.15s">${state.riverSort==="velocity"?"VELOCITY":"TRACTION"}</button>
+          <button onclick="setSort('trending')" style="background:${state.riverSort==='trending'?'var(--red)':'transparent'};color:${state.riverSort==='trending'?'#fff':'var(--mute)'};border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;transition:.15s;border-right:1px solid var(--line)">TRENDING</button>
+          <button onclick="setSort('recent')" style="background:${state.riverSort==='recent'?'var(--red)':'transparent'};color:${state.riverSort==='recent'?'#fff':'var(--mute)'};border:0;padding:8px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:.08em;transition:.15s">RECENT</button>
         </div>
-        <div style="font-family:var(--mono);font-size:.7rem;color:var(--mute);max-width:180px">Velocity = items in the last 24h minus the 24h before. What is accelerating, not what is true.</div>
+        <div style="font-family:var(--mono);font-size:.7rem;color:var(--mute);max-width:200px">Trending = ${term("traction","traction")} across outlets. Recent = newest development first. Never source quality.</div>
       </div>
     </div>
     <div class="board-head" style="margin-top:18px">
@@ -2171,6 +2152,12 @@ function renderBoard(){
           <div class="railh">pillar</div>
           <div class="vfilters">${scopes.map(s=>`<div class="chip ${state.filter===s?"on":""}" onclick="setFilter('${s}')">${BUCKET_LABEL[s]||s}</div>`).join("")}</div>
         </div>
+        ${allTags.length?`
+        <div class="railbox">
+          <div class="railh">topic</div>
+          <div class="kindfilters">${allTags.map(t=>`<div class="chip ${state.tags.includes(t)?"on":""}" onclick="toggleTag('${esc(t)}')">${esc(t)}</div>`).join("")}</div>
+          <div class="railnote">what kind of story it is - categories, never judgments</div>
+        </div>`:""}
         <div class="railbox">
           <div class="railh">under the radar</div>
           <div class="chip ${state.utrFilter?"on":""}" title="Stories carried by several non-mainstream outlets while mainstream is quiet. A distribution fact - not a hidden truth." onclick="state.utrFilter=!state.utrFilter;render()">UNDER THE RADAR</div>
@@ -2190,11 +2177,7 @@ function renderBoard(){
         </div>
       </aside>
       <div class="river">
-        ${river.map((r,i)=>{
-          const pin = i===0 && r.tr>0;
-          const html = r.t==="seed" ? cardHTML(r.v, pin) : liveCardHTML(r.v, pin);
-          return (pin?`<div class="pinlabel">// today's top story by attention</div>`:"") + html;
-        }).join("") || `<p class="mute">No situations match.</p>`}
+        ${riverHTML}
       </div>
       <aside class="rail right">
         <div class="railbox">
@@ -2304,33 +2287,30 @@ function secNavHTML(items){
   return `<nav class="secnav">${present.map(i=>`<a href="#${i.id}">${esc(i.label)}</a>`).join("")}</nav>`;
 }
 
+/* R3/R4c cards: one takeaway line, tags, kinds, named sources, sparkline.
+   The number soup moved to hover (title) - counts inform, they never shout. */
 function cardHTML(e, pinned){
   const lv = liveFor(e.id);
   const kinds = cardKinds(e);
-  const sp = splitFor(e);
   const newest = lv && lv.latest && lv.latest[0];
-  const foot = lv
-    ? `${lv.items_24h} items / 24h &nbsp;//&nbsp; ${kinds.length} kinds`
-    : `${e.claims.length} claims &nbsp;//&nbsp; ${kinds.length} source kinds`;
+  const counts = lv
+    ? `${lv.items_24h} items in 24h, ${lv.outlets||"?"} outlets - volume, never credibility`
+    : `${e.claims.length} competing claims seeded`;
+  const takeaway = newest ? newest.title : clip(e.neutralLine, 170);
   return `
     <div class="card${pinned?" pinned":""}" data-act="open" data-id="${esc(e.id)}">
       ${leadVisualHTML(e, {compact:true})}
       <div class="card-top">
-        <span style="display:flex;gap:8px;align-items:center"><span class="tag ${e.scope}">${esc(e.scope)}</span><span class="pill ${e.status}">${esc(e.status)}</span></span>
+        <span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="tag ${e.scope}">${esc(e.scope)}</span>${lv?topicTagsHTML(lv):""}<span class="pill ${e.status}">${esc(e.status)}</span></span>
         <span class="ago">${newest?esc(agoStr(newest.ts)):"seeded"}</span>
       </div>
       <h3>${esc(e.title)}</h3>
-      ${sp?`
-      <div class="splitbox">
-        <div class="sl" title="The two main positions, side by side, drawn from coverage. HORUS never picks one.">the split</div>
-        <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
-        <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
-      </div>`:`<div class="line">${esc(e.neutralLine)}</div>`}
+      <div class="takeaway">${esc(takeaway)}</div>
       <div class="kindchips">${kinds.map(k=>`<span class="kind" title="${esc(k)} - kind of evidence, never a trust score">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
       ${lv?cardSourcesHTML(lv):""}
       ${HISTORY[e.id]?`<div class="roots-line">roots: ${HISTORY[e.id].frames.slice(1).map(f=>esc(f.label.toLowerCase())).join(" / ")} <span class="arr">-&gt;</span></div>`:""}
       <div class="card-foot">
-        <span>${foot}</span>
+        <span title="${esc(counts)}">the wire${lv?cardSparklineHTML(lv):""}</span>
         <span class="att" title="Attention shape - NOT a credibility signal."><span class="dotpulse"></span>${fmtNum(e.watchers)} watching</span>
       </div>
     </div>`;
@@ -2339,27 +2319,22 @@ function cardHTML(e, pinned){
 /* Phase C0: card for a situation the engine DISCOVERED on its own (cabinet-backed, no seed brief) */
 function liveCardHTML(s, pinned){
   const kinds = s.kinds || [];
-  const sp = s.split;
   const newest = s.latest && s.latest[0];
+  const counts = `${s.items_24h} items in 24h, ${s.outlets} outlets - volume, never credibility`;
   return `
     <div class="card${pinned?" pinned":""}" data-act="open" data-id="${esc(s.id)}">
       ${leadVisualHTML(s, {compact:true})}
       <div class="card-top">
-        <span style="display:flex;gap:8px;align-items:center"><span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span><span class="pill disco">discovered</span></span>
+        <span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span>${topicTagsHTML(s)}<span class="pill disco">discovered</span></span>
         <span class="ago">${newest?esc(agoStr(newest.ts)):""}</span>
       </div>
       <h3>${esc(s.name)}</h3>
-      ${sp&&sp.a&&sp.b?`
-      <div class="splitbox">
-        <div class="sl" title="The two main positions, side by side, drawn from coverage. HORUS never picks one.">the split</div>
-        <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
-        <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
-      </div>`:(newest?`<div class="line">${esc(newest.title)}</div>`:"")}
+      ${newest?`<div class="takeaway">${esc(newest.title)}</div>`:""}
       <div class="kindchips">${kinds.map(k=>`<span class="kind" title="${esc(k)} - kind of evidence, never a trust score">${KIND_ABBR[k]||esc(k)}</span>`).join("")}</div>
       ${cardSourcesHTML(s)}
       ${coverageLineHTML(s)}
       <div class="card-foot">
-        <span>${s.items_24h} items / 24h &nbsp;//&nbsp; ${s.outlets} outlets${cardSparklineHTML(s)}</span>
+        <span title="${esc(counts)}">the wire${cardSparklineHTML(s)}</span>
         <span class="att" title="Surfaced by traction across outlets - never a credibility score."><span class="dotpulse"></span>engine find</span>
       </div>
     </div>`;
@@ -2411,12 +2386,6 @@ function legendHTML(){
         <div class="body">${mc.primacyLegend.map(k=>`<div><b>${esc(k.term)}</b> - ${esc(k.def)}</div>`).join("")}</div>
       </details>
     </div>`;
-}
-
-function depthLocked(eventId){
-  if(state.mode==="pro") return false;
-  if(state.unlocked===eventId) return false;
-  return true;
 }
 
 /* ===================== Phase C-VIS: lead visual =====================
@@ -2546,7 +2515,7 @@ function attentionShapeHTML(s){
 }
 
 /* ===================== E2-C2: POSITION DRIFT panel - store snapshots of drift ===== */
-function positionDriftHTML(s, isFree){
+function positionDriftHTML(s){
   if(!s || !s.drift || s.drift.length<2){
     const count = (s && s.drift) ? s.drift.length : 0;
     const unit = count===1 ? "snapshot" : "snapshots";
@@ -2560,18 +2529,6 @@ function positionDriftHTML(s, isFree){
   const firstDate = String(drift[0].captured_utc).slice(0, 10);
   const plural = K === 1 ? "time" : "times";
   const summaryLine = `The stated positions on this story have changed ${K} ${plural} since ${firstDate}.`;
-  if(isFree){
-    return `
-    <div class="kicker" style="margin-top:26px"><span class="n">//</span> ${term("POSITION DRIFT","drift")} &nbsp; what each side has said over time</div>
-    <div style="border:1px solid var(--line);background:var(--surf);border-radius:var(--radius);padding:14px">
-      <div style="margin-bottom:14px"><b style="color:var(--ink);font-size:.95rem">What each side has said over time. Dated wording from stored snapshots - quotes and dates only.</b></div>
-      <div style="padding:10px;border-radius:6px;background:rgba(63,182,200,.1);border:1px solid rgba(63,182,200,.3);font-size:.9rem;margin-bottom:10px">
-        <div style="margin-bottom:4px">${summaryLine}</div>
-        <div style="color:var(--cyan);font-size:.85rem">The full dated trail is in PRO.</div>
-      </div>
-    </div>`;
-  }
-  /* PRO: full trail */
   const trailHTML = drift.map((snap, idx)=>`
     <div style="display:grid;grid-template-columns:140px 1fr 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)">
       <div style="font-family:var(--mono);font-size:.8rem;color:var(--mute)">${esc(String(snap.captured_utc).slice(0, 16).replace("T", " "))} UTC</div>
@@ -3081,63 +3038,86 @@ function lazyHistory(s){
 /* Phase C0: detail for a discovered (live-only) situation. No seed brief yet -
    the engine remembers every beat from first sighting; depth layers (spectrum,
    provenance, deep history) build as the story lives. */
+/* ===================== R1: COMPOSED BRIEF - the primary reading layer =====
+   Every sentence in feed.json's brief was cited by index AND entailment-verified
+   by the engine before export. The UI only renders; it never composes. */
+function briefHTML(s){
+  const b = s && s.brief;
+  if(!b || !b.paragraphs || !b.paragraphs.length)
+    return `<div class="briefph">A composed brief for this story is not built yet - the wire and the sides below are live.</div>`;
+  let n = 0;
+  const paras = b.paragraphs.map(p=>{
+    const sents = (p.sentences||[]).map(sn=>{
+      n += 1;
+      const refs = (sn.cites||[]).map(c=>{
+        const u = /^https?:\/\//i.test(c.url||"") ? c.url : "";
+        const lab = `${esc(c.outlet||"?")} <span class="k">${esc(c.kind||"")}</span>`;
+        return u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${lab}</a>` : lab;
+      }).join(" &middot; ");
+      return `<span class="bsent">${esc(sn.text)}<button class="bcite" onclick="toggleCite(this);event.stopPropagation()" title="the sources this sentence is built from">[${n}]</button><span class="bcrefs" hidden>${refs}</span></span>`;
+    }).join(" ");
+    return `<p>${sents}</p>`;
+  }).join("");
+  return `<div class="brief" id="sec-brief">
+    <div class="bhead"><span style="color:var(--red)">//</span> THE BRIEF <span class="livechip">LIVE</span> <span style="text-transform:none;letter-spacing:.04em">every sentence cited - tap [n] for its sources</span></div>
+    ${paras}
+  </div>`;
+}
+
+/* R2+R3: HOW EACH SIDE COVERS IT - rendered only when a real dispute exists;
+   the axis phrased as the reader's question where the engine extracted one. */
+function sidesHTML(s){
+  const sp = s && s.split;
+  if(!sp) return "";
+  if(sp.axis_type==="none") return `
+    <div class="kicker" id="sec-sides" style="margin-top:22px"><span class="n">//</span> HOW EACH SIDE COVERS IT</div>
+    <div class="axisnone">Coverage broadly agrees on the facts; differences are in emphasis.</div>`;
+  if(!(sp.a&&sp.b)) return "";
+  const axisQ = sp.axis_question ? `<div class="axisq">${esc(sp.axis_question)}</div>` : "";
+  const axisT = sp.axis_type ? `<span class="mute" style="text-transform:none;letter-spacing:.04em">&nbsp; ${esc(String(sp.axis_type).replace(/_/g," "))}</span>` : "";
+  const carr = side => (sp.carriers && sp.carriers[side] && sp.carriers[side].length)
+    ? `<div style="margin:4px 0 8px 30px;display:flex;gap:5px;flex-wrap:wrap">${sp.carriers[side].slice(0,4).map(c=>`<span class="srcchip">${esc(c.outlet||c.l||"")}</span>`).join("")}</div>` : "";
+  return `
+    <div class="kicker" id="sec-sides" style="margin-top:22px"><span class="n">//</span> HOW EACH SIDE COVERS IT${axisT}</div>
+    <div class="splitbox">
+      ${axisQ}
+      <div class="sl">${term("the split","split")}</div>
+      <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>${carr("a")}
+      <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>${carr("b")}
+    </div>`;
+}
+
+/* R3: the apparatus lives below the reading layer, clearly separated. */
+function evidenceRoomHTML(inner){
+  return `<details class="evroom" id="sec-evroom">
+    <summary><span class="n">//</span> EVIDENCE ROOM <span class="hint">the apparatus: wire, sources, provenance, drift, attention, unknowns, deep report</span></summary>
+    <div class="evbody">${inner}</div>
+  </details>`;
+}
+
+function topicTagsHTML(s){
+  const tags = (s && s.topic_tags) || [];
+  return tags.map(t=>`<span class="topictag">${esc(t)}</span>`).join("");
+}
+
 function renderLiveEvent(s){
   const safeUrl = u=>/^https?:\/\//i.test(u||"") ? u : "";
-  const newest = s.latest && s.latest[0];
-  const sp = s.split;
   const nav = secNavHTML([
-    sp&&sp.a&&sp.b ? {id:"sec-split", label:"the split"} : null,
-    (s.sources&&s.sources.length) ? {id:"sec-sources", label:"sources"} : null,
-    (s.latest&&s.latest.length) ? {id:"sec-latest", label:"latest"} : null,
+    (s.brief&&s.brief.paragraphs&&s.brief.paragraphs.length) ? {id:"sec-brief", label:"the brief"} : null,
+    s.split ? {id:"sec-sides", label:"the sides"} : null,
     {id:"sec-history", label:"how it got here"},
     (s.links&&s.links.length) ? {id:"sec-dots", label:"connected dots"} : null,
-    {id:"sec-unknowns", label:"unknowns"},
-    REPORTS[s.id] ? {id:"sec-report", label:"deep report"} : null,
+    {id:"sec-evroom", label:"evidence room"},
   ]);
-  app().innerHTML = `
-    <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
-    <div class="ev-head">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:12px">
-        <div class="toprow">
-          <span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span>
-          <span class="pill disco">discovered by the engine</span>
-          <span class="noverdict">NO VERDICT</span>
-        </div>
-        <button onclick="shareStory('${esc(s.id)}')" style="background:transparent;border:1px solid var(--line);color:var(--mute);padding:6px 12px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:.8rem;white-space:nowrap;transition:.15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mute)'">SHARE</button>
-      </div>
-      <h1>${esc(s.name)}</h1>
-      ${leadVisualHTML(s)}
-      ${newest?`
-      <div class="thenews">
-        <span class="snlbl">the news &nbsp;//&nbsp; latest</span>
-        <span class="sntxt"><span class="snd">${esc(newest.ts.slice(0,10))} &middot; ${esc(agoStr(newest.ts))}</span>${esc(newest.title)}</span>
-      </div>`:""}
-      <div class="att-line">
-        <span>${s.items_24h} ${term("items / 24h","items24")}</span>
-        <span>${s.outlets} ${term("outlets","outlets")}</span>
-        <span class="mute">tracked since the engine first sighted it - every beat is kept</span>
-      </div>
-    </div>
-    ${nav}
-    ${sp&&sp.a&&sp.b?`
-    <div class="splitbox" id="sec-split">
-      <div class="sl">${term("the split","split")}</div>
-      <div class="sp a"><b>A</b><span>${esc(sp.a)}</span></div>
-      <div class="sp b"><b>B</b><span>${esc(sp.b)}</span></div>
-    </div>`:""}
+  /* R3 reading order: image -> composed brief -> the sides -> history/dots ->
+     EVIDENCE ROOM (wire, sources, provenance, drift, attention, unknowns, report) */
+  const evidence = `
+    ${(s.latest&&s.latest.length)?`
+    <div class="kicker" id="sec-latest" style="margin-top:14px"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
+    ${beatsListHTML(s.latest, b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet||"")} &middot; ${esc(b.kind||"")}</span></div>`)}`:""}
     <div id="sec-sources">${sourceStripHTML(s)}</div>
     ${liveProvenanceHTML(s)}
-    ${(s.latest&&s.latest.length)?`
-    <div class="kicker" id="sec-latest" style="margin-top:22px"><span class="n">//</span> LATEST &nbsp; the live wire<span class="livechip">LIVE</span></div>
-    ${beatsListHTML(s.latest, b=>`<div class="beat"><span class="d">${esc(agoStr(b.ts))}</span>${safeUrl(b.url)?`<a href="${esc(safeUrl(b.url))}" target="_blank" rel="noopener">${esc(b.title)}</a>`:`<span>${esc(b.title)}</span>`}<span class="o">${esc(b.outlet||"")} &middot; ${esc(b.kind||"")}</span></div>`)}`:""}
-    <div id="sec-history">${liveHistoryHTML(s)}</div>
-    ${(s.links&&s.links.length)?`
-    <div class="kicker" id="sec-dots" style="margin-top:22px"><span class="n">//</span> CONNECTED DOTS &nbsp; ${term("shared actors across situations","dot")}</div>
-    <div class="unkbox">
-      <ul>${s.links.map(l=>`<li><b>${esc(l.entity)}</b> also figures in: ${l.situations.map(x=>esc(nameOf(x))).join(", ")}</li>`).join("")}</ul>
-      <div class="fine">descriptive links between stories - never a judgment</div>
-    </div>`:""}
-    ${positionDriftHTML(s, state.mode==="free")}
+    ${positionDriftHTML(s)}
     ${attentionShapeHTML(s)}
     <div class="kicker" id="sec-unknowns" style="margin-top:22px"><span class="n">//</span> UNKNOWNS &nbsp; what we do not know</div>
     <div class="unkbox">
@@ -3149,6 +3129,37 @@ function renderLiveEvent(s){
       <div class="fine">we don't know what we don't know - gaps are reported, never papered over</div>
     </div>
     <div id="sec-report">${liveDeepReportHTML(s.id)}</div>`;
+  app().innerHTML = `
+    <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
+    <div class="ev-head">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:12px">
+        <div class="toprow">
+          <span class="tag ${esc(s.bucket)}">${BUCKET_LABEL[s.bucket]||esc(s.bucket)}</span>
+          ${topicTagsHTML(s)}
+          <span class="pill disco">discovered by the engine</span>
+          <span class="noverdict">NO VERDICT</span>
+        </div>
+        <button onclick="shareStory('${esc(s.id)}')" style="background:transparent;border:1px solid var(--line);color:var(--mute);padding:6px 12px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:.8rem;white-space:nowrap;transition:.15s" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mute)'">SHARE</button>
+      </div>
+      <h1>${esc(s.name)}</h1>
+      ${leadVisualHTML(s)}
+      <div class="att-line">
+        <span>${s.items_24h} ${term("items / 24h","items24")}</span>
+        <span>${s.outlets} ${term("outlets","outlets")}</span>
+        <span class="mute">tracked since the engine first sighted it - every beat is kept</span>
+      </div>
+    </div>
+    ${nav}
+    ${briefHTML(s)}
+    ${sidesHTML(s)}
+    <div id="sec-history">${liveHistoryHTML(s)}</div>
+    ${(s.links&&s.links.length)?`
+    <div class="kicker" id="sec-dots" style="margin-top:22px"><span class="n">//</span> CONNECTED DOTS &nbsp; ${term("shared actors across situations","dot")}</div>
+    <div class="unkbox">
+      <ul>${s.links.map(l=>`<li><b>${esc(l.entity)}</b> also figures in: ${l.situations.map(x=>esc(nameOf(x))).join(", ")}</li>`).join("")}</ul>
+      <div class="fine">descriptive links between stories - never a judgment</div>
+    </div>`:""}
+    ${evidenceRoomHTML(evidence)}`;
   lazyHistory(s);
 }
 
@@ -3160,10 +3171,7 @@ function renderEvent(id){
     if(lv){ renderLiveEvent(lv); return; }
     app().innerHTML = `<p class="mute">${esc(mc.emptyState)}</p>`; return; }
 
-  const locked = depthLocked(id);
-
-  // FREE: the history spine + the spectrum of claims (with provenance + opposition).
-  // GATED: manufactured-consensus watch + forward scenarios.
+  // R5: no tier gate - every layer renders open for everyone.
   const claimsBlock = e.claims.map(claimHTML).join("");
 
   // WHERE IT STANDS NOW = the most recent recorded beat (live wire beats the seeded timeline when fresher).
@@ -3223,30 +3231,21 @@ function renderEvent(id){
     </div>`;
 
   const hasDepth = !!mfgBlock || !!(e.scenarios&&e.scenarios.length);
-  const depthInner = `${mfgBlock}${scenBlock}`;
-
-  const gate = state.freeReportUsed
-    ? `<div class="gate-card">
-         <div class="glbl">depth locked</div>
-         <h3>${esc(mc.proGate.title)}</h3>
-         <p>${esc(mc.proGate.body)}</p>
-         <ul>${mc.proGate.bullets.map(b=>`<li>${esc(b)}</li>`).join("")}</ul>
-         <button class="btn primary" onclick="setMode('pro')">${esc(mc.proGate.cta)}</button>
-         <div class="fine">${esc(mc.methodologyNote)}</div>
-       </div>`
-    : `<div class="gate-card">
-         <div class="glbl">free report</div>
-         <h3>Open your one free full report</h3>
-         <p>The history and every side above are always free. Unlock the last layer - the manufactured-consensus watch and the forward scenarios - on this situation, on the house.</p>
-         <button class="btn primary" data-act="askEmail" data-id="${esc(id)}">Unlock the full report - free</button>
-         <div class="fine">No card. Email only. ${esc(mc.methodologyNote)}</div>
-       </div>`;
-
   const depthSection = hasDepth ? `
-    <div class="kicker" id="sec-depth"><span class="n">//</span> THE DEPTH &nbsp; the consensus watch + the scenarios${locked?` <span class="mute">- ${state.mode==="free"?"free/Pro":"locked"}</span>`:""}</div>
-    ${locked
-      ? `<div class="locked-wrap"><div class="blurred">${depthInner}</div><div class="gate">${gate}</div></div>`
-      : depthInner}` : "";
+    <div class="kicker" id="sec-depth"><span class="n">//</span> THE DEPTH &nbsp; the consensus watch + the scenarios</div>
+    ${mfgBlock}${scenBlock}` : "";
+
+  /* R3 reading order: image -> neutral line -> composed brief -> the sides ->
+     the spectrum (steelman) -> history -> depth -> EVIDENCE ROOM (apparatus). */
+  const evidence = `
+    ${latestBlock}
+    ${lv?`<div id="sec-sources">${sourceStripHTML(lv)}</div>`:""}
+    ${provenanceChainsHTML(e)}
+    ${liveProvenanceHTML(lv)}
+    ${lv ? positionDriftHTML(lv) : ""}
+    ${lv ? attentionShapeHTML(lv) : ""}
+    ${unknownsBlock}
+    ${REPORTS[e.id] ? liveDeepReportHTML(e.id) : deepReportHTML(e)}`;
 
   app().innerHTML = `
     <div class="back" onclick="goBoard()">&larr; &nbsp; back to monitor</div>
@@ -3254,6 +3253,7 @@ function renderEvent(id){
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:12px">
         <div class="toprow">
           <span class="tag ${e.scope}">${esc(e.scope)}</span>
+          ${lv?topicTagsHTML(lv):""}
           <span class="pill ${e.status}">${esc(e.status)}</span>
           <span class="noverdict">NO VERDICT</span>
         </div>
@@ -3271,66 +3271,44 @@ function renderEvent(id){
     </div>
 
     ${secNavHTML([
-      (lv&&lv.latest&&lv.latest.length)?{id:"sec-latest",label:"latest"}:null,
-      (lv&&lv.sources&&lv.sources.length)?{id:"sec-sources",label:"sources"}:null,
+      (lv&&lv.brief&&lv.brief.paragraphs&&lv.brief.paragraphs.length)?{id:"sec-brief",label:"the brief"}:null,
+      (lv&&lv.split)?{id:"sec-sides",label:"the sides"}:null,
       {id:"sec-spectrum",label:"the spectrum"},
       {id:"sec-history",label:"how it got here"},
-      {id:"sec-unknowns",label:"unknowns"},
       hasDepth?{id:"sec-depth",label:"the depth"}:null,
+      {id:"sec-evroom",label:"evidence room"},
     ])}
 
-    ${latestBlock}
-    ${lv?`<div id="sec-sources">${sourceStripHTML(lv)}</div>`:""}
+    ${lv?briefHTML(lv):""}
+    ${lv?sidesHTML(lv):""}
 
     <div class="kicker" id="sec-spectrum" style="margin-top:26px"><span class="n">//</span> THE SPECTRUM &nbsp; what each side claims + the opposing view + ${term("steelman","steelman")}</div>
     ${legendHTML()}
     <div class="section">${claimsBlock}</div>
 
-    ${provenanceChainsHTML(e)}
-    ${liveProvenanceHTML(lv)}
-
     <div id="sec-history">${timelineBlock}</div>
-
-    ${lv ? positionDriftHTML(lv, state.mode==="free") : ""}
-
-    ${lv ? attentionShapeHTML(lv) : ""}
-
-    ${unknownsBlock}
 
     ${depthSection}
 
-    ${REPORTS[e.id] ? liveDeepReportHTML(e.id) : deepReportHTML(e)}
+    ${evidenceRoomHTML(evidence)}
   `;
 }
 
 /* ===================== ACTIONS ===================== */
-function setMode(m){ state.mode=m; render(); }
 function setFilter(f){ state.filter=f; render(); }
 function toggleKind(k){ const i=state.kinds.indexOf(k); if(i>-1) state.kinds.splice(i,1); else state.kinds.push(k); render(); }
+function toggleTag(t){ const i=state.tags.indexOf(t); if(i>-1) state.tags.splice(i,1); else state.tags.push(t); render(); }
+function setSort(s){ state.riverSort=s; render(); }
 function onSearch(v){ state.query=v; renderBoard(); }
+/* R1: inline citation toggle - hidden attribute, never opacity (390px overflow trap) */
+function toggleCite(btn){
+  const refs = btn.parentElement.querySelector(".bcrefs");
+  if(refs) refs.hidden = !refs.hidden;
+}
 /* histOpen defaults open on desktop (audit: depth was hidden behind a click);
    mobile keeps it collapsed so the story stays scannable. User toggle persists. */
 function openEvent(id){ state.view="event"; state.eventId=id; state.histOpen=window.innerWidth>=900; state.histBands=new Set(); loadReport(id); render(); }
 function goBoard(){ state.view="board"; render(); }
-
-function askEmail(id){
-  if(state.emailCaptured){ // already gave email earlier -> spend the free report directly
-    state.freeReportUsed=true; state.unlocked=id; render(); return;
-  }
-  state.pendingUnlock=id;
-  document.getElementById("emailModal").classList.add("show");
-  setTimeout(()=>{const i=document.getElementById("emailInput"); if(i) i.focus();},50);
-}
-function closeModal(){ document.getElementById("emailModal").classList.remove("show"); }
-function submitEmail(ev){
-  ev.preventDefault();
-  state.emailCaptured=true;
-  state.freeReportUsed=true;
-  state.unlocked=state.pendingUnlock;
-  closeModal();
-  render();
-}
-document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeModal(); });
 
 /* ===================== CLOCK ===================== */
 function tick(){
@@ -3348,7 +3326,6 @@ document.getElementById("app").addEventListener("click", (ev)=>{
   if(!t) return;
   const act = t.dataset.act, id = t.dataset.id;
   if(act==="open") openEvent(id);
-  else if(act==="askEmail") askEmail(id);
 });
 document.getElementById("footMeta").textContent = SEED.microcopy.tagline + "  //  seeded demo";
 
