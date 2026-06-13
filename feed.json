@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-06-13T19:21:29Z",
+ "generated_utc": "2026-06-13T20:16:05Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
@@ -8,7 +8,6 @@
    "cgtn",
    "dabanga",
    "fox-world",
-   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -16,14 +15,18 @@
    "nyt-world",
    "presstv",
    "taipeitimes",
-   "tass",
-   "unnews"
+   "tass"
   ],
   "failed": [
    {
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "unnews",
+    "label": "UN News",
+    "reason": "not well-formed (invalid token): line 1, column 0"
    },
    {
     "id": "gdelt:russia-ukraine-war-current",
@@ -58,6 +61,11 @@
    {
     "id": "gdelt:ebola-spreads-dr-congo-cases-top-676",
     "label": "GDELT Ebola spreads DR Congo, cases top 676",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:uk-defence-secretary-resigns-over-spending",
+    "label": "GDELT UK defence secretary resigns over spending",
     "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
@@ -392,9 +400,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 157,
-   "items_48h": 379,
-   "outlets": 164,
+   "items_24h": 149,
+   "items_48h": 375,
+   "outlets": 163,
    "kinds": [
     "journalist",
     "official record",
@@ -403,12 +411,24 @@
    ],
    "latest": [
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "EU to resume membership discussions with Ukraine",
      "outlet": "Taipei Times",
      "kind": "journalist",
      "url": "https://www.taipeitimes.com/News/front/archives/2026/06/14/2003859064",
      "rel": 5,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-13T19:47:03Z",
+     "title": "Ukraine becomes testing ground for West\u2019s scientific experiments - Russian senator",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2146105",
+     "rel": 7,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -485,26 +505,14 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-13T16:24:21Z",
-     "title": "US President Donald Trump blames Ukrainian President Zelenskyy for ongoing Russian Ukraine war",
-     "outlet": "News On AIR",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdkFPdlVYLUMxMHRzdDUzTV9zNjBKaWMyTEhncGNGaC1GVk55bnJObkZnc3pHbjJ0TXhNRkxSeDREOU5kQ0xMaGE3elRHYUVELVhSRWpFTGg2SGF2X2lzZ1NDek4tdS1fLXdTX3lzMXFtdTRXVEFHeEZDR1NCWWtxc25DZmZYSkhIZXlENTB2Q0NZTFF3dTJybjVFMA?oc=5",
-     "rel": 9,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Russia's ambassador denies any war crimes in Ukraine; Trump says Zelensky bears responsibility for the ongoing war.",
-    "b": "Ukraine keeps striking Russian energy targets; Western reporters say they have witnessed Russian barbarism firsthand.",
+    "a": "Russia's ambassador denies any war crimes in Ukraine; TASS frames Ukraine as a Western testing ground and Putin as showing strategic restraint",
+    "b": "NZ Herald's reporter says they witnessed barbarism firsthand; Ukraine launches drone strikes on St. Petersburg and Russian energy infrastructure",
     "basis": "extracted from live headlines 2026-06-13",
     "axis_type": "factual_dispute",
-    "axis_question": "Who bears responsibility for the war, and are war crimes being committed?",
+    "axis_question": "Is Russia committing war crimes in Ukraine, or exercising legitimate military restraint?",
     "carriers": {
      "a": [
       {
@@ -514,14 +522,6 @@
        "ts": "2026-06-13T00:06:16Z",
        "provenance": "original",
        "motive_note": "RU state media"
-      },
-      {
-       "outlet": "News On AIR",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWHZDRjhvRzFpd1Z6djJ4NnZxVnllS2F6Ui1MZzcweENsTDZSOGlQY3JUWmRFRWdhNDg4N1pOaHZsek1VSkxMTk9UaDd1SmZEbkY0ZWVXamlldlpCZDRYbzk4anZZeVZoSGpNZl9HSDhaNGhnbVpubXBJdEViSWJ3dldlSXZLNmF0aXhiWXdZTG5pVmw3TWZ5WUZRaVhEUjd6dGRneWVDNnhLY2QwY2dnUlNIQ29DMDZMMDBtaHF3dWdrRUtxVHpN?oc=5",
-       "ts": "2026-06-13T10:55:44Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
        "outlet": "NZ Herald",
@@ -542,14 +542,6 @@
        "motive_note": "UA regional press"
       },
       {
-       "outlet": "AP News",
-       "kind": "wire service",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNUJGY1RxMVVkMlFQT3hIZkwxcnZ5LUZ0OTNCMktlSkxUcGEwQ0dEcnFoZkFJbU5tbGF1eDJ5QkhrajMwd01hdHRxN0htR3ExMnoxUEJTSUJZbnpxU1pNYnh4N25EblVtejhvUFFDWVJGQVNPa0pNMnliZ0FjOFVYdGV4TnhBVWcxeGJKZE5QbXowWFBSbXR6ZWZaRGZtZw?oc=5",
-       "ts": "2026-06-12T06:12:00Z",
-       "provenance": "echo",
-       "motive_note": "international wire service"
-      },
-      {
        "outlet": "Al Jazeera",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONmhqVEtmU0hnb25ZbjdFNkY4cDkzNGx0SEN0eTBBc1pyLXlQQ3dnN2lwVUZUTklqalA2QUJpQnVYaUxzUHZlaFRjOXZDdERoQW15YlY0aXZtNmtRUGJWSHkyMzk0Yjh3LUc3c1kwZjhKRWU4NTl1WTRlT2NSVDZZcS1SbE9pVXJmbkZlZ1MxUDV5ZVR1VFdTNWlXT0hyeFllc3g0MzFwbGvSAa4BQVVfeXFMT29EaHJXaFR5RTBRZ1VjX2E1ZHRUM2RYSllXaXFsSUdZamVUdHpibmxFTFpxN3Z3dVo0Z21mVnpNdTlBLXZCU0hwRGVUQ0J2akRtSmRLeHYtRy1YYXpEd2ZjTDZpVU0zMjBnbFpaOFF4OGg4bzBfNVBNaWNCWmV3a19rd1MwWGVqR2xzRThxOG16aXlVcmlmQzQ1OEo4R0RDVEFsQzZWc3haZE1QbzhB?oc=5",
@@ -558,18 +550,34 @@
        "motive_note": "Qatar state-funded international broadcaster"
       },
       {
-       "outlet": "MSN",
+       "outlet": "AP News",
+       "kind": "wire service",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcEo5VXJZa05yR3I1Yjd1SE9HdnUwb3dzeUhwWlFTWVlhT2lPT0ItU2JLOXVaZGxORVpsNS1ZeDhGeVMtaHJWUWlHX08yWHVIUTFRVnNPTElucUliQ3dfcDZLVk1aV0E3emkzUER2Z0pSbWM0cjczU3dSVV8xTHlnMmdlQk5rT0tHVmRXYkZfb013UEtzVUNaTkxoQktxNWZwcXc?oc=5",
+       "ts": "2026-06-12T15:54:00Z",
+       "provenance": "echo",
+       "motive_note": "international wire service"
+      },
+      {
+       "outlet": "News On AIR",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNSDNONXVWRGlqNDN3emZ0ZE1fQjZTNXFhZ1FIVlRzeTN6X2lzclFINFY0OXM5V3E1SmFHOHRETnAxVlY3ZV9TbGVyaHFWRFRXN0J5dW55NS1YamExUkhjblNiNUtVV21ITEJZVzUyaHl6NzkyWVhUdXpRcThseld1QVh0R1hhbzNzRGVlMnA5QS15T3VYMlpoMEZGcjdSa2QzejRYMkZUZzdCcDJZZVFIVlRYNXg5Yi1IT1JrUC1tT1FQc3gwOEFkM0ZwaU9Bd01uQkVFRkZ4dHFLdVoyNXlGeVlGdXhXMHVOdkNZ?oc=5",
-       "ts": "2026-06-12T20:48:17Z",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWHZDRjhvRzFpd1Z6djJ4NnZxVnllS2F6Ui1MZzcweENsTDZSOGlQY3JUWmRFRWdhNDg4N1pOaHZsek1VSkxMTk9UaDd1SmZEbkY0ZWVXamlldlpCZDRYbzk4anZZeVZoSGpNZl9HSDhaNGhnbVpubXBJdEViSWJ3dldlSXZLNmF0aXhiWXdZTG5pVmw3TWZ5WUZRaVhEUjd6dGRneWVDNnhLY2QwY2dnUlNIQ29DMDZMMDBtaHF3dWdrRUtxVHpN?oc=5",
+       "ts": "2026-06-13T10:55:44Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
-       "outlet": "WCVB",
+       "outlet": "Georgia Today",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZkxRY0F1QldwRDBZNllPdzFvWEI1bUlHX2NlbVlxeUYzeWk4SkZSVDFlelZId1M3dnN2Y2V0djRoTWNjNWVYdThnQTBPSmtPVVU3Q3RGeWh1bkpUQmhQYVNvaUZBdDZGandvT0RxVkhfdUxOR2pyY25NbUlPMFdSUVBXaDlsZDhQYTdlWEdNajFLaGxwMDZKdU45LVdlU0FtRXlvYTRqNG5fVGpFTllhbTlLcnNzRnZSVWJPNC0wNnhsXzVPN1QtVWpR?oc=5",
-       "ts": "2026-06-13T15:52:00Z",
+       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQm5GcG5nYlgyNzVLZVVfcUM3R1E1TEtiZmtyMGlkV1E0Q1lOSFNUcjhkb1FRM1V1Nl83X2dLc1prOTM5R1VfNjAyWF9tamo2RDZaMGM5c3RsN2RoWDhRZ3pJaVpBa1Y0VHVpb3JpTVhMTzJ1SWpoUkU3cERmX29RS2NJZWpnSUY2YjN1dlRR?oc=5",
+       "ts": "2026-06-13T15:53:08Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "NZ Herald",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQbDF2NExXLXBFeXU1Y0tDWG4tbERJWXNLN0Fad0loT3htOGtGZVBEWFdaVHRUTmgwR2lMVmNMTEplVVdnZDl3WTFpSm5Tci1KWGRjWGdhaVdVU2lWcWNwckpiLVpZMkR4SmZSM3ZrbnhHQWE4THJvaTdJR2h6MllDVERoNFU4bkFGbFBZX210RExvOGhKTXNUakhtWF80elk4ZVpCSDJZbUhnS1FQaEs3NldqXzJ0OGVBb0VqNTFmV0tEODVaOW5zSGhEVE9uc3BuWXhHeXVpeGJNems2RzBjZS14TDNhUDZPTXprNGFIRElqZ2xDVUR3enZfcU45WWY3bDJaam5R?oc=5",
+       "ts": "2026-06-13T17:08:42Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
@@ -580,56 +588,32 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 147,
+    "outlets_timed": 146,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Kyiv Independent",
-      "ts": "2026-06-11T19:31:16Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UA regional press",
-      "items": 36
-     },
-     {
-      "outlet": "UNITED24 Media",
-      "ts": "2026-06-11T19:34:20Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 13
-     },
-     {
-      "outlet": "Japan Today",
-      "ts": "2026-06-11T20:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "KFOR.com",
-      "ts": "2026-06-11T20:00:41Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-11T20:04:07Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 18
-     },
      {
       "outlet": "WTVB",
       "ts": "2026-06-11T20:20:52Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "UNITED24 Media",
+      "ts": "2026-06-11T20:22:18Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 12
+     },
+     {
+      "outlet": "The Kyiv Independent",
+      "ts": "2026-06-11T20:25:18Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UA regional press",
+      "items": 34
      },
      {
       "outlet": "The New Voice of Ukraine",
@@ -645,7 +629,31 @@
       "kind": "state media",
       "role": "echo",
       "motive_note": "RU state media",
-      "items": 33
+      "items": 34
+     },
+     {
+      "outlet": "spokesman.com",
+      "ts": "2026-06-11T20:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "politico.eu",
+      "ts": "2026-06-11T20:54:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Atlantic Council",
+      "ts": "2026-06-11T20:56:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -702,7 +710,7 @@
     },
     {
      "outlet": "TASS",
-     "n": 31,
+     "n": 32,
      "class": "state-media"
     },
     {
@@ -717,17 +725,17 @@
     },
     {
      "outlet": "UNITED24 Media",
-     "n": 13,
-     "class": "other"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 10,
+     "n": 12,
      "class": "other"
     },
     {
      "outlet": "globalsecurity.org",
      "n": 10,
+     "class": "other"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "n": 9,
      "class": "other"
     },
     {
@@ -741,17 +749,17 @@
      "class": "mainstream"
     },
     {
-     "outlet": "kyivpost.com",
-     "n": 6,
-     "class": "other"
-    },
-    {
      "outlet": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0456 \u041d\u0430\u0446\u0456\u043e\u043d\u0430\u043b\u044c\u043d\u0456 \u041d\u043e\u0432\u0438\u043d\u0438 (\u0423\u041d\u041d)",
      "n": 6,
      "class": "other"
     },
     {
      "outlet": "News On AIR",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "The Independent",
      "n": 5,
      "class": "other"
     }
@@ -821,7 +829,7 @@
      [
       "2026-06-13 18:00",
       176,
-      167
+      164
      ]
     ],
     "mix": {
@@ -829,16 +837,11 @@
      "state-media": 3,
      "regional": 2,
      "official": 1,
-     "other": 165
+     "other": 164
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-13T06:17:48Z",
-     "a": "Ukrainian and Western-aligned sources report Russia losing over 1,300 soldiers daily with 225,000+ confirmed killed by name",
-     "b": "TASS reports Russian forces inflicted 165 casualties on Ukrainian troops in a single day, implying far lower Russian losses"
-    },
     {
      "captured_utc": "2026-06-13T07:16:22Z",
      "a": "Ukrainian and Western media report Russia losing over 1,310 troops per day, with 225,000+ Russian soldiers killed identified by media investigation.",
@@ -893,10 +896,15 @@
      "captured_utc": "2026-06-13T19:21:19Z",
      "a": "Russia's ambassador denies any war crimes in Ukraine; Trump says Zelensky bears responsibility for the ongoing war.",
      "b": "Ukraine keeps striking Russian energy targets; Western reporters say they have witnessed Russian barbarism firsthand."
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "Russia's ambassador denies any war crimes in Ukraine; TASS frames Ukraine as a Western testing ground and Putin as showing strategic restraint",
+     "b": "NZ Herald's reporter says they witnessed barbarism firsthand; Ukraine launches drone strikes on St. Petersburg and Russian energy infrastructure"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a29a0c65769-1781113030.jpg?resize=1920%2C1440",
@@ -912,14 +920,14 @@
     "ceasefire"
    ],
    "brief": {
-    "generated_utc": "2026-06-13T15:21:03Z",
-    "sentence_count": 10,
-    "dropped_count": 0,
+    "generated_utc": "2026-06-13T20:15:23Z",
+    "sentence_count": 9,
+    "dropped_count": 1,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "India summoned a US diplomat for the second time after three Indian seafarers were killed in deadly strikes in the Gulf of Oman.",
+        "text": "India has summoned a US diplomat for the second time after deadly strikes killed three Indian seafarers in the Gulf of Oman, Marine Insight reports.",
         "cites": [
          {
           "outlet": "Marine Insight",
@@ -931,23 +939,7 @@
         ]
        },
        {
-        "text": "External Affairs Minister Jaishankar raised the US killing of Indian seafarers with Rubio, who said Hormuz violations 'won't be tolerated.'",
-        "cites": [
-         {
-          "outlet": "The New Indian Express",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU1VROWJhUElpUVdYZkEySUxiSTZFR2RNQXF3eE50TU92TlFIS1Rxang5eGZVR0RIM00wWDF6cU9CaVhWSXJBSFBnTFJka2I1QVlIUl96bjBOVXBidVBsODNLVHNzUl9QYUdKMEhmNUNEcmwwTHZ6eXVtMXdncGswcGF2Ujd2VzYydE1aYlktZXc1ZlptQlVmbFJ2T3dVVjk0NmZuV3Rra3NhbWVfNmMxaFl1SE5Ib2FvVVVZRjFPbjhzM1E3UnBOTzRVZFNPR2V4ODBuZF9TeWNqTURBZ29kak9Vb0pzMFJX0gH2AUFVX3lxTE0xcC1HeHNZOXhmVXp0XzZSNldPVDFScnFULTZNSmpLTWx2WEM4X1dfVU9paWZYSGlZd0JwMHVjdFMwUTBpcFNVU3JSWDYzRDhEeFhOZW1jSVg5aE9KbUtTbkprWjh5RC1CLS1pRWpjUlBTUXZmVEJWWjhvUXpCbnQ1cHF1cEhGUTFBV0xiUkJ0aFhMNGtqTkE3ZU5UdFZHcFIxd2VjcFpLQkhYc0FkaUNlaXRWLXl5bVpRVDZIZElidWlFNTd5cS1NQy1XeUc2bDIzZGtVREpXd2JUNlR2T1NhR21xWDRwaFhaOGYtbEJwT2FIN3V5dw?oc=5",
-          "ts": "2026-06-13T14:27:20Z",
-          "title": "Rubio says Hormuz violations 'won't be tolerated' as EAM Jaishankar raises US killing of Indian seafarers"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "UKMTO reported a tanker was struck by an unknown projectile off the Oman coast.",
+        "text": "Gulf News reports that the UK Maritime Trade Operations said a tanker was struck by an unknown projectile off the Oman coast.",
         "cites": [
          {
           "outlet": "Gulf News",
@@ -957,21 +949,37 @@
           "title": "US-Iran conflict: Tanker struck by unknown projectile off Oman coast, UKMTO reports"
          }
         ]
-       },
+       }
+      ]
+     },
+     {
+      "sentences": [
        {
-        "text": "Shashi Tharoor thanked Oman for rescuing 21 Indian seafarers from the Gulf of Oman attack.",
+        "text": "CubaHeadlines reports that India is demanding accountability from the United States following the fatal naval incident in the Gulf of Oman.",
         "cites": [
          {
-          "outlet": "The News Mill",
+          "outlet": "CubaHeadlines",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHlKMWVjSHlIM2FjNUx4SF9kTkJyYkM3WEJVNXpTNHNDb28zVFJ0dTBnc2lfRUV2VFJCbHhnVC0zX3BkN1pmX1BXV1dnajBDdmpCZDBNMTJKMGJWVWR3Um52WWtvTVpKTGFJd1N4SmxuRGZnOGlJRGFzZWplNWFkRWFEOXBPU0I4Z3BSN3ZTbEd2UUlUOHYwYmNMM25Jb1hXTDA0OFI1WFJuOW9SNnZsNS1LRzBhR3FW?oc=5",
-          "ts": "2026-06-13T11:27:14Z",
-          "title": "Shashi Tharoor thanks Oman for rescuing 21 Indian seafarers from Gulf of Oman attack"
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DeW5jUkl6QkV5LXBMdWRzSTFqaWxoS1BNdzlmRVhhODlVSjczaWVDY0tjdThURHM5Z2dYTC1yamxVdm4xLVhWa3JZTWIxTV9ubEY4bTVFQW0?oc=5",
+          "ts": "2026-06-13T17:03:31Z",
+          "title": "India Demands Accountability from U.S. Following Fatal Naval Incident in Gulf of Oman"
          }
         ]
        },
        {
-        "text": "The family of a Himachal sailor killed in a US strike is seeking a probe and questioning the rescue response.",
+        "text": "The New Indian Express reports that External Affairs Minister Jaishankar raised the US killing of Indian seafarers with Washington.",
+        "cites": [
+         {
+          "outlet": "The New Indian Express",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQU1VROWJhUElpUVdYZkEySUxiSTZFR2RNQXF3eE50TU92TlFIS1Rxang5eGZVR0RIM00wWDF6cU9CaVhWSXJBSFBnTFJka2I1QVlIUl96bjBOVXBidVBsODNLVHNzUl9QYUdKMEhmNUNEcmwwTHZ6eXVtMXdncGswcGF2Ujd2VzYydE1aYlktZXc1ZlptQlVmbFJ2T3dVVjk0NmZuV3Rra3NhbWVfNmMxaFl1SE5Ib2FvVVVZRjFPbjhzM1E3UnBOTzRVZFNPR2V4ODBuZF9TeWNqTURBZ29kak9Vb0pzMFJX0gH2AUFVX3lxTE0xcC1HeHNZOXhmVXp0XzZSNldPVDFScnFULTZNSmpLTWx2WEM4X1dfVU9paWZYSGlZd0JwMHVjdFMwUTBpcFNVU3JSWDYzRDhEeFhOZW1jSVg5aE9KbUtTbkprWjh5RC1CLS1pRWpjUlBTUXZmVEJWWjhvUXpCbnQ1cHF1cEhGUTFBV0xiUkJ0aFhMNGtqTkE3ZU5UdFZHcFIxd2VjcFpLQkhYc0FkaUNlaXRWLXl5bVpRVDZIZElidWlFNTd5cS1NQy1XeUc2bDIzZGtVREpXd2JUNlR2T1NhR21xWDRwaFhaOGYtbEJwT2FIN3V5dw?oc=5",
+          "ts": "2026-06-13T14:27:20Z",
+          "title": "Rubio says Hormuz violations 'won't be tolerated' as EAM Jaishankar raises US killing of Indian seafarers"
+         }
+        ]
+       },
+       {
+        "text": "The New Indian Express also reports that the family of a Himachal sailor killed in the US strike is seeking a probe and questioning the rescue response.",
         "cites": [
          {
           "outlet": "The New Indian Express",
@@ -987,26 +995,14 @@
      {
       "sentences": [
        {
-        "text": "The US says it downed multiple Iranian drones targeting ships in the Strait of Hormuz.",
+        "text": "The Times of India reports that the US blamed Tehran for attacking ships with Indians onboard.",
         "cites": [
          {
           "outlet": "The Times of India",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxONjNwczZ0N01iWjNGZEQxRnRRUDN4a2NXN1VkNWc4cEZqY0lZZVZRZFRkQUFkcWpvY2hyeFN0d0tzUVBBVjZKOFJUNTZ1STdKR1h4V3RQeE50bVZ5TXZRZ2ptVGdzUllPVnc2UkRNakFPNThEVjRITzBFeXRvdFVXWlQzamVBT09YLS1UZmU4OG9IUHJvclZLeExOWmlKa2F6cDUtZDdtQVdxeDZ1VWt1aEd1Q3ZyYTdGZnhYWVRUUk1wMzFiMzRNZ2cxZTlxRmJTVkJtSVlVMmoxZjZyZ2lXQ3g1QWFhUnI3VUoyNWNZcmlZT0prYjE5WU1teWNDNzlwYVV5MExubVRHdTR0WmpONHhNYTBQenU2OHFr0gGgAkFVX3lxTE5ZSmtsV3RoaHloNVJyWnJuazdsQmpwQV9WM1IwNVZybXI1WUhFX3piendVaU5DLWh5anlpbDhxSmVWQnYzOUxqM3lwOS1Ka0o2R0lGU0dKSzk3blJjSmg3eE9SeENiZy1EenpLUmtHZ1puM1I3Wnh1V2dXekdTdjlWNHI0WklycnFIX2NHVEw1MVUtMUJvYVd6bU9Bb2NOdjJEc1d3LVNrWXBjUDhSTUp3c1ZHX3M1M3VYQjRwb1hJZ3JuZExzVnp5UUVucW5xMF9iV3B5SDJZdW40eTNRa1J4YVp6OElud2Q5VlRiWG55cXpULTRFRjJXX0lZUmlWbUwzOWxZYS1DY0p4dVJyNkM3TDhHcWV0ekZRUmQwMjdvTA?oc=5",
-          "ts": "2026-06-13T10:16:00Z",
-          "title": "US downs Iranian drones targeting ships in Strait of Hormuz as Tehran, Washington discuss future of key w"
-         }
-        ]
-       },
-       {
-        "text": "Trump blamed Iran for the attacks on Indian ships, while Tehran rejected the charge.",
-        "cites": [
-         {
-          "outlet": "The Assam Tribune",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTm5iRVptWTB1ZEVOOGpZNkc4Y1lrdExKUG81bVZ5ZG1SbVhWZVRkOE9DUk5OY1BzWXpYM1R1a29oSjNNMUJ4c250dllqZzdSd3RMb2c5RldVakVFMGZ0YmdkcklIY3IwdndMa3R3N1UxN01zOUxpNmFfTi1ISzdINnFyVzlMWXVTQXpFSXc2NklBdnNXNDBLRUlzYmx4bkFObVViaDh2aDFMaGY5ZXEyODFFNHRKZ3BRS1dMdjJB0gG-AUFVX3lxTE1ObmJFWm1ZMHVkRU44alk2RzhjWWt0TEpQbzVtVnlkbVJtWFZlVGQ4T0NSTk5jUHNZelgzVHVrb2hKM00xQnhzbnR2WWpnN1J3dExvZzlGV1VqRUUwZnRiZ2RySUhjcjB2d0xrdHc3VTE3TXM5TGk2YV9OLUhLN0g2cXJXOUxZdVNBekVJdzY2SUF2c1c0MEtFSXNibHhuQU5tVWJoOHZoMUxoZjllcTI4MUU0dEpncFFLV0x2MkE?oc=5",
-          "ts": "2026-06-13T07:12:26Z",
-          "title": "US Prez Trump blames Iran for attacks on Indian ships; Tehran rejects charge"
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQODdteDZhbFRqN2RQc0g4YnViekFyVnVxb0ZqcmIxYUtXY2pVQjBQQ3d0RWo2ZGhlc2xTVFZHVkZuWW9lRE9fZWZqSV9kSHZiRGRaWm9ISlJqY1hXUl9DZ2UteGdCZDFPbGlCeHVWUHh6QjRiaEJLb2Jhc2JPdjR5S2N4T0FYQ2g4V2Uwa3Q0bjc4VWxuZ2w1cG44WkxzWXVxaFhacGFpcmJ5eWJmN3JGS09lcEp1dWNfbmhrYTdLNnhENDBvZ25EU2FHcUNjVk51cFdvQlpXVDZISmNsNW5KeEtZUmgtcGpMNEJBbDV1NHhJM2QyLUFr0gH8AUFVX3lxTE5oQkFCaFA0RFdiVmtGMmtwY01EZWU5R2JKZGxqS0N4QjgwV0N4NmJ5aG9YSTJ3SUM1dG00MWxPS0xVNWRxT2xNS0pGNHlKa1R6VFRONW81SUpTMVZ4bEQtX1VxeVZVaVhQcWd3dWZlOHRzcUxCdHBMWGZPSGFRMWdiZDduSVkyWG9UclRwc0tvN0lCRVJLQmpmRDZFc3BLZGNTUm93Y3hldGU2V29nYkhSWEZxcm4wcmJLN2dkMFNTV3lwVHMzSE1FT3FaYnpTVUJJU21JdlNoWHVIRV9sX0ZEU3pDUEI3eFlTV3BwMEI0NVd0TXl6b09KcnBTZw?oc=5",
+          "ts": "2026-06-13T11:08:00Z",
+          "title": "'Pathetic, baseless': Iran lashes out after US blames Tehran of attacking ships with Indians onboard"
          }
         ]
        }
@@ -1015,19 +1011,19 @@
      {
       "sentences": [
        {
-        "text": "Iran called Trump's drone attack claims 'simply baseless.'",
+        "text": "The Times of India reports that Iran called the US accusations 'pathetic' and 'baseless'.",
         "cites": [
          {
-          "outlet": "The New Indian Express",
+          "outlet": "The Times of India",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd3dmeE9tWU1SZk5mclZxUHdJS1VXT2FvNmV4YTJmQ3d3N3NDcU9RT2V6dkxaU3FQQ1htUElZQURCT0FZTjUzR0VLbmtjUzNuSDlVU25pWnlIaGNBVW5mY0tva010UmQ4QWdJYkVvZXV0RjlYUHExTHZvT0FVbnBsRWlGVzM0SENEUmFSeE85OVUzZXhNa2x3aV9UaERiNnBhcF9mazhVRdIBtAFBVV95cUxNZFJBUjBTWHMzbk9LUGt2RGpqQ1hZYVJQRFFITmw0U0tKRU8yTnBkZkVTcUtWcjVuX1dyS1ZEdndhMnlMNkdxMl9RY0Z4dEFzSENYMEhENlNqLUJsRWVHaWVmOVlDei1tUFN1RXlDeXcxNjl2aXk5Q1p5bmY4bWlwcVlUSEQ3OWNBd2tQXzVxZk40M0RrY3RaN3Fvbl9BelhEQmZuRWZIWGV6YlZ6RUFVRHFRcVE?oc=5",
-          "ts": "2026-06-13T06:08:12Z",
-          "title": "Iran calls Trump's drone attack claims 'simply baseless'"
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQODdteDZhbFRqN2RQc0g4YnViekFyVnVxb0ZqcmIxYUtXY2pVQjBQQ3d0RWo2ZGhlc2xTVFZHVkZuWW9lRE9fZWZqSV9kSHZiRGRaWm9ISlJqY1hXUl9DZ2UteGdCZDFPbGlCeHVWUHh6QjRiaEJLb2Jhc2JPdjR5S2N4T0FYQ2g4V2Uwa3Q0bjc4VWxuZ2w1cG44WkxzWXVxaFhacGFpcmJ5eWJmN3JGS09lcEp1dWNfbmhrYTdLNnhENDBvZ25EU2FHcUNjVk51cFdvQlpXVDZISmNsNW5KeEtZUmgtcGpMNEJBbDV1NHhJM2QyLUFr0gH8AUFVX3lxTE5oQkFCaFA0RFdiVmtGMmtwY01EZWU5R2JKZGxqS0N4QjgwV0N4NmJ5aG9YSTJ3SUM1dG00MWxPS0xVNWRxT2xNS0pGNHlKa1R6VFRONW81SUpTMVZ4bEQtX1VxeVZVaVhQcWd3dWZlOHRzcUxCdHBMWGZPSGFRMWdiZDduSVkyWG9UclRwc0tvN0lCRVJLQmpmRDZFc3BLZGNTUm93Y3hldGU2V29nYkhSWEZxcm4wcmJLN2dkMFNTV3lwVHMzSE1FT3FaYnpTVUJJU21JdlNoWHVIRV9sX0ZEU3pDUEI3eFlTV3BwMEI0NVd0TXl6b09KcnBTZw?oc=5",
+          "ts": "2026-06-13T11:08:00Z",
+          "title": "'Pathetic, baseless': Iran lashes out after US blames Tehran of attacking ships with Indians onboard"
          }
         ]
        },
        {
-        "text": "Iran also rejected Trump's Hormuz allegations and said the US had attacked Indian-linked ships.",
+        "text": "Goemkarponn reports that Iran slammed the US over attacks on Indian-linked ships and rejected Trump's Hormuz allegations.",
         "cites": [
          {
           "outlet": "Goemkarponn",
@@ -1043,21 +1039,14 @@
      {
       "sentences": [
        {
-        "text": "India's MEA separately dismissed reports of a fresh strike on the Indian-crewed tanker MT Liaki Freedom near Hormuz, saying all crew are safe.",
+        "text": "The News Mill reports that Shashi Tharoor thanked Oman for rescuing 21 Indian seafarers from the Gulf of Oman attack.",
         "cites": [
          {
-          "outlet": "Business Standard",
+          "outlet": "The News Mill",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZ0FNbjdTS1JmcTlUaEt1eHh0TWRmSTFlcUFNamxQWHRUMnB2Rmg3MHRwVEVDU0JiTDE3NFQ1TjJVOVhscHpISGtaVTQ2WmU3QW96WWFPQVB0dExyR1laaTI0RGkxSXQxbEFZLU9INklSd0NzeUR5a1JrMFQ0cEhJNmhsSjJ5SVRIZ0pCRmRQT0VSS0RZU2lPTG5mWDZFdXptNjY5dlpwSHE2dVlfUkJwREJIQ2RzWUR5Z1VvQWtoSjkxbVNaVWVlY09GTE80Z2RWN3J3NUo5VUZjazBjRC1halZ5d0FNY1NmUEJ1ZDNDNDNTQdIB9wFBVV95cUxOX25qdTJrSmhCS0R5RVJFaEN5dDJtSFdLM283YXJKZzBGdVNMdEdGMHRiekNmXzhGUFFUbm8zekJ1bV9FYklabWt6NmVyTzVfUFlzV3ZxTTdERXkxR0V5OGlxNGs1b1AteVBTV2cyVTh2MWtlTkJOQTBSZFVwNUxubl80S2NoaGN3NFdUV2FQQjVEa0VGdkVHZXJhc2lsTmFnWjRYYTU2dWZ4VXh2WmI5Sy04WFoyd1dsLWtabnRxdm54QXBnV0J6NG5EdUV5ZURBejlKMHhnVGVPVGVVT0h5OVFERlAyZDdFcDlBcGlqd0NPN3J3NXlv?oc=5",
-          "ts": "2026-06-13T05:37:54Z",
-          "title": "'Crew of MT Liaki Freedom safe': MEA dismisses reports of fresh strike"
-         },
-         {
-          "outlet": "ETV Bharat",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQQUhYdEowR21XakxsNjk2REIwelpqcWVHaXZLUGEtTEtRdElROWNzQkdBTlB5b2lLcElHbGRyZW1RRXRFRnBOQWgwMVpMYTBsd0V3dGh2LUlsaDFaWHNIc2FfRVVSbHRKRTduSHdNUWo3VW1LVjRxdmZLTFY4NGRfd2FTajA2XzZUTFVMeUlLNC1RdlJJbXlUcm1iNlFFSC1kaWpvTEdOU1A5Y1BkSXRRLXpBUno0U0c1bzdRS2xUYV9Hc0VIb1VqbnM3VFhiVEM3NExOeHctQXVTVWN6RUliZjZENjhnVXpnM29CUdIB8gFBVV95cUxQVHJ3Y2pfdnppSkM3c0FwNUdMWGtHTzExQ3hkU25LLWUtcHBldlRNSDhzT3JqM3kyRGJTSjlMQmRZUlJ0bEdOWGpnbHFnRnVUQjU1WlNBR3lNWHRRa0hKdXY5ajVBY1J0YTZieUhxeTBOTTRYcUU1ZVBtc3FIN1dBM2dYSEZMTnlIVnN1R0QxSEpNZDgyRUFpVEpaLUdzSldsTDZMRjhrbGhZNU9HTk1BTDRFSG5KMjh6YVhCb2lUYS1hdlJlb3NsUTY4eS11MGRjSExVMEhyaHpFU2t0UG4tY2JBd2ZBa3ZWeF9xelo5Q3Vldw?oc=5",
-          "ts": "2026-06-13T05:13:16Z",
-          "title": "All Crew Safe: MEA Dismisses Reports Of Attack On Indian-Crewed Tanker Liaki Freedom Near Hormuz"
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHlKMWVjSHlIM2FjNUx4SF9kTkJyYkM3WEJVNXpTNHNDb28zVFJ0dTBnc2lfRUV2VFJCbHhnVC0zX3BkN1pmX1BXV1dnajBDdmpCZDBNMTJKMGJWVWR3Um52WWtvTVpKTGFJd1N4SmxuRGZnOGlJRGFzZWplNWFkRWFEOXBPU0I4Z3BSN3ZTbEd2UUlUOHYwYmNMM25Jb1hXTDA0OFI1WFJuOW9SNnZsNS1LRzBhR3FW?oc=5",
+          "ts": "2026-06-13T11:27:14Z",
+          "title": "Shashi Tharoor thanks Oman for rescuing 21 Indian seafarers from Gulf of Oman attack"
          }
         ]
        }
@@ -1066,9 +1055,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 99,
-   "items_48h": 292,
-   "outlets": 125,
+   "items_24h": 96,
+   "items_48h": 290,
+   "outlets": 124,
    "kinds": [
     "journalist",
     "official record",
@@ -1077,7 +1066,7 @@
    ],
    "latest": [
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "FIFA WORLD CUP: Rotting body found near Iranian team\u2019s training venue in Tijuana",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -1089,12 +1078,24 @@
      }
     },
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "A deal to end the war will not be signed today: Iran",
      "outlet": "Taipei Times",
      "kind": "journalist",
      "url": "https://www.taipeitimes.com/News/front/archives/2026/06/14/2003859063",
      "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-13T19:55:01Z",
+     "title": "US and Iran to sign memorandum on Sunday in virtual format - Axios",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2146107",
+     "rel": 5,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -1155,18 +1156,6 @@
      "kind": "journalist",
      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/13/us-president-trump-says-us-iran-deal-to-be-signed-tomorrow?traffic_source=rss",
      "rel": 14,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-13T17:09:39Z",
-     "title": "Trump says Iran peace deal could be signed by Sunday, with strait of Hormuz to open shortly after",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/world/2026/jun/13/preliminary-peace-deal-could-be-signed-within-days-says-us-iran-and-mediators",
-     "rel": 15,
      "coverage": {
       "non_mainstream": 0,
       "mainstream": 1
@@ -1252,38 +1241,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 118,
+    "outlets_timed": 117,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-11T19:43:32Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 33
-     },
-     {
-      "outlet": "us.cnn.com",
-      "ts": "2026-06-11T19:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "edition.cnn.com",
-      "ts": "2026-06-11T19:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "RT",
       "ts": "2026-06-11T20:17:50Z",
       "kind": "state media",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "RU state media",
       "items": 2
      },
@@ -1314,6 +1279,30 @@
      {
       "outlet": "Kerala Kaumudi",
       "ts": "2026-06-11T20:36:44Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 4
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-11T20:57:51Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 31
+     },
+     {
+      "outlet": "TASS",
+      "ts": "2026-06-11T21:01:40Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 19
+     },
+     {
+      "outlet": "DW.com",
+      "ts": "2026-06-11T21:05:45Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -1362,6 +1351,7 @@
      "entity": "trump",
      "situations": [
       "russia-ukraine-war-current",
+      "taiwan-strait-tensions-current",
       "trump-reframes-us-china-relationship-as-peer-pow",
       "us-iran-strikes-israel-lebanon-escalation"
      ]
@@ -1370,7 +1360,7 @@
    "sources": [
     {
      "outlet": "MSN",
-     "n": 79,
+     "n": 71,
      "class": "other"
     },
     {
@@ -1385,7 +1375,7 @@
     },
     {
      "outlet": "TASS",
-     "n": 17,
+     "n": 18,
      "class": "state-media"
     },
     {
@@ -1494,7 +1484,7 @@
      [
       "2026-06-13 18:00",
       102,
-      126
+      125
      ]
     ],
     "mix": {
@@ -1569,7 +1559,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -1923,14 +1913,50 @@
     ]
    },
    "discovered": false,
-   "items_24h": 65,
-   "items_48h": 249,
-   "outlets": 133,
+   "items_24h": 74,
+   "items_48h": 253,
+   "outlets": 132,
    "kinds": [
     "journalist",
     "state media"
    ],
    "latest": [
+    {
+     "ts": "2026-06-13T19:24:15Z",
+     "title": "IDF under attack: Bibi defies Trump as Lebanon front heats up amid US-Iran deal push? | Hezbollah",
+     "outlet": "Hindustan Times",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxObHZGVS1GQUg4M3ZBMGtjMTdGWjE3STk4bDVDLUNpMXZKTnYyUHNya0NOY1luTGZURm8yVHBkM3VrS2dSV3JqWF9oOFZwbkZ6TWFBOWVad0R4UXFXSm1seVJMRW1UbUQyNWlJMFdEZEpfUGh2TVFlY0VYc0ZBMFhXU2xpcHhxTjFFSWNwX2xmb2NsWVY0aklOUW9xTTd6THF2UVhvX1VMSHdiYTA1NF81MjJ3VVMtOEx0eFo0U0VtTmowNHVlTDdjUHNWSUREMWk4aE50M09nY0hYeGROSV94NkRZRlNabW8?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-13T19:19:30Z",
+     "title": "The Gaza Strip: Muslim discoveries",
+     "outlet": "Israel National News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9DOHhyNlRVelA0SXI2UUVGWlFhdDBwYUpScEhmOF9WZ1RvZ2EzWmVNR0hNR3cyR3Z1Um1MSDNRbEpnbW9tR2FCcGJUYnlRVTNfc2VkN0lCY3FxcE9KLUE?oc=5",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-13T18:49:51Z",
+     "title": "Israel Palestinians Gaza",
+     "outlet": "Goshen News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZnlqb18zVHl3WkRxNlh5d1htR1RlcHRkYnBxQ3QtRWVNWnVnclk3NG1FNjBUVUdZdV82OXUxSFF2YXdlT2FxZEZIbW9HUnU2QzNfSS1ya1BheG5Od19LYmxPZDFUSGlvcURTckpSN2tWTnkydjNwOWN4NHZ5R1VDRmwzUkNQczAtQzJsZldOenNSOG9KRml1bThfVVRrNFY5aXF0SFRlUUQ4SGI1MWlKODBDVWNfMkpJMEE?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-13T18:49:16Z",
      "title": "Israel Palestinians Gaza",
@@ -1980,78 +2006,26 @@
      }
     },
     {
-     "ts": "2026-06-13T16:35:00Z",
-     "title": "MPs call for end to real estate event over fear it pushes sale of Israeli settlements",
-     "outlet": "The Guardian",
+     "ts": "2026-06-13T16:40:18Z",
+     "title": "Israeli airstrikes killed 10 in Southern Lebanon & 5 across Gaza Strip",
+     "outlet": "News On AIR",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdHNaclIwd25lWlBCV3ZzUnlsSnl5dUdWc1E3di1fZEFuSklDVHhXcWZHNzRoTG9lcDdLdWNHSlQydGg5T1BGUW1YVXI0cjNjS0VISnM2ZGNsMkN2Nzd2d2Vyc3FuWEd5R0V5ZEE1bGZ3UGJQUVEtb0J5Q3VSekRtLTJYM1hoX2VJVmxtaG1GR0ZvVi15REhlUTVmQkFaNm8?oc=5",
-     "rel": 13,
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNXNvUllIVDRKQjFzOUx5cnBTTFdiem1KMFpOb2VrWENqb0wxT08wUTlxdmRuNUFGcGZjWW5NUGJjYW00RTFhcTZMZkl6V0R1R3VWT2pxcklKbGwwRUZuN1hweVFRaGdjQTQtR0lFRFRkWmljMGQ2cU1TNHluZFdNdmNKWlEtOUJORDdiSFR4V3JoSU5yemZlMlRR?oc=5",
+     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-13T16:27:07Z",
-     "title": "Sanitation Worker Killed as Israeli Attacks Intensify in Gaza",
-     "outlet": "- IMEMC News",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTGZTbC1XSnlXck5uRDhyQUhuY2Vvc011bVc1R2lMNzRGY0syVzRFbGZWQkhMVUtyZFp5U2ViSGV3NVVFQzlOWjVaNHhyelM2MGl1eVFrT0VLbkV5S2IxMy03dWtCamJKM09kdHROSlZwaElINmE3VW9qUnFtd3hXT0k5ZU1uaVlGOW90X0FoU1pIZw?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-13T16:18:28Z",
-     "title": "US lawmakers push for lifeline for Gaza cancer patients as evacuation deaths mount due to Israeli intransigence",
-     "outlet": "Ahram Online",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vdWxjSmN1OEc2bHlUVk0tU1pjQXhKX1FZbjV3TlBLTmJMLUdpelZ0cnhhMVRLVDdHX2JGcU8yUjQtenAtdXFNX0lsRkxrenhaUTVOUW5zYTQ?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-13T16:06:00Z",
-     "title": "MPs call for end to real estate event over fear it pushes sale of Israeli settlements",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/uk-news/2026/jun/13/uk-london-real-estate-west-bank-israel-settlements",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
      }
     }
    ],
    "split": {
-    "a": "Critical outlets report Israel is targeting medical convoys, residential homes, and conducting genocide in Gaza amid absent accountability",
-    "b": "JNS reports IDF eliminated terrorists and dismantled arms storage sites in Gaza operations",
+    "a": "Press TV reports Israel systematically targets Gaza medical convoys and delays civilian evacuations amid intensifying airstrikes",
+    "b": "IDF, reported by News On AIR, claims to have destroyed 14km of Hamas underground tunnel networks in northern Gaza Strip",
     "basis": "extracted from live headlines 2026-06-13",
-    "axis_type": "factual_dispute",
-    "axis_question": "Are IDF operations in Gaza targeting militants or civilian infrastructure?",
+    "axis_type": "interpretation",
+    "axis_question": "Are Israeli operations targeting Hamas infrastructure or harming Gaza civilians?",
     "carriers": {
      "a": [
-      {
-       "outlet": "Middle East Eye",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcDBDTHZVdXJ5MEJDTUw2bWtsVVB1Q2ZFSm5xYWtFeTN3Q21hYkVqSTZVeGNQOFhoS2w3WlpZM1FxRDcyTEphc24yOTlvbEhSSThNa0NubzlKbFJWU1ZoWHQ4T0tydEktTGVfZnc1WVZhY2FlOUdnQmF1UzBGbEkzSHZpazdlSTM0T0VteUNnYWZCWmJrZnczbTQ2TDBMRjNBVHprTUdfYWlGSTF4M3REaU5RX0xCVW94QzZMWk5XOA?oc=5",
-       "ts": "2026-06-12T02:18:00Z",
-       "provenance": "original",
-       "motive_note": "UK-based Middle East coverage"
-      },
-      {
-       "outlet": "thecradle.co",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HQ3A3NVJjUy1RdWdWVnVCTzlYTS1HY2RZbFo5dG1jMzJ6V2F4aF9tSnlYRTN3NFZweU9CTmRyWHBfbnM5RWNKb0dEcm5GaWs?oc=5",
-       "ts": "2026-06-13T15:44:38Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
       {
        "outlet": "Press TV",
        "kind": "state media",
@@ -2063,10 +2037,10 @@
      ],
      "b": [
       {
-       "outlet": "JNS.org",
+       "outlet": "News On AIR",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMElFcDFVVk1hN1pLZjhZYUdNNXFnQW1EZmdHWUxXV3Nob1VQV2YyOF9LeXJzR1F4OEdORy04Y24wRy1TRmp0c19qQllIb3V0ME8zbU9YZklzQjdCN0h3c0trZ2pYUHprV2lXMTk2UUVES0ZnNy13dHM4dGRzRHd1dXNPSjVyVERpYzZJajU4aF8yZVlTWXNvUkRBLXN6OHJ5?oc=5",
-       "ts": "2026-06-12T05:18:48Z",
+       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaDdzZEdWNnJXSFRTWDNlX0l3c2R6UGRYWGgzcThwYzRYYWZ6QTFfV0NpVUpNRTFSZ3NVSVcyZXUydGVRcS1KWFhtODhWLUs5MUljVlU3Q2JCajRlcjhDaUdoYXF1MzE3SHlZZmFhVlR4dV9COEtvMklKTERkZzR1bE5aUjVDUXoxQkJyenJkUV92cWhyQU16aU9tN3NKUU9qQV9DQjlnZ1JKNVpqWG5jV0lTSnlRc1RLUHpRVW5TUmtJZVQ4ek5IUVpObGpJQnM0YndTb296em9lT0E?oc=5",
+       "ts": "2026-06-13T13:48:48Z",
        "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
@@ -2077,72 +2051,72 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 122,
+    "outlets_timed": 121,
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "Scranton Times-Tribune",
-      "ts": "2026-06-11T19:22:20Z",
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-11T20:25:52Z",
       "kind": "journalist",
       "role": "origin",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 19
+     },
+     {
+      "outlet": "camera.org",
+      "ts": "2026-06-11T20:28:12Z",
+      "kind": "journalist",
+      "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "The Telegraph",
-      "ts": "2026-06-11T19:25:00Z",
+      "outlet": "aa.com.tr",
+      "ts": "2026-06-11T20:45:00Z",
       "kind": "journalist",
       "role": "echo",
-      "motive_note": "UK press",
+      "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
      {
-      "outlet": "mezha.net",
-      "ts": "2026-06-11T19:27:09Z",
+      "outlet": "english.elpais.com",
+      "ts": "2026-06-11T20:45:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "us.cnn.com",
-      "ts": "2026-06-11T19:45:00Z",
+      "outlet": "The Washington Post",
+      "ts": "2026-06-11T20:56:52Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 2
+     },
+     {
+      "outlet": "TV7 Israel News",
+      "ts": "2026-06-11T21:08:44Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Free Malaysia Today",
+      "ts": "2026-06-11T21:12:29Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "edition.cnn.com",
-      "ts": "2026-06-11T19:45:00Z",
+      "outlet": "yahoo.com",
+      "ts": "2026-06-11T21:15:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Ahram Online",
-      "ts": "2026-06-11T19:49:12Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 6
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-11T19:52:21Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 22
-     },
-     {
-      "outlet": "News On AIR",
-      "ts": "2026-06-11T20:09:30Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
+      "items": 4
      }
     ],
     "unplaced": [
@@ -2202,7 +2176,7 @@
    "sources": [
     {
      "outlet": "Al Jazeera",
-     "n": 20,
+     "n": 19,
      "class": "mainstream"
     },
     {
@@ -2212,12 +2186,7 @@
     },
     {
      "outlet": "The Times of Israel",
-     "n": 9,
-     "class": "other"
-    },
-    {
-     "outlet": "Ahram Online",
-     "n": 6,
+     "n": 10,
      "class": "other"
     },
     {
@@ -2227,6 +2196,16 @@
     },
     {
      "outlet": "Haaretz",
+     "n": 6,
+     "class": "other"
+    },
+    {
+     "outlet": "Middle East Eye",
+     "n": 6,
+     "class": "other"
+    },
+    {
+     "outlet": "News On AIR",
      "n": 6,
      "class": "other"
     },
@@ -2241,23 +2220,18 @@
      "class": "other"
     },
     {
-     "outlet": "Middle East Eye",
+     "outlet": "Ahram Online",
      "n": 5,
      "class": "other"
     },
     {
-     "outlet": "News On AIR",
+     "outlet": "Goshen News",
      "n": 5,
      "class": "other"
     },
     {
      "outlet": "israelnationalnews.com",
      "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "Goshen News",
-     "n": 4,
      "class": "other"
     }
    ],
@@ -2326,7 +2300,7 @@
      [
       "2026-06-13 18:00",
       68,
-      135
+      133
      ]
     ],
     "mix": {
@@ -2334,16 +2308,11 @@
      "state-media": 2,
      "regional": 0,
      "official": 0,
-     "other": 170
+     "other": 172
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-12T21:14:57Z",
-     "a": "Press TV frames Israeli military operations as the root cause of Gaza's humanitarian catastrophe - targeting convoys, cutting supplies, and economic collapse.",
-     "b": "Haaretz cites UN data showing Hamas executed 108 Palestinians in Gaza; New York Post reports UNRWA fired 70 staffers over its 'Hamas problem'."
-    },
     {
      "captured_utc": "2026-06-12T23:25:17Z",
      "a": "Press TV frames Israeli operations as deliberate targeting of medical convoys, economic destruction, and genocide against Gaza's civilian population.",
@@ -2398,10 +2367,15 @@
      "captured_utc": "2026-06-13T16:13:57Z",
      "a": "Critical outlets report Israel is targeting medical convoys, residential homes, and conducting genocide in Gaza amid absent accountability",
      "b": "JNS reports IDF eliminated terrorists and dismantled arms storage sites in Gaza operations"
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "Press TV reports Israel systematically targets Gaza medical convoys and delays civilian evacuations amid intensifying airstrikes",
+     "b": "IDF, reported by News On AIR, claims to have destroyed 14km of Hamas underground tunnel networks in northern Gaza Strip"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://i.guim.co.uk/img/media/82fdf539afe74c57ac3730922e4c47608df7a652/0_163_2154_1724/master/2154.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=cf1c87e02e9dafb83b2bb09eedcce042",
@@ -2636,9 +2610,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 54,
-   "items_48h": 105,
-   "outlets": 56,
+   "items_24h": 51,
+   "items_48h": 106,
+   "outlets": 57,
    "kinds": [
     "journalist",
     "state media",
@@ -2646,7 +2620,7 @@
    ],
    "latest": [
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "Taiwan in Time: When island neighbors became strangers",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -2658,7 +2632,7 @@
      }
     },
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "EDITORIAL: Taiwan\u2019s golden maritime opportunity",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -2670,7 +2644,7 @@
      }
     },
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "Taiwan News Quick Take",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -2682,7 +2656,7 @@
      }
     },
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "Taiwan supports data center plans in Paraguay",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -2699,7 +2673,19 @@
      "outlet": "SMH.com.au",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNX2VPMmlyVjVfY21ub2prV3c3Qjcyd2pDS3BGTUYxME0wS0FKT2ZvWUZNVlhMZEY2N3RvVEpxczN5bmpvUzJ4bldWX0lUVG8tbEk5bFJFdHM1dGtya21taUkwaW4tb1cxX3lrZXpqSWEyczBiem1mTndfbXE2QllNaENFOUhrckV4TTE1eGlJaGgtZUxNYkRZTlRJdzZlcGN6OW50VFcyVHpaU2FTTjJNVWktSWhqTlVGZkVpNk9tOTA?oc=5",
-     "rel": 2,
+     "rel": 3,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-13T13:41:16Z",
+     "title": "China Deploys Jet Drones Near Taiwan Strait",
+     "outlet": "tovima.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91emp2MEdNcl9ZVkplZnhGaWFuQkpMTkpLVWN1XzRaZVl4WFFKb0RKRUJqRWl0bU5PXzlLaVAwR0wyaVMzX0pHWEg2anFUY3NGcEdWUUhOTjBnaFFWSThXUjhyRFpkQWM3SnZuejNFNVVGTDVvc2pSVzRpN19pZ9IBgwFBVV95cUxNaXFacnhPZHdDa1VvWEhfM3h5RldCM3RpRkU1RVk2SDNXU3NjVVBCUlQ2eEhWTmVKb2gtdVFsQkJFQnF1TFRlNUZRT0FUaS1CRUJCOUtjN3MwSmtqaTZFeFlaYi1ObTRkVWNndHNwSV9fME1hd2xHWDg1Z1dfTlZ5UGZMNA?oc=5",
+     "rel": 7,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -2728,26 +2714,14 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-13T12:45:00Z",
-     "title": "Policy steps draw Taiwan youth to Fujian",
-     "outlet": "usa.chinadaily.com.cn",
-     "kind": "state media",
-     "url": "http://usa.chinadaily.com.cn/a/202606/13/WS6a2c93dca310986e2b45fb37.html",
-     "rel": 3,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Beijing officials and cross-strait forums promote joint opportunities, inviting Taiwanese to share in mainland progress.",
-    "b": "Taiwan repels Chinese vessels from restricted waters as the US dismisses KMT's cross-strait peacemaker pitch as naive.",
+    "a": "Beijing officials hail Taiwanese participation in cross-strait events and invite Taiwan to share mainland opportunities, calling for 'joint answers' on peace",
+    "b": "Taiwan remains on edge amid Chinese jet drone deployments near the Strait, while the KMT opposition's peacemaker pitch leaves the US unimpressed",
     "basis": "extracted from live headlines 2026-06-13",
     "axis_type": "interpretation",
-    "axis_question": "Is cross-strait engagement a path to peace or cover for sustained Chinese pressure?",
+    "axis_question": "Is Beijing's cross-strait outreach a genuine peace offer or a pressure strategy?",
     "carriers": {
      "a": [
       {
@@ -2777,20 +2751,20 @@
      ],
      "b": [
       {
-       "outlet": "MSN",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNVVlWVplVTVsUDJPYzZjM0xjYnIydkMwaXcwMDVwNjJ6S1JpbFg2elZpYVNXU1F6YVZUenE3WjlrWW13QnJYUGtxRi1UU2RPWk9vU1luNkZIRHRoS3RyYkY0WUxtajg1M3EzTE53RkxoQ1BCMEE5X0NpM0VmUUdmN29ibS1tbThiMXppODJ1cVRqekkyMm9iYnRYZmRuWHRVZERGQlJlM0hfVUFSckxldmtPUjd5YTdYWU14cw?oc=5",
-       "ts": "2026-06-11T21:01:19Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
        "outlet": "The Straits Times",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNX1E1M3ZnaDhVWmplUjFhWTdrZ1RQVmxIc0dyb1RLMmJ1VnFyY1E0UGYwZmYta3RTSHRXY3Z6Y3pKbmNsXzhRNkdsaUNDVkVMRmVRY0N3U28zelkyU1dhR0ZYUVBRNkJLSWdhbmVzOVhxTi10T2hEZlZDQ3BCRkg4UzU1MUJwMEh5NlZuTzdnTlRlTndseTJ5MUNoQkhzTnV2b3RqZ1dHa0lvRDFPNTZqU29rejNxcF9FRTJsOWdKbnNHa0tiWU5OMThBNnp1cGRSXzZ3bE1XZ2piUQ?oc=5",
        "ts": "2026-06-13T08:15:00Z",
-       "provenance": "echo",
+       "provenance": "original",
        "motive_note": "SG press"
+      },
+      {
+       "outlet": "tovima.com",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE91emp2MEdNcl9ZVkplZnhGaWFuQkpMTkpLVWN1XzRaZVl4WFFKb0RKRUJqRWl0bU5PXzlLaVAwR0wyaVMzX0pHWEg2anFUY3NGcEdWUUhOTjBnaFFWSThXUjhyRFpkQWM3SnZuejNFNVVGTDVvc2pSVzRpN19pZ9IBgwFBVV95cUxNaXFacnhPZHdDa1VvWEhfM3h5RldCM3RpRkU1RVk2SDNXU3NjVVBCUlQ2eEhWTmVKb2gtdVFsQkJFQnF1TFRlNUZRT0FUaS1CRUJCOUtjN3MwSmtqaTZFeFlaYi1ObTRkVWNndHNwSV9fME1hd2xHWDg1Z1dfTlZ5UGZMNA?oc=5",
+       "ts": "2026-06-13T13:41:16Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
        "outlet": "SMH.com.au",
@@ -2799,6 +2773,22 @@
        "ts": "2026-06-13T19:01:00Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Taipei Times",
+       "kind": "journalist",
+       "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/06/14/2003859070",
+       "ts": "2026-06-14T08:00:00Z",
+       "provenance": "echo",
+       "motive_note": "TW regional press"
+      },
+      {
+       "outlet": "Press TV",
+       "kind": "state media",
+       "url": "https://presstv.ir/Detail/2025/11/22/759281/Japan-Prime-Minister-US-president-Donald-Trump-anti-China-remarks-Taiwan-",
+       "ts": null,
+       "provenance": "unplaced",
+       "motive_note": "IR state media"
       }
      ]
     }
@@ -2807,7 +2797,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 55,
+    "outlets_timed": 56,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -2906,6 +2896,15 @@
      ]
     },
     {
+     "entity": "trump",
+     "situations": [
+      "russia-ukraine-war-current",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    },
+    {
      "entity": "united states",
      "situations": [
       "gaza-israel-war-current",
@@ -2954,27 +2953,27 @@
      "class": "other"
     },
     {
-     "outlet": "insidermonkey.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "scmp.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Reuters",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
      "outlet": "The Sun",
      "n": 2,
      "class": "other"
     },
     {
      "outlet": "econotimes.com",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "forbes.com",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "insidermonkey.com",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "scmp.com",
      "n": 2,
      "class": "other"
     }
@@ -3043,8 +3042,8 @@
      ],
      [
       "2026-06-13 18:00",
-      52,
-      57
+      54,
+      56
      ]
     ],
     "mix": {
@@ -3052,16 +3051,11 @@
      "state-media": 4,
      "regional": 1,
      "official": 0,
-     "other": 68
+     "other": 66
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-13T07:16:22Z",
-     "a": "Taiwan's opposition leader and Beijing officials say cross-strait talks are necessary for peace and require a 'joint answer' from both sides.",
-     "b": "Taiwan's government drives away Chinese vessels, fires HIMARS in its first west coast drill, and advances a US defense bill."
-    },
     {
      "captured_utc": "2026-06-13T08:24:19Z",
      "a": "Beijing officials and Taiwan's opposition leader say cross-strait peace requires joint dialogue, urging engagement with China",
@@ -3116,10 +3110,15 @@
      "captured_utc": "2026-06-13T19:21:19Z",
      "a": "Beijing officials and cross-strait forums promote joint opportunities, inviting Taiwanese to share in mainland progress.",
      "b": "Taiwan repels Chinese vessels from restricted waters as the US dismisses KMT's cross-strait peacemaker pitch as naive."
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "Beijing officials hail Taiwanese participation in cross-strait events and invite Taiwan to share mainland opportunities, calling for 'joint answers' on peace",
+     "b": "Taiwan remains on edge amid Chinese jet drone deployments near the Strait, while the KMT opposition's peacemaker pitch leaves the US unimpressed"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Taiwan Strait, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Taiwan Strait, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://imgcdn.cna.com.tw/Eng/WebEngPhotos/WebOg/600/2026/20260612/1024x538_399539563935.jpg",
@@ -3242,16 +3241,16 @@
     ]
    },
    "discovered": true,
-   "items_24h": 46,
-   "items_48h": 125,
-   "outlets": 57,
+   "items_24h": 39,
+   "items_48h": 118,
+   "outlets": 55,
    "kinds": [
     "journalist",
     "state media"
    ],
    "latest": [
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "US says Tren de Aragua leader killed",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3263,7 +3262,7 @@
      }
     },
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "Academic arrested in China on suspicions of espionage",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3275,7 +3274,7 @@
      }
     },
     {
-     "ts": "2026-06-13T19:21:19Z",
+     "ts": "2026-06-13T20:15:53Z",
      "title": "Civic groups slam China\u2019s ethnic unity and progress law",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3394,48 +3393,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 55,
+    "outlets_timed": 53,
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "TASS",
-      "ts": "2026-06-11T19:37:38Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "RU state media",
-      "items": 6
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-06-11T19:41:04Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 12
-     },
-     {
       "outlet": "Al Jazeera",
-      "ts": "2026-06-11T19:46:22Z",
+      "ts": "2026-06-11T20:21:55Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "Qatar state-funded international broadcaster",
-      "items": 17
-     },
-     {
-      "outlet": "The American Prospect",
-      "ts": "2026-06-11T19:55:10Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Word&Way",
-      "ts": "2026-06-11T20:14:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "items": 15
      },
      {
       "outlet": "yahoo.com",
@@ -3460,6 +3427,38 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "The Washington Post",
+      "ts": "2026-06-11T21:31:57Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 1
+     },
+     {
+      "outlet": "mediaite.com",
+      "ts": "2026-06-11T22:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "us.cnn.com",
+      "ts": "2026-06-12T00:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "radaronline.com",
+      "ts": "2026-06-12T00:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": [
@@ -3512,6 +3511,7 @@
      "entity": "trump",
      "situations": [
       "russia-ukraine-war-current",
+      "taiwan-strait-tensions-current",
       "us-iran-strikes-israel-lebanon-escalation",
       "us-tanker-strike-gulf-of-oman-india-sailors"
      ]
@@ -3520,7 +3520,7 @@
    "sources": [
     {
      "outlet": "Al Jazeera",
-     "n": 17,
+     "n": 16,
      "class": "mainstream"
     },
     {
@@ -3530,7 +3530,7 @@
     },
     {
      "outlet": "Guardian World",
-     "n": 13,
+     "n": 11,
      "class": "mainstream"
     },
     {
@@ -3639,7 +3639,7 @@
      [
       "2026-06-13 18:00",
       46,
-      60
+      57
      ]
     ],
     "mix": {
@@ -3669,7 +3669,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -3706,45 +3706,45 @@
     "migration"
    ],
    "brief": {
-    "generated_utc": "2026-06-13T16:12:27Z",
+    "generated_utc": "2026-06-13T20:15:53Z",
     "sentence_count": 15,
     "dropped_count": 0,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "Belfast riots left 12 officers injured as anti-migrant violence spread, MSN reports.",
+        "text": "Thousands of people attended an anti-racism rally in Belfast following days of anti-immigrant rioting.",
         "cites": [
          {
-          "outlet": "MSN",
+          "outlet": "PBS",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOajZwS0puM1d6Yy1QVGRZZVFkY3pTdEJoV3JJSTcwb19uTFpkalc1SEU2RVNEVTREVVZpVXYxVy1mWEF2ZTJYSHh1TXJQZEMydVFpWWVhOGNOdVhWcjR4Y2NNNTlKZlkxTlJHRGVmanhhQ0Qzb1ZfWUJnRGxFbTg5cVhkYVRyQktIZWtySXNHaFlOUkVXVk5FSkhGOUh6c0R2QXJhc0dwWTJkb0xoYXY3Y19IOF9UWG1QUGZ3Tw?oc=5",
-          "ts": "2026-06-12T14:38:27Z",
-          "title": "Belfast riots leave 12 officers injured as anti-migrant violence spreads"
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRTA1amVqSXI0ZlZiWUJPOC0tYTdSYi12OXo0bjZKaE1kd1FudGlTdXNfMGpNOGNiRE5YaE5LM01QajZlM21ud0JLMU9xVDZjdmFSak5jOHlyMHVKeEE0NWl6TlJ2UHJuMDEwQUxfQWxuWlFSaDBYM0xfemp3ZDVzOEl0UF9nTnNjY3pOV3lIT1lyNjY2OWRDa2h5RDVYOUtHcjA2YV9Ba0pCVk9kb1c1UkkwZ3pnc0tSZ2xjU1NTNNIBvwFBVV95cUxQRTA1amVqSXI0ZlZiWUJPOC0tYTdSYi12OXo0bjZKaE1kd1FudGlTdXNfMGpNOGNiRE5YaE5LM01QajZlM21ud0JLMU9xVDZjdmFSak5jOHlyMHVKeEE0NWl6TlJ2UHJuMDEwQUxfQWxuWlFSaDBYM0xfemp3ZDVzOEl0UF9nTnNjY3pOV3lIT1lyNjY2OWRDa2h5RDVYOUtHcjA2YV9Ba0pCVk9kb1c1UkkwZ3pnc0tSZ2xjU1NTNA?oc=5",
+          "ts": "2026-06-13T17:10:20Z",
+          "title": "Thousands rally in Belfast to condemn anti-immigrant rioting that followed stabbing"
          }
         ]
        },
        {
-        "text": "The Guardian reports the number of arrests after the riots in Northern Ireland rose to 19.",
+        "text": "The rally came after rioting that followed a stabbing.",
         "cites": [
          {
-          "outlet": "Guardian World",
+          "outlet": "PBS",
           "kind": "journalist",
-          "url": "https://www.theguardian.com/uk-news/2026/jun/12/police-arrests-riots-belfast-northern-ireland",
-          "ts": "2026-06-12T17:48:07Z",
-          "title": "Number of arrests after riots in Northern Ireland rises to 19"
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQRTA1amVqSXI0ZlZiWUJPOC0tYTdSYi12OXo0bjZKaE1kd1FudGlTdXNfMGpNOGNiRE5YaE5LM01QajZlM21ud0JLMU9xVDZjdmFSak5jOHlyMHVKeEE0NWl6TlJ2UHJuMDEwQUxfQWxuWlFSaDBYM0xfemp3ZDVzOEl0UF9nTnNjY3pOV3lIT1lyNjY2OWRDa2h5RDVYOUtHcjA2YV9Ba0pCVk9kb1c1UkkwZ3pnc0tSZ2xjU1NTNNIBvwFBVV95cUxQRTA1amVqSXI0ZlZiWUJPOC0tYTdSYi12OXo0bjZKaE1kd1FudGlTdXNfMGpNOGNiRE5YaE5LM01QajZlM21ud0JLMU9xVDZjdmFSak5jOHlyMHVKeEE0NWl6TlJ2UHJuMDEwQUxfQWxuWlFSaDBYM0xfemp3ZDVzOEl0UF9nTnNjY3pOV3lIT1lyNjY2OWRDa2h5RDVYOUtHcjA2YV9Ba0pCVk9kb1c1UkkwZ3pnc0tSZ2xjU1NTNA?oc=5",
+          "ts": "2026-06-13T17:10:20Z",
+          "title": "Thousands rally in Belfast to condemn anti-immigrant rioting that followed stabbing"
          }
         ]
        },
        {
-        "text": "MSN reports police released CCTV images after the Belfast riots escalated.",
+        "text": "Far-right and anti-racist protesters clashed in UK cities after the Belfast riots.",
         "cites": [
          {
-          "outlet": "MSN",
+          "outlet": "The Guardian",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNRThQakF2bXV2R0ltSmcxcDBHV2h2LXVWUzB1RzREck1Pb09LdzhENV8teGFNOGkwR3VIbFRwVEdwMWlUQ3U2OWxvT3RhRW5nWWd3bDR1VjFTSFVPN0ktYU9zQkl5NnZOUFRUclFxNFB1ZjV0SDVpRkdWSHRqVldJMnZrT3JIWFZpQ1kzVEhaNlVvSUdDWjNTQk1mVUd2RWhQSFl1Q0R1eEVtc21IR29uM0ZwZE9maDVYQWdPeFQxRl9iZncwOWdnV0hwVGVaTlVjSW5xYmROS1E5dHZDelQtN09sejdCMTdxaFpwTUZB?oc=5",
-          "ts": "2026-06-12T16:43:49Z",
-          "title": "Police release CCTV images after Belfast riots escalate"
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaXA4dGhPZFJrcXlhSnd2ZHdQWTNKbXItLUh3b1BmZnBLYVduV19wOVVqbGxnOVI5QXZzOGdOdDd6WkJpU2x5U3JvcjlINFR6aHA1STRNSEJyMUdxSUlmdGRhRlNsOWF3ZTlOOXNwNWFtcHJjeUdEb0VJZjMtOFFleVBZaFdiZDlBMXgwSkYwcDU1LWlnVkgxRHB0Q1h5cUJKcjM2UUZzdENUWmxMbU9XdFRkYnlDOE5jOGs1N2pZWG8?oc=5",
+          "ts": "2026-06-13T17:46:00Z",
+          "title": "Far-right and anti-racist protesters clash in UK cities after Belfast riots"
          }
         ]
        }
@@ -3753,38 +3753,38 @@
      {
       "sentences": [
        {
-        "text": "WBUR reports police tried to quell the violence in Belfast after a stabbing attack sparked a backlash against immigrants.",
+        "text": "The PSNI says the number of arrests over the disorder in Northern Ireland has reached 23.",
         "cites": [
          {
-          "outlet": "wbur.org",
+          "outlet": "irishtimes.com",
           "kind": "journalist",
-          "url": "https://www.wbur.org/hereandnow/2026/06/11/belfast-stabbing",
-          "ts": "2026-06-12T13:30:00Z",
-          "title": "Police try to quell violence in Belfast after stabbing attack sparks backlash against immigrants ."
+          "url": "https://www.irishtimes.com/crime-law/2026/06/13/psni-says-number-of-arrests-over-disorder-in-northern-ireland-reaches-23/",
+          "ts": "2026-06-13T14:00:00Z",
+          "title": "PSNI says number of arrests over disorder in Northern Ireland reaches 23"
          }
         ]
        },
        {
-        "text": "The Indian Express reports a knife attack triggered the anti-immigrant violence.",
+        "text": "Police say more arrests are expected as 23 people have been detained over serious disorder.",
         "cites": [
          {
-          "outlet": "indianexpress.com",
+          "outlet": "irishnews.com",
           "kind": "journalist",
-          "url": "https://indianexpress.com/article/explained/explained-global/belfast-riots-anti-immigrant-violence-northern-ireland-10737030/",
-          "ts": "2026-06-13T02:00:00Z",
-          "title": "Belfast Riots : How a Knife Attack Triggered Anti - Immigrant Violence"
+          "url": "https://www.irishnews.com/news/northern-ireland/race-riots-police-say-more-arrests-expected-as-23-detained-over-serious-disorder-VQEESA566JGSZJDJ7IEFB7YMVA/",
+          "ts": "2026-06-13T15:00:00Z",
+          "title": "Race riots : Police say more arrests expected as 23 detained over serious disorder"
          }
         ]
        },
        {
-        "text": "The New York Times reports the anti-immigrant riots after the Belfast stabbing left the city on edge.",
+        "text": "The BBC reports that people fled their homes because of racist violence in Belfast.",
         "cites": [
          {
-          "outlet": "NYT World",
+          "outlet": "bbc.co.uk",
           "kind": "journalist",
-          "url": "https://www.nytimes.com/2026/06/12/world/europe/belfast-stabbing-riots-anti-immigrant.html",
-          "ts": "2026-06-12T12:40:37Z",
-          "title": "Anti-Immigrant Riots after Belfast Stabbing Leave City on Edge"
+          "url": "https://www.bbc.co.uk/news/articles/cvgjxxz0mp8o",
+          "ts": "2026-06-13T01:15:00Z",
+          "title": "Belfast : The night people fled homes because of racist violence"
          }
         ]
        }
@@ -3793,7 +3793,7 @@
      {
       "sentences": [
        {
-        "text": "Researchers tell Le Monde that Elon Musk's role was 'instrumental' in the Belfast riots.",
+        "text": "Le Monde reports that researchers say Elon Musk's role was 'instrumental' in the Belfast riots.",
         "cites": [
          {
           "outlet": "Le Monde.fr",
@@ -3805,7 +3805,7 @@
         ]
        },
        {
-        "text": "The Independent reports Musk is accused of amplifying anti-migrant content to more than 60 million users on X amid the Belfast disorder.",
+        "text": "The Independent reports Musk is accused of amplifying anti-migrant content to more than 60 million on X amid the Belfast disorder.",
         "cites": [
          {
           "outlet": "independent.co.uk",
@@ -3827,25 +3827,25 @@
           "title": "Researchers say Elon Musk  instrumental  in amplifying anti - migrant narratives after Belfast knife attack"
          }
         ]
+       },
+       {
+        "text": "The Irish Times reports on how foreign agitators helped spark racist riots across the North via X.",
+        "cites": [
+         {
+          "outlet": "irishtimes.com",
+          "kind": "journalist",
+          "url": "https://www.irishtimes.com/ireland/2026/06/13/the-x-factor-how-foreign-agitators-helped-spark-racist-riots-across-the-north/",
+          "ts": "2026-06-13T08:00:00Z",
+          "title": "The X factor : how foreign agitators helped spark racist riots across the North"
+         }
+        ]
        }
       ]
      },
      {
       "sentences": [
        {
-        "text": "The Guardian reports the Belfast riots triggered renewed scrutiny over loyalist paramilitary influence.",
-        "cites": [
-         {
-          "outlet": "Guardian World",
-          "kind": "journalist",
-          "url": "https://www.theguardian.com/uk-news/2026/jun/12/belfast-riots-scrutiny-loyalist-paramilitary-influence-northern-ireland",
-          "ts": "2026-06-12T18:40:30Z",
-          "title": "Belfast riots trigger renewed scrutiny over loyalist paramilitary influence"
-         }
-        ]
-       },
-       {
-        "text": "France 24 reports the Belfast anti-immigrant riots show a long legacy of sectarian violence.",
+        "text": "France 24 says the Belfast anti-immigrant riots show a long legacy of sectarian violence.",
         "cites": [
          {
           "outlet": "France 24",
@@ -3857,14 +3857,26 @@
         ]
        },
        {
-        "text": "BBC reports on what is known about how Northern Ireland's riots were organised.",
+        "text": "Newsweek reports on how race-hate tensions helped the Belfast riots spread so fast.",
         "cites": [
          {
-          "outlet": "BBC",
+          "outlet": "newsweek.com",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ianFEb2hzT3owdm43TnRsYmhPazhxSkVENEFIU0p5NzNETGlUamVNNExIOTRrU2h6SW9YUHQ2TmY3UUJHOEhDSVcyLTNPR2lkVEdHY0ZGRFFsQQ?oc=5",
-          "ts": "2026-06-12T15:25:07Z",
-          "title": "What we know about how Northern Ireland's riots were organised"
+          "url": "https://www.newsweek.com/belfast-riots-migration-race-hate-police-12067080",
+          "ts": "2026-06-13T13:15:00Z",
+          "title": "How Race - Hate Tensions Helped Belfast Riots Spread So Fast"
+         }
+        ]
+       },
+       {
+        "text": "RTE reports on how outrage spread from Belfast, from a violent attack to unrest.",
+        "cites": [
+         {
+          "outlet": "rte.ie",
+          "kind": "journalist",
+          "url": "https://www.rte.ie/news/primetime/2026/0612/1578134-clarity-belfast-unrest/",
+          "ts": "2026-06-13T11:00:00Z",
+          "title": "From violent attack to unrest : How outrage spread from Belfast"
          }
         ]
        }
@@ -3873,38 +3885,26 @@
      {
       "sentences": [
        {
-        "text": "Al Jazeera reports thousands attended anti-racism rallies following the unrest in Belfast.",
+        "text": "The Manila Times reports there were no new clashes after two nights of unrest on Northern Ireland streets.",
         "cites": [
          {
-          "outlet": "Al Jazeera",
+          "outlet": "manilatimes.net",
           "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/13/thousands-attend-anti-racism-rallies-following-unrest-in-belfast?traffic_source=rss",
-          "ts": "2026-06-13T15:34:24Z",
-          "title": "Thousands attend anti-racism rallies following unrest in Belfast"
+          "url": "https://www.manilatimes.net/2026/06/13/world/no-new-clashes-after-two-nights-of-unrest-on-n-ireland-streets/2364696",
+          "ts": "2026-06-12T20:15:00Z",
+          "title": "No new clashes after two nights of unrest on N . Ireland streets"
          }
         ]
        },
        {
-        "text": "The Irish Examiner reports a culture of fear permeated Belfast after a list of targeted addresses circulated online.",
+        "text": "Solidarity rallies were held in Belfast following the violent riots.",
         "cites": [
          {
-          "outlet": "irishexaminer.com",
+          "outlet": "brisbanetimes.com.au",
           "kind": "journalist",
-          "url": "https://www.irishexaminer.com/news/arid-41861490.html",
-          "ts": "2026-06-12T13:15:00Z",
-          "title": "Culture of fear permeating Belfast after list of targeted addresses circulated online"
-         }
-        ]
-       },
-       {
-        "text": "Arab News reports migrants described 'life in hiding' after the Belfast violence.",
-        "cites": [
-         {
-          "outlet": "Arab News",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE16THp1SF85Q3R4ZzBVUkNZTjBSY0JlZ1kxbmlwSVRVWENpOUxxa1A5RGktTTc2SFBiZExkZGlMZjNIcXNTaUZqRTllc0J3ZlRUQjM2Tnhn?oc=5",
-          "ts": "2026-06-12T15:13:21Z",
-          "title": "\u2018Life in hiding\u2019: migrants reel after Belfast violence"
+          "url": "https://www.brisbanetimes.com.au/national/solidarity-rally-held-in-belfast-following-violent-riots-20260613-p606gl.html",
+          "ts": "2026-06-13T00:00:00Z",
+          "title": "Solidarity rally held in Belfast following violent riots"
          }
         ]
        }
@@ -3913,13 +3913,25 @@
     ]
    },
    "discovered": true,
-   "items_24h": 40,
-   "items_48h": 103,
-   "outlets": 63,
+   "items_24h": 37,
+   "items_48h": 100,
+   "outlets": 62,
    "kinds": [
     "journalist"
    ],
    "latest": [
+    {
+     "ts": "2026-06-13T19:45:19Z",
+     "title": "Thousands attend anti-racism rally in Belfast",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/13/thousands-attend-anti-racism-rally-in-belfast?traffic_source=rss",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
     {
      "ts": "2026-06-13T17:46:00Z",
      "title": "Far-right and anti-racist protesters clash in UK cities after Belfast riots",
@@ -4003,26 +4015,14 @@
       "non_mainstream": 0,
       "mainstream": 1
      }
-    },
-    {
-     "ts": "2026-06-13T15:31:11Z",
-     "title": "Thousands turn out for anti-racism rally after Belfast unrest",
-     "outlet": "France 24",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcFhMTVJ1eFR4R01PODZxX2J5cnFXMlhRVWJOQzYwS3VLd1hDalBpRTFTUndWOGxESy11OXcxVlF3NWZabnhBUHk3M2d1bEd2M1BhenJFZ3h3OHA5a1ZDYlp1NUJtUV9MalZITkpDVGVKWWZpNW1BUnZMcExrZFc5QWdOSHdvZzM5ektvcmNSWmJIX3lzX1J4SF84WURhRlRzamVDQjdQQWRRUXND?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Researchers say Elon Musk's platform was instrumental in amplifying far-right messaging that fueled the Belfast riots.",
-    "b": "Analysts tie Belfast riots to a long legacy of sectarian violence and resurgent loyalist paramilitary influence.",
+    "a": "Le Monde reports researchers found Elon Musk's role 'instrumental' in stoking the Belfast anti-immigrant riots",
+    "b": "France 24 frames the Belfast unrest as reflecting the city's long legacy of sectarian violence",
     "basis": "extracted from live headlines 2026-06-13",
     "axis_type": "interpretation",
-    "axis_question": "Are Belfast riots driven by online radicalization or deep-rooted sectarian networks?",
+    "axis_question": "Were the Belfast riots driven by social media radicalization or by sectarian legacy?",
     "carriers": {
      "a": [
       {
@@ -4036,19 +4036,11 @@
      ],
      "b": [
       {
-       "outlet": "The Guardian",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbkNoSUpKQnBLWXlUYkdHSnJlMnlWX1Y2eXRFN0ptM2dBSWJ3OVRfX0lpc2M4dUlzcFlIMUNoTzA5bFI4NzNOQ1VrLV81TWp1cnZraEp3WXYzVFllNF9fbDktV0o2ZkNWb1FSTklGRzZESFRhSGtBM2psWnY1V2dhM28yQ19uTzNOTUpWWXRyYTBwalB3dEtBMzFJT19QSklyTW9nNFNpS3p3MGR3WUhzUlFYNmx0Zw?oc=5",
-       "ts": "2026-06-12T01:30:00Z",
-       "provenance": "original",
-       "motive_note": "UK press"
-      },
-      {
        "outlet": "France 24",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMWlJVm5mbGM4eFYwMDZCQWQ5N0tNUnFFQl9nbjdXMFRWWGVvY1NUVFVHYlBfbXFvaWlpNmx2SUJqN2thRFFzbW5iN0RMUlBjYU9Td2E0VnA3bVJGZW1QVndRdjViZTBOdUpPa1oyVlpidkdFajBzZHdJLW12UTZRdVV5dGxZdkY3RmZWZExBMGVZQWRTRkZVSE1CTnNEY0p0S1ZDMQ?oc=5",
        "ts": "2026-06-13T10:29:15Z",
-       "provenance": "echo",
+       "provenance": "original",
        "motive_note": "FR state-funded international broadcaster"
       }
      ]
@@ -4058,46 +4050,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 59,
+    "outlets_timed": 58,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "thenorthernecho.co.uk",
-      "ts": "2026-06-11T19:45:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "channel4.com",
-      "ts": "2026-06-11T19:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "PBS",
-      "ts": "2026-06-11T19:52:55Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "DW.com",
-      "ts": "2026-06-11T20:06:24Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "The Guardian",
       "ts": "2026-06-11T20:20:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "UK press",
       "items": 4
      },
@@ -4115,7 +4075,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "Qatar state-funded international broadcaster",
-      "items": 6
+      "items": 7
      },
      {
       "outlet": "UN News",
@@ -4123,6 +4083,38 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "intergovernmental official record",
+      "items": 1
+     },
+     {
+      "outlet": "stiripesurse.ro",
+      "ts": "2026-06-11T20:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "BBC",
+      "ts": "2026-06-11T20:57:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK public broadcaster",
+      "items": 3
+     },
+     {
+      "outlet": "irishmirror.ie",
+      "ts": "2026-06-11T21:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "nzherald.co.nz",
+      "ts": "2026-06-11T22:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      }
     ],
@@ -4153,18 +4145,18 @@
    ],
    "sources": [
     {
-     "outlet": "MSN",
-     "n": 11,
-     "class": "other"
-    },
-    {
      "outlet": "Guardian World",
      "n": 10,
      "class": "mainstream"
     },
     {
+     "outlet": "MSN",
+     "n": 10,
+     "class": "other"
+    },
+    {
      "outlet": "Al Jazeera",
-     "n": 6,
+     "n": 7,
      "class": "other"
     },
     {
@@ -4273,7 +4265,7 @@
      [
       "2026-06-13 18:00",
       41,
-      66
+      63
      ]
     ],
     "mix": {
@@ -4286,11 +4278,6 @@
     "first_seen": "2026-06-11T09:35:14Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-12T23:25:17Z",
-     "a": "The Guardian and BBC highlight evidence of loyalist paramilitary organisation and coordination behind Belfast's anti-immigrant riots.",
-     "b": "NYT, Al Jazeera, and WION frame the violence as anti-immigrant unrest driven by community anger following a stabbing."
-    },
     {
      "captured_utc": "2026-06-13T03:22:27Z",
      "a": "Multiple outlets report anti-immigrant riots erupted after a Belfast stabbing, injuring police and spreading unrest across Northern Ireland.",
@@ -4345,10 +4332,15 @@
      "captured_utc": "2026-06-13T19:21:19Z",
      "a": "Researchers say Elon Musk's platform was instrumental in amplifying far-right messaging that fueled the Belfast riots.",
      "b": "Analysts tie Belfast riots to a long legacy of sectarian violence and resurgent loyalist paramilitary influence."
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "Le Monde reports researchers found Elon Musk's role 'instrumental' in stoking the Belfast anti-immigrant riots",
+     "b": "France 24 frames the Belfast unrest as reflecting the city's long legacy of sectarian violence"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Belfast anti-immigration riots injure police, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Belfast anti-immigration riots injure police, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -4952,7 +4944,7 @@
      [
       "2026-06-13 18:00",
       29,
-      60
+      62
      ]
     ],
     "mix": {
@@ -4972,7 +4964,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5205,9 +5197,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 20,
-   "items_48h": 251,
-   "outlets": 143,
+   "items_24h": 22,
+   "items_48h": 239,
+   "outlets": 136,
    "kinds": [
     "journalist",
     "state media",
@@ -5220,6 +5212,18 @@
      "outlet": "breitbart.com",
      "kind": "state media",
      "url": "https://www.breitbart.com/politics/2026/06/13/starmer-refuses-to-resign-from-office-after-defence-minister-jumps-ship/",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-13T17:16:14Z",
+     "title": "Starmer insists he will not walk away after defence resignations",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxPU1JFaUNUMXpSeTRXQzdKMFRJM1dnY2VVbGFaQ0dtT0gtU09zdWRwMExWdnZtSUZxM2pHMUoyM1o5NmFYNzQwZFNXcGlDYTdLRUczTFNERUN4Q3k3S1NRTEN1UENfRFFTRy1yT3VZbnRaVUxBZGRZZjJNUURwRkdHNVV6Ynp2eVNYSGVUc2I2Q2pTOGs2WmxjRWdJa3oxcnZGMEdXS09hM2lrUWFkbFhZczZtemNHLVBTcmdKMVJuZUt3eTJHUGNiZ1N2OEZwVU5pWUlha0g4dTE3am5lVWNDWmV4SG1PVl94c1l6ZEZuOFlpbElEXy1tcXVCb3VvdmNHZDBaNHNERjZQVlJqZHNmVHFOSVF5d3prNmtIOG4zTE44NmtUdWVvU1VRVEQwYU5iSVJDY0MyLW1wVm1MWWpUeHQ5Y2ZPQ3lLQWhocGVTenJEbTBPa2tIUXJFNnB0emNGQS0ycVlSWHFRdFc5NWJ1dWJqTnAwSnVGVWFZ?oc=5",
      "rel": 15,
      "coverage": {
       "non_mainstream": 1,
@@ -5245,6 +5249,18 @@
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNd04zWlU4RkpUc25aYzFScGluajlPbnc1T2cxVklTOS0zcVRoM1JyRmpYNmdvSmc5bGExSG9HbXVhV1dXRW5CWHdfOThiT0ZuSFJrQzRXRzdXOXUyWnVkTjdHX2hyS3haLVdXblVrMmxSQ3REZXpWVXlPQVVfVHhGSEE3Q2VUbzRnRDdPSHRYVG1GQzNRZkNoOHAwbHpycGt4?oc=5",
      "rel": 12,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-13T14:53:32Z",
+     "title": "Starmer tells NATO\u2019s Rutte UK will publish defence plan before July 7 summit",
+     "outlet": "The Straits Times",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZFZSRkNsU25uSnNsUEFvVmhEQ2o4RHNwQkQ3MUxSSlZselBRSFd6OF8xeFRHQVNKNFdjV1pxY2ZKOVZLLTNYUzZKaTVWeGpSYXdCLTdpcmRfNzhicmlkdF9DRGRqX2V6TVdJZHVGbGpLMm5lTDF5Q2xSY3ZTU2N3d2RrWlBGakFadExsUHEzV0Q5WEJBQy1iTzdjTmtuOEdrbnlhZFdKRW8tRWFpWU93?oc=5",
+     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -5285,89 +5301,31 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-13T09:00:00Z",
-     "title": "Starmer and Martin discuss functioning of Common Travel Area",
-     "outlet": "breakingnews.ie",
-     "kind": "journalist",
-     "url": "https://www.breakingnews.ie/ireland/starmer-and-martin-discuss-functioning-of-common-travel-area-1913110.html",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-13T08:27:53Z",
-     "title": "John Healey wanted UK to join global investment bank to raise defence funds",
-     "outlet": "BBC",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lb2x3QjhjMzlPd1piZHhfQWEwSDc1VEctQlpLeVppR3N0U0VnajIwMUpYb3plVVhoRm95QUY0a2U3REtNVUZROWFFSlVOV2dYWnZRQVZ3S1JUZw?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Defence Secretary Healey and minister Carns resigned, arguing the UK's defence spending plan is dangerously inadequate.",
-    "b": "PM Starmer insists spending decisions are justified and refuses to step down despite resignations and public pressure.",
+    "a": "PM Starmer insists he will not walk away, stands by defence spending decisions, and pledges to deliver a NATO plan before the July 7 summit",
+    "b": "Defence Secretary Healey and minister Carns resigned over funding inadequacy, with analysts and polls questioning UK's ability to defend itself",
     "basis": "extracted from live headlines 2026-06-13",
     "axis_type": "policy_dispute",
-    "axis_question": "Is the UK's current defence funding plan adequate to meet its military obligations?",
+    "axis_question": "Is Starmer's defence spending plan adequate or dangerously underfunded?",
     "carriers": {
      "a": [
       {
-       "outlet": "BBC",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wWEozRU5NOTNiTDNIQnFDNHdtSk1oV2NQbms1emszSHR1SjkycWtidS1xek1qZ3poTVpvam5IcjM2WVhhaVlDbk9qcUFtcUF3TFBFSlBjWUN0UQ?oc=5",
-       "ts": "2026-06-11T19:35:42Z",
-       "provenance": "original",
-       "motive_note": "UK public broadcaster"
-      },
-      {
-       "outlet": "yahoo.com",
-       "kind": "journalist",
-       "url": "https://www.yahoo.com/news/politics/articles/carns-resigns-uk-defence-minister-202637875.html",
-       "ts": "2026-06-11T21:00:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
        "outlet": "MSN",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNV0t3akV6eEt1cFNUTmhoZC1KelVqLUluLU9fUkdJX3NTOTZLUzhzZTZYcTg0VTNhampZcmdFLXpxRWcwc1k0dkxOUkoyUUdTVDBTaXBLWHNFcUY2RkZsX042VXNYZlB6VW1iOHJJODZ5UHZjNW02bndYbDBuaExaeXpGU3E0Y3dkSlpYdDNONUxUUk9xQlVqWlRfOWdYMUVUTV8zWEctck82cENhYkpfOGk2NWJRTHBRc1pRZl9pdTdfQzlITjNYcmJfMVJ4WWc3OTcwX1JvR29rWWNrb180eWJYcw?oc=5",
        "ts": "2026-06-11T22:24:32Z",
-       "provenance": "echo",
+       "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
-      {
-       "outlet": "breitbart.com",
-       "kind": "state media",
-       "url": "https://www.breitbart.com/politics/2026/06/13/starmer-refuses-to-resign-from-office-after-defence-minister-jumps-ship/",
-       "ts": "2026-06-13T18:30:00Z",
-       "provenance": "echo",
-       "motive_note": "RU state media"
-      }
-     ],
-     "b": [
       {
        "outlet": "BBC",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wWEozRU5NOTNiTDNIQnFDNHdtSk1oV2NQbms1emszSHR1SjkycWtidS1xek1qZ3poTVpvam5IcjM2WVhhaVlDbk9qcUFtcUF3TFBFSlBjWUN0UQ?oc=5",
-       "ts": "2026-06-11T19:35:42Z",
-       "provenance": "original",
-       "motive_note": "UK public broadcaster"
-      },
-      {
-       "outlet": "MSN",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNV0t3akV6eEt1cFNUTmhoZC1KelVqLUluLU9fUkdJX3NTOTZLUzhzZTZYcTg0VTNhampZcmdFLXpxRWcwc1k0dkxOUkoyUUdTVDBTaXBLWHNFcUY2RkZsX042VXNYZlB6VW1iOHJJODZ5UHZjNW02bndYbDBuaExaeXpGU3E0Y3dkSlpYdDNONUxUUk9xQlVqWlRfOWdYMUVUTV8zWEctck82cENhYkpfOGk2NWJRTHBRc1pRZl9pdTdfQzlITjNYcmJfMVJ4WWc3OTcwX1JvR29rWWNrb180eWJYcw?oc=5",
-       "ts": "2026-06-11T22:24:32Z",
+       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kUlhsdFBSVFl0ZlVSN01uOFFlQjdSSFZUVU5NdWlKb1h2Y1J6V0JJZzJPQTc2aDRuZTZUaU9hU2dRUlNPTHZlV3VzcDVobDNwWVl0R2NxdW44UQ?oc=5",
+       "ts": "2026-06-12T03:42:25Z",
        "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
+       "motive_note": "UK public broadcaster"
       },
       {
        "outlet": "The Irish News",
@@ -5377,6 +5335,32 @@
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
+     ],
+     "b": [
+      {
+       "outlet": "MSN",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNV0t3akV6eEt1cFNUTmhoZC1KelVqLUluLU9fUkdJX3NTOTZLUzhzZTZYcTg0VTNhampZcmdFLXpxRWcwc1k0dkxOUkoyUUdTVDBTaXBLWHNFcUY2RkZsX042VXNYZlB6VW1iOHJJODZ5UHZjNW02bndYbDBuaExaeXpGU3E0Y3dkSlpYdDNONUxUUk9xQlVqWlRfOWdYMUVUTV8zWEctck82cENhYkpfOGk2NWJRTHBRc1pRZl9pdTdfQzlITjNYcmJfMVJ4WWc3OTcwX1JvR29rWWNrb180eWJYcw?oc=5",
+       "ts": "2026-06-11T22:24:32Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "BBC",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kUlhsdFBSVFl0ZlVSN01uOFFlQjdSSFZUVU5NdWlKb1h2Y1J6V0JJZzJPQTc2aDRuZTZUaU9hU2dRUlNPTHZlV3VzcDVobDNwWVl0R2NxdW44UQ?oc=5",
+       "ts": "2026-06-12T03:42:25Z",
+       "provenance": "echo",
+       "motive_note": "UK public broadcaster"
+      },
+      {
+       "outlet": "The Straits Times",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZFZSRkNsU25uSnNsUEFvVmhEQ2o4RHNwQkQ3MUxSSlZselBRSFd6OF8xeFRHQVNKNFdjV1pxY2ZKOVZLLTNYUzZKaTVWeGpSYXdCLTdpcmRfNzhicmlkdF9DRGRqX2V6TVdJZHVGbGpLMm5lTDF5Q2xSY3ZTU2N3d2RrWlBGakFadExsUHEzV0Q5WEJBQy1iTzdjTmtuOEdrbnlhZFdKRW8tRWFpWU93?oc=5",
+       "ts": "2026-06-13T14:53:32Z",
+       "provenance": "echo",
+       "motive_note": "SG press"
+      }
      ]
     }
    },
@@ -5384,72 +5368,72 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 135,
+    "outlets_timed": 129,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "The Guardian",
-      "ts": "2026-06-11T19:32:00Z",
+      "outlet": "news8000.com",
+      "ts": "2026-06-11T20:17:03Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "UK press",
-      "items": 4
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      },
      {
-      "outlet": "London Evening Standard",
-      "ts": "2026-06-11T19:37:22Z",
+      "outlet": "AP News",
+      "ts": "2026-06-11T20:20:00Z",
+      "kind": "wire service",
+      "role": "echo",
+      "motive_note": "international wire service",
+      "items": 1
+     },
+     {
+      "outlet": "DC News Now",
+      "ts": "2026-06-11T20:20:29Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "The Telegraph",
-      "ts": "2026-06-11T19:39:00Z",
+      "outlet": "ValleyCentral.com",
+      "ts": "2026-06-11T20:20:29Z",
       "kind": "journalist",
       "role": "echo",
-      "motive_note": "UK press",
-      "items": 3
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      },
      {
-      "outlet": "swindonadvertiser.co.uk",
-      "ts": "2026-06-11T19:45:00Z",
+      "outlet": "HuffPost UK",
+      "ts": "2026-06-11T20:23:49Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "France 24",
+      "ts": "2026-06-11T20:28:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "FR state-funded international broadcaster",
+      "items": 2
+     },
+     {
+      "outlet": "The Times",
+      "ts": "2026-06-11T20:30:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
      {
-      "outlet": "Yahoo News UK",
-      "ts": "2026-06-11T19:52:46Z",
+      "outlet": "bournemouthecho.co.uk",
+      "ts": "2026-06-11T20:30:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "Inkl",
-      "ts": "2026-06-11T19:52:46Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "The Times",
-      "ts": "2026-06-11T19:56:46Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-11T20:01:23Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 47
+      "items": 2
      }
     ],
     "unplaced": []
@@ -5511,22 +5495,12 @@
      "class": "other"
     },
     {
-     "outlet": "Devdiscourse",
-     "n": 4,
-     "class": "other"
-    },
-    {
      "outlet": "The Australian",
      "n": 4,
      "class": "other"
     },
     {
      "outlet": "The Guardian",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "The Independent",
      "n": 4,
      "class": "other"
     },
@@ -5547,6 +5521,16 @@
     },
     {
      "outlet": "Dem\u00f3crata",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Devdiscourse",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "HuffPost UK",
      "n": 3,
      "class": "other"
     }
@@ -5605,8 +5589,8 @@
      ],
      [
       "2026-06-13 18:00",
-      19,
-      145
+      20,
+      143
      ]
     ],
     "mix": {
@@ -5614,16 +5598,11 @@
      "state-media": 4,
      "regional": 1,
      "official": 0,
-     "other": 167
+     "other": 162
     },
     "first_seen": "2026-06-11T12:15:12Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-13T07:16:22Z",
-     "a": "Resigned Defence Secretary Al Carns says the UK's defence plan is underfunded and outdated, citing this as justification for his resignation.",
-     "b": "PM Starmer insists he has a duty to stay on, justifies his spending decisions, and names Dan Jarvis as the new Defence Secretary."
-    },
     {
      "captured_utc": "2026-06-13T08:24:19Z",
      "a": "PM Starmer insists he has a duty to stay on and defends the government's defence spending decisions",
@@ -5678,10 +5657,15 @@
      "captured_utc": "2026-06-13T19:21:19Z",
      "a": "Defence Secretary Healey and minister Carns resigned, arguing the UK's defence spending plan is dangerously inadequate.",
      "b": "PM Starmer insists spending decisions are justified and refuses to step down despite resignations and public pressure."
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "PM Starmer insists he will not walk away, stands by defence spending decisions, and pledges to deliver a NATO plan before the July 7 summit",
+     "b": "Defence Secretary Healey and minister Carns resigned over funding inadequacy, with analysts and polls questioning UK's ability to defend itself"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5891,8 +5875,8 @@
    },
    "discovered": true,
    "items_24h": 17,
-   "items_48h": 85,
-   "outlets": 52,
+   "items_48h": 83,
+   "outlets": 49,
    "kinds": [
     "journalist"
    ],
@@ -5995,27 +5979,19 @@
     }
    ],
    "split": {
-    "a": "Pakistan frames cross-border strikes as necessary pressure against militant sanctuaries thriving under Taliban rule.",
-    "b": "Taliban-led Afghanistan retaliates while India and former President Karzai condemn the strikes as killing civilians and violating sovereignty.",
+    "a": "Pakistan frames its cross-border operations as strategic pressure tactics targeting militant groups on Afghan soil",
+    "b": "Taliban says Pakistani airstrikes killed 13-42 civilians including in a Kabul hospital; Afghanistan retaliates and India condemns the strikes",
     "basis": "extracted from live headlines 2026-06-13",
-    "axis_type": "interpretation",
-    "axis_question": "Pakistan's Afghan strikes: counter-terrorism operation or unlawful attack on civilians?",
+    "axis_type": "factual_dispute",
+    "axis_question": "Were Pakistan's Afghan airstrikes counterterrorism operations or attacks on civilians?",
     "carriers": {
      "a": [
-      {
-       "outlet": "Fair Observer",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUVRtUDF4T3RmdWNIZHpRSVJSM0xkcXEwRXNXeXRReUl0QWUyc1RIeDIwNjAyVmRJRzNsQVRtd1YzdVliY1RLREJNZFd6SFVZakFCSzFfT0tkbkRYbVRCem1vQXI1WWhJVmVseVd4eVB0OVIyVjNuemNYT1huZnlOeV9RN2ZtUXJFdXd0bXFKeENfZzY5dVp0NGNwNU9vMVRDQkpXa3VheTAzWUUxMS15R3l1bWt0cmZ0eUpzUG9R?oc=5",
-       "ts": "2026-06-13T10:12:00Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
       {
        "outlet": "8am.media",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FRmo3NVAyeHFMT0JsRGE5RENHS0dudGFiY3hrTWVOVFRvRkl3TVFIUnNObW1RUFNZLTVmZ3JmdzFOcVJibHVfbS1LS2hXek0yOEJEXzBULTA4S0hVTnR6cTgzeXg1X1hMRmFWb3JCMDc?oc=5",
        "ts": "2026-06-13T14:35:31Z",
-       "provenance": "echo",
+       "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
@@ -6029,10 +6005,10 @@
      ],
      "b": [
       {
-       "outlet": "DD India",
+       "outlet": "MSN",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTDhvMGFMUm40c3dhYTZNYU5QTnVvUTJYc2REVXBYSWhpRnpwLXhLS2tocEhuZUpVR3NBSktNLTFRd1g1MHE0X3d5bFBneDlteXJHMm9Fc2dLVWtnc055NW5OZXpjSERISzNBZG1TeFlCeDhMUW1lZ0RLcTBHYzctbkNKOW9sSlQ1UnRBbzA4YWFZRnBsa25Qa0Jxc0g2bVVQblNJOUl0Y3I1aWdQajU4aWdoT3VSQ1N4YmRoYWNETEZIUQ?oc=5",
-       "ts": "2026-06-11T18:19:56Z",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTnppVHp2NlVnc2licXNOVldiT2lXZE0yTjllaXI5UzRFbXJNd2hkWUdlczdoSjNpa05YT2xNRGZhTHdzR2Y4eVVKTE1FaHV0elNzaGJGdmQ1SWJTVU1adHBvZXNlakhCUUlQVWFEeDlQaWlOeFJycXMtZWVka0U2bWRTdXRJcFRUQ1dkdVg1c0lndnkzd2NhWC0zaFdKT3Y0TVJDLWY3aGRST0lpOTJV?oc=5",
+       "ts": "2026-06-11T22:08:53Z",
        "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
@@ -6059,6 +6035,14 @@
        "ts": "2026-06-13T11:29:03Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "DD India",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbkF1Q0tqTTFLQnNvMkVaa2FueHVjTm1FMmVOUENOc2xGTXNiYTBueVNscFVoazVKMXpIYmZIZnVweC15a0NudUhrcG1lWTAyQUpCbDRsZUo3cGZCak02cG1fU3RrdUFMU2t5eU1hN3Z0S3pmczJCX2NMMmJYTFFTT2loQ1dnQUdwUzYwZ1JYX0N5TFpZR3hYOWxvb0Q?oc=5",
+       "ts": "2026-06-13T13:48:48Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
       }
      ]
     }
@@ -6067,38 +6051,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 50,
+    "outlets_timed": 47,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "The New York Times",
-      "ts": "2026-06-11T19:22:45Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "US press",
-      "items": 1
-     },
-     {
-      "outlet": "CT Insider",
-      "ts": "2026-06-11T19:28:40Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Cleveland.com",
-      "ts": "2026-06-11T19:34:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "arynews.tv",
       "ts": "2026-06-11T20:30:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -6133,6 +6093,30 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "The Canberra Times",
+      "ts": "2026-06-11T21:49:16Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-11T22:08:53Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 14
+     },
+     {
+      "outlet": "News On AIR",
+      "ts": "2026-06-11T22:13:27Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 7
      }
     ],
     "unplaced": []
@@ -6159,23 +6143,18 @@
      "class": "other"
     },
     {
-     "outlet": "DD News",
-     "n": 7,
+     "outlet": "News On AIR",
+     "n": 8,
      "class": "other"
     },
     {
-     "outlet": "News On AIR",
+     "outlet": "DD News",
      "n": 7,
      "class": "other"
     },
     {
      "outlet": "pakistantoday.com.pk",
      "n": 7,
-     "class": "other"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 5,
      "class": "other"
     },
     {
@@ -6199,17 +6178,22 @@
      "class": "other"
     },
     {
-     "outlet": "tolonews.com",
-     "n": 4,
+     "outlet": "Al Jazeera",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Press TV",
+     "n": 3,
+     "class": "state-media"
+    },
+    {
+     "outlet": "azertag.az",
+     "n": 3,
      "class": "other"
     },
     {
-     "outlet": "\u062e\u0628\u0631\u06af\u0632\u0627\u0631\u06cc \u0627\u0637\u0644\u0633",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "IANS LIVE",
+     "outlet": "economictimes.indiatimes.com",
      "n": 3,
      "class": "other"
     }
@@ -6263,25 +6247,20 @@
      ],
      [
       "2026-06-13 18:00",
-      16,
-      56
+      17,
+      52
      ]
     ],
     "mix": {
-     "mainstream": 6,
-     "state-media": 2,
+     "mainstream": 2,
+     "state-media": 1,
      "regional": 1,
      "official": 1,
-     "other": 151
+     "other": 113
     },
     "first_seen": "2026-06-11T19:14:36Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-12T20:43:44Z",
-     "a": "Pakistan frames its cross-border strikes as targeting Afghan Taliban positions responsible for attacks inside Pakistan.",
-     "b": "UN mission and international media confirm 13 Afghan civilians were killed in the Pakistani airstrikes."
-    },
     {
      "captured_utc": "2026-06-12T21:14:57Z",
      "a": "UN mission, NYT, and Beaumont Enterprise confirm 13 Afghan civilians were killed in Pakistani airstrikes on Bahsud and Khogiani districts.",
@@ -6336,10 +6315,15 @@
      "captured_utc": "2026-06-13T18:16:26Z",
      "a": "Pakistan frames cross-border strikes as necessary pressure against militant sanctuaries thriving under Taliban rule.",
      "b": "Taliban-led Afghanistan retaliates while India and former President Karzai condemn the strikes as killing civilians and violating sovereignty."
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "Pakistan frames its cross-border operations as strategic pressure tactics targeting militant groups on Afghan soil",
+     "b": "Taliban says Pakistani airstrikes killed 13-42 civilians including in a Kabul hospital; Afghanistan retaliates and India condemns the strikes"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -6659,14 +6643,26 @@
     ]
    },
    "discovered": true,
-   "items_24h": 17,
-   "items_48h": 55,
-   "outlets": 40,
+   "items_24h": 16,
+   "items_48h": 56,
+   "outlets": 41,
    "kinds": [
     "journalist",
     "official record"
    ],
    "latest": [
+    {
+     "ts": "2026-06-13T19:14:15Z",
+     "title": "UK lawmakers urge government to block London property event over West Bank settlement concerns",
+     "outlet": "Arab News PK",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBHWEVjNmZtQ2lGUENMclJIdU9oZ0xXMzk1NkxvQkY0NUhud0NQUGttcjNWOVlpcUtVcXF0UVVkRFFGdURMUktRVS01OTJ2bUg5S3hJQw?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-13T18:23:53Z",
      "title": "International Amnesty Calls for Action to Halt Israel's Ethnic Cleansing of Palestine and West Bank Annexation",
@@ -6750,83 +6746,47 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-13T09:28:05Z",
-     "title": "Lebanon reports Israeli strikes in south after evacuation warning",
-     "outlet": "The Hindu",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRTdOTklNZFBlZnNxMlcxUll4U3FBSUVvbE9qNHRKNkxwUlNaa05wRlFlMzRxWHFEaWRSR2V6VGpzY3JBVVdLMzB0SHUwRUozbDJ1SXl5bzJMdEN6Z1B4bHZBT0VRXzJoNDJYZWgza1RCdXlNOXUyV0VTeHBQMDFxRUJXcFVnemVVRXVyTzB5THJ3VjAtOGRCcVN5RWFPZjNUcXhyVU1qWklOcHFnajNaRVZjNHBaM2xNTm5VWkpBaU16QzM1YmZwStIBzwFBVV95cUxPdFIxaFVnZm8xdTd1R05vdE5RY1NESjBuQmgyUkt1OWRDcHoyc0MxSVR5SDYzVzAzXzRmRG5Kb3JYRmdJaV9aV2VIdFZpdnBQcE5jcVU0Nlo0eE13QzlfTEs3WmFNSVJ1SmQ0V1Z6R0FnWjVqanhwRXotOHJaUjVPWE1rdWo4d2hqS2hnQUY1Y3ZWWEJGRWRuRkxUVWlCSnAxa3hMeENoU2FrRFZSUlFNYjk3Y2ZwZWpMZkJkelhNM1RxQ21LOGxBLWRNQ2FPaVU?oc=5",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Canada, Norway, the EU, and Western activists are imposing sanctions and pledging funds to counter Israeli settlement expansion and settler violence in the West Bank.",
-    "b": "Israel is advancing legislation to legalize West Bank farm outposts and sending settlement funding plans to its security cabinet.",
+    "a": "Amnesty International and advocacy outlets call Israel's West Bank policies ethnic cleansing and illegal annexation requiring immediate international action",
+    "b": "EU's top diplomat and UK lawmakers call it an 'alarming' surge in settler violence, urging diplomatic measures short of ethnic cleansing language",
     "basis": "extracted from live headlines 2026-06-13",
-    "axis_type": "policy_dispute",
-    "axis_question": "Should Israeli West Bank settlements face international sanctions, or be legalized and expanded?",
+    "axis_type": "interpretation",
+    "axis_question": "Is Israel's West Bank campaign settler violence or systematic ethnic cleansing?",
     "carriers": {
      "a": [
       {
-       "outlet": "The New Arab",
+       "outlet": "PressTV",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNUdrWUhDWUViaDJKZWxjUm9LU0psc0s2YzVFRzV6UUxleGNlVW5tY3NQU0gzRkptRlBJelBFallhMjVuaU9wQ1FSVFFSU2xoZnV0UTJ2TXBIOVFEbGRFUmNLUk9yekVjY3hmM0lMdUwxTFZUaVlXMzR5TnJmUTNWS1N1SU4tSzFhUXV6dkhKYmhXNEpqTEp5WUdHOERMWjhGOWfSAacBQVVfeXFMT1l3MzIxMG9MMmh5X0RocS1UWV8wTHRnS1ZUeXQyU2Nsd3lMUTNzWkVVR1pVSTdzYWEtcGZkb1FvNzRyM3QzSDJ0dFJ0ajcyRFFEdTctUmZWTUxFYmJsdnBMOXFGZ3lnVmFKZ1lPcmE0cWx3TFo1cHJOS1pDc0Rxb1B0Q0NLSk9Ld1U4SHR5Zk1fLXBhOUl6UzBjcG81N3ltQjliMzczdkk?oc=5",
-       "ts": "2026-06-11T11:05:16Z",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNelg1akhLTjlIVTVsYjlZMlpKRzJMeGVELU9hUnhnWmpCd0llYjBWZmkwX3dSMGRlYjdmbnRUaHlVVDVjYnU0YUpmaXo3V3NXV2RNejk1UXJmSC1KMUdsTm8zdXFLRGE0WGhKRk9feF9EVV9NaVZhdE9rSmZqa2QtaG8yOUtJSzQ3RnZuQk5UQW1xOHA5U19hR19IamJKMHE0UzRfSTZQcU9BTk5PMXlLUzctMGt5V0xCNGh3dWlELU5sZnBsazN4MkRxaDlac3c3QUtmZmg0MFhGZU4w?oc=5",
+       "ts": "2026-06-13T10:19:00Z",
        "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
+       "motive_note": "IR state media"
       },
       {
-       "outlet": "The National",
+       "outlet": "elciudadano.com",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa3ZWdmFnbU5GdU1uTXg4eDBjUnlXXzVGVjFMNFl3bHNBOGt6TDg5aklta2k3SFZ5YVBoT2F6NWVKTHpDMXFURFNWT1FPcERjdHdFNkVxbTlSdVhCUkR6SUt6YjhBdVBJemJvQ3VrX1BkdU5ybDFwQ2ZEV1U0UEYzU1NHcC03bzdraXBMOU1qSkk4Z0JTeDEwYUdHUGItUXlDcnJXVVdjNFktTlF2QmtrdkhkS1hTQksxbVNYeVFHRGNYUQ?oc=5",
-       "ts": "2026-06-11T16:30:14Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Al Jazeera",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNLTNkUzVzaGRzZ0RrOUxmWEVkUGFaVGVaNktWak5TeWk2b0FMM0hYQndrelFMUFZnVENRcjJDcWdpejRYY3RDdWVjdWl4RHNoUnVMTVA5V25VQWNXcWh2SjFNY2hwUHpQa29lZFQ0TnAwZ2lTeUxIdVZRWi1EUjRub2wxdW44WHRfVFM3WTFVSGpGN3Zlemx5c0RPdnlaY3dodzBSVEpjUlR0a1NKdkpPV2pmVDRTQdIBuwFBVV95cUxNSDBHWXoyMnk3T3pWdHVKeXhPRlVLYXNOU3pEYThESUhtVmh0aGVfcVNUUVk5d0tuT1hTZlV6U0RGUnNwZk1Cdk0wT2FDaUMyb1FZemVFbFJoODQ4YVlSSUs1aVdwTkxVbHVQNmJ6XzI0T1NteW9rdTVzT0JscHFRZF9rcUxweDlrZzFVYWFPLTdwWVNkYnA4WlBKbzBYYzFscWJxQWRhUndIRzBxU3dIOGxLV0xYZ0IxNWU0?oc=5",
-       "ts": "2026-06-11T18:47:14Z",
-       "provenance": "echo",
-       "motive_note": "Qatar state-funded international broadcaster"
-      },
-      {
-       "outlet": "CBC",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSUV4QUtGeUk1TWJxV1p1QXdLeEY4YXhMaExUSFVnQWFvZHE5NVNVR2pFU2lkYnpqbVZFZmQ2cEhxcll4T1UwVENlZ2tic3BQanpGMFo1azIwQ1lpSmgtRFprWE1yelZYaE0xbkpsT0NIbW1TWjVKZDB1QzFoT3JGLVVxSThmVEZsTG9SY01peE4?oc=5",
-       "ts": "2026-06-12T17:46:19Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "CHEK News",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSGh5OGZEVHBCRmlRdXMzTzJFNzZrSXFOOFB5b3VPZld2TG42Y2IxbFBFVTI4b1BGb1N2TEowdy1XcUw1em5kYUFqQ2dRNXYzdUphQ3pVand6ZW04N1RnejBZYk82MnBLSG5sLThfN0lqTmF6dE9QaHpzWFBiWHdRM0Z1R2plZUdidThOcXdDUi1hOVo5TTdZT0JwSzRRVjFaa2JQS2N4cjgwS2RPVHc?oc=5",
-       "ts": "2026-06-12T18:25:00Z",
+       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTXdEZGRELXRyaUV6R2EtT3JFbk5jT0pnMEhJMGZJcEE0VmRTc0tLdEdxYXE2RFRiZjZXLUdwWlkxMXhSUDFPWHJlLXNydjFuM2RkeUR0M3JyQ1pGNkU2RG1JUnQ2MVF0dUs0dmN5emZRY0cyR1N1ZzVQeU9UeUh0YnM4NkVZX1lOeHE2TGtiZU9NYWZUb0pPSGZHenBDaFQ0NmIzVDNhTnVmZUs0ckxGY20wM1JweHY4akxFdzk3ZmJScjNHVXVWdDYyaWpNYVJPaWlLa2NNbHZZdk9RbW5XMA?oc=5",
+       "ts": "2026-06-13T18:23:53Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
      ],
      "b": [
       {
-       "outlet": "Haaretz",
+       "outlet": "PressTV",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPV3RXSGtNSlkteS1nalRBX1lNc3RsZzk5QzNpQlA2cHl5eWlwUzlQZWtKMXhrdHNCWXZTOWRONFNQNkRYYnFwUmU5bTFmYzkyMENleEpPSXFpZUhqTnctWDRpUDFQdDhGSnotZDd4MkYyNzhHVmNwOXJXQk4tUGNURmNvWVJNQXUwQlB6c21ZQXdJNHAzMFY0X0JhWmNtVWpQRVJMM1AzeEJ2dkdGMFpXd3dpeFJLUWJqWl9qNnVwNEhSbFpWTWJGT0FQUTMyZXNNbVhHalBUSTJreE1SdVRXLVl4TkpTaTh5b3drT3Z1NmxOUWNkak42SDFQYm9keGp2Zzd2aGNDdnpxYmljUEE?oc=5",
-       "ts": "2026-06-12T13:07:00Z",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNelg1akhLTjlIVTVsYjlZMlpKRzJMeGVELU9hUnhnWmpCd0llYjBWZmkwX3dSMGRlYjdmbnRUaHlVVDVjYnU0YUpmaXo3V3NXV2RNejk1UXJmSC1KMUdsTm8zdXFLRGE0WGhKRk9feF9EVV9NaVZhdE9rSmZqa2QtaG8yOUtJSzQ3RnZuQk5UQW1xOHA5U19hR19IamJKMHE0UzRfSTZQcU9BTk5PMXlLUzctMGt5V0xCNGh3dWlELU5sZnBsazN4MkRxaDlac3c3QUtmZmg0MFhGZU4w?oc=5",
+       "ts": "2026-06-13T10:19:00Z",
        "provenance": "original",
-       "motive_note": "IL regional press"
+       "motive_note": "IR state media"
       },
       {
-       "outlet": "middle-east-online.com",
+       "outlet": "Arab News PK",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYngxMWZCVU4xM214ckRJeW05MTlnSXR6dWI5ZG96eVIwU2Rsemp0bjFiS1VxTjAxS3BNVUxGRnNoZ3lERkhjUWx2WEw2UnBfeDl1NlZQZWlab0dqOUh2RVFIaVJTRW9HQjc5Z21Va1lZUElKcDZBVDZsOWN2QkwyWEdVN0d1Z1FVMGpVNS1qd2lPSnFaT3ZJQWpXdFJBQQ?oc=5",
-       "ts": "2026-06-12T13:57:38Z",
+       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBHWEVjNmZtQ2lGUENMclJIdU9oZ0xXMzk1NkxvQkY0NUhud0NQUGttcjNWOVlpcUtVcXF0UVVkRFFGdURMUktRVS01OTJ2bUg5S3hJQw?oc=5",
+       "ts": "2026-06-13T19:14:15Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
@@ -6837,7 +6797,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 37,
+    "outlets_timed": 38,
     "outlets_unplaced": 0,
     "chain": [
      {
@@ -7076,7 +7036,7 @@
      ],
      [
       "2026-06-13 18:00",
-      16,
+      17,
       40
      ]
     ],
@@ -7085,16 +7045,11 @@
      "state-media": 1,
      "regional": 0,
      "official": 1,
-     "other": 77
+     "other": 75
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-12T19:14:37Z",
-     "a": "Amnesty International and Western governments call Israel's West Bank policies a state-led ethnic cleansing campaign warranting international sanctions.",
-     "b": "Israel advances plans to legalize West Bank farm outposts and expand settlement funding, treating settlement expansion as sovereign domestic policy."
-    },
     {
      "captured_utc": "2026-06-12T20:21:20Z",
      "a": "Amnesty International and regional outlets say Israel is running a state-led ethnic cleansing campaign through settlement expansion and settler violence",
@@ -7149,10 +7104,15 @@
      "captured_utc": "2026-06-13T09:14:15Z",
      "a": "Canada, Norway, the EU, and Western activists are imposing sanctions and pledging funds to counter Israeli settlement expansion and settler violence in the West Bank.",
      "b": "Israel is advancing legislation to legalize West Bank farm outposts and sending settlement funding plans to its security cabinet."
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "Amnesty International and advocacy outlets call Israel's West Bank policies ethnic cleansing and illegal annexation requiring immediate international action",
+     "b": "EU's top diplomat and UK lawmakers call it an 'alarming' surge in settler violence, urging diplomatic measures short of ethnic cleansing language"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -7189,14 +7149,14 @@
     "diplomacy"
    ],
    "brief": {
-    "generated_utc": "2026-06-13T15:18:59Z",
+    "generated_utc": "2026-06-13T20:14:29Z",
     "sentence_count": 14,
     "dropped_count": 0,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "Al Jazeera reports that five people were killed as Israel struck southern Lebanon and issued forced displacement orders on June 13.",
+        "text": "Al Jazeera reports five people were killed as Israel struck south Lebanon and issued forced displacement orders.",
         "cites": [
          {
           "outlet": "Al Jazeera",
@@ -7208,7 +7168,7 @@
         ]
        },
        {
-        "text": "Earlier Al Jazeera reporting on the same day put the toll at one killed alongside the displacement orders.",
+        "text": "An earlier Al Jazeera report described one person killed in strikes on south Lebanon accompanied by displacement orders.",
         "cites": [
          {
           "outlet": "Al Jazeera",
@@ -7220,35 +7180,7 @@
         ]
        },
        {
-        "text": "On June 12, Al Jazeera reported that one person was injured as Israel hit southern Lebanon with air raids and artillery.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdVRDNDN3a1ptTmVJUV93T1NGMGF0QnVJRjhfb2hzMlh2NkVNVW9KTmxmVzNrWkJaRi1aODNFTER5anFrVEQwTmIyc3lzRkFmTHdWNGJBR09mZWFDLXdMSmQ3M0kyUDd2STM2OG0wS1dxWUtwMUxqZjM1LXpUOU82bVU4bnc4R0lDNnZyQ3ZlLW9HMUVrdGhNbV9wMzN6ZG5DU0VBLUhnYkViaVB5S0HSAbMBQVVfeXFMUEtxaTdZcXNrSmFYQkV5WXlaN29Mdk5xcXg4bmZtelJKVHJnSE9kcGMzSnBtcVpYOVVxWTZ4d0lxT0diMjJRUG5YMGM5SkxtWF9uTElTODg3VzBMcVVtQ2FDZXBqWjhYQnc2MFZLM1JhZXNIR0E2TzZLbnpIRWpkdkIycjY2U2dfVUVfZFdUam1JOU5CeXB5bFVlNEFvcDdYR0JYZVhaWDlheGEtS2Z4dng3ZFE?oc=5",
-          "ts": "2026-06-12T12:05:41Z",
-          "title": "One injured as Israel hits southern Lebanon with air raids, artillery"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Al Jazeera says Israel is attacking Lebanon despite being included in a potential peace deal.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/13/israel-attacks-lebanon-despite-being-included-in-potential-peace-deal?traffic_source=rss",
-          "ts": "2026-06-13T10:13:54Z",
-          "title": "Israel attacks Lebanon despite being included in potential peace deal"
-         }
-        ]
-       },
-       {
-        "text": "Press TV reports that Israel launched fresh aggression on southern Lebanon, violating an April ceasefire.",
+        "text": "Press TV reports Israel launched fresh aggression on southern Lebanon and calls it a violation of the April ceasefire.",
         "cites": [
          {
           "outlet": "Press TV",
@@ -7258,65 +7190,13 @@
           "title": "Israel launches fresh aggression on southern Lebanon, violating April ceasefire"
          }
         ]
-       },
-       {
-        "text": "Al Jazeera asks whether Israel's 'buffer zone' inside Lebanon is an attempt to grab gas reserves.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeEVZcFJMRUh5a212MEpTVEEzUDJjdzRWM012dDBUaW9XMmRYRkczdlpYU2FqcmpXSjdHd3BaUzdxOGFEUHRPdHBOZnZBR1Jjd19Nbi1QaG05UjNKakEtcTF5MHBLYzNkVnIxbTRUR2hSRTFfdTg3Q2hCa09waWMwYURTWVltcVdDM3dnaG1aYkZ3MUlGamp2SFZTLTBYZlk4Rm8wcWJDVE9mRi1lN1dwbE94OGrSAboBQVVfeXFMUGhoakZacnVsWXR3V3ZucGpZZFZRZ0FaaXVCNmh2SXYxaFgwOHE2c1A5RThnRkFMbHA3MXI3VEo0UFNwb3JtUEd4bjdFQWRGSWtqUGJ2VkUwWnRGS1pOblhpUXNIUC14SWJMaG9vTXZxVDZ0RmNEMzV4MFRPSnNtSjlNVG5sc1NCWUtMNFY1LV9tTG8xUmtxS0VqRUc1VHBxMzl2ZVhSTEJhS0pNczlvT0V2R2pnRXZfMkNn?oc=5",
-          "ts": "2026-06-12T09:44:01Z",
-          "title": "Is Israel\u2019s \u2018buffer zone\u2019 inside Lebanon an attempt to grab gas reserves?"
-         }
-        ]
        }
       ]
      },
      {
       "sentences": [
        {
-        "text": "Press TV reports that Hezbollah pounded Israeli army technical devices in southern Lebanon.",
-        "cites": [
-         {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/13/770348/Hezbollah-drone-strike-targets-Israeli-army-s-technical-devices-in-southern-Lebanon",
-          "ts": null,
-          "title": "Hezbollah pounds Israeli army\u2019s technical devices in southern Lebanon"
-         }
-        ]
-       },
-       {
-        "text": "Press TV says Hezbollah vows to keep its weapons until the Israeli occupation ends.",
-        "cites": [
-         {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2025/08/15/753153/Hezbollah-vows-to-keep-weapons-until-Israeli-occupation-ends",
-          "ts": null,
-          "title": "Hezbollah vows to keep weapons until Israeli occupation ends"
-         }
-        ]
-       },
-       {
-        "text": "Press TV reports that Lebanon is rising against a US-backed plan to disarm Hezbollah.",
-        "cites": [
-         {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2025/08/08/752727/Right-to-defend--Lebanon-rises-against-US-backed-plan-to-disarm-Hezbollah",
-          "ts": null,
-          "title": "Right to defend: Lebanon rises against US-backed plan to disarm Hezbollah"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The Straits Times reports that the US struck Iranian drones while talks continue for an interim deal.",
+        "text": "The Straits Times reports US forces struck Iranian drones while talks continue for an interim deal.",
         "cites": [
          {
           "outlet": "The Straits Times",
@@ -7328,7 +7208,7 @@
         ]
        },
        {
-        "text": "Press TV says Iran vows to avenge 104 sailors it describes as martyred in a US torpedoing of a frigate.",
+        "text": "Press TV reports Iran vowed to avenge 104 sailors it says were killed in a US torpedoing of a frigate.",
         "cites": [
          {
           "outlet": "Press TV",
@@ -7344,19 +7224,59 @@
      {
       "sentences": [
        {
-        "text": "sana.sy reports that Paris hosted an international conference to revive the two-state solution.",
+        "text": "Al Jazeera reports Israel attacked Lebanon despite being included in a potential peace deal.",
         "cites": [
          {
-          "outlet": "sana.sy",
-          "kind": "state media",
-          "url": "https://sana.sy/en/international/2323044/",
-          "ts": "2026-06-12T23:15:00Z",
-          "title": "Paris hosts international conference to revive two - state solution"
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVEVXMzhOR2JNbFRQMng2TEhuS0JqYUNXcldTc0tfd2hZUS15aWJ4bDdsODR1U1R0MVRtSDl2TFRXVGVTVU94TDRHM0MzMDIwRXA1UGV2OHZTSEpvYkZ0WjRVUDk1TmVSOGEtSTlMTElHVmVZWWMxNmdvUHd3XzJEbnpTVVhFVWs0Z3UyTVF6cDFlbXkzZm9QaWVvdnVTVXlpa05tSnBkalMtZHhIWXdqa3VvWUFNRlNfVkcxY9IBwgFBVV95cUxQcndWZl9VeERJUTJLbDRSNUhQNkZyYmNCbTJmQnVaaEhRTVhzdi02aHFMZXlpNzNHRnVhQUlzV0M2Y1J5TFJta3FLT3VyMlRlRklfRWVjQWR1OWpUX2pFYVl1b28xOXgyaElPd2ZMRGF4czNscjBOUEdLOUdFY1Q5ZjhJbHFjalQ1THZ1ZU9CS2ZTUUNUUGkzaHlGbzBrWEE5ODVrek4yNlVtUmJEZUdjRW5WVWFRNnFiVVdhb3o4cmluZw?oc=5",
+          "ts": "2026-06-13T10:14:21Z",
+          "title": "Israel attacks Lebanon despite being included in potential peace deal"
          }
         ]
        },
        {
-        "text": "Ynetnews reports that the Paris conference sought a new push for the two-state solution without Israel or the US.",
+        "text": "An Al Jazeera piece asks whether Israel's buffer zone inside Lebanon is an attempt to grab gas reserves.",
+        "cites": [
+         {
+          "outlet": "aljazeera.com",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/features/2026/6/12/is-israels-buffer-zone-inside-lebanon-an-attempt-to-grab-gas-reserves",
+          "ts": "2026-06-12T10:30:00Z",
+          "title": "Is Israel  buffer zone  inside Lebanon an attempt to grab gas reserves ? | Israel attacks Lebanon"
+         }
+        ]
+       },
+       {
+        "text": "The Washington Free Beacon published a commentary titled The Case for Israel.",
+        "cites": [
+         {
+          "outlet": "freebeacon.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE11d3hmZlZ0SFFwX3AzaThkV1pkS0ZCOThITmNSakZ4WHV5cTRBNDVTelFPZXB2WHhNM09HWk5iMlA4N3Z6d1F2ckFkSlowajdCcy1oVWJiNXhiTjhZSkVR?oc=5",
+          "ts": "2026-06-13T09:09:06Z",
+          "title": "The Case for Israel"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "France 24 reports Israeli and Palestinian groups urged the world not to abandon the two-state solution.",
+        "cites": [
+         {
+          "outlet": "France 24",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPS01jSWNrLVEtbURzOTNSdFJDbkdNVTBZa0p4WkhMdFhxOVdjQVQxR0JTbFZia2d1eDR6eGYtRnFMUjBSZVhUZ0k0ZDgyeEFESDVRMVhNYl9sNUZzeTRQTzhjbU85dHhFOU9ESFlZbVQtTDlka3FlQlp2ZUIyYkdoa1NNSUlIRXRScEFCMjRId3JfblZGeW03RDlrZ0lERmJTRlMyWXlZZks5bWFqR0Q2YlJ2OENWa19nOXF5dVc1d2FVdw?oc=5",
+          "ts": "2026-06-12T23:58:00Z",
+          "title": "Israeli and Palestinian groups urge world not to abandon two-state solution"
+         }
+        ]
+       },
+       {
+        "text": "Ynetnews reports the Paris conference is seeking a new push for a two-state solution without Israel or the United States.",
         "cites": [
          {
           "outlet": "ynetnews.com",
@@ -7368,14 +7288,54 @@
         ]
        },
        {
-        "text": "The Defense Post reports that Israeli and Palestinian groups urged G7 support for a two-state solution.",
+        "text": "Al-Monitor reports Israeli and Palestinian civil society groups met in France as two-state hopes dim.",
         "cites": [
          {
-          "outlet": "The Defense Post",
+          "outlet": "Al-Monitor",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE90VkZjQlpmdUNWc1lsUnR5NnVkVGI5NGprRUd4ejEwU01qakViTHJ0YjJBbnpCZ0JKbGM2WWFZUnhpME5FeEVIcEVuRElFdU4wdDhRaWN1NURNNFZEbF9pWkxEbWZKMzRNLWxpUklmb00yWWlNY2dz0gF8QVVfeXFMUFlnM0pZWXh3VUNaUlVtWDJsbEVYVmJkZ2M5N0R5U3VMYkFZWUdOZWtvVTlyVi1aS1hqcXYtYXJSNWtjc1Q0OEVhUTMtWk13Z0xleUV4NHFfcnVZUndMX3d5SlJHdWh5Q256aW5McmFsU3RTNWZWVTVZeDBJdA?oc=5",
-          "ts": "2026-06-13T07:06:53Z",
-          "title": "Israeli, Palestinian Groups Urge G7 Support for Two-State Solution"
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNR0ZmV1VaQWtDRnV1UnBWNjZ4VnB0bFlwcmFtNy01ai0yRHY1bE5henltRUduN0Mta0g1d2g3b0hvYmFHZkFUTlltdDJzemw3WXMyWEFWTFVoeWVyQjhKQkRKWmR2VHJZQnZ6dmJKbzBSMFU2OXdkWUtFeXAycjJHakpCZFNseXUteVkxY3FSWFhSS3RxRXpTWm4zaXQxNFUyYlhBNWxtNmZIdWdlX0R0elJnLW9Vdncw?oc=5",
+          "ts": "2026-06-12T18:08:38Z",
+          "title": "Israeli, Palestinian civil society groups meet in France as two-state hopes dim"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Press TV reports Hezbollah pounded Israeli army technical devices in southern Lebanon.",
+        "cites": [
+         {
+          "outlet": "Press TV",
+          "kind": "state media",
+          "url": "https://presstv.ir/Detail/2026/06/13/770348/Hezbollah-drone-strike-targets-Israeli-army-s-technical-devices-in-southern-Lebanon",
+          "ts": null,
+          "title": "Hezbollah pounds Israeli army\u2019s technical devices in southern Lebanon"
+         }
+        ]
+       },
+       {
+        "text": "Press TV reports Hezbollah vowed to keep its weapons until the Israeli occupation ends.",
+        "cites": [
+         {
+          "outlet": "Press TV",
+          "kind": "state media",
+          "url": "https://presstv.ir/Detail/2025/08/15/753153/Hezbollah-vows-to-keep-weapons-until-Israeli-occupation-ends",
+          "ts": null,
+          "title": "Hezbollah vows to keep weapons until Israeli occupation ends"
+         }
+        ]
+       },
+       {
+        "text": "Press TV reports pro-Palestine protesters rallied in Melbourne on the final day of the Israeli president's Australia trip.",
+        "cites": [
+         {
+          "outlet": "Press TV",
+          "kind": "state media",
+          "url": "https://presstv.ir/Detail/2026/02/12/763927/Pro-Palestine-protesters-rally-in-Melbourne-on-final-day-of-Israeli-President-s-Australia-trip",
+          "ts": null,
+          "title": "Pro-Palestine protesters rally in Melbourne on final day of Israeli president's Australia trip"
          }
         ]
        }
@@ -7385,8 +7345,8 @@
    },
    "discovered": true,
    "items_24h": 14,
-   "items_48h": 44,
-   "outlets": 29,
+   "items_48h": 45,
+   "outlets": 30,
    "kinds": [
     "journalist",
     "state media",
@@ -7399,7 +7359,7 @@
      "outlet": "Al Jazeera",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNa29qdXJJR3BneTNiSnNTRHh6VzJpZk9tYVBJU0sxV29Jb1VpQXJFOEpXdDY0cy1RcDJ6V0J1R0lTUjEwVWpfb184RWFMalRFczdOeWxtWjR2cEFkRnpLYm0zcEN5c3RhdWJ3T2VOemxvcmNiLWZsbGFHTUNUcjR6NnRfMEd2ekEyY21RRXdVaDFvSS1DQzN3dGJDU3l3Z0lZUmgzMmU2cktpOUhkQ1hYa1hyVUvSAboBQVVfeXFMTklRMVNUSHM0MTRHYXpQUXppOVd0dmlYQjdsZXVuZVdueXB0dEh3ZVNMOWJNWXZQRWNNZkhMWXZhUGpzeHlyUnBFYlRuZmhiWS1hS2loRmFObU9TYjJEdzFoWG1pZ3poSXNyWUt3YWdtTW1qaVo0bklnTHhITmIzdHpPcUNfcTFFb3JFREpzNmh5em1tQmZFQUg4UV8yVzJKSGptcE9pbGdaVFA3UHZWUTAtaXhYQ1Zrd3p3?oc=5",
-     "rel": 7,
+     "rel": 5,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -7471,7 +7431,7 @@
      "outlet": "Al Jazeera",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSVExU1RIczQxNEdhelBRemk5V3R2aVhCN2xldW5lV255cHR0SHdlU0w5Yk1ZdlBFY01mSExZdmFQanN4eXJScEViVG5maGJZLWFLaWhGYU5tT1NiMkR3MWhYbWlnemhJc3JZS3dhZ21NbWppWjRuSWdMeEhOYjN0ek9xQ19xMUVvckVESnM2aHl6bW1CZkVBSDhRXzJXMkpIam1wT2lsZ1pUUDdQdlZRMC1peFhDVmt3enfSAboBQVVfeXFMTklRMVNUSHM0MTRHYXpQUXppOVd0dmlYQjdsZXVuZVdueXB0dEh3ZVNMOWJNWXZQRWNNZkhMWXZhUGpzeHlyUnBFYlRuZmhiWS1hS2loRmFObU9TYjJEdzFoWG1pZ3poSXNyWUt3YWdtTW1qaVo0bklnTHhITmIzdHpPcUNfcTFFb3JFREpzNmh5em1tQmZFQUg4UV8yVzJKSGptcE9pbGdaVFA3UHZWUTAtaXhYQ1Zrd3p3?oc=5",
-     "rel": 7,
+     "rel": 5,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -7483,7 +7443,7 @@
      "outlet": "Al Jazeera",
      "kind": "journalist",
      "url": "https://www.aljazeera.com/news/2026/6/13/one-killed-as-israel-hits-south-lebanon-issues-forced-displacement-orders?traffic_source=rss",
-     "rel": 7,
+     "rel": 5,
      "coverage": {
       "non_mainstream": 0,
       "mainstream": 1
@@ -7531,16 +7491,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 28,
+    "outlets_timed": 29,
     "outlets_unplaced": 1,
     "chain": [
      {
       "outlet": "TASS",
-      "ts": "2026-06-11T19:40:42Z",
+      "ts": "2026-06-11T20:16:38Z",
       "kind": "state media",
       "role": "origin",
       "motive_note": "RU state media",
-      "items": 2
+      "items": 1
      },
      {
       "outlet": "Reuters",
@@ -7583,16 +7543,16 @@
       "items": 2
      },
      {
-      "outlet": "Euronews",
-      "ts": "2026-06-12T07:17:35Z",
+      "outlet": "RFI",
+      "ts": "2026-06-12T06:47:41Z",
       "kind": "journalist",
       "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "motive_note": "FR state-funded international broadcaster",
+      "items": 2
      },
      {
-      "outlet": "english.aawsat.com",
-      "ts": "2026-06-12T08:15:00Z",
+      "outlet": "Euronews",
+      "ts": "2026-06-12T07:17:35Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -7680,6 +7640,11 @@
      "class": "other"
     },
     {
+     "outlet": "RFI",
+     "n": 2,
+     "class": "other"
+    },
+    {
      "outlet": "TASS",
      "n": 2,
      "class": "state-media"
@@ -7706,11 +7671,6 @@
     },
     {
      "outlet": "Discovery Alert",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Euronews",
      "n": 1,
      "class": "other"
     }
@@ -7779,7 +7739,7 @@
      ],
      [
       "2026-06-13 18:00",
-      13,
+      14,
       29
      ]
     ],
@@ -7788,7 +7748,7 @@
      "state-media": 3,
      "regional": 0,
      "official": 1,
-     "other": 34
+     "other": 32
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -7855,7 +7815,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -8110,7 +8070,7 @@
    },
    "discovered": true,
    "items_24h": 9,
-   "items_48h": 37,
+   "items_48h": 36,
    "outlets": 16,
    "kinds": [
     "journalist",
@@ -8283,18 +8243,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "TASS",
-      "ts": "2026-06-11T19:58:37Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "RU state media",
-      "items": 5
-     },
-     {
       "outlet": "Institute for the Study of War",
       "ts": "2026-06-12T01:28:14Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -8344,6 +8296,14 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "IL regional press",
+      "items": 1
+     },
+     {
+      "outlet": "CBC",
+      "ts": "2026-06-12T08:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      }
     ],
@@ -8570,7 +8530,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8835,8 +8795,8 @@
    },
    "discovered": false,
    "items_24h": 3,
-   "items_48h": 19,
-   "outlets": 15,
+   "items_48h": 17,
+   "outlets": 14,
    "kinds": [
     "journalist",
     "state media"
@@ -9004,22 +8964,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 14,
+    "outlets_timed": 13,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "The Eastleigh Voice",
-      "ts": "2026-06-11T19:50:10Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
      {
       "outlet": "Latest news from Azerbaijan",
       "ts": "2026-06-12T00:14:47Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -9070,6 +9022,14 @@
       "role": "echo",
       "motive_note": "FR state-funded international broadcaster",
       "items": 1
+     },
+     {
+      "outlet": "Modern Ghana",
+      "ts": "2026-06-12T14:48:49Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": []
@@ -9085,11 +9045,6 @@
    "sources": [
     {
      "outlet": "Daily Sabah",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Latest news from Azerbaijan",
      "n": 2,
      "class": "other"
     },
@@ -9110,11 +9065,6 @@
     },
     {
      "outlet": "Sudan Tribune",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "The Eastleigh Voice",
      "n": 2,
      "class": "other"
     },
@@ -9140,6 +9090,16 @@
     },
     {
      "outlet": "Bangladesh Post",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "CGTN",
+     "n": 1,
+     "class": "state-media"
+    },
+    {
+     "outlet": "DW.com",
      "n": 1,
      "class": "other"
     }
@@ -9209,7 +9169,7 @@
      [
       "2026-06-13 18:00",
       3,
-      16
+      15
      ]
     ],
     "mix": {
@@ -9284,7 +9244,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://www.dabangasudan.org/wp-content/uploads/2026/06/\u0636\u062d\u0627\u064a\u0627-\u0627\u0644\u0623\u0628\u064a\u0636.jpg",
@@ -9796,7 +9756,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -9988,7 +9948,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 2,
+   "items_24h": 1,
    "items_48h": 8,
    "outlets": 3,
    "kinds": [
@@ -10247,17 +10207,17 @@
      "class": "other"
     },
     {
-     "outlet": "TVP World",
-     "n": 1,
-     "class": "other"
-    },
-    {
      "outlet": "The Moscow Times",
      "n": 1,
      "class": "other"
     },
     {
      "outlet": "asatunews.co.id",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "theins.press",
      "n": 1,
      "class": "other"
     }
@@ -10325,7 +10285,7 @@
      "state-media": 1,
      "regional": 1,
      "official": 0,
-     "other": 12
+     "other": 11
     },
     "first_seen": "2026-06-11T14:43:24Z"
    },
@@ -10392,7 +10352,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -10979,7 +10939,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/04/houthis-april-3.jpg",
@@ -11007,33 +10967,33 @@
    "status": "watching"
   },
   {
-   "sample": "\u2018I only want justice\u2019: bereaved families seek closure one year on from Air India crash",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
    "sample": "Canada Has Its Elbows Up and Arms Wide Open at the World Cup",
    "outlets": 3,
    "count": 3,
    "status": "watching"
   },
   {
-   "sample": "Number of victims of Israeli strikes on Lebanon increases to 3,756 - Health Ministry",
+   "sample": "\u2018Not in my name\u2019: The Jewish diaspora fighting the consensus on Israel",
+   "outlets": 3,
+   "count": 5,
+   "status": "watching"
+  },
+  {
+   "sample": "Hungary\u2019s former PM Orban re-elected party leader despite election loss",
+   "outlets": 3,
+   "count": 4,
+   "status": "watching"
+  },
+  {
+   "sample": "Israel seeks instability across West Asia: Analyst",
    "outlets": 3,
    "count": 3,
    "status": "watching"
   },
   {
-   "sample": "Pro-Palestine protesters rally in Melbourne on final day of Israeli president's Australia trip",
-   "outlets": 4,
-   "count": 7,
-   "status": "watching"
-  },
-  {
-   "sample": "Gwyneth Paltrow faces online backlash for starring in luxury Israel real estate ad",
-   "outlets": 4,
-   "count": 4,
+   "sample": "Gwyneth Paltrow draws backlash after starring in ad for luxury Israeli development",
+   "outlets": 8,
+   "count": 8,
    "status": "watching"
   }
  ],
@@ -11048,25 +11008,25 @@
   "situations": 16,
   "situations_active": 16,
   "discovered": 11,
-  "items": 5071,
-  "developments": 4983,
-  "claims": 882,
-  "carriers": 2671,
-  "steelmans": 744,
+  "items": 5099,
+  "developments": 5011,
+  "claims": 896,
+  "carriers": 2708,
+  "steelmans": 758,
   "deep_reports": 16,
-  "entities": 240,
-  "edges": 5917,
+  "entities": 242,
+  "edges": 6005,
   "history_nodes": 191,
-  "gate_rejects_7d": 87,
-  "runs": 70,
+  "gate_rejects_7d": 88,
+  "runs": 71,
   "backend": "st"
  },
  "gate": {
-  "clusters": 34,
+  "clusters": 32,
   "accepted": 0,
   "rejected": 1,
   "existing": 1,
-  "below": 32,
+  "below": 30,
   "pending": 0
  },
  "gate_summary": {
@@ -11081,6 +11041,6 @@
   "edition_utc": "2026-06-13",
   "panels": 7,
   "appendix": 8,
-  "overflow": 559
+  "overflow": 543
  }
 }
