@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-06-14T18:12:54Z",
+ "generated_utc": "2026-06-14T19:13:32Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
@@ -16,7 +16,8 @@
    "nyt-world",
    "presstv",
    "taipeitimes",
-   "tass"
+   "tass",
+   "unnews"
   ],
   "failed": [
    {
@@ -25,9 +26,9 @@
     "reason": "HTTP Error 403: Forbidden"
    },
    {
-    "id": "unnews",
-    "label": "UN News",
-    "reason": "not well-formed (invalid token): line 1, column 0"
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
    },
    {
     "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
@@ -50,13 +51,8 @@
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
-    "id": "gdelt:belfast-anti-immigration-riots-injure-police",
-    "label": "GDELT Belfast anti-immigration riots injure police",
-    "reason": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "id": "gdelt:west-bank-settler-sanctions-ethnic-cleansing",
-    "label": "GDELT West Bank settler sanctions ethnic cleansing",
+    "id": "gdelt:trump-reframes-us-china-relationship-as-peer-pow",
+    "label": "GDELT Trump reframes US-China relationship as peer powers",
     "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
@@ -120,57 +116,45 @@
     "war"
    ],
    "brief": {
-    "generated_utc": "2026-06-14T15:15:17Z",
-    "sentence_count": 21,
-    "dropped_count": 1,
+    "generated_utc": "2026-06-14T19:13:16Z",
+    "sentence_count": 20,
+    "dropped_count": 2,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "Ukraine struck an oil facility and a chemical plant inside Russia, according to President Volodymyr Zelensky.",
+        "text": "Zelensky described the conversation with Trump as a 'wonderful' phone call held ahead of the G7 summit.",
         "cites": [
          {
-          "outlet": "Al Arabiya English",
+          "outlet": "Kyiv Independent",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZ2RQd05zV2VwTng5bEZobEJZNlhzQ1QwZjdYNHM1ODg5bGJvby1UbmYwbmVudjZyMDZ0dUtuSUVnbGdVSXluWDJBLWJxMUh2ZTdvck1RaUNrR2ZjSG9IRjFUTVlrbmVyZTNrV2k1YkhqOXpIRlhXZWlBRHhEUlFWaDA3TjhieERhNmtyUmlRSGVPZUFETzVYNnlQblZJRVphQjZWSW5aVVZpa1RjXzd6NVZjbmVqYXfSAbwBQVVfeXFMTXlrZmVIa0ZHek1YS2FnY1ZTalh5Q2hVNFFkazlGdGpQMGprVlJMY0gwYTlGcnl3d05Ob0RqYmhUd2tldlJYUzBwek4wbXUtYVB2MEZtRW9LTGllZjlwU0FaVDFmdWh4RFozYlQ3ZkhzVDFrQV91WmF2NENNcjhrcUNSY3RMMXdEOUhva05Zelk4THlhYnRnZTdrRFVXTnJWazZ3cVF5QUc5XzhaQ0hCOWd4RU1vTV8xRTN2cFI?oc=5",
-          "ts": "2026-06-14T11:33:00Z",
-          "title": "Zelenskyy says Ukraine hit oil facility, chemical plant in Russia"
+          "url": "https://kyivindependent.com/zelensky-holds-phone-call-with-trump/",
+          "ts": "2026-06-14T18:13:49Z",
+          "title": "BREAKING: Zelensky holds 'wonderful' phone call with Trump ahead of G7 summit"
          }
         ]
        },
        {
-        "text": "Zelensky said Ukraine hit an oil facility in Russia's Yaroslavl region.",
+        "text": "Reuters reports that Zelenskiy discussed peace talks in the call with Trump.",
         "cites": [
          {
-          "outlet": "Anadolu Ajans\u0131",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbmlfUzhzNS10aGVwcW9MbFBiaWR3UFZGRmVsQ1cycUp6UXRKTVlUTGViWk96Z0V3TjM5NUdBcXhpYXQ1OWdzenJ4MnFwTVpUUTNrWDZ5aV81Mk1xWkZDSno4bmFPTUlZQ29KR3Z2Y2N6cDRaRjFnVy03RmlxUEx3WGxFWUc5dk4tQ2VhQUxyazZVXzdKbjhsdFk3RnpMNzljOUdJeHBncF9OOGo3WElBbTRSbWJfZEtsT0xvR20xRmU?oc=5",
-          "ts": "2026-06-14T10:25:17Z",
-          "title": "Ukraine struck oil facility in Russia\u2019s Yaroslavl region, says Zelenskyy"
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNWHg3Sy0yMklrNktfeUszZ2lWVnlEZVlXMDV5V0xLUHJ3UzQ3aHhMc3hJUEFhMG1mV256cGpCT1d2YnZQNHZta3lybWZCNXJIU1NGVVprRTFVdDF0aW0ycUNPSmxncVBwZFRwS3AtXzA0MXRuX1lYeUpkVE5oTmFSN0JrdHJ4aHdreGxMTVhSd0JBUHJIaVBqR1lkZF8tSU1OUFEyNmx3R19qRTBDYVBEbUV5d1IzNEppNmN0Yw?oc=5",
+          "ts": "2026-06-14T17:12:43Z",
+          "title": "Ukraine's Zelenskiy discussed peace talks in call with Trump"
          }
         ]
        },
        {
-        "text": "Ukrainian drone strikes killed one person and sparked a fire at an oil facility in Russia.",
+        "text": "According to a Ukrainian official, Zelensky and Trump spoke for about 35 minutes.",
         "cites": [
          {
-          "outlet": "ABC News - Breaking News, Latest News and Videos",
+          "outlet": "ukranews.com",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRnoyWWNnemwyVEt2eTZtSnJZWmEyc1JZOU1kQkktaDR3bm9DLVhSUWxiTHRuODhsSGR6bDdlUktNOVdWUUpJTGVZekZYZ1hCdXZFWFpxdU4xa2loMkNXR2ZtSmRWdGRNRUVnLXRrZWotSkRLUUhYYmhvcmtTYnBlMG1LX19lSUpVZ1ZDaFdXZ0FNSjdPcUxtYUlicGZSZk9x0gGmAUFVX3lxTE45OXl1eUVoRTVDeWJoRDdzU2FHZDh5RDAyNGlpMnFqR1ZESnlmeHJpaVpKaVdaVjlHM2liNkxqeDJ5MTZpNG5OempLTmNNVnB0VGtGUkFDVHBQOEFHTFVWcGdjTG5pZUtHNDZQR2ltODlfbnU0SFlxbno2eGhqOTN2RF9zSU5UMG5Jc09EclhKcFBTaWhsVXd4N0RwMlhxbjdOUkxCVmc?oc=5",
-          "ts": "2026-06-14T10:36:20Z",
-          "title": "Ukrainian drone strikes kill 1 and spark fire at oil facility in Russia"
-         }
-        ]
-       },
-       {
-        "text": "Ukrainian forces targeted a Russian fertiliser plant and a fuel depot in strikes.",
-        "cites": [
-         {
-          "outlet": "Business Standard",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSUhDb0hUdUY3SDFsR05XQnNiWFQyS1JwV3BidHhfb3puNEVsNEhpNnlKWE1LSDhOTGoxeGNKZnpwQXJ6TDd1XzhZcVI5UjljUE5lVzNPOExGblgta0l3a3F3SnBSNE9vdFc1TkY0OXJ0TWZSc2FGZzB5MTN0Uk5JV05MUk1RVW8yYWt4cWxxakZ4b0QzV3RCQ0ZTQUl2LVJUTXNXeWVWS1JtMEZoLXJXbFA3bTI2aEFFdzViX0pDSDhVRTZGQWFPcWl3YXR4QdIB0wFBVV95cUxPSmZDNGdDQlZ4T0tiTFpNcGl1RTFXcTBEdHNTMzQwTUhERGhRRk1nZms2WGRfbU1fZ0poQlJ0bzZXdG9HRnA2c05aVnRMZHZuT3hBQnpqMkYwX1RvNHFYU1d4eC13WldtZUtlbk9uLVFMdkVRMGo1Z2lGNnhCV3Ata2lYS1VWbFVoakRZTF8zNllDLS1YMkVwVzlmTDdobmZ1dGN4OGFtbkhGbXpOemRTNnFpNVlGRjBKZXNIdzY3MXFya0R4M2h4aUs1RGlneVl6QmxN?oc=5",
-          "ts": "2026-06-14T10:33:56Z",
-          "title": "Ukraine forces target Russian fertiliser plant, fuel depot in strikes"
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZDFYaktpRG9Pa3liS1VBekhoS2M2eDJ0MFRKbHI5djBiZzJnSGJrbW16UndHRkJjalZBMmNyTjBsakJWdDJPTFlROVE5OGt1Z24tT3RxYlFOSEZoYl9naFlmNVpmQkFFMWJhakluX2ZFU0Q4Y3ZyMzF3Wm9XdXRKLTU5Z1o2TXhVcUhiWVlPeUYtbVJkZzVBWXhzcDlnR1FGTXpKV0tOcEVZbHFyOVBIcVlCTXViRTjSAbwBQVVfeXFMTTFEUXJwS2ZTb09HX2lHUDBjOUJHWi1RQmtVbnJ5N04tUzI5SGZ2SkdCRmlTV0tDY1hZQkxVSWhhVVhjQkFXdlljX0VoaU0yc0JocVY5ZDRfbkc5eDFpRElyM2o5WTNDNjFJdXFOSnRVYWdTdlNuWk5yOGFpd2diRnl2ZmYwTUhjT1BpbDV6YjZ6Y2xUSXUwQ2JUbWQzX0tscmxaWjczbHowMXN4Wjg1QjhTRUoweUdtSWVDeEo?oc=5",
+          "ts": "2026-06-14T17:12:27Z",
+          "title": "Zelenskyy and Trump spoke on phone for about 35 minutes - Lytvyn"
          }
         ]
        }
@@ -179,19 +163,47 @@
      {
       "sentences": [
        {
-        "text": "Russia's top brass reports that Ukraine lost up to 1,350 troops along the engagement line over the past day.",
+        "text": "The Kremlin says Trump told Putin that ending the Ukraine conflict is vital and that he is prepared to help.",
         "cites": [
          {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/defense/2146199",
-          "ts": "2026-06-14T15:24:34Z",
-          "title": "Ukraine loses up to 1,350 troops along engagement line over past day - Russia\u2019s top brass"
+          "outlet": "Irish Independent",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOQ0dyVFV2RGFlVEptdFNSU1lvbmlOWDNJYjc3YzRnLUR4NzVOclhLVWx4aWdEbzY3ckY1UVA4dTA2NjVPa3drdUVLS3ljdEt3cjhfUWE0aVBqbURuUWVZY3hoOV83VGFVR3ZGT1JYUkxHS3RTbkxVUXMxOTB5YklSUzkxQ2k0MVppNWc2LTFZRWI2YlN3RFp1OXBMMFlkRFdDREo1OEtFeUxRZmlZREdadDFNaXoxaDFsc1U3eV9fVDZOeXZacWh6WHI3RVBzaFB0NkRzUDJSVHlzalZ2b3A4R0ROb0pQWkxtTUZzRS1n?oc=5",
+          "ts": "2026-06-14T17:42:42Z",
+          "title": "Trump tells Putin in phone call that ending Ukraine conflict is vital and he can help, Kremlin says"
          }
         ]
        },
        {
-        "text": "TASS reports Russian air defenses downed 483 Ukrainian UAVs and 14 smart bombs in the past day, citing the top brass.",
+        "text": "A Kremlin adviser told Reuters that Trump said he is ready to help end the Ukraine conflict.",
+        "cites": [
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONXFQNHZRWjVLNjJublRoZTVwUG4xN3ZTTm1pc3FpWUY3dEYwV3c2eWpLQkNra19BMVJMRmhLVGJmZVA1YnZSN29DR0p5NUJpaS1NdXgwNmcybjlyQWpxWGdhWU4zNmc3aTBwMTJqNVVQZlYtRnhndUZLNFV2TVlXclhYQjIyR0s2RGtrbXNMYmhkdUFMdEQ3Z05URnlqNUVnUzBHSGJ5WV9GNEFMOGdnU0pIMlI0VGJuQlFHb1RMNnhWbVVCamc?oc=5",
+          "ts": "2026-06-14T17:20:27Z",
+          "title": "Trump tells Putin he is ready to help end Ukraine conflict, Kremlin adviser says"
+         }
+        ]
+       },
+       {
+        "text": "The Kremlin says Putin and Trump also discussed Iran alongside the Ukraine war.",
+        "cites": [
+         {
+          "outlet": "The Economic Times",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPbnJmOXlUbHhRdkI5YjN0Z0Ixcm5LQ2tXSFFJNzE1SlN5VFF5UnREWVAzX2ZHcDVTQXRZVmhlZERDRnF4eUMyeG9aZlptZDBaU24xbDU2d2ZGX3llSUxLZUJlS0h1c1g0WE5wQUI3LVZyNy1za2UxUjRNb2FMTEZWLWUySUJmNm4tVEQ5YTM1Nm41R3VuWEpkNHJXSE93V0dBd2prYVg4VG44Qmx3STlFSzZibmlGRWdZMk1aRDZZNG5nbmlfWkluQ25TVTlWNG1ydFlnVUc0bW14WFnSAeABQVVfeXFMTVRoR0tZbll2RU9kRDdqVE1sMW0tOUV1djRRQzVqUlBMeXNyYmJjZS1LZmN6ZXQ1N3NpbVBJbDhlbENWUXFiY0hjem9pYWEwVmh0cDJ6MHdCYTlSRmMtZzZJSEY3UjVKMUtjbzVnaTlzZHc0SjY5S1FUd2JiUjdXUHU1b2FTaUptckxMV3V3OXZhdVppV2hjZFVnNF82UVBQRnBuekJPNVpsdUE2RWljaE1jbXpxZmQwaThQcGFFSVhMaWg0dVlKWlNBTFUtSHFYaU5yV0NsY2dtWnhaYXE2NUU?oc=5",
+          "ts": "2026-06-14T16:49:49Z",
+          "title": "Putin discussed Iran, Ukraine war in call with Trump: Kremlin"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "TASS reports that Russian air defenses downed 483 Ukrainian UAVs and 14 smart bombs in the past day, citing the top brass.",
         "cites": [
          {
           "outlet": "TASS",
@@ -203,26 +215,38 @@
         ]
        },
        {
-        "text": "TASS also reports that Russia's Geran kamikaze drones wiped out a Ukrainian UAV depot in the DPR.",
+        "text": "TASS also reports that Ukraine lost up to 1,350 troops along the engagement line over the past day, according to Russia's top brass.",
         "cites": [
          {
           "outlet": "TASS",
           "kind": "state media",
-          "url": "https://tass.com/defense/2146179",
-          "ts": "2026-06-14T11:58:23Z",
-          "title": "Russia\u2019s Geran kamikaze drones wipe out Ukrainian UAV depot in DPR"
+          "url": "https://tass.com/defense/2146199",
+          "ts": "2026-06-14T15:24:34Z",
+          "title": "Ukraine loses up to 1,350 troops along engagement line over past day - Russia\u2019s top brass"
          }
         ]
        },
        {
-        "text": "The Kyiv Independent reports that Russian attacks killed at least 4 and injured 22 across Ukraine over the past day.",
+        "text": "The Kyiv Independent reports that a Russian drone attack set the Kharkiv Art Museum in flames.",
         "cites": [
          {
           "outlet": "Kyiv Independent",
           "kind": "journalist",
-          "url": "https://kyivindependent.com/russian-attacks-kill-at-least-4-injure-22-across-ukraine-over-the-past-day/",
-          "ts": "2026-06-14T11:19:37Z",
-          "title": "Russian attacks kill at least 4, injure 22 across Ukraine over the past day"
+          "url": "https://kyivindependent.com/kharkiv-art-museum-in-flames-after-cynical-russian-drone-attack/",
+          "ts": "2026-06-14T21:49:30Z",
+          "title": "Kharkiv Art Museum in flames after 'cynical' Russian drone attack"
+         }
+        ]
+       },
+       {
+        "text": "The Kyiv Independent says Russia fired nearly 2,000 drones at Ukraine in one week, citing Zelensky.",
+        "cites": [
+         {
+          "outlet": "Kyiv Independent",
+          "kind": "journalist",
+          "url": "https://kyivindependent.com/russia-fired-almost-2-000-drones-at-ukraine-in-one-week/",
+          "ts": "2026-06-14T18:04:53Z",
+          "title": "Russia fired nearly 2,000 drones at Ukraine in one week, Zelensky says"
          }
         ]
        }
@@ -231,50 +255,38 @@
      {
       "sentences": [
        {
-        "text": "Online.UA reports that Russia is losing its advantage over Ukraine in manpower.",
+        "text": "The Kyiv Independent reports that a Russian chemical plant and an oil depot were set ablaze following Ukrainian strikes.",
         "cites": [
          {
-          "outlet": "Online.UA",
+          "outlet": "Kyiv Independent",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUmZSVjgtMVZJS2VLOGNyT1NGSl8zSWVxRUFmbkxBUHdQUlYwQXhOZE0zWVowTl9OVmU2TzctTk5ENGRhMnRfOEFnTEF2YWdBWGtuY3BxZ0hsU1hmaFdzdkgzbm9nY2dYdHVWSld5ZU85ZVotV01mczBnSlVtYmkxOWFqS1BPX1lIU0xkVFVqbWhLd00?oc=5",
-          "ts": "2026-06-14T12:36:41Z",
-          "title": "Russia is losing its advantage over Ukraine in manpower"
+          "url": "https://kyivindependent.com/ukraine-war-latest-russian-chemical-plant-oil-depot-set-ablaze-following-reported-ukrainian-strikes/",
+          "ts": "2026-06-14T20:20:59Z",
+          "title": "Ukraine war latest: Russian chemical plant, oil depot set ablaze following Ukrainian strikes"
          }
         ]
        },
        {
-        "text": "CNN, cited by ukranews.com, says Russia is losing its main advantage in the war due to a shortage of recruits and a labor shortage.",
+        "text": "The Taipei Times reports that a Ukrainian strike on Russia resulted in one dead and three injured.",
         "cites": [
          {
-          "outlet": "ukranews.com",
+          "outlet": "Taipei Times",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPZjdCNHBJb3VrQUF0RVN3amV6TlV3ZUZQRzQxYU5TUjV1T2o1RWUzRU1yLU02eWFIZEdQVDFHLWpQNWhERUpRSFVneGVJUmI1TFd0OEhjUzBtaXlURVNjbHlGcWRLSkU0eFB5YkJNVlV0elhTVmFYUFA0TTJsWHFGck43Sm1pUFU0R1hFb25oVzdVSFBSZnRLaHgtNWZxV0J0RXJ4NEdIdEk5R25PM2FreEs0Vy03UkpISVVNemh3c1lHck05eXNMUjF0VkFTSTM5bG9pLdIB1AFBVV95cUxPZjdCNHBJb3VrQUF0RVN3amV6TlV3ZUZQRzQxYU5TUjV1T2o1RWUzRU1yLU02eWFIZEdQVDFHLWpQNWhERUpRSFVneGVJUmI1TFd0OEhjUzBtaXlURVNjbHlGcWRLSkU0eFB5YkJNVlV0elhTVmFYUFA0TTJsWHFGck43Sm1pUFU0R1hFb25oVzdVSFBSZnRLaHgtNWZxV0J0RXJ4NEdIdEk5R25PM2FreEs0Vy03UkpISVVNemh3c1lHck05eXNMUjF0VkFTSTM5bG9pLQ?oc=5",
-          "ts": "2026-06-14T12:34:14Z",
-          "title": "Russia losing its main advantage in war due to shortage of recruits and a labor shortage - CNN"
+          "url": "https://www.taipeitimes.com/News/world/archives/2026/06/15/2003859130",
+          "ts": "2026-06-15T08:00:00Z",
+          "title": "Ukrainian strike on Russia results in 1 dead, three injured"
          }
         ]
        },
        {
-        "text": "The New Voice of Ukraine reports that Putin is expanding the Russian army, but ISW sees no impact on the Ukraine battlefield.",
+        "text": "The New Voice of Ukraine says Ukrainian strikes have forced Russia to disguise fuel trucks as milk vehicles, citing the Navy.",
         "cites": [
          {
           "outlet": "The New Voice of Ukraine",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYWpEVVcyQUNkWEwtc2lteEFjZU5CZTktNG5Jbnh3MlNTNUpYVVAxSFhTNngzS0JmWEgyX3hGTHFtU3pOY29SRzRyU19wZkRXU01oLWtpbnFNZDNBbVFkdkRZMmRlZ2RHT3pEazlsckNGYmw2WFRyWURtMnNzRFhkZTFacEl6MUhZeTh1V2NXUVZobUpOOFNBbzRhcm1mS3plVWM2djhMZHJ2QnUyRGVz0gGrAUFVX3lxTE55YzdIQWhOdGszZnB5akxtekZHYmZzWWtfbnZiNU9oLW94blBIemRwWUgzSDJReHdtTlJoR1lJelJJTkdnMUF1ZEdQMEMtRlBIczk2WUhtNm90TWxjN3ZwWUhENV83SlN2bzJJREFRR0tyZmI2WU9BNjB1LTlXSUU2R3RTRm8tN0lzNWdrODJQNk5QYUdMd3ZoX3NvYjZQdGNSMmRUZFB4V2sycw?oc=5",
-          "ts": "2026-06-14T11:26:00Z",
-          "title": "Putin expands Russian army, but ISW sees no impact on Ukraine battlefield"
-         }
-        ]
-       },
-       {
-        "text": "ukranews.com says Putin's decree to expand the Russian military is unlikely to affect the situation on the battlefield in Ukraine, citing ISW.",
-        "cites": [
-         {
-          "outlet": "ukranews.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNU2lfVGQxZDBKQnlmRUNjQ2oza0MzcU9pMlBVQ2I1c3pZNFA2UXAtYmp3dDVWb1hkTWpuWE90UkFTUmxTTFJZdnFiN3JCT1dlVWtmNlgxcDNxMmpxOXVCaUJOV3k0NlBpNTk1T0U0NGxhVW5RWWVmSDE5SEZ6cGl1MEpSdkdxNUNTNUR4OWhQYm53YXZzbWdWTzJHMlZyaDROQlRsM2tuWFZkNkJpdFYwWUt3X3BSOS1RdlJ1aVJtVFVRT1XSAcgBQVVfeXFMT0YwQlJBR3phQmg5NHVuamRFcERmUU1lTjJjeWZWUnlGRGpheEZGQXZpc0lhczFMWlBDWjlrN0ZQNmNWdlVCUE90cm14UHBUcXF2ei1YVjVEaThUWUFEV1l5WEh2MHdyNzNKT29EV29ZRmM4bEs0MFVJLTVlVkhvNm9hczE5N2dIU2x4OUR1SW5KQVlicVBOMWMxbm9rdGVYOXRia29raTEyRjNnU2kxNEp5aEZmaG9MZm0zRVVhTUJ4XzdORkotX2c?oc=5",
-          "ts": "2026-06-14T10:46:23Z",
-          "title": "Putin\u2019s decree to expand russian military unlikely to affect situation on battlefield in Ukraine - ISW"
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSXA2STljeGZiaklIWWwxVW5WREsxekpiME94TUtRSTBBODRZN0ZkVzZkZnhwZ0hzb3JETDM1RVBycW9LRGZHNTMwcFFOdlNnejJGdlFMb1lFUE01V1IwMHpEenF1NkJaSmpham15dzJ0NER5WnkySG82TzRIVWZoX3hlaXNlZExzZmxCSEJaX0s0bFU0QkdlY2JmTUtZVGlrc3lNZ0ZiNTRDaFVSV3dLemtjY1JXYno0NHNDejdtRDHSAbYBQVVfeXFMTVJKMmQydnJjdk96QkZPY2NSa0pDY0oyZEtCNlJOSnczaldiWWhVN1ozeXNfS1Voem9XYlhiS0dZdEZHakZCOWxVNnFPakRHb09HcnVWRm5yUV92dW1jajFpcTZPUTMyT3E5NlRBNzNsLTY3V1dCSjZ6dTBreVd1cHFSZmVvcl9PdjFKRGYxYWdsVDY2NDNpdkp4dHoyOXRFSDJ5TElIRnZNZ3lMU3dHemd0MW9XTUE?oc=5",
+          "ts": "2026-06-14T18:06:00Z",
+          "title": "Ukraine strikes force Russia to disguise fuel trucks as milk vehicles, Navy says"
          }
         ]
        }
@@ -283,38 +295,38 @@
      {
       "sentences": [
        {
-        "text": "The Kyiv Independent reports that leaked Kremlin reports predict rising dissatisfaction with Putin, according to Zelensky.",
+        "text": "MSN reports that Russia's overwhelming manpower advantage against Ukraine is starting to wane.",
         "cites": [
          {
-          "outlet": "Kyiv Independent",
+          "outlet": "MSN",
           "kind": "journalist",
-          "url": "https://kyivindependent.com/leaked-putin-reports-predict-growing-discontent-in-russia-zelensky-says/",
-          "ts": "2026-06-14T16:21:34Z",
-          "title": "Leaked Kremlin reports predict rising dissatisfaction with Putin, Zelensky claims"
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRFNHcS0wcjdfak5PYzBNbFFVYjJqWXQ2QTJZMkVMcXUtVlFLUTJLUzFVS0dNcmhaTGNCY3MwTmJXSm94aHBJU1gzOEN0RnlSSFRPVHVoT3R6QXlYdmZ5V2IzclZXVFpYMWNmSUJhMV94ODY0RUNBRlMzdTF3a1cwTkRob3dXcFIwOWpPOVljTjhndzZCSlFHcVZ2M3hQSXVLekFfQUZFS3NVX3d6OUhqV0oxZFRMcFh5WVQzTVI3Q3laODA?oc=5",
+          "ts": "2026-06-14T18:42:41Z",
+          "title": "Russia\u2019s overwhelming manpower advantage against Ukraine is starting to wane"
          }
         ]
        },
        {
-        "text": "Anadolu Ajans\u0131 reports that Ukraine's president predicts rising public discontent with Putin before a September vote.",
+        "text": "The Jerusalem Post reports that Russian volunteer recruitment has dropped 20% this year, straining Russia's war machine.",
         "cites": [
          {
-          "outlet": "Anadolu Ajans\u0131",
+          "outlet": "The Jerusalem Post",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVnF3VVlKSm81eUttcGhzdU1tN3dmcENRbjN5ai1vV0JkZmZjbWNPUnlncFBsM2JUbjFWYS11ZFRfVmxNb0VzYnVBTTgzdThfYm1rS1IzUkJSUnI0bG82NkxhTV9tbjk4NUVrZzBseTQzQVdfVjVXT2FVR3FBQ3l3RzJPaTBvQzc0Qm9ETzgzTTlieXRNeDdQaHhMdWVNRXlweHFMSEdzMEU4NkZYZTFJVlFHUXhRRjEybXdXRlR1NnNCWGF3azYySjZtdjlCQQ?oc=5",
-          "ts": "2026-06-14T12:03:44Z",
-          "title": "Ukraine's president predicts rising public discontent with Putin before September vote"
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaTczajBTLVNrbk5Yczc2OEZXSktyOVk4cGtnZjdPWFBFN0xURW9LbHZUWmlXb0x1RUs0V3pmMHYyOURZbGdtMkd0eENEejFqYUlwMk5zSXJmQ2xPZlZ3a3UwQkpWTzlQcHFrd3dEWkVHLUc3S0ZMVFJhN0h1SWRTMnVZQ3RvUEotUHc?oc=5",
+          "ts": "2026-06-14T17:02:40Z",
+          "title": "Russia's war machine strains as volunteer recruitment drops 20% this year"
          }
         ]
        },
        {
-        "text": "Kyiv Post reports that, despite strikes on Ukraine, Russian advances are slowing, according to analysts.",
+        "text": "The New Voice of Ukraine reports that mounting Russian losses are forcing the Kremlin closer to hard choices over Ukraine.",
         "cites": [
          {
-          "outlet": "Kyiv Post",
+          "outlet": "The New Voice of Ukraine",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9oNi1qQmlpaDVaSzR4c0NfajVUdlk4dVo4aTY3Q2RQTGs2bmR6V1AzMFZqRjR6bUVrY2VfZmdHUzNKbzR4ckxqZU4zRQ?oc=5",
-          "ts": "2026-06-14T11:25:01Z",
-          "title": "Despite strikes on Ukraine, Russian advances slow, analysts say"
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVHpwSXJmZUtwVkdpa2ZUNlQwTm15VkZsSGFlUEJKbng5RklWRFhvcnpnSEZMd0VLeEZVdFJFd1RSd0pVWE1WSG5sc2hYalZtRjkxN0cxR2RTUVJvdldsZzdlb2hpZFRmdzFGYU8zODJzaUNjOG81T0pCc1BJa2p3OFVrRVAtSk5QR1JnNmpqZUplMjVubzBHd2tmTmNGbzVuZ0JKUTM2S2xwY1MtSENfdEVGTznSAaoBQVVfeXFMTnBmMmhJS1NNXzRYUTM3WkdGaDR5SFZxdFJ2S0hsVm1xX1IzQzhzTDFNRDVTRndsYzkwMHNOLXJXdHltcktnZm9rOGt0Umx1VlllcG4takotWTQwbzVWbGp0ZzcwdEgtVjQ2dTQ3Wjh1THJrMm5vYVY4bERHY0EzTGlCUUdjM051NS11NG1JczFNR2RCUkltSTE1SzByNWN6dDZHTHNSV1RwSHc?oc=5",
+          "ts": "2026-06-14T17:17:00Z",
+          "title": "Mounting Russian losses force Kremlin closer to hard choices over Ukraine"
          }
         ]
        }
@@ -323,78 +335,50 @@
      {
       "sentences": [
        {
-        "text": "The UK seized a Russian shadow fleet oil tanker in what the Kyiv Independent describes as a 'first operation of its kind'.",
+        "text": "The UK says it intercepted a Russian 'shadow fleet' tanker, according to the Taipei Times.",
         "cites": [
          {
-          "outlet": "Kyiv Independent",
+          "outlet": "Taipei Times",
           "kind": "journalist",
-          "url": "https://kyivindependent.com/uk-seizes-russian-shadow-fleet-oil-tanker-in-first-operation-of-its-kind/",
-          "ts": "2026-06-14T13:27:37Z",
-          "title": "UK seizes Russian shadow fleet oil tanker in 'first operation of its kind'"
+          "url": "https://www.taipeitimes.com/News/world/archives/2026/06/15/2003859132",
+          "ts": "2026-06-15T08:00:00Z",
+          "title": "UK says it intercepted Russian \u2018shadow fleet\u2019 tanker"
          }
         ]
        },
        {
-        "text": "breitbart.com reports that the UK detained an oil tanker believed to be tied to Russia's shadow fleet.",
+        "text": "Al Jazeera reports that UK forces seized a suspected Russian oil tanker accused of funding the Ukraine war.",
         "cites": [
          {
-          "outlet": "breitbart.com",
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQX0pMZkNOUzBpcmYwRGJ3UUNnMWxGak1rU21BNG02b3FFYkZ1NHZrVUZWakREUUgtYUphTEx1amp0V1ZSV0M1ZjFLbS1MUzM1OE13RFpTUXpmTGg1ZTRNcXpKTGpPTkFrWl9PMktoQVR5S3JuX2o3cHRiN2xCcEV1a1dKNE5QdE9lalZUMXV5Nml0c3diRTBGWm4zUVhNRVRqNXBPWURNNldJc0hxN3FMSjZEd29XMUNoMkFjc0pDZ0VvY2dx0gHKAUFVX3lxTFBzNWxORVVWZHU2NUtjeGc4TnJVMk55MWRyVlI5RWhuZEdvR2dlaDBpTGpYc0hVbF9iV2o1ZXREN1RqTHNZbE80czhNRTh0cFE2UHppa0RLVVUyMlJRVEg3Vjd4aG5RM1VDSnZyb1QzbmFMSWxYeklxdV9pZWoxMWFfa0tVTFUtWXVsblhuSEFqYmd5Z2x2ZF8tSWNCYmhOZnlTdWhBTkpKT0FTR0s1Z1FYcEdDQ0taMWRmdi12RTV5YmpyVXNxeXk0YUE?oc=5",
+          "ts": "2026-06-14T15:45:00Z",
+          "title": "UK forces seize suspected Russian oil tanker accused of funding Ukraine war"
+         }
+        ]
+       },
+       {
+        "text": "Al Jazeera reports that the EU is set to hold membership talks with Ukraine.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/14/eu-set-to-hold-membership-talks-with-ukraine?traffic_source=rss",
+          "ts": "2026-06-14T14:39:12Z",
+          "title": "EU set to hold membership talks with Ukraine"
+         }
+        ]
+       },
+       {
+        "text": "TASS reports that EU accession talks with Ukraine will begin with issues of democracy and values, citing von der Leyen.",
+        "cites": [
+         {
+          "outlet": "TASS",
           "kind": "state media",
-          "url": "https://www.breitbart.com/europe/2026/06/14/uk-detains-sanctioned-oil-tanker-believed-to-be-tied-to-russias-shadow-fleet/",
-          "ts": "2026-06-14T13:30:00Z",
-          "title": "UK Detains Oil Tanker Believed to Be Tied to Russia Shadow Fleet"
-         }
-        ]
-       },
-       {
-        "text": "The New Voice of Ukraine says Ukraine hailed the UK tanker seizure as a blow to Russia's war financing network.",
-        "cites": [
-         {
-          "outlet": "The New Voice of Ukraine",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQN2Y4OVkyc2l5MnV2RWw0azY2ejBGdG5wUzJsaWh6c1plTm83cDY1NFhXX2VVbVVxdHJFSXlXUFlzT3JObi1maGd6QWs0N3g1azlZVmtqWU9OTlhzcWdrT0xKd3htcFlxLVBiS2gwQkZQTTNTc3JNb29nTnViZEpldFQ3RTFkamd2STBGVGpvZXo1cjcyeVY4RG9UMVl2MEc0d2JLVm02ZnBkTzgtbTJj0gGrAUFVX3lxTE41bkV2bWdzYmZPNnBUMVE0VVg4aTdTMkFTRWwxc1hpOTRPVWtjODJPdUczQTJ3QWY3NUY0MWdFQTB3WklJZllQdXNKQnpWMmI1VE81aVRfdU14R0h5ZVhFVTQ3aEtNNVBXdjhXX1l6Wnc2cHFvamtZQWNZanBmdXpaY0tETHc3ZVZlYnNFeW9fVG1ZUy16RzBtWE1USG1xLXoyODJadFdvN2J3bw?oc=5",
-          "ts": "2026-06-14T14:35:00Z",
-          "title": "Ukraine hails U.K. tanker seizure as blow to Russia\u2019s war financing network"
-         }
-        ]
-       },
-       {
-        "text": "The South China Morning Post reports that British commandos boarded a Russian shadow fleet tanker, with Zelensky expressing gratitude.",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOFBPU0xuamlDYXpxeVhXODFuS3Eza2xoamZBdzhXSHBFSzAxcVBycTdIMWFOMlNETXpmYTNBcHVDbmIyNV8zYlE3MTUzb21BLTBMcF9vT3hrTkhtRkhrRnJXTzQ0b0w0X21SS2Y4SHkxdnQ4MVdsQy04RWNyZGgwOFdpWk1RWDRFWFFlZlNiQkZFR01nUlpqMmp0aWtpdmxtMDZLYjQ4S2doNzAtZS1ZWjJKc25keXFFdTFIdHZNbzlMUdIBwgFBVV95cUxQcmtVZW5pU19PT1FRNF9GbHhyVEFmOUZpOGVLemNmSEpuY1BmS0lkeWdwT1RmMzY4Wl9yWDUzVmJ1WHZsUkRTYXMyRlhfZ2VkejVTQkl5NFZ1akR1OTA1MEVGekRPUmU4RDBrTFlxMUZJdVdIUmNTUnlEYXVVdmwtT3BTZi1LX1hVZGpvZkVBVVM4YVNwZm5FczVkVFotYUhrMXdYaDAzOFNwX25zbnpLTjJ5MkZjdjhveDFQd2taTUwwZw?oc=5",
-          "ts": "2026-06-14T10:24:24Z",
-          "title": "British commandos board Russian shadow fleet tanker, Zelensky grateful"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The New Voice of Ukraine says Russian fleet command faces relocation as Crimea logistics deteriorate.",
-        "cites": [
-         {
-          "outlet": "The New Voice of Ukraine",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOHN2dXM2SE90WXFKQXNjamFxX1k1SDY3WG1UclMwampjNVNKR1JSa1Ewc0NxX3FuM2Z5UDhqNGJCbzRjaDU4Q1lGTVRQeHFldkF2TXVXcGN4TXZiME1XSnRUT3FucEdmREdGRGduWjlxU1JvT05nN0M2YlVWLXpjUVZlTmJjU19ZLUFfNWstOFJfS3ZaWE9wdV9jM21RXzFoQTF2UGtXSmQ1ZUVHR2VEX1A4UVFhYjV6TFJF0gGwAUFVX3lxTE1NdzFsYnlSUmgxcnYxWDdEWU9GQWd3dUR4WEwzN1pNTUkzZmMtMWJaaXFpZ0FjbmY5UWpjT3huYXZBeGdPN2ZYTDQtREJPOGdfVDcyckFCQkxOUDFiMWk5NFNhM050cnhzeC1PbjA5azNlbHhOdnlwZnB3MEdtT3JhT090Yk05ek5FTnJHZDJRNl8tbGpFdURJT2swTzY1Z3RFVFQ4TGUwMlJqbnRSNHZs?oc=5",
-          "ts": "2026-06-14T10:48:00Z",
-          "title": "Russian fleet command faces relocation as Crimea logistics deteriorate"
-         }
-        ]
-       },
-       {
-        "text": "UNITED24 Media reports that Ukraine used a floating drone aircraft carrier to hit Russian forces on the Dnipro River.",
-        "cites": [
-         {
-          "outlet": "UNITED24 Media",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNi1jLWpWbjFzOFd6d2RxbkY3YUJSMkN4cGtxRUFYTEo5aWJQVThOVGlvdUNwWG15UVNXUi1CbF9wU2RUY0otRUJNUU5VRTZmeEM3NF92V2tkT0steUQwMHE2VDVTVGtweUxTQjhuTTV3a09mSHRlQnpnaTFTaVIyS3RMNkJEMGJUdjJfYW16TEVVcnVsb0lrMVkwamdNNzdrOWZjOUpIN3JPVWdIMGRZWDJkd3BrdmtadHl2Z3E4RktlWFVOdUFJdW05UTAtRzBZRUJjUXFB?oc=5",
-          "ts": "2026-06-14T12:36:19Z",
-          "title": "Ukraine Uses Floating Drone Aircraft Carrier to Hit Russian Forces on the Dnipro River, Video"
+          "url": "https://tass.com/world/2146227",
+          "ts": "2026-06-14T18:19:49Z",
+          "title": "EU accession talks with Ukraine to begin with issues of democracy, values - von der Leyen"
          }
         ]
        }
@@ -403,9 +387,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 178,
-   "items_48h": 386,
-   "outlets": 169,
+   "items_24h": 183,
+   "items_48h": 382,
+   "outlets": 171,
    "kinds": [
     "journalist",
     "state media",
@@ -413,7 +397,7 @@
    ],
    "latest": [
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "UK says it intercepted Russian \u2018shadow fleet\u2019 tanker",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -425,7 +409,7 @@
      }
     },
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "Ukrainian strike on Russia results in 1 dead, three injured",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -437,11 +421,11 @@
      }
     },
     {
-     "ts": "2026-06-14T17:43:52Z",
-     "title": "Putin, Zelenskyy speak with Trump by phone as drone strikes kill 2 in Russia and UK detains tanker",
-     "outlet": "CityNews Edmonton",
+     "ts": "2026-06-14T19:00:00Z",
+     "title": "Trump reportedly tells Putin he is prepared to help end war in Ukraine",
+     "outlet": "The Guardian",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUmlFNkFBeXdBWEZYWEw1YjlHeXp5YUpycjlFRm5KcEIwUmY1bTBZX3RTYVdMTDV4Vng1QnhpTFc1X09kbC00Y3ZkSjhyWHNHWHAzNzY2RkpDQ3VtRENIVV9XTzVnUnlnZmxlZC10Yi1tRklpUnNORUYxSElGLUZXM0YwS1B4U3VwSzJEaTdVVmFZWHl5NjkzalhrRl9hak44dGdnSTROaDVFZWNjTGZUM3hFNWxUMTNPaXAwbnlfLUtZQUZ3V0YxVExXbEYyNnJYUzNRag?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRTM0aUNJT2RSb3YxeHFtRHdVX19HVGhhd0NzTlE5N2t1VTQxMEFCQnpUUml1eEpvbVBsT2tpbnBwTHhsX3NUaEw5WElJR0U1WjNGaVdMcE1vSFF4dzR6UnVkeFZ0S3ZRUS1ObnRadExpVkt6UTR0Smk0TkRDcjl0bFpkNUF5R3ZCbTEzTjRaNFVudw?oc=5",
      "rel": 15,
      "coverage": {
       "non_mainstream": 1,
@@ -449,11 +433,35 @@
      }
     },
     {
-     "ts": "2026-06-14T17:43:02Z",
-     "title": "Trump holds phone calls with Putin and Zelenskyy on his 80th birthday",
-     "outlet": "KSBY News",
+     "ts": "2026-06-14T18:49:30Z",
+     "title": "Kharkiv Art Museum in flames after 'cynical' Russian drone attack",
+     "outlet": "Kyiv Independent",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMVJkN2tiMzlyZmxDdExveG9ZS0FwRVZ6cjBwZFl2Z05kZVJESldmNWFlS3dlMi1Nck00VzdfMlRpYXZyTF9nR2dlczhJV1NZRWE0UFdfZmw1SGtvMTJiZ19JX204MTM1b2FSUGg1cU5xYlpLeFptczhXWUJibWdmZDB0aFlnb0RzdkRvdThGcjVRMTVrdUFIX3Nka0d0RnFFR0k1YjlNNDExNWlKajVDODBRZw?oc=5",
+     "url": "https://kyivindependent.com/kharkiv-art-museum-in-flames-after-cynical-russian-drone-attack/",
+     "rel": 7,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:42:41Z",
+     "title": "Russia\u2019s overwhelming manpower advantage against Ukraine is starting to wane",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRFNHcS0wcjdfak5PYzBNbFFVYjJqWXQ2QTJZMkVMcXUtVlFLUTJLUzFVS0dNcmhaTGNCY3MwTmJXSm94aHBJU1gzOEN0RnlSSFRPVHVoT3R6QXlYdmZ5V2IzclZXVFpYMWNmSUJhMV94ODY0RUNBRlMzdTF3a1cwTkRob3dXcFIwOWpPOVljTjhndzZCSlFHcVZ2M3hQSXVLekFfQUZFS3NVX3d6OUhqV0oxZFRMcFh5WVQzTVI3Q3laODA?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:22:22Z",
+     "title": "Trump speaks to Putin, Zelenskyy on Russia-Ukraine war",
+     "outlet": "Anadolu Ajans\u0131",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdE5nRUVBNFNiczhmaEwxY1VMaFRYdlhGWDZCcU1KYlBDLVZwNlNzNGV0U1UzODI2WHlSbmVsaldEa3NBWTVJNHdoOUI3b0RDdW92NEpqZmtnVFRsNEFzNWMyZVprZVhVa2ZXeVd0UU95NnlVZGFPQ0J1RHhGRnl2VGNHU1NXRGxwR3JwZjdOeFVYUEZPV19zQVhoQQ?oc=5",
      "rel": 15,
      "coverage": {
       "non_mainstream": 1,
@@ -461,11 +469,11 @@
      }
     },
     {
-     "ts": "2026-06-14T17:39:46Z",
-     "title": "Putin phoned Trump, Trump urged end to the war in Ukraine",
-     "outlet": "mezha.net",
+     "ts": "2026-06-14T18:06:00Z",
+     "title": "Ukraine strikes force Russia to disguise fuel trucks as milk vehicles, Navy says",
+     "outlet": "The New Voice of Ukraine",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1YSFlxZHRHUE1vREJwSDRPOHV4eXFLTHpPR2ZVLU1yaEUxcWR2TTN6TTFzbVh2b1hUeGxrM2gwQl9mLVc2eGg0NWVFWXVQRDZJQmhrTS1rSmdrVjNEczFfWTdNR3gtWVU?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSXA2STljeGZiaklIWWwxVW5WREsxekpiME94TUtRSTBBODRZN0ZkVzZkZnhwZ0hzb3JETDM1RVBycW9LRGZHNTMwcFFOdlNnejJGdlFMb1lFUE01V1IwMHpEenF1NkJaSmpham15dzJ0NER5WnkySG82TzRIVWZoX3hlaXNlZExzZmxCSEJaX0s0bFU0QkdlY2JmTUtZVGlrc3lNZ0ZiNTRDaFVSV3dLemtjY1JXYno0NHNDejdtRDHSAbYBQVVfeXFMTVJKMmQydnJjdk96QkZPY2NSa0pDY0oyZEtCNlJOSnczaldiWWhVN1ozeXNfS1Voem9XYlhiS0dZdEZHakZCOWxVNnFPakRHb09HcnVWRm5yUV92dW1jajFpcTZPUTMyT3E5NlRBNzNsLTY3V1dCSjZ6dTBreVd1cHFSZmVvcl9PdjFKRGYxYWdsVDY2NDNpdkp4dHoyOXRFSDJ5TElIRnZNZ3lMU3dHemd0MW9XTUE?oc=5",
      "rel": 15,
      "coverage": {
       "non_mainstream": 1,
@@ -473,35 +481,11 @@
      }
     },
     {
-     "ts": "2026-06-14T17:25:00Z",
-     "title": "Trump tells Putin in phone call that ending war in Ukraine is 'vital'",
-     "outlet": "TVP World",
+     "ts": "2026-06-14T17:53:36Z",
+     "title": "Trump speaks with Putin and Zelenskyy as war in Ukraine rages on",
+     "outlet": "CBS News",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOLUV6QklmRlJlemVoQjZxUl9CcHg2U1ZlWGtNby1LXzgwc1NQYmRJUTFZVkJ1VldISE1INHJYVGJSNGJ6MDB1cnVaRjdrNFI5WVlZb3ZBTldfQVMwMm9jcDNTQTFGWWt5MmgxNlM3ai1BYmprYjRCMFRXZGZYVURXSWU1NkdyWVhpZEZucmdBVDVrUQ?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T17:21:00Z",
-     "title": "Zelenskyy congratulates Trump on turning 80 in birthday call, vows more Ukraine peace talks at G7 on Tuesday",
-     "outlet": "Fox News World",
-     "kind": "journalist",
-     "url": "https://www.foxnews.com/world/zelenskyy-congratulates-trump-turning-80-birthday-call-vows-ukraine-peace-talks-g7-tuesday",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-14T17:20:59Z",
-     "title": "Ukraine war latest: Russian chemical plant, oil depot set ablaze following reported Ukrainian strikes",
-     "outlet": "The Kyiv Independent",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMXFoMVU3ejQ5b2ZxTkNiQUVicnhUenBvQ2pJbl82MXExTXA2NVN4cTdyQ0FmRUxudzItRnlXd0Y4dFNzVHN2ZVZhMXEzbEZBYUlueXBmdDE3OFNzZVdlLTJLRG9yRFRrcmhEYW1QYU5oRHNoT1Y3SndJdFplVmJ5SlZIUWhLTkJXbjU0am5KZ0N6YTRrc2FKV050dlhZLUR2d09oRjg3dk1mWm9RZzBabkNOVmdwSmY4UzFrMzRicF82Xzg2MUhB?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9HYmcxYloyS2ZaY1l6LUgyclBmSXZMTUxvODIzdzA2aEVkeHZwd1JsOGJsSHBwZkZzVEpzczFodDZuSjBPejFOZE1JZWlvVW9Ec3JTM0tUcWJaa0lQcWlpOWppMEh0YkJBYmY0OThNYUlmN3huZmlIVzVn?oc=5",
      "rel": 15,
      "coverage": {
       "non_mainstream": 1,
@@ -582,72 +566,72 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 155,
+    "outlets_timed": 157,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "The Jamestown Foundation",
-      "ts": "2026-06-12T18:15:20Z",
+      "outlet": "Los Angeles Times",
+      "ts": "2026-06-12T19:17:33Z",
       "kind": "journalist",
       "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "The Independent",
-      "ts": "2026-06-12T18:26:00Z",
-      "kind": "journalist",
+      "outlet": "TASS",
+      "ts": "2026-06-12T19:25:19Z",
+      "kind": "state media",
       "role": "echo",
-      "motive_note": "UK press",
-      "items": 2
+      "motive_note": "RU state media",
+      "items": 30
      },
      {
-      "outlet": "AP News",
-      "ts": "2026-06-12T18:26:00Z",
-      "kind": "wire service",
-      "role": "echo",
-      "motive_note": "international wire service",
-      "items": 2
-     },
-     {
-      "outlet": "Yahoo",
-      "ts": "2026-06-12T18:26:56Z",
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-12T19:30:36Z",
       "kind": "journalist",
       "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 8
-     },
-     {
-      "outlet": "Kyiv Independent",
-      "ts": "2026-06-12T18:28:08Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UA regional press",
-      "items": 35
-     },
-     {
-      "outlet": "Toronto Star",
-      "ts": "2026-06-12T18:28:25Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 13
      },
      {
       "outlet": "Kyiv Post",
-      "ts": "2026-06-12T18:30:43Z",
+      "ts": "2026-06-12T19:31:01Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "UA regional press",
-      "items": 14
+      "items": 12
      },
      {
-      "outlet": "Big Rapids Pioneer",
-      "ts": "2026-06-12T18:44:14Z",
+      "outlet": "nypost.com",
+      "ts": "2026-06-12T19:45:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "items": 3
+     },
+     {
+      "outlet": "Kyiv Independent",
+      "ts": "2026-06-12T19:49:13Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UA regional press",
+      "items": 31
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-12T19:55:29Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 22
+     },
+     {
+      "outlet": "UNITED24 Media",
+      "ts": "2026-06-12T20:00:25Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 11
      }
     ],
     "unplaced": []
@@ -702,7 +686,7 @@
     },
     {
      "outlet": "MSN",
-     "n": 27,
+     "n": 28,
      "class": "other"
     },
     {
@@ -727,7 +711,12 @@
     },
     {
      "outlet": "The New Voice of Ukraine",
-     "n": 9,
+     "n": 11,
+     "class": "other"
+    },
+    {
+     "outlet": "Anadolu Ajans\u0131",
+     "n": 8,
      "class": "other"
     },
     {
@@ -736,23 +725,18 @@
      "class": "other"
     },
     {
-     "outlet": "Anadolu Ajans\u0131",
-     "n": 7,
-     "class": "other"
-    },
-    {
-     "outlet": "The Kyiv Independent",
-     "n": 7,
-     "class": "other"
-    },
-    {
      "outlet": "Reuters",
-     "n": 5,
+     "n": 6,
      "class": "mainstream"
     },
     {
-     "outlet": "Yahoo",
-     "n": 5,
+     "outlet": "The Kyiv Independent",
+     "n": 6,
+     "class": "other"
+    },
+    {
+     "outlet": "ukranews.com",
+     "n": 6,
      "class": "other"
     }
    ],
@@ -837,6 +821,11 @@
       "2026-06-14 12:00",
       166,
       165
+     ],
+     [
+      "2026-06-14 18:00",
+      178,
+      169
      ]
     ],
     "mix": {
@@ -844,7 +833,7 @@
      "state-media": 3,
      "regional": 2,
      "official": 1,
-     "other": 174
+     "other": 175
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -911,7 +900,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a29a0c65769-1781113030.jpg?resize=1920%2C1440",
@@ -994,8 +983,8 @@
     ]
    },
    "discovered": true,
-   "items_24h": 161,
-   "items_48h": 356,
+   "items_24h": 165,
+   "items_48h": 357,
    "outlets": 206,
    "kinds": [
     "journalist",
@@ -1003,6 +992,42 @@
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-14T18:10:00Z",
+     "title": "Trump says Israeli strike on Beirut shouldn\u2019t have happened, but Iran deal close",
+     "outlet": "Al Arabiya English",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQdTg3YkY0Q19sSjBwck5icVpfS0ZCZlZwT0VZMDF0aW9KREMxclljVDJKQ2hoUDJhTHloUFVFU0Rlei1kb2M1cVdPUVNUWW1qei12RUlIM0NNUS1FMHhZdlhlZ1ktM1h6SlBpMWhIMmthVjB1SWNtMHhSY1Z2cEY3Z1Q0WWJCZ1RKUUxWZDVCLUYtU0RFNWphVUhlWjZYT2NlUGVFb0RDSnJKZ2tzVE1nZE9uRFFoSmtvRTJNa2l5dlBFem00VldsbWx0R21jSHdGcHVv0gHYAUFVX3lxTFBIZG02ZHdCcmVFQXpOLUZpb0pkdllxRHUtWldXNW9ZOHpLR3Z6WjY1LVdhbW1lamlBcW5jMmxtRDlxN18wTG1QdUowb29HaE9ZUzhkdjU3anRDeWJKVXZCaWktY3NNX0MyT2o5dFBKTjhNdm42TjFNYmk4TG14N2sta1lLRjVqamJqOGZvTkN4R011eEVzNnN5ZEJMYXpnVHViSll6SFA1dnRRN0oyQVhrTFUycmx2ZG12SDVoN2otMDVudTI2N1J5bVZaMWc0Xzg1YXlEc1RLQQ?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:10:00Z",
+     "title": "Trump says Israeli strike on Lebanon should not have happened, but Iran deal close",
+     "outlet": "The Detroit News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd29nYm0yUUk5OWZ2TDFhbXhaZ21EeUJjaVBnU0d2dnhlR2xQRVBrVEVZaW1FeDhub0ZIS0dkcFk0bFBvNzhBRkdtT0NCOGVFSEVaRmZfUXBqRFl1RnZxdGVibjBHZmV3ak9FRE9xM2dQeHFrZ1pYUmZkbHdZbGZYQWRUQlYzZjc5aWRvTkVB?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:05:15Z",
+     "title": "Trump says Israeli strike on Lebanon should not have happened, but Iran deal close",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQV211UUZrc2dRMm9pWFRyZm1fVGF2enB1cmowalMyT0RyT05PNzNRMzN4NTRXaHBhTm4yQUNGTFg2MkZFSW5tRFA1NnBXMUtoSExPd2tFc2ZkMU43bXRWWkVubjdKdzhLQzlPY3dUQWpsQ0JqZmtmQ1JVckZFTXhyZ2NYZ3dQaERmS2lVVTBZVjR6bkU0T3U2NENEV1VaUEpKQXpnUE56VHltTUVGYnZxWktnUFU1LXlrR3pYOF92dkZMQkRFTW04RE5R?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-14T17:53:28Z",
      "title": "Israel should not have attacked Beirut ahead of US-Iran deal - Trump",
@@ -1052,48 +1077,12 @@
      }
     },
     {
-     "ts": "2026-06-14T17:15:00Z",
-     "title": "Don\u2019t \u2018blow it\u2019, Trump warns Israel and Iran as strikes threaten emerging deal",
-     "outlet": "BreakingNews.ie",
+     "ts": "2026-06-14T17:24:07Z",
+     "title": "Israel braces for Iranian missile fire after strike on Hezbollah target in Beirut",
+     "outlet": "The Times of Israel",
      "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNd0RkWnpqUFZ1LTA0RTEyZW56RW1XZ01FWXlsV2l0Vjg4bzVDRkRzYzUyd0xLT2hLWmRwUFJBaWx2VW5CWTRBYjR5Ty02RGhBQVczOFFTQXdFaThnQ005amVsQ0I5NDVJbmVTRDdXVHFoX19TQnZxUGhyUmpuZWpxRUQtWGJVZ1Qwdm1TcWFmeTJ5NUJrOHJJMDdlQnJkQnZUQ3p4MzVLeWhCVWJaWW1CbGpvcjgzNjREQ1hDbFRR?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T17:13:14Z",
-     "title": "\u2018We are very close\u2026, let\u2019s not blow it\u2019: Trump irate over Beirut strikes, asks Israel to halt attacks on Lebanon, says US-Iran deal is \u2018close\u2019",
-     "outlet": "news24online.com",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOQngzV0JzX0Y3dERkYmNIcnNvQ2lDTGo1Q0dDaE9QN0FGRW9HYlFOWXlLSHUyUldGam5ZQ0RxUlhYVHo2OEoyX3hlX0ZTemtJRV9IbS0zN1dsQktpRnFOS0o4OV9taGNPRG1DMGxtZVVnM2tYcVl6RVRMcWFDQjg3YWY0MGp3TVppdmpySW1kVXhSOTBraEplR19iTHlnSmNjWTFhWVFkSnlxSER6N1dBOG1ZOTM3SnhESXJUamg0S1pNdjU4SmExbWVlbUEwV0dVclJVS2MtcnVibkprMDlUTHlOU3R4cjBQTC1YTVlsblBrTElJRTlyd2FHVVJXM3g30gGEAkFVX3lxTE1IYVN1R2Jod0Nzems4dEE1QzdHZDNIbl9naTJDeGJGSTJHbGZhczlYTndBNmxlYjFqd0c1S21qbTVvSXhfR1BmZ0tzQWxBUmlibU1ZdUd6a3BMdmV6d1kxQWJ6NUFmdWloSHdoZUg3MjJpSGlyMmV1a19lZ0dxOUEwSmswRlo1Z0dKbjgzeU1ZQTYzNnJ6YS1rRVI5dE5sUVRmQWUwRVBzSTd6V1FMdW91eXNBdjNteGRUcENycV82empFemlfekp6NFpMeE1RN1ZhQVFtMmNhalRZanoyMW1ubFd3QTBvc1FqTHVMdUdPc3VlaUZOckVyWjZNdzRhcnVGSUdm?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T17:00:18Z",
-     "title": "Iran war: Trump calls for 'no more attacks'",
-     "outlet": "DW",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPcDZEM0E3bDZSVzhHbGNDNHpIelRUTF9sclBDYlNVTTBCbmY3MXpRaF9uQUJPY0x0b3V4ZHk1NzVOVG1vYmczSzlNYU04RUFaN1h1VmIyZXpsa3I1ejZBellGN3BWMjRZenBSeWphZEdhSy1JYlJ2OEZjLUJtRGx6Wm1n?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T16:49:56Z",
-     "title": "US-Iran Peace Deal Totters as Israeli Strikes Rock Southern Beirut",
-     "outlet": "streamlinefeed.co.ke",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZGdvbXFyQ2JZUmVtSUxIUXZXY3ZXQW5PZkFSX195V25TR20yUHZuVFZPaTBWWVR1OXQ4XzZxZ1JEUTJFUTNuR0NrcnpsMzhiWEpyY1B6M01ZREszbFNUMTdiUWRNUFNuUzkzS3oxQVZ4OHItVGFVS0xNY01Ia04tdzNyb3R5T0ZZbUNDTkdMX0Y3N2VNMGhfYmlSZTUzRHJtQ3c?oc=5",
-     "rel": 14,
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPR2l0QlZTWjV4cUtOSm9qOV9vUm1RTmcwdXRoSnBHcU1yNHJxMnVVUVEwdGNJU3dRbzBRME5mek1LVGNWVnhGQWlYSXFOZUFFTGppSkt3TXl5dG00ZmVlN3h1TTdQYXVYSmdadVBwQ1JDNmcwZ3pmNTJmVGh2M2sybWV5a2VKN3NxT0c5MThGWmxSN3VDMG9LdEFKdFFlYTdGZlJ2R296MNIBrAFBVV95cUxOM0ZfOEJabWJTNUpscGhJZnpUR0JwOG1VcnczYnNWVHRjU3RPVU8tS0tpY3ZxcnBlSkk5aVdiTHY5UUpCMGpsMEg1ZHZFeEs0TkxtMEpWTjFfSHZRNFpGWjN3TG1BWm8xazU4TVU1MXpEZVEwTlNzMUtEdlJPOHo1TTlaSkozRTJIand6Z01tOU5XTk5Vc3pDOHhBU0JKZmFEQ18tdnY0dHlYRGJW?oc=5",
+     "rel": 13,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -1179,56 +1168,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 200,
+    "outlets_timed": 201,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Guardian World",
-      "ts": "2026-06-12T18:23:58Z",
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-12T19:20:15Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "UK press",
-      "items": 8
-     },
-     {
-      "outlet": "Middle East Forum",
-      "ts": "2026-06-12T18:27:53Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "samaa.tv",
-      "ts": "2026-06-12T18:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-12T18:48:41Z",
-      "kind": "journalist",
-      "role": "echo",
       "motive_note": "Qatar state-funded international broadcaster",
-      "items": 33
-     },
-     {
-      "outlet": "NYT World",
-      "ts": "2026-06-12T18:54:08Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US press",
-      "items": 7
-     },
-     {
-      "outlet": "The Times of Israel",
-      "ts": "2026-06-12T19:08:34Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "IL regional press",
-      "items": 4
+      "items": 31
      },
      {
       "outlet": "breitbart.com",
@@ -1241,6 +1190,46 @@
      {
       "outlet": "ABC News - Breaking News, Latest News and Videos",
       "ts": "2026-06-12T19:44:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "thepeninsulaqatar.com",
+      "ts": "2026-06-12T19:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "NYT World",
+      "ts": "2026-06-12T19:46:16Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 6
+     },
+     {
+      "outlet": "T\u00fcrkiye Today",
+      "ts": "2026-06-12T20:09:26Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "thedailystar.net",
+      "ts": "2026-06-12T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "en.etemaaddaily.com",
+      "ts": "2026-06-12T20:17:24Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -1298,22 +1287,22 @@
    "sources": [
     {
      "outlet": "MSN",
-     "n": 47,
+     "n": 49,
      "class": "other"
     },
     {
      "outlet": "Al Jazeera",
-     "n": 36,
+     "n": 34,
      "class": "other"
     },
     {
      "outlet": "TASS",
-     "n": 20,
+     "n": 19,
      "class": "state-media"
     },
     {
      "outlet": "Press TV",
-     "n": 19,
+     "n": 18,
      "class": "state-media"
     },
     {
@@ -1323,11 +1312,6 @@
     },
     {
      "outlet": "Guardian World",
-     "n": 8,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "NYT World",
      "n": 7,
      "class": "mainstream"
     },
@@ -1337,12 +1321,17 @@
      "class": "other"
     },
     {
-     "outlet": "The New York Times",
+     "outlet": "NYT World",
+     "n": 6,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "The Sunday Guardian",
      "n": 5,
      "class": "other"
     },
     {
-     "outlet": "The Sunday Guardian",
+     "outlet": "The Times of Israel",
      "n": 5,
      "class": "other"
     },
@@ -1352,7 +1341,7 @@
      "class": "other"
     },
     {
-     "outlet": "The New Arab",
+     "outlet": "The Indian Express",
      "n": 4,
      "class": "other"
     }
@@ -1438,6 +1427,11 @@
       "2026-06-14 12:00",
       143,
       197
+     ],
+     [
+      "2026-06-14 18:00",
+      161,
+      206
      ]
     ],
     "mix": {
@@ -1445,7 +1439,7 @@
      "state-media": 52,
      "regional": 1,
      "official": 1,
-     "other": 178
+     "other": 179
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -1512,7 +1506,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1768,8 +1762,8 @@
     ]
    },
    "discovered": false,
-   "items_24h": 130,
-   "items_48h": 219,
+   "items_24h": 128,
+   "items_48h": 220,
    "outlets": 131,
    "kinds": [
     "journalist",
@@ -1777,6 +1771,54 @@
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-14T18:34:49Z",
+     "title": "Palestinian children, journalists killed in Gaza commemorated in Netherlands",
+     "outlet": "Anadolu Ajans\u0131",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSEFWS1Y5MEl1Q21qbURhM3JUNGVjMnhQZ2lWTGUwQUtFNkhwaXZfaWdWNWJjUVdNdF80SlU1VWFZRXR1R1JINElOQV93Qk1WSmMzRzJkd1d4SFVJME5hRlV1aDBReEtGaU1CYjlVTjJaM3czOXFmb3pqS0RDOGZEWUg5SnlPVjh2bG5JRDM2WkxCSnpub0Jxd0lDU092amxkTzJ6cjVEbDN1VjdjbFdQOFZjMnA?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:19:03Z",
+     "title": "IDF announces elimination of Hezbollah commander behind murder of 5 American soldiers",
+     "outlet": "Fox News World",
+     "kind": "journalist",
+     "url": "https://www.foxnews.com/world/idf-announces-elimination-hezbollah-commander-behind-murder-5-american-soldiers",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-14T18:14:09Z",
+     "title": "6 said killed in Gaza strikes as Hamas health ministry says war toll surpasses 73,000",
+     "outlet": "The Times of Israel",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQnF2dTFsLUhwcWNpbFVlb0c2ejdYOFVXWXJ5dklRWHNmejdSSElxaV9MYWpxQTltTVVpdkFQZGpBSjdPanA4NXY3bjNpZWczVF92N0p3NXdmTmEwWUV3T1d4MFNsUmRudC1Ha1lCZU5jMmQ2dVQ3ZEFWX29IYUF2M0lHWTRTa19KdTl5d2E5d0k0S2FMb3RQR0JBOWhobk8tZ01KMFpNcWNDVmpuOXp3LTBtQ1JCQdIBuwFBVV95cUxNZXhhVWowcTVDNHkyMS1sekQ3ejEtSVBXWk9TVXMxN3pGVEhvUUNIQ212dkJTRl9CZUNibi1xNHJvbVNXMFdmYUFQNDlqa0tRTnNCWjNibE1wZElWYkZ6eC04aEU2d0swTHgwQzVVRUViM2U5N3JXUk5YdDR4RjNsNW1KX0k0RFFuNkZJcVB1OU5JT3VJRGNrTWVJM1Zsa0p2YjdnaXFmWHQ3MVc1MXpzSlZQbkl5SExsNlY4?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T17:50:26Z",
+     "title": "Palestinian Death Toll In Gaza Tops 73,000 As Israel Continues Launching Strikes Despite Ceasefire",
+     "outlet": "HuffPost",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOc3RpNFdweUFGclNtbkQybFoyOTlVd0NZbG4ydEl3aW1UajFkQWdzbERpdGVvbFl1cnYyOUpvc0xVZ3MtdzJWYkxoQW1KejNBRHNELTNtNUE3NnVEQkhDX3pURk9mc0FkckZlNmMxZkhiVjNPMzJKaExISEVHWnlRT2hZNWxUUFNvY2JUVThkRkxrSXl2WXNGMEpuVXU4TTRJenhVUng4SmIwdUdaMm15bkQ3VklYRTBEdjAwQW5jR1B2MXBkd3RSaFhzSdIBqgFBVV95cUxNTm9MMFhiNFUzbzM1WjQyaVJWRWFuVEdzbHU4elI4Rmw1eGZpUGlzV0NPTWgtR285alhWeHU3MzBDbGo1cEdPYkZpckYzUDR3c3BoNjFPSWhTMDhxUGRLeGZBbTdCQXdmMEwybFJkWnBIX1ZhOVVIUVVOSkpZSFJ0d2RkVkdmdk1TZi00UDhpRW5jVVJNRFJRdmVaR0RkNDZiV2NDVURScWw2Zw?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-14T17:20:22Z",
      "title": "Global Sumud Flotilla and the battle over Gaza blockade",
@@ -1819,55 +1861,7 @@
      "outlet": "Ynetnews",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1PMC15a01CRkFiYTdUXy12WDNNQzBLZUlMNDdmSTRFSXNHLUtxa0FCbkpBb1l1Y1lfVm9yM1NXRE5sXzBsazVEVW9LZDJnZnRPOG5IaVU2Z3dDRV9YNDZjSkh2ckxELTJfNkE?oc=5",
-     "rel": 12,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T16:06:07Z",
-     "title": "Israeli attacks kill 6 Palestinians including child in Gaza",
-     "outlet": "Yeni \u015eafak English",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcGZhMk9xYjRxaVRha1RVUFRobUlodGktcE92LTc5eTctMUlVTjJCN1p1Z2JyckJodWF3WGVyZ3NiT1ltbEUzbXBLdWFlMFFIQ2dsSnFUa2ZucjczZHZFUFBUTmZwOVU1cDRhdXA4QnNYQ21Ea1E2dEtFRDNDcnpsV3NnRm13alE0WUNSdkNyVWo3RkZWS2hNSzA0ZThMSlk?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T16:00:17Z",
-     "title": "Palestinian death toll in Gaza tops 73,000 as Israel launches strikes despite ceasefire",
-     "outlet": "WDIO.com",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRXEybklCcUtteE5nOEZwbTBEYXRKTDM1OU5NMFpaemJfRzJFN0RzMDl5MUdlTWhjcmJxb0lqTXNjT20zd1dadVM2czF4NmdBWFpnbW9IUWs3VG45dEFwT3pOcVVTVTZseDdDOWYzTk5yVnM2cktOa0lDOXJOSnk2V1ZwQXZ6TTNlZFJyY0VCZUNiTUxaVU5ZWm9FOVloMExnTDNxd1JOZVRfdThhZE5oR2RKSXFSWDJJZ1lxSUZ0a0tYMlNhbmVad3FuVXZndlFjYnpMdk82VUZYTENpQ0hV?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T16:00:01Z",
-     "title": "Palestinian death toll in Gaza tops 73,000 as Israel launches strikes despite ceasefire",
-     "outlet": "Toronto Star",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOcVNRcjFOakw4NzZQRFdfSFpKalhHSWpjaG1fVkZWTHRPSXRKM3FmYVpIUVcwQjI2WlNPQmdianFRcUZyVklqZzBlN2R3U3RYX1VYTE55MlEzVjJJeTQyWU9hTzE5QjdGZW5hV0ZBZTlXZmxDckpNa1BYeVpxTVpfMk5GdEtxQnp1UHBQcEVWV3dxUlk3UHJySEl6X0ZZTkJXcWUyZm04TEotMEtIaTk5aml6RnlmUW1uWEV0RDgxUXluQUZFTWp4ckF3eTZ4cm5WaDdFUEhpMWN5emcyMWN2MlNDLU9tTURLRlEtaVlFM2xSb0pmQWZVM0ZZd09qd2RzRFJjVEJDM09OZmlpQ0VaY2JyUnBnclk?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T15:57:14Z",
-     "title": "Palestinian death toll in Gaza tops 73,000 as Israel launches strikes despite ceasefire",
-     "outlet": "Click2Houston",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNY29ic3FPbEJEUmhrTFppQ1lXYUJvQUNNdjRfOGgyM2ctU1dfNzZPWXRFaURlbThYN1ZTZ1RWSkhWZjl1VlJKNUhLUHE2VEV0VjNxREdpQVhHaHpnQjRtbndHaHZJVGY1SlNOZ0FfVnRBU29sRDZCTnpMVjNIUHE0Z0diakVHUW5hNTh0ZWM1ZFpBMmZWWlAyTC1nekQ4RkpOZzR5TjRqTktBbmd0RWc3bkFJUnF6Tk52dVZnVXFGWm85RzBfbWh2YVlzbzlFd2dPMUpBWEo0Zmk?oc=5",
-     "rel": 15,
+     "rel": 10,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -1911,50 +1905,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "Haaretz",
-      "ts": "2026-06-12T18:15:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "IL regional press",
-      "items": 10
-     },
-     {
-      "outlet": "english.aawsat.com",
-      "ts": "2026-06-12T18:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "TRT World",
-      "ts": "2026-06-12T18:17:40Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "TR state-funded broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "New York Post",
-      "ts": "2026-06-12T18:34:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "WAFA Agency",
-      "ts": "2026-06-12T19:01:25Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
       "outlet": "Morning Star | The People\u2019s Daily",
       "ts": "2026-06-12T19:19:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -1973,6 +1927,46 @@
       "role": "echo",
       "motive_note": "IL regional press",
       "items": 3
+     },
+     {
+      "outlet": "cbc.ca",
+      "ts": "2026-06-12T21:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The Times of Israel",
+      "ts": "2026-06-12T21:03:27Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "IL regional press",
+      "items": 9
+     },
+     {
+      "outlet": "Anadolu Ajans\u0131",
+      "ts": "2026-06-12T21:50:43Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 5
+     },
+     {
+      "outlet": "Israel National News",
+      "ts": "2026-06-12T22:01:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 4
+     },
+     {
+      "outlet": "PBS",
+      "ts": "2026-06-12T22:35:54Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
      }
     ],
     "unplaced": [
@@ -1981,7 +1975,7 @@
       "first_seen": "2026-06-13T09:05:32Z",
       "kind": "state media",
       "motive_note": "IR state media",
-      "items": 4
+      "items": 5
      }
     ]
    },
@@ -2036,22 +2030,27 @@
      "class": "mainstream"
     },
     {
-     "outlet": "Haaretz",
+     "outlet": "The Times of Israel",
      "n": 10,
+     "class": "other"
+    },
+    {
+     "outlet": "Haaretz",
+     "n": 9,
      "class": "other"
     },
     {
      "outlet": "Middle East Eye",
-     "n": 10,
-     "class": "other"
-    },
-    {
-     "outlet": "The Times of Israel",
      "n": 9,
      "class": "other"
     },
     {
      "outlet": "Ahram Online",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "Anadolu Ajans\u0131",
      "n": 5,
      "class": "other"
     },
@@ -2066,13 +2065,13 @@
      "class": "other"
     },
     {
-     "outlet": "The Jerusalem Post",
+     "outlet": "Press TV",
      "n": 5,
-     "class": "other"
+     "class": "state-media"
     },
     {
-     "outlet": "Anadolu Ajans\u0131",
-     "n": 4,
+     "outlet": "The Jerusalem Post",
+     "n": 5,
      "class": "other"
     },
     {
@@ -2084,11 +2083,6 @@
      "outlet": "Israel National News",
      "n": 4,
      "class": "other"
-    },
-    {
-     "outlet": "Press TV",
-     "n": 4,
-     "class": "state-media"
     }
    ],
    "coverage": {
@@ -2172,6 +2166,11 @@
       "2026-06-14 12:00",
       123,
       129
+     ],
+     [
+      "2026-06-14 18:00",
+      130,
+      131
      ]
     ],
     "mix": {
@@ -2179,7 +2178,7 @@
      "state-media": 3,
      "regional": 0,
      "official": 0,
-     "other": 148
+     "other": 149
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -2246,7 +2245,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel."
    ],
    "lead_image": {
     "url": "https://i.guim.co.uk/img/media/82fdf539afe74c57ac3730922e4c47608df7a652/0_163_2154_1724/master/2154.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=cf1c87e02e9dafb83b2bb09eedcce042",
@@ -2503,14 +2502,38 @@
     ]
    },
    "discovered": true,
-   "items_24h": 62,
-   "items_48h": 136,
-   "outlets": 74,
+   "items_24h": 58,
+   "items_48h": 132,
+   "outlets": 72,
    "kinds": [
     "journalist",
     "state media"
    ],
    "latest": [
+    {
+     "ts": "2026-06-14T18:22:56Z",
+     "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/politics/2026/jun/14/defence-secretary-dan-jarvis-uk-plan-military-spending-dip",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-14T18:22:00Z",
+     "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources",
+     "outlet": "The Guardian",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGRoVURQd3plSi1UUnZFVW9qVGpFY05Zb0x4VEFBZ0tJOVNVeDBpOGRQbzh2X2hta0VUTzltNm16b0VVOGRGVUFCZEQ5X014S1RNeGNMWmVZSDA4Z2hTOUdEN0RDc1JiQ3Y0c2pZdzBXMnU4MEtUa0NHTWxwa21CeFg2Y3ZacGdoWnVZWXpJTjVoZm52UThZNnNkY1FaM21QOGFlUDJDdHI3Rjg?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-14T16:40:41Z",
      "title": "Keir Starmer urged to 'get a grip' on defence by Tory frontbencher after 'shambles' double resignation",
@@ -2582,38 +2605,14 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-14T12:30:00Z",
-     "title": "Departments looking to cut budgets to fund defence , Lisa Nandy says",
-     "outlet": "lancashiretelegraph.co.uk",
-     "kind": "journalist",
-     "url": "https://www.lancashiretelegraph.co.uk/news/national/26192733.departments-looking-cut-budgets-fund-defence-lisa-nandy-says/",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T12:30:00Z",
-     "title": "Departments looking to cut budgets to fund defence , Lisa Nandy says",
-     "outlet": "theargus.co.uk",
-     "kind": "journalist",
-     "url": "https://www.theargus.co.uk/news/national/26192733.departments-looking-cut-budgets-fund-defence-lisa-nandy-says/",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "John Healey and critics say Starmer and Reeves are putting welfare and net zero ahead of national security, forcing a ministerial resignation.",
-    "b": "Keir Starmer vows to fight on and plans to unveil a defence strategy ahead of the NATO summit.",
+    "a": "Critics say Healey resigned because Starmer and Reeves put welfare and net zero before national security.",
+    "b": "Government sources say the new defence secretary will reprioritize, with Cabinet asked to find cuts to fund defence.",
     "basis": "extracted from live headlines 2026-06-14",
     "axis_type": "policy_dispute",
-    "axis_question": "Is the UK government adequately prioritising national defence spending?",
+    "axis_question": "Should UK defence spending be prioritized over welfare and net zero?",
     "carriers": {
      "a": [
       {
@@ -2635,34 +2634,18 @@
      ],
      "b": [
       {
-       "outlet": "MSN",
+       "outlet": "Guardian World",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMitgNBVV95cUxQMHpaY3R0SHFrRURFN3NkZndEbEVHb052R29iVEh1YjZGejJTWEVOSGlkSU94Ynl6XzlzcHdNck55QTZQbnVUQ28wMXY3cjRpQkhRdEU4LUhFZEhoSlNwZThYb3hqQ09taFVBZTRvRGFxbTJKa2ZzOGVNaGJiLTQwdWpTSExzY1B0MWNDRXFxeVVhNnFQOG53NDFmMmtvdnp3NUFvRGQ5WGUwcW8xWWVnY2JDNmplRDhfbV9OcTM2bVJsYXlyaTJzRTdDZXZLUURtZ29aOFVfYmRJNzhwZFdUOFlQRHBFV0pwZ0xNZ3k5cnlHS2NmN1E5ekI2MVp0djVPVWlHYlZYdUR3V0cyT1hjdkN1bmNTWnB0VTFHNm1OWVAtRkdSSVhleDRnTlo0blNDai16WVJMOWczcG5La2JDUVdhTkJXWi1QVGRHXzJhMkdhSnR1a1paOHdRRXNiVnN3MlRJWnYySDVjZUN4VG9yMVRwR19CTEJyR2pzbTdUT09lSjl1clhqbnYzb1owNmhTcUZvbWZGa3V3cUV4Z1FBeUx5ZzdxdlZJd3BJQzhYcHF6YW5SZmc?oc=5",
-       "ts": "2026-06-12T19:05:48Z",
+       "url": "https://www.theguardian.com/uk-news/2026/jun/14/starmer-to-announce-australia-plus-ban-on-social-media-for-under-16s",
+       "ts": "2026-06-14T15:05:43Z",
        "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "AnewZ",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY0VCSTJ3ZmNvUTZyN2czSGVVeUtEXzdxY2h6WW51X0hia0NRbkR2eWJmYWxHVVFJbGJpLXd3X1Rwb0RjWGxOWm0yUllacGlLYWdwQmluVlgtVFFlNHN1TzlsdUx5YmJKWlN3SHhUdnVrQTdrd1dxaUN6OXo3WWRwaHJiazEwTDVXV1NITzJmSzFVV0xXd0NnUHF3Y0Nfd0lVb3p3?oc=5",
-       "ts": "2026-06-14T07:04:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Devdiscourse",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGw0RzVwM0l6S0FWVTBzZ2NJZnZ2d3FfTTlWRG1rUGR0c2lJTkVUTFFmRzRFbEZRVi02NV9JSzRQZzdGTGFOenJWUVI0SVp0a0YxUU5zRXZtZFhmajFMOXBVdEtrb1V1XzlneTJWNUdGUElPMFpIZ0cybmhwYWxzZk5BMW1ic0d2MlF4dllxTWtyMGJnOHZNWm5oYWVFQjBTUVNHcURYOTJPY2diVmRZOWw2SGhiNjFxWklCZFo2djNhOC1fYk1uUFFWT3dyYWZ6amF2M05YSFAzdnA40gHcAUFVX3lxTE1wbDRHNXAzSXpLQVZVMHNnY0lmdnZ3cV9NOVZEbWtQZHRzaUlORVRMUWZHNEVsRlFWLTY1X0lLNFBnN0ZMYU56clZRUjRJWnRrRjFRTnNFdm1kWGZqMUw5cFV0S2tvVXVfOWd5MlY1R0ZQSU8wWkhnRzJuaHBhbHNmTkExbWJzR3YyUXh2WXFNa3IwYmc4dk1abmhhZUVCMFNRU0dxRFg5Mk9jZ2JWZFk5bDZIaGI2MXFaSUJkWjZ2M2E4LV9iTW5QUVZPd3JhZnpqYXYzTlhIUDN2cDg?oc=5",
-       "ts": "2026-06-14T09:05:10Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
+       "motive_note": "UK press"
       },
       {
        "outlet": "The Guardian",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZk84WGF2dmVOTV9xZDBMOEgwSDlERjM0TEJ1SkFuWElIV3BRa1JKZlVzODRscjVnZmtza25VdC1WWWwyUGtacUJGalluQkx2Y3lnUkpEMW5oVHJnRkdES1hZZWFnOVQ2Rk1Hc0NySjItc0VPVUk1V0dqa1dwMzdQSzNFS1FYcWV3QjhlWUNGWFRNSHc3QTlNYWM1MjFxbk4yTEo4T2xOWndSSFJOSURuVUUyWHlIbmdUR1NuQ21wSkQwTVZO?oc=5",
-       "ts": "2026-06-14T09:18:00Z",
+       "ts": "2026-06-14T17:31:00Z",
        "provenance": "echo",
        "motive_note": "UK press"
       }
@@ -2673,64 +2656,24 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 71,
+    "outlets_timed": 69,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "STV News",
-      "ts": "2026-06-12T18:29:02Z",
+      "outlet": "The Times",
+      "ts": "2026-06-12T19:15:49Z",
       "kind": "journalist",
       "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "inkl",
-      "ts": "2026-06-12T18:31:52Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "France 24",
-      "ts": "2026-06-12T18:45:05Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "FR state-funded international broadcaster",
-      "items": 2
-     },
-     {
       "outlet": "MSN",
-      "ts": "2026-06-12T18:53:55Z",
+      "ts": "2026-06-12T19:20:43Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 25
-     },
-     {
-      "outlet": "The News Pakistan",
-      "ts": "2026-06-12T19:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Mint",
-      "ts": "2026-06-12T19:00:01Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "The Times",
-      "ts": "2026-06-12T19:15:49Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "items": 23
      },
      {
       "outlet": "The Independent",
@@ -2739,6 +2682,46 @@
       "role": "echo",
       "motive_note": "UK press",
       "items": 3
+     },
+     {
+      "outlet": "thenews.com.pk",
+      "ts": "2026-06-12T20:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "1News",
+      "ts": "2026-06-12T20:50:56Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Wandsworth Times",
+      "ts": "2026-06-12T20:55:39Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Falmouth Packet",
+      "ts": "2026-06-12T20:55:39Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "TASS",
+      "ts": "2026-06-12T21:05:43Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 2
      }
     ],
     "unplaced": []
@@ -2815,6 +2798,11 @@
      "class": "other"
     },
     {
+     "outlet": "Guardian World",
+     "n": 5,
+     "class": "mainstream"
+    },
+    {
      "outlet": "theargus.co.uk",
      "n": 5,
      "class": "other"
@@ -2830,11 +2818,6 @@
      "class": "other"
     },
     {
-     "outlet": "Guardian World",
-     "n": 4,
-     "class": "mainstream"
-    },
-    {
      "outlet": "inkl",
      "n": 4,
      "class": "other"
@@ -2845,7 +2828,7 @@
      "class": "other"
     },
     {
-     "outlet": "The Mirror",
+     "outlet": "The Guardian",
      "n": 3,
      "class": "other"
     }
@@ -2921,6 +2904,11 @@
       "2026-06-14 12:00",
       60,
       75
+     ],
+     [
+      "2026-06-14 18:00",
+      62,
+      74
      ]
     ],
     "mix": {
@@ -2928,16 +2916,11 @@
      "state-media": 4,
      "regional": 0,
      "official": 0,
-     "other": 136
+     "other": 135
     },
     "first_seen": "2026-06-11T12:15:12Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-14T07:19:02Z",
-     "a": "Defence Secretary Healey and junior minister Al Carns resigned saying Starmer's plans fail to adequately defend the country.",
-     "b": "PM Starmer defends his defence spending plan and vows to fight on despite high-profile ministerial resignations."
-    },
     {
      "captured_utc": "2026-06-14T08:16:35Z",
      "a": "John Healey resigned saying the UK defence spending plan is well short of what is required to protect national security.",
@@ -2992,10 +2975,15 @@
      "captured_utc": "2026-06-14T18:12:41Z",
      "a": "John Healey and critics say Starmer and Reeves are putting welfare and net zero ahead of national security, forcing a ministerial resignation.",
      "b": "Keir Starmer vows to fight on and plans to unveil a defence strategy ahead of the NATO summit."
+    },
+    {
+     "captured_utc": "2026-06-14T19:13:17Z",
+     "a": "Critics say Healey resigned because Starmer and Reeves put welfare and net zero before national security.",
+     "b": "Government sources say the new defence secretary will reprioritize, with Cabinet asked to find cuts to fund defence."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -3355,9 +3343,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 45,
-   "items_48h": 102,
-   "outlets": 62,
+   "items_24h": 40,
+   "items_48h": 103,
+   "outlets": 63,
    "kinds": [
     "journalist",
     "state media",
@@ -3365,7 +3353,7 @@
    ],
    "latest": [
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "Stable weather expected ahead of Dragon Boat Festival",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3377,7 +3365,7 @@
      }
     },
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "Site seeks intelligence from Chinese",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3389,7 +3377,7 @@
      }
     },
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "Notes from Central Taiwan: Taiwan\u2019s birthrate problem will not be solved by allowances",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3401,7 +3389,7 @@
      }
     },
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "Taiwan\u2019s top soccer coaches and players awarded",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3413,7 +3401,7 @@
      }
     },
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "Hong Kong \u2018Apple Daily\u2019 exhibition opens in Taipei",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -3502,7 +3490,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 60,
+    "outlets_timed": 61,
     "outlets_unplaced": 0,
     "chain": [
      {
@@ -3756,6 +3744,11 @@
       "2026-06-14 12:00",
       43,
       61
+     ],
+     [
+      "2026-06-14 18:00",
+      45,
+      62
      ]
     ],
     "mix": {
@@ -3763,7 +3756,7 @@
      "state-media": 3,
      "regional": 1,
      "official": 0,
-     "other": 70
+     "other": 71
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -3830,7 +3823,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "lead_image": {
     "url": "https://imgcdn.cna.com.tw/Eng/WebEngPhotos/WebOg/600/2026/20260612/1024x538_399539563935.jpg",
@@ -4065,8 +4058,8 @@
     ]
    },
    "discovered": true,
-   "items_24h": 35,
-   "items_48h": 120,
+   "items_24h": 36,
+   "items_48h": 117,
    "outlets": 97,
    "kinds": [
     "journalist",
@@ -4224,34 +4217,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Devdiscourse",
-      "ts": "2026-06-12T18:37:41Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 6
-     },
-     {
-      "outlet": "Reuters",
-      "ts": "2026-06-12T18:57:26Z",
-      "kind": "wire service",
-      "role": "echo",
-      "motive_note": "international wire service",
-      "items": 2
-     },
-     {
-      "outlet": "CIC News",
-      "ts": "2026-06-12T19:01:26Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
       "outlet": "The Eastleigh Voice",
       "ts": "2026-06-12T19:35:52Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -4286,6 +4255,30 @@
       "role": "echo",
       "motive_note": "Qatar state-funded international broadcaster",
       "items": 3
+     },
+     {
+      "outlet": "yahoo.com",
+      "ts": "2026-06-12T21:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Qazinform",
+      "ts": "2026-06-12T21:44:29Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "en.shafaqna.com",
+      "ts": "2026-06-12T22:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": []
@@ -4404,6 +4397,11 @@
       "2026-06-14 12:00",
       35,
       98
+     ],
+     [
+      "2026-06-14 18:00",
+      35,
+      97
      ]
     ],
     "mix": {
@@ -4411,7 +4409,7 @@
      "state-media": 5,
      "regional": 0,
      "official": 0,
-     "other": 141
+     "other": 142
     },
     "first_seen": "2026-06-12T17:18:26Z"
    },
@@ -4433,7 +4431,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -4445,616 +4443,6 @@
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a2c148f49a1-1781273743.jpg?resize=1920%2C1440",
     "source": "Al Jazeera"
-   },
-   "gate": {
-    "score": 7,
-    "of": 8,
-    "checks": {
-     "split": 1,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "belfast-anti-immigration-riots-injure-police",
-   "name": "Belfast anti-immigration riots injure police",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "protest",
-    "migration"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-14T17:15:22Z",
-    "sentence_count": 9,
-    "dropped_count": 1,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "The rally followed anti-immigrant rioting that came after a stabbing.",
-        "cites": [
-         {
-          "outlet": "Australian Broadcasting Corporation",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQ3FGNHRua0ZCbzR5UDlPci1DWmZrZnNCZTg0b1k5VjRmd3M5LUEzRGwzVWlyOWFyRXZGaWZZUVg5cUllQ0FiNWF3S0taamlWN0lCSWp2M2tEUkxUeXJSY3hXUm9JNFVWakNPd3hsMU5fdWtXSmxyZ2JnM0hNZTJsa3U3OXBzMkI3Qk9JeFJvSExBa1J1bVN3?oc=5",
-          "ts": "2026-06-14T01:49:41Z",
-          "title": "Thousands rally in Belfast to condemn anti-immigrant rioting that followed stabbing"
-         }
-        ]
-       },
-       {
-        "text": "Outlets reported the rioting was prompted by a knife attack.",
-        "cites": [
-         {
-          "outlet": "theglobeandmail.com",
-          "kind": "journalist",
-          "url": "https://www.theglobeandmail.com/world/article-rally-belfast-condemn-anti-immigrant-rioting-prompted-by-knife-attack/",
-          "ts": "2026-06-13T19:45:00Z",
-          "title": "Thousands rally in Belfast to condemn anti - immigrant rioting prompted by knife attack"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Northern Ireland's Health Minister said the disorder is a 'stain' on the region's reputation.",
-        "cites": [
-         {
-          "outlet": "waterford-news.ie",
-          "kind": "journalist",
-          "url": "https://www.waterford-news.ie/northern-irelands-health-minister-says-disorder-is-a-stain-on-regions-reputation_arid-101662.html",
-          "ts": "2026-06-14T15:45:00Z",
-          "title": "Northern Ireland Health Minister says disorder is a  stain  on region reputation - Homepage"
-         }
-        ]
-       },
-       {
-        "text": "The stabbing victim's family called for calm amid the violent anti-immigration protests in Northern Ireland.",
-        "cites": [
-         {
-          "outlet": "Fijivillage",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqUVRyV1VfalF0ZE84QzNmMzhjT2x0LWFPUmVWd1VkVDBmeVhJem5WRGRLalRjZzBEMGZKYjNEeXFMMDROaEl6djhLQTNVQXp4SE55QlVzNW16bDhmck9tczJEbnk?oc=5",
-          "ts": "2026-06-13T20:43:23Z",
-          "title": "Stabbing victim's family calls for calm amid violent anti-immigration protests in Northern Ireland"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "A Nigerian nurse was attacked on her way home from work as the Belfast anti-immigrant violence erupted.",
-        "cites": [
-         {
-          "outlet": "leadership.ng",
-          "kind": "journalist",
-          "url": "https://leadership.ng/nigerian-nurse-attacked-on-way-home-from-work-as-belfast-anti-immigrant-violence-erupts/",
-          "ts": "2026-06-13T18:30:00Z",
-          "title": "Nigerian Nurse Attacked On Way Home From Work As Belfast Anti - Immigrant Violence Erupts"
-         }
-        ]
-       },
-       {
-        "text": "In Glasgow, rival protesters clashed at an anti-racism rally after days of disorder.",
-        "cites": [
-         {
-          "outlet": "independent.co.uk",
-          "kind": "journalist",
-          "url": "https://www.independent.co.uk/news/uk/home-news/glasgow-anti-racism-rally-protesters-clash-b2995234.html",
-          "ts": "2026-06-14T01:00:00Z",
-          "title": "Rival protesters clash at Glasgow anti - racism rally after days of disorder"
-         }
-        ]
-       },
-       {
-        "text": "The Guardian reports far-right and anti-racist protesters clashed in UK cities after the Belfast riots.",
-        "cites": [
-         {
-          "outlet": "The Guardian",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaXA4dGhPZFJrcXlhSnd2ZHdQWTNKbXItLUh3b1BmZnBLYVduV19wOVVqbGxnOVI5QXZzOGdOdDd6WkJpU2x5U3JvcjlINFR6aHA1STRNSEJyMUdxSUlmdGRhRlNsOWF3ZTlOOXNwNWFtcHJjeUdEb0VJZjMtOFFleVBZaFdiZDlBMXgwSkYwcDU1LWlnVkgxRHB0Q1h5cUJKcjM2UUZzdENUWmxMbU9XdFRkYnlDOE5jOGs1N2pZWG8?oc=5",
-          "ts": "2026-06-13T17:46:00Z",
-          "title": "Far-right and anti-racist protesters clash in UK cities after Belfast riots"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Breitbart reports that German media accused Elon Musk of inciting Belfast rioters to 'hunt' migrants.",
-        "cites": [
-         {
-          "outlet": "breitbart.com",
-          "kind": "state media",
-          "url": "https://www.breitbart.com/europe/2026/06/13/german-state-media-accuses-elon-musk-tommy-robinson-of-inciting-belfast-rioters-to-hunt-migrants/",
-          "ts": "2026-06-13T18:30:00Z",
-          "title": "German Media Accuses Musk of Inciting Belfast Rioters to  Hunt  Migrants"
-         }
-        ]
-       },
-       {
-        "text": "Searchlight Magazine says a Belfast pogrom and a Southampton riot galvanised an anti-fascist movement as thousands rallied across Britain.",
-        "cites": [
-         {
-          "outlet": "Searchlight Magazine",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOR0tYX0toQUdVdWJVLVduR1BmSTNCTF96VlhacXZHSl9jb295Mm9rSjNISTROQV9ER2lfd2gtUU1FS0ZoRjRGcVhCZF9tM0lVbjQzSDNuQ21HOG85SDVMVk9NMUdLVGhqRHBJaGN4a0NlU1ZYZzFrb3JfdzkwdTlYWlJfcEw2N3QyZkNTUkhkRDhaTzVHUEIxVHhHWTd5Mml3X0FSN0lYOFp4b0kycWNUYWkxWFBpOUNUSGRBcjFGajJBTjV3NWpERkpRcThhZXhyTUlBVFFDQ1RhUQ?oc=5",
-          "ts": "2026-06-13T20:52:37Z",
-          "title": "Belfast pogrom and Southampton riot galvanise anti-fascist movement as thousands rally across Britain"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 33,
-   "items_48h": 95,
-   "outlets": 68,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-06-14T15:45:00Z",
-     "title": "Northern Ireland Health Minister says disorder is a  stain  on region reputation - Homepage",
-     "outlet": "waterford-news.ie",
-     "kind": "journalist",
-     "url": "https://www.waterford-news.ie/northern-irelands-health-minister-says-disorder-is-a-stain-on-regions-reputation_arid-101662.html",
-     "rel": 6,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T11:45:00Z",
-     "title": "Thousands join anti - racism rally in Belfast after knife attack sparks anti - immigrant violence",
-     "outlet": "timesofindia.indiatimes.com",
-     "kind": "journalist",
-     "url": "https://timesofindia.indiatimes.com/world/uk/thousands-join-anti-racism-rally-in-belfast-after-knife-attack-sparks-anti-immigrant-violence/articleshow/131719436.cms",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T11:05:43Z",
-     "title": "Russian MP warns of social unrest without war exit plan",
-     "outlet": "MSN",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPM1prNm9CUEVuRGtDUTVSVDFnZjB5UklMRE5MdTR6S2pQejBCSS1FcklidWg5ZE43OE5YalFBOU11WGVEZFNKNHJpWEFTS2tmMlF2WnYwNGdXYVdJQTBqTHZ0eVNWSVczQ09aT3VZdTZaWVJpd3AxelRrVWxha2FzeGhqUDZrLS1MRjVsX2xmTlhJNEdKNUdYQkk0cExCcGZIQWNpYU0zalN0alJtelZLYVRQZW1WaXd6THZvSjNfOEg1ZzZtQ3pyeUNPbUY5OUlaRFlvc1g2UDlscHRjZEhFNWU5bkNfd0xCTjlFS015QQ?oc=5",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T10:54:00Z",
-     "title": "Thousands join anti-racism rally in Belfast after knife attack sparks anti-immigrant violence",
-     "outlet": "The Times of India",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNR09KY2pnb19WVy10enhXdkRid1RLRjAzX01pekx2SWo1OWVhaFRKWk9fWU1SY3Q1UWRLeWM4WlJyYkREZFBaLTlQTkFpZjIyUjBQRjZhaHR5ZGF4RTk5QmpjZTBJZDhaOVdyRzJ3MXI3Um4ycmpFSDQxaUxodzc2UGpNSTljaWVaQ2dQXzMtaXZJR3E5cHVtZW1zVE5PbnhJWlBhak1jSHF4ZVV6NmdKLVktTmZ3TlVqYkNhbG5veUFHUmplX3A0TmJjQ3l2ZkxlVzIycFdFa0FYRkxORVJneWs1YlJ1MVRvUDdWZnRlSTQxLTR5WGFV0gH8AUFVX3lxTE54RW1fXy1TUG1fTmtiWTFtb001aXI3UmNoT0Z4MUx6YzNSemFabVJIVm1RUkdILVBHQ1NCVVJRbWJJbkdMMnJxaU15dnlmUVkwSnZXbHljVGhZMkIxSXdnNk5kUGVYczJYV1RLckgxSHJ1aE5OSDB1TkFTUkJKOThTTmNQd1pOcXhHQmNvZ194aUQwZEZHNTgzM3I2dXc4VGFDTVdoandKRG5zcGpqNWNNME5SQk5SZVdScUVWeXhYQlRNVXZNLS1hQWxnUnpFN1psMno3QWJ4Z2pKdFhES3VYWG5TSWFiRnR0MENCMzcwN1J3RzU0cjBMeWFLOA?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T08:00:00Z",
-     "title": "Thousands attend anti - racism rally in Belfast",
-     "outlet": "rte.ie",
-     "kind": "journalist",
-     "url": "https://www.rte.ie/news/2026/0613/1578276-anti-racism-rally-belfast/",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T07:00:00Z",
-     "title": "6 key cases before Northern Ireland courts this week",
-     "outlet": "belfastlive.co.uk",
-     "kind": "journalist",
-     "url": "https://www.belfastlive.co.uk/news/northern-ireland/6-key-cases-before-northern-34110763",
-     "rel": 2,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T04:45:00Z",
-     "title": "UK - BELFAST - ANTI - RACISM RALLY",
-     "outlet": "irishsun.com",
-     "kind": "journalist",
-     "url": "http://www.irishsun.com/news/279121610/uk-belfast-anti-racism-rally",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T03:00:00Z",
-     "title": "Thousands turn out for anti - racism rally after Belfast unrest",
-     "outlet": "tribune.com.pk",
-     "kind": "journalist",
-     "url": "https://tribune.com.pk/story/2613039/thousands-turn-out-for-anti-racism-rally-after-belfast-unrest-1",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "a": "Le Monde reports researchers found Elon Musk's role 'instrumental' in stoking the Belfast anti-immigrant riots",
-    "b": "France 24 frames the Belfast unrest as reflecting the city's long legacy of sectarian violence",
-    "basis": "extracted from live headlines 2026-06-13",
-    "axis_type": "interpretation",
-    "axis_question": "Were the Belfast riots driven by social media radicalization or by sectarian legacy?",
-    "carriers": {
-     "a": [
-      {
-       "outlet": "Le Monde.fr",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZjVhUUFlQkphWjFFUE40OXNnbldYcjVoaE1iLTZZZHFnRWYyZWNmbk5LZ3prV1ZfbW1ZWUhnQlJ0c0JQaG5mYWZQOUNDclFfbkNHOElEcXQzV2ZCazl0M0xZaVZSaC1xZFV6a3ZuMWVZRU1MczJDVEJWQlpwa2dMRXFEZHVzSE5odFJabG1qMzFHaWFHTGdMSy1NZU94Z1o0TlV1NU5ZUWZ5RmNab2ZGX2JQdEFUWUwtVzRDYm53MEE2Z3Ezam02Wi1aOTF3enNxT2V2REJPSFlBYnJ6Tm5xUEpSd0wwSXdOaUpiNGdBUVE5SGJxQTFHM0s0VjFLSFRVVWMw?oc=5",
-       "ts": "2026-06-12T05:33:55Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "France 24",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMWlJVm5mbGM4eFYwMDZCQWQ5N0tNUnFFQl9nbjdXMFRWWGVvY1NUVFVHYlBfbXFvaWlpNmx2SUJqN2thRFFzbW5iN0RMUlBjYU9Td2E0VnA3bVJGZW1QVndRdjViZTBOdUpPa1oyVlpidkdFajBzZHdJLW12UTZRdVV5dGxZdkY3RmZWZExBMGVZQWRTRkZVSE1CTnNEY0p0S1ZDMQ?oc=5",
-       "ts": "2026-06-13T10:29:15Z",
-       "provenance": "original",
-       "motive_note": "FR state-funded international broadcaster"
-      }
-     ]
-    }
-   },
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 48,
-    "outlets_timed": 65,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "facebook.com",
-      "ts": "2026-06-12T18:20:19Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "The Guardian",
-      "ts": "2026-06-12T18:40:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 3
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-06-12T18:40:30Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 3
-     },
-     {
-      "outlet": "channel4.com",
-      "ts": "2026-06-12T19:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "manilatimes.net",
-      "ts": "2026-06-12T20:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "belfastlive.co.uk",
-      "ts": "2026-06-12T20:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 4
-     },
-     {
-      "outlet": "Nine.com.au",
-      "ts": "2026-06-12T21:56:06Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "smh.com.au",
-      "ts": "2026-06-12T22:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "elon musk",
-     "situations": [
-      "spacex-ipo-musk-first-trillionaire"
-     ]
-    },
-    {
-     "entity": "uk government",
-     "situations": [
-      "uk-defence-secretary-resigns-over-spending"
-     ]
-    },
-    {
-     "entity": "united kingdom",
-     "situations": [
-      "russia-ukraine-war-current",
-      "uk-defence-secretary-resigns-over-spending",
-      "us-to-pull-fighter-jets-from-nato-europe",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "MSN",
-     "n": 12,
-     "class": "other"
-    },
-    {
-     "outlet": "independent.co.uk",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "BBC",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "belfastlive.co.uk",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "rte.ie",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 3,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 3,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "The Guardian",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "channel4.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "irishnews.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "irishtimes.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "manilatimes.net",
-     "n": 3,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-11 06:00",
-      59,
-      60
-     ],
-     [
-      "2026-06-11 12:00",
-      82,
-      108
-     ],
-     [
-      "2026-06-11 18:00",
-      81,
-      110
-     ],
-     [
-      "2026-06-12 00:00",
-      75,
-      116
-     ],
-     [
-      "2026-06-12 06:00",
-      57,
-      104
-     ],
-     [
-      "2026-06-12 12:00",
-      36,
-      105
-     ],
-     [
-      "2026-06-12 18:00",
-      25,
-      95
-     ],
-     [
-      "2026-06-13 00:00",
-      26,
-      87
-     ],
-     [
-      "2026-06-13 06:00",
-      42,
-      77
-     ],
-     [
-      "2026-06-13 12:00",
-      39,
-      66
-     ],
-     [
-      "2026-06-13 18:00",
-      51,
-      71
-     ],
-     [
-      "2026-06-14 00:00",
-      48,
-      76
-     ],
-     [
-      "2026-06-14 06:00",
-      48,
-      69
-     ],
-     [
-      "2026-06-14 12:00",
-      50,
-      68
-     ]
-    ],
-    "mix": {
-     "mainstream": 6,
-     "state-media": 7,
-     "regional": 0,
-     "official": 0,
-     "other": 107
-    },
-    "first_seen": "2026-06-11T09:35:14Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-13T03:22:27Z",
-     "a": "Multiple outlets report anti-immigrant riots erupted after a Belfast stabbing, injuring police and spreading unrest across Northern Ireland.",
-     "b": "The Guardian and BBC report renewed scrutiny over loyalist paramilitary organisation and coordination behind the violence."
-    },
-    {
-     "captured_utc": "2026-06-13T06:17:48Z",
-     "a": "Researchers cited by Le Monde say Elon Musk's social-media activity was instrumental in inciting and spreading Belfast's anti-immigrant riots",
-     "b": "The Guardian and BBC report analysts scrutinizing loyalist paramilitary networks as the central organizing force behind the Belfast violence"
-    },
-    {
-     "captured_utc": "2026-06-13T07:16:22Z",
-     "a": "Researchers say Elon Musk's social media activity was instrumental in organizing and amplifying the Belfast anti-immigrant riots.",
-     "b": "The Guardian links the Belfast riots to loyalist paramilitary influence and organization, not primarily online radicalization."
-    },
-    {
-     "captured_utc": "2026-06-13T08:24:19Z",
-     "a": "Researchers say Elon Musk's social-media activity was 'instrumental' in organising the Belfast anti-immigrant riots",
-     "b": "Analysis points to loyalist paramilitary networks and coordinated ground organisation as key factors behind the riots"
-    },
-    {
-     "captured_utc": "2026-06-13T09:14:15Z",
-     "a": "Researchers say Elon Musk's social media activity was instrumental in organising and amplifying Belfast's anti-immigrant riots.",
-     "b": "Police and journalists point to loyalist paramilitary networks and a local stabbing as the primary drivers of the Belfast riots."
-    },
-    {
-     "captured_utc": "2026-06-13T11:21:51Z",
-     "a": "Researchers cited by Le Monde and The Straits Times say Elon Musk's social media activity was instrumental in inciting the Belfast riots.",
-     "b": "The Guardian and BBC investigations point to organised loyalist paramilitary networks as a central driver of how the Belfast riots unfolded."
-    },
-    {
-     "captured_utc": "2026-06-13T12:15:53Z",
-     "a": "Researchers cited by Le Monde say Elon Musk's online activity was instrumental in inciting and organizing the Belfast riots",
-     "b": "Guardian and BBC investigations attribute the riots' organization primarily to loyalist paramilitary networks in Northern Ireland"
-    },
-    {
-     "captured_utc": "2026-06-13T13:12:56Z",
-     "a": "The Guardian and France 24 link the riots to organized loyalist paramilitary networks and Northern Ireland's long legacy of sectarian violence.",
-     "b": "Researchers cited by Le Monde argue Elon Musk's social media activity was 'instrumental', amplifying anti-immigrant sentiment triggered by a stabbing."
-    },
-    {
-     "captured_utc": "2026-06-13T14:16:36Z",
-     "a": "Researchers tell Le Monde that Elon Musk's role was 'instrumental' in organizing and amplifying the Belfast anti-immigrant riots.",
-     "b": "The Guardian and BBC point to loyalist paramilitary influence and a long legacy of Northern Ireland's sectarian violence as primary drivers."
-    },
-    {
-     "captured_utc": "2026-06-13T18:16:26Z",
-     "a": "Researchers cited in Le Monde say Elon Musk's social media activity was instrumental in inciting Belfast's anti-immigrant riots.",
-     "b": "The Guardian and France 24 trace the riots to Belfast's long legacy of sectarian violence and loyalist paramilitary influence."
-    },
-    {
-     "captured_utc": "2026-06-13T19:21:19Z",
-     "a": "Researchers say Elon Musk's platform was instrumental in amplifying far-right messaging that fueled the Belfast riots.",
-     "b": "Analysts tie Belfast riots to a long legacy of sectarian violence and resurgent loyalist paramilitary influence."
-    },
-    {
-     "captured_utc": "2026-06-13T20:15:53Z",
-     "a": "Le Monde reports researchers found Elon Musk's role 'instrumental' in stoking the Belfast anti-immigrant riots",
-     "b": "France 24 frames the Belfast unrest as reflecting the city's long legacy of sectarian violence"
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Belfast anti-immigration riots injure police, Times of Israel, UN News."
-   ],
-   "history": {
-    "built": true,
-    "frames": 4,
-    "nodes": 29,
-    "discovered_days": 3
-   },
-   "lead_image": {
-    "url": "https://i.guim.co.uk/img/media/4b5381180cd797e3a314bd3c90bb363ae9179807/924_449_4022_3218/master/4022.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a56d888ac5c53c658f9b211005ec5246",
-    "source": "Guardian World"
    },
    "gate": {
     "score": 7,
@@ -5289,8 +4677,8 @@
     ]
    },
    "discovered": true,
-   "items_24h": 30,
-   "items_48h": 82,
+   "items_24h": 33,
+   "items_48h": 84,
    "outlets": 42,
    "kinds": [
     "journalist",
@@ -5298,7 +4686,7 @@
    ],
    "latest": [
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "MOA flags concerns over agricultural exports to China",
      "outlet": "Taipei Times",
      "kind": "journalist",
@@ -5310,11 +4698,47 @@
      }
     },
     {
-     "ts": "2026-06-14T18:12:41Z",
+     "ts": "2026-06-14T19:13:17Z",
      "title": "China pressures First Island Chain",
      "outlet": "Taipei Times",
      "kind": "journalist",
      "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/06/15/2003859115",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:26:53Z",
+     "title": "Putin\u2019s call with Trump lasted for 55 minutes - Kremlin aide",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2146267",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:22:23Z",
+     "title": "Putin, Trump discuss bilateral relations, international situation - Kremlin aide",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2146263",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:01:24Z",
+     "title": "Putin talks to Trump over phone, congratulates him on his 80th birthday",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2146261",
      "rel": 1,
      "coverage": {
       "non_mainstream": 1,
@@ -5352,42 +4776,6 @@
      "kind": "journalist",
      "url": "https://www.aljazeera.com/news/2026/6/14/trump-makes-endorsement-in-key-georgia-republican-us-senate-run-off?traffic_source=rss",
      "rel": 2,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-14T15:15:00Z",
-     "title": "Benefits of cooperation with mainland tear apart DPP authoritie information cocoon : China Daily editorial",
-     "outlet": "europe.chinadaily.com.cn",
-     "kind": "state media",
-     "url": "http://europe.chinadaily.com.cn/a/202606/14/WS6a2ea61ca310986e2b45fd46.html",
-     "rel": 3,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T14:00:44Z",
-     "title": "Me, worry? For US small businesses, Trump\u2019s tariffs are now a non-issue",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/business/2026/jun/14/small-business-trump-tariffs",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-14T13:38:07Z",
-     "title": "Donald Trump\u2019s name removed from Kennedy Center",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/14/donald-trumps-name-removed-from-kennedy-center?traffic_source=rss",
-     "rel": 14,
      "coverage": {
       "non_mainstream": 0,
       "mainstream": 1
@@ -5445,18 +4833,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-12T18:32:29Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 12
-     },
-     {
       "outlet": "pilotonline.com",
       "ts": "2026-06-12T19:30:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -5491,6 +4871,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-12T20:00:51Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 11
      },
      {
       "outlet": "rawstory.com",
@@ -5583,6 +4971,11 @@
      "class": "mainstream"
     },
     {
+     "outlet": "TASS",
+     "n": 7,
+     "class": "state-media"
+    },
+    {
      "outlet": "Press TV",
      "n": 6,
      "class": "state-media"
@@ -5606,11 +4999,6 @@
      "outlet": "BBC World",
      "n": 4,
      "class": "mainstream"
-    },
-    {
-     "outlet": "TASS",
-     "n": 4,
-     "class": "state-media"
     },
     {
      "outlet": "rawstory.com",
@@ -5704,6 +5092,11 @@
       "2026-06-14 12:00",
       27,
       40
+     ],
+     [
+      "2026-06-14 18:00",
+      30,
+      42
      ]
     ],
     "mix": {
@@ -5711,7 +5104,7 @@
      "state-media": 7,
      "regional": 1,
      "official": 0,
-     "other": 58
+     "other": 57
     },
     "first_seen": "2026-06-11T09:35:14Z"
    },
@@ -5733,7 +5126,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -5745,6 +5138,621 @@
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-03T175352Z_1536083161_MT1USATODAY29126067_RTRMADP_3_SOCCER-INTERNATIONAL-MENS-FRIENDLY-SENEGAL-AT-UNITED-STATES-1781169456.jpg?resize=1920%2C1440",
     "source": "Al Jazeera"
+   },
+   "gate": {
+    "score": 7,
+    "of": 8,
+    "checks": {
+     "split": 1,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "belfast-anti-immigration-riots-injure-police",
+   "name": "Belfast anti-immigration riots injure police",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "protest",
+    "migration"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-14T17:15:22Z",
+    "sentence_count": 9,
+    "dropped_count": 1,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "The rally followed anti-immigrant rioting that came after a stabbing.",
+        "cites": [
+         {
+          "outlet": "Australian Broadcasting Corporation",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQ3FGNHRua0ZCbzR5UDlPci1DWmZrZnNCZTg0b1k5VjRmd3M5LUEzRGwzVWlyOWFyRXZGaWZZUVg5cUllQ0FiNWF3S0taamlWN0lCSWp2M2tEUkxUeXJSY3hXUm9JNFVWakNPd3hsMU5fdWtXSmxyZ2JnM0hNZTJsa3U3OXBzMkI3Qk9JeFJvSExBa1J1bVN3?oc=5",
+          "ts": "2026-06-14T01:49:41Z",
+          "title": "Thousands rally in Belfast to condemn anti-immigrant rioting that followed stabbing"
+         }
+        ]
+       },
+       {
+        "text": "Outlets reported the rioting was prompted by a knife attack.",
+        "cites": [
+         {
+          "outlet": "theglobeandmail.com",
+          "kind": "journalist",
+          "url": "https://www.theglobeandmail.com/world/article-rally-belfast-condemn-anti-immigrant-rioting-prompted-by-knife-attack/",
+          "ts": "2026-06-13T19:45:00Z",
+          "title": "Thousands rally in Belfast to condemn anti - immigrant rioting prompted by knife attack"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Northern Ireland's Health Minister said the disorder is a 'stain' on the region's reputation.",
+        "cites": [
+         {
+          "outlet": "waterford-news.ie",
+          "kind": "journalist",
+          "url": "https://www.waterford-news.ie/northern-irelands-health-minister-says-disorder-is-a-stain-on-regions-reputation_arid-101662.html",
+          "ts": "2026-06-14T15:45:00Z",
+          "title": "Northern Ireland Health Minister says disorder is a  stain  on region reputation - Homepage"
+         }
+        ]
+       },
+       {
+        "text": "The stabbing victim's family called for calm amid the violent anti-immigration protests in Northern Ireland.",
+        "cites": [
+         {
+          "outlet": "Fijivillage",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqUVRyV1VfalF0ZE84QzNmMzhjT2x0LWFPUmVWd1VkVDBmeVhJem5WRGRLalRjZzBEMGZKYjNEeXFMMDROaEl6djhLQTNVQXp4SE55QlVzNW16bDhmck9tczJEbnk?oc=5",
+          "ts": "2026-06-13T20:43:23Z",
+          "title": "Stabbing victim's family calls for calm amid violent anti-immigration protests in Northern Ireland"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "A Nigerian nurse was attacked on her way home from work as the Belfast anti-immigrant violence erupted.",
+        "cites": [
+         {
+          "outlet": "leadership.ng",
+          "kind": "journalist",
+          "url": "https://leadership.ng/nigerian-nurse-attacked-on-way-home-from-work-as-belfast-anti-immigrant-violence-erupts/",
+          "ts": "2026-06-13T18:30:00Z",
+          "title": "Nigerian Nurse Attacked On Way Home From Work As Belfast Anti - Immigrant Violence Erupts"
+         }
+        ]
+       },
+       {
+        "text": "In Glasgow, rival protesters clashed at an anti-racism rally after days of disorder.",
+        "cites": [
+         {
+          "outlet": "independent.co.uk",
+          "kind": "journalist",
+          "url": "https://www.independent.co.uk/news/uk/home-news/glasgow-anti-racism-rally-protesters-clash-b2995234.html",
+          "ts": "2026-06-14T01:00:00Z",
+          "title": "Rival protesters clash at Glasgow anti - racism rally after days of disorder"
+         }
+        ]
+       },
+       {
+        "text": "The Guardian reports far-right and anti-racist protesters clashed in UK cities after the Belfast riots.",
+        "cites": [
+         {
+          "outlet": "The Guardian",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPaXA4dGhPZFJrcXlhSnd2ZHdQWTNKbXItLUh3b1BmZnBLYVduV19wOVVqbGxnOVI5QXZzOGdOdDd6WkJpU2x5U3JvcjlINFR6aHA1STRNSEJyMUdxSUlmdGRhRlNsOWF3ZTlOOXNwNWFtcHJjeUdEb0VJZjMtOFFleVBZaFdiZDlBMXgwSkYwcDU1LWlnVkgxRHB0Q1h5cUJKcjM2UUZzdENUWmxMbU9XdFRkYnlDOE5jOGs1N2pZWG8?oc=5",
+          "ts": "2026-06-13T17:46:00Z",
+          "title": "Far-right and anti-racist protesters clash in UK cities after Belfast riots"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Breitbart reports that German media accused Elon Musk of inciting Belfast rioters to 'hunt' migrants.",
+        "cites": [
+         {
+          "outlet": "breitbart.com",
+          "kind": "state media",
+          "url": "https://www.breitbart.com/europe/2026/06/13/german-state-media-accuses-elon-musk-tommy-robinson-of-inciting-belfast-rioters-to-hunt-migrants/",
+          "ts": "2026-06-13T18:30:00Z",
+          "title": "German Media Accuses Musk of Inciting Belfast Rioters to  Hunt  Migrants"
+         }
+        ]
+       },
+       {
+        "text": "Searchlight Magazine says a Belfast pogrom and a Southampton riot galvanised an anti-fascist movement as thousands rallied across Britain.",
+        "cites": [
+         {
+          "outlet": "Searchlight Magazine",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOR0tYX0toQUdVdWJVLVduR1BmSTNCTF96VlhacXZHSl9jb295Mm9rSjNISTROQV9ER2lfd2gtUU1FS0ZoRjRGcVhCZF9tM0lVbjQzSDNuQ21HOG85SDVMVk9NMUdLVGhqRHBJaGN4a0NlU1ZYZzFrb3JfdzkwdTlYWlJfcEw2N3QyZkNTUkhkRDhaTzVHUEIxVHhHWTd5Mml3X0FSN0lYOFp4b0kycWNUYWkxWFBpOUNUSGRBcjFGajJBTjV3NWpERkpRcThhZXhyTUlBVFFDQ1RhUQ?oc=5",
+          "ts": "2026-06-13T20:52:37Z",
+          "title": "Belfast pogrom and Southampton riot galvanise anti-fascist movement as thousands rally across Britain"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 27,
+   "items_48h": 94,
+   "outlets": 69,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-14T16:45:00Z",
+     "title": "Northern Ireland Health Minister says disorder is a  stain  on region reputation - Homepage",
+     "outlet": "westernpeople.ie",
+     "kind": "journalist",
+     "url": "https://www.westernpeople.ie/northern-irelands-health-minister-says-disorder-is-a-stain-on-regions-reputation_arid-101662.html",
+     "rel": 8,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T15:45:00Z",
+     "title": "Northern Ireland Health Minister says disorder is a  stain  on region reputation - Homepage",
+     "outlet": "waterford-news.ie",
+     "kind": "journalist",
+     "url": "https://www.waterford-news.ie/northern-irelands-health-minister-says-disorder-is-a-stain-on-regions-reputation_arid-101662.html",
+     "rel": 8,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T11:45:00Z",
+     "title": "Thousands join anti - racism rally in Belfast after knife attack sparks anti - immigrant violence",
+     "outlet": "timesofindia.indiatimes.com",
+     "kind": "journalist",
+     "url": "https://timesofindia.indiatimes.com/world/uk/thousands-join-anti-racism-rally-in-belfast-after-knife-attack-sparks-anti-immigrant-violence/articleshow/131719436.cms",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T11:05:43Z",
+     "title": "Russian MP warns of social unrest without war exit plan",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPM1prNm9CUEVuRGtDUTVSVDFnZjB5UklMRE5MdTR6S2pQejBCSS1FcklidWg5ZE43OE5YalFBOU11WGVEZFNKNHJpWEFTS2tmMlF2WnYwNGdXYVdJQTBqTHZ0eVNWSVczQ09aT3VZdTZaWVJpd3AxelRrVWxha2FzeGhqUDZrLS1MRjVsX2xmTlhJNEdKNUdYQkk0cExCcGZIQWNpYU0zalN0alJtelZLYVRQZW1WaXd6THZvSjNfOEg1ZzZtQ3pyeUNPbUY5OUlaRFlvc1g2UDlscHRjZEhFNWU5bkNfd0xCTjlFS015QQ?oc=5",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T10:54:00Z",
+     "title": "Thousands join anti-racism rally in Belfast after knife attack sparks anti-immigrant violence",
+     "outlet": "The Times of India",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNR09KY2pnb19WVy10enhXdkRid1RLRjAzX01pekx2SWo1OWVhaFRKWk9fWU1SY3Q1UWRLeWM4WlJyYkREZFBaLTlQTkFpZjIyUjBQRjZhaHR5ZGF4RTk5QmpjZTBJZDhaOVdyRzJ3MXI3Um4ycmpFSDQxaUxodzc2UGpNSTljaWVaQ2dQXzMtaXZJR3E5cHVtZW1zVE5PbnhJWlBhak1jSHF4ZVV6NmdKLVktTmZ3TlVqYkNhbG5veUFHUmplX3A0TmJjQ3l2ZkxlVzIycFdFa0FYRkxORVJneWs1YlJ1MVRvUDdWZnRlSTQxLTR5WGFV0gH8AUFVX3lxTE54RW1fXy1TUG1fTmtiWTFtb001aXI3UmNoT0Z4MUx6YzNSemFabVJIVm1RUkdILVBHQ1NCVVJRbWJJbkdMMnJxaU15dnlmUVkwSnZXbHljVGhZMkIxSXdnNk5kUGVYczJYV1RLckgxSHJ1aE5OSDB1TkFTUkJKOThTTmNQd1pOcXhHQmNvZ194aUQwZEZHNTgzM3I2dXc4VGFDTVdoandKRG5zcGpqNWNNME5SQk5SZVdScUVWeXhYQlRNVXZNLS1hQWxnUnpFN1psMno3QWJ4Z2pKdFhES3VYWG5TSWFiRnR0MENCMzcwN1J3RzU0cjBMeWFLOA?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T08:00:00Z",
+     "title": "Thousands attend anti - racism rally in Belfast",
+     "outlet": "rte.ie",
+     "kind": "journalist",
+     "url": "https://www.rte.ie/news/2026/0613/1578276-anti-racism-rally-belfast/",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T07:00:00Z",
+     "title": "6 key cases before Northern Ireland courts this week",
+     "outlet": "belfastlive.co.uk",
+     "kind": "journalist",
+     "url": "https://www.belfastlive.co.uk/news/northern-ireland/6-key-cases-before-northern-34110763",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T04:45:00Z",
+     "title": "UK - BELFAST - ANTI - RACISM RALLY",
+     "outlet": "irishsun.com",
+     "kind": "journalist",
+     "url": "http://www.irishsun.com/news/279121610/uk-belfast-anti-racism-rally",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "a": "Le Monde reports researchers found Elon Musk's role 'instrumental' in stoking the Belfast anti-immigrant riots",
+    "b": "France 24 frames the Belfast unrest as reflecting the city's long legacy of sectarian violence",
+    "basis": "extracted from live headlines 2026-06-13",
+    "axis_type": "interpretation",
+    "axis_question": "Were the Belfast riots driven by social media radicalization or by sectarian legacy?",
+    "carriers": {
+     "a": [
+      {
+       "outlet": "Le Monde.fr",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZjVhUUFlQkphWjFFUE40OXNnbldYcjVoaE1iLTZZZHFnRWYyZWNmbk5LZ3prV1ZfbW1ZWUhnQlJ0c0JQaG5mYWZQOUNDclFfbkNHOElEcXQzV2ZCazl0M0xZaVZSaC1xZFV6a3ZuMWVZRU1MczJDVEJWQlpwa2dMRXFEZHVzSE5odFJabG1qMzFHaWFHTGdMSy1NZU94Z1o0TlV1NU5ZUWZ5RmNab2ZGX2JQdEFUWUwtVzRDYm53MEE2Z3Ezam02Wi1aOTF3enNxT2V2REJPSFlBYnJ6Tm5xUEpSd0wwSXdOaUpiNGdBUVE5SGJxQTFHM0s0VjFLSFRVVWMw?oc=5",
+       "ts": "2026-06-12T05:33:55Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      }
+     ],
+     "b": [
+      {
+       "outlet": "France 24",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMWlJVm5mbGM4eFYwMDZCQWQ5N0tNUnFFQl9nbjdXMFRWWGVvY1NUVFVHYlBfbXFvaWlpNmx2SUJqN2thRFFzbW5iN0RMUlBjYU9Td2E0VnA3bVJGZW1QVndRdjViZTBOdUpPa1oyVlpidkdFajBzZHdJLW12UTZRdVV5dGxZdkY3RmZWZExBMGVZQWRTRkZVSE1CTnNEY0p0S1ZDMQ?oc=5",
+       "ts": "2026-06-13T10:29:15Z",
+       "provenance": "original",
+       "motive_note": "FR state-funded international broadcaster"
+      }
+     ]
+    }
+   },
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 48,
+    "outlets_timed": 66,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "channel4.com",
+      "ts": "2026-06-12T19:45:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "manilatimes.net",
+      "ts": "2026-06-12T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "belfastlive.co.uk",
+      "ts": "2026-06-12T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 4
+     },
+     {
+      "outlet": "Nine.com.au",
+      "ts": "2026-06-12T21:56:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "smh.com.au",
+      "ts": "2026-06-12T22:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "theage.com.au",
+      "ts": "2026-06-12T22:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CP24",
+      "ts": "2026-06-12T23:57:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "brisbanetimes.com.au",
+      "ts": "2026-06-13T00:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "elon musk",
+     "situations": [
+      "spacex-ipo-musk-first-trillionaire"
+     ]
+    },
+    {
+     "entity": "uk government",
+     "situations": [
+      "uk-defence-secretary-resigns-over-spending"
+     ]
+    },
+    {
+     "entity": "united kingdom",
+     "situations": [
+      "russia-ukraine-war-current",
+      "uk-defence-secretary-resigns-over-spending",
+      "us-to-pull-fighter-jets-from-nato-europe",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "MSN",
+     "n": 11,
+     "class": "other"
+    },
+    {
+     "outlet": "independent.co.uk",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "BBC",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "belfastlive.co.uk",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "rte.ie",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "The Guardian",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "channel4.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "irishnews.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "irishtimes.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "manilatimes.net",
+     "n": 3,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-11 06:00",
+      59,
+      60
+     ],
+     [
+      "2026-06-11 12:00",
+      82,
+      108
+     ],
+     [
+      "2026-06-11 18:00",
+      81,
+      110
+     ],
+     [
+      "2026-06-12 00:00",
+      75,
+      116
+     ],
+     [
+      "2026-06-12 06:00",
+      57,
+      104
+     ],
+     [
+      "2026-06-12 12:00",
+      36,
+      105
+     ],
+     [
+      "2026-06-12 18:00",
+      25,
+      95
+     ],
+     [
+      "2026-06-13 00:00",
+      26,
+      87
+     ],
+     [
+      "2026-06-13 06:00",
+      42,
+      77
+     ],
+     [
+      "2026-06-13 12:00",
+      39,
+      66
+     ],
+     [
+      "2026-06-13 18:00",
+      51,
+      71
+     ],
+     [
+      "2026-06-14 00:00",
+      48,
+      76
+     ],
+     [
+      "2026-06-14 06:00",
+      48,
+      69
+     ],
+     [
+      "2026-06-14 12:00",
+      50,
+      68
+     ],
+     [
+      "2026-06-14 18:00",
+      33,
+      68
+     ]
+    ],
+    "mix": {
+     "mainstream": 6,
+     "state-media": 7,
+     "regional": 0,
+     "official": 0,
+     "other": 107
+    },
+    "first_seen": "2026-06-11T09:35:14Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-13T03:22:27Z",
+     "a": "Multiple outlets report anti-immigrant riots erupted after a Belfast stabbing, injuring police and spreading unrest across Northern Ireland.",
+     "b": "The Guardian and BBC report renewed scrutiny over loyalist paramilitary organisation and coordination behind the violence."
+    },
+    {
+     "captured_utc": "2026-06-13T06:17:48Z",
+     "a": "Researchers cited by Le Monde say Elon Musk's social-media activity was instrumental in inciting and spreading Belfast's anti-immigrant riots",
+     "b": "The Guardian and BBC report analysts scrutinizing loyalist paramilitary networks as the central organizing force behind the Belfast violence"
+    },
+    {
+     "captured_utc": "2026-06-13T07:16:22Z",
+     "a": "Researchers say Elon Musk's social media activity was instrumental in organizing and amplifying the Belfast anti-immigrant riots.",
+     "b": "The Guardian links the Belfast riots to loyalist paramilitary influence and organization, not primarily online radicalization."
+    },
+    {
+     "captured_utc": "2026-06-13T08:24:19Z",
+     "a": "Researchers say Elon Musk's social-media activity was 'instrumental' in organising the Belfast anti-immigrant riots",
+     "b": "Analysis points to loyalist paramilitary networks and coordinated ground organisation as key factors behind the riots"
+    },
+    {
+     "captured_utc": "2026-06-13T09:14:15Z",
+     "a": "Researchers say Elon Musk's social media activity was instrumental in organising and amplifying Belfast's anti-immigrant riots.",
+     "b": "Police and journalists point to loyalist paramilitary networks and a local stabbing as the primary drivers of the Belfast riots."
+    },
+    {
+     "captured_utc": "2026-06-13T11:21:51Z",
+     "a": "Researchers cited by Le Monde and The Straits Times say Elon Musk's social media activity was instrumental in inciting the Belfast riots.",
+     "b": "The Guardian and BBC investigations point to organised loyalist paramilitary networks as a central driver of how the Belfast riots unfolded."
+    },
+    {
+     "captured_utc": "2026-06-13T12:15:53Z",
+     "a": "Researchers cited by Le Monde say Elon Musk's online activity was instrumental in inciting and organizing the Belfast riots",
+     "b": "Guardian and BBC investigations attribute the riots' organization primarily to loyalist paramilitary networks in Northern Ireland"
+    },
+    {
+     "captured_utc": "2026-06-13T13:12:56Z",
+     "a": "The Guardian and France 24 link the riots to organized loyalist paramilitary networks and Northern Ireland's long legacy of sectarian violence.",
+     "b": "Researchers cited by Le Monde argue Elon Musk's social media activity was 'instrumental', amplifying anti-immigrant sentiment triggered by a stabbing."
+    },
+    {
+     "captured_utc": "2026-06-13T14:16:36Z",
+     "a": "Researchers tell Le Monde that Elon Musk's role was 'instrumental' in organizing and amplifying the Belfast anti-immigrant riots.",
+     "b": "The Guardian and BBC point to loyalist paramilitary influence and a long legacy of Northern Ireland's sectarian violence as primary drivers."
+    },
+    {
+     "captured_utc": "2026-06-13T18:16:26Z",
+     "a": "Researchers cited in Le Monde say Elon Musk's social media activity was instrumental in inciting Belfast's anti-immigrant riots.",
+     "b": "The Guardian and France 24 trace the riots to Belfast's long legacy of sectarian violence and loyalist paramilitary influence."
+    },
+    {
+     "captured_utc": "2026-06-13T19:21:19Z",
+     "a": "Researchers say Elon Musk's platform was instrumental in amplifying far-right messaging that fueled the Belfast riots.",
+     "b": "Analysts tie Belfast riots to a long legacy of sectarian violence and resurgent loyalist paramilitary influence."
+    },
+    {
+     "captured_utc": "2026-06-13T20:15:53Z",
+     "a": "Le Monde reports researchers found Elon Musk's role 'instrumental' in stoking the Belfast anti-immigrant riots",
+     "b": "France 24 frames the Belfast unrest as reflecting the city's long legacy of sectarian violence"
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+   ],
+   "history": {
+    "built": true,
+    "frames": 4,
+    "nodes": 29,
+    "discovered_days": 3
+   },
+   "lead_image": {
+    "url": "https://i.guim.co.uk/img/media/4b5381180cd797e3a314bd3c90bb363ae9179807/924_449_4022_3218/master/4022.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a56d888ac5c53c658f9b211005ec5246",
+    "source": "Guardian World"
    },
    "gate": {
     "score": 7,
@@ -6074,9 +6082,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 27,
+   "items_24h": 26,
    "items_48h": 59,
-   "outlets": 39,
+   "outlets": 37,
    "kinds": [
     "journalist"
    ],
@@ -6112,6 +6120,18 @@
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOaTRnMXpVQWEtLThxLVZMOFlJSkFOc0E5UTBZSWVMbnJQLUI2Y3N5R2I2UlotX00xazc3am9TVEt4UWVhRDhIMFlzdDVYei11WmxBYXN6TUNBQVFGRHVGUjRMdC02Y2JVRHJZZWd0U014U3hReGhSNHVSLVVUWkRRdkVEYVpsN1Q0YzlDeVZ0VlFVOW94X1ZXYnYxbWd5YlJOMXNUZ0NjeVdsbThybmJmVzFRLTQ2Z092d0huUWY1by14V2tWdTJYTW0wMDJJVV9JR051Ulp4Q3FLb1c2OFNwTXU3ZWJFYnVMWDNERFhScDhMSWxfOUx6UkVUeUM4OUc3Qmo0d2ZXcjVjOWNSRXFRRGFyXzc?oc=5",
      "rel": 6,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T14:41:44Z",
+     "title": "Cabinet set to approve funding for establishing 61 West Bank settlements - reports",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxNVFFSZFBjNWIzRXhGT21lckp0UWEyNVl5Zk1NUEljT3NhWFFNVGJVYjgyeHJNdXUwbXY3N2trSm1lZ3Byd0hKYUtWOTJUYVVQTm9OUzR5RTZ2bV9saXE5TzRicDIxamJxZmw5T3BtRUpzdFhNUXY3bko1U3Z1ZVhLaUd5VXZ6RWRPNU1ETVYwWGYzam9qVXhzd0xiZnVwTWxCcXpnZkVXT3Rmamp2cWRlVUNxdld0dUlibDVPYnFrRk5wMGUweFFjbi1qdmNNSTFxeG14eUotb2U4LWlMWHFoQ2FjcjdfLXhQLW5Mc084RWhFaUdsY3I4UVRqbktYVk5FalJ2ak1XY2UzS0FUbGtJM2V4ZWlUQlA4LXlkeTJvOXRYTUhMQTBuTXUzN1A0c3M2X0JySnBnUklmNlNUSjVfRlFkQVd3UDAzY3RtYWhLSlVWeUI4Y1d0Tno4WWFBVWdMY0NxanhrS3pKSnNJRUd2VHQzOW5oY083THVkcDhjSFlEYW1fMkhZYTJHVjQ1endIMzE3dUJZOVgwZ0RrRDkxeE04UjlLUQ?oc=5",
+     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -6164,43 +6184,31 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-14T11:13:43Z",
-     "title": "Protest planned in London over Great Israeli Real Estate Event",
-     "outlet": "The New Arab",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ1RwR2V2S1hOX1hISmppNEN1UGt3NXZkeW1hTlN5aXBUdjUzN1RzbGkwQjNxOG01d3hGWTQxbjJZZ0lzaVd1a2x5eHZzaXdYM2x1N3pGeGk4allLZmpIXzg5SXJiRFM4dWlaR0J5bVBIQmEwX2FnX3pxeDNvc0Z4bmhDLVN0YWljY0VDSVJwZkl4QdIBlwFBVV95cUxNWXVld3NocHF6bjRkTHFfTkpWUGxjNFlfcEc0WHI3dGlMZnhhRnc5bUFhemNLMnU5ZzM5ZzhILWd0Ql9GaERqWkdWaWxDTW5FRGFNRkhZYktlMTV3RDRvOFRyZjM1a3JLaTgtb2haOHA5TUZuMGU3eTBwRW4xdDR2T3oyNDd5cndaUHZ0eUtqYlVtMk5KYlFr?oc=5",
-     "rel": 3,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Rights groups and a damning report say Israel is conducting state-led ethnic cleansing in the West Bank, as the UK sanctions settler farms.",
-    "b": "Israel continues expanding settler farms while supporters accuse critics of antisemitism for drawing apartheid comparisons.",
+    "a": "A damning report and protesters characterize Israel's West Bank campaign as a state-led programme of ethnic cleansing.",
+    "b": "Israeli and allied voices argue that labelling Israeli West Bank policy as ethnic cleansing or apartheid is antisemitic.",
     "basis": "extracted from live headlines 2026-06-14",
     "axis_type": "interpretation",
-    "axis_question": "Are Israeli West Bank policies ethnic cleansing or defensible state action?",
+    "axis_question": "Is Israel's West Bank settlement expansion ethnic cleansing or legitimate policy?",
     "carriers": {
      "a": [
+      {
+       "outlet": "PressTV",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNelg1akhLTjlIVTVsYjlZMlpKRzJMeGVELU9hUnhnWmpCd0llYjBWZmkwX3dSMGRlYjdmbnRUaHlVVDVjYnU0YUpmaXo3V3NXV2RNejk1UXJmSC1KMUdsTm8zdXFLRGE0WGhKRk9feF9EVV9NaVZhdE9rSmZqa2QtaG8yOUtJSzQ3RnZuQk5UQW1xOHA5U19hR19IamJKMHE0UzRfSTZQcU9BTk5PMXlLUzctMGt5V0xCNGh3dWlELU5sZnBsazN4MkRxaDlac3c3QUtmZmg0MFhGZU4w?oc=5",
+       "ts": "2026-06-13T10:19:00Z",
+       "provenance": "original",
+       "motive_note": "IR state media"
+      },
       {
        "outlet": "Al Jazeera",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdm9oX1Jic1VkQm84SnZPeFdWWE1rSHh0VWtyQW85ODVoSDlOb2wxZHlkemV6TEJvblpmYXNrSldHZ3lqNWFnbHY4ZzdTUnA2TVhUSU1QMlpQMHpGNDJuaWpPTlpfY0MxRXJzc1hrZ1ZOWjAtSUF4d2s4YkoyY3lrTlBzMjN1Wm9XUTJNcUFXT1dNSURwWUtkODM1Uk9RaVc1TXd0N1MxMHhQVDd00gGyAUFVX3lxTE53Zzlaa0JOSmVKZXJtM3p0Nkg0TTJRZlZ1SmJSblhfUmhKR3c5OG5LaENqcDNpdlItU254NDhQalFtcW10cU9UTzMxVmstV2lnVnhIbm9rQ2ZRYnFzQjAwNmsycko4Z2FRRk5fTHREckhUcXhiZGtNM2hZa09MUUh5cFVZdUpyYzlhNzdHU0F2b040TjNEb3lVUC04OEs5czhmcFQzT0NnaGlyNXJ1bVpVcFE?oc=5",
        "ts": "2026-06-13T19:12:16Z",
-       "provenance": "original",
-       "motive_note": "Qatar state-funded international broadcaster"
-      },
-      {
-       "outlet": "Haaretz",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNZDQ2ajlnNUwySnVYZXZ2YmFUZGtPd3JDeFBFSjVodVFmSjN3alhPWHgzS2QxeEszSGhfeUFhR3RxaElHMFRXZm90SjV5enQ3VUVIejl0dmlQUVdYYmVhMTdsNWJYYVd2b0VkcEJ4VGdpOGE2bUJpWWJabDZlaXBiVFJxVXBHcDdBR1FJSHB4aXROczhQNFAxeEplX1JXTXZwWk5JeFV2WmdwSG1NRDVaYU80SXJRQTVqaGdZNjVpQ1BsYnVVYnNmMENyREtBYmNhTG0yX0hTaFlsT2VCdTZudGZySUJVLTB0VXJiRGdPOXR3NUNCY2c?oc=5",
-       "ts": "2026-06-13T20:46:00Z",
        "provenance": "echo",
-       "motive_note": "IL regional press"
+       "motive_note": "Qatar state-funded international broadcaster"
       },
       {
        "outlet": "AOL.com",
@@ -6235,32 +6243,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 36,
+    "outlets_timed": 34,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "CHEK News",
-      "ts": "2026-06-12T18:25:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "cbc.ca",
-      "ts": "2026-06-12T18:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Al Jazeera",
       "ts": "2026-06-12T19:27:17Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "Qatar state-funded international broadcaster",
-      "items": 12
+      "items": 13
      },
      {
       "outlet": "MSN",
@@ -6268,7 +6260,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "items": 2
      },
      {
       "outlet": "Australian Broadcasting Corporation",
@@ -6301,6 +6293,22 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "The Straits Times",
+      "ts": "2026-06-13T08:50:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "SG press",
+      "items": 1
+     },
+     {
+      "outlet": "The Hindu",
+      "ts": "2026-06-13T09:28:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": []
@@ -6355,19 +6363,19 @@
      "class": "other"
     },
     {
-     "outlet": "The New Arab",
-     "n": 5,
-     "class": "other"
-    },
-    {
      "outlet": "MSN",
-     "n": 4,
+     "n": 5,
      "class": "other"
     },
     {
      "outlet": "Press TV",
      "n": 4,
      "class": "state-media"
+    },
+    {
+     "outlet": "The New Arab",
+     "n": 4,
+     "class": "other"
     },
     {
      "outlet": "The Times of Israel",
@@ -6491,6 +6499,11 @@
       "2026-06-14 12:00",
       27,
       44
+     ],
+     [
+      "2026-06-14 18:00",
+      27,
+      39
      ]
     ],
     "mix": {
@@ -6503,11 +6516,6 @@
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-14T05:18:07Z",
-     "a": "The EU, UK, and international organizations call for sanctions on Israeli settler farms and accountability for West Bank settler violence",
-     "b": "Israel continues to expand settler farms despite international pressure, while some argue boycotts and condemnations have gone too far"
-    },
     {
      "captured_utc": "2026-06-14T06:14:29Z",
      "a": "EU, UK, and Amnesty International impose sanctions and demand Israel halt settler violence and settlement expansion in the West Bank.",
@@ -6562,10 +6570,15 @@
      "captured_utc": "2026-06-14T18:12:41Z",
      "a": "Rights groups and a damning report say Israel is conducting state-led ethnic cleansing in the West Bank, as the UK sanctions settler farms.",
      "b": "Israel continues expanding settler farms while supporters accuse critics of antisemitism for drawing apartheid comparisons."
+    },
+    {
+     "captured_utc": "2026-06-14T19:13:17Z",
+     "a": "A damning report and protesters characterize Israel's West Bank campaign as a state-led programme of ethnic cleansing.",
+     "b": "Israeli and allied voices argue that labelling Israeli West Bank policy as ethnic cleansing or apartheid is antisemitic."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT West Bank settler sanctions ethnic cleansing, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -6761,8 +6774,8 @@
     ]
    },
    "discovered": true,
-   "items_24h": 23,
-   "items_48h": 66,
+   "items_24h": 18,
+   "items_48h": 64,
    "outlets": 36,
    "kinds": [
     "journalist",
@@ -6868,13 +6881,23 @@
     }
    ],
    "split": {
-    "a": "Afghanistan and the Taliban say Pakistani airstrikes killed 13 civilians, including 11 children, in eastern Afghanistan.",
-    "b": "Pakistan's PM Shehbaz Sharif defends cross-border security operations as essential for Pakistan's national security.",
+    "a": "Pakistan's PM Shehbaz Sharif defends cross-border operations and Durand Line fencing as essential security measures.",
+    "b": "Taliban and Afghanistan say Pakistani airstrikes killed 13 civilians, including 11 children, in eastern Afghanistan.",
     "basis": "extracted from live headlines 2026-06-14",
     "axis_type": "factual_dispute",
-    "axis_question": "Were those killed in Pakistani strikes civilians or militant targets?",
+    "axis_question": "Did Pakistani airstrikes kill civilians or strike militant targets in Afghanistan?",
     "carriers": {
      "a": [
+      {
+       "outlet": "Ariana News",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQb3RvSFlsR3c3MC00bFhKWHotMWFRMTJlTnhIbTE3WGpaU29nclZuNzFDTG9wZUh2cElKZHFaNVNqcThnSHZ3MElmZVlyaTUwalRMSFVPTjc5VWdNeTVOdGdLVWw0dWdvNU9pOGswYXNFMHhnWkpINzJMS21VOFRjNlJVVlVRUjNNMDBXZnd4QWZ1dzZBalpVbW9mMFZJTWlJOWJrRWRrblkta0YzNVHSAa4BQVVfeXFMUG90b0hZbEd3NzAtNGxYSlh6LTFhUTEyZU54SG0xN1hqWlNvZ3JWbjcxQ0xvcGVIdnBJSmRxWjVTanE4Z0h2dzBJZmVZcmk1MGpUTEhVT043OVVnTXk1TnRnS1VsNHVnbzVPaThrMGFzRTB4Z1pKSDcyTEttVThUYzZSVVZVUVIzTTAwV2Z3eEFmdXc2QWpaVW1vZjBWSU1pSTlia0Vka25ZLWtGMzVR?oc=5",
+       "ts": "2026-06-14T13:15:04Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      }
+     ],
+     "b": [
       {
        "outlet": "MSN",
        "kind": "journalist",
@@ -6890,15 +6913,13 @@
        "ts": "2026-06-14T11:39:01Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ],
-     "b": [
+      },
       {
-       "outlet": "Ariana News",
+       "outlet": "Ahmedabad Mirror",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQb3RvSFlsR3c3MC00bFhKWHotMWFRMTJlTnhIbTE3WGpaU29nclZuNzFDTG9wZUh2cElKZHFaNVNqcThnSHZ3MElmZVlyaTUwalRMSFVPTjc5VWdNeTVOdGdLVWw0dWdvNU9pOGswYXNFMHhnWkpINzJMS21VOFRjNlJVVlVRUjNNMDBXZnd4QWZ1dzZBalpVbW9mMFZJTWlJOWJrRWRrblkta0YzNVHSAa4BQVVfeXFMUG90b0hZbEd3NzAtNGxYSlh6LTFhUTEyZU54SG0xN1hqWlNvZ3JWbjcxQ0xvcGVIdnBJSmRxWjVTanE4Z0h2dzBJZmVZcmk1MGpUTEhVT043OVVnTXk1TnRnS1VsNHVnbzVPaThrMGFzRTB4Z1pKSDcyTEttVThUYzZSVVZVUVIzTTAwV2Z3eEFmdXc2QWpaVW1vZjBWSU1pSTlia0Vka25ZLWtGMzVR?oc=5",
-       "ts": "2026-06-14T13:15:04Z",
-       "provenance": "original",
+       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZFBlT1M2a1N0S3JIajViMVc5WTVWUUJabHh5Wk94M01LTEZrY2s0eTlzQ1RoRzQ2ejhHN1ZCU1J6UmtGR210Uk9reFItMWhMZlNfYTFoYm5fSm82dXF5T20zdk8zZGhSSU14YWNmWkVnNTRJMy0zUnBaYWxveW1CeVdyMGpZZXlyZWpKakVtQjZzMUZTRkFrRk5Kd0Yxc2h1WW9RR3VMWTN4ZHc3R21qT0ltNlh0cl90WmhjdTh3?oc=5",
+       "ts": "2026-06-14T14:25:53Z",
+       "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
      ]
@@ -6913,19 +6934,19 @@
     "chain": [
      {
       "outlet": "News On AIR",
-      "ts": "2026-06-12T18:47:31Z",
+      "ts": "2026-06-12T19:15:22Z",
       "kind": "journalist",
       "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 8
+      "items": 7
      },
      {
       "outlet": "MSN",
-      "ts": "2026-06-12T19:05:50Z",
+      "ts": "2026-06-12T23:24:35Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 15
+      "items": 14
      },
      {
       "outlet": "Social News XYZ",
@@ -7129,6 +7150,11 @@
       "2026-06-14 12:00",
       26,
       35
+     ],
+     [
+      "2026-06-14 18:00",
+      23,
+      36
      ]
     ],
     "mix": {
@@ -7141,11 +7167,6 @@
     "first_seen": "2026-06-11T19:14:36Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-14T06:14:29Z",
-     "a": "Pakistan frames its airstrikes as necessary counterterrorism targeting militant groups operating from Afghan territory.",
-     "b": "Afghanistan and critics condemn the strikes as killing civilians, provoking retaliatory Taliban cross-border attacks."
-    },
     {
      "captured_utc": "2026-06-14T07:19:02Z",
      "a": "Pakistan frames its airstrikes on Afghan border areas as targeted counter-terrorism operations against militant infrastructure.",
@@ -7200,17 +7221,23 @@
      "captured_utc": "2026-06-14T18:12:41Z",
      "a": "Afghanistan and the Taliban say Pakistani airstrikes killed 13 civilians, including 11 children, in eastern Afghanistan.",
      "b": "Pakistan's PM Shehbaz Sharif defends cross-border security operations as essential for Pakistan's national security."
+    },
+    {
+     "captured_utc": "2026-06-14T19:13:17Z",
+     "a": "Pakistan's PM Shehbaz Sharif defends cross-border operations and Durand Line fencing as essential security measures.",
+     "b": "Taliban and Afghanistan say Pakistani airstrikes killed 13 civilians, including 11 children, in eastern Afghanistan."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate.",
+    "History build skipped this run - the reasoning engine was unavailable. The build retries next cycle."
    ],
    "history": {
     "built": false,
     "frames": 0,
     "nodes": 0,
-    "discovered_days": 2
+    "discovered_days": 3
    },
    "lead_image": {
     "url": "https://ichef.bbci.co.uk/news/1024/branded_news/93a5/live/ac2cfa10-64ab-11f1-9c89-85486d952f7c.jpg",
@@ -7240,45 +7267,85 @@
     "terrorism"
    ],
    "brief": {
-    "generated_utc": "2026-06-14T14:24:22Z",
-    "sentence_count": 18,
+    "generated_utc": "2026-06-14T19:12:17Z",
+    "sentence_count": 11,
     "dropped_count": 0,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "High-ranking Russian military official Damir Davydov was killed in a car bomb in Moscow.",
-        "cites": [
-         {
-          "outlet": "New York Post",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYjdFcWhuYUlkTHN3a2xkbnFjT2pvazhZX1ZBNFUxWTg5d2J5OUE2dkxfUG9YZ09CTXVLQWtwVVNUeFZoR3NKbEt3akhQTjBYWHN0d1RvdGRZQXI5NkdDYTZDZ2R5S194QTZHdk9QZXdya0kyZzBGSHJjbGhTSWUwUWhJa1RjTTVPcDNvMTlCWGVpM3JVLWpfeEQ5a1U3d1V4QjZPY2F6N3BtOGVYRzZ6VA?oc=5",
-          "ts": "2026-06-11T14:59:00Z",
-          "title": "High-ranking Russian military official Damir Davydov blown up in car bomb in Moscow"
-         }
-        ]
-       },
-       {
-        "text": "A separate report says the explosion killed a military official in the Moscow suburb of Balashikha.",
+        "text": "A car bomb exploded just outside Moscow, striking a high-ranking Russian officer.",
         "cites": [
          {
           "outlet": "MSN",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNRWdIVXYzVk96RktNSE0wRkNSS2FoR3JqWnczWVhCTDVocXA4QU5JNWtzOE1YOURRekl4VFNhYVB0ZmI1b2E2WHRhUWtJUEQ3MVdINF9vZ1NzWE9YNzNZaUtKTXpZeFFpbEFhNnM0UmQzT2hlWU43Mk9uX2lERVZnZXJyTHNEd2k2aWw4S0wwd3lrOGEwTTB6R3c3WFliNlFhOGtqdEZTNTVsVU5QNWk3bnNqc0RmUzllSXlpYnNFQWxyWmhmaFUyblVaRHhsS2RtVGYzdHVUYW9sUQ?oc=5",
-          "ts": "2026-06-11T17:36:20Z",
-          "title": "Russia car bomb explosion: Military official killed in Moscow suburb of Balashikha, reports say"
+          "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOaWhGOVlCbHJ4MG5FWkNXYkZRTjRFOHJtQkNxWUJod3N6bjI0MzFPRG00cUNKbTNHeVFVa0VPaXNvRzFmMkJwZGtJZ2hSSWNMRE05aW13OEM3NVhUaDJrRjRIb2FwZFcwMnF4Zmd2QzdKaEhFcDlfbzctMDRzeW9nMkNlOG9pWDhWZkhuTHFOVHpfSGFQbm55ckpyaVJ3aXZnbGpILUM1T1I4Z1pkYmN2dFd2Xzd6VElJaDUxWXY2RkQ5MFplZS1UVm0yOXJsZkk0U2tJQVBXaWJ6UDBacE0xdVEzeGJCWWlia2oyNDFqWEdfSVFfSml6d2xyYjREQlhRbEtRZm1QeFNlR1Q1NXJPZGV3MThFMjRGa3pDbnllM0VmcmY4VVV6ZWJKa2NodTY2MnR0QWJCcTBMcjBIWEVJYTNhczVCSHM?oc=5",
+          "ts": "2026-06-13T10:59:27Z",
+          "title": "Car bomb just outside Moscow kills high-ranking Russian officer"
          }
         ]
        },
        {
-        "text": "Another account describes the victim as a senior Russian commander killed near Moscow.",
+        "text": "Ukrainian outlet Militarnyi names the target as Andrey Pinchuk, former commander of BARS-13 and former head of the 'DPR Ministry of State Security.'",
+        "cites": [
+         {
+          "outlet": "\u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1SbW1vTm1TdUZiV1c2M3hRY3FNUjc4eHdXRVhuNkRnZkJzN2xsQXE2NWs1UDduSUdseE1IZFdYVzlzWHJFZDRfb3NYV29qY3dfUDJyYzVDS3FweGtYOWVBS1FRRG5FV3RFamRtbEFMOE5TaEtxNFhnazBUZ0J3QQ?oc=5",
+          "ts": "2026-06-13T07:50:25Z",
+          "title": "Andrey Pinchuk, Former Commander of BARS-13 and Former Head of the \u2018DPR Ministry of State Security,\u2019 Targeted in Assassination Attempt in Moscow Region"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "MSN reports that a senior Russian general was killed in a car explosion near Moscow.",
         "cites": [
          {
           "outlet": "MSN",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaXM4N3U4em9YSVF6SDEwT2xHNnJkeUl1enVZVVhjOEw3UWpyTDdkUXp2VTd5VDN2WHM4dUhuc0E4R3ZnUFczT0ZIZDhuV2tBV2ZnMXl0NVFUUjVmSjJsc1AyYkdnLTJHNTF6SkFSX0dRVzE0YU05T1dfSWxBOFFEX0NMOTNSSW5kTUxjdHNnV0R0NmxmNHNJRWJhTHpFYWd2V2JGMw?oc=5",
-          "ts": "2026-06-12T10:38:20Z",
-          "title": "Report: Car bomb kills senior Russian commander near Moscow"
+          "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNR3FudG1Oa1BxYzdTUTJuQ196THZzOEVqQ09fRklOdFlwWnBHOGlTbVFObTI5d0ViZ3FkZE83Q1AtT3dqSndKTzVraVNPeGptWGtvOTkxZV9DS054UmRYX1o3dHRpMGt3OWpXdHA1M2NnczBLZXpNMWZJV1hocG1VckNHNW14Sk9famVGRXNwVk5ZSWpub3FrMXB1bTVUWGF6RXNjajhUMWtrWUVuRWNNX3lYMF9IMkRKVlo4dGpUNW5lN0VETTdfei0tV2xJYndzUTRqbVcydkFFcE5sX2hwc0M2aEp6dDBGTi0wSnBBSzNFc21Hb3VMS1JYLXFBTWw4TDlZVGlPYm9ndXVQZTdsSjJyUEpCTnJ1MTdiSktlYmwzUUFWcGRLMlhlbms4a2ZoRUdjZUNnSXpHeFJMY0pTZHp2NFM5M204UkVORUJLOHM?oc=5",
+          "ts": "2026-06-12T18:19:54Z",
+          "title": "Senior Russian general reportedly killed in car explosion near Moscow"
+         }
+        ]
+       },
+       {
+        "text": "One MSN report describes the victim as a Russian commander who supplied weapons for Putin's troops.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWmxCWmFWM2FSaG5LOGZXNWI1SEdwNWMwMVB0M0FjaFQ0bEZjZC1Jc0dVMjltdVE1ajAyR0hpZUhtN0VzRnRtVVBvelJYeEJGWmNqYmNrVFhMWjJaQTZzZE5IR1k5dXVqY1VrUU1HMFRpVTJPQVJWQk00U2g5Szl5LS04NzMyZTNRLVlPQXB2ZmVuYkVnSFBKVWhlLW9DSkxKb3BSdmJXa2IwN2NZblgxR1g5N0tpamUwR3EzWXd3?oc=5",
+          "ts": "2026-06-13T21:30:13Z",
+          "title": "Car bomb kills Russian commander who supplied weapons for Putin's troops"
+         }
+        ]
+       },
+       {
+        "text": "Another MSN report calls him Putin's missile chief.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRGNhX0F1X1E5SS1wRmo4MTBkQ2RPMGRISFNVSUtEVngtaWMtbDJSa3MwcU0zbUNnZlpzcnAyN2pfc0NncmRDMXByZDBMenFEbUlIYkdreTd2OU9Xc0hZWXVPQlZTcW1pSEc3TWRPSWdqMmhGUmhOUE1zNWo0UEZKR09XV0o2NU84Tmx4Q2E3ZW53d091bUo5b1o0VkE?oc=5",
+          "ts": "2026-06-13T20:42:58Z",
+          "title": "Putin\u2019s missile chief killed in fiery car blast"
+         }
+        ]
+       },
+       {
+        "text": "The National Interest reports a Russian Army Colonel was killed by a car bomb.",
+        "cites": [
+         {
+          "outlet": "The National Interest",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTmhiektkRjQyejh5U1UtZncxRlliWjlQT1pmbVBPVUpjb1NsTi14Znp3WGtTUWQzejBBRnkweUtESEtXVzVFal9hYVpSR0FvYldud0FuUGpqV1AydkZWNG1mTERNVy1HSDFqV1lZSExLcVVwNnFnTERYMjJlblZhQV9PYVgyTXdNd2tSWngtb2ZNVWo4RE5pVA?oc=5",
+          "ts": "2026-06-12T17:07:53Z",
+          "title": "A Russian Army Colonel Was Just Killed by a Car Bomb"
          }
         ]
        }
@@ -7287,38 +7354,38 @@
      {
       "sentences": [
        {
-        "text": "TASS reports that air defenses destroyed four UAVs heading toward Moscow.",
+        "text": "Militarnyi reports the incident as an assassination attempt in the Moscow region targeting Pinchuk.",
         "cites": [
          {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/defense/2146169",
-          "ts": "2026-06-14T09:34:32Z",
-          "title": "Air defense destroys four UAVs heading toward Moscow"
+          "outlet": "\u041c\u0456\u043b\u0456\u0442\u0430\u0440\u043d\u0438\u0439",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1SbW1vTm1TdUZiV1c2M3hRY3FNUjc4eHdXRVhuNkRnZkJzN2xsQXE2NWs1UDduSUdseE1IZFdYVzlzWHJFZDRfb3NYV29qY3dfUDJyYzVDS3FweGtYOWVBS1FRRG5FV3RFamRtbEFMOE5TaEtxNFhnazBUZ0J3QQ?oc=5",
+          "ts": "2026-06-13T07:50:25Z",
+          "title": "Andrey Pinchuk, Former Commander of BARS-13 and Former Head of the \u2018DPR Ministry of State Security,\u2019 Targeted in Assassination Attempt in Moscow Region"
          }
         ]
        },
        {
-        "text": "The Moscow mayor said the number of drones shot down on approach to the city reached 21.",
+        "text": "Russian site eadaily.com reports an attempt was made on the ex-Minister of State Security of the DPR in New Moscow.",
         "cites": [
          {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/emergencies/2145827",
-          "ts": "2026-06-12T16:16:50Z",
-          "title": "Number of drones shot down on approach to Moscow reaches 21 - mayor"
+          "outlet": "eadaily.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONzJESUxNUmpSRzZuYnJiTHlkRUc5WVRVRGNwY05uTV8zLXZzaTJkWXFLbHVtUDBpOER6S2ZVOTUzbmlvSWhDcEEzUDh6NVBldmJtUXFlYTJkdTJwcUs3WTJ1T000VU1tNkEtbzZDS3hicGdkQ1RZN3lnOVF0aWViODlHWUVubi15Tkp1QVBVbDQ3SDVTVlY4eXNRWkxjNHBWMkdPQ0lMYVB3Q3hOVGM3dkwxSUZiZnA4ZHZnTlp4MTLSAcABQVVfeXFMTjcyRElMTVJqUkc2bmJyYkx5ZEVHOVlUVURjcGNObk1fMy12c2kyZFlxS2x1bVAwaThEektmVTk1M25pb0loQ3BBM1A4ejVQZXZibVFxZWEyZHUycHFLN1kydU9NNFVNbTZBLW82Q0t4YnBnZENUWTd5ZzlRdGllYjg5R1lFbm4teU5KdUFQVWw0N0g1U1ZWOHlzUVpMYzRwVjJHT0NJTGFQd0N4TlRjN3ZMMUlGYmZwOGR2Z05aeDEy?oc=5",
+          "ts": "2026-06-12T19:15:00Z",
+          "title": "In New Moscow, an attempt was made on the ex-Minister of State Security of the DPR"
          }
         ]
        },
        {
-        "text": "TASS also reports that thirteen drones were shot down on approach to Moscow on the same day.",
+        "text": "inkorr.com reports that Christo Grozev identified the Russian officer killed in the Balashikha car bombing.",
         "cites": [
          {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/emergencies/2145797",
-          "ts": "2026-06-12T10:46:02Z",
-          "title": "Thirteen drones shot down on approach to Moscow today - mayor"
+          "outlet": "inkorr.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOem1NY0xPUTdhSDVjRHhIU0VBMXBPU2w5ZTA4dV9QekE0VW9kWXp3WUZrZzl0eTY0NHd2bGhIM3FTY0lUNFQ5Z29qaEY3empSRlNId1ZlWG9jbVNyUUpoVUxBTVV1bjZPc1pkMVQ2d2RjWGpQUUNzQXZ6ejd6RTF5TFR4cmZuS3RCTFJFb2pfNTdZbU1KcEljTDNR0gGaAUFVX3lxTE56bU1jTE9RN2FINWNEeEhTRUExcE9TbDllMDh1X1B6QTRVb2RZendZRmtnOXR5NjQ0d3ZsaEgzcVNjSVQ0VDlnb2poRjd6alJGU0h3VmVYb2NtU3JRSmhVTEFNVXVuNk9zWmQxVDZ3ZGNYalBRQ3NBdnp6N3pFMXlMVHhyZm5LdEJMUkVval81N1ltTUpwSWNMM1E?oc=5",
+          "ts": "2026-06-13T17:41:06Z",
+          "title": "Christo Grozev Identifies Russian Officer Killed in Balashikha Car Bombing"
          }
         ]
        }
@@ -7327,158 +7394,26 @@
      {
       "sentences": [
        {
-        "text": "TVP World reports that a Russian State Duma MP warned of 'total chaos' and a 'social explosion' if Russia does not end the war.",
+        "text": "MSN reports the senior Russian commander was killed in the Moscow car bomb after his son allegedly leaked his plate number online.",
         "cites": [
          {
-          "outlet": "TVP World",
+          "outlet": "MSN",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY1RpS2tmZkk0RXpvTlV2TUlSM2dlWXA2bDFnalRnQ3dpUkpiUGFBcjlmNmRZN09ncG12aUVfS0FLWkNpTTh5M1ZybHAwTEVwbTgyYlhUUDR1RTQ4d0xuaVh5dnI0UkNfbnpIVmFqOVFjMlVkbHY4Z0c3X2g0YjdnbWV3eE9yWTJIRkdMUkI1Q0s?oc=5",
-          "ts": "2026-06-13T18:36:00Z",
-          "title": "\u2018Total chaos\u2019 and 'social explosion' likely if Russia doesn\u2019t end war, State Duma MP warns"
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNaEhMUW5wb3NxZ0xPZW1VckhQWDhQdHBQSEhxclBHVkhnZnBFV0hMeVYtN2szZHZsYUJ4V21FVGFKWkxjYkYxajJHQmY1RmJEOUdpRndtbGdNSFlVMUlYSHJYX0tnOXpEWFdCUmk3UGtYN2xDSUVuU18wYVRFczlmbElXQlBlU2ZBN0d5Z2dUQjktMzlmR1I2Q1YzVVdVOHdKaEwzc3FHQlNRaU1KV0NnSC1VYzlQU2Z1TnpfVS1LQklNNGFxcE0wbjhYNHBNejBBOHVaMm9tX1dHMnQ5UlcwSmJjci1GaWI5M1lvZ3dpYk44NnU3?oc=5",
+          "ts": "2026-06-13T15:39:54Z",
+          "title": "Senior Russian commander killed in Moscow car bomb after son allegedly leaked his plate number online"
          }
         ]
        },
        {
-        "text": "Kyiv Post says the lawmaker tied the warning to war losses and demanded a 'public plan' to end the war.",
+        "text": "The Daily Express US reports the Russian general was blown up after his son posted a picture of his dad's car number plate online.",
         "cites": [
          {
-          "outlet": "Kyiv Post",
+          "outlet": "Daily Express US",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE43Y3UtcUV5eHcwdFpDZlhBUjJfS0ZrUzFFZ2o2UThGVnlMdXVqLWFpMEFLUmk3M0tzTUJIdnBZZkpTMWdZdFZhVExFNA?oc=5",
-          "ts": "2026-06-12T11:40:21Z",
-          "title": "Russian Lawmaker Warns Of \u2018Social Explosion\u2019 Amid War Losses, Demands \u2018Public Plan\u2019 To End War"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "TASS reports that Moscow and Minsk adopted initiatives to combat Western sanctions, according to the Russian Foreign Ministry.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2146073",
-          "ts": "2026-06-13T19:21:24Z",
-          "title": "Moscow and Minsk adopt initiatives to combat Western sanctions - Russian Foreign Ministry"
-         }
-        ]
-       },
-       {
-        "text": "TASS separately says the top US diplomat expressed hope for a constructive relationship with Moscow.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/world/2145877",
-          "ts": "2026-06-12T19:23:37Z",
-          "title": "US hopes for constructive relationship with Moscow, top US diplomat says"
-         }
-        ]
-       },
-       {
-        "text": "TASS also reports that Russia is still waiting for the US to appoint its ambassador to Moscow.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2145779",
-          "ts": "2026-06-12T08:02:02Z",
-          "title": "Russia still waits for US to appoint its ambassador to Moscow - Ambassador Darchiev"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "TVP World reports that Western envoys met Russian officials in a rare Moscow meeting.",
-        "cites": [
-         {
-          "outlet": "TVP World",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPLXR1bkJBR3lNWEVJSm5DdVNBejVEeDJCdDFTY21yc3BlMGxMXzZhdjVDQjVLWTFrSS1GazFWMXhJMEhrYURQVlB4dGhwTTQ5X3I5dkxab1RDMUZkMGZJNzcyU1oxM21ZdHZTM3gyRWttdlpWLXNYR2Jnc0xDNFV1bU9DWlllR1MtZjFfQUdHZ2hVT3UzaUVqODBEcEV0VUQ4QzFGWVllbEVIckkwQXJhdEFJMzhZMVRnbWJfdXQteXpwN3o1cGctWVFrR2VyaHhYdGlWRkJIZUw2T1c0MjhBaktTNzJvS1BobGFmYkRJRHlacHB1OGNGNlVOQ3NxUnlKVzhjS3AyN1M0SzI2QXVsMjFOM0o1ZkpDRXhxdW9mSTFaYWVsdHc?oc=5",
-          "ts": "2026-06-11T16:06:00Z",
-          "title": "Western envoys meet Russian officials in a rare Moscow meeting"
-         }
-        ]
-       },
-       {
-        "text": "The Kyiv Independent says UK, German and French envoys met Lavrov's deputy in Moscow amid an E3 peace push.",
-        "cites": [
-         {
-          "outlet": "Kyiv Independent",
-          "kind": "journalist",
-          "url": "https://kyivindependent.com/uk-german-french-envoys-attend-high-level-moscow-meeting-amid-e3-peace-push/",
-          "ts": "2026-06-11T14:55:24Z",
-          "title": "UK, German, French envoys meet Lavrov's deputy in Moscow amid E3 peace push"
-         }
-        ]
-       },
-       {
-        "text": "TASS describes the meeting as one between the Russian Deputy Foreign Minister and EU Three ambassadors.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2145521",
-          "ts": "2026-06-11T15:33:41Z",
-          "title": "What is known about Russian Deputy Foreign Minister's meeting with EU Three ambassadors"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Press TV reports that Britain seized a Russian oil tanker amid rising tensions with Moscow.",
-        "cites": [
-         {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/14/770415/Britain-seizes-Russian-oil-tanker-in-English-Channel-amid-rising-tensions-with-Moscow",
-          "ts": null,
-          "title": "Britain seizes Russian oil tanker amid rising tensions with Moscow"
-         }
-        ]
-       },
-       {
-        "text": "TASS says ambassador Kelin accused London of stepping up confrontation with Moscow.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2145703",
-          "ts": "2026-06-11T21:53:22Z",
-          "title": "London steps up confrontation with Moscow - ambassador Kelin"
-         }
-        ]
-       },
-       {
-        "text": "Belsat reports that Northern Europe faces the largest Russian military buildup in decades, according to an investigation.",
-        "cites": [
-         {
-          "outlet": "belsat.eu",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTnNpbUktZW41azV2V1I1QlRXdXZBRUdJVzVSWWNrckk1amlfSjFhRDVvTWdKTERxMjhQOXliS1ItRWFLNjhmRERTWmMxeTRLSnVRWHJUVHNvYklCcGRRTlM2VHZEX1RmS3ZHcTNqczZQLW1HZ1ZqUjdSMFBRTkNwd21zMXZVSGtwRDJ6eGhreEg3djJnMWhOYy1wRVpXVjZPemdIUFBqX3h3bE9nZ2lzTkZRX2xNbUJY?oc=5",
-          "ts": "2026-06-12T06:46:00Z",
-          "title": "Northern Europe faces largest Russian military buildup in decades, investigation reveals"
-         }
-        ]
-       },
-       {
-        "text": "The New Voice of Ukraine reports that Moscow is building a major new military base near Finland.",
-        "cites": [
-         {
-          "outlet": "The New Voice of Ukraine",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQWhFaEpTNGw5WXZkbzFkUU9oMmpOV3ZnZ3BfWkNpdWhWQlpUcWZZRVMyWXpabUpNN1FKaDBJZkFkR3dXRGJTSExwbG4tMGtaMGVQcHBJaEhrNWRLaWhkNFRoU3VtQWd3b0F5d293YTZmMHUxOURJQjZyaGdtd1pacm53WWdEWDdsZnBoMXlqdjZ6SUp1TC1fNkFLakZXRlVlbHFzZk1xbm1wTjDSAaABQVVfeXFMTm44RnloLVJuRzJ3U1NYVHdfMHRBLXBYbU96TGVYWk1zNVhYX3ZkSnctYnVFMHlsTnhWQ2xaUmlqTjFoR2FoNnEtUU94NDNINmN6bFdKSmZLUDFkRFZKdHY3ZWRnYk9JZUtGaFpnWGhWMlpTbW5RN3lSbmpNTFkwYXNKVUJKY3RZZkhZcDFHT1JPd0ZheUt1MkdxN3NDYXRubg?oc=5",
-          "ts": "2026-06-11T15:32:00Z",
-          "title": "Moscow building major new military base near Finland"
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSUZGUXFPa2EzckNYeVUwd0VreWdwZnFERml6V0V1VGtmb1l0RUVpcUZoNHp5ajhQWkYwb0ZKN0VybHl1VV9mTkZ2RFlFaHE4RFBTX1FmTlFVZ0FkQ3paNk5kTnNsd09pT2M0SkhIT191WHREQy1NajVHZENycmZBdzhUNkxmUFhsVEtZb1F6c1dOdlZNWTJZM3N5dFI0NnNLRHFZ0gGoAUFVX3lxTFBZQ2dQbjdLUjBQNGRTLXRCZ1hXQUxSMENrLUZ4R1BqWVpYTFV2ZEtRTTZkbUtjZVBVVTc5VkF2WmEzRFJHLVo2Nl9OSWdNQ204WElxNzJOMHBzNV9tTlhLbWpuMHlMOHlOX1l2ZzVMTTZFSHlGLUlsQUNBbUtvemwyd2czaE4zY3VyOTYwM3BOcmdScmN0dWd6TTl4S0wzTy1fbUp4WmlhRw?oc=5",
+          "ts": "2026-06-13T06:00:00Z",
+          "title": "Russian general blown up after son \u2018posted pic of his dad\u2019s car number plate online\u2019"
          }
         ]
        }
@@ -7487,7 +7422,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 7,
+   "items_24h": 6,
    "items_48h": 14,
    "outlets": 7,
    "kinds": [
@@ -7593,27 +7528,19 @@
     }
    ],
    "split": {
-    "a": "Multiple reports say a senior Russian military commander was killed in a car bomb attack in the Moscow region.",
-    "b": "Some sources describe the blast as an assassination attempt on Andrey Pinchuk, leaving his fate uncertain.",
+    "a": "Multiple outlets report Russian commander Andrey Pinchuk was killed in a car bomb attack near Moscow.",
+    "b": "Ukrainian and local Russian sources describe it as an assassination attempt, leaving his fate uncertain.",
     "basis": "extracted from live headlines 2026-06-14",
     "axis_type": "factual_dispute",
-    "axis_question": "Was the Russian military official killed or did he survive the car bombing?",
+    "axis_question": "Was Russian commander Andrey Pinchuk killed or did he survive the Balashikha car bomb?",
     "carriers": {
      "a": [
       {
        "outlet": "MSN",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNR3FudG1Oa1BxYzdTUTJuQ196THZzOEVqQ09fRklOdFlwWnBHOGlTbVFObTI5d0ViZ3FkZE83Q1AtT3dqSndKTzVraVNPeGptWGtvOTkxZV9DS054UmRYX1o3dHRpMGt3OWpXdHA1M2NnczBLZXpNMWZJV1hocG1VckNHNW14Sk9famVGRXNwVk5ZSWpub3FrMXB1bTVUWGF6RXNjajhUMWtrWUVuRWNNX3lYMF9IMkRKVlo4dGpUNW5lN0VETTdfei0tV2xJYndzUTRqbVcydkFFcE5sX2hwc0M2aEp6dDBGTi0wSnBBSzNFc21Hb3VMS1JYLXFBTWw4TDlZVGlPYm9ndXVQZTdsSjJyUEpCTnJ1MTdiSktlYmwzUUFWcGRLMlhlbms4a2ZoRUdjZUNnSXpHeFJMY0pTZHp2NFM5M204UkVORUJLOHM?oc=5",
-       "ts": "2026-06-12T18:19:54Z",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdG9fVnRydnFzazlWazNmbm9QWHhNaWFlZ3lURW1pd0JhS1Btbm9OZEFuU3h1RDY4bXVKMXYxa1hxdUhNdVQ5aklMVHBmMHVlWkhLMmc0ZDMtSGNsX2hxeFhuaGNCQXB6elZxa25xQWRtTUZ4ZmtzREt0Y0UweUh0YjduVTBIVXc1QV9USG03TXE0LVVpMHdDcm41WDVvTVhhaDBIYzVpMmFRN3c?oc=5",
+       "ts": "2026-06-12T21:15:30Z",
        "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Daily Express US",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSUZGUXFPa2EzckNYeVUwd0VreWdwZnFERml6V0V1VGtmb1l0RUVpcUZoNHp5ajhQWkYwb0ZKN0VybHl1VV9mTkZ2RFlFaHE4RFBTX1FmTlFVZ0FkQ3paNk5kTnNsd09pT2M0SkhIT191WHREQy1NajVHZENycmZBdzhUNkxmUFhsVEtZb1F6c1dOdlZNWTJZM3N5dFI0NnNLRHFZ0gGoAUFVX3lxTFBZQ2dQbjdLUjBQNGRTLXRCZ1hXQUxSMENrLUZ4R1BqWVpYTFV2ZEtRTTZkbUtjZVBVVTc5VkF2WmEzRFJHLVo2Nl9OSWdNQ204WElxNzJOMHBzNV9tTlhLbWpuMHlMOHlOX1l2ZzVMTTZFSHlGLUlsQUNBbUtvemwyd2czaE4zY3VyOTYwM3BOcmdScmN0dWd6TTl4S0wzTy1fbUp4WmlhRw?oc=5",
-       "ts": "2026-06-13T06:00:00Z",
-       "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
@@ -7645,18 +7572,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "MSN",
-      "ts": "2026-06-12T18:19:54Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 6
-     },
-     {
       "outlet": "eadaily.com",
       "ts": "2026-06-12T19:15:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -7675,6 +7594,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-13T10:59:27Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 6
      },
      {
       "outlet": "inkorr.com",
@@ -7749,7 +7676,7 @@
    "sources": [
     {
      "outlet": "MSN",
-     "n": 7,
+     "n": 8,
      "class": "other"
     },
     {
@@ -7869,6 +7796,11 @@
       "2026-06-14 12:00",
       6,
       6
+     ],
+     [
+      "2026-06-14 18:00",
+      7,
+      7
      ]
     ],
     "mix": {
@@ -7881,11 +7813,6 @@
     "first_seen": "2026-06-11T14:43:24Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-12T00:18:42Z",
-     "a": "Western and independent outlets report that senior Russian military official Damir Davydov was killed in a car bomb explosion near Moscow.",
-     "b": "Russian state media TASS says the FSB foiled a terrorist attack on a Defense Ministry official."
-    },
     {
      "captured_utc": "2026-06-12T01:19:16Z",
      "a": "Multiple outlets report senior Russian military official Damir Davydov was killed in a car bomb explosion near Moscow.",
@@ -7940,10 +7867,15 @@
      "captured_utc": "2026-06-14T18:12:41Z",
      "a": "Multiple reports say a senior Russian military commander was killed in a car bomb attack in the Moscow region.",
      "b": "Some sources describe the blast as an assassination attempt on Andrey Pinchuk, leaving his fate uncertain."
+    },
+    {
+     "captured_utc": "2026-06-14T19:13:17Z",
+     "a": "Multiple outlets report Russian commander Andrey Pinchuk was killed in a car bomb attack near Moscow.",
+     "b": "Ukrainian and local Russian sources describe it as an assassination attempt, leaving his fate uncertain."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -8162,14 +8094,26 @@
     ]
    },
    "discovered": true,
-   "items_24h": 3,
-   "items_48h": 22,
-   "outlets": 17,
+   "items_24h": 4,
+   "items_48h": 23,
+   "outlets": 18,
    "kinds": [
     "journalist",
     "state media"
    ],
    "latest": [
+    {
+     "ts": "2026-06-14T18:56:15Z",
+     "title": "UN Chief condemns new Israeli strikes on Lebanon",
+     "outlet": "The Express Tribune",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPekJnSDRCUmNsdHQwaHpnc2pTWFlHVllxMF9JTWdlM2FQdkd3RWh5M1QwVHN2SkxYblBVLTFOanIzVEdLUE9ZZk9zUGFycnhsdGdIclZTS1FUZVZSTHNfeklmQ09XMWpRWEVLV2tSSWhUVnFOV2MtUkhYMkFUeUNmT2lUUUQwa0hXRlIwRDB3?oc=5",
+     "rel": 5,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-14T00:55:17Z",
      "title": "WORLD: LIMITS OF MILITARY POWER IN LEBANON",
@@ -8200,7 +8144,7 @@
      "outlet": "TASS",
      "kind": "state media",
      "url": "https://tass.com/world/2146095",
-     "rel": 3,
+     "rel": 5,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -8253,18 +8197,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-13T10:14:21Z",
-     "title": "Israel attacks Lebanon despite being included in potential peace deal",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVEVXMzhOR2JNbFRQMng2TEhuS0JqYUNXcldTc0tfd2hZUS15aWJ4bDdsODR1U1R0MVRtSDl2TFRXVGVTVU94TDRHM0MzMDIwRXA1UGV2OHZTSEpvYkZ0WjRVUDk1TmVSOGEtSTlMTElHVmVZWWMxNmdvUHd3XzJEbnpTVVhFVWs0Z3UyTVF6cDFlbXkzZm9QaWVvdnVTVXlpa05tSnBkalMtZHhIWXdqa3VvWUFNRlNfVkcxY9IBwgFBVV95cUxQcndWZl9VeERJUTJLbDRSNUhQNkZyYmNCbTJmQnVaaEhRTVhzdi02aHFMZXlpNzNHRnVhQUlzV0M2Y1J5TFJta3FLT3VyMlRlRklfRWVjQWR1OWpUX2pFYVl1b28xOXgyaElPd2ZMRGF4czNscjBOUEdLOUdFY1Q5ZjhJbHFjalQ1THZ1ZU9CS2ZTUUNUUGkzaHlGbzBrWEE5ODVrek4yNlVtUmJEZUdjRW5WVWFRNnFiVVdhb3o4cmluZw?oc=5",
-     "rel": 2,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -8308,7 +8240,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 17,
+    "outlets_timed": 18,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -8433,7 +8365,7 @@
    "sources": [
     {
      "outlet": "Al Jazeera",
-     "n": 8,
+     "n": 7,
      "class": "other"
     },
     {
@@ -8453,11 +8385,6 @@
     },
     {
      "outlet": "France 24",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Global Banking & Finance Review",
      "n": 1,
      "class": "other"
     },
@@ -8490,6 +8417,11 @@
      "outlet": "Reuters",
      "n": 1,
      "class": "mainstream"
+    },
+    {
+     "outlet": "TASS",
+     "n": 1,
+     "class": "state-media"
     }
    ],
    "coverage": {
@@ -8573,6 +8505,11 @@
       "2026-06-14 12:00",
       7,
       22
+     ],
+     [
+      "2026-06-14 18:00",
+      3,
+      17
      ]
     ],
     "mix": {
@@ -8647,7 +8584,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -8683,14 +8620,14 @@
     "war"
    ],
    "brief": {
-    "generated_utc": "2026-06-14T14:23:32Z",
-    "sentence_count": 12,
+    "generated_utc": "2026-06-14T19:11:09Z",
+    "sentence_count": 15,
     "dropped_count": 0,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "The United States plans to cut air and naval assets it deploys for NATO operations in Europe.",
+        "text": "The United States plans to cut air and naval assets deployed for NATO operations in Europe, according to Al Jazeera.",
         "cites": [
          {
           "outlet": "Al Jazeera",
@@ -8702,26 +8639,14 @@
         ]
        },
        {
-        "text": "The New York Times reports the plan would pull about a third of the fighter jets the US provides NATO for Europe.",
-        "cites": [
-         {
-          "outlet": "NYT World",
-          "kind": "journalist",
-          "url": "https://www.nytimes.com/2026/06/12/world/europe/us-nato-cuts-drawdown-jets.html",
-          "ts": "2026-06-12T04:01:04Z",
-          "title": "U.S. Plan Is Said to Pull a Third of Fighter Jets It Provides NATO for Europe"
-         }
-        ]
-       },
-       {
-        "text": "Other outlets describe the cuts as covering long-range strike assets alongside the jets and warships.",
+        "text": "Other reports describe the withdrawal as covering fighter jets, warships, and long-range strike assets.",
         "cites": [
          {
           "outlet": "MSN",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNbzZRZTV4TkdLdEpiNkdrajNYdm14NWhLOWZ2cXBJRmxBaC1iZ0pRY0ZDQ29iWi1UMDNIR2h4dWd3UU5KSS1INEpUdGU3U2p4WnpvZDg1YTdPakZ4ZmVLdEdHbHM2Y2dBNV9raXhvRXBOUHB3Rk1pZG10YkFzT3k3Nm0ydDlySTR1YXdjWTl6dU1PX1AwYURKZ0dEVkcxVmN0SV9sbHlFdEQ2ZFZ3a2QydGZUU25FVDhTUGdjdXM3QndDM2g3cS1HWHQtYWRZOEowbTVGX1dxX1RtTjJndVIyYlRURktuUQ?oc=5",
-          "ts": "2026-06-12T15:27:24Z",
-          "title": "US to withdraw long-range strike assets from NATO"
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPd0lWc0dqSlBBdDQ5cEZOeWdkUUdSNkd2UGV1M0dkV0pYOTlEdXQwLXZDZUhTc2ZuR0xsemgxaUE1XzFwTW5CaUFIRHF1dnZGclJXR0FZd2E1amdWRW1CMUNyV3pWbnpOeUN5N1hORWM2ZmUxNHZQZlVNQXdXRk5ZSWFncGZLZ25LbG14SFR2aGIxaFg1QlJOemtIMWhkczBvZlA5UGxILU5ueXVQOUZ4a0hqOE5aR29xN0tMOGNFdnlVSFdsclgwdDBqSk45MjZsMFZIenE2WURrcE45UUUyZ3dR?oc=5",
+          "ts": "2026-06-12T15:26:21Z",
+          "title": "US to cut key NATO jets and warships in Europe"
          },
          {
           "outlet": "MSN",
@@ -8731,37 +8656,32 @@
           "title": "US to cut NATO jets, ships and deep strike assets in Europe"
          }
         ]
+       },
+       {
+        "text": "MSN reports the cuts include deep strike and air assets.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcm8wZlQwRXoydWJVeWxrdkF2MkI5RVpmYUx3ZzFaWk1QYWNQb0FOUUhiY0R1cjRPNFFYRVlDeXlYRkVFcXZwS3dScVlVWS1HeDBpbnBNZnhUQVo2Y21mczhySVdUdGR4YTFKUXJwSC1fdlYwY3hfVmtWeHBWZUdOYXZCTXJROWpyaG1iUmhZdVU1SlFZ?oc=5",
+          "ts": "2026-06-13T05:49:22Z",
+          "title": "US to cut NATO deep strike and air assets"
+         },
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOX2REdk9WMGRMWXpQNTBDWndTMGpsY2IzNTQxQllOeEhZOUNjVzRYbFlGZ0t0R0QxQkVPMWtVZ1JEXzNKVDc1aUtGaEVkdkdBZjhiQlBJSnpZQjF1S1FSMDhqMzFEUWN3bi1BODZZTnJ0dXNfQjJBUVRfaklNLXVXNHJEYm4wQV93UDlzRFhMc3R2VmpmZkVJRnpYQTIxRUU?oc=5",
+          "ts": "2026-06-12T21:49:24Z",
+          "title": "US to withdraw key NATO strike and support assets"
+         }
+        ]
        }
       ]
      },
      {
       "sentences": [
        {
-        "text": "A German army chief warns Russia will be prepared to attack NATO by 2029, describing the assessment as NATO-agreed intelligence.",
-        "cites": [
-         {
-          "outlet": "Kyiv Independent",
-          "kind": "journalist",
-          "url": "https://kyivindependent.com/its-nato-agreed-intelligence-german-army-chief-warns-russia-will-be-prepared-to-attack-nato-by-2029/",
-          "ts": "2026-06-12T04:45:39Z",
-          "title": "'It\u2019s NATO-agreed intelligence' - German army chief warns Russia will be prepared to attack NATO by 2029"
-         }
-        ]
-       },
-       {
-        "text": "One report says all 32 NATO members agree on 2029 as the date when Russia could threaten the alliance.",
-        "cites": [
-         {
-          "outlet": "National Security Journal",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMEFpV0dUT3JKeHo0RUNVZmdJUkRYXzAwN05kOE9HSzNyWmJaeWgzbHg4TG9PSUxic0ZZdU55ZlNBbmYwbWlSbVVJUjA1RGRIVFVTYzFUOG5MODhRdHhycmxhdEZKa0doSG93QlNIbllaTTNqZVN6NG1UaTFvcFU3RzdaX2ktU0I1THlMbThaMlI2Qmx3SUw4MkQ4cE0ySVpQUTgtWFNnYS1BaWRfTlNxVWtiYTQxenhKT2kxQ2FCZmRyUjVQRTY1VHJ3?oc=5",
-          "ts": "2026-06-13T12:05:41Z",
-          "title": "All 32 NATO Members Reportedly Agree on One Date: 2029, When Russia Could Threaten the Alliance"
-         }
-        ]
-       },
-       {
-        "text": "A top NATO commander says the West can no longer count on its homelands staying safe in future wars.",
+        "text": "A top NATO commander says the West can no longer count on its homelands staying safe in future wars, Business Insider reports.",
         "cites": [
          {
           "outlet": "Business Insider",
@@ -8771,13 +8691,73 @@
           "title": "A top NATO commander says the West can no longer count on its homelands staying safe in future wars"
          }
         ]
+       },
+       {
+        "text": "A German army chief warns that Russia could threaten NATO by 2029, MSN reports.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZEsyYUFkOW1XT1pmdEJjLUFodHg2VDcyVGRTQm5RWDItdkNQcmNybFpwNDg2bFBhMENCZDlEd1RpUTFrVlpkVm5fWlB1cUo0cDctWHdLTU12dTl4NndHSEtQRE9zeXdnUjFFWWNFV2V2VWN2anRPbjBSX0pxemlIY19sYzVKU1U3Z1ljaFRmRm91bTIzQlRkNFVaZ2hsbU5PR0ZXSUl0b0VXa1VVeTVkeWUtY3M5aEV0akExTzNTM0N5aTJfYWVNdnRiU01TMWtfcDlNRUxkUUhmeGM3bHJ2VWVRYXlTMmczZDJSdE9XN3BpQQ?oc=5",
+          "ts": "2026-06-12T15:34:32Z",
+          "title": "German army chief warns Russia could threaten NATO by 2029"
+         }
+        ]
+       },
+       {
+        "text": "TVP World quotes the German general saying 'speed is of the essence' on the 2029 warning.",
+        "cites": [
+         {
+          "outlet": "TVP World",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOEotbG1tdEd3c2oyYXJNeHlVNGNEMlVnY2FUTnA3Y0ZNb3B6RTRLS0liRWx1R2M3Umx6Z0pfZldPOE5oV0JuS2ZsaGE3QmZhSzhGSXREQlpxVlZaaURXWUtzd05URjk5SzVBdmlfRUhrNEcwTDFxdFI3N1N6OFFpbTJkVTRGa0VvZlRobGg2cnBRMDljbDdfR1FySkw?oc=5",
+          "ts": "2026-06-12T14:49:00Z",
+          "title": "\u2018Speed is of the essence\u2019: Russia could attack NATO by 2029, German general warns"
+         }
+        ]
+       },
+       {
+        "text": "National Security Journal reports that all 32 NATO members agree on 2029 as the date when Russia could threaten the alliance.",
+        "cites": [
+         {
+          "outlet": "National Security Journal",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOMEFpV0dUT3JKeHo0RUNVZmdJUkRYXzAwN05kOE9HSzNyWmJaeWgzbHg4TG9PSUxic0ZZdU55ZlNBbmYwbWlSbVVJUjA1RGRIVFVTYzFUOG5MODhRdHhycmxhdEZKa0doSG93QlNIbllaTTNqZVN6NG1UaTFvcFU3RzdaX2ktU0I1THlMbThaMlI2Qmx3SUw4MkQ4cE0ySVpQUTgtWFNnYS1BaWRfTlNxVWtiYTQxenhKT2kxQ2FCZmRyUjVQRTY1VHJ3?oc=5",
+          "ts": "2026-06-13T12:05:41Z",
+          "title": "All 32 NATO Members Reportedly Agree on One Date: 2029, When Russia Could Threaten the Alliance"
+         }
+        ]
        }
       ]
      },
      {
       "sentences": [
        {
-        "text": "Putin ordered a troop expansion as NATO faces the US cutbacks.",
+        "text": "Sweden intercepted Russian fighter jets near its airspace over the Baltic Sea, the Kyiv Independent reports.",
+        "cites": [
+         {
+          "outlet": "Kyiv Independent",
+          "kind": "journalist",
+          "url": "https://kyivindependent.com/sweden-intercepts-russian-fighter-jets-over-baltic-sea/",
+          "ts": "2026-06-13T23:53:41Z",
+          "title": "Sweden intercepts Russian fighter jets near its airspace over Baltic Sea"
+         }
+        ]
+       },
+       {
+        "text": "Daily Express US reports NATO fighters scrambled over Lithuania amid Russian cluster bomb activity.",
+        "cites": [
+         {
+          "outlet": "Daily Express US",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVG0zZENhcGJFVU56MXEwUG9wVXZDYThFeG5jTzlIbko4RHF1a3VaSTBoYVpIZzkwYzhrSVNMNFJDUzNGd3BKX2EtMXhIV1BtM3JQRGVkOW9rcUNSRjh2T1hrUEhqd3BwQjc2a3BGdHhUYlMxamg0UWdiVlFQd0tsZWRDeFVienU3NHFhWjF5cWNpNm0x0gGaAUFVX3lxTE9sb1hMWThORzN0ZHRBR2p2TUk0Y1BRYmdrajMybzBpcWt0bmJZNzFVYTExNzhBSDhRV1B3bkcxbFFuNzRNdVhWekg1Smc4SHYtbEdFOEZxam5ZXzMzU0NONzZrcGVNT2dVb0VGVmhBVkxMWi1fZTFqdzdDajcyakI1SEJwRlZreU1lZzMwWXJxTEx0MUV6a0d5NkE?oc=5",
+          "ts": "2026-06-13T10:18:08Z",
+          "title": "NATO fighters scramble over Lithuania as Russia unleashes cluster bomb chaos"
+         }
+        ]
+       },
+       {
+        "text": "Msn.com reports Putin ordered a troop expansion as NATO faces US cutbacks.",
         "cites": [
          {
           "outlet": "msn.com",
@@ -8789,42 +8769,14 @@
         ]
        },
        {
-        "text": "Sweden intercepted Russian fighter jets near its airspace over the Baltic Sea.",
-        "cites": [
-         {
-          "outlet": "Kyiv Independent",
-          "kind": "journalist",
-          "url": "https://kyivindependent.com/sweden-intercepts-russian-fighter-jets-over-baltic-sea/",
-          "ts": "2026-06-13T23:53:41Z",
-          "title": "Sweden intercepts Russian fighter jets near its airspace over Baltic Sea"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Britain's defence spending plans are in chaos as a NATO summit looms.",
-        "cites": [
-         {
-          "outlet": "politico.eu",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMVQtZEtxQjk4blRJRnJRbUVJM1NGRDZsS09GMHhlZjdvU0w0N3BzZTNzUlhvN1lkNjVQY2JIZFVLSGhyOGpYM1Z3Sl8xTGd1WUk0UldVUTR4Z3FSbDlCSi1IRzJ5cVBqRG9jLVE2Qml0NGkzUk0xQ2NJY2NOVWJDZDlUdTVLWGNiXzRYYjhMckwwQzd0Wkw1SEZfR29aQVpsak5NWnJKTmxjUQ?oc=5",
-          "ts": "2026-06-12T11:08:00Z",
-          "title": "Britain\u2019s defense spending plans in chaos as NATO summit looms"
-         }
-        ]
-       },
-       {
-        "text": "A UK defence crisis has deepened as ministers quit and the US cuts its NATO role.",
+        "text": "MSN reports NATO is weighing options to defend Europe as the US plans for conflict elsewhere.",
         "cites": [
          {
           "outlet": "MSN",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM0RkV2xDMWhPVU8tZXJXbWthOHgwSjJjLUkwNzdvTWtwd0JNb2o4VnFzUTBFZ1pYcWNQNlMxTmIyWGNITDVieWNUNUExY0JWRV9feWE2bzRzX2UySG9jVXV2MThhcjJZcEFZcGlzdXM5Ujl3X0ZUc2RqOGJRaFZvMlZ1UmVEMU9mamJxYkE4NVZmcFhfS3I0aU1lNDd6d2lUZ0dtR1BZcGZZQ09CTHdsc2dWX0t3N3A4ZkxF?oc=5",
-          "ts": "2026-06-13T05:49:20Z",
-          "title": "UK defence crisis deepens as ministers quit and US cuts NATO role"
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcGN0U091Z0poNVI4blJLNFo2dC1Ibk9ZZGx4ajhoaVVJdndVQ2NnWW13YkJaZzNkcUtySUluZzBsTk5Fa0N5RGZBVDdhd0NkYU1Kcmo5S0NZSHVUekZBTVBYak5nWDdXNjdIRXAwYi1VcUFkOXNTMU9fMzdDeXRNalcxa3RaQXFQbnRad1JkakNjWkpxa1FwcVRYSVR2TS14YnMzVnRmRDJibXlTcFNBV2ZwTXRnWkRRRnFqQ0ZnaE9Gdw?oc=5",
+          "ts": "2026-06-12T13:29:54Z",
+          "title": "NATO weighs options to defend Europe as the US plans for conflict elsewhere"
          }
         ]
        }
@@ -8833,7 +8785,7 @@
      {
       "sentences": [
        {
-        "text": "Russia's envoy to the UK says Europe's security crisis was caused by ignoring Russia's interests.",
+        "text": "TASS reports Russia's envoy to the UK saying Europe's security crisis was caused by ignoring Russia's interests.",
         "cites": [
          {
           "outlet": "TASS",
@@ -8845,7 +8797,7 @@
         ]
        },
        {
-        "text": "A separate report says Russia does not seek conflict but NATO is preparing for it.",
+        "text": "Vijesti.me reports that Russia does not seek conflict but NATO is preparing for it.",
         "cites": [
          {
           "outlet": "vijesti.me",
@@ -8853,6 +8805,30 @@
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWHJoa1NQcF9oX1ZmYW85aUZHZnFHRGlVQm9xY0w3dy1VZy1oMFppamdkRFRDcVFEMzlfUTZzMnowZWJxTlVkZUFCTi1HdTZMVkE0SmNEQ01yVEE2YmtWMDU4Yl9JbkFUbUJzaWtnYWtsWHJkZmxlM2Fja2U2WWNtYkVCbTRHU0Vid3hhWVI0dE1UQi10TkVYadIBmAFBVV95cUxNWHJoa1NQcF9oX1ZmYW85aUZHZnFHRGlVQm9xY0w3dy1VZy1oMFppamdkRFRDcVFEMzlfUTZzMnowZWJxTlVkZUFCTi1HdTZMVkE0SmNEQ01yVEE2YmtWMDU4Yl9JbkFUbUJzaWtnYWtsWHJkZmxlM2Fja2U2WWNtYkVCbTRHU0Vid3hhWVI0dE1UQi10TkVYaQ?oc=5",
           "ts": "2026-06-12T04:49:58Z",
           "title": "Russia does not seek conflict, but NATO is preparing for it"
+         }
+        ]
+       },
+       {
+        "text": "MSN reports the UK faces a deepening defence crisis as ministers quit and the US cuts its NATO role.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM0RkV2xDMWhPVU8tZXJXbWthOHgwSjJjLUkwNzdvTWtwd0JNb2o4VnFzUTBFZ1pYcWNQNlMxTmIyWGNITDVieWNUNUExY0JWRV9feWE2bzRzX2UySG9jVXV2MThhcjJZcEFZcGlzdXM5Ujl3X0ZUc2RqOGJRaFZvMlZ1UmVEMU9mamJxYkE4NVZmcFhfS3I0aU1lNDd6d2lUZ0dtR1BZcGZZQ09CTHdsc2dWX0t3N3A4ZkxF?oc=5",
+          "ts": "2026-06-13T05:49:20Z",
+          "title": "UK defence crisis deepens as ministers quit and US cuts NATO role"
+         }
+        ]
+       },
+       {
+        "text": "Politico reports Britain's defense spending plans are in chaos as a NATO summit looms.",
+        "cites": [
+         {
+          "outlet": "politico.eu",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMVQtZEtxQjk4blRJRnJRbUVJM1NGRDZsS09GMHhlZjdvU0w0N3BzZTNzUlhvN1lkNjVQY2JIZFVLSGhyOGpYM1Z3Sl8xTGd1WUk0UldVUTR4Z3FSbDlCSi1IRzJ5cVBqRG9jLVE2Qml0NGkzUk0xQ2NJY2NOVWJDZDlUdTVLWGNiXzRYYjhMckwwQzd0Wkw1SEZfR29aQVpsak5NWnJKTmxjUQ?oc=5",
+          "ts": "2026-06-12T11:08:00Z",
+          "title": "Britain\u2019s defense spending plans in chaos as NATO summit looms"
          }
         ]
        }
@@ -9250,6 +9226,11 @@
       "2026-06-14 12:00",
       5,
       9
+     ],
+     [
+      "2026-06-14 18:00",
+      3,
+      8
      ]
     ],
     "mix": {
@@ -9324,7 +9305,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -9916,6 +9897,11 @@
       "2026-06-14 12:00",
       1,
       4
+     ],
+     [
+      "2026-06-14 18:00",
+      0,
+      4
      ]
     ],
     "mix": {
@@ -9990,7 +9976,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "lead_image": {
@@ -10343,11 +10329,6 @@
    ],
    "sources": [
     {
-     "outlet": "Al Jazeera",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
      "outlet": "BBC World",
      "n": 1,
      "class": "mainstream"
@@ -10414,10 +10395,15 @@
       "2026-06-14 12:00",
       0,
       4
+     ],
+     [
+      "2026-06-14 18:00",
+      0,
+      3
      ]
     ],
     "mix": {
-     "mainstream": 2,
+     "mainstream": 1,
      "state-media": 1,
      "regional": 0,
      "official": 0,
@@ -10458,7 +10444,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -11002,6 +10988,11 @@
       "2026-06-14 12:00",
       0,
       1
+     ],
+     [
+      "2026-06-14 18:00",
+      0,
+      1
      ]
     ],
     "mix": {
@@ -11026,7 +11017,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "lead_image": {
@@ -11043,15 +11034,15 @@
    "status": "watching"
   },
   {
-   "sample": "Pro-Palestine protesters rally in Melbourne on final day of Israeli president's Australia trip",
+   "sample": "Police stop Tommy Robinson on his way back to London from Russian trip",
    "outlets": 3,
-   "count": 6,
+   "count": 3,
    "status": "watching"
   },
   {
-   "sample": "Russia's recruitment system nears breaking point, forcing debate over forced mobilization",
-   "outlets": 4,
-   "count": 4,
+   "sample": "Pressure Grows to Suspend Israeli Medical Association From Global Medical Body",
+   "outlets": 3,
+   "count": 3,
    "status": "watching"
   },
   {
@@ -11072,25 +11063,25 @@
   "situations": 16,
   "situations_active": 16,
   "discovered": 11,
-  "items": 6308,
-  "developments": 6201,
-  "claims": 1102,
-  "carriers": 3298,
-  "steelmans": 964,
+  "items": 6358,
+  "developments": 6250,
+  "claims": 1110,
+  "carriers": 3314,
+  "steelmans": 972,
   "deep_reports": 16,
-  "entities": 270,
-  "edges": 7323,
+  "entities": 271,
+  "edges": 7367,
   "history_nodes": 318,
-  "gate_rejects_7d": 111,
-  "runs": 93,
+  "gate_rejects_7d": 112,
+  "runs": 94,
   "backend": "st"
  },
  "gate": {
-  "clusters": 27,
+  "clusters": 30,
   "accepted": 0,
   "rejected": 1,
-  "existing": 2,
-  "below": 24,
+  "existing": 3,
+  "below": 26,
   "pending": 0
  },
  "gate_summary": {
@@ -11104,7 +11095,7 @@
  "slate": {
   "edition_utc": "2026-06-14",
   "panels": 6,
-  "appendix": 7,
-  "overflow": 724
+  "appendix": 8,
+  "overflow": 715
  }
 }
