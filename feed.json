@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-06-15T01:11:34Z",
+ "generated_utc": "2026-06-15T02:19:25Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
@@ -8,7 +8,6 @@
    "cgtn",
    "dabanga",
    "fox-world",
-   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -16,7 +15,8 @@
    "nyt-world",
    "presstv",
    "taipeitimes",
-   "tass"
+   "tass",
+   "unnews"
   ],
   "failed": [
    {
@@ -25,14 +25,9 @@
     "reason": "HTTP Error 403: Forbidden"
    },
    {
-    "id": "unnews",
-    "label": "UN News",
-    "reason": "not well-formed (invalid token): line 1, column 0"
-   },
-   {
     "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
     "label": "GDELT US tanker strike Gulf of Oman India sailors",
-    "reason": "HTTP Error 429: Too Many Requests"
+    "reason": "Expecting value: line 1 column 1 (char 0)"
    },
    {
     "id": "gdelt:russia-ukraine-war-current",
@@ -52,6 +47,11 @@
    {
     "id": "gdelt:uk-defence-secretary-resigns-over-spending",
     "label": "GDELT UK defence secretary resigns over spending",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:taiwan-strait-tensions-current",
+    "label": "GDELT Taiwan Strait",
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
@@ -126,21 +126,45 @@
     "ceasefire"
    ],
    "brief": {
-    "generated_utc": "2026-06-14T21:20:37Z",
-    "sentence_count": 11,
-    "dropped_count": 0,
+    "generated_utc": "2026-06-15T02:17:42Z",
+    "sentence_count": 15,
+    "dropped_count": 5,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "India's Directorate General of Shipping has directed firms to restrict the deployment of Indian seafarers in the Gulf zone.",
+        "text": "The United States and Iran have reached a peace deal, with Trump and Pakistan saying a signing is set for Friday.",
         "cites": [
          {
-          "outlet": "IBTimes India",
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYkM0aHUzN3lFUGRoNGhaYnA0aXFMTVdPYUlUWXlocnpiZUZCUWhZbFNoTDVSNGJVbTM2bnN0aUdXaXUtYjBzX21SX2xoUjFwWUgyMDNsNVhwS1NMekItUDFGYmxoRXAyNzlUekpFTjVUU2Y2aWZTajVGV3JvcllPVXRub2lJZUFSVElrbk1ncEt1YjRnZEFLRFN4V293cW8xYTFULU93MkRBc3g2LU4wbktn?oc=5",
+          "ts": "2026-06-14T22:31:06Z",
+          "title": "US, Iran reach peace deal, Trump and Pakistan say; signing set for Friday"
+         }
+        ]
+       },
+       {
+        "text": "The Wall Street Journal reports the agreement is to stop the fighting and reopen shipping.",
+        "cites": [
+         {
+          "outlet": "WSJ",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTW9XYkNIako4eFozOTh3RjBfSWk1bG9kaHhnYmNwbW9QVW1tcnA1cUYwMGpiSktmbjFWRG5udElSTHczNjdKZWlIQ1VDazRkMVFONTdyYVJuTFpiWnBwVDVlTlppNU5PRlBJR0ZtMGVWWjVkbGVWR05zblBvUjFKLXNJOFdkNUNZNUZNcldYVFRaTTBiY0xCM24zTW1Ldlo0SHV1Ukt5MG4?oc=5",
-          "ts": "2026-06-14T17:40:33Z",
-          "title": "DG Shipping directs firms to restrict deployment of Indian seafarers in Gulf zone"
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSDVOZERSYXFBY3VxUFV1Y05yeU8wd0hGYmR1UnN0ZVlkODJEWExBWFdIMlJZWGMwUE91WEwwOTVESWI3YVphdUJoN01zbVN3OG0yVTFCN2pkNEk5MmtaeEFfdE9hRllnbmZDLWs4SjBiOXI1VTJfTUdCZWE5MjRXSmtXbm1IOGQ2M0FmZjFwaHRzcTMxcld2Qmx5UFVlT0gyUldnVE1uS2RGczFJNlZGZ2U1UkJ1SEktdkw1VGZR?oc=5",
+          "ts": "2026-06-14T23:31:00Z",
+          "title": "U.S. and Iran Have Reached a Deal to Stop Fighting, Reopen Shipping"
+         }
+        ]
+       },
+       {
+        "text": "Al Jazeera reports the two sides announced a ceasefire agreement.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/14/breaking-us-iran-announce-ceasefire-agreement?traffic_source=rss",
+          "ts": "2026-06-14T22:54:36Z",
+          "title": "BREAKING: US, Iran announce ceasefire agreement"
          }
         ]
        }
@@ -149,50 +173,102 @@
      {
       "sentences": [
        {
-        "text": "The directive lands as Iran's top security official warns that a response is 'imminent' after an Israeli strike on Beirut.",
+        "text": "Iran's deputy foreign minister says the memorandum of understanding with the US has been finalized and will be signed in Geneva on Friday.",
         "cites": [
          {
           "outlet": "Press TV",
           "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/14/770447/Iran-SNSC-chief-Zolghadr-warning-Lebanon",
+          "url": "https://presstv.ir/Detail/2026/06/14/770453/Iran-deputy-FM-says-MoU-with-US-finalized-to-be-signed-on-Friday",
           "ts": null,
-          "title": "Iran\u2019s top security official warns response \u2018imminent\u2019 after Israeli strike on Beirut"
+          "title": "Iran deputy FM says MoU with US finalized, to be signed in Geneva on Friday"
          }
         ]
        },
        {
-        "text": "Iran has vowed a 'regretful lesson' over the Beirut strike.",
+        "text": "Pakistan's prime minister announced the agreement between the US and Iran.",
         "cites": [
          {
-          "outlet": "\u0634\u0641\u0642 \u0646\u064a\u0648\u0632",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeXhfYUd4VTFGdXBVWGJRa2xMVFpXZ2djd09OYXVKUDhkOGlsdUVtMzVYSmktcUxPT3RTT1ZnOVpRNWdPZlVGVUNPVUplZHd0a19qTVRYaW92ME5MM2lVU0NubW1fU0dzX1lzRFVLMFhyR1FWb0pPcDFLbFVKZkxrRWxGcHU?oc=5",
-          "ts": "2026-06-14T19:56:12Z",
-          "title": "Iran vows 'regretful lesson' for Beirut strike - Shafaq News | Latest breaking news in Iraq and the world"
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2146367",
+          "ts": "2026-06-15T02:45:00Z",
+          "title": "Agreement between US, Iran reached, Pakistani PM announces"
          }
         ]
        },
        {
-        "text": "A top commander said Iran's armed forces have a 'finger on the trigger' to strike the enemy.",
+        "text": "TASS reports that a senior Iranian diplomat confirmed the deal had been reached, citing Tasnim.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2146371",
+          "ts": "2026-06-15T03:10:01Z",
+          "title": "Senior Iranian diplomat confirms deal with US reached - Tasnim"
+         }
+        ]
+       },
+       {
+        "text": "TASS reports Trump told Putin the US-Iran deal was close and could be announced the same day, citing a Kremlin aide.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/politics/2146275",
+          "ts": "2026-06-14T22:07:03Z",
+          "title": "Trump tells Putin US-Iran deal is close, may de announced today - Kremlin aide"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The New York Times reports Trump said the Strait will be 'permanently toll free' under the agreement with Iran.",
+        "cites": [
+         {
+          "outlet": "NYT World",
+          "kind": "journalist",
+          "url": "https://www.nytimes.com/2026/06/14/us/politics/trump-iran-deal-strait-of-hormuz.html",
+          "ts": "2026-06-14T23:00:45Z",
+          "title": "Trump Claims Strait Will be \u2018Permanently Toll Free\u2019 Under Agreement With Iran"
+         }
+        ]
+       },
+       {
+        "text": "PBS reports Trump ordered a stop to the US naval blockade as part of the deal to end the Iran war.",
+        "cites": [
+         {
+          "outlet": "PBS",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOQnhfUXRBd1hUbGJ0MGVDUVhqTFBqY2hQVDlOM2o3ZG80Zy1nS21DbHd6S2JfTDVhTHhUOGpuODgtV1VaUkhNNFhEeU9aeXlSeUt6NmFteDRkY0VRUEFOUkl2N0NyMFBPc3pTSkxBdW51YURLR1RwWXRnbGVMREVBYmNoX3Bsc2huMExOSW1qVGhLSkNCbVpQTm12M3ZNVXk4UHFzSWt4YlYwTDl5akHSAbMBQVVfeXFMUHBFY0gwN3NWaFdCR3hKZi1ERjRJWGN5Rmc1eXFtLWhvZjB4UnFDZHRqd21selVLS2prMUF4VDRHR0hCUGVXQ0Q3NnZrQ1R6VjNRUkwxLVhkeGR4SFNRTnBWZmFwWm1hM3pEVTQwRF9NQ0dON2w1MlpGa0VKM3NtSEduaVdoVUtodm5ybnV0aGVETjJUdS1tWHk5UGFlUU91bjZzMkdlbkdBckRuZ2ZnZXp3Z28?oc=5",
+          "ts": "2026-06-14T22:10:00Z",
+          "title": "Deal is reached to end Iran war and Trump orders stop to U.S. naval blockade"
+         }
+        ]
+       },
+       {
+        "text": "Press TV reports Iran's top security body says the MoU ends the war on all fronts and lifts the US naval blockade.",
         "cites": [
          {
           "outlet": "Press TV",
           "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/14/770441/Iran-US-Israel-Abdollahi",
+          "url": "https://presstv.ir/Detail/2026/06/14/770457/Iran-SNSC-confirms-US-MoU-finalized-says-lifting-of-naval-blockade-effective-immediately",
           "ts": null,
-          "title": "Iran\u2019s armed forces have \u2018finger on the trigger\u2019 to strike enemy: Top commander"
+          "title": "Iran's top security body says MoU to end war on all fronts, lift US naval blockade"
          }
         ]
        },
        {
-        "text": "Israel is bracing for Iranian missile fire after striking a Hezbollah target in Beirut.",
+        "text": "Al Jazeera reports Trump said the Strait of Hormuz is reopening as part of the announced peace deal.",
         "cites": [
          {
-          "outlet": "The Times of Israel",
+          "outlet": "Al Jazeera",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPR2l0QlZTWjV4cUtOSm9qOV9vUm1RTmcwdXRoSnBHcU1yNHJxMnVVUVEwdGNJU3dRbzBRME5mek1LVGNWVnhGQWlYSXFOZUFFTGppSkt3TXl5dG00ZmVlN3h1TTdQYXVYSmdadVBwQ1JDNmcwZ3pmNTJmVGh2M2sybWV5a2VKN3NxT0c5MThGWmxSN3VDMG9LdEFKdFFlYTdGZlJ2R296MNIBrAFBVV95cUxOM0ZfOEJabWJTNUpscGhJZnpUR0JwOG1VcnczYnNWVHRjU3RPVU8tS0tpY3ZxcnBlSkk5aVdiTHY5UUpCMGpsMEg1ZHZFeEs0TkxtMEpWTjFfSHZRNFpGWjN3TG1BWm8xazU4TVU1MXpEZVEwTlNzMUtEdlJPOHo1TTlaSkozRTJIand6Z01tOU5XTk5Vc3pDOHhBU0JKZmFEQ18tdnY0dHlYRGJW?oc=5",
-          "ts": "2026-06-14T17:24:07Z",
-          "title": "Israel braces for Iranian missile fire after strike on Hezbollah target in Beirut"
+          "url": "https://www.aljazeera.com/news/2026/6/14/us-iran-ceasefire-deal-announced-trump-says-strait-of-hormuz-reopening?traffic_source=rss",
+          "ts": "2026-06-14T22:43:19Z",
+          "title": "US-Iran \u2018peace deal\u2019 announced, Trump says Strait of Hormuz reopening"
          }
         ]
        }
@@ -201,78 +277,50 @@
      {
       "sentences": [
        {
-        "text": "Trump has criticized Israel for striking Lebanon and said the attack could delay an imminent Iran peace deal.",
-        "cites": [
-         {
-          "outlet": "New York Post",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeEJMcGg3N2plNWxTUE9qZnlpOUhicG0xRjVuYnhVd0lrOW9uMmdmWGFNb1hlU3p1RjFZUTFNVEt3TFlqY2ZBQXpWQmRrQm96OTUxaExGU2pmQXZqd0tUeUVweDV2NUR6ZHdwU3RFVFZSclIxaHZmQUctYlowUkk3TjBlbW9EN1VvYkltSkVwR3M2eFdCT1F6cFZHRHAtOHdQVWdSRkVvb1ZQWk9xY3hlTG14aGlxNlJWQ05RYzVick0?oc=5",
-          "ts": "2026-06-14T16:30:00Z",
-          "title": "Trump criticizes Israel for striking Lebanon, says attack could delay imminent Iran peace deal: \u2018Let\u2019s not blow it!\u2019"
-         }
-        ]
-       },
-       {
-        "text": "He warned Israel and Iran not to 'blow it' as new strikes threaten the emerging ceasefire deal.",
-        "cites": [
-         {
-          "outlet": "Ottumwa Courier",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNRWRlSDZlTVJSVXdsdjd0YkJhd0VqejJWRkxfWVlqOHlTZWVyYTU2NENwSjR4LV9MTkh4ZFRmR3NNMU1GZnF4OUJwTlU2bWE3RU84THExbVdqTzFEUXBtQXVYRl9ZVFVkbVN6MVZrS05hc05TYngzTWFVbFEwU1dZR29UY2xDekhFZzVYN0Y3dGRZVV9yc3l1U3kwTlpCMF9vcy1KdVlUcndBbGpUQXJHbDhGS0dGU295dWF5VEhYU0Qxd09qd25KQTQ3dW5td2lqOHpOZ2ozdEpsLWp1emtIU3psYTVkQWpMdUw1aHdObF9pUnNpNU1Kb0g0Ylk4MXNWazVneTZONzkyVHpSNlk4NnNSZk9vd00?oc=5",
-          "ts": "2026-06-14T17:42:21Z",
-          "title": "Trump warns Israel and Iran not to 'blow it' after new strikes threaten emerging ceasefire deal"
-         }
-        ]
-       },
-       {
-        "text": "Trump says the United States and Iran are 'very close' to a deal and urged calm after the Israeli strikes.",
-        "cites": [
-         {
-          "outlet": "The Washington Post",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVTdHZU5rdDVBZ1BneVJabGYtbGdpbTc4elNROVRfR3gtZEJITzR3bTZ0SnphS200aFN3TWF6UG1oaFRmQXhFUEh0US1ZVE90dTZtbWZRY0NUMWQxZVVGUGRyeURCdS1uV2ZNVmdHa1dqZHVaYnE2OXVuMHl6YlZiQnBfY0F0SHZIUVhka1dlYzc2T05mRm12bzdraE5acjhtSi11a2NLT29QdFlVcHNkVjVsa0pHZUk?oc=5",
-          "ts": "2026-06-14T20:31:13Z",
-          "title": "Trump says U.S., Iran \u2018very close\u2019 to deal and urges calm after Israeli strikes"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Iran questions US commitment to peace moves as Israel strikes Lebanon.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMihANBVV95cUxQWUtPOXBrQUg0UlE4cFVSUF95dUNuZUpfVWhUMGhRRWY0RUFEM0U2bVN3ZG1oQk4xekxNbHJSamFVOGNRN0cwYjBpU1RfemRUdzF4Uy1MVkNncXN3NXdtdjJoYS1aTmRlc212U0x6OUh5RFE0V1dYbWNmYWhkNUFIaFNpemNSR3pyOGh5NjlaR2xmUFRCdU8zeXVlWlhaOGJ6S0lNWWozNjBqUUIzOTE3UVJIWVVDckpIRDRraHJsNkJyRzd0WElFMmV0TEtkZ3ZYdVBabVNxdmlYRnV5SU5BSDdQS25ETjdreXk0bm5CdGhpRjd0b0I3TjR2MjZwcTlZYjJNSkZwZUtWMHNjTTN3Vm1SVl83Z1kxc0lkSHlzMGtCd2QzbWdBclpsRTBTMlBhTWNCVzd0NkFadTMyTDB4RktKUFdsaVlwN05IRWZQUE9HS3U2Y1lFTktTaGtxSVRpQUxvSWM4X2FBellKYUlSRTRHMHJfRHVCVlRXSFBkcHBFSzQ2?oc=5",
-          "ts": "2026-06-14T17:15:08Z",
-          "title": "Iran questions US commitment to peace moves as Israel strikes Lebanon"
-         }
-        ]
-       },
-       {
-        "text": "Iran's parliament speaker says Israel's new attacks on Lebanon may derail the Iran-US talks.",
+        "text": "TASS reports JD Vance lauded the Iran deal as a big moment for the United States.",
         "cites": [
          {
           "outlet": "TASS",
           "kind": "state media",
-          "url": "https://tass.com/world/2146209",
-          "ts": "2026-06-14T16:36:00Z",
-          "title": "Israel\u2019s new attacks on Lebanon may derail Iran-US talks - Iranian parliament speaker"
+          "url": "https://tass.com/world/2146355",
+          "ts": "2026-06-15T02:00:01Z",
+          "title": "JD Vance lauds Iran deal as big moment for United States"
          }
         ]
        },
        {
-        "text": "Iran's Supreme National Security Council has decided to continue dialogue with the US.",
+        "text": "Al Jazeera reports Trump allies cheered the Iran deal announcement while Democrats called for clarity.",
         "cites": [
          {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/world/2146301",
-          "ts": "2026-06-14T22:41:07Z",
-          "title": "Iran\u2019s Supreme National Security Council decides to continue dialogue with US"
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/15/trump-allies-cheer-iran-deal-announcement-as-democrats-call-for-clarity?traffic_source=rss",
+          "ts": "2026-06-15T01:13:29Z",
+          "title": "Trump allies cheer Iran deal announcement as Democrats call for clarity"
+         }
+        ]
+       },
+       {
+        "text": "Al Jazeera reports stock markets soared and oil fell as the US and Iran confirmed the deal to end the war.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/economy/2026/6/15/stock-markets-soar-oil-falls-as-us-iran-confirm-deal-to-end-war?traffic_source=rss",
+          "ts": "2026-06-15T00:37:07Z",
+          "title": "Stock markets soar, oil falls as US, Iran confirm deal to end war"
+         }
+        ]
+       },
+       {
+        "text": "The Guardian reports Australian Foreign Minister Wong welcomed the US-Iran peace deal.",
+        "cites": [
+         {
+          "outlet": "Guardian World",
+          "kind": "journalist",
+          "url": "https://www.theguardian.com/australia-news/live/2026/jun/15/australia-news-live-experts-push-back-at-call-for-shark-cull-after-attack-university-students-report-freedom-of-speech-fears",
+          "ts": "2026-06-14T23:45:40Z",
+          "title": "Australia news live: Wong welcomes US-Iran peace deal; Joyce says fundraised millions to pay for One Nation ads"
          }
         ]
        }
@@ -281,15 +329,88 @@
     ]
    },
    "discovered": true,
-   "items_24h": 227,
-   "items_48h": 348,
-   "outlets": 168,
+   "items_24h": 239,
+   "items_48h": 358,
+   "outlets": 173,
    "kinds": [
     "journalist",
+    "official record",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-15T01:49:09Z",
+     "title": "US, Iran reach deal to end war, reportedly including Lebanon conflict; Trump: Hormuz to open",
+     "outlet": "The Times of Israel",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVzU4bk9tSGU1ZTVPSndHTUx5VmxfM2hqdzdKTmFtaEw2TWVDcWwwZnJIOGZDM1pqT3NHQlhfV2lpNlByRmNHVlFhYU5PbV9KVE9rZ1VIRVBSdVFTNl9pc19PcFdNMi1yMmtHWFAyTDd0b29vWnphOHl4RlBNdElUOFRKSmRwWGZqRDFBd0ZZaGZidnN2MzhMRXNBaHZROE1jVHJYdFQwV0dPd3FPWGJ5SkoxS29fX0JGLXNR?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:40:47Z",
+     "title": "US-Iran to sign a \u2018peace deal\u2019 on Friday: What we know so far",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/6/15/us-iran-to-sign-a-peace-deal-on-friday-what-we-know-so-far?traffic_source=rss",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-15T01:30:46Z",
+     "title": "Israel's strike in Beirut triggers Iranian warnings of retaliation, casting shadow over emerging US-Iran deal",
+     "outlet": "China.org.cn",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5XVWR1VHUtUVVUSDBCWk02cEtUbXFsbVowQWxVU2Qtb0F4cXVwdmliYlNRbTI0QWl5dVRrWUUxVDdNQkk5dTM5UW90S2J6Vnl0clpoeDJFVlU4STJ6OG82b0tuRmdERFcteWc?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:30:01Z",
+     "title": "US denies Iran\u2019s claim that it will get $12 bln from its frozen assets - Axios",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2146383",
+     "rel": 3,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:21:00Z",
+     "title": "Grief and destruction in the Middle East amid Iran War ceasefire",
+     "outlet": "The Detroit News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZk56YnBUcG55U3UtMFpWRTA1VkhnNC03UVM2MnpCNUNuUjBnT0hBRW9tNkhqRVBKZVpobzBicU5BQUhNQS1iTUltN2ZydmQyTzNnX1VmWDVsdjB0dlBwdG9BbEZGQXc0ZjFUSEtiaUJlQVJ6WE9wWGhiNjVyaVpjMEtENk9KMHAwTDRlTGdLeC15a1did2NWOElHYUVMNDFGT3luWklkeEJIQzZFS2VTRmpkcFhBNFpXSWxhc09yc1lJNVE4Q3ZUS0pETWlnRU1CU3pSMXFEYmZWM0E?oc=5",
+     "rel": 7,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:13:29Z",
+     "title": "Trump allies cheer Iran deal announcement as Democrats call for clarity",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/6/15/trump-allies-cheer-iran-deal-announcement-as-democrats-call-for-clarity?traffic_source=rss",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
     {
      "ts": "2026-06-15T00:42:08Z",
      "title": "Iran\u2019s Ghalenoei, Taremi decry US treatment before first World Cup game",
@@ -312,78 +433,6 @@
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-15T00:37:07Z",
-     "title": "Stock markets soar, oil falls as US, Iran confirm deal to end war",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/economy/2026/6/15/stock-markets-soar-oil-falls-as-us-iran-confirm-deal-to-end-war?traffic_source=rss",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-15T00:22:30Z",
-     "title": "Deal is reached to end Iran war and Trump orders stop to US naval blockade",
-     "outlet": "WTOP",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZ0dkVWlmeVNlaERSVUV0ZzV6Q1RfaGpncHZJWkx6b29wenNBV3d0a0szTGxSbjJTdlNPRWdITThrQUlpbUQ5RjUzOE9jSV90WlBFQi1OSDJTUEtFM01LeUlQeUdGQU52Yk9zampXLUhlUkFUTU9ncTd4QzROYUFaRmJzQVItbE84MGxSbGc5RlE1TExhbUNMYjRPS0lUMFZvLWRGWENhczVCZzJyM25QM2RYQWlyUEQzOWxV?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-15T00:22:00Z",
-     "title": "US-Iran peace deal announced with 'permanent' end to military action",
-     "outlet": "The Manila Times",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPX1p6Yms0eFlHU01xWGw1amo1N1BDd0ZFdV9SZFRmcU1aR2JGZ3haOHE3NFY4Mnd0UWNaal8xSTA5ejQ4Z3lPa0FlOFJva3ZfTGVGaVVFQ3JjMmVzNGlfbEx2a1JsVG1XbU1RQ2dYcnpDcEdFUXgzdjZ1dUo2R01GYTdCOFRkTUl3dGlJeDV2X3FvRVByZFVBeDdDdHVDOHd0b0ttTUNMa0JkWC04dDVJUTd5UlFZTi1sbGJJ0gHAAUFVX3lxTE9vV1o5eWNXSjVyOHBnRG1qVm9QMmU3RzVxV2xNUjdfTmtqLTIzZkxmMHE3QmFqSk13MVhxaGhMcnh3elptU0JaM0Rndk1GRWZvdUItODduNnNHOWp2Vm4zWDlNaTRTdXN0dlVYS1RRZG80YUZ4cUM4UVFjU0VwTjgxOGtIem0xSnNmMm5YeE1XbGN1RVRoa0xHekhmLXdBdkJPbWRIWGYxUkU1Tnp2ak1JTDVPdlZWb3ZaZW9EcTFGQg?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-15T00:15:27Z",
-     "title": "Claims Israel\u2019s Beirut strike pushed Trump on Iran announcement",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/15/claims-israels-beirut-strike-pushed-trump-on-iran-announcement?traffic_source=rss",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-15T00:10:01Z",
-     "title": "Senior Iranian diplomat confirms deal with US reached - Tasnim",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/world/2146371",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T23:45:40Z",
-     "title": "Australia news live: Wong welcomes US-Iran peace deal; Joyce says fundraised millions to pay for One Nation ads",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/australia-news/live/2026/jun/15/australia-news-live-experts-push-back-at-call-for-shark-cull-after-attack-university-students-report-freedom-of-speech-fears",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
      }
     }
    ],
@@ -466,54 +515,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 161,
+    "outlets_timed": 166,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "The Guardian",
-      "ts": "2026-06-13T01:30:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 1
-     },
-     {
-      "outlet": "Reuters",
-      "ts": "2026-06-13T01:33:00Z",
-      "kind": "wire service",
-      "role": "echo",
-      "motive_note": "international wire service",
-      "items": 4
-     },
-     {
-      "outlet": "India Sentinels",
-      "ts": "2026-06-13T01:38:18Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "ETV Bharat",
-      "ts": "2026-06-13T01:51:07Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-06-13T02:03:52Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 8
-     },
      {
       "outlet": "Hindustan Times",
       "ts": "2026-06-13T03:08:37Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "IN press",
       "items": 3
      },
@@ -532,6 +541,46 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-13T03:20:32Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 24
+     },
+     {
+      "outlet": "CGTN",
+      "ts": "2026-06-13T03:56:52Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "CN state media",
+      "items": 6
+     },
+     {
+      "outlet": "newsdrum.in",
+      "ts": "2026-06-13T04:00:35Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "The Times of India",
+      "ts": "2026-06-13T04:07:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "IN press",
+      "items": 6
+     },
+     {
+      "outlet": "TASS",
+      "ts": "2026-06-13T04:12:37Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 22
      }
     ],
     "unplaced": []
@@ -585,7 +634,7 @@
    "sources": [
     {
      "outlet": "MSN",
-     "n": 48,
+     "n": 44,
      "class": "other"
     },
     {
@@ -595,7 +644,7 @@
     },
     {
      "outlet": "Press TV",
-     "n": 24,
+     "n": 23,
      "class": "state-media"
     },
     {
@@ -624,11 +673,6 @@
      "class": "mainstream"
     },
     {
-     "outlet": "ETV Bharat",
-     "n": 5,
-     "class": "other"
-    },
-    {
      "outlet": "The New Indian Express",
      "n": 5,
      "class": "other"
@@ -642,10 +686,15 @@
      "outlet": "dw.com",
      "n": 5,
      "class": "other"
+    },
+    {
+     "outlet": "Al Arabiya English",
+     "n": 4,
+     "class": "other"
     }
    ],
    "coverage": {
-    "non_mainstream": 3,
+    "non_mainstream": 4,
     "mainstream": 1
    },
    "under_radar": false,
@@ -733,16 +782,16 @@
      ],
      [
       "2026-06-15 00:00",
-      211,
-      176
+      227,
+      168
      ]
     ],
     "mix": {
      "mainstream": 9,
      "state-media": 58,
      "regional": 2,
-     "official": 0,
-     "other": 202
+     "official": 1,
+     "other": 207
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -809,7 +858,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1064,15 +1113,87 @@
     ]
    },
    "discovered": false,
-   "items_24h": 197,
-   "items_48h": 382,
-   "outlets": 176,
+   "items_24h": 195,
+   "items_48h": 384,
+   "outlets": 178,
    "kinds": [
     "journalist",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-15T01:53:00Z",
+     "title": "Zelenskyy tells Trump Ukraine has 'good ideas' to bring peace closer",
+     "outlet": "AnewZ",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVEt2Q0RtSmRUaUdLS1JZOTg5N2ppOVVKRDVQUk5SbDcxVzd4RWlLNExpTE5NN1VFTWhVOG1IZjM1SG9rSjBpRDF3STh6X2hrRV9hMmxUeTRMYjUxSGxNVjBnOEluOG45MWdTcDhvRjhXc2lsVTZGU1Vpa2hqbHc2UTlaNk5ka3hURjVxdUpjX1k2Z0RUenR1aGU2M3ZVbUtITk5NTlZob0Q?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:46:06Z",
+     "title": "Russia Ukraine War",
+     "outlet": "Journal-News.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbktEYXJMWlg1R09wZXVvWWJrQy02ekhSWU1iUnIxdDk4SG5KVGY0M1V2QUpNNkNzQV84TWJZN3hqNE96MXp5MHg5el9nRTRBUDE5NkRKSHExamcyU0FpaElYN19mTzhhWG15TUFSbk9kdGtVSnZyYlRRTEhHYzdiN2F2b2RfaTZ6NmtfVW5TUFFPNkctLV9tTVFDcmlKb2kwWnR2Q1FqX29RS3k4?oc=5",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:45:53Z",
+     "title": "Russia Ukraine War",
+     "outlet": "The Herald Journal",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPU2h4Yzh6aVRxR2h6RlFkbUk0MXI5TjdZMkFOdXg1ajgtV0VRMk9oYjROZlVmVXFxUjQzYU8zTjdOejlJTWs3blhublFTeHdjdHljXy0yNlliRGdndVRudWViTGVmamlaal9XbWNOUTh2TDFTX21iTjRfM2RRcHczWTkwYlBENjhhQ1NDTzgxRm1oQXVvd1VkbjZZZw?oc=5",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:30:00Z",
+     "title": "Kremlin outreach: Could war in Ukraine trigger Russian change?",
+     "outlet": "DT Next",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQTgxTXNoR3ZOWUU3eDNVMWhHVmFFRGZ5ZEF2WGltdWY5MEZVUDNNaW5QSms5MjBfNHA2VmN5QS05TzlmYm1YSWs1dm5vN18tdUoyZVdyTk5qdEZpbmJFQUtLclVxSVRONzVaVUFiOWJ0Um9fOUZzTkFtck9ud3FjUGs2bmNMdzFHYjc1OHlWQm7SAZ4BQVVfeXFMTV9sR1RBdUJQaTMybHZvd0VNVDFpZlRkLWxfX3NKcVdkTjFESmwyeWVZSklJdlM3UmJiZWJEemNsWlh1b1Fpd2NEbnJzOUxhSnhEQTFHUDE2WUxwOWNvZm9Wb3R1c1B2ZkZEdUl3czN0SU1sTGprMnNjb3haMEVfZ3RhZGZ6UXBIYmhoYXlDNXg1WXEwdUtTSElISDl5V1E?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:14:00Z",
+     "title": "Kyiv monastery set on fire in night of Russian attacks across Ukraine",
+     "outlet": "The Guardian",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNek9oYXYya2NjUGhURElHdGt3U3luOFNNTkFxcE04ekFFYWRCYV9URU5CeHZqZDFCZFhRQ1hyeHUzcWtBVlZWVml6d0ItM0dKVV9PcmpqTEliR2tkenJSSTdqUlJ3M1NLQVRYNEhLMjFDVTZ2dlc5WlkwZ1FfQ3JCZkZlaVZPRDFQcFJtVnRiRXB0bk5fWVlWSHdQMjdHbUJnUm9Ib292SGZIMWs?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:12:48Z",
+     "title": "Kyiv monastery set on fire in night of Russian attacks across Ukraine",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/world/2026/jun/15/kyiv-pechersk-lavra-monastery-on-fire-russian-attacks-ukraine",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
     {
      "ts": "2026-06-15T00:44:00Z",
      "title": "Russia Ukraine War",
@@ -1092,78 +1213,6 @@
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbVp5SzZHV3FOR2lTMURsSWhGOTVCMW0tM1NYSHZhTlpONnYyNVhJM2djSkhaZDM2ZjVXam5jeVRwSGJPZFFLS1R2ZlcwYjVhdU41aGNWckFqVDk2M3VZdURxYWwxTXRDXzBrUkZ0a0tJU252MnVtbWJUSXFrOVB5UG5yb0MtZXV1RUVySHlaMThpMWhFREVaZDNNbUNVRmhubDMta0tnUGVoZDl3TGJ6STJMWllQS0ZlTjlWS3J2VklsSUU?oc=5",
      "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-15T00:00:00Z",
-     "title": "UK says it intercepted Russian \u2018shadow fleet\u2019 tanker",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/15/2003859132",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-15T00:00:00Z",
-     "title": "Ukrainian strike on Russia results in 1 dead, three injured",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/15/2003859130",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T23:31:03Z",
-     "title": "Five injured, Kyiv Pechersk Lavra monastery on fire as Ukraine repels air attacks, authorities say",
-     "outlet": "Reuters",
-     "kind": "wire service",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTzkxRUR5S2pQNi0tN2laTFN2Q0FaUDh0V1hNQlNXY0ZYOHR4ejhEQTVSSFlfMGdGLUpUZk42dzhLNUdMYUNIcngxZUtoY2F4eEZmTW5zY1V3bjFZZy1Nd0JEQ3I4NUJLNDdCT1lXU3hjUURpaHc5RGNMb2w3M3NjN0N4RHZzd0RtY1ZiVGdyVk91dF9vaUhqUTdPNEo1ajZWZjRzSXVEeEZSbGtPenY3Y09CZGNOOGdVejRj?oc=5",
-     "rel": 8,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-14T22:36:11Z",
-     "title": "Breaking: Residential buildings struck in Kyiv amid large-scale Russian missile, drone attack",
-     "outlet": "Kyiv Independent",
-     "kind": "journalist",
-     "url": "https://kyivindependent.com/russian-attack-june-14-2026/",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T22:34:52Z",
-     "title": "Win Or Lose In Ukraine, Moscow Likely To Lose Part Of Russia\u2019s Periphery In The Next Decade - OpEd",
-     "outlet": "Eurasia Review",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUC1EOXgzQzdRdFNELWU5NUhDWGQ4RjkzSnJjbGtZY2NlZE9oRnFFMV96WnlFS2JfZDlWS0xJdExEWHJSZFJrS3ZjUW1kaTJScTFSdm01TlpMVE1WNFJLRlBSVE5qYzlUMlh4TFdERFRkajlyYWlmM01nX3FHSFB1ZzFCeUd4dndBZld5eEdLbU9WbWNXUG81MDJwdWVpd3piYjZXeFdJOXc0a1RFV24tb1B3c0l3MVJ5aTZ1QmtKR3FLSGlsazBwSHRCc2YyVDQ?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T21:30:00Z",
-     "title": "Ukraine targets Russian industry as Moscow bears down on eastern city",
-     "outlet": "Qatar Tribune",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaFlMY1ZFLUg4ajUyb2dfN3Ztdmp1cjFoSTBOYlBmSkxRQ1lLejRCNW42TnFISFN2U3ZLTXk4NUNJbU5hX0p2TUtOLXpzSl9JdDlwMzdXd3JHbTI4TTBLMXZYbi1TY08td0J1T19FcE9qcHJfcDM0VDJyZzZwV0RzamROTUtDWVZDTWxTUTJ2MjQ0RVRZNWZFb3VMNmlOVDZJY1kwajh2b0pRUFV1RktJRTUyQmxueDViVUxfU3ZjaG1CUdIBwgFBVV95cUxQaFlMY1ZFLUg4ajUyb2dfN3Ztdmp1cjFoSTBOYlBmSkxRQ1lLejRCNW42TnFISFN2U3ZLTXk4NUNJbU5hX0p2TUtOLXpzSl9JdDlwMzdXd3JHbTI4TTBLMXZYbi1TY08td0J1T19FcE9qcHJfcDM0VDJyZzZwV0RzamROTUtDWVZDTWxTUTJ2MjQ0RVRZNWZFb3VMNmlOVDZJY1kwajh2b0pRUFV1RktJRTUyQmxueDViVUxfU3ZjaG1CUQ?oc=5",
-     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -1227,40 +1276,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 164,
+    "outlets_timed": 166,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "The Guardian",
-      "ts": "2026-06-13T01:23:18Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 4
-     },
-     {
-      "outlet": "NewsGram",
-      "ts": "2026-06-13T01:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
       "outlet": "TASS",
-      "ts": "2026-06-13T01:55:07Z",
+      "ts": "2026-06-13T02:24:16Z",
       "kind": "state media",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "RU state media",
-      "items": 29
-     },
-     {
-      "outlet": "New York Post",
-      "ts": "2026-06-13T01:58:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
+      "items": 28
      },
      {
       "outlet": "MSN",
@@ -1268,7 +1293,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 20
+      "items": 21
      },
      {
       "outlet": "CGTN",
@@ -1293,6 +1318,30 @@
       "role": "echo",
       "motive_note": "IN press",
       "items": 4
+     },
+     {
+      "outlet": "Georgia Today",
+      "ts": "2026-06-13T03:54:20Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "RBC-Ukraine",
+      "ts": "2026-06-13T04:10:31Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "timesofindia.indiatimes.com",
+      "ts": "2026-06-13T04:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -1341,18 +1390,18 @@
    ],
    "sources": [
     {
-     "outlet": "MSN",
-     "n": 30,
-     "class": "other"
-    },
-    {
      "outlet": "TASS",
-     "n": 29,
+     "n": 27,
      "class": "state-media"
     },
     {
+     "outlet": "MSN",
+     "n": 26,
+     "class": "other"
+    },
+    {
      "outlet": "Kyiv Independent",
-     "n": 24,
+     "n": 22,
      "class": "regional"
     },
     {
@@ -1397,7 +1446,7 @@
     },
     {
      "outlet": "The Kyiv Independent",
-     "n": 6,
+     "n": 5,
      "class": "other"
     }
    ],
@@ -1490,8 +1539,8 @@
      ],
      [
       "2026-06-15 00:00",
-      193,
-      174
+      197,
+      176
      ]
     ],
     "mix": {
@@ -1499,7 +1548,7 @@
      "state-media": 3,
      "regional": 2,
      "official": 0,
-     "other": 182
+     "other": 184
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -1566,7 +1615,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a29a0c65769-1781113030.jpg?resize=1920%2C1440",
@@ -1789,9 +1838,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 148,
-   "items_48h": 250,
-   "outlets": 149,
+   "items_24h": 150,
+   "items_48h": 255,
+   "outlets": 152,
    "kinds": [
     "journalist",
     "state media",
@@ -1799,12 +1848,60 @@
    ],
    "latest": [
     {
+     "ts": "2026-06-15T01:48:00Z",
+     "title": "Six Palestinians killed in Gaza as ceasefire talks continue",
+     "outlet": "AnewZ",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdVg5ZkVJOUZUcHRBbFFCalJMeDJUMVp1Z1BHOHlzNFo4WkhleG5HWmdtU190eHJzU0NVNmNUR0JSTVd5MXdEelBOTDNTUUo0SEtncTlzRFNaamQyYjRhcjQ3aVc3MjM0Z3BTc3JwTnhWWWhlMHoxaDJLUjdIS3NjX1Z0bmw?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T01:22:32Z",
+     "title": "Death toll from Gaza conflict surpasses 73,000 since October 2023: medical sources",
+     "outlet": "China Daily - Global Edition",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORkdueHp0aWhlQUg1YU1oTUJIU2dpZTdwUWlleDFGOGVVckhQRDNBTW5TR0YwM29lYzR0LU9rSkhUSkltdk0xeHNUdjk1RXc2SHVGSWtRN0hkRndCcnZod1laM05qdU83REt0YlVhQThsMXN6Zm9VdXo1ekJDQzJ6VVVn?oc=5",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T00:55:00Z",
+     "title": "Gaza health officials say six killed in Israeli attacks",
+     "outlet": "The Manila Times",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSk1ZXzJRZmZua051S1VhX2VUeFpDZnN3MXFraEVPN2hxdE5rY0g0MDhDcnluQkEzZFlYMENLWWZkNENtZWIzU0hXS1RUNldKVnNIUmRwRUM0S0pnbVVfeV8tVmZobjY3ODJxamFoN2NqcTMwQkJaMDFjRVlic0hQVklYVU5Na2FYQUpWWGtkQ1pabHVoQ3Z5UDZ1MEl2c1ZHd2tqUjF4ZGJRZTFSMEdLU0hn0gGyAUFVX3lxTE5KTVlfMlFmZm5rTnVLVWFfZVR4WkNmc3cxcWtoRU83aHF0TmtjSDQwOENyeW5CQTNkWVgwQ0tZZmQ0Q21lYjNTSFdLVFQ2V0pWc0hSZHBFQzRLSmdtVV95Xy1WZmhuNjc4MnFqYWg3Y2pxMzBCQlowMWNFWWJzSFBWSVhVTk1rYVhBSlZYa2RDWlpsdWhDdnlQNnUwSXZzVkd3a2pSMXhkYlFlMVIwR0tTSGc?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
      "ts": "2026-06-15T00:55:00Z",
      "title": "Gaza health officials say six killed in Israeli attacks",
      "outlet": "The Manila Times",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdFl3NG1GSUVNWU96WE5oT3pWRzRyd1U1MlRfVE9yVmwwM1V1c2FvUVdpdGp0elFCdjNSSU5zQUh2MDhlTy1FTWtCN3V6VHRzRFJkb3hJQjQzY3pPQ3VaQmhNc1Z4NlNlZkd5alo5bTVaREJYal9uS1daUHAtUE9KS2otTGM1dDZQNDI2bmVCNUJMSkN4N0dMSHlPeE5ianc2WlBlcXVNeVQwdXJ50gGyAUFVX3lxTE5KTVlfMlFmZm5rTnVLVWFfZVR4WkNmc3cxcWtoRU83aHF0TmtjSDQwOENyeW5CQTNkWVgwQ0tZZmQ0Q21lYjNTSFdLVFQ2V0pWc0hSZHBFQzRLSmdtVV95Xy1WZmhuNjc4MnFqYWg3Y2pxMzBCQlowMWNFWWJzSFBWSVhVTk1rYVhBSlZYa2RDWlpsdWhDdnlQNnUwSXZzVkd3a2pSMXhkYlFlMVIwR0tTSGc?oc=5",
      "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T23:40:09Z",
+     "title": "Palestinian death toll in Gaza tops 73,000, officials say, as Israel strikes despite ceasefire",
+     "outlet": "Daily Excelsior",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNE9kLS01MjM5aHBlaExHY2o1aW1WX203OHZDcFVOVThCbW82cmdfYlNuU2VvcmNGcXB6VEp4UFJlVWItajB3S3ZHb2VQcVR2dlEzTDl5Z1AxV0lkNzhKaVJHLV9xbnBlWnZCelRaRUV5VDF1cjBnRFdJOHJpaDZCNDYyRzZjV2ZKZU5HY2xfTGdONFNfNF9GV0NrOExXWlJpS3k3RHdXbWJnR0RYUGYtMVJqMUxqVDRzRU9xak1iWXJpbFp4THc?oc=5",
+     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -1845,54 +1942,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-14T21:30:00Z",
-     "title": "Situation in Gaza  dire  says UNICEF",
-     "outlet": "rte.ie",
-     "kind": "journalist",
-     "url": "https://www.rte.ie/news/middle-east/2026/0614/1578395-gaza-strikes/",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T21:30:00Z",
-     "title": "Palestinian death toll in Gaza tops 73 , 000 as Israel launches strikes despite ceasefire",
-     "outlet": "ocregister.com",
-     "kind": "journalist",
-     "url": "https://www.ocregister.com/2026/06/14/palestinian-death-toll-in-gaza-tops-73000-as-israel-launches-strikes-despite-ceasefire/",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T21:30:00Z",
-     "title": "Major Blow to Hezbollah : IDF Eliminates Top Commander",
-     "outlet": "freerepublic.com",
-     "kind": "journalist",
-     "url": "https://freerepublic.com/focus/f-news/4383762/posts",
-     "rel": 3,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T21:20:13Z",
-     "title": "Israeli Genocide Victims in Gaza Reaches 73,001 People",
-     "outlet": "VOI.id",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE10c3JvVVhTRVRiRGFPMDFhRWQxQ0FfbEF6b0tOa3ZhckhMaHZmWkxNa2RHYndZYVdZYy1WVG0xTnRGOGs?oc=5",
-     "rel": 10,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -1928,7 +1977,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 138,
+    "outlets_timed": 141,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -2062,12 +2111,12 @@
      "class": "other"
     },
     {
-     "outlet": "The Times of Israel",
-     "n": 9,
+     "outlet": "Haaretz",
+     "n": 8,
      "class": "other"
     },
     {
-     "outlet": "Haaretz",
+     "outlet": "The Times of Israel",
      "n": 8,
      "class": "other"
     },
@@ -2201,8 +2250,8 @@
      ],
      [
       "2026-06-15 00:00",
-      147,
-      148
+      148,
+      149
      ]
     ],
     "mix": {
@@ -2210,7 +2259,7 @@
      "state-media": 3,
      "regional": 0,
      "official": 0,
-     "other": 167
+     "other": 169
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -2277,7 +2326,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel."
    ],
    "lead_image": {
     "url": "https://i.guim.co.uk/img/media/82fdf539afe74c57ac3730922e4c47608df7a652/0_163_2154_1724/master/2154.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=cf1c87e02e9dafb83b2bb09eedcce042",
@@ -2293,26 +2342,30 @@
     "espionage"
    ],
    "brief": {
-    "generated_utc": "2026-06-14T22:13:17Z",
-    "sentence_count": 13,
+    "generated_utc": "2026-06-15T02:19:06Z",
+    "sentence_count": 4,
     "dropped_count": 0,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "Chinese ships have entered restricted waters around a disputed island in the South China Sea, the Epoch Times reports.",
+        "text": "One outlet reports that China expelled a New York Times correspondent as press punishment.",
         "cites": [
          {
-          "outlet": "theepochtimes.com",
+          "outlet": "The Organization for World Peace",
           "kind": "journalist",
-          "url": "https://www.theepochtimes.com/world/chinese-ships-enter-restricted-waters-around-disputed-island-in-south-china-sea-6047736",
-          "ts": "2026-06-14T13:30:00Z",
-          "title": "Chinese Ships Enter Restricted Waters Around Disputed Island in South China Sea"
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10RWk2NjRlbkk1eURpLW1tdTNCUC1nSUxpR000a0ZBcFd0Ny1aWWlMc0p1X3I5V0VJZWsyUEJGelZ2VDRlbDJ5TkZ2Z2NnallxdlBTZzJmZzdla1ZYQ2Z2RHRFak9rRHViTC1TWW1Hd3FKYXY1aDNOYk45Qjk?oc=5",
+          "ts": "2026-06-14T21:28:24Z",
+          "title": "China Expels N.Y.T. Correspondent As Press Punishment"
          }
         ]
-       },
+       }
+      ]
+     },
+     {
+      "sentences": [
        {
-        "text": "The Taipei Times reports that China is pressuring the First Island Chain.",
+        "text": "Taipei Times reports that China is pressuring the First Island Chain.",
         "cites": [
          {
           "outlet": "Taipei Times",
@@ -2322,53 +2375,9 @@
           "title": "China pressures First Island Chain"
          }
         ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "China's top political advisor has urged solid progress in cross-Strait integrated development, CGTN reports.",
-        "cites": [
-         {
-          "outlet": "news.cgtn.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVnNUbndKTVFCVzlSR3ZYcFhHc2p1d0JrcmE3ZWswVms1QVhVaTNqVEFnSWN1ZHVkNzdLX1MwSC1wNGRyazdyY2hKRzZ2M2RadVlYdms0VS1GZXRBU09mUFhhbDRDS1JEWkFXSWkzS05nOE8zQjl4WGF1SnM4N1QtRDF3am9semdZU3NQalFXcTJUY1lZbXVtdm1KSlI2aHBDUzdOdjFyVk5qUlhEVzk2MDZHcDhMbjBkS29IbF9YZnp5MnloMFp4ajZn?oc=5",
-          "ts": "2026-06-14T11:10:41Z",
-          "title": "China's top political advisor urges solid progress in cross-Strait integrated development"
-         }
-        ]
        },
        {
-        "text": "A China Daily editorial says the benefits of cooperation with the mainland are tearing apart the DPP authorities' information cocoon.",
-        "cites": [
-         {
-          "outlet": "europe.chinadaily.com.cn",
-          "kind": "state media",
-          "url": "http://europe.chinadaily.com.cn/a/202606/14/WS6a2ea61ca310986e2b45fd46.html",
-          "ts": "2026-06-14T15:15:00Z",
-          "title": "Benefits of cooperation with mainland tear apart DPP authoritie information cocoon : China Daily editorial"
-         }
-        ]
-       },
-       {
-        "text": "Global China Daily carries the same editorial argument about the DPP authorities and mainland cooperation.",
-        "cites": [
-         {
-          "outlet": "global.chinadaily.com.cn",
-          "kind": "state media",
-          "url": "http://global.chinadaily.com.cn/a/202606/14/WS6a2ea61ca310986e2b45fd46.html",
-          "ts": "2026-06-14T13:30:00Z",
-          "title": "Benefits of cooperation with mainland tear apart DPP authoritie information cocoon : China Daily editorial"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Taiwan's Ministry of Agriculture has flagged concerns over agricultural exports to China, the Taipei Times reports.",
+        "text": "The same outlet reports that Taiwan's MOA has flagged concerns over agricultural exports to China.",
         "cites": [
          {
           "outlet": "Taipei Times",
@@ -2384,90 +2393,14 @@
      {
       "sentences": [
        {
-        "text": "Vladimir Putin spoke with Donald Trump by phone for 55 minutes, a Kremlin aide says.",
+        "text": "A China Daily editorial says the benefits of cooperation with the mainland tear apart what it calls the DPP authorities' information cocoon.",
         "cites": [
          {
-          "outlet": "TASS",
+          "outlet": "europe.chinadaily.com.cn",
           "kind": "state media",
-          "url": "https://tass.com/politics/2146267",
-          "ts": "2026-06-14T21:26:53Z",
-          "title": "Putin\u2019s call with Trump lasted for 55 minutes - Kremlin aide"
-         }
-        ]
-       },
-       {
-        "text": "TASS reports that Putin and Trump discussed bilateral relations and the international situation.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2146263",
-          "ts": "2026-06-14T21:22:23Z",
-          "title": "Putin, Trump discuss bilateral relations, international situation - Kremlin aide"
-         }
-        ]
-       },
-       {
-        "text": "A Kremlin aide says Putin noted mutual understanding he has developed with Trump.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2146287",
-          "ts": "2026-06-14T22:29:55Z",
-          "title": "Putin notes mutual understanding he has developed with Trump"
-         }
-        ]
-       },
-       {
-        "text": "TASS reports that Putin and Trump agreed on a new visit to Russia by Witkoff and Kushner.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2146277",
-          "ts": "2026-06-14T22:20:30Z",
-          "title": "Putin, Trump agree on Witkoff, Kushner\u2019s new visit to Russia - Kremlin aide"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Trump called for restraint after Israel launched fresh airstrikes on Beirut, the Guardian reports.",
-        "cites": [
-         {
-          "outlet": "The Guardian",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaFI1eE1lU081b2JJOG1VT1V3bEJIb3BENG9ER3JMQXVNQTBYWTd0UFdsaDRENVh2Q0RWYjZDcFhhYkcyRFN5QTdhcF9vbUwwbFlFSjVqSFZ6QVlBWDcwbmU3amJFR2dYTk1qM09GcmM4cm9RaGRYV1JySEU2VWM2THZBcXpuMEE4bklnSTVZT08zVTZiLU5IYUY2WWgtRGJHME1kcmJPTEhXcVhfRmxLSGpYTkp1UQ?oc=5",
-          "ts": "2026-06-14T19:14:00Z",
-          "title": "\u2018Let\u2019s not blow it\u2019: Trump calls for restraint after Israel launches fresh airstrikes on Beirut"
-         }
-        ]
-       },
-       {
-        "text": "Zelenskiy and Trump discussed war and diplomacy in a phone call, an adviser says.",
-        "cites": [
-         {
-          "outlet": "Global Banking & Finance Review",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONnBSMEl1b0xwR1JvYlZVUEdId2ktVnhnV0Jxa0hpcEJXUWJUYk5CbkU4UnFwSWRPY2pob05TdXlTRUpLR3ZhN0Zvdk0xb3ZneGUySHRqOXdVYTRUQ3RVMVRNS2hGN3QwTHVSNmxveDNmaV8zRE9SWUZuZXJBZXVNb3liYTdEdFNSWUJoN1FMTFBNMm42M21icFlB?oc=5",
-          "ts": "2026-06-14T19:06:56Z",
-          "title": "Zelenskiy, Trump Discuss War and Diplomacy in Phone Call - Adviser"
-         }
-        ]
-       },
-       {
-        "text": "A Kremlin aide says Trump told Putin he is ready to exert pressure on the EU and Kiev to achieve peace.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2146269",
-          "ts": "2026-06-14T22:11:18Z",
-          "title": "Trumps says ready to exert pressure on EU, Kiev to achieve peace - Kremlin aide"
+          "url": "http://europe.chinadaily.com.cn/a/202606/14/WS6a2ea61ca310986e2b45fd46.html",
+          "ts": "2026-06-14T15:15:00Z",
+          "title": "Benefits of cooperation with mainland tear apart DPP authoritie information cocoon : China Daily editorial"
          }
         ]
        }
@@ -2476,9 +2409,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 73,
-   "items_48h": 140,
-   "outlets": 72,
+   "items_24h": 71,
+   "items_48h": 136,
+   "outlets": 70,
    "kinds": [
     "journalist",
     "state media"
@@ -2628,46 +2561,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 71,
+    "outlets_timed": 69,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-06-13T01:51:16Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 8
-     },
-     {
-      "outlet": "channelnewsasia.com",
-      "ts": "2026-06-13T02:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "rawstory.com",
-      "ts": "2026-06-13T02:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 6
-     },
-     {
-      "outlet": "local12.com",
-      "ts": "2026-06-13T02:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "nypost.com",
       "ts": "2026-06-13T02:45:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -2694,6 +2595,38 @@
       "role": "echo",
       "motive_note": "UK public broadcaster",
       "items": 4
+     },
+     {
+      "outlet": "wpde.com",
+      "ts": "2026-06-13T04:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "TASS",
+      "ts": "2026-06-13T04:51:53Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 14
+     },
+     {
+      "outlet": "CGTN",
+      "ts": "2026-06-13T05:42:57Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "CN state media",
+      "items": 4
+     },
+     {
+      "outlet": "dailypioneer.com",
+      "ts": "2026-06-13T06:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -2756,7 +2689,7 @@
    "sources": [
     {
      "outlet": "TASS",
-     "n": 14,
+     "n": 13,
      "class": "state-media"
     },
     {
@@ -2775,14 +2708,14 @@
      "class": "mainstream"
     },
     {
-     "outlet": "Guardian World",
-     "n": 9,
-     "class": "mainstream"
-    },
-    {
      "outlet": "rawstory.com",
      "n": 9,
      "class": "other"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 8,
+     "class": "mainstream"
     },
     {
      "outlet": "Taipei Times",
@@ -2899,8 +2832,8 @@
      ],
      [
       "2026-06-15 00:00",
-      69,
-      70
+      73,
+      72
      ]
     ],
     "mix": {
@@ -2930,7 +2863,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -2942,772 +2875,6 @@
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/2026-06-03T175352Z_1536083161_MT1USATODAY29126067_RTRMADP_3_SOCCER-INTERNATIONAL-MENS-FRIENDLY-SENEGAL-AT-UNITED-STATES-1781169456.jpg?resize=1920%2C1440",
     "source": "Al Jazeera"
-   },
-   "gate": {
-    "score": 7,
-    "of": 8,
-    "checks": {
-     "split": 1,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "uk-defence-secretary-resigns-over-spending",
-   "name": "UK defence secretary resigns over spending",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "weapons"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-14T22:12:20Z",
-    "sentence_count": 13,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "British defence minister John Healey has resigned over defence spending, saying the government is not willing to spend enough on the military.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb3hDa21uVWdXZUZUcEpnSk9uWUtveEk1SUJ4UVBfcFpvSEd3ZVB2YklxNUlHaU5qajZRUjFxa05PRC1pMTFiMmNPdmViNERVczRyZVV4d3VKY21OZ1VHN005V01MT2t6UmhoeW9qcnNvVzI1UEFOYzBYZlpkUzZ6ejl0emFwV3hEZ1Z5a0c5SVp0cU13alk4N0dKZFFtelVuSVhSTkNqMEQ1Q3hTNGV5Wk9Vbw?oc=5",
-          "ts": "2026-06-14T14:28:05Z",
-          "title": "British Defence Minister John Healey quits over defence spending"
-         },
-         {
-          "outlet": "Texarkana Gazette",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNGFRUWF4U1g4WmVWd3BTN1cwVVl2WUxUcWdPbTNPVUxEd3dnNXpYSW43eGtvSVVfd3dtM1d2LUFEeDRMRk5BckVoVmExRkR2QnhILVlTSDFpVkkyNWI1cGdoUUZJclVnTnBPai14ZFFQTDIzRS00MC1nRnN6RzBGU3FIU2xlQklqdlNocENFNGh4bmdG?oc=5",
-          "ts": "2026-06-14T04:15:00Z",
-          "title": "U.K. defense secretary resigns, saying the government isn\u2019t willing to spend enough on the military"
-         }
-        ]
-       },
-       {
-        "text": "Healey and his number two quit as Starmer and Reeves put welfare and net zero before national security, according to one report.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxPUVJzSXZ1Uml3YmFkeElNbFB1WkdtQmhDVUdLNHhiNjkxMGVuamZRdnFjSDd0X211U0x6azFDVFkwN09NQjlSdWN5TWZHdlpDWk5YR1BQYnkySWxxUHZ5cGVVbEMtMm1mcEdfN3o2cWk3MTRlbWxpdDNEWHowZXlFMWl5elgyREFkMWxtZWFpdWx1UDVpb3IxV0NPZlQtMDBQcGpjZjVudUlPTGFGaFlfdHg5UHRsMkxCRmFBY3pqYmtjNXdycVl6N0Q3cm1XQk96b2RJUkxEWERETFNXVXplMy03d0daNkUxS0NLSnZwYjRURkFpYmkyZWpUWEJTMXBtOXFiTWVnMzdBZThtUzdaU0JuakNDaTY0RTd2WTc4SGhSOV9iSm52T0JCYW45UGNfTGNpZ0NfLTQwanp0SUtZd2pjTmpZQUNrZ0pydkl1SjV6WDlnTFdHZVBlcjljQmxXQjVmekI5VDIxdFA4cE9kSUZsN1dqbVdtcmc?oc=5",
-          "ts": "2026-06-14T07:27:18Z",
-          "title": "John Healey and his No2 quit as Starmer and Reeves put welfare and net zero before national security"
-         }
-        ]
-       },
-       {
-        "text": "Dan Jarvis has been named the new defence secretary and says he has a big responsibility to get the Armed Forces the funds they need.",
-        "cites": [
-         {
-          "outlet": "independent.co.uk",
-          "kind": "journalist",
-          "url": "https://www.independent.co.uk/news/uk/politics/dan-jarvis-new-defence-secretary-armed-forces-budget-healey-b2995300.html",
-          "ts": "2026-06-14T05:00:00Z",
-          "title": "New defence secretary Dan Jarvis  determined  to get Armed Forces  precisely  what they need"
-         },
-         {
-          "outlet": "theargus.co.uk",
-          "kind": "journalist",
-          "url": "https://www.theargus.co.uk/news/national/26192407.dan-jarvis-big-responsibility-get-armed-forces-funds-need/",
-          "ts": "2026-06-14T02:45:00Z",
-          "title": "Dan Jarvis : I have  big responsibility  to get Armed Forces the funds they need"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Government sources say the new defence secretary will reprioritise the UK plan for military spending.",
-        "cites": [
-         {
-          "outlet": "Guardian World",
-          "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/2026/jun/14/defence-secretary-dan-jarvis-uk-plan-military-spending-dip",
-          "ts": "2026-06-14T18:22:56Z",
-          "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources"
-         },
-         {
-          "outlet": "The Guardian",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGRoVURQd3plSi1UUnZFVW9qVGpFY05Zb0x4VEFBZ0tJOVNVeDBpOGRQbzh2X2hta0VUTzltNm16b0VVOGRGVUFCZEQ5X014S1RNeGNMWmVZSDA4Z2hTOUdEN0RDc1JiQ3Y0c2pZdzBXMnU4MEtUa0NHTWxwa21CeFg2Y3ZacGdoWnVZWXpJTjVoZm52UThZNnNkY1FaM21QOGFlUDJDdHI3Rjg?oc=5",
-          "ts": "2026-06-14T18:22:00Z",
-          "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources"
-         }
-        ]
-       },
-       {
-        "text": "Cabinet ministers have been asked to look for cuts to fund a UK defence spending increase.",
-        "cites": [
-         {
-          "outlet": "The Guardian",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZk84WGF2dmVOTV9xZDBMOEgwSDlERjM0TEJ1SkFuWElIV3BRa1JKZlVzODRscjVnZmtza25VdC1WWWwyUGtacUJGalluQkx2Y3lnUkpEMW5oVHJnRkdES1hZZWFnOVQ2Rk1Hc0NySjItc0VPVUk1V0dqa1dwMzdQSzNFS1FYcWV3QjhlWUNGWFRNSHc3QTlNYWM1MjFxbk4yTEo4T2xOWndSSFJOSURuVUUyWHlIbmdUR1NuQ21wSkQwTVZO?oc=5",
-          "ts": "2026-06-14T09:44:00Z",
-          "title": "Cabinet ministers asked to look for cuts to fund UK defence spending increase"
-         },
-         {
-          "outlet": "Guardian World",
-          "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/2026/jun/14/cabinet-ministers-asked-to-look-for-cuts-to-fund-uk-defence-spending-increase",
-          "ts": "2026-06-14T09:18:46Z",
-          "title": "Cabinet ministers asked to look for cuts to fund UK defence spending increase"
-         }
-        ]
-       },
-       {
-        "text": "Lisa Nandy says Whitehall departments are looking to cut budgets to fund defence.",
-        "cites": [
-         {
-          "outlet": "eveningnews24.co.uk",
-          "kind": "journalist",
-          "url": "https://www.eveningnews24.co.uk/news/national/26192733.departments-looking-cut-budgets-fund-defence-lisa-nandy-says/",
-          "ts": "2026-06-14T13:00:00Z",
-          "title": "Departments looking to cut budgets to fund defence , Lisa Nandy says"
-         },
-         {
-          "outlet": "theargus.co.uk",
-          "kind": "journalist",
-          "url": "https://www.theargus.co.uk/news/national/26192733.departments-looking-cut-budgets-fund-defence-lisa-nandy-says/",
-          "ts": "2026-06-14T12:30:00Z",
-          "title": "Departments looking to cut budgets to fund defence , Lisa Nandy says"
-         },
-         {
-          "outlet": "huffingtonpost.co.uk",
-          "kind": "journalist",
-          "url": "https://www.huffingtonpost.co.uk/entry/more-cuts-to-fund-defence-cash-boost_uk_6a2e6670e4b0ba7a1fedf4b4",
-          "ts": "2026-06-14T10:15:00Z",
-          "title": "Whitehall Departments Facing More Cuts To Fund Defence Cash Boost , says Lisa Nandy"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The Mirror reports that Keir Starmer is scrambling to find more defence cash after the resignations by slashing other public services.",
-        "cites": [
-         {
-          "outlet": "The Mirror",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR3hfSE8tUDNyalBHUjZZa1dOaGdaNTcwY09NZzJ5RG9sejJuaGptblFIR0otZTVCM241czVCQ3dERnVrVC1zcTJuaUR4eUpVSnEyVWVxUVlJNjg1eWxJZnFiWnNWUWNxaHVsODEybnhENzRJcWVHaXhFMl9tLXpYMkF6OFpSZnRRQ21nbNIBkgFBVV95cUxNZDkwTDdMMEsxWlFHRVlCc1JWakxMcU1qLUdHOWZ0YmZsQ0F1N2NfOXRYS1VxeWJ5RTZ0YW5qeVZIT3pOUkFhclpMTms4TmxDOEZOa0dySG80VDF1WTZEc3Q2cXlOUGhKcW5Wb1R3c0h1TTN0M1RrNjJ2Y0V4cjdrRXZ3OUZ1Szd4aVhrRDY1ZmJoZw?oc=5",
-          "ts": "2026-06-14T21:01:00Z",
-          "title": "Keir Starmer scrambles to find more defence cash after resignations by slashing other public services"
-         }
-        ]
-       },
-       {
-        "text": "GB News reports that Starmer was urged to 'get a grip' on defence by a Tory frontbencher after a 'shambles' double resignation.",
-        "cites": [
-         {
-          "outlet": "GB News",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSTgxeHhqbjFJdm1FZ1BhUVdmQ1poWE82NE8zUUlNNFJDb2JGZzBkM1g4c3NfNVFrSVo3ZXpNUTlWdHdyamptQkpYZmo3MGtObkRmYnhtMzRuN2VkcUJReGNVN3RUWnVkZFJ4eUl3aGhSU3VzYXhyTWxrVkhBektKSU80TXRXTzhfU2RYQzAxZ0dMZGVkdEctbDNTVQ?oc=5",
-          "ts": "2026-06-14T16:40:41Z",
-          "title": "Keir Starmer urged to 'get a grip' on defence by Tory frontbencher after 'shambles' double resignation"
-         }
-        ]
-       },
-       {
-        "text": "Kemi Badenoch has thrown down a defence challenge to Keir Starmer and rivals, according to the Express.",
-        "cites": [
-         {
-          "outlet": "express.co.uk",
-          "kind": "journalist",
-          "url": "https://www.express.co.uk/news/politics/2217031/kemi-badenoch-throws-down-defence",
-          "ts": "2026-06-14T07:15:00Z",
-          "title": "Kemi Badenoch throws down defence challenge to Keir Starmer and rivals"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Starmer has vowed to fight on after Healey quit over the defence row.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZktXRUdSX0UzQTdlMm11WUhKOVBIRFVqV1J1VkRDNTBzSjUxM2lGRkFhbkV2ZjZGY0JMalFjU04xUTNTbXFHTHd5TngtQ0lNdWVnV2ROaG5jS1hxazZ3TmRTalNJaWZ0YjNvUnE0TnVTbTU1RTFIMFNHTDdUZ1BHVlRCbmRlVXdPbzh3bmxIMHFYTlZWTmp6UnljajUwa3hwR0JqNTBMd3BmNUdfYm9HV2hzVHJGeVBmY0hfcTVuYXgtX05ocDQxUWpjX2pQU0wyRGh3aTZRLWo?oc=5",
-          "ts": "2026-06-14T06:52:33Z",
-          "title": "Starmer vows to fight on after Healey quits over defence row"
-         }
-        ]
-       },
-       {
-        "text": "Starmer defended the defence plan after the Healey resignation backlash.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTy1fTlNYNXd3X1JlS2FDemFCRFpsVUQ2R0xrWG84RXZsOVV2REJKeXhUYm94bUVnaVpmRmRLQWtEVWRZWHZkQkpIQzRwbjFhODRyaXFVZHZGQkdFb2FNQnZEVlo3WHd4Y3A4aTQxT0I1UzV6V2FqNzM2elJhRThzU1NpdUJmOHRqVFZTVlVEOW1DaEppSXlCNTNOSHpaay1uOVRHZE1VbjJrWXQyaGNyMk15QWdwNUdYUUtGY1B2TF9qY3NuUEpza01ITkFMeDIwanpnRHZleHhUMmRoNjhUZjhFMmtkdEdu?oc=5",
-          "ts": "2026-06-14T06:15:03Z",
-          "title": "Starmer defends defence plan after Healey resignation backlash"
-         }
-        ]
-       },
-       {
-        "text": "Iranian outlet Fars reports that the UK PM refuses to quit after top ministers resign.",
-        "cites": [
-         {
-          "outlet": "\u062e\u0628\u0631\u06af\u0632\u0627\u0631\u06cc \u0641\u0627\u0631\u0633",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcU0tMndWZXQ3M0xTMERFUUo5UlYzVDc3czdQeTc3Nk9EQTF1X3pIaENrY25uZkxaZDAyNk5hUm5QcDFSZDVQOWdvdXlhRVE2OGN3dDhLYzdHM2F0UEg2WmF4NlA2Ykp2SV9QWXRVY01JQllkejlSUHlhOGpFcnVQTVI0WVhZd0duMF9DakNOYjhHZ3lhUlBKNkFjLW9NUHJi?oc=5",
-          "ts": "2026-06-14T02:27:18Z",
-          "title": "UK PM Refuses to Quit After Top Ministers Resign"
-         }
-        ]
-       },
-       {
-        "text": "Starmer is set to unveil a defence plan before the NATO summit.",
-        "cites": [
-         {
-          "outlet": "AnewZ",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY0VCSTJ3ZmNvUTZyN2czSGVVeUtEXzdxY2h6WW51X0hia0NRbkR2eWJmYWxHVVFJbGJpLXd3X1Rwb0RjWGxOWm0yUllacGlLYWdwQmluVlgtVFFlNHN1TzlsdUx5YmJKWlN3SHhUdnVrQTdrd1dxaUN6OXo3WWRwaHJiazEwTDVXV1NITzJmSzFVV0xXd0NnUHF3Y0Nfd0lVb3p3?oc=5",
-          "ts": "2026-06-14T07:04:00Z",
-          "title": "UK Prime Minister Starmer to unveil defence plan before NATO summit"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 53,
-   "items_48h": 109,
-   "outlets": 55,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-06-14T21:01:00Z",
-     "title": "Keir Starmer scrambles to find more defence cash after resignations by slashing other public services",
-     "outlet": "The Mirror",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR3hfSE8tUDNyalBHUjZZa1dOaGdaNTcwY09NZzJ5RG9sejJuaGptblFIR0otZTVCM241czVCQ3dERnVrVC1zcTJuaUR4eUpVSnEyVWVxUVlJNjg1eWxJZnFiWnNWUWNxaHVsODEybnhENzRJcWVHaXhFMl9tLXpYMkF6OFpSZnRRQ21nbNIBkgFBVV95cUxNZDkwTDdMMEsxWlFHRVlCc1JWakxMcU1qLUdHOWZ0YmZsQ0F1N2NfOXRYS1VxeWJ5RTZ0YW5qeVZIT3pOUkFhclpMTms4TmxDOEZOa0dySG80VDF1WTZEc3Q2cXlOUGhKcW5Wb1R3c0h1TTN0M1RrNjJ2Y0V4cjdrRXZ3OUZ1Szd4aVhrRDY1ZmJoZw?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T19:43:46Z",
-     "title": "British Defence Minister John Healey quits over defence spending",
-     "outlet": "MSN",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxONXFTS3djRFNUdUtGbEU0eG5aRG02Q29ENXNVY3BmZlo1bkJ5Mnk4cThxUHZ5a2g5akM1N255Um4zaDdfSWNwUzFXSHg0d1lNMjdsajVoUVZBZ0lIeHhsblhPRHBFRFR3UTJERUswS2pvcTBOZkVJYTJmU1VkZUVINGJjclNoM1pHb1VWdGFWOFBLRzlHV1h0cDhmNmNXN0psVENBOTRWMG5TaFlXUXR6ZzBCVnQzR2szcG10bW9hRUxYTVpnYU4yMXhuWUVPTlQzd0t3OUgzT0VpLTdYZU9CaUxMaXVlQXp4X0RLMTQ5Z0xzcEtFbG1HN1I4Mm1UWnFQQWpwR2Z4SkZQMHVmVWU5X0xYbHQyd0gtQlVHZXdkclpzUGVyZlFiNjR4b3Y3MEpUWU5EZEJSTkl5cVZGaENRejVmbG5LQTRxelFKSHlkd1A2a0xFczRnbmRzcFhEckdSSTZqRkRTdHRRN0g4eXFVcFgtV2FnV3VlTW9kRUU4ZEVNakdZS2R3TFlCbw?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T19:43:44Z",
-     "title": "British Defence Minister John Healey quits over defence spending",
-     "outlet": "MSN",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxPei1uX1V0NGtYdDhUa1J6ZHhrT1V1OW1QUEc3U3JFOEF4dU9mR0dyMlVXS3EyeE5wTEpBT0hTc1o4YjE5Q0RNNVdHTzNhUUxqUmZabzktbnk2S1Y0Mlh3ZHF6TktveG9JTkhaTDF6ZDVPZm8zZ2Y5Mm9LUFFWNUR1SnpxdnJuRk50QmRKbzZULWN2dEViMV8zSUhwM3g5WHFVMUdPNF82ZWU2bHpxX2lrZnprTEEwMTc3cXVNRGVZRms2VWlxb0xWT0ZkeHJ2ekdCQk5aYVBKc1ozVXl1TnVqblVnRF95QWRtckZMRlpXSGZoa21CR1gwbms4UUp1ekhBTWtoakVIcFg1LUo0THJhcWFFS0xQT0llSHJDTkVuZFNnYnZKU1ZuZHIzZnlmbDRmTDJLbVR0OHZGdjNieFhCZnliRWVEbnNPa1pkY3J1Yi11YURBNWg4S0s0Vk5tdUVRWUh3Y1I4T0YzSXc3akhTczJZbnpZYU41OHdrQ1ZfakdnZUZ4Uy1SeXlWMA?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T18:22:56Z",
-     "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/politics/2026/jun/14/defence-secretary-dan-jarvis-uk-plan-military-spending-dip",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-14T18:22:00Z",
-     "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources",
-     "outlet": "The Guardian",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGRoVURQd3plSi1UUnZFVW9qVGpFY05Zb0x4VEFBZ0tJOVNVeDBpOGRQbzh2X2hta0VUTzltNm16b0VVOGRGVUFCZEQ5X014S1RNeGNMWmVZSDA4Z2hTOUdEN0RDc1JiQ3Y0c2pZdzBXMnU4MEtUa0NHTWxwa21CeFg2Y3ZacGdoWnVZWXpJTjVoZm52UThZNnNkY1FaM21QOGFlUDJDdHI3Rjg?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T16:40:41Z",
-     "title": "Keir Starmer urged to 'get a grip' on defence by Tory frontbencher after 'shambles' double resignation",
-     "outlet": "GB News",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSTgxeHhqbjFJdm1FZ1BhUVdmQ1poWE82NE8zUUlNNFJDb2JGZzBkM1g4c3NfNVFrSVo3ZXpNUTlWdHdyamptQkpYZmo3MGtObkRmYnhtMzRuN2VkcUJReGNVN3RUWnVkZFJ4eUl3aGhSU3VzYXhyTWxrVkhBektKSU80TXRXTzhfU2RYQzAxZ0dMZGVkdEctbDNTVQ?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T16:15:00Z",
-     "title": "UK and Japan building  new era of cooperation , says Starmer",
-     "outlet": "thenorthernecho.co.uk",
-     "kind": "journalist",
-     "url": "https://www.thenorthernecho.co.uk/news/national/26193033.uk-japan-building-new-era-cooperation-says-starmer/",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T15:39:45Z",
-     "title": "Why is the UK launching an \u2018Australia plus\u2019 social media ban and how will it work?",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/uk-news/2026/jun/14/what-is-uk-introducing-australia-plus-social-media-ban-how-will-it-work",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    }
-   ],
-   "split": {
-    "a": "Starmer's government says it will reprioritise defence spending and seek cross-departmental cuts to fund the planned increase.",
-    "b": "Critics say funding defence by slashing other public services is unacceptable, a view that drove Healey's resignation.",
-    "basis": "extracted from live headlines 2026-06-15",
-    "axis_type": "policy_dispute",
-    "axis_question": "Should UK fund its defence increase by cutting other public services?",
-    "carriers": {
-     "a": [
-      {
-       "outlet": "MSN",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOR2FxVjU4UTRkY19nYlJRNWd3RzJNMVNBZTZXeGFEdkotOHpZamRNbUhQbm1xb2Iwb1h1UjVDMjRLLTdMYWtJU0lDcERvLWI2Y0FINk12WEwwbnpkWUpPbmdHZDRhX3B4dGFjUTBuck05aWQxLXpWdzhVTzk5eXNaUmE4MTdRVHA4dDQ3dXZIb3ZIYWpFMDVxWXBLaWdLX196QXN5RDlHbGFiQmdNdFcwbWw5VVI4dnAtM2JXTjZ1VDhsTGJHZ2Frc081Zk8xa2Y5MlJ4R0tORmNFQXNQWUVUUW90OE5zZw?oc=5",
-       "ts": "2026-06-13T02:06:46Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "The Guardian",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZk84WGF2dmVOTV9xZDBMOEgwSDlERjM0TEJ1SkFuWElIV3BRa1JKZlVzODRscjVnZmtza25VdC1WWWwyUGtacUJGalluQkx2Y3lnUkpEMW5oVHJnRkdES1hZZWFnOVQ2Rk1Hc0NySjItc0VPVUk1V0dqa1dwMzdQSzNFS1FYcWV3QjhlWUNGWFRNSHc3QTlNYWM1MjFxbk4yTEo4T2xOWndSSFJOSURuVUUyWHlIbmdUR1NuQ21wSkQwTVZO?oc=5",
-       "ts": "2026-06-14T17:31:00Z",
-       "provenance": "echo",
-       "motive_note": "UK press"
-      },
-      {
-       "outlet": "Guardian World",
-       "kind": "journalist",
-       "url": "https://www.theguardian.com/uk-news/2026/jun/14/starmer-to-announce-australia-plus-ban-on-social-media-for-under-16s",
-       "ts": "2026-06-14T21:42:23Z",
-       "provenance": "echo",
-       "motive_note": "UK press"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "MSN",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOR2FxVjU4UTRkY19nYlJRNWd3RzJNMVNBZTZXeGFEdkotOHpZamRNbUhQbm1xb2Iwb1h1UjVDMjRLLTdMYWtJU0lDcERvLWI2Y0FINk12WEwwbnpkWUpPbmdHZDRhX3B4dGFjUTBuck05aWQxLXpWdzhVTzk5eXNaUmE4MTdRVHA4dDQ3dXZIb3ZIYWpFMDVxWXBLaWdLX196QXN5RDlHbGFiQmdNdFcwbWw5VVI4dnAtM2JXTjZ1VDhsTGJHZ2Frc081Zk8xa2Y5MlJ4R0tORmNFQXNQWUVUUW90OE5zZw?oc=5",
-       "ts": "2026-06-13T02:06:46Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Devdiscourse",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGw0RzVwM0l6S0FWVTBzZ2NJZnZ2d3FfTTlWRG1rUGR0c2lJTkVUTFFmRzRFbEZRVi02NV9JSzRQZzdGTGFOenJWUVI0SVp0a0YxUU5zRXZtZFhmajFMOXBVdEtrb1V1XzlneTJWNUdGUElPMFpIZ0cybmhwYWxzZk5BMW1ic0d2MlF4dllxTWtyMGJnOHZNWm5oYWVFQjBTUVNHcURYOTJPY2diVmRZOWw2SGhiNjFxWklCZFo2djNhOC1fYk1uUFFWT3dyYWZ6amF2M05YSFAzdnA40gHcAUFVX3lxTE1wbDRHNXAzSXpLQVZVMHNnY0lmdnZ3cV9NOVZEbWtQZHRzaUlORVRMUWZHNEVsRlFWLTY1X0lLNFBnN0ZMYU56clZRUjRJWnRrRjFRTnNFdm1kWGZqMUw5cFV0S2tvVXVfOWd5MlY1R0ZQSU8wWkhnRzJuaHBhbHNmTkExbWJzR3YyUXh2WXFNa3IwYmc4dk1abmhhZUVCMFNRU0dxRFg5Mk9jZ2JWZFk5bDZIaGI2MXFaSUJkWjZ2M2E4LV9iTW5QUVZPd3JhZnpqYXYzTlhIUDN2cDg?oc=5",
-       "ts": "2026-06-14T09:05:10Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Global Banking & Finance Review",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM2pLV1RKcUZFRTBhRzdTS2J3aVdqd1AtTW43OFZGV0FvTVJYaDFjV3p1QjFSX0NYUy1WOFR0X3lVdnFEWEdHWjdGVF9nMkVsM05DMnVnR1R2ZFdlSlRyZU5ZYk1SUUMxTWY0YXQyYTVTNUthMDlnZEw3LUNoNGE2MzFFbnE5MGhJQmZfVFJJeUFTZw?oc=5",
-       "ts": "2026-06-14T09:16:56Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "The Mirror",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR3hfSE8tUDNyalBHUjZZa1dOaGdaNTcwY09NZzJ5RG9sejJuaGptblFIR0otZTVCM241czVCQ3dERnVrVC1zcTJuaUR4eUpVSnEyVWVxUVlJNjg1eWxJZnFiWnNWUWNxaHVsODEybnhENzRJcWVHaXhFMl9tLXpYMkF6OFpSZnRRQ21nbNIBkgFBVV95cUxNZDkwTDdMMEsxWlFHRVlCc1JWakxMcU1qLUdHOWZ0YmZsQ0F1N2NfOXRYS1VxeWJ5RTZ0YW5qeVZIT3pOUkFhclpMTms4TmxDOEZOa0dySG80VDF1WTZEc3Q2cXlOUGhKcW5Wb1R3c0h1TTN0M1RrNjJ2Y0V4cjdrRXZ3OUZ1Szd4aVhrRDY1ZmJoZw?oc=5",
-       "ts": "2026-06-14T21:01:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ]
-    }
-   },
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 48,
-    "outlets_timed": 54,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "The Guardian",
-      "ts": "2026-06-13T01:30:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 3
-     },
-     {
-      "outlet": "independent.co.uk",
-      "ts": "2026-06-13T01:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 2
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-13T01:51:11Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 23
-     },
-     {
-      "outlet": "voiceofvienna.org",
-      "ts": "2026-06-13T02:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "gdnonline.com",
-      "ts": "2026-06-13T04:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Dailyhunt",
-      "ts": "2026-06-13T05:44:48Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "msn.com",
-      "ts": "2026-06-13T05:50:55Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 9
-     },
-     {
-      "outlet": "BBC",
-      "ts": "2026-06-13T08:27:53Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK public broadcaster",
-      "items": 5
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "keir starmer",
-     "situations": [
-      "russia-ukraine-war-current"
-     ]
-    },
-    {
-     "entity": "nato",
-     "situations": [
-      "russia-ukraine-war-current",
-      "us-to-pull-fighter-jets-from-nato-europe"
-     ]
-    },
-    {
-     "entity": "russia",
-     "situations": [
-      "moscow-car-bomb-kills-military-official",
-      "russia-ukraine-war-current",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "us-to-pull-fighter-jets-from-nato-europe"
-     ]
-    },
-    {
-     "entity": "uk armed forces",
-     "situations": [
-      "russia-ukraine-war-current"
-     ]
-    },
-    {
-     "entity": "uk government",
-     "situations": [
-      "belfast-anti-immigration-riots-injure-police"
-     ]
-    },
-    {
-     "entity": "united kingdom",
-     "situations": [
-      "belfast-anti-immigration-riots-injure-police",
-      "russia-ukraine-war-current",
-      "us-to-pull-fighter-jets-from-nato-europe",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "MSN",
-     "n": 56,
-     "class": "other"
-    },
-    {
-     "outlet": "msn.com",
-     "n": 14,
-     "class": "other"
-    },
-    {
-     "outlet": "streamlinefeed.co.ke",
-     "n": 9,
-     "class": "other"
-    },
-    {
-     "outlet": "BBC",
-     "n": 8,
-     "class": "other"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 5,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "express.co.uk",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "AOL.com",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "The Mirror",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "inkl",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "thenorthernecho.co.uk",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "The Guardian",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "independent.co.uk",
-     "n": 3,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-11 12:00",
-      191,
-      142
-     ],
-     [
-      "2026-06-11 18:00",
-      321,
-      225
-     ],
-     [
-      "2026-06-12 00:00",
-      404,
-      266
-     ],
-     [
-      "2026-06-12 06:00",
-      438,
-      285
-     ],
-     [
-      "2026-06-12 12:00",
-      313,
-      298
-     ],
-     [
-      "2026-06-12 18:00",
-      175,
-      322
-     ],
-     [
-      "2026-06-13 00:00",
-      117,
-      325
-     ],
-     [
-      "2026-06-13 06:00",
-      87,
-      315
-     ],
-     [
-      "2026-06-13 12:00",
-      47,
-      159
-     ],
-     [
-      "2026-06-13 18:00",
-      22,
-      113
-     ],
-     [
-      "2026-06-14 00:00",
-      16,
-      93
-     ],
-     [
-      "2026-06-14 06:00",
-      52,
-      106
-     ],
-     [
-      "2026-06-14 12:00",
-      60,
-      75
-     ],
-     [
-      "2026-06-14 18:00",
-      62,
-      55
-     ],
-     [
-      "2026-06-15 00:00",
-      54,
-      55
-     ]
-    ],
-    "mix": {
-     "mainstream": 3,
-     "state-media": 2,
-     "regional": 0,
-     "official": 0,
-     "other": 116
-    },
-    "first_seen": "2026-06-11T12:15:12Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-14T14:24:23Z",
-     "a": "Resigned Secretary Healey says Starmer and Reeves prioritise welfare and net zero over adequate national security spending.",
-     "b": "PM Starmer defends his defence plan and new Secretary Jarvis vows to fight for armed forces funding ahead of the NATO summit."
-    },
-    {
-     "captured_utc": "2026-06-14T15:16:35Z",
-     "a": "John Healey resigned saying the government prioritises welfare and net zero over national security and won't spend enough on defence.",
-     "b": "Starmer defends the defence plan as adequate, with the new Defence Secretary vowing to fight for Armed Forces funding."
-    },
-    {
-     "captured_utc": "2026-06-14T16:19:06Z",
-     "a": "Defence Secretary Healey and deputy quit, saying the Starmer government prioritises welfare and net zero over national security spending.",
-     "b": "PM Starmer defends his defence plan as sufficient, refuses to quit, and prepares to unveil new measures before the NATO summit."
-    },
-    {
-     "captured_utc": "2026-06-14T17:16:48Z",
-     "a": "UK Culture Secretary Lisa Nandy says government departments will cut their own budgets to finance the planned increase in defence spending.",
-     "b": "A Tory frontbencher calls the double resignation a 'shambles' and urges PM Starmer to 'get a grip' on defence."
-    },
-    {
-     "captured_utc": "2026-06-14T18:12:41Z",
-     "a": "John Healey and critics say Starmer and Reeves are putting welfare and net zero ahead of national security, forcing a ministerial resignation.",
-     "b": "Keir Starmer vows to fight on and plans to unveil a defence strategy ahead of the NATO summit."
-    },
-    {
-     "captured_utc": "2026-06-14T19:13:17Z",
-     "a": "Critics say Healey resigned because Starmer and Reeves put welfare and net zero before national security.",
-     "b": "Government sources say the new defence secretary will reprioritize, with Cabinet asked to find cuts to fund defence."
-    },
-    {
-     "captured_utc": "2026-06-14T20:30:58Z",
-     "a": "Critics say Healey and his deputy quit because Starmer and Reeves prioritised welfare and net zero over national security",
-     "b": "Government sources say the new defence secretary will reprioritise spending, with cabinet tasked to find cuts to fund increases"
-    },
-    {
-     "captured_utc": "2026-06-14T21:20:39Z",
-     "a": "UK government will reprioritise spending and seek cuts across public services to increase defence funding.",
-     "b": "Critics call the double ministerial resignation a 'shambles' and demand Starmer 'get a grip' on defence."
-    },
-    {
-     "captured_utc": "2026-06-14T22:14:29Z",
-     "a": "Critics say Starmer is scrambling after a 'shambles' double resignation and must slash public services to cover the defence shortfall.",
-     "b": "Government sources say the new defence secretary will reprioritise the spending plan while cabinet looks for cuts elsewhere."
-    },
-    {
-     "captured_utc": "2026-06-14T23:22:41Z",
-     "a": "UK government (Starmer) is pursuing cuts to other public services to fund a defence spending increase.",
-     "b": "Resigned ministers (Healey) say welfare and net zero are being put before national security."
-    },
-    {
-     "captured_utc": "2026-06-15T00:18:58Z",
-     "a": "Defence Secretary John Healey resigned in protest, with critics saying Starmer is funding the defence rise by slashing other public services",
-     "b": "PM Starmer defends the plan, with his new defence secretary to reprioritise and Cabinet ministers asked to find cuts to fund the increase"
-    },
-    {
-     "captured_utc": "2026-06-15T01:11:18Z",
-     "a": "Starmer's government says it will reprioritise defence spending and seek cross-departmental cuts to fund the planned increase.",
-     "b": "Critics say funding defence by slashing other public services is unacceptable, a view that drove Healey's resignation."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel, UN News."
-   ],
-   "history": {
-    "built": true,
-    "frames": 3,
-    "nodes": 23,
-    "discovered_days": 3
-   },
-   "lead_image": {
-    "url": "https://i.guim.co.uk/img/media/0f8146f326fd33cd354c7be5046305a0cd02fc52/2261_232_4933_3949/master/4933.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=8e6fbb73ee9268112c29af6617af590b",
-    "source": "Guardian World"
    },
    "gate": {
     "score": 7,
@@ -4002,8 +3169,8 @@
     ]
    },
    "discovered": false,
-   "items_24h": 42,
-   "items_48h": 97,
+   "items_24h": 44,
+   "items_48h": 96,
    "outlets": 60,
    "kinds": [
     "journalist",
@@ -4011,12 +3178,36 @@
    ],
    "latest": [
     {
+     "ts": "2026-06-15T01:25:00Z",
+     "title": "Shanxi opens arms to Taiwan people",
+     "outlet": "China Daily",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9GUVVrN3MwYVFTd2NMN0JWWXRzM1hOelJKbXlYWVdsWEpyVWtGTGdTVVdremdMN1Noc2V3NnFLYldQVlJiN3JjbFVubXZ3ZVYtT1pJU0RlQVBIRmc0dkIta1c5aXNnb0JlWEV3TjY2aDF1WkJiODVhTGgtZGNhdw?oc=5",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
      "ts": "2026-06-15T00:50:00Z",
      "title": "Xi swops fighter jets for diplomatic hardball to squeeze Taiwan",
      "outlet": "The Straits Times",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaXM3RnBNcW9RVkZOSlA5ZzU2RDE3M3IzZk5sWV9leERWclZMNWExZmZwd2VUVDE0R0RvZ1ZKUTFra1hqX29kNHUyZDg5WmVXcWRQRG5SMVR3VVhMSHY4Q0x0V1FFRGZKOVlnc2VOTHBMamhaV2hjRnJqWExaSFhWTEhuMVlSRTE5M09WZU5fYW4tczZ6SlE5dHVzdUFNaV9nVXFiRG5GbG82U28?oc=5",
      "rel": 3,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T00:42:35Z",
+     "title": "Taiwan Opens Intelligence Tip Portal for Chinese Citizens as Cross-Strait Tensions Deepen",
+     "outlet": "The Morning Voice",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMG9Md1QwNzFjY0xQY0RGVXJseDBxUlA1TmQxeV8tNENDWUdyZVlleWtUVVMxOXVWUjB1dHNTNkJ6Sk9wQnVZRHJfbExueFFuMmszRmcyRnpWU1c1TU9qOTVUWndobjZXYndGenlpUVQ1d096NVVQWFQwMDRZeXJneWVtcnFKN0c3NW9hd0tUVklidVlzTzdjdGpOdzlQQkVFcDhhZjJSUW5qeGJoa3JXamlHNjlzWFNMeGMyYVNUbGdFZTZYRTVB?oc=5",
+     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -4081,30 +3272,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-14T22:00:15Z",
-     "title": "Xi Swaps Fighter Jets for Diplomatic Hardball to Squeeze Taiwan",
-     "outlet": "Bloomberg.com",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPS3JwdGJrSFFhNDVSVFRralJnQVczR2Y2eEh5UU0wSGM0MkVjYkZEV2FDdC1tLUptN2ZWVTY1c00zb1JTU1J3NkVhME9uNUd4UVlIZFRRSGllSS1BYlZXTTZpaFpNTWZ3N0xLbl9zcnYxMlNfTGFRSmZtUjdyY2sxQU9BdnZYN2RPTzFKcU9UZDFnb0hBTWx5STlXaUZqYjdXWTI5U3U3YktacDVxdFFCeHVHYjc?oc=5",
-     "rel": 3,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-14T20:50:58Z",
-     "title": "How Taiwan's Bid for Chinese Whistleblowers Is Reshaping Cross-Strait Intelligence Wars",
-     "outlet": "Devdiscourse",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORWtGelNRNUdHU2lodHFGWmVzVWVJNDJwZlVMZEthaU5TNmNyNU5ISkZIb09wY2dtSDNBVTBsV2MtWlFEUE9WcjczOVlSV1BZMmJNSGpBUWo0VjhXWUNPUThjbW14UlFqcXJrU3cwV3NnVlM4cVdIRVpOTmxETmh4WmdEaGlra21VZHhiaHRXQUx5cWNiMzBNUXJraGh2emlXNmRuS0NXQVRXUTZRWUV2dER5SXFjekdieFYxSGlpY3hnQlF4bEhpSW5mVFV0SDFtX1Zj0gHYAUFVX3lxTE9XNWc2N0tVOWR5U0RIZlgxQThrd3BDOF91czVFTFJnTzRtZWN5b3k5N1d3UDYzQXlZOGo5TktNcHF4Y1dVcUoxdEZyRnNzZ3VIWHAzakViVjNoVFdLNW55QzcxdXlEejZkTjNtZFpEcVVMcHFMblJGNURtSldpeW1RdW92ejBmSDV5NUpkcE5MU0hjN3NybmVBT3gwajlzSkthTDB1SWpuV0hGYy1pTnU0cXU3ZER4cVhoR290cHpTSlRGLTg0eHpSa3lKa2lTWVp1dC1QRTBScw?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -4148,38 +3315,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 56,
+    "outlets_timed": 57,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "The Straits Times",
-      "ts": "2026-06-13T01:34:24Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "SG press",
-      "items": 4
-     },
-     {
-      "outlet": "AsiaOne",
-      "ts": "2026-06-13T01:37:49Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-13T01:37:50Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
      {
       "outlet": "American Enterprise Institute - AEI",
       "ts": "2026-06-13T02:44:23Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -4200,6 +3343,14 @@
       "items": 1
      },
      {
+      "outlet": "asiaone.com",
+      "ts": "2026-06-13T04:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
       "outlet": "siasat.com",
       "ts": "2026-06-13T05:00:00Z",
       "kind": "journalist",
@@ -4214,6 +3365,22 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "al-monitor.com",
+      "ts": "2026-06-13T05:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-13T05:41:47Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": []
@@ -4276,23 +3443,28 @@
      "class": "other"
     },
     {
-     "outlet": "MSN",
-     "n": 4,
-     "class": "other"
-    },
-    {
      "outlet": "South China Morning Post",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "The Straits Times",
      "n": 4,
      "class": "other"
     },
     {
      "outlet": "globalsecurity.org",
      "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "China Daily",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "MSN",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "The Straits Times",
+     "n": 3,
      "class": "other"
     },
     {
@@ -4303,11 +3475,6 @@
     {
      "outlet": "insidermonkey.com",
      "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "China Daily",
-     "n": 2,
      "class": "other"
     },
     {
@@ -4411,7 +3578,7 @@
      [
       "2026-06-15 00:00",
       42,
-      62
+      60
      ]
     ],
     "mix": {
@@ -4419,7 +3586,7 @@
      "state-media": 3,
      "regional": 1,
      "official": 0,
-     "other": 76
+     "other": 75
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -4486,11 +3653,755 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Taiwan Strait, Times of Israel."
    ],
    "lead_image": {
     "url": "https://imgcdn.cna.com.tw/Eng/WebEngPhotos/WebOg/600/2026/20260612/1024x538_399539563935.jpg",
     "source": "focustaiwan.tw"
+   }
+  },
+  {
+   "id": "uk-defence-secretary-resigns-over-spending",
+   "name": "UK defence secretary resigns over spending",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "weapons"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-15T02:18:15Z",
+    "sentence_count": 15,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "British Defence Minister John Healey has resigned over defence spending.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxONXFTS3djRFNUdUtGbEU0eG5aRG02Q29ENXNVY3BmZlo1bkJ5Mnk4cThxUHZ5a2g5akM1N255Um4zaDdfSWNwUzFXSHg0d1lNMjdsajVoUVZBZ0lIeHhsblhPRHBFRFR3UTJERUswS2pvcTBOZkVJYTJmU1VkZUVINGJjclNoM1pHb1VWdGFWOFBLRzlHV1h0cDhmNmNXN0psVENBOTRWMG5TaFlXUXR6ZzBCVnQzR2szcG10bW9hRUxYTVpnYU4yMXhuWUVPTlQzd0t3OUgzT0VpLTdYZU9CaUxMaXVlQXp4X0RLMTQ5Z0xzcEtFbG1HN1I4Mm1UWnFQQWpwR2Z4SkZQMHVmVWU5X0xYbHQyd0gtQlVHZXdkclpzUGVyZlFiNjR4b3Y3MEpUWU5EZEJSTkl5cVZGaENRejVmbG5LQTRxelFKSHlkd1A2a0xFczRnbmRzcFhEckdSSTZqRkRTdHRRN0g4eXFVcFgtV2FnV3VlTW9kRUU4ZEVNakdZS2R3TFlCbw?oc=5",
+          "ts": "2026-06-14T19:43:46Z",
+          "title": "British Defence Minister John Healey quits over defence spending"
+         }
+        ]
+       },
+       {
+        "text": "Healey resigned from the government over the defence spending plan.",
+        "cites": [
+         {
+          "outlet": "AOL.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOGRlbHhWcS1VSEx6dmJKaDNpaS1IMXRnZGFMTUJldkZLM3hUVXotbFZCdU9Jd3JrM243UF9GeU9oMl8zS1JERkZ4dUlvRmhTX3h6ZGpKNkVMS2UyZkhfNGRUY2s1RmxSeDhzQ0F1Qnd0N01VTmU4eUd5bDlYdU1yS25QUTlaZw?oc=5",
+          "ts": "2026-06-14T06:04:18Z",
+          "title": "John Healey resigns from government over defence spending plan"
+         }
+        ]
+       },
+       {
+        "text": "The defence secretary said the government is not willing to spend enough on the military.",
+        "cites": [
+         {
+          "outlet": "Texarkana Gazette",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNGFRUWF4U1g4WmVWd3BTN1cwVVl2WUxUcWdPbTNPVUxEd3dnNXpYSW43eGtvSVVfd3dtM1d2LUFEeDRMRk5BckVoVmExRkR2QnhILVlTSDFpVkkyNWI1cGdoUUZJclVnTnBPai14ZFFQTDIzRS00MC1nRnN6RzBGU3FIU2xlQklqdlNocENFNGh4bmdG?oc=5",
+          "ts": "2026-06-14T04:15:00Z",
+          "title": "U.K. defense secretary resigns, saying the government isn\u2019t willing to spend enough on the military"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Dan Jarvis has been named the new defence secretary.",
+        "cites": [
+         {
+          "outlet": "independent.co.uk",
+          "kind": "journalist",
+          "url": "https://www.independent.co.uk/news/uk/politics/dan-jarvis-new-defence-secretary-armed-forces-budget-healey-b2995300.html",
+          "ts": "2026-06-14T05:00:00Z",
+          "title": "New defence secretary Dan Jarvis  determined  to get Armed Forces  precisely  what they need"
+         }
+        ]
+       },
+       {
+        "text": "Sources say the new defence secretary will reprioritise the UK plan for military spending.",
+        "cites": [
+         {
+          "outlet": "Guardian World",
+          "kind": "journalist",
+          "url": "https://www.theguardian.com/politics/2026/jun/14/defence-secretary-dan-jarvis-uk-plan-military-spending-dip",
+          "ts": "2026-06-14T18:22:56Z",
+          "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources"
+         }
+        ]
+       },
+       {
+        "text": "Jarvis said he has a big responsibility to get the Armed Forces the funds they need.",
+        "cites": [
+         {
+          "outlet": "theargus.co.uk",
+          "kind": "journalist",
+          "url": "https://www.theargus.co.uk/news/national/26192407.dan-jarvis-big-responsibility-get-armed-forces-funds-need/",
+          "ts": "2026-06-14T02:45:00Z",
+          "title": "Dan Jarvis : I have  big responsibility  to get Armed Forces the funds they need"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Starmer vowed to fight on after Healey quit over the defence row.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZktXRUdSX0UzQTdlMm11WUhKOVBIRFVqV1J1VkRDNTBzSjUxM2lGRkFhbkV2ZjZGY0JMalFjU04xUTNTbXFHTHd5TngtQ0lNdWVnV2ROaG5jS1hxazZ3TmRTalNJaWZ0YjNvUnE0TnVTbTU1RTFIMFNHTDdUZ1BHVlRCbmRlVXdPbzh3bmxIMHFYTlZWTmp6UnljajUwa3hwR0JqNTBMd3BmNUdfYm9HV2hzVHJGeVBmY0hfcTVuYXgtX05ocDQxUWpjX2pQU0wyRGh3aTZRLWo?oc=5",
+          "ts": "2026-06-14T06:52:33Z",
+          "title": "Starmer vows to fight on after Healey quits over defence row"
+         }
+        ]
+       },
+       {
+        "text": "Starmer defended the defence plan after backlash to the Healey resignation.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTy1fTlNYNXd3X1JlS2FDemFCRFpsVUQ2R0xrWG84RXZsOVV2REJKeXhUYm94bUVnaVpmRmRLQWtEVWRZWHZkQkpIQzRwbjFhODRyaXFVZHZGQkdFb2FNQnZEVlo3WHd4Y3A4aTQxT0I1UzV6V2FqNzM2elJhRThzU1NpdUJmOHRqVFZTVlVEOW1DaEppSXlCNTNOSHpaay1uOVRHZE1VbjJrWXQyaGNyMk15QWdwNUdYUUtGY1B2TF9qY3NuUEpza01ITkFMeDIwanpnRHZleHhUMmRoNjhUZjhFMmtkdEdu?oc=5",
+          "ts": "2026-06-14T06:15:03Z",
+          "title": "Starmer defends defence plan after Healey resignation backlash"
+         }
+        ]
+       },
+       {
+        "text": "Cabinet ministers have been asked to look for cuts to fund the UK defence spending increase.",
+        "cites": [
+         {
+          "outlet": "The Guardian",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZk84WGF2dmVOTV9xZDBMOEgwSDlERjM0TEJ1SkFuWElIV3BRa1JKZlVzODRscjVnZmtza25VdC1WWWwyUGtacUJGalluQkx2Y3lnUkpEMW5oVHJnRkdES1hZZWFnOVQ2Rk1Hc0NySjItc0VPVUk1V0dqa1dwMzdQSzNFS1FYcWV3QjhlWUNGWFRNSHc3QTlNYWM1MjFxbk4yTEo4T2xOWndSSFJOSURuVUUyWHlIbmdUR1NuQ21wSkQwTVZO?oc=5",
+          "ts": "2026-06-14T09:44:00Z",
+          "title": "Cabinet ministers asked to look for cuts to fund UK defence spending increase"
+         }
+        ]
+       },
+       {
+        "text": "Lisa Nandy says departments are looking to cut budgets to fund defence.",
+        "cites": [
+         {
+          "outlet": "eveningnews24.co.uk",
+          "kind": "journalist",
+          "url": "https://www.eveningnews24.co.uk/news/national/26192733.departments-looking-cut-budgets-fund-defence-lisa-nandy-says/",
+          "ts": "2026-06-14T13:00:00Z",
+          "title": "Departments looking to cut budgets to fund defence , Lisa Nandy says"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The Mirror reports that Keir Starmer is scrambling to find more defence cash after resignations by slashing other public services.",
+        "cites": [
+         {
+          "outlet": "The Mirror",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR3hfSE8tUDNyalBHUjZZa1dOaGdaNTcwY09NZzJ5RG9sejJuaGptblFIR0otZTVCM241czVCQ3dERnVrVC1zcTJuaUR4eUpVSnEyVWVxUVlJNjg1eWxJZnFiWnNWUWNxaHVsODEybnhENzRJcWVHaXhFMl9tLXpYMkF6OFpSZnRRQ21nbNIBkgFBVV95cUxNZDkwTDdMMEsxWlFHRVlCc1JWakxMcU1qLUdHOWZ0YmZsQ0F1N2NfOXRYS1VxeWJ5RTZ0YW5qeVZIT3pOUkFhclpMTms4TmxDOEZOa0dySG80VDF1WTZEc3Q2cXlOUGhKcW5Wb1R3c0h1TTN0M1RrNjJ2Y0V4cjdrRXZ3OUZ1Szd4aVhrRDY1ZmJoZw?oc=5",
+          "ts": "2026-06-14T21:01:00Z",
+          "title": "Keir Starmer scrambles to find more defence cash after resignations by slashing other public services"
+         }
+        ]
+       },
+       {
+        "text": "MSN reports that Healey and his No2 quit as Starmer and Reeves put welfare and net zero before national security.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxPUVJzSXZ1Uml3YmFkeElNbFB1WkdtQmhDVUdLNHhiNjkxMGVuamZRdnFjSDd0X211U0x6azFDVFkwN09NQjlSdWN5TWZHdlpDWk5YR1BQYnkySWxxUHZ5cGVVbEMtMm1mcEdfN3o2cWk3MTRlbWxpdDNEWHowZXlFMWl5elgyREFkMWxtZWFpdWx1UDVpb3IxV0NPZlQtMDBQcGpjZjVudUlPTGFGaFlfdHg5UHRsMkxCRmFBY3pqYmtjNXdycVl6N0Q3cm1XQk96b2RJUkxEWERETFNXVXplMy03d0daNkUxS0NLSnZwYjRURkFpYmkyZWpUWEJTMXBtOXFiTWVnMzdBZThtUzdaU0JuakNDaTY0RTd2WTc4SGhSOV9iSm52T0JCYW45UGNfTGNpZ0NfLTQwanp0SUtZd2pjTmpZQUNrZ0pydkl1SjV6WDlnTFdHZVBlcjljQmxXQjVmekI5VDIxdFA4cE9kSUZsN1dqbVdtcmc?oc=5",
+          "ts": "2026-06-14T07:27:18Z",
+          "title": "John Healey and his No2 quit as Starmer and Reeves put welfare and net zero before national security"
+         }
+        ]
+       },
+       {
+        "text": "A Tory frontbencher urged Keir Starmer to get a grip on defence after the double resignation, GB News reports.",
+        "cites": [
+         {
+          "outlet": "GB News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSTgxeHhqbjFJdm1FZ1BhUVdmQ1poWE82NE8zUUlNNFJDb2JGZzBkM1g4c3NfNVFrSVo3ZXpNUTlWdHdyamptQkpYZmo3MGtObkRmYnhtMzRuN2VkcUJReGNVN3RUWnVkZFJ4eUl3aGhSU3VzYXhyTWxrVkhBektKSU80TXRXTzhfU2RYQzAxZ0dMZGVkdEctbDNTVQ?oc=5",
+          "ts": "2026-06-14T16:40:41Z",
+          "title": "Keir Starmer urged to 'get a grip' on defence by Tory frontbencher after 'shambles' double resignation"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Starmer is to unveil a defence plan before the NATO summit.",
+        "cites": [
+         {
+          "outlet": "AnewZ",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY0VCSTJ3ZmNvUTZyN2czSGVVeUtEXzdxY2h6WW51X0hia0NRbkR2eWJmYWxHVVFJbGJpLXd3X1Rwb0RjWGxOWm0yUllacGlLYWdwQmluVlgtVFFlNHN1TzlsdUx5YmJKWlN3SHhUdnVrQTdrd1dxaUN6OXo3WWRwaHJiazEwTDVXV1NITzJmSzFVV0xXd0NnUHF3Y0Nfd0lVb3p3?oc=5",
+          "ts": "2026-06-14T07:04:00Z",
+          "title": "UK Prime Minister Starmer to unveil defence plan before NATO summit"
+         }
+        ]
+       },
+       {
+        "text": "Kemi Badenoch threw down a defence challenge to Keir Starmer and rivals.",
+        "cites": [
+         {
+          "outlet": "express.co.uk",
+          "kind": "journalist",
+          "url": "https://www.express.co.uk/news/politics/2217031/kemi-badenoch-throws-down-defence",
+          "ts": "2026-06-14T07:15:00Z",
+          "title": "Kemi Badenoch throws down defence challenge to Keir Starmer and rivals"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 43,
+   "items_48h": 105,
+   "outlets": 55,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-14T21:01:00Z",
+     "title": "Keir Starmer scrambles to find more defence cash after resignations by slashing other public services",
+     "outlet": "The Mirror",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR3hfSE8tUDNyalBHUjZZa1dOaGdaNTcwY09NZzJ5RG9sejJuaGptblFIR0otZTVCM241czVCQ3dERnVrVC1zcTJuaUR4eUpVSnEyVWVxUVlJNjg1eWxJZnFiWnNWUWNxaHVsODEybnhENzRJcWVHaXhFMl9tLXpYMkF6OFpSZnRRQ21nbNIBkgFBVV95cUxNZDkwTDdMMEsxWlFHRVlCc1JWakxMcU1qLUdHOWZ0YmZsQ0F1N2NfOXRYS1VxeWJ5RTZ0YW5qeVZIT3pOUkFhclpMTms4TmxDOEZOa0dySG80VDF1WTZEc3Q2cXlOUGhKcW5Wb1R3c0h1TTN0M1RrNjJ2Y0V4cjdrRXZ3OUZ1Szd4aVhrRDY1ZmJoZw?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T19:43:46Z",
+     "title": "British Defence Minister John Healey quits over defence spending",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxONXFTS3djRFNUdUtGbEU0eG5aRG02Q29ENXNVY3BmZlo1bkJ5Mnk4cThxUHZ5a2g5akM1N255Um4zaDdfSWNwUzFXSHg0d1lNMjdsajVoUVZBZ0lIeHhsblhPRHBFRFR3UTJERUswS2pvcTBOZkVJYTJmU1VkZUVINGJjclNoM1pHb1VWdGFWOFBLRzlHV1h0cDhmNmNXN0psVENBOTRWMG5TaFlXUXR6ZzBCVnQzR2szcG10bW9hRUxYTVpnYU4yMXhuWUVPTlQzd0t3OUgzT0VpLTdYZU9CaUxMaXVlQXp4X0RLMTQ5Z0xzcEtFbG1HN1I4Mm1UWnFQQWpwR2Z4SkZQMHVmVWU5X0xYbHQyd0gtQlVHZXdkclpzUGVyZlFiNjR4b3Y3MEpUWU5EZEJSTkl5cVZGaENRejVmbG5LQTRxelFKSHlkd1A2a0xFczRnbmRzcFhEckdSSTZqRkRTdHRRN0g4eXFVcFgtV2FnV3VlTW9kRUU4ZEVNakdZS2R3TFlCbw?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T19:43:44Z",
+     "title": "British Defence Minister John Healey quits over defence spending",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxPei1uX1V0NGtYdDhUa1J6ZHhrT1V1OW1QUEc3U3JFOEF4dU9mR0dyMlVXS3EyeE5wTEpBT0hTc1o4YjE5Q0RNNVdHTzNhUUxqUmZabzktbnk2S1Y0Mlh3ZHF6TktveG9JTkhaTDF6ZDVPZm8zZ2Y5Mm9LUFFWNUR1SnpxdnJuRk50QmRKbzZULWN2dEViMV8zSUhwM3g5WHFVMUdPNF82ZWU2bHpxX2lrZnprTEEwMTc3cXVNRGVZRms2VWlxb0xWT0ZkeHJ2ekdCQk5aYVBKc1ozVXl1TnVqblVnRF95QWRtckZMRlpXSGZoa21CR1gwbms4UUp1ekhBTWtoakVIcFg1LUo0THJhcWFFS0xQT0llSHJDTkVuZFNnYnZKU1ZuZHIzZnlmbDRmTDJLbVR0OHZGdjNieFhCZnliRWVEbnNPa1pkY3J1Yi11YURBNWg4S0s0Vk5tdUVRWUh3Y1I4T0YzSXc3akhTczJZbnpZYU41OHdrQ1ZfakdnZUZ4Uy1SeXlWMA?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T18:22:56Z",
+     "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/politics/2026/jun/14/defence-secretary-dan-jarvis-uk-plan-military-spending-dip",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-14T18:22:00Z",
+     "title": "New defence secretary to \u2018reprioritise\u2019 UK plan for military spending, say sources",
+     "outlet": "The Guardian",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORGRoVURQd3plSi1UUnZFVW9qVGpFY05Zb0x4VEFBZ0tJOVNVeDBpOGRQbzh2X2hta0VUTzltNm16b0VVOGRGVUFCZEQ5X014S1RNeGNMWmVZSDA4Z2hTOUdEN0RDc1JiQ3Y0c2pZdzBXMnU4MEtUa0NHTWxwa21CeFg2Y3ZacGdoWnVZWXpJTjVoZm52UThZNnNkY1FaM21QOGFlUDJDdHI3Rjg?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T16:40:41Z",
+     "title": "Keir Starmer urged to 'get a grip' on defence by Tory frontbencher after 'shambles' double resignation",
+     "outlet": "GB News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSTgxeHhqbjFJdm1FZ1BhUVdmQ1poWE82NE8zUUlNNFJDb2JGZzBkM1g4c3NfNVFrSVo3ZXpNUTlWdHdyamptQkpYZmo3MGtObkRmYnhtMzRuN2VkcUJReGNVN3RUWnVkZFJ4eUl3aGhSU3VzYXhyTWxrVkhBektKSU80TXRXTzhfU2RYQzAxZ0dMZGVkdEctbDNTVQ?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T16:15:00Z",
+     "title": "UK and Japan building  new era of cooperation , says Starmer",
+     "outlet": "thenorthernecho.co.uk",
+     "kind": "journalist",
+     "url": "https://www.thenorthernecho.co.uk/news/national/26193033.uk-japan-building-new-era-cooperation-says-starmer/",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T15:39:45Z",
+     "title": "Why is the UK launching an \u2018Australia plus\u2019 social media ban and how will it work?",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/uk-news/2026/jun/14/what-is-uk-introducing-australia-plus-social-media-ban-how-will-it-work",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    }
+   ],
+   "split": {
+    "a": "PM Starmer defends the defence spending plan, with the new secretary set to reprioritise funding from within existing budgets.",
+    "b": "Resigned Defence Secretary Healey and critics argue the plan is insufficient and forces damaging cuts to other public services.",
+    "basis": "extracted from live headlines 2026-06-15",
+    "axis_type": "policy_dispute",
+    "axis_question": "Is Starmer's defence spending plan adequate, or must the UK urgently boost defence funding?",
+    "carriers": {
+     "a": [
+      {
+       "outlet": "MSN",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMG55VVlGWjBwNHQ1MWR2b2haT2J6TDMwRXZMM05uUC0wbHpEZEF3aGFsYV9Pcmh1al9ZdlpBNmEtYlJUOXBqLXFKcnFzb05HNFFWYk92VHBiYW9tZ3NGVTZtX0dJakd2ZzAtMWNMU09vZXl4RHFCclFkVk5oRGNhXzdYNHN3X3VKWGprR29MZGJuVnVRU1ZEWERaSQ?oc=5",
+       "ts": "2026-06-13T04:04:06Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Guardian World",
+       "kind": "journalist",
+       "url": "https://www.theguardian.com/uk-news/2026/jun/14/starmer-to-announce-australia-plus-ban-on-social-media-for-under-16s",
+       "ts": "2026-06-14T21:42:23Z",
+       "provenance": "echo",
+       "motive_note": "UK press"
+      }
+     ],
+     "b": [
+      {
+       "outlet": "MSN",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMG55VVlGWjBwNHQ1MWR2b2haT2J6TDMwRXZMM05uUC0wbHpEZEF3aGFsYV9Pcmh1al9ZdlpBNmEtYlJUOXBqLXFKcnFzb05HNFFWYk92VHBiYW9tZ3NGVTZtX0dJakd2ZzAtMWNMU09vZXl4RHFCclFkVk5oRGNhXzdYNHN3X3VKWGprR29MZGJuVnVRU1ZEWERaSQ?oc=5",
+       "ts": "2026-06-13T04:04:06Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Devdiscourse",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGw0RzVwM0l6S0FWVTBzZ2NJZnZ2d3FfTTlWRG1rUGR0c2lJTkVUTFFmRzRFbEZRVi02NV9JSzRQZzdGTGFOenJWUVI0SVp0a0YxUU5zRXZtZFhmajFMOXBVdEtrb1V1XzlneTJWNUdGUElPMFpIZ0cybmhwYWxzZk5BMW1ic0d2MlF4dllxTWtyMGJnOHZNWm5oYWVFQjBTUVNHcURYOTJPY2diVmRZOWw2SGhiNjFxWklCZFo2djNhOC1fYk1uUFFWT3dyYWZ6amF2M05YSFAzdnA40gHcAUFVX3lxTE1wbDRHNXAzSXpLQVZVMHNnY0lmdnZ3cV9NOVZEbWtQZHRzaUlORVRMUWZHNEVsRlFWLTY1X0lLNFBnN0ZMYU56clZRUjRJWnRrRjFRTnNFdm1kWGZqMUw5cFV0S2tvVXVfOWd5MlY1R0ZQSU8wWkhnRzJuaHBhbHNmTkExbWJzR3YyUXh2WXFNa3IwYmc4dk1abmhhZUVCMFNRU0dxRFg5Mk9jZ2JWZFk5bDZIaGI2MXFaSUJkWjZ2M2E4LV9iTW5QUVZPd3JhZnpqYXYzTlhIUDN2cDg?oc=5",
+       "ts": "2026-06-14T09:05:10Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Global Banking & Finance Review",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM2pLV1RKcUZFRTBhRzdTS2J3aVdqd1AtTW43OFZGV0FvTVJYaDFjV3p1QjFSX0NYUy1WOFR0X3lVdnFEWEdHWjdGVF9nMkVsM05DMnVnR1R2ZFdlSlRyZU5ZYk1SUUMxTWY0YXQyYTVTNUthMDlnZEw3LUNoNGE2MzFFbnE5MGhJQmZfVFJJeUFTZw?oc=5",
+       "ts": "2026-06-14T09:16:56Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "The Mirror",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNR3hfSE8tUDNyalBHUjZZa1dOaGdaNTcwY09NZzJ5RG9sejJuaGptblFIR0otZTVCM241czVCQ3dERnVrVC1zcTJuaUR4eUpVSnEyVWVxUVlJNjg1eWxJZnFiWnNWUWNxaHVsODEybnhENzRJcWVHaXhFMl9tLXpYMkF6OFpSZnRRQ21nbNIBkgFBVV95cUxNZDkwTDdMMEsxWlFHRVlCc1JWakxMcU1qLUdHOWZ0YmZsQ0F1N2NfOXRYS1VxeWJ5RTZ0YW5qeVZIT3pOUkFhclpMTms4TmxDOEZOa0dySG80VDF1WTZEc3Q2cXlOUGhKcW5Wb1R3c0h1TTN0M1RrNjJ2Y0V4cjdrRXZ3OUZ1Szd4aVhrRDY1ZmJoZw?oc=5",
+       "ts": "2026-06-14T21:01:00Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      }
+     ]
+    }
+   },
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 48,
+    "outlets_timed": 54,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "voiceofvienna.org",
+      "ts": "2026-06-13T02:45:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-13T04:04:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 21
+     },
+     {
+      "outlet": "gdnonline.com",
+      "ts": "2026-06-13T04:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Dailyhunt",
+      "ts": "2026-06-13T05:44:48Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "msn.com",
+      "ts": "2026-06-13T05:50:55Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 9
+     },
+     {
+      "outlet": "BBC",
+      "ts": "2026-06-13T08:27:53Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK public broadcaster",
+      "items": 5
+     },
+     {
+      "outlet": "breakingnews.ie",
+      "ts": "2026-06-13T09:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "eastlothiancourier.com",
+      "ts": "2026-06-13T09:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "keir starmer",
+     "situations": [
+      "russia-ukraine-war-current"
+     ]
+    },
+    {
+     "entity": "nato",
+     "situations": [
+      "russia-ukraine-war-current",
+      "us-to-pull-fighter-jets-from-nato-europe"
+     ]
+    },
+    {
+     "entity": "russia",
+     "situations": [
+      "moscow-car-bomb-kills-military-official",
+      "russia-ukraine-war-current",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "us-to-pull-fighter-jets-from-nato-europe"
+     ]
+    },
+    {
+     "entity": "uk armed forces",
+     "situations": [
+      "russia-ukraine-war-current"
+     ]
+    },
+    {
+     "entity": "uk government",
+     "situations": [
+      "belfast-anti-immigration-riots-injure-police"
+     ]
+    },
+    {
+     "entity": "united kingdom",
+     "situations": [
+      "belfast-anti-immigration-riots-injure-police",
+      "russia-ukraine-war-current",
+      "us-to-pull-fighter-jets-from-nato-europe",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "MSN",
+     "n": 54,
+     "class": "other"
+    },
+    {
+     "outlet": "msn.com",
+     "n": 14,
+     "class": "other"
+    },
+    {
+     "outlet": "streamlinefeed.co.ke",
+     "n": 9,
+     "class": "other"
+    },
+    {
+     "outlet": "BBC",
+     "n": 7,
+     "class": "other"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 5,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "express.co.uk",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "AOL.com",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "The Mirror",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "inkl",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "thenorthernecho.co.uk",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "The Guardian",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "independent.co.uk",
+     "n": 3,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-11 12:00",
+      191,
+      142
+     ],
+     [
+      "2026-06-11 18:00",
+      321,
+      225
+     ],
+     [
+      "2026-06-12 00:00",
+      404,
+      266
+     ],
+     [
+      "2026-06-12 06:00",
+      438,
+      285
+     ],
+     [
+      "2026-06-12 12:00",
+      313,
+      298
+     ],
+     [
+      "2026-06-12 18:00",
+      175,
+      322
+     ],
+     [
+      "2026-06-13 00:00",
+      117,
+      325
+     ],
+     [
+      "2026-06-13 06:00",
+      87,
+      315
+     ],
+     [
+      "2026-06-13 12:00",
+      47,
+      159
+     ],
+     [
+      "2026-06-13 18:00",
+      22,
+      113
+     ],
+     [
+      "2026-06-14 00:00",
+      16,
+      93
+     ],
+     [
+      "2026-06-14 06:00",
+      52,
+      106
+     ],
+     [
+      "2026-06-14 12:00",
+      60,
+      75
+     ],
+     [
+      "2026-06-14 18:00",
+      62,
+      55
+     ],
+     [
+      "2026-06-15 00:00",
+      54,
+      55
+     ]
+    ],
+    "mix": {
+     "mainstream": 3,
+     "state-media": 2,
+     "regional": 0,
+     "official": 0,
+     "other": 114
+    },
+    "first_seen": "2026-06-11T12:15:12Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-14T15:16:35Z",
+     "a": "John Healey resigned saying the government prioritises welfare and net zero over national security and won't spend enough on defence.",
+     "b": "Starmer defends the defence plan as adequate, with the new Defence Secretary vowing to fight for Armed Forces funding."
+    },
+    {
+     "captured_utc": "2026-06-14T16:19:06Z",
+     "a": "Defence Secretary Healey and deputy quit, saying the Starmer government prioritises welfare and net zero over national security spending.",
+     "b": "PM Starmer defends his defence plan as sufficient, refuses to quit, and prepares to unveil new measures before the NATO summit."
+    },
+    {
+     "captured_utc": "2026-06-14T17:16:48Z",
+     "a": "UK Culture Secretary Lisa Nandy says government departments will cut their own budgets to finance the planned increase in defence spending.",
+     "b": "A Tory frontbencher calls the double resignation a 'shambles' and urges PM Starmer to 'get a grip' on defence."
+    },
+    {
+     "captured_utc": "2026-06-14T18:12:41Z",
+     "a": "John Healey and critics say Starmer and Reeves are putting welfare and net zero ahead of national security, forcing a ministerial resignation.",
+     "b": "Keir Starmer vows to fight on and plans to unveil a defence strategy ahead of the NATO summit."
+    },
+    {
+     "captured_utc": "2026-06-14T19:13:17Z",
+     "a": "Critics say Healey resigned because Starmer and Reeves put welfare and net zero before national security.",
+     "b": "Government sources say the new defence secretary will reprioritize, with Cabinet asked to find cuts to fund defence."
+    },
+    {
+     "captured_utc": "2026-06-14T20:30:58Z",
+     "a": "Critics say Healey and his deputy quit because Starmer and Reeves prioritised welfare and net zero over national security",
+     "b": "Government sources say the new defence secretary will reprioritise spending, with cabinet tasked to find cuts to fund increases"
+    },
+    {
+     "captured_utc": "2026-06-14T21:20:39Z",
+     "a": "UK government will reprioritise spending and seek cuts across public services to increase defence funding.",
+     "b": "Critics call the double ministerial resignation a 'shambles' and demand Starmer 'get a grip' on defence."
+    },
+    {
+     "captured_utc": "2026-06-14T22:14:29Z",
+     "a": "Critics say Starmer is scrambling after a 'shambles' double resignation and must slash public services to cover the defence shortfall.",
+     "b": "Government sources say the new defence secretary will reprioritise the spending plan while cabinet looks for cuts elsewhere."
+    },
+    {
+     "captured_utc": "2026-06-14T23:22:41Z",
+     "a": "UK government (Starmer) is pursuing cuts to other public services to fund a defence spending increase.",
+     "b": "Resigned ministers (Healey) say welfare and net zero are being put before national security."
+    },
+    {
+     "captured_utc": "2026-06-15T00:18:58Z",
+     "a": "Defence Secretary John Healey resigned in protest, with critics saying Starmer is funding the defence rise by slashing other public services",
+     "b": "PM Starmer defends the plan, with his new defence secretary to reprioritise and Cabinet ministers asked to find cuts to fund the increase"
+    },
+    {
+     "captured_utc": "2026-06-15T01:11:18Z",
+     "a": "Starmer's government says it will reprioritise defence spending and seek cross-departmental cuts to fund the planned increase.",
+     "b": "Critics say funding defence by slashing other public services is unacceptable, a view that drove Healey's resignation."
+    },
+    {
+     "captured_utc": "2026-06-15T02:19:08Z",
+     "a": "PM Starmer defends the defence spending plan, with the new secretary set to reprioritise funding from within existing budgets.",
+     "b": "Resigned Defence Secretary Healey and critics argue the plan is insufficient and forces damaging cuts to other public services."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel."
+   ],
+   "history": {
+    "built": true,
+    "frames": 3,
+    "nodes": 23,
+    "discovered_days": 3
+   },
+   "lead_image": {
+    "url": "https://i.guim.co.uk/img/media/0f8146f326fd33cd354c7be5046305a0cd02fc52/2261_232_4933_3949/master/4933.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=8e6fbb73ee9268112c29af6617af590b",
+    "source": "Guardian World"
+   },
+   "gate": {
+    "score": 7,
+    "of": 8,
+    "checks": {
+     "split": 1,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
    }
   },
   {
@@ -4686,8 +4597,8 @@
    },
    "discovered": true,
    "items_24h": 40,
-   "items_48h": 111,
-   "outlets": 91,
+   "items_48h": 109,
+   "outlets": 89,
    "kinds": [
     "journalist",
     "state media",
@@ -4840,54 +4751,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 87,
+    "outlets_timed": 85,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "newcastleherald.com.au",
-      "ts": "2026-06-13T01:15:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "centralwesterndaily.com.au",
-      "ts": "2026-06-13T01:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "The Spokesman-Review",
-      "ts": "2026-06-13T01:57:59Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "nbcnewyork.com",
-      "ts": "2026-06-13T02:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "nbcwashington.com",
-      "ts": "2026-06-13T02:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "dhakacourier.com.bd",
       "ts": "2026-06-13T02:45:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -4906,6 +4777,46 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "Forbes Africa",
+      "ts": "2026-06-13T03:03:38Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Citizen Digital",
+      "ts": "2026-06-13T03:16:02Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The Eastleigh Voice",
+      "ts": "2026-06-13T04:05:50Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "China.org.cn",
+      "ts": "2026-06-13T04:08:28Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-13T04:31:19Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 3
      }
     ],
     "unplaced": []
@@ -5033,7 +4944,7 @@
      [
       "2026-06-15 00:00",
       40,
-      94
+      91
      ]
     ],
     "mix": {
@@ -5041,7 +4952,7 @@
      "state-media": 4,
      "regional": 0,
      "official": 0,
-     "other": 156
+     "other": 159
     },
     "first_seen": "2026-06-12T17:18:26Z"
    },
@@ -5063,7 +4974,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5272,15 +5183,27 @@
     ]
    },
    "discovered": true,
-   "items_24h": 20,
-   "items_48h": 76,
-   "outlets": 46,
+   "items_24h": 22,
+   "items_48h": 78,
+   "outlets": 47,
    "kinds": [
     "journalist",
     "official record",
     "state media"
    ],
    "latest": [
+    {
+     "ts": "2026-06-14T22:00:52Z",
+     "title": "Pakistan bombs Afghanistan again: Taliban claims 11 children among 13 killed",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxPUzRMaHVlLWVELTZyNXA2dElHMFZYcjFPWUZCWHBuZlpTa2RweDl1R3Q3aXZXeFdoZDlVQ2o1TmVEQ1NzUy00VTlNTzZaeEFRbG9IUTR5QzF1NjBYSEdCN0VDMXZaY1p5TnpmVFI3Y19reEdRWWJqbFVKWktpWDNscFhrYWZ1QW1BRk1lNUtWTUEtS200Y05QLThxY0xrN045THA2QmRtd0M3NHZyT2pWTFJ3VExwLUpFblNmUFhMYlhzZGFwaE5QSm01ek9lUmdMNmlwV3FDX09ydVBZV1dLVjN4OUtSOWdra0ZDMVR4MVZ1T0xkaWtLUEtKSnI5ZUlZY2pYbUU5ckFBMVJhWlRHeG10UjlFaEI3WjlTS25IcTFnT3lYZHJ4Zmo3NnFhZmgxSzMtTFY0c1NGWmd2WFJzWElRams2NExGdURUV1NjR1MyNG9wNExfdWNKNFdLZ1dHVUFoeDF5b2N5VjRBQmxOT0xISHg0MVRtaXlMbHVfQlVyTmJlR004T1pVdkhrdzNSYkFCQVczbEtsdw?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-14T21:34:29Z",
      "title": "India beat Pakistan by 64 runs to open Women\u2019s T20 World Cup campaign",
@@ -5364,52 +5287,39 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-14T13:15:04Z",
-     "title": "Shehbaz Sharif defends Durand Line fencing as essential for Pakistan\u2019s security",
-     "outlet": "Ariana News",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQb3RvSFlsR3c3MC00bFhKWHotMWFRMTJlTnhIbTE3WGpaU29nclZuNzFDTG9wZUh2cElKZHFaNVNqcThnSHZ3MElmZVlyaTUwalRMSFVPTjc5VWdNeTVOdGdLVWw0dWdvNU9pOGswYXNFMHhnWkpINzJMS21VOFRjNlJVVlVRUjNNMDBXZnd4QWZ1dzZBalpVbW9mMFZJTWlJOWJrRWRrblkta0YzNVHSAa4BQVVfeXFMUG90b0hZbEd3NzAtNGxYSlh6LTFhUTEyZU54SG0xN1hqWlNvZ3JWbjcxQ0xvcGVIdnBJSmRxWjVTanE4Z0h2dzBJZmVZcmk1MGpUTEhVT043OVVnTXk1TnRnS1VsNHVnbzVPaThrMGFzRTB4Z1pKSDcyTEttVThUYzZSVVZVUVIzTTAwV2Z3eEFmdXc2QWpaVW1vZjBWSU1pSTlia0Vka25ZLWtGMzVR?oc=5",
-     "rel": 5,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Pakistan's PM Sharif defends military operations in Afghanistan as essential for national security along the Durand Line.",
-    "b": "Taliban says Pakistani airstrikes killed 13 people in Afghanistan, claiming 11 of the dead were children.",
+    "a": "Pakistan conducted airstrikes against targets inside Afghanistan along the Durand Line border.",
+    "b": "Taliban claims Pakistani strikes killed 13 including 11 children, and asserts Taliban forces killed 30 Pakistani soldiers.",
     "basis": "extracted from live headlines 2026-06-15",
     "axis_type": "factual_dispute",
-    "axis_question": "Did Pakistani airstrikes hit militants or kill civilians including children in Afghanistan?",
+    "axis_question": "Were Pakistani airstrikes targeting militants or did they kill Afghan civilians?",
     "carriers": {
-     "a": [
-      {
-       "outlet": "Ariana News",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQb3RvSFlsR3c3MC00bFhKWHotMWFRMTJlTnhIbTE3WGpaU29nclZuNzFDTG9wZUh2cElKZHFaNVNqcThnSHZ3MElmZVlyaTUwalRMSFVPTjc5VWdNeTVOdGdLVWw0dWdvNU9pOGswYXNFMHhnWkpINzJMS21VOFRjNlJVVlVRUjNNMDBXZnd4QWZ1dzZBalpVbW9mMFZJTWlJOWJrRWRrblkta0YzNVHSAa4BQVVfeXFMUG90b0hZbEd3NzAtNGxYSlh6LTFhUTEyZU54SG0xN1hqWlNvZ3JWbjcxQ0xvcGVIdnBJSmRxWjVTanE4Z0h2dzBJZmVZcmk1MGpUTEhVT043OVVnTXk1TnRnS1VsNHVnbzVPaThrMGFzRTB4Z1pKSDcyTEttVThUYzZSVVZVUVIzTTAwV2Z3eEFmdXc2QWpaVW1vZjBWSU1pSTlia0Vka25ZLWtGMzVR?oc=5",
-       "ts": "2026-06-14T13:15:04Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Press TV",
-       "kind": "state media",
-       "url": "https://presstv.ir/Detail/2026/06/14/770409/massive-rally-Iran-Leader-Ayatollah-Seyyed-Ali-Khamenei-Punjab-US-aggression-",
-       "ts": null,
-       "provenance": "unplaced",
-       "motive_note": "IR state media"
-      }
-     ],
+     "a": [],
      "b": [
       {
        "outlet": "MSN",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiiANBVV95cUxQNXVXRDNCSDMtMTBSaE5uRThsN2FEblVhTWFMVjVHZGZfM2pCRndQSzY1SjRUQTlPdVhXWDlxbzZBUmEyZ3l3OWx3ZFNMVE9weUdRNTBTWVJSWURPQkVaZ2VCanNGNEkxcXhZa19JbTRjU3h4WEI0a1ZQNlBlcV9CcTZxb08xcml5MFpMTWhhQ2lSX0c3dXlQd1loaGoyRjFyYWRYMGREbG9rWno1QTF6LWJLODdYOG5sMnJsRXlNWjhXUHJUc3BCaTNvNmVuVHA0bjZ4bnhRRlozNWFtUUdjd1Jna3JXT2NZaG1pUUQ5bEtkaEI0Zk5XdUpVWHlQdGNMMjNWdW1XU2NxLUZoNFptZEc4OFBnRF9Iblo2Q0lOT1BHOUJHZlVxTmZFNzEzdnJxa0RZSTdZc3YzRkVvZ29rUjFVS0g4dzBCc0FEWGhYdWVWeFJteUxQV3dTc3ota0RxeWhMeTdpUTFYS2ZLSXJ3bzNVX0VINlpYNmtIY2V2TDR5VnpNNDdxeg?oc=5",
-       "ts": "2026-06-13T02:29:41Z",
+       "url": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxQT3pMWWNrWjY5MUVieHZaRTdfSkRta2VpSm5zQ3B2b1lpUWhYcVhtN1dyM3p2MU5FUnhnMXNqaGxlR0NGSFMwRHkwM0JJQnlwck45UWktN3YybU1JZm5maWpNVFVjREVYM3pwMy00bjdObjV4dGVETVlKTk1MUTVCUFpwMEJuUGljV1YxVW5ibHk1SmtscVBTdmw4dFl6cWJZNDVUZXJWNjRvaDdmLWNEVURCWGVWVzBhZ3RFYm1vYnJLVEE3Ny1Yc0IxYjZvZlc2b3FQQ0VjOFpaTmhDelY5cVNIb1B4dHAtU3ZvV3VGTnhtSWFLMXhKaGtsN0N3UW1uU25xTzY4allYZ0xNY2ZnM1VubHRmTUZXNFBSSEk1ZTNmUXlZQzQxOTlqS3F4Sm44YWlSWnUySzBFOGdtSE5YXzZEb2ZndS1TT0RwYmxtTV96ZU9QSVhBazBmUVJpUC1ZSUJMd24wQXpYU3ZxS1N3T21hczY5V1RWcGFsRkxQajdMbjBObVVaRFVNZ0w5RmkwRW5oY0FPc3lKSjRHc1JOQVIxVW5hUWtyNXc?oc=5",
+       "ts": "2026-06-13T02:12:28Z",
        "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "News On AIR",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcjhLRGZVckptTHRkWGwxRERLXzduOFl4RFI1ZHVuNFI0M0hDaEVqMi1kUzJ5eWlGSUxZNkxhOXVnWVd4SGNGbmNjVkRxemdDWElkSDZDZ2duR3JfYmh4bE04Yzd4d1FOb2J4c2U5c2RKVkVueGp3Yi0wMXBkaFdhM256NFhXUFN6cGhUWGNXSVdsSVZoX3diWlRtTQ?oc=5",
+       "ts": "2026-06-13T07:33:13Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "DD News",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObEpENEtqOXNfbUw1UktsSTdRMUdHNTQzcUZJbThWQVVLWFVXdWpybE43aTNOaHgwVksxaW9MZ0J4b2JHVExBTEdINk1vTzlrTFdRR1QwM241ZlZTSmd0UkItNGNCTy1zZ2l5OXpUel9WWGc1OWlWY1llQjhyTEpUbzhKUUlHNUdraGh1SWZ0UUxEdVlYNHBhMnFFNkNUVFk?oc=5",
+       "ts": "2026-06-13T22:01:55Z",
+       "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
@@ -5417,14 +5327,6 @@
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZFBlT1M2a1N0S3JIajViMVc5WTVWUUJabHh5Wk94M01LTEZrY2s0eTlzQ1RoRzQ2ejhHN1ZCU1J6UmtGR210Uk9reFItMWhMZlNfYTFoYm5fSm82dXF5T20zdk8zZGhSSU14YWNmWkVnNTRJMy0zUnBaYWxveW1CeVdyMGpZZXlyZWpKakVtQjZzMUZTRkFrRk5Kd0Yxc2h1WW9RR3VMWTN4ZHc3R21qT0ltNlh0cl90WmhjdTh3?oc=5",
        "ts": "2026-06-14T14:25:53Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "DD News",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMnE4el84Sm82UVNpcnNWZXVUR284ZTRYV0VmMnVYT2R1YU9oZUt1aFhxTzJyVGxDMEMwUzk5UlRneWJpOUM3dGFzWXpLUzdMR2tHVGRxOFdONnROQzRWNGVUYWRhcXFKcUEzVzlodmdLVkg0Ym4xTXMxTDl0cFpQVU5wa2o1eWpXaWgyM05aS1JMdTZZN1E?oc=5",
-       "ts": "2026-06-14T20:13:30Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
@@ -5435,24 +5337,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 44,
+    "outlets_timed": 45,
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "Social News XYZ",
-      "ts": "2026-06-13T01:33:29Z",
+      "outlet": "MSN",
+      "ts": "2026-06-13T02:29:41Z",
       "kind": "journalist",
       "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-13T02:02:52Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 12
+      "items": 13
      },
      {
       "outlet": "WFMZ.com",
@@ -5501,6 +5395,14 @@
       "role": "echo",
       "motive_note": "Qatar state-funded international broadcaster",
       "items": 4
+     },
+     {
+      "outlet": "CGTN",
+      "ts": "2026-06-13T09:13:56Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "CN state media",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -5531,7 +5433,7 @@
    "sources": [
     {
      "outlet": "MSN",
-     "n": 23,
+     "n": 27,
      "class": "other"
     },
     {
@@ -5541,7 +5443,7 @@
     },
     {
      "outlet": "DD News",
-     "n": 7,
+     "n": 8,
      "class": "other"
     },
     {
@@ -5673,16 +5575,11 @@
      "state-media": 2,
      "regional": 0,
      "official": 1,
-     "other": 70
+     "other": 71
     },
     "first_seen": "2026-06-11T19:14:36Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-14T14:24:23Z",
-     "a": "Pakistani outlets frame the airstrikes as necessary counter-terrorism against Taliban threats and propaganda emanating from Afghanistan.",
-     "b": "Taliban and international media report Pakistan's airstrikes killed 13 civilians including 11 children in eastern Afghanistan."
-    },
     {
      "captured_utc": "2026-06-14T15:16:35Z",
      "a": "Taliban and Afghan authorities say Pakistani airstrikes killed 13 civilians, including 11 children, in eastern Afghanistan.",
@@ -5737,10 +5634,15 @@
      "captured_utc": "2026-06-15T01:11:17Z",
      "a": "Pakistan's PM Sharif defends military operations in Afghanistan as essential for national security along the Durand Line.",
      "b": "Taliban says Pakistani airstrikes killed 13 people in Afghanistan, claiming 11 of the dead were children."
+    },
+    {
+     "captured_utc": "2026-06-15T02:19:08Z",
+     "a": "Pakistan conducted airstrikes against targets inside Afghanistan along the Durand Line border.",
+     "b": "Taliban claims Pakistani strikes killed 13 including 11 children, and asserts Taliban forces killed 30 Pakistani soldiers."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Pakistan air strikes Afghanistan, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Pakistan air strikes Afghanistan, Times of Israel.",
     "History gap: era \"War on Terror era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Soviet war and aftermath\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Durand Line era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
@@ -6046,9 +5948,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 18,
-   "items_48h": 56,
-   "outlets": 35,
+   "items_24h": 19,
+   "items_48h": 57,
+   "outlets": 36,
    "kinds": [
     "journalist"
    ],
@@ -6059,6 +5961,18 @@
      "outlet": "The Times of Israel",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbUhMM1ZUT0RCdlFYNG81RkNEaTNmVFBicmpjaFkzU2NqZGs5SFVIWWk2R0lyaGpndGlFZko3VW9IUjVrZHdZMWhkWF96cHR6SnFmaFpSVUUwSGVva08tTDUycmh6Z2lEUy1kc2VRUldiejlFeGJiT2tROERKMFk2OVZLSTFURXpIVXlaRFFCa3lSclNZZktNTGwtUDROXzJwWWZoVHpncFVva2s5R0lXankyX0N1eTlja0pV0gHAAUFVX3lxTE1XN0dMd1VkOVpOZWZrY3RtcUo2SHd4aXo2eDM1dGJLTnNaMEplQ3BmWnJNdjlFa0pJRVQ2X1hIaW56ZVkxUnJvQlBYcWxYNXZoUjRyN3Y1Tkt0X29DbUtjT2Y1cXNLeU9HMU1DN2RTb21POUxheDNqd1puZWJENnYtOVVVMUlMaE1YaGxhT1Z3LUtUSmRHbHdjY3lGbXNybTFlV0RKZ21CcmxFcWhoOVhyT2F5bHNQZDlBNjE4Zmo1YQ?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-14T23:09:28Z",
+     "title": "Israeli settlers torch West Bank vehicles, mosque",
+     "outlet": "NST Online",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb210b29EZ3REV1AyNG9JWDRPTk9wT0k1TjdOYXgzZ2VHamRYREQwSTkxTmZiendMT2Z5LWhLVTVJY0ZtNTU2S3dQSzljN0hiWmk3dnJlQ2NCWml6bDh3YnhJYW1sT2pOVHNmMjBsNDlGLW0tUmlQNGxQWlhFRTllc2tJRGNTUkZiRVVlaGk4OWQzdG9lcFJMTlE4Wlc5Y2FKSC03Tl9R0gGmAUFVX3lxTE9vbXRvb0RndERXUDI0b0lYNE9OT3BPSTVON05heDNnZUdqZFhERDBJOTFOZmJ6d0xPZnktaEtVNUljRm01NTZLd1BLOWM3SGJaaTd2cmVDY0JaaXpsOHdieElhbWxPak5Uc2YyMGw0OUYtbS1SaVA0bFBaWEVFOWVza0lEY1NSRmJFVWVoaTg5ZDN0b2VwUkxOUThaVzljYUpILTdOX1E?oc=5",
      "rel": 15,
      "coverage": {
       "non_mainstream": 1,
@@ -6136,26 +6050,14 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-14T13:06:52Z",
-     "title": "Sexual Violence in Israeli Prisons: What History Tells Us",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/2026/6/14/sexual-violence-in-israeli-prisons-what-history-tells-us?traffic_source=rss",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
     }
    ],
    "split": {
-    "a": "A damning report and protesters characterize Israel's settlement expansion and settler violence as a state-led ethnic cleansing campaign.",
-    "b": "Haaretz reports EU foreign policy chief Kallas was accused of antisemitism for comparing Israeli West Bank policies to apartheid.",
+    "a": "A damning report and critics including EU officials characterize Israeli actions in the West Bank as state-led ethnic cleansing or apartheid.",
+    "b": "Israel and allies reject the ethnic cleansing and apartheid framing, accusing critics such as EU's Kallas of antisemitism.",
     "basis": "extracted from live headlines 2026-06-15",
     "axis_type": "interpretation",
-    "axis_question": "Are Israeli West Bank policies ethnic cleansing, or is framing them so antisemitic?",
+    "axis_question": "Does Israeli settlement policy in the West Bank constitute ethnic cleansing?",
     "carriers": {
      "a": [
       {
@@ -6207,7 +6109,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 33,
+    "outlets_timed": 34,
     "outlets_unplaced": 0,
     "chain": [
      {
@@ -6471,7 +6373,7 @@
      ],
      [
       "2026-06-15 00:00",
-      17,
+      18,
       35
      ]
     ],
@@ -6480,16 +6382,11 @@
      "state-media": 1,
      "regional": 0,
      "official": 1,
-     "other": 52
+     "other": 53
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-14T13:26:30Z",
-     "a": "Reports and Amnesty International characterize Israel's West Bank actions as a state-led ethnic cleansing campaign requiring international sanctions.",
-     "b": "Israel expands settler farms amid UK sanctions; Israeli ministers push for intensified military operations rather than reversal."
-    },
     {
      "captured_utc": "2026-06-14T14:24:23Z",
      "a": "A damning report and international officials characterise Israel's West Bank operations as a state-led ethnic cleansing campaign warranting sanctions.",
@@ -6544,10 +6441,15 @@
      "captured_utc": "2026-06-15T01:11:18Z",
      "a": "A damning report and protesters characterize Israel's settlement expansion and settler violence as a state-led ethnic cleansing campaign.",
      "b": "Haaretz reports EU foreign policy chief Kallas was accused of antisemitism for comparing Israeli West Bank policies to apartheid."
+    },
+    {
+     "captured_utc": "2026-06-15T02:19:08Z",
+     "a": "A damning report and critics including EU officials characterize Israeli actions in the West Bank as state-led ethnic cleansing or apartheid.",
+     "b": "Israel and allies reject the ethnic cleansing and apartheid framing, accusing critics such as EU's Kallas of antisemitism."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -6726,9 +6628,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 13,
-   "items_48h": 86,
-   "outlets": 63,
+   "items_24h": 12,
+   "items_48h": 82,
+   "outlets": 60,
    "kinds": [
     "journalist",
     "state media"
@@ -6864,46 +6766,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 60,
+    "outlets_timed": 58,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "bbc.co.uk",
-      "ts": "2026-06-13T01:15:00Z",
+      "outlet": "MSN",
+      "ts": "2026-06-13T02:35:01Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "UK public broadcaster",
-      "items": 3
-     },
-     {
-      "outlet": "Free Malaysia Today",
-      "ts": "2026-06-13T01:15:43Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "independent.co.uk",
-      "ts": "2026-06-13T01:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 3
-     },
-     {
-      "outlet": "indianexpress.com",
-      "ts": "2026-06-13T02:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-13T02:03:07Z",
-      "kind": "journalist",
-      "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 8
      },
@@ -6926,6 +6796,38 @@
      {
       "outlet": "arynews.tv",
       "ts": "2026-06-13T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "thejournal.ie",
+      "ts": "2026-06-13T08:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "irishtimes.com",
+      "ts": "2026-06-13T08:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "heraldscotland.com",
+      "ts": "2026-06-13T08:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "aninews.in",
+      "ts": "2026-06-13T08:15:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -6960,7 +6862,7 @@
    "sources": [
     {
      "outlet": "MSN",
-     "n": 12,
+     "n": 14,
      "class": "other"
     },
     {
@@ -7104,7 +7006,7 @@
      [
       "2026-06-15 00:00",
       15,
-      66
+      63
      ]
     ],
     "mix": {
@@ -7112,7 +7014,7 @@
      "state-media": 7,
      "regional": 0,
      "official": 0,
-     "other": 108
+     "other": 109
     },
     "first_seen": "2026-06-11T09:35:14Z"
    },
@@ -7179,7 +7081,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -7423,8 +7325,8 @@
    },
    "discovered": true,
    "items_24h": 4,
-   "items_48h": 22,
-   "outlets": 15,
+   "items_48h": 21,
+   "outlets": 14,
    "kinds": [
     "journalist",
     "state media"
@@ -7520,7 +7422,7 @@
      "outlet": "The New Arab",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPR3V1X21DQWw0TExNdUJrd1k2aEJyaEwzT0tYN0lyZWlmb2htWXNYZng4Ym5KTE1BcFAzZjRSQ3RxZnpEVnF5X3FTQjJyMDhnVWZpLVV0eFRld0NYS1l3NHdKMUhMMDRhdFNNWF9HU3pYclM2bHppcVRDcGMzM21vVl9UaGE3TzB2eUhnMzlzREtXRmNnUTAzYTdR0gGaAUFVX3lxTE9HdXVfbUNBbDRMTE11Qmt3WTZoQnJoTDNPS1g3SXJlaWZvaG1Zc1hmeDhibkpMTUFwUDNmNFJDdHFmekRWcXlfcVNCMnIwOGdVZmktVXR4VGV3Q1hLWXc0d0oxSEwwNGF0U01YX0dTelhyUzZsemlxVENwYzMzbW9WX1RoYTdPMHZ5SGczOXNES1dGY2dRMDNhN1E?oc=5",
-     "rel": 15,
+     "rel": 13,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -7568,22 +7470,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 15,
+    "outlets_timed": 14,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "yahoo.com",
-      "ts": "2026-06-13T02:15:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "The Defense Post",
       "ts": "2026-06-13T07:06:53Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -7630,6 +7524,14 @@
      {
       "outlet": "freebeacon.com",
       "ts": "2026-06-13T09:09:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "globalsecurity.org",
+      "ts": "2026-06-13T12:30:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -7917,7 +7819,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -8553,7 +8455,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -8865,7 +8767,7 @@
    },
    "discovered": true,
    "items_24h": 1,
-   "items_48h": 15,
+   "items_48h": 14,
    "outlets": 9,
    "kinds": [
     "journalist"
@@ -9029,18 +8931,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Institute for the Study of War",
-      "ts": "2026-06-13T01:25:50Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
       "outlet": "MSN",
       "ts": "2026-06-13T05:49:20Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 5
      },
@@ -9090,6 +8984,14 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "UA regional press",
+      "items": 1
+     },
+     {
+      "outlet": "Institute for the Study of War",
+      "ts": "2026-06-14T00:04:51Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      }
     ],
@@ -9143,7 +9045,7 @@
    "sources": [
     {
      "outlet": "MSN",
-     "n": 16,
+     "n": 13,
      "class": "other"
     },
     {
@@ -9342,7 +9244,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -10005,7 +9907,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "lead_image": {
@@ -10465,7 +10367,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -11043,7 +10945,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "lead_image": {
@@ -11060,15 +10962,9 @@
    "status": "watching"
   },
   {
-   "sample": "'Resistance will not be cornered', Qalibaf warns Israel after Beirut attack",
-   "outlets": 5,
-   "count": 12,
-   "status": "watching"
-  },
-  {
-   "sample": "Mandopop singer-songwriter David Wong dies at 61",
-   "outlets": 3,
-   "count": 3,
+   "sample": "In Israel, Broad Discontent Even Before Deal\u2019s Details Are Known",
+   "outlets": 6,
+   "count": 15,
    "status": "watching"
   },
   {
@@ -11101,25 +10997,25 @@
   "situations": 16,
   "situations_active": 16,
   "discovered": 11,
-  "items": 6703,
-  "developments": 6584,
-  "claims": 1154,
-  "carriers": 3416,
-  "steelmans": 1016,
+  "items": 6745,
+  "developments": 6626,
+  "claims": 1160,
+  "carriers": 3431,
+  "steelmans": 1022,
   "deep_reports": 16,
   "entities": 276,
-  "edges": 7608,
+  "edges": 7640,
   "history_nodes": 331,
-  "gate_rejects_7d": 118,
-  "runs": 100,
+  "gate_rejects_7d": 119,
+  "runs": 101,
   "backend": "st"
  },
  "gate": {
-  "clusters": 32,
+  "clusters": 24,
   "accepted": 0,
   "rejected": 1,
   "existing": 2,
-  "below": 29,
+  "below": 21,
   "pending": 0
  },
  "gate_summary": {
@@ -11134,6 +11030,6 @@
   "edition_utc": "2026-06-14",
   "panels": 6,
   "appendix": 8,
-  "overflow": 821
+  "overflow": 824
  }
 }
