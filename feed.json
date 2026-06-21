@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-06-21T04:23:08Z",
+ "generated_utc": "2026-06-21T05:11:44Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
@@ -8,7 +8,6 @@
    "cgtn",
    "dabanga",
    "fox-world",
-   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -28,7 +27,7 @@
    {
     "id": "gdelt:gaza-israel-war-current",
     "label": "GDELT Israel-Gaza",
-    "reason": "HTTP Error 429: Too Many Requests"
+    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
    },
    {
     "id": "gdelt:russia-ukraine-war-current",
@@ -46,6 +45,11 @@
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
+    "id": "gdelt:ebola-spreads-dr-congo-cases-top-676",
+    "label": "GDELT Ebola spreads DR Congo, cases top 676",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
     "id": "gdelt:pakistan-air-strikes-afghanistan",
     "label": "GDELT Pakistan air strikes Afghanistan",
     "reason": "HTTP Error 429: Too Many Requests"
@@ -53,7 +57,7 @@
    {
     "id": "gdelt:russia-hosts-asean-summit-diplomatic-push",
     "label": "GDELT Russia hosts ASEAN summit diplomatic push",
-    "reason": "The read operation timed out"
+    "reason": "HTTP Error 429: Too Many Requests"
    },
    {
     "id": "gdelt:taiwan-strait-tensions-current",
@@ -317,9 +321,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 237,
+   "items_24h": 235,
    "items_48h": 361,
-   "outlets": 219,
+   "outlets": 218,
    "kinds": [
     "journalist",
     "official record",
@@ -425,19 +429,27 @@
     }
    ],
    "split": {
-    "a": "Al Jazeera and media groups report one of its journalists was killed in an Israeli strike in Gaza.",
-    "b": "Israel says the man killed was a Hamas terrorist, not a civilian journalist.",
+    "a": "Al Jazeera and media outlets report their journalist was killed in an Israeli strike in Gaza",
+    "b": "Israel claims the killed individual was a Hamas terrorist, not a protected journalist",
     "basis": "extracted from live headlines 2026-06-21",
     "axis_type": "factual_dispute",
-    "axis_question": "Was the man killed in Gaza an Al Jazeera journalist or a Hamas operative?",
+    "axis_question": "Was the Al Jazeera journalist killed in Gaza a civilian reporter or a Hamas operative?",
     "carriers": {
      "a": [
+      {
+       "outlet": "News18",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQWFPS1drRW5GSG1QcGo2NlZkMWtxUGVvVldYRE9ELWFTNzlwTkFZMDlyaG1jVUVaQldRQmt6d3FIcnFLUk55OWo4X2owQkgxNERDOE50MDlweWF3SVVpck1PZWhPZHhzMnZXWms5cFh4SGVaa3hrYnA4VWlrV2ZwbGtmanAyY2dmRGsxa19fc0FMUXFyMzlIZ1Z6OGxvOExhMk9DZWlZUnpRTFhheExqMmlTZUh3eHNUVEZV0gHAAUFVX3lxTFBJSEVJcTlLOWhjTUtrVmtVWEVqTl9BVjlXYW5SMXRJVk10M1ZJcEJoUXVfSy01R3JGMFlXaXVfMXV6MTVfUFhZUzJxU1c5WDN0VVp0cHFNbXVfV2xiWFB0UHZRRlNwdk15ZXRMSW1UY1hkRThLSUlrejNNOHl0U3AxT3Y0OGk2VDhjVHo2a1pJNUt2ZnFETVZ4b0xEdVJwTUxDRnAzREU1ODVOOTZGSHVMY0w5SUhZTHlFUVF6SzhWeQ?oc=5",
+       "ts": "2026-06-21T03:42:18Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
       {
        "outlet": "The Economic Times",
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxNVDFydlNRNlJfWjhOeHhfVF9NY1BXX2o5dW1kM0xQZXg5NXJQdTFYX1plbUktTnRSRWo3VVNVRTN1ZndTc1loYjZOZlhGNDhDMmFNdkZaNzNYZTBTcWFtOW1NOFpBZEFGOTBRZ2Rfd3JqdkYzTGI1ZzNrTks0c0ExSC1PNjltclJoMlFvdW9aZmRWN2V5NFY1V1RpMjQwaVc1UklHMkR0SmdMUE5kV0hDQXNPMlI4QUJldUlpT2NNUGxYMHdfSjJrN3p6a0luOC1XNmh2aVVEWUV4M1JKT2FqRFFDYVhSeUdxdlRWS0pjOHpWZk83bHNpQWlyZEN5SHFBSHJ5MjI0Y2VvVVRDcUFUbHlVTXpfOEkwU1NhOE5QdzFEeFhtbDNKN1FHV1U4ZFBodUNJM2VtSGxYQkNLYXJEZE1MbVdDcGlDRVg4c0R0VW5IZ1hZaHBCYllRZVRnTGJRdnNn0gH_AUFVX3lxTE9lVnpjLWZPR0k4cmhsTEVCUnBYZldDcHZnRDBZczNwbzdiTXZEM2NuNFZwSDI1TkhUOWstUkNmV1g2c3RyQXo0NFdLZjZ2aXdrY1ZQZGlYY2NKbVFjUWlYUXJDNGxhTmtuZ25CeU9XbzFnRzM4WHNLUDVGWnhhUU1ldktReXRURUZTY0R1aDBCWnFfUjJfYl91QTRXV3RGbjdrU1JnN3RxLUR2MDlNQzVEdC1Qa19CaE5hWEVvWnlOelRlWGp6VjRDOTNaQXhtVW90QjJWM3RSeXNUTTdzUzgyRkdKcmRSVXZTUTQ0bnZLN2hXN1U1NzVaOW9sZ0dmaw?oc=5",
        "ts": "2026-06-21T03:54:40Z",
-       "provenance": "original",
+       "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
      ],
@@ -457,22 +469,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 205,
+    "outlets_timed": 204,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "The Business Standard",
-      "ts": "2026-06-19T05:10:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "radio.gov.pk",
       "ts": "2026-06-19T06:00:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -523,6 +527,14 @@
       "role": "echo",
       "motive_note": "international wire service",
       "items": 3
+     },
+     {
+      "outlet": "The Independent",
+      "ts": "2026-06-19T07:59:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -629,17 +641,17 @@
      "class": "state-media"
     },
     {
+     "outlet": "Bluefield Daily Telegraph",
+     "n": 5,
+     "class": "other"
+    },
+    {
      "outlet": "A News",
      "n": 4,
      "class": "other"
     },
     {
      "outlet": "AOL.com",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "Ahram Online",
      "n": 4,
      "class": "other"
     }
@@ -853,7 +865,7 @@
      ],
      [
       "2026-06-21 00:00",
-      231,
+      237,
       219
      ]
     ],
@@ -867,11 +879,6 @@
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-19T06:15:16Z",
-     "a": "Hillary Clinton endorses Trump's Gaza plan as the only realistic path to reconstruction after the conflict",
-     "b": "UN aid chief demands dignity for Gaza population while criticizing Israeli obstructions to humanitarian assistance"
-    },
     {
      "captured_utc": "2026-06-19T07:18:56Z",
      "a": "UN, Oxfam, and Arab diplomats say the Gaza ceasefire is failing and demand Israel allow full humanitarian access",
@@ -926,6 +933,11 @@
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "Al Jazeera and media groups report one of its journalists was killed in an Israeli strike in Gaza.",
      "b": "Israel says the man killed was a Hamas terrorist, not a civilian journalist."
+    },
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "Al Jazeera and media outlets report their journalist was killed in an Israeli strike in Gaza",
+     "b": "Israel claims the killed individual was a Hamas terrorist, not a protected journalist"
     }
    ],
    "unknowns": [
@@ -1127,15 +1139,39 @@
     ]
    },
    "discovered": false,
-   "items_24h": 180,
-   "items_48h": 414,
-   "outlets": 191,
+   "items_24h": 178,
+   "items_48h": 413,
+   "outlets": 190,
    "kinds": [
     "journalist",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-21T04:57:32Z",
+     "title": "Zelenskyy issues ultimatum to Lukashenko: dismantle Russian drone retranslators or Ukraine will act",
+     "outlet": "EUalive",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQXlfWU5XcmpxeV9LOVpoQXFtSTJSam1TeF82TlpCNkY1NnBUTzJRMTQzQVdCanpUOW5pVXF2TkJ4eVQxbkVJNzdscE9IYnRyNXlWZ3ZUeUJIMU9tdjZNUW9mTS1kYS1QS3Z2ekRDQzNqaTlYQzZoMWdGNGtpYVdhT2NkMXFveVhFb1h2aFNFa2lSLXduUUlCV0FBeTB4ZlpRb05UOHJsVzJTSnRNcWFtSVJlb0RUclV0TWRN?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-21T04:49:30Z",
+     "title": "Ukraine to repay about $1.5 bln to IMF by year-end",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2149425",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-21T03:54:14Z",
      "title": "Accusations of neo-Nazism against Ukraine gaining new evidence base - Russian lawmaker",
@@ -1207,63 +1243,23 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-21T00:44:01Z",
-     "title": "Over 227,600 Russian soldiers killed in Ukraine identified by media investigation",
-     "outlet": "Kyiv Independent",
-     "kind": "journalist",
-     "url": "https://kyivindependent.com/over-227-600-russian-soldiers-killed-in-ukraine-identified-by-media-investigation/",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-21T00:00:00Z",
-     "title": "Poland strips Zelenskiy of top award",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/21/2003859485",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Ukraine and independent media report 227,600+ Russian soldiers killed and Ukrainian drones striking Russia's Tyumen oil refinery 2,000km away.",
-    "b": "TASS highlights Ukrainian drone and equipment losses, frames Ukraine as neo-Nazi, and disputes Western accounts of Russian battlefield failures.",
+    "a": "Kyiv Independent and WION report record Ukrainian drone attacks breaching Moscow defenses and halting Russian refinery operations",
+    "b": "TASS reports Ukraine sustaining ongoing equipment losses and frames Kyiv's leadership through a neo-Nazism narrative",
     "basis": "extracted from live headlines 2026-06-21",
-    "axis_type": "interpretation",
-    "axis_question": "Is Russia absorbing catastrophic losses, or is Ukraine the side closer to breaking?",
+    "axis_type": "factual_dispute",
+    "axis_question": "Are Ukrainian drone strikes on Russia achieving significant military effect?",
     "carriers": {
      "a": [
       {
        "outlet": "Kyiv Independent",
        "kind": "journalist",
-       "url": "https://kyivindependent.com/russian-attack-damages-over-40-homes-in-kharkiv-injures-6/",
-       "ts": "2026-06-19T07:22:36Z",
+       "url": "https://kyivindependent.com/us-trade-regulator-accuses-billion-dollar-ukrainian-it-giant-of-fraud/",
+       "ts": "2026-06-19T09:11:45Z",
        "provenance": "original",
        "motive_note": "UA regional press"
-      },
-      {
-       "outlet": "Reuters",
-       "kind": "wire service",
-       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaDB2Q0VSRXZfOFYxVUxleHZVWWNxUk5kRWhyZjgwNFRVd2szVGNkaF95Y0d2OW5oR3JaWTY3M21Vc09pcTkzOTNDMGV1VzNLTkZ2OV9zZDNYVHVrV0c1QTZXN2JBMG5oVFg0X05xeWJnVWlLRkwzd1ltdEpVcWYwaFJmb0hxdXNxQXhleDNRZ3gzWGp1RVVQVkpUeXZ6UmhZVXZJVjlPTGwzUjZ6eXg5b3lQb2FsaXFQ?oc=5",
-       "ts": "2026-06-19T15:45:03Z",
-       "provenance": "echo",
-       "motive_note": "international wire service"
-      },
-      {
-       "outlet": "The Guardian",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWk41WTRodUpJQjRXbzN0dDkxWjVTSldMb05hcF9na3FIem82a1V1YVJiTm1TeG82cHZKVng1T0JYSGVDVnpmbExjRHNGb0VWeFFTN1ZtTlBrbm9QLTNOcFpzS1NHVU1MMG44dTR2bFZuTG5IUS1hQnY0Y0x5Qzd3X3FWV0NTTVlkNXVyckVWWDBQUElzcjVNZGdmMlNvVW5GeWZHRFVrQ3RTMWhhT2d0Ujk3bnMxSU9VYV9vSE10RXNtd2dkOW90YXRUQQ?oc=5",
-       "ts": "2026-06-20T02:47:00Z",
-       "provenance": "echo",
-       "motive_note": "UK press"
       },
       {
        "outlet": "WION",
@@ -1274,20 +1270,12 @@
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
-       "outlet": "WTOP",
+       "outlet": "The Guardian",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxORkUxbzgxV0VtRGIwOTJVam5ZTjNiZU9OQzRKZ09MaW9IWUlydkFMZHgyS3NOZUs5b0liOVlleXdFQXhMMHU1eUszcHpqXzdIOWp1Tk1UZmNwZmpCcTQza1RrVVc3RXJBWjVaZF9DZ0hKNEpUOWpRdGZJOVhzM2JWaWIwLXNXQmJMNzZyTElSSktpTVRhMWFXUS0yZ3VHZDlyYmM0M0thMFozeC1kbXpLSTFBc2ZvVnp5Wnc?oc=5",
-       "ts": "2026-06-21T00:45:09Z",
+       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWk41WTRodUpJQjRXbzN0dDkxWjVTSldMb05hcF9na3FIem82a1V1YVJiTm1TeG82cHZKVng1T0JYSGVDVnpmbExjRHNGb0VWeFFTN1ZtTlBrbm9QLTNOcFpzS1NHVU1MMG44dTR2bFZuTG5IUS1hQnY0Y0x5Qzd3X3FWV0NTTVlkNXVyckVWWDBQUElzcjVNZGdmMlNvVW5GeWZHRFVrQ3RTMWhhT2d0Ujk3bnMxSU9VYV9vSE10RXNtd2dkOW90YXRUQQ?oc=5",
+       "ts": "2026-06-21T03:19:00Z",
        "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Taipei Times",
-       "kind": "journalist",
-       "url": "https://www.taipeitimes.com/News/front/archives/2026/06/21/2003859462",
-       "ts": "2026-06-21T08:00:00Z",
-       "provenance": "echo",
-       "motive_note": "TW regional press"
+       "motive_note": "UK press"
       }
      ],
      "b": [
@@ -1306,38 +1294,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 172,
+    "outlets_timed": 171,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "inkl",
-      "ts": "2026-06-19T04:48:02Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "International Business Times UK",
-      "ts": "2026-06-19T04:56:08Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Bluefield Daily Telegraph",
-      "ts": "2026-06-19T05:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
      {
       "outlet": "Ukrinform - Ukrainian National News Agency",
       "ts": "2026-06-19T05:27:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -1355,7 +1319,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 11
+      "items": 12
      },
      {
       "outlet": "The New Voice of Ukraine",
@@ -1368,6 +1332,30 @@
      {
       "outlet": "Australian Broadcasting Corporation",
       "ts": "2026-06-19T06:12:02Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Defense Express",
+      "ts": "2026-06-19T06:29:36Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "The Times of India",
+      "ts": "2026-06-19T06:36:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "IN press",
+      "items": 4
+     },
+     {
+      "outlet": "Politics Today",
+      "ts": "2026-06-19T07:00:10Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -1431,7 +1419,7 @@
    "sources": [
     {
      "outlet": "TASS",
-     "n": 30,
+     "n": 31,
      "class": "state-media"
     },
     {
@@ -1446,7 +1434,7 @@
     },
     {
      "outlet": "MSN",
-     "n": 13,
+     "n": 14,
      "class": "other"
     },
     {
@@ -1700,7 +1688,7 @@
      [
       "2026-06-21 00:00",
       185,
-      192
+      191
      ]
     ],
     "mix": {
@@ -1708,16 +1696,11 @@
      "state-media": 3,
      "regional": 2,
      "official": 0,
-     "other": 209
+     "other": 210
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-20T02:19:04Z",
-     "a": "Russia says at least five drones were shot down over Crimea's Sevastopol as the Ukrainian attack continued.",
-     "b": "Ukraine says its drones struck a gas storage facility and reportedly a power plant in occupied Crimea."
-    },
     {
      "captured_utc": "2026-06-20T03:15:31Z",
      "a": "Kyiv and Western outlets frame Ukraine's Crimea strikes and pressure on Belarus as legitimate wartime defense.",
@@ -1772,6 +1755,11 @@
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "Ukraine and independent media report 227,600+ Russian soldiers killed and Ukrainian drones striking Russia's Tyumen oil refinery 2,000km away.",
      "b": "TASS highlights Ukrainian drone and equipment losses, frames Ukraine as neo-Nazi, and disputes Western accounts of Russian battlefield failures."
+    },
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "Kyiv Independent and WION report record Ukrainian drone attacks breaching Moscow defenses and halting Russian refinery operations",
+     "b": "TASS reports Ukraine sustaining ongoing equipment losses and frames Kyiv's leadership through a neo-Nazism narrative"
     }
    ],
    "unknowns": [
@@ -2038,9 +2026,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 75,
-   "items_48h": 160,
-   "outlets": 50,
+   "items_24h": 74,
+   "items_48h": 153,
+   "outlets": 48,
    "kinds": [
     "journalist",
     "official record",
@@ -2178,56 +2166,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 49,
+    "outlets_timed": 47,
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "NYT World",
-      "ts": "2026-06-19T04:27:09Z",
+      "outlet": "MSN",
+      "ts": "2026-06-19T05:31:14Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "US press",
-      "items": 14
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-19T04:44:05Z",
-      "kind": "journalist",
-      "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 14
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-06-19T04:48:27Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 10
-     },
-     {
-      "outlet": "The Washington Post",
-      "ts": "2026-06-19T04:53:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US press",
-      "items": 1
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-19T04:56:53Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 30
-     },
-     {
-      "outlet": "Ada Derana",
-      "ts": "2026-06-19T05:02:27Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "items": 13
      },
      {
       "outlet": "BBC World",
@@ -2244,6 +2192,46 @@
       "role": "echo",
       "motive_note": "RU state media",
       "items": 31
+     },
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-06-19T05:42:44Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 9
+     },
+     {
+      "outlet": "aljazeera.com",
+      "ts": "2026-06-19T06:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 28
+     },
+     {
+      "outlet": "Fox News World",
+      "ts": "2026-06-19T06:00:24Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 1
+     },
+     {
+      "outlet": "NYT World",
+      "ts": "2026-06-19T06:54:18Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 13
+     },
+     {
+      "outlet": "Nwemail.co.uk",
+      "ts": "2026-06-19T06:55:47Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -2252,7 +2240,7 @@
       "first_seen": "2026-06-19T10:05:40Z",
       "kind": "state media",
       "motive_note": "IR state media",
-      "items": 22
+      "items": 23
      }
     ]
    },
@@ -2325,7 +2313,7 @@
     },
     {
      "outlet": "Press TV",
-     "n": 22,
+     "n": 23,
      "class": "state-media"
     },
     {
@@ -2583,8 +2571,8 @@
      ],
      [
       "2026-06-21 00:00",
-      69,
-      52
+      75,
+      50
      ]
     ],
     "mix": {
@@ -2852,7 +2840,7 @@
    },
    "discovered": true,
    "items_24h": 58,
-   "items_48h": 124,
+   "items_48h": 123,
    "outlets": 72,
    "kinds": [
     "journalist",
@@ -3017,12 +3005,12 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "thedailybeast.com",
-      "ts": "2026-06-19T05:00:00Z",
+      "outlet": "The Times of India",
+      "ts": "2026-06-19T05:24:00Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
+      "motive_note": "IN press",
+      "items": 1
      },
      {
       "outlet": "CGTN",
@@ -3192,17 +3180,17 @@
      "class": "mainstream"
     },
     {
+     "outlet": "The Times of India",
+     "n": 3,
+     "class": "other"
+    },
+    {
      "outlet": "hindustantimes.com",
      "n": 3,
      "class": "other"
     },
     {
      "outlet": "independent.co.uk",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "moneycontrol.com",
      "n": 3,
      "class": "other"
     }
@@ -3412,7 +3400,7 @@
      [
       "2026-06-21 00:00",
       64,
-      73
+      72
      ]
     ],
     "mix": {
@@ -3691,7 +3679,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 47,
+   "items_24h": 48,
    "items_48h": 152,
    "outlets": 118,
    "kinds": [
@@ -3719,6 +3707,18 @@
      "outlet": "newsweek.com",
      "kind": "journalist",
      "url": "https://www.newsweek.com/6-month-old-girl-dies-in-ebola-outbreak-at-orphanage-as-cases-surge-12099039",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-21T01:08:15Z",
+     "title": "DR Congo reports 956 confirmed Ebola cases, 247 deaths",
+     "outlet": "Xinhua",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1SNFBIYU9nNHctTUZXWWtnWDhldUlJaTl0NGNfT3NSYjNaQU1aMDF6U1pKNkUxRElEVzFfVFB6LXMtTi1KNGFZRl9LU2tLNnpvMGdfQ0FGdVpMVjQwVmVJdjNERElvV1VjVWhnUXAtcVZkRkoycmd5cHZ4OEU?oc=5",
      "rel": 15,
      "coverage": {
       "non_mainstream": 1,
@@ -3780,18 +3780,6 @@
      "kind": "journalist",
      "url": "https://saharareporters.com/2026/06/20/least-30-persons-dead-dr-congo-displacement-camp-ebola-fears-grow",
      "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-20T18:45:00Z",
-     "title": "At least 30 deaths at Congo camp show Ebola could be spreading fast",
-     "outlet": "tribuneindia.com",
-     "kind": "journalist",
-     "url": "https://www.tribuneindia.com/news/world/at-least-30-deaths-at-congo-camp-show-ebola-could-be-spreading-fast-2/",
-     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -3859,18 +3847,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "TASS",
-      "ts": "2026-06-19T04:40:00Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "RU state media",
-      "items": 2
-     },
-     {
       "outlet": "Saptashwa TV",
       "ts": "2026-06-19T06:07:52Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -3921,6 +3901,14 @@
       "role": "echo",
       "motive_note": "TW regional press",
       "items": 1
+     },
+     {
+      "outlet": "Bangladesh Sangbad Sangstha (BSS)",
+      "ts": "2026-06-19T08:29:58Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": []
@@ -4167,8 +4155,8 @@
      ],
      [
       "2026-06-21 00:00",
-      38,
-      105
+      47,
+      118
      ]
     ],
     "mix": {
@@ -4213,7 +4201,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -4481,20 +4469,21 @@
     }
    ],
    "split": {
-    "a": "UNAMA confirms civilian deaths from Pakistan's strikes, including an attack on Kabul's Omid Addiction Treatment Hospital; India condemns the strikes.",
-    "b": "Pakistan says its strikes targeted militant infrastructure in Afghanistan used to stage cross-border terrorist attacks on Pakistani soil.",
+    "a": "Pakistan carried out cross-border airstrikes described as counter-terrorism operations targeting militant positions inside Afghanistan",
+    "b": "India, UNAMA, and Afghanistan document civilian deaths and a strike on a Kabul addiction treatment hospital, demanding accountability",
     "basis": "extracted from live headlines 2026-06-21",
     "axis_type": "factual_dispute",
-    "axis_question": "Did Pakistan's airstrikes in Afghanistan hit militants or kill civilians?",
+    "axis_question": "Did Pakistan's airstrikes target militants or hit civilian sites including a hospital?",
     "carriers": {
-     "a": [
+     "a": [],
+     "b": [
       {
-       "outlet": "Al Jazeera",
+       "outlet": "UN News",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQXIwSFhnUm43RV9PRUFkSEpyNU9qT3FVRmFPMnZfM014bldNemF5T3RmbERoUkd5eXZjdjQzaTg2YjRZSTF1YXpJNHBGSjVKdFBEdURfZEtHaGJDZkt5M18zVWdtWUpfWTNORTlYRGJkZjk3dTA3UjQwTTlKcVhFbTNKYjBIM1A0UzIzTzdIdTJESkxVMDBXclhYcE9qT3BFb2VWY3V0WTlJUlN0QWfSAbMBQVVfeXFMUHl6dmFpd2xOTjZMM09UaHYwTEZ1N29ZWEVKY1BzeC1ld1UtOWI1R29Ld3o3M3V0ZkJOUEV1eWVaNmZSSHBFUTdkRnMtOGNTRnVIWHF0TWdQc1MyR3M5ZWU4NW1tV1lSaS1pazZqQ3FoUEZEUmNua3EzSGhNejhfLU9JT25GUV80WTFBMzhPaXlrRnNBLW5wcG1YbkhlaXFOSDl4bldSSElJWjRfVlRRdlBiT2s?oc=5",
-       "ts": "2026-06-19T15:59:18Z",
+       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1HRFFPWmN1Rmk4UnBQTkthekhuQ29aWTRQQjBiUDJxRGd2YzhZYzltZUg3VVBQeWV1NVlwSlpuNGlxWERyNjRSZ2V4TC00RVFhNE1qU2JRQQ?oc=5",
+       "ts": "2026-06-19T17:25:24Z",
        "provenance": "original",
-       "motive_note": "Qatar state-funded international broadcaster"
+       "motive_note": "intergovernmental official record"
       },
       {
        "outlet": "News On AIR",
@@ -4511,17 +4500,8 @@
        "ts": "2026-06-20T11:47:44Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "The Rising Nepal",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KUmhSR3ZFWFpieVB0Ym9EZm9CS2Z2YzdoZVROUjBQcDVPcm9xUG90ZjRXOGIxcXdJSXNYc0JTVzV2cjdGTzIyMkVOMlltUVNCUTBYbGxn?oc=5",
-       "ts": "2026-06-21T00:02:53Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
       }
-     ],
-     "b": []
+     ]
     }
    },
    "scenarios": [],
@@ -4902,7 +4882,7 @@
      ],
      [
       "2026-06-21 00:00",
-      39,
+      40,
       79
      ]
     ],
@@ -4916,11 +4896,6 @@
     "first_seen": "2026-06-11T19:14:36Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-20T08:27:46Z",
-     "a": "Pakistan launched airstrikes into Afghanistan including Kabul; UNAMA confirmed casualties and India condemned a strike on a hospital",
-     "b": "Afghanistan's Defence Ministry claims it successfully struck designated targets in Pakistan, framing the operation as anti-ISIS action"
-    },
     {
      "captured_utc": "2026-06-20T09:20:53Z",
      "a": "Afghanistan says it struck ISIS-K terrorist sites inside Pakistan and foiled a Pakistani strike on Bagram Air Base",
@@ -4975,6 +4950,11 @@
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "UNAMA confirms civilian deaths from Pakistan's strikes, including an attack on Kabul's Omid Addiction Treatment Hospital; India condemns the strikes.",
      "b": "Pakistan says its strikes targeted militant infrastructure in Afghanistan used to stage cross-border terrorist attacks on Pakistani soil."
+    },
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "Pakistan carried out cross-border airstrikes described as counter-terrorism operations targeting militant positions inside Afghanistan",
+     "b": "India, UNAMA, and Afghanistan document civilian deaths and a strike on a Kabul addiction treatment hospital, demanding accountability"
     }
    ],
    "unknowns": [
@@ -5227,14 +5207,38 @@
     ]
    },
    "discovered": true,
-   "items_24h": 37,
-   "items_48h": 147,
-   "outlets": 68,
+   "items_24h": 39,
+   "items_48h": 146,
+   "outlets": 67,
    "kinds": [
     "journalist",
     "state media"
    ],
    "latest": [
+    {
+     "ts": "2026-06-21T04:11:22Z",
+     "title": "Russian missile attack on Poltava injures 11 people, including 5 children",
+     "outlet": "Kyiv Independent",
+     "kind": "journalist",
+     "url": "https://kyivindependent.com/russian-missile-attack-on-poltava-injures-11-including-5-children/",
+     "rel": 3,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-21T04:11:10Z",
+     "title": "Russia\u2019s West battlegroup destroys 49 drone control posts, two Starlink stations",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/defense/2149417",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-21T01:26:29Z",
      "title": "Three Russians hospitalized after accident in Republika Srpska - embassy",
@@ -5306,47 +5310,23 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-20T18:04:33Z",
-     "title": "Russia frees 24 Filipinos after Marcos talks with Putin",
-     "outlet": "Norwalk Hour",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPXzM3OVBlOEdrQVVSejY5aFVDYjZlQmFLbTVxTFVzcUJIV2JDdV9haTB0RzU0Q0diMmIzYkRRdHp3YkVxS09xNHRlSmhKZVhqUWhwTXE4bldhTHlKakZoQkw4UDhJTk1oUV85eGZhSzlwdGZJQUkxTE9nalU4VDFSWE9LeTk3NnZCU0pDUEZRSVNyUUNyQ1dTVS1UZW80eTNDczR5MkpjYU4?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-20T17:30:00Z",
-     "title": "Russia frees 24 Filipinos after Marcos talks with Putin",
-     "outlet": "baltimoresun.com",
-     "kind": "journalist",
-     "url": "https://www.baltimoresun.com/2026/06/20/russia-frees-24-filipinos-after-marcos-talks-with-putin/",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Germany says this is not the moment for Russia dialogue; the EU demands Turkey stop routing Russian gas to Europe.",
-    "b": "Slovakia's Fico says he won't miss his chance to meet Putin; thousands march in Berlin calling for peace with Russia.",
+    "a": "Slovakia's Fico says he won't miss dialogue with Putin; Philippines' Marcos secured prisoner release through direct Russia talks",
+    "b": "Germany says the moment to consider formats and participants for dialogue with Russia is inappropriate",
     "basis": "extracted from live headlines 2026-06-21",
     "axis_type": "policy_dispute",
-    "axis_question": "Should Western nations pursue dialogue with Russia while the Ukraine war continues?",
+    "axis_question": "Should countries engage in direct dialogue with Russia now?",
     "carriers": {
      "a": [
       {
-       "outlet": "Kyiv Independent",
+       "outlet": "ABS-CBN",
        "kind": "journalist",
-       "url": "https://kyivindependent.com/how-estonia-prepares-for-possible-russian-attack/",
-       "ts": "2026-06-19T18:10:23Z",
+       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUFU0TnZnQkcwTmxtUHNOVXlvdmk5SVJTVzE1WFNic2d3d3EyS3hwVDN3dU9DeWxMSVo4SnM5S05LTnVsdEFQeDY3NHJBd1VTb3kxS21iSm1ZVG9YVXZLN25Ja1ZTTXp2U3gxTjltU0xLaXpDRjlvOXFEVmVWR3dPX1ZUTlNLOEpRLXBPazd6NHRWSXB1Yy1rcElGYlZqWVVCMDFWN2ZETTB2QnN4cGt4OUMtT1JLWG81X3owamNLVQ?oc=5",
+       "ts": "2026-06-19T05:19:06Z",
        "provenance": "original",
-       "motive_note": "UA regional press"
+       "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
        "outlet": "TASS",
@@ -5357,10 +5337,18 @@
        "motive_note": "RU state media"
       },
       {
-       "outlet": "AAP News",
+       "outlet": "guardonline.com",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUzdjemZlR29YWW5JTk1KWkQ0TEw5M004NEk0YzJPVk5OT0JJY0JyR2RzZ1ppcExnVGsyTmFCM2dZeWNpcDh4bjE2c052NWlMbXVRX2tTZkNhWEFwclFFbGpvR0VnSUJSOTlIZ0M2YWFfU0RMWEY3VWNmSWdmTVZLSXVXSlh1Nko5SDNn?oc=5",
-       "ts": "2026-06-20T22:48:40Z",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdUpEVjN5SEpERUxCai1TMVJWZmtCejY4ejNzRThvc2FSYUVXeHA0MVdFUFN0XzhpNm93WEhnWGxhdkxsTzMtUkhJUHB4aFMtanRXSzRTcm1VUFFUSGZOZFhDWG55WTJzVkZRWFVPanpRQklsMmdES0xFdlJDc1FhaldoMU02eks1Z0J4RnNJLUlSX1FXemVJMEJCeUdNOFVMdklBUmZfTXR0QlJSVVN2Wi0wX3BDdFRUdFlkano2Y0hORV9HTUEwMktaVEluWEljQmZSVW8zNWRKVDBY?oc=5",
+       "ts": "2026-06-20T23:29:59Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Norwalk Hour",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPXzM3OVBlOEdrQVVSejY5aFVDYjZlQmFLbTVxTFVzcUJIV2JDdV9haTB0RzU0Q0diMmIzYkRRdHp3YkVxS09xNHRlSmhKZVhqUWhwTXE4bldhTHlKakZoQkw4UDhJTk1oUV85eGZhSzlwdGZJQUkxTE9nalU4VDFSWE9LeTk3NnZCU0pDUEZRSVNyUUNyQ1dTVS1UZW80eTNDczR5MkpjYU4?oc=5",
+       "ts": "2026-06-20T23:38:37Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       }
@@ -5381,46 +5369,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 62,
+    "outlets_timed": 61,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "en.qdnd.vn",
-      "ts": "2026-06-19T04:28:00Z",
+      "outlet": "The New Indian Express",
+      "ts": "2026-06-19T05:14:18Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "ABC News - Breaking News, Latest News and Videos",
-      "ts": "2026-06-19T04:43:43Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "GMA Network",
-      "ts": "2026-06-19T04:56:08Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "CGTN",
-      "ts": "2026-06-19T04:56:39Z",
-      "kind": "state media",
-      "role": "echo",
-      "motive_note": "CN state media",
-      "items": 3
-     },
-     {
-      "outlet": "asiaone.com",
-      "ts": "2026-06-19T05:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -5446,6 +5402,38 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "CN state media",
+      "items": 1
+     },
+     {
+      "outlet": "Nikkei Asia",
+      "ts": "2026-06-19T07:02:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "straitstimes.com",
+      "ts": "2026-06-19T07:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "SG press",
+      "items": 1
+     },
+     {
+      "outlet": "news.am",
+      "ts": "2026-06-19T07:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "A News",
+      "ts": "2026-06-19T07:40:32Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      }
     ],
@@ -5498,7 +5486,7 @@
    "sources": [
     {
      "outlet": "TASS",
-     "n": 47,
+     "n": 48,
      "class": "state-media"
     },
     {
@@ -5515,6 +5503,11 @@
      "outlet": "globalsecurity.org",
      "n": 5,
      "class": "other"
+    },
+    {
+     "outlet": "Kyiv Independent",
+     "n": 4,
+     "class": "regional"
     },
     {
      "outlet": "UNITED24 Media",
@@ -5535,11 +5528,6 @@
      "outlet": "Institute for the Study of War",
      "n": 3,
      "class": "other"
-    },
-    {
-     "outlet": "Kyiv Independent",
-     "n": 3,
-     "class": "regional"
     },
     {
      "outlet": "Th\u00f4ng t\u1ea5n x\u00e3 Vi\u1ec7t Nam",
@@ -5642,7 +5630,7 @@
      [
       "2026-06-21 00:00",
       42,
-      69
+      68
      ]
     ],
     "mix": {
@@ -5650,16 +5638,11 @@
      "state-media": 2,
      "regional": 2,
      "official": 0,
-     "other": 87
+     "other": 89
     },
     "first_seen": "2026-06-17T08:25:17Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-20T00:21:21Z",
-     "a": "Russia and ASEAN frame the Kazan summit as cooperative engagement on energy, trade, and regional security",
-     "b": "Critics say Russia is systematically buying cultural and political influence across ASEAN and Western institutions"
-    },
     {
      "captured_utc": "2026-06-20T01:18:55Z",
      "a": "ASEAN members including Singapore and the Philippines engage Russia at the Kazan summit as routine multilateral diplomacy.",
@@ -5714,6 +5697,11 @@
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "Germany says this is not the moment for Russia dialogue; the EU demands Turkey stop routing Russian gas to Europe.",
      "b": "Slovakia's Fico says he won't miss his chance to meet Putin; thousands march in Berlin calling for peace with Russia."
+    },
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "Slovakia's Fico says he won't miss dialogue with Putin; Philippines' Marcos secured prisoner release through direct Russia talks",
+     "b": "Germany says the moment to consider formats and participants for dialogue with Russia is inappropriate"
     }
    ],
    "unknowns": [
@@ -5969,7 +5957,7 @@
    },
    "discovered": false,
    "items_24h": 30,
-   "items_48h": 86,
+   "items_48h": 88,
    "outlets": 44,
    "kinds": [
     "journalist",
@@ -6138,7 +6126,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 41,
+    "outlets_timed": 42,
     "outlets_unplaced": 0,
     "chain": [
      {
@@ -6179,7 +6167,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "TW regional press",
-      "items": 29
+      "items": 31
      },
      {
       "outlet": "Social News XYZ",
@@ -6258,7 +6246,7 @@
    "sources": [
     {
      "outlet": "Taipei Times",
-     "n": 18,
+     "n": 20,
      "class": "other"
     },
     {
@@ -6527,7 +6515,7 @@
      [
       "2026-06-21 00:00",
       32,
-      45
+      44
      ]
     ],
     "mix": {
@@ -6535,7 +6523,7 @@
      "state-media": 1,
      "regional": 1,
      "official": 0,
-     "other": 55
+     "other": 56
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -6879,8 +6867,8 @@
    },
    "discovered": true,
    "items_24h": 18,
-   "items_48h": 38,
-   "outlets": 16,
+   "items_48h": 37,
+   "outlets": 15,
    "kinds": [
     "journalist",
     "state media"
@@ -6984,23 +6972,37 @@
     }
    ],
    "split": {
-    "a": "A US-backed plan demands Hezbollah disarm as a precondition for ceasefire stability in Lebanon.",
-    "b": "Hezbollah vows to retain arms and armed resistance until Israeli forces withdraw from all Lebanese territory.",
+    "a": "Press TV and journalists report Israeli strikes continue killing civilians in southern Lebanon despite a renewed ceasefire agreement",
+    "b": "TASS reports Israel's government formally ordered its army to cease fire in Lebanon while remaining in position",
     "basis": "extracted from live headlines 2026-06-21",
-    "axis_type": "policy_dispute",
-    "axis_question": "Must Hezbollah disarm, or does it keep arms while Israel occupies Lebanon?",
+    "axis_type": "factual_dispute",
+    "axis_question": "Are Israeli forces continuing strikes on Lebanon in breach of the ceasefire?",
     "carriers": {
      "a": [
+      {
+       "outlet": "NYT World",
+       "kind": "journalist",
+       "url": "https://www.nytimes.com/2026/06/20/world/middleeast/israel-hezbollah-fighting-cease-fire.html",
+       "ts": "2026-06-20T15:43:28Z",
+       "provenance": "original",
+       "motive_note": "US press"
+      },
+      {
+       "outlet": "BBC World",
+       "kind": "journalist",
+       "url": "https://www.bbc.com/news/videos/c8r2pyv3e2po?at_medium=RSS&at_campaign=rss",
+       "ts": "2026-06-20T16:37:03Z",
+       "provenance": "echo",
+       "motive_note": "UK public broadcaster"
+      },
       {
        "outlet": "Taipei Times",
        "kind": "journalist",
        "url": "https://www.taipeitimes.com/News/front/archives/2026/06/21/2003859463",
        "ts": "2026-06-21T08:00:00Z",
-       "provenance": "original",
+       "provenance": "echo",
        "motive_note": "TW regional press"
-      }
-     ],
-     "b": [
+      },
       {
        "outlet": "Press TV",
        "kind": "state media",
@@ -7009,6 +7011,16 @@
        "provenance": "unplaced",
        "motive_note": "IR state media"
       }
+     ],
+     "b": [
+      {
+       "outlet": "TASS",
+       "kind": "state media",
+       "url": "https://tass.com/world/2149349",
+       "ts": "2026-06-20T19:14:41Z",
+       "provenance": "original",
+       "motive_note": "RU state media"
+      }
      ]
     }
    },
@@ -7016,22 +7028,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 15,
+    "outlets_timed": 14,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "vijesti.me",
-      "ts": "2026-06-19T04:51:06Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "TRT World",
       "ts": "2026-06-19T06:23:18Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "TR state-funded broadcaster",
       "items": 1
      },
@@ -7082,6 +7086,14 @@
       "role": "echo",
       "motive_note": "US press",
       "items": 3
+     },
+     {
+      "outlet": "CGTN",
+      "ts": "2026-06-19T13:00:16Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "CN state media",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -7280,11 +7292,6 @@
    },
    "drift": [
     {
-     "captured_utc": "2026-06-20T11:21:31Z",
-     "a": "Hezbollah vows to retain its weapons until Israeli forces end their occupation of Lebanese territory",
-     "b": "A US-backed international plan requires Hezbollah's full disarmament as a condition for lasting peace"
-    },
-    {
      "captured_utc": "2026-06-20T15:15:53Z",
      "a": "Hezbollah vows to retain weapons until Israeli occupation ends, framing any disarmament plan as a US-backed imposition on Lebanese sovereignty",
      "b": "The US-backed ceasefire framework requires Hezbollah to disarm; Israel says military operations will continue while Hezbollah stays armed"
@@ -7338,6 +7345,11 @@
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "A US-backed plan demands Hezbollah disarm as a precondition for ceasefire stability in Lebanon.",
      "b": "Hezbollah vows to retain arms and armed resistance until Israeli forces withdraw from all Lebanese territory."
+    },
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "Press TV and journalists report Israeli strikes continue killing civilians in southern Lebanon despite a renewed ceasefire agreement",
+     "b": "TASS reports Israel's government formally ordered its army to cease fire in Lebanon while remaining in position"
     }
    ],
    "unknowns": [
@@ -7377,14 +7389,94 @@
     "war"
    ],
    "brief": {
-    "generated_utc": "2026-06-20T15:13:53Z",
-    "sentence_count": 18,
+    "generated_utc": "2026-06-21T05:10:28Z",
+    "sentence_count": 20,
     "dropped_count": 0,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "The UN human rights chief warned of impending atrocities as the Rapid Support Forces militia closes in on El Obeid in Sudan.",
+        "text": "The UN Security Council warned of an imminent risk of mass atrocities in Sudan as Rapid Support Forces closed in on El Obeid.",
+        "cites": [
+         {
+          "outlet": "Eurasia Review",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSzFibU9vVW8yWEhONzZsN0tXdUszQnpxWnludmUtX2p5LTE5SlJXNWNHVHVtNmpwcURUbTlxUjRXNGRLc0xlMXJLdHdEUjVtaVlxQnhQWGhISkZkQjhQQVVxbEZsQ3ZkQWFzOGhtcXVrX1I3aE9NRmlBdXhncHZVMzdOLTZRYzZ3Ym5Pa1NFaXFxbmRIZ1ZfdUNLSGllYlIwNm85VmdNLU9YUQ?oc=5",
+          "ts": "2026-06-20T22:23:29Z",
+          "title": "UN Security Council Warns Of Mass Atrocity Risk In Sudan\u2019s El Obeid"
+         },
+         {
+          "outlet": "UN News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE91NmZrelp6VTZoWE8xV05IRk1nanN2LUEzQUZWQnBzcXk0dHlmVWlfR25kSXpvVGlqRm1PWkhRdnpJTTBEV294czFtakwxcm5zV2JmenpPYw?oc=5",
+          "ts": "2026-06-20T20:21:20Z",
+          "title": "Sudan: Security Council warns of mass atrocity risk in El Obeid"
+         },
+         {
+          "outlet": "UN News - Global perspective Human stories",
+          "kind": "official record",
+          "url": "https://news.un.org/feed/view/en/story/2026/06/1167773",
+          "ts": "2026-06-20T12:00:00Z",
+          "title": "Sudan: Security Council warns of mass atrocity risk in El Obeid"
+         }
+        ]
+       },
+       {
+        "text": "The Council demanded the RSF halt its assault on the city amid mass atrocity fears.",
+        "cites": [
+         {
+          "outlet": "Arab News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE04UHRUdUVoNWFMNVRsWXdrVG8xOE5wRm1OMDh0dlJVcG94MmhXYkhDWWZ1NjVMcWVMQjVSYmc4NXNOaTliSUF4anBySl8wRkZCZ01z?oc=5",
+          "ts": "2026-06-20T19:31:23Z",
+          "title": "UN Security Council demands RSF halt assault on Sudan\u2019s El Obeid amid mass atrocity fears"
+         },
+         {
+          "outlet": "Arab News PK",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFAxZWhRNGpNSU9IR3JvNjNRQmJNVDBkTW9HUDJYZVhrMV9hUm9HZFB0VkQxX1ZaLU83WlJCalB4bFdGZHdZbmdIU0lwbUR2TURsT1gyWGVqeEF6WEx6?oc=5",
+          "ts": "2026-06-20T19:06:17Z",
+          "title": "UN Security Council demands RSF halt assault on Sudan\u2019s El Obeid amid mass atrocity fears"
+         }
+        ]
+       },
+       {
+        "text": "The Council was alarmed by the paramilitary RSF surge around El Obeid.",
+        "cites": [
+         {
+          "outlet": "Anadolu Ajans\u0131",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSmtwQy04bVFHVHQ4bG9fdF9GdDZKTkZSd1N0bVJWSnVNTUZWVU5GVFN6Q3RVMEtPclpXMGVWSFlMTUh5MTNSNXZpVERkSy1LYUVUZ1FlR1VLWXBBVlgtc3FjbzNLdE4wODVpeUhXVHJ3aFBEYVpELUU3cmFRX1NubEZGUUgzWFFJa3VnRlNiRVVvamYzRklNTVZGY0czX2g0MTM1Z0NCZEZMOXdNaFlHN2E3QzFIQUNhRzhFU2pR?oc=5",
+          "ts": "2026-06-20T20:27:31Z",
+          "title": "UN Security Council alarmed by paramilitary RSF surge around Sudan's El Obeid city"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The UN human rights chief said 'stop the madness in Sudan' as Rapid Support Forces encircled El Obeid.",
+        "cites": [
+         {
+          "outlet": "Arab News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MRW13QVp2TjF6Z09tSWp3RTFsaXlqcXNmcTlfbkJFWWlKSExGVm9TbjhsVHYxZi1saXBJMGhtUkFwTjJDQzlHNnFMai1xNnFnVjZrRjFLSkNTN2FUTVE?oc=5",
+          "ts": "2026-06-19T05:29:53Z",
+          "title": "Stop the madness in Sudan, says UN human rights chief as Rapid Support Forces encircle El-Obeid"
+         },
+         {
+          "outlet": "Arab News PK",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4yc181RG1tcmdQa0l5VDRUY1A3RHZuWHZDc0llWW1RbUJHRVBEVkFySm1aVlkyVjFiVGtJZHBLcmg1RmpuaVdCLTFVYmNpeVJOVUw3cWd3NEVaSUoz?oc=5",
+          "ts": "2026-06-19T01:54:44Z",
+          "title": "Stop the madness in Sudan, says UN human rights chief as Rapid Support Forces encircle El-Obeid"
+         }
+        ]
+       },
+       {
+        "text": "The rights chief warned of impending atrocities as the militia closed in on El Obeid.",
         "cites": [
          {
           "outlet": "UN News",
@@ -7396,7 +7488,7 @@
         ]
        },
        {
-        "text": "The UN envoy urged the RSF commander to halt the escalation around El Obeid.",
+        "text": "A UN Sudan envoy urged the RSF commander to halt escalation around El Obeid.",
         "cites": [
          {
           "outlet": "Sudan Tribune",
@@ -7404,27 +7496,18 @@
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KYTFlaHJFVUIxeUNnTkstU001ZHBpeFAzejlKNzRnTDhGeGxmaGJiaEk0Z19JRHVyY3lwZVJVeUdFSjRCN0l5cG1IMURHZUh6?oc=5",
           "ts": "2026-06-19T23:00:10Z",
           "title": "UN envoy urges RSF commander to halt escalation around Sudan\u2019s El Obeid"
+         },
+         {
+          "outlet": "Ahram Online",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZGwwNU83dWhHNlVZemFLaVkwdERzQ0pONUtkUEVHNFVBSkFvd3E1V1N6UHh4WWowVHdyMGVuR3ZJMTFmamhPWG5ReVA2bWlWNVFqR0ROSC1JeUhiS2dOXy1Bdmh5ZkJKelBmaGNtZGgxMjY4TzY5aDdIZmxvNnZnaHVNSnBOeHFRUENNVTJNRy1xd0pCZHJLb2xxeFg1am1WM295dFNPMGZDenpJcjhpMlhIQ0JQdUpacnFEWW5Md0NOTHQ1RVEtYg?oc=5",
+          "ts": "2026-06-20T10:29:06Z",
+          "title": "UN Sudan envoy urges paramilitaries to halt El-Obeid assault - War in Sudan - World"
          }
         ]
        },
        {
-        "text": "The UN chief said he was alarmed by the military buildup in El Obeid.",
-        "cites": [
-         {
-          "outlet": "The Eastleigh Voice",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMVRRTEdZeVdVMjg2WkFjSlVLSTBOTlBIZURiVG1sckNYbnJ3MVgxMXdkc0Y2SU91cFhXQlk2V3lXOGdsRFNvX2k3Y0lwV2NxY2RwVm9KY3A0ZDBXby1BV044cUVJVWxVTkpQQ0NqT2ZhY2lJQ05pUmwzcVFwRC0yVm1ldnlINDU1emt2UGRLcGpwdXRnd0dkckxMeWhHbHJ5c1lUNnBOTm0?oc=5",
-          "ts": "2026-06-19T19:27:43Z",
-          "title": "UN chief alarmed by military buildup in El Obeid, Sudan"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The UN called on the RSF to cease an imminent offensive on el-Obeid.",
+        "text": "The UN called on the RSF to cease an imminent offensive on El Obeid.",
         "cites": [
          {
           "outlet": "Middle East Eye",
@@ -7432,30 +7515,13 @@
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS0pORFc3VGdWbzJHVGR3eVdWYkFxcDNqbUZRdW5SSTNFeDZSQi1PbzFfeE9MSUdfdXdNdi1QVkQtem41dmJOb1o1Wk5jY2NXNUFGZnNpYXFWb0JRMFF1ZDBWU1hVVzlaZW5pQlZyVU9RS3ZnNWV5ZHhwbTNZd09LR0dtQnl6Z2lsSkJZX1dUeVdLUQ?oc=5",
           "ts": "2026-06-19T18:22:57Z",
           "title": "UN calls on RSF to cease imminent offensive on Sudan\u2019s el-Obeid"
-         }
-        ]
-       },
-       {
-        "text": "Medics report that RSF shelling has crippled medical facilities and water stations in El-Obeid.",
-        "cites": [
+         },
          {
-          "outlet": "Anadolu Ajans\u0131",
+          "outlet": "NST Online",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcDFHd1k3cEZsSkNmTHhwMTlqM2dSb3VHNDFDOElOdk03Y3ZIQTJIQ3daa0F4ejYxRUdGYzI0UTdmUk52TVV2V3llUDVtUU1vWUFSd1k4YUwzWjRaTmZmbS1wczVvNEFsU3ZzUXJaakxQWVZudTI5NXp4UGVtWHVvWjhSR0daZ3dhdjNhNlYzajN6TG1oMmtDNnduejVKTGJycGZJQ3VSMmE5M2RJaDgxVHZHcDFhZ0dZYVQyc0wwLUkzOTg0WUE?oc=5",
-          "ts": "2026-06-19T17:06:51Z",
-          "title": "RSF shelling cripples medical facilities, water stations in Sudan\u2019s El-Obeid: Medics"
-         }
-        ]
-       },
-       {
-        "text": "Norway warned that up to half a million people are at risk as the RSF advances on Al Obeid.",
-        "cites": [
-         {
-          "outlet": "The National",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPS2E3Y2JLTWVQY3pkSHpyeHZPZm9VYzBGSTIweHBmam9tWV8yQzJRejBjUk9TbTNDR1lYZlBSS0QwR0NDM2tUTnN0ZmRuWnQ0OXhLY1ZxTm5FcHRiWHppZnVpd1l3SE9DT21YUERCZk91MGxfVXE3aG1YcnBaenRSdW9aV3VKWkVwUGU0UDNhODd2eFJ1eDBwZlNHb3MtRC15Ulh0aFllUXJuUmNibl94OFc0b3RKZWp4bTFLbndpaFlYcmZZblR6UFZpaTU?oc=5",
-          "ts": "2026-06-18T16:11:25Z",
-          "title": "Up to half a million at risk as Sudan's RSF advances on Al Obeid, Norway warns"
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTnRSUkp0WTBSOTRnT2hFRFdaNy1GTHU0ak5aNWs1azNOZFpEM0FCeXE2dUdZeTdYWXo0SmFsS1I3SUdqeHJUeFI0UEpPZWNVV3N3QllKNzdoSVNJejVfOHRGNHNHR1dlY00xeEc1Y3JUS1hkTHczdDNaVVFsOF83MlZRemx0ZXhlRjZxOGp3aUlfTXBQZjBYLURkc9IBoAFBVV95cUxQZFdmeGNkYndSR0lfbkV5aWpJVjdJTEhBRmtSeW1rWHdUT3VtVUlhRXo0MW5IZnFaMTdrb0tmTjFlald4X01SRER6cmV5WXJkOU9WQmNhQzZpQTJ6X3FKM0Q3RjNTNWpPN0RlUU9LWTRLR0VGMWtHNmNyTjhKb3dHMkVNX21sYklqYmJVY3NnRlJBMzU1WWhLcTZIZ1NUY3hZ?oc=5",
+          "ts": "2026-06-19T00:00:23Z",
+          "title": "UN demands RSF halt 'imminent offensive' in Sudan"
          }
         ]
        }
@@ -7464,7 +7530,7 @@
      {
       "sentences": [
        {
-        "text": "At least 29 countries raised alarm about atrocities in el-Obeid.",
+        "text": "At least 29 countries raised alarm about atrocities in El Obeid.",
         "cites": [
          {
           "outlet": "Al Jazeera",
@@ -7476,19 +7542,7 @@
         ]
        },
        {
-        "text": "Western countries warned of atrocities and imminent RSF escalation in al-Obeid, according to Reuters.",
-        "cites": [
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObGNQZjM2WXd2NVlVM2xxRGNCNUtqWlM0aUFOc3Qtc25wNzREVFJlQkVTU3BMWHVfdTdZakVrMy03T3FqdlVpeVN6eUdBV2UtYndGNU9pcG5ob3hRbmhEdTR6OC1HYW1HNmQ5c0RRV0QtblllSExEeUdiY3pSMHVpTE45UFdKYm93ampwNW1uSm93WHJ5Q05MQ29ZM0hMTUIwNWxseHBhUlhPaXVuZ3ZyaWRjb09FV0M3a2xwcDZXemh3MHQ4U2wzRUtzbFNFVlU?oc=5",
-          "ts": "2026-06-18T16:16:15Z",
-          "title": "Western countries warn of atrocities, imminent RSF escalation in Sudan's al-Obeid"
-         }
-        ]
-       },
-       {
-        "text": "Dozens of countries warned of atrocities amid the escalation in el-Obeid.",
+        "text": "Dozens of countries warned of atrocities amid escalation in El Obeid.",
         "cites": [
          {
           "outlet": "Al Jazeera",
@@ -7498,13 +7552,115 @@
           "title": "Dozens of countries warn of atrocities amid escalation in Sudan\u2019s el-Obeid"
          }
         ]
+       },
+       {
+        "text": "Norway and Australia warned of looming RSF attacks in Sudan.",
+        "cites": [
+         {
+          "outlet": "AAP News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVjBCekwtVDJQTVhySzBjYndIOG40Vmc0X2labHJqWVg0QjNSY3FQa2RiSE5Lb19MODE5NUJPdE1aM1pzNnk4SGs2cURSQnUtSVBISkNYSGtkbjdjTVY3ajBzTlNuTGJUeFNBLWlxVU8tUUxWdkc0RzA0eExzOVlFZ1JGUG1nekthU0F2aTBB?oc=5",
+          "ts": "2026-06-18T20:56:24Z",
+          "title": "Norway, Australia warn of looming RSF attacks in Sudan"
+         }
+        ]
+       },
+       {
+        "text": "Western countries warned of an imminent RSF assault on El Obeid.",
+        "cites": [
+         {
+          "outlet": "The Eastleigh Voice",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQUdjdnNwbENtb1pzV0VSWXlQNjVuUWZYdUNXemY1LUliaFlscFFZVlBVVDRiQmU0S2praU9MdUtRNGRCbEVweDBsa2tfbXVqOG0zX1c0aUhrM0ZlNDJfWXIzZW9CYzlHUWZFQTBhc3FSVnB3SS1iVHVjSXMzSVUzUVRzZkRsQ0pPUTVkRnFkZTlWRnA5X0xna2F5LVFMM1JaemphTU5PSGlnNTRpOGVF?oc=5",
+          "ts": "2026-06-18T19:50:19Z",
+          "title": "Western countries warn of imminent RSF assault on Sudan\u2019s El-Obeid"
+         },
+         {
+          "outlet": "sightmagazine.com.au",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPc1dwbWk3TFczZks1YWxJWWwxdTJ5cmdtRDQ0TmQ4cmp3aHhobV9RYXllZzljbm95b1pOZ1lRMFJwYVlrM3pqN0tIZ0RTc2R1bEgtUEVGUUJjX1ZnZ0V5eXMxNHdmSTdYaWdOcnNmQ3l5a0o0eFBEM0pDWUMyYVJ2cTREVVRHYW1qaHZWNVlKYmtFTk9wclJqYl9pd1FzWWFhQUtqRjVpU0NnOTdqX3VBdHY3bVE?oc=5",
+          "ts": "2026-06-19T00:26:07Z",
+          "title": "Western countries warn of atrocities, imminent RSF escalation in Sudan\u2019s al-Obeid"
+         }
+        ]
+       },
+       {
+        "text": "The UN and EU feared mass atrocities in El Obeid after the El Fasher massacre.",
+        "cites": [
+         {
+          "outlet": "Daily Post Nigeria",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNc0ZlMlZsSUJRb0I2UDFsTGhzU2QtU2JzNFRLQ0hENGpZeGxLS2VUYkhPZlZlMElXcG1wSGdaRlhVWF80d0N4VmJTSURIM2tlSEs3WFllUGF5a2FkSmdfLW5FcXozTE1yc2xjcmpFYThRQm5fQlUzY0NkSktnVW5QVDVsOGFpbjZuRzdySlBGRVdfVjVOT3RCNVdqOGlDMG4xUVlmSw?oc=5",
+          "ts": "2026-06-20T21:42:52Z",
+          "title": "Sudan: UN, EU fear mass atrocities in El Obeid after El Fasher massacre"
+         }
+        ]
        }
       ]
      },
      {
       "sentences": [
        {
-        "text": "Sudan's UN envoy called for the designation of the Rapid Support Forces as a terrorist group and legal action over genocide.",
+        "text": "Medics reported that RSF shelling crippled medical facilities and water stations in El Obeid.",
+        "cites": [
+         {
+          "outlet": "Anadolu Ajans\u0131",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcDFHd1k3cEZsSkNmTHhwMTlqM2dSb3VHNDFDOElOdk03Y3ZIQTJIQ3daa0F4ejYxRUdGYzI0UTdmUk52TVV2V3llUDVtUU1vWUFSd1k4YUwzWjRaTmZmbS1wczVvNEFsU3ZzUXJaakxQWVZudTI5NXp4UGVtWHVvWjhSR0daZ3dhdjNhNlYzajN6TG1oMmtDNnduejVKTGJycGZJQ3VSMmE5M2RJaDgxVHZHcDFhZ0dZYVQyc0wwLUkzOTg0WUE?oc=5",
+          "ts": "2026-06-19T17:06:51Z",
+          "title": "RSF shelling cripples medical facilities, water stations in Sudan\u2019s El-Obeid: Medics"
+         },
+         {
+          "outlet": "Anadolu Ajans\u0131",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOXFFSENCYkRzeGtkV0g0bjRNdHpHa0JwZVRpd2FqOWlOc3h2bTFIeUJvZG9oQnZrSmI2ck8zM0pmY1dpUXhvZ3hGQ3AwRkVDSUhNdUM4aDNNdGtvWlp0NGN3V0xkWmlKelNyZWxwaGVkbkdaa0NtMnRwNGJKbzh3VEsxNmtFT0tjSTdhZWxyWjFQaW1HN3phUXpQenFPaDJzbFpxRE8xUGt4aV9UT2JTSjdZMloySjBMVTZxRV9jMGo?oc=5",
+          "ts": "2026-06-19T17:06:44Z",
+          "title": "RSF shelling cripples medical facilities, water stations in Sudan\u2019s El-Obeid: Medics"
+         }
+        ]
+       },
+       {
+        "text": "A report said an RSF drone strike killed nine civilians in North Darfur.",
+        "cites": [
+         {
+          "outlet": "Anadolu Ajans\u0131",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZXZ2VnhCOUJhLUo2ejdOWVZ4dFRMeDZvdkREWThIVmc4VjhlUl8zZ0t3eG1RSng4bm1iRFFZdmJiWGhQdDZRdF9LOUpJc01zTkVoRjVhdnNSdHBZUk5SZHRwS21DNXd1MkhocTd1UUtCMEdSQWl4U1Y2X1ctdjBUdzdONmd2a2NVTFVCSG1QSVlQR1FSeEhGSjVHaF9zMTFnT0Z0eA?oc=5",
+          "ts": "2026-06-19T16:45:19Z",
+          "title": "RSF drone strike kills 9 civilians in North Darfur: Report"
+         }
+        ]
+       },
+       {
+        "text": "Thousands of RSF fighters were deployed around El Obeid as the military braced for an offensive, while RSF forces torched villages and killed civilians in Zaghawa lands.",
+        "cites": [
+         {
+          "outlet": "\u0645\u062f\u0649 \u0645\u0635\u0631",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPZmpSVGJiOFNBT0RKLTl2ZjNqXzdGWVRVSllLeEJ2NnlKMVNxWWhKaHBPU2tkQWttMndjOUJhOVJMdWlrandSZkZIeEpSLWtYNmNkSXlmMUo1ZHhzdlVCNDJlSWFJeWZ2MTVtMkwxNHIwcGxZRlUxNmQyb1diLWNHeHEzRTUzYU83dU1hLVhZOXd6dGVGQnk0Q2ZINEVNaFg3c29UZ0dESlJfX3Y1V0JsQlE4OWlmQ0pnR0lGaFpkY2liaWlheDlEMWlIanBFZWdaTS1raENva05NdzFCODUxcTRMTXVjeXFSRWxIakNXVUFwTUF1N2ZQQy1LNEU1S2FNbUtzQ2RhVFRmNTFtdnY3Z1RxVWZldnZtTnZNOTRTR2didFplOEkydHh3UjlWNTRPT25wSVNQSFMxZUtVdENETHF2T3F0T3lNWWY1NUZ3T1lidkUybFQwcGdHY0o?oc=5",
+          "ts": "2026-06-20T12:28:10Z",
+          "title": "Sudan Nashra: Arrest of Beni Halba leader triggers new escalation in tribal war with Salamat | Thousands of RSF fighters deployed around Obeid, military braces for offensive | RSF torches villages, kills civilians in Zaghawa lands | Senior Hemedti advisor defe"
+         }
+        ]
+       },
+       {
+        "text": "EL PA\u00cdS reported that Latin American mercenaries are fighting with Sudan's paramilitaries amid the civil war.",
+        "cites": [
+         {
+          "outlet": "EL PA\u00cdS English",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaVE2ZjBrUE9iVUtyb2hXaElvSEFxMlFGS2Y3RHNfaGh1UGhzclptUlpZcEpIMkQyVGN1cHpleWJfb1J3QjY0NzdmUmg3RERIdVlrTG15Qmhubk9KU3BiM0JFaGtKZ3lEU0RzUWd4YTdnMVR1STFWOGJmMDdhUjZHYXJLZDZ3eEhoS212cVhhUnd2X1JHWTE2dUJQcE5hd2hsMHNJRzdVN2M5NWw5cDRBQzlqaFVGenJJckJpSnNtT01FTnJWSVAzenZid9IB3wFBVV95cUxPdzNHS0Nqdk5oLUFZNEwtUTd2dmo1QW5tQ0d2S18tenAzekl0Q0Z4dDAtdTQwaFNVS1FxNVpOQUh4a3F5YjgxejBsd3I0VnRfeE41SkI1QVhHc290VWFBYlFwZnZuMm5mQ0hSZmh3TjhQTjFwSEtzUmpsQi1pS090RmMtdmFIbzRoTVAzcnJNZFhLdklaenN1MUhBTnVQV2RPYWFxZ250Qm1YNXgtUktHSWJ5UVlTUGt0bFZ5NHpCUHd5X0g5b3IwakdWdHpuZzVUc2t1bGhpeXdQQXM1clFN?oc=5",
+          "ts": "2026-06-20T03:30:00Z",
+          "title": "Latin American mercenaries fight with Sudan\u2019s paramilitaries amid civil war"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Sudan's UN envoy called for the designation of the Rapid Support Forces as a terrorist group and legal action over what he described as 'genocide'.",
         "cites": [
          {
           "outlet": "Arab News PK",
@@ -7528,7 +7684,7 @@
         ]
        },
        {
-        "text": "Defections are shaking Sudan's RSF and threatening the cohesion of the Tasis Alliance, according to Asharq Al-Awsat English.",
+        "text": "Asharq Al-Awsat reported that defections have shaken Sudan's RSF and threatened the cohesion of the Tasis Alliance.",
         "cites": [
          {
           "outlet": "Asharq Al-Awsat English",
@@ -7538,53 +7694,9 @@
           "title": "Defections Shake Sudan\u2019s RSF, Threaten Cohesion of Tasis Alliance"
          }
         ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The New Arab reports that Egypt attacked Sudanese gold miners as fears grow for al-Obeid.",
-        "cites": [
-         {
-          "outlet": "The New Arab",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQczhQVUtPVG5OeGgzRzRqRlBheW9fbFp5aHFzTGZBR2FYdHFEZVB6bU9hWl9ybzBfX1JxdERSRFVDaTBhZW1qclFUbWc5OGcwbVBXc1JiVDJLN3VPWkFPY3RDc0VhdUJxdGpHZjFYOThnRmpxeHFkaDNYRkxFUFNjTFlBMERZVEF5MkdiRWhRWGrSAZABQVVfeXFMUHM4UFVLT1RuTnhoM0c0akZQYXlvX2xaeWhxc0xmQUdhWHRxRGVQem1PYVpfcm8wX19ScXREUkRVQ2kwYWVtanJRVG1nOThnMG1QV3NSYlQySzd1T1pBT2N0Q3NFYXVCcXRqR2YxWDk4Z0ZqcXhxZGgzWEZMRVBTY0xZQTBEWVRBeTJHYkVoUVhq?oc=5",
-          "ts": "2026-06-18T16:57:35Z",
-          "title": "Egypt attacks Sudanese gold miners as fears grow for al-Obeid"
-         }
-        ]
        },
        {
-        "text": "EUobserver asks why the EU is not calling out the UAE for its role in the Sudan crisis.",
-        "cites": [
-         {
-          "outlet": "EUobserver",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNY0NHN1ZRWEVMc2VQYjV1My1ERmxzUjcxOTNYbkZLcHViTUhEV3ZBSmZ1elJNTnNwQm1yUzVjR1JQdm9GZE1XMkxrdS1pdjQ0Z2liSm43d1dZbHJhREg2SDN0NUpCem11eHBya25UU3dwaFl1aGZIZWUyZF9zYW5odWZUVFV6NFdlQVk3MW1JczV6TC0zQ3llcmxPcjktWkJL?oc=5",
-          "ts": "2026-06-18T15:00:00Z",
-          "title": "Why isn\u2019t the EU calling out the UAE for its role in the Sudan crisis?"
-         }
-        ]
-       },
-       {
-        "text": "The EastAfrican reports on how easing Gulf tensions could revive Sudan's peace efforts.",
-        "cites": [
-         {
-          "outlet": "The EastAfrican",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTEpPdmluWWVwY3Vyb2JhM1F1Nnp5d1pseUpVOElpX1NhM29Ib29lQkY3M1RSV0UzaE1KNzhZYTRGV0lsSFVPZEhhU0hudlJDcHEyQTNRdFhLMDcwRmgwXzhDa2hyQV9BVFlFU21ueEJDLWNranVzZTVvdXBEVlZjLTNTNlBXbmZUQ1BzTzlLbEJYUURlMkRWVXJ5NGdGOFBJTTB0dTkyb2wxeEtnam83UDNOdjgyaC1DUm9sQklR?oc=5",
-          "ts": "2026-06-18T11:30:00Z",
-          "title": "How easing Gulf tensions could revive Sudan\u2019s peace efforts"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Al Jazeera reports that a Sudanese journalist was denied a UK visa to collect a prestigious award.",
+        "text": "Al Jazeera reported that a Sudanese journalist was denied a UK visa to collect a prestigious award.",
         "cites": [
          {
           "outlet": "Al Jazeera",
@@ -7594,44 +7706,32 @@
           "title": "Sudanese journalist denied UK visa to collect prestigious award"
          }
         ]
-       },
-       {
-        "text": "Devdiscourse reports that a Vietnamese man deported to South Sudan by the US has left for home.",
-        "cites": [
-         {
-          "outlet": "Devdiscourse",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM2toMEZHd2dmYWdfbVNNN0Y2OU82ajJPaUI0X0g0R2JLVHhwV3l3Xy0taVplZmhLUXhzOEhuOG1PQnpzXzctYVFzWExFZ2VwanFaZlRheFV0V3EtSGhaYUIyaEJJS2RsWENIN010aEp4VUYtWnNnNENpMnMtek9EbXVnNDRaSTVyVmVkd003OUJ3RXVoN2l5Nk00SHNwZXUwY01VWEdUV1VlMHFlVkx1bDBraVNYNW9tNVHSAboBQVVfeXFMUDNraDBGR3dnZmFnX21TTTdGNjlPNmoyT2lCNF9INEdiS1R4cFd5d18tLWlaZWZoS1F4czhIbjhtT0J6c183LWFRc1hMRWdlcGpxWmZUYXhVdFdxLUhoWmFCMmhCSUtkbFhDSDdNdGhKeFVGLVpzZzRDaTJzLXpPRG11ZzQ0Wkk1clZlZHdNNzlCd0V1aDdpeTZNNEhzcGV1MGNNVVhHVFdVZTBxZVZMdWwwa2lTWDVvbTVR?oc=5",
-          "ts": "2026-06-19T10:32:19Z",
-          "title": "Vietnamese man deported to South Sudan by US leaves for home"
-         }
-        ]
-       },
-       {
-        "text": "The UK warned South Sudan that the status quo is not an option, according to Radio Tamazuj.",
-        "cites": [
-         {
-          "outlet": "radiotamazuj.org",
-          "kind": "journalist",
-          "url": "https://www.radiotamazuj.org/en/news/article/uk-warns-south-sudan-status-quo-is-not-an-option",
-          "ts": "2026-06-18T14:00:00Z",
-          "title": "UK warns South Sudan :  Status quo is not an option"
-         }
-        ]
        }
       ]
      }
     ]
    },
    "discovered": false,
-   "items_24h": 12,
-   "items_48h": 25,
-   "outlets": 19,
+   "items_24h": 13,
+   "items_48h": 26,
+   "outlets": 20,
    "kinds": [
     "journalist",
     "official record"
    ],
    "latest": [
+    {
+     "ts": "2026-06-21T04:18:54Z",
+     "title": "UN warns of 'imminent risk of mass atrocities' in Sudan, urges RSF to halt assault on El-Obeid",
+     "outlet": "Firstpost",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRFlXMU1CU1JwUHVQT2tTNWxHVGNaa0k3NDZnQUpteHpCUkxLRVJIdFBRMG1uZ2pqSllJaGIzaU5LankxX1dBNTNWTzEteDQxbFBfaFF5RlRCMHYyZ0pWS0szNEJITjI0Y2pyT0xFUi1reVNSbDRZZmV4cFZvRFB6a2F3blA2cm9FYXZpYk1KTlRreDJMMGpERjVrVVJSNDhrUWs2M3VLdURaYl9Hdno0alo5ZTFUYWU3bUVMQ3dpMmtQbXB2djJTWk0ydU95dm9PX1hB?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-21T03:51:57Z",
      "title": "UN Security Council warns of \u2018imminent risk of mass atrocities\u2019 in Sudan",
@@ -7715,18 +7815,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-20T19:28:36Z",
-     "title": "The UN warns of risk of mass atrocities amid RSF offensive on El Obeid in Sudan",
-     "outlet": "Dem\u00f3crata",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOa2plUHhUWXBiSUkwdHZyZXZtNkdackNDQkRyX3NQNkNmNlZGenE2UFNBZ0Foa0lheXctVVpQQzVEQWRpYTBIaUpWNnV5UjcxVHZIaWdrQjRMMkxWOXlQMmZiZTdqZXVaNFJWcm15Z1JYbE9hdnRXelA0VXdvM0o1Q2RlYjFfM1d6RWFFd2owdF9rZUVvVzlXdnc1WUpnZ2lkZWlWWWR2bjIyZW9MQzFXRWZkMkEzUHUzdXhDSEhvUdIBxAFBVV95cUxOdkVuNXNwSlZKNWF3QUV2MDdoVGliWkx3YVdfbHBzLVNGREhmanY3M3l5d3VnXzBISGpWOUhUTnhYS09vR25JZzQ2WU5ha2Z4M04xYkpidE13dk1jb3c4aWJBTklqWFFYTDFyQVZGTjVCcHVsRmhUWFE5X2p5ZWFSVEJYNUFQVm1ucTNiRFRVNi1Ub1Fydjg4WkE4YjBISHU3NWc2NzlQMFNCMFJWLU84V0tObnk3M0JIZTQ2OXZzYTlOVFZG?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -7770,7 +7858,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 18,
+    "outlets_timed": 19,
     "outlets_unplaced": 0,
     "chain": [
      {
@@ -8158,7 +8246,7 @@
      [
       "2026-06-21 00:00",
       12,
-      18
+      19
      ]
     ],
     "mix": {
@@ -8166,7 +8254,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 1,
-     "other": 21
+     "other": 22
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -8537,11 +8625,11 @@
     }
    ],
    "split": {
-    "a": "Healey resigned saying the UK government's defence spending plan is 'well short' of what national security requires.",
-    "b": "The Starmer government defends its spending approach as political pressure mounts over its broader leadership survival.",
+    "a": "Outgoing Defence Secretary Healey warns UK defence spending is 'well short of what's required,' resigning in protest",
+    "b": "Starmer's Treasury-backed government held to its spending position rather than meet Healey's demands, triggering the resignation",
     "basis": "extracted from live headlines 2026-06-21",
     "axis_type": "policy_dispute",
-    "axis_question": "Is the UK government spending enough on defence?",
+    "axis_question": "Is the UK government committing enough to defence spending?",
     "carriers": {
      "a": [
       {
@@ -8551,24 +8639,6 @@
        "ts": "2026-06-19T14:57:33Z",
        "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "NYT World",
-       "kind": "journalist",
-       "url": "https://www.nytimes.com/live/2026/06/19/world/makerfield-election-results-uk-burnham/uk-makerfield-election",
-       "ts": "2026-06-19T09:54:38Z",
-       "provenance": "original",
-       "motive_note": "US press"
-      },
-      {
-       "outlet": "Fox News World",
-       "kind": "journalist",
-       "url": "https://www.foxnews.com/world/british-prime-minister-keir-starmer-faces-potential-leadership-challenge-newly-elected-andy-burnham",
-       "ts": "2026-06-19T11:38:41Z",
-       "provenance": "echo",
-       "motive_note": "US press"
       },
       {
        "outlet": "upday News",
@@ -8577,24 +8647,9 @@
        "ts": "2026-06-19T17:16:34Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "CGTN",
-       "kind": "state media",
-       "url": "https://news.cgtn.com/news/2026-06-20/Pressure-grows-on-Starmer-as-Labour-leadership-questions-intensify-1O8mlkj4B2w/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-       "ts": "2026-06-20T12:49:50Z",
-       "provenance": "echo",
-       "motive_note": "CN state media"
-      },
-      {
-       "outlet": "Al Jazeera",
-       "kind": "journalist",
-       "url": "https://www.aljazeera.com/video/inside-story/2026/6/20/are-uk-prime-minister-keir-starmers-political-days-numbered?traffic_source=rss",
-       "ts": "2026-06-20T18:50:14Z",
-       "provenance": "echo",
-       "motive_note": "Qatar state-funded international broadcaster"
       }
-     ]
+     ],
+     "b": []
     }
    },
    "scenarios": [],
@@ -8976,8 +9031,8 @@
      ],
      [
       "2026-06-21 00:00",
-      7,
-      11
+      8,
+      12
      ]
     ],
     "mix": {
@@ -8990,11 +9045,6 @@
     "first_seen": "2026-06-11T12:15:12Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-20T17:18:21Z",
-     "a": "John Healey resigned as UK Defence Secretary saying the government is not willing to spend enough on the military",
-     "b": "Starmer and Reeves are reported to prioritise welfare and net zero over rising national security spending demands"
-    },
     {
      "captured_utc": "2026-06-20T18:20:08Z",
      "a": "Healey resigned saying the government refuses to increase military spending sufficiently for national security",
@@ -9049,6 +9099,11 @@
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "Healey resigned saying the UK government's defence spending plan is 'well short' of what national security requires.",
      "b": "The Starmer government defends its spending approach as political pressure mounts over its broader leadership survival."
+    },
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "Outgoing Defence Secretary Healey warns UK defence spending is 'well short of what's required,' resigning in protest",
+     "b": "Starmer's Treasury-backed government held to its spending position rather than meet Healey's demands, triggering the resignation"
     }
    ],
    "unknowns": [
@@ -9072,6 +9127,321 @@
      "carriers": 1,
      "provenance": 1,
      "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "bolivia-emergency-amid-protest-blockades",
+   "name": "Bolivia emergency amid protest blockades",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "protest"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-21T04:21:35Z",
+    "sentence_count": 5,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Bolivian President Paz has issued a state of emergency.",
+        "cites": [
+         {
+          "outlet": "Taipei Times",
+          "kind": "journalist",
+          "url": "https://www.taipeitimes.com/News/world/archives/2026/06/21/2003859487",
+          "ts": "2026-06-21T08:00:00Z",
+          "title": "Bolivian President Paz issues state of emergency"
+         }
+        ]
+       },
+       {
+        "text": "Bolivia declared the state of emergency to clear protest blockades.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/20/bolivia-declares-state-of-emergency-to-clear-protest-blockades?traffic_source=rss",
+          "ts": "2026-06-20T20:42:42Z",
+          "title": "Bolivia declares state of emergency to clear protest blockades"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Al Jazeera reports the declaration came amid a blockade crisis.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/20/bolivia-declares-state-of-emergency-amid-blockade-crisis?traffic_source=rss",
+          "ts": "2026-06-20T16:41:34Z",
+          "title": "Bolivia declares state of emergency amid blockade crisis"
+         }
+        ]
+       },
+       {
+        "text": "BBC World reports the Bolivian president declared a state of emergency.",
+        "cites": [
+         {
+          "outlet": "BBC World",
+          "kind": "journalist",
+          "url": "https://www.bbc.com/news/articles/cr47wn92zdgo?at_medium=RSS&at_campaign=rss",
+          "ts": "2026-06-20T15:27:09Z",
+          "title": "Bolivian president declares state of emergency"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "CGTN reports the Bolivian president declared a state of emergency amid the blockade crisis.",
+        "cites": [
+         {
+          "outlet": "CGTN",
+          "kind": "state media",
+          "url": "https://news.cgtn.com/news/2026-06-20/news-1O7VAEWGbRK/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "ts": "2026-06-20T05:32:40Z",
+          "title": "Bolivian president declares state of emergency amid blockade crisis"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 6,
+   "items_48h": 6,
+   "outlets": 5,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-21T04:23:30Z",
+     "title": "Bolivian president declares state of emergency and deploys military to quell anti-government protests",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/world/2026/jun/21/bolivian-president-declares-state-of-emergency-and-deploys-military-to-quell-anti-government-protests",
+     "rel": 11,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-21T00:00:00Z",
+     "title": "Bolivian President Paz issues state of emergency",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/21/2003859487",
+     "rel": 10,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-20T20:42:42Z",
+     "title": "Bolivia declares state of emergency to clear protest blockades",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/20/bolivia-declares-state-of-emergency-to-clear-protest-blockades?traffic_source=rss",
+     "rel": 11,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-20T16:41:34Z",
+     "title": "Bolivia declares state of emergency amid blockade crisis",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/6/20/bolivia-declares-state-of-emergency-amid-blockade-crisis?traffic_source=rss",
+     "rel": 11,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-20T15:27:09Z",
+     "title": "Bolivian president declares state of emergency",
+     "outlet": "BBC World",
+     "kind": "journalist",
+     "url": "https://www.bbc.com/news/articles/cr47wn92zdgo?at_medium=RSS&at_campaign=rss",
+     "rel": 10,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-20T05:32:40Z",
+     "title": "Bolivian president declares state of emergency amid blockade crisis",
+     "outlet": "CGTN",
+     "kind": "state media",
+     "url": "https://news.cgtn.com/news/2026-06-20/news-1O7VAEWGbRK/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+     "rel": 11,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-06-21T05:07:56Z"
+   },
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 48,
+    "outlets_timed": 5,
+    "outlets_unplaced": 1,
+    "chain": [
+     {
+      "outlet": "CGTN",
+      "ts": "2026-06-20T05:32:40Z",
+      "kind": "state media",
+      "role": "origin",
+      "motive_note": "CN state media",
+      "items": 1
+     },
+     {
+      "outlet": "BBC World",
+      "ts": "2026-06-20T15:27:09Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK public broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-20T16:41:34Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 2
+     },
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-06-21T04:23:30Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
+     },
+     {
+      "outlet": "Taipei Times",
+      "ts": "2026-06-21T08:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "TW regional press",
+      "items": 1
+     }
+    ],
+    "unplaced": [
+     {
+      "outlet": "Press TV",
+      "first_seen": "2026-06-21T05:03:41Z",
+      "kind": "state media",
+      "motive_note": "IR state media",
+      "items": 2
+     }
+    ]
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Press TV",
+     "n": 2,
+     "class": "state-media"
+    },
+    {
+     "outlet": "BBC World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "CGTN",
+     "n": 1,
+     "class": "state-media"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Taipei Times",
+     "n": 1,
+     "class": "regional"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-21 00:00",
+      5,
+      4
+     ]
+    ],
+    "mix": {
+     "mainstream": 3,
+     "state-media": 2,
+     "regional": 1,
+     "official": 0,
+     "other": 0
+    },
+    "first_seen": "2026-06-21T04:23:08Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 0
+   },
+   "lead_image": {
+    "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781988142.jpg?resize=1920%2C1080&quality=80",
+    "source": "Al Jazeera"
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -9512,23 +9882,13 @@
     }
    ],
    "split": {
-    "a": "Ukraine's General Staff says its largest-ever drone attack on Moscow forced the capital's oil refinery to halt operations.",
-    "b": "Video evidence analyzed by the NYT suggests the Moscow refinery blast may have been caused by Russian friendly fire, not Ukrainian drones.",
+    "a": "NYT World reports video evidence suggests the Moscow refinery blast may have been caused by Russian air defenses misfiring",
+    "b": "Kyiv Independent and The Moscow Times attribute the damage to the largest-ever Ukrainian drone attack on the Russian capital",
     "basis": "extracted from live headlines 2026-06-21",
     "axis_type": "factual_dispute",
-    "axis_question": "Ukrainian drones or Russian friendly fire: what caused the Moscow refinery blast?",
+    "axis_question": "Was the Moscow refinery blast caused by Ukrainian drones or Russian friendly fire?",
     "carriers": {
      "a": [
-      {
-       "outlet": "Kyiv Independent",
-       "kind": "journalist",
-       "url": "https://kyivindependent.com/ukraine-confirms-damage-to-moscow-oil-refinery-strikes-railway-bridges-in-occupied-crimea/",
-       "ts": "2026-06-19T19:23:55Z",
-       "provenance": "original",
-       "motive_note": "UA regional press"
-      }
-     ],
-     "b": [
       {
        "outlet": "The New York Times",
        "kind": "journalist",
@@ -9544,6 +9904,24 @@
        "ts": "2026-06-20T16:50:31Z",
        "provenance": "echo",
        "motive_note": "US press"
+      }
+     ],
+     "b": [
+      {
+       "outlet": "The Moscow Times",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTWhBc0Exb1BkN2FyYUZtWlp2dFlBMURTMU1wWXgtTE9RVk1GSll2RkZTOHNQeVFCZ20wLTdwRXRjY0IzSWRlZ1c4R0ZGZUt3UGlXcFdiNVRfYWY4bFJkYXZfcDljQXhDWC13S2dOdUhldnZGSWdSOHRpRkJzaE4tMWpiVll1ZEo2TXRQMWFEUm9RcndicWFxUmNxanpQbEo3anJGQ2NWYk5WN1RiZzUwWC1IMjZIR08zdjhDcFRfakprczd4elZ3QV9rRTNhLTFOZEE?oc=5",
+       "ts": "2026-06-19T13:23:00Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Kyiv Independent",
+       "kind": "journalist",
+       "url": "https://kyivindependent.com/ukraine-confirms-damage-to-moscow-oil-refinery-strikes-railway-bridges-in-occupied-crimea/",
+       "ts": "2026-06-19T19:23:55Z",
+       "provenance": "echo",
+       "motive_note": "UA regional press"
       }
      ]
     }
@@ -9937,11 +10315,6 @@
    },
    "drift": [
     {
-     "captured_utc": "2026-06-20T17:18:21Z",
-     "a": "New York Times and New York Post report video evidence suggests the Moscow refinery blast may have been caused by Russian friendly fire",
-     "b": "Kyiv Independent and others report the refinery halted after what they describe as the largest-ever drone attack on Russia's capital"
-    },
-    {
      "captured_utc": "2026-06-20T18:20:08Z",
      "a": "Ukrainian and Western outlets report Moscow's oil refinery was struck in the largest-ever Ukrainian drone attack on the Russian capital",
      "b": "Video evidence cited by US outlets suggests the Moscow refinery blast was caused by Russian air-defence friendly fire, not incoming drones"
@@ -9995,6 +10368,11 @@
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "Ukraine's General Staff says its largest-ever drone attack on Moscow forced the capital's oil refinery to halt operations.",
      "b": "Video evidence analyzed by the NYT suggests the Moscow refinery blast may have been caused by Russian friendly fire, not Ukrainian drones."
+    },
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "NYT World reports video evidence suggests the Moscow refinery blast may have been caused by Russian air defenses misfiring",
+     "b": "Kyiv Independent and The Moscow Times attribute the damage to the largest-ever Ukrainian drone attack on the Russian capital"
     }
    ],
    "unknowns": [
@@ -10020,277 +10398,6 @@
      "steelman": 1,
      "history": 1,
      "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "bolivia-emergency-amid-protest-blockades",
-   "name": "Bolivia emergency amid protest blockades",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "protest"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-21T04:21:35Z",
-    "sentence_count": 5,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Bolivian President Paz has issued a state of emergency.",
-        "cites": [
-         {
-          "outlet": "Taipei Times",
-          "kind": "journalist",
-          "url": "https://www.taipeitimes.com/News/world/archives/2026/06/21/2003859487",
-          "ts": "2026-06-21T08:00:00Z",
-          "title": "Bolivian President Paz issues state of emergency"
-         }
-        ]
-       },
-       {
-        "text": "Bolivia declared the state of emergency to clear protest blockades.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/20/bolivia-declares-state-of-emergency-to-clear-protest-blockades?traffic_source=rss",
-          "ts": "2026-06-20T20:42:42Z",
-          "title": "Bolivia declares state of emergency to clear protest blockades"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Al Jazeera reports the declaration came amid a blockade crisis.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/20/bolivia-declares-state-of-emergency-amid-blockade-crisis?traffic_source=rss",
-          "ts": "2026-06-20T16:41:34Z",
-          "title": "Bolivia declares state of emergency amid blockade crisis"
-         }
-        ]
-       },
-       {
-        "text": "BBC World reports the Bolivian president declared a state of emergency.",
-        "cites": [
-         {
-          "outlet": "BBC World",
-          "kind": "journalist",
-          "url": "https://www.bbc.com/news/articles/cr47wn92zdgo?at_medium=RSS&at_campaign=rss",
-          "ts": "2026-06-20T15:27:09Z",
-          "title": "Bolivian president declares state of emergency"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "CGTN reports the Bolivian president declared a state of emergency amid the blockade crisis.",
-        "cites": [
-         {
-          "outlet": "CGTN",
-          "kind": "state media",
-          "url": "https://news.cgtn.com/news/2026-06-20/news-1O7VAEWGbRK/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "ts": "2026-06-20T05:32:40Z",
-          "title": "Bolivian president declares state of emergency amid blockade crisis"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 5,
-   "items_48h": 5,
-   "outlets": 4,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-06-21T00:00:00Z",
-     "title": "Bolivian President Paz issues state of emergency",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/21/2003859487",
-     "rel": 8,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-20T20:42:42Z",
-     "title": "Bolivia declares state of emergency to clear protest blockades",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/20/bolivia-declares-state-of-emergency-to-clear-protest-blockades?traffic_source=rss",
-     "rel": 9,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-20T16:41:34Z",
-     "title": "Bolivia declares state of emergency amid blockade crisis",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/news/2026/6/20/bolivia-declares-state-of-emergency-amid-blockade-crisis?traffic_source=rss",
-     "rel": 9,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-20T15:27:09Z",
-     "title": "Bolivian president declares state of emergency",
-     "outlet": "BBC World",
-     "kind": "journalist",
-     "url": "https://www.bbc.com/news/articles/cr47wn92zdgo?at_medium=RSS&at_campaign=rss",
-     "rel": 8,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-20T05:32:40Z",
-     "title": "Bolivian president declares state of emergency amid blockade crisis",
-     "outlet": "CGTN",
-     "kind": "state media",
-     "url": "https://news.cgtn.com/news/2026-06-20/news-1O7VAEWGbRK/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-     "rel": 9,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-06-21T04:19:57Z"
-   },
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 48,
-    "outlets_timed": 4,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "CGTN",
-      "ts": "2026-06-20T05:32:40Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "CN state media",
-      "items": 1
-     },
-     {
-      "outlet": "BBC World",
-      "ts": "2026-06-20T15:27:09Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK public broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-20T16:41:34Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 2
-     },
-     {
-      "outlet": "Taipei Times",
-      "ts": "2026-06-21T08:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "TW regional press",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Al Jazeera",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "BBC World",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "CGTN",
-     "n": 1,
-     "class": "state-media"
-    },
-    {
-     "outlet": "Taipei Times",
-     "n": 1,
-     "class": "regional"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [],
-    "mix": {
-     "mainstream": 2,
-     "state-media": 1,
-     "regional": 1,
-     "official": 0,
-     "other": 0
-    },
-    "first_seen": "2026-06-21T04:12:20Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
-    "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 0
-   },
-   "lead_image": {
-    "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781988142.jpg?resize=1920%2C1080&quality=80",
-    "source": "Al Jazeera"
-   },
-   "gate": {
-    "score": 3,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 0,
      "theories": 0,
      "unknowns": 1
     }
@@ -10362,8 +10469,8 @@
    },
    "discovered": true,
    "items_24h": 2,
-   "items_48h": 7,
-   "outlets": 6,
+   "items_48h": 6,
+   "outlets": 5,
    "kinds": [
     "journalist",
     "state media"
@@ -10514,22 +10621,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 6,
+    "outlets_timed": 5,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "taipeitimes.com",
-      "ts": "2026-06-19T05:00:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "TW regional press",
-      "items": 1
-     },
      {
       "outlet": "Kyiv Independent",
       "ts": "2026-06-19T07:01:27Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "UA regional press",
       "items": 1
      },
@@ -11386,8 +11485,8 @@
      ],
      [
       "2026-06-21 00:00",
-      1,
-      1
+      2,
+      2
      ]
     ],
     "mix": {
@@ -11487,622 +11586,6 @@
      "theories": 0,
      "unknowns": 1
     }
-   }
-  },
-  {
-   "id": "red-sea-houthi-shipping-current",
-   "name": "Red Sea",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "war",
-    "oil",
-    "trade"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-20T05:13:30Z",
-    "sentence_count": 7,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "A vessel came under attack off the Yemeni coast, according to UKMTO.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/world/2148011",
-          "ts": "2026-06-18T00:15:01Z",
-          "title": "Vessel comes under attack off Yemeni coast - UKMTO"
-         }
-        ]
-       },
-       {
-        "text": "Houthi officials have threatened to resume attacks against Israel.",
-        "cites": [
-         {
-          "outlet": "MEMRI | Middle East Media Research Institute",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbFRNNzdCZ3J0c1ZsaXJUeHVNcmpzUk5KOVYzNG81RGRPVXUwR1B6bUYzMGswT1NPS3dOMHk4a3VicmVtbVd2QVRsQ05uUGNhb3Z3cVpUalRaQnVHNG5OR0V4NFRkR3dWMFdCcFo3NjQzS2tBTEg5dG14b1owSUloVXAxVU9OaUhCT1Bna1BoeGNpMGFUYkNQSVNvMUdXVHVYYzk3aHRHZGRRSGgzc1pNQk04OWo3UQ?oc=5",
-          "ts": "2026-06-17T13:36:30Z",
-          "title": "Houthi Officials Threaten To Resume Attacks Against Israel"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Press TV reports mass rallies in Yemen hailing Iran's victory and denouncing Trump's comments on Mecca.",
-        "cites": [
-         {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/16/770581/Mass-rallies-in-Yemen-hail-Iran%E2%80%99s-victory,-denounce-Trump-comments-on-Mecca",
-          "ts": null,
-          "title": "Mass rallies in Yemen hail Iran\u2019s victory, denounce Trump's comments on Mecca"
-         }
-        ]
-       },
-       {
-        "text": "A top Yemeni official described Iranian armed forces as an inspiring model for the Muslim world, according to Press TV.",
-        "cites": [
-         {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/17/770599/Yemeni-political-council-chief--Iranian-armed-forces-an-inspiring-model-for-Muslim-world",
-          "ts": null,
-          "title": "Top Yemeni official: Iranian armed forces inspiring model for Muslim world"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Al Jazeera reports that Israel feted Somaliland's leader as it seeks to expand Red Sea influence.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/20/israel-fetes-somalilands-leader-as-it-seeks-to-expand-red-sea-influence?traffic_source=rss",
-          "ts": "2026-06-20T04:30:40Z",
-          "title": "Israel fetes Somaliland\u2019s leader as it seeks to expand Red Sea influence"
-         }
-        ]
-       },
-       {
-        "text": "CBC reports that Canadian sniper rifles have been openly flaunted in Yemen, Sudan, and Libya, despite arms sanctions.",
-        "cites": [
-         {
-          "outlet": "CBC",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbkRUZlFNaDQ0VldjNVl2b19kQnRHMFBadVVULVg0a1p3amlIZlJPb3JKbnByaDB3RWVZVkp4eFcxVjVZbmRiN0Z4ZkJXWFUzSXJxdDhfMl9zbnJ2TUw1b01fWWs4R3NJM3A0NFNyN3VkcER1b0dKdkxNS0RjYzN3RE5kQnRScTBRaEhQOHRGczU5U3JoeVMtbV9IbHVEUk5tcW9rbC03eGg1azZ5Wjg0SkRiTWNoS1lLaTB6Z1pBR1U?oc=5",
-          "ts": "2026-06-19T11:52:17Z",
-          "title": "Canadian sniper rifles openly flaunted in Yemen, Sudan, Libya - despite arms sanctions"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Al Jazeera reports that for one Yemeni, the World Cup serves as a marker of war and peace.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/features/2026/6/19/for-one-yemeni-world-cup-serves-as-a-marker-of-war-and-peace?traffic_source=rss",
-          "ts": "2026-06-19T08:49:47Z",
-          "title": "For one Yemeni, World Cup serves as a marker of war and peace"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": false,
-   "items_24h": 1,
-   "items_48h": 3,
-   "outlets": 2,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-06-20T04:30:40Z",
-     "title": "Israel fetes Somaliland\u2019s leader as it seeks to expand Red Sea influence",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/news/2026/6/20/israel-fetes-somalilands-leader-as-it-seeks-to-expand-red-sea-influence?traffic_source=rss",
-     "rel": 3,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-19T11:52:17Z",
-     "title": "Canadian sniper rifles openly flaunted in Yemen, Sudan, Libya - despite arms sanctions",
-     "outlet": "CBC",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbkRUZlFNaDQ0VldjNVl2b19kQnRHMFBadVVULVg0a1p3amlIZlJPb3JKbnByaDB3RWVZVkp4eFcxVjVZbmRiN0Z4ZkJXWFUzSXJxdDhfMl9zbnJ2TUw1b01fWWs4R3NJM3A0NFNyN3VkcER1b0dKdkxNS0RjYzN3RE5kQnRScTBRaEhQOHRGczU5U3JoeVMtbV9IbHVEUk5tcW9rbC03eGg1azZ5Wjg0SkRiTWNoS1lLaTB6Z1pBR1U?oc=5",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-19T08:49:47Z",
-     "title": "For one Yemeni, World Cup serves as a marker of war and peace",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/features/2026/6/19/for-one-yemeni-world-cup-serves-as-a-marker-of-war-and-peace?traffic_source=rss",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-17T21:15:01Z",
-     "title": "Vessel comes under attack off Yemeni coast - UKMTO",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/world/2148011",
-     "rel": 2,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-17T13:36:30Z",
-     "title": "Houthi Officials Threaten To Resume Attacks Against Israel",
-     "outlet": "MEMRI | Middle East Media Research Institute",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbFRNNzdCZ3J0c1ZsaXJUeHVNcmpzUk5KOVYzNG81RGRPVXUwR1B6bUYzMGswT1NPS3dOMHk4a3VicmVtbVd2QVRsQ05uUGNhb3Z3cVpUalRaQnVHNG5OR0V4NFRkR3dWMFdCcFo3NjQzS2tBTEg5dG14b1owSUloVXAxVU9OaUhCT1Bna1BoeGNpMGFUYkNQSVNvMUdXVHVYYzk3aHRHZGRRSGgzc1pNQk04OWo3UQ?oc=5",
-     "rel": 2,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-17T02:19:26Z",
-     "title": "UN envoy calls for revival of Yemeni political process",
-     "outlet": "CGTN",
-     "kind": "state media",
-     "url": "https://news.cgtn.com/news/2026-06-17/UN-envoy-calls-for-revival-of-Yemeni-political-process-1O2EdzwRW7K/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-16T12:00:00Z",
-     "title": "UN officials call for urgent action in Yemen to push peace, reduce hunger",
-     "outlet": "UN News - Global perspective Human stories",
-     "kind": "official record",
-     "url": "https://news.un.org/feed/view/en/story/2026/06/1167728",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-15T16:01:12Z",
-     "title": "UKMTO reports shelling attack on tanker off Yemeni coast",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/world/2146779",
-     "rel": 2,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "a": "Yemen's Houthis announce a partial Red Sea blockade targeting Israeli shipping and warn they will join the Iran war, raising fears of a major oil shock.",
-    "b": "Freight analysts say new Houthi Red Sea threats would not significantly change shipping conditions for global freight.",
-    "basis": "extracted from live headlines 2026-06-11",
-    "carriers": {
-     "a": [
-      {
-       "outlet": "MSN",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOT3hTTjFRaXYwVHlvamtBVWFnbXhzMG8ydmFFd29pZExPOUEzbkNyYklXT3ByMlZRZGdkZU5SaUtnSGhhdzNMT1JfYlBjWk5NRHVuQXN1X3g3bUVOSC0xNVl3TUNhMllhdllZVUdrRkxUaGVXdkF3R1lXQ0tzVUtrV3JQUEcwcllFbUIyX1I0Z0NPSHRGZ3owRFhUZk9LeFVQRHlMQ3p6MUxENm5NU09lUzZBRWF1MXQ3NnMyRFVFaE1sZ1d3QjF3QWpObmZoMDRnUmtwVGlqd0NWckc1cHNnLWtmQTF2MFVTWGRHOA?oc=5",
-       "ts": "2026-06-09T23:29:01Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "IndexBox",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPemp4VUdDX0ZJQ3BtdmxjbkxRNmFhRm03NF9DbTJEZ2FPVExNbUx2Y1RwX0tCTWROUWVhdDBVVnpuYmlreERYUEpTeUp2amJxU0FmTWRKd0l0VlBJaW54dG41eWk5a1IyOEZjQ3BzRVF6YjFLREZneWhxYjBneHpLOW00c21LVW9hYjcxamFDZFliZFdXOVdLcVluN3ptXzRXZHR6VFZ5d3lKY1ZTREM0aFhUY1MyazA?oc=5",
-       "ts": "2026-06-10T14:20:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Firstpost",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNTXI1Sjd6TXE1VW9rNy0yRzZ3OXdzREVnTHdBOG1aZG5TVDBWSE5vbDRHMmpfa0xvZTEzX05YdFFuVGFKTnZrZGYzd0pUZlM5ak91dGxzQk5aRWhxVm51QUl2a0MtM2tlRUI1c0p5T3c2S0FzWGlDaW9kQjdxTHppcHNVdEdmR0U2dER0b1hzYUNFd1AxSXVUZmN3LXdidzYxOFViVkdTSG9XM1Q5cTIzdllOdGRuMjVwZzExN0RqY2lPc2dYMmVfVVZvcFlFajB2WXRNalFGcnA3ZmNnWXZwWGpPQUxVaXPSAewBQVVfeXFMUFhrT0ZIWllONUNHMThYSHFrQ19qc0N2UEZ4QmpWR3BzSWh5SE8yWkwxQXkwSWdQbEZPVHppSmZtOTFwaDJSOG1NWVNlNjk1U0MwQVB0eFJJeDBOWDZiajJRUjBURzhoRXRWSi1sQ0Npc3FTRXhfOXR4MzFyZG9rdHo0WnVVSXBpcE5tRFowSnIyeTRKYlV1R1hXbjBWZjB3bzRCZ21qTEotSVdxQzhIZnplZFE5TXZwRlBfSEhnNUt4TkhBZXFpVTlsTkVlaFd3NUJKSWRlUFdFU0EydFpYSDRyM19nWlVteXF6OHk?oc=5",
-       "ts": "2026-06-10T14:39:43Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "EnergyNow",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeFJUdEstYWRWaXFweFNEbFNDZ3BhcXh6YndhZVg1QXJnbXFFSmhIbGQyLUpySHc5c2xyZUtEMGdIeWh4S1puZDBBWllGNVk3ZzhycHVrekMtaE9hZkF2VmRXbjJDWEp6Wl9QMUtqcjRqQ3dtdlUtbjI1dGlzTXVraVVCMUR2c0psMnZRcWhRVWhUa2Z1VW9TM0FBMGpnMmZYbHNVMTVn?oc=5",
-       "ts": "2026-06-10T21:18:03Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Crypto Briefing",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBLTXpqOHJvWGpfd1QwaFhlTWhiYmNVUVJmcG5LYXZ6UENEbjM0ZHptd2o0SkI0RTZncnhTdW5xZ1p5TURUbE9ZaXVVc0hUMXdSbXl4YmhqcDV3Q1BzU2luSHBoVGN0ZFRSZlpPTTRFZVpOeFU?oc=5",
-       "ts": "2026-06-11T09:19:45Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "The Straits Times",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOczk1OTRMOTJOR0R5QkRUNVFNR2JqLUpCUG1PSnpldjA4YThFUlFGZk56UkJPMGNCV3hNcDJ6NGVENUlRYW5NX0tzOVJuTDBKU0RuOVBTZHdGRFY5Q2ZWajhCWDRoTVJzMUs3WkxhZ2pGQkE1Szl3Y1JGOGpXeVo0UXpDOGZ3ZXZ0RDJ6R3RyNnRxaHBUS3l5TGFGRlBDSzdnUENMdWhIS2NhSnJzeTMxTmhlV2V6UXFK?oc=5",
-       "ts": "2026-06-11T09:49:00Z",
-       "provenance": "echo",
-       "motive_note": "SG press"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "The Eastern Herald",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWHMtNlNlUHMzdTc2MEszNXgydkwxSk1XUl9OWnhwVHNoOVlwRXc5aHlwMm9Jb1BLQ3pTTVcwTHVteTAyaFYyMlU3eDVVNUVXWmRfNlZGeEFJdWVPOTU2c2hBNlZ5dDE4VnpwRUJhN3oxNUdLQWdZZk5GbVo5U2N2c1NKX1JEWU03VTFRbDYwOA?oc=5",
-       "ts": "2026-06-10T13:02:29Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "WWD",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOS2trU2VLcGhTZkdTbGowcjBRVklCZnQ3Ul9hZEFiSE1BMnhzazRqSXdmeXVUMkJrQ18zYWNDNmJ1NjVPWFdkbF9BRlV2ZkhsdFBFWkdZS2wxalNKZG1Ya3ZldUdDQmVJR2I0cUxKRDg0T3dOczR2Sk04NnRIWU9taHRjYjVqYTU1SlZ0MW1vdkM1d2lnY3hXT2tRUDFCRjRFZlRvNF8yM002MkNRc2V1dDhLaUl5clZvQktoeXctT0phSGt2SUZrMnBScENESWRF?oc=5",
-       "ts": "2026-06-10T21:16:49Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ]
-    }
-   },
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 48,
-    "outlets_timed": 2,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-19T08:49:47Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 2
-     },
-     {
-      "outlet": "CBC",
-      "ts": "2026-06-19T11:52:17Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "european union",
-     "situations": [
-      "russia-hosts-asean-summit-diplomatic-push",
-      "russia-ukraine-war-current",
-      "sudan-civil-war-current",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "iran",
-     "situations": [
-      "gaza-israel-war-current",
-      "lebanon-hezbollah-disarmament-standoff",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
-     ]
-    },
-    {
-     "entity": "israel",
-     "situations": [
-      "afp-probes-israeli-flotilla-abuse-claims",
-      "gaza-israel-war-current",
-      "lancet-calls-to-suspend-israeli-medical-body-fro",
-      "lebanon-hezbollah-disarmament-standoff",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "strait of hormuz",
-     "situations": [
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "Al Jazeera",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "CBC",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-10 18:00",
-      44,
-      67
-     ],
-     [
-      "2026-06-11 06:00",
-      42,
-      57
-     ],
-     [
-      "2026-06-11 12:00",
-      25,
-      55
-     ],
-     [
-      "2026-06-11 18:00",
-      7,
-      53
-     ],
-     [
-      "2026-06-12 00:00",
-      5,
-      52
-     ],
-     [
-      "2026-06-12 06:00",
-      4,
-      32
-     ],
-     [
-      "2026-06-12 12:00",
-      1,
-      6
-     ],
-     [
-      "2026-06-12 18:00",
-      1,
-      5
-     ],
-     [
-      "2026-06-13 00:00",
-      1,
-      4
-     ],
-     [
-      "2026-06-13 06:00",
-      2,
-      2
-     ],
-     [
-      "2026-06-13 12:00",
-      1,
-      3
-     ],
-     [
-      "2026-06-13 18:00",
-      1,
-      3
-     ],
-     [
-      "2026-06-14 00:00",
-      1,
-      3
-     ],
-     [
-      "2026-06-14 06:00",
-      1,
-      2
-     ],
-     [
-      "2026-06-14 12:00",
-      0,
-      1
-     ],
-     [
-      "2026-06-14 18:00",
-      0,
-      1
-     ],
-     [
-      "2026-06-15 00:00",
-      0,
-      1
-     ],
-     [
-      "2026-06-15 06:00",
-      0,
-      0
-     ],
-     [
-      "2026-06-15 12:00",
-      2,
-      2
-     ],
-     [
-      "2026-06-15 18:00",
-      3,
-      3
-     ],
-     [
-      "2026-06-16 00:00",
-      3,
-      3
-     ],
-     [
-      "2026-06-16 06:00",
-      3,
-      3
-     ],
-     [
-      "2026-06-16 12:00",
-      3,
-      3
-     ],
-     [
-      "2026-06-16 18:00",
-      1,
-      4
-     ],
-     [
-      "2026-06-17 00:00",
-      2,
-      5
-     ],
-     [
-      "2026-06-17 06:00",
-      2,
-      5
-     ],
-     [
-      "2026-06-17 12:00",
-      2,
-      4
-     ],
-     [
-      "2026-06-17 18:00",
-      3,
-      4
-     ],
-     [
-      "2026-06-18 00:00",
-      3,
-      4
-     ],
-     [
-      "2026-06-18 06:00",
-      2,
-      4
-     ],
-     [
-      "2026-06-18 12:00",
-      2,
-      3
-     ],
-     [
-      "2026-06-18 18:00",
-      1,
-      3
-     ],
-     [
-      "2026-06-19 00:00",
-      0,
-      2
-     ],
-     [
-      "2026-06-19 06:00",
-      1,
-      3
-     ],
-     [
-      "2026-06-19 12:00",
-      2,
-      3
-     ],
-     [
-      "2026-06-19 18:00",
-      2,
-      3
-     ],
-     [
-      "2026-06-20 00:00",
-      3,
-      2
-     ],
-     [
-      "2026-06-20 06:00",
-      3,
-      2
-     ],
-     [
-      "2026-06-20 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-06-20 18:00",
-      1,
-      2
-     ],
-     [
-      "2026-06-21 00:00",
-      1,
-      2
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 1
-    },
-    "first_seen": "2026-06-10T21:04:09Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-11T17:20:08Z",
-     "a": "Houthis threaten Israeli Red Sea shipping and signal readiness to join the Iran war, raising fears of a bigger oil shock.",
-     "b": "Freight analysts say new Houthi threats 'would not change much for freight'; Suez Canal traffic surges as an alternative route."
-    },
-    {
-     "captured_utc": "2026-06-11T18:19:01Z",
-     "a": "Yemen's Houthis announce a partial Red Sea blockade targeting Israeli shipping and warn they will join the Iran war, raising fears of a major oil shock.",
-     "b": "Freight analysts say new Houthi Red Sea threats would not significantly change shipping conditions for global freight."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
-   ],
-   "lead_image": {
-    "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/04/houthis-april-3.jpg",
-    "source": "Fox News World"
    }
   },
   {
@@ -13828,6 +13311,623 @@
      "theories": 0,
      "unknowns": 1
     }
+   }
+  },
+  {
+   "id": "red-sea-houthi-shipping-current",
+   "name": "Red Sea",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "war",
+    "oil",
+    "trade"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-20T05:13:30Z",
+    "sentence_count": 7,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "A vessel came under attack off the Yemeni coast, according to UKMTO.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2148011",
+          "ts": "2026-06-18T00:15:01Z",
+          "title": "Vessel comes under attack off Yemeni coast - UKMTO"
+         }
+        ]
+       },
+       {
+        "text": "Houthi officials have threatened to resume attacks against Israel.",
+        "cites": [
+         {
+          "outlet": "MEMRI | Middle East Media Research Institute",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbFRNNzdCZ3J0c1ZsaXJUeHVNcmpzUk5KOVYzNG81RGRPVXUwR1B6bUYzMGswT1NPS3dOMHk4a3VicmVtbVd2QVRsQ05uUGNhb3Z3cVpUalRaQnVHNG5OR0V4NFRkR3dWMFdCcFo3NjQzS2tBTEg5dG14b1owSUloVXAxVU9OaUhCT1Bna1BoeGNpMGFUYkNQSVNvMUdXVHVYYzk3aHRHZGRRSGgzc1pNQk04OWo3UQ?oc=5",
+          "ts": "2026-06-17T13:36:30Z",
+          "title": "Houthi Officials Threaten To Resume Attacks Against Israel"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Press TV reports mass rallies in Yemen hailing Iran's victory and denouncing Trump's comments on Mecca.",
+        "cites": [
+         {
+          "outlet": "Press TV",
+          "kind": "state media",
+          "url": "https://presstv.ir/Detail/2026/06/16/770581/Mass-rallies-in-Yemen-hail-Iran%E2%80%99s-victory,-denounce-Trump-comments-on-Mecca",
+          "ts": null,
+          "title": "Mass rallies in Yemen hail Iran\u2019s victory, denounce Trump's comments on Mecca"
+         }
+        ]
+       },
+       {
+        "text": "A top Yemeni official described Iranian armed forces as an inspiring model for the Muslim world, according to Press TV.",
+        "cites": [
+         {
+          "outlet": "Press TV",
+          "kind": "state media",
+          "url": "https://presstv.ir/Detail/2026/06/17/770599/Yemeni-political-council-chief--Iranian-armed-forces-an-inspiring-model-for-Muslim-world",
+          "ts": null,
+          "title": "Top Yemeni official: Iranian armed forces inspiring model for Muslim world"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Al Jazeera reports that Israel feted Somaliland's leader as it seeks to expand Red Sea influence.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/20/israel-fetes-somalilands-leader-as-it-seeks-to-expand-red-sea-influence?traffic_source=rss",
+          "ts": "2026-06-20T04:30:40Z",
+          "title": "Israel fetes Somaliland\u2019s leader as it seeks to expand Red Sea influence"
+         }
+        ]
+       },
+       {
+        "text": "CBC reports that Canadian sniper rifles have been openly flaunted in Yemen, Sudan, and Libya, despite arms sanctions.",
+        "cites": [
+         {
+          "outlet": "CBC",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbkRUZlFNaDQ0VldjNVl2b19kQnRHMFBadVVULVg0a1p3amlIZlJPb3JKbnByaDB3RWVZVkp4eFcxVjVZbmRiN0Z4ZkJXWFUzSXJxdDhfMl9zbnJ2TUw1b01fWWs4R3NJM3A0NFNyN3VkcER1b0dKdkxNS0RjYzN3RE5kQnRScTBRaEhQOHRGczU5U3JoeVMtbV9IbHVEUk5tcW9rbC03eGg1azZ5Wjg0SkRiTWNoS1lLaTB6Z1pBR1U?oc=5",
+          "ts": "2026-06-19T11:52:17Z",
+          "title": "Canadian sniper rifles openly flaunted in Yemen, Sudan, Libya - despite arms sanctions"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Al Jazeera reports that for one Yemeni, the World Cup serves as a marker of war and peace.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/features/2026/6/19/for-one-yemeni-world-cup-serves-as-a-marker-of-war-and-peace?traffic_source=rss",
+          "ts": "2026-06-19T08:49:47Z",
+          "title": "For one Yemeni, World Cup serves as a marker of war and peace"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": false,
+   "items_24h": 0,
+   "items_48h": 3,
+   "outlets": 2,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-20T04:30:40Z",
+     "title": "Israel fetes Somaliland\u2019s leader as it seeks to expand Red Sea influence",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/6/20/israel-fetes-somalilands-leader-as-it-seeks-to-expand-red-sea-influence?traffic_source=rss",
+     "rel": 3,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-19T11:52:17Z",
+     "title": "Canadian sniper rifles openly flaunted in Yemen, Sudan, Libya - despite arms sanctions",
+     "outlet": "CBC",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNbkRUZlFNaDQ0VldjNVl2b19kQnRHMFBadVVULVg0a1p3amlIZlJPb3JKbnByaDB3RWVZVkp4eFcxVjVZbmRiN0Z4ZkJXWFUzSXJxdDhfMl9zbnJ2TUw1b01fWWs4R3NJM3A0NFNyN3VkcER1b0dKdkxNS0RjYzN3RE5kQnRScTBRaEhQOHRGczU5U3JoeVMtbV9IbHVEUk5tcW9rbC03eGg1azZ5Wjg0SkRiTWNoS1lLaTB6Z1pBR1U?oc=5",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-19T08:49:47Z",
+     "title": "For one Yemeni, World Cup serves as a marker of war and peace",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/features/2026/6/19/for-one-yemeni-world-cup-serves-as-a-marker-of-war-and-peace?traffic_source=rss",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-17T21:15:01Z",
+     "title": "Vessel comes under attack off Yemeni coast - UKMTO",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2148011",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-17T13:36:30Z",
+     "title": "Houthi Officials Threaten To Resume Attacks Against Israel",
+     "outlet": "MEMRI | Middle East Media Research Institute",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbFRNNzdCZ3J0c1ZsaXJUeHVNcmpzUk5KOVYzNG81RGRPVXUwR1B6bUYzMGswT1NPS3dOMHk4a3VicmVtbVd2QVRsQ05uUGNhb3Z3cVpUalRaQnVHNG5OR0V4NFRkR3dWMFdCcFo3NjQzS2tBTEg5dG14b1owSUloVXAxVU9OaUhCT1Bna1BoeGNpMGFUYkNQSVNvMUdXVHVYYzk3aHRHZGRRSGgzc1pNQk04OWo3UQ?oc=5",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-17T02:19:26Z",
+     "title": "UN envoy calls for revival of Yemeni political process",
+     "outlet": "CGTN",
+     "kind": "state media",
+     "url": "https://news.cgtn.com/news/2026-06-17/UN-envoy-calls-for-revival-of-Yemeni-political-process-1O2EdzwRW7K/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-16T12:00:00Z",
+     "title": "UN officials call for urgent action in Yemen to push peace, reduce hunger",
+     "outlet": "UN News - Global perspective Human stories",
+     "kind": "official record",
+     "url": "https://news.un.org/feed/view/en/story/2026/06/1167728",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-15T16:01:12Z",
+     "title": "UKMTO reports shelling attack on tanker off Yemeni coast",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2146779",
+     "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "a": "Yemen's Houthis announce a partial Red Sea blockade targeting Israeli shipping and warn they will join the Iran war, raising fears of a major oil shock.",
+    "b": "Freight analysts say new Houthi Red Sea threats would not significantly change shipping conditions for global freight.",
+    "basis": "extracted from live headlines 2026-06-11",
+    "carriers": {
+     "a": [
+      {
+       "outlet": "MSN",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOT3hTTjFRaXYwVHlvamtBVWFnbXhzMG8ydmFFd29pZExPOUEzbkNyYklXT3ByMlZRZGdkZU5SaUtnSGhhdzNMT1JfYlBjWk5NRHVuQXN1X3g3bUVOSC0xNVl3TUNhMllhdllZVUdrRkxUaGVXdkF3R1lXQ0tzVUtrV3JQUEcwcllFbUIyX1I0Z0NPSHRGZ3owRFhUZk9LeFVQRHlMQ3p6MUxENm5NU09lUzZBRWF1MXQ3NnMyRFVFaE1sZ1d3QjF3QWpObmZoMDRnUmtwVGlqd0NWckc1cHNnLWtmQTF2MFVTWGRHOA?oc=5",
+       "ts": "2026-06-09T23:29:01Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "IndexBox",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPemp4VUdDX0ZJQ3BtdmxjbkxRNmFhRm03NF9DbTJEZ2FPVExNbUx2Y1RwX0tCTWROUWVhdDBVVnpuYmlreERYUEpTeUp2amJxU0FmTWRKd0l0VlBJaW54dG41eWk5a1IyOEZjQ3BzRVF6YjFLREZneWhxYjBneHpLOW00c21LVW9hYjcxamFDZFliZFdXOVdLcVluN3ptXzRXZHR6VFZ5d3lKY1ZTREM0aFhUY1MyazA?oc=5",
+       "ts": "2026-06-10T14:20:00Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Firstpost",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNTXI1Sjd6TXE1VW9rNy0yRzZ3OXdzREVnTHdBOG1aZG5TVDBWSE5vbDRHMmpfa0xvZTEzX05YdFFuVGFKTnZrZGYzd0pUZlM5ak91dGxzQk5aRWhxVm51QUl2a0MtM2tlRUI1c0p5T3c2S0FzWGlDaW9kQjdxTHppcHNVdEdmR0U2dER0b1hzYUNFd1AxSXVUZmN3LXdidzYxOFViVkdTSG9XM1Q5cTIzdllOdGRuMjVwZzExN0RqY2lPc2dYMmVfVVZvcFlFajB2WXRNalFGcnA3ZmNnWXZwWGpPQUxVaXPSAewBQVVfeXFMUFhrT0ZIWllONUNHMThYSHFrQ19qc0N2UEZ4QmpWR3BzSWh5SE8yWkwxQXkwSWdQbEZPVHppSmZtOTFwaDJSOG1NWVNlNjk1U0MwQVB0eFJJeDBOWDZiajJRUjBURzhoRXRWSi1sQ0Npc3FTRXhfOXR4MzFyZG9rdHo0WnVVSXBpcE5tRFowSnIyeTRKYlV1R1hXbjBWZjB3bzRCZ21qTEotSVdxQzhIZnplZFE5TXZwRlBfSEhnNUt4TkhBZXFpVTlsTkVlaFd3NUJKSWRlUFdFU0EydFpYSDRyM19nWlVteXF6OHk?oc=5",
+       "ts": "2026-06-10T14:39:43Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "EnergyNow",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeFJUdEstYWRWaXFweFNEbFNDZ3BhcXh6YndhZVg1QXJnbXFFSmhIbGQyLUpySHc5c2xyZUtEMGdIeWh4S1puZDBBWllGNVk3ZzhycHVrekMtaE9hZkF2VmRXbjJDWEp6Wl9QMUtqcjRqQ3dtdlUtbjI1dGlzTXVraVVCMUR2c0psMnZRcWhRVWhUa2Z1VW9TM0FBMGpnMmZYbHNVMTVn?oc=5",
+       "ts": "2026-06-10T21:18:03Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Crypto Briefing",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBLTXpqOHJvWGpfd1QwaFhlTWhiYmNVUVJmcG5LYXZ6UENEbjM0ZHptd2o0SkI0RTZncnhTdW5xZ1p5TURUbE9ZaXVVc0hUMXdSbXl4YmhqcDV3Q1BzU2luSHBoVGN0ZFRSZlpPTTRFZVpOeFU?oc=5",
+       "ts": "2026-06-11T09:19:45Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "The Straits Times",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOczk1OTRMOTJOR0R5QkRUNVFNR2JqLUpCUG1PSnpldjA4YThFUlFGZk56UkJPMGNCV3hNcDJ6NGVENUlRYW5NX0tzOVJuTDBKU0RuOVBTZHdGRFY5Q2ZWajhCWDRoTVJzMUs3WkxhZ2pGQkE1Szl3Y1JGOGpXeVo0UXpDOGZ3ZXZ0RDJ6R3RyNnRxaHBUS3l5TGFGRlBDSzdnUENMdWhIS2NhSnJzeTMxTmhlV2V6UXFK?oc=5",
+       "ts": "2026-06-11T09:49:00Z",
+       "provenance": "echo",
+       "motive_note": "SG press"
+      }
+     ],
+     "b": [
+      {
+       "outlet": "The Eastern Herald",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWHMtNlNlUHMzdTc2MEszNXgydkwxSk1XUl9OWnhwVHNoOVlwRXc5aHlwMm9Jb1BLQ3pTTVcwTHVteTAyaFYyMlU3eDVVNUVXWmRfNlZGeEFJdWVPOTU2c2hBNlZ5dDE4VnpwRUJhN3oxNUdLQWdZZk5GbVo5U2N2c1NKX1JEWU03VTFRbDYwOA?oc=5",
+       "ts": "2026-06-10T13:02:29Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "WWD",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOS2trU2VLcGhTZkdTbGowcjBRVklCZnQ3Ul9hZEFiSE1BMnhzazRqSXdmeXVUMkJrQ18zYWNDNmJ1NjVPWFdkbF9BRlV2ZkhsdFBFWkdZS2wxalNKZG1Ya3ZldUdDQmVJR2I0cUxKRDg0T3dOczR2Sk04NnRIWU9taHRjYjVqYTU1SlZ0MW1vdkM1d2lnY3hXT2tRUDFCRjRFZlRvNF8yM002MkNRc2V1dDhLaUl5clZvQktoeXctT0phSGt2SUZrMnBScENESWRF?oc=5",
+       "ts": "2026-06-10T21:16:49Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      }
+     ]
+    }
+   },
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 48,
+    "outlets_timed": 2,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-19T08:49:47Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 2
+     },
+     {
+      "outlet": "CBC",
+      "ts": "2026-06-19T11:52:17Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "european union",
+     "situations": [
+      "russia-hosts-asean-summit-diplomatic-push",
+      "russia-ukraine-war-current",
+      "sudan-civil-war-current",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "iran",
+     "situations": [
+      "gaza-israel-war-current",
+      "lebanon-hezbollah-disarmament-standoff",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    },
+    {
+     "entity": "israel",
+     "situations": [
+      "afp-probes-israeli-flotilla-abuse-claims",
+      "gaza-israel-war-current",
+      "lancet-calls-to-suspend-israeli-medical-body-fro",
+      "lebanon-hezbollah-disarmament-standoff",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "strait of hormuz",
+     "situations": [
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "CBC",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-10 18:00",
+      44,
+      67
+     ],
+     [
+      "2026-06-11 06:00",
+      42,
+      57
+     ],
+     [
+      "2026-06-11 12:00",
+      25,
+      55
+     ],
+     [
+      "2026-06-11 18:00",
+      7,
+      53
+     ],
+     [
+      "2026-06-12 00:00",
+      5,
+      52
+     ],
+     [
+      "2026-06-12 06:00",
+      4,
+      32
+     ],
+     [
+      "2026-06-12 12:00",
+      1,
+      6
+     ],
+     [
+      "2026-06-12 18:00",
+      1,
+      5
+     ],
+     [
+      "2026-06-13 00:00",
+      1,
+      4
+     ],
+     [
+      "2026-06-13 06:00",
+      2,
+      2
+     ],
+     [
+      "2026-06-13 12:00",
+      1,
+      3
+     ],
+     [
+      "2026-06-13 18:00",
+      1,
+      3
+     ],
+     [
+      "2026-06-14 00:00",
+      1,
+      3
+     ],
+     [
+      "2026-06-14 06:00",
+      1,
+      2
+     ],
+     [
+      "2026-06-14 12:00",
+      0,
+      1
+     ],
+     [
+      "2026-06-14 18:00",
+      0,
+      1
+     ],
+     [
+      "2026-06-15 00:00",
+      0,
+      1
+     ],
+     [
+      "2026-06-15 06:00",
+      0,
+      0
+     ],
+     [
+      "2026-06-15 12:00",
+      2,
+      2
+     ],
+     [
+      "2026-06-15 18:00",
+      3,
+      3
+     ],
+     [
+      "2026-06-16 00:00",
+      3,
+      3
+     ],
+     [
+      "2026-06-16 06:00",
+      3,
+      3
+     ],
+     [
+      "2026-06-16 12:00",
+      3,
+      3
+     ],
+     [
+      "2026-06-16 18:00",
+      1,
+      4
+     ],
+     [
+      "2026-06-17 00:00",
+      2,
+      5
+     ],
+     [
+      "2026-06-17 06:00",
+      2,
+      5
+     ],
+     [
+      "2026-06-17 12:00",
+      2,
+      4
+     ],
+     [
+      "2026-06-17 18:00",
+      3,
+      4
+     ],
+     [
+      "2026-06-18 00:00",
+      3,
+      4
+     ],
+     [
+      "2026-06-18 06:00",
+      2,
+      4
+     ],
+     [
+      "2026-06-18 12:00",
+      2,
+      3
+     ],
+     [
+      "2026-06-18 18:00",
+      1,
+      3
+     ],
+     [
+      "2026-06-19 00:00",
+      0,
+      2
+     ],
+     [
+      "2026-06-19 06:00",
+      1,
+      3
+     ],
+     [
+      "2026-06-19 12:00",
+      2,
+      3
+     ],
+     [
+      "2026-06-19 18:00",
+      2,
+      3
+     ],
+     [
+      "2026-06-20 00:00",
+      3,
+      2
+     ],
+     [
+      "2026-06-20 06:00",
+      3,
+      2
+     ],
+     [
+      "2026-06-20 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-06-20 18:00",
+      1,
+      2
+     ],
+     [
+      "2026-06-21 00:00",
+      1,
+      2
+     ]
+    ],
+    "mix": {
+     "mainstream": 1,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 1
+    },
+    "first_seen": "2026-06-10T21:04:09Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-11T17:20:08Z",
+     "a": "Houthis threaten Israeli Red Sea shipping and signal readiness to join the Iran war, raising fears of a bigger oil shock.",
+     "b": "Freight analysts say new Houthi threats 'would not change much for freight'; Suez Canal traffic surges as an alternative route."
+    },
+    {
+     "captured_utc": "2026-06-11T18:19:01Z",
+     "a": "Yemen's Houthis announce a partial Red Sea blockade targeting Israeli shipping and warn they will join the Iran war, raising fears of a major oil shock.",
+     "b": "Freight analysts say new Houthi Red Sea threats would not significantly change shipping conditions for global freight."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
+   ],
+   "lead_image": {
+    "url": "https://static.foxnews.com/foxnews.com/content/uploads/2026/04/houthis-april-3.jpg",
+    "source": "Fox News World"
    }
   },
   {
@@ -17016,6 +17116,12 @@
    "outlets": 3,
    "count": 3,
    "status": "watching"
+  },
+  {
+   "sample": "Israeli ambassador, UN official shout over each other in tense exchange over sexual violence blacklist",
+   "outlets": 3,
+   "count": 4,
+   "status": "watching"
   }
  ],
  "track_record": {
@@ -17029,25 +17135,25 @@
   "situations": 25,
   "situations_active": 25,
   "discovered": 20,
-  "items": 14513,
-  "developments": 14254,
-  "claims": 2612,
-  "carriers": 7088,
-  "steelmans": 2453,
-  "deep_reports": 24,
+  "items": 14531,
+  "developments": 14269,
+  "claims": 2626,
+  "carriers": 7114,
+  "steelmans": 2467,
+  "deep_reports": 25,
   "entities": 455,
-  "edges": 16449,
+  "edges": 16522,
   "history_nodes": 496,
   "gate_rejects_7d": 118,
-  "runs": 247,
+  "runs": 248,
   "backend": "st"
  },
  "gate": {
-  "clusters": 21,
-  "accepted": 1,
+  "clusters": 17,
+  "accepted": 0,
   "rejected": 0,
   "existing": 0,
-  "below": 20,
+  "below": 17,
   "pending": 0
  },
  "gate_summary": {
@@ -17062,6 +17168,6 @@
   "edition_utc": "2026-06-20",
   "panels": 7,
   "appendix": 8,
-  "overflow": 730
+  "overflow": 728
  }
 }
