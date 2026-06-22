@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-06-22T20:15:23Z",
+ "generated_utc": "2026-06-22T20:40:36Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
@@ -15,18 +15,14 @@
    "nyt-world",
    "presstv",
    "taipeitimes",
-   "tass"
+   "tass",
+   "unnews"
   ],
   "failed": [
    {
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
-   },
-   {
-    "id": "unnews",
-    "label": "UN News",
-    "reason": "not well-formed (invalid token): line 1, column 0"
    },
    {
     "id": "gdelt:russia-ukraine-war-current",
@@ -41,7 +37,7 @@
    {
     "id": "gdelt:colombia-runoff-election-armed-conflict-shift",
     "label": "GDELT Colombia runoff election armed conflict shift",
-    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+    "reason": "HTTP Error 429: Too Many Requests"
    },
    {
     "id": "gdelt:gaza-israel-war-current",
@@ -49,13 +45,13 @@
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
-    "id": "gdelt:uk-defence-secretary-resigns-over-spending",
-    "label": "GDELT UK defence secretary resigns over spending",
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT US tanker strike Gulf of Oman India sailors",
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
-    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
-    "label": "GDELT US tanker strike Gulf of Oman India sailors",
+    "id": "gdelt:uk-defence-secretary-resigns-over-spending",
+    "label": "GDELT UK defence secretary resigns over spending",
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
@@ -375,14 +371,27 @@
    },
    "discovered": false,
    "items_24h": 227,
-   "items_48h": 415,
-   "outlets": 205,
+   "items_48h": 419,
+   "outlets": 207,
    "kinds": [
     "journalist",
+    "official record",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-22T20:24:06Z",
+     "title": "18 civilians, including teenager, injured in Ukraine\u2019s drone attacks on DPR",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2149997",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-22T19:35:32Z",
      "title": "INTERVIEW: EU seeking to 'bring NATO into Ukraine' - Russian senator",
@@ -466,43 +475,31 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-22T17:30:00Z",
-     "title": "Ukraine Strikes Increasingly Isolated Crimea , Upping Pressure on Russia",
-     "outlet": "newsweek.com",
-     "kind": "journalist",
-     "url": "https://www.newsweek.com/ukraine-strikes-crimea-upping-pressure-russia-12102598",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Russia/TASS report Ukraine killed five civilians in Voronezh and launched mass drone attacks across Russian territory",
-    "b": "Ukraine and Western outlets report Ukrainian forces struck a Russian missile electronics factory and intensified Crimea operations",
+    "a": "TASS reports Ukrainian drones and missiles killed civilians in Voronezh and DPR, casting Ukraine as the attacking force.",
+    "b": "Kyiv Independent, Guardian and Western outlets say Ukraine is deliberately escalating Crimea strikes to raise costs on Russia.",
     "basis": "extracted from live headlines 2026-06-22",
-    "axis_type": "factual_dispute",
-    "axis_question": "Are Ukraine's strikes hitting Russian military targets or killing civilians?",
+    "axis_type": "interpretation",
+    "axis_question": "Is Ukraine's Crimea escalation a defensive strategy or a provocation?",
     "carriers": {
      "a": [
+      {
+       "outlet": "PressTV",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNd0Jwb1phS3M5MnpMYndkYVcteU1FcTNqOEFwVy1NN3JEb0pXQlpkXzF0bGl4Ukh0U1ZGNFQydGc0VUU3WXRGeWJ3R0dCVnRwSERLaHZmOGZfMHAxZ2FUVmpXNVVGRmhaM3R6X01YV3oxM3IwTXdJZkxMV19WSnp1UkxoRm1vcnhFaHl4Rlg4VmlwSjRhRmEyZkNWbXdzSG5KV0J4b01jclZYVkk4TUN3cTJnZ1BhaUtVU2VzTndBVHFMT0llY3BCUlRrTVQ3UklCRkxHd2ZxbnBPbkUyaFY3YldPaFduYnZ6YnVlLWJjRDhoNUdCQXpXTHlBV2xYUzhEeEYxNXF6a2xnSkVX?oc=5",
+       "ts": "2026-06-21T17:35:00Z",
+       "provenance": "original",
+       "motive_note": "IR state media"
+      },
       {
        "outlet": "TASS",
        "kind": "state media",
        "url": "https://tass.com/defense/2149685",
        "ts": "2026-06-22T08:50:00Z",
-       "provenance": "original",
+       "provenance": "echo",
        "motive_note": "RU state media"
-      },
-      {
-       "outlet": "Press TV",
-       "kind": "state media",
-       "url": "https://presstv.ir/Detail/2026/06/21/770849/Russian-forces-launch-retaliatory-strikes-on-Ukraine-key-energy-sites-in-Kiev-Sumy-Chernigov-DPR",
-       "ts": null,
-       "provenance": "unplaced",
-       "motive_note": "IR state media"
       }
      ],
      "b": [
@@ -515,26 +512,34 @@
        "motive_note": "UA regional press"
       },
       {
-       "outlet": "EA WorldView",
+       "outlet": "NYT World",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNa0o0c25IMXhaT1htQmlLVTlsRlY2WTE1OGthUHVOXzZrTmRxUVdpbFJjcDI0Z2ZBaktSVlllNHllSnU3alo0S2N0dXFzRGR5bkNzOXF6SVpSZjdxSFN3MFJwdjJyMmt6NzZuU0xranZVamVVMEstS2E0eHYzUjAxR2VQb0xObTF0bWxJ?oc=5",
-       "ts": "2026-06-21T15:11:57Z",
+       "url": "https://www.nytimes.com/2026/06/21/world/europe/ukraine-poland-alliance-russia.html",
+       "ts": "2026-06-21T18:07:18Z",
        "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Reuters",
-       "kind": "wire service",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbEc0LWRBYUhJcmgtbU9vc3U4Q1NtSDlNbDMzZGU3MzdWSE51NmJaRGtqT2ZfV1IzRk9Sdk93NTNCVWdNbFpBWEwyS0l6WHNYT0o0QnlWOHZzZDZUSVctNC16SFcyNldxQ0VJd1Nodm5JbFhXY01QWGViR3d5dHd0blVmUV8wakNMVVlyUU9PWE9OLS1fVk9jV3FPRXhldjZ0TnJWM25TdmNtTXFPODd2UmNRUm9XcjQ?oc=5",
-       "ts": "2026-06-22T03:06:00Z",
-       "provenance": "echo",
-       "motive_note": "international wire service"
+       "motive_note": "US press"
       },
       {
        "outlet": "Guardian World",
        "kind": "journalist",
        "url": "https://www.theguardian.com/world/live/2026/jun/22/zelenskyy-ukraine-russia-drones-europe-heatwave-trump-meloni-latest-news-updates",
        "ts": "2026-06-22T15:40:27Z",
+       "provenance": "echo",
+       "motive_note": "UK press"
+      },
+      {
+       "outlet": "The Hill",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUVRhYTY3Q2piWnZJclNqekFxM1hON0V1eGVQRU9uLW05ajVITnNGRjA0X2stYWJEY0JzZ3lRcE5pNzFYamhJRmxLZEt5emllVE1FRFpVbHo1bTNWYTNVOWZmRHBReXFwcVhrWHhrMHd2dmdELUVBeEh5UnMtUGRkT2R6UzlJVEhjQ2ZjeS1Qb3h5S2ZUajJzclZlYUlYLXJwZ1F30gGoAUFVX3lxTFBaTnFBSFRfX3BJdUZVeVZ6cFQtY09CVzJiZE12VmNkV08tWGJDclNaTFQzcFd4Ym96QnRGdEFtd2hYNVZfV2IzSjMzNnJ0REg1UERtSFFQTjJDbFVpQ3hkLUswZHZUVkxfb3lEMkhpUXp5LWNUWGEyMEswX3BYVHVHcEw5bE1UekF0dFVMQzdjMnppdmZRQk9tVzRWYWljVTdiYU41eUh5SQ?oc=5",
+       "ts": "2026-06-22T17:30:00Z",
+       "provenance": "echo",
+       "motive_note": "US press"
+      },
+      {
+       "outlet": "The Guardian",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUzRKYTdkcEl0VlZ2bUV5R1pkZjlpNTRBZEN1clBOaHdyUnZYT0hlMXRnTTFkRzU3ckRPbnpGN2VUSlhVRXRXVm85ZGNFNHZBaXFvellpbUgwN1ZQYnJZOXAwSGVrZUNjNmk4c1p5NWNsdkVhdGdSZEhtSFZBWll3eURLOTBkSVJoenhOWmE0U0dBeFFKSWNNRzNWZzZQbGp4bE1vVFpxTW9ZWnhuOXJEQ2dUWFlwZmFnT1E?oc=5",
+       "ts": "2026-06-22T19:01:00Z",
        "provenance": "echo",
        "motive_note": "UK press"
       },
@@ -553,8 +558,8 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 183,
-    "outlets_unplaced": 1,
+    "outlets_timed": 185,
+    "outlets_unplaced": 0,
     "chain": [
      {
       "outlet": "South China Morning Post",
@@ -621,15 +626,7 @@
       "items": 2
      }
     ],
-    "unplaced": [
-     {
-      "outlet": "Press TV",
-      "first_seen": "2026-06-21T12:05:49Z",
-      "kind": "state media",
-      "motive_note": "IR state media",
-      "items": 3
-     }
-    ]
+    "unplaced": []
    },
    "links": [
     {
@@ -679,7 +676,7 @@
    "sources": [
     {
      "outlet": "TASS",
-     "n": 41,
+     "n": 42,
      "class": "state-media"
     },
     {
@@ -739,7 +736,7 @@
     }
    ],
    "coverage": {
-    "non_mainstream": 3,
+    "non_mainstream": 4,
     "mainstream": 1
    },
    "under_radar": false,
@@ -973,24 +970,19 @@
      [
       "2026-06-22 18:00",
       229,
-      206
+      205
      ]
     ],
     "mix": {
      "mainstream": 10,
      "state-media": 4,
      "regional": 2,
-     "official": 0,
-     "other": 201
+     "official": 1,
+     "other": 202
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-22T11:04:47Z",
-     "a": "TASS portrays EU as readying for war against Russia and Zelensky as threatening Belarus via relay-station ultimatum.",
-     "b": "Kyiv Independent and Guardian report Ukraine intensifying strikes on Russian military targets and vowing to bring the war to Russia."
-    },
     {
      "captured_utc": "2026-06-22T11:14:07Z",
      "a": "Russia and TASS say Ukrainian soldiers are deserting front lines while Russian retaliatory strikes hit key Ukrainian energy infrastructure.",
@@ -1045,10 +1037,15 @@
      "captured_utc": "2026-06-22T20:13:55Z",
      "a": "Russia/TASS report Ukraine killed five civilians in Voronezh and launched mass drone attacks across Russian territory",
      "b": "Ukraine and Western outlets report Ukrainian forces struck a Russian missile electronics factory and intensified Crimea operations"
+    },
+    {
+     "captured_utc": "2026-06-22T20:39:07Z",
+     "a": "TASS reports Ukrainian drones and missiles killed civilians in Voronezh and DPR, casting Ukraine as the attacking force.",
+     "b": "Kyiv Independent, Guardian and Western outlets say Ukraine is deliberately escalating Crimea strikes to raise costs on Russia."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel."
    ],
    "lead_image": {
     "url": "https://static.toiimg.com/thumb/msid-131890172,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
@@ -1192,14 +1189,38 @@
    },
    "discovered": true,
    "items_24h": 163,
-   "items_48h": 282,
-   "outlets": 184,
+   "items_48h": 284,
+   "outlets": 185,
    "kinds": [
     "journalist",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-22T20:11:59Z",
+     "title": "From 'The Lion' to 'The Tiger': Conservative Trump allies gain ground in Latin America",
+     "outlet": "Greenwich Time",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQX0s1SXM5MjhDTE0zZlhSVVkwMFlENHZiTWRiYUJFMWM0bXN0cXBhcER2V2NJWFFkeTZlX2RIN2x4dDJpMU5Sak05MEJxYkV2QkJBcko1MFpUbWtuNUdoVVVaNjI2am5GUUdZaDVyM1lWOVliS1hfcFJ2bDhPamFLMVpNNkJocmNoazJmMEtlcVpyVEVpeXozU01MdjRYSUJ1SUJr?oc=5",
+     "rel": 5,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T20:01:56Z",
+     "title": "From 'The Lion' to 'The Tiger': Conservative Trump allies gain ground in Latin America",
+     "outlet": "Oskaloosa Herald",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOMGxjNWJ0RDEwUHcxdWpDNm53ckNTTDZqQXhjX1VrLVRtcFpJc01lc2hUc2w4cDQ5Z2YzZy1IVExfdjlSWWNGc1ZHZnBHQjBBb183VmNoY1AtcFEyaGI1Tl9jbDh5UGd4amlPN1RnTHg5Vkp2R0pVdHJURTR3Z1dPYjMtSmhQQm9oZDZaZzB1cGpha3hVMnpNU1AwX3RnSkhnT1FxelhRVEc1aFgzNHZ6WUtZbFlSLXk0RjAtazZueV9TVHZMTm9MQ0RCQThZdmxNX2lHLVRRRHdVWXQyUzZkeGVZdTg5Q2Q0WFdFQUF6TWxPSWtsT2xTUXdJQWtkRzkxLVhlUEhnNA?oc=5",
+     "rel": 5,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-22T19:56:40Z",
      "title": "Trump convenes Pentagon, defense companies to discuss ramping up missile production - WSJ",
@@ -1271,30 +1292,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-22T17:15:00Z",
-     "title": "Trump deflects from Reflecting Pool failure by arresting  vandals",
-     "outlet": "dailykos.com",
-     "kind": "journalist",
-     "url": "https://www.dailykos.com/stories/2026/6/22/800059058/news/trump-lincoln-memorial-reflecting-pool-peeling-arrest-fall-guys/",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T17:11:09Z",
-     "title": "Far Right Millionaire Backed by Trump Claims Presidential Victory in Colombia",
-     "outlet": "Truthout",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQzRBUVhvU1F4ZHFoZEhvbUxUNU5BTnYwQXI2Ul8zcXN5TWtocjBLSnNYdE5SbFFHemlmdEJOWTlpRENBSzIxZ1ZFeG8xRVRhRVprYmlOOWg3Yk1PS3pWWFVNV0FsaEVrcXE4SDVWU0w4WThiUllVQzZuUTl6SWVuSDE1Vy1XRnd3eVVZVEtOY3F6c05fbHZqTXItbGE1LWtPMEV3RGQ4NGVhVHlu?oc=5",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -1330,7 +1327,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 180,
+    "outlets_timed": 181,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -1757,7 +1754,7 @@
      "state-media": 5,
      "regional": 1,
      "official": 0,
-     "other": 175
+     "other": 176
     },
     "first_seen": "2026-06-11T09:35:14Z"
    },
@@ -1824,7 +1821,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -2144,7 +2141,7 @@
    },
    "discovered": true,
    "items_24h": 102,
-   "items_48h": 200,
+   "items_48h": 201,
    "outlets": 153,
    "kinds": [
     "journalist",
@@ -2217,6 +2214,18 @@
      "title": "Colombian Leftist Candidate Calls For Calm After Post-vote Violence",
      "outlet": "Barron's",
      "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRUhkN2QyRnp6MU5SczNkY1BESmFMRkFsZWxGWjdoejVpTTdzQS1uYzQwaFZjODVaaXJxNEJiUi15blU1X0NPMkJab2psMjYybUtFQ3ZJQ0RzaVRka3JYNjNJbzlJcEFsbG04aHU4RzY2eXNkOGJKaEVPWHUtZWdBZ2ViY3daTWRtNEgyR0FfNHFENkZOTWZ3bVM1eU1IOURULU1FTjFUejBVb1YtbEE?oc=5",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T17:53:00Z",
+     "title": "Colombian Leftist Candidate Calls For Calm After Post-vote Violence",
+     "outlet": "Barron's",
+     "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaE15aHlVSWlIWmdqdWJYUVBQa3Y1WkZrVVFhTkVaSENwSUU0a0RkdnM4amt6MzBpeEZWQmU1TEhLaTFOemozUEtFVi1nSnJMd1U0cnRoMmJfdG1mcGtZbEtlaElpMWxxeUY4ZHQwVkFPeUE2NFpxNHdRS3FWMXlHLWp6azJWN2JKaGNBZkhfRzdyNnRrQTd3WVpZOUlQdWNoMnlzREEySVM?oc=5",
      "rel": 13,
      "coverage": {
@@ -2235,28 +2244,42 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-22T17:30:00Z",
-     "title": "Experts react : What a President Abelardo de la Espriella means for Colombia and beyond",
-     "outlet": "atlanticcouncil.org",
-     "kind": "journalist",
-     "url": "https://www.atlanticcouncil.org/dispatches/experts-react-what-a-president-abelardo-de-la-espriella-means-for-colombia-and-beyond/",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Mainstream outlets including Miami Herald and Americas Quarterly frame de la Espriella's election as a narrow but legitimate democratic win",
-    "b": "Guardian World frames the far-right de la Espriella's victory as an 'institutional threat' raising fears for Colombian democracy",
+    "a": "Guardian World and leftist outlets warn De la Espriella's far-right win poses an institutional threat to Colombian democracy.",
+    "b": "Miami Herald, Americas Quarterly and Al Jazeera report De la Espriella won a narrow but legitimate election victory.",
     "basis": "extracted from live headlines 2026-06-22",
     "axis_type": "interpretation",
-    "axis_question": "Does de la Espriella's Colombia win strengthen or endanger democracy?",
+    "axis_question": "Is De la Espriella's presidency a democratic mandate or a threat to Colombian institutions?",
     "carriers": {
      "a": [
+      {
+       "outlet": "Guardian World",
+       "kind": "journalist",
+       "url": "https://www.theguardian.com/world/2026/jun/21/colombias-runoff-election-expected-to-trigger-shift-in-decades-long-armed-conflict",
+       "ts": "2026-06-21T14:44:36Z",
+       "provenance": "original",
+       "motive_note": "UK press"
+      },
+      {
+       "outlet": "France 24",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZnVOTVdzdFFnUXZOSlh3bU12b01DZkFBVXFiSkJwMmYwakRBclR1UHRuT3ZQeFEwVDlPMUZQTU5Id015Z2xUakdQcEZXWm5Ja1BYOGZRVEhKd3BTbllQYWlvX2E3Z19CMGJnY3FyZEJxak5sZUhjZXEtQWRBSFpvNlFYNmR1U0ZjeDR2TTZFLWs0SDRIVzlnTTc5Ql9uMWszamk1ZjgyNG5vUVlRTTIzTzNQX2xQTlY0TVp6aA?oc=5",
+       "ts": "2026-06-22T18:58:49Z",
+       "provenance": "echo",
+       "motive_note": "FR state-funded international broadcaster"
+      },
+      {
+       "outlet": "Press TV",
+       "kind": "state media",
+       "url": "https://presstv.ir/Detail/2026/06/21/770825/Anti-fascist-rally-held-in-Bogota",
+       "ts": null,
+       "provenance": "unplaced",
+       "motive_note": "IR state media"
+      }
+     ],
+     "b": [
       {
        "outlet": "Al Jazeera",
        "kind": "journalist",
@@ -2264,6 +2287,14 @@
        "ts": "2026-06-21T15:46:48Z",
        "provenance": "original",
        "motive_note": "Qatar state-funded international broadcaster"
+      },
+      {
+       "outlet": "WPLG Local 10",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWUp3dEFmQ2oyNy1hOE5fbU5DTUo2R3hzSUdTRnFhMEtiY3FYVEZTZmw1WmUxQWI1bnE5UVZwenRMQ05YMklrVXpXT3UyblZRcEU0XzBaTWlNNTNydWVBNDhfSjRIU213by10WnNiT05UOGpERXR2cXNzdXBTMWtGaTZrRUZidzlkeFZnR2p5ZlRMYmF1VWphNHJQcV9oNEVvZ1lfaEdkck5Yd25XdkM4VUZTSHJxcURoQlQzbjhybFdEOWZkcHBN?oc=5",
+       "ts": "2026-06-21T16:29:51Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
        "outlet": "Americas Quarterly",
@@ -2293,27 +2324,9 @@
        "outlet": "Taipei Times",
        "kind": "journalist",
        "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859593",
-       "ts": "2026-06-22T20:00:52Z",
+       "ts": "2026-06-22T20:30:20Z",
        "provenance": "echo",
        "motive_note": "TW regional press"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "Guardian World",
-       "kind": "journalist",
-       "url": "https://www.theguardian.com/world/2026/jun/21/colombias-runoff-election-expected-to-trigger-shift-in-decades-long-armed-conflict",
-       "ts": "2026-06-21T14:44:36Z",
-       "provenance": "original",
-       "motive_note": "UK press"
-      },
-      {
-       "outlet": "RFI",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZU9ielN2YjVsdEU1cG84dmNnWEJuMnAxaGVyYkE4MnVPa1prQ0k5SVUwTl9LbVRHNTFPQVJ3TzN3TF92cldqS1FiMHpPODcyTUZVTzZxWi10Z3B5YnV3dW9wNC1yMDRGRjdLVG9tSTExdmFfcGQzUW8zNU5TZ2FlQWZqZy1DcWxud2xCajlUcF9SX3EzM0FjN3l3RGc2a0d1MHVNTC1DaWFBTUVoeUI4VHZaNzBMTkEt?oc=5",
-       "ts": "2026-06-22T17:54:17Z",
-       "provenance": "echo",
-       "motive_note": "FR state-funded international broadcaster"
       }
      ]
     }
@@ -2543,7 +2556,7 @@
      [
       "2026-06-22 18:00",
       110,
-      152
+      153
      ]
     ],
     "mix": {
@@ -2556,11 +2569,6 @@
     "first_seen": "2026-06-21T06:21:44Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-21T10:28:59Z",
-     "a": "Most outlets frame the runoff as a polarized clash between a far-right outsider and a leftist candidate.",
-     "b": "The Guardian and RTL Today say the outcome is expected to trigger a shift in Colombia's decades-long armed conflict."
-    },
     {
      "captured_utc": "2026-06-22T11:04:47Z",
      "a": "Al Jazeera and DW characterize De La Espriella as 'far-right' or 'hard-right,' framing his election as an extremist political shift.",
@@ -2615,10 +2623,15 @@
      "captured_utc": "2026-06-22T20:13:55Z",
      "a": "Mainstream outlets including Miami Herald and Americas Quarterly frame de la Espriella's election as a narrow but legitimate democratic win",
      "b": "Guardian World frames the far-right de la Espriella's victory as an 'institutional threat' raising fears for Colombian democracy"
+    },
+    {
+     "captured_utc": "2026-06-22T20:39:07Z",
+     "a": "Guardian World and leftist outlets warn De la Espriella's far-right win poses an institutional threat to Colombian democracy.",
+     "b": "Miami Herald, Americas Quarterly and Al Jazeera report De la Espriella won a narrow but legitimate election victory."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Colombia runoff election armed conflict shift, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Colombia runoff election armed conflict shift, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -2944,14 +2957,26 @@
     ]
    },
    "discovered": false,
-   "items_24h": 87,
-   "items_48h": 260,
-   "outlets": 166,
+   "items_24h": 88,
+   "items_48h": 257,
+   "outlets": 165,
    "kinds": [
     "journalist",
     "state media"
    ],
    "latest": [
+    {
+     "ts": "2026-06-22T20:15:02Z",
+     "title": "Palestine: At least 236 journalists and media workers killed in Gaza",
+     "outlet": "International Federation of Journalists - IFJ",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPc0lkTmhzSDNOcTYxTmNnb1lzZjRwZ3YwbnJpTW54cVFWb1Y0Wk9ETW83MEQ0NUlQS0l4d2pRMnotcUJYT2o0aEJ2dnJmc2owOU9nM3ZsdTYxWDUzUFpTSy04ZkRXa1FmZDVJdjUtcGJwV2huRnVfR0pNOGlNYWNhRTQtNFZWd19tWGdueU53RkNQVVFyWC1HLXZfYkpPbTZCVWFHYUM1d1I0S21qQXI4NmtlY25fWks5M2lQanZqVVZVTHFUMjJYZlFqTGJJMU85YTY2SWNVeGJpOFpK?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-22T19:21:40Z",
      "title": "Hamas Sniper Who Worked for Al Jazeera Dies in Israeli Airstrike, Joins Long List of Terrorists Disguised As Journalists: AJ Praises \u2018Kind, Principled\u2019 Worker",
@@ -3035,41 +3060,37 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-22T16:27:01Z",
-     "title": "Gaza at a Crossroads: What Israel\u2019s Ancient Prophets Say About the Region\u2019s Future",
-     "outlet": "Charisma Magazine Online",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVUdPU2ZsblhHT2kxX1p2WG9RWjNxaDRUeTNNTWtLVTB5OHdnSW9BVmpjYnhWak1WMm1HemVWbG1sOFBZVzNrN3RZcEZIZWYtS1JoeHlTVXpGN2JxakRXOEdxOXktaW9ZR2hfRGRCTlFBXzVlLWVzYTFNMXVmSXhLQnBqZjRmaWo3bXJsOHo0MC1RRkRhMEFseG1yRXpJTE9DR29heVBod0l4QTlmZjk2Z0p1N0FCejlZdno3ag?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
-    "a": "Multiple outlets report ongoing Israeli strikes killing Palestinian civilians amid a severe humanitarian crisis in Gaza.",
-    "b": "The Jerusalem Post reports a former professor claims the Gaza Mortality Survey is flawed and may have inflated death numbers.",
+    "a": "IFJ and Press TV report 236+ media workers killed in Gaza, characterising them as civilian journalists under Israeli fire.",
+    "b": "Free Beacon reports an Al Jazeera staffer was an active Hamas sniper; Jerusalem Post frames IDF strikes as killing terrorists.",
     "basis": "extracted from live headlines 2026-06-22",
-    "axis_type": "factual_dispute",
-    "axis_question": "Are Gaza's reported death figures accurate or methodologically inflated?",
+    "axis_type": "interpretation",
+    "axis_question": "Are journalists killed in Gaza civilians or combatants operating under press cover?",
     "carriers": {
      "a": [
       {
-       "outlet": "The New Arab",
+       "outlet": "AsiaNews",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMGl3SGUxQzJtUVozbmZBNEdYZURfVFhnY2ZRVlNDZGpKSEkzazVCVjJ6b2ZpMTVzVnZlSGF1QlpGV2toWFY3YU5pN0U0eVEtYnhsQ3Z4a2g5T0JiSGhHQkptc01ndzFBRE5yRVBpd2dlVmxHaU1rUVF2RG56bGF6X2xGdEh1WXpoYXN1QtIBkgFBVV95cUxNekUyQlVfUlpCVmo0MWJ6eEpfbWNmcHJqMVRZdGkxNDBLMld1RXFsdU90ZzNTMXNsUklrZXZqblctMFJsX1dKYzloM3FxS2RQRkFSbWVoRm13cGRqUE9haVk2TGhUaWtHR0FMMTlsSWp6V3R4S19MNFhlY0g0S0N0ZDZYNlg4a29UdnNKNl9qcjlTdw?oc=5",
-       "ts": "2026-06-21T16:48:09Z",
+       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOXpKQlBKQzhEWHFsVUdTTi1ERUJhOHpEWWgtWEs3MnBPYnlrVGFGZ0l0VFB0d2JWTmxVVE5CaERtM2pqNkRVZXFKU05xM3Zra3JtcHlEbHlrdlpMR1h4RklJeV9zUGFETTMxUDVMQmQ1akxEc3VXZHJQVU8tRUtJell0QWJaaG9tVmFzVVQzazA1WS1aWmlGd193SkI0NTFDV0J1bTFB?oc=5",
+       "ts": "2026-06-22T11:07:24Z",
        "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
-       "outlet": "WION",
+       "outlet": "jordannews.jo",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUWZvdEVLcWVuTVl2YjVKaUFDWHdheWdqNUdvdHV5Rm9wdUtLbXFyd2RwR0pkbURLcHBfUmlwdnExUFZTN1BPcWFXbDJBT05BMXhYVUI2bWE2QUlJY1ZOSHBsNW1JaXVuTUpEZUJpVm56Mkg2MUpqUTg0Y1pDQkVxU2ViMlhDdWxVYTVxak4xeTJaUGwzSzI4dWFUYlk2SnhFdm0yNVd1SG1Na0VKV09ndUZB0gG3AUFVX3lxTE5qVGJZcmo1LWd1M3BUWTN6U0xDNkhSb2xCYW51MnMtMFAxT3VTa0ZMVDVhZXhXazdSRjU2ZVNpZDZ4ekNpXzZZdGkxdVJMRElrWmJybXFWcDdsSk96blBkQnNmUjNSa2hkMjZyRXZuSW5oalc0WXExRTFlU01sUUxpLWlMWWxLRncwUTFhSVZpZnRRQnpTM3R4emZlT3lSRXJ2QVBrWjR0OEpjSnNIektSaXJPWVpZaw?oc=5",
-       "ts": "2026-06-22T17:39:00Z",
+       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeG9menhDVnplU2pVNjZDN2c1MDU0S3VKeUw1SlpFUkVZZTl1TWxsZ3hCV0plVGVPV3p0U3Z0MEtQRS02MmtPOUJKeElPVlNmRW1RT2ItWUZKS19xNXVHZTh4ME5vZ0RiS2VrMnFGRmJ2NWxyclBYendKWm9uS1YzOHFGYXk2T2RTaUJoZkVDUmJEQmU2YkZMNUppZzNZRnREZ0k4eWRhX05mMnQzem1UblptbzlSaXlIaThFaFgwU1hhOEZPOGVpbmRn?oc=5",
+       "ts": "2026-06-22T18:58:07Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "International Federation of Journalists - IFJ",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPc0lkTmhzSDNOcTYxTmNnb1lzZjRwZ3YwbnJpTW54cVFWb1Y0Wk9ETW83MEQ0NUlQS0l4d2pRMnotcUJYT2o0aEJ2dnJmc2owOU9nM3ZsdTYxWDUzUFpTSy04ZkRXa1FmZDVJdjUtcGJwV2huRnVfR0pNOGlNYWNhRTQtNFZWd19tWGdueU53RkNQVVFyWC1HLXZfYkpPbTZCVWFHYUM1d1I0S21qQXI4NmtlY25fWks5M2lQanZqVVZVTHFUMjJYZlFqTGJJMU85YTY2SWNVeGJpOFpK?oc=5",
+       "ts": "2026-06-22T20:15:02Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
@@ -3090,6 +3111,14 @@
        "ts": "2026-06-20T22:23:33Z",
        "provenance": "original",
        "motive_note": "IL regional press"
+      },
+      {
+       "outlet": "freebeacon.com",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOeEd6S0RuWExoV19QWm83MlZ2ODV2dGVaclE3SEg0Z3R6SVpkNkRnMnFoV3RsOV9tcjl3RWhlOGZxVFFBY3pDeTRqUzV1ME5iN1Z4SlhUcG10QVF0cU9YdVdUbXhMa29mNS00d1pwYmhFa3NKUURjaVduaU5MUkRQX0JfR3hBUkpSSnkxZUYwb1pfcHRyNHdHelFOQnVrdDZub2drbkYtTExRUVlZZ3dnbEMyNi03M3gwZENaekV4dmhtVm5xOGIxODFBRjVZVkJFRTRrVTdFZ0Q0NTR4ZVpldEUtRFptOGJFZG1FZi1wcG52cjJmZEhfOFRGMWMtd1Z2dy1jN0dkMDFlZ3pjck1TT253?oc=5",
+       "ts": "2026-06-22T19:21:40Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
       }
      ]
     }
@@ -3102,42 +3131,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "Chicago Tribune",
-      "ts": "2026-06-20T20:23:29Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "The Herald Journal",
-      "ts": "2026-06-20T20:37:22Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "Journal-News.com",
-      "ts": "2026-06-20T20:37:22Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "arabnews.jp",
-      "ts": "2026-06-20T20:37:26Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
       "outlet": "NBC News",
       "ts": "2026-06-20T20:57:27Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -3163,6 +3160,38 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "WPXI",
+      "ts": "2026-06-20T21:00:11Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The New Arab",
+      "ts": "2026-06-20T21:09:49Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 6
+     },
+     {
+      "outlet": "Israel National News",
+      "ts": "2026-06-20T21:16:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Politico",
+      "ts": "2026-06-20T21:35:46Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US/EU press",
       "items": 1
      }
     ],
@@ -3522,8 +3551,8 @@
      ],
      [
       "2026-06-22 18:00",
-      86,
-      173
+      87,
+      166
      ]
     ],
     "mix": {
@@ -3531,16 +3560,11 @@
      "state-media": 2,
      "regional": 0,
      "official": 0,
-     "other": 198
+     "other": 199
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-20T19:19:24Z",
-     "a": "Israel's army confirms killing a journalist in Gaza but asserts he was a Hamas operative",
-     "b": "Reports identify the victim as an Al Jazeera cameraman, implying civilian journalist status"
-    },
     {
      "captured_utc": "2026-06-21T04:21:52Z",
      "a": "Al Jazeera and media groups report one of its journalists was killed in an Israeli strike in Gaza.",
@@ -3595,10 +3619,15 @@
      "captured_utc": "2026-06-22T18:39:14Z",
      "a": "Multiple outlets report ongoing Israeli strikes killing Palestinian civilians amid a severe humanitarian crisis in Gaza.",
      "b": "The Jerusalem Post reports a former professor claims the Gaza Mortality Survey is flawed and may have inflated death numbers."
+    },
+    {
+     "captured_utc": "2026-06-22T20:39:07Z",
+     "a": "IFJ and Press TV report 236+ media workers killed in Gaza, characterising them as civilian journalists under Israeli fire.",
+     "b": "Free Beacon reports an Al Jazeera staffer was an active Hamas sniper; Jerusalem Post frames IDF strikes as killing terrorists."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/AFP__20260621__B7TL4J8__v1__HighRes__PalestinianIsraelConflictGazaSurfing-1782124457.jpg?resize=1920%2C1440",
@@ -3861,14 +3890,26 @@
     ]
    },
    "discovered": true,
-   "items_24h": 86,
-   "items_48h": 184,
+   "items_24h": 87,
+   "items_48h": 185,
    "outlets": 47,
    "kinds": [
     "journalist",
     "state media"
    ],
    "latest": [
+    {
+     "ts": "2026-06-22T20:04:43Z",
+     "title": "Qatar PM on preventing US-Iran talks from escalation",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/qatar-pm-on-preventing-us-iran-talks-from-escalation?traffic_source=rss",
+     "rel": 4,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
     {
      "ts": "2026-06-22T19:33:29Z",
      "title": "Erdogan pledges Turkey\u2019s support for truce between Iran, US",
@@ -3952,18 +3993,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-22T17:34:56Z",
-     "title": "Qatar\u2019s PM tells Al Jazeera progress made in US-Iran talks",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/qatars-pm-tells-al-jazeera-progress-made-in-us-iran-talks?traffic_source=rss",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
     }
    ],
    "split": {
@@ -4024,7 +4053,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "Qatar state-funded international broadcaster",
-      "items": 26
+      "items": 27
      },
      {
       "outlet": "NYT World",
@@ -4149,7 +4178,7 @@
     },
     {
      "outlet": "Al Jazeera",
-     "n": 26,
+     "n": 27,
      "class": "mainstream"
     },
     {
@@ -4433,7 +4462,7 @@
      [
       "2026-06-22 18:00",
       90,
-      49
+      47
      ]
     ],
     "mix": {
@@ -4508,7 +4537,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -4544,45 +4573,33 @@
     "weapons"
    ],
    "brief": {
-    "generated_utc": "2026-06-21T08:19:45Z",
-    "sentence_count": 11,
-    "dropped_count": 0,
+    "generated_utc": "2026-06-22T20:39:05Z",
+    "sentence_count": 15,
+    "dropped_count": 1,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "John Healey resigned as the UK's defence secretary.",
+        "text": "Keir Starmer has resigned as British Prime Minister.",
         "cites": [
          {
-          "outlet": "MSN",
+          "outlet": "NYT World",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPVlI1b01OdWFVc1BkOWZzdmtlZVJSNXV4dk11SllGWXlDWUpFYWlnM05jamh2ZUZZSW5uZXpzTWZabXZIUk10OUVYYWFzcTdSUDFMUEFPYVJteDhxQ3VLemVreExRQ01VWmZaV2ViSGZMaUxQaWhjcjZ4UXVZOHpvbG5QUHA0cDdwMlp1MmZXaERGQXhadVE1RHpUS3VlLWtfNlhMTnBlcDdhSC14djd5eFRpZDlraG95LUZCRDg5NGdsY3AtWHZ5UUdjcF85bXAxM3pnY3RPXzlSRlYtR2J2akt2NS05MDFCa3ZVRXlXOEtlX1hCZ3JVck1DYzlvRV85MjFKQ3Bfb3ZMWmlvTmJDYzl6SjlZc0hLQkJGX2s0Y1RNaDZLS2x3ZEd3?oc=5",
-          "ts": "2026-06-19T15:44:29Z",
-          "title": "Doncaster MP John Healey resigns as government's defence secretary"
+          "url": "https://www.nytimes.com/2026/06/22/world/europe/keir-starmer-andy-burnham-prime-minister-britain.html",
+          "ts": "2026-06-22T17:14:09Z",
+          "title": "Keir Starmer Resigns as UK Prime Minister"
          }
         ]
        },
        {
-        "text": "Healey says the government's defence spending plan is 'well short of what's required'.",
+        "text": "Starmer also stepped down as Labour leader and set a date for his departure as Prime Minister.",
         "cites": [
          {
-          "outlet": "MSN",
+          "outlet": "huffingtonpost.co.uk",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxNT3lUQVp0cVc0b3Exc3Vic1duR1R1bkNQYVNtLVhKaGtzSXdrMHRDLXdQdllWa192MXZ5VkNVRTNOYjlscWxHNEtHOC1vUzIwMHJGZ2tZNDRpMXlUalZzU2lzUl9WRUh3akpJekZTSUFMM2Q5ZGZWWjU1YndtdHZMaDA2MnliV1JHWXhUMUNZUVdXU0phN09CNkFaemVSeVkwNXBlUWwtSmxNczhyeGxrajlxMWQ0cUhRQ2RCUW1IMldfMF90Vk1ra1pGakhZNGJuZkV5RWkxRFZBT3I4QjFRQzBxcUlrUllyYVgxSEtFVGVBWnUwZ3ktN0d5RmNHTXJ1cmpqMVZQemVReGRDaEtuQkE1T2I4M0VHYlU0YVFRQVd3bVhMbXdBa1RIOTI1aVZsR0NrLVJBaFhFMnllM2hpWGNJMFl3LTd5cG55VS0yazN1TUdaZUFvemlHR19SQnc?oc=5",
-          "ts": "2026-06-20T05:15:21Z",
-          "title": "Healey warns defence spending plan 'well short of what's required'"
-         }
-        ]
-       },
-       {
-        "text": "He says 'I resigned from the job I love for our country' amid the defence spending row.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi-wJBVV95cUxOMnpBNDF0YXU4ZEJFQjJBejZJdWkyZ2JYeW9iamRuRVI0LWhlNmdpbEd3SS1qSGhqZFdjU0ZFWkQwY25LaW1JVG9sRUxzQlNqbU9XNm9OV0w5M29uN2ZLZTVrLUxGeWo0M2dVY3B0S2RDS2p0VWdWLU5nemozbVNzLXlPYUlzTmZDU3BieS03UzZpWVFaazlnUEdDSlpRTjYyN0t3RExLZE43MDRCbzNUc1ZsVmhfUndBUzhodVU2SHI1X1FLNGlBSkY4OTZjcmtRenhDTXQ5OHJRbjdacDZBWVc5cmRqeUZLazFzcWFReGJOaHY4b01JRnZyZFotdkNpalloZHBpOWdqa09jT3cxUnVaclZsMmw4OXdTOUdjUmxoQlFJZDBObTBTLVJKc25YNFczRkFGeGVaa0ZzZWFCYmtmVVpHREVod3hHQkMzdTJEUGtsbXlXa0JaYWw0Z2k4d1pVRlE0MEFoWklyVi1MNlhrWXBFVFY1YlA0?oc=5",
-          "ts": "2026-06-20T06:36:11Z",
-          "title": "'I resigned from the job I love for our country' says Healey amid defence spending row"
+          "url": "https://www.huffingtonpost.co.uk/entry/starmer-resigns-timetable-prime-minister_uk_6a355b7de4b057a50cede241",
+          "ts": "2026-06-22T12:30:00Z",
+          "title": "Starmer Resigns As Labour Leader And Sets PM Departure Date"
          }
         ]
        }
@@ -4591,26 +4608,50 @@
      {
       "sentences": [
        {
-        "text": "Healey took a swipe at Starmer over spending cuts.",
+        "text": "European leaders paid tribute to Starmer, and the EU-UK summit was postponed.",
         "cites": [
          {
-          "outlet": "MSN",
+          "outlet": "Guardian World",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQc1NHN2toSE5DaDRCRl9rOVRuZW4zNWJldWtUSFdwQjVHQVhKajZ3a3dNU1NaX1NQTnYyTWZPODdCWDgtYkNqcG54QS1DQ0djREVRZHJzMVZ1dEsxYWVqZ05DR1c1T2VFaFBCQU9CT1BhTGpUQW9iTXcwcEVlYnpBNVBHSUJwQmswb1RlQ1dhNzNfVUNBQVloVUpJODJXTkQ2OVVHZmNoZnZvZi1pNmM4MFQzQm9ocVBpeloxWGJROExSUTJKbE1LNlZGTWpIUE1EWTZpV3A1QXI4T3E3RklRNW1ocjRPSkZxOW9namR0WkM0X1hOWmJnN3JGSUZBY1hfMDhyRVpJUVF3eWdIV0xnazhDcV9SQzlWRnNUX3BLRHdvUVZCeEFZeGd2LXhxd183QkJkOXJaVWRxaWlNb1E3ZUlYTm9xOHZ0MzBNck1fcktLMFhaemtBeTFfVlhTUQ?oc=5",
-          "ts": "2026-06-20T05:20:54Z",
-          "title": "Ex-defence secretary takes swipe at Starmer over spending cuts"
+          "url": "https://www.theguardian.com/world/2026/jun/22/european-leaders-pay-tribute-keir-starmer-eu-uk-summit-postponed",
+          "ts": "2026-06-22T15:07:40Z",
+          "title": "European leaders pay tribute to Starmer as EU-UK summit is postponed"
          }
         ]
        },
        {
-        "text": "One report says Healey and his deputy quit as Starmer and Reeves put welfare and net zero before national security.",
+        "text": "TASS reports that French President Emmanuel Macron pledged to pursue a joint political course with the UK after Starmer's resignation.",
         "cites": [
          {
-          "outlet": "MSN",
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149951",
+          "ts": "2026-06-22T20:03:09Z",
+          "title": "Macron pledges to pursue joint political course with UK after Starmer resigns"
+         }
+        ]
+       },
+       {
+        "text": "One report says the Berlin E5 summit will go ahead as planned despite the resignation.",
+        "cites": [
+         {
+          "outlet": "yahoo.com",
           "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiiwNBVV95cUxQSnljMmhFN1JuYUdGLTdqRDY2a2NBWGsxZ0U3UnFWRFZmSmRPTklPaTdKeW0tTnlIeHItUlptMFdrZk4yNmFoUEF4OGp0bmRFWEdJVkJxTW1ZSHBGbldkRXdKaVA1ZUI3M3RQZnZQLXphckJnaHI5ckR1NVVqSkNwWVpWWFEzT2hTWjllRElYQjBTQk1pVXMwdC1rdE9FQ1VjUGd6NXhaQy1qQUMwb0NRQVd1c0NZWXVZN09xcHA3VXpJSWFiUFNzRkdDWkNiZHRWVlZkQmtKMkp5UGpSX3hsbC02MFg0eDhMNzNUaXFtamRiN0VRVGNxTE9rd1BDZUFQbmdmN3M0US1NN2htY3V2U3hjSjB3d2xSekl1QWVMRWVmYU1kSlRUTWtrcjF4OUs3VVBmb3FoY29nZHVEUnA0TWNVc1VKTDlydUFTemNITGNRSUEtQlJJU3F0dm1nWFFSNzM0XzdDZGtscC1jWldnZmFoYm9oX1JpYTdMRTJTdVVzUUVVRk5WOUNJOA?oc=5",
-          "ts": "2026-06-19T03:24:47Z",
-          "title": "John Healey and his No2 quit as Starmer and Reeves put welfare and net zero before national security"
+          "url": "https://www.yahoo.com/news/politics/articles/berlin-e5-summit-ahead-planned-145628953.html",
+          "ts": "2026-06-22T15:45:00Z",
+          "title": "Berlin E5 summit to go ahead as planned despite Starmer resignation"
+         }
+        ]
+       },
+       {
+        "text": "Pravda reports the Kremlin says Starmer leaves no lasting legacy at all.",
+        "cites": [
+         {
+          "outlet": "english.pravda.ru",
+          "kind": "journalist",
+          "url": "https://english.pravda.ru/news/world/167129-keir-starmer-resignation-britain/",
+          "ts": "2026-06-22T14:00:00Z",
+          "title": "Kremlin Says Keir Starmer Leaves No Lasting Legacy At All"
          }
         ]
        }
@@ -4619,26 +4660,62 @@
      {
       "sentences": [
        {
-        "text": "Andy Burnham won a huge majority in the Makerfield by-election, paving the way for a Starmer leadership challenge.",
+        "text": "Morocco World News reports the resignation came amid a party revolt.",
         "cites": [
          {
-          "outlet": "Guardian World",
+          "outlet": "moroccoworldnews.com",
           "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/2026/jun/19/andy-burnham-wins-makerfield-byelection-paving-way-labour-leadership-challenge",
-          "ts": "2026-06-19T02:32:14Z",
-          "title": "Andy Burnham wins huge majority in Makerfield byelection, paving way for Starmer leadership challenge"
+          "url": "https://www.moroccoworldnews.com/2026/06/323362/uk-prime-minister-keir-starmer-resigns-amid-party-revolt/",
+          "ts": "2026-06-22T14:00:00Z",
+          "title": "UK Prime Minister Keir Starmer Resigns Amid Party Revolt"
          }
         ]
        },
        {
-        "text": "Al Jazeera reports the by-election victory raises the stakes for Starmer.",
+        "text": "One outlet identifies the line 'I Have Heard the Answer' as the moment that ended the premiership.",
         "cites": [
          {
-          "outlet": "Al Jazeera",
+          "outlet": "ibtimes.co.uk",
           "kind": "journalist",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/19/burnham-by-election-victory-raises-stakes-for-starmer?traffic_source=rss",
-          "ts": "2026-06-19T05:11:18Z",
-          "title": "Burnham by-election victory raises stakes for Starmer"
+          "url": "https://www.ibtimes.co.uk/keir-starmer-resigns-uk-prime-minister-labour-party-turmoil-1804348",
+          "ts": "2026-06-22T15:15:00Z",
+          "title": "I Have Heard the Answer : The Line That Ended Keir Starmer Premiership"
+         }
+        ]
+       },
+       {
+        "text": "Jacobin says Starmer used his power to trample on human rights.",
+        "cites": [
+         {
+          "outlet": "Jacobin",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5jSmdpWlkta0JySWQ3R3B2OTg1Ym51VjlMUi1WcEhUOF9KZnRxREZBMTNEanROcGhTSUhKcEhFUGJabGFScFViTGtGdDdJdlNMV2k3VEZFMENrRUZfZ1NXUHotNFFsZUFld2JKMA?oc=5",
+          "ts": "2026-06-22T13:43:09Z",
+          "title": "Keir Starmer Used His Power to Trample on Human Rights"
+         }
+        ]
+       },
+       {
+        "text": "The Guardian asks where it all went wrong in a piece on the rise and fall of Starmer.",
+        "cites": [
+         {
+          "outlet": "Guardian World",
+          "kind": "journalist",
+          "url": "https://www.theguardian.com/politics/ng-interactive/2026/jun/22/the-rise-and-fall-of-keir-starmer-where-did-it-all-go-wrong",
+          "ts": "2026-06-22T15:24:34Z",
+          "title": "The rise and fall of Keir Starmer: where did it all go wrong?"
+         }
+        ]
+       },
+       {
+        "text": "The American Conservative covers the resignation under the headline 'Keir Starmer Bows Out'.",
+        "cites": [
+         {
+          "outlet": "The American Conservative",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1jc0VLSUdZalg2TUU0Zk9JNmRYOUN4cnBmeG5QbkRkTzVvRkF2VGxVLThEWDBMMHdSazdnNWNGVnQxY1Q2ZjRHdzNrNldBLTgzclFXMlFKc2h6d2lobFBXSXNyNjg1SlhaUmRrRThvYw?oc=5",
+          "ts": "2026-06-22T14:45:00Z",
+          "title": "Keir Starmer Bows Out"
          }
         ]
        }
@@ -4647,54 +4724,78 @@
      {
       "sentences": [
        {
-        "text": "The Guardian reports Starmer is facing pressure from ministers and Labour grandees to prepare for an 'orderly exit'.",
+        "text": "The New York Times reports on who will replace Keir Starmer as UK Prime Minister and what happens next.",
         "cites": [
          {
-          "outlet": "Guardian World",
+          "outlet": "NYT World",
           "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/2026/jun/19/keir-starmer-pressure-andy-burnham-wes-streeting-allies-not-fight-leadership-challenge",
-          "ts": "2026-06-19T15:04:56Z",
-          "title": "Starmer facing pressure from ministers and Labour grandees to prepare for \u2018orderly exit\u2019"
+          "url": "https://www.nytimes.com/2026/06/22/world/europe/keir-starmer-resign-replace-prime-minister-burnham-uk.html",
+          "ts": "2026-06-22T12:51:52Z",
+          "title": "Who Will Replace Keir Starmer as UK Prime Minister? Here\u2019s What Happens Next."
          }
         ]
        },
        {
-        "text": "Starmer says he will stand in any Labour leadership contest against Burnham.",
+        "text": "The BBC asks why Starmer resigned and what could happen next.",
         "cites": [
          {
-          "outlet": "Guardian World",
+          "outlet": "BBC",
           "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/2026/jun/19/starmer-says-will-stand-in-labour-leadership-contest-burnham",
-          "ts": "2026-06-19T09:16:50Z",
-          "title": "Starmer says he will stand in any Labour leadership contest against Burnham"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Keir Starmer is expected to announce his departure as prime minister on Monday.",
-        "cites": [
-         {
-          "outlet": "Guardian World",
-          "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/2026/jun/21/keir-starmer-expected-to-announce-departure-as-prime-minister-on-monday",
-          "ts": "2026-06-21T07:52:17Z",
-          "title": "Keir Starmer expected to announce departure as prime minister on Monday"
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBlQk5RR2pfdHAyN25KalFaQUJ3dFBSTWNSOGc2Q2praUdoR2VjMTViNUw5cGxzVk9OQTIyX0k5bEJjcVBJdlY1UEZkYXpoMVhMR3pQcjZkSUg5UQ?oc=5",
+          "ts": "2026-06-22T16:44:17Z",
+          "title": "Why did Keir Starmer resign and what could happen next?"
          }
         ]
        },
        {
-        "text": "Growing numbers of MPs are backing Burnham for PM.",
+        "text": "Multiple local outlets list the big issues facing the new Prime Minister as Starmer announces his resignation.",
         "cites": [
          {
-          "outlet": "Guardian World",
+          "outlet": "yourlocalguardian.co.uk",
           "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/live/2026/jun/21/keir-starmer-expected-resign-resignation-monday--andy-burnham-makerfield-labour-uk-politics-latest-news-updates",
-          "ts": "2026-06-21T07:50:34Z",
-          "title": "Starmer expected to resign on Monday as growing numbers of MPs back Burnham for PM - UK politics live"
+          "url": "https://www.yourlocalguardian.co.uk/news/national/26217211.big-issues-facing-new-pm-starmer-announces-resignation/",
+          "ts": "2026-06-22T15:15:00Z",
+          "title": "What are the big issues facing the new PM as Starmer announces resignation ?"
+         },
+         {
+          "outlet": "bournemouthecho.co.uk",
+          "kind": "journalist",
+          "url": "https://www.bournemouthecho.co.uk/news/national/26217211.big-issues-facing-new-pm-starmer-announces-resignation/",
+          "ts": "2026-06-22T15:00:00Z",
+          "title": "What are the big issues facing the new PM as Starmer announces resignation ?"
+         },
+         {
+          "outlet": "thetelegraphandargus.co.uk",
+          "kind": "journalist",
+          "url": "https://www.thetelegraphandargus.co.uk/news/national/26217211.big-issues-facing-new-pm-starmer-announces-resignation/",
+          "ts": "2026-06-22T14:45:00Z",
+          "title": "What are the big issues facing the new PM as Starmer announces resignation ?"
+         },
+         {
+          "outlet": "messengernewspapers.co.uk",
+          "kind": "journalist",
+          "url": "https://www.messengernewspapers.co.uk/news/national/26217211.big-issues-facing-new-pm-starmer-announces-resignation/",
+          "ts": "2026-06-22T14:30:00Z",
+          "title": "What are the big issues facing the new PM as Starmer announces resignation ?"
+         },
+         {
+          "outlet": "echo-news.co.uk",
+          "kind": "journalist",
+          "url": "https://www.echo-news.co.uk/news/national/26217211.big-issues-facing-new-pm-starmer-announces-resignation/",
+          "ts": "2026-06-22T14:15:00Z",
+          "title": "What are the big issues facing the new PM as Starmer announces resignation"
+         }
+        ]
+       },
+       {
+        "text": "Philenews frames the moment as UK political turmoil with Starmer quitting amid a decade of leadership change.",
+        "cites": [
+         {
+          "outlet": "en.philenews.com",
+          "kind": "journalist",
+          "url": "https://en.philenews.com/international/uk-keir-starmer-resigns-political-turmoil/",
+          "ts": "2026-06-22T12:30:00Z",
+          "title": "UK political turmoil : Starmer quits amid decade of leadership change"
          }
         ]
        }
@@ -5366,7 +5467,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -6061,7 +6162,7 @@
      [
       "2026-06-22 18:00",
       59,
-      70
+      69
      ]
     ],
     "mix": {
@@ -6136,7 +6237,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia hosts ASEAN summit diplomatic push, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia hosts ASEAN summit diplomatic push, Times of Israel.",
     "History gap: era \"ASEAN-Russia strategic track\" shipped without its beats - 4 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -6423,15 +6524,39 @@
     ]
    },
    "discovered": true,
-   "items_24h": 50,
-   "items_48h": 74,
-   "outlets": 61,
+   "items_24h": 52,
+   "items_48h": 76,
+   "outlets": 63,
    "kinds": [
     "journalist",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-22T20:17:27Z",
+     "title": "Ebola outbreak in DR Congo tops 1,000 cases, at least 254 dead",
+     "outlet": "CIDRAP",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMjdOc0FWNEV4WXIyU2dUY0JxbE5hSmg5Y3plXzdjQkdBVzlxVU56cmR1NzNjTDZUYUlILXl1MFhYb09IY2laazI4MDliVWFzbS1MMmFiZ0dZLU82eTVnMElmVmlEVHRhSDdOcFU4U29HVG5OS3gtSzZnNmljSU9aWkQxVTRvNm81Y2Q5LXNXejc?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T19:18:45Z",
+     "title": "DR Congo Ebola outbreak tops 1,000 cases, kills 254",
+     "outlet": "Jamaica Observer",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNaDRibXdROHlua2I1XzdSYnhUYkx6bG8wR2I3Um1RakZybEgtZ0k3a2xKMVhHcmsxRXBhZFpuRDdRWmZoMkxjT3AzU085M1hTRGlpRllPUkFGM0diUG9BenFDOEk2SlZhMVdBUUxmYWhkNHJfOWJieTJFcDlPcGpyZktWcHFfVFdpb2NQc1RHVWdTYjJ3ZWQ1WA?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-22T19:03:35Z",
      "title": "DR Congo Ebola outbreak tops 1,000 cases, kills 254",
@@ -6499,30 +6624,6 @@
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMTd6ZWlxMDJael9Ldll5d2dVeVY2UXNGYVZTZzhYbHRLaVotVXRaeUVTWWNMUks2Y3NBUVB5cU1iX2tWQU15M1cxM0Y5anMwWUJYYV9BS3V6UzZWU3o4aWM3blMxZ2tWSXBOOFpoQUdRcENTTnRLSXJocGdIZFg1RU4xQQ?oc=5",
      "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T14:46:00Z",
-     "title": "Japan pledges $3.5M to fight Ebola outbreak in DR Congo, Uganda",
-     "outlet": "A News",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWF1VWFQWmFjMnhyMDdDbGJaaGdreGFfVUwyTHl6UWRXeHdIc1pIUjJMc0dVRnNnTVlCS0UyUHRvRWlIemRNUHRQRUlCanczUXdMejM3bEY4UmNLdXFnU3FmbTVuV2oxYmZHT3BSa2hYTjhxUDFzWWJESkdWTkwxNzJPdzZXZFBoUUsxNmROdzFMSFhKRFNlY1NsemtTZjJoTV9FQ9IBqgFBVV95cUxQeUxxS3RhUFJsQ0ZzcDd4SUtnRHBwSERyM28tRnFqNmtPQWRXWWgyeFd1alpLbnVyWEJfZUlvWkxkMExOV0loOHVobkR5M0FGU1RFLXdYQ0ZQVUMzWUNTa1RSeWt6V3dOblgzeFNNVVBpTk5XMWRqQmk5V0VBOFhwcG9jQl96MlZRaEVPQWhmTERRN0FUZks0RDBQV1VaS2dRMlJRZ2IyWGNMQQ?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T14:38:50Z",
-     "title": "Dubai sends more than 76 tonnes of aid to help tackle Ebola outbreak in DR Congo",
-     "outlet": "The National",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOHZLRUIxQjI0VGpRZHJGdUV1TVVCTHk3a2c4REo1WFpYQWJnLUd4Z3Q5S3NtT3puNFdpU1R5X2tIQmxXNmdfc1BlTzlyaWpRbHpzdTVMeGdoQ09UVzVJdzVvbXh2XzlieFdhV3Z1Tk9UZ1J6RXRjTWE0alZHSmxzSVJ1LUxnM0RkN0UzRkxXaWRTWFFaU1RIRmNRTEh2cXUyaEtVVTYzTkZSWHBfX2NKWjk1clBISDNtLVF5YlNoQTVUdXFHWlZDRUZXalRQQQ?oc=5",
-     "rel": 14,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -6602,7 +6703,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 59,
+    "outlets_timed": 61,
     "outlets_unplaced": 0,
     "chain": [
      {
@@ -6940,7 +7041,7 @@
      [
       "2026-06-22 18:00",
       50,
-      64
+      61
      ]
     ],
     "mix": {
@@ -6948,7 +7049,7 @@
      "state-media": 3,
      "regional": 1,
      "official": 1,
-     "other": 81
+     "other": 83
     },
     "first_seen": "2026-06-12T17:18:26Z"
    },
@@ -6990,7 +7091,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ebola spreads DR Congo, cases top 676, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -7934,7 +8035,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "lead_image": {
     "url": "https://d3lzcn6mbbadaf.cloudfront.net/media/details/__sized__/ANI-20260621132911-thumbnail-320x180-70.jpg",
@@ -8722,7 +8823,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -8733,595 +8834,6 @@
    "lead_image": {
     "url": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20260622/1478377.jpg",
     "source": "TASS"
-   },
-   "gate": {
-    "score": 7,
-    "of": 8,
-    "checks": {
-     "split": 1,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "bolivia-emergency-amid-protest-blockades",
-   "name": "Bolivia emergency amid protest blockades",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "protest"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-22T18:15:17Z",
-    "sentence_count": 11,
-    "dropped_count": 1,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Bolivia's President Rodrigo Paz has declared a state of emergency, authorizing wider military deployment to clear roadblocks after anti-government protests disrupted the country for 50 days.",
-        "cites": [
-         {
-          "outlet": "facebook.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUlN6UVJWMUp2THVuMFBQT2lKdTJHMXQzUE9LX1lZd2N2X1M4bVhScElGR0NVVHJsQXpGVW45eUlRT1Q0dkJkUk9IdnRIVGNuU2h3QnZMcUdZX0hhbF8zdElzS180VEJhU29aT0FJbERxUDMwbW1GbTd4NDBIUGpWQ1N4eVBRTFJDVjBUNUhZS3dJUDlvclM4SjgtS1F4am94WFdwazNmR0tlaVFrdXhOWk55aVpfNVpKVENfSElOZFZGakE0ajZuU0FDTTVVbGJ0ZEtqUHVjNXdEOV9TN0RzRA?oc=5",
-          "ts": "2026-06-21T14:31:53Z",
-          "title": "Bolivia's President Rodrigo Paz has declared a state of emergency, enabling wider military deployment to clear blockades and restore order after anti-government protests brought the economy to a halt over the past 50 days. #dwnews"
-         }
-        ]
-       },
-       {
-        "text": "Paz ordered the military to clear the blockades.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQQVZTWXZkTnlhNWp0RHg5N19CenNPWFhSZzJ6NXNTV3RMcFVIakhFa01TU1FqUUt0UUVLWmR2QkdOY3lEalBVVE5kMDBBTDdOX2ViZXdxMGxZNVZaaFhuWVdHVEtxd2VQU0s0cE1KLTJWM2lrelVQMzZSeXlnc3hVU19PbG5Pb3JidWxTcS1iQkdreTUwQ3hVY1dEMnBEbUJYUklZZy1JQXJXSFUyV2V1Q0swUDU4bk4wWHc0WnBFNXBxdDJ3aUhFRnN5RVlYTWxFb3ViQVJDYlpOU0lEWjlsWGdGQ2V2a2V6QlltWGl5TGgza3E1d08ycmttTQ?oc=5",
-          "ts": "2026-06-21T15:26:08Z",
-          "title": "Paz declares emergency, orders military to clear Bolivia blockades"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The protests brought the economy to a halt over the past 50 days.",
-        "cites": [
-         {
-          "outlet": "facebook.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUlN6UVJWMUp2THVuMFBQT2lKdTJHMXQzUE9LX1lZd2N2X1M4bVhScElGR0NVVHJsQXpGVW45eUlRT1Q0dkJkUk9IdnRIVGNuU2h3QnZMcUdZX0hhbF8zdElzS180VEJhU29aT0FJbERxUDMwbW1GbTd4NDBIUGpWQ1N4eVBRTFJDVjBUNUhZS3dJUDlvclM4SjgtS1F4am94WFdwazNmR0tlaVFrdXhOWk55aVpfNVpKVENfSElOZFZGakE0ajZuU0FDTTVVbGJ0ZEtqUHVjNXdEOV9TN0RzRA?oc=5",
-          "ts": "2026-06-21T14:31:53Z",
-          "title": "Bolivia's President Rodrigo Paz has declared a state of emergency, enabling wider military deployment to clear blockades and restore order after anti-government protests brought the economy to a halt over the past 50 days. #dwnews"
-         }
-        ]
-       },
-       {
-        "text": "Reports describe food shortages alongside the 50 days of protests.",
-        "cites": [
-         {
-          "outlet": "MSN",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMikgNBVV95cUxQa2JZNmdSaURYTUhrcEtHMmgzaGlFZnppU1ZLdUdFLXpmYXVKcGp5bENIVGQ2YXZfdUxUZEphTU5JU0NrS2h6TGxYUVJ2aXBBdTZwWXc2UFR2SG1IN211b0ZZbExoSC1PdHdyY3NYOUNSX21zZENScmdKeWRkbGJqVkVySFZxOTZheGNOS29LWHdxZnQzbnlXVTI3ckkzeTBHNmh3X25nbVY0QkM2LUNlamV6X2tzcGpWTnRPZl9nRlE5OXpyemM3Tmk3M0o1RTJ1ajBUd2lqdVJmVVZveTJPT3kzcUFuMXZWeE1BcmhndmdKSHp4NENWMG0zTXBaMC05WVYxT3dGUTkxR3FRS0RuMU1uQk0xTDNmVC03ME9WZExraHp5UjJhX3hpdXNtbjM5ZkFLUTZTWUQ5RXB5QXBkcEEwY3huSWZsR2xERThyZDJodTR5VnQzZlJ6U3JWcndtVURBWDZldUJOdzZiaDdpeU1KenJtSTl0cEtmNGNzZkVvNER2ci1qR1FsVURFRUtXcWc?oc=5",
-          "ts": "2026-06-21T16:26:45Z",
-          "title": "50 days of protests, food shortage, state of emergency: What is happening in Bolivia?"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Reuters reports that the Bolivia crisis began to ease after lawmakers backed the state of emergency.",
-        "cites": [
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMFBSVUdTVDlGY3pXN0pXM0JWQ2FOdVdJSDRLZnEtTl9hOHBVaHptdUpMRjRSdDdrd3Y2TmMxNUVvZ0l6UUJfd3Z3RnZBeGR4eWpwaTNVYVpVZUhUeGlxNlJ6REpUXzJsTHcxa0xSSFpaLTQ0TVdGNzBjVkRsbmhHZk5TSUdtdy1wR0pOcjRybFZRX1RsYXFKaGlWcFVLOVV6OFYzZDlJOEpUS3JVcVBMTzdXcm0?oc=5",
-          "ts": "2026-06-21T13:35:33Z",
-          "title": "Bolivia crisis begins to ease after lawmakers back state of emergency"
-         }
-        ]
-       },
-       {
-        "text": "Bolivian authorities say there are no active blockades after the state of emergency decree.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQckpDMEhpMVREUlJtZHZJSkROcVhWeDZreVdiTVYyYUtIS2UzcTdQX3pVQTRXTXAxVExSeGF4UlUyQnpnUnBSTzhJa1VKV3hqQlV4S1RlSE5OUGdmSnU1dXF4V2JVcXdNaGJQNUJNSjQ0a18wZGREdjlzbWtQVEo0bDJEak5CdFJ6cDBJLUp0QnBnbVRDekNfemJTaW53S3JwTkNkQ1o1b2ZDSWFOZnI3NmJHQlVFUzV50gG-AUFVX3lxTE5lMG83aXduNWJycUxKMUFyWWpSXzBDTklYbEE0Ti1JVVJEX2tPMjNZbHlFVDlXR2huQkw4NmVJdEt2clZEc016cVRGSDQybWtrTlBGOWxfYm1XYWN1NHQyS2V0Rm5zbnF6cDJTRFcxNFkzamFPR18ySWhsS3dDQUF0cFNOazBrZ1ZXaTBUVDdjNVRmVUNwVjN0YWtSb3pneFJBR0IwZVpqeXd1SExyZUdVRVNRSGlWbDVDSHpiWEE?oc=5",
-          "ts": "2026-06-21T14:43:48Z",
-          "title": "Bolivian authorities say no active blockades after state of emergency decree"
-         },
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/21/bolivian-authorities-say-no-active-blockades-after-state-of-emergency-decree?traffic_source=rss",
-          "ts": "2026-06-21T14:27:50Z",
-          "title": "Bolivian authorities say no active blockades after state of emergency decree"
-         }
-        ]
-       },
-       {
-        "text": "The Taipei Times reports that Bolivia removed roadblocks after the emergency decree.",
-        "cites": [
-         {
-          "outlet": "Taipei Times",
-          "kind": "journalist",
-          "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859597",
-          "ts": "2026-06-23T08:00:00Z",
-          "title": "Bolivia removes roadblocks after emergency decree"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The UK Foreign Office issued a travel warning after the state of emergency was declared.",
-        "cites": [
-         {
-          "outlet": "Birmingham Live",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSdIBjAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSQ?oc=5",
-          "ts": "2026-06-22T05:37:00Z",
-          "title": "UK Foreign Office issues travel warning after 'state of emergency' declared"
-         }
-        ]
-       },
-       {
-        "text": "The Independent published updated travel advice for Bolivia amid the protests and road blockades.",
-        "cites": [
-         {
-          "outlet": "The Independent",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUm9BcHZBQXlzSzV1ZEJ6SlZrcHRBT18tVmp6Z2EtcjFqRzFNZUZYSEs0b25xalc0TGhacHVjcDRYRDFoZTNPVXFaTHJnUld3b3JXOGowNDY0cHhnYmktT1paT2tvU2YxNVl1dEJGY3hMdnA5cXlPWHFnS3JIenVtS2xIUnYxTGJxSkVPY0UycFVHbmdQd1R5MjNvSjB1aDVkazhTQjY5ZUM3dTZJMjVqMjk5clBUWWxzTDZZNWVsWlo?oc=5",
-          "ts": "2026-06-22T08:31:00Z",
-          "title": "Is it safe to travel to Bolivia? Latest advice amid protests and road blockades"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Mint reports that US Defence Chief Pete Hegseth warned that the United States is watching.",
-        "cites": [
-         {
-          "outlet": "Mint",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxONC1hMnE1ZzVvZUc0U2lGTEtha1B0LTNjVk9MNG5xS3NqemViV1NGRU9MWGI1UGJzb3A1Rlh5Y2V2YnVvcU56RFpSNHMxN1dwZkM4LU1BdGIzYVl5NnF5dndBemJ4Q185Sy13c2N0OG9pR1d1VFBKb2dZSXpJNXJwdWpHbjJqRDFFc3ViS056bUlTc3B4VkNuV3FEV2ZhRUpSY0Q3UVQ2VXdLN0VtQlBqc3RDMl80TGJZM1RmTnpLdlVwNktleW0zUzdNc1RnS1hOYkR3blBNSFF6V2w1LXkwWXZpS1N3b2tvRVhZSXhnUkdHa29mRTRrOV9pczI2X29Q0gGGAkFVX3lxTE9lRmlFVEJOamF3QkZMeUdaNEdsaG54N19MV1VZVjd3M1FCaG9wXzdNSTQyVXpQRFVlTjE3eUp0cHIwd0ZuOTliZkJ0Umt2N1R6YWlXaFh0MFdrczF1akFobGRGOFlJUW56OXN3RnFkU1hFcU9idDJ6Z0lqUVUxUXNlYmI4THZsaVNDNkFHMnQzaks3NVlKT05JbUEyRmFjVGtZSzM1UXp6TUVIY0xKR25PNHVFZlNFNXJ3UURkb095TkxCdmQ3VU9HbE91NEpBZmxKdnVYWTBMZGQ0RWFsbEdyX3daMWtlTnZNUW95QThBT01YTXNPd3gxNFZaRHJIck55MkZpSXc?oc=5",
-          "ts": "2026-06-21T14:09:04Z",
-          "title": "Why Bolivia declared state of emergency amid protests? US Defence Chief Pete Hegseth warns \u2018United States is watching\u2019"
-         }
-        ]
-       },
-       {
-        "text": "Coverage from inkl reports that a patrol plane crash killed six as roadblocks were cleared after the emergency decree.",
-        "cites": [
-         {
-          "outlet": "inkl",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZEM5SkR4NTFfRkhhZVd3Wk5FS0ZaX0UyVnMzRmRydTBWaE9lQUpQNTZ1Nkp4eTI4eFVjZ0k4eTJoenBvM1N1ZEZTMVlnQUJERGlmVS1Cd0tQZlVack1LdEFlR0d5cEhpN0NmY3RZcVNrSkMxMENmSWJkeVFUVWJybHZabU9aQ2FoVDQ3bzJGWHcwRTlDVjZ3YXBYc25pSmF2YnhPNU1yMUdLQy13ZWZsUFJVa3N2VncxUUxVWg?oc=5",
-          "ts": "2026-06-21T21:26:01Z",
-          "title": "Bolivia clears anti-government roadblocks after emergency decree, as patrol plane crash kills 6"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 17,
-   "items_48h": 103,
-   "outlets": 65,
-   "kinds": [
-    "journalist",
-    "wire service"
-   ],
-   "latest": [
-    {
-     "ts": "2026-06-22T17:07:43Z",
-     "title": "Czechs protest against public broadcaster plan",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859598",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T17:07:43Z",
-     "title": "Bolivia removes roadblocks after emergency decree",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859597",
-     "rel": 10,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T08:31:00Z",
-     "title": "Is it safe to travel to Bolivia? Latest advice amid protests and road blockades",
-     "outlet": "The Independent",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUm9BcHZBQXlzSzV1ZEJ6SlZrcHRBT18tVmp6Z2EtcjFqRzFNZUZYSEs0b25xalc0TGhacHVjcDRYRDFoZTNPVXFaTHJnUld3b3JXOGowNDY0cHhnYmktT1paT2tvU2YxNVl1dEJGY3hMdnA5cXlPWHFnS3JIenVtS2xIUnYxTGJxSkVPY0UycFVHbmdQd1R5MjNvSjB1aDVkazhTQjY5ZUM3dTZJMjVqMjk5clBUWWxzTDZZNWVsWlo?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T07:32:23Z",
-     "title": "Why Bolivia Has Been Rocked By Protests And Why It Has Now Declared An Emergency",
-     "outlet": "News18",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNFJlRGQtVjljR3ducTM1ZDhLeFUtbjVsWHhhcXc5d185aHQtSWktMUZ2TVJjNjBGV09NbjFaN0NIX3BsNTQ1elNaTHU3RXNxNUwzYTB0WEdHcmh5U0piR3Bna2psNGQ0eG0tVHg4cnAwOHZQODRFSzNMVFFGandMSFo2em9xZERDT0ZMOHUtYzlEMnZmTzZ4MkxiaFdVaVNiRWdMUU16b0ZVZTY2OTBfR1BjcGhsOVZ2aEx0VWFxb1FrVlFTUXY1ajl6SnjSAcwBQVVfeXFMTzRSZURkLVY5Y0d3bnEzNWQ4S3hVLW41bFh4YXF3OXdfOWh0LUlpLTFGdk1SYzYwRldPTW4xWjdDSF9wbDU0NXpTWkx1N0VzcTVMM2EwdFhHR3JoeVNKYkdwZ2tqbDRkNHhtLVR4OHJwMDh2UDg0RUszTFRRRmp3TEhaNnpvcWREQ09GTDh1LWM5RDJ2Zk82eDJMYmhXVWlTYkVnTFFNem9GVWU2NjkwX0dQY3BobDlWdmhMdFVhcW9Ra1ZRU1F2NWo5ekp4?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T05:37:00Z",
-     "title": "UK Foreign Office issues travel warning after 'state of emergency' declared",
-     "outlet": "Birmingham Live",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNVhwY3BqSGkxc2ItY2d2d2l5R0dsMllvSVpBMDlYU3ByTEh6Z0NsZF9BSzZ3UHhQbld2UHJBa1NPSm0wZEJiakZHOE5xckp3aUs3RHJDcFZ0SXUxZkhVWUxaSkx1dzNvaTQwNjRwRHNNeDJwZ211N1hPTXFqRHozNi0teW1rTmPSAYwBQVVfeXFMUEswa0pBdjl1N1psY1Z1NV9NZ2Z0X3VhVU83UU02cUhFQWlvaC1oWTR1bVc2YWphMlVCdGNxS2RyRFFwaDJrWVBYSnQ1SnRaNndqRlNhYnR1QjgtSWhZZVJOTmFtX3laaXRSVW1sc1BEb1hKUXVBb3pUSXIyblo3aDc0N1JydDBBVlFBMEk?oc=5",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T05:37:00Z",
-     "title": "UK Foreign Office issues travel warning after 'state of emergency' declared",
-     "outlet": "Birmingham Live",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSdIBjAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSQ?oc=5",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T03:00:00Z",
-     "title": "Protesters burn US flags , clash with riot police after Colombia vote",
-     "outlet": "thedailystar.net",
-     "kind": "journalist",
-     "url": "https://www.thedailystar.net/news/world/news/protesters-burn-us-flags-clash-riot-police-after-colombia-vote-4204981",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T01:48:38Z",
-     "title": "Bolivia crisis explained: State of emergency declared after 50 days of protests",
-     "outlet": "MSN",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeEtmVUdybkFRT1o3TnRBOXc1UTR5QVluMXVBeksyUlpaa0tYTHlPTUxBeE1NZ0JDaTU0OWdFTDVjazd0OGtmMDk0RkhFMEtrR3VTWDFjMGhub1BpenA2N2RVcHlXRENKRUZPa0VqdklGbG1Ud1FpcXZFNmtDTVcxWkdwMUtkNmIxTHUwR3BXN1JFWDhOcjZ3d2hJN2NUU0swbmxpeHlhR1JzVHBtLVBPUjY1eEFzYXpyVXBYZTk2Ny1NWlI2YlE?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "a": "Bolivia's president declares a 90-day state of emergency and authorizes military to clear roadblocks that have disrupted the country for 50 days.",
-    "b": "Protesters oppose fuel subsidy cuts driving the blockades; travel warnings are issued as clashes with security forces intensify.",
-    "basis": "extracted from live headlines 2026-06-22",
-    "axis_type": "policy_dispute",
-    "axis_question": "Is Bolivia's emergency decree a security necessity or crackdown on legitimate protest?",
-    "carriers": {
-     "a": [
-      {
-       "outlet": "MSN",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPckV6T3liWlRXQlM1akR1bmJlU3FIdEVETFZYRnhoU1RjX0hZLXBlYUFJMEVVOWpoRTJNWHdNUEZWR0R4MnZVWTVlRlFDSkhuTVY3bUpiTGJENHNndVZ6ZVpmaVNSMzFhMjlnLTdoLTZtU1F0NVJTUUlmeUpuN25SQWRVVmtDcWprQml4ZGg5dV9rSzdDdW5pZmlCX0dyand4RTJYSVA0WTdzZHF6X1lzN1huMEhKOGM?oc=5",
-       "ts": "2026-06-20T15:57:28Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "inkl",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZEM5SkR4NTFfRkhhZVd3Wk5FS0ZaX0UyVnMzRmRydTBWaE9lQUpQNTZ1Nkp4eTI4eFVjZ0k4eTJoenBvM1N1ZEZTMVlnQUJERGlmVS1Cd0tQZlVack1LdEFlR0d5cEhpN0NmY3RZcVNrSkMxMENmSWJkeVFUVWJybHZabU9aQ2FoVDQ3bzJGWHcwRTlDVjZ3YXBYc25pSmF2YnhPNU1yMUdLQy13ZWZsUFJVa3N2VncxUUxVWg?oc=5",
-       "ts": "2026-06-21T21:26:01Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Magzter",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOU05tY3Bxd1VnODF4SnR4eUtwMXlMUEcxa0FpRjhnU3F3WlpITkNzN0pGdFZMQkp2Y3h5OHVBN0ktS0swN1JQV3lYSE1LOUoyalVrUnAwVGVXOGcxOWxSMF9mTjlsZEhoYThqUXloOTFtdjFJemVPUGRiUklCWTFmTEhqQmVTaWdyc200T3RhZXZIQm9TaWFkTEtFcVNqbXlILWV6aV9jcFFrb1ZscnVr?oc=5",
-       "ts": "2026-06-21T21:47:49Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "sekbernews.id",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBISDNaTlVRMHlmNmo4ZkdYbzRsUjIybDdlcWJ2Ny1pNDQ4SE9nR3luU29nWDY2WUQwakhXZUJwQ2R4MDJFeTk2R3Nzbzk5OWRFLVktUnlVekNrR3BzTHloTFQ3UHVkVkduMDhwNTBma2hyRVk1TENjY2hn?oc=5",
-       "ts": "2026-06-21T23:54:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "The CSR Journal",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSGs4Sy0yWE9tY3hBeVdKWXJaWDRGVHZKV3JVUm1pdmVFOHR0WmdLLXRyeFdpYXAzX3Q5bjlKRTdlakFaaUtvWEEtOTFGbXEwUUNKbGV0WGpHRmFRa2t1eVlxUXkzZUtEa0RtaDVXUlZZZTRQRzNQLU5jRFQ0cllFcjZCQWJGNlM3MlNVaW00c2pFVUdwcDR2T1ZaRjdBU0JCZkY3cUJ0aw?oc=5",
-       "ts": "2026-06-22T04:57:46Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "Birmingham Live",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSdIBjAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSQ?oc=5",
-       "ts": "2026-06-22T05:37:00Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "News18",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNFJlRGQtVjljR3ducTM1ZDhLeFUtbjVsWHhhcXc5d185aHQtSWktMUZ2TVJjNjBGV09NbjFaN0NIX3BsNTQ1elNaTHU3RXNxNUwzYTB0WEdHcmh5U0piR3Bna2psNGQ0eG0tVHg4cnAwOHZQODRFSzNMVFFGandMSFo2em9xZERDT0ZMOHUtYzlEMnZmTzZ4MkxiaFdVaVNiRWdMUU16b0ZVZTY2OTBfR1BjcGhsOVZ2aEx0VWFxb1FrVlFTUXY1ajl6SnjSAcwBQVVfeXFMTzRSZURkLVY5Y0d3bnEzNWQ4S3hVLW41bFh4YXF3OXdfOWh0LUlpLTFGdk1SYzYwRldPTW4xWjdDSF9wbDU0NXpTWkx1N0VzcTVMM2EwdFhHR3JoeVNKYkdwZ2tqbDRkNHhtLVR4OHJwMDh2UDg0RUszTFRRRmp3TEhaNnpvcWREQ09GTDh1LWM5RDJ2Zk82eDJMYmhXVWlTYkVnTFFNem9GVWU2NjkwX0dQY3BobDlWdmhMdFVhcW9Ra1ZRU1F2NWo5ekp4?oc=5",
-       "ts": "2026-06-22T07:32:23Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "The Independent",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUm9BcHZBQXlzSzV1ZEJ6SlZrcHRBT18tVmp6Z2EtcjFqRzFNZUZYSEs0b25xalc0TGhacHVjcDRYRDFoZTNPVXFaTHJnUld3b3JXOGowNDY0cHhnYmktT1paT2tvU2YxNVl1dEJGY3hMdnA5cXlPWHFnS3JIenVtS2xIUnYxTGJxSkVPY0UycFVHbmdQd1R5MjNvSjB1aDVkazhTQjY5ZUM3dTZJMjVqMjk5clBUWWxzTDZZNWVsWlo?oc=5",
-       "ts": "2026-06-22T08:31:00Z",
-       "provenance": "echo",
-       "motive_note": "UK press"
-      }
-     ]
-    }
-   },
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 48,
-    "outlets_timed": 63,
-    "outlets_unplaced": 1,
-    "chain": [
-     {
-      "outlet": "Reuters",
-      "ts": "2026-06-20T20:25:46Z",
-      "kind": "wire service",
-      "role": "origin",
-      "motive_note": "international wire service",
-      "items": 2
-     },
-     {
-      "outlet": "\u0130lke Haber Ajans\u0131",
-      "ts": "2026-06-20T20:29:50Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-20T20:42:42Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 6
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-06-20T20:47:13Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 25
-     },
-     {
-      "outlet": "ksat.com",
-      "ts": "2026-06-20T21:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Peoples Gazette Nigeria",
-      "ts": "2026-06-20T21:00:51Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Japan Today",
-      "ts": "2026-06-20T21:10:31Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "slguardian.org",
-      "ts": "2026-06-20T21:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": [
-     {
-      "outlet": "Press TV",
-      "first_seen": "2026-06-21T05:03:41Z",
-      "kind": "state media",
-      "motive_note": "IR state media",
-      "items": 3
-     }
-    ]
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "MSN",
-     "n": 32,
-     "class": "other"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 8,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Taipei Times",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "Modern Ghana",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Press TV",
-     "n": 3,
-     "class": "state-media"
-    },
-    {
-     "outlet": "sekbernews.id",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "AnewZ",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "BBC",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Birmingham Live",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "DW.com",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Devdiscourse",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "France 24",
-     "n": 2,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 3,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-21 00:00",
-      6,
-      5
-     ],
-     [
-      "2026-06-21 06:00",
-      7,
-      5
-     ],
-     [
-      "2026-06-21 12:00",
-      107,
-      147
-     ],
-     [
-      "2026-06-22 06:00",
-      35,
-      128
-     ],
-     [
-      "2026-06-22 12:00",
-      29,
-      82
-     ],
-     [
-      "2026-06-22 18:00",
-      18,
-      66
-     ]
-    ],
-    "mix": {
-     "mainstream": 4,
-     "state-media": 3,
-     "regional": 1,
-     "official": 0,
-     "other": 165
-    },
-    "first_seen": "2026-06-21T04:23:08Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-22T12:10:10Z",
-     "a": "Bolivian authorities and mainstream outlets report the emergency decree quickly cleared blockades and restored order without active resistance.",
-     "b": "Left-leaning outlets and DW characterize the military deployment against protesters as an authoritarian crackdown on anti-government dissent."
-    },
-    {
-     "captured_utc": "2026-06-22T13:09:45Z",
-     "a": "Bolivia's president declares a 90-day state of emergency and authorizes military to clear roadblocks that have disrupted the country for 50 days.",
-     "b": "Protesters oppose fuel subsidy cuts driving the blockades; travel warnings are issued as clashes with security forces intensify."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 1
-   },
-   "lead_image": {
-    "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781988142.jpg?resize=1920%2C1080&quality=80",
-    "source": "Al Jazeera"
    },
    "gate": {
     "score": 7,
@@ -9701,11 +9213,11 @@
     }
    ],
    "split": {
-    "a": "Hezbollah and Press TV assert the right to keep weapons as resistance until Israel ends its occupation of southern Lebanon",
-    "b": "Israel says its military retains full freedom of action against threats in Lebanon while holding to the truce",
+    "a": "Press TV and Hezbollah say weapons will be kept until Israeli occupation ends, framing any prior disarmament as capitulation.",
+    "b": "TASS and NYT World say Israel asserts full military freedom of action and weighs only a symbolic troop withdrawal.",
     "basis": "extracted from live headlines 2026-06-22",
     "axis_type": "policy_dispute",
-    "axis_question": "Must Hezbollah disarm as part of any Lebanon peace arrangement?",
+    "axis_question": "Should Hezbollah disarm before or after Israeli forces withdraw from Lebanon?",
     "carriers": {
      "a": [
       {
@@ -9733,6 +9245,14 @@
        "ts": "2026-06-22T05:50:00Z",
        "provenance": "echo",
        "motive_note": "RU state media"
+      },
+      {
+       "outlet": "Al Jazeera",
+       "kind": "journalist",
+       "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/aje-onl-aje_onl_lebanon_wrap-220626?traffic_source=rss",
+       "ts": "2026-06-22T16:19:27Z",
+       "provenance": "echo",
+       "motive_note": "Qatar state-funded international broadcaster"
       }
      ]
     }
@@ -10032,11 +9552,6 @@
    },
    "drift": [
     {
-     "captured_utc": "2026-06-22T11:14:07Z",
-     "a": "Hezbollah vows to keep weapons until Israeli occupation ends; Press TV frames Lebanon as rising against the US-backed disarmament plan.",
-     "b": "Lebanon's parliament speaker Berri pledges Hezbollah will disarm south of the Litani, rejecting pilot zones as a waste of time."
-    },
-    {
      "captured_utc": "2026-06-22T12:10:10Z",
      "a": "Lebanon's parliament speaker Berri pledges Hezbollah will disarm south of the Litani on Lebanon's own timeline, rejecting Israel's proposed pilot zones.",
      "b": "Israel maintains military operations in southern Lebanon while the US (Vance) claims ceasefire progress, implying disarmament on externally negotiated terms."
@@ -10090,10 +9605,15 @@
      "captured_utc": "2026-06-22T20:13:55Z",
      "a": "Hezbollah and Press TV assert the right to keep weapons as resistance until Israel ends its occupation of southern Lebanon",
      "b": "Israel says its military retains full freedom of action against threats in Lebanon while holding to the truce"
+    },
+    {
+     "captured_utc": "2026-06-22T20:39:07Z",
+     "a": "Press TV and Hezbollah say weapons will be kept until Israeli occupation ends, framing any prior disarmament as capitulation.",
+     "b": "TASS and NYT World say Israel asserts full military freedom of action and weighs only a symbolic troop withdrawal."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "History gap: era \"Border conflict roots\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -10105,6 +9625,595 @@
    "lead_image": {
     "url": "https://ichef.bbci.co.uk/news/1024/branded_news/1d8c/live/3048d450-6c0d-11f1-866d-31e44f099e94.jpg",
     "source": "BBC World"
+   },
+   "gate": {
+    "score": 7,
+    "of": 8,
+    "checks": {
+     "split": 1,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "bolivia-emergency-amid-protest-blockades",
+   "name": "Bolivia emergency amid protest blockades",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "protest"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-22T18:15:17Z",
+    "sentence_count": 11,
+    "dropped_count": 1,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Bolivia's President Rodrigo Paz has declared a state of emergency, authorizing wider military deployment to clear roadblocks after anti-government protests disrupted the country for 50 days.",
+        "cites": [
+         {
+          "outlet": "facebook.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUlN6UVJWMUp2THVuMFBQT2lKdTJHMXQzUE9LX1lZd2N2X1M4bVhScElGR0NVVHJsQXpGVW45eUlRT1Q0dkJkUk9IdnRIVGNuU2h3QnZMcUdZX0hhbF8zdElzS180VEJhU29aT0FJbERxUDMwbW1GbTd4NDBIUGpWQ1N4eVBRTFJDVjBUNUhZS3dJUDlvclM4SjgtS1F4am94WFdwazNmR0tlaVFrdXhOWk55aVpfNVpKVENfSElOZFZGakE0ajZuU0FDTTVVbGJ0ZEtqUHVjNXdEOV9TN0RzRA?oc=5",
+          "ts": "2026-06-21T14:31:53Z",
+          "title": "Bolivia's President Rodrigo Paz has declared a state of emergency, enabling wider military deployment to clear blockades and restore order after anti-government protests brought the economy to a halt over the past 50 days. #dwnews"
+         }
+        ]
+       },
+       {
+        "text": "Paz ordered the military to clear the blockades.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQQVZTWXZkTnlhNWp0RHg5N19CenNPWFhSZzJ6NXNTV3RMcFVIakhFa01TU1FqUUt0UUVLWmR2QkdOY3lEalBVVE5kMDBBTDdOX2ViZXdxMGxZNVZaaFhuWVdHVEtxd2VQU0s0cE1KLTJWM2lrelVQMzZSeXlnc3hVU19PbG5Pb3JidWxTcS1iQkdreTUwQ3hVY1dEMnBEbUJYUklZZy1JQXJXSFUyV2V1Q0swUDU4bk4wWHc0WnBFNXBxdDJ3aUhFRnN5RVlYTWxFb3ViQVJDYlpOU0lEWjlsWGdGQ2V2a2V6QlltWGl5TGgza3E1d08ycmttTQ?oc=5",
+          "ts": "2026-06-21T15:26:08Z",
+          "title": "Paz declares emergency, orders military to clear Bolivia blockades"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The protests brought the economy to a halt over the past 50 days.",
+        "cites": [
+         {
+          "outlet": "facebook.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUlN6UVJWMUp2THVuMFBQT2lKdTJHMXQzUE9LX1lZd2N2X1M4bVhScElGR0NVVHJsQXpGVW45eUlRT1Q0dkJkUk9IdnRIVGNuU2h3QnZMcUdZX0hhbF8zdElzS180VEJhU29aT0FJbERxUDMwbW1GbTd4NDBIUGpWQ1N4eVBRTFJDVjBUNUhZS3dJUDlvclM4SjgtS1F4am94WFdwazNmR0tlaVFrdXhOWk55aVpfNVpKVENfSElOZFZGakE0ajZuU0FDTTVVbGJ0ZEtqUHVjNXdEOV9TN0RzRA?oc=5",
+          "ts": "2026-06-21T14:31:53Z",
+          "title": "Bolivia's President Rodrigo Paz has declared a state of emergency, enabling wider military deployment to clear blockades and restore order after anti-government protests brought the economy to a halt over the past 50 days. #dwnews"
+         }
+        ]
+       },
+       {
+        "text": "Reports describe food shortages alongside the 50 days of protests.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMikgNBVV95cUxQa2JZNmdSaURYTUhrcEtHMmgzaGlFZnppU1ZLdUdFLXpmYXVKcGp5bENIVGQ2YXZfdUxUZEphTU5JU0NrS2h6TGxYUVJ2aXBBdTZwWXc2UFR2SG1IN211b0ZZbExoSC1PdHdyY3NYOUNSX21zZENScmdKeWRkbGJqVkVySFZxOTZheGNOS29LWHdxZnQzbnlXVTI3ckkzeTBHNmh3X25nbVY0QkM2LUNlamV6X2tzcGpWTnRPZl9nRlE5OXpyemM3Tmk3M0o1RTJ1ajBUd2lqdVJmVVZveTJPT3kzcUFuMXZWeE1BcmhndmdKSHp4NENWMG0zTXBaMC05WVYxT3dGUTkxR3FRS0RuMU1uQk0xTDNmVC03ME9WZExraHp5UjJhX3hpdXNtbjM5ZkFLUTZTWUQ5RXB5QXBkcEEwY3huSWZsR2xERThyZDJodTR5VnQzZlJ6U3JWcndtVURBWDZldUJOdzZiaDdpeU1KenJtSTl0cEtmNGNzZkVvNER2ci1qR1FsVURFRUtXcWc?oc=5",
+          "ts": "2026-06-21T16:26:45Z",
+          "title": "50 days of protests, food shortage, state of emergency: What is happening in Bolivia?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Reuters reports that the Bolivia crisis began to ease after lawmakers backed the state of emergency.",
+        "cites": [
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMFBSVUdTVDlGY3pXN0pXM0JWQ2FOdVdJSDRLZnEtTl9hOHBVaHptdUpMRjRSdDdrd3Y2TmMxNUVvZ0l6UUJfd3Z3RnZBeGR4eWpwaTNVYVpVZUhUeGlxNlJ6REpUXzJsTHcxa0xSSFpaLTQ0TVdGNzBjVkRsbmhHZk5TSUdtdy1wR0pOcjRybFZRX1RsYXFKaGlWcFVLOVV6OFYzZDlJOEpUS3JVcVBMTzdXcm0?oc=5",
+          "ts": "2026-06-21T13:35:33Z",
+          "title": "Bolivia crisis begins to ease after lawmakers back state of emergency"
+         }
+        ]
+       },
+       {
+        "text": "Bolivian authorities say there are no active blockades after the state of emergency decree.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQckpDMEhpMVREUlJtZHZJSkROcVhWeDZreVdiTVYyYUtIS2UzcTdQX3pVQTRXTXAxVExSeGF4UlUyQnpnUnBSTzhJa1VKV3hqQlV4S1RlSE5OUGdmSnU1dXF4V2JVcXdNaGJQNUJNSjQ0a18wZGREdjlzbWtQVEo0bDJEak5CdFJ6cDBJLUp0QnBnbVRDekNfemJTaW53S3JwTkNkQ1o1b2ZDSWFOZnI3NmJHQlVFUzV50gG-AUFVX3lxTE5lMG83aXduNWJycUxKMUFyWWpSXzBDTklYbEE0Ti1JVVJEX2tPMjNZbHlFVDlXR2huQkw4NmVJdEt2clZEc016cVRGSDQybWtrTlBGOWxfYm1XYWN1NHQyS2V0Rm5zbnF6cDJTRFcxNFkzamFPR18ySWhsS3dDQUF0cFNOazBrZ1ZXaTBUVDdjNVRmVUNwVjN0YWtSb3pneFJBR0IwZVpqeXd1SExyZUdVRVNRSGlWbDVDSHpiWEE?oc=5",
+          "ts": "2026-06-21T14:43:48Z",
+          "title": "Bolivian authorities say no active blockades after state of emergency decree"
+         },
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/21/bolivian-authorities-say-no-active-blockades-after-state-of-emergency-decree?traffic_source=rss",
+          "ts": "2026-06-21T14:27:50Z",
+          "title": "Bolivian authorities say no active blockades after state of emergency decree"
+         }
+        ]
+       },
+       {
+        "text": "The Taipei Times reports that Bolivia removed roadblocks after the emergency decree.",
+        "cites": [
+         {
+          "outlet": "Taipei Times",
+          "kind": "journalist",
+          "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859597",
+          "ts": "2026-06-23T08:00:00Z",
+          "title": "Bolivia removes roadblocks after emergency decree"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The UK Foreign Office issued a travel warning after the state of emergency was declared.",
+        "cites": [
+         {
+          "outlet": "Birmingham Live",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSdIBjAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSQ?oc=5",
+          "ts": "2026-06-22T05:37:00Z",
+          "title": "UK Foreign Office issues travel warning after 'state of emergency' declared"
+         }
+        ]
+       },
+       {
+        "text": "The Independent published updated travel advice for Bolivia amid the protests and road blockades.",
+        "cites": [
+         {
+          "outlet": "The Independent",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUm9BcHZBQXlzSzV1ZEJ6SlZrcHRBT18tVmp6Z2EtcjFqRzFNZUZYSEs0b25xalc0TGhacHVjcDRYRDFoZTNPVXFaTHJnUld3b3JXOGowNDY0cHhnYmktT1paT2tvU2YxNVl1dEJGY3hMdnA5cXlPWHFnS3JIenVtS2xIUnYxTGJxSkVPY0UycFVHbmdQd1R5MjNvSjB1aDVkazhTQjY5ZUM3dTZJMjVqMjk5clBUWWxzTDZZNWVsWlo?oc=5",
+          "ts": "2026-06-22T08:31:00Z",
+          "title": "Is it safe to travel to Bolivia? Latest advice amid protests and road blockades"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Mint reports that US Defence Chief Pete Hegseth warned that the United States is watching.",
+        "cites": [
+         {
+          "outlet": "Mint",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxONC1hMnE1ZzVvZUc0U2lGTEtha1B0LTNjVk9MNG5xS3NqemViV1NGRU9MWGI1UGJzb3A1Rlh5Y2V2YnVvcU56RFpSNHMxN1dwZkM4LU1BdGIzYVl5NnF5dndBemJ4Q185Sy13c2N0OG9pR1d1VFBKb2dZSXpJNXJwdWpHbjJqRDFFc3ViS056bUlTc3B4VkNuV3FEV2ZhRUpSY0Q3UVQ2VXdLN0VtQlBqc3RDMl80TGJZM1RmTnpLdlVwNktleW0zUzdNc1RnS1hOYkR3blBNSFF6V2w1LXkwWXZpS1N3b2tvRVhZSXhnUkdHa29mRTRrOV9pczI2X29Q0gGGAkFVX3lxTE9lRmlFVEJOamF3QkZMeUdaNEdsaG54N19MV1VZVjd3M1FCaG9wXzdNSTQyVXpQRFVlTjE3eUp0cHIwd0ZuOTliZkJ0Umt2N1R6YWlXaFh0MFdrczF1akFobGRGOFlJUW56OXN3RnFkU1hFcU9idDJ6Z0lqUVUxUXNlYmI4THZsaVNDNkFHMnQzaks3NVlKT05JbUEyRmFjVGtZSzM1UXp6TUVIY0xKR25PNHVFZlNFNXJ3UURkb095TkxCdmQ3VU9HbE91NEpBZmxKdnVYWTBMZGQ0RWFsbEdyX3daMWtlTnZNUW95QThBT01YTXNPd3gxNFZaRHJIck55MkZpSXc?oc=5",
+          "ts": "2026-06-21T14:09:04Z",
+          "title": "Why Bolivia declared state of emergency amid protests? US Defence Chief Pete Hegseth warns \u2018United States is watching\u2019"
+         }
+        ]
+       },
+       {
+        "text": "Coverage from inkl reports that a patrol plane crash killed six as roadblocks were cleared after the emergency decree.",
+        "cites": [
+         {
+          "outlet": "inkl",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZEM5SkR4NTFfRkhhZVd3Wk5FS0ZaX0UyVnMzRmRydTBWaE9lQUpQNTZ1Nkp4eTI4eFVjZ0k4eTJoenBvM1N1ZEZTMVlnQUJERGlmVS1Cd0tQZlVack1LdEFlR0d5cEhpN0NmY3RZcVNrSkMxMENmSWJkeVFUVWJybHZabU9aQ2FoVDQ3bzJGWHcwRTlDVjZ3YXBYc25pSmF2YnhPNU1yMUdLQy13ZWZsUFJVa3N2VncxUUxVWg?oc=5",
+          "ts": "2026-06-21T21:26:01Z",
+          "title": "Bolivia clears anti-government roadblocks after emergency decree, as patrol plane crash kills 6"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 15,
+   "items_48h": 101,
+   "outlets": 64,
+   "kinds": [
+    "journalist",
+    "wire service"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-22T17:07:43Z",
+     "title": "Czechs protest against public broadcaster plan",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859598",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T17:07:43Z",
+     "title": "Bolivia removes roadblocks after emergency decree",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859597",
+     "rel": 10,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T08:31:00Z",
+     "title": "Is it safe to travel to Bolivia? Latest advice amid protests and road blockades",
+     "outlet": "The Independent",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUm9BcHZBQXlzSzV1ZEJ6SlZrcHRBT18tVmp6Z2EtcjFqRzFNZUZYSEs0b25xalc0TGhacHVjcDRYRDFoZTNPVXFaTHJnUld3b3JXOGowNDY0cHhnYmktT1paT2tvU2YxNVl1dEJGY3hMdnA5cXlPWHFnS3JIenVtS2xIUnYxTGJxSkVPY0UycFVHbmdQd1R5MjNvSjB1aDVkazhTQjY5ZUM3dTZJMjVqMjk5clBUWWxzTDZZNWVsWlo?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T07:32:23Z",
+     "title": "Why Bolivia Has Been Rocked By Protests And Why It Has Now Declared An Emergency",
+     "outlet": "News18",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNFJlRGQtVjljR3ducTM1ZDhLeFUtbjVsWHhhcXc5d185aHQtSWktMUZ2TVJjNjBGV09NbjFaN0NIX3BsNTQ1elNaTHU3RXNxNUwzYTB0WEdHcmh5U0piR3Bna2psNGQ0eG0tVHg4cnAwOHZQODRFSzNMVFFGandMSFo2em9xZERDT0ZMOHUtYzlEMnZmTzZ4MkxiaFdVaVNiRWdMUU16b0ZVZTY2OTBfR1BjcGhsOVZ2aEx0VWFxb1FrVlFTUXY1ajl6SnjSAcwBQVVfeXFMTzRSZURkLVY5Y0d3bnEzNWQ4S3hVLW41bFh4YXF3OXdfOWh0LUlpLTFGdk1SYzYwRldPTW4xWjdDSF9wbDU0NXpTWkx1N0VzcTVMM2EwdFhHR3JoeVNKYkdwZ2tqbDRkNHhtLVR4OHJwMDh2UDg0RUszTFRRRmp3TEhaNnpvcWREQ09GTDh1LWM5RDJ2Zk82eDJMYmhXVWlTYkVnTFFNem9GVWU2NjkwX0dQY3BobDlWdmhMdFVhcW9Ra1ZRU1F2NWo5ekp4?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T05:37:00Z",
+     "title": "UK Foreign Office issues travel warning after 'state of emergency' declared",
+     "outlet": "Birmingham Live",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNVhwY3BqSGkxc2ItY2d2d2l5R0dsMllvSVpBMDlYU3ByTEh6Z0NsZF9BSzZ3UHhQbld2UHJBa1NPSm0wZEJiakZHOE5xckp3aUs3RHJDcFZ0SXUxZkhVWUxaSkx1dzNvaTQwNjRwRHNNeDJwZ211N1hPTXFqRHozNi0teW1rTmPSAYwBQVVfeXFMUEswa0pBdjl1N1psY1Z1NV9NZ2Z0X3VhVU83UU02cUhFQWlvaC1oWTR1bVc2YWphMlVCdGNxS2RyRFFwaDJrWVBYSnQ1SnRaNndqRlNhYnR1QjgtSWhZZVJOTmFtX3laaXRSVW1sc1BEb1hKUXVBb3pUSXIyblo3aDc0N1JydDBBVlFBMEk?oc=5",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T05:37:00Z",
+     "title": "UK Foreign Office issues travel warning after 'state of emergency' declared",
+     "outlet": "Birmingham Live",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSdIBjAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSQ?oc=5",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T03:00:00Z",
+     "title": "Protesters burn US flags , clash with riot police after Colombia vote",
+     "outlet": "thedailystar.net",
+     "kind": "journalist",
+     "url": "https://www.thedailystar.net/news/world/news/protesters-burn-us-flags-clash-riot-police-after-colombia-vote-4204981",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T01:48:38Z",
+     "title": "Bolivia crisis explained: State of emergency declared after 50 days of protests",
+     "outlet": "MSN",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeEtmVUdybkFRT1o3TnRBOXc1UTR5QVluMXVBeksyUlpaa0tYTHlPTUxBeE1NZ0JDaTU0OWdFTDVjazd0OGtmMDk0RkhFMEtrR3VTWDFjMGhub1BpenA2N2RVcHlXRENKRUZPa0VqdklGbG1Ud1FpcXZFNmtDTVcxWkdwMUtkNmIxTHUwR3BXN1JFWDhOcjZ3d2hJN2NUU0swbmxpeHlhR1JzVHBtLVBPUjY1eEFzYXpyVXBYZTk2Ny1NWlI2YlE?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "a": "Bolivia's president declares a 90-day state of emergency and authorizes military to clear roadblocks that have disrupted the country for 50 days.",
+    "b": "Protesters oppose fuel subsidy cuts driving the blockades; travel warnings are issued as clashes with security forces intensify.",
+    "basis": "extracted from live headlines 2026-06-22",
+    "axis_type": "policy_dispute",
+    "axis_question": "Is Bolivia's emergency decree a security necessity or crackdown on legitimate protest?",
+    "carriers": {
+     "a": [
+      {
+       "outlet": "MSN",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPckV6T3liWlRXQlM1akR1bmJlU3FIdEVETFZYRnhoU1RjX0hZLXBlYUFJMEVVOWpoRTJNWHdNUEZWR0R4MnZVWTVlRlFDSkhuTVY3bUpiTGJENHNndVZ6ZVpmaVNSMzFhMjlnLTdoLTZtU1F0NVJTUUlmeUpuN25SQWRVVmtDcWprQml4ZGg5dV9rSzdDdW5pZmlCX0dyand4RTJYSVA0WTdzZHF6X1lzN1huMEhKOGM?oc=5",
+       "ts": "2026-06-20T15:57:28Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "inkl",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZEM5SkR4NTFfRkhhZVd3Wk5FS0ZaX0UyVnMzRmRydTBWaE9lQUpQNTZ1Nkp4eTI4eFVjZ0k4eTJoenBvM1N1ZEZTMVlnQUJERGlmVS1Cd0tQZlVack1LdEFlR0d5cEhpN0NmY3RZcVNrSkMxMENmSWJkeVFUVWJybHZabU9aQ2FoVDQ3bzJGWHcwRTlDVjZ3YXBYc25pSmF2YnhPNU1yMUdLQy13ZWZsUFJVa3N2VncxUUxVWg?oc=5",
+       "ts": "2026-06-21T21:26:01Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Magzter",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOU05tY3Bxd1VnODF4SnR4eUtwMXlMUEcxa0FpRjhnU3F3WlpITkNzN0pGdFZMQkp2Y3h5OHVBN0ktS0swN1JQV3lYSE1LOUoyalVrUnAwVGVXOGcxOWxSMF9mTjlsZEhoYThqUXloOTFtdjFJemVPUGRiUklCWTFmTEhqQmVTaWdyc200T3RhZXZIQm9TaWFkTEtFcVNqbXlILWV6aV9jcFFrb1ZscnVr?oc=5",
+       "ts": "2026-06-21T21:47:49Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "sekbernews.id",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBISDNaTlVRMHlmNmo4ZkdYbzRsUjIybDdlcWJ2Ny1pNDQ4SE9nR3luU29nWDY2WUQwakhXZUJwQ2R4MDJFeTk2R3Nzbzk5OWRFLVktUnlVekNrR3BzTHloTFQ3UHVkVkduMDhwNTBma2hyRVk1TENjY2hn?oc=5",
+       "ts": "2026-06-21T23:54:00Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "The CSR Journal",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSGs4Sy0yWE9tY3hBeVdKWXJaWDRGVHZKV3JVUm1pdmVFOHR0WmdLLXRyeFdpYXAzX3Q5bjlKRTdlakFaaUtvWEEtOTFGbXEwUUNKbGV0WGpHRmFRa2t1eVlxUXkzZUtEa0RtaDVXUlZZZTRQRzNQLU5jRFQ0cllFcjZCQWJGNlM3MlNVaW00c2pFVUdwcDR2T1ZaRjdBU0JCZkY3cUJ0aw?oc=5",
+       "ts": "2026-06-22T04:57:46Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      }
+     ],
+     "b": [
+      {
+       "outlet": "Birmingham Live",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSdIBjAFBVV95cUxQSzBrSkF2OXU3WmxjVnU1X01nZnRfdWFVTzdRTTZxSEVBaW9oLWhZNHVtVzZhamEyVUJ0Y3FLZHJEUXBoMmtZUFhKdDVKdFo2d2pGU2FidHVCOC1JaFllUk5OYW1feVppdFJVbWxzUERvWEpRdUFvelRJcjJuWjdoNzQ3UnJ0MEFWUUEwSQ?oc=5",
+       "ts": "2026-06-22T05:37:00Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "News18",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNFJlRGQtVjljR3ducTM1ZDhLeFUtbjVsWHhhcXc5d185aHQtSWktMUZ2TVJjNjBGV09NbjFaN0NIX3BsNTQ1elNaTHU3RXNxNUwzYTB0WEdHcmh5U0piR3Bna2psNGQ0eG0tVHg4cnAwOHZQODRFSzNMVFFGandMSFo2em9xZERDT0ZMOHUtYzlEMnZmTzZ4MkxiaFdVaVNiRWdMUU16b0ZVZTY2OTBfR1BjcGhsOVZ2aEx0VWFxb1FrVlFTUXY1ajl6SnjSAcwBQVVfeXFMTzRSZURkLVY5Y0d3bnEzNWQ4S3hVLW41bFh4YXF3OXdfOWh0LUlpLTFGdk1SYzYwRldPTW4xWjdDSF9wbDU0NXpTWkx1N0VzcTVMM2EwdFhHR3JoeVNKYkdwZ2tqbDRkNHhtLVR4OHJwMDh2UDg0RUszTFRRRmp3TEhaNnpvcWREQ09GTDh1LWM5RDJ2Zk82eDJMYmhXVWlTYkVnTFFNem9GVWU2NjkwX0dQY3BobDlWdmhMdFVhcW9Ra1ZRU1F2NWo5ekp4?oc=5",
+       "ts": "2026-06-22T07:32:23Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "The Independent",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUm9BcHZBQXlzSzV1ZEJ6SlZrcHRBT18tVmp6Z2EtcjFqRzFNZUZYSEs0b25xalc0TGhacHVjcDRYRDFoZTNPVXFaTHJnUld3b3JXOGowNDY0cHhnYmktT1paT2tvU2YxNVl1dEJGY3hMdnA5cXlPWHFnS3JIenVtS2xIUnYxTGJxSkVPY0UycFVHbmdQd1R5MjNvSjB1aDVkazhTQjY5ZUM3dTZJMjVqMjk5clBUWWxzTDZZNWVsWlo?oc=5",
+       "ts": "2026-06-22T08:31:00Z",
+       "provenance": "echo",
+       "motive_note": "UK press"
+      }
+     ]
+    }
+   },
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 48,
+    "outlets_timed": 62,
+    "outlets_unplaced": 1,
+    "chain": [
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-20T20:42:42Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 6
+     },
+     {
+      "outlet": "MSN",
+      "ts": "2026-06-20T20:47:13Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 25
+     },
+     {
+      "outlet": "ksat.com",
+      "ts": "2026-06-20T21:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Peoples Gazette Nigeria",
+      "ts": "2026-06-20T21:00:51Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Japan Today",
+      "ts": "2026-06-20T21:10:31Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "slguardian.org",
+      "ts": "2026-06-20T21:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Los Angeles Times",
+      "ts": "2026-06-20T21:33:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Bloomberg.com",
+      "ts": "2026-06-20T21:34:30Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 1
+     }
+    ],
+    "unplaced": [
+     {
+      "outlet": "Press TV",
+      "first_seen": "2026-06-21T05:03:41Z",
+      "kind": "state media",
+      "motive_note": "IR state media",
+      "items": 3
+     }
+    ]
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "MSN",
+     "n": 32,
+     "class": "other"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "n": 8,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Taipei Times",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "Modern Ghana",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Press TV",
+     "n": 3,
+     "class": "state-media"
+    },
+    {
+     "outlet": "sekbernews.id",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "AnewZ",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "BBC",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Birmingham Live",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "DW.com",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Devdiscourse",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "France 24",
+     "n": 2,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 3,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-21 00:00",
+      6,
+      5
+     ],
+     [
+      "2026-06-21 06:00",
+      7,
+      5
+     ],
+     [
+      "2026-06-21 12:00",
+      107,
+      147
+     ],
+     [
+      "2026-06-22 06:00",
+      35,
+      128
+     ],
+     [
+      "2026-06-22 12:00",
+      29,
+      82
+     ],
+     [
+      "2026-06-22 18:00",
+      18,
+      65
+     ]
+    ],
+    "mix": {
+     "mainstream": 4,
+     "state-media": 3,
+     "regional": 1,
+     "official": 0,
+     "other": 165
+    },
+    "first_seen": "2026-06-21T04:23:08Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-22T12:10:10Z",
+     "a": "Bolivian authorities and mainstream outlets report the emergency decree quickly cleared blockades and restored order without active resistance.",
+     "b": "Left-leaning outlets and DW characterize the military deployment against protesters as an authoritarian crackdown on anti-government dissent."
+    },
+    {
+     "captured_utc": "2026-06-22T13:09:45Z",
+     "a": "Bolivia's president declares a 90-day state of emergency and authorizes military to clear roadblocks that have disrupted the country for 50 days.",
+     "b": "Protesters oppose fuel subsidy cuts driving the blockades; travel warnings are issued as clashes with security forces intensify."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 1
+   },
+   "lead_image": {
+    "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1781988142.jpg?resize=1920%2C1080&quality=80",
+    "source": "Al Jazeera"
    },
    "gate": {
     "score": 7,
@@ -10340,11 +10449,12 @@
     ]
    },
    "discovered": false,
-   "items_24h": 5,
-   "items_48h": 24,
-   "outlets": 20,
+   "items_24h": 6,
+   "items_48h": 23,
+   "outlets": 19,
    "kinds": [
     "journalist",
+    "official record",
     "state media"
    ],
    "latest": [
@@ -10354,7 +10464,7 @@
      "outlet": "Al Jazeera",
      "kind": "journalist",
      "url": "https://www.aljazeera.com/news/2026/6/22/us-raises-concern-as-rsf-forces-encircle-sudanese-city-of-el-obeid?traffic_source=rss",
-     "rel": 15,
+     "rel": 13,
      "coverage": {
       "non_mainstream": 0,
       "mainstream": 1
@@ -10379,6 +10489,18 @@
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQaWtSWEw0dHdLTWpleVpmbEduZ2J6SzNrNHl0SWhwQkw0UHpKaVE3ZjFXZGdqVFg5T21PSDRiVENzN0ZTRmh3ejI1QjhDZUtCYzM3aGNXZno3RUFXcEFmMEdvdkpnQkVtODBHZElQQ2Nla3RlRGpielNYOG1BOEVQUFJCbTl6MENETU5oS3pveDNaN05LOUdmdUdmNFNjUzNNLTZoMlFIVXI0a0lOMFMyeTFOUzNhY1RSRy1Wb1h1cXZoNWRWOUJrcTlka3UyMXNVRTdWdGZFdy1abmNSQW9PeFhzYV9zZjA?oc=5",
      "rel": 2,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T12:00:00Z",
+     "title": "Sudan: Drone attacks endanger civilians and shut down critical services in El Obeid",
+     "outlet": "UN News - Global perspective Human stories",
+     "kind": "official record",
+     "url": "https://news.un.org/feed/view/en/story/2026/06/1167781",
+     "rel": 4,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -10431,18 +10553,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-06-21T09:33:45Z",
-     "title": "Sudan's RSF closes in on strategic army-held Al Obeid as world powers warn of fresh atrocities",
-     "outlet": "The National",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPZUNVOXpkVFAyYlc2SHhoZFNqM0MwZDVldFdpYTlaQmJKUGo5ZEpDd2dxUm1abl9ja0sxRm1DZUE2T1ZqX1I0TElodHU1SENOM2w1Z0lUUkxYcGxYVHRRWWVvM0dHV2FLYWZnSzEtN2FHMzBQZ0hxWlQwblMwRm1EenRLYjVvVnJBay1RYnkzR0t3N0xXbVJlLTRIWmNPZ196YW0tdTZmV05EN3ZWMjFROG96a3p0dFZ3WXdzckhMQWViWmJpTWhWdUlxSjdFd0pObS1JZW1OX2JoRDI3MUtUbw?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -10486,30 +10596,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 20,
+    "outlets_timed": 19,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "UN News",
-      "ts": "2026-06-20T20:21:20Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "intergovernmental official record",
-      "items": 1
-     },
-     {
-      "outlet": "Anadolu Ajans\u0131",
-      "ts": "2026-06-20T20:27:31Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Daily Post Nigeria",
       "ts": "2026-06-20T21:42:52Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -10548,6 +10642,22 @@
      {
       "outlet": "Yahoo",
       "ts": "2026-06-21T05:26:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The Canberra Times",
+      "ts": "2026-06-21T05:37:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "A News",
+      "ts": "2026-06-21T06:34:49Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -10624,6 +10734,11 @@
      "class": "regional"
     },
     {
+     "outlet": "UN News - Global perspective Human stories",
+     "n": 2,
+     "class": "official"
+    },
+    {
      "outlet": "A News",
      "n": 1,
      "class": "other"
@@ -10655,11 +10770,6 @@
     },
     {
      "outlet": "Daily Sabah",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Devdiscourse",
      "n": 1,
      "class": "other"
     }
@@ -10974,7 +11084,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/01/AFP__20251031__82LF9T3__v2__HighRes__TopshotSudanConflict-1769003581.jpg?resize=1920%2C1440",
@@ -11766,7 +11876,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "History gap: era \"War on Terror era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Soviet war and aftermath\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Durand Line era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
@@ -12462,7 +12572,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -13043,7 +13153,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -13725,7 +13835,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -14286,7 +14396,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -14486,11 +14596,11 @@
     }
    ],
    "split": {
-    "a": "Al Jazeera argues halting Greater Israel expansion is essential for peace, implying EU pressure or sanctions on Israel are warranted.",
-    "b": "Germany's chancellor is blocking EU efforts to sanction Israel; Aish.com frames European scrutiny as unfairly putting Israel on trial.",
+    "a": "Al Jazeera calls to stop Greater Israel expansion; EJIL critiques Israel's ad hoc tribunal; Press TV reports Germany is blocking EU sanctions.",
+    "b": "Aish.com argues Israel is being unfairly prosecuted internationally while exercising legitimate self-defence.",
     "basis": "extracted from live headlines 2026-06-22",
     "axis_type": "policy_dispute",
-    "axis_question": "Should the EU impose sanctions on Israel over Gaza and the West Bank?",
+    "axis_question": "Should the EU impose binding sanctions on Israel for its military conduct?",
     "carriers": {
      "a": [
       {
@@ -14500,6 +14610,22 @@
        "ts": "2026-06-21T10:17:25Z",
        "provenance": "original",
        "motive_note": "Qatar state-funded international broadcaster"
+      },
+      {
+       "outlet": "EJIL: Talk!",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNHQyNUVWYk1IMEcySWNIS01rY1pDNHJoemhDdFpUVWZqQXd2Z2gwSTdEWXlxdllhSjFLZmlpdGRoLS1EdU5OXzBZblk5aE5hcUlkbUo5S0tBa1hHZjRkMndITzVQV3FiTF9oaVFsa1lrSWtsa1ZlWWhMek1iVWlEYW9hT3VhZllYam5DYkxVaWxWaksySDdnMHAzNDJ3Sm8?oc=5",
+       "ts": "2026-06-22T07:05:33Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Press TV",
+       "kind": "state media",
+       "url": "https://presstv.ir/Detail/2026/06/20/770780/German-Chancellor-blocks-EU-efforts-to-sanction-Israel",
+       "ts": null,
+       "provenance": "unplaced",
+       "motive_note": "IR state media"
       }
      ],
      "b": [
@@ -14510,14 +14636,6 @@
        "ts": "2026-06-21T07:18:51Z",
        "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Press TV",
-       "kind": "state media",
-       "url": "https://presstv.ir/Detail/2026/06/20/770780/German-Chancellor-blocks-EU-efforts-to-sanction-Israel",
-       "ts": null,
-       "provenance": "unplaced",
-       "motive_note": "IR state media"
       }
      ]
     }
@@ -14665,10 +14783,15 @@
      "captured_utc": "2026-06-22T17:14:45Z",
      "a": "Al Jazeera argues halting Greater Israel expansion is essential for peace, implying EU pressure or sanctions on Israel are warranted.",
      "b": "Germany's chancellor is blocking EU efforts to sanction Israel; Aish.com frames European scrutiny as unfairly putting Israel on trial."
+    },
+    {
+     "captured_utc": "2026-06-22T20:39:07Z",
+     "a": "Al Jazeera calls to stop Greater Israel expansion; EJIL critiques Israel's ad hoc tribunal; Press TV reports Germany is blocking EU sanctions.",
+     "b": "Aish.com argues Israel is being unfairly prosecuted internationally while exercising legitimate self-defence."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -15353,7 +15476,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
    ],
    "history": {
     "built": true,
@@ -15845,7 +15968,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "History gap: era \"Post-Mavi Marmara flotilla era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -16539,7 +16662,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -17167,7 +17290,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "lead_image": {
@@ -17549,7 +17672,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -18023,7 +18146,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -18384,7 +18507,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -18733,7 +18856,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "History gap: era \"Treaty era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
@@ -18744,8 +18867,8 @@
     "discovered_days": 3
    },
    "lead_image": {
-    "url": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA25BTz8.img?w=768&h=512&m=6&x=320&y=124&s=250&d=250",
-    "source": "idrw.org"
+    "url": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202606/6a3652d84b959-a-crippling-water-shortage-has-gripped-nearly-one-third-of-pakistans-population-across-the-agricult-204402495-16x9.png",
+    "source": "businesstoday.in"
    },
    "gate": {
     "score": 5,
@@ -18779,7 +18902,7 @@
   {
    "sample": "Lionel Messi scores brace as Argentina beat Austria 2-0 at World Cup 2026",
    "outlets": 3,
-   "count": 7,
+   "count": 5,
    "status": "watching"
   }
  ],
@@ -18794,25 +18917,25 @@
   "situations": 27,
   "situations_active": 27,
   "discovered": 22,
-  "items": 16679,
-  "developments": 16364,
-  "claims": 2862,
-  "carriers": 7671,
-  "steelmans": 2697,
+  "items": 16691,
+  "developments": 16376,
+  "claims": 2872,
+  "carriers": 7702,
+  "steelmans": 2707,
   "deep_reports": 27,
   "entities": 490,
-  "edges": 17873,
+  "edges": 17931,
   "history_nodes": 557,
-  "gate_rejects_7d": 101,
-  "runs": 275,
+  "gate_rejects_7d": 102,
+  "runs": 276,
   "backend": "st"
  },
  "gate": {
-  "clusters": 16,
+  "clusters": 18,
   "accepted": 0,
   "rejected": 1,
   "existing": 0,
-  "below": 15,
+  "below": 17,
   "pending": 0
  },
  "gate_summary": {
@@ -18827,6 +18950,6 @@
   "edition_utc": "2026-06-22",
   "panels": 8,
   "appendix": 8,
-  "overflow": 948
+  "overflow": 949
  }
 }
