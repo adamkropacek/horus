@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-06-22T22:13:35Z",
+ "generated_utc": "2026-06-22T22:44:41Z",
  "window_hours": 48,
  "lenses": {
   "ok": [
@@ -16,14 +16,18 @@
    "nyt-world",
    "presstv",
    "taipeitimes",
-   "tass",
-   "unnews"
+   "tass"
   ],
   "failed": [
    {
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "unnews",
+    "label": "UN News",
+    "reason": "not well-formed (invalid token): line 1, column 0"
    },
    {
     "id": "gdelt:russia-ukraine-war-current",
@@ -38,6 +42,11 @@
    {
     "id": "gdelt:gaza-israel-war-current",
     "label": "GDELT Israel-Gaza",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:colombia-runoff-election-armed-conflict-shift",
+    "label": "GDELT Colombia runoff election armed conflict shift",
     "reason": "HTTP Error 429: Too Many Requests"
    },
    {
@@ -356,9 +365,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 237,
-   "items_48h": 428,
-   "outlets": 215,
+   "items_24h": 236,
+   "items_48h": 424,
+   "outlets": 212,
    "kinds": [
     "journalist",
     "official record",
@@ -464,11 +473,11 @@
     }
    ],
    "split": {
-    "a": "Ukraine and Western outlets say drone strikes on Moscow expose Russian military weakness and mark a strategic advance for Kyiv",
-    "b": "Russia and TASS report 18 civilians injured in Ukrainian drone attacks and frame the strikes as aggression requiring energy infrastructure retaliation",
+    "a": "Western outlets say Ukraine's Moscow drone strikes expose Russian military weakness amid escalating counter-pressure.",
+    "b": "TASS and Press TV highlight Russian retaliatory strikes on Ukraine's energy grid and civilian casualties from Ukrainian drone attacks.",
     "basis": "extracted from live headlines 2026-06-22",
     "axis_type": "interpretation",
-    "axis_question": "Ukraine's drone campaign: sign of Russian vulnerability or cause of civilian harm?",
+    "axis_question": "Is Ukraine's drone campaign exposing Russian weakness, or is Russia still advancing?",
     "carriers": {
      "a": [
       {
@@ -477,6 +486,14 @@
        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWU9yVktLbVNUSUsxdk9qdzV5NTZnVzJUZDVIUWdiM0xKUml4bW9ILVcxQ2VEYXVpOWZDQWhKQUxNeTIydFVtMThfUUVZa05SQ24yUmhmc1NjcEJHcjlhNURUUF83Y0R3bVo0S0F5NjhFTUxrN1B1czQzbHM5UUlKR2RSLXl3M3FQOWMwV2xEVmp5VTFNUkZadERHcUJLSDVCbjNJWURhdmxTN3pNc01qOW1jZEV4RkZ4a3FkeXBvS1BORVNYNlFFWm50bXRkOFhQMHZGd3ZPS0tEWEVCSlE?oc=5",
        "ts": "2026-06-22T12:41:51Z",
        "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "TVP World",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbzF3ODhVTnIwZXVwNXdyOHVfYkhaTHVqN1BPRmI3UWFURk9Bak0xU3hJa21FakRiOXNMeVktMWdPZnhjcWlKZk10MUhfbjZfcUVuaDVjb1RiTlMzU3ZtU19zZmRTUHZGVXVzaHpRQTUwOXQ4bzZIaVF5djFmVnEzOC10aU51NllwRW1WdWlsNDgzUQ?oc=5",
+       "ts": "2026-06-22T20:05:00Z",
+       "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
@@ -492,14 +509,6 @@
        "kind": "journalist",
        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTGtrQVhfSDV4d0VrR2d6V0pxZnNURXVsSWVyd05QckNzNjY4TnhidXM5RVhuTlI1SzlkSWQ3Yl9uRXRrSGtCOEZrR25faE55WU1oaTNZQkFzRzUtN3B6SFJ4d0c2VXpUdDVxNWpJQ0JjbUw5TDM3LTVRc2JtUXhxMHV6Zl9EMUFRWGk1dVRPWEE1THJSa0xRYm9hdzl0T2oxcEpNMnVRNGdKZFFmRUtr?oc=5",
        "ts": "2026-06-22T20:38:03Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "zerohedge.com",
-       "kind": "journalist",
-       "url": "https://www.zerohedge.com/geopolitical/another-drone-wave-moscow-temporarily-shuts-down-all-four-capital-airports",
-       "ts": "2026-06-22T20:45:00Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
@@ -530,6 +539,14 @@
        "motive_note": "RU state media"
       },
       {
+       "outlet": "nzherald.co.nz",
+       "kind": "journalist",
+       "url": "https://www.nzherald.co.nz/world/russian-troops-surrounding-ukrainian-fortress-city-in-major-advance/4QFK3Z67BVCU5PXQGZS4FNVID4/",
+       "ts": "2026-06-22T21:00:00Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
        "outlet": "Press TV",
        "kind": "state media",
        "url": "https://presstv.ir/Detail/2026/06/21/770849/Russian-forces-launch-retaliatory-strikes-on-Ukraine-key-energy-sites-in-Kiev-Sumy-Chernigov-DPR",
@@ -544,38 +561,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 193,
+    "outlets_timed": 191,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Internazionale",
-      "ts": "2026-06-20T22:15:56Z",
+      "outlet": "Chicago Tribune",
+      "ts": "2026-06-20T22:47:51Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "LiveNOW from FOX",
-      "ts": "2026-06-20T22:24:01Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "chicagotribune.com",
-      "ts": "2026-06-20T22:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "The Detroit News",
-      "ts": "2026-06-20T22:31:00Z",
-      "kind": "journalist",
-      "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -610,6 +603,30 @@
       "role": "echo",
       "motive_note": "international wire service",
       "items": 5
+     },
+     {
+      "outlet": "The Kyiv Independent",
+      "ts": "2026-06-20T23:20:36Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UA regional press",
+      "items": 36
+     },
+     {
+      "outlet": "IOL",
+      "ts": "2026-06-20T23:31:43Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "econotimes.com",
+      "ts": "2026-06-21T01:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -955,8 +972,8 @@
      ],
      [
       "2026-06-22 18:00",
-      234,
-      211
+      237,
+      215
      ]
     ],
     "mix": {
@@ -964,16 +981,11 @@
      "state-media": 4,
      "regional": 2,
      "official": 1,
-     "other": 209
+     "other": 210
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-22T14:13:05Z",
-     "a": "TASS reports Rosatom CEO calls Ukraine's Energodar strikes 'sophisticated,' while a former Kyiv spokeswoman says Zelensky's course leads Ukraine to ruin",
-     "b": "Ukrainian and Western outlets report Ukraine striking targets near Moscow and Voronezh as Zelenskyy pledges to bring the war back to Russian territory"
-    },
     {
      "captured_utc": "2026-06-22T15:13:55Z",
      "a": "Ukrainian outlets report Russian drone strikes killing civilians, Kyiv escalating on Crimea, Belarus opposition warning Lukashenko is readying forces to join",
@@ -1028,10 +1040,15 @@
      "captured_utc": "2026-06-22T22:12:01Z",
      "a": "Ukraine and Western outlets say drone strikes on Moscow expose Russian military weakness and mark a strategic advance for Kyiv",
      "b": "Russia and TASS report 18 civilians injured in Ukrainian drone attacks and frame the strikes as aggression requiring energy infrastructure retaliation"
+    },
+    {
+     "captured_utc": "2026-06-22T22:43:18Z",
+     "a": "Western outlets say Ukraine's Moscow drone strikes expose Russian military weakness amid escalating counter-pressure.",
+     "b": "TASS and Press TV highlight Russian retaliatory strikes on Ukraine's energy grid and civilian casualties from Ukrainian drone attacks."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://static.toiimg.com/thumb/msid-131890172,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
@@ -1126,15 +1143,63 @@
     ]
    },
    "discovered": true,
-   "items_24h": 167,
-   "items_48h": 289,
-   "outlets": 187,
+   "items_24h": 173,
+   "items_48h": 293,
+   "outlets": 188,
    "kinds": [
     "journalist",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-06-22T22:01:24Z",
+     "title": "Trump-endorsed populist poised to become Colombia's next president as rival challenges vote",
+     "outlet": "Traverse City Record-Eagle",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNamJtSUkweEM3VGdWT29yNTVLRkFqSFBTeGFaOWdDWm5OYnlRTUFiazZwd2NKMFNJNXI0NDg4aTNvMnBYNW9fMG1UWVJGS211YmQyLXV5dHJObDdLVzJTcUo1QkpoZ0VNRFFRYjJLZ1p0aE9HSFVwV19nc1lWZUNYVUZKUkd4YXU0cjhvNWZra0pDWFpuNElpc2xkZ2ZfWks2M2Vtd2hseUdNY2pRWG1IVm9rdGNjYzRmTHdQY2ExWmptX2wtanpYYl94U1Z0cWl5eloweGxaN0ttbHJtTEZxcmFTYWl4TVRXY0xfZ1phV1lzb1pBWDFPTjZYeEU0OUxxUnVyM2YtNi0tVzJMYXYwRE9WYlI?oc=5",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T22:01:24Z",
+     "title": "Trump-endorsed populist poised to become Colombia's next president as rival challenges vote",
+     "outlet": "Ottumwa Courier",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOT0I5VHFFcGFkTnA5MzNySV94WE8tck5WU3ZlMlB5dkFGakI4SDN1Wm9qYXNvRFktRVI2U1RGVVVHdGpPb1RTdU1iSVExRGlJc0IzTWtrYlpzZVBNOTBHR1U3OUVyeUxhWUd6MGY3Q19RNkNPVGNfSG1FZHRZRDB6RFctMW5zTFFwcHhUX2t6S1B2U0FZcDZhUU5XRklLVm14bzZac0JrZ2Nrd1Axc2hPSU03RHhnMGo5TlN3WHNWSzJGZFRWdWlrU0VZMkJQVTdqUkZHUkcydTNBd3REWGdFUnZ6UUVCXzZ5NWNDb1dZcXIwbkh5Ul9VX2t5ZFFRcWdzZFZsLXZpbXNEODVqR0RMb2E0Z0Q0Nkxrc0E?oc=5",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T22:01:24Z",
+     "title": "Trump-endorsed populist poised to become Colombia's next president as rival challenges vote",
+     "outlet": "The Daily Reflector",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNbTNYRXAxbzZVQXdYWVdBU2dCRDNjbG43YmxjQm9GVDJ0SzZsdVdvTS1rNmtvaEluSnBSVmx1UWNPdGRRWjI4eWtnQXduSmEwSlZyNE9VWm1fS1k2MWRFdkJXdEtYLUtyOVdlOHctbDAxcG92NFg4c2s0NlJzVWRMYmNpVnp2MFpKYW10YWhYMGhqRFZheXE0WFVmcFBRM1NDbjlZZndXUkxmV2dqTnlRQi1LNi1tdDlGbjM0TTVvUzdHcXNaZ0ZKUVpUNDAtSFRMVFdSUk1HbUNaaE04cDNxdjkwLTJGaTU5Vl95bURlYllydzAwNXFkV2swSEtQSEx3OXZpdmJGNWZFUlpS?oc=5",
+     "rel": 13,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T22:00:00Z",
+     "title": "Trump says he can resolve Israel\u2019s troop withdrawal dispute with Lebanon",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2150017",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-06-22T21:20:30Z",
      "title": "US judge blocks Trump administration subpoena against Minnesota officials",
@@ -1182,54 +1247,6 @@
       "non_mainstream": 0,
       "mainstream": 1
      }
-    },
-    {
-     "ts": "2026-06-22T20:01:56Z",
-     "title": "From 'The Lion' to 'The Tiger': Conservative Trump allies gain ground in Latin America",
-     "outlet": "Oskaloosa Herald",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOMGxjNWJ0RDEwUHcxdWpDNm53ckNTTDZqQXhjX1VrLVRtcFpJc01lc2hUc2w4cDQ5Z2YzZy1IVExfdjlSWWNGc1ZHZnBHQjBBb183VmNoY1AtcFEyaGI1Tl9jbDh5UGd4amlPN1RnTHg5Vkp2R0pVdHJURTR3Z1dPYjMtSmhQQm9oZDZaZzB1cGpha3hVMnpNU1AwX3RnSkhnT1FxelhRVEc1aFgzNHZ6WUtZbFlSLXk0RjAtazZueV9TVHZMTm9MQ0RCQThZdmxNX2lHLVRRRHdVWXQyUzZkeGVZdTg5Q2Q0WFdFQUF6TWxPSWtsT2xTUXdJQWtkRzkxLVhlUEhnNA?oc=5",
-     "rel": 9,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T19:56:40Z",
-     "title": "Trump convenes Pentagon, defense companies to discuss ramping up missile production - WSJ",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/world/2149993",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T18:46:14Z",
-     "title": "Judge blocks subpoenas for Walz and others over Minnesota immigration crackdown",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/us-news/2026/jun/22/federal-subpoenas-minnesota-officials-order",
-     "rel": 2,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-22T18:05:17Z",
-     "title": "Rick Scott, Trump Celebrate 'El Tigre's' Colombian Presidential Election Win",
-     "outlet": "Floridian Press",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNng4QTRCRTdIVDBJNWRIUzZUaHk3cU96SGRNdGc4aWg5Nm9jZU5uSlVyS200dkRZaF9mcjcxaXBQb1o1S05LMFhXcDhqV2FwSjhxOHFRdnhIOTNGR3Ywb1NFdlQ1S2dPT1llM0dEd2s2OGxnMy15d2pDbFUtVDlORkFQOGRMcnlmZFJ1emZ2ZjhSOVc1Y0YybnNjUUg2dFNXdWxPdGItU1dsSkVJ?oc=5",
-     "rel": 13,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -1265,30 +1282,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 183,
+    "outlets_timed": 184,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "breitbart.com",
-      "ts": "2026-06-20T22:30:00Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "RU state media",
-      "items": 1
-     },
-     {
-      "outlet": "freemalaysiatoday.com",
-      "ts": "2026-06-20T22:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
      {
       "outlet": "abc.net.au",
       "ts": "2026-06-21T00:45:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -1331,6 +1332,22 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "thewrap.com",
+      "ts": "2026-06-21T01:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "watoday.com.au",
+      "ts": "2026-06-21T02:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": [
@@ -1403,6 +1420,11 @@
      "class": "mainstream"
     },
     {
+     "outlet": "TASS",
+     "n": 6,
+     "class": "state-media"
+    },
+    {
      "outlet": "Taipei Times",
      "n": 6,
      "class": "regional"
@@ -1426,11 +1448,6 @@
      "outlet": "NYT World",
      "n": 5,
      "class": "mainstream"
-    },
-    {
-     "outlet": "TASS",
-     "n": 5,
-     "class": "state-media"
     },
     {
      "outlet": "asiaone.com",
@@ -1682,8 +1699,8 @@
      ],
      [
       "2026-06-22 18:00",
-      165,
-      185
+      167,
+      187
      ]
     ],
     "mix": {
@@ -1691,7 +1708,7 @@
      "state-media": 5,
      "regional": 1,
      "official": 0,
-     "other": 179
+     "other": 181
     },
     "first_seen": "2026-06-11T09:35:14Z"
    },
@@ -1758,7 +1775,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump reframes US-China relationship as peer powers, Times of Israel, UN News.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -2084,9 +2101,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 106,
-   "items_48h": 265,
-   "outlets": 172,
+   "items_24h": 105,
+   "items_48h": 252,
+   "outlets": 163,
    "kinds": [
     "journalist",
     "official record",
@@ -2144,6 +2161,18 @@
     {
      "ts": "2026-06-22T20:49:17Z",
      "title": "Teenage girl on the way to a high school in Gaza killed in Israeli strike, relatives say",
+     "outlet": "Oskaloosa Herald",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxONHdBcThKc1IwVFBTRFlmeTFhWF9DbnFKeWh5Ym5qZnVtZk40NWRmMUJCTGx4aFNIb2dkM2pPUEdqaG9RM2FTalNkdm9VOWNSWXV2ZXRsOUJBNUZQRElfYi1FOUpBQU50aU5VNDVWMFM0UnhMeFMtTnJvT1BXUlhHNFlMajc0Y2dxUTIxZ25CaGZFR0tKcXBGd05JWl8wTHdtelpuajJHMEVBUkV3dHFCWjJTdnFnMWRNZjRQR0x6N01xY3NqY3J0VGl5dUtETHhLcWFZcVVGSlU5VWVjQVhYbXkxbWpsWDJEbVF6NmpEWi1YZkJCQWNhSmdPMEc?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T20:49:17Z",
+     "title": "Teenage girl on the way to a high school in Gaza killed in Israeli strike, relatives say",
      "outlet": "Temple Daily Telegram",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOUF4WjVtUHRhUi1wTDBNZ3hVUmdic3JrQVNnU2QxbzdDQkxGd1FjRjY5ZUVtRGpxdl9CUUpTd1R3NjJTcloyZEpNLXVCaHVEYm9tZXl4SHJVY18wckxkVUhvSnlQNnRqOXVDY1VfZWFFZVFaSmt3QnNTM1ZNc3o3UDFKTzFiSS1FaGJvVVNid2FKTnpyTmc?oc=5",
@@ -2171,18 +2200,6 @@
      "outlet": "The Killeen Daily Herald",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPazdxSzE3RmZHZGpmUUl6QVp4WUc0OFhDZFlhZUpSMG9TU1pJOXNUMWxKakpxbm9OTXA4S2VaelVYUHgteGljaFhGSms0OXNzaDMteHdFREhJSkYyQ1Q3SHRST0Fiek5hYWxtYmt1NjVtMHhZcFFJci1wYWFEY016Uk9HT0pSWDhVbUgyTFhiQWxGclNJbW5yZjI3dHZHZDJVWVRMTVJtQmRqSGE4VjZmMkN3SFBIeXVHWUFHVGJiZXpuTWlEOHZMTGJmakFpUVlyWllLYVNzSzVScjN4NXVSbV9kYzVyczY0dEE?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T20:49:17Z",
-     "title": "Teenage girl on the way to a high school in Gaza killed in Israeli strike, relatives say",
-     "outlet": "Messenger-Inquirer",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNYklUNGZyVXVGUzBCZWdybXo4YWxnRm5xMW8xQ0NOVnF2d0t2VWc2RzVlcnhvam9wMVdIUW1EelJ1QzhMdWJnRXpTckJweGxpZTFWU0Z0dmJTRUo2b2xSa3o2QlR2cTlUV3k1MUhZSGhGY3Y2V1BtVm1qT2R2b1MzbTNMRUxfU2s5Zkc0Q2lIWVBHV0RmSVUxeWtybERIUFBEakZJSE1HbnQ5eG94aUxhTDRuVjlEVGQ0TFcycVp2eDdRTUJ0V2pkSGZIZHJCbTgzblB1cUtaZkpfaFVzRDIzUy1uV2d1Z1c2Q1lDV0hKcTI2U0pBUXFaczhQUElUd0hTZHRhSXAxeDlraWh0LWU4SQ?oc=5",
      "rel": 14,
      "coverage": {
       "non_mainstream": 1,
@@ -2255,72 +2272,72 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 159,
+    "outlets_timed": 150,
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "The Jerusalem Post",
-      "ts": "2026-06-20T22:23:33Z",
+      "outlet": "Middle East Eye",
+      "ts": "2026-06-20T22:51:00Z",
       "kind": "journalist",
       "role": "origin",
-      "motive_note": "IL regional press",
-      "items": 4
+      "motive_note": "UK-based Middle East coverage",
+      "items": 10
      },
      {
-      "outlet": "India Today",
-      "ts": "2026-06-20T22:28:27Z",
+      "outlet": "WDSU",
+      "ts": "2026-06-20T22:51:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "GMA Network",
+      "ts": "2026-06-20T22:57:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "thegazette.com",
+      "ts": "2026-06-20T23:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "NST Online",
+      "ts": "2026-06-20T23:50:07Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
      {
-      "outlet": "chicagotribune.com",
-      "ts": "2026-06-20T22:30:00Z",
+      "outlet": "The Canberra Times",
+      "ts": "2026-06-20T23:54:30Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "freemalaysiatoday.com",
-      "ts": "2026-06-20T22:30:00Z",
+      "outlet": "Bluefield Daily Telegraph",
+      "ts": "2026-06-21T00:06:36Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "items": 3
      },
      {
-      "outlet": "abc.net.au",
-      "ts": "2026-06-20T22:30:00Z",
+      "outlet": "MSN",
+      "ts": "2026-06-21T00:09:39Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "idahostatejournal.com",
-      "ts": "2026-06-20T22:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "yakimaherald.com",
-      "ts": "2026-06-20T22:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Oz Arab Media",
-      "ts": "2026-06-20T22:30:33Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
+      "items": 2
      }
     ],
     "unplaced": [
@@ -2329,7 +2346,7 @@
       "first_seen": "2026-06-21T06:12:21Z",
       "kind": "state media",
       "motive_note": "IR state media",
-      "items": 3
+      "items": 4
      }
     ]
    },
@@ -2435,12 +2452,12 @@
      "class": "other"
     },
     {
-     "outlet": "The Jerusalem Post",
+     "outlet": "Press TV",
      "n": 4,
-     "class": "other"
+     "class": "state-media"
     },
     {
-     "outlet": "The Killeen Daily Herald",
+     "outlet": "The Jerusalem Post",
      "n": 4,
      "class": "other"
     }
@@ -2679,8 +2696,8 @@
      ],
      [
       "2026-06-22 18:00",
-      105,
-      173
+      106,
+      172
      ]
     ],
     "mix": {
@@ -2755,7 +2772,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/AFP__20260621__B7TL4J8__v1__HighRes__PalestinianIsraelConflictGazaSurfing-1782124457.jpg?resize=1920%2C1440",
@@ -3005,8 +3022,8 @@
     ]
    },
    "discovered": true,
-   "items_24h": 98,
-   "items_48h": 132,
+   "items_24h": 99,
+   "items_48h": 133,
    "outlets": 113,
    "kinds": [
     "journalist",
@@ -3521,8 +3538,8 @@
      ],
      [
       "2026-06-22 18:00",
-      53,
-      64
+      98,
+      113
      ]
     ],
     "mix": {
@@ -3572,7 +3589,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -3583,816 +3600,6 @@
    "lead_image": {
     "url": "https://news.cgtn.com/news/2026-06-22/DR-Congo-Ebola-cases-top-1-000-1OaRxl8HAK4/img/2b6a791d01284ea6935a916e3bf17cbc/2b6a791d01284ea6935a916e3bf17cbc-1920.png",
     "source": "CGTN"
-   },
-   "gate": {
-    "score": 7,
-    "of": 8,
-    "checks": {
-     "split": 1,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "colombia-runoff-election-armed-conflict-shift",
-   "name": "Colombia runoff election armed conflict shift",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "election",
-    "war"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-22T19:09:41Z",
-    "sentence_count": 18,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Abelardo De La Espriella won Colombia's presidential runoff election.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLUFUT18zcG9kOUZ4NmZwRFMzLVF2MkR5VUU1c0hqN1ZQY1RvYVlxVjJBUmFjQmk3ZDZ0R2lJRzFiaU5fb3lNNHZSblNCQWJZbk5ic3RNanFrTzY2Mm9KcDM3UGk1OUEybUJUaWJTY2xtaGdVVThIY3BSVHU1V0JHVlkyZnNSa0E4dVg1b01taDY4MDQzTE9vLVBiZjA3NU5RcjA5LURvYjlodzlJVkJVLXNiUFZRMW_SAbwBQVVfeXFMT0dXX2dESkFPNXdweFNDQ1pSb1ZOa2lmUXhrWF82R1BYbnp4aHpNRVlZZVV2RkNfQllpRWJSOG9HODhEclNoUHF5YklTcjVROVdvWmhpVUt1Q0RvWlhFYXhrZnNxdGpCZlEwQXcxOW9fSG1SbXpsd3F6OXlaRjBxMHlMNWtXWWpiLWlCLV9HMEtpajlBV1daaGkzeGFseUdoRlpHdEVPSkhHLVBSRFBvQmJtS21BMVZ6VTFZZXQ?oc=5",
-          "ts": "2026-06-22T07:34:20Z",
-          "title": "Far-right lawyer De La Espriella wins Colombia\u2019s tight presidential race"
-         }
-        ]
-       },
-       {
-        "text": "He is known as 'El Tigre' and is described as a right-wing lawyer.",
-        "cites": [
-         {
-          "outlet": "Malay Mail",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNHFOSmtneHdHNE1sc3c2dnFpTnM2ODJwd0p5MDd6Vk12SXRFUzdZM0xIM0stOENwcmxhMjZDUFN3Rno2MHJrWDVHSVgzT1hIV014Ykl2OEducmtxcWxaT1pxbzJOaTBFbGdLVEU5eWxTeS1qa3NxUE4wbDM3Q24zMzlRX0UtWGRmZWRoYURKWnY1TzRjLUIxNXpWOXVKSEYwaS1mZWxKamNUVDFFN2ZUMEtQcTdxVm5LaU1WTmZWWnhwZVRVaW9HMkhIUXNRTEFBLTJzWFFFd0o4Vm9P0gHcAUFVX3lxTFA0cU5Ka2d4d0c0TWxzdzZ2cWlOczY4MnB3SnkwN3pWTXZJdEVTN1kzTEgzSy04Q3BybGEyNkNQU3dGejYwcmtYNUdJWDNPWEhXTXhiSXY4R25ya3FxbFpPWnFvMk5pMEVsZ0tURTl5bFN5LWprc3FQTjBsMzdDbjMzOVFfRS1YZGZlZGhhREpadjVPNGMtQjE1elY5dUpIRjBpLWZlbEpqY1RUMUU3ZlQwS1BxN3FWbktpTVZOZlZaeHBlVFVpb0cySEhRc1FMQUEtMnNYUUV3SjhWb08?oc=5",
-          "ts": "2026-06-22T13:12:12Z",
-          "title": "Who is Abelardo De La Espriella, Colombia\u2019s new right wing president known as \u2018The Tiger\u2019?"
-         },
-         {
-          "outlet": "aljazeera.com",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/22/colombian-right-wing-candidate-de-la-espriella-wins-tight-presidential-race",
-          "ts": "2026-06-22T09:30:00Z",
-          "title": "Far - right lawyer De La Espriella wins Colombia tight presidential race | Elections News"
-         }
-        ]
-       },
-       {
-        "text": "The race was tight and decided by a narrow margin.",
-        "cites": [
-         {
-          "outlet": "Americas Quarterly",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVEhwNWJDSzFIWVFiMWJETkF4MTZRZ1NBNHpSamk1Ti1aN2QyT2Z2SmNsNU9TaG1TdnJCQmhGMGt5Q0JVa3J3QWpRMkJBNWZMVHBQc1MtbndhRFV5THRlTFdqdGMwUVB3TUU4VVdFZ2VxLXZOSGJmWUpaUFNpQzRtejNVcms3TjI3SG4tWDlZdkc3bzdiUWNoTFkzUVMtdGVSWlJkTnhtVQ?oc=5",
-          "ts": "2026-06-22T12:32:21Z",
-          "title": "REACTION: De La Espriella Wins Colombia\u2019s Election by Narrow Margin"
-         },
-         {
-          "outlet": "CNBC",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObS1UMmxpUy1yTTJ0S1VicE1CSlktdmZadXlkeEJuWEludGhhZlZQU0ZsM1REMDVuTjhNblM3QWdBRk0tNnVTOS14V08xYjVEZHVzeHpCM3dVa29rekRYdWF1Z01rZTZRck1aSkJTTXFKU1k0c29naHBjMEdJM204bHhWcG5FbDh5WlHSAYoBQVVfeXFMTm0tVDJsaVMtck0ydEtVYnBNQkpZLXZmWnV5ZHhCblhJbnRoYWZWUFNGbDNURDA1bk44TW5TN0FnQUZNLTZ1UzkteFdPMWI1RGR1c3h6QjN3VWtva3pEWHVhdWdNa2U2UXJNWkpCU01xSlNZNHNvZ2hwYzBHSTNtOGx4VnBuRWw4eVpR?oc=5",
-          "ts": "2026-06-22T07:19:47Z",
-          "title": "Colombian right-wing candidate De La Espriella wins tight presidential race"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Among Colombians voting in the United States, De La Espriella took 80.57% of runoff votes, according to data reported by WPLG Local 10.",
-        "cites": [
-         {
-          "outlet": "WPLG Local 10",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOU1TdmhzYXFveHVIRkNBeEt5U0VROHhVbm42UG4tSHA4Vk9GYV94bGRaYlp3WXdpZkJZQzhQS2xoME5jMUtTdkwzTzdLbEM3QUJaeTNtRTY4UTVIYS1vUTRlLXpnR3ZxN2ZsTGRDOXd2VnZ1ZmZSWWJDZU41bTFreG9KWE5HSFIybnMwY2c3R0NhVjE2M2MyOEQ0UF9jaE5YcnpZd3YxMVpsTnF3dWNOZWNmRmdwTzZQd045LTAzeExyem9MN25RNUR1UEZkZw?oc=5",
-          "ts": "2026-06-22T18:36:14Z",
-          "title": "De La Espriella wins 80.57% of runoff election votes from Colombians in U.S., data shows"
-         }
-        ]
-       },
-       {
-        "text": "Le Monde reports the election was held with record turnout.",
-        "cites": [
-         {
-          "outlet": "Le Monde.fr",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPQ3c2a0tucUFzOTBaTTczN09MQXJKWG1GM3ExQ1ctb1VydVNabFdvNGxpVjRKYmxSZzJtQlpQRlF0NTk3S05QRWNTWWJkSnJXTHQ1Um5PTVJOcFkwS2RycXF4VmU5U3c0bEZDQV9iR2dlWmVibjQ4WDY2NU9wSXZ0eUwwaHFtQ2YybGpVbmRKdzdsOTh1VzJYdkRzWGhDa3dFR0dESHF2QjZuWjVsUDZNdC1PdVJKbWM2UFA2RElYVjlIT1lpLThDbEtkVjlTYTlONEk1VXB2TVhlenAtcVhBMjVlUmNZSENEZDB5dkUyWk15aG5Qay03aUtEUEpWNTUtVjZRYmh2TGI?oc=5",
-          "ts": "2026-06-22T10:48:07Z",
-          "title": "Colombia swings to far right as Abelardo de la Espriella wins presidential election with record turnout"
-         }
-        ]
-       },
-       {
-        "text": "Reuters and Yahoo report the result cements Latin America's rightward shift.",
-        "cites": [
-         {
-          "outlet": "yahoo.com",
-          "kind": "journalist",
-          "url": "https://www.yahoo.com/news/politics/articles/analysis-la-espriella-win-colombia-060133430.html",
-          "ts": "2026-06-22T18:00:00Z",
-          "title": "Analysis - De La Espriella win in Colombia cements Latin America rightward shift"
-         },
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMTBjeE9MVGV0S3JsTFpZY0FudTl5Nlk5N1VIRXFfeDNZdUdMX0oyYnZJa05fMVdCM3FPWHQ3STFSaXZEM0x3SHV5bmh1Zkx5b211ajZCTFljWmVrcnhxa2pGUjJPamFoUENzbi1fYzU5YmozLTNabk0tTWIyWUZ6c2tkNGhiaXZibDJVeEtDNENISTBEUHlFN0JuTXFvTTdDRC1aOFdQeXZWbC1iWUo3T3lRM19VaWYyQVE?oc=5",
-          "ts": "2026-06-22T06:01:00Z",
-          "title": "De La Espriella win in Colombia cements Latin America's rightward shift"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Euronews reports De La Espriella is a US-backed political newcomer.",
-        "cites": [
-         {
-          "outlet": "euronews.com",
-          "kind": "journalist",
-          "url": "https://www.euronews.com/2026/06/22/us-backed-political-newcomer-wins-colombia-election-marking-countrys-right-wing-shift",
-          "ts": "2026-06-22T11:00:00Z",
-          "title": "US - backed political newcomer wins Colombia election"
-         },
-         {
-          "outlet": "Euronews",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVzVtNWNtYnNIVk9VUWVKV3NiVTNVS2FVSzJ2QUpUWWl0NEZXWDRMQmZtb2NUYzB3eVBaOWdmQnpBeUlmODA4bGZkV3RrZG5pekpZUGptWGJCTDRrY1hQVmxfZHJoVndCZlFLc3daNXVqMGp4a3hQaDVHbGdQSS1RMHBFOUYxQWl4UE1IWVFSeTdRU3NfY1pGd0lHM2FoOWlSdHRMU0s4Qnh6LVhFb3YyNGV0cS1zNXZMTWw0UzBB?oc=5",
-          "ts": "2026-06-22T09:56:59Z",
-          "title": "US-backed political newcomer wins Colombia election, marking country's right-wing shift"
-         }
-        ]
-       },
-       {
-        "text": "Americas Quarterly reports De La Espriella won by a narrow margin.",
-        "cites": [
-         {
-          "outlet": "Americas Quarterly",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVEhwNWJDSzFIWVFiMWJETkF4MTZRZ1NBNHpSamk1Ti1aN2QyT2Z2SmNsNU9TaG1TdnJCQmhGMGt5Q0JVa3J3QWpRMkJBNWZMVHBQc1MtbndhRFV5THRlTFdqdGMwUVB3TUU4VVdFZ2VxLXZOSGJmWUpaUFNpQzRtejNVcms3TjI3SG4tWDlZdkc3bzdiUWNoTFkzUVMtdGVSWlJkTnhtVQ?oc=5",
-          "ts": "2026-06-22T12:32:21Z",
-          "title": "REACTION: De La Espriella Wins Colombia\u2019s Election by Narrow Margin"
-         }
-        ]
-       },
-       {
-        "text": "The Miami Herald asks whether 'El Tigre' can deliver after his win.",
-        "cites": [
-         {
-          "outlet": "Miami Herald",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRGtEYk4zYUd0cnM3N2Vuell1Wkh1SWhkOTVXTHNNTDYyMDNfYXFKbEhKeEZWQ1NPaUplVnJtakV6NWJXUzhleElIUWRtcXpCUDB5Q05IR2V0NEZnNVh5WmVOVmd2cTY4N2s5Uy1Mc3h1ZmJTU29qRzk3RnhiQ1ZYemt4bG5iNWZidHfSAYoBQVVfeXFMUGdEWjI4eDB2LU1nYk5zMDQyd1NFVmRnQklHRDZlZHl6NGNvMFlwak5TVFhrQ29ueUlBT0hVbVdFa3c2LWZHS1BUXzM5RFJZNnRtaWdLd0N5clBTVU5yeUJiNThUX1hkSzJOV3E2V09oemNtOThJcFpIeWowTy1GbVg0bXhERFBKRG1B?oc=5",
-          "ts": "2026-06-22T18:22:38Z",
-          "title": "\u2018El Tigre\u2019 wins Colombia\u2019s presidential election - but can he deliver?"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The Guardian reports the election of the far-right leader raises fears for democracy in Colombia and describes it as an 'institutional threat'.",
-        "cites": [
-         {
-          "outlet": "Guardian World",
-          "kind": "journalist",
-          "url": "https://www.theguardian.com/world/2026/jun/22/election-far-right-leader-fears-democracy-colombia-espriella-trump",
-          "ts": "2026-06-22T16:29:48Z",
-          "title": "\u2018Institutional threat\u2019: election of far-right leader raises fears for democracy in Colombia"
-         }
-        ]
-       },
-       {
-        "text": "Al Jazeera describes De La Espriella as a far-right lawyer who won the tight race.",
-        "cites": [
-         {
-          "outlet": "aljazeera.com",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/22/colombian-right-wing-candidate-de-la-espriella-wins-tight-presidential-race",
-          "ts": "2026-06-22T09:30:00Z",
-          "title": "Far - right lawyer De La Espriella wins Colombia tight presidential race | Elections News"
-         },
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLUFUT18zcG9kOUZ4NmZwRFMzLVF2MkR5VUU1c0hqN1ZQY1RvYVlxVjJBUmFjQmk3ZDZ0R2lJRzFiaU5fb3lNNHZSblNCQWJZbk5ic3RNanFrTzY2Mm9KcDM3UGk1OUEybUJUaWJTY2xtaGdVVThIY3BSVHU1V0JHVlkyZnNSa0E4dVg1b01taDY4MDQzTE9vLVBiZjA3NU5RcjA5LURvYjlodzlJVkJVLXNiUFZRMW_SAbwBQVVfeXFMT0dXX2dESkFPNXdweFNDQ1pSb1ZOa2lmUXhrWF82R1BYbnp4aHpNRVlZZVV2RkNfQllpRWJSOG9HODhEclNoUHF5YklTcjVROVdvWmhpVUt1Q0RvWlhFYXhrZnNxdGpCZlEwQXcxOW9fSG1SbXpsd3F6OXlaRjBxMHlMNWtXWWpiLWlCLV9HMEtpajlBV1daaGkzeGFseUdoRlpHdEVPSkhHLVBSRFBvQmJtS21BMVZ6VTFZZXQ?oc=5",
-          "ts": "2026-06-22T07:34:20Z",
-          "title": "Far-right lawyer De La Espriella wins Colombia\u2019s tight presidential race"
-         }
-        ]
-       },
-       {
-        "text": "Caliber.Az reports the right-wing candidate won the runoff amid fraud allegations.",
-        "cites": [
-         {
-          "outlet": "Caliber.Az",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdmRSTU5maHVwZXY5RUg1emp2a25YNW5rWVhZbjAwWXRMYWNyZVUtd0p3RHN3SHVMalBPdTQzMVZHdWN5LXFNSGw2eHBRdDJKSkJDVVZQeHlXNHJZSVdUSFVvZE9hODhTMk01TXUzdVdMTEcwTko1LWNKd214NHBhLUhEUWQzUnM0WXZwWnNrR0loY29xN0Y4bkRpMnNXQm5DTHBKWEE1TQ?oc=5",
-          "ts": "2026-06-22T06:56:49Z",
-          "title": "Right-wing candidate wins Colombia presidential runoff amid fraud allegations"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "RFI reports a Colombian leftist candidate called for calm after post-vote violence.",
-        "cites": [
-         {
-          "outlet": "RFI",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZU9ielN2YjVsdEU1cG84dmNnWEJuMnAxaGVyYkE4MnVPa1prQ0k5SVUwTl9LbVRHNTFPQVJ3TzN3TF92cldqS1FiMHpPODcyTUZVTzZxWi10Z3B5YnV3dW9wNC1yMDRGRjdLVG9tSTExdmFfcGQzUW8zNU5TZ2FlQWZqZy1DcWxud2xCajlUcF9SX3EzM0FjN3l3RGc2a0d1MHVNTC1DaWFBTUVoeUI4VHZaNzBMTkEt?oc=5",
-          "ts": "2026-06-22T17:54:17Z",
-          "title": "Colombian leftist candidate calls for calm after post-vote violence"
-         }
-        ]
-       },
-       {
-        "text": "Barron's also reports the leftist candidate's call for calm after post-vote violence.",
-        "cites": [
-         {
-          "outlet": "Barron's",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaE15aHlVSWlIWmdqdWJYUVBQa3Y1WkZrVVFhTkVaSENwSUU0a0RkdnM4amt6MzBpeEZWQmU1TEhLaTFOemozUEtFVi1nSnJMd1U0cnRoMmJfdG1mcGtZbEtlaElpMWxxeUY4ZHQwVkFPeUE2NFpxNHdRS3FWMXlHLWp6azJWN2JKaGNBZkhfRzdyNnRrQTd3WVpZOUlQdWNoMnlzREEySVM?oc=5",
-          "ts": "2026-06-22T17:53:00Z",
-          "title": "Colombian Leftist Candidate Calls For Calm After Post-vote Violence"
-         }
-        ]
-       },
-       {
-        "text": "The Palestine Chronicle reports Petro accused Israel of election interference and demanded a full recount.",
-        "cites": [
-         {
-          "outlet": "Palestine Chronicle",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZXU3enV0aGZMQkhxV2RyWmtKS0VoZVg3Ym9SYTM0dW5aZmo3VEJtUnI2XzIwQllUNXFxclI4LVZZZHpBeVNHR0IxVGF1NW1jV2hKUGZfUnNha1dyazZEM25SeFFCNnJwcGRyM2hDb3J1cV93eDJBb0U3WFVoT2pldzYwWTMxRF9MYnhIcHpXMzFYaGpoT3A1bG9KYWZFcVN0eTloZw?oc=5",
-          "ts": "2026-06-22T14:33:55Z",
-          "title": "Petro Accuses Israel of Election Interference, Demands Full Recount"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "ColombiaOne.com reports on when the election result will be official.",
-        "cites": [
-         {
-          "outlet": "ColombiaOne.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVERKeWxsSmp4eU1MOWVYR0pRX2RBZmhJaWhZUnN5bXQ0M0pWY1Z5eHBKLXFUd2ZBQWc3ZTA0NDE3ZFRvNWd2dHdNazhlM0hoamxEcm94eHc0VFNRUjVNWXdiVEdZTjkxYjlxUkZmYUV1TlZTM1lsUm9HTjhfcTVLdmsyNzFtWTkwMjYyRVBnMXEwdE1YQWc?oc=5",
-          "ts": "2026-06-22T12:29:47Z",
-          "title": "Colombia\u2019s Election Result Is In-When Will It Be Official?"
-         }
-        ]
-       },
-       {
-        "text": "The Atlantic Council published expert reactions on what a De La Espriella presidency means for Colombia and beyond.",
-        "cites": [
-         {
-          "outlet": "atlanticcouncil.org",
-          "kind": "journalist",
-          "url": "https://www.atlanticcouncil.org/dispatches/experts-react-what-a-president-abelardo-de-la-espriella-means-for-colombia-and-beyond/",
-          "ts": "2026-06-22T17:30:00Z",
-          "title": "Experts react : What a President Abelardo de la Espriella means for Colombia and beyond"
-         }
-        ]
-       },
-       {
-        "text": "Al Jazeera also published a piece on what comes next after De La Espriella's election.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/22/far-right-de-la-espriella-elected-colombia-president-whats-next?traffic_source=rss",
-          "ts": "2026-06-22T12:54:42Z",
-          "title": "Far-right de la Espriella elected Colombia president: What\u2019s next?"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 97,
-   "items_48h": 206,
-   "outlets": 156,
-   "kinds": [
-    "journalist",
-    "state media",
-    "wire service"
-   ],
-   "latest": [
-    {
-     "ts": "2026-06-22T21:53:12Z",
-     "title": "From Exploding Cats to Mega-Prisons: Meet Colombia\u2019s Next President",
-     "outlet": "Zeteo",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lTl9sRW9SbVJJM0Zva1JtWWl0X3FXTnhMdWl1S1BLVGt4SlVIS05zM1pEY1VDZndFTGtBaHA2dkphSzNKcEVZOG9RS0JSUVhXNVQyWGFiMkx2RnJ2R2xjZHVmdVBZZw?oc=5",
-     "rel": 5,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T21:00:00Z",
-     "title": "U . S .- Colombia Relations | Council on Foreign Relations",
-     "outlet": "cfr.org",
-     "kind": "journalist",
-     "url": "https://www.cfr.org/articles/us-colombia-relations",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T20:30:00Z",
-     "title": "Andy Burnham sworn in as Makerfield MP after by - election victory",
-     "outlet": "theboltonnews.co.uk",
-     "kind": "journalist",
-     "url": "https://www.theboltonnews.co.uk/news/26218284.andy-burnham-sworn-makerfield-mp-by-election-victory/",
-     "rel": 1,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T20:15:00Z",
-     "title": "Analysis - De La Espriella win in Colombia cements Latin America rightward shift",
-     "outlet": "internazionale.it",
-     "kind": "journalist",
-     "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/06/22/analysis-de-la-espriella-win-in-colombia-cements-latin-america-s-rightward-shift",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T18:58:49Z",
-     "title": "'El Tigre' won Colombia's presidential vote, but he may always be an outsider",
-     "outlet": "France 24",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZnVOTVdzdFFnUXZOSlh3bU12b01DZkFBVXFiSkJwMmYwakRBclR1UHRuT3ZQeFEwVDlPMUZQTU5Id015Z2xUakdQcEZXWm5Ja1BYOGZRVEhKd3BTbllQYWlvX2E3Z19CMGJnY3FyZEJxak5sZUhjZXEtQWRBSFpvNlFYNmR1U0ZjeDR2TTZFLWs0SDRIVzlnTTc5Ql9uMWszamk1ZjgyNG5vUVlRTTIzTzNQX2xQTlY0TVp6aA?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T18:36:14Z",
-     "title": "De La Espriella wins 80.57% of runoff election votes from Colombians in U.S., data shows",
-     "outlet": "WPLG Local 10",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOU1TdmhzYXFveHVIRkNBeEt5U0VROHhVbm42UG4tSHA4Vk9GYV94bGRaYlp3WXdpZkJZQzhQS2xoME5jMUtTdkwzTzdLbEM3QUJaeTNtRTY4UTVIYS1vUTRlLXpnR3ZxN2ZsTGRDOXd2VnZ1ZmZSWWJDZU41bTFreG9KWE5HSFIybnMwY2c3R0NhVjE2M2MyOEQ0UF9jaE5YcnpZd3YxMVpsTnF3dWNOZWNmRmdwTzZQd045LTAzeExyem9MN25RNUR1UEZkZw?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T18:22:38Z",
-     "title": "\u2018El Tigre\u2019 wins Colombia\u2019s presidential election - but can he deliver?",
-     "outlet": "Miami Herald",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRGtEYk4zYUd0cnM3N2Vuell1Wkh1SWhkOTVXTHNNTDYyMDNfYXFKbEhKeEZWQ1NPaUplVnJtakV6NWJXUzhleElIUWRtcXpCUDB5Q05IR2V0NEZnNVh5WmVOVmd2cTY4N2s5Uy1Mc3h1ZmJTU29qRzk3RnhiQ1ZYemt4bG5iNWZidHfSAYoBQVVfeXFMUGdEWjI4eDB2LU1nYk5zMDQyd1NFVmRnQklHRDZlZHl6NGNvMFlwak5TVFhrQ29ueUlBT0hVbVdFa3c2LWZHS1BUXzM5RFJZNnRtaWdLd0N5clBTVU5yeUJiNThUX1hkSzJOV3E2V09oemNtOThJcFpIeWowTy1GbVg0bXhERFBKRG1B?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T18:00:00Z",
-     "title": "Analysis - De La Espriella win in Colombia cements Latin America rightward shift",
-     "outlet": "yahoo.com",
-     "kind": "journalist",
-     "url": "https://www.yahoo.com/news/politics/articles/analysis-la-espriella-win-colombia-060133430.html",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "a": "Reuters and international media say De la Espriella's win confirms a broader rightward political drift across Latin America",
-    "b": "France 24 and Miami Herald say De la Espriella may remain an outsider amid post-vote violence and doubts over his ability to govern",
-    "basis": "extracted from live headlines 2026-06-22",
-    "axis_type": "interpretation",
-    "axis_question": "De la Espriella's win: Latin America's rightward wave or a fragile outsider victory?",
-    "carriers": {
-     "a": [
-      {
-       "outlet": "yahoo.com",
-       "kind": "journalist",
-       "url": "https://www.yahoo.com/news/politics/articles/colombias-escalating-brutal-internal-conflict-231756064.html",
-       "ts": "2026-06-21T03:30:00Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Oskaloosa Herald",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQQWhJTUo3MzNyVjV1TWlJY0FlY3JGSVM4WDRRQ2lVNGNVRHlDVFRCNDNlM1BPY0NKTkdOaFJTZFEyRVVHaXBna1RIenVoWGxUdFphd2xzUHoyT3lYOVlYcUlKOWtvdzlGQkVWQ1c5czdNb1pBbUtmdm1MQ3N0MmtDSEluWFdjR2JXd0t3cjJ3OGN1QVM3dThSR0Z1dDRSa2EyM1NmdmpnbnhQLXI2WFB5c00xWEdENFBPLTdyekUzejExYzY2Zy02cllSTjlRb1dxdEpJOWZndXlpZnR3eWxJZ1hzMTN5dEFwSjQ5LUZ3UURBcVRLUlRBYVhfWXFIV3NQbUQteDl6WUJKVFh5ekxYYkhUWQ?oc=5",
-       "ts": "2026-06-22T05:48:58Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Reuters",
-       "kind": "wire service",
-       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMTBjeE9MVGV0S3JsTFpZY0FudTl5Nlk5N1VIRXFfeDNZdUdMX0oyYnZJa05fMVdCM3FPWHQ3STFSaXZEM0x3SHV5bmh1Zkx5b211ajZCTFljWmVrcnhxa2pGUjJPamFoUENzbi1fYzU5YmozLTNabk0tTWIyWUZ6c2tkNGhiaXZibDJVeEtDNENISTBEUHlFN0JuTXFvTTdDRC1aOFdQeXZWbC1iWUo3T3lRM19VaWYyQVE?oc=5",
-       "ts": "2026-06-22T18:32:10Z",
-       "provenance": "echo",
-       "motive_note": "international wire service"
-      },
-      {
-       "outlet": "internazionale.it",
-       "kind": "journalist",
-       "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/06/22/analysis-de-la-espriella-win-in-colombia-cements-latin-america-s-rightward-shift",
-       "ts": "2026-06-22T20:15:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Taipei Times",
-       "kind": "journalist",
-       "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859593",
-       "ts": "2026-06-22T22:01:05Z",
-       "provenance": "echo",
-       "motive_note": "TW regional press"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "Miami Herald",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM1N3NTlZd3VSRk4yc1ZjYng4dFU1UDJ0YlNUSG9LUmtnTG9QQktKbVBVdmFUeEtRYTdvSWNRLV8wQnE5ZEcwa1otNW9JQ0o3Z0NJZ1p4SGR1dTZSV1pqaXJMbk9hZ3h4ZVdETWoxcVFEZzlqeHN4cmpIZm9VblVseFdrMzhqMXJLNDdZUlR3TGRQRlFTcmfSAZYBQVVfeXFMTzNTdzU5WXd1UkZOMnNWY2J4OHRVNVAydGJTVEhvS1JrZ0xvUEJLSm1QVXZhVHhLUWE3b0ljUS1fMEJxOWRHMGtaLTVvSUNKN2dDSWdaeEhkdXU2UldaamlyTG5PYWd4eGVXRE1qMXFRRGc5anhzeHJqSGZvVW5VbHhXazM4ajFySzQ3WVJUd0xkUEZRU3Jn?oc=5",
-       "ts": "2026-06-22T17:31:10Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Barron's",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaE15aHlVSWlIWmdqdWJYUVBQa3Y1WkZrVVFhTkVaSENwSUU0a0RkdnM4amt6MzBpeEZWQmU1TEhLaTFOemozUEtFVi1nSnJMd1U0cnRoMmJfdG1mcGtZbEtlaElpMWxxeUY4ZHQwVkFPeUE2NFpxNHdRS3FWMXlHLWp6azJWN2JKaGNBZkhfRzdyNnRrQTd3WVpZOUlQdWNoMnlzREEySVM?oc=5",
-       "ts": "2026-06-22T17:53:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "France 24",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZnVOTVdzdFFnUXZOSlh3bU12b01DZkFBVXFiSkJwMmYwakRBclR1UHRuT3ZQeFEwVDlPMUZQTU5Id015Z2xUakdQcEZXWm5Ja1BYOGZRVEhKd3BTbllQYWlvX2E3Z19CMGJnY3FyZEJxak5sZUhjZXEtQWRBSFpvNlFYNmR1U0ZjeDR2TTZFLWs0SDRIVzlnTTc5Ql9uMWszamk1ZjgyNG5vUVlRTTIzTzNQX2xQTlY0TVp6aA?oc=5",
-       "ts": "2026-06-22T18:58:49Z",
-       "provenance": "echo",
-       "motive_note": "FR state-funded international broadcaster"
-      },
-      {
-       "outlet": "Zeteo",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lTl9sRW9SbVJJM0Zva1JtWWl0X3FXTnhMdWl1S1BLVGt4SlVIS05zM1pEY1VDZndFTGtBaHA2dkphSzNKcEVZOG9RS0JSUVhXNVQyWGFiMkx2RnJ2R2xjZHVmdVBZZw?oc=5",
-       "ts": "2026-06-22T21:53:12Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ]
-    }
-   },
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 48,
-    "outlets_timed": 148,
-    "outlets_unplaced": 1,
-    "chain": [
-     {
-      "outlet": "BBC World",
-      "ts": "2026-06-20T23:17:51Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK public broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "BBC",
-      "ts": "2026-06-20T23:17:51Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK public broadcaster",
-      "items": 2
-     },
-     {
-      "outlet": "The Economist",
-      "ts": "2026-06-21T00:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 1
-     },
-     {
-      "outlet": "dw.com",
-      "ts": "2026-06-21T00:16:23Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "slguardian.org",
-      "ts": "2026-06-21T02:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Bluefield Daily Telegraph",
-      "ts": "2026-06-21T03:07:05Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "Crypto Briefing",
-      "ts": "2026-06-21T03:18:55Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "yahoo.com",
-      "ts": "2026-06-21T03:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     }
-    ],
-    "unplaced": [
-     {
-      "outlet": "Press TV",
-      "first_seen": "2026-06-22T10:55:50Z",
-      "kind": "state media",
-      "motive_note": "IR state media",
-      "items": 1
-     }
-    ]
-   },
-   "links": [
-    {
-     "entity": "colombia",
-     "situations": [
-      "gaza-israel-war-current",
-      "us-iran-strikes-israel-lebanon-escalation"
-     ]
-    },
-    {
-     "entity": "donald trump",
-     "situations": [
-      "gaza-israel-war-current",
-      "russia-ukraine-war-current",
-      "taiwan-strait-tensions-current",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
-     ]
-    },
-    {
-     "entity": "gustavo petro",
-     "situations": [
-      "us-iran-strikes-israel-lebanon-escalation"
-     ]
-    },
-    {
-     "entity": "israel",
-     "situations": [
-      "afp-probes-israeli-flotilla-abuse-claims",
-      "eu-israel-sanctions-row-kallas-ties-cut",
-      "gaza-israel-war-current",
-      "lancet-calls-to-suspend-israeli-medical-body-fro",
-      "lebanon-hezbollah-disarmament-standoff",
-      "red-sea-houthi-shipping-current",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "trump",
-     "situations": [
-      "gaza-israel-war-current",
-      "russia-ukraine-war-current",
-      "taiwan-strait-tensions-current",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "ColombiaOne.com",
-     "n": 10,
-     "class": "other"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 8,
-     "class": "other"
-    },
-    {
-     "outlet": "WPLG Local 10",
-     "n": 7,
-     "class": "other"
-    },
-    {
-     "outlet": "Bluefield Daily Telegraph",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 4,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "eciks.org",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "DW.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "NPR",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "TASS",
-     "n": 3,
-     "class": "state-media"
-    },
-    {
-     "outlet": "The Guardian",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "The Sunday Guardian",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "dw.com",
-     "n": 3,
-     "class": "mainstream"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 3,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-21 06:00",
-      29,
-      30
-     ],
-     [
-      "2026-06-21 12:00",
-      72,
-      76
-     ],
-     [
-      "2026-06-22 06:00",
-      93,
-      112
-     ],
-     [
-      "2026-06-22 12:00",
-      115,
-      146
-     ],
-     [
-      "2026-06-22 18:00",
-      110,
-      154
-     ]
-    ],
-    "mix": {
-     "mainstream": 10,
-     "state-media": 4,
-     "regional": 1,
-     "official": 0,
-     "other": 157
-    },
-    "first_seen": "2026-06-21T06:21:44Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-22T13:09:45Z",
-     "a": "Abelardo De La Espriella wins Colombia's presidential runoff in a Trump-backed rightward shift, with US officials congratulating the victor.",
-     "b": "De La Espriella's win sparked protests and comparisons to El Salvador's Bukele, raising concerns over democratic norms."
-    },
-    {
-     "captured_utc": "2026-06-22T15:13:55Z",
-     "a": "International outlets report hard-right outsider Abelardo De La Espriella won Colombia's presidential election by a narrow margin at record turnout",
-     "b": "Outgoing President Petro accuses Israel of election interference and demands a full recount of the razor-thin result"
-    },
-    {
-     "captured_utc": "2026-06-22T16:20:24Z",
-     "a": "International outlets confirm de la Espriella's narrow right-wing victory as a legitimate democratic outcome in Colombia.",
-     "b": "Outgoing President Petro accuses Israel of interference in Colombia's election and demands a full official recount."
-    },
-    {
-     "captured_utc": "2026-06-22T17:14:45Z",
-     "a": "Guardian warns the far-right win poses an institutional threat to democracy; Petro demands a recount alleging foreign election interference.",
-     "b": "Taipei Times, euronews, and Al Jazeera report de la Espriella's election as Colombia's settled presidential result following the runoff."
-    },
-    {
-     "captured_utc": "2026-06-22T17:29:41Z",
-     "a": "Taipei Times, dw.com, and Euronews report de la Espriella won with record turnout, framing the result as Colombia's clear democratic shift to the right.",
-     "b": "Guardian World and Al Jazeera warn his far-right election raises fears of institutional damage to Colombian democracy."
-    },
-    {
-     "captured_utc": "2026-06-22T18:39:14Z",
-     "a": "Guardian and progressive outlets frame De la Espriella's election as an 'institutional threat' raising fears for Colombian democracy.",
-     "b": "Other analysts frame the narrow victory as a legitimate result cementing Latin America's ongoing rightward political realignment."
-    },
-    {
-     "captured_utc": "2026-06-22T19:09:41Z",
-     "a": "Miami Herald, Taipei Times, and Americas Quarterly report De la Espriella's win as a legitimate result cementing Latin America's rightward shift.",
-     "b": "Guardian World warns the far-right leader's election poses an institutional threat, while RFI notes post-vote violence has already emerged."
-    },
-    {
-     "captured_utc": "2026-06-22T19:41:42Z",
-     "a": "Regional analysts and multiple outlets report De La Espriella's victory cements a rightward democratic shift across Latin America",
-     "b": "The Guardian and RFI warn his far-right win poses an institutional threat and that post-vote violence has followed"
-    },
-    {
-     "captured_utc": "2026-06-22T20:13:55Z",
-     "a": "Mainstream outlets including Miami Herald and Americas Quarterly frame de la Espriella's election as a narrow but legitimate democratic win",
-     "b": "Guardian World frames the far-right de la Espriella's victory as an 'institutional threat' raising fears for Colombian democracy"
-    },
-    {
-     "captured_utc": "2026-06-22T20:39:07Z",
-     "a": "Guardian World and leftist outlets warn De la Espriella's far-right win poses an institutional threat to Colombian democracy.",
-     "b": "Miami Herald, Americas Quarterly and Al Jazeera report De la Espriella won a narrow but legitimate election victory."
-    },
-    {
-     "captured_utc": "2026-06-22T21:07:54Z",
-     "a": "De la Espriella allies and several outlets frame the presidential win as a clear popular mandate for right-wing change in Colombia.",
-     "b": "Critics and leftist candidate Cepeda warn the far-right victory poses an institutional threat to Colombian democracy amid post-vote violence."
-    },
-    {
-     "captured_utc": "2026-06-22T22:12:01Z",
-     "a": "Reuters and international media say De la Espriella's win confirms a broader rightward political drift across Latin America",
-     "b": "France 24 and Miami Herald say De la Espriella may remain an outsider amid post-vote violence and doubts over his ability to govern"
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
-    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 1
-   },
-   "lead_image": {
-    "url": "https://i.guim.co.uk/img/media/cacbcdd74d3ece334d2ee011c38fd91d15e80a72/213_0_2605_2085/master/2605.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c1b994f90eb604b0dbad82a43a4e87de",
-    "source": "Guardian World"
    },
    "gate": {
     "score": 7,
@@ -4648,9 +3855,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 94,
+   "items_24h": 95,
    "items_48h": 115,
-   "outlets": 74,
+   "outlets": 75,
    "kinds": [
     "journalist",
     "state media"
@@ -4663,6 +3870,18 @@
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWmpaUFN4THprd1NjN1hjVVFfYXZLZ3hpZTBIY08zU3R0UjFRcmV3by16X1BaeVZhZ2xJLVhyZ1BkXzFSbGE5cGt6Z0pVZWtBQXNZel91MTd0Qkk4LVlydWpJM2RYYy1OZkFFR0c1cVJjNFEtbW9uVTRHV3ZBbDlXQ0IyZlk5QjVxVDlVc1JhemN2Rm4wYUVabFRxWmprMWtybUN2Y3RwZVEtNDlSYU14ZEZFTnU?oc=5",
      "rel": 4,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T21:36:56Z",
+     "title": "Keir Starmer Resigns as UK Prime Minister Amid Internal Pressure",
+     "outlet": "India News Network",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRjctNVYyWWtwbWREUU9qd3hMMGtyM0drWEhfOW5URkhuZ0Vyd3F6SlF3bXZycm1TUVFid1MyUkl4Q2dOcXB0UlprYXFDdGs0NWZ5R1JORDQ5T2pHM1otVmVYa1JHWEgzRGwyQS0waWpEZVJEQ25idlFHNWprc3p2X0JrWUs2MFNiT2E1cWRCRW5hRGwyWWdOSE5JTXdKSk54b1BOcDUzRkxIZw?oc=5",
+     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -4735,18 +3954,6 @@
      "kind": "journalist",
      "url": "https://timesofindia.indiatimes.com/world/uk/uk-pm-keir-starmer-quits/articleshow/131920032.cms",
      "rel": 2,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-22T19:30:00Z",
-     "title": "Keir Starmer : a political obituary",
-     "outlet": "morningstaronline.co.uk",
-     "kind": "journalist",
-     "url": "https://morningstaronline.co.uk/article/keir-starmer-political-obituary",
-     "rel": 10,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -4826,22 +4033,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 71,
+    "outlets_timed": 72,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "dailymail.com",
-      "ts": "2026-06-20T22:30:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 2
-     },
      {
       "outlet": "The Nightly",
       "ts": "2026-06-21T02:34:46Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -4860,6 +4059,14 @@
       "role": "echo",
       "motive_note": "UK press",
       "items": 10
+     },
+     {
+      "outlet": "dailymail.com",
+      "ts": "2026-06-21T08:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
      },
      {
       "outlet": "112.ua",
@@ -5236,7 +4443,7 @@
      [
       "2026-06-22 18:00",
       94,
-      73
+      74
      ]
     ],
     "mix": {
@@ -5244,7 +4451,7 @@
      "state-media": 3,
      "regional": 2,
      "official": 0,
-     "other": 68
+     "other": 69
     },
     "first_seen": "2026-06-11T12:15:12Z"
    },
@@ -5311,7 +4518,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT UK defence secretary resigns over spending, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -5321,6 +4528,800 @@
    },
    "lead_image": {
     "url": "https://i.guim.co.uk/img/media/4d5569054b6006ef0de99885b277f5c47eed1dfc/634_0_6335_5068/master/6335.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=0f301a1a4fa3ee447f3df8aede046157",
+    "source": "Guardian World"
+   },
+   "gate": {
+    "score": 7,
+    "of": 8,
+    "checks": {
+     "split": 1,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "colombia-runoff-election-armed-conflict-shift",
+   "name": "Colombia runoff election armed conflict shift",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "election",
+    "war"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-22T19:09:41Z",
+    "sentence_count": 18,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Abelardo De La Espriella won Colombia's presidential runoff election.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLUFUT18zcG9kOUZ4NmZwRFMzLVF2MkR5VUU1c0hqN1ZQY1RvYVlxVjJBUmFjQmk3ZDZ0R2lJRzFiaU5fb3lNNHZSblNCQWJZbk5ic3RNanFrTzY2Mm9KcDM3UGk1OUEybUJUaWJTY2xtaGdVVThIY3BSVHU1V0JHVlkyZnNSa0E4dVg1b01taDY4MDQzTE9vLVBiZjA3NU5RcjA5LURvYjlodzlJVkJVLXNiUFZRMW_SAbwBQVVfeXFMT0dXX2dESkFPNXdweFNDQ1pSb1ZOa2lmUXhrWF82R1BYbnp4aHpNRVlZZVV2RkNfQllpRWJSOG9HODhEclNoUHF5YklTcjVROVdvWmhpVUt1Q0RvWlhFYXhrZnNxdGpCZlEwQXcxOW9fSG1SbXpsd3F6OXlaRjBxMHlMNWtXWWpiLWlCLV9HMEtpajlBV1daaGkzeGFseUdoRlpHdEVPSkhHLVBSRFBvQmJtS21BMVZ6VTFZZXQ?oc=5",
+          "ts": "2026-06-22T07:34:20Z",
+          "title": "Far-right lawyer De La Espriella wins Colombia\u2019s tight presidential race"
+         }
+        ]
+       },
+       {
+        "text": "He is known as 'El Tigre' and is described as a right-wing lawyer.",
+        "cites": [
+         {
+          "outlet": "Malay Mail",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNHFOSmtneHdHNE1sc3c2dnFpTnM2ODJwd0p5MDd6Vk12SXRFUzdZM0xIM0stOENwcmxhMjZDUFN3Rno2MHJrWDVHSVgzT1hIV014Ykl2OEducmtxcWxaT1pxbzJOaTBFbGdLVEU5eWxTeS1qa3NxUE4wbDM3Q24zMzlRX0UtWGRmZWRoYURKWnY1TzRjLUIxNXpWOXVKSEYwaS1mZWxKamNUVDFFN2ZUMEtQcTdxVm5LaU1WTmZWWnhwZVRVaW9HMkhIUXNRTEFBLTJzWFFFd0o4Vm9P0gHcAUFVX3lxTFA0cU5Ka2d4d0c0TWxzdzZ2cWlOczY4MnB3SnkwN3pWTXZJdEVTN1kzTEgzSy04Q3BybGEyNkNQU3dGejYwcmtYNUdJWDNPWEhXTXhiSXY4R25ya3FxbFpPWnFvMk5pMEVsZ0tURTl5bFN5LWprc3FQTjBsMzdDbjMzOVFfRS1YZGZlZGhhREpadjVPNGMtQjE1elY5dUpIRjBpLWZlbEpqY1RUMUU3ZlQwS1BxN3FWbktpTVZOZlZaeHBlVFVpb0cySEhRc1FMQUEtMnNYUUV3SjhWb08?oc=5",
+          "ts": "2026-06-22T13:12:12Z",
+          "title": "Who is Abelardo De La Espriella, Colombia\u2019s new right wing president known as \u2018The Tiger\u2019?"
+         },
+         {
+          "outlet": "aljazeera.com",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/22/colombian-right-wing-candidate-de-la-espriella-wins-tight-presidential-race",
+          "ts": "2026-06-22T09:30:00Z",
+          "title": "Far - right lawyer De La Espriella wins Colombia tight presidential race | Elections News"
+         }
+        ]
+       },
+       {
+        "text": "The race was tight and decided by a narrow margin.",
+        "cites": [
+         {
+          "outlet": "Americas Quarterly",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVEhwNWJDSzFIWVFiMWJETkF4MTZRZ1NBNHpSamk1Ti1aN2QyT2Z2SmNsNU9TaG1TdnJCQmhGMGt5Q0JVa3J3QWpRMkJBNWZMVHBQc1MtbndhRFV5THRlTFdqdGMwUVB3TUU4VVdFZ2VxLXZOSGJmWUpaUFNpQzRtejNVcms3TjI3SG4tWDlZdkc3bzdiUWNoTFkzUVMtdGVSWlJkTnhtVQ?oc=5",
+          "ts": "2026-06-22T12:32:21Z",
+          "title": "REACTION: De La Espriella Wins Colombia\u2019s Election by Narrow Margin"
+         },
+         {
+          "outlet": "CNBC",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObS1UMmxpUy1yTTJ0S1VicE1CSlktdmZadXlkeEJuWEludGhhZlZQU0ZsM1REMDVuTjhNblM3QWdBRk0tNnVTOS14V08xYjVEZHVzeHpCM3dVa29rekRYdWF1Z01rZTZRck1aSkJTTXFKU1k0c29naHBjMEdJM204bHhWcG5FbDh5WlHSAYoBQVVfeXFMTm0tVDJsaVMtck0ydEtVYnBNQkpZLXZmWnV5ZHhCblhJbnRoYWZWUFNGbDNURDA1bk44TW5TN0FnQUZNLTZ1UzkteFdPMWI1RGR1c3h6QjN3VWtva3pEWHVhdWdNa2U2UXJNWkpCU01xSlNZNHNvZ2hwYzBHSTNtOGx4VnBuRWw4eVpR?oc=5",
+          "ts": "2026-06-22T07:19:47Z",
+          "title": "Colombian right-wing candidate De La Espriella wins tight presidential race"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Among Colombians voting in the United States, De La Espriella took 80.57% of runoff votes, according to data reported by WPLG Local 10.",
+        "cites": [
+         {
+          "outlet": "WPLG Local 10",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOU1TdmhzYXFveHVIRkNBeEt5U0VROHhVbm42UG4tSHA4Vk9GYV94bGRaYlp3WXdpZkJZQzhQS2xoME5jMUtTdkwzTzdLbEM3QUJaeTNtRTY4UTVIYS1vUTRlLXpnR3ZxN2ZsTGRDOXd2VnZ1ZmZSWWJDZU41bTFreG9KWE5HSFIybnMwY2c3R0NhVjE2M2MyOEQ0UF9jaE5YcnpZd3YxMVpsTnF3dWNOZWNmRmdwTzZQd045LTAzeExyem9MN25RNUR1UEZkZw?oc=5",
+          "ts": "2026-06-22T18:36:14Z",
+          "title": "De La Espriella wins 80.57% of runoff election votes from Colombians in U.S., data shows"
+         }
+        ]
+       },
+       {
+        "text": "Le Monde reports the election was held with record turnout.",
+        "cites": [
+         {
+          "outlet": "Le Monde.fr",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPQ3c2a0tucUFzOTBaTTczN09MQXJKWG1GM3ExQ1ctb1VydVNabFdvNGxpVjRKYmxSZzJtQlpQRlF0NTk3S05QRWNTWWJkSnJXTHQ1Um5PTVJOcFkwS2RycXF4VmU5U3c0bEZDQV9iR2dlWmVibjQ4WDY2NU9wSXZ0eUwwaHFtQ2YybGpVbmRKdzdsOTh1VzJYdkRzWGhDa3dFR0dESHF2QjZuWjVsUDZNdC1PdVJKbWM2UFA2RElYVjlIT1lpLThDbEtkVjlTYTlONEk1VXB2TVhlenAtcVhBMjVlUmNZSENEZDB5dkUyWk15aG5Qay03aUtEUEpWNTUtVjZRYmh2TGI?oc=5",
+          "ts": "2026-06-22T10:48:07Z",
+          "title": "Colombia swings to far right as Abelardo de la Espriella wins presidential election with record turnout"
+         }
+        ]
+       },
+       {
+        "text": "Reuters and Yahoo report the result cements Latin America's rightward shift.",
+        "cites": [
+         {
+          "outlet": "yahoo.com",
+          "kind": "journalist",
+          "url": "https://www.yahoo.com/news/politics/articles/analysis-la-espriella-win-colombia-060133430.html",
+          "ts": "2026-06-22T18:00:00Z",
+          "title": "Analysis - De La Espriella win in Colombia cements Latin America rightward shift"
+         },
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMTBjeE9MVGV0S3JsTFpZY0FudTl5Nlk5N1VIRXFfeDNZdUdMX0oyYnZJa05fMVdCM3FPWHQ3STFSaXZEM0x3SHV5bmh1Zkx5b211ajZCTFljWmVrcnhxa2pGUjJPamFoUENzbi1fYzU5YmozLTNabk0tTWIyWUZ6c2tkNGhiaXZibDJVeEtDNENISTBEUHlFN0JuTXFvTTdDRC1aOFdQeXZWbC1iWUo3T3lRM19VaWYyQVE?oc=5",
+          "ts": "2026-06-22T06:01:00Z",
+          "title": "De La Espriella win in Colombia cements Latin America's rightward shift"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Euronews reports De La Espriella is a US-backed political newcomer.",
+        "cites": [
+         {
+          "outlet": "euronews.com",
+          "kind": "journalist",
+          "url": "https://www.euronews.com/2026/06/22/us-backed-political-newcomer-wins-colombia-election-marking-countrys-right-wing-shift",
+          "ts": "2026-06-22T11:00:00Z",
+          "title": "US - backed political newcomer wins Colombia election"
+         },
+         {
+          "outlet": "Euronews",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVzVtNWNtYnNIVk9VUWVKV3NiVTNVS2FVSzJ2QUpUWWl0NEZXWDRMQmZtb2NUYzB3eVBaOWdmQnpBeUlmODA4bGZkV3RrZG5pekpZUGptWGJCTDRrY1hQVmxfZHJoVndCZlFLc3daNXVqMGp4a3hQaDVHbGdQSS1RMHBFOUYxQWl4UE1IWVFSeTdRU3NfY1pGd0lHM2FoOWlSdHRMU0s4Qnh6LVhFb3YyNGV0cS1zNXZMTWw0UzBB?oc=5",
+          "ts": "2026-06-22T09:56:59Z",
+          "title": "US-backed political newcomer wins Colombia election, marking country's right-wing shift"
+         }
+        ]
+       },
+       {
+        "text": "Americas Quarterly reports De La Espriella won by a narrow margin.",
+        "cites": [
+         {
+          "outlet": "Americas Quarterly",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVEhwNWJDSzFIWVFiMWJETkF4MTZRZ1NBNHpSamk1Ti1aN2QyT2Z2SmNsNU9TaG1TdnJCQmhGMGt5Q0JVa3J3QWpRMkJBNWZMVHBQc1MtbndhRFV5THRlTFdqdGMwUVB3TUU4VVdFZ2VxLXZOSGJmWUpaUFNpQzRtejNVcms3TjI3SG4tWDlZdkc3bzdiUWNoTFkzUVMtdGVSWlJkTnhtVQ?oc=5",
+          "ts": "2026-06-22T12:32:21Z",
+          "title": "REACTION: De La Espriella Wins Colombia\u2019s Election by Narrow Margin"
+         }
+        ]
+       },
+       {
+        "text": "The Miami Herald asks whether 'El Tigre' can deliver after his win.",
+        "cites": [
+         {
+          "outlet": "Miami Herald",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRGtEYk4zYUd0cnM3N2Vuell1Wkh1SWhkOTVXTHNNTDYyMDNfYXFKbEhKeEZWQ1NPaUplVnJtakV6NWJXUzhleElIUWRtcXpCUDB5Q05IR2V0NEZnNVh5WmVOVmd2cTY4N2s5Uy1Mc3h1ZmJTU29qRzk3RnhiQ1ZYemt4bG5iNWZidHfSAYoBQVVfeXFMUGdEWjI4eDB2LU1nYk5zMDQyd1NFVmRnQklHRDZlZHl6NGNvMFlwak5TVFhrQ29ueUlBT0hVbVdFa3c2LWZHS1BUXzM5RFJZNnRtaWdLd0N5clBTVU5yeUJiNThUX1hkSzJOV3E2V09oemNtOThJcFpIeWowTy1GbVg0bXhERFBKRG1B?oc=5",
+          "ts": "2026-06-22T18:22:38Z",
+          "title": "\u2018El Tigre\u2019 wins Colombia\u2019s presidential election - but can he deliver?"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The Guardian reports the election of the far-right leader raises fears for democracy in Colombia and describes it as an 'institutional threat'.",
+        "cites": [
+         {
+          "outlet": "Guardian World",
+          "kind": "journalist",
+          "url": "https://www.theguardian.com/world/2026/jun/22/election-far-right-leader-fears-democracy-colombia-espriella-trump",
+          "ts": "2026-06-22T16:29:48Z",
+          "title": "\u2018Institutional threat\u2019: election of far-right leader raises fears for democracy in Colombia"
+         }
+        ]
+       },
+       {
+        "text": "Al Jazeera describes De La Espriella as a far-right lawyer who won the tight race.",
+        "cites": [
+         {
+          "outlet": "aljazeera.com",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/22/colombian-right-wing-candidate-de-la-espriella-wins-tight-presidential-race",
+          "ts": "2026-06-22T09:30:00Z",
+          "title": "Far - right lawyer De La Espriella wins Colombia tight presidential race | Elections News"
+         },
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQLUFUT18zcG9kOUZ4NmZwRFMzLVF2MkR5VUU1c0hqN1ZQY1RvYVlxVjJBUmFjQmk3ZDZ0R2lJRzFiaU5fb3lNNHZSblNCQWJZbk5ic3RNanFrTzY2Mm9KcDM3UGk1OUEybUJUaWJTY2xtaGdVVThIY3BSVHU1V0JHVlkyZnNSa0E4dVg1b01taDY4MDQzTE9vLVBiZjA3NU5RcjA5LURvYjlodzlJVkJVLXNiUFZRMW_SAbwBQVVfeXFMT0dXX2dESkFPNXdweFNDQ1pSb1ZOa2lmUXhrWF82R1BYbnp4aHpNRVlZZVV2RkNfQllpRWJSOG9HODhEclNoUHF5YklTcjVROVdvWmhpVUt1Q0RvWlhFYXhrZnNxdGpCZlEwQXcxOW9fSG1SbXpsd3F6OXlaRjBxMHlMNWtXWWpiLWlCLV9HMEtpajlBV1daaGkzeGFseUdoRlpHdEVPSkhHLVBSRFBvQmJtS21BMVZ6VTFZZXQ?oc=5",
+          "ts": "2026-06-22T07:34:20Z",
+          "title": "Far-right lawyer De La Espriella wins Colombia\u2019s tight presidential race"
+         }
+        ]
+       },
+       {
+        "text": "Caliber.Az reports the right-wing candidate won the runoff amid fraud allegations.",
+        "cites": [
+         {
+          "outlet": "Caliber.Az",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdmRSTU5maHVwZXY5RUg1emp2a25YNW5rWVhZbjAwWXRMYWNyZVUtd0p3RHN3SHVMalBPdTQzMVZHdWN5LXFNSGw2eHBRdDJKSkJDVVZQeHlXNHJZSVdUSFVvZE9hODhTMk01TXUzdVdMTEcwTko1LWNKd214NHBhLUhEUWQzUnM0WXZwWnNrR0loY29xN0Y4bkRpMnNXQm5DTHBKWEE1TQ?oc=5",
+          "ts": "2026-06-22T06:56:49Z",
+          "title": "Right-wing candidate wins Colombia presidential runoff amid fraud allegations"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "RFI reports a Colombian leftist candidate called for calm after post-vote violence.",
+        "cites": [
+         {
+          "outlet": "RFI",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZU9ielN2YjVsdEU1cG84dmNnWEJuMnAxaGVyYkE4MnVPa1prQ0k5SVUwTl9LbVRHNTFPQVJ3TzN3TF92cldqS1FiMHpPODcyTUZVTzZxWi10Z3B5YnV3dW9wNC1yMDRGRjdLVG9tSTExdmFfcGQzUW8zNU5TZ2FlQWZqZy1DcWxud2xCajlUcF9SX3EzM0FjN3l3RGc2a0d1MHVNTC1DaWFBTUVoeUI4VHZaNzBMTkEt?oc=5",
+          "ts": "2026-06-22T17:54:17Z",
+          "title": "Colombian leftist candidate calls for calm after post-vote violence"
+         }
+        ]
+       },
+       {
+        "text": "Barron's also reports the leftist candidate's call for calm after post-vote violence.",
+        "cites": [
+         {
+          "outlet": "Barron's",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaE15aHlVSWlIWmdqdWJYUVBQa3Y1WkZrVVFhTkVaSENwSUU0a0RkdnM4amt6MzBpeEZWQmU1TEhLaTFOemozUEtFVi1nSnJMd1U0cnRoMmJfdG1mcGtZbEtlaElpMWxxeUY4ZHQwVkFPeUE2NFpxNHdRS3FWMXlHLWp6azJWN2JKaGNBZkhfRzdyNnRrQTd3WVpZOUlQdWNoMnlzREEySVM?oc=5",
+          "ts": "2026-06-22T17:53:00Z",
+          "title": "Colombian Leftist Candidate Calls For Calm After Post-vote Violence"
+         }
+        ]
+       },
+       {
+        "text": "The Palestine Chronicle reports Petro accused Israel of election interference and demanded a full recount.",
+        "cites": [
+         {
+          "outlet": "Palestine Chronicle",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZXU3enV0aGZMQkhxV2RyWmtKS0VoZVg3Ym9SYTM0dW5aZmo3VEJtUnI2XzIwQllUNXFxclI4LVZZZHpBeVNHR0IxVGF1NW1jV2hKUGZfUnNha1dyazZEM25SeFFCNnJwcGRyM2hDb3J1cV93eDJBb0U3WFVoT2pldzYwWTMxRF9MYnhIcHpXMzFYaGpoT3A1bG9KYWZFcVN0eTloZw?oc=5",
+          "ts": "2026-06-22T14:33:55Z",
+          "title": "Petro Accuses Israel of Election Interference, Demands Full Recount"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "ColombiaOne.com reports on when the election result will be official.",
+        "cites": [
+         {
+          "outlet": "ColombiaOne.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVERKeWxsSmp4eU1MOWVYR0pRX2RBZmhJaWhZUnN5bXQ0M0pWY1Z5eHBKLXFUd2ZBQWc3ZTA0NDE3ZFRvNWd2dHdNazhlM0hoamxEcm94eHc0VFNRUjVNWXdiVEdZTjkxYjlxUkZmYUV1TlZTM1lsUm9HTjhfcTVLdmsyNzFtWTkwMjYyRVBnMXEwdE1YQWc?oc=5",
+          "ts": "2026-06-22T12:29:47Z",
+          "title": "Colombia\u2019s Election Result Is In-When Will It Be Official?"
+         }
+        ]
+       },
+       {
+        "text": "The Atlantic Council published expert reactions on what a De La Espriella presidency means for Colombia and beyond.",
+        "cites": [
+         {
+          "outlet": "atlanticcouncil.org",
+          "kind": "journalist",
+          "url": "https://www.atlanticcouncil.org/dispatches/experts-react-what-a-president-abelardo-de-la-espriella-means-for-colombia-and-beyond/",
+          "ts": "2026-06-22T17:30:00Z",
+          "title": "Experts react : What a President Abelardo de la Espriella means for Colombia and beyond"
+         }
+        ]
+       },
+       {
+        "text": "Al Jazeera also published a piece on what comes next after De La Espriella's election.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/22/far-right-de-la-espriella-elected-colombia-president-whats-next?traffic_source=rss",
+          "ts": "2026-06-22T12:54:42Z",
+          "title": "Far-right de la Espriella elected Colombia president: What\u2019s next?"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 93,
+   "items_48h": 206,
+   "outlets": 156,
+   "kinds": [
+    "journalist",
+    "state media",
+    "wire service"
+   ],
+   "latest": [
+    {
+     "ts": "2026-06-22T21:53:12Z",
+     "title": "From Exploding Cats to Mega-Prisons: Meet Colombia\u2019s Next President",
+     "outlet": "Zeteo",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lTl9sRW9SbVJJM0Zva1JtWWl0X3FXTnhMdWl1S1BLVGt4SlVIS05zM1pEY1VDZndFTGtBaHA2dkphSzNKcEVZOG9RS0JSUVhXNVQyWGFiMkx2RnJ2R2xjZHVmdVBZZw?oc=5",
+     "rel": 5,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T21:00:00Z",
+     "title": "U . S .- Colombia Relations | Council on Foreign Relations",
+     "outlet": "cfr.org",
+     "kind": "journalist",
+     "url": "https://www.cfr.org/articles/us-colombia-relations",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T20:30:00Z",
+     "title": "Andy Burnham sworn in as Makerfield MP after by - election victory",
+     "outlet": "theboltonnews.co.uk",
+     "kind": "journalist",
+     "url": "https://www.theboltonnews.co.uk/news/26218284.andy-burnham-sworn-makerfield-mp-by-election-victory/",
+     "rel": 1,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T20:15:00Z",
+     "title": "Analysis - De La Espriella win in Colombia cements Latin America rightward shift",
+     "outlet": "internazionale.it",
+     "kind": "journalist",
+     "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/06/22/analysis-de-la-espriella-win-in-colombia-cements-latin-america-s-rightward-shift",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T18:58:49Z",
+     "title": "'El Tigre' won Colombia's presidential vote, but he may always be an outsider",
+     "outlet": "France 24",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZnVOTVdzdFFnUXZOSlh3bU12b01DZkFBVXFiSkJwMmYwakRBclR1UHRuT3ZQeFEwVDlPMUZQTU5Id015Z2xUakdQcEZXWm5Ja1BYOGZRVEhKd3BTbllQYWlvX2E3Z19CMGJnY3FyZEJxak5sZUhjZXEtQWRBSFpvNlFYNmR1U0ZjeDR2TTZFLWs0SDRIVzlnTTc5Ql9uMWszamk1ZjgyNG5vUVlRTTIzTzNQX2xQTlY0TVp6aA?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T18:36:14Z",
+     "title": "De La Espriella wins 80.57% of runoff election votes from Colombians in U.S., data shows",
+     "outlet": "WPLG Local 10",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOU1TdmhzYXFveHVIRkNBeEt5U0VROHhVbm42UG4tSHA4Vk9GYV94bGRaYlp3WXdpZkJZQzhQS2xoME5jMUtTdkwzTzdLbEM3QUJaeTNtRTY4UTVIYS1vUTRlLXpnR3ZxN2ZsTGRDOXd2VnZ1ZmZSWWJDZU41bTFreG9KWE5HSFIybnMwY2c3R0NhVjE2M2MyOEQ0UF9jaE5YcnpZd3YxMVpsTnF3dWNOZWNmRmdwTzZQd045LTAzeExyem9MN25RNUR1UEZkZw?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T18:22:38Z",
+     "title": "\u2018El Tigre\u2019 wins Colombia\u2019s presidential election - but can he deliver?",
+     "outlet": "Miami Herald",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRGtEYk4zYUd0cnM3N2Vuell1Wkh1SWhkOTVXTHNNTDYyMDNfYXFKbEhKeEZWQ1NPaUplVnJtakV6NWJXUzhleElIUWRtcXpCUDB5Q05IR2V0NEZnNVh5WmVOVmd2cTY4N2s5Uy1Mc3h1ZmJTU29qRzk3RnhiQ1ZYemt4bG5iNWZidHfSAYoBQVVfeXFMUGdEWjI4eDB2LU1nYk5zMDQyd1NFVmRnQklHRDZlZHl6NGNvMFlwak5TVFhrQ29ueUlBT0hVbVdFa3c2LWZHS1BUXzM5RFJZNnRtaWdLd0N5clBTVU5yeUJiNThUX1hkSzJOV3E2V09oemNtOThJcFpIeWowTy1GbVg0bXhERFBKRG1B?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-22T18:00:00Z",
+     "title": "Analysis - De La Espriella win in Colombia cements Latin America rightward shift",
+     "outlet": "yahoo.com",
+     "kind": "journalist",
+     "url": "https://www.yahoo.com/news/politics/articles/analysis-la-espriella-win-colombia-060133430.html",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "a": "Reuters and AP News frame De la Espriella's victory as a democratic rightward shift cementing Latin America's new conservative political trend.",
+    "b": "Guardian World and left-leaning outlets warn his far-right presidency poses an institutional threat to Colombian democracy, citing post-vote violence.",
+    "basis": "extracted from live headlines 2026-06-22",
+    "axis_type": "interpretation",
+    "axis_question": "Is De la Espriella's win a democratic rightward shift or an institutional threat?",
+    "carriers": {
+     "a": [
+      {
+       "outlet": "WPLG Local 10",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWUp3dEFmQ2oyNy1hOE5fbU5DTUo2R3hzSUdTRnFhMEtiY3FYVEZTZmw1WmUxQWI1bnE5UVZwenRMQ05YMklrVXpXT3UyblZRcEU0XzBaTWlNNTNydWVBNDhfSjRIU213by10WnNiT05UOGpERXR2cXNzdXBTMWtGaTZrRUZidzlkeFZnR2p5ZlRMYmF1VWphNHJQcV9oNEVvZ1lfaEdkck5Yd25XdkM4VUZTSHJxcURoQlQzbjhybFdEOWZkcHBN?oc=5",
+       "ts": "2026-06-21T16:29:51Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Reuters",
+       "kind": "wire service",
+       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMTBjeE9MVGV0S3JsTFpZY0FudTl5Nlk5N1VIRXFfeDNZdUdMX0oyYnZJa05fMVdCM3FPWHQ3STFSaXZEM0x3SHV5bmh1Zkx5b211ajZCTFljWmVrcnhxa2pGUjJPamFoUENzbi1fYzU5YmozLTNabk0tTWIyWUZ6c2tkNGhiaXZibDJVeEtDNENISTBEUHlFN0JuTXFvTTdDRC1aOFdQeXZWbC1iWUo3T3lRM19VaWYyQVE?oc=5",
+       "ts": "2026-06-22T18:32:10Z",
+       "provenance": "echo",
+       "motive_note": "international wire service"
+      },
+      {
+       "outlet": "Taipei Times",
+       "kind": "journalist",
+       "url": "https://www.taipeitimes.com/News/world/archives/2026/06/23/2003859593",
+       "ts": "2026-06-22T22:30:16Z",
+       "provenance": "echo",
+       "motive_note": "TW regional press"
+      }
+     ],
+     "b": [
+      {
+       "outlet": "Guardian World",
+       "kind": "journalist",
+       "url": "https://www.theguardian.com/world/2026/jun/21/colombias-runoff-election-expected-to-trigger-shift-in-decades-long-armed-conflict",
+       "ts": "2026-06-21T14:44:36Z",
+       "provenance": "original",
+       "motive_note": "UK press"
+      },
+      {
+       "outlet": "Barron's",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRUhkN2QyRnp6MU5SczNkY1BESmFMRkFsZWxGWjdoejVpTTdzQS1uYzQwaFZjODVaaXJxNEJiUi15blU1X0NPMkJab2psMjYybUtFQ3ZJQ0RzaVRka3JYNjNJbzlJcEFsbG04aHU4RzY2eXNkOGJKaEVPWHUtZWdBZ2ViY3daTWRtNEgyR0FfNHFENkZOTWZ3bVM1eU1IOURULU1FTjFUejBVb1YtbEE?oc=5",
+       "ts": "2026-06-22T17:53:00Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "France 24",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZnVOTVdzdFFnUXZOSlh3bU12b01DZkFBVXFiSkJwMmYwakRBclR1UHRuT3ZQeFEwVDlPMUZQTU5Id015Z2xUakdQcEZXWm5Ja1BYOGZRVEhKd3BTbllQYWlvX2E3Z19CMGJnY3FyZEJxak5sZUhjZXEtQWRBSFpvNlFYNmR1U0ZjeDR2TTZFLWs0SDRIVzlnTTc5Ql9uMWszamk1ZjgyNG5vUVlRTTIzTzNQX2xQTlY0TVp6aA?oc=5",
+       "ts": "2026-06-22T18:58:49Z",
+       "provenance": "echo",
+       "motive_note": "FR state-funded international broadcaster"
+      },
+      {
+       "outlet": "Zeteo",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9lTl9sRW9SbVJJM0Zva1JtWWl0X3FXTnhMdWl1S1BLVGt4SlVIS05zM1pEY1VDZndFTGtBaHA2dkphSzNKcEVZOG9RS0JSUVhXNVQyWGFiMkx2RnJ2R2xjZHVmdVBZZw?oc=5",
+       "ts": "2026-06-22T21:53:12Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      }
+     ]
+    }
+   },
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 48,
+    "outlets_timed": 148,
+    "outlets_unplaced": 1,
+    "chain": [
+     {
+      "outlet": "BBC World",
+      "ts": "2026-06-20T23:17:51Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "UK public broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "BBC",
+      "ts": "2026-06-20T23:17:51Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK public broadcaster",
+      "items": 2
+     },
+     {
+      "outlet": "The Economist",
+      "ts": "2026-06-21T00:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
+     },
+     {
+      "outlet": "dw.com",
+      "ts": "2026-06-21T00:16:23Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 5
+     },
+     {
+      "outlet": "slguardian.org",
+      "ts": "2026-06-21T02:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Bluefield Daily Telegraph",
+      "ts": "2026-06-21T03:07:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Crypto Briefing",
+      "ts": "2026-06-21T03:18:55Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "yahoo.com",
+      "ts": "2026-06-21T03:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     }
+    ],
+    "unplaced": [
+     {
+      "outlet": "Press TV",
+      "first_seen": "2026-06-22T10:55:50Z",
+      "kind": "state media",
+      "motive_note": "IR state media",
+      "items": 1
+     }
+    ]
+   },
+   "links": [
+    {
+     "entity": "colombia",
+     "situations": [
+      "gaza-israel-war-current",
+      "us-iran-strikes-israel-lebanon-escalation"
+     ]
+    },
+    {
+     "entity": "donald trump",
+     "situations": [
+      "gaza-israel-war-current",
+      "russia-ukraine-war-current",
+      "taiwan-strait-tensions-current",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    },
+    {
+     "entity": "gustavo petro",
+     "situations": [
+      "us-iran-strikes-israel-lebanon-escalation"
+     ]
+    },
+    {
+     "entity": "israel",
+     "situations": [
+      "afp-probes-israeli-flotilla-abuse-claims",
+      "eu-israel-sanctions-row-kallas-ties-cut",
+      "gaza-israel-war-current",
+      "lancet-calls-to-suspend-israeli-medical-body-fro",
+      "lebanon-hezbollah-disarmament-standoff",
+      "red-sea-houthi-shipping-current",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "trump",
+     "situations": [
+      "gaza-israel-war-current",
+      "russia-ukraine-war-current",
+      "taiwan-strait-tensions-current",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "ColombiaOne.com",
+     "n": 10,
+     "class": "other"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "n": 8,
+     "class": "other"
+    },
+    {
+     "outlet": "WPLG Local 10",
+     "n": 7,
+     "class": "other"
+    },
+    {
+     "outlet": "Bluefield Daily Telegraph",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 4,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "eciks.org",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "DW.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "NPR",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "TASS",
+     "n": 3,
+     "class": "state-media"
+    },
+    {
+     "outlet": "The Guardian",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "The Sunday Guardian",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "dw.com",
+     "n": 3,
+     "class": "mainstream"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 3,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-21 06:00",
+      29,
+      30
+     ],
+     [
+      "2026-06-21 12:00",
+      72,
+      76
+     ],
+     [
+      "2026-06-22 06:00",
+      93,
+      112
+     ],
+     [
+      "2026-06-22 12:00",
+      115,
+      146
+     ],
+     [
+      "2026-06-22 18:00",
+      110,
+      156
+     ]
+    ],
+    "mix": {
+     "mainstream": 10,
+     "state-media": 4,
+     "regional": 1,
+     "official": 0,
+     "other": 157
+    },
+    "first_seen": "2026-06-21T06:21:44Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-22T15:13:55Z",
+     "a": "International outlets report hard-right outsider Abelardo De La Espriella won Colombia's presidential election by a narrow margin at record turnout",
+     "b": "Outgoing President Petro accuses Israel of election interference and demands a full recount of the razor-thin result"
+    },
+    {
+     "captured_utc": "2026-06-22T16:20:24Z",
+     "a": "International outlets confirm de la Espriella's narrow right-wing victory as a legitimate democratic outcome in Colombia.",
+     "b": "Outgoing President Petro accuses Israel of interference in Colombia's election and demands a full official recount."
+    },
+    {
+     "captured_utc": "2026-06-22T17:14:45Z",
+     "a": "Guardian warns the far-right win poses an institutional threat to democracy; Petro demands a recount alleging foreign election interference.",
+     "b": "Taipei Times, euronews, and Al Jazeera report de la Espriella's election as Colombia's settled presidential result following the runoff."
+    },
+    {
+     "captured_utc": "2026-06-22T17:29:41Z",
+     "a": "Taipei Times, dw.com, and Euronews report de la Espriella won with record turnout, framing the result as Colombia's clear democratic shift to the right.",
+     "b": "Guardian World and Al Jazeera warn his far-right election raises fears of institutional damage to Colombian democracy."
+    },
+    {
+     "captured_utc": "2026-06-22T18:39:14Z",
+     "a": "Guardian and progressive outlets frame De la Espriella's election as an 'institutional threat' raising fears for Colombian democracy.",
+     "b": "Other analysts frame the narrow victory as a legitimate result cementing Latin America's ongoing rightward political realignment."
+    },
+    {
+     "captured_utc": "2026-06-22T19:09:41Z",
+     "a": "Miami Herald, Taipei Times, and Americas Quarterly report De la Espriella's win as a legitimate result cementing Latin America's rightward shift.",
+     "b": "Guardian World warns the far-right leader's election poses an institutional threat, while RFI notes post-vote violence has already emerged."
+    },
+    {
+     "captured_utc": "2026-06-22T19:41:42Z",
+     "a": "Regional analysts and multiple outlets report De La Espriella's victory cements a rightward democratic shift across Latin America",
+     "b": "The Guardian and RFI warn his far-right win poses an institutional threat and that post-vote violence has followed"
+    },
+    {
+     "captured_utc": "2026-06-22T20:13:55Z",
+     "a": "Mainstream outlets including Miami Herald and Americas Quarterly frame de la Espriella's election as a narrow but legitimate democratic win",
+     "b": "Guardian World frames the far-right de la Espriella's victory as an 'institutional threat' raising fears for Colombian democracy"
+    },
+    {
+     "captured_utc": "2026-06-22T20:39:07Z",
+     "a": "Guardian World and leftist outlets warn De la Espriella's far-right win poses an institutional threat to Colombian democracy.",
+     "b": "Miami Herald, Americas Quarterly and Al Jazeera report De la Espriella won a narrow but legitimate election victory."
+    },
+    {
+     "captured_utc": "2026-06-22T21:07:54Z",
+     "a": "De la Espriella allies and several outlets frame the presidential win as a clear popular mandate for right-wing change in Colombia.",
+     "b": "Critics and leftist candidate Cepeda warn the far-right victory poses an institutional threat to Colombian democracy amid post-vote violence."
+    },
+    {
+     "captured_utc": "2026-06-22T22:12:01Z",
+     "a": "Reuters and international media say De la Espriella's win confirms a broader rightward political drift across Latin America",
+     "b": "France 24 and Miami Herald say De la Espriella may remain an outsider amid post-vote violence and doubts over his ability to govern"
+    },
+    {
+     "captured_utc": "2026-06-22T22:43:18Z",
+     "a": "Reuters and AP News frame De la Espriella's victory as a democratic rightward shift cementing Latin America's new conservative political trend.",
+     "b": "Guardian World and left-leaning outlets warn his far-right presidency poses an institutional threat to Colombian democracy, citing post-vote violence."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Colombia runoff election armed conflict shift, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 1
+   },
+   "lead_image": {
+    "url": "https://i.guim.co.uk/img/media/cacbcdd74d3ece334d2ee011c38fd91d15e80a72/213_0_2605_2085/master/2605.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c1b994f90eb604b0dbad82a43a4e87de",
     "source": "Guardian World"
    },
    "gate": {
@@ -5594,8 +5595,8 @@
     ]
    },
    "discovered": true,
-   "items_24h": 88,
-   "items_48h": 186,
+   "items_24h": 77,
+   "items_48h": 185,
    "outlets": 49,
    "kinds": [
     "journalist",
@@ -5692,7 +5693,7 @@
      "outlet": "TASS",
      "kind": "state media",
      "url": "https://tass.com/world/2149977",
-     "rel": 10,
+     "rel": 8,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -5736,18 +5737,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "NYT World",
-      "ts": "2026-06-20T22:16:01Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "US press",
-      "items": 17
-     },
-     {
       "outlet": "TASS",
       "ts": "2026-06-20T23:14:18Z",
       "kind": "state media",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "RU state media",
       "items": 63
      },
@@ -5798,6 +5791,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 5
+     },
+     {
+      "outlet": "watoday.com.au",
+      "ts": "2026-06-21T02:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -6166,7 +6167,7 @@
      [
       "2026-06-22 18:00",
       90,
-      48
+      49
      ]
     ],
     "mix": {
@@ -6241,7 +6242,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US tanker strike Gulf of Oman India sailors, Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -6734,6 +6735,7 @@
       "russia-ukraine-war-current",
       "sudan-civil-war-current",
       "us-iran-strikes-israel-lebanon-escalation",
+      "us-to-pull-fighter-jets-from-nato-europe",
       "west-bank-settler-sanctions-ethnic-cleansing"
      ]
     },
@@ -7012,7 +7014,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"ASEAN-Russia strategic track\" shipped without its beats - 4 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -7273,8 +7275,8 @@
    },
    "discovered": false,
    "items_24h": 39,
-   "items_48h": 85,
-   "outlets": 50,
+   "items_48h": 84,
+   "outlets": 49,
    "kinds": [
     "journalist",
     "state media",
@@ -7379,86 +7381,46 @@
     }
    ],
    "split": {
-    "a": "Taiwan and Western outlets say China's military surge is a genuine threat; Taipei launches five-day combat drills and deploys US-made MQ-9 drones in response",
-    "b": "Chinese state media frames cross-strait ties as shared cultural heritage; analysts warn Taiwan's new drones are highly vulnerable and US backing is uncertain",
+    "a": "Taipei Times and MSN portray China's military ramp-up around Taiwan as an escalatory threat, with Taiwan stepping up defenses against Chinese repression.",
+    "b": "Press TV analyst frames Japan's pro-Taiwan statements as inflammatory provocations deliberately stoking regional risk.",
     "basis": "extracted from live headlines 2026-06-22",
     "axis_type": "interpretation",
-    "axis_question": "Is Taiwan's military buildup an effective deterrent, or does it risk provoking unmanageable escalation?",
+    "axis_question": "Is China's military buildup around Taiwan aggression or response to regional provocations?",
     "carriers": {
      "a": [
       {
-       "outlet": "MSN",
+       "outlet": "Eurasia Review",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQN3JUa3FPRm05bjN2WXBSVFJ1U1R1ZG1fdHh5NVhzYU9lcERySFVhbWZTaV9RYnk2WDE4M1dJS0JERG9nMm9vTm1EbE44b194VWY1bDQyWEtjTGRtUmdUYkFSQXpWcGRKNThsT2tNMXQ0dl9JVTU3MnJwcGNvV2FfMUY0SndveVFhaUdvN1kyRmFwUzFVY0RJREFSN3ltUXNFOGRsN2lqajhrank4Zlk5Uy0zc1I1YkxpdE8yQ1lfZUNxZ2E4eUg1UmNtRQ?oc=5",
-       "ts": "2026-06-21T14:01:39Z",
+       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUFZUeWZSSXE4OVhPTi1uZTZoN09NeWpnaEctQndfOS1FcVJ3UWtmcGhraEdKbTl6bDVpdDVhOXdfZ2daakNaTHRtcG1nMUVWa1NmT2pFeEJnLVNrZHZ1YW9RcW9mMzV4bVpOcTJvaExLY0w3Q1g2SEhKMktHeDRfOHZtVER5cmx1X0ozV0FSNjZLdzlOaHgxTA?oc=5",
+       "ts": "2026-06-21T23:58:12Z",
        "provenance": "original",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
-       "outlet": "IANS LIVE",
+       "outlet": "MSN",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdHRyY0xhc3pIY0xESGYtUGpvd3J6dWhsTmU2RFFaNmJhZ2NhVG5tS0V1UmpxbzhTZ0gwOTFkMy05RTlHbHdmcDFjVjhBcjRpNmoyWXdMOS1IczRGNzFYSV9DWE1FWC02UW5iUWd0cjJUMDZoWXRZQXpwTGttQXktSTU4MnI5dHNMdkNXbFRnZnZnbWJQT281MmJpYnlXRTYyZkVSY25mdDBSTjlCQjB1Rg?oc=5",
-       "ts": "2026-06-22T07:08:00Z",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPelZVSi1jTERUdUpIM0oyVS1DdmF5WFRNTW1Vd1F0aFpVSnFGbEU3OUxPS0phcmEwWTNOQ1Z0eG54SUY2Z1Y2dHhLbHpTRzBHTGtvWTBNRk1PNXRMaWk3RWQ3NzM1TEwzdFEwd3JuZXRYWHNVOHZlb2RYcVhTTU1sclpxT3ktZGw0Z19va3ZKOGt0bVVsTDg1bHVmYzA4dmF0UmpwT2g5bzBJQ054UTQ4Zk9nNUt4UmgwYnk5bw?oc=5",
+       "ts": "2026-06-22T06:20:14Z",
        "provenance": "echo",
        "motive_note": "position not catalogued - evidence kind: journalist"
       },
       {
-       "outlet": "BizzBuzz",
+       "outlet": "Taipei Times",
        "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM28tWkxsVlhQeDlGYUlIdWM1dDhuUGZoT1JOQjRodHY3NHB1TS1fb0FsMlZndHVTbWI5THNMQ0FOc0NpWUhtOXdCLWx5QnN3VW1tTnhVQktxSHIweE5BY1oxQ1R6eFoxS3NqaW9IOVZLVi1jd20weWdBZG1DQVRpSUR2ZThzemFCbGR6WDVvbjUzMkV2Wkhva3EyNE91OUVoZTNYMnpSR19IbkNtRHN3TWNCYWdncER0ckRuZTA4SEo4b0U?oc=5",
-       "ts": "2026-06-22T07:39:51Z",
+       "url": "https://www.taipeitimes.com/News/front/archives/2026/06/23/2003859566",
+       "ts": "2026-06-22T22:30:16Z",
        "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Nikkei Asia",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNS3FUYWpScVV5eFBXeGpfMFROM0cwdFRHeHZRNlJGQ1hGenJIbWZtWUxCRmxWMlM4U1o0S2RJSkJoUG5PSEVvaHVpTHpBQ0pMNUJ3aUp1Y19RdVo1eWYzbXI0ekplUW9kaGx6dW83T181MXJ1YkV1UTNTUTBPbi1SZDlKUWdZRkpUN0hSUE1UdzJOY1pKWU1nSXdrZXRnVHJNMHN5dDJ4N2tvbERXazlkV0RQTS1TTk1UNVJIc2Q0TTFVNWo3RFJkcWVB?oc=5",
-       "ts": "2026-06-22T07:40:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Firstpost",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOS3Q2Zm4wcVViMUlMMXBNMTRLLW1VX1g1U2M2XzRjbHNPSklsbkNCQnhwV0lDeEk4eUNCVnJnVThrTGdjM2FzblozekxNR2FkQnRxS1lIbl9FMjdEUnhSZ3BjSWVhUnlXZ0kwbFlFa0NaeTZrdW1oZ08yc1BsZjhkM1A5eEtPVWIzSE9QR0VMTjhaUTRzTVduQmtGemZaUUpJcmxVaURTTkJjNENLLXNMcC1BM3dwNXBaVnNLTlJ1blNoNllpbmFN0gHMAUFVX3lxTE90c2NPcGg1UEZJajBWQXUzX1ZpVHlvV3BqVklzY2ZOWkJaUU1Eb2VSM1ZLem1oYlZFQUFnVjBmSlJkZUFOdzlmWEZNY1IzNG4wNXhqSEJibzFUa3lFaFdha0RqekNYanpUNFRuZjdkeEY3UUJzM0VmMnk0N1Q1dmNpUW16RVh1akk5NFBxWWpuZjdhdmFNNGEyVDAwRnJoSFZiRmVnRUh1bDdVZUF6T3pSTW10Rm5QcWtPWEpLNE12cjRBeHpvUl9XY2JfRA?oc=5",
-       "ts": "2026-06-22T07:46:47Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "EurAsian Times",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSGpUWmlFb09OSHpkcmJiTlBXdjJGaFlLT3p0QWhvWXV1WTREdENiSkN2b1Zjc3hTTGUyTTJjSkVzRllLbW5rS0p0UEJCNXVweXZibXJjRVhXNUx5XzI0LVZOdmhodGZYNktnX0I5NW8zT25TandMTzRuY0xWX1ZQZWI5UFBVVk05bXcxMzNR0gGOAUFVX3lxTFBIalRaaUVvT05IemRyYmJOUFd2MkZoWUtPenRBaG9ZdXVZNER0Q2JKQ3ZvVmNzeFNMZTJNMmNKRXNGWUttbmtLSnRQQkI1dXB5dmJtcmNFWFc1THlfMjQtVk52aGh0Zlg2S2dfQjk1bzNPblNqd0xPNG5jTFZfVlBlYjlQUFVWTTltdzEzM1E?oc=5",
-       "ts": "2026-06-22T11:46:05Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
+       "motive_note": "TW regional press"
       }
      ],
      "b": [
       {
-       "outlet": "Taiwan News",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NdHlQclhTVXpMd0lUQnJRU1l0c0g3RmlhN3hLWmpxTFVRMWJrWU4yWjBuS09YelE0R05Nc1EtdHVwbkIzQXdNR1pYRm82aTFYZGt1UlM2ZEw?oc=5",
-       "ts": "2026-06-22T06:49:00Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "news.cgtn.com",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQc2ZsRVN1VVBKZHY4OG5wTU1uamp6WE5Wb3FSTElfTDhxSHAzZzA2RGQ0YU9yZ2QyM2VMbTNJME0ta293bGtmRk1xTDlvVXU0ZWw2akM1SURKQ0VxTno5RWdaa0t4R2k2a3o1SzFiRWZwRVc5NUl6YVZpWEFsemFXWWdmVTFYNjR4aDlFeURMQ3hXVW9VQzFYU0NLdmdKSDhjQnFKR25zY1hwTUxTcDlQZ2lrWkdxR1JBTzJjSlVZMHYxMVFJ?oc=5",
-       "ts": "2026-06-22T08:21:42Z",
-       "provenance": "echo",
-       "motive_note": "CN state media"
-      },
-      {
-       "outlet": "Military Watch Magazine",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ORWZzQVN6ZjdvaXVzR29xZHQzMlMzZk5JNW4yNHlKdG9RTjBsZFd0UDJoWW1RYnB4SDA4NTJmSlpLczZFZ05aQWhlblBOeXdXRVF2OXdtam1wTUc4dVdUZXlzSEFEYVM0a2k5a0JfU01NWGhzODRMT2pHSQ?oc=5",
-       "ts": "2026-06-22T08:30:20Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
+       "outlet": "Press TV",
+       "kind": "state media",
+       "url": "https://presstv.ir/Detail/2025/11/22/759281/Japan-Prime-Minister-US-president-Donald-Trump-anti-China-remarks-Taiwan-",
+       "ts": null,
+       "provenance": "unplaced",
+       "motive_note": "IR state media"
       }
      ]
     }
@@ -7467,22 +7429,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 48,
+    "outlets_timed": 47,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "home.nzcity.co.nz",
-      "ts": "2026-06-20T22:30:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Malay Mail",
       "ts": "2026-06-21T01:11:54Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -7529,6 +7483,14 @@
      {
       "outlet": "The Sunday Guardian",
       "ts": "2026-06-21T07:38:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "focustaiwan.tw",
+      "ts": "2026-06-21T07:45:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -7882,7 +7844,7 @@
      [
       "2026-06-22 18:00",
       39,
-      51
+      50
      ]
     ],
     "mix": {
@@ -7895,11 +7857,6 @@
     "first_seen": "2026-06-10T21:04:09Z"
    },
    "drift": [
-    {
-     "captured_utc": "2026-06-20T19:19:24Z",
-     "a": "Western outlets frame China's naval activities as tightening a strategic noose on Taiwan amid growing regional alarm",
-     "b": "China condemns Taiwan's intelligence operations and frames Japan's pro-Taiwan remarks as inflammatory provocation"
-    },
     {
      "captured_utc": "2026-06-20T20:21:31Z",
      "a": "Taiwanese and Western sources frame China's naval buildup around Taiwan and crackdowns on Taiwan intelligence networks as escalating coercion.",
@@ -7954,10 +7911,15 @@
      "captured_utc": "2026-06-22T15:13:55Z",
      "a": "Taiwan and Western outlets say China's military surge is a genuine threat; Taipei launches five-day combat drills and deploys US-made MQ-9 drones in response",
      "b": "Chinese state media frames cross-strait ties as shared cultural heritage; analysts warn Taiwan's new drones are highly vulnerable and US backing is uncertain"
+    },
+    {
+     "captured_utc": "2026-06-22T22:43:18Z",
+     "a": "Taipei Times and MSN portray China's military ramp-up around Taiwan as an escalatory threat, with Taiwan stepping up defenses against Chinese repression.",
+     "b": "Press TV analyst frames Japan's pro-Taiwan statements as inflammatory provocations deliberately stoking regional risk."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://d3lzcn6mbbadaf.cloudfront.net/media/details/__sized__/ANI-20260621132911-thumbnail-320x180-70.jpg",
@@ -8745,7 +8707,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -8782,54 +8744,26 @@
     "ceasefire"
    ],
    "brief": {
-    "generated_utc": "2026-06-21T12:15:12Z",
-    "sentence_count": 18,
-    "dropped_count": 1,
+    "generated_utc": "2026-06-22T22:43:16Z",
+    "sentence_count": 21,
+    "dropped_count": 0,
     "paragraphs": [
      {
       "sentences": [
        {
-        "text": "Israel and Hezbollah have agreed to renew a ceasefire, the United States said, even as more strikes on Lebanon were reported.",
+        "text": "Israel's premier says the Israeli military has full freedom of action to prevent threats in Lebanon.",
         "cites": [
          {
-          "outlet": "BBC World",
-          "kind": "journalist",
-          "url": "https://www.bbc.com/news/articles/cwyk7kkygj5o?at_medium=RSS&at_campaign=rss",
-          "ts": "2026-06-19T18:34:05Z",
-          "title": "Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported"
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149919",
+          "ts": "2026-06-22T17:32:55Z",
+          "title": "Israeli military has full freedom of action to prevent threats in Lebanon - premier"
          }
         ]
        },
        {
-        "text": "The New York Times reports Israel directed its military to limit its actions in Lebanon, though tensions persist.",
-        "cites": [
-         {
-          "outlet": "NYT World",
-          "kind": "journalist",
-          "url": "https://www.nytimes.com/live/2026/06/21/world/iran-us-trump-lebanon/israel-directs-its-military-to-limit-its-actions-in-lebanon-though-tensions-persist",
-          "ts": "2026-06-21T11:19:29Z",
-          "title": "Israel directs its military to limit its actions in Lebanon, though tensions persist."
-         }
-        ]
-       },
-       {
-        "text": "An Israeli ambassador said Israel committed to a new Lebanon ceasefire, but troops will remain.",
-        "cites": [
-         {
-          "outlet": "The New York Times",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9pTlB5YklQbTl6NkRucVh5UUxWQkhtRW42YkhRYTRVWEpFR1RTdlN6c3J1ZmFnNmo1OUZxRTZPZlVVYi1lY2tUbG5RdEVadmszTzR2NGJabUUwM3N3dTZYSF85amZYN1FUT2diWmZ3?oc=5",
-          "ts": "2026-06-20T09:45:00Z",
-          "title": "Israel Commits to New Lebanon Cease-Fire, Ambassador Says, but Troops Will Remain"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Press TV reports that Hezbollah vowed armed resistance against any Israeli attempt to seize Lebanese territory.",
+        "text": "Hezbollah vows armed resistance against any Israeli attempt to seize Lebanese territory.",
         "cites": [
          {
           "outlet": "Press TV",
@@ -8839,21 +8773,101 @@
           "title": "Hezbollah vows armed resistance against any Israeli attempt to seize Lebanese territory"
          }
         ]
-       },
+       }
+      ]
+     },
+     {
+      "sentences": [
        {
-        "text": "Press TV also reports that Hezbollah's chief said Israel will soon be expelled from every inch of Lebanese territory.",
+        "text": "Lebanese parliament speaker Nabih Berri pledges Hezbollah disarmament south of the Litani and rejects pilot zones as a waste of time.",
         "cites": [
          {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/19/770751/Hezbollah-chief-Israel-will-withdraw-%E2%80%98every-inch-Lebanese-territory",
-          "ts": null,
-          "title": "Israel will soon be expelled from \u2018every inch\u2019 of Lebanese territory: Hezbollah chief"
+          "outlet": "Naharnet",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSFpsMFBvSk1fVnMxZkJSYmotYl9TT19EbEEwZjVlU0JmaXR4SzRCVkp6Y0ZVdEhuRUtFUExMS3ptS0prd185cjZ5NExfUXI4c3lkeW9rNHFtVmJsaERydUpVaG5zMU15WTZjSVZYVy1wb2NlNDZuSnY1U21qTTc3NGQxeFVhcHhLZTJoblgycG1BMzBDYjA4cVBMS1JlU3hBYmxWTlRKYVg5RUw1Y3kwSF90RWl3eEc5bFRJV2xlZWtpa0U?oc=5",
+          "ts": "2026-06-22T10:57:00Z",
+          "title": "Berri pledges Hezbollah disarmament south Litani, rejects pilot zones as time waste"
          }
         ]
        },
        {
-        "text": "Press TV says an Israeli minister defied the United States and stated occupation forces will stay in Lebanon for years.",
+        "text": "JFeed reports that the Lebanese Army had a year to disarm Hezbollah and did nothing.",
+        "cites": [
+         {
+          "outlet": "JFeed",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9hbWtwWXB3TVljS2JGT3NQM1BZanZfdjJoeThsc0dIMi1hLW93N3NzU0JFLXJwY2JUYzRKbVFWT2E2OUt6clVFZjF6ZmpycjhVd2RkbFVUTG95R0hRREN4Ynk4VUZUZEtxZjFFZTBvMTZ6dFpv?oc=5",
+          "ts": "2026-06-22T11:44:00Z",
+          "title": "The Lebanese Army Had a Year to Disarm Hezbollah. It Did Nothing. Why Wo"
+         }
+        ]
+       },
+       {
+        "text": "Al Jazeera reports Lebanon is discussing a de-confliction mechanism ahead of talks with Israel.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/6/22/lebanon-discusses-de-confliction-mechanism-ahead-of-israel-talks?traffic_source=rss",
+          "ts": "2026-06-22T18:18:17Z",
+          "title": "Lebanon discusses \u2018de-confliction\u2019 mechanism ahead of Israel talks"
+         }
+        ]
+       },
+       {
+        "text": "TASS reports negotiating teams agreed to involve Lebanon in conflict resolution efforts.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149665",
+          "ts": "2026-06-22T05:50:00Z",
+          "title": "Negotiating teams agree to involve Lebanon in conflict resolution efforts"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "TASS reports the Israeli government ordered the army to cease fire in Lebanon but remain in position.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149357",
+          "ts": "2026-06-20T20:02:05Z",
+          "title": "Israel government orders army to cease fire in Lebanon, but remain in position - TV"
+         }
+        ]
+       },
+       {
+        "text": "The New York Times reports Israel directed its military to limit its actions in Lebanon, though tensions persist.",
+        "cites": [
+         {
+          "outlet": "NYT World",
+          "kind": "journalist",
+          "url": "https://www.nytimes.com/2026/06/21/world/middleeast/israel-lebanon-hezbollah-fighting.html",
+          "ts": "2026-06-21T15:56:40Z",
+          "title": "Israel Directs Its Military to Limit Its Actions in Lebanon, but Tensions Persist"
+         }
+        ]
+       },
+       {
+        "text": "MSN reports Israel vows to keep troops in Lebanon despite the ceasefire.",
+        "cites": [
+         {
+          "outlet": "MSN",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOT0tyeXRfVGh4UUhaMDFCRi12SWp6WWNRQXotVm9USTFfaWdBSkotUWJ4QmpTeGhMTkRBc1NWQmZreU9MOXJLQS1sX2JIVUVTMHY3MDJybnBwSl9MTU5ISDBqTWpqbVhnemQ5Smw0VmNtc01EQ2xmQUhFeWNIZUlvRW9DYzRhczNfRU1BQkFEdnRzc1lfUFVhV0twZ2ZtVG5LSXpGUE1zZFZxOEFJeWdtT3BiUzRVVnlMc2p0QXZoZFR0cWU3d19ZZGk4T1NlQS1nR3I2NzFWR2wxWDV6RGs5bWZ4TzdaWlNYOVQwNklVMA?oc=5",
+          "ts": "2026-06-22T02:50:03Z",
+          "title": "Israel vows to keep troops in Lebanon despite ceasefire"
+         }
+        ]
+       },
+       {
+        "text": "Press TV reports an Israeli minister said occupation forces will stay in Lebanon for years, defying the United States.",
         "cites": [
          {
           "outlet": "Press TV",
@@ -8869,19 +8883,19 @@
      {
       "sentences": [
        {
-        "text": "The Guardian reports Israeli strikes killed at least 16 in southern Lebanon despite reports of a renewed ceasefire.",
+        "text": "Al Jazeera reports Israeli attacks have surged despite ceasefire efforts.",
         "cites": [
          {
-          "outlet": "Guardian World",
+          "outlet": "Al Jazeera",
           "kind": "journalist",
-          "url": "https://www.theguardian.com/world/2026/jun/20/israeli-strikes-southern-lebanon-reports-renewed-ceasefire",
-          "ts": "2026-06-20T11:54:09Z",
-          "title": "Israeli strikes kill at least 16 in southern Lebanon despite reports of renewed ceasefire"
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/aje-onl-aje_onl_lebanon_wrap-220626?traffic_source=rss",
+          "ts": "2026-06-22T16:19:27Z",
+          "title": "Lebanon Latest: Israeli attacks surge despite ceasefire efforts"
          }
         ]
        },
        {
-        "text": "Pajhwok Afghan News reports 32 killed in Israeli strikes on Lebanon despite the ceasefire.",
+        "text": "Pajhwok Afghan News reports 32 people were killed in Israeli strikes on Lebanon despite the ceasefire.",
         "cites": [
          {
           "outlet": "Pajhwok Afghan News",
@@ -8893,66 +8907,38 @@
         ]
        },
        {
-        "text": "Al Jazeera reports Israel continued attacks on Lebanon despite agreeing to a ceasefire.",
+        "text": "MSN reports Israeli strikes killed 20 in Lebanon amid the fragile ceasefire.",
         "cites": [
          {
-          "outlet": "Al Jazeera",
+          "outlet": "MSN",
           "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/19/israel-continues-attacks-on-lebanon-despite-agreeing-to-ceasefire?traffic_source=rss",
-          "ts": "2026-06-19T15:47:15Z",
-          "title": "Israel continues attacks on Lebanon despite agreeing to ceasefire"
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVFBNZzNkZk01V3lTQmNBZ1RJZFBSRWI3RmNMMkVGQmwyb252ZnhGemVEMlRyakdyNXVPbFl5eENRTDlJSkVrSDlEanhkSWs3ZHZ4dE9rQnZNUGw5RktFLTJXQjNVMkFMOGRNQ0JUWmFvY1ZfcTloSkV3Z3RKTWZNYmc2UGRJS2c3M1hCMHdzTXhxeFpXc05iTWZwUmdTZTB6RHJkT2VUM0tJLWkyY3hmR1RnQnRuZWl0Z0hpUkVTZlhrZjBpYjBucXBmc0czV2FoekNPendNMkQ5VnY5bE54TEJ4T08ycUpqMDNtb01aaF9fUQ?oc=5",
+          "ts": "2026-06-20T19:31:32Z",
+          "title": "Israeli strikes kill 20 in Lebanon amid fragile ceasefire"
          }
         ]
        },
        {
-        "text": "The Taipei Times reports Israel struck south Lebanon despite the renewed truce.",
-        "cites": [
-         {
-          "outlet": "Taipei Times",
-          "kind": "journalist",
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/06/21/2003859463",
-          "ts": "2026-06-21T08:00:00Z",
-          "title": "Israel strikes south Lebanon despite renewed truce"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "TASS reports that the death toll from Israeli attacks exceeds 4,000 since the start of the escalation in Lebanon.",
+        "text": "TASS reports the death toll from Israeli attacks since the start of the escalation in Lebanon has reached 4,106.",
         "cites": [
          {
           "outlet": "TASS",
           "kind": "state media",
-          "url": "https://tass.com/world/2149349",
-          "ts": "2026-06-20T19:14:41Z",
-          "title": "Death toll from Israeli attacks exceeds 4,000 since start of escalation in Lebanon"
+          "url": "https://tass.com/world/2149675",
+          "ts": "2026-06-22T07:45:39Z",
+          "title": "Death toll from Israeli attacks since start of escalation in Lebanon reaches 4,106"
          }
         ]
        },
        {
-        "text": "Al Jazeera reports MSF said conditions in Lebanon's Nabatieh resemble a death trap.",
+        "text": "TASS reports the United Nations counted at least 11,095 houses destroyed in southern Lebanon by Israeli attacks.",
         "cites": [
          {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/20/msf-says-conditions-in-lebanons-nabatieh-resemble-a-death-trap?traffic_source=rss",
-          "ts": "2026-06-20T11:40:21Z",
-          "title": "MSF says conditions in Lebanon\u2019s Nabatieh resemble a \u2018death trap\u2019"
-         }
-        ]
-       },
-       {
-        "text": "The BBC reports seeing destroyed villages in Israeli-occupied southern Lebanon.",
-        "cites": [
-         {
-          "outlet": "BBC World",
-          "kind": "journalist",
-          "url": "https://www.bbc.com/news/videos/c8r2pyv3e2po?at_medium=RSS&at_campaign=rss",
-          "ts": "2026-06-20T16:37:03Z",
-          "title": "BBC sees destroyed villages in Israeli-occupied southern Lebanon"
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149939",
+          "ts": "2026-06-22T19:28:43Z",
+          "title": "At least 11,095 houses destroyed in southern Lebanon by Israeli attacks - UN"
          }
         ]
        }
@@ -8961,7 +8947,59 @@
      {
       "sentences": [
        {
-        "text": "The BBC reports Lebanese turtle conservationist Mona Khalil was killed by an Israeli strike.",
+        "text": "Press TV reports the IRGC Quds Force chief warned Israel to leave southern Lebanon or be kicked out.",
+        "cites": [
+         {
+          "outlet": "Press TV",
+          "kind": "state media",
+          "url": "https://presstv.ir/Detail/2026/06/21/770872/Leave-southern-Lebanon-or-be-kicked-out-IRGC-Quds-Force-chief-warns-Israel",
+          "ts": null,
+          "title": "Leave southern Lebanon or be kicked out: IRGC Quds Force chief warns Israel"
+         }
+        ]
+       },
+       {
+        "text": "TASS reports media saying the Strait of Hormuz will remain closed as long as Israel continues its aggression against Lebanon.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149513",
+          "ts": "2026-06-21T16:07:20Z",
+          "title": "Hormuz to remain closed as long as Israel continues its aggression against Lebanon - media"
+         }
+        ]
+       },
+       {
+        "text": "TASS reports the Syrian leader said he is ready to engage in talks with Hezbollah to save Lebanon.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149601",
+          "ts": "2026-06-21T23:25:01Z",
+          "title": "Syrian leader says ready to engage in talks with Hezbollah to save Lebanon"
+         }
+        ]
+       },
+       {
+        "text": "TASS reports Vance stated progress on ensuring a ceasefire in Lebanon.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2149525",
+          "ts": "2026-06-21T17:52:31Z",
+          "title": "Vance states progress on ensuring ceasefire in Lebanon"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "BBC reports Lebanese turtle conservationist Mona Khalil was killed by an Israeli strike.",
         "cites": [
          {
           "outlet": "BBC World",
@@ -8973,54 +9011,14 @@
         ]
        },
        {
-        "text": "Press TV reports a top British diplomat lambasted Ben-Gvir's abhorrent comments on Lebanon.",
+        "text": "Muslim Network TV reports Israeli strikes killed an Al Jazeera cameraman and nine other Palestinians in fresh ceasefire violations.",
         "cites": [
          {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/20/770772/Top-British-diplomat-denounces-Ben-Gvir-s-comments-regarding-Lebanon-as--horrendous-and-abhorrent--",
-          "ts": null,
-          "title": "Top British diplomat lambasts Ben-Gvir\u2019s \u2018abhorrent\u2019 comments on Lebanon"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Al Jazeera reports the US announced a new round of Israel-Lebanon talks in Washington next week.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
+          "outlet": "Muslim Network TV",
           "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/19/us-announces-new-round-of-israel-lebanon-talks-in-washington-next-week?traffic_source=rss",
-          "ts": "2026-06-19T21:02:25Z",
-          "title": "US announces new round of Israel-Lebanon talks in Washington next week"
-         }
-        ]
-       },
-       {
-        "text": "Al Jazeera also reports a US envoy headed for Switzerland as Israeli strikes on Lebanon threaten talks.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/6/20/us-envoy-headed-for-switzerland-israeli-strikes-on-lebanon-threaten-talks?traffic_source=rss",
-          "ts": "2026-06-20T07:02:41Z",
-          "title": "US envoy headed for Switzerland, Israeli strikes on Lebanon threaten talks"
-         }
-        ]
-       },
-       {
-        "text": "TASS reports US intelligence believes Israel will not cease attacks on Lebanon, citing the NYT.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/world/2149235",
-          "ts": "2026-06-20T06:23:36Z",
-          "title": "US intelligence believes that Israel will not cease attacks on Lebanon - NYT"
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcnZWbGpYX1UtRUdlWmlLSkRqbnRXVEhtTExRVDlraEN2OTZHVUYzUFJvOEI1ZHlrUEhCdkNWTEZpQUc0VVlxX2ZuZWxRMG9XZlF5U3dtQkhzalgxY2kzcHRUdXB5OGRvWVBKdVRaakZXYkllX0F0aG4yVVRUZGtHaXJTczIxR21CeW1jMWxfcFlmUDgwOVFYSUZoZ3dvTDZROU9wX3UxT1Z2WkJZamdrdDFFVFhCSENCVWVrRG9ZaHIyX05QeXo2Vg?oc=5",
+          "ts": "2026-06-22T11:48:45Z",
+          "title": "Israeli strikes kill Al Jazeera cameraman and nine other Palestinians in fresh ceasefire violations"
          }
         ]
        }
@@ -9029,9 +9027,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 16,
-   "items_48h": 25,
-   "outlets": 12,
+   "items_24h": 17,
+   "items_48h": 26,
+   "outlets": 13,
    "kinds": [
     "journalist",
     "state media"
@@ -9067,7 +9065,7 @@
      "outlet": "Al Jazeera",
      "kind": "journalist",
      "url": "https://www.aljazeera.com/video/newsfeed/2026/6/22/aje-onl-aje_onl_lebanon_wrap-220626?traffic_source=rss",
-     "rel": 10,
+     "rel": 12,
      "coverage": {
       "non_mainstream": 0,
       "mainstream": 1
@@ -9091,7 +9089,7 @@
      "outlet": "NYT World",
      "kind": "journalist",
      "url": "https://www.nytimes.com/2026/06/22/world/europe/israel-lebanon-hezbollah-truce.html",
-     "rel": 6,
+     "rel": 8,
      "coverage": {
       "non_mainstream": 0,
       "mainstream": 1
@@ -9115,7 +9113,7 @@
      "outlet": "TASS",
      "kind": "state media",
      "url": "https://tass.com/world/2149883",
-     "rel": 7,
+     "rel": 9,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -9127,7 +9125,7 @@
      "outlet": "AOL.com",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQVI2TzFQd3BHV29xUDVUcWlyRDR0NWo0ZmtCZGlVWmxMZXcyUEhLa2lTS2JXb1FLLU1xeXR4eENBQjJkVDR4TW0zNHltYW1sT2RJbFNMZXM2VVlzbElDOWM4eV9Qekd2bTVjQlY2S0o3ZXdWQlgwZmFBQ0FGQmZ3SkVlY25LTnc?oc=5",
-     "rel": 7,
+     "rel": 9,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -9135,11 +9133,11 @@
     }
    ],
    "split": {
-    "a": "Hezbollah and Iranian officials vow to keep weapons until Israeli occupation ends, calling it Lebanon's right to armed resistance",
-    "b": "Israel asserts full freedom of military action in Lebanon and presses for Hezbollah disarmament under ceasefire terms",
+    "a": "Hezbollah and Iranian sources insist the group will keep weapons as its right to resistance until Israeli occupation of Lebanese territory ends.",
+    "b": "Israel's premier asserts full military freedom of action against Lebanese threats, backing the US-supported push for Hezbollah disarmament.",
     "basis": "extracted from live headlines 2026-06-22",
     "axis_type": "policy_dispute",
-    "axis_question": "Should Hezbollah disarm now, or keep weapons until Israel fully withdraws from Lebanon?",
+    "axis_question": "Should Hezbollah disarm now or only after Israeli forces fully withdraw from Lebanon?",
     "carriers": {
      "a": [
       {
@@ -9155,16 +9153,16 @@
       {
        "outlet": "NYT World",
        "kind": "journalist",
-       "url": "https://www.nytimes.com/2026/06/20/world/middleeast/mona-kahlil-turtles-lebanon-conservation.html",
-       "ts": "2026-06-20T22:18:23Z",
+       "url": "https://www.nytimes.com/2026/06/21/world/middleeast/israel-lebanon-hezbollah-fighting.html",
+       "ts": "2026-06-21T20:57:57Z",
        "provenance": "original",
        "motive_note": "US press"
       },
       {
        "outlet": "TASS",
        "kind": "state media",
-       "url": "https://tass.com/world/2149665",
-       "ts": "2026-06-22T05:50:00Z",
+       "url": "https://tass.com/world/2149675",
+       "ts": "2026-06-22T07:45:39Z",
        "provenance": "echo",
        "motive_note": "RU state media"
       }
@@ -9175,7 +9173,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 11,
+    "outlets_timed": 12,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -9227,16 +9225,16 @@
       "items": 8
      },
      {
-      "outlet": "The Herald",
-      "ts": "2026-06-22T09:33:45Z",
+      "outlet": "MSN",
+      "ts": "2026-06-22T02:50:03Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
      {
-      "outlet": "Naharnet",
-      "ts": "2026-06-22T10:57:00Z",
+      "outlet": "The Herald",
+      "ts": "2026-06-22T09:33:45Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -9322,6 +9320,11 @@
      "class": "mainstream"
     },
     {
+     "outlet": "MSN",
+     "n": 2,
+     "class": "other"
+    },
+    {
      "outlet": "AOL.com",
      "n": 1,
      "class": "other"
@@ -9338,11 +9341,6 @@
     },
     {
      "outlet": "JFeed",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "MSN",
      "n": 1,
      "class": "other"
     },
@@ -9466,11 +9464,6 @@
    },
    "drift": [
     {
-     "captured_utc": "2026-06-22T15:13:55Z",
-     "a": "A US official reports Israel and Hezbollah agreed to a ceasefire; Lebanon's Berri pledges Hezbollah disarmament south of the Litani River",
-     "b": "Reports say Israeli strikes killed at least 20 Lebanese including conservationist Mona Khalil; Israel's PM asserts full freedom of military action"
-    },
-    {
      "captured_utc": "2026-06-22T16:20:24Z",
      "a": "Israel states its military is directed to limit actions in Lebanon and troops are kept on defense within ceasefire commitments.",
      "b": "Al Jazeera and NYT report Israeli strikes continue killing Lebanese civilians including conservationist Mona Khalil during the truce."
@@ -9524,10 +9517,15 @@
      "captured_utc": "2026-06-22T22:12:01Z",
      "a": "Hezbollah and Iranian officials vow to keep weapons until Israeli occupation ends, calling it Lebanon's right to armed resistance",
      "b": "Israel asserts full freedom of military action in Lebanon and presses for Hezbollah disarmament under ceasefire terms"
+    },
+    {
+     "captured_utc": "2026-06-22T22:43:18Z",
+     "a": "Hezbollah and Iranian sources insist the group will keep weapons as its right to resistance until Israeli occupation of Lebanese territory ends.",
+     "b": "Israel's premier asserts full military freedom of action against Lebanese threats, backing the US-supported push for Hezbollah disarmament."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"Border conflict roots\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -9730,8 +9728,8 @@
    },
    "discovered": true,
    "items_24h": 11,
-   "items_48h": 84,
-   "outlets": 57,
+   "items_48h": 82,
+   "outlets": 55,
    "kinds": [
     "journalist",
     "wire service"
@@ -9915,38 +9913,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 55,
+    "outlets_timed": 53,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "Qatar Tribune",
-      "ts": "2026-06-20T22:15:24Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "The Financial Express",
-      "ts": "2026-06-20T22:28:31Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "IndexBox",
-      "ts": "2026-06-20T22:43:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Social News XYZ",
       "ts": "2026-06-20T23:13:18Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -9977,6 +9951,30 @@
      {
       "outlet": "Messenger-Inquirer",
       "ts": "2026-06-21T00:24:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Investing.com",
+      "ts": "2026-06-21T00:34:20Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Evrim A\u011fac\u0131",
+      "ts": "2026-06-21T01:01:01Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "WION",
+      "ts": "2026-06-21T01:06:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -10091,7 +10089,7 @@
      [
       "2026-06-22 18:00",
       18,
-      58
+      57
      ]
     ],
     "mix": {
@@ -10099,7 +10097,7 @@
      "state-media": 3,
      "regional": 1,
      "official": 0,
-     "other": 165
+     "other": 166
     },
     "first_seen": "2026-06-21T04:23:08Z"
    },
@@ -10116,7 +10114,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -10364,8 +10362,8 @@
    },
    "discovered": false,
    "items_24h": 7,
-   "items_48h": 23,
-   "outlets": 19,
+   "items_48h": 21,
+   "outlets": 17,
    "kinds": [
     "journalist",
     "official record",
@@ -10462,7 +10460,7 @@
      "outlet": "CGTN",
      "kind": "state media",
      "url": "https://newsaf.cgtn.com/news/2026-06-21/UN-Security-Council-warns-of-imminent-risk-in-Sudan-1O9KEkgVNVS/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-     "rel": 13,
+     "rel": 11,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -10510,30 +10508,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 48,
-    "outlets_timed": 18,
+    "outlets_timed": 16,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Eurasia Review",
-      "ts": "2026-06-20T22:23:29Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "The New Arab",
-      "ts": "2026-06-20T22:26:24Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "daily-sun.com",
       "ts": "2026-06-21T03:51:57Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -10576,6 +10558,22 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "The Media Line",
+      "ts": "2026-06-21T07:31:56Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "dw.com",
+      "ts": "2026-06-21T07:56:44Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -10594,6 +10592,7 @@
       "russia-hosts-asean-summit-diplomatic-push",
       "russia-ukraine-war-current",
       "us-iran-strikes-israel-lebanon-escalation",
+      "us-to-pull-fighter-jets-from-nato-europe",
       "west-bank-settler-sanctions-ethnic-cleansing"
      ]
     },
@@ -10923,7 +10922,7 @@
      ],
      [
       "2026-06-22 18:00",
-      6,
+      7,
       19
      ]
     ],
@@ -10999,7 +10998,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/01/AFP__20251031__82LF9T3__v2__HighRes__TopshotSudanConflict-1769003581.jpg?resize=1920%2C1440",
@@ -11252,11 +11251,11 @@
     }
    ],
    "split": {
-    "a": "Fox News and Kyiv Post warn Russia is preparing hybrid attacks on NATO's eastern flank and readying children for war with NATO.",
-    "b": "TASS cites Russian senators saying the EU seeks to draw the US into conflict with Russia while militarizing its own economies.",
+    "a": "Fox News and Kyiv Post portray Russia as actively preparing hybrid attacks on NATO's eastern flank and indoctrinating children for war with NATO.",
+    "b": "TASS frames EU military buildup and NATO flights over the Black Sea and Baltics as provocations to draw the US into conflict with Russia.",
     "basis": "extracted from live headlines 2026-06-22",
     "axis_type": "interpretation",
-    "axis_question": "Is Russia threatening NATO's eastern flank, or is the EU escalating tensions with Russia?",
+    "axis_question": "Is Russia preparing to strike NATO, or is NATO's expansion the actual destabilizing force?",
     "carriers": {
      "a": [
       {
@@ -11366,6 +11365,17 @@
      ]
     },
     {
+     "entity": "european union",
+     "situations": [
+      "red-sea-houthi-shipping-current",
+      "russia-hosts-asean-summit-diplomatic-push",
+      "russia-ukraine-war-current",
+      "sudan-civil-war-current",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
      "entity": "germany",
      "situations": [
       "eu-israel-sanctions-row-kallas-ties-cut",
@@ -11379,13 +11389,6 @@
       "russia-hosts-asean-summit-diplomatic-push",
       "russia-ukraine-war-current",
       "uk-defence-secretary-resigns-over-spending"
-     ]
-    },
-    {
-     "entity": "pete hegseth",
-     "situations": [
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
      ]
     }
    ],
@@ -11645,11 +11648,6 @@
    },
    "drift": [
     {
-     "captured_utc": "2026-06-19T09:15:38Z",
-     "a": "US Defence Secretary Hegseth accuses NATO allies of free riding and announces a formal review of American military presence in Europe.",
-     "b": "NATO allies including the UK attend the summit pledging strong commitment to defence while struggling to present concrete spending plans."
-    },
-    {
      "captured_utc": "2026-06-19T10:13:53Z",
      "a": "US Defense Secretary Hegseth accuses NATO allies of free-riding and announces a review of US military bases in Europe",
      "b": "European NATO members reaffirm defence commitments while the UK attends the summit without a concrete funding plan in place"
@@ -11703,10 +11701,15 @@
      "captured_utc": "2026-06-22T21:40:31Z",
      "a": "Fox News and Kyiv Post warn Russia is preparing hybrid attacks on NATO's eastern flank and readying children for war with NATO.",
      "b": "TASS cites Russian senators saying the EU seeks to draw the US into conflict with Russia while militarizing its own economies."
+    },
+    {
+     "captured_utc": "2026-06-22T22:43:18Z",
+     "a": "Fox News and Kyiv Post portray Russia as actively preparing hybrid attacks on NATO's eastern flank and indoctrinating children for war with NATO.",
+     "b": "TASS frames EU military buildup and NATO flights over the Black Sea and Baltics as provocations to draw the US into conflict with Russia."
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -12465,8 +12468,8 @@
      ],
      [
       "2026-06-22 18:00",
-      4,
-      9
+      5,
+      10
      ]
     ],
     "mix": {
@@ -12541,7 +12544,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"War on Terror era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Soviet war and aftermath\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Durand Line era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
@@ -13125,7 +13128,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -13451,7 +13454,8 @@
       "russia-hosts-asean-summit-diplomatic-push",
       "russia-ukraine-war-current",
       "sudan-civil-war-current",
-      "us-iran-strikes-israel-lebanon-escalation"
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-to-pull-fighter-jets-from-nato-europe"
      ]
     },
     {
@@ -13807,7 +13811,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -14368,7 +14372,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -14763,7 +14767,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -15117,6 +15121,7 @@
       "russia-hosts-asean-summit-diplomatic-push",
       "russia-ukraine-war-current",
       "sudan-civil-war-current",
+      "us-to-pull-fighter-jets-from-nato-europe",
       "west-bank-settler-sanctions-ethnic-cleansing"
      ]
     },
@@ -15461,7 +15466,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -15953,7 +15958,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"Post-Mavi Marmara flotilla era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -16271,6 +16276,7 @@
       "russia-ukraine-war-current",
       "sudan-civil-war-current",
       "us-iran-strikes-israel-lebanon-escalation",
+      "us-to-pull-fighter-jets-from-nato-europe",
       "west-bank-settler-sanctions-ethnic-cleansing"
      ]
     },
@@ -16577,7 +16583,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "lead_image": {
@@ -17247,7 +17253,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -17649,7 +17655,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -18123,7 +18129,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -18484,7 +18490,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -18833,7 +18839,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "History gap: era \"Treaty era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
@@ -18883,7 +18889,7 @@
    "status": "watching"
   },
   {
-   "sample": "Who is Andy Burnham? Potential future UK PM's stance on Israel, antisemitism - explainer",
+   "sample": "British parliament to debate Israeli influence on UK politics: What we know",
    "outlets": 3,
    "count": 3,
    "status": "watching"
@@ -18900,17 +18906,17 @@
   "situations": 27,
   "situations_active": 27,
   "discovered": 22,
-  "items": 16834,
-  "developments": 16518,
-  "claims": 2890,
-  "carriers": 7755,
-  "steelmans": 2725,
+  "items": 16847,
+  "developments": 16530,
+  "claims": 2900,
+  "carriers": 7781,
+  "steelmans": 2735,
   "deep_reports": 27,
   "entities": 491,
-  "edges": 18042,
+  "edges": 18101,
   "history_nodes": 557,
   "gate_rejects_7d": 104,
-  "runs": 279,
+  "runs": 280,
   "backend": "st"
  },
  "gate": {
@@ -18933,6 +18939,6 @@
   "edition_utc": "2026-06-22",
   "panels": 8,
   "appendix": 8,
-  "overflow": 1032
+  "overflow": 1039
  }
 }
