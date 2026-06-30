@@ -9,20 +9,20 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="mask-icon" href="favicon.svg" color="#E5342B">
 <meta name="description" content="HORUS - all sides, the shape of the evidence, no verdict. An intelligence terminal for geopolitics, market-movers and world-movers.">
-<link rel="canonical" href="https://adamkropacek.github.io/horus/">
+<link rel="canonical" href="https://horusai.online/">
 <meta name="theme-color" content="#0A0A0B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HORUS">
 <meta property="og:title" content="HORUS - all sides, the shape of the evidence, no verdict">
 <meta property="og:description" content="An intelligence terminal for the news that moves the world. Every side of a story side by side, the strongest evidence always carrying its opposition. HORUS shows you the shape, never a verdict.">
-<meta property="og:url" content="https://adamkropacek.github.io/horus/">
-<meta property="og:image" content="https://adamkropacek.github.io/horus/og.png">
+<meta property="og:url" content="https://horusai.online/">
+<meta property="og:image" content="https://horusai.online/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="HORUS - all sides, the shape of the evidence, no verdict">
 <meta name="twitter:description" content="An intelligence terminal for the news that moves the world. Every side, side by side. You decide what you believe.">
-<meta name="twitter:image" content="https://adamkropacek.github.io/horus/og.png">
+<meta name="twitter:image" content="https://horusai.online/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- only the weights actually used; loaded non-render-blocking (swap shows fallback instantly, then upgrades) -->
@@ -380,7 +380,7 @@ footer{padding:2.75rem 0 3.75rem;text-align:center}
     <div class="statstrip">
       <div class="s"><div class="num">24/7</div><div class="lab">continuous watch</div></div>
       <div class="s"><div class="num" style="font-size:1.9rem">NO VERDICT</div><div class="lab">you're the judge</div></div>
-      <div class="s"><div class="num">32</div><div class="lab">core outlets, every stance</div></div>
+      <div class="s"><div class="num" id="statSources">60+</div><div class="lab">live sources, every stance</div></div>
       <div class="s"><div class="num" style="font-size:1.9rem">MULTIPLE</div><div class="lab">sides per story</div></div>
     </div>
     <div class="vs">
@@ -636,6 +636,17 @@ async function reqAccess(e){
   }
   return false;
 }
+
+/* live source count - never lowball: read the engine's own count of sources
+   actually reporting (ok lenses) so the number rises on its own as we add more.
+   Static "60+" stays as the floor if the wire is unreachable. */
+(function(){
+  var el=document.getElementById("statSources");
+  if(!el) return;
+  fetch("feed.json?v="+Date.now()).then(function(r){return r.ok?r.json():null;}).then(function(j){
+    if(j&&j.lenses&&j.lenses.ok&&j.lenses.ok.length>0) el.textContent=j.lenses.ok.length;
+  }).catch(function(){});
+})();
 </script>
 </body>
 </html>
