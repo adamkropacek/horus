@@ -617,6 +617,9 @@ setInterval(clk,1000);clk();
    signup after that is delivered. To use the Google Sheet instead, paste the Apps Script
    /exec URL below - the code auto-detects script.google.com and switches to no-cors. */
 const WAITLIST_ENDPOINT="https://formsubmit.co/ajax/adamkropacek12@gmail.com";
+/* HORUS-owned subscriber store (double opt-in once Resend is live). Fire-and-forget,
+   form-encoded = a CORS "simple request" (no preflight); never blocks the UX. */
+const HORUS_SUBSCRIBE="https://admin.horusai.online/api/subscribe";
 const isAppsScript=/script\.google\.com/.test(WAITLIST_ENDPOINT);
 function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
 async function reqAccess(e){
@@ -646,6 +649,8 @@ async function reqAccess(e){
   const payload={email:v,_subject:"New HORUS waitlist signup",_template:"table",_captcha:"false",
     referrer:document.referrer||location.href,ts:new Date().toISOString()};
   try{
+    fetch(HORUS_SUBSCRIBE,{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},
+      body:"email="+encodeURIComponent(v)}).catch(function(){});  // HORUS store (canonical)
     if(isAppsScript){
       await fetch(WAITLIST_ENDPOINT,{method:"POST",mode:"no-cors",body:JSON.stringify(payload)});
       done();                                            // opaque response, assume stored
