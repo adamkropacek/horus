@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-03T11:29:30Z",
+ "generated_utc": "2026-07-03T11:31:20Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,7 +32,6 @@
    "fox-world",
    "france24",
    "ft",
-   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -50,6 +49,7 @@
    "npr-world",
    "nyt-world",
    "physorg",
+   "presstv",
    "restofworld",
    "science-aaas",
    "sciencedaily",
@@ -70,11 +70,6 @@
   ],
   "failed": [
    {
-    "id": "presstv",
-    "label": "Press TV",
-    "reason": "The read operation timed out"
-   },
-   {
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
@@ -83,21 +78,6 @@
     "id": "unnews",
     "label": "UN News",
     "reason": "not well-formed (invalid token): line 1, column 0"
-   },
-   {
-    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
-    "label": "GDELT US-Iran talks affect oil prices amid Hormuz tensions",
-    "reason": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "id": "gdelt:iran-supreme-leader-ali-khamenei-dies",
-    "label": "GDELT Iran supreme leader Ali Khamenei dies",
-    "reason": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "id": "gdelt:us-to-pull-fighter-jets-from-nato-europe",
-    "label": "GDELT NATO Faces Key Challenges",
-    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -337,7 +317,7 @@
     ]
    },
    "discovered": false,
-   "items_24h": 128,
+   "items_24h": 127,
    "items_48h": 272,
    "outlets": 78,
    "kinds": [
@@ -453,44 +433,12 @@
    },
    "viewpoints": [
     {
-     "stance": "Russia says Ukraine is a terrorist state",
-     "carriers": [
-      {
-       "outlet": "TASS",
-       "kind": "state media",
-       "url": "https://tass.com/politics/2154897",
-       "ts_utc": "2026-07-03T09:22:14Z"
-      },
-      {
-       "outlet": "Anadolu Agency",
-       "kind": "state media",
-       "url": "https://www.aa.com.tr/en/eurasia/russia-says-it-captured-another-settlement-in-eastern-ukraine/3985153",
-       "ts_utc": "2026-07-03T09:48:03Z"
-      }
-     ]
+     "stance": "Russia says Ukraine is terrorist state",
+     "carriers": []
     },
     {
-     "stance": "Kyiv reports Russian attacks",
-     "carriers": [
-      {
-       "outlet": "Al Jazeera",
-       "kind": "journalist",
-       "url": "https://www.aljazeera.com/news/2026/7/3/four-killed-in-ukraine-a-day-after-deadliest-russian-attacks-this-year?traffic_source=rss",
-       "ts_utc": "2026-07-03T09:26:27Z"
-      },
-      {
-       "outlet": "France 24",
-       "kind": "journalist",
-       "url": "https://www.france24.com/en/video/20260703-kyiv-mourns-30-killed-in-russian-attack-as-rescuers-continue-search",
-       "ts_utc": "2026-07-03T09:15:01Z"
-      },
-      {
-       "outlet": "Kyiv Independent",
-       "kind": "journalist",
-       "url": "https://kyivindependent.com/woman-suspected-of-iermolaiev-bombing-in-monaco/",
-       "ts_utc": "2026-07-03T08:19:02Z"
-      }
-     ]
+     "stance": "Ukraine reports Russian attacks",
+     "carriers": []
     }
    ],
    "scenarios": [],
@@ -913,11 +861,6 @@
    },
    "drift": [
     {
-     "captured_utc": "2026-07-03T02:44:32Z",
-     "a": "Ukraine claims Russia's attacks on Kyiv are escalating and causing significant damage.",
-     "b": "Russia highlights drone strikes in Lugansk and accuses Finland of taking sides in the conflict."
-    },
-    {
      "captured_utc": "2026-07-03T03:12:59Z",
      "a": "Western outlets report the strike as Russia's deadliest on Kyiv this year, killing at least 27.",
      "b": "TASS highlights a drone strike in Lugansk and criticizes Finland's involvement in Ukraine."
@@ -971,121 +914,25 @@
      "captured_utc": "2026-07-03T10:40:07Z",
      "a": "Russia says Ukraine is a terrorist state",
      "b": "Kyiv reports Russian attacks"
+    },
+    {
+     "captured_utc": "2026-07-03T11:10:36Z",
+     "a": "Russia says Ukraine is terrorist state",
+     "b": "Ukraine reports Russian attacks"
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
-     {
-      "symbol": "BZ=F",
-      "label": "Brent Crude",
-      "class": "commodity",
-      "last": 72.24,
-      "last_ts": "2026-07-03T03:31:34Z",
-      "basis": "Russia-Ukraine conflict fuels oil supply concerns",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-02T23:00:00Z",
-        71.54
-       ],
-       [
-        "2026-07-02T23:06:03Z",
-        71.54
-       ],
-       [
-        "2026-07-02T23:16:52Z",
-        71.57
-       ],
-       [
-        "2026-07-03T00:00:00Z",
-        71.54
-       ],
-       [
-        "2026-07-03T00:13:02Z",
-        71.54
-       ],
-       [
-        "2026-07-03T00:30:11Z",
-        71.52
-       ],
-       [
-        "2026-07-03T00:57:12Z",
-        71.62
-       ],
-       [
-        "2026-07-03T01:00:00Z",
-        71.67
-       ],
-       [
-        "2026-07-03T01:05:33Z",
-        71.67
-       ],
-       [
-        "2026-07-03T01:16:28Z",
-        71.53
-       ],
-       [
-        "2026-07-03T01:31:11Z",
-        71.71
-       ],
-       [
-        "2026-07-03T01:48:28Z",
-        72.07
-       ],
-       [
-        "2026-07-03T02:00:00Z",
-        72.11
-       ],
-       [
-        "2026-07-03T02:03:27Z",
-        72.09
-       ],
-       [
-        "2026-07-03T02:15:18Z",
-        72.08
-       ],
-       [
-        "2026-07-03T02:34:07Z",
-        72.13
-       ],
-       [
-        "2026-07-03T02:43:23Z",
-        72.29
-       ],
-       [
-        "2026-07-03T03:00:00Z",
-        72.08
-       ],
-       [
-        "2026-07-03T03:00:17Z",
-        72.08
-       ],
-       [
-        "2026-07-03T03:08:30Z",
-        72.16
-       ],
-       [
-        "2026-07-03T03:29:08Z",
-        72.3
-       ],
-       [
-        "2026-07-03T03:31:34Z",
-        72.24
-       ]
-      ]
-     },
      {
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
       "last": 69.02,
       "last_ts": "2026-07-03T03:35:12Z",
-      "basis": "US crude affected by geopolitical tensions",
+      "basis": "Russia-Ukraine conflict risk",
       "move_pct": null,
       "window_h": null,
       "measured_from": null,
@@ -1197,125 +1044,109 @@
       ]
      },
      {
-      "symbol": "NG=F",
-      "label": "Natural Gas",
+      "symbol": "BZ=F",
+      "label": "Brent Crude",
       "class": "commodity",
-      "last": 3.209,
-      "last_ts": "2026-07-03T03:33:00Z",
-      "basis": "Natural gas prices influenced by war risk",
+      "last": 72.24,
+      "last_ts": "2026-07-03T03:31:34Z",
+      "basis": "Russia-Ukraine conflict risk",
       "move_pct": null,
       "window_h": null,
       "measured_from": null,
       "series": [
        [
-        "2026-07-02T22:57:30Z",
-        3.208
-       ],
-       [
         "2026-07-02T23:00:00Z",
-        3.209
+        71.54
        ],
        [
-        "2026-07-02T23:12:22Z",
-        3.209
+        "2026-07-02T23:06:03Z",
+        71.54
        ],
        [
-        "2026-07-02T23:24:16Z",
-        3.207
-       ],
-       [
-        "2026-07-02T23:40:17Z",
-        3.207
-       ],
-       [
-        "2026-07-02T23:50:00Z",
-        3.206
+        "2026-07-02T23:16:52Z",
+        71.57
        ],
        [
         "2026-07-03T00:00:00Z",
-        3.211
+        71.54
        ],
        [
-        "2026-07-03T00:13:30Z",
-        3.211
+        "2026-07-03T00:13:02Z",
+        71.54
        ],
        [
-        "2026-07-03T00:14:13Z",
-        3.21
+        "2026-07-03T00:30:11Z",
+        71.52
        ],
        [
-        "2026-07-03T00:32:00Z",
-        3.21
-       ],
-       [
-        "2026-07-03T00:56:28Z",
-        3.209
+        "2026-07-03T00:57:12Z",
+        71.62
        ],
        [
         "2026-07-03T01:00:00Z",
-        3.215
+        71.67
        ],
        [
-        "2026-07-03T01:06:14Z",
-        3.215
+        "2026-07-03T01:05:33Z",
+        71.67
        ],
        [
-        "2026-07-03T01:19:27Z",
-        3.21
+        "2026-07-03T01:16:28Z",
+        71.53
        ],
        [
-        "2026-07-03T01:29:46Z",
-        3.212
+        "2026-07-03T01:31:11Z",
+        71.71
        ],
        [
-        "2026-07-03T01:48:45Z",
-        3.213
+        "2026-07-03T01:48:28Z",
+        72.07
        ],
        [
         "2026-07-03T02:00:00Z",
-        3.215
+        72.11
        ],
        [
-        "2026-07-03T02:02:02Z",
-        3.215
+        "2026-07-03T02:03:27Z",
+        72.09
        ],
        [
-        "2026-07-03T02:15:07Z",
-        3.216
+        "2026-07-03T02:15:18Z",
+        72.08
        ],
        [
-        "2026-07-03T02:30:01Z",
-        3.215
+        "2026-07-03T02:34:07Z",
+        72.13
        ],
        [
-        "2026-07-03T02:42:02Z",
-        3.21
+        "2026-07-03T02:43:23Z",
+        72.29
        ],
        [
         "2026-07-03T03:00:00Z",
-        3.207
+        72.08
        ],
        [
-        "2026-07-03T03:02:40Z",
-        3.207
+        "2026-07-03T03:00:17Z",
+        72.08
        ],
        [
-        "2026-07-03T03:07:08Z",
-        3.208
+        "2026-07-03T03:08:30Z",
+        72.16
        ],
        [
-        "2026-07-03T03:28:52Z",
-        3.208
+        "2026-07-03T03:29:08Z",
+        72.3
        ],
        [
-        "2026-07-03T03:33:00Z",
-        3.209
+        "2026-07-03T03:31:34Z",
+        72.24
        ]
       ]
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:10:29Z",
+    "observed_utc": "2026-07-03T11:12:10Z",
     "anchor_beat": "2026-07-03T10:55:09Z"
    },
    "lead_image": {
@@ -2208,7 +2039,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US-Iran talks affect oil prices amid Hormuz tensions, Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -2439,7 +2270,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:10:56Z",
+    "observed_utc": "2026-07-03T11:12:36Z",
     "anchor_beat": "2026-07-03T10:49:27Z"
    },
    "lead_image": {
@@ -3324,7 +3155,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -4430,7 +4261,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/image-1782766783.jpg?resize=1920%2C1080&quality=80",
@@ -5243,7 +5074,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5818,7 +5649,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran supreme leader Ali Khamenei dies, Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -6057,7 +5888,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:24:17Z",
+    "observed_utc": "2026-07-03T11:25:59Z",
     "anchor_beat": "2026-07-03T10:33:44Z"
    },
    "lead_image": {
@@ -6995,7 +6826,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT NATO Faces Key Challenges, Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -7470,7 +7301,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:11:36Z",
+    "observed_utc": "2026-07-03T11:13:15Z",
     "anchor_beat": "2026-07-03T09:51:57Z"
    },
    "lead_image": {
@@ -7489,523 +7320,6 @@
      "carriers": 1,
      "provenance": 1,
      "steelman": 1,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "eu-antitrust-scrutiny-of-google",
-   "name": "EU antitrust scrutiny of Google",
-   "bucket": "power-money",
-   "topic_tags": [
-    "markets"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-30T16:22:25Z",
-    "sentence_count": 3,
-    "dropped_count": 1,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Google warned that European Union plans to reduce its dominance in search could expose user data to hacking.",
-        "cites": [
-         {
-          "outlet": "Ars Technica",
-          "kind": "journalist",
-          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
-          "ts": "2026-06-29T18:21:31Z",
-          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
-         },
-         {
-          "outlet": "Wired",
-          "kind": "journalist",
-          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
-          "ts": "2026-06-29T10:00:00Z",
-          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
-         }
-        ]
-       },
-       {
-        "text": "Top security staff at the company said specifically that search data could be hacked if EU rules change.",
-        "cites": [
-         {
-          "outlet": "Wired",
-          "kind": "journalist",
-          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
-          "ts": "2026-06-29T10:00:00Z",
-          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Google described the EU proposals as an effort to weaken its monopoly and argued the same regulatory changes would put users at risk.",
-        "cites": [
-         {
-          "outlet": "Ars Technica",
-          "kind": "journalist",
-          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
-          "ts": "2026-06-29T18:21:31Z",
-          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
-         },
-         {
-          "outlet": "Wired",
-          "kind": "journalist",
-          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
-          "ts": "2026-06-29T10:00:00Z",
-          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 34,
-   "items_48h": 97,
-   "outlets": 70,
-   "kinds": [
-    "journalist",
-    "state media",
-    "wire service"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-03T04:09:13Z",
-     "title": "Google loses final appeal against EU\u2019s $4.7 billion Android antitrust fine",
-     "outlet": "Storyboard18",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObkcwV2x4bkR2MlJpUmJ3QmUyR0EzeDgzLTFtLUluMHZON2FnSUkxeWpsYUkzeERyMGxrejFNNi1TY1QwMEJiRU9oeWNtRE4xcFRabFFRSWRMeFFqeVVXdWNBSFdrNDJ6VUR0dVg1SXlnT0d0OW1BU0dBaUUyQUdiQ05UU2RLQVhWN2dmZ2FlbE95SjF6WHpsZFBRTUhiRUhCYVZRTF9CZDgzQm83c1RBRVZldnh6bTJFNUdCQdIBwgFBVV95cUxOa09hY0RWZEVKR0g1dzQzb0RDRlI1a3lDR2RsM2hMLWlWMXhzR2tTT3A2N1NyNF9UdXpobG0tcm1qS0lOc3lNRjlSZXltdEVqekp6a2FUTzdsbXNOLU5pUWlZbWZCb3N3OHIwM0kwSmkxNzJERFZqVjJWOFRUcXV2Q2NDa2ZGUTQyUHZyaEsyVzRJRUxKRkptTXZ1bHFtY3h0WFlzekZhajZYOThsaFhNQk5HSi1sa0FIcTg5Tm9GLXdBdw?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T01:22:34Z",
-     "title": "Google loses final EU Android antitrust appeal",
-     "outlet": "Pakistan Today",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbGZBcFEwTUNPWkVqaGtPdmJva0Q1bXh6WU5IYVk3UllQLW9FUXFLbE04R2hZSGMtajVJekR6aWJXcW9SMUVXYWVuNGZzd3FHUEdzM3AxanQtcmF4alZtSUFtekJxSUhMNGthOHlmc0dwR2FJQlo3dDBqelQ2S3BJWTkyZ04wa1BoeVR5SnZuUFJQU1dOejZmOFplVzRTcFJRRXc?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T00:12:19Z",
-     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
-     "outlet": "NST Online",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYd9IBzgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYdw?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T23:08:16Z",
-     "title": "Dev says Google warned him about account hijack - then charged him $11,000 anyway",
-     "outlet": "The Register",
-     "kind": "journalist",
-     "url": "https://www.theregister.com/cyber-crime/2026/07/03/dev-says-google-warned-him-about-account-hijack-then-charged-him-11000-anyway/5266234",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T21:19:41Z",
-     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
-     "outlet": "ETLegalWorld.com",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM1E5a01mV0pNQ3dTWUR2Y3JCVlFvZVYtS2MwNjlmNkVQLUt5SklKek9VS2ZKbmRuM2ttd1hDSjN2dm9Nd1RndFp1ZUM3ZGhKRnJUUTcwdERCT2dyQ3RqRjJXSFJGNmF1VHE5T3lObkdPTlFUMTBDZlpJa1Roa25fQmpSdU5sNUJPYk5pdWJXVHdyRU1aT3pQNHFzVGFkLWd0eG90VjNZaVFXWURHa2hkMkhyaGYyazBmQWlidzVzUEFfUmNSOGI5Wi1fZmpRTUk0dXlvRW53cmgyQ2RZZ1hybDJRRzdSb3plaHNHLXVCNXFfQXNad1Zr0gH3AUFVX3lxTE8zUTlrTWZXSk1Dd1NZRHZjckJWUW9lVi1LYzA2OWY2RVAtS3lKSUp6T1VLZkpuZG4za213WENKM3Z2b013VGd0WnVlQzdkaEpGclRRNzB0REJPZ3JDdGpGMldIUkY2YXVUcTlPeU5uR09OUVQxMENmWklrVGhrbl9CalJ1Tmw1Qk9iTml1YldUd3JFTVpPelA0cXNUYWQtZ3R4b3RWM1lpUVdZREdraGQySHJoZjJrMGZBaWJ3NXNQQV9SY1I4YjlaLV9malFNSTR1eW9FbndyaDJDZFlnWHJsMlFHN1JvemVoc0ctdUI1cV9Bc1p3Vms?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T19:30:00Z",
-     "title": "Google Loses Final Appeal as EU Upholds \u20ac4.1 Billion Android Antitrust Fine",
-     "outlet": "Analytics Insight",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaWVDN0YzUWtLVEpRaFVVY2xwVkFyTmt3XzlNbTRhdGRQblVWV2t2SmE2ZTF0TDNHT0pveVBxUU54b0VQaHBlS2pvQmNJYjE4VG9PTDR4dC1fS3h3UWhadFA4NXloN0tyRVk1ZDhLZmdwVUJ1ZGJLNG5xaXBNZUV5RDBFeU0yNFZic2hVYnVzdjBmTHVtWTV1N1dWdHJuVW9YRmdsWjRBX1JyUFhvb2pRQ9IBvgFBVV95cUxPQmN1SEgxZ2loM0VLWTlQcEUwSGh6SmRUM0phaUxtR20zdU8wam9WVHdjWUpsd1doSTNFTGJBaXEydUh6c3A2Wm1IV0NiY19hX3pQRkU1S1hBVWg4cEpJeTVKMmNZaFpjSXNLRFZZY3Jfa1RGNUZtRkNuWVUzRkRMRTlnOWExcEJkX0ltQjlPWTZXVzVQZU5XWXBCT1MtTVpkbGpsa0c4RWZmeGlUeTMzUTB4RHhKeW9yRHVhT3Bn?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T19:14:46Z",
-     "title": "A warning sign about AI\u2019s real cost, courtesy of Google and Amazon",
-     "outlet": "TechCrunch",
-     "kind": "journalist",
-     "url": "https://techcrunch.com/2026/07/02/a-warning-sign-about-ais-real-cost-courtesy-of-google-and-amazon/",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T18:35:01Z",
-     "title": "Google Loses Appeal Against US$4.69 Billion EU Antitrust Fine",
-     "outlet": "Mexico Business News",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lPWnd4TFdKYngxeGhnWVVHLUtLQzI4Nl9mRFZZUzJ1OXozUjVqWlpvNjJNVGFhVmVMY003S0ViWGpBYVlUemJWblpPeXdiNVpuSVgyWlBrVkZoOFhSNnhCUHNmWTh1NERVY05xZ19IV1VzMG4wcW5VYlNReE10RFFBb09RLWI5WkVPUlAyMW1tMlJPOUZRcTVOclU3dw?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-02T21:03:01Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 94,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "bgr.com",
-      "ts": "2026-06-26T14:30:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "New York Post",
-      "ts": "2026-06-26T20:56:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "The Register",
-      "ts": "2026-06-26T21:50:06Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "timesofindia.indiatimes.com",
-      "ts": "2026-06-27T10:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "businessinsider.com",
-      "ts": "2026-06-27T10:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "jagranjosh.com",
-      "ts": "2026-06-27T10:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "naturalnews.com",
-      "ts": "2026-06-27T14:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "finance.yahoo.com",
-      "ts": "2026-06-27T20:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Yahoo Finance",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "24/7 Wall St.",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "CNBC",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Firstpost",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Investing.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Reuters",
-     "n": 3,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "timesofindia.indiatimes.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Ars Technica",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Daily Sabah",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Devdiscourse",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "ET Telecom",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Financial Times",
-     "n": 2,
-     "class": "mainstream"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-29 18:00",
-      8,
-      9
-     ],
-     [
-      "2026-06-30 00:00",
-      8,
-      10
-     ],
-     [
-      "2026-06-30 06:00",
-      8,
-      11
-     ],
-     [
-      "2026-06-30 12:00",
-      7,
-      10
-     ],
-     [
-      "2026-06-30 18:00",
-      6,
-      10
-     ],
-     [
-      "2026-07-01 12:00",
-      14,
-      17
-     ],
-     [
-      "2026-07-01 18:00",
-      16,
-      17
-     ],
-     [
-      "2026-07-02 00:00",
-      23,
-      22
-     ],
-     [
-      "2026-07-02 06:00",
-      52,
-      41
-     ],
-     [
-      "2026-07-02 12:00",
-      61,
-      56
-     ],
-     [
-      "2026-07-02 18:00",
-      68,
-      63
-     ],
-     [
-      "2026-07-03 00:00",
-      73,
-      68
-     ],
-     [
-      "2026-07-03 06:00",
-      64,
-      70
-     ]
-    ],
-    "mix": {
-     "mainstream": 4,
-     "state-media": 1,
-     "regional": 0,
-     "official": 0,
-     "other": 92
-    },
-    "first_seen": "2026-06-29T19:07:12Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 3
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "GOOGL",
-      "label": "Alphabet",
-      "class": "equity",
-      "last": 359.91,
-      "last_ts": "2026-07-02T20:00:00Z",
-      "basis": "EU antitrust fine",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-02T16:14:52Z",
-        354.97
-       ],
-       [
-        "2026-07-02T16:30:00Z",
-        354.71
-       ],
-       [
-        "2026-07-02T16:51:07Z",
-        354.78
-       ],
-       [
-        "2026-07-02T17:18:59Z",
-        354.59
-       ],
-       [
-        "2026-07-02T17:30:00Z",
-        356.23
-       ],
-       [
-        "2026-07-02T17:42:38Z",
-        356.45
-       ],
-       [
-        "2026-07-02T18:07:18Z",
-        357.505
-       ],
-       [
-        "2026-07-02T18:08:23Z",
-        357.47
-       ],
-       [
-        "2026-07-02T18:30:00Z",
-        358.455
-       ],
-       [
-        "2026-07-02T18:44:32Z",
-        358.425
-       ],
-       [
-        "2026-07-02T18:48:35Z",
-        358.9
-       ],
-       [
-        "2026-07-02T19:10:09Z",
-        359.2
-       ],
-       [
-        "2026-07-02T19:30:00Z",
-        359.13
-       ],
-       [
-        "2026-07-02T19:38:37Z",
-        359.1599
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        359.91
-       ]
-      ]
-     }
-    ],
-    "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:14:54Z",
-    "anchor_beat": "2026-07-03T04:09:13Z"
-   },
-   "lead_image": {
-    "url": "https://image.cnbcfm.com/api/v1/image/108329754-1782978643176-gettyimages-458933277-000019668000_XXXLarge.jpeg?v=1782978650&w=1920&h=1080",
-    "source": "CNBC",
-    "focal": {
-     "x": 31,
-     "y": 16
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -8631,7 +7945,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8963,7 +8277,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:13:07Z",
+    "observed_utc": "2026-07-03T11:14:43Z",
     "anchor_beat": "2026-07-03T10:43:13Z"
    },
    "lead_image": {
@@ -8983,6 +8297,523 @@
      "provenance": 1,
      "steelman": 1,
      "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "eu-antitrust-scrutiny-of-google",
+   "name": "EU antitrust scrutiny of Google",
+   "bucket": "power-money",
+   "topic_tags": [
+    "markets"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-30T16:22:25Z",
+    "sentence_count": 3,
+    "dropped_count": 1,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Google warned that European Union plans to reduce its dominance in search could expose user data to hacking.",
+        "cites": [
+         {
+          "outlet": "Ars Technica",
+          "kind": "journalist",
+          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
+          "ts": "2026-06-29T18:21:31Z",
+          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
+         },
+         {
+          "outlet": "Wired",
+          "kind": "journalist",
+          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+          "ts": "2026-06-29T10:00:00Z",
+          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
+         }
+        ]
+       },
+       {
+        "text": "Top security staff at the company said specifically that search data could be hacked if EU rules change.",
+        "cites": [
+         {
+          "outlet": "Wired",
+          "kind": "journalist",
+          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+          "ts": "2026-06-29T10:00:00Z",
+          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Google described the EU proposals as an effort to weaken its monopoly and argued the same regulatory changes would put users at risk.",
+        "cites": [
+         {
+          "outlet": "Ars Technica",
+          "kind": "journalist",
+          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
+          "ts": "2026-06-29T18:21:31Z",
+          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
+         },
+         {
+          "outlet": "Wired",
+          "kind": "journalist",
+          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+          "ts": "2026-06-29T10:00:00Z",
+          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 33,
+   "items_48h": 97,
+   "outlets": 70,
+   "kinds": [
+    "journalist",
+    "state media",
+    "wire service"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-03T04:09:13Z",
+     "title": "Google loses final appeal against EU\u2019s $4.7 billion Android antitrust fine",
+     "outlet": "Storyboard18",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObkcwV2x4bkR2MlJpUmJ3QmUyR0EzeDgzLTFtLUluMHZON2FnSUkxeWpsYUkzeERyMGxrejFNNi1TY1QwMEJiRU9oeWNtRE4xcFRabFFRSWRMeFFqeVVXdWNBSFdrNDJ6VUR0dVg1SXlnT0d0OW1BU0dBaUUyQUdiQ05UU2RLQVhWN2dmZ2FlbE95SjF6WHpsZFBRTUhiRUhCYVZRTF9CZDgzQm83c1RBRVZldnh6bTJFNUdCQdIBwgFBVV95cUxOa09hY0RWZEVKR0g1dzQzb0RDRlI1a3lDR2RsM2hMLWlWMXhzR2tTT3A2N1NyNF9UdXpobG0tcm1qS0lOc3lNRjlSZXltdEVqekp6a2FUTzdsbXNOLU5pUWlZbWZCb3N3OHIwM0kwSmkxNzJERFZqVjJWOFRUcXV2Q2NDa2ZGUTQyUHZyaEsyVzRJRUxKRkptTXZ1bHFtY3h0WFlzekZhajZYOThsaFhNQk5HSi1sa0FIcTg5Tm9GLXdBdw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T01:22:34Z",
+     "title": "Google loses final EU Android antitrust appeal",
+     "outlet": "Pakistan Today",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbGZBcFEwTUNPWkVqaGtPdmJva0Q1bXh6WU5IYVk3UllQLW9FUXFLbE04R2hZSGMtajVJekR6aWJXcW9SMUVXYWVuNGZzd3FHUEdzM3AxanQtcmF4alZtSUFtekJxSUhMNGthOHlmc0dwR2FJQlo3dDBqelQ2S3BJWTkyZ04wa1BoeVR5SnZuUFJQU1dOejZmOFplVzRTcFJRRXc?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T00:12:19Z",
+     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
+     "outlet": "NST Online",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYd9IBzgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYdw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T23:08:16Z",
+     "title": "Dev says Google warned him about account hijack - then charged him $11,000 anyway",
+     "outlet": "The Register",
+     "kind": "journalist",
+     "url": "https://www.theregister.com/cyber-crime/2026/07/03/dev-says-google-warned-him-about-account-hijack-then-charged-him-11000-anyway/5266234",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T21:19:41Z",
+     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
+     "outlet": "ETLegalWorld.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM1E5a01mV0pNQ3dTWUR2Y3JCVlFvZVYtS2MwNjlmNkVQLUt5SklKek9VS2ZKbmRuM2ttd1hDSjN2dm9Nd1RndFp1ZUM3ZGhKRnJUUTcwdERCT2dyQ3RqRjJXSFJGNmF1VHE5T3lObkdPTlFUMTBDZlpJa1Roa25fQmpSdU5sNUJPYk5pdWJXVHdyRU1aT3pQNHFzVGFkLWd0eG90VjNZaVFXWURHa2hkMkhyaGYyazBmQWlidzVzUEFfUmNSOGI5Wi1fZmpRTUk0dXlvRW53cmgyQ2RZZ1hybDJRRzdSb3plaHNHLXVCNXFfQXNad1Zr0gH3AUFVX3lxTE8zUTlrTWZXSk1Dd1NZRHZjckJWUW9lVi1LYzA2OWY2RVAtS3lKSUp6T1VLZkpuZG4za213WENKM3Z2b013VGd0WnVlQzdkaEpGclRRNzB0REJPZ3JDdGpGMldIUkY2YXVUcTlPeU5uR09OUVQxMENmWklrVGhrbl9CalJ1Tmw1Qk9iTml1YldUd3JFTVpPelA0cXNUYWQtZ3R4b3RWM1lpUVdZREdraGQySHJoZjJrMGZBaWJ3NXNQQV9SY1I4YjlaLV9malFNSTR1eW9FbndyaDJDZFlnWHJsMlFHN1JvemVoc0ctdUI1cV9Bc1p3Vms?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T19:30:00Z",
+     "title": "Google Loses Final Appeal as EU Upholds \u20ac4.1 Billion Android Antitrust Fine",
+     "outlet": "Analytics Insight",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaWVDN0YzUWtLVEpRaFVVY2xwVkFyTmt3XzlNbTRhdGRQblVWV2t2SmE2ZTF0TDNHT0pveVBxUU54b0VQaHBlS2pvQmNJYjE4VG9PTDR4dC1fS3h3UWhadFA4NXloN0tyRVk1ZDhLZmdwVUJ1ZGJLNG5xaXBNZUV5RDBFeU0yNFZic2hVYnVzdjBmTHVtWTV1N1dWdHJuVW9YRmdsWjRBX1JyUFhvb2pRQ9IBvgFBVV95cUxPQmN1SEgxZ2loM0VLWTlQcEUwSGh6SmRUM0phaUxtR20zdU8wam9WVHdjWUpsd1doSTNFTGJBaXEydUh6c3A2Wm1IV0NiY19hX3pQRkU1S1hBVWg4cEpJeTVKMmNZaFpjSXNLRFZZY3Jfa1RGNUZtRkNuWVUzRkRMRTlnOWExcEJkX0ltQjlPWTZXVzVQZU5XWXBCT1MtTVpkbGpsa0c4RWZmeGlUeTMzUTB4RHhKeW9yRHVhT3Bn?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T19:14:46Z",
+     "title": "A warning sign about AI\u2019s real cost, courtesy of Google and Amazon",
+     "outlet": "TechCrunch",
+     "kind": "journalist",
+     "url": "https://techcrunch.com/2026/07/02/a-warning-sign-about-ais-real-cost-courtesy-of-google-and-amazon/",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T18:35:01Z",
+     "title": "Google Loses Appeal Against US$4.69 Billion EU Antitrust Fine",
+     "outlet": "Mexico Business News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lPWnd4TFdKYngxeGhnWVVHLUtLQzI4Nl9mRFZZUzJ1OXozUjVqWlpvNjJNVGFhVmVMY003S0ViWGpBYVlUemJWblpPeXdiNVpuSVgyWlBrVkZoOFhSNnhCUHNmWTh1NERVY05xZ19IV1VzMG4wcW5VYlNReE10RFFBb09RLWI5WkVPUlAyMW1tMlJPOUZRcTVOclU3dw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-02T21:03:01Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 94,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "bgr.com",
+      "ts": "2026-06-26T14:30:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "New York Post",
+      "ts": "2026-06-26T20:56:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "The Register",
+      "ts": "2026-06-26T21:50:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "timesofindia.indiatimes.com",
+      "ts": "2026-06-27T10:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "businessinsider.com",
+      "ts": "2026-06-27T10:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "jagranjosh.com",
+      "ts": "2026-06-27T10:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "naturalnews.com",
+      "ts": "2026-06-27T14:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "finance.yahoo.com",
+      "ts": "2026-06-27T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Yahoo Finance",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "24/7 Wall St.",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "CNBC",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Firstpost",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Investing.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Reuters",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "timesofindia.indiatimes.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Ars Technica",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Daily Sabah",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Devdiscourse",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "ET Telecom",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Financial Times",
+     "n": 2,
+     "class": "mainstream"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-29 18:00",
+      8,
+      9
+     ],
+     [
+      "2026-06-30 00:00",
+      8,
+      10
+     ],
+     [
+      "2026-06-30 06:00",
+      8,
+      11
+     ],
+     [
+      "2026-06-30 12:00",
+      7,
+      10
+     ],
+     [
+      "2026-06-30 18:00",
+      6,
+      10
+     ],
+     [
+      "2026-07-01 12:00",
+      14,
+      17
+     ],
+     [
+      "2026-07-01 18:00",
+      16,
+      17
+     ],
+     [
+      "2026-07-02 00:00",
+      23,
+      22
+     ],
+     [
+      "2026-07-02 06:00",
+      52,
+      41
+     ],
+     [
+      "2026-07-02 12:00",
+      61,
+      56
+     ],
+     [
+      "2026-07-02 18:00",
+      68,
+      63
+     ],
+     [
+      "2026-07-03 00:00",
+      73,
+      68
+     ],
+     [
+      "2026-07-03 06:00",
+      64,
+      70
+     ]
+    ],
+    "mix": {
+     "mainstream": 4,
+     "state-media": 1,
+     "regional": 0,
+     "official": 0,
+     "other": 92
+    },
+    "first_seen": "2026-06-29T19:07:12Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 3
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "GOOGL",
+      "label": "Alphabet",
+      "class": "equity",
+      "last": 359.91,
+      "last_ts": "2026-07-02T20:00:00Z",
+      "basis": "EU antitrust fine",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-02T16:14:52Z",
+        354.97
+       ],
+       [
+        "2026-07-02T16:30:00Z",
+        354.71
+       ],
+       [
+        "2026-07-02T16:51:07Z",
+        354.78
+       ],
+       [
+        "2026-07-02T17:18:59Z",
+        354.59
+       ],
+       [
+        "2026-07-02T17:30:00Z",
+        356.23
+       ],
+       [
+        "2026-07-02T17:42:38Z",
+        356.45
+       ],
+       [
+        "2026-07-02T18:07:18Z",
+        357.505
+       ],
+       [
+        "2026-07-02T18:08:23Z",
+        357.47
+       ],
+       [
+        "2026-07-02T18:30:00Z",
+        358.455
+       ],
+       [
+        "2026-07-02T18:44:32Z",
+        358.425
+       ],
+       [
+        "2026-07-02T18:48:35Z",
+        358.9
+       ],
+       [
+        "2026-07-02T19:10:09Z",
+        359.2
+       ],
+       [
+        "2026-07-02T19:30:00Z",
+        359.13
+       ],
+       [
+        "2026-07-02T19:38:37Z",
+        359.1599
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        359.91
+       ]
+      ]
+     }
+    ],
+    "note": "Instruments mapped to this topic; correlation pending price history.",
+    "observed_utc": "2026-07-03T11:16:35Z",
+    "anchor_beat": "2026-07-03T04:09:13Z"
+   },
+   "lead_image": {
+    "url": "https://image.cnbcfm.com/api/v1/image/108329754-1782978643176-gettyimages-458933277-000019668000_XXXLarge.jpeg?v=1782978650&w=1920&h=1080",
+    "source": "CNBC",
+    "focal": {
+     "x": 31,
+     "y": 16
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -9353,7 +9184,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -9616,7 +9447,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:17:38Z",
+    "observed_utc": "2026-07-03T11:19:21Z",
     "anchor_beat": "2026-07-03T08:12:46Z"
    },
    "lead_image": {
@@ -10438,7 +10269,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -10956,7 +10787,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:11:35Z",
+    "observed_utc": "2026-07-03T11:13:13Z",
     "anchor_beat": "2026-07-03T09:01:03Z"
    },
    "lead_image": {
@@ -11750,7 +11581,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -12269,7 +12100,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:11:06Z",
+    "observed_utc": "2026-07-03T11:12:45Z",
     "anchor_beat": "2026-07-03T11:00:07Z"
    },
    "lead_image": {
@@ -12913,7 +12744,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -13216,7 +13047,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:24:13Z",
+    "observed_utc": "2026-07-03T11:25:55Z",
     "anchor_beat": "2026-07-03T07:45:35Z"
    },
    "lead_image": {
@@ -13572,22 +13403,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 210,
+    "outlets_timed": 209,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Wood Mackenzie",
-      "ts": "2026-06-26T11:14:02Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "The New York Times",
       "ts": "2026-06-26T11:18:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "US press",
       "items": 2
      },
@@ -13638,6 +13461,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
+     },
+     {
+      "outlet": "Bloomberg.com",
+      "ts": "2026-06-26T13:43:33Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -13897,7 +13728,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -14474,7 +14305,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:13:20Z",
+    "observed_utc": "2026-07-03T11:14:56Z",
     "anchor_beat": "2026-07-03T07:42:00Z"
    },
    "lead_image": {
@@ -15198,7 +15029,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -15433,7 +15264,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:12:53Z",
+    "observed_utc": "2026-07-03T11:14:30Z",
     "anchor_beat": "2026-07-03T10:23:32Z"
    },
    "lead_image": {
@@ -15919,7 +15750,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -16185,7 +16016,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:19:48Z",
+    "observed_utc": "2026-07-03T11:21:33Z",
     "anchor_beat": "2026-07-03T10:09:50Z"
    },
    "lead_image": {
@@ -16629,7 +16460,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -16779,7 +16610,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:14:07Z",
+    "observed_utc": "2026-07-03T11:15:46Z",
     "anchor_beat": "2026-07-03T09:42:16Z"
    },
    "gate": {
@@ -17686,7 +17517,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"ASEAN-Russia strategic track\" shipped without its beats - 4 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -18163,7 +17994,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -18359,7 +18190,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:14:25Z",
+    "observed_utc": "2026-07-03T11:16:05Z",
     "anchor_beat": "2026-07-03T05:14:53Z"
    },
    "lead_image": {
@@ -18668,7 +18499,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -18915,7 +18746,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:25:49Z",
+    "observed_utc": "2026-07-03T11:27:34Z",
     "anchor_beat": "2026-07-03T08:26:17Z"
    },
    "lead_image": {
@@ -19840,7 +19671,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -20458,7 +20289,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:10:37Z",
+    "observed_utc": "2026-07-03T11:12:18Z",
     "anchor_beat": "2026-07-03T08:28:33Z"
    },
    "lead_image": {
@@ -21267,7 +21098,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -21738,7 +21569,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:12:41Z",
+    "observed_utc": "2026-07-03T11:14:18Z",
     "anchor_beat": "2026-07-03T04:11:53Z"
    },
    "lead_image": {
@@ -22037,7 +21868,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -22062,1048 +21893,6 @@
      "carriers": 0,
      "provenance": 1,
      "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "usmca-renewal-debate-raises-tariff-uncertainty",
-   "name": "US considers exiting USMCA trade deal with Mexico and Canada",
-   "bucket": "economy",
-   "topic_tags": [
-    "trade"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-30T10:34:59Z",
-    "sentence_count": 6,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "The U.S. reports a declaration to exit USMCA, starting a decade-long countdown for the pact.",
-        "cites": [
-         {
-          "outlet": "Investing.com",
-          "kind": "journalist",
-          "url": "https://www.investing.com/news/economic-indicators/us-declaration-to-exit-usmca-to-start-a-decadelong-countdown-for-the-pact-4767291",
-          "ts": "2026-06-30T10:15:23Z",
-          "title": "U.S. declaration to exit USMCA to start a decade-long countdown for the pact"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Canada\u2019s ex-trade chief says a tariff deal is unlikely before U.S. midterms.",
-        "cites": [
-         {
-          "outlet": "Global News",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYmFYUzhZTHNWTDRYVjhTLWxIdWxXYUwzUy0xU3haS3p0N1daUWNuTHV6dHlyb2RIS2s1YmxxR3QycXNMLUhXS2tZRFAyUXY5S0VfSEZwUS1VeFFGTG5jOGU3TXYwcjEzVUQySkw4NFJsYVJkclJzamhOV0I1Y1ZiY0NmUHp5UTNHUUxGTndRR1U0ODN6U1VjNA?oc=5",
-          "ts": "2026-06-29T17:57:51Z",
-          "title": "Tariff deal unlikely before U.S. midterms, Canada\u2019s ex-trade chief says"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The EU reports its side of the U.S. trade deal will come into force on July 1.",
-        "cites": [
-         {
-          "outlet": "Investing.com",
-          "kind": "journalist",
-          "url": "https://www.investing.com/news/economy-news/eus-side-of-us-trade-deal-to-come-into-force-on-july-1-4766898",
-          "ts": "2026-06-30T06:24:59Z",
-          "title": "EU\u2019s side of U.S. trade deal to come into force on July 1"
-         }
-        ]
-       },
-       {
-        "text": "Swiss reports it will ease recognition of U.S. standards for cars and medical devices as a trade deal is sought.",
-        "cites": [
-         {
-          "outlet": "Investing.com",
-          "kind": "journalist",
-          "url": "https://www.investing.com/news/stock-market-news/swiss-to-ease-recognition-of-us-standards-for-cars-medical-devices-as-trade-deal-sought-4766897",
-          "ts": "2026-06-30T06:24:39Z",
-          "title": "Swiss to ease recognition of US standards for cars, medical devices as trade deal sought"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "BBC reports the looming deadline on North American free trade.",
-        "cites": [
-         {
-          "outlet": "BBC",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpeVNXZXpWaW5pN2lpcTROb0I3UnB4YXE2VWNNdUNYNlBwUW95NV9BYWFkZkxLeVY1YVRVMlhET2lSQjBSWThvZzV0RTdMclJScHR2emNKWEJFUQ?oc=5",
-          "ts": "2026-06-29T23:32:52Z",
-          "title": "What to know about the looming deadline on North American free trade"
-         }
-        ]
-       },
-       {
-        "text": "ITIF reports that USMCA should be the first agreement of the new global trade era.",
-        "cites": [
-         {
-          "outlet": "Information Technology and Innovation Foundation (ITIF)",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdmM5dUVVUTRvUjh6ZjZKZjNXZXB3eXFHLXhJS1VIdkphWG9vTWw0Yks3YVJWN3VEU0k3N05lQUxmLTVRak9uY3pBR1ptVDRoUV82QlhZbExsTjZ2RUFuSzdJQy14QzVodEwzTzdvc1ZDZlF1NF9oLW52MEkxNVJXVEx3blBoVG81NlpHSUVUTEJ4SmpMYnhPZ0hxQmRLX0lnVWtsTVhhZnM?oc=5",
-          "ts": "2026-06-29T21:00:09Z",
-          "title": "USMCA Should Be the First Agreement of the New Global Trade Era | Blogs | Jun 29, 2026"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 11,
-   "items_48h": 34,
-   "outlets": 27,
-   "kinds": [
-    "journalist",
-    "state media",
-    "wire service"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-03T06:36:27Z",
-     "title": "EU trade with US hits record despite tariff tensions, study shows",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/economic-indicators/eu-trade-with-us-hits-record-despite-tariff-tensions-study-shows-4775030",
-     "rel": 22,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T06:34:10Z",
-     "title": "EU trade with US hits record despite tariff tensions, study shows",
-     "outlet": "Yahoo Finance UK",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1OWlVZSGx2aTJFcjZCdzdqblctRm00Vi1EUUtFc1BjSlcxak1NN2IxSG44MzNLZjJySU1MQVVXWW5HYmtBS3E0RTBUZDFPblFuX1ZIa1JqT0tzekhWdjM0bkdUa3NBUVQ2aHg4OUw3eGtHdU1PalVkTlhLSWQ?oc=5",
-     "rel": 22,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T06:34:00Z",
-     "title": "EU trade with US hits record despite tariff tensions, study shows",
-     "outlet": "Reuters",
-     "kind": "wire service",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcmRSZ1pJNUhacVlzZWFEeGF6aDNXUk5tTkc5cWNsb2dnWkZFUnYxWlpELXJlX0lzUEVvV0JpRVdEQVZwN3FoNWJieUNQa2pxZWthMEZFUXRwbm1GYXdqN29hTlN2RnAtSzJHc3VnUEx1aExRcG5MSDdzSzk1RnZOendzdk9RQ3NRT1dtY1FNMmIzNnk0WnFqYmp2VVNkZWI4M1IwQ1V6Zmd3S2ZWWmc?oc=5",
-     "rel": 22,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-03T06:34:00Z",
-     "title": "EU trade with US hits record despite tariff tensions, study shows",
-     "outlet": "Yahoo! Finance Canada",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1WZWdaendvOUdWSi1TTmhNbGM1b1BxYmhocldoZVk5M0FnX004Z190WmZ1ejA5THgtNXhZbDBqWHpKc0ZUb2IwVVB1VTFodWxvX2ZaS0kyU0tBcWxNUDUtQnlYZkxYcVRPYko5TVFRbWs5bDNEYzFMMDZCNkQ?oc=5",
-     "rel": 22,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T03:01:50Z",
-     "title": "Washington declines to renew US-Mexico-Canada Agreement, sparking trade uncertainty",
-     "outlet": "Anadolu Ajans\u0131",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcUdxSmZjc0dxRjhBWnZFbEhKVTRBVnFuaURub3dWdnU5ekFwY2lXUUZsbllrclVfbTlIUkIxNXNSWkNOQ2NISnZROEJvbEgyOG1HYTMyUjZ4Vkt1ZWV3NlpXRmVDLW1McHdtb0VUMk1weU9CX3JlcU81aVI0ckM4OTRwRk9pdmR4aXF5aE9rRldsZ2hhbWxTc1pMQkVfSGxTMXRWVW1EeDlzaUdEWWxvOHVaSnBjeEc5ZGNDcVV3czFQQQ?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T02:57:13Z",
-     "title": "Washington declines to renew US-Mexico-Canada Agreement, sparking trade uncertainty",
-     "outlet": "Anadolu Agency",
-     "kind": "state media",
-     "url": "https://www.aa.com.tr/en/americas/washington-declines-to-renew-us-mexico-canada-agreement-sparking-trade-uncertainty/3984843",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T19:15:00Z",
-     "title": "Expert Warns USMCA Fresh Produce Trade Resolution is Unlikely Anytime Soon",
-     "outlet": "The Packer",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZHZ0ZURTZm1VLTByUEpGMzlDSHlVc3NlTE5OTXdYMGZuQm5iSW5LWXZtcEducUxwd1ZEeWk1bUVGZ1dSTEM1Q2R3RU94NnBzX3B2aHZWMWZ2OEM2cnIxbXhCVnExc25tTUNPb3h5WTJmXzJpTUdtZFppT1hmbjlLWXFKRjFzVWNLRWZfNmhZLXBqTWhEZGZvWURLSXh2aFpkUDRkaQ?oc=5",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T14:20:00Z",
-     "title": "What happens after a missed North American trade deal deadline",
-     "outlet": "marketplace.org",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlVrcVJ0RDdTbzdBc1pUQTc4RVY2YVY3NHFvUXZEUFJfRWVhWm1aNjZibWdQRkcxc1RZN1pjcnJQdEFPSUVhZHFoVjBYdUVpSnBtSGd6TE1BUE1xa0tEVVdqREM3a1NWU1RsUWxqRGoxT081eTJQNGh6Nm5semx1MlE2bzlBOFc1bHhkQXRuZ0VfcVluZFFON3ZvS21xU2NOVEhMMEg4R1dzZw?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "a": "US considers exiting USMCA",
-    "b": "Canada and Mexico want renewal",
-    "basis": "extracted from live headlines 2026-07-03",
-    "axis_type": "policy_dispute",
-    "axis_question": "Renew USMCA?",
-    "carriers": {
-     "a": [
-      {
-       "outlet": "Investing.com",
-       "kind": "journalist",
-       "url": "https://www.investing.com/news/economic-indicators/us-canada-mexico-review-trade-pact-likely-putting-it-into-limbo-as-trump-demands-changes-4770977",
-       "ts": "2026-07-02T05:00:54Z",
-       "provenance": "original",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "constructconnect.com",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN01NOExJTEEyZE0yazlkM2JobVBOWkxRbVRQcTd4ZVhGYXNfZFZaSGc0ZnJLR3hSUDVTRXNkcHhyemRjaHkwbTc5OEJaR2g1ZXJaZUFZNkF1ZmUtNnpIODVHMXVtVUtxVWNGdU80TUtxSllKeDR0cG9JMWxILVV5N1Z2cTV3cVZHMkltZ20tTzFfeFRlQ3dZcGZIRFlydl9DelNkdXlReDRhbGpCX3J3RGV6X3lTNEk2Ym9QTTdvRjZOY0tmVWszYk1may00QQ?oc=5",
-       "ts": "2026-07-02T12:50:30Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "Anadolu Agency",
-       "kind": "state media",
-       "url": "https://www.aa.com.tr/en/americas/washington-declines-to-renew-us-mexico-canada-agreement-sparking-trade-uncertainty/3984843",
-       "ts": "2026-07-03T02:57:13Z",
-       "provenance": "echo",
-       "motive_note": "TR state news agency"
-      }
-     ],
-     "b": [
-      {
-       "outlet": "BBC",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HRkdVZlRUNm5IT2ZGbk00azhmb2dReEFSVm8zZ1pOcDZfa2FkWk5wNnVLSHR4c0hLZWo1RXdFbDh1b1lFS0ZfVy1iQzQ4bkx1QU1SMVBQdmt3dw?oc=5",
-       "ts": "2026-07-02T13:43:39Z",
-       "provenance": "original",
-       "motive_note": "UK public broadcaster"
-      },
-      {
-       "outlet": "marketplace.org",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlVrcVJ0RDdTbzdBc1pUQTc4RVY2YVY3NHFvUXZEUFJfRWVhWm1aNjZibWdQRkcxc1RZN1pjcnJQdEFPSUVhZHFoVjBYdUVpSnBtSGd6TE1BUE1xa0tEVVdqREM3a1NWU1RsUWxqRGoxT081eTJQNGh6Nm5semx1MlE2bzlBOFc1bHhkQXRuZ0VfcVluZFFON3ZvS21xU2NOVEhMMEg4R1dzZw?oc=5",
-       "ts": "2026-07-02T14:20:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      },
-      {
-       "outlet": "The Packer",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZHZ0ZURTZm1VLTByUEpGMzlDSHlVc3NlTE5OTXdYMGZuQm5iSW5LWXZtcEducUxwd1ZEeWk1bUVGZ1dSTEM1Q2R3RU94NnBzX3B2aHZWMWZ2OEM2cnIxbXhCVnExc25tTUNPb3h5WTJmXzJpTUdtZFppT1hmbjlLWXFKRjFzVWNLRWZfNmhZLXBqTWhEZGZvWURLSXh2aFpkUDRkaQ?oc=5",
-       "ts": "2026-07-02T19:15:00Z",
-       "provenance": "echo",
-       "motive_note": "position not catalogued - evidence kind: journalist"
-      }
-     ]
-    }
-   },
-   "viewpoints": [
-    {
-     "stance": "US considers exiting USMCA",
-     "carriers": [
-      {
-       "outlet": "Anadolu Agency",
-       "kind": "state media",
-       "url": "https://www.aa.com.tr/en/americas/washington-declines-to-renew-us-mexico-canada-agreement-sparking-trade-uncertainty/3984843",
-       "ts_utc": "2026-07-03T02:57:13Z"
-      },
-      {
-       "outlet": "constructconnect.com",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN01NOExJTEEyZE0yazlkM2JobVBOWkxRbVRQcTd4ZVhGYXNfZFZaSGc0ZnJLR3hSUDVTRXNkcHhyemRjaHkwbTc5OEJaR2g1ZXJaZUFZNkF1ZmUtNnpIODVHMXVtVUtxVWNGdU80TUtxSllKeDR0cG9JMWxILVV5N1Z2cTV3cVZHMkltZ20tTzFfeFRlQ3dZcGZIRFlydl9DelNkdXlReDRhbGpCX3J3RGV6X3lTNEk2Ym9QTTdvRjZOY0tmVWszYk1may00QQ?oc=5",
-       "ts_utc": "2026-07-02T12:50:30Z"
-      },
-      {
-       "outlet": "Investing.com",
-       "kind": "journalist",
-       "url": "https://www.investing.com/news/economic-indicators/us-canada-mexico-review-trade-pact-likely-putting-it-into-limbo-as-trump-demands-changes-4770977",
-       "ts_utc": "2026-07-02T05:00:54Z"
-      }
-     ]
-    },
-    {
-     "stance": "Canada and Mexico want renewal",
-     "carriers": [
-      {
-       "outlet": "BBC",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HRkdVZlRUNm5IT2ZGbk00azhmb2dReEFSVm8zZ1pOcDZfa2FkWk5wNnVLSHR4c0hLZWo1RXdFbDh1b1lFS0ZfVy1iQzQ4bkx1QU1SMVBQdmt3dw?oc=5",
-       "ts_utc": "2026-07-02T13:43:39Z"
-      },
-      {
-       "outlet": "The Packer",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZHZ0ZURTZm1VLTByUEpGMzlDSHlVc3NlTE5OTXdYMGZuQm5iSW5LWXZtcEducUxwd1ZEeWk1bUVGZ1dSTEM1Q2R3RU94NnBzX3B2aHZWMWZ2OEM2cnIxbXhCVnExc25tTUNPb3h5WTJmXzJpTUdtZFppT1hmbjlLWXFKRjFzVWNLRWZfNmhZLXBqTWhEZGZvWURLSXh2aFpkUDRkaQ?oc=5",
-       "ts_utc": "2026-07-02T19:15:00Z"
-      },
-      {
-       "outlet": "marketplace.org",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlVrcVJ0RDdTbzdBc1pUQTc4RVY2YVY3NHFvUXZEUFJfRWVhWm1aNjZibWdQRkcxc1RZN1pjcnJQdEFPSUVhZHFoVjBYdUVpSnBtSGd6TE1BUE1xa0tEVVdqREM3a1NWU1RsUWxqRGoxT081eTJQNGh6Nm5semx1MlE2bzlBOFc1bHhkQXRuZ0VfcVluZFFON3ZvS21xU2NOVEhMMEg4R1dzZw?oc=5",
-       "ts_utc": "2026-07-02T14:20:00Z"
-      }
-     ]
-    }
-   ],
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 104,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "Natural Gas Intelligence",
-      "ts": "2026-06-26T12:52:34Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "CNBC",
-      "ts": "2026-06-26T14:14:46Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US financial press",
-      "items": 10
-     },
-     {
-      "outlet": "War on the Rocks",
-      "ts": "2026-06-26T14:19:52Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Reason Magazine",
-      "ts": "2026-06-26T15:00:24Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Financial Times",
-      "ts": "2026-06-26T21:59:32Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK financial press",
-      "items": 3
-     },
-     {
-      "outlet": "Barchart.com",
-      "ts": "2026-06-26T22:01:23Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "RU state media",
-      "items": 4
-     },
-     {
-      "outlet": "Discovery Alert",
-      "ts": "2026-06-26T23:07:29Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "CryptoRank",
-      "ts": "2026-06-27T07:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "canada",
-     "situations": [
-      "russia-ukraine-war-current",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "mexico",
-     "situations": [
-      "venezuela-earthquakes-kill-920-amid-political-cr"
-     ]
-    },
-    {
-     "entity": "trump",
-     "situations": [
-      "colombia-runoff-election-armed-conflict-shift",
-      "gaza-israel-war-current",
-      "russia-ukraine-war-current",
-      "taiwan-strait-tensions-current",
-      "trump-crypto-earnings-disclosure",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
-     ]
-    },
-    {
-     "entity": "united states",
-     "situations": [
-      "ebola-spreads-dr-congo-cases-top-676",
-      "europe-record-heatwave-deaths-electricity-surge",
-      "gaza-israel-war-current",
-      "lebanon-hezbollah-disarmament-standoff",
-      "oil-prices-fall-to-pre-war-levels",
-      "russia-hosts-asean-summit-diplomatic-push",
-      "russia-ukraine-war-current",
-      "sudan-civil-war-current",
-      "taiwan-strait-tensions-current",
-      "trump-crypto-earnings-disclosure",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "uk-defence-secretary-resigns-over-spending",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "us-to-pull-fighter-jets-from-nato-europe",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "white house",
-     "situations": [
-      "ebola-spreads-dr-congo-cases-top-676",
-      "trump-crypto-earnings-disclosure",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "CNBC",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "Investing.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Cato Institute",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Reuters",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "constructconnect.com",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "AgWeb",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Anadolu Agency",
-     "n": 1,
-     "class": "state-media"
-    },
-    {
-     "outlet": "Anadolu Ajans\u0131",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Automotive Logistics",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Axios",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "BBC",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-29 12:00",
-      40,
-      52
-     ],
-     [
-      "2026-06-29 18:00",
-      51,
-      56
-     ],
-     [
-      "2026-06-30 00:00",
-      56,
-      59
-     ],
-     [
-      "2026-06-30 06:00",
-      61,
-      56
-     ],
-     [
-      "2026-06-30 12:00",
-      49,
-      57
-     ],
-     [
-      "2026-06-30 18:00",
-      39,
-      56
-     ],
-     [
-      "2026-07-01 00:00",
-      27,
-      54
-     ],
-     [
-      "2026-07-01 06:00",
-      19,
-      46
-     ],
-     [
-      "2026-07-01 12:00",
-      16,
-      36
-     ],
-     [
-      "2026-07-01 18:00",
-      16,
-      28
-     ],
-     [
-      "2026-07-02 00:00",
-      17,
-      27
-     ],
-     [
-      "2026-07-02 06:00",
-      19,
-      27
-     ],
-     [
-      "2026-07-02 12:00",
-      20,
-      26
-     ],
-     [
-      "2026-07-02 18:00",
-      10,
-      24
-     ],
-     [
-      "2026-07-03 00:00",
-      10,
-      25
-     ],
-     [
-      "2026-07-03 06:00",
-      12,
-      27
-     ]
-    ],
-    "mix": {
-     "mainstream": 5,
-     "state-media": 1,
-     "regional": 0,
-     "official": 0,
-     "other": 24
-    },
-    "first_seen": "2026-06-29T14:39:52Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-07-01T03:46:52Z",
-     "a": "NewsNation, Yahoo! Finance Canada, and Investing.com say the US may push to exit the USMCA trade deal with Mexico and Canada.",
-     "b": "Atlantic Council says the USMCA review will result in a stronger, safer, and more prosperous North America."
-    },
-    {
-     "captured_utc": "2026-07-01T20:59:11Z",
-     "a": "U.S. officials say they will not renew or extend the USMCA trade deal with Canada and Mexico.",
-     "b": "Critics, including the New Democrat Coalition and Cato Institute, oppose the withdrawal and urge strengthening or maintaining the USMCA."
-    },
-    {
-     "captured_utc": "2026-07-02T00:23:04Z",
-     "a": "Trump administration says it will not renew the USMCA trade deal with Canada and Mexico.",
-     "b": "New Democrat Coalition says the US should renew and strengthen the USMCA agreement."
-    },
-    {
-     "captured_utc": "2026-07-02T05:38:38Z",
-     "a": "The White House and US agencies say they will not extend the USMCA trade deal.",
-     "b": "Lawmakers and think tanks criticize the US move to withdraw, urging the deal be preserved or strengthened."
-    },
-    {
-     "captured_utc": "2026-07-02T05:57:50Z",
-     "a": "US officials say they will not extend the USMCA trade deal with Canada and Mexico",
-     "b": "New Democrat Coalition says the US should not withdraw from USMCA and urges strengthening via joint review"
-    },
-    {
-     "captured_utc": "2026-07-02T06:20:39Z",
-     "a": "US officials and outlets say the US will not extend or renew the USMCA trade deal with Canada and Mexico.",
-     "b": "New Democrat Coalition and Cato Institute argue the US should strengthen or preserve the USMCA rather than withdraw."
-    },
-    {
-     "captured_utc": "2026-07-02T08:13:21Z",
-     "a": "The White House says it will not renew the USMCA trade deal with Mexico and Canada.",
-     "b": "New Democrat lawmakers oppose the USMCA withdrawal and urge strengthening the trilateral agreement."
-    },
-    {
-     "captured_utc": "2026-07-02T18:08:26Z",
-     "a": "The US says it will not renew the USMCA in its current form and seeks changes.",
-     "b": "Canada and Mexico express concerns over the US decision not to renew the USMCA."
-    },
-    {
-     "captured_utc": "2026-07-02T20:29:21Z",
-     "a": "US government declines to renew USMCA, seeking changes to the trade agreement.",
-     "b": "Critics warn that not renewing USMCA creates uncertainty for industries like automakers and fresh produce."
-    },
-    {
-     "captured_utc": "2026-07-03T07:02:25Z",
-     "a": "US considers exiting USMCA",
-     "b": "Canada and Mexico want renewal"
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 3
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "CL=F",
-      "label": "WTI Crude",
-      "class": "commodity",
-      "last": 69.02,
-      "last_ts": "2026-07-03T03:35:12Z",
-      "basis": "USMCA tariff uncertainty impacts oil trade",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-02T18:38:29Z",
-        68.62
-       ],
-       [
-        "2026-07-02T19:00:00Z",
-        68.44
-       ],
-       [
-        "2026-07-02T19:00:07Z",
-        68.45
-       ],
-       [
-        "2026-07-02T19:28:30Z",
-        68.44
-       ],
-       [
-        "2026-07-02T19:54:04Z",
-        68.47
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        68.52
-       ],
-       [
-        "2026-07-02T20:19:16Z",
-        68.52
-       ],
-       [
-        "2026-07-02T20:20:21Z",
-        68.5
-       ],
-       [
-        "2026-07-02T20:51:27Z",
-        68.45
-       ],
-       [
-        "2026-07-02T20:59:55Z",
-        68.46
-       ],
-       [
-        "2026-07-02T22:00:00Z",
-        68.48
-       ],
-       [
-        "2026-07-02T22:10:10Z",
-        68.48
-       ],
-       [
-        "2026-07-02T22:17:04Z",
-        68.5
-       ],
-       [
-        "2026-07-02T22:38:03Z",
-        68.52
-       ],
-       [
-        "2026-07-02T22:57:27Z",
-        68.48
-       ],
-       [
-        "2026-07-02T23:00:00Z",
-        68.49
-       ],
-       [
-        "2026-07-02T23:13:05Z",
-        68.47
-       ],
-       [
-        "2026-07-02T23:25:02Z",
-        68.43
-       ],
-       [
-        "2026-07-02T23:37:44Z",
-        68.47
-       ],
-       [
-        "2026-07-02T23:49:48Z",
-        68.46
-       ],
-       [
-        "2026-07-03T00:00:00Z",
-        68.38
-       ],
-       [
-        "2026-07-03T00:13:15Z",
-        68.39
-       ],
-       [
-        "2026-07-03T00:14:12Z",
-        68.42
-       ],
-       [
-        "2026-07-03T00:34:39Z",
-        68.38
-       ],
-       [
-        "2026-07-03T00:58:18Z",
-        68.45
-       ],
-       [
-        "2026-07-03T01:00:00Z",
-        68.49
-       ],
-       [
-        "2026-07-03T01:06:12Z",
-        68.57
-       ],
-       [
-        "2026-07-03T01:23:08Z",
-        68.41
-       ],
-       [
-        "2026-07-03T01:32:15Z",
-        68.58
-       ],
-       [
-        "2026-07-03T01:48:50Z",
-        68.9
-       ],
-       [
-        "2026-07-03T02:00:00Z",
-        68.95
-       ],
-       [
-        "2026-07-03T02:03:25Z",
-        68.94
-       ],
-       [
-        "2026-07-03T02:15:26Z",
-        68.94
-       ],
-       [
-        "2026-07-03T02:34:28Z",
-        68.97
-       ],
-       [
-        "2026-07-03T02:43:32Z",
-        69.13
-       ],
-       [
-        "2026-07-03T03:00:00Z",
-        68.94
-       ],
-       [
-        "2026-07-03T03:02:52Z",
-        68.94
-       ],
-       [
-        "2026-07-03T03:09:26Z",
-        69.02
-       ],
-       [
-        "2026-07-03T03:30:11Z",
-        69.11
-       ],
-       [
-        "2026-07-03T03:35:12Z",
-        69.02
-       ]
-      ]
-     },
-     {
-      "symbol": "DX-Y.NYB",
-      "label": "Dollar Index",
-      "class": "fx",
-      "last": 100.817,
-      "last_ts": "2026-07-03T03:35:20Z",
-      "basis": "USMCA tariff uncertainty affects dollar strength",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-02T18:38:31Z",
-        100.832
-       ],
-       [
-        "2026-07-02T19:00:00Z",
-        100.89
-       ],
-       [
-        "2026-07-02T19:00:09Z",
-        100.857
-       ],
-       [
-        "2026-07-02T19:28:35Z",
-        100.89
-       ],
-       [
-        "2026-07-02T19:54:27Z",
-        100.892
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        100.857
-       ],
-       [
-        "2026-07-02T20:19:17Z",
-        100.857
-       ],
-       [
-        "2026-07-02T20:20:29Z",
-        100.853
-       ],
-       [
-        "2026-07-02T20:51:40Z",
-        100.855
-       ],
-       [
-        "2026-07-02T21:00:00Z",
-        100.864
-       ],
-       [
-        "2026-07-02T21:05:07Z",
-        100.86
-       ],
-       [
-        "2026-07-02T21:27:18Z",
-        100.856
-       ],
-       [
-        "2026-07-02T21:34:07Z",
-        100.871
-       ],
-       [
-        "2026-07-02T21:51:14Z",
-        100.883
-       ],
-       [
-        "2026-07-02T22:00:00Z",
-        100.847
-       ],
-       [
-        "2026-07-02T22:04:58Z",
-        100.848
-       ],
-       [
-        "2026-07-02T23:00:00Z",
-        100.941
-       ],
-       [
-        "2026-07-02T23:31:41Z",
-        100.913
-       ],
-       [
-        "2026-07-02T23:50:17Z",
-        100.943
-       ],
-       [
-        "2026-07-03T00:00:00Z",
-        100.98
-       ],
-       [
-        "2026-07-03T00:13:41Z",
-        100.978
-       ],
-       [
-        "2026-07-03T00:14:13Z",
-        100.973
-       ],
-       [
-        "2026-07-03T00:35:46Z",
-        100.98
-       ],
-       [
-        "2026-07-03T00:58:28Z",
-        100.908
-       ],
-       [
-        "2026-07-03T01:00:00Z",
-        100.88
-       ],
-       [
-        "2026-07-03T01:06:13Z",
-        100.88
-       ],
-       [
-        "2026-07-03T01:23:23Z",
-        100.783
-       ],
-       [
-        "2026-07-03T01:32:22Z",
-        100.819
-       ],
-       [
-        "2026-07-03T01:48:53Z",
-        100.83
-       ],
-       [
-        "2026-07-03T02:00:00Z",
-        100.846
-       ],
-       [
-        "2026-07-03T02:03:31Z",
-        100.838
-       ],
-       [
-        "2026-07-03T02:15:53Z",
-        100.802
-       ],
-       [
-        "2026-07-03T02:34:29Z",
-        100.797
-       ],
-       [
-        "2026-07-03T02:43:34Z",
-        100.789
-       ],
-       [
-        "2026-07-03T03:00:00Z",
-        100.805
-       ],
-       [
-        "2026-07-03T03:02:56Z",
-        100.804
-       ],
-       [
-        "2026-07-03T03:09:31Z",
-        100.822
-       ],
-       [
-        "2026-07-03T03:30:14Z",
-        100.82
-       ],
-       [
-        "2026-07-03T03:35:20Z",
-        100.817
-       ]
-      ]
-     }
-    ],
-    "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:14:16Z",
-    "anchor_beat": "2026-07-03T06:36:27Z"
-   },
-   "lead_image": {
-    "url": "https://i.cbc.ca/ais/6740aaff-8dda-4d39-9833-1a5839690935,1782929269479/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C428%2C8200%2C4612%29%3BResize%3D620",
-    "source": "CBC World",
-    "focal": {
-     "x": 47,
-     "y": 54
-    }
-   },
-   "gate": {
-    "score": 7,
-    "of": 8,
-    "checks": {
-     "split": 1,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -23572,7 +22361,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -24521,7 +23310,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"Border conflict roots\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -25279,7 +24068,7 @@
      ]
     ],
     "mix": {
-     "mainstream": 7,
+     "mainstream": 6,
      "state-media": 1,
      "regional": 1,
      "official": 0,
@@ -25350,7 +24139,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -25877,7 +24666,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:21:45Z",
+    "observed_utc": "2026-07-03T11:23:30Z",
     "anchor_beat": "2026-07-02T19:43:21Z"
    },
    "lead_image": {
@@ -25886,6 +24675,1048 @@
     "focal": {
      "x": 46,
      "y": 50
+    }
+   },
+   "gate": {
+    "score": 7,
+    "of": 8,
+    "checks": {
+     "split": 1,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "usmca-renewal-debate-raises-tariff-uncertainty",
+   "name": "US considers exiting USMCA trade deal with Mexico and Canada",
+   "bucket": "economy",
+   "topic_tags": [
+    "trade"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-30T10:34:59Z",
+    "sentence_count": 6,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "The U.S. reports a declaration to exit USMCA, starting a decade-long countdown for the pact.",
+        "cites": [
+         {
+          "outlet": "Investing.com",
+          "kind": "journalist",
+          "url": "https://www.investing.com/news/economic-indicators/us-declaration-to-exit-usmca-to-start-a-decadelong-countdown-for-the-pact-4767291",
+          "ts": "2026-06-30T10:15:23Z",
+          "title": "U.S. declaration to exit USMCA to start a decade-long countdown for the pact"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Canada\u2019s ex-trade chief says a tariff deal is unlikely before U.S. midterms.",
+        "cites": [
+         {
+          "outlet": "Global News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYmFYUzhZTHNWTDRYVjhTLWxIdWxXYUwzUy0xU3haS3p0N1daUWNuTHV6dHlyb2RIS2s1YmxxR3QycXNMLUhXS2tZRFAyUXY5S0VfSEZwUS1VeFFGTG5jOGU3TXYwcjEzVUQySkw4NFJsYVJkclJzamhOV0I1Y1ZiY0NmUHp5UTNHUUxGTndRR1U0ODN6U1VjNA?oc=5",
+          "ts": "2026-06-29T17:57:51Z",
+          "title": "Tariff deal unlikely before U.S. midterms, Canada\u2019s ex-trade chief says"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The EU reports its side of the U.S. trade deal will come into force on July 1.",
+        "cites": [
+         {
+          "outlet": "Investing.com",
+          "kind": "journalist",
+          "url": "https://www.investing.com/news/economy-news/eus-side-of-us-trade-deal-to-come-into-force-on-july-1-4766898",
+          "ts": "2026-06-30T06:24:59Z",
+          "title": "EU\u2019s side of U.S. trade deal to come into force on July 1"
+         }
+        ]
+       },
+       {
+        "text": "Swiss reports it will ease recognition of U.S. standards for cars and medical devices as a trade deal is sought.",
+        "cites": [
+         {
+          "outlet": "Investing.com",
+          "kind": "journalist",
+          "url": "https://www.investing.com/news/stock-market-news/swiss-to-ease-recognition-of-us-standards-for-cars-medical-devices-as-trade-deal-sought-4766897",
+          "ts": "2026-06-30T06:24:39Z",
+          "title": "Swiss to ease recognition of US standards for cars, medical devices as trade deal sought"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "BBC reports the looming deadline on North American free trade.",
+        "cites": [
+         {
+          "outlet": "BBC",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpeVNXZXpWaW5pN2lpcTROb0I3UnB4YXE2VWNNdUNYNlBwUW95NV9BYWFkZkxLeVY1YVRVMlhET2lSQjBSWThvZzV0RTdMclJScHR2emNKWEJFUQ?oc=5",
+          "ts": "2026-06-29T23:32:52Z",
+          "title": "What to know about the looming deadline on North American free trade"
+         }
+        ]
+       },
+       {
+        "text": "ITIF reports that USMCA should be the first agreement of the new global trade era.",
+        "cites": [
+         {
+          "outlet": "Information Technology and Innovation Foundation (ITIF)",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdmM5dUVVUTRvUjh6ZjZKZjNXZXB3eXFHLXhJS1VIdkphWG9vTWw0Yks3YVJWN3VEU0k3N05lQUxmLTVRak9uY3pBR1ptVDRoUV82QlhZbExsTjZ2RUFuSzdJQy14QzVodEwzTzdvc1ZDZlF1NF9oLW52MEkxNVJXVEx3blBoVG81NlpHSUVUTEJ4SmpMYnhPZ0hxQmRLX0lnVWtsTVhhZnM?oc=5",
+          "ts": "2026-06-29T21:00:09Z",
+          "title": "USMCA Should Be the First Agreement of the New Global Trade Era | Blogs | Jun 29, 2026"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 10,
+   "items_48h": 34,
+   "outlets": 27,
+   "kinds": [
+    "journalist",
+    "state media",
+    "wire service"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-03T06:36:27Z",
+     "title": "EU trade with US hits record despite tariff tensions, study shows",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/economic-indicators/eu-trade-with-us-hits-record-despite-tariff-tensions-study-shows-4775030",
+     "rel": 22,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T06:34:10Z",
+     "title": "EU trade with US hits record despite tariff tensions, study shows",
+     "outlet": "Yahoo Finance UK",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1OWlVZSGx2aTJFcjZCdzdqblctRm00Vi1EUUtFc1BjSlcxak1NN2IxSG44MzNLZjJySU1MQVVXWW5HYmtBS3E0RTBUZDFPblFuX1ZIa1JqT0tzekhWdjM0bkdUa3NBUVQ2aHg4OUw3eGtHdU1PalVkTlhLSWQ?oc=5",
+     "rel": 22,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T06:34:00Z",
+     "title": "EU trade with US hits record despite tariff tensions, study shows",
+     "outlet": "Reuters",
+     "kind": "wire service",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcmRSZ1pJNUhacVlzZWFEeGF6aDNXUk5tTkc5cWNsb2dnWkZFUnYxWlpELXJlX0lzUEVvV0JpRVdEQVZwN3FoNWJieUNQa2pxZWthMEZFUXRwbm1GYXdqN29hTlN2RnAtSzJHc3VnUEx1aExRcG5MSDdzSzk1RnZOendzdk9RQ3NRT1dtY1FNMmIzNnk0WnFqYmp2VVNkZWI4M1IwQ1V6Zmd3S2ZWWmc?oc=5",
+     "rel": 22,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-03T06:34:00Z",
+     "title": "EU trade with US hits record despite tariff tensions, study shows",
+     "outlet": "Yahoo! Finance Canada",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1WZWdaendvOUdWSi1TTmhNbGM1b1BxYmhocldoZVk5M0FnX004Z190WmZ1ejA5THgtNXhZbDBqWHpKc0ZUb2IwVVB1VTFodWxvX2ZaS0kyU0tBcWxNUDUtQnlYZkxYcVRPYko5TVFRbWs5bDNEYzFMMDZCNkQ?oc=5",
+     "rel": 22,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T03:01:50Z",
+     "title": "Washington declines to renew US-Mexico-Canada Agreement, sparking trade uncertainty",
+     "outlet": "Anadolu Ajans\u0131",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcUdxSmZjc0dxRjhBWnZFbEhKVTRBVnFuaURub3dWdnU5ekFwY2lXUUZsbllrclVfbTlIUkIxNXNSWkNOQ2NISnZROEJvbEgyOG1HYTMyUjZ4Vkt1ZWV3NlpXRmVDLW1McHdtb0VUMk1weU9CX3JlcU81aVI0ckM4OTRwRk9pdmR4aXF5aE9rRldsZ2hhbWxTc1pMQkVfSGxTMXRWVW1EeDlzaUdEWWxvOHVaSnBjeEc5ZGNDcVV3czFQQQ?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T02:57:13Z",
+     "title": "Washington declines to renew US-Mexico-Canada Agreement, sparking trade uncertainty",
+     "outlet": "Anadolu Agency",
+     "kind": "state media",
+     "url": "https://www.aa.com.tr/en/americas/washington-declines-to-renew-us-mexico-canada-agreement-sparking-trade-uncertainty/3984843",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T19:15:00Z",
+     "title": "Expert Warns USMCA Fresh Produce Trade Resolution is Unlikely Anytime Soon",
+     "outlet": "The Packer",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZHZ0ZURTZm1VLTByUEpGMzlDSHlVc3NlTE5OTXdYMGZuQm5iSW5LWXZtcEducUxwd1ZEeWk1bUVGZ1dSTEM1Q2R3RU94NnBzX3B2aHZWMWZ2OEM2cnIxbXhCVnExc25tTUNPb3h5WTJmXzJpTUdtZFppT1hmbjlLWXFKRjFzVWNLRWZfNmhZLXBqTWhEZGZvWURLSXh2aFpkUDRkaQ?oc=5",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T14:20:00Z",
+     "title": "What happens after a missed North American trade deal deadline",
+     "outlet": "marketplace.org",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlVrcVJ0RDdTbzdBc1pUQTc4RVY2YVY3NHFvUXZEUFJfRWVhWm1aNjZibWdQRkcxc1RZN1pjcnJQdEFPSUVhZHFoVjBYdUVpSnBtSGd6TE1BUE1xa0tEVVdqREM3a1NWU1RsUWxqRGoxT081eTJQNGh6Nm5semx1MlE2bzlBOFc1bHhkQXRuZ0VfcVluZFFON3ZvS21xU2NOVEhMMEg4R1dzZw?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "a": "US considers exiting USMCA",
+    "b": "Canada and Mexico want renewal",
+    "basis": "extracted from live headlines 2026-07-03",
+    "axis_type": "policy_dispute",
+    "axis_question": "Renew USMCA?",
+    "carriers": {
+     "a": [
+      {
+       "outlet": "Investing.com",
+       "kind": "journalist",
+       "url": "https://www.investing.com/news/economic-indicators/us-canada-mexico-review-trade-pact-likely-putting-it-into-limbo-as-trump-demands-changes-4770977",
+       "ts": "2026-07-02T05:00:54Z",
+       "provenance": "original",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "constructconnect.com",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN01NOExJTEEyZE0yazlkM2JobVBOWkxRbVRQcTd4ZVhGYXNfZFZaSGc0ZnJLR3hSUDVTRXNkcHhyemRjaHkwbTc5OEJaR2g1ZXJaZUFZNkF1ZmUtNnpIODVHMXVtVUtxVWNGdU80TUtxSllKeDR0cG9JMWxILVV5N1Z2cTV3cVZHMkltZ20tTzFfeFRlQ3dZcGZIRFlydl9DelNkdXlReDRhbGpCX3J3RGV6X3lTNEk2Ym9QTTdvRjZOY0tmVWszYk1may00QQ?oc=5",
+       "ts": "2026-07-02T12:50:30Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "Anadolu Agency",
+       "kind": "state media",
+       "url": "https://www.aa.com.tr/en/americas/washington-declines-to-renew-us-mexico-canada-agreement-sparking-trade-uncertainty/3984843",
+       "ts": "2026-07-03T02:57:13Z",
+       "provenance": "echo",
+       "motive_note": "TR state news agency"
+      }
+     ],
+     "b": [
+      {
+       "outlet": "BBC",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HRkdVZlRUNm5IT2ZGbk00azhmb2dReEFSVm8zZ1pOcDZfa2FkWk5wNnVLSHR4c0hLZWo1RXdFbDh1b1lFS0ZfVy1iQzQ4bkx1QU1SMVBQdmt3dw?oc=5",
+       "ts": "2026-07-02T13:43:39Z",
+       "provenance": "original",
+       "motive_note": "UK public broadcaster"
+      },
+      {
+       "outlet": "marketplace.org",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlVrcVJ0RDdTbzdBc1pUQTc4RVY2YVY3NHFvUXZEUFJfRWVhWm1aNjZibWdQRkcxc1RZN1pjcnJQdEFPSUVhZHFoVjBYdUVpSnBtSGd6TE1BUE1xa0tEVVdqREM3a1NWU1RsUWxqRGoxT081eTJQNGh6Nm5semx1MlE2bzlBOFc1bHhkQXRuZ0VfcVluZFFON3ZvS21xU2NOVEhMMEg4R1dzZw?oc=5",
+       "ts": "2026-07-02T14:20:00Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      },
+      {
+       "outlet": "The Packer",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZHZ0ZURTZm1VLTByUEpGMzlDSHlVc3NlTE5OTXdYMGZuQm5iSW5LWXZtcEducUxwd1ZEeWk1bUVGZ1dSTEM1Q2R3RU94NnBzX3B2aHZWMWZ2OEM2cnIxbXhCVnExc25tTUNPb3h5WTJmXzJpTUdtZFppT1hmbjlLWXFKRjFzVWNLRWZfNmhZLXBqTWhEZGZvWURLSXh2aFpkUDRkaQ?oc=5",
+       "ts": "2026-07-02T19:15:00Z",
+       "provenance": "echo",
+       "motive_note": "position not catalogued - evidence kind: journalist"
+      }
+     ]
+    }
+   },
+   "viewpoints": [
+    {
+     "stance": "US considers exiting USMCA",
+     "carriers": [
+      {
+       "outlet": "Anadolu Agency",
+       "kind": "state media",
+       "url": "https://www.aa.com.tr/en/americas/washington-declines-to-renew-us-mexico-canada-agreement-sparking-trade-uncertainty/3984843",
+       "ts_utc": "2026-07-03T02:57:13Z"
+      },
+      {
+       "outlet": "constructconnect.com",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPN01NOExJTEEyZE0yazlkM2JobVBOWkxRbVRQcTd4ZVhGYXNfZFZaSGc0ZnJLR3hSUDVTRXNkcHhyemRjaHkwbTc5OEJaR2g1ZXJaZUFZNkF1ZmUtNnpIODVHMXVtVUtxVWNGdU80TUtxSllKeDR0cG9JMWxILVV5N1Z2cTV3cVZHMkltZ20tTzFfeFRlQ3dZcGZIRFlydl9DelNkdXlReDRhbGpCX3J3RGV6X3lTNEk2Ym9QTTdvRjZOY0tmVWszYk1may00QQ?oc=5",
+       "ts_utc": "2026-07-02T12:50:30Z"
+      },
+      {
+       "outlet": "Investing.com",
+       "kind": "journalist",
+       "url": "https://www.investing.com/news/economic-indicators/us-canada-mexico-review-trade-pact-likely-putting-it-into-limbo-as-trump-demands-changes-4770977",
+       "ts_utc": "2026-07-02T05:00:54Z"
+      }
+     ]
+    },
+    {
+     "stance": "Canada and Mexico want renewal",
+     "carriers": [
+      {
+       "outlet": "BBC",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1HRkdVZlRUNm5IT2ZGbk00azhmb2dReEFSVm8zZ1pOcDZfa2FkWk5wNnVLSHR4c0hLZWo1RXdFbDh1b1lFS0ZfVy1iQzQ4bkx1QU1SMVBQdmt3dw?oc=5",
+       "ts_utc": "2026-07-02T13:43:39Z"
+      },
+      {
+       "outlet": "The Packer",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZHZ0ZURTZm1VLTByUEpGMzlDSHlVc3NlTE5OTXdYMGZuQm5iSW5LWXZtcEducUxwd1ZEeWk1bUVGZ1dSTEM1Q2R3RU94NnBzX3B2aHZWMWZ2OEM2cnIxbXhCVnExc25tTUNPb3h5WTJmXzJpTUdtZFppT1hmbjlLWXFKRjFzVWNLRWZfNmhZLXBqTWhEZGZvWURLSXh2aFpkUDRkaQ?oc=5",
+       "ts_utc": "2026-07-02T19:15:00Z"
+      },
+      {
+       "outlet": "marketplace.org",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWlVrcVJ0RDdTbzdBc1pUQTc4RVY2YVY3NHFvUXZEUFJfRWVhWm1aNjZibWdQRkcxc1RZN1pjcnJQdEFPSUVhZHFoVjBYdUVpSnBtSGd6TE1BUE1xa0tEVVdqREM3a1NWU1RsUWxqRGoxT081eTJQNGh6Nm5semx1MlE2bzlBOFc1bHhkQXRuZ0VfcVluZFFON3ZvS21xU2NOVEhMMEg4R1dzZw?oc=5",
+       "ts_utc": "2026-07-02T14:20:00Z"
+      }
+     ]
+    }
+   ],
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 104,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Natural Gas Intelligence",
+      "ts": "2026-06-26T12:52:34Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CNBC",
+      "ts": "2026-06-26T14:14:46Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 10
+     },
+     {
+      "outlet": "War on the Rocks",
+      "ts": "2026-06-26T14:19:52Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Reason Magazine",
+      "ts": "2026-06-26T15:00:24Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Financial Times",
+      "ts": "2026-06-26T21:59:32Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK financial press",
+      "items": 3
+     },
+     {
+      "outlet": "Barchart.com",
+      "ts": "2026-06-26T22:01:23Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 4
+     },
+     {
+      "outlet": "Discovery Alert",
+      "ts": "2026-06-26T23:07:29Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CryptoRank",
+      "ts": "2026-06-27T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "canada",
+     "situations": [
+      "russia-ukraine-war-current",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "mexico",
+     "situations": [
+      "venezuela-earthquakes-kill-920-amid-political-cr"
+     ]
+    },
+    {
+     "entity": "trump",
+     "situations": [
+      "colombia-runoff-election-armed-conflict-shift",
+      "gaza-israel-war-current",
+      "russia-ukraine-war-current",
+      "taiwan-strait-tensions-current",
+      "trump-crypto-earnings-disclosure",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    },
+    {
+     "entity": "united states",
+     "situations": [
+      "ebola-spreads-dr-congo-cases-top-676",
+      "europe-record-heatwave-deaths-electricity-surge",
+      "gaza-israel-war-current",
+      "lebanon-hezbollah-disarmament-standoff",
+      "oil-prices-fall-to-pre-war-levels",
+      "russia-hosts-asean-summit-diplomatic-push",
+      "russia-ukraine-war-current",
+      "sudan-civil-war-current",
+      "taiwan-strait-tensions-current",
+      "trump-crypto-earnings-disclosure",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "uk-defence-secretary-resigns-over-spending",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "us-to-pull-fighter-jets-from-nato-europe",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "white house",
+     "situations": [
+      "ebola-spreads-dr-congo-cases-top-676",
+      "trump-crypto-earnings-disclosure",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "CNBC",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "Investing.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Cato Institute",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Reuters",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "constructconnect.com",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "AgWeb",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Anadolu Agency",
+     "n": 1,
+     "class": "state-media"
+    },
+    {
+     "outlet": "Anadolu Ajans\u0131",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Automotive Logistics",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Axios",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "BBC",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-29 12:00",
+      40,
+      52
+     ],
+     [
+      "2026-06-29 18:00",
+      51,
+      56
+     ],
+     [
+      "2026-06-30 00:00",
+      56,
+      59
+     ],
+     [
+      "2026-06-30 06:00",
+      61,
+      56
+     ],
+     [
+      "2026-06-30 12:00",
+      49,
+      57
+     ],
+     [
+      "2026-06-30 18:00",
+      39,
+      56
+     ],
+     [
+      "2026-07-01 00:00",
+      27,
+      54
+     ],
+     [
+      "2026-07-01 06:00",
+      19,
+      46
+     ],
+     [
+      "2026-07-01 12:00",
+      16,
+      36
+     ],
+     [
+      "2026-07-01 18:00",
+      16,
+      28
+     ],
+     [
+      "2026-07-02 00:00",
+      17,
+      27
+     ],
+     [
+      "2026-07-02 06:00",
+      19,
+      27
+     ],
+     [
+      "2026-07-02 12:00",
+      20,
+      26
+     ],
+     [
+      "2026-07-02 18:00",
+      10,
+      24
+     ],
+     [
+      "2026-07-03 00:00",
+      10,
+      25
+     ],
+     [
+      "2026-07-03 06:00",
+      12,
+      27
+     ]
+    ],
+    "mix": {
+     "mainstream": 5,
+     "state-media": 1,
+     "regional": 0,
+     "official": 0,
+     "other": 24
+    },
+    "first_seen": "2026-06-29T14:39:52Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-07-01T03:46:52Z",
+     "a": "NewsNation, Yahoo! Finance Canada, and Investing.com say the US may push to exit the USMCA trade deal with Mexico and Canada.",
+     "b": "Atlantic Council says the USMCA review will result in a stronger, safer, and more prosperous North America."
+    },
+    {
+     "captured_utc": "2026-07-01T20:59:11Z",
+     "a": "U.S. officials say they will not renew or extend the USMCA trade deal with Canada and Mexico.",
+     "b": "Critics, including the New Democrat Coalition and Cato Institute, oppose the withdrawal and urge strengthening or maintaining the USMCA."
+    },
+    {
+     "captured_utc": "2026-07-02T00:23:04Z",
+     "a": "Trump administration says it will not renew the USMCA trade deal with Canada and Mexico.",
+     "b": "New Democrat Coalition says the US should renew and strengthen the USMCA agreement."
+    },
+    {
+     "captured_utc": "2026-07-02T05:38:38Z",
+     "a": "The White House and US agencies say they will not extend the USMCA trade deal.",
+     "b": "Lawmakers and think tanks criticize the US move to withdraw, urging the deal be preserved or strengthened."
+    },
+    {
+     "captured_utc": "2026-07-02T05:57:50Z",
+     "a": "US officials say they will not extend the USMCA trade deal with Canada and Mexico",
+     "b": "New Democrat Coalition says the US should not withdraw from USMCA and urges strengthening via joint review"
+    },
+    {
+     "captured_utc": "2026-07-02T06:20:39Z",
+     "a": "US officials and outlets say the US will not extend or renew the USMCA trade deal with Canada and Mexico.",
+     "b": "New Democrat Coalition and Cato Institute argue the US should strengthen or preserve the USMCA rather than withdraw."
+    },
+    {
+     "captured_utc": "2026-07-02T08:13:21Z",
+     "a": "The White House says it will not renew the USMCA trade deal with Mexico and Canada.",
+     "b": "New Democrat lawmakers oppose the USMCA withdrawal and urge strengthening the trilateral agreement."
+    },
+    {
+     "captured_utc": "2026-07-02T18:08:26Z",
+     "a": "The US says it will not renew the USMCA in its current form and seeks changes.",
+     "b": "Canada and Mexico express concerns over the US decision not to renew the USMCA."
+    },
+    {
+     "captured_utc": "2026-07-02T20:29:21Z",
+     "a": "US government declines to renew USMCA, seeking changes to the trade agreement.",
+     "b": "Critics warn that not renewing USMCA creates uncertainty for industries like automakers and fresh produce."
+    },
+    {
+     "captured_utc": "2026-07-03T07:02:25Z",
+     "a": "US considers exiting USMCA",
+     "b": "Canada and Mexico want renewal"
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 3
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "CL=F",
+      "label": "WTI Crude",
+      "class": "commodity",
+      "last": 69.02,
+      "last_ts": "2026-07-03T03:35:12Z",
+      "basis": "USMCA tariff uncertainty impacts oil trade",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-02T18:38:29Z",
+        68.62
+       ],
+       [
+        "2026-07-02T19:00:00Z",
+        68.44
+       ],
+       [
+        "2026-07-02T19:00:07Z",
+        68.45
+       ],
+       [
+        "2026-07-02T19:28:30Z",
+        68.44
+       ],
+       [
+        "2026-07-02T19:54:04Z",
+        68.47
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        68.52
+       ],
+       [
+        "2026-07-02T20:19:16Z",
+        68.52
+       ],
+       [
+        "2026-07-02T20:20:21Z",
+        68.5
+       ],
+       [
+        "2026-07-02T20:51:27Z",
+        68.45
+       ],
+       [
+        "2026-07-02T20:59:55Z",
+        68.46
+       ],
+       [
+        "2026-07-02T22:00:00Z",
+        68.48
+       ],
+       [
+        "2026-07-02T22:10:10Z",
+        68.48
+       ],
+       [
+        "2026-07-02T22:17:04Z",
+        68.5
+       ],
+       [
+        "2026-07-02T22:38:03Z",
+        68.52
+       ],
+       [
+        "2026-07-02T22:57:27Z",
+        68.48
+       ],
+       [
+        "2026-07-02T23:00:00Z",
+        68.49
+       ],
+       [
+        "2026-07-02T23:13:05Z",
+        68.47
+       ],
+       [
+        "2026-07-02T23:25:02Z",
+        68.43
+       ],
+       [
+        "2026-07-02T23:37:44Z",
+        68.47
+       ],
+       [
+        "2026-07-02T23:49:48Z",
+        68.46
+       ],
+       [
+        "2026-07-03T00:00:00Z",
+        68.38
+       ],
+       [
+        "2026-07-03T00:13:15Z",
+        68.39
+       ],
+       [
+        "2026-07-03T00:14:12Z",
+        68.42
+       ],
+       [
+        "2026-07-03T00:34:39Z",
+        68.38
+       ],
+       [
+        "2026-07-03T00:58:18Z",
+        68.45
+       ],
+       [
+        "2026-07-03T01:00:00Z",
+        68.49
+       ],
+       [
+        "2026-07-03T01:06:12Z",
+        68.57
+       ],
+       [
+        "2026-07-03T01:23:08Z",
+        68.41
+       ],
+       [
+        "2026-07-03T01:32:15Z",
+        68.58
+       ],
+       [
+        "2026-07-03T01:48:50Z",
+        68.9
+       ],
+       [
+        "2026-07-03T02:00:00Z",
+        68.95
+       ],
+       [
+        "2026-07-03T02:03:25Z",
+        68.94
+       ],
+       [
+        "2026-07-03T02:15:26Z",
+        68.94
+       ],
+       [
+        "2026-07-03T02:34:28Z",
+        68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
+       ],
+       [
+        "2026-07-03T03:00:00Z",
+        68.94
+       ],
+       [
+        "2026-07-03T03:02:52Z",
+        68.94
+       ],
+       [
+        "2026-07-03T03:09:26Z",
+        69.02
+       ],
+       [
+        "2026-07-03T03:30:11Z",
+        69.11
+       ],
+       [
+        "2026-07-03T03:35:12Z",
+        69.02
+       ]
+      ]
+     },
+     {
+      "symbol": "DX-Y.NYB",
+      "label": "Dollar Index",
+      "class": "fx",
+      "last": 100.817,
+      "last_ts": "2026-07-03T03:35:20Z",
+      "basis": "USMCA tariff uncertainty affects dollar strength",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-02T18:38:31Z",
+        100.832
+       ],
+       [
+        "2026-07-02T19:00:00Z",
+        100.89
+       ],
+       [
+        "2026-07-02T19:00:09Z",
+        100.857
+       ],
+       [
+        "2026-07-02T19:28:35Z",
+        100.89
+       ],
+       [
+        "2026-07-02T19:54:27Z",
+        100.892
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        100.857
+       ],
+       [
+        "2026-07-02T20:19:17Z",
+        100.857
+       ],
+       [
+        "2026-07-02T20:20:29Z",
+        100.853
+       ],
+       [
+        "2026-07-02T20:51:40Z",
+        100.855
+       ],
+       [
+        "2026-07-02T21:00:00Z",
+        100.864
+       ],
+       [
+        "2026-07-02T21:05:07Z",
+        100.86
+       ],
+       [
+        "2026-07-02T21:27:18Z",
+        100.856
+       ],
+       [
+        "2026-07-02T21:34:07Z",
+        100.871
+       ],
+       [
+        "2026-07-02T21:51:14Z",
+        100.883
+       ],
+       [
+        "2026-07-02T22:00:00Z",
+        100.847
+       ],
+       [
+        "2026-07-02T22:04:58Z",
+        100.848
+       ],
+       [
+        "2026-07-02T23:00:00Z",
+        100.941
+       ],
+       [
+        "2026-07-02T23:31:41Z",
+        100.913
+       ],
+       [
+        "2026-07-02T23:50:17Z",
+        100.943
+       ],
+       [
+        "2026-07-03T00:00:00Z",
+        100.98
+       ],
+       [
+        "2026-07-03T00:13:41Z",
+        100.978
+       ],
+       [
+        "2026-07-03T00:14:13Z",
+        100.973
+       ],
+       [
+        "2026-07-03T00:35:46Z",
+        100.98
+       ],
+       [
+        "2026-07-03T00:58:28Z",
+        100.908
+       ],
+       [
+        "2026-07-03T01:00:00Z",
+        100.88
+       ],
+       [
+        "2026-07-03T01:06:13Z",
+        100.88
+       ],
+       [
+        "2026-07-03T01:23:23Z",
+        100.783
+       ],
+       [
+        "2026-07-03T01:32:22Z",
+        100.819
+       ],
+       [
+        "2026-07-03T01:48:53Z",
+        100.83
+       ],
+       [
+        "2026-07-03T02:00:00Z",
+        100.846
+       ],
+       [
+        "2026-07-03T02:03:31Z",
+        100.838
+       ],
+       [
+        "2026-07-03T02:15:53Z",
+        100.802
+       ],
+       [
+        "2026-07-03T02:34:29Z",
+        100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
+       ],
+       [
+        "2026-07-03T03:00:00Z",
+        100.805
+       ],
+       [
+        "2026-07-03T03:02:56Z",
+        100.804
+       ],
+       [
+        "2026-07-03T03:09:31Z",
+        100.822
+       ],
+       [
+        "2026-07-03T03:30:14Z",
+        100.82
+       ],
+       [
+        "2026-07-03T03:35:20Z",
+        100.817
+       ]
+      ]
+     }
+    ],
+    "note": "Instruments mapped to this topic; correlation pending price history.",
+    "observed_utc": "2026-07-03T11:15:56Z",
+    "anchor_beat": "2026-07-03T06:36:27Z"
+   },
+   "lead_image": {
+    "url": "https://i.cbc.ca/ais/6740aaff-8dda-4d39-9833-1a5839690935,1782929269479/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C428%2C8200%2C4612%29%3BResize%3D620",
+    "source": "CBC World",
+    "focal": {
+     "x": 47,
+     "y": 54
     }
    },
    "gate": {
@@ -26369,7 +26200,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -26913,7 +26744,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:13:53Z",
+    "observed_utc": "2026-07-03T11:15:33Z",
     "anchor_beat": "2026-07-03T06:18:08Z"
    },
    "lead_image": {
@@ -27449,7 +27280,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -28474,7 +28305,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:12:49Z",
+    "observed_utc": "2026-07-03T11:14:26Z",
     "anchor_beat": "2026-07-03T09:35:43Z"
    },
    "lead_image": {
@@ -29237,7 +29068,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -30100,7 +29931,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "History gap: era \"War on Terror era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Soviet war and aftermath\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Durand Line era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
@@ -30252,7 +30083,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:11:30Z",
+    "observed_utc": "2026-07-03T11:13:08Z",
     "anchor_beat": "2026-07-03T09:56:57Z"
    },
    "lead_image": {
@@ -30886,7 +30717,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -31349,7 +31180,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -31868,7 +31699,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:14:02Z",
+    "observed_utc": "2026-07-03T11:15:42Z",
     "anchor_beat": "2026-07-03T10:54:44Z"
    },
    "lead_image": {
@@ -32646,7 +32477,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -33157,7 +32988,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -33379,7 +33210,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:15:46Z",
+    "observed_utc": "2026-07-03T11:17:30Z",
     "anchor_beat": "2026-07-03T04:07:21Z"
    },
    "lead_image": {
@@ -33555,7 +33386,7 @@
    },
    "discovered": true,
    "items_24h": 7,
-   "items_48h": 14,
+   "items_48h": 13,
    "outlets": 11,
    "kinds": [
     "journalist"
@@ -33949,7 +33780,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -34326,7 +34157,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -34742,7 +34573,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -35451,7 +35282,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -35825,7 +35656,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:11:59Z",
+    "observed_utc": "2026-07-03T11:13:37Z",
     "anchor_beat": "2026-07-02T16:08:58Z"
    },
    "lead_image": {
@@ -36367,7 +36198,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -36894,7 +36725,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:14:29Z",
+    "observed_utc": "2026-07-03T11:16:09Z",
     "anchor_beat": "2026-07-02T16:49:37Z"
    },
    "lead_image": {
@@ -37797,7 +37628,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://www.dabangasudan.org/wp-content/uploads/2026/06/Screenshot_20260629_185036_Maps.jpg",
@@ -38270,7 +38101,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -38881,7 +38712,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -39088,7 +38919,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -39905,7 +39736,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -40415,7 +40246,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 10 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -40755,7 +40586,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:12:36Z",
+    "observed_utc": "2026-07-03T11:14:13Z",
     "anchor_beat": "2026-07-02T23:24:53Z"
    },
    "lead_image": {
@@ -41427,7 +41258,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -41537,7 +41368,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:15:41Z",
+    "observed_utc": "2026-07-03T11:17:26Z",
     "anchor_beat": "2026-07-03T08:16:33Z"
    },
    "lead_image": {
@@ -41793,7 +41624,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -42442,7 +42273,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -43347,7 +43178,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -43456,7 +43287,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:11:16Z",
+    "observed_utc": "2026-07-03T11:12:53Z",
     "anchor_beat": "2026-07-03T09:15:24Z"
    },
    "lead_image": {
@@ -43641,7 +43472,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -43872,7 +43703,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:29:05Z",
+    "observed_utc": "2026-07-03T11:30:52Z",
     "anchor_beat": "2026-07-03T00:59:08Z"
    },
    "gate": {
@@ -44157,7 +43988,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -44542,7 +44373,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:16:17Z",
+    "observed_utc": "2026-07-03T11:18:01Z",
     "anchor_beat": "2026-07-03T02:22:36Z"
    },
    "gate": {
@@ -44695,7 +44526,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -44841,7 +44672,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:29:09Z",
+    "observed_utc": "2026-07-03T11:30:56Z",
     "anchor_beat": "2026-07-03T07:48:12Z"
    },
    "gate": {
@@ -45273,7 +45104,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -45722,7 +45553,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -45760,7 +45591,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:13:13Z",
+    "observed_utc": "2026-07-03T11:14:49Z",
     "anchor_beat": "2026-07-03T07:13:11Z"
    },
    "lead_image": {
@@ -46210,7 +46041,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -46353,7 +46184,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -47006,7 +46837,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -47128,7 +46959,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:13:24Z",
+    "observed_utc": "2026-07-03T11:15:01Z",
     "anchor_beat": "2026-07-02T13:51:33Z"
    },
    "lead_image": {
@@ -47615,7 +47446,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -48086,7 +47917,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -48524,7 +48355,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -49218,7 +49049,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -49897,7 +49728,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:11:46Z",
+    "observed_utc": "2026-07-03T11:13:24Z",
     "anchor_beat": "2026-07-03T01:12:39Z"
    },
    "lead_image": {
@@ -50502,7 +50333,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -50926,7 +50757,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -51463,7 +51294,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:14:33Z",
+    "observed_utc": "2026-07-03T11:16:14Z",
     "anchor_beat": "2026-07-03T01:18:26Z"
    },
    "lead_image": {
@@ -52182,7 +52013,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -52486,7 +52317,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T11:10:43Z",
+    "observed_utc": "2026-07-03T11:12:23Z",
     "anchor_beat": "2026-07-03T07:20:01Z"
    },
    "lead_image": {
@@ -52844,7 +52675,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -53209,7 +53040,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -53480,7 +53311,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:14:11Z",
+    "observed_utc": "2026-07-03T11:15:50Z",
     "anchor_beat": "2026-07-02T04:01:05Z"
    },
    "lead_image": {
@@ -53844,7 +53675,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -54533,7 +54364,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:17:04Z",
+    "observed_utc": "2026-07-03T11:18:50Z",
     "anchor_beat": "2026-07-01T21:28:00Z"
    },
    "lead_image": {
@@ -55271,7 +55102,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -56111,7 +55942,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -56590,7 +56421,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -56861,7 +56692,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:19:27Z",
+    "observed_utc": "2026-07-03T11:21:11Z",
     "anchor_beat": "2026-07-01T13:41:11Z"
    },
    "gate": {
@@ -57733,7 +57564,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -58260,7 +58091,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:10:51Z",
+    "observed_utc": "2026-07-03T11:12:31Z",
     "anchor_beat": "2026-06-29T15:56:31Z"
    },
    "lead_image": {
@@ -58832,7 +58663,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "History gap: era \"Post-Mavi Marmara flotilla era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
@@ -59395,7 +59226,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -59922,7 +59753,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:11:55Z",
+    "observed_utc": "2026-07-03T11:13:33Z",
     "anchor_beat": "2026-06-30T06:48:38Z"
    },
    "lead_image": {
@@ -60428,7 +60259,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -61093,7 +60924,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "History gap: era \"Treaty era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
@@ -61588,7 +61419,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -62108,7 +61939,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:12:28Z",
+    "observed_utc": "2026-07-03T11:14:04Z",
     "anchor_beat": "2026-06-27T09:43:00Z"
    },
    "lead_image": {
@@ -62517,7 +62348,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 10 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -62933,7 +62764,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -63121,7 +62952,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -63649,7 +63480,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T11:17:20Z",
+    "observed_utc": "2026-07-03T11:19:03Z",
     "anchor_beat": "2026-06-30T22:30:25Z"
    },
    "gate": {
@@ -63668,7 +63499,56 @@
    }
   }
  ],
- "candidates": [],
+ "candidates": [
+  {
+   "sample": "Seven pro-Palestine protesters convicted of misdemeanour charges in US",
+   "outlets": 3,
+   "count": 6,
+   "status": "watching"
+  },
+  {
+   "sample": "How much will a 4th of July cookout cost this year?",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Isomeric multi-hydrogen-bonding enables blue perovskite LEDs",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Scientists should recognize their own political biases to build public trust",
+   "outlets": 8,
+   "count": 8,
+   "status": "watching"
+  },
+  {
+   "sample": "Vaccination elicits HIV broadly neutralizing antibodies in primates",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Remote-controlled cockroach swarm can now breathe underwater",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Government\u2019s military spending risks us all",
+   "outlets": 6,
+   "count": 6,
+   "status": "watching"
+  },
+  {
+   "sample": "AI and the Workplace: Navigating Religious Objections to Workplace Artificial Intelligence",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  }
+ ],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -63694,6 +63574,12 @@
   "backend": "st"
  },
  "gate": {
+  "clusters": 150,
+  "accepted": 2,
+  "rejected": 21,
+  "existing": 1,
+  "below": 126,
+  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -63708,6 +63594,6 @@
   "edition_utc": "2026-07-03",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1136
+  "overflow": 1133
  }
 }
