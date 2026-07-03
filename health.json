@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-01T18:05:10Z",
+ "generated_utc": "2026-07-03T18:05:13Z",
  "window": "48h",
  "status": "warn",
  "deterministic_status": "warn",
@@ -16,7 +16,7 @@
     "timer": "active",
     "result": "success",
     "exec_status": "0",
-    "active_state": "inactive",
+    "active_state": "activating",
     "status": "ok"
    },
    "horus-watchdog": {
@@ -35,50 +35,50 @@
    }
   },
   "feed": {
-   "age_h": 0.3,
+   "age_h": 0.36,
    "status": "ok"
   },
   "push": {
-   "age_h": 0.3,
+   "age_h": 0.35,
    "status": "ok"
   },
   "backlog": {
-   "count": 119,
-   "of_auto": 175,
+   "count": 198,
+   "of_auto": 267,
    "ids": [
     "us-expands-china-chip-and-ai-tech-bans",
     "global-oil-price-fall-triggers-fuel-price-cuts",
     "ai-powered-physical-therapy-rolled-out-nationall",
     "aramco-helicopter-crash-at-ras-tanura",
     "modi-visits-seychelles-for-indian-ocean-security",
-    "syria-condemns-israeli-attacks-in-daraa",
-    "analysts-claim-israel-seeks-regional-instability",
     "bird-flu-spreads-to-backyard-poultry-and-cats",
-    "indonesia-caps-industrial-lng-price-to-protect-j",
     "rare-earth-mining-projects-expand-globally",
-    "iraq-anti-corruption-crackdown-arrests-officials",
     "plankton-decline-warns-atlantic-ocean-health",
     "us-army-bases-host-critical-minerals",
-    "eu-antitrust-scrutiny-of-google",
-    "ai-detects-sudden-cardiac-death-risk",
     "un-addresses-evolving-terrorism-threat",
     "advances-in-quantum-computing-development",
     "global-heat-wave-economic-impact",
     "us-house-passes-kids-online-safety-bill",
-    "us-libya-diplomacy-push"
+    "us-libya-diplomacy-push",
+    "hk-shanghai-finance-hub-shift",
+    "us-iran-tensions-supreme-court",
+    "peru-presidential-election-2026",
+    "israel-un-report-on-palestinian-children",
+    "california-adopts-claude-ai-for-state",
+    "hong-kong-biotech-hub-expands"
    ],
    "status": "warn"
   },
   "sources": {
    "ok": 63,
-   "failed": 3,
-   "rate": 0.045,
+   "failed": 10,
+   "rate": 0.137,
    "status": "ok"
   }
  },
  "ai_verdict": {
   "status": "warn",
-  "note": "Backlog at 119/175 auto items (68%) \u2014 approaching saturation. Feed/push fresh (0.3h), units healthy, source failure rate 4.5% OK. Check auto-publish pipeline throughput or drain backlog manually.",
+  "note": "Backlog at 198/267 (74%) triggers warn. Feed/push fresh (~0.35h), units healthy, source failure rate 13.7% acceptable. Investigate backlog processing throughput - horus-claude-loop may be lagging behind auto-ingestion rate.",
   "escalations": []
  },
  "alert_sent": false
