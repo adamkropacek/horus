@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-03T05:18:57Z",
+ "generated_utc": "2026-07-03T05:22:39Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -31,6 +31,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -78,6 +79,21 @@
     "id": "euronews",
     "label": "Euronews",
     "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT US-Iran talks affect oil prices amid Hormuz tensions",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:eu-antitrust-scrutiny-of-google",
+    "label": "GDELT EU antitrust scrutiny of Google",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:venezuela-earthquakes-kill-920-amid-political-cr",
+    "label": "GDELT Venezuela earthquakes kill 920 amid political crisis",
+    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -495,22 +511,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 272,
+    "outlets_timed": 271,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "EUvsDisinfo",
-      "ts": "2026-06-26T05:03:44Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Kyiv Independent",
       "ts": "2026-06-26T05:12:41Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "UA regional press",
       "items": 85
      },
@@ -561,6 +569,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 11
+     },
+     {
+      "outlet": "The Sofia Globe",
+      "ts": "2026-06-26T08:05:01Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -633,7 +649,7 @@
     },
     {
      "outlet": "Kyiv Independent",
-     "n": 20,
+     "n": 19,
      "class": "regional"
     },
     {
@@ -1433,7 +1449,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:01:16Z",
+    "observed_utc": "2026-07-03T05:05:03Z",
     "anchor_beat": "2026-07-03T04:38:00Z"
    },
    "lead_image": {
@@ -1928,38 +1944,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 397,
+    "outlets_timed": 398,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Crypto Briefing",
-      "ts": "2026-06-26T05:03:35Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 22
-     },
-     {
-      "outlet": "Reuters",
-      "ts": "2026-06-26T05:04:00Z",
-      "kind": "wire service",
-      "role": "echo",
-      "motive_note": "international wire service",
-      "items": 29
-     },
-     {
-      "outlet": "The Times of Israel",
-      "ts": "2026-06-26T05:05:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "IL regional press",
-      "items": 2
-     },
      {
       "outlet": "Arab News PK",
       "ts": "2026-06-26T05:11:37Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -1990,6 +1982,30 @@
      {
       "outlet": "The Japan Times",
       "ts": "2026-06-26T06:08:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Kurdistan24",
+      "ts": "2026-06-26T06:10:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 6
+     },
+     {
+      "outlet": "Iran Focus",
+      "ts": "2026-06-26T06:43:22Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The Tribune",
+      "ts": "2026-06-26T07:00:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -2343,7 +2359,7 @@
      "state-media": 4,
      "regional": 0,
      "official": 1,
-     "other": 138
+     "other": 139
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -2410,7 +2426,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT US-Iran talks affect oil prices amid Hormuz tensions, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -3143,7 +3159,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:01:45Z",
+    "observed_utc": "2026-07-03T05:05:32Z",
     "anchor_beat": "2026-07-03T03:34:11Z"
    },
    "lead_image": {
@@ -3162,6 +3178,554 @@
      "carriers": 1,
      "provenance": 1,
      "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "eu-antitrust-scrutiny-of-google",
+   "name": "EU antitrust scrutiny of Google",
+   "bucket": "power-money",
+   "topic_tags": [
+    "markets"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-30T16:22:25Z",
+    "sentence_count": 3,
+    "dropped_count": 1,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Google warned that European Union plans to reduce its dominance in search could expose user data to hacking.",
+        "cites": [
+         {
+          "outlet": "Ars Technica",
+          "kind": "journalist",
+          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
+          "ts": "2026-06-29T18:21:31Z",
+          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
+         },
+         {
+          "outlet": "Wired",
+          "kind": "journalist",
+          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+          "ts": "2026-06-29T10:00:00Z",
+          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
+         }
+        ]
+       },
+       {
+        "text": "Top security staff at the company said specifically that search data could be hacked if EU rules change.",
+        "cites": [
+         {
+          "outlet": "Wired",
+          "kind": "journalist",
+          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+          "ts": "2026-06-29T10:00:00Z",
+          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Google described the EU proposals as an effort to weaken its monopoly and argued the same regulatory changes would put users at risk.",
+        "cites": [
+         {
+          "outlet": "Ars Technica",
+          "kind": "journalist",
+          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
+          "ts": "2026-06-29T18:21:31Z",
+          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
+         },
+         {
+          "outlet": "Wired",
+          "kind": "journalist",
+          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+          "ts": "2026-06-29T10:00:00Z",
+          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 65,
+   "items_48h": 96,
+   "outlets": 68,
+   "kinds": [
+    "journalist",
+    "state media",
+    "wire service"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-03T01:22:34Z",
+     "title": "Google loses final EU Android antitrust appeal",
+     "outlet": "Pakistan Today",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbGZBcFEwTUNPWkVqaGtPdmJva0Q1bXh6WU5IYVk3UllQLW9FUXFLbE04R2hZSGMtajVJekR6aWJXcW9SMUVXYWVuNGZzd3FHUEdzM3AxanQtcmF4alZtSUFtekJxSUhMNGthOHlmc0dwR2FJQlo3dDBqelQ2S3BJWTkyZ04wa1BoeVR5SnZuUFJQU1dOejZmOFplVzRTcFJRRXc?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T00:12:19Z",
+     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
+     "outlet": "NST Online",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYd9IBzgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYdw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T23:08:16Z",
+     "title": "Dev says Google warned him about account hijack - then charged him $11,000 anyway",
+     "outlet": "The Register",
+     "kind": "journalist",
+     "url": "https://www.theregister.com/cyber-crime/2026/07/03/dev-says-google-warned-him-about-account-hijack-then-charged-him-11000-anyway/5266234",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T21:19:41Z",
+     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
+     "outlet": "ETLegalWorld.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM1E5a01mV0pNQ3dTWUR2Y3JCVlFvZVYtS2MwNjlmNkVQLUt5SklKek9VS2ZKbmRuM2ttd1hDSjN2dm9Nd1RndFp1ZUM3ZGhKRnJUUTcwdERCT2dyQ3RqRjJXSFJGNmF1VHE5T3lObkdPTlFUMTBDZlpJa1Roa25fQmpSdU5sNUJPYk5pdWJXVHdyRU1aT3pQNHFzVGFkLWd0eG90VjNZaVFXWURHa2hkMkhyaGYyazBmQWlidzVzUEFfUmNSOGI5Wi1fZmpRTUk0dXlvRW53cmgyQ2RZZ1hybDJRRzdSb3plaHNHLXVCNXFfQXNad1Zr0gH3AUFVX3lxTE8zUTlrTWZXSk1Dd1NZRHZjckJWUW9lVi1LYzA2OWY2RVAtS3lKSUp6T1VLZkpuZG4za213WENKM3Z2b013VGd0WnVlQzdkaEpGclRRNzB0REJPZ3JDdGpGMldIUkY2YXVUcTlPeU5uR09OUVQxMENmWklrVGhrbl9CalJ1Tmw1Qk9iTml1YldUd3JFTVpPelA0cXNUYWQtZ3R4b3RWM1lpUVdZREdraGQySHJoZjJrMGZBaWJ3NXNQQV9SY1I4YjlaLV9malFNSTR1eW9FbndyaDJDZFlnWHJsMlFHN1JvemVoc0ctdUI1cV9Bc1p3Vms?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T19:30:00Z",
+     "title": "Google Loses Final Appeal as EU Upholds \u20ac4.1 Billion Android Antitrust Fine",
+     "outlet": "Analytics Insight",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaWVDN0YzUWtLVEpRaFVVY2xwVkFyTmt3XzlNbTRhdGRQblVWV2t2SmE2ZTF0TDNHT0pveVBxUU54b0VQaHBlS2pvQmNJYjE4VG9PTDR4dC1fS3h3UWhadFA4NXloN0tyRVk1ZDhLZmdwVUJ1ZGJLNG5xaXBNZUV5RDBFeU0yNFZic2hVYnVzdjBmTHVtWTV1N1dWdHJuVW9YRmdsWjRBX1JyUFhvb2pRQ9IBvgFBVV95cUxPQmN1SEgxZ2loM0VLWTlQcEUwSGh6SmRUM0phaUxtR20zdU8wam9WVHdjWUpsd1doSTNFTGJBaXEydUh6c3A2Wm1IV0NiY19hX3pQRkU1S1hBVWg4cEpJeTVKMmNZaFpjSXNLRFZZY3Jfa1RGNUZtRkNuWVUzRkRMRTlnOWExcEJkX0ltQjlPWTZXVzVQZU5XWXBCT1MtTVpkbGpsa0c4RWZmeGlUeTMzUTB4RHhKeW9yRHVhT3Bn?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T19:14:46Z",
+     "title": "A warning sign about AI\u2019s real cost, courtesy of Google and Amazon",
+     "outlet": "TechCrunch",
+     "kind": "journalist",
+     "url": "https://techcrunch.com/2026/07/02/a-warning-sign-about-ais-real-cost-courtesy-of-google-and-amazon/",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T18:35:01Z",
+     "title": "Google Loses Appeal Against US$4.69 Billion EU Antitrust Fine",
+     "outlet": "Mexico Business News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lPWnd4TFdKYngxeGhnWVVHLUtLQzI4Nl9mRFZZUzJ1OXozUjVqWlpvNjJNVGFhVmVMY003S0ViWGpBYVlUemJWblpPeXdiNVpuSVgyWlBrVkZoOFhSNnhCUHNmWTh1NERVY05xZ19IV1VzMG4wcW5VYlNReE10RFFBb09RLWI5WkVPUlAyMW1tMlJPOUZRcTVOclU3dw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T17:18:00Z",
+     "title": "Google loses fight against EU\u2019s record $4.7B fine over alleged antitrust practices",
+     "outlet": "New York Post",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRk1ISWVsZVBNVHd3bV9FdG9xUzhLVF9LZm1iOHNFaHRnZVJFYVJWaFhkaENCRDlLbkFXWGI1SEFHSGJEbWFjS1FPZVFKOTRmbzNtaV9tX0MzM2ZUd3FGOFUzOFNLOTBNUDdFTmVpVVRGVzM4MzRiY2llUlM2aFdRSW4zdS1qU1dETGRfT2NRaGhEODRVVm1KRzE0R1ZkYTF5aGpOdURONVFkQUtYWEs1bHgxYk01SnhPR0dUNA?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-02T21:03:01Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 94,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "interaksyon.philstar.com",
+      "ts": "2026-06-26T05:15:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "gsmarena.com",
+      "ts": "2026-06-26T09:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "bgr.com",
+      "ts": "2026-06-26T14:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "New York Post",
+      "ts": "2026-06-26T20:56:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "The Register",
+      "ts": "2026-06-26T21:50:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "timesofindia.indiatimes.com",
+      "ts": "2026-06-27T10:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "businessinsider.com",
+      "ts": "2026-06-27T10:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "jagranjosh.com",
+      "ts": "2026-06-27T10:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Yahoo Finance",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "24/7 Wall St.",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "Firstpost",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Investing.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Reuters",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "timesofindia.indiatimes.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Ars Technica",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "CNBC",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Daily Sabah",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Devdiscourse",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "ET Telecom",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Financial Times",
+     "n": 2,
+     "class": "mainstream"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-29 18:00",
+      8,
+      9
+     ],
+     [
+      "2026-06-30 00:00",
+      8,
+      10
+     ],
+     [
+      "2026-06-30 06:00",
+      8,
+      11
+     ],
+     [
+      "2026-06-30 12:00",
+      7,
+      10
+     ],
+     [
+      "2026-06-30 18:00",
+      6,
+      10
+     ],
+     [
+      "2026-07-01 12:00",
+      14,
+      17
+     ],
+     [
+      "2026-07-01 18:00",
+      16,
+      17
+     ],
+     [
+      "2026-07-02 00:00",
+      23,
+      22
+     ],
+     [
+      "2026-07-02 06:00",
+      52,
+      41
+     ],
+     [
+      "2026-07-02 12:00",
+      61,
+      56
+     ],
+     [
+      "2026-07-02 18:00",
+      68,
+      63
+     ],
+     [
+      "2026-07-03 00:00",
+      73,
+      68
+     ]
+    ],
+    "mix": {
+     "mainstream": 4,
+     "state-media": 1,
+     "regional": 0,
+     "official": 0,
+     "other": 90
+    },
+    "first_seen": "2026-06-29T19:07:12Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT EU antitrust scrutiny of Google, Times of Israel.",
+    "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 3
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "GOOGL",
+      "label": "Alphabet",
+      "class": "equity",
+      "last": 359.91,
+      "last_ts": "2026-07-02T20:00:00Z",
+      "basis": "Google antitrust fine impacts search engine stock",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-02T13:30:00Z",
+        359.265
+       ],
+       [
+        "2026-07-02T13:32:41Z",
+        359.545
+       ],
+       [
+        "2026-07-02T13:56:17Z",
+        362.72
+       ],
+       [
+        "2026-07-02T14:20:06Z",
+        362.377
+       ],
+       [
+        "2026-07-02T14:30:00Z",
+        361.05
+       ],
+       [
+        "2026-07-02T14:54:52Z",
+        360.89
+       ],
+       [
+        "2026-07-02T15:17:59Z",
+        358.78
+       ],
+       [
+        "2026-07-02T15:30:00Z",
+        356.435
+       ],
+       [
+        "2026-07-02T15:49:14Z",
+        356.585
+       ],
+       [
+        "2026-07-02T16:14:52Z",
+        354.97
+       ],
+       [
+        "2026-07-02T16:30:00Z",
+        354.71
+       ],
+       [
+        "2026-07-02T16:51:07Z",
+        354.78
+       ],
+       [
+        "2026-07-02T17:18:59Z",
+        354.59
+       ],
+       [
+        "2026-07-02T17:30:00Z",
+        356.23
+       ],
+       [
+        "2026-07-02T17:42:38Z",
+        356.45
+       ],
+       [
+        "2026-07-02T18:07:18Z",
+        357.505
+       ],
+       [
+        "2026-07-02T18:08:23Z",
+        357.47
+       ],
+       [
+        "2026-07-02T18:30:00Z",
+        358.455
+       ],
+       [
+        "2026-07-02T18:44:32Z",
+        358.425
+       ],
+       [
+        "2026-07-02T18:48:35Z",
+        358.9
+       ],
+       [
+        "2026-07-02T19:10:09Z",
+        359.2
+       ],
+       [
+        "2026-07-02T19:30:00Z",
+        359.13
+       ],
+       [
+        "2026-07-02T19:38:37Z",
+        359.1599
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        359.91
+       ]
+      ]
+     }
+    ],
+    "note": "Instruments mapped to this topic; correlation pending price history.",
+    "observed_utc": "2026-07-03T05:09:41Z",
+    "anchor_beat": "2026-07-03T01:22:34Z"
+   },
+   "lead_image": {
+    "url": "https://image.cnbcfm.com/api/v1/image/108329754-1782978643176-gettyimages-458933277-000019668000_XXXLarge.jpeg?v=1782978650&w=1920&h=1080",
+    "source": "CNBC",
+    "focal": {
+     "x": 31,
+     "y": 16
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -3468,7 +4032,7 @@
     ]
    },
    "discovered": false,
-   "items_24h": 65,
+   "items_24h": 64,
    "items_48h": 122,
    "outlets": 68,
    "kinds": [
@@ -5065,7 +5629,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:01:18Z",
+    "observed_utc": "2026-07-03T05:05:05Z",
     "anchor_beat": "2026-07-02T21:40:00Z"
    },
    "lead_image": {
@@ -5074,554 +5638,6 @@
     "focal": {
      "x": 63,
      "y": 21
-    }
-   }
-  },
-  {
-   "id": "eu-antitrust-scrutiny-of-google",
-   "name": "EU antitrust scrutiny of Google",
-   "bucket": "power-money",
-   "topic_tags": [
-    "markets"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-30T16:22:25Z",
-    "sentence_count": 3,
-    "dropped_count": 1,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Google warned that European Union plans to reduce its dominance in search could expose user data to hacking.",
-        "cites": [
-         {
-          "outlet": "Ars Technica",
-          "kind": "journalist",
-          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
-          "ts": "2026-06-29T18:21:31Z",
-          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
-         },
-         {
-          "outlet": "Wired",
-          "kind": "journalist",
-          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
-          "ts": "2026-06-29T10:00:00Z",
-          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
-         }
-        ]
-       },
-       {
-        "text": "Top security staff at the company said specifically that search data could be hacked if EU rules change.",
-        "cites": [
-         {
-          "outlet": "Wired",
-          "kind": "journalist",
-          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
-          "ts": "2026-06-29T10:00:00Z",
-          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Google described the EU proposals as an effort to weaken its monopoly and argued the same regulatory changes would put users at risk.",
-        "cites": [
-         {
-          "outlet": "Ars Technica",
-          "kind": "journalist",
-          "url": "https://arstechnica.com/gadgets/2026/06/google-warns-eus-plans-to-weaken-its-monopoly-could-expose-user-data/",
-          "ts": "2026-06-29T18:21:31Z",
-          "title": "Google warns EU's plans to weaken its monopoly could expose user data"
-         },
-         {
-          "outlet": "Wired",
-          "kind": "journalist",
-          "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
-          "ts": "2026-06-29T10:00:00Z",
-          "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 65,
-   "items_48h": 96,
-   "outlets": 68,
-   "kinds": [
-    "journalist",
-    "state media",
-    "wire service"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-03T01:22:34Z",
-     "title": "Google loses final EU Android antitrust appeal",
-     "outlet": "Pakistan Today",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbGZBcFEwTUNPWkVqaGtPdmJva0Q1bXh6WU5IYVk3UllQLW9FUXFLbE04R2hZSGMtajVJekR6aWJXcW9SMUVXYWVuNGZzd3FHUEdzM3AxanQtcmF4alZtSUFtekJxSUhMNGthOHlmc0dwR2FJQlo3dDBqelQ2S3BJWTkyZ04wa1BoeVR5SnZuUFJQU1dOejZmOFplVzRTcFJRRXc?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T00:12:19Z",
-     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
-     "outlet": "NST Online",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYd9IBzgFBVV95cUxQaGdzNU5oamtiQWszV1pIMlp1VUhkY2ZmTldUbXh5UFpnTlh2RGFZTk12Y3VEZGlQZkFMU3lPa2xLQ0pqaTVWNUh2eUVYRmZiZDhTR1doNkU1cG85MktzcklMT3ZXaEFNc0FIMG4wZHltNm84TWxPcDZodGlzVi1iT01neXNCRGxVMGlwcUViWUNMV21XX3k2QWhoNGF0OWd0WFBtSlBsN0hpZEktS0dIc0M1QjY4ZGd3QTVIZjExZWVUYm5iOGJ2R0tud0tYdw?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T23:08:16Z",
-     "title": "Dev says Google warned him about account hijack - then charged him $11,000 anyway",
-     "outlet": "The Register",
-     "kind": "journalist",
-     "url": "https://www.theregister.com/cyber-crime/2026/07/03/dev-says-google-warned-him-about-account-hijack-then-charged-him-11000-anyway/5266234",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T21:19:41Z",
-     "title": "Google loses fight against record \u20ac4.1 billion EU antitrust fine",
-     "outlet": "ETLegalWorld.com",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPM1E5a01mV0pNQ3dTWUR2Y3JCVlFvZVYtS2MwNjlmNkVQLUt5SklKek9VS2ZKbmRuM2ttd1hDSjN2dm9Nd1RndFp1ZUM3ZGhKRnJUUTcwdERCT2dyQ3RqRjJXSFJGNmF1VHE5T3lObkdPTlFUMTBDZlpJa1Roa25fQmpSdU5sNUJPYk5pdWJXVHdyRU1aT3pQNHFzVGFkLWd0eG90VjNZaVFXWURHa2hkMkhyaGYyazBmQWlidzVzUEFfUmNSOGI5Wi1fZmpRTUk0dXlvRW53cmgyQ2RZZ1hybDJRRzdSb3plaHNHLXVCNXFfQXNad1Zr0gH3AUFVX3lxTE8zUTlrTWZXSk1Dd1NZRHZjckJWUW9lVi1LYzA2OWY2RVAtS3lKSUp6T1VLZkpuZG4za213WENKM3Z2b013VGd0WnVlQzdkaEpGclRRNzB0REJPZ3JDdGpGMldIUkY2YXVUcTlPeU5uR09OUVQxMENmWklrVGhrbl9CalJ1Tmw1Qk9iTml1YldUd3JFTVpPelA0cXNUYWQtZ3R4b3RWM1lpUVdZREdraGQySHJoZjJrMGZBaWJ3NXNQQV9SY1I4YjlaLV9malFNSTR1eW9FbndyaDJDZFlnWHJsMlFHN1JvemVoc0ctdUI1cV9Bc1p3Vms?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T19:30:00Z",
-     "title": "Google Loses Final Appeal as EU Upholds \u20ac4.1 Billion Android Antitrust Fine",
-     "outlet": "Analytics Insight",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaWVDN0YzUWtLVEpRaFVVY2xwVkFyTmt3XzlNbTRhdGRQblVWV2t2SmE2ZTF0TDNHT0pveVBxUU54b0VQaHBlS2pvQmNJYjE4VG9PTDR4dC1fS3h3UWhadFA4NXloN0tyRVk1ZDhLZmdwVUJ1ZGJLNG5xaXBNZUV5RDBFeU0yNFZic2hVYnVzdjBmTHVtWTV1N1dWdHJuVW9YRmdsWjRBX1JyUFhvb2pRQ9IBvgFBVV95cUxPQmN1SEgxZ2loM0VLWTlQcEUwSGh6SmRUM0phaUxtR20zdU8wam9WVHdjWUpsd1doSTNFTGJBaXEydUh6c3A2Wm1IV0NiY19hX3pQRkU1S1hBVWg4cEpJeTVKMmNZaFpjSXNLRFZZY3Jfa1RGNUZtRkNuWVUzRkRMRTlnOWExcEJkX0ltQjlPWTZXVzVQZU5XWXBCT1MtTVpkbGpsa0c4RWZmeGlUeTMzUTB4RHhKeW9yRHVhT3Bn?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T19:14:46Z",
-     "title": "A warning sign about AI\u2019s real cost, courtesy of Google and Amazon",
-     "outlet": "TechCrunch",
-     "kind": "journalist",
-     "url": "https://techcrunch.com/2026/07/02/a-warning-sign-about-ais-real-cost-courtesy-of-google-and-amazon/",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T18:35:01Z",
-     "title": "Google Loses Appeal Against US$4.69 Billion EU Antitrust Fine",
-     "outlet": "Mexico Business News",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lPWnd4TFdKYngxeGhnWVVHLUtLQzI4Nl9mRFZZUzJ1OXozUjVqWlpvNjJNVGFhVmVMY003S0ViWGpBYVlUemJWblpPeXdiNVpuSVgyWlBrVkZoOFhSNnhCUHNmWTh1NERVY05xZ19IV1VzMG4wcW5VYlNReE10RFFBb09RLWI5WkVPUlAyMW1tMlJPOUZRcTVOclU3dw?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T17:18:00Z",
-     "title": "Google loses fight against EU\u2019s record $4.7B fine over alleged antitrust practices",
-     "outlet": "New York Post",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRk1ISWVsZVBNVHd3bV9FdG9xUzhLVF9LZm1iOHNFaHRnZVJFYVJWaFhkaENCRDlLbkFXWGI1SEFHSGJEbWFjS1FPZVFKOTRmbzNtaV9tX0MzM2ZUd3FGOFUzOFNLOTBNUDdFTmVpVVRGVzM4MzRiY2llUlM2aFdRSW4zdS1qU1dETGRfT2NRaGhEODRVVm1KRzE0R1ZkYTF5aGpOdURONVFkQUtYWEs1bHgxYk01SnhPR0dUNA?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-02T21:03:01Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 94,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "interaksyon.philstar.com",
-      "ts": "2026-06-26T05:15:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "gsmarena.com",
-      "ts": "2026-06-26T09:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "bgr.com",
-      "ts": "2026-06-26T14:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "New York Post",
-      "ts": "2026-06-26T20:56:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "The Register",
-      "ts": "2026-06-26T21:50:06Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "timesofindia.indiatimes.com",
-      "ts": "2026-06-27T10:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "businessinsider.com",
-      "ts": "2026-06-27T10:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "jagranjosh.com",
-      "ts": "2026-06-27T10:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Yahoo Finance",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "24/7 Wall St.",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "Firstpost",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Investing.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Reuters",
-     "n": 3,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "timesofindia.indiatimes.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Ars Technica",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "CNBC",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Daily Sabah",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Devdiscourse",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "ET Telecom",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Financial Times",
-     "n": 2,
-     "class": "mainstream"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-29 18:00",
-      8,
-      9
-     ],
-     [
-      "2026-06-30 00:00",
-      8,
-      10
-     ],
-     [
-      "2026-06-30 06:00",
-      8,
-      11
-     ],
-     [
-      "2026-06-30 12:00",
-      7,
-      10
-     ],
-     [
-      "2026-06-30 18:00",
-      6,
-      10
-     ],
-     [
-      "2026-07-01 12:00",
-      14,
-      17
-     ],
-     [
-      "2026-07-01 18:00",
-      16,
-      17
-     ],
-     [
-      "2026-07-02 00:00",
-      23,
-      22
-     ],
-     [
-      "2026-07-02 06:00",
-      52,
-      41
-     ],
-     [
-      "2026-07-02 12:00",
-      61,
-      56
-     ],
-     [
-      "2026-07-02 18:00",
-      68,
-      63
-     ],
-     [
-      "2026-07-03 00:00",
-      73,
-      68
-     ]
-    ],
-    "mix": {
-     "mainstream": 4,
-     "state-media": 1,
-     "regional": 0,
-     "official": 0,
-     "other": 90
-    },
-    "first_seen": "2026-06-29T19:07:12Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
-    "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 3
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "GOOGL",
-      "label": "Alphabet",
-      "class": "equity",
-      "last": 359.91,
-      "last_ts": "2026-07-02T20:00:00Z",
-      "basis": "Google antitrust fine impacts search engine stock",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-02T13:30:00Z",
-        359.265
-       ],
-       [
-        "2026-07-02T13:32:41Z",
-        359.545
-       ],
-       [
-        "2026-07-02T13:56:17Z",
-        362.72
-       ],
-       [
-        "2026-07-02T14:20:06Z",
-        362.377
-       ],
-       [
-        "2026-07-02T14:30:00Z",
-        361.05
-       ],
-       [
-        "2026-07-02T14:54:52Z",
-        360.89
-       ],
-       [
-        "2026-07-02T15:17:59Z",
-        358.78
-       ],
-       [
-        "2026-07-02T15:30:00Z",
-        356.435
-       ],
-       [
-        "2026-07-02T15:49:14Z",
-        356.585
-       ],
-       [
-        "2026-07-02T16:14:52Z",
-        354.97
-       ],
-       [
-        "2026-07-02T16:30:00Z",
-        354.71
-       ],
-       [
-        "2026-07-02T16:51:07Z",
-        354.78
-       ],
-       [
-        "2026-07-02T17:18:59Z",
-        354.59
-       ],
-       [
-        "2026-07-02T17:30:00Z",
-        356.23
-       ],
-       [
-        "2026-07-02T17:42:38Z",
-        356.45
-       ],
-       [
-        "2026-07-02T18:07:18Z",
-        357.505
-       ],
-       [
-        "2026-07-02T18:08:23Z",
-        357.47
-       ],
-       [
-        "2026-07-02T18:30:00Z",
-        358.455
-       ],
-       [
-        "2026-07-02T18:44:32Z",
-        358.425
-       ],
-       [
-        "2026-07-02T18:48:35Z",
-        358.9
-       ],
-       [
-        "2026-07-02T19:10:09Z",
-        359.2
-       ],
-       [
-        "2026-07-02T19:30:00Z",
-        359.13
-       ],
-       [
-        "2026-07-02T19:38:37Z",
-        359.1599
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        359.91
-       ]
-      ]
-     }
-    ],
-    "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:06:01Z",
-    "anchor_beat": "2026-07-03T01:22:34Z"
-   },
-   "lead_image": {
-    "url": "https://image.cnbcfm.com/api/v1/image/108329754-1782978643176-gettyimages-458933277-000019668000_XXXLarge.jpeg?v=1782978650&w=1920&h=1080",
-    "source": "CNBC",
-    "focal": {
-     "x": 31,
-     "y": 16
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
     }
    }
   },
@@ -6767,7 +6783,7 @@
    },
    "discovered": true,
    "items_24h": 50,
-   "items_48h": 111,
+   "items_48h": 110,
    "outlets": 42,
    "kinds": [
     "journalist",
@@ -7353,7 +7369,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Venezuela earthquakes kill 920 amid political crisis, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8649,18 +8665,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "FXStreet",
-      "ts": "2026-06-26T05:06:14Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 22
-     },
-     {
       "outlet": "MSN",
       "ts": "2026-06-26T05:30:13Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 12
      },
@@ -8711,6 +8719,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "thestreet.com",
+      "ts": "2026-06-26T08:03:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 11
      }
     ],
     "unplaced": []
@@ -9597,7 +9613,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:04:03Z",
+    "observed_utc": "2026-07-03T05:07:48Z",
     "anchor_beat": "2026-07-03T04:02:01Z"
    },
    "lead_image": {
@@ -10540,7 +10556,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:02:25Z",
+    "observed_utc": "2026-07-03T05:06:11Z",
     "anchor_beat": "2026-07-02T22:00:38Z"
    },
    "lead_image": {
@@ -11614,7 +11630,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:01:55Z",
+    "observed_utc": "2026-07-03T05:05:42Z",
     "anchor_beat": "2026-07-03T02:44:32Z"
    },
    "lead_image": {
@@ -12592,7 +12608,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:08:47Z",
+    "observed_utc": "2026-07-03T05:12:18Z",
     "anchor_beat": "2026-07-02T18:24:32Z"
    },
    "lead_image": {
@@ -13677,7 +13693,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:03:35Z",
+    "observed_utc": "2026-07-03T05:07:21Z",
     "anchor_beat": "2026-07-03T04:11:53Z"
    },
    "lead_image": {
@@ -14406,7 +14422,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:15:18Z",
+    "observed_utc": "2026-07-03T05:18:48Z",
     "anchor_beat": "2026-07-03T04:00:23Z"
    },
    "lead_image": {
@@ -15764,7 +15780,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:02:52Z",
+    "observed_utc": "2026-07-03T05:06:40Z",
     "anchor_beat": "2026-07-03T03:16:19Z"
    },
    "lead_image": {
@@ -17407,7 +17423,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:01:25Z",
+    "observed_utc": "2026-07-03T05:05:12Z",
     "anchor_beat": "2026-07-03T03:43:38Z"
    },
    "lead_image": {
@@ -18102,7 +18118,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:05:09Z",
+    "observed_utc": "2026-07-03T05:08:50Z",
     "anchor_beat": "2026-07-02T21:39:44Z"
    },
    "gate": {
@@ -19439,7 +19455,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:12:51Z",
+    "observed_utc": "2026-07-03T05:16:17Z",
     "anchor_beat": "2026-07-02T19:43:21Z"
    },
    "lead_image": {
@@ -20585,7 +20601,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:04:18Z",
+    "observed_utc": "2026-07-03T05:08:01Z",
     "anchor_beat": "2026-07-03T01:40:15Z"
    },
    "lead_image": {
@@ -22520,7 +22536,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:03:48Z",
+    "observed_utc": "2026-07-03T05:07:34Z",
     "anchor_beat": "2026-07-02T23:04:45Z"
    },
    "lead_image": {
@@ -23085,7 +23101,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:16:47Z",
+    "observed_utc": "2026-07-03T05:20:27Z",
     "anchor_beat": "2026-07-03T04:00:32Z"
    },
    "gate": {
@@ -24366,7 +24382,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:03:39Z",
+    "observed_utc": "2026-07-03T05:07:25Z",
     "anchor_beat": "2026-07-02T23:00:22Z"
    },
    "lead_image": {
@@ -25758,7 +25774,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:02:50Z",
+    "observed_utc": "2026-07-03T05:06:38Z",
     "anchor_beat": "2026-07-02T16:08:58Z"
    },
    "lead_image": {
@@ -28097,7 +28113,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 9,
+   "items_24h": 8,
    "items_48h": 44,
    "outlets": 25,
    "kinds": [
@@ -29050,7 +29066,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:15:13Z",
+    "observed_utc": "2026-07-03T05:18:44Z",
     "anchor_beat": "2026-07-02T16:43:17Z"
    },
    "lead_image": {
@@ -30601,7 +30617,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:06:55Z",
+    "observed_utc": "2026-07-03T05:10:33Z",
     "anchor_beat": "2026-07-03T01:16:12Z"
    },
    "lead_image": {
@@ -32575,7 +32591,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:05:20Z",
+    "observed_utc": "2026-07-03T05:09:00Z",
     "anchor_beat": "2026-07-03T02:57:13Z"
    },
    "lead_image": {
@@ -33371,7 +33387,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:05:04Z",
+    "observed_utc": "2026-07-03T05:08:46Z",
     "anchor_beat": "2026-07-03T04:00:18Z"
    },
    "lead_image": {
@@ -34024,7 +34040,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:03:44Z",
+    "observed_utc": "2026-07-03T05:07:30Z",
     "anchor_beat": "2026-07-02T17:17:39Z"
    },
    "gate": {
@@ -35080,7 +35096,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:05:34Z",
+    "observed_utc": "2026-07-03T05:09:14Z",
     "anchor_beat": "2026-07-02T16:49:37Z"
    },
    "lead_image": {
@@ -36380,7 +36396,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:08:08Z",
+    "observed_utc": "2026-07-03T05:11:41Z",
     "anchor_beat": "2026-07-02T21:54:07Z"
    },
    "lead_image": {
@@ -37480,7 +37496,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:02:20Z",
+    "observed_utc": "2026-07-03T05:06:06Z",
     "anchor_beat": "2026-07-03T02:18:29Z"
    },
    "lead_image": {
@@ -38328,7 +38344,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:06:44Z",
+    "observed_utc": "2026-07-03T05:10:22Z",
     "anchor_beat": "2026-07-03T02:12:27Z"
    },
    "lead_image": {
@@ -40309,7 +40325,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:03:30Z",
+    "observed_utc": "2026-07-03T05:07:16Z",
     "anchor_beat": "2026-07-02T14:48:55Z"
    },
    "lead_image": {
@@ -42102,7 +42118,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:16:52Z",
+    "observed_utc": "2026-07-03T05:20:31Z",
     "anchor_beat": "2026-07-02T15:09:00Z"
    },
    "gate": {
@@ -44588,7 +44604,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:02:04Z",
+    "observed_utc": "2026-07-03T05:05:51Z",
     "anchor_beat": "2026-07-02T15:03:19Z"
    },
    "lead_image": {
@@ -45362,7 +45378,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:04:23Z",
+    "observed_utc": "2026-07-03T05:08:06Z",
     "anchor_beat": "2026-07-02T13:51:33Z"
    },
    "lead_image": {
@@ -48769,7 +48785,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:02:37Z",
+    "observed_utc": "2026-07-03T05:06:24Z",
     "anchor_beat": "2026-07-03T01:12:39Z"
    },
    "lead_image": {
@@ -49923,7 +49939,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:04:09Z",
+    "observed_utc": "2026-07-03T05:07:53Z",
     "anchor_beat": "2026-07-03T02:19:45Z"
    },
    "lead_image": {
@@ -50785,7 +50801,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T05:05:39Z",
+    "observed_utc": "2026-07-03T05:09:19Z",
     "anchor_beat": "2026-07-03T01:18:26Z"
    },
    "lead_image": {
@@ -51866,7 +51882,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:05:14Z",
+    "observed_utc": "2026-07-03T05:08:55Z",
     "anchor_beat": "2026-07-02T04:01:05Z"
    },
    "lead_image": {
@@ -52887,7 +52903,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:08:17Z",
+    "observed_utc": "2026-07-03T05:11:49Z",
     "anchor_beat": "2026-07-01T21:28:00Z"
    },
    "lead_image": {
@@ -55032,7 +55048,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:10:40Z",
+    "observed_utc": "2026-07-03T05:14:03Z",
     "anchor_beat": "2026-07-01T13:41:11Z"
    },
    "gate": {
@@ -56256,7 +56272,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:01:31Z",
+    "observed_utc": "2026-07-03T05:05:18Z",
     "anchor_beat": "2026-06-30T18:15:34Z"
    },
    "lead_image": {
@@ -57659,7 +57675,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:01:39Z",
+    "observed_utc": "2026-07-03T05:05:27Z",
     "anchor_beat": "2026-06-29T15:56:31Z"
    },
    "lead_image": {
@@ -59321,7 +59337,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:02:45Z",
+    "observed_utc": "2026-07-03T05:06:34Z",
     "anchor_beat": "2026-06-30T06:48:38Z"
    },
    "lead_image": {
@@ -60836,7 +60852,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:03:21Z",
+    "observed_utc": "2026-07-03T05:07:07Z",
     "anchor_beat": "2026-06-27T09:43:00Z"
    },
    "lead_image": {
@@ -61951,7 +61967,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T05:08:31Z",
+    "observed_utc": "2026-07-03T05:12:01Z",
     "anchor_beat": "2026-06-30T22:30:25Z"
    },
    "gate": {
@@ -61970,56 +61986,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Climate scientist who \u201cproved\u201d humanity is warming Earth says government report got it wrong",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Isomeric multi-hydrogen-bonding enables blue perovskite LEDs",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Scientists should recognize their own political biases to build public trust",
-   "outlets": 8,
-   "count": 8,
-   "status": "watching"
-  },
-  {
-   "sample": "Vaccination elicits HIV broadly neutralizing antibodies in primates",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Russian Offensive Campaign Assessment, June 29, 2026",
-   "outlets": 3,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Elon Musk turned 55 and celebrated with a rocket-shaped cake, Lego, and a giant sword",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "How July CPI Data Could Make or Break Your 2027 Social Security Raise",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "France's statistics department reports cyberattack on staff data",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -62045,12 +62012,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 135,
-  "accepted": 1,
-  "rejected": 24,
-  "existing": 3,
-  "below": 107,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -62065,6 +62026,6 @@
   "edition_utc": "2026-07-02",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1185
+  "overflow": 1184
  }
 }
