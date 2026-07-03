@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-03T03:03:00Z",
+ "generated_utc": "2026-07-03T03:11:52Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -26,12 +26,12 @@
    "economist-fin",
    "economist-latest",
    "engadget",
-   "euronews",
    "forbes-biz",
    "fortune",
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -63,7 +63,6 @@
    "theregister",
    "theverge",
    "toi-world",
-   "unnews",
    "venturebeat",
    "whonews",
    "wired",
@@ -74,6 +73,41 @@
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "unnews",
+    "label": "UN News",
+    "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "euronews",
+    "label": "Euronews",
+    "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT US-Iran talks affect oil prices amid Hormuz tensions",
+    "reason": "Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "id": "gdelt:ebola-spreads-dr-congo-cases-top-676",
+    "label": "GDELT Ebola spreads DR Congo, cases top 676",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-to-pull-fighter-jets-from-nato-europe",
+    "label": "GDELT US to pull fighter jets from NATO Europe",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -313,9 +347,9 @@
     ]
    },
    "discovered": false,
-   "items_24h": 142,
-   "items_48h": 248,
-   "outlets": 75,
+   "items_24h": 145,
+   "items_48h": 251,
+   "outlets": 76,
    "kinds": [
     "journalist",
     "official record",
@@ -330,6 +364,18 @@
      "kind": "journalist",
      "url": "https://www.abc.net.au/news/2026-07-03/ukraine-kyiv-deadliest-attack-2026-russia-invasion-war/106874742",
      "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T02:00:54Z",
+     "title": "496 drones, 74 missiles: Russia launches deadliest strike on Ukraine this year, at least 27 dead",
+     "outlet": "Times of India",
+     "kind": "journalist",
+     "url": "https://timesofindia.indiatimes.com/world/europe/496-drones-74-missiles-russia-launches-deadliest-strike-on-ukraine-this-year-at-least-27-dead/articleshow/132150696.cms",
+     "rel": 0,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -402,18 +448,6 @@
      "kind": "state media",
      "url": "https://tass.com/world/2154781",
      "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T21:12:21Z",
-     "title": "Three in serious condition after drone strike on bus in Lugansk People\u2019s Republic",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/politics/2154769",
-     "rel": 18,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -547,7 +581,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 271,
+    "outlets_timed": 272,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -699,7 +733,7 @@
     },
     {
      "outlet": "Times of India",
-     "n": 9,
+     "n": 10,
      "class": "other"
     },
     {
@@ -956,7 +990,7 @@
      "state-media": 4,
      "regional": 2,
      "official": 1,
-     "other": 88
+     "other": 89
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -1023,7 +1057,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Russia-Ukraine, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -1031,10 +1065,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "Geopolitical risk, oil supply",
-      "move_pct": 0.06,
+      "move_pct": 0.28,
       "window_h": 24,
       "measured_from": "2026-07-03T02:06:46Z",
       "series": [
@@ -1209,6 +1243,10 @@
        [
         "2026-07-03T02:34:07Z",
         72.13
+       ],
+       [
+        "2026-07-03T02:43:23Z",
+        72.29
        ]
       ]
      },
@@ -1216,10 +1254,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Geopolitical risk, oil supply",
-      "move_pct": 0.04,
+      "move_pct": 0.28,
       "window_h": 24,
       "measured_from": "2026-07-03T02:06:46Z",
       "series": [
@@ -1418,6 +1456,10 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      },
@@ -1520,7 +1562,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:45:33Z",
+    "observed_utc": "2026-07-03T02:54:35Z",
     "anchor_beat": "2026-07-03T02:06:46Z"
    },
    "lead_image": {
@@ -1789,7 +1831,7 @@
    },
    "discovered": true,
    "items_24h": 84,
-   "items_48h": 232,
+   "items_48h": 229,
    "outlets": 105,
    "kinds": [
     "journalist",
@@ -2385,7 +2427,7 @@
      "state-media": 4,
      "regional": 0,
      "official": 1,
-     "other": 143
+     "other": 144
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -2452,7 +2494,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT US-Iran talks affect oil prices amid Hormuz tensions, Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -2467,10 +2509,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "US-Iran talks influence oil shipping routes",
-      "move_pct": 0.84,
+      "move_pct": 1.06,
       "window_h": 24,
       "measured_from": "2026-07-03T01:23:36Z",
       "series": [
@@ -2653,6 +2695,10 @@
        [
         "2026-07-03T02:34:07Z",
         72.13
+       ],
+       [
+        "2026-07-03T02:43:23Z",
+        72.29
        ]
       ]
      },
@@ -2660,10 +2706,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "US-Iran talks influence oil shipping routes",
-      "move_pct": 0.82,
+      "move_pct": 1.05,
       "window_h": 24,
       "measured_from": "2026-07-03T01:23:36Z",
       "series": [
@@ -2870,12 +2916,16 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:46:00Z",
+    "observed_utc": "2026-07-03T02:55:03Z",
     "anchor_beat": "2026-07-03T01:23:36Z"
    },
    "lead_image": {
@@ -2974,7 +3024,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 68,
+   "items_24h": 67,
    "items_48h": 95,
    "outlets": 67,
    "kinds": [
@@ -3089,7 +3139,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 92,
+    "outlets_timed": 94,
     "outlets_unplaced": 0,
     "chain": [
      {
@@ -3295,13 +3345,13 @@
      "state-media": 1,
      "regional": 0,
      "official": 0,
-     "other": 86
+     "other": 88
     },
     "first_seen": "2026-06-29T19:07:12Z"
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -3423,7 +3473,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T02:49:58Z",
+    "observed_utc": "2026-07-03T02:59:17Z",
     "anchor_beat": "2026-07-03T01:22:34Z"
    },
    "lead_image": {
@@ -3749,7 +3799,7 @@
    },
    "discovered": false,
    "items_24h": 66,
-   "items_48h": 123,
+   "items_48h": 124,
    "outlets": 69,
    "kinds": [
     "journalist",
@@ -3921,18 +3971,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Middle East Eye",
-      "ts": "2026-06-26T02:51:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK-based Middle East coverage",
-      "items": 14
-     },
-     {
       "outlet": "The Guardian",
       "ts": "2026-06-26T03:13:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "UK press",
       "items": 2
      },
@@ -3979,6 +4021,14 @@
      {
       "outlet": "+972 Magazine",
       "ts": "2026-06-26T05:07:42Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "OC Media",
+      "ts": "2026-06-26T07:13:10Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -4072,7 +4122,7 @@
     },
     {
      "outlet": "France 24",
-     "n": 5,
+     "n": 6,
      "class": "other"
     },
     {
@@ -4401,7 +4451,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -4409,10 +4459,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "Israel-Gaza war impacts oil",
-      "move_pct": 0.82,
+      "move_pct": 1.05,
       "window_h": 24,
       "measured_from": "2026-07-02T21:40:00Z",
       "series": [
@@ -4651,6 +4701,10 @@
        [
         "2026-07-03T02:34:07Z",
         72.13
+       ],
+       [
+        "2026-07-03T02:43:23Z",
+        72.29
        ]
       ]
      },
@@ -4658,10 +4712,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Israel-Gaza war impacts oil",
-      "move_pct": 0.74,
+      "move_pct": 0.98,
       "window_h": 24,
       "measured_from": "2026-07-02T21:40:00Z",
       "series": [
@@ -4706,12 +4760,12 @@
         67.21
        ],
        [
-        "2026-07-02T12:36:54Z",
-        67.34
-       ],
-       [
         "2026-07-02T12:59:22Z",
         67.6
+       ],
+       [
+        "2026-07-02T13:00:00Z",
+        67.66
        ],
        [
         "2026-07-02T13:22:39Z",
@@ -4746,10 +4800,6 @@
         67.6
        ],
        [
-        "2026-07-02T16:00:00Z",
-        67.76
-       ],
-       [
         "2026-07-02T16:04:44Z",
         67.76
        ],
@@ -4760,6 +4810,10 @@
        [
         "2026-07-02T17:00:00Z",
         68.25
+       ],
+       [
+        "2026-07-02T17:08:54Z",
+        68.26
        ],
        [
         "2026-07-02T17:32:36Z",
@@ -4786,10 +4840,6 @@
         68.62
        ],
        [
-        "2026-07-02T19:00:00Z",
-        68.44
-       ],
-       [
         "2026-07-02T19:00:07Z",
         68.45
        ],
@@ -4810,6 +4860,10 @@
         68.52
        ],
        [
+        "2026-07-02T20:20:21Z",
+        68.5
+       ],
+       [
         "2026-07-02T20:51:27Z",
         68.45
        ],
@@ -4824,10 +4878,6 @@
        [
         "2026-07-02T22:10:10Z",
         68.48
-       ],
-       [
-        "2026-07-02T22:17:04Z",
-        68.5
        ],
        [
         "2026-07-02T22:38:03Z",
@@ -4858,16 +4908,16 @@
         68.46
        ],
        [
+        "2026-07-03T00:00:00Z",
+        68.38
+       ],
+       [
         "2026-07-03T00:13:15Z",
         68.39
        ],
        [
         "2026-07-03T00:14:12Z",
         68.42
-       ],
-       [
-        "2026-07-03T00:34:39Z",
-        68.38
        ],
        [
         "2026-07-03T00:58:18Z",
@@ -4908,6 +4958,10 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      },
@@ -4915,10 +4969,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "Israel-Gaza war impacts dollar",
-      "move_pct": -0.07,
+      "move_pct": -0.08,
       "window_h": 24,
       "measured_from": "2026-07-02T21:40:00Z",
       "series": [
@@ -4971,16 +5025,16 @@
         100.747
        ],
        [
-        "2026-07-02T13:00:00Z",
-        100.767
-       ],
-       [
         "2026-07-02T13:22:39Z",
         100.789
        ],
        [
         "2026-07-02T13:46:16Z",
         100.716
+       ],
+       [
+        "2026-07-02T14:00:00Z",
+        100.698
        ],
        [
         "2026-07-02T14:10:04Z",
@@ -5019,10 +5073,6 @@
         100.841
        ],
        [
-        "2026-07-02T17:08:57Z",
-        100.857
-       ],
-       [
         "2026-07-02T17:32:37Z",
         100.871
        ],
@@ -5040,6 +5090,10 @@
        ],
        [
         "2026-07-02T18:34:31Z",
+        100.832
+       ],
+       [
+        "2026-07-02T18:38:31Z",
         100.832
        ],
        [
@@ -5065,10 +5119,6 @@
        [
         "2026-07-02T20:19:17Z",
         100.857
-       ],
-       [
-        "2026-07-02T20:20:29Z",
-        100.853
        ],
        [
         "2026-07-02T20:51:40Z",
@@ -5103,6 +5153,10 @@
         100.848
        ],
        [
+        "2026-07-02T23:00:00Z",
+        100.941
+       ],
+       [
         "2026-07-02T23:31:41Z",
         100.913
        ],
@@ -5113,10 +5167,6 @@
        [
         "2026-07-03T00:00:00Z",
         100.98
-       ],
-       [
-        "2026-07-03T00:13:41Z",
-        100.978
        ],
        [
         "2026-07-03T00:14:13Z",
@@ -5165,6 +5215,10 @@
        [
         "2026-07-03T02:34:29Z",
         100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
        ]
       ]
      },
@@ -5335,7 +5389,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:45:35Z",
+    "observed_utc": "2026-07-03T02:54:37Z",
     "anchor_beat": "2026-07-02T21:40:00Z"
    },
    "lead_image": {
@@ -5590,9 +5644,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 52,
-   "items_48h": 90,
-   "outlets": 65,
+   "items_24h": 53,
+   "items_48h": 91,
+   "outlets": 66,
    "kinds": [
     "journalist",
     "state media"
@@ -5617,6 +5671,18 @@
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWVIxTnJaMUdPd3pIY2hORUdqblQxejNjTU9TQjJUT2pSTHNwRkc0QjF3TkhuUmZITl9YeEprMTdoM1FvREFCWE5GN08zdXJuV2NTOU1ZQVcwMzd3ZmxERlFKWE1PTnZaR3E1U1JOa2NuZHBJcHUyYWZ5TUlUQ3hfQnBZSW1LSzNPU3lmRVY1TEFwV2FlRHFwRkpZaGpCaEds?oc=5",
      "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T01:10:00Z",
+     "title": "More than 400 dead in Dr. Congo\u2019s spreading Ebola outbreak",
+     "outlet": "The Japan Times",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5RSTN0VnRyaEhyUno4cVhVa24wemZuWXV5clY1WmdnbzYwNDBJUFd4YzNZYTB6NUktUW9SUXlaVWNjbWpjRDVvdXMzVS1UWERHamZjY0d0dDZ3YTBIb1QzcklEc2l2SDVLc2dIRXZlT1k5a0psU1hmTXhB?oc=5",
+     "rel": 32,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -5681,18 +5747,6 @@
       "non_mainstream": 1,
       "mainstream": 0
      }
-    },
-    {
-     "ts": "2026-07-02T21:21:36Z",
-     "title": "Ebola treatments trial begins in the Democratic Republic of Congo",
-     "outlet": "BBC",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9EMkwyajNLRTlSMExaaWZvZnBGWGpqZjVMR0FtUE01dnZFUWxmMHc4SzVMRm9ZYnd6Ti1ZdlNNRGpzUVpuZWlFbjFpakg4WTlySUdVQ19HdWx1QQ?oc=5",
-     "rel": 32,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
     }
    ],
    "split": {
@@ -5742,18 +5796,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "KRQE",
-      "ts": "2026-06-26T02:50:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
       "outlet": "News-Medical",
       "ts": "2026-06-26T02:59:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -5804,6 +5850,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 40
+     },
+     {
+      "outlet": "Nepali Times",
+      "ts": "2026-06-26T06:49:25Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -6129,8 +6183,8 @@
      ],
      [
       "2026-07-03 00:00",
-      52,
-      64
+      53,
+      65
      ]
     ],
     "mix": {
@@ -6138,7 +6192,7 @@
      "state-media": 3,
      "regional": 0,
      "official": 0,
-     "other": 151
+     "other": 152
     },
     "first_seen": "2026-06-12T17:18:26Z"
    },
@@ -6205,7 +6259,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Ebola spreads DR Congo, cases top 676, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -6488,8 +6542,8 @@
    },
    "discovered": true,
    "items_24h": 44,
-   "items_48h": 103,
-   "outlets": 42,
+   "items_48h": 102,
+   "outlets": 41,
    "kinds": [
     "journalist",
     "official record",
@@ -6647,7 +6701,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 282,
+    "outlets_timed": 283,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -6975,7 +7029,7 @@
      "state-media": 9,
      "regional": 0,
      "official": 1,
-     "other": 84
+     "other": 85
     },
     "first_seen": "2026-06-27T15:51:01Z"
    },
@@ -7042,7 +7096,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8018,7 +8072,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT US to pull fighter jets from NATO Europe, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -8250,7 +8304,7 @@
    },
    "discovered": true,
    "items_24h": 28,
-   "items_48h": 84,
+   "items_48h": 85,
    "outlets": 34,
    "kinds": [
     "journalist",
@@ -8469,7 +8523,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 90
+      "items": 91
      },
      {
       "outlet": "Mshale",
@@ -8506,7 +8560,7 @@
     },
     {
      "outlet": "MSN",
-     "n": 16,
+     "n": 17,
      "class": "other"
     },
     {
@@ -8770,7 +8824,7 @@
      [
       "2026-07-03 00:00",
       28,
-      34
+      33
      ]
     ],
     "mix": {
@@ -8845,7 +8899,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT SpaceX IPO Musk first trillionaire, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -8966,7 +9020,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T02:46:38Z",
+    "observed_utc": "2026-07-03T02:55:44Z",
     "anchor_beat": "2026-07-02T22:00:38Z"
    },
    "lead_image": {
@@ -9622,7 +9676,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -9637,10 +9691,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4193.7002,
-      "last_ts": "2026-07-03T02:34:21Z",
+      "last": 4195.2998,
+      "last_ts": "2026-07-03T02:43:31Z",
       "basis": "Gold price reacts to jobs data",
-      "move_pct": 0.05,
+      "move_pct": 0.09,
       "window_h": 24,
       "measured_from": "2026-07-03T02:12:11Z",
       "series": [
@@ -9839,12 +9893,16 @@
        [
         "2026-07-03T02:34:21Z",
         4193.7002
+       ],
+       [
+        "2026-07-03T02:43:31Z",
+        4195.2998
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:48:08Z",
+    "observed_utc": "2026-07-03T02:57:21Z",
     "anchor_beat": "2026-07-03T02:12:11Z"
    },
    "lead_image": {
@@ -10229,7 +10287,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -10462,10 +10520,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "US economy",
-      "move_pct": -0.03,
+      "move_pct": -0.04,
       "window_h": 24,
       "measured_from": "2026-07-02T18:24:32Z",
       "series": [
@@ -10530,8 +10588,8 @@
         101.05
        ],
        [
-        "2026-07-02T11:40:25Z",
-        101.069
+        "2026-07-02T12:00:00Z",
+        101.158
        ],
        [
         "2026-07-02T12:13:37Z",
@@ -10546,8 +10604,8 @@
         100.747
        ],
        [
-        "2026-07-02T13:00:00Z",
-        100.767
+        "2026-07-02T13:22:39Z",
+        100.789
        ],
        [
         "2026-07-02T13:46:16Z",
@@ -10562,8 +10620,8 @@
         100.699
        ],
        [
-        "2026-07-02T14:44:51Z",
-        100.843
+        "2026-07-02T15:00:00Z",
+        100.742
        ],
        [
         "2026-07-02T15:07:59Z",
@@ -10578,8 +10636,8 @@
         100.762
        ],
        [
-        "2026-07-02T16:04:51Z",
-        100.757
+        "2026-07-02T16:41:07Z",
+        100.828
        ],
        [
         "2026-07-02T17:00:00Z",
@@ -10590,12 +10648,12 @@
         100.857
        ],
        [
-        "2026-07-02T17:32:37Z",
-        100.871
-       ],
-       [
         "2026-07-02T17:57:17Z",
         100.878
+       ],
+       [
+        "2026-07-02T17:58:21Z",
+        100.885
        ],
        [
         "2026-07-02T18:00:00Z",
@@ -10606,12 +10664,12 @@
         100.832
        ],
        [
-        "2026-07-02T18:38:31Z",
-        100.832
-       ],
-       [
         "2026-07-02T19:00:00Z",
         100.89
+       ],
+       [
+        "2026-07-02T19:00:09Z",
+        100.857
        ],
        [
         "2026-07-02T19:28:35Z",
@@ -10622,12 +10680,12 @@
         100.892
        ],
        [
-        "2026-07-02T20:00:00Z",
+        "2026-07-02T20:19:17Z",
         100.857
        ],
        [
-        "2026-07-02T20:19:17Z",
-        100.857
+        "2026-07-02T20:20:29Z",
+        100.853
        ],
        [
         "2026-07-02T20:51:40Z",
@@ -10638,20 +10696,16 @@
         100.864
        ],
        [
-        "2026-07-02T21:05:07Z",
-        100.86
-       ],
-       [
         "2026-07-02T21:27:18Z",
         100.856
        ],
        [
-        "2026-07-02T21:51:14Z",
-        100.883
+        "2026-07-02T21:34:07Z",
+        100.871
        ],
        [
-        "2026-07-02T22:00:00Z",
-        100.847
+        "2026-07-02T21:51:14Z",
+        100.883
        ],
        [
         "2026-07-02T22:04:58Z",
@@ -10662,12 +10716,12 @@
         100.941
        ],
        [
-        "2026-07-02T23:50:17Z",
-        100.943
+        "2026-07-02T23:31:41Z",
+        100.913
        ],
        [
-        "2026-07-03T00:00:00Z",
-        100.98
+        "2026-07-02T23:50:17Z",
+        100.943
        ],
        [
         "2026-07-03T00:13:41Z",
@@ -10678,12 +10732,12 @@
         100.973
        ],
        [
-        "2026-07-03T00:58:28Z",
-        100.908
+        "2026-07-03T00:35:46Z",
+        100.98
        ],
        [
-        "2026-07-03T01:00:00Z",
-        100.88
+        "2026-07-03T00:58:28Z",
+        100.908
        ],
        [
         "2026-07-03T01:06:13Z",
@@ -10694,12 +10748,12 @@
         100.783
        ],
        [
-        "2026-07-03T01:48:53Z",
-        100.83
+        "2026-07-03T01:32:22Z",
+        100.819
        ],
        [
-        "2026-07-03T02:00:00Z",
-        100.846
+        "2026-07-03T01:48:53Z",
+        100.83
        ],
        [
         "2026-07-03T02:03:31Z",
@@ -10712,6 +10766,10 @@
        [
         "2026-07-03T02:34:29Z",
         100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
        ]
       ]
      },
@@ -10822,7 +10880,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:52:45Z",
+    "observed_utc": "2026-07-03T03:02:02Z",
     "anchor_beat": "2026-07-02T18:24:32Z"
    },
    "lead_image": {
@@ -11614,7 +11672,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -11954,7 +12012,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T02:46:10Z",
+    "observed_utc": "2026-07-03T02:55:14Z",
     "anchor_beat": "2026-07-03T01:00:07Z"
    },
    "lead_image": {
@@ -12747,7 +12805,7 @@
      [
       "2026-07-03 00:00",
       24,
-      70
+      71
      ]
     ],
     "mix": {
@@ -12772,7 +12830,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -12787,10 +12845,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "Fed rate outlook, jobs data",
-      "move_pct": -0.04,
+      "move_pct": -0.05,
       "window_h": 24,
       "measured_from": "2026-07-03T02:11:44Z",
       "series": [
@@ -12981,6 +13039,10 @@
        [
         "2026-07-03T02:34:29Z",
         100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
        ]
       ]
      },
@@ -12988,10 +13050,10 @@
       "symbol": "EURUSD=X",
       "label": "EUR/USD",
       "class": "fx",
-      "last": 1.1446,
-      "last_ts": "2026-07-03T02:44:04Z",
+      "last": 1.1447,
+      "last_ts": "2026-07-03T02:53:05Z",
       "basis": "Fed rate outlook, jobs data",
-      "move_pct": 0.0,
+      "move_pct": 0.01,
       "window_h": 24,
       "measured_from": "2026-07-03T02:11:44Z",
       "series": [
@@ -13210,6 +13272,10 @@
        [
         "2026-07-03T02:44:04Z",
         1.1446
+       ],
+       [
+        "2026-07-03T02:53:05Z",
+        1.1447
        ]
       ]
      },
@@ -13292,7 +13358,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:47:42Z",
+    "observed_utc": "2026-07-03T02:56:53Z",
     "anchor_beat": "2026-07-03T02:11:44Z"
    },
    "lead_image": {
@@ -13614,7 +13680,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -14394,7 +14460,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:59:33Z",
+    "observed_utc": "2026-07-03T03:08:30Z",
     "anchor_beat": "2026-07-02T21:25:33Z"
    },
    "lead_image": {
@@ -15309,7 +15375,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "History gap: era \"ASEAN-Russia strategic track\" shipped without its beats - 4 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -15324,10 +15390,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Russia summit influences oil demand",
-      "move_pct": 0.69,
+      "move_pct": 0.92,
       "window_h": 24,
       "measured_from": "2026-07-02T20:31:09Z",
       "series": [
@@ -15356,8 +15422,8 @@
         67.58
        ],
        [
-        "2026-07-02T10:14:44Z",
-        67.6
+        "2026-07-02T10:38:49Z",
+        67.63
        ],
        [
         "2026-07-02T10:58:51Z",
@@ -15380,12 +15446,12 @@
         67.22
        ],
        [
-        "2026-07-02T12:13:36Z",
-        67.21
-       ],
-       [
         "2026-07-02T12:36:54Z",
         67.34
+       ],
+       [
+        "2026-07-02T12:59:22Z",
+        67.6
        ],
        [
         "2026-07-02T13:00:00Z",
@@ -15404,12 +15470,12 @@
         67.7
        ],
        [
-        "2026-07-02T14:10:04Z",
-        67.66
-       ],
-       [
         "2026-07-02T14:44:51Z",
         67.73
+       ],
+       [
+        "2026-07-02T15:00:00Z",
+        67.56
        ],
        [
         "2026-07-02T15:07:57Z",
@@ -15428,16 +15494,16 @@
         67.76
        ],
        [
-        "2026-07-02T16:41:06Z",
-        68.04
-       ],
-       [
         "2026-07-02T17:00:00Z",
         68.25
        ],
        [
         "2026-07-02T17:08:54Z",
         68.26
+       ],
+       [
+        "2026-07-02T17:32:36Z",
+        68.35
        ],
        [
         "2026-07-02T17:57:17Z",
@@ -15452,10 +15518,6 @@
         68.6
        ],
        [
-        "2026-07-02T18:34:30Z",
-        68.59
-       ],
-       [
         "2026-07-02T18:38:29Z",
         68.62
        ],
@@ -15468,15 +15530,15 @@
         68.45
        ],
        [
+        "2026-07-02T19:28:30Z",
+        68.44
+       ],
+       [
         "2026-07-02T19:54:04Z",
         68.47
        ],
        [
         "2026-07-02T20:00:00Z",
-        68.52
-       ],
-       [
-        "2026-07-02T20:19:16Z",
         68.52
        ],
        [
@@ -15492,16 +15554,16 @@
         68.46
        ],
        [
+        "2026-07-02T22:00:00Z",
+        68.48
+       ],
+       [
         "2026-07-02T22:10:10Z",
         68.48
        ],
        [
         "2026-07-02T22:17:04Z",
         68.5
-       ],
-       [
-        "2026-07-02T22:38:03Z",
-        68.52
        ],
        [
         "2026-07-02T22:57:27Z",
@@ -15520,12 +15582,12 @@
         68.43
        ],
        [
-        "2026-07-02T23:49:48Z",
-        68.46
+        "2026-07-02T23:37:44Z",
+        68.47
        ],
        [
-        "2026-07-03T00:00:00Z",
-        68.38
+        "2026-07-02T23:49:48Z",
+        68.46
        ],
        [
         "2026-07-03T00:13:15Z",
@@ -15548,8 +15610,8 @@
         68.49
        ],
        [
-        "2026-07-03T01:23:08Z",
-        68.41
+        "2026-07-03T01:06:12Z",
+        68.57
        ],
        [
         "2026-07-03T01:32:15Z",
@@ -15574,6 +15636,10 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      },
@@ -15581,8 +15647,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "Geopolitical tensions affect dollar",
       "move_pct": -0.06,
       "window_h": 24,
@@ -15617,8 +15683,8 @@
         101.049
        ],
        [
-        "2026-07-02T10:38:59Z",
-        101.104
+        "2026-07-02T10:58:50Z",
+        101.057
        ],
        [
         "2026-07-02T11:00:00Z",
@@ -15645,8 +15711,8 @@
         100.681
        ],
        [
-        "2026-07-02T12:59:23Z",
-        100.747
+        "2026-07-02T13:00:00Z",
+        100.767
        ],
        [
         "2026-07-02T13:22:39Z",
@@ -15669,16 +15735,16 @@
         100.843
        ],
        [
-        "2026-07-02T15:00:00Z",
-        100.742
-       ],
-       [
         "2026-07-02T15:07:59Z",
         100.758
        ],
        [
         "2026-07-02T15:39:14Z",
         100.715
+       ],
+       [
+        "2026-07-02T16:00:00Z",
+        100.762
        ],
        [
         "2026-07-02T16:04:51Z",
@@ -15697,16 +15763,16 @@
         100.857
        ],
        [
-        "2026-07-02T17:32:37Z",
-        100.871
-       ],
-       [
         "2026-07-02T17:57:17Z",
         100.878
        ],
        [
         "2026-07-02T17:58:21Z",
         100.885
+       ],
+       [
+        "2026-07-02T18:00:00Z",
+        100.83
        ],
        [
         "2026-07-02T18:34:31Z",
@@ -15725,10 +15791,6 @@
         100.857
        ],
        [
-        "2026-07-02T19:28:35Z",
-        100.89
-       ],
-       [
         "2026-07-02T19:54:27Z",
         100.892
        ],
@@ -15741,16 +15803,16 @@
         100.857
        ],
        [
+        "2026-07-02T20:20:29Z",
+        100.853
+       ],
+       [
         "2026-07-02T20:51:40Z",
         100.855
        ],
        [
         "2026-07-02T21:00:00Z",
         100.864
-       ],
-       [
-        "2026-07-02T21:05:07Z",
-        100.86
        ],
        [
         "2026-07-02T21:27:18Z",
@@ -15769,16 +15831,16 @@
         100.847
        ],
        [
+        "2026-07-02T22:04:58Z",
+        100.848
+       ],
+       [
         "2026-07-02T23:00:00Z",
         100.941
        ],
        [
         "2026-07-02T23:31:41Z",
         100.913
-       ],
-       [
-        "2026-07-02T23:50:17Z",
-        100.943
        ],
        [
         "2026-07-03T00:00:00Z",
@@ -15801,12 +15863,12 @@
         100.908
        ],
        [
-        "2026-07-03T01:06:13Z",
+        "2026-07-03T01:00:00Z",
         100.88
        ],
        [
-        "2026-07-03T01:23:23Z",
-        100.783
+        "2026-07-03T01:06:13Z",
+        100.88
        ],
        [
         "2026-07-03T01:32:22Z",
@@ -15831,12 +15893,16 @@
        [
         "2026-07-03T02:34:29Z",
         100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:47:04Z",
+    "observed_utc": "2026-07-03T02:56:13Z",
     "anchor_beat": "2026-07-02T20:31:09Z"
    },
    "lead_image": {
@@ -16275,7 +16341,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -16290,10 +16356,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.215,
-      "last_ts": "2026-07-03T02:30:01Z",
+      "last": 3.21,
+      "last_ts": "2026-07-03T02:42:02Z",
       "basis": "natural gas market",
-      "move_pct": 0.31,
+      "move_pct": 0.16,
       "window_h": 24,
       "measured_from": "2026-07-02T21:39:44Z",
       "series": [
@@ -16334,8 +16400,8 @@
         3.175
        ],
        [
-        "2026-07-02T12:13:37Z",
-        3.174
+        "2026-07-02T12:36:48Z",
+        3.179
        ],
        [
         "2026-07-02T12:59:23Z",
@@ -16370,12 +16436,12 @@
         3.169
        ],
        [
-        "2026-07-02T15:07:58Z",
-        3.169
-       ],
-       [
         "2026-07-02T15:39:14Z",
         3.18
+       ],
+       [
+        "2026-07-02T16:00:00Z",
+        3.184
        ],
        [
         "2026-07-02T16:04:49Z",
@@ -16402,10 +16468,6 @@
         3.21
        ],
        [
-        "2026-07-02T17:58:17Z",
-        3.209
-       ],
-       [
         "2026-07-02T18:00:00Z",
         3.195
        ],
@@ -16416,6 +16478,10 @@
        [
         "2026-07-02T18:38:15Z",
         3.198
+       ],
+       [
+        "2026-07-02T19:00:00Z",
+        3.194
        ],
        [
         "2026-07-02T19:00:04Z",
@@ -16438,10 +16504,6 @@
         3.212
        ],
        [
-        "2026-07-02T20:20:15Z",
-        3.211
-       ],
-       [
         "2026-07-02T20:51:07Z",
         3.21
        ],
@@ -16458,6 +16520,10 @@
         3.205
        ],
        [
+        "2026-07-02T22:17:11Z",
+        3.205
+       ],
+       [
         "2026-07-02T22:37:21Z",
         3.208
        ],
@@ -16468,10 +16534,6 @@
        [
         "2026-07-02T22:57:30Z",
         3.208
-       ],
-       [
-        "2026-07-02T23:00:00Z",
-        3.209
        ],
        [
         "2026-07-02T23:12:22Z",
@@ -16498,16 +16560,16 @@
         3.211
        ],
        [
+        "2026-07-03T00:14:13Z",
+        3.21
+       ],
+       [
         "2026-07-03T00:32:00Z",
         3.21
        ],
        [
         "2026-07-03T00:56:28Z",
         3.209
-       ],
-       [
-        "2026-07-03T01:00:00Z",
-        3.215
        ],
        [
         "2026-07-03T01:06:14Z",
@@ -16540,12 +16602,16 @@
        [
         "2026-07-03T02:30:01Z",
         3.215
+       ],
+       [
+        "2026-07-03T02:42:02Z",
+        3.21
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:49:10Z",
+    "observed_utc": "2026-07-03T02:58:26Z",
     "anchor_beat": "2026-07-02T21:39:44Z"
    },
    "gate": {
@@ -16780,8 +16846,8 @@
    },
    "discovered": true,
    "items_24h": 16,
-   "items_48h": 127,
-   "outlets": 79,
+   "items_48h": 123,
+   "outlets": 77,
    "kinds": [
     "journalist",
     "state media",
@@ -17278,7 +17344,7 @@
      [
       "2026-07-03 00:00",
       17,
-      81
+      80
      ]
     ],
     "mix": {
@@ -17353,7 +17419,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -17880,7 +17946,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:56:59Z",
+    "observed_utc": "2026-07-03T03:06:04Z",
     "anchor_beat": "2026-07-02T19:43:21Z"
    },
    "lead_image": {
@@ -18804,7 +18870,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -18919,7 +18985,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T02:45:41Z",
+    "observed_utc": "2026-07-03T02:54:43Z",
     "anchor_beat": "2026-07-03T01:01:03Z"
    },
    "lead_image": {
@@ -19581,7 +19647,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -19596,10 +19662,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": null,
-      "move_pct": 0.59,
+      "move_pct": 0.81,
       "window_h": 24,
       "measured_from": "2026-07-03T01:40:15Z",
       "series": [
@@ -19782,6 +19848,10 @@
        [
         "2026-07-03T02:34:07Z",
         72.13
+       ],
+       [
+        "2026-07-03T02:43:23Z",
+        72.29
        ]
       ]
      },
@@ -19789,10 +19859,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": null,
-      "move_pct": 0.57,
+      "move_pct": 0.8,
       "window_h": 24,
       "measured_from": "2026-07-03T01:40:15Z",
       "series": [
@@ -19999,12 +20069,16 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:48:23Z",
+    "observed_utc": "2026-07-03T02:57:36Z",
     "anchor_beat": "2026-07-03T01:40:15Z"
    },
    "lead_image": {
@@ -20279,7 +20353,7 @@
      "outlet": "The Media Line",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWVVrQ21jcXFBdl9zTDFRN2RzMFpFUm9HZDMtWEs5V3FRX0llV1NCbXdaX21CaWJmQ3FCN2VoMGx4eWRJWkpUZXRlZU11OFBHMmxZS0ZEb0kyU1l1S1hkenRZQ3pIaG92NTdGRFRJdnl3aDdGNVhiRFhHVUlrU3ItdDA3UTV6eXFNYTMydXg0U3pJaDdYNlJCX3NFY1I0MU9BaFlCYy1iXzE2VFdGNUo3UUV1UHJpQQ?oc=5",
-     "rel": 21,
+     "rel": 22,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -20400,7 +20474,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 40,
+    "outlets_timed": 41,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -20623,7 +20697,7 @@
     ],
     "mix": {
      "mainstream": 7,
-     "state-media": 3,
+     "state-media": 4,
      "regional": 0,
      "official": 0,
      "other": 35
@@ -20643,7 +20717,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -21170,7 +21244,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:59:28Z",
+    "observed_utc": "2026-07-03T03:08:26Z",
     "anchor_beat": "2026-07-02T16:43:17Z"
    },
    "lead_image": {
@@ -21575,7 +21649,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -21590,10 +21664,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4193.7002,
-      "last_ts": "2026-07-03T02:34:21Z",
+      "last": 4195.2998,
+      "last_ts": "2026-07-03T02:43:31Z",
       "basis": "nuclear warhead",
-      "move_pct": 1.41,
+      "move_pct": 1.45,
       "window_h": 24,
       "measured_from": "2026-07-02T21:54:07Z",
       "series": [
@@ -21638,12 +21712,12 @@
         4141.0
        ],
        [
-        "2026-07-02T12:59:23Z",
-        4129.0
-       ],
-       [
         "2026-07-02T13:00:00Z",
         4129.3999
+       ],
+       [
+        "2026-07-02T13:22:38Z",
+        4127.7998
        ],
        [
         "2026-07-02T13:46:15Z",
@@ -21678,10 +21752,6 @@
         4139.5
        ],
        [
-        "2026-07-02T16:04:50Z",
-        4139.2002
-       ],
-       [
         "2026-07-02T16:41:04Z",
         4125.7002
        ],
@@ -21692,6 +21762,10 @@
        [
         "2026-07-02T17:08:53Z",
         4130.3999
+       ],
+       [
+        "2026-07-02T17:32:36Z",
+        4125.2998
        ],
        [
         "2026-07-02T17:57:15Z",
@@ -21718,10 +21792,6 @@
         4135.7002
        ],
        [
-        "2026-07-02T19:00:08Z",
-        4136.8999
-       ],
-       [
         "2026-07-02T19:28:33Z",
         4125.3999
        ],
@@ -21742,6 +21812,10 @@
         4137.7002
        ],
        [
+        "2026-07-02T20:51:38Z",
+        4133.2002
+       ],
+       [
         "2026-07-02T20:59:59Z",
         4135.5
        ],
@@ -21756,10 +21830,6 @@
        [
         "2026-07-02T22:17:11Z",
         4136.6001
-       ],
-       [
-        "2026-07-02T22:38:08Z",
-        4137.6001
        ],
        [
         "2026-07-02T22:40:59Z",
@@ -21790,16 +21860,16 @@
         4142.7002
        ],
        [
+        "2026-07-03T00:00:00Z",
+        4147.5
+       ],
+       [
         "2026-07-03T00:13:42Z",
         4144.8999
        ],
        [
         "2026-07-03T00:14:11Z",
         4148.2998
-       ],
-       [
-        "2026-07-03T00:35:44Z",
-        4148.6001
        ],
        [
         "2026-07-03T00:58:20Z",
@@ -21840,12 +21910,16 @@
        [
         "2026-07-03T02:34:21Z",
         4193.7002
+       ],
+       [
+        "2026-07-03T02:43:31Z",
+        4195.2998
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:52:05Z",
+    "observed_utc": "2026-07-03T03:01:24Z",
     "anchor_beat": "2026-07-02T21:54:07Z"
    },
    "lead_image": {
@@ -22311,7 +22385,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -22542,7 +22616,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T02:49:28Z",
+    "observed_utc": "2026-07-03T02:58:44Z",
     "anchor_beat": "2026-07-02T22:37:55Z"
    },
    "lead_image": {
@@ -22836,7 +22910,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -23745,7 +23819,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://www.dabangasudan.org/wp-content/uploads/2026/06/Screenshot_20260629_185036_Maps.jpg",
@@ -24118,18 +24192,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "CGTN",
-      "ts": "2026-06-26T02:55:43Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "CN state media",
-      "items": 9
-     },
-     {
       "outlet": "Euronews.com",
       "ts": "2026-06-26T04:00:57Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -24180,6 +24246,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
+     },
+     {
+      "outlet": "The Economic Times",
+      "ts": "2026-06-26T06:29:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 9
      }
     ],
     "unplaced": [
@@ -24481,7 +24555,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -24496,10 +24570,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.215,
-      "last_ts": "2026-07-03T02:30:01Z",
+      "last": 3.21,
+      "last_ts": "2026-07-03T02:42:02Z",
       "basis": "Heatwave increases natural gas demand",
-      "move_pct": 0.19,
+      "move_pct": 0.03,
       "window_h": 24,
       "measured_from": "2026-07-02T23:04:45Z",
       "series": [
@@ -24742,6 +24816,10 @@
        [
         "2026-07-03T02:30:01Z",
         3.215
+       ],
+       [
+        "2026-07-03T02:42:02Z",
+        3.21
        ]
       ]
      },
@@ -24888,7 +24966,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:47:54Z",
+    "observed_utc": "2026-07-03T02:57:07Z",
     "anchor_beat": "2026-07-02T23:04:45Z"
    },
    "lead_image": {
@@ -25591,7 +25669,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -25800,7 +25878,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:47:02Z",
+    "observed_utc": "2026-07-03T02:56:11Z",
     "anchor_beat": "2026-07-02T16:08:58Z"
    },
    "lead_image": {
@@ -26287,7 +26365,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -26858,7 +26936,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -27089,7 +27167,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T02:47:46Z",
+    "observed_utc": "2026-07-03T02:56:57Z",
     "anchor_beat": "2026-07-02T23:00:22Z"
    },
    "lead_image": {
@@ -28040,7 +28118,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "History gap: era \"Border conflict roots\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -28412,7 +28490,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -29043,7 +29121,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -29058,10 +29136,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "USMCA tariff uncertainty impacts oil trade",
-      "move_pct": 0.76,
+      "move_pct": 0.99,
       "window_h": 24,
       "measured_from": "2026-07-02T19:15:00Z",
       "series": [
@@ -29122,8 +29200,8 @@
         67.22
        ],
        [
-        "2026-07-02T12:13:36Z",
-        67.21
+        "2026-07-02T12:36:54Z",
+        67.34
        ],
        [
         "2026-07-02T12:59:22Z",
@@ -29142,8 +29220,8 @@
         67.88
        ],
        [
-        "2026-07-02T14:00:00Z",
-        67.7
+        "2026-07-02T14:10:04Z",
+        67.66
        ],
        [
         "2026-07-02T14:44:51Z",
@@ -29162,7 +29240,7 @@
         67.6
        ],
        [
-        "2026-07-02T16:00:00Z",
+        "2026-07-02T16:04:44Z",
         67.76
        ],
        [
@@ -29178,12 +29256,12 @@
         68.26
        ],
        [
-        "2026-07-02T17:32:36Z",
-        68.35
-       ],
-       [
         "2026-07-02T17:57:17Z",
         68.43
+       ],
+       [
+        "2026-07-02T17:58:17Z",
+        68.48
        ],
        [
         "2026-07-02T18:00:00Z",
@@ -29198,12 +29276,12 @@
         68.62
        ],
        [
-        "2026-07-02T19:00:00Z",
-        68.44
-       ],
-       [
         "2026-07-02T19:00:07Z",
         68.45
+       ],
+       [
+        "2026-07-02T19:28:30Z",
+        68.44
        ],
        [
         "2026-07-02T19:54:04Z",
@@ -29211,10 +29289,6 @@
        ],
        [
         "2026-07-02T20:00:00Z",
-        68.52
-       ],
-       [
-        "2026-07-02T20:19:16Z",
         68.52
        ],
        [
@@ -29226,16 +29300,16 @@
         68.45
        ],
        [
+        "2026-07-02T20:59:55Z",
+        68.46
+       ],
+       [
         "2026-07-02T22:00:00Z",
         68.48
        ],
        [
         "2026-07-02T22:10:10Z",
         68.48
-       ],
-       [
-        "2026-07-02T22:17:04Z",
-        68.5
        ],
        [
         "2026-07-02T22:38:03Z",
@@ -29246,16 +29320,16 @@
         68.48
        ],
        [
+        "2026-07-02T23:00:00Z",
+        68.49
+       ],
+       [
         "2026-07-02T23:13:05Z",
         68.47
        ],
        [
         "2026-07-02T23:25:02Z",
         68.43
-       ],
-       [
-        "2026-07-02T23:37:44Z",
-        68.47
        ],
        [
         "2026-07-02T23:49:48Z",
@@ -29266,12 +29340,12 @@
         68.38
        ],
        [
-        "2026-07-03T00:14:12Z",
-        68.42
+        "2026-07-03T00:13:15Z",
+        68.39
        ],
        [
-        "2026-07-03T00:34:39Z",
-        68.38
+        "2026-07-03T00:14:12Z",
+        68.42
        ],
        [
         "2026-07-03T00:58:18Z",
@@ -29286,12 +29360,12 @@
         68.57
        ],
        [
-        "2026-07-03T01:32:15Z",
-        68.58
+        "2026-07-03T01:23:08Z",
+        68.41
        ],
        [
-        "2026-07-03T01:48:50Z",
-        68.9
+        "2026-07-03T01:32:15Z",
+        68.58
        ],
        [
         "2026-07-03T02:00:00Z",
@@ -29308,6 +29382,10 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      },
@@ -29315,10 +29393,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "USMCA tariff uncertainty affects dollar strength",
-      "move_pct": -0.06,
+      "move_pct": -0.07,
       "window_h": 24,
       "measured_from": "2026-07-02T19:15:00Z",
       "series": [
@@ -29343,8 +29421,8 @@
         100.936
        ],
        [
-        "2026-07-02T09:02:35Z",
-        100.939
+        "2026-07-02T09:24:55Z",
+        101.004
        ],
        [
         "2026-07-02T09:53:52Z",
@@ -29363,7 +29441,7 @@
         101.104
        ],
        [
-        "2026-07-02T10:58:50Z",
+        "2026-07-02T11:00:00Z",
         101.057
        ],
        [
@@ -29383,12 +29461,12 @@
         101.166
        ],
        [
-        "2026-07-02T12:36:56Z",
-        100.681
-       ],
-       [
         "2026-07-02T12:59:23Z",
         100.747
+       ],
+       [
+        "2026-07-02T13:00:00Z",
+        100.767
        ],
        [
         "2026-07-02T13:22:39Z",
@@ -29403,12 +29481,12 @@
         100.698
        ],
        [
-        "2026-07-02T14:10:04Z",
-        100.699
-       ],
-       [
         "2026-07-02T14:44:51Z",
         100.843
+       ],
+       [
+        "2026-07-02T15:00:00Z",
+        100.742
        ],
        [
         "2026-07-02T15:07:59Z",
@@ -29423,16 +29501,16 @@
         100.762
        ],
        [
-        "2026-07-02T16:04:51Z",
-        100.757
-       ],
-       [
         "2026-07-02T16:41:07Z",
         100.828
        ],
        [
         "2026-07-02T17:00:00Z",
         100.841
+       ],
+       [
+        "2026-07-02T17:08:57Z",
+        100.857
        ],
        [
         "2026-07-02T17:32:37Z",
@@ -29443,15 +29521,15 @@
         100.878
        ],
        [
-        "2026-07-02T17:58:21Z",
-        100.885
-       ],
-       [
         "2026-07-02T18:00:00Z",
         100.83
        ],
        [
         "2026-07-02T18:34:31Z",
+        100.832
+       ],
+       [
+        "2026-07-02T18:38:31Z",
         100.832
        ],
        [
@@ -29461,10 +29539,6 @@
        [
         "2026-07-02T19:00:09Z",
         100.857
-       ],
-       [
-        "2026-07-02T19:28:35Z",
-        100.89
        ],
        [
         "2026-07-02T19:54:27Z",
@@ -29479,12 +29553,12 @@
         100.857
        ],
        [
-        "2026-07-02T20:51:40Z",
-        100.855
+        "2026-07-02T20:20:29Z",
+        100.853
        ],
        [
-        "2026-07-02T21:00:00Z",
-        100.864
+        "2026-07-02T20:51:40Z",
+        100.855
        ],
        [
         "2026-07-02T21:05:07Z",
@@ -29499,12 +29573,12 @@
         100.871
        ],
        [
-        "2026-07-02T22:00:00Z",
-        100.847
+        "2026-07-02T21:51:14Z",
+        100.883
        ],
        [
-        "2026-07-02T22:04:58Z",
-        100.848
+        "2026-07-02T22:00:00Z",
+        100.847
        ],
        [
         "2026-07-02T23:00:00Z",
@@ -29523,8 +29597,8 @@
         100.98
        ],
        [
-        "2026-07-03T00:14:13Z",
-        100.973
+        "2026-07-03T00:13:41Z",
+        100.978
        ],
        [
         "2026-07-03T00:35:46Z",
@@ -29543,8 +29617,8 @@
         100.88
        ],
        [
-        "2026-07-03T01:32:22Z",
-        100.819
+        "2026-07-03T01:23:23Z",
+        100.783
        ],
        [
         "2026-07-03T01:48:53Z",
@@ -29565,12 +29639,16 @@
        [
         "2026-07-03T02:34:29Z",
         100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:49:19Z",
+    "observed_utc": "2026-07-03T02:58:35Z",
     "anchor_beat": "2026-07-02T19:15:00Z"
    },
    "lead_image": {
@@ -30052,7 +30130,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -30070,6 +30148,651 @@
      "provenance": 1,
      "steelman": 0,
      "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "faa-tests-ai-to-manage-air-traffic-safety",
+   "name": "Artificial intelligence advances across multiple sectors",
+   "bucket": "tech",
+   "topic_tags": [
+    "ai"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-23T13:12:04Z",
+    "sentence_count": 7,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "The FAA is looking at artificial intelligence to manage flights.",
+        "cites": [
+         {
+          "outlet": "Yahoo",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSTU2d1NERzE3eVRMaElSLWJLSktnWDhEN2RjMUcwdVBObTVBOEd0Z3ZaNHFLbXlpaEVTQnZNc1diU2U5OFQtUWFTeGREa0NuUDJNTzl4U2pWYVU0SXdlNkF3Ml9vS0NnbVZCSWJfNWZfQlJOUkdZd1o4WERwWWxIaExtc1dhN0ZUMmd0eGVYRXMzNXpMT0E?oc=5",
+          "ts": "2026-06-23T11:55:00Z",
+          "title": "FAA looking at artificial intelligence to manage flights"
+         }
+        ]
+       },
+       {
+        "text": "The agency plans to use artificial intelligence to reduce close calls.",
+        "cites": [
+         {
+          "outlet": "Aero-News Network",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV2l0MVJKcks3Wnh0WHRORkhHS1NZUXNMak9OTlJraVhpVUNoOXdhNU9NODIzSDNuSlFjckwxWG5jUFNPSmlzMGJZazRidFoyUUZZOFNDdHI1S2VaWC1sMlZUZXJFdzdqcENKUTFsNjgwS0dZWnRMdTY2ODUxVjd5Zl91M01RMXhxVV9RS2Mwdkk5Vlhmd3Z3?oc=5",
+          "ts": "2026-06-23T04:11:46Z",
+          "title": "FAA To Use Artificial Intelligence To Reduce Close Calls"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Coverage of AI in daily life notes how tools from Netflix to Siri already shape routine use.",
+        "cites": [
+         {
+          "outlet": "WINK News - Southwest Florida",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYzdIeVo1blFMMlp1M1diaUh0bW9xNVZSUXhGQ2VUSFl0Ti1yODQwMGZkX2NVdXNGV0h1MTF3X0JWSTZ4dlRQcnZSdFRIdmd3eHRBeEZURVduZ0NGTlhKd2V0bWp6eUUyUlNoakYxOWtHMGVnNi1hb28xTWZEdHE1SzdwT0NHQ2ZPVFQzNDlHU0g5aEtpM014VC1TYjZ6OTBPNGRWNmZ3UHhkZG10cFQ3LW9GVjVManBWZ3N2Q2x3ZmItOHN5TlA4ckUzUVV3MDloX0xpd1ExS0dxM1llajc2YTJpUkpSZGFWY2ZNemJSWndFWmt6Umcw?oc=5",
+          "ts": "2026-06-23T10:43:00Z",
+          "title": "From Netflix to Siri, how AI already shapes your daily life and how it works"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Separately, industry coverage discusses lessons from 20 years of AWS applied to agentic AI.",
+        "cites": [
+         {
+          "outlet": "cio.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSGstLWVaRndZWllFT0xaVi1jN29lTHEtbTRPcE02NEtKRm5NOFZNUlE0ZGFUdU1NemNteHVNOC04c1hIMjNhaV92Q2lhb2lVa1FSeGx2VDRGbmF5Q3JuUkZ4ZUxLUnRxZ1lJeWpmcHMzMWRsR2MzLWVOMy1oeVhEdkFQTEU1YWFCcGQtTjRjVGtNQQ?oc=5",
+          "ts": "2026-06-23T10:03:12Z",
+          "title": "What 20 years of AWS taught me about agentic AI"
+         }
+        ]
+       },
+       {
+        "text": "Endava is reported to be redesigning software delivery around AI agents.",
+        "cites": [
+         {
+          "outlet": "OpenAI",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4xZzh6NV9rdlVMVkVlWjVidGs2d1R4TUpVOTZOWC0tTWp6M0ZsMDBJS1ZibnhaY3hrU1FGWTcxejRnR3dxekV5VDRGbVBsbkFkUkhpSVZ6RGxjNjU2?oc=5",
+          "ts": "2026-06-23T06:31:42Z",
+          "title": "How Endava is redesigning software delivery around AI agents"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Other items address team topologies for an agentic platform.",
+        "cites": [
+         {
+          "outlet": "Hacker News",
+          "kind": "journalist",
+          "url": "https://blog.owulveryck.info/2026/06/22/who-does-what-team-topologies-for-the-agentic-platform.html",
+          "ts": "2026-06-23T04:40:08Z",
+          "title": "Who Does What? Team Topologies for the Agentic Platform"
+         }
+        ]
+       },
+       {
+        "text": "Ampersend is reported to use Amazon Bedrock AgentCore Payments to build pay-per-intelligence for AI agents.",
+        "cites": [
+         {
+          "outlet": "Amazon Web Services (AWS)",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNlZvOHpXRDNzVnpqTGJkV2NzU29welh0TmxGZFBXV1piYXZZN3JLb3pOcWNyckt4MWxVWk5jdFpSLTZCRnJVUzNDeWhXdndiczNVaUtqR1lfQXMxQUZlejhTZVcxU1prY3FrTXFMMDhuNGoxUVZXYnlZM09Ib1Z3anFKYnlGVEJEWWdqQ1B1N1FjalNmMjZzc3VmNmNQNXpPT1dQYVhNVEN2YVZpVmFCS1EySURmaHUySGVSbUZXQ2FwSVBac3NZMlY2UzZMT2N1d1pUdlZIR2RRakU?oc=5",
+          "ts": "2026-06-22T17:53:40Z",
+          "title": "Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 9,
+   "items_48h": 22,
+   "outlets": 19,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-02T17:17:39Z",
+     "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies",
+     "outlet": "Forbes",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5uUGIzcFRTdFZwdkxZTnpHdUpfVmhCQ21iczlSQjJrMnlSa19sYzB4S2JuVC1wSWo1UFhRWnlpVWtrb0NIN1RmS2Nn?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T16:25:00Z",
+     "title": "The AI Republic? Governing Artificial Intelligence at America\u2019s 250th Anniversary",
+     "outlet": "Law.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUUZ2YU1oWGt5TXRrOHRrTlpsRVZpWXp4VGp0ZmwzOEV6ci0wLXlKU200ZDJmSUJJWEhJT2ZibjAwU1NLdXV0ZmtmVUEtbFNHRXVGZ3RtWEthZnJoTkFiNlpXbmZJU0J6RHRJcGRYd2tXd1pRN3dfMF9tUUlrQUpidGptWmdVcjNaSF9wcjNUZXhrTlVldVR3akVlTGVTa0k2LUFyR1R3dnFrdmhuUnBjNHpmclVLSjRBbGo3LWZIQnI?oc=5",
+     "rel": 21,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T16:07:30Z",
+     "title": "An Optimist\u2019s Account of Artificial Intelligence",
+     "outlet": "Lawfare",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSUVoYmRXSV9fajZDbGEwQVA2STJEQWwxLVJBcTZqd2ttY3AyTWFGMzdEU1dpdFhhTDBZbVptcTc2aTQxRV90UGhBbkhMZ3VCU1hSN1A1Z2JhUXdVZXRNMlpmeGhMVE9pOFhDWEFsd2pqUHR3enRLbXU4ZVk0NUpPbl9xUE5jMThvS3lwWkJR?oc=5",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T16:05:00Z",
+     "title": "Micron Technology Has Fantastic News for This Artificial Intelligence (AI) Infrastructure Stock That Has More Than Doubled in 2026",
+     "outlet": "Motley Fool",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/technology/ai/articles/micron-technology-fantastic-news-artificial-160500956.html",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T14:35:00Z",
+     "title": "The Artificial Intelligence (AI) Stock That Wall Street Can't Stop Upgrading in 2026",
+     "outlet": "Yahoo Finance",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNc3gxQm8wY3VScHo2aFM5NUJyQ2RMaklzUE5FVDN1MTJFSGhzeGRleU1xekFRbWxBd1BYZ0tlZVlWUjlhWE03Qnc4SEZQRVdEUElXbHQ1VmU4eXZVQm9LNVJpMWlNMjJ6UVdXNkRFRVV0T0ZrUnQ4ZzRxdmV5aEkwTEdwRTlSTGpxNndDZ1NmNGVsXzJQNWVEcUdPNWNVOS1WeGp5Rg?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T14:16:36Z",
+     "title": "Artificial intelligence enters the industrial age",
+     "outlet": "marketscreener.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOWJzVTVMbGdHM1l3Y05TU3ZyaWltX014UlMwazJHeF9hVUJNVzBDXzNoM2NCLUkteFN5ekdGRWEtWVJKYmlDNzRvSVdrM3JETTJ0a0djUDJTZFVDR3ZoUFpLYUdnRElNRElUUlZ4XzhpT2ZpQ21lZzhHTEJDTFREZFJoRFkwZVJQY1Y1R0xVbUZJNjl5eXYtT3M4SzFEZkdSR1pmdA?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T12:45:55Z",
+     "title": "The EU's Human-Centric Approach to Artificial Intelligence",
+     "outlet": "Beyond the Horizon ISSG",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB4WEdyLU0yajBhY192OGpNSFFMY2VudnNJU1hwNHBWTC1FWER1eGhBNGpXRUFNaWpwNEpZaVh1aWY2SFg5d0o1b3BUWEFCdlh6MHBuU1dhclNxZXRTYm52TzdHMFVuUkdzOERWeFg1dEM3UU1BY3h2V3NVaw?oc=5",
+     "rel": 23,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T04:21:01Z",
+     "title": "1 Artificial Intelligence Stock You Can Buy and Hold for the Next Decade",
+     "outlet": "The Motley Fool",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSTFvS1hQQTdPT3g1RVdjUGNWOXdyX1dkd1JDTWhnd3lFeVJieHNWaXprdE5hSm42WWJzaWtlbzExejNvRlR3VUcwakpIc3RRelBPRjJRTmE2WndoM3VWYS1OcFpVY3FaRGhqakpnV3FaUm1leFdybGlwWWFHdG5yUERQYzIwdHdwcnNXblpCNzRzZVBaUWE3OQ?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-06-24T04:12:37Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 173,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "C-SPAN",
+      "ts": "2026-06-26T04:00:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Britannica",
+      "ts": "2026-06-26T05:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The Motley Fool",
+      "ts": "2026-06-26T05:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 18
+     },
+     {
+      "outlet": "Good Morning America",
+      "ts": "2026-06-26T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "U.S. News - Money",
+      "ts": "2026-06-26T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Hospital Healthcare Europe",
+      "ts": "2026-06-26T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "New Jersey Education Association",
+      "ts": "2026-06-26T07:00:54Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Cushman & Wakefield",
+      "ts": "2026-06-26T07:34:51Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Yahoo Finance",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Reuters",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "The Motley Fool",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "AFCEA International",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Above the Law",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Amazon Web Services (AWS)",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Beyond the Horizon ISSG",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Broadband Breakfast",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Built In",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Capitol City Now",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Consumer Goods Technology",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Cureus",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-23 12:00",
+      59,
+      51
+     ],
+     [
+      "2026-06-24 00:00",
+      65,
+      64
+     ],
+     [
+      "2026-06-27 12:00",
+      38,
+      51
+     ],
+     [
+      "2026-06-27 18:00",
+      34,
+      57
+     ],
+     [
+      "2026-06-28 00:00",
+      28,
+      61
+     ],
+     [
+      "2026-06-28 06:00",
+      33,
+      59
+     ],
+     [
+      "2026-06-28 12:00",
+      37,
+      61
+     ],
+     [
+      "2026-06-28 18:00",
+      33,
+      50
+     ],
+     [
+      "2026-06-29 00:00",
+      36,
+      44
+     ],
+     [
+      "2026-06-29 06:00",
+      53,
+      54
+     ],
+     [
+      "2026-06-29 12:00",
+      77,
+      81
+     ],
+     [
+      "2026-06-29 18:00",
+      82,
+      80
+     ],
+     [
+      "2026-06-30 00:00",
+      81,
+      85
+     ],
+     [
+      "2026-06-30 06:00",
+      69,
+      79
+     ],
+     [
+      "2026-06-30 12:00",
+      33,
+      77
+     ],
+     [
+      "2026-06-30 18:00",
+      19,
+      81
+     ],
+     [
+      "2026-07-01 00:00",
+      15,
+      77
+     ],
+     [
+      "2026-07-01 06:00",
+      15,
+      50
+     ],
+     [
+      "2026-07-01 12:00",
+      15,
+      31
+     ],
+     [
+      "2026-07-01 18:00",
+      10,
+      24
+     ],
+     [
+      "2026-07-02 00:00",
+      11,
+      26
+     ],
+     [
+      "2026-07-02 06:00",
+      11,
+      25
+     ],
+     [
+      "2026-07-02 12:00",
+      10,
+      19
+     ],
+     [
+      "2026-07-02 18:00",
+      11,
+      16
+     ],
+     [
+      "2026-07-03 00:00",
+      8,
+      16
+     ]
+    ],
+    "mix": {
+     "mainstream": 1,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 26
+    },
+    "first_seen": "2026-06-23T13:13:49Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 9
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "NVDA",
+      "label": "Nvidia",
+      "class": "equity",
+      "last": 194.83,
+      "last_ts": "2026-07-02T20:00:00Z",
+      "basis": "AI chip demand from air\u2011traffic applications",
+      "move_pct": 0.59,
+      "window_h": 24,
+      "measured_from": "2026-07-02T17:17:39Z",
+      "series": [
+       [
+        "2026-07-02T13:30:00Z",
+        197.97
+       ],
+       [
+        "2026-07-02T13:32:41Z",
+        198.0505
+       ],
+       [
+        "2026-07-02T13:56:17Z",
+        198.68
+       ],
+       [
+        "2026-07-02T14:20:06Z",
+        199.245
+       ],
+       [
+        "2026-07-02T14:30:00Z",
+        195.475
+       ],
+       [
+        "2026-07-02T14:54:52Z",
+        195.48
+       ],
+       [
+        "2026-07-02T15:17:59Z",
+        195.01
+       ],
+       [
+        "2026-07-02T15:30:00Z",
+        194.89
+       ],
+       [
+        "2026-07-02T15:49:15Z",
+        194.82
+       ],
+       [
+        "2026-07-02T16:14:54Z",
+        194.53
+       ],
+       [
+        "2026-07-02T16:30:00Z",
+        193.73
+       ],
+       [
+        "2026-07-02T16:51:06Z",
+        193.69
+       ],
+       [
+        "2026-07-02T17:18:57Z",
+        193.275
+       ],
+       [
+        "2026-07-02T17:30:00Z",
+        192.925
+       ],
+       [
+        "2026-07-02T17:42:37Z",
+        193.0
+       ],
+       [
+        "2026-07-02T18:07:18Z",
+        193.3
+       ],
+       [
+        "2026-07-02T18:08:23Z",
+        193.32
+       ],
+       [
+        "2026-07-02T18:30:00Z",
+        193.38
+       ],
+       [
+        "2026-07-02T18:44:32Z",
+        193.41
+       ],
+       [
+        "2026-07-02T18:48:34Z",
+        193.28
+       ],
+       [
+        "2026-07-02T19:10:09Z",
+        192.71
+       ],
+       [
+        "2026-07-02T19:30:00Z",
+        193.61
+       ],
+       [
+        "2026-07-02T19:38:37Z",
+        193.75
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        194.83
+       ]
+      ]
+     }
+    ],
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-07-03T02:57:02Z",
+    "anchor_beat": "2026-07-02T17:17:39Z"
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -30833,7 +31556,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -31607,7 +32330,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -31633,651 +32356,6 @@
      "provenance": 1,
      "steelman": 1,
      "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "faa-tests-ai-to-manage-air-traffic-safety",
-   "name": "Artificial intelligence advances across multiple sectors",
-   "bucket": "tech",
-   "topic_tags": [
-    "ai"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-23T13:12:04Z",
-    "sentence_count": 7,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "The FAA is looking at artificial intelligence to manage flights.",
-        "cites": [
-         {
-          "outlet": "Yahoo",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSTU2d1NERzE3eVRMaElSLWJLSktnWDhEN2RjMUcwdVBObTVBOEd0Z3ZaNHFLbXlpaEVTQnZNc1diU2U5OFQtUWFTeGREa0NuUDJNTzl4U2pWYVU0SXdlNkF3Ml9vS0NnbVZCSWJfNWZfQlJOUkdZd1o4WERwWWxIaExtc1dhN0ZUMmd0eGVYRXMzNXpMT0E?oc=5",
-          "ts": "2026-06-23T11:55:00Z",
-          "title": "FAA looking at artificial intelligence to manage flights"
-         }
-        ]
-       },
-       {
-        "text": "The agency plans to use artificial intelligence to reduce close calls.",
-        "cites": [
-         {
-          "outlet": "Aero-News Network",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV2l0MVJKcks3Wnh0WHRORkhHS1NZUXNMak9OTlJraVhpVUNoOXdhNU9NODIzSDNuSlFjckwxWG5jUFNPSmlzMGJZazRidFoyUUZZOFNDdHI1S2VaWC1sMlZUZXJFdzdqcENKUTFsNjgwS0dZWnRMdTY2ODUxVjd5Zl91M01RMXhxVV9RS2Mwdkk5Vlhmd3Z3?oc=5",
-          "ts": "2026-06-23T04:11:46Z",
-          "title": "FAA To Use Artificial Intelligence To Reduce Close Calls"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Coverage of AI in daily life notes how tools from Netflix to Siri already shape routine use.",
-        "cites": [
-         {
-          "outlet": "WINK News - Southwest Florida",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYzdIeVo1blFMMlp1M1diaUh0bW9xNVZSUXhGQ2VUSFl0Ti1yODQwMGZkX2NVdXNGV0h1MTF3X0JWSTZ4dlRQcnZSdFRIdmd3eHRBeEZURVduZ0NGTlhKd2V0bWp6eUUyUlNoakYxOWtHMGVnNi1hb28xTWZEdHE1SzdwT0NHQ2ZPVFQzNDlHU0g5aEtpM014VC1TYjZ6OTBPNGRWNmZ3UHhkZG10cFQ3LW9GVjVManBWZ3N2Q2x3ZmItOHN5TlA4ckUzUVV3MDloX0xpd1ExS0dxM1llajc2YTJpUkpSZGFWY2ZNemJSWndFWmt6Umcw?oc=5",
-          "ts": "2026-06-23T10:43:00Z",
-          "title": "From Netflix to Siri, how AI already shapes your daily life and how it works"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Separately, industry coverage discusses lessons from 20 years of AWS applied to agentic AI.",
-        "cites": [
-         {
-          "outlet": "cio.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSGstLWVaRndZWllFT0xaVi1jN29lTHEtbTRPcE02NEtKRm5NOFZNUlE0ZGFUdU1NemNteHVNOC04c1hIMjNhaV92Q2lhb2lVa1FSeGx2VDRGbmF5Q3JuUkZ4ZUxLUnRxZ1lJeWpmcHMzMWRsR2MzLWVOMy1oeVhEdkFQTEU1YWFCcGQtTjRjVGtNQQ?oc=5",
-          "ts": "2026-06-23T10:03:12Z",
-          "title": "What 20 years of AWS taught me about agentic AI"
-         }
-        ]
-       },
-       {
-        "text": "Endava is reported to be redesigning software delivery around AI agents.",
-        "cites": [
-         {
-          "outlet": "OpenAI",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4xZzh6NV9rdlVMVkVlWjVidGs2d1R4TUpVOTZOWC0tTWp6M0ZsMDBJS1ZibnhaY3hrU1FGWTcxejRnR3dxekV5VDRGbVBsbkFkUkhpSVZ6RGxjNjU2?oc=5",
-          "ts": "2026-06-23T06:31:42Z",
-          "title": "How Endava is redesigning software delivery around AI agents"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Other items address team topologies for an agentic platform.",
-        "cites": [
-         {
-          "outlet": "Hacker News",
-          "kind": "journalist",
-          "url": "https://blog.owulveryck.info/2026/06/22/who-does-what-team-topologies-for-the-agentic-platform.html",
-          "ts": "2026-06-23T04:40:08Z",
-          "title": "Who Does What? Team Topologies for the Agentic Platform"
-         }
-        ]
-       },
-       {
-        "text": "Ampersend is reported to use Amazon Bedrock AgentCore Payments to build pay-per-intelligence for AI agents.",
-        "cites": [
-         {
-          "outlet": "Amazon Web Services (AWS)",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNlZvOHpXRDNzVnpqTGJkV2NzU29welh0TmxGZFBXV1piYXZZN3JLb3pOcWNyckt4MWxVWk5jdFpSLTZCRnJVUzNDeWhXdndiczNVaUtqR1lfQXMxQUZlejhTZVcxU1prY3FrTXFMMDhuNGoxUVZXYnlZM09Ib1Z3anFKYnlGVEJEWWdqQ1B1N1FjalNmMjZzc3VmNmNQNXpPT1dQYVhNVEN2YVZpVmFCS1EySURmaHUySGVSbUZXQ2FwSVBac3NZMlY2UzZMT2N1d1pUdlZIR2RRakU?oc=5",
-          "ts": "2026-06-22T17:53:40Z",
-          "title": "Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 8,
-   "items_48h": 18,
-   "outlets": 16,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-02T17:17:39Z",
-     "title": "Forbes 2026 AI 50 List | Top Artificial Intelligence Companies",
-     "outlet": "Forbes",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5uUGIzcFRTdFZwdkxZTnpHdUpfVmhCQ21iczlSQjJrMnlSa19sYzB4S2JuVC1wSWo1UFhRWnlpVWtrb0NIN1RmS2Nn?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T16:25:00Z",
-     "title": "The AI Republic? Governing Artificial Intelligence at America\u2019s 250th Anniversary",
-     "outlet": "Law.com",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUUZ2YU1oWGt5TXRrOHRrTlpsRVZpWXp4VGp0ZmwzOEV6ci0wLXlKU200ZDJmSUJJWEhJT2ZibjAwU1NLdXV0ZmtmVUEtbFNHRXVGZ3RtWEthZnJoTkFiNlpXbmZJU0J6RHRJcGRYd2tXd1pRN3dfMF9tUUlrQUpidGptWmdVcjNaSF9wcjNUZXhrTlVldVR3akVlTGVTa0k2LUFyR1R3dnFrdmhuUnBjNHpmclVLSjRBbGo3LWZIQnI?oc=5",
-     "rel": 21,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T16:07:30Z",
-     "title": "An Optimist\u2019s Account of Artificial Intelligence",
-     "outlet": "Lawfare",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSUVoYmRXSV9fajZDbGEwQVA2STJEQWwxLVJBcTZqd2ttY3AyTWFGMzdEU1dpdFhhTDBZbVptcTc2aTQxRV90UGhBbkhMZ3VCU1hSN1A1Z2JhUXdVZXRNMlpmeGhMVE9pOFhDWEFsd2pqUHR3enRLbXU4ZVk0NUpPbl9xUE5jMThvS3lwWkJR?oc=5",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T16:05:00Z",
-     "title": "Micron Technology Has Fantastic News for This Artificial Intelligence (AI) Infrastructure Stock That Has More Than Doubled in 2026",
-     "outlet": "Motley Fool",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/technology/ai/articles/micron-technology-fantastic-news-artificial-160500956.html",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T14:35:00Z",
-     "title": "The Artificial Intelligence (AI) Stock That Wall Street Can't Stop Upgrading in 2026",
-     "outlet": "Yahoo Finance",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNc3gxQm8wY3VScHo2aFM5NUJyQ2RMaklzUE5FVDN1MTJFSGhzeGRleU1xekFRbWxBd1BYZ0tlZVlWUjlhWE03Qnc4SEZQRVdEUElXbHQ1VmU4eXZVQm9LNVJpMWlNMjJ6UVdXNkRFRVV0T0ZrUnQ4ZzRxdmV5aEkwTEdwRTlSTGpxNndDZ1NmNGVsXzJQNWVEcUdPNWNVOS1WeGp5Rg?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T12:45:55Z",
-     "title": "The EU's Human-Centric Approach to Artificial Intelligence",
-     "outlet": "Beyond the Horizon ISSG",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB4WEdyLU0yajBhY192OGpNSFFMY2VudnNJU1hwNHBWTC1FWER1eGhBNGpXRUFNaWpwNEpZaVh1aWY2SFg5d0o1b3BUWEFCdlh6MHBuU1dhclNxZXRTYm52TzdHMFVuUkdzOERWeFg1dEM3UU1BY3h2V3NVaw?oc=5",
-     "rel": 23,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T04:21:01Z",
-     "title": "1 Artificial Intelligence Stock You Can Buy and Hold for the Next Decade",
-     "outlet": "The Motley Fool",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSTFvS1hQQTdPT3g1RVdjUGNWOXdyX1dkd1JDTWhnd3lFeVJieHNWaXprdE5hSm42WWJzaWtlbzExejNvRlR3VUcwakpIc3RRelBPRjJRTmE2WndoM3VWYS1OcFpVY3FaRGhqakpnV3FaUm1leFdybGlwWWFHdG5yUERQYzIwdHdwcnNXblpCNzRzZVBaUWE3OQ?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T04:20:00Z",
-     "title": "1 Artificial Intelligence Stock You Can Buy and Hold for the Next Decade",
-     "outlet": "Yahoo Finance",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQME9uNHV2MzZhM3JZSW85Y2lFSVlJZzhVellPZ2duM0xQVTBfNmdjWTJ6WXFIaFFpR3pVbllyaGFnUjBVTTBTaENFMExWX0FKdzJOcmtHbDhvM0lXT3o1Rlp0alBPeGhGRFFDd2Zhak40WHEyYXlhMGhWNDBUWVRERkhzS29SMkdmU2k1SzBVMHREUmZaUVA4eFU3cVJHTnZPWUE?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-06-24T04:12:37Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 169,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "C-SPAN",
-      "ts": "2026-06-26T04:00:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "Britannica",
-      "ts": "2026-06-26T05:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "The Motley Fool",
-      "ts": "2026-06-26T05:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 18
-     },
-     {
-      "outlet": "Good Morning America",
-      "ts": "2026-06-26T07:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "U.S. News - Money",
-      "ts": "2026-06-26T07:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Hospital Healthcare Europe",
-      "ts": "2026-06-26T07:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "New Jersey Education Association",
-      "ts": "2026-06-26T07:00:54Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Cushman & Wakefield",
-      "ts": "2026-06-26T07:34:51Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Reuters",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "The Motley Fool",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Yahoo Finance",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "AFCEA International",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Above the Law",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Amazon Web Services (AWS)",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Beyond the Horizon ISSG",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Broadband Breakfast",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Capitol City Now",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Consumer Goods Technology",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Cureus",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Department of Energy (.gov)",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-23 12:00",
-      59,
-      51
-     ],
-     [
-      "2026-06-24 00:00",
-      65,
-      64
-     ],
-     [
-      "2026-06-27 12:00",
-      38,
-      51
-     ],
-     [
-      "2026-06-27 18:00",
-      34,
-      57
-     ],
-     [
-      "2026-06-28 00:00",
-      28,
-      61
-     ],
-     [
-      "2026-06-28 06:00",
-      33,
-      59
-     ],
-     [
-      "2026-06-28 12:00",
-      37,
-      61
-     ],
-     [
-      "2026-06-28 18:00",
-      33,
-      50
-     ],
-     [
-      "2026-06-29 00:00",
-      36,
-      44
-     ],
-     [
-      "2026-06-29 06:00",
-      53,
-      54
-     ],
-     [
-      "2026-06-29 12:00",
-      77,
-      81
-     ],
-     [
-      "2026-06-29 18:00",
-      82,
-      80
-     ],
-     [
-      "2026-06-30 00:00",
-      81,
-      85
-     ],
-     [
-      "2026-06-30 06:00",
-      69,
-      79
-     ],
-     [
-      "2026-06-30 12:00",
-      33,
-      77
-     ],
-     [
-      "2026-06-30 18:00",
-      19,
-      81
-     ],
-     [
-      "2026-07-01 00:00",
-      15,
-      77
-     ],
-     [
-      "2026-07-01 06:00",
-      15,
-      50
-     ],
-     [
-      "2026-07-01 12:00",
-      15,
-      31
-     ],
-     [
-      "2026-07-01 18:00",
-      10,
-      24
-     ],
-     [
-      "2026-07-02 00:00",
-      11,
-      26
-     ],
-     [
-      "2026-07-02 06:00",
-      11,
-      25
-     ],
-     [
-      "2026-07-02 12:00",
-      10,
-      19
-     ],
-     [
-      "2026-07-02 18:00",
-      11,
-      16
-     ],
-     [
-      "2026-07-03 00:00",
-      8,
-      16
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 22
-    },
-    "first_seen": "2026-06-23T13:13:49Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
-    "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 9
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "NVDA",
-      "label": "Nvidia",
-      "class": "equity",
-      "last": 194.83,
-      "last_ts": "2026-07-02T20:00:00Z",
-      "basis": "AI chip demand from air\u2011traffic applications",
-      "move_pct": 0.59,
-      "window_h": 24,
-      "measured_from": "2026-07-02T17:17:39Z",
-      "series": [
-       [
-        "2026-07-02T13:30:00Z",
-        197.97
-       ],
-       [
-        "2026-07-02T13:32:41Z",
-        198.0505
-       ],
-       [
-        "2026-07-02T13:56:17Z",
-        198.68
-       ],
-       [
-        "2026-07-02T14:20:06Z",
-        199.245
-       ],
-       [
-        "2026-07-02T14:30:00Z",
-        195.475
-       ],
-       [
-        "2026-07-02T14:54:52Z",
-        195.48
-       ],
-       [
-        "2026-07-02T15:17:59Z",
-        195.01
-       ],
-       [
-        "2026-07-02T15:30:00Z",
-        194.89
-       ],
-       [
-        "2026-07-02T15:49:15Z",
-        194.82
-       ],
-       [
-        "2026-07-02T16:14:54Z",
-        194.53
-       ],
-       [
-        "2026-07-02T16:30:00Z",
-        193.73
-       ],
-       [
-        "2026-07-02T16:51:06Z",
-        193.69
-       ],
-       [
-        "2026-07-02T17:18:57Z",
-        193.275
-       ],
-       [
-        "2026-07-02T17:30:00Z",
-        192.925
-       ],
-       [
-        "2026-07-02T17:42:37Z",
-        193.0
-       ],
-       [
-        "2026-07-02T18:07:18Z",
-        193.3
-       ],
-       [
-        "2026-07-02T18:08:23Z",
-        193.32
-       ],
-       [
-        "2026-07-02T18:30:00Z",
-        193.38
-       ],
-       [
-        "2026-07-02T18:44:32Z",
-        193.41
-       ],
-       [
-        "2026-07-02T18:48:34Z",
-        193.28
-       ],
-       [
-        "2026-07-02T19:10:09Z",
-        192.71
-       ],
-       [
-        "2026-07-02T19:30:00Z",
-        193.61
-       ],
-       [
-        "2026-07-02T19:38:37Z",
-        193.75
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        194.83
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:47:50Z",
-    "anchor_beat": "2026-07-02T17:17:39Z"
-   },
-   "gate": {
-    "score": 3,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 0,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -32758,7 +32836,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -33301,7 +33379,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -33316,10 +33394,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "Hormuz traffic affects global oil supply",
-      "move_pct": 1.51,
+      "move_pct": 1.73,
       "window_h": 24,
       "measured_from": "2026-07-02T16:49:37Z",
       "series": [
@@ -33368,7 +33446,7 @@
         70.88
        ],
        [
-        "2026-07-02T08:35:33Z",
+        "2026-07-02T09:00:00Z",
         70.84
        ],
        [
@@ -33396,7 +33474,7 @@
         70.55
        ],
        [
-        "2026-07-02T11:00:00Z",
+        "2026-07-02T11:18:25Z",
         70.56
        ],
        [
@@ -33412,8 +33490,8 @@
         70.32
        ],
        [
-        "2026-07-02T12:36:54Z",
-        70.4
+        "2026-07-02T12:59:23Z",
+        70.64
        ],
        [
         "2026-07-02T13:00:00Z",
@@ -33424,11 +33502,11 @@
         70.63
        ],
        [
-        "2026-07-02T13:46:02Z",
-        70.94
+        "2026-07-02T14:00:00Z",
+        70.77
        ],
        [
-        "2026-07-02T14:00:00Z",
+        "2026-07-02T14:09:59Z",
         70.77
        ],
        [
@@ -33440,8 +33518,8 @@
         70.64
        ],
        [
-        "2026-07-02T15:07:58Z",
-        70.64
+        "2026-07-02T15:39:11Z",
+        70.6
        ],
        [
         "2026-07-02T16:00:00Z",
@@ -33452,12 +33530,12 @@
         70.82
        ],
        [
-        "2026-07-02T16:40:55Z",
-        71.06
-       ],
-       [
         "2026-07-02T17:00:00Z",
         71.29
+       ],
+       [
+        "2026-07-02T17:08:48Z",
+        71.32
        ],
        [
         "2026-07-02T17:32:12Z",
@@ -33468,20 +33546,16 @@
         71.5
        ],
        [
-        "2026-07-02T17:58:05Z",
-        71.52
-       ],
-       [
         "2026-07-02T18:00:00Z",
         71.68
        ],
        [
-        "2026-07-02T18:38:25Z",
-        71.68
+        "2026-07-02T18:34:21Z",
+        71.67
        ],
        [
-        "2026-07-02T19:00:00Z",
-        71.54
+        "2026-07-02T18:38:25Z",
+        71.68
        ],
        [
         "2026-07-02T19:00:06Z",
@@ -33492,11 +33566,11 @@
         71.59
        ],
        [
-        "2026-07-02T20:00:00Z",
-        71.64
+        "2026-07-02T19:54:04Z",
+        71.62
        ],
        [
-        "2026-07-02T20:19:16Z",
+        "2026-07-02T20:00:00Z",
         71.64
        ],
        [
@@ -33504,11 +33578,11 @@
         71.58
        ],
        [
-        "2026-07-02T22:00:00Z",
-        71.58
+        "2026-07-02T20:59:30Z",
+        71.54
        ],
        [
-        "2026-07-02T22:12:22Z",
+        "2026-07-02T22:00:00Z",
         71.58
        ],
        [
@@ -33520,12 +33594,12 @@
         71.54
        ],
        [
-        "2026-07-02T23:16:52Z",
-        71.57
+        "2026-07-02T23:06:03Z",
+        71.54
        ],
        [
-        "2026-07-03T00:00:00Z",
-        71.54
+        "2026-07-02T23:16:52Z",
+        71.57
        ],
        [
         "2026-07-03T00:13:02Z",
@@ -33536,8 +33610,8 @@
         71.52
        ],
        [
-        "2026-07-03T01:00:00Z",
-        71.67
+        "2026-07-03T00:57:12Z",
+        71.62
        ],
        [
         "2026-07-03T01:05:33Z",
@@ -33552,8 +33626,8 @@
         71.71
        ],
        [
-        "2026-07-03T02:00:00Z",
-        72.11
+        "2026-07-03T01:48:28Z",
+        72.07
        ],
        [
         "2026-07-03T02:03:27Z",
@@ -33566,6 +33640,10 @@
        [
         "2026-07-03T02:34:07Z",
         72.13
+       ],
+       [
+        "2026-07-03T02:43:23Z",
+        72.29
        ]
       ]
      },
@@ -33573,10 +33651,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Hormuz traffic affects global oil supply",
-      "move_pct": 1.37,
+      "move_pct": 1.6,
       "window_h": 24,
       "measured_from": "2026-07-02T16:49:37Z",
       "series": [
@@ -33613,8 +33691,8 @@
         67.5
        ],
        [
-        "2026-07-02T07:39:54Z",
-        68.08
+        "2026-07-02T08:00:00Z",
+        67.96
        ],
        [
         "2026-07-02T08:03:12Z",
@@ -33645,7 +33723,7 @@
         67.63
        ],
        [
-        "2026-07-02T10:58:51Z",
+        "2026-07-02T11:00:00Z",
         67.46
        ],
        [
@@ -33657,16 +33735,16 @@
         67.17
        ],
        [
-        "2026-07-02T12:00:00Z",
-        67.22
+        "2026-07-02T12:13:36Z",
+        67.21
        ],
        [
         "2026-07-02T12:36:54Z",
         67.34
        ],
        [
-        "2026-07-02T12:59:22Z",
-        67.6
+        "2026-07-02T13:00:00Z",
+        67.66
        ],
        [
         "2026-07-02T13:22:39Z",
@@ -33677,8 +33755,8 @@
         67.88
        ],
        [
-        "2026-07-02T14:00:00Z",
-        67.7
+        "2026-07-02T14:10:04Z",
+        67.66
        ],
        [
         "2026-07-02T14:44:51Z",
@@ -33689,16 +33767,16 @@
         67.56
        ],
        [
-        "2026-07-02T15:07:57Z",
-        67.57
+        "2026-07-02T15:39:13Z",
+        67.6
        ],
        [
         "2026-07-02T16:00:00Z",
         67.76
        ],
        [
-        "2026-07-02T16:04:44Z",
-        67.76
+        "2026-07-02T16:41:06Z",
+        68.04
        ],
        [
         "2026-07-02T17:00:00Z",
@@ -33709,51 +33787,51 @@
         68.26
        ],
        [
-        "2026-07-02T17:32:36Z",
-        68.35
+        "2026-07-02T17:57:17Z",
+        68.43
        ],
        [
         "2026-07-02T17:58:17Z",
         68.48
        ],
        [
-        "2026-07-02T18:00:00Z",
-        68.6
-       ],
-       [
         "2026-07-02T18:34:30Z",
         68.59
+       ],
+       [
+        "2026-07-02T18:38:29Z",
+        68.62
        ],
        [
         "2026-07-02T19:00:00Z",
         68.44
        ],
        [
-        "2026-07-02T19:00:07Z",
-        68.45
-       ],
-       [
         "2026-07-02T19:28:30Z",
         68.44
+       ],
+       [
+        "2026-07-02T19:54:04Z",
+        68.47
        ],
        [
         "2026-07-02T20:00:00Z",
         68.52
        ],
        [
-        "2026-07-02T20:19:16Z",
-        68.52
+        "2026-07-02T20:20:21Z",
+        68.5
        ],
        [
         "2026-07-02T20:51:27Z",
         68.45
        ],
        [
-        "2026-07-02T20:59:55Z",
-        68.46
+        "2026-07-02T22:00:00Z",
+        68.48
        ],
        [
-        "2026-07-02T22:00:00Z",
+        "2026-07-02T22:10:10Z",
         68.48
        ],
        [
@@ -33761,16 +33839,12 @@
         68.5
        ],
        [
-        "2026-07-02T22:38:03Z",
-        68.52
-       ],
-       [
         "2026-07-02T22:57:27Z",
         68.48
        ],
        [
-        "2026-07-02T23:13:05Z",
-        68.47
+        "2026-07-02T23:00:00Z",
+        68.49
        ],
        [
         "2026-07-02T23:25:02Z",
@@ -33781,28 +33855,28 @@
         68.47
        ],
        [
-        "2026-07-03T00:00:00Z",
-        68.38
+        "2026-07-02T23:49:48Z",
+        68.46
        ],
        [
         "2026-07-03T00:13:15Z",
         68.39
        ],
        [
-        "2026-07-03T00:34:39Z",
-        68.38
+        "2026-07-03T00:14:12Z",
+        68.42
        ],
        [
-        "2026-07-03T00:58:18Z",
-        68.45
+        "2026-07-03T00:34:39Z",
+        68.38
        ],
        [
         "2026-07-03T01:00:00Z",
         68.49
        ],
        [
-        "2026-07-03T01:23:08Z",
-        68.41
+        "2026-07-03T01:06:12Z",
+        68.57
        ],
        [
         "2026-07-03T01:32:15Z",
@@ -33813,8 +33887,8 @@
         68.9
        ],
        [
-        "2026-07-03T02:03:25Z",
-        68.94
+        "2026-07-03T02:00:00Z",
+        68.95
        ],
        [
         "2026-07-03T02:15:26Z",
@@ -33823,12 +33897,16 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:49:32Z",
+    "observed_utc": "2026-07-03T02:58:49Z",
     "anchor_beat": "2026-07-02T16:49:37Z"
    },
    "lead_image": {
@@ -34215,7 +34293,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -34840,7 +34918,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -35298,7 +35376,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -35313,10 +35391,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "US trade policy shift",
-      "move_pct": -0.09,
+      "move_pct": -0.1,
       "window_h": 24,
       "measured_from": "2026-07-02T19:37:05Z",
       "series": [
@@ -35341,8 +35419,8 @@
         100.936
        ],
        [
-        "2026-07-02T09:02:35Z",
-        100.939
+        "2026-07-02T09:24:55Z",
+        101.004
        ],
        [
         "2026-07-02T09:53:52Z",
@@ -35361,7 +35439,7 @@
         101.104
        ],
        [
-        "2026-07-02T10:58:50Z",
+        "2026-07-02T11:00:00Z",
         101.057
        ],
        [
@@ -35381,12 +35459,12 @@
         101.166
        ],
        [
-        "2026-07-02T12:36:56Z",
-        100.681
-       ],
-       [
         "2026-07-02T12:59:23Z",
         100.747
+       ],
+       [
+        "2026-07-02T13:00:00Z",
+        100.767
        ],
        [
         "2026-07-02T13:22:39Z",
@@ -35401,12 +35479,12 @@
         100.698
        ],
        [
-        "2026-07-02T14:10:04Z",
-        100.699
-       ],
-       [
         "2026-07-02T14:44:51Z",
         100.843
+       ],
+       [
+        "2026-07-02T15:00:00Z",
+        100.742
        ],
        [
         "2026-07-02T15:07:59Z",
@@ -35421,16 +35499,16 @@
         100.762
        ],
        [
-        "2026-07-02T16:04:51Z",
-        100.757
-       ],
-       [
         "2026-07-02T16:41:07Z",
         100.828
        ],
        [
         "2026-07-02T17:00:00Z",
         100.841
+       ],
+       [
+        "2026-07-02T17:08:57Z",
+        100.857
        ],
        [
         "2026-07-02T17:32:37Z",
@@ -35441,15 +35519,15 @@
         100.878
        ],
        [
-        "2026-07-02T17:58:21Z",
-        100.885
-       ],
-       [
         "2026-07-02T18:00:00Z",
         100.83
        ],
        [
         "2026-07-02T18:34:31Z",
+        100.832
+       ],
+       [
+        "2026-07-02T18:38:31Z",
         100.832
        ],
        [
@@ -35459,10 +35537,6 @@
        [
         "2026-07-02T19:00:09Z",
         100.857
-       ],
-       [
-        "2026-07-02T19:28:35Z",
-        100.89
        ],
        [
         "2026-07-02T19:54:27Z",
@@ -35477,12 +35551,12 @@
         100.857
        ],
        [
-        "2026-07-02T20:51:40Z",
-        100.855
+        "2026-07-02T20:20:29Z",
+        100.853
        ],
        [
-        "2026-07-02T21:00:00Z",
-        100.864
+        "2026-07-02T20:51:40Z",
+        100.855
        ],
        [
         "2026-07-02T21:05:07Z",
@@ -35497,12 +35571,12 @@
         100.871
        ],
        [
-        "2026-07-02T22:00:00Z",
-        100.847
+        "2026-07-02T21:51:14Z",
+        100.883
        ],
        [
-        "2026-07-02T22:04:58Z",
-        100.848
+        "2026-07-02T22:00:00Z",
+        100.847
        ],
        [
         "2026-07-02T23:00:00Z",
@@ -35521,8 +35595,8 @@
         100.98
        ],
        [
-        "2026-07-03T00:14:13Z",
-        100.973
+        "2026-07-03T00:13:41Z",
+        100.978
        ],
        [
         "2026-07-03T00:35:46Z",
@@ -35541,8 +35615,8 @@
         100.88
        ],
        [
-        "2026-07-03T01:32:22Z",
-        100.819
+        "2026-07-03T01:23:23Z",
+        100.783
        ],
        [
         "2026-07-03T01:48:53Z",
@@ -35563,6 +35637,10 @@
        [
         "2026-07-03T02:34:29Z",
         100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
        ]
       ]
      },
@@ -35782,7 +35860,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:49:06Z",
+    "observed_utc": "2026-07-03T02:58:22Z",
     "anchor_beat": "2026-07-02T19:37:05Z"
    },
    "lead_image": {
@@ -36350,7 +36428,7 @@
      ],
      [
       "2026-07-03 00:00",
-      5,
+      6,
       10
      ]
     ],
@@ -36386,7 +36464,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -36401,10 +36479,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "Yen weakness, dollar strength",
-      "move_pct": -0.04,
+      "move_pct": -0.05,
       "window_h": 24,
       "measured_from": "2026-07-03T02:12:27Z",
       "series": [
@@ -36595,6 +36673,10 @@
        [
         "2026-07-03T02:34:29Z",
         100.797
+       ],
+       [
+        "2026-07-03T02:43:34Z",
+        100.789
        ]
       ]
      },
@@ -36602,10 +36684,10 @@
       "symbol": "EURUSD=X",
       "label": "EUR/USD",
       "class": "fx",
-      "last": 1.1446,
-      "last_ts": "2026-07-03T02:44:04Z",
+      "last": 1.1447,
+      "last_ts": "2026-07-03T02:53:05Z",
       "basis": "Yen weakness, dollar strength",
-      "move_pct": 0.0,
+      "move_pct": 0.01,
       "window_h": 24,
       "measured_from": "2026-07-03T02:12:27Z",
       "series": [
@@ -36824,6 +36906,10 @@
        [
         "2026-07-03T02:44:04Z",
         1.1446
+       ],
+       [
+        "2026-07-03T02:53:05Z",
+        1.1447
        ]
       ]
      },
@@ -36926,7 +37012,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:50:42Z",
+    "observed_utc": "2026-07-03T02:59:55Z",
     "anchor_beat": "2026-07-03T02:12:27Z"
    },
    "lead_image": {
@@ -37780,7 +37866,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "History gap: era \"War on Terror era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Soviet war and aftermath\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Durand Line era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
@@ -38267,7 +38353,7 @@
    "sources": [
     {
      "outlet": "The New York Times",
-     "n": 9,
+     "n": 8,
      "class": "other"
     },
     {
@@ -38386,7 +38472,7 @@
      [
       "2026-07-03 00:00",
       3,
-      23
+      22
      ]
     ],
     "mix": {
@@ -38421,7 +38507,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -38927,7 +39013,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -39376,7 +39462,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:47:37Z",
+    "observed_utc": "2026-07-03T02:56:48Z",
     "anchor_beat": "2026-07-02T14:48:55Z"
    },
    "lead_image": {
@@ -40032,7 +40118,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -40478,7 +40564,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -40641,7 +40727,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -41168,7 +41254,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T03:01:14Z",
+    "observed_utc": "2026-07-03T03:10:05Z",
     "anchor_beat": "2026-07-02T15:09:00Z"
    },
    "gate": {
@@ -41310,7 +41396,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -42116,7 +42202,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -42603,7 +42689,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -43513,7 +43599,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -43658,7 +43744,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:46:19Z",
+    "observed_utc": "2026-07-03T02:55:23Z",
     "anchor_beat": "2026-07-02T15:03:19Z"
    },
    "lead_image": {
@@ -44022,7 +44108,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -44037,10 +44123,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.215,
-      "last_ts": "2026-07-03T02:30:01Z",
+      "last": 3.21,
+      "last_ts": "2026-07-03T02:42:02Z",
       "basis": "Indonesia LNG price cap impacts global natural gas market",
-      "move_pct": 0.59,
+      "move_pct": 0.44,
       "window_h": 24,
       "measured_from": "2026-07-02T04:01:05Z",
       "series": [
@@ -44085,12 +44171,12 @@
         3.207
        ],
        [
-        "2026-07-01T22:49:07Z",
-        3.208
+        "2026-07-01T23:00:00Z",
+        3.209
        ],
        [
-        "2026-07-01T23:15:13Z",
-        3.209
+        "2026-07-01T23:35:01Z",
+        3.21
        ],
        [
         "2026-07-02T00:00:00Z",
@@ -44125,20 +44211,20 @@
         3.196
        ],
        [
-        "2026-07-02T04:37:57Z",
-        3.197
+        "2026-07-02T04:59:32Z",
+        3.195
        ],
        [
-        "2026-07-02T05:00:00Z",
+        "2026-07-02T05:28:21Z",
         3.202
        ],
        [
-        "2026-07-02T05:46:33Z",
-        3.202
-       ],
-       [
-        "2026-07-02T06:10:33Z",
+        "2026-07-02T06:00:00Z",
         3.204
+       ],
+       [
+        "2026-07-02T06:33:09Z",
+        3.187
        ],
        [
         "2026-07-02T07:00:00Z",
@@ -44165,28 +44251,28 @@
         3.188
        ],
        [
-        "2026-07-02T10:38:56Z",
-        3.183
+        "2026-07-02T10:57:46Z",
+        3.186
        ],
        [
-        "2026-07-02T11:00:00Z",
+        "2026-07-02T11:18:26Z",
         3.173
        ],
        [
-        "2026-07-02T11:40:15Z",
-        3.155
+        "2026-07-02T12:00:00Z",
+        3.175
        ],
        [
-        "2026-07-02T12:13:37Z",
-        3.174
+        "2026-07-02T12:36:48Z",
+        3.179
        ],
        [
-        "2026-07-02T12:59:23Z",
-        3.156
-       ],
-       [
-        "2026-07-02T13:22:35Z",
+        "2026-07-02T13:00:00Z",
         3.182
+       ],
+       [
+        "2026-07-02T13:46:15Z",
+        3.185
        ],
        [
         "2026-07-02T14:10:03Z",
@@ -44205,36 +44291,36 @@
         3.184
        ],
        [
-        "2026-07-02T17:00:00Z",
+        "2026-07-02T17:08:49Z",
         3.199
        ],
        [
-        "2026-07-02T17:32:35Z",
-        3.194
+        "2026-07-02T17:57:15Z",
+        3.21
        ],
        [
-        "2026-07-02T17:58:17Z",
-        3.209
-       ],
-       [
-        "2026-07-02T18:34:15Z",
+        "2026-07-02T18:00:00Z",
         3.195
        ],
        [
-        "2026-07-02T19:00:00Z",
-        3.194
-       ],
-       [
-        "2026-07-02T19:28:04Z",
+        "2026-07-02T18:38:15Z",
         3.198
        ],
        [
-        "2026-07-02T20:00:00Z",
+        "2026-07-02T19:00:04Z",
+        3.192
+       ],
+       [
+        "2026-07-02T19:54:20Z",
+        3.219
+       ],
+       [
+        "2026-07-02T20:18:48Z",
         3.212
        ],
        [
-        "2026-07-02T20:20:15Z",
-        3.211
+        "2026-07-02T20:51:07Z",
+        3.21
        ],
        [
         "2026-07-02T22:00:00Z",
@@ -44245,54 +44331,54 @@
         3.205
        ],
        [
-        "2026-07-02T22:40:12Z",
+        "2026-07-02T22:57:30Z",
+        3.208
+       ],
+       [
+        "2026-07-02T23:12:22Z",
         3.209
        ],
        [
-        "2026-07-02T23:00:00Z",
-        3.209
-       ],
-       [
-        "2026-07-02T23:24:16Z",
+        "2026-07-02T23:40:17Z",
         3.207
        ],
        [
-        "2026-07-02T23:50:00Z",
-        3.206
-       ],
-       [
-        "2026-07-03T00:13:30Z",
+        "2026-07-03T00:00:00Z",
         3.211
        ],
        [
-        "2026-07-03T00:32:00Z",
+        "2026-07-03T00:14:13Z",
         3.21
        ],
        [
-        "2026-07-03T01:00:00Z",
+        "2026-07-03T00:56:28Z",
+        3.209
+       ],
+       [
+        "2026-07-03T01:06:14Z",
         3.215
        ],
        [
-        "2026-07-03T01:19:27Z",
+        "2026-07-03T01:29:46Z",
+        3.212
+       ],
+       [
+        "2026-07-03T02:00:00Z",
+        3.215
+       ],
+       [
+        "2026-07-03T02:15:07Z",
+        3.216
+       ],
+       [
+        "2026-07-03T02:42:02Z",
         3.21
-       ],
-       [
-        "2026-07-03T01:48:45Z",
-        3.213
-       ],
-       [
-        "2026-07-03T02:02:02Z",
-        3.215
-       ],
-       [
-        "2026-07-03T02:30:01Z",
-        3.215
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:49:14Z",
+    "observed_utc": "2026-07-03T02:58:31Z",
     "anchor_beat": "2026-07-02T04:01:05Z"
    },
    "lead_image": {
@@ -44782,7 +44868,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -45445,7 +45531,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -45567,7 +45653,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:48:27Z",
+    "observed_utc": "2026-07-03T02:57:40Z",
     "anchor_beat": "2026-07-02T13:51:33Z"
    },
    "lead_image": {
@@ -46392,7 +46478,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -46770,7 +46856,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -47109,11 +47195,6 @@
      "class": "other"
     },
     {
-     "outlet": "Investopedia",
-     "n": 1,
-     "class": "other"
-    },
-    {
      "outlet": "LA Times",
      "n": 1,
      "class": "other"
@@ -47217,13 +47298,13 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 12
+     "other": 11
     },
     "first_seen": "2026-06-30T09:40:12Z"
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -47841,8 +47922,8 @@
      ],
      [
       "2026-07-03 00:00",
-      0,
-      1
+      1,
+      2
      ]
     ],
     "mix": {
@@ -47917,7 +47998,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -47931,10 +48012,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "Sanctions, oil transport",
-      "move_pct": 0.64,
+      "move_pct": 0.87,
       "window_h": 24,
       "measured_from": "2026-07-03T01:12:39Z",
       "series": [
@@ -48121,6 +48202,10 @@
        [
         "2026-07-03T02:34:07Z",
         72.13
+       ],
+       [
+        "2026-07-03T02:43:23Z",
+        72.29
        ]
       ]
      },
@@ -48128,10 +48213,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Sanctions, oil transport",
-      "move_pct": 0.58,
+      "move_pct": 0.82,
       "window_h": 24,
       "measured_from": "2026-07-03T01:12:39Z",
       "series": [
@@ -48342,6 +48427,10 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      },
@@ -48460,7 +48549,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:46:49Z",
+    "observed_utc": "2026-07-03T02:55:56Z",
     "anchor_beat": "2026-07-03T01:12:39Z"
    },
    "lead_image": {
@@ -48479,6 +48568,554 @@
      "carriers": 1,
      "provenance": 1,
      "steelman": 1,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "australia-doubles-penalties-on-tech-for-child-so",
+   "name": "Australia doubles penalties on tech for child social media b",
+   "bucket": "info-wars",
+   "topic_tags": [
+    "censorship",
+    "media"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-29T16:03:58Z",
+    "sentence_count": 3,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Australia is doubling penalties for social media firms that violate the under-16 ban.",
+        "cites": [
+         {
+          "outlet": "Nikkei Asia",
+          "kind": "journalist",
+          "url": "https://asia.nikkei.com/business/technology/australia-to-double-penalties-for-social-media-firms-skirting-u-16-ban",
+          "ts": null,
+          "title": "Australia to double penalties for social media firms skirting U-16 ban"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The government says the under-16 ban is failing, so it is doubling down.",
+        "cites": [
+         {
+          "outlet": "Fortune",
+          "kind": "journalist",
+          "url": "https://fortune.com/2026/06/29/australia-kids-social-media-ban-failing-fines-meta/",
+          "ts": "2026-06-29T14:11:06Z",
+          "title": "Australia\u2019s under-16 social media ban is failing, so the government is (literally) doubling down"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Australia proposes increasing fines for social media companies in the under-16 ban.",
+        "cites": [
+         {
+          "outlet": "CBC World",
+          "kind": "journalist",
+          "url": "https://www.cbc.ca/news/world/australia-social-media-kids-new-legislation-9.7252325?cmp=rss",
+          "ts": "2026-06-29T07:46:34Z",
+          "title": "Australia proposes increasing fines for social media companies in under-16 ban"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 1,
+   "items_48h": 2,
+   "outlets": 2,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-03T02:19:45Z",
+     "title": "Australia news live: ASX to pay $23.5m after misleading statement; trial for teen over alleged Melbourne plane hijacking",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/australia-news/live/2026/jul/03/politics-anthony-albanese-labor-angus-taylor-liberal-party-coalition-antisemitism-royal-commission-nsw-victorian-alps-snow-weather-ntwnfb",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-01T19:36:14Z",
+     "title": "Australian AI giant hit with ad block by world's biggest porn site",
+     "outlet": "ABC News AU",
+     "kind": "journalist",
+     "url": "https://www.abc.net.au/news/2026-07-02/coreflow-ourdream-child-abuse-material-pornhub-advertising-block/106836756",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-30T18:59:19Z",
+     "title": "Australia sues Amazon for making allegedly unfair contracts with subscribers",
+     "outlet": "BBC World",
+     "kind": "journalist",
+     "url": "https://www.bbc.co.uk/news/articles/c20yz9rzwy0o?at_medium=RSS&at_campaign=rss",
+     "rel": 17,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-30T17:13:07Z",
+     "title": "Meta loses bid to dismiss US states\u2019 claims that Facebook, Instagram addict children",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/stock-market-news/meta-loses-bid-to-dismiss-us-states-claims-that-facebook-instagram-addict-children-4767962",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-30T12:00:40Z",
+     "title": "Meta, YouTube, TikTok Could Face Millions In Fines Under Australia's Tougher Social Media Law: 'Not Here To Play Games'",
+     "outlet": "Benzinga",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/media-advertising/articles/meta-youtube-tiktok-could-face-120040602.html",
+     "rel": 28,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-30T08:28:35Z",
+     "title": "Thai police investigate if Australian man charged over 17-year-old girl\u2019s murder linked to other unsolved cases",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/world/2026/jun/30/thai-teen-girl-murder-australian-man-charged-police-investigate-other-unsolved-cases-ntwnfb",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-06-30T07:40:11Z",
+     "title": "Reasonable to believe targeted killing of children part of larger plan for genocide of the Palestinian people, Justice Muralidhar says",
+     "outlet": "The Hindu Intl",
+     "kind": "journalist",
+     "url": "https://www.thehindu.com/news/international/reasonable-to-believe-targeted-killing-of-children-part-of-larger-plan-for-genocide-of-the-palestinian-people-justice-muralidhar-says/article71164601.ece",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-06-30T07:39:57Z",
+     "title": "EY sacks graduate employee after he allegedly accessed Australian PM\u2019s bank account",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/australia-news/2026/jun/30/ernst-and-young-ey-graduate-employee-allegedly-accessed-australian-prime-minister-albanese-bank-account-sacked-ntwnfb",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-01T09:21:55Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 74,
+    "outlets_unplaced": 1,
+    "chain": [
+     {
+      "outlet": "CGTN",
+      "ts": "2026-06-26T06:46:53Z",
+      "kind": "state media",
+      "role": "origin",
+      "motive_note": "CN state media",
+      "items": 1
+     },
+     {
+      "outlet": "The Globe and Mail",
+      "ts": "2026-06-26T08:35:37Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Capgemini",
+      "ts": "2026-06-26T10:15:04Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "NYT World",
+      "ts": "2026-06-26T10:15:15Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 2
+     },
+     {
+      "outlet": "Technology Magazine",
+      "ts": "2026-06-26T12:50:42Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Futurism",
+      "ts": "2026-06-26T14:48:28Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Business Standard",
+      "ts": "2026-06-26T16:50:01Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Investing.com",
+      "ts": "2026-06-26T17:13:10Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     }
+    ],
+    "unplaced": [
+     {
+      "outlet": "Nikkei Asia",
+      "first_seen": "2026-06-29T14:21:59Z",
+      "kind": "journalist",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     }
+    ]
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "ABC News AU",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Benzinga",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Reuters",
+     "n": 1,
+     "class": "mainstream"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-27 12:00",
+      13,
+      15
+     ],
+     [
+      "2026-06-27 18:00",
+      19,
+      17
+     ],
+     [
+      "2026-06-28 00:00",
+      16,
+      18
+     ],
+     [
+      "2026-06-28 06:00",
+      15,
+      17
+     ],
+     [
+      "2026-06-28 12:00",
+      17,
+      26
+     ],
+     [
+      "2026-06-28 18:00",
+      20,
+      27
+     ],
+     [
+      "2026-06-29 00:00",
+      24,
+      30
+     ],
+     [
+      "2026-06-29 06:00",
+      34,
+      38
+     ],
+     [
+      "2026-06-29 12:00",
+      59,
+      59
+     ],
+     [
+      "2026-06-29 18:00",
+      53,
+      50
+     ],
+     [
+      "2026-06-30 00:00",
+      50,
+      50
+     ],
+     [
+      "2026-06-30 06:00",
+      47,
+      51
+     ],
+     [
+      "2026-06-30 12:00",
+      37,
+      43
+     ],
+     [
+      "2026-06-30 18:00",
+      25,
+      40
+     ],
+     [
+      "2026-07-01 00:00",
+      16,
+      32
+     ],
+     [
+      "2026-07-01 06:00",
+      7,
+      25
+     ],
+     [
+      "2026-07-01 12:00",
+      3,
+      17
+     ],
+     [
+      "2026-07-01 18:00",
+      1,
+      13
+     ],
+     [
+      "2026-07-02 00:00",
+      1,
+      6
+     ],
+     [
+      "2026-07-02 06:00",
+      1,
+      5
+     ],
+     [
+      "2026-07-02 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-02 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-03 00:00",
+      0,
+      1
+     ]
+    ],
+    "mix": {
+     "mainstream": 2,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 2
+    },
+    "first_seen": "2026-06-27T15:51:01Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 5
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "META",
+      "label": "Meta",
+      "class": "equity",
+      "last": 582.9,
+      "last_ts": "2026-07-02T20:00:00Z",
+      "basis": "regulatory pressure on social media platform",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-02T14:20:07Z",
+        590.59
+       ],
+       [
+        "2026-07-02T14:30:00Z",
+        590.73
+       ],
+       [
+        "2026-07-02T14:54:53Z",
+        590.835
+       ],
+       [
+        "2026-07-02T15:17:59Z",
+        587.8201
+       ],
+       [
+        "2026-07-02T15:30:00Z",
+        587.665
+       ],
+       [
+        "2026-07-02T15:49:14Z",
+        587.4201
+       ],
+       [
+        "2026-07-02T16:14:51Z",
+        585.285
+       ],
+       [
+        "2026-07-02T16:30:00Z",
+        585.49
+       ],
+       [
+        "2026-07-02T16:51:07Z",
+        585.58
+       ],
+       [
+        "2026-07-02T17:18:58Z",
+        585.29
+       ],
+       [
+        "2026-07-02T17:30:00Z",
+        584.26
+       ],
+       [
+        "2026-07-02T17:42:35Z",
+        584.18
+       ],
+       [
+        "2026-07-02T18:07:17Z",
+        585.29
+       ],
+       [
+        "2026-07-02T18:08:23Z",
+        586.26
+       ],
+       [
+        "2026-07-02T18:30:00Z",
+        585.98
+       ],
+       [
+        "2026-07-02T18:44:33Z",
+        585.75
+       ],
+       [
+        "2026-07-02T18:48:31Z",
+        586.06
+       ],
+       [
+        "2026-07-02T19:10:11Z",
+        586.37
+       ],
+       [
+        "2026-07-02T19:30:00Z",
+        584.995
+       ],
+       [
+        "2026-07-02T19:38:35Z",
+        585.0
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        582.9
+       ]
+      ]
+     }
+    ],
+    "note": "Instruments mapped to this topic; correlation pending price history.",
+    "observed_utc": "2026-07-03T02:57:27Z",
+    "anchor_beat": "2026-07-03T02:19:45Z"
+   },
+   "lead_image": {
+    "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8640x4860+0+450/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc0%2F76%2F9dc23d76477dac3641addd9398cb%2Fap26180083322391.jpg",
+    "source": "NPR World",
+    "focal": {
+     "x": 49,
+     "y": 52
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -48878,7 +49515,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -49327,7 +49964,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-03T02:49:37Z",
+    "observed_utc": "2026-07-03T02:58:53Z",
     "anchor_beat": "2026-07-03T01:18:26Z"
    },
    "lead_image": {
@@ -49767,7 +50404,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -50137,7 +50774,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -50794,7 +51431,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:52:14Z",
+    "observed_utc": "2026-07-03T03:01:33Z",
     "anchor_beat": "2026-07-01T21:28:00Z"
    },
    "lead_image": {
@@ -51261,7 +51898,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -51532,7 +52169,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:54:37Z",
+    "observed_utc": "2026-07-03T03:03:48Z",
     "anchor_beat": "2026-07-01T13:41:11Z"
    },
    "gate": {
@@ -52262,7 +52899,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -52930,7 +53567,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "History gap: era \"Treaty era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
@@ -53531,7 +54168,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -53558,662 +54195,6 @@
      "provenance": 1,
      "steelman": 1,
      "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "australia-doubles-penalties-on-tech-for-child-so",
-   "name": "Australia doubles penalties on tech for child social media b",
-   "bucket": "info-wars",
-   "topic_tags": [
-    "censorship",
-    "media"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-29T16:03:58Z",
-    "sentence_count": 3,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Australia is doubling penalties for social media firms that violate the under-16 ban.",
-        "cites": [
-         {
-          "outlet": "Nikkei Asia",
-          "kind": "journalist",
-          "url": "https://asia.nikkei.com/business/technology/australia-to-double-penalties-for-social-media-firms-skirting-u-16-ban",
-          "ts": null,
-          "title": "Australia to double penalties for social media firms skirting U-16 ban"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The government says the under-16 ban is failing, so it is doubling down.",
-        "cites": [
-         {
-          "outlet": "Fortune",
-          "kind": "journalist",
-          "url": "https://fortune.com/2026/06/29/australia-kids-social-media-ban-failing-fines-meta/",
-          "ts": "2026-06-29T14:11:06Z",
-          "title": "Australia\u2019s under-16 social media ban is failing, so the government is (literally) doubling down"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Australia proposes increasing fines for social media companies in the under-16 ban.",
-        "cites": [
-         {
-          "outlet": "CBC World",
-          "kind": "journalist",
-          "url": "https://www.cbc.ca/news/world/australia-social-media-kids-new-legislation-9.7252325?cmp=rss",
-          "ts": "2026-06-29T07:46:34Z",
-          "title": "Australia proposes increasing fines for social media companies in under-16 ban"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 0,
-   "items_48h": 1,
-   "outlets": 1,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-01T19:36:14Z",
-     "title": "Australian AI giant hit with ad block by world's biggest porn site",
-     "outlet": "ABC News AU",
-     "kind": "journalist",
-     "url": "https://www.abc.net.au/news/2026-07-02/coreflow-ourdream-child-abuse-material-pornhub-advertising-block/106836756",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-30T18:59:19Z",
-     "title": "Australia sues Amazon for making allegedly unfair contracts with subscribers",
-     "outlet": "BBC World",
-     "kind": "journalist",
-     "url": "https://www.bbc.co.uk/news/articles/c20yz9rzwy0o?at_medium=RSS&at_campaign=rss",
-     "rel": 17,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-30T17:13:07Z",
-     "title": "Meta loses bid to dismiss US states\u2019 claims that Facebook, Instagram addict children",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/stock-market-news/meta-loses-bid-to-dismiss-us-states-claims-that-facebook-instagram-addict-children-4767962",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-30T12:00:40Z",
-     "title": "Meta, YouTube, TikTok Could Face Millions In Fines Under Australia's Tougher Social Media Law: 'Not Here To Play Games'",
-     "outlet": "Benzinga",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/media-advertising/articles/meta-youtube-tiktok-could-face-120040602.html",
-     "rel": 28,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-30T08:28:35Z",
-     "title": "Thai police investigate if Australian man charged over 17-year-old girl\u2019s murder linked to other unsolved cases",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/world/2026/jun/30/thai-teen-girl-murder-australian-man-charged-police-investigate-other-unsolved-cases-ntwnfb",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-30T07:40:11Z",
-     "title": "Reasonable to believe targeted killing of children part of larger plan for genocide of the Palestinian people, Justice Muralidhar says",
-     "outlet": "The Hindu Intl",
-     "kind": "journalist",
-     "url": "https://www.thehindu.com/news/international/reasonable-to-believe-targeted-killing-of-children-part-of-larger-plan-for-genocide-of-the-palestinian-people-justice-muralidhar-says/article71164601.ece",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-06-30T07:39:57Z",
-     "title": "EY sacks graduate employee after he allegedly accessed Australian PM\u2019s bank account",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/australia-news/2026/jun/30/ernst-and-young-ey-graduate-employee-allegedly-accessed-australian-prime-minister-albanese-bank-account-sacked-ntwnfb",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-06-30T06:29:44Z",
-     "title": "Queensland government admits vulnerable children slept on floor of public service offices",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/australia-news/2026/jun/30/queensland-government-child-safety-vulnerable-children-sleep-on-floor-ntwnfb",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-01T09:21:55Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 74,
-    "outlets_unplaced": 1,
-    "chain": [
-     {
-      "outlet": "CGTN",
-      "ts": "2026-06-26T06:46:53Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "CN state media",
-      "items": 1
-     },
-     {
-      "outlet": "The Globe and Mail",
-      "ts": "2026-06-26T08:35:37Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Capgemini",
-      "ts": "2026-06-26T10:15:04Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "NYT World",
-      "ts": "2026-06-26T10:15:15Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US press",
-      "items": 2
-     },
-     {
-      "outlet": "Technology Magazine",
-      "ts": "2026-06-26T12:50:42Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Futurism",
-      "ts": "2026-06-26T14:48:28Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Business Standard",
-      "ts": "2026-06-26T16:50:01Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Investing.com",
-      "ts": "2026-06-26T17:13:10Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     }
-    ],
-    "unplaced": [
-     {
-      "outlet": "Nikkei Asia",
-      "first_seen": "2026-06-29T14:21:59Z",
-      "kind": "journalist",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     }
-    ]
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "ABC News AU",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Benzinga",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Reuters",
-     "n": 1,
-     "class": "mainstream"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-27 12:00",
-      13,
-      15
-     ],
-     [
-      "2026-06-27 18:00",
-      19,
-      17
-     ],
-     [
-      "2026-06-28 00:00",
-      16,
-      18
-     ],
-     [
-      "2026-06-28 06:00",
-      15,
-      17
-     ],
-     [
-      "2026-06-28 12:00",
-      17,
-      26
-     ],
-     [
-      "2026-06-28 18:00",
-      20,
-      27
-     ],
-     [
-      "2026-06-29 00:00",
-      24,
-      30
-     ],
-     [
-      "2026-06-29 06:00",
-      34,
-      38
-     ],
-     [
-      "2026-06-29 12:00",
-      59,
-      59
-     ],
-     [
-      "2026-06-29 18:00",
-      53,
-      50
-     ],
-     [
-      "2026-06-30 00:00",
-      50,
-      50
-     ],
-     [
-      "2026-06-30 06:00",
-      47,
-      51
-     ],
-     [
-      "2026-06-30 12:00",
-      37,
-      43
-     ],
-     [
-      "2026-06-30 18:00",
-      25,
-      40
-     ],
-     [
-      "2026-07-01 00:00",
-      16,
-      32
-     ],
-     [
-      "2026-07-01 06:00",
-      7,
-      25
-     ],
-     [
-      "2026-07-01 12:00",
-      3,
-      17
-     ],
-     [
-      "2026-07-01 18:00",
-      1,
-      13
-     ],
-     [
-      "2026-07-02 00:00",
-      1,
-      6
-     ],
-     [
-      "2026-07-02 06:00",
-      1,
-      5
-     ],
-     [
-      "2026-07-02 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-02 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-03 00:00",
-      0,
-      1
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 2
-    },
-    "first_seen": "2026-06-27T15:51:01Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
-    "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
-    "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 5
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "META",
-      "label": "Meta",
-      "class": "equity",
-      "last": 582.9,
-      "last_ts": "2026-07-02T20:00:00Z",
-      "basis": "regulatory pressure on social media platform",
-      "move_pct": -4.92,
-      "window_h": 24,
-      "measured_from": "2026-07-01T19:36:14Z",
-      "series": [
-       [
-        "2026-07-01T13:30:00Z",
-        601.7335
-       ],
-       [
-        "2026-07-01T13:51:10Z",
-        601.24
-       ],
-       [
-        "2026-07-01T14:19:25Z",
-        612.68
-       ],
-       [
-        "2026-07-01T14:30:00Z",
-        620.82
-       ],
-       [
-        "2026-07-01T14:38:57Z",
-        619.425
-       ],
-       [
-        "2026-07-01T15:05:42Z",
-        627.775
-       ],
-       [
-        "2026-07-01T15:25:15Z",
-        625.0
-       ],
-       [
-        "2026-07-01T15:30:00Z",
-        619.85
-       ],
-       [
-        "2026-07-01T15:41:35Z",
-        621.849
-       ],
-       [
-        "2026-07-01T15:59:40Z",
-        617.53
-       ],
-       [
-        "2026-07-01T16:25:09Z",
-        617.51
-       ],
-       [
-        "2026-07-01T16:30:00Z",
-        618.26
-       ],
-       [
-        "2026-07-01T16:43:09Z",
-        618.0501
-       ],
-       [
-        "2026-07-01T17:08:47Z",
-        618.61
-       ],
-       [
-        "2026-07-01T17:30:00Z",
-        618.06
-       ],
-       [
-        "2026-07-01T17:36:32Z",
-        618.1625
-       ],
-       [
-        "2026-07-01T17:55:08Z",
-        621.89
-       ],
-       [
-        "2026-07-01T18:13:36Z",
-        618.36
-       ],
-       [
-        "2026-07-01T18:30:00Z",
-        620.765
-       ],
-       [
-        "2026-07-01T18:36:25Z",
-        620.435
-       ],
-       [
-        "2026-07-01T19:07:05Z",
-        617.16
-       ],
-       [
-        "2026-07-01T19:30:00Z",
-        615.32
-       ],
-       [
-        "2026-07-01T19:32:05Z",
-        615.28
-       ],
-       [
-        "2026-07-01T19:56:26Z",
-        613.79
-       ],
-       [
-        "2026-07-01T20:00:00Z",
-        612.91
-       ],
-       [
-        "2026-07-02T13:30:00Z",
-        605.19
-       ],
-       [
-        "2026-07-02T13:32:41Z",
-        602.6308
-       ],
-       [
-        "2026-07-02T13:56:17Z",
-        593.02
-       ],
-       [
-        "2026-07-02T14:20:07Z",
-        590.59
-       ],
-       [
-        "2026-07-02T14:30:00Z",
-        590.73
-       ],
-       [
-        "2026-07-02T14:54:53Z",
-        590.835
-       ],
-       [
-        "2026-07-02T15:17:59Z",
-        587.8201
-       ],
-       [
-        "2026-07-02T15:30:00Z",
-        587.665
-       ],
-       [
-        "2026-07-02T15:49:14Z",
-        587.4201
-       ],
-       [
-        "2026-07-02T16:14:51Z",
-        585.285
-       ],
-       [
-        "2026-07-02T16:30:00Z",
-        585.49
-       ],
-       [
-        "2026-07-02T16:51:07Z",
-        585.58
-       ],
-       [
-        "2026-07-02T17:18:58Z",
-        585.29
-       ],
-       [
-        "2026-07-02T17:30:00Z",
-        584.26
-       ],
-       [
-        "2026-07-02T17:42:35Z",
-        584.18
-       ],
-       [
-        "2026-07-02T18:07:17Z",
-        585.29
-       ],
-       [
-        "2026-07-02T18:08:23Z",
-        586.26
-       ],
-       [
-        "2026-07-02T18:30:00Z",
-        585.98
-       ],
-       [
-        "2026-07-02T18:44:33Z",
-        585.75
-       ],
-       [
-        "2026-07-02T18:48:31Z",
-        586.06
-       ],
-       [
-        "2026-07-02T19:10:11Z",
-        586.37
-       ],
-       [
-        "2026-07-02T19:30:00Z",
-        584.995
-       ],
-       [
-        "2026-07-02T19:38:35Z",
-        585.0
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        582.9
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:48:15Z",
-    "anchor_beat": "2026-07-01T19:36:14Z"
-   },
-   "lead_image": {
-    "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8640x4860+0+450/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc0%2F76%2F9dc23d76477dac3641addd9398cb%2Fap26180083322391.jpg",
-    "source": "NPR World",
-    "focal": {
-     "x": 49,
-     "y": 52
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -54904,7 +54885,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "market": {
@@ -54913,8 +54894,8 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Red Sea tensions threaten oil transport",
       "move_pct": -1.85,
       "window_h": 24,
@@ -55170,8 +55151,8 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "Brent linked to Middle East shipping risk",
       "move_pct": -2.49,
       "window_h": 24,
@@ -55425,7 +55406,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:45:47Z",
+    "observed_utc": "2026-07-03T02:54:49Z",
     "anchor_beat": "2026-06-30T18:15:34Z"
    },
    "lead_image": {
@@ -56301,7 +56282,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -56316,8 +56297,8 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Middle East tension impacts crude supply",
       "move_pct": -0.79,
       "window_h": 24,
@@ -56573,8 +56554,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.797,
-      "last_ts": "2026-07-03T02:34:29Z",
+      "last": 100.789,
+      "last_ts": "2026-07-03T02:43:34Z",
       "basis": "geopolitical risk influences dollar index",
       "move_pct": 0.09,
       "window_h": 24,
@@ -56828,7 +56809,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:45:54Z",
+    "observed_utc": "2026-07-03T02:54:57Z",
     "anchor_beat": "2026-06-29T15:56:31Z"
    },
    "lead_image": {
@@ -57400,7 +57381,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "History gap: era \"Post-Mavi Marmara flotilla era\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
@@ -57963,7 +57944,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -57978,8 +57959,8 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "Regional instability affecting oil supply",
       "move_pct": -0.22,
       "window_h": 24,
@@ -58235,8 +58216,8 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Regional instability affecting oil supply",
       "move_pct": -0.52,
       "window_h": 24,
@@ -58490,7 +58471,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:46:58Z",
+    "observed_utc": "2026-07-03T02:56:06Z",
     "anchor_beat": "2026-06-30T06:48:38Z"
    },
    "lead_image": {
@@ -58996,7 +58977,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -59485,7 +59466,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -59501,17 +59482,13 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "regional-supply risk",
       "move_pct": 1.17,
       "window_h": 24,
       "measured_from": "2026-06-27T09:43:00Z",
       "series": [
-       [
-        "2026-07-02T11:00:00Z",
-        67.46
-       ],
        [
         "2026-07-02T11:18:25Z",
         67.48
@@ -59747,6 +59724,10 @@
        [
         "2026-07-03T02:34:28Z",
         68.97
+       ],
+       [
+        "2026-07-03T02:43:32Z",
+        69.13
        ]
       ]
      },
@@ -60005,7 +59986,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:47:29Z",
+    "observed_utc": "2026-07-03T02:56:40Z",
     "anchor_beat": "2026-06-27T09:43:00Z"
    },
    "lead_image": {
@@ -60409,7 +60390,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -60592,7 +60573,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel, UN News.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -60608,8 +60589,8 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.97,
-      "last_ts": "2026-07-03T02:34:28Z",
+      "last": 69.13,
+      "last_ts": "2026-07-03T02:43:32Z",
       "basis": "Middle East tensions affecting crude markets",
       "move_pct": -2.73,
       "window_h": 24,
@@ -60865,8 +60846,8 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-03T02:34:07Z",
+      "last": 72.29,
+      "last_ts": "2026-07-03T02:43:23Z",
       "basis": "Geopolitical risk impacting Brent crude",
       "move_pct": -2.95,
       "window_h": 24,
@@ -61120,7 +61101,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-03T02:52:27Z",
+    "observed_utc": "2026-07-03T03:01:45Z",
     "anchor_beat": "2026-06-30T22:30:25Z"
    },
    "gate": {
@@ -61139,56 +61120,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Climate scientist who \u201cproved\u201d humanity is warming Earth says government report got it wrong",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Isomeric multi-hydrogen-bonding enables blue perovskite LEDs",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Scientists should recognize their own political biases to build public trust",
-   "outlets": 8,
-   "count": 8,
-   "status": "watching"
-  },
-  {
-   "sample": "Vaccination elicits HIV broadly neutralizing antibodies in primates",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Three die in Mexico City World Cup street celebrations",
-   "outlets": 3,
-   "count": 6,
-   "status": "watching"
-  },
-  {
-   "sample": "Russian Offensive Campaign Assessment, June 29, 2026",
-   "outlets": 3,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "SFJ may target Punjab polls with major disinformation campaign",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "SpaceX plans eight-mile \u2018Starpipe\u2019 to fuel Mars-bound Starship",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -61197,11 +61129,11 @@
   "unclear": 0
  },
  "cabinet": {
-  "situations": 237,
-  "situations_active": 237,
-  "discovered": 232,
-  "items": 36084,
-  "developments": 35480,
+  "situations": 239,
+  "situations_active": 239,
+  "discovered": 234,
+  "items": 36115,
+  "developments": 35511,
   "claims": 3814,
   "carriers": 10042,
   "steelmans": 3461,
@@ -61209,21 +61141,15 @@
   "entities": 792,
   "edges": 23761,
   "history_nodes": 557,
-  "gate_rejects_7d": 3615,
+  "gate_rejects_7d": 3637,
   "runs": 570,
   "backend": "st"
  },
  "gate": {
-  "clusters": 143,
-  "accepted": 0,
-  "rejected": 20,
-  "existing": 3,
-  "below": 120,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
-  "scored": 232,
+  "scored": 234,
   "at_8": 0,
   "graduated": false,
   "graduated_since": null,
@@ -61234,6 +61160,6 @@
   "edition_utc": "2026-07-02",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1190
+  "overflow": 1215
  }
 }
