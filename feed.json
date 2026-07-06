@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-06T04:48:45Z",
+ "generated_utc": "2026-07-06T04:55:03Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,6 +32,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -74,6 +75,41 @@
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:venezuela-earthquakes-kill-920-amid-political-cr",
+    "label": "GDELT Venezuela earthquakes kill 920 amid political crisis",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-to-pull-fighter-jets-from-nato-europe",
+    "label": "GDELT NATO Faces Key Challenges",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:iran-mourns",
+    "label": "GDELT Iran Mourns",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+   },
+   {
+    "id": "gdelt:us-iran-talks-in-doha",
+    "label": "GDELT Khamenei funeral",
+    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
    }
   ]
  },
@@ -657,26 +693,10 @@
     "outlets_unplaced": 2,
     "chain": [
      {
-      "outlet": "The Hindu Intl",
-      "ts": "2026-06-29T04:31:23Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 12
-     },
-     {
-      "outlet": "TASS",
-      "ts": "2026-06-29T04:37:07Z",
-      "kind": "state media",
-      "role": "echo",
-      "motive_note": "RU state media",
-      "items": 142
-     },
-     {
       "outlet": "Encyclopedia Britannica",
       "ts": "2026-06-29T05:00:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -719,6 +739,22 @@
       "role": "echo",
       "motive_note": "SG press",
       "items": 2
+     },
+     {
+      "outlet": "Defense Express",
+      "ts": "2026-06-29T06:24:16Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "WTVB",
+      "ts": "2026-06-29T06:29:07Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -1142,7 +1178,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -1654,7 +1690,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:31:19Z",
+    "observed_utc": "2026-07-06T04:37:41Z",
     "anchor_beat": "2026-07-06T03:59:23Z"
    },
    "lead_image": {
@@ -2060,15 +2096,27 @@
     ]
    },
    "discovered": false,
-   "items_24h": 51,
-   "items_48h": 89,
-   "outlets": 55,
+   "items_24h": 52,
+   "items_48h": 90,
+   "outlets": 56,
    "kinds": [
     "journalist",
     "state media",
     "wire service"
    ],
    "latest": [
+    {
+     "ts": "2026-07-06T03:00:00Z",
+     "title": "A  game of cat and mouse  in Gaza as Israel Yellow Line moves further into territory - 06 - Jul - 2026",
+     "outlet": "home.nzcity.co.nz",
+     "kind": "journalist",
+     "url": "https://home.nzcity.co.nz/news/article.aspx?id=449386",
+     "rel": 17,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
     {
      "ts": "2026-07-06T01:15:00Z",
      "title": "Report : Hamas to announce dissolution of its Gaza government after nearly 20 years",
@@ -2087,7 +2135,7 @@
      "outlet": "ABC News AU",
      "kind": "journalist",
      "url": "https://www.abc.net.au/news/2026-07-06/idf-controls-more-gaza-territory-as-israel-yellow-line-moves/106836640",
-     "rel": 14,
+     "rel": 15,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -2148,18 +2196,6 @@
      "kind": "state media",
      "url": "https://sana.sy/en/middle-east/2327576/",
      "rel": 28,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-05T22:33:20Z",
-     "title": "Netanyahu convenes top security meeting to approve Israeli withdrawal points in southern Lebanon: Report",
-     "outlet": "Anadolu Agency",
-     "kind": "state media",
-     "url": "https://www.aa.com.tr/en/middle-east/netanyahu-convenes-top-security-meeting-to-approve-israeli-withdrawal-points-in-southern-lebanon-report/3986890",
-     "rel": 24,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -2252,7 +2288,7 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 211,
+    "outlets_timed": 212,
     "outlets_unplaced": 1,
     "chain": [
      {
@@ -2684,7 +2720,7 @@
      "state-media": 4,
      "regional": 0,
      "official": 0,
-     "other": 71
+     "other": 72
     },
     "first_seen": "2026-06-10T21:04:09Z"
    },
@@ -3010,8 +3046,8 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:31:21Z",
-    "anchor_beat": "2026-07-06T01:15:00Z"
+    "observed_utc": "2026-07-06T04:37:43Z",
+    "anchor_beat": "2026-07-06T03:00:00Z"
    },
    "lead_image": {
     "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/07/03/thumbs_b_c_2acbb47f07a454683474975a60ddc94d.jpg",
@@ -4038,7 +4074,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Venezuela earthquakes kill 920 amid political crisis, Times of Israel.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -4053,10 +4089,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "Venezuela quake production risk",
-      "move_pct": 0.5,
+      "move_pct": 0.18,
       "window_h": 24,
       "measured_from": "2026-07-06T03:00:00Z",
       "series": [
@@ -4183,12 +4219,16 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:33:40Z",
+    "observed_utc": "2026-07-06T04:39:58Z",
     "anchor_beat": "2026-07-06T03:00:00Z"
    },
    "lead_image": {
@@ -4691,22 +4731,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 113,
+    "outlets_timed": 112,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "United News Ph",
-      "ts": "2026-06-29T04:33:16Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Escudo Digital",
       "ts": "2026-06-29T05:10:01Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -4757,6 +4789,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "T\u00fcrkiye Today",
+      "ts": "2026-06-29T11:13:25Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 6
      }
     ],
     "unplaced": [
@@ -5174,7 +5214,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT NATO Faces Key Challenges, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -5441,8 +5481,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "Defense spending affects dollar demand",
       "move_pct": 0.0,
       "window_h": 24,
@@ -5583,12 +5623,16 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:32:28Z",
+    "observed_utc": "2026-07-06T04:38:48Z",
     "anchor_beat": "2026-07-06T01:37:19Z"
    },
    "lead_image": {
@@ -6187,7 +6231,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran Mourns, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -6607,22 +6651,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 130,
+    "outlets_timed": 129,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "MyJoyOnline",
-      "ts": "2026-06-29T04:35:43Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "financialexpress.com",
       "ts": "2026-06-29T04:47:14Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -6673,6 +6709,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 5
+     },
+     {
+      "outlet": "The Economic Times",
+      "ts": "2026-06-29T05:50:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": []
@@ -7037,7 +7081,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT SpaceX IPO Musk first trillionaire, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -7555,7 +7599,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:32:26Z",
+    "observed_utc": "2026-07-06T04:38:46Z",
     "anchor_beat": "2026-07-06T02:00:00Z"
    },
    "lead_image": {
@@ -8537,7 +8581,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran nuclear work sparks concern, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -8552,10 +8596,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "Iran shipping route tensions",
-      "move_pct": 0.63,
+      "move_pct": 0.31,
       "window_h": 24,
       "measured_from": "2026-07-06T00:38:21Z",
       "series": [
@@ -8682,6 +8726,10 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      },
@@ -8689,10 +8737,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "Iran shipping route tensions",
-      "move_pct": 0.4,
+      "move_pct": 0.42,
       "window_h": 24,
       "measured_from": "2026-07-06T00:38:21Z",
       "series": [
@@ -8827,12 +8875,16 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:31:45Z",
+    "observed_utc": "2026-07-06T04:38:07Z",
     "anchor_beat": "2026-07-06T00:38:21Z"
    },
    "lead_image": {
@@ -9117,8 +9169,8 @@
    },
    "discovered": true,
    "items_24h": 24,
-   "items_48h": 57,
-   "outlets": 43,
+   "items_48h": 56,
+   "outlets": 42,
    "kinds": [
     "journalist",
     "state media"
@@ -9602,7 +9654,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Khamenei funeral, Times of Israel.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -9867,7 +9919,7 @@
    },
    "discovered": true,
    "items_24h": 22,
-   "items_48h": 48,
+   "items_48h": 47,
    "outlets": 25,
    "kinds": [
     "journalist",
@@ -11318,8 +11370,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "US-China trade tensions affect dollar",
       "move_pct": 0.0,
       "window_h": 24,
@@ -11460,12 +11512,16 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:31:54Z",
+    "observed_utc": "2026-07-06T04:38:17Z",
     "anchor_beat": "2026-07-06T01:30:05Z"
    },
    "lead_image": {
@@ -11905,40 +11961,16 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 170,
+    "outlets_timed": 169,
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "VnExpress International",
-      "ts": "2026-06-29T04:34:09Z",
+      "outlet": "FXStreet",
+      "ts": "2026-06-29T04:55:08Z",
       "kind": "journalist",
       "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "FXStreet",
-      "ts": "2026-06-29T04:35:08Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 24
-     },
-     {
-      "outlet": "DT Next",
-      "ts": "2026-06-29T04:36:49Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "HDFC Sky",
-      "ts": "2026-06-29T04:38:07Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
+      "items": 22
      },
      {
       "outlet": "SD Bullion",
@@ -11971,6 +12003,30 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
+     },
+     {
+      "outlet": "moneycontrol.com",
+      "ts": "2026-06-29T05:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "XTB",
+      "ts": "2026-06-29T05:01:27Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CNBC",
+      "ts": "2026-06-29T05:03:50Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 10
      }
     ],
     "unplaced": []
@@ -12348,10 +12404,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4175.2998,
-      "last_ts": "2026-07-06T04:20:22Z",
+      "last": 4172.8999,
+      "last_ts": "2026-07-06T04:26:36Z",
       "basis": "Fed risks return drive gold price",
-      "move_pct": -0.65,
+      "move_pct": -0.7,
       "window_h": 24,
       "measured_from": "2026-07-06T01:00:56Z",
       "series": [
@@ -12490,6 +12546,10 @@
        [
         "2026-07-06T04:20:22Z",
         4175.2998
+       ],
+       [
+        "2026-07-06T04:26:36Z",
+        4172.8999
        ]
       ]
      },
@@ -12497,8 +12557,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "Dollar near two-week lows",
       "move_pct": 0.07,
       "window_h": 24,
@@ -12639,12 +12699,16 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:33:38Z",
+    "observed_utc": "2026-07-06T04:39:56Z",
     "anchor_beat": "2026-07-06T01:00:56Z"
    },
    "lead_image": {
@@ -13802,8 +13866,8 @@
    },
    "discovered": true,
    "items_24h": 13,
-   "items_48h": 94,
-   "outlets": 77,
+   "items_48h": 91,
+   "outlets": 75,
    "kinds": [
     "journalist",
     "state media"
@@ -14516,7 +14580,7 @@
    },
    "discovered": false,
    "items_24h": 11,
-   "items_48h": 29,
+   "items_48h": 28,
    "outlets": 19,
    "kinds": [
     "journalist",
@@ -15162,10 +15226,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "Shipping route risk in East Asia",
-      "move_pct": 0.56,
+      "move_pct": 0.24,
       "window_h": 24,
       "measured_from": "2026-07-06T03:25:42Z",
       "series": [
@@ -15292,6 +15356,10 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      },
@@ -15299,10 +15367,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "Shipping route risk in East Asia",
-      "move_pct": 0.25,
+      "move_pct": 0.28,
       "window_h": 24,
       "measured_from": "2026-07-06T03:25:42Z",
       "series": [
@@ -15437,6 +15505,10 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      },
@@ -15948,7 +16020,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:31:27Z",
+    "observed_utc": "2026-07-06T04:37:49Z",
     "anchor_beat": "2026-07-06T03:25:42Z"
    },
    "lead_image": {
@@ -16204,7 +16276,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 10,
+   "items_24h": 9,
    "items_48h": 11,
    "outlets": 9,
    "kinds": [
@@ -17173,7 +17245,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:33:19Z",
+    "observed_utc": "2026-07-06T04:39:38Z",
     "anchor_beat": "2026-07-05T17:20:00Z"
    },
    "lead_image": {
@@ -17856,7 +17928,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:47:58Z",
+    "observed_utc": "2026-07-06T04:54:17Z",
     "anchor_beat": "2026-07-06T04:03:02Z"
    },
    "lead_image": {
@@ -18278,11 +18350,10 @@
    },
    "discovered": true,
    "items_24h": 8,
-   "items_48h": 11,
-   "outlets": 9,
+   "items_48h": 10,
+   "outlets": 8,
    "kinds": [
-    "journalist",
-    "state media"
+    "journalist"
    ],
    "latest": [
     {
@@ -18876,10 +18947,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.18,
-      "last_ts": "2026-07-06T04:19:10Z",
+      "last": 3.179,
+      "last_ts": "2026-07-06T04:26:35Z",
       "basis": "Europe heatwave, natural gas demand",
-      "move_pct": -2.0,
+      "move_pct": -2.03,
       "window_h": 24,
       "measured_from": "2026-07-05T18:49:28Z",
       "series": [
@@ -19014,6 +19085,10 @@
        [
         "2026-07-06T04:19:10Z",
         3.18
+       ],
+       [
+        "2026-07-06T04:26:35Z",
+        3.179
        ]
       ]
      },
@@ -19778,7 +19853,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:33:23Z",
+    "observed_utc": "2026-07-06T04:39:42Z",
     "anchor_beat": "2026-07-05T18:49:28Z"
    },
    "lead_image": {
@@ -20901,10 +20976,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "Red Sea shipping risk oil",
-      "move_pct": 0.0,
+      "move_pct": -0.32,
       "window_h": 24,
       "measured_from": "2026-07-05T16:59:34Z",
       "series": [
@@ -21031,6 +21106,10 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      },
@@ -21038,10 +21117,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "Oil transport disruption risk",
-      "move_pct": -0.26,
+      "move_pct": -0.23,
       "window_h": 24,
       "measured_from": "2026-07-05T16:59:34Z",
       "series": [
@@ -21176,6 +21255,10 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      },
@@ -21183,10 +21266,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4175.2998,
-      "last_ts": "2026-07-06T04:20:22Z",
+      "last": 4172.8999,
+      "last_ts": "2026-07-06T04:26:36Z",
       "basis": "Gold safe haven amid conflict",
-      "move_pct": -0.29,
+      "move_pct": -0.34,
       "window_h": 24,
       "measured_from": "2026-07-05T16:59:34Z",
       "series": [
@@ -21325,12 +21408,16 @@
        [
         "2026-07-06T04:20:22Z",
         4175.2998
+       ],
+       [
+        "2026-07-06T04:26:36Z",
+        4172.8999
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:31:33Z",
+    "observed_utc": "2026-07-06T04:37:55Z",
     "anchor_beat": "2026-07-05T16:59:34Z"
    },
    "lead_image": {
@@ -22522,8 +22609,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "Dollar strength amid security talks",
       "move_pct": 0.05,
       "window_h": 24,
@@ -22664,12 +22751,16 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:32:41Z",
+    "observed_utc": "2026-07-06T04:39:00Z",
     "anchor_beat": "2026-07-05T23:15:20Z"
    },
    "lead_image": {
@@ -23602,10 +23693,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "OPEC+ output hike oversupply",
-      "move_pct": -0.25,
+      "move_pct": -0.57,
       "window_h": 24,
       "measured_from": "2026-07-06T02:15:18Z",
       "series": [
@@ -23732,6 +23823,10 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      },
@@ -23739,10 +23834,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "OPEC+ output hike oversupply",
-      "move_pct": -0.64,
+      "move_pct": -0.61,
       "window_h": 24,
       "measured_from": "2026-07-06T02:15:18Z",
       "series": [
@@ -23877,12 +23972,16 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:33:53Z",
+    "observed_utc": "2026-07-06T04:40:13Z",
     "anchor_beat": "2026-07-06T02:15:18Z"
    },
    "lead_image": {
@@ -24912,7 +25011,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:38:40Z",
+    "observed_utc": "2026-07-06T04:44:58Z",
     "anchor_beat": "2026-07-05T22:49:00Z"
    },
    "lead_image": {
@@ -25575,7 +25674,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:47:34Z",
+    "observed_utc": "2026-07-06T04:53:54Z",
     "anchor_beat": "2026-07-06T01:34:00Z"
    },
    "lead_image": {
@@ -26424,10 +26523,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "Rate-hike bets recede, dollar weakens",
-      "move_pct": -0.0,
+      "move_pct": 0.0,
       "window_h": 24,
       "measured_from": "2026-07-06T03:21:01Z",
       "series": [
@@ -26566,6 +26665,10 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      },
@@ -26824,7 +26927,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:33:09Z",
+    "observed_utc": "2026-07-06T04:39:29Z",
     "anchor_beat": "2026-07-06T03:21:01Z"
    },
    "lead_image": {
@@ -27337,10 +27440,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "US-Iran tensions raise oil risk",
-      "move_pct": 0.0,
+      "move_pct": -0.32,
       "window_h": 24,
       "measured_from": "2026-07-05T16:20:00Z",
       "series": [
@@ -27467,6 +27570,10 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      },
@@ -27474,10 +27581,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "US-Iran tensions increase volatility",
-      "move_pct": -0.26,
+      "move_pct": -0.23,
       "window_h": 24,
       "measured_from": "2026-07-05T16:20:00Z",
       "series": [
@@ -27612,6 +27719,10 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      },
@@ -27870,7 +27981,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:36:15Z",
+    "observed_utc": "2026-07-06T04:42:32Z",
     "anchor_beat": "2026-07-05T16:20:00Z"
    },
    "lead_image": {
@@ -30861,7 +30972,7 @@
      "outlet": "Investing.com",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZVJsVmxtRmMtRFRiUWUyZWdOQVVqdE5qa29Ea29hTjFxaVc4RmRGaXdwZVVoUVFXY3JvNTh5Z2t1U0VOZDI0Q1llWDNIcDlWOW11enMzWmJmQmY3NWpmRkxhaF9mNXdHOWd2a1RTMXM4RkdoN19hMUhDaXNXakFwanc1c3dCY0lYdkRFeTB2SUp5OWpEM0d4a0pyQVpwZ1JVMUYydW56cmx0ZlhodlhZMDlxY2pHZWg3Vm0yZjBwRVpIVFd4YjdQTlU5R3Y?oc=5",
-     "rel": 20,
+     "rel": 19,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -30889,22 +31000,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 92,
+    "outlets_timed": 91,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "Economies.com",
-      "ts": "2026-06-29T04:38:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "RBN Energy",
       "ts": "2026-06-29T05:00:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -30954,6 +31057,14 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "UK public broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "EnergyNow.com",
+      "ts": "2026-06-29T08:21:54Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      }
     ],
@@ -31189,10 +31300,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.18,
-      "last_ts": "2026-07-06T04:19:10Z",
+      "last": 3.179,
+      "last_ts": "2026-07-06T04:26:35Z",
       "basis": "OPEC output affects gas",
-      "move_pct": -2.0,
+      "move_pct": -2.03,
       "window_h": 24,
       "measured_from": "2026-07-05T19:55:00Z",
       "series": [
@@ -31327,12 +31438,16 @@
        [
         "2026-07-06T04:19:10Z",
         3.18
+       ],
+       [
+        "2026-07-06T04:26:35Z",
+        3.179
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:34:33Z",
+    "observed_utc": "2026-07-06T04:40:52Z",
     "anchor_beat": "2026-07-05T19:55:00Z"
    },
    "lead_image": {
@@ -32847,7 +32962,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:34:52Z",
+    "observed_utc": "2026-07-06T04:41:13Z",
     "anchor_beat": "2026-07-05T20:53:39Z"
    },
    "lead_image": {
@@ -34000,7 +34115,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:41:39Z",
+    "observed_utc": "2026-07-06T04:47:59Z",
     "anchor_beat": "2026-07-06T01:39:32Z"
    },
    "lead_image": {
@@ -34217,6 +34332,1212 @@
      "provenance": 1,
      "steelman": 0,
      "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "msci-holds-s-korea-em-delays-indonesia-downgrade",
+   "name": "MSCI holds S.Korea EM delays Indonesia downgrade",
+   "bucket": "economy",
+   "topic_tags": [
+    "markets",
+    "currency"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-24T04:16:16Z",
+    "sentence_count": 6,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "MSCI kept South Korea at emerging market status in its latest review.",
+        "cites": [
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUHFkanowUENLUlk0WV9RZDlBUkl5aXd6UG8zODYzMHhkdU9acFN1ejNqWjJ0VnloSE90VDdmNFVxdnRWeW9jSzV6SnMyUkdzNWlPUTg4RDV4MTFIWXB4YTl3M09hTWZfdmpSYWlHZnVONHpZLXlILVJBOEVPMVVsdVJfNTlCNi1JX09fSEdPU3lxbW9wY0xkZzk3cWtTdEVULUFiT3ZUM3hDamFtNlFRU0ZLZC1pMklLUVRleUVqYkg?oc=5",
+          "ts": "2026-06-23T23:55:00Z",
+          "title": "MSCI keeps South Korea at emerging market status, cites FX accessibility"
+         }
+        ]
+       },
+       {
+        "text": "MSCI delayed its decision on downgrading Indonesia.",
+        "cites": [
+         {
+          "outlet": "Financial Times",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4ybkNObWI4MmNZdm9sX3l4RW9temY0NkN1UU1ZVjdJX0pGbkh1V2lfMWxGNG5JT2Y4VXlZN2xKTnV0SzBnbVluUHU3MEFZVHVWd21ZeFlNaUhfdzZSTjVzV0dMZmtLZ01lbmJnLWpaU2g?oc=5",
+          "ts": "2026-06-24T01:01:24Z",
+          "title": "MSCI delays decision on downgrading Indonesia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "South Korea missed the MSCI developed market watchlist again on market access concerns.",
+        "cites": [
+         {
+          "outlet": "KED Global",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1hbGFPWGpJVl9BM2ljbXlWbkYtWDhHUEdwVTVVb2RqSjduakE4RVZXaGZsV010SWFrYzJhejdhQmdHNG0xQURMWllQekYxbDZRU29jdGw0aE9jWlYzTUtJTDJpeGhJTGNCdGY1emJqeDBoRTg5OWlSblJR?oc=5",
+          "ts": "2026-06-24T02:09:08Z",
+          "title": "S.Korea misses MSCI developed market watchlist again on market access concerns"
+         }
+        ]
+       },
+       {
+        "text": "MSCI cited foreign exchange accessibility in its decision to keep South Korea as an emerging market.",
+        "cites": [
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUHFkanowUENLUlk0WV9RZDlBUkl5aXd6UG8zODYzMHhkdU9acFN1ejNqWjJ0VnloSE90VDdmNFVxdnRWeW9jSzV6SnMyUkdzNWlPUTg4RDV4MTFIWXB4YTl3M09hTWZfdmpSYWlHZnVONHpZLXlILVJBOEVPMVVsdVJfNTlCNi1JX09fSEdPU3lxbW9wY0xkZzk3cWtTdEVULUFiT3ZUM3hDamFtNlFRU0ZLZC1pMklLUVRleUVqYkg?oc=5",
+          "ts": "2026-06-23T23:55:00Z",
+          "title": "MSCI keeps South Korea at emerging market status, cites FX accessibility"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "MSCI extended its Indonesia review to November and flagged a possible downgrade.",
+        "cites": [
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNXBkb1BjSklEb1g2WDJ1d0FxOEpTX3ZqSU5wc3BIWVVuWG1qc19pdm92QU1tNEc0d2lyUE1tSGxwNjcxNHFpT2ZxYjB2djh0S2RXYU5zcjltUW9aY2VDdktBMlVBRzBCUUZyUUFJWXl1VXNzamdxOE84bU1YcUFQWjZ6dmphVHV6a19Xc0xPUGZVNmZaUHE3SUxnTnVqQnNyb0xVQjk4d0c1TWk3RGNDMko0Nm9EZEo0SHc?oc=5",
+          "ts": "2026-06-23T21:10:23Z",
+          "title": "MSCI extends Indonesia review to November, flags possible downgrade"
+         }
+        ]
+       },
+       {
+        "text": "Indonesia retains its emerging markets status while the review continues.",
+        "cites": [
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQklpSmJ1ZmJOTEMxRVo2VXdNQlFKczVFSWc0UG9uSWxkRk5MNmVVSl9Wcy1MNV9kZzAtRWE5WUFkdVNHdW1tVUIzUkhqSTdVYm04ODZMMEc5dHBMeE1Kc182c3FiX2V5YlQyUWQwakU0U0dfNVJuckk0YTZlZUtrU3lDN1FveFgwZzZaQjY2ZkwyQ05sLVR2bjhtVmx3LVNQRzNjRFMtZjRzZHlFc2VnREp3?oc=5",
+          "ts": "2026-06-23T07:11:00Z",
+          "title": "Indonesia clings to emerging markets mantle as MSCI extends review"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 4,
+   "items_48h": 4,
+   "outlets": 3,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-06T04:13:51Z",
+     "title": "South Korea launches 24-hour won trading in push for developed market status",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/forex-news/south-korea-launches-24hour-won-trading-in-push-for-developed-market-status-4775523",
+     "rel": 16,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T03:11:57Z",
+     "title": "Japan, South Korea lead Asia stocks lower as chipmakers pull back after rebound",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/stock-market-news/japan-south-korea-lead-asia-lower-as-chipmakers-pull-back-after-rebound-4775517",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T01:10:44Z",
+     "title": "South Korean won holds steady as historic 24-hour trading begins",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/news/asia/east-asia/article/3359506/south-korean-won-holds-steady-historic-24-hour-trading-begins?utm_source=rss_feed",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-05T22:47:30Z",
+     "title": "Indonesia looks beyond UPI, eyes India's digital blueprint",
+     "outlet": "Times of India",
+     "kind": "journalist",
+     "url": "https://timesofindia.indiatimes.com/india/indonesia-looks-beyond-upi-eyes-indias-digital-blueprint/articleshow/132204743.cms",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T05:52:46Z",
+     "title": "Asia markets rebound from early losses as South Korea jumps, shrugging off chip slump: Live updates",
+     "outlet": "CNBC",
+     "kind": "journalist",
+     "url": "https://www.cnbc.com/2026/07/03/stock-market-today-live-updates.html",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T08:35:03Z",
+     "title": "Indonesia stocks higher at close of trade; IDX Composite Index up 0.94%",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/stock-market-news/indonesia-stocks-higher-at-close-of-trade-idx-composite-index-up-094-4772442",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-02T06:12:29Z",
+     "title": "South Korea\u2019s currency chief says in talks with Japan, allies",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/forex-news/south-koreas-currency-chief-says-in-talks-with-japan-allies-4772300",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-01T09:17:28Z",
+     "title": "South Korea\u2019s exports top $100B for 1st time in June on chip demand",
+     "outlet": "Anadolu Agency",
+     "kind": "state media",
+     "url": "https://www.aa.com.tr/en/economy/south-korea-s-exports-top-100b-for-1st-time-in-june-on-chip-demand/3983071",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-06-29T14:35:22Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 23,
+    "outlets_unplaced": 1,
+    "chain": [
+     {
+      "outlet": "South China Morning Post",
+      "ts": "2026-06-29T06:09:17Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "HK press (Alibaba-owned)",
+      "items": 3
+     },
+     {
+      "outlet": "fundsforNGOs",
+      "ts": "2026-06-29T06:24:29Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "France 24",
+      "ts": "2026-06-29T06:33:09Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "FR state-funded international broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "CNBC",
+      "ts": "2026-06-29T06:44:15Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 2
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-06-29T06:44:42Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 3
+     },
+     {
+      "outlet": "BBC",
+      "ts": "2026-06-29T06:46:38Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK public broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "MLex",
+      "ts": "2026-06-29T07:24:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "ANTARA News",
+      "ts": "2026-06-29T09:00:32Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": [
+     {
+      "outlet": "Nikkei Asia",
+      "first_seen": "2026-06-29T14:21:59Z",
+      "kind": "journalist",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 11
+     }
+    ]
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Investing.com",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "South China Morning Post",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Times of India",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-24 00:00",
+      6,
+      4
+     ],
+     [
+      "2026-06-27 12:00",
+      2,
+      4
+     ],
+     [
+      "2026-06-27 18:00",
+      4,
+      6
+     ],
+     [
+      "2026-06-28 00:00",
+      4,
+      6
+     ],
+     [
+      "2026-06-28 06:00",
+      4,
+      5
+     ],
+     [
+      "2026-06-28 12:00",
+      6,
+      8
+     ],
+     [
+      "2026-06-28 18:00",
+      7,
+      9
+     ],
+     [
+      "2026-06-29 00:00",
+      13,
+      14
+     ],
+     [
+      "2026-06-29 06:00",
+      27,
+      24
+     ],
+     [
+      "2026-06-29 12:00",
+      47,
+      39
+     ],
+     [
+      "2026-06-29 18:00",
+      49,
+      40
+     ],
+     [
+      "2026-06-30 00:00",
+      42,
+      39
+     ],
+     [
+      "2026-06-30 06:00",
+      34,
+      41
+     ],
+     [
+      "2026-06-30 12:00",
+      23,
+      38
+     ],
+     [
+      "2026-06-30 18:00",
+      8,
+      37
+     ],
+     [
+      "2026-07-01 00:00",
+      8,
+      31
+     ],
+     [
+      "2026-07-01 06:00",
+      8,
+      22
+     ],
+     [
+      "2026-07-01 12:00",
+      5,
+      9
+     ],
+     [
+      "2026-07-01 18:00",
+      5,
+      3
+     ],
+     [
+      "2026-07-02 00:00",
+      5,
+      3
+     ],
+     [
+      "2026-07-02 06:00",
+      4,
+      3
+     ],
+     [
+      "2026-07-02 12:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-02 18:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-03 00:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-03 06:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-03 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-03 18:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-04 00:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-04 06:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-04 12:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-04 18:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-05 00:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-05 06:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-05 12:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-05 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-06 00:00",
+      3,
+      3
+     ]
+    ],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 3
+    },
+    "first_seen": "2026-06-24T04:18:36Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 12
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "TSM",
+      "label": "TSMC",
+      "class": "equity",
+      "last": 434.478,
+      "last_ts": "2026-07-02T20:00:00Z",
+      "basis": "South Korea chip exports top $100B",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-06-30T17:41:15Z",
+        470.73
+       ],
+       [
+        "2026-06-30T17:53:02Z",
+        471.11
+       ],
+       [
+        "2026-06-30T18:12:02Z",
+        471.1
+       ],
+       [
+        "2026-06-30T18:25:44Z",
+        472.2
+       ],
+       [
+        "2026-06-30T18:30:00Z",
+        474.63
+       ],
+       [
+        "2026-06-30T18:47:14Z",
+        474.75
+       ],
+       [
+        "2026-06-30T19:17:10Z",
+        475.16
+       ],
+       [
+        "2026-06-30T19:30:00Z",
+        475.525
+       ],
+       [
+        "2026-06-30T19:38:20Z",
+        475.445
+       ],
+       [
+        "2026-06-30T19:51:14Z",
+        476.27
+       ],
+       [
+        "2026-06-30T20:00:00Z",
+        477.57
+       ],
+       [
+        "2026-07-01T13:30:00Z",
+        463.955
+       ],
+       [
+        "2026-07-01T13:51:10Z",
+        463.64
+       ],
+       [
+        "2026-07-01T14:19:25Z",
+        458.49
+       ],
+       [
+        "2026-07-01T14:30:00Z",
+        455.675
+       ],
+       [
+        "2026-07-01T14:38:58Z",
+        455.13
+       ],
+       [
+        "2026-07-01T15:05:44Z",
+        451.1
+       ],
+       [
+        "2026-07-01T15:25:16Z",
+        450.2701
+       ],
+       [
+        "2026-07-01T15:30:00Z",
+        449.86
+       ],
+       [
+        "2026-07-01T15:41:36Z",
+        449.62
+       ],
+       [
+        "2026-07-01T15:59:44Z",
+        446.79
+       ],
+       [
+        "2026-07-01T16:25:10Z",
+        448.02
+       ],
+       [
+        "2026-07-01T16:30:00Z",
+        446.78
+       ],
+       [
+        "2026-07-01T16:43:09Z",
+        447.035
+       ],
+       [
+        "2026-07-01T17:08:48Z",
+        445.4853
+       ],
+       [
+        "2026-07-01T17:30:00Z",
+        445.2
+       ],
+       [
+        "2026-07-01T17:36:32Z",
+        445.1
+       ],
+       [
+        "2026-07-01T17:55:10Z",
+        445.9693
+       ],
+       [
+        "2026-07-01T18:13:37Z",
+        446.13
+       ],
+       [
+        "2026-07-01T18:30:00Z",
+        445.58
+       ],
+       [
+        "2026-07-01T18:36:18Z",
+        445.67
+       ],
+       [
+        "2026-07-01T19:07:06Z",
+        447.56
+       ],
+       [
+        "2026-07-01T19:30:00Z",
+        448.86
+       ],
+       [
+        "2026-07-01T19:32:05Z",
+        448.695
+       ],
+       [
+        "2026-07-01T19:56:23Z",
+        446.36
+       ],
+       [
+        "2026-07-01T20:00:00Z",
+        444.23
+       ],
+       [
+        "2026-07-02T13:30:00Z",
+        450.18
+       ],
+       [
+        "2026-07-02T13:32:40Z",
+        450.4
+       ],
+       [
+        "2026-07-02T13:56:18Z",
+        457.52
+       ],
+       [
+        "2026-07-02T14:20:06Z",
+        456.385
+       ],
+       [
+        "2026-07-02T14:30:00Z",
+        447.28
+       ],
+       [
+        "2026-07-02T14:54:53Z",
+        447.7
+       ],
+       [
+        "2026-07-02T15:17:59Z",
+        442.64
+       ],
+       [
+        "2026-07-02T15:30:00Z",
+        444.145
+       ],
+       [
+        "2026-07-02T15:49:15Z",
+        443.82
+       ],
+       [
+        "2026-07-02T16:14:53Z",
+        442.45
+       ],
+       [
+        "2026-07-02T16:30:00Z",
+        434.48
+       ],
+       [
+        "2026-07-02T16:51:07Z",
+        434.62
+       ],
+       [
+        "2026-07-02T17:18:55Z",
+        432.675
+       ],
+       [
+        "2026-07-02T17:30:00Z",
+        432.76
+       ],
+       [
+        "2026-07-02T17:42:39Z",
+        433.24
+       ],
+       [
+        "2026-07-02T18:07:18Z",
+        433.47
+       ],
+       [
+        "2026-07-02T18:08:24Z",
+        433.905
+       ],
+       [
+        "2026-07-02T18:30:00Z",
+        433.93
+       ],
+       [
+        "2026-07-02T18:44:32Z",
+        434.08
+       ],
+       [
+        "2026-07-02T18:48:35Z",
+        433.58
+       ],
+       [
+        "2026-07-02T19:10:09Z",
+        431.52
+       ],
+       [
+        "2026-07-02T19:30:00Z",
+        433.47
+       ],
+       [
+        "2026-07-02T19:38:33Z",
+        433.93
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        434.478
+       ]
+      ]
+     },
+     {
+      "symbol": "NVDA",
+      "label": "Nvidia",
+      "class": "equity",
+      "last": 194.83,
+      "last_ts": "2026-07-02T20:00:00Z",
+      "basis": null,
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-06-30T17:41:14Z",
+        198.18
+       ],
+       [
+        "2026-06-30T17:53:01Z",
+        198.225
+       ],
+       [
+        "2026-06-30T18:12:00Z",
+        198.58
+       ],
+       [
+        "2026-06-30T18:25:43Z",
+        199.1338
+       ],
+       [
+        "2026-06-30T18:30:00Z",
+        198.575
+       ],
+       [
+        "2026-06-30T18:47:14Z",
+        198.5901
+       ],
+       [
+        "2026-06-30T19:17:12Z",
+        199.0201
+       ],
+       [
+        "2026-06-30T19:30:00Z",
+        199.37
+       ],
+       [
+        "2026-06-30T19:38:21Z",
+        199.35
+       ],
+       [
+        "2026-06-30T19:51:15Z",
+        198.54
+       ],
+       [
+        "2026-06-30T20:00:00Z",
+        200.09
+       ],
+       [
+        "2026-07-01T13:30:00Z",
+        195.075
+       ],
+       [
+        "2026-07-01T13:51:09Z",
+        195.085
+       ],
+       [
+        "2026-07-01T14:19:24Z",
+        195.91
+       ],
+       [
+        "2026-07-01T14:30:00Z",
+        195.705
+       ],
+       [
+        "2026-07-01T14:38:57Z",
+        195.66
+       ],
+       [
+        "2026-07-01T15:05:42Z",
+        196.21
+       ],
+       [
+        "2026-07-01T15:25:15Z",
+        196.69
+       ],
+       [
+        "2026-07-01T15:30:00Z",
+        196.845
+       ],
+       [
+        "2026-07-01T15:41:33Z",
+        196.795
+       ],
+       [
+        "2026-07-01T15:59:39Z",
+        197.132
+       ],
+       [
+        "2026-07-01T16:25:09Z",
+        197.25
+       ],
+       [
+        "2026-07-01T16:30:00Z",
+        197.185
+       ],
+       [
+        "2026-07-01T16:43:09Z",
+        197.2
+       ],
+       [
+        "2026-07-01T17:08:48Z",
+        197.365
+       ],
+       [
+        "2026-07-01T17:30:00Z",
+        198.22
+       ],
+       [
+        "2026-07-01T17:36:32Z",
+        198.255
+       ],
+       [
+        "2026-07-01T17:55:08Z",
+        198.66
+       ],
+       [
+        "2026-07-01T18:13:36Z",
+        197.9101
+       ],
+       [
+        "2026-07-01T18:30:00Z",
+        198.4
+       ],
+       [
+        "2026-07-01T18:36:23Z",
+        198.375
+       ],
+       [
+        "2026-07-01T19:07:04Z",
+        199.74
+       ],
+       [
+        "2026-07-01T19:30:00Z",
+        199.485
+       ],
+       [
+        "2026-07-01T19:32:05Z",
+        199.47
+       ],
+       [
+        "2026-07-01T19:56:24Z",
+        197.6001
+       ],
+       [
+        "2026-07-01T20:00:00Z",
+        197.58
+       ],
+       [
+        "2026-07-02T13:30:00Z",
+        197.97
+       ],
+       [
+        "2026-07-02T13:32:41Z",
+        198.0505
+       ],
+       [
+        "2026-07-02T13:56:17Z",
+        198.68
+       ],
+       [
+        "2026-07-02T14:20:06Z",
+        199.245
+       ],
+       [
+        "2026-07-02T14:30:00Z",
+        195.475
+       ],
+       [
+        "2026-07-02T14:54:52Z",
+        195.48
+       ],
+       [
+        "2026-07-02T15:17:59Z",
+        195.01
+       ],
+       [
+        "2026-07-02T15:30:00Z",
+        194.89
+       ],
+       [
+        "2026-07-02T15:49:15Z",
+        194.82
+       ],
+       [
+        "2026-07-02T16:14:54Z",
+        194.53
+       ],
+       [
+        "2026-07-02T16:30:00Z",
+        193.73
+       ],
+       [
+        "2026-07-02T16:51:06Z",
+        193.69
+       ],
+       [
+        "2026-07-02T17:18:57Z",
+        193.275
+       ],
+       [
+        "2026-07-02T17:30:00Z",
+        192.925
+       ],
+       [
+        "2026-07-02T17:42:37Z",
+        193.0
+       ],
+       [
+        "2026-07-02T18:07:18Z",
+        193.3
+       ],
+       [
+        "2026-07-02T18:08:23Z",
+        193.32
+       ],
+       [
+        "2026-07-02T18:30:00Z",
+        193.38
+       ],
+       [
+        "2026-07-02T18:44:32Z",
+        193.41
+       ],
+       [
+        "2026-07-02T18:48:34Z",
+        193.28
+       ],
+       [
+        "2026-07-02T19:10:09Z",
+        192.71
+       ],
+       [
+        "2026-07-02T19:30:00Z",
+        193.61
+       ],
+       [
+        "2026-07-02T19:38:37Z",
+        193.75
+       ],
+       [
+        "2026-07-02T20:00:00Z",
+        194.83
+       ]
+      ]
+     },
+     {
+      "symbol": "DX-Y.NYB",
+      "label": "Dollar Index",
+      "class": "fx",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
+      "basis": "South Korean won steady amid trade",
+      "move_pct": 0.0,
+      "window_h": 24,
+      "measured_from": "2026-07-06T04:13:51Z",
+      "series": [
+       [
+        "2026-07-05T22:00:00Z",
+        100.841
+       ],
+       [
+        "2026-07-05T22:04:03Z",
+        100.841
+       ],
+       [
+        "2026-07-05T22:23:43Z",
+        100.862
+       ],
+       [
+        "2026-07-05T22:32:10Z",
+        100.87
+       ],
+       [
+        "2026-07-05T22:53:34Z",
+        100.866
+       ],
+       [
+        "2026-07-05T22:59:27Z",
+        100.873
+       ],
+       [
+        "2026-07-05T23:00:00Z",
+        100.893
+       ],
+       [
+        "2026-07-05T23:22:37Z",
+        100.893
+       ],
+       [
+        "2026-07-05T23:25:45Z",
+        100.894
+       ],
+       [
+        "2026-07-05T23:49:16Z",
+        100.872
+       ],
+       [
+        "2026-07-05T23:49:53Z",
+        100.874
+       ],
+       [
+        "2026-07-06T00:00:00Z",
+        100.905
+       ],
+       [
+        "2026-07-06T00:12:21Z",
+        100.905
+       ],
+       [
+        "2026-07-06T00:18:14Z",
+        100.864
+       ],
+       [
+        "2026-07-06T00:37:27Z",
+        100.861
+       ],
+       [
+        "2026-07-06T00:47:16Z",
+        100.857
+       ],
+       [
+        "2026-07-06T01:00:00Z",
+        100.876
+       ],
+       [
+        "2026-07-06T01:03:19Z",
+        100.883
+       ],
+       [
+        "2026-07-06T01:17:18Z",
+        100.902
+       ],
+       [
+        "2026-07-06T01:29:56Z",
+        100.941
+       ],
+       [
+        "2026-07-06T01:49:33Z",
+        100.93
+       ],
+       [
+        "2026-07-06T01:55:23Z",
+        100.953
+       ],
+       [
+        "2026-07-06T02:00:00Z",
+        100.96
+       ],
+       [
+        "2026-07-06T02:18:33Z",
+        100.961
+       ],
+       [
+        "2026-07-06T02:18:44Z",
+        100.962
+       ],
+       [
+        "2026-07-06T02:41:53Z",
+        100.964
+       ],
+       [
+        "2026-07-06T02:46:36Z",
+        100.952
+       ],
+       [
+        "2026-07-06T03:00:00Z",
+        100.925
+       ],
+       [
+        "2026-07-06T03:06:57Z",
+        100.925
+       ],
+       [
+        "2026-07-06T03:16:21Z",
+        100.944
+       ],
+       [
+        "2026-07-06T03:33:52Z",
+        100.973
+       ],
+       [
+        "2026-07-06T03:59:53Z",
+        100.951
+       ],
+       [
+        "2026-07-06T04:00:00Z",
+        100.943
+       ],
+       [
+        "2026-07-06T04:20:27Z",
+        100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
+       ]
+      ]
+     }
+    ],
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-07-06T04:39:51Z",
+    "anchor_beat": "2026-07-06T04:13:51Z"
+   },
+   "lead_image": {
+    "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/v2-israeli-flag-raised-wide-thumb-1782740221.png?resize=1920%2C1080&quality=80",
+    "source": "Al Jazeera",
+    "focal": {
+     "x": 49,
+     "y": 48
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -36558,7 +37879,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:33:14Z",
+    "observed_utc": "2026-07-06T04:39:33Z",
     "anchor_beat": "2026-07-05T20:33:40Z"
    },
    "lead_image": {
@@ -37953,7 +39274,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:39:37Z",
+    "observed_utc": "2026-07-06T04:46:01Z",
     "anchor_beat": "2026-07-05T23:03:00Z"
    },
    "lead_image": {
@@ -39147,7 +40468,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:35:23Z",
+    "observed_utc": "2026-07-06T04:41:40Z",
     "anchor_beat": "2026-07-05T22:50:00Z"
    },
    "lead_image": {
@@ -39800,7 +41121,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:47:25Z",
+    "observed_utc": "2026-07-06T04:53:45Z",
     "anchor_beat": "2026-07-05T04:00:18Z"
    },
    "lead_image": {
@@ -40046,1208 +41367,6 @@
      "provenance": 1,
      "steelman": 0,
      "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "msci-holds-s-korea-em-delays-indonesia-downgrade",
-   "name": "MSCI holds S.Korea EM delays Indonesia downgrade",
-   "bucket": "economy",
-   "topic_tags": [
-    "markets",
-    "currency"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-24T04:16:16Z",
-    "sentence_count": 6,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "MSCI kept South Korea at emerging market status in its latest review.",
-        "cites": [
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUHFkanowUENLUlk0WV9RZDlBUkl5aXd6UG8zODYzMHhkdU9acFN1ejNqWjJ0VnloSE90VDdmNFVxdnRWeW9jSzV6SnMyUkdzNWlPUTg4RDV4MTFIWXB4YTl3M09hTWZfdmpSYWlHZnVONHpZLXlILVJBOEVPMVVsdVJfNTlCNi1JX09fSEdPU3lxbW9wY0xkZzk3cWtTdEVULUFiT3ZUM3hDamFtNlFRU0ZLZC1pMklLUVRleUVqYkg?oc=5",
-          "ts": "2026-06-23T23:55:00Z",
-          "title": "MSCI keeps South Korea at emerging market status, cites FX accessibility"
-         }
-        ]
-       },
-       {
-        "text": "MSCI delayed its decision on downgrading Indonesia.",
-        "cites": [
-         {
-          "outlet": "Financial Times",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4ybkNObWI4MmNZdm9sX3l4RW9temY0NkN1UU1ZVjdJX0pGbkh1V2lfMWxGNG5JT2Y4VXlZN2xKTnV0SzBnbVluUHU3MEFZVHVWd21ZeFlNaUhfdzZSTjVzV0dMZmtLZ01lbmJnLWpaU2g?oc=5",
-          "ts": "2026-06-24T01:01:24Z",
-          "title": "MSCI delays decision on downgrading Indonesia"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "South Korea missed the MSCI developed market watchlist again on market access concerns.",
-        "cites": [
-         {
-          "outlet": "KED Global",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1hbGFPWGpJVl9BM2ljbXlWbkYtWDhHUEdwVTVVb2RqSjduakE4RVZXaGZsV010SWFrYzJhejdhQmdHNG0xQURMWllQekYxbDZRU29jdGw0aE9jWlYzTUtJTDJpeGhJTGNCdGY1emJqeDBoRTg5OWlSblJR?oc=5",
-          "ts": "2026-06-24T02:09:08Z",
-          "title": "S.Korea misses MSCI developed market watchlist again on market access concerns"
-         }
-        ]
-       },
-       {
-        "text": "MSCI cited foreign exchange accessibility in its decision to keep South Korea as an emerging market.",
-        "cites": [
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUHFkanowUENLUlk0WV9RZDlBUkl5aXd6UG8zODYzMHhkdU9acFN1ejNqWjJ0VnloSE90VDdmNFVxdnRWeW9jSzV6SnMyUkdzNWlPUTg4RDV4MTFIWXB4YTl3M09hTWZfdmpSYWlHZnVONHpZLXlILVJBOEVPMVVsdVJfNTlCNi1JX09fSEdPU3lxbW9wY0xkZzk3cWtTdEVULUFiT3ZUM3hDamFtNlFRU0ZLZC1pMklLUVRleUVqYkg?oc=5",
-          "ts": "2026-06-23T23:55:00Z",
-          "title": "MSCI keeps South Korea at emerging market status, cites FX accessibility"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "MSCI extended its Indonesia review to November and flagged a possible downgrade.",
-        "cites": [
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNXBkb1BjSklEb1g2WDJ1d0FxOEpTX3ZqSU5wc3BIWVVuWG1qc19pdm92QU1tNEc0d2lyUE1tSGxwNjcxNHFpT2ZxYjB2djh0S2RXYU5zcjltUW9aY2VDdktBMlVBRzBCUUZyUUFJWXl1VXNzamdxOE84bU1YcUFQWjZ6dmphVHV6a19Xc0xPUGZVNmZaUHE3SUxnTnVqQnNyb0xVQjk4d0c1TWk3RGNDMko0Nm9EZEo0SHc?oc=5",
-          "ts": "2026-06-23T21:10:23Z",
-          "title": "MSCI extends Indonesia review to November, flags possible downgrade"
-         }
-        ]
-       },
-       {
-        "text": "Indonesia retains its emerging markets status while the review continues.",
-        "cites": [
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQklpSmJ1ZmJOTEMxRVo2VXdNQlFKczVFSWc0UG9uSWxkRk5MNmVVSl9Wcy1MNV9kZzAtRWE5WUFkdVNHdW1tVUIzUkhqSTdVYm04ODZMMEc5dHBMeE1Kc182c3FiX2V5YlQyUWQwakU0U0dfNVJuckk0YTZlZUtrU3lDN1FveFgwZzZaQjY2ZkwyQ05sLVR2bjhtVmx3LVNQRzNjRFMtZjRzZHlFc2VnREp3?oc=5",
-          "ts": "2026-06-23T07:11:00Z",
-          "title": "Indonesia clings to emerging markets mantle as MSCI extends review"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 3,
-   "items_48h": 3,
-   "outlets": 3,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-06T03:11:57Z",
-     "title": "Japan, South Korea lead Asia stocks lower as chipmakers pull back after rebound",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/stock-market-news/japan-south-korea-lead-asia-lower-as-chipmakers-pull-back-after-rebound-4775517",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T01:10:44Z",
-     "title": "South Korean won holds steady as historic 24-hour trading begins",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/news/asia/east-asia/article/3359506/south-korean-won-holds-steady-historic-24-hour-trading-begins?utm_source=rss_feed",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-05T22:47:30Z",
-     "title": "Indonesia looks beyond UPI, eyes India's digital blueprint",
-     "outlet": "Times of India",
-     "kind": "journalist",
-     "url": "https://timesofindia.indiatimes.com/india/indonesia-looks-beyond-upi-eyes-indias-digital-blueprint/articleshow/132204743.cms",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T05:52:46Z",
-     "title": "Asia markets rebound from early losses as South Korea jumps, shrugging off chip slump: Live updates",
-     "outlet": "CNBC",
-     "kind": "journalist",
-     "url": "https://www.cnbc.com/2026/07/03/stock-market-today-live-updates.html",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T08:35:03Z",
-     "title": "Indonesia stocks higher at close of trade; IDX Composite Index up 0.94%",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/stock-market-news/indonesia-stocks-higher-at-close-of-trade-idx-composite-index-up-094-4772442",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-02T06:12:29Z",
-     "title": "South Korea\u2019s currency chief says in talks with Japan, allies",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/forex-news/south-koreas-currency-chief-says-in-talks-with-japan-allies-4772300",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-01T09:17:28Z",
-     "title": "South Korea\u2019s exports top $100B for 1st time in June on chip demand",
-     "outlet": "Anadolu Agency",
-     "kind": "state media",
-     "url": "https://www.aa.com.tr/en/economy/south-korea-s-exports-top-100b-for-1st-time-in-june-on-chip-demand/3983071",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-01T08:30:03Z",
-     "title": "Indonesia stocks higher at close of trade; IDX Composite Index up 1.15%",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/stock-market-news/indonesia-stocks-higher-at-close-of-trade-idx-composite-index-up-115-4769657",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-06-29T14:35:22Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 23,
-    "outlets_unplaced": 1,
-    "chain": [
-     {
-      "outlet": "South China Morning Post",
-      "ts": "2026-06-29T06:09:17Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "HK press (Alibaba-owned)",
-      "items": 3
-     },
-     {
-      "outlet": "fundsforNGOs",
-      "ts": "2026-06-29T06:24:29Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "France 24",
-      "ts": "2026-06-29T06:33:09Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "FR state-funded international broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "CNBC",
-      "ts": "2026-06-29T06:44:15Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US financial press",
-      "items": 2
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-06-29T06:44:42Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 3
-     },
-     {
-      "outlet": "BBC",
-      "ts": "2026-06-29T06:46:38Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK public broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "MLex",
-      "ts": "2026-06-29T07:24:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "ANTARA News",
-      "ts": "2026-06-29T09:00:32Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": [
-     {
-      "outlet": "Nikkei Asia",
-      "first_seen": "2026-06-29T14:21:59Z",
-      "kind": "journalist",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 11
-     }
-    ]
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Investing.com",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "South China Morning Post",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Times of India",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 0
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-24 00:00",
-      6,
-      4
-     ],
-     [
-      "2026-06-27 12:00",
-      2,
-      4
-     ],
-     [
-      "2026-06-27 18:00",
-      4,
-      6
-     ],
-     [
-      "2026-06-28 00:00",
-      4,
-      6
-     ],
-     [
-      "2026-06-28 06:00",
-      4,
-      5
-     ],
-     [
-      "2026-06-28 12:00",
-      6,
-      8
-     ],
-     [
-      "2026-06-28 18:00",
-      7,
-      9
-     ],
-     [
-      "2026-06-29 00:00",
-      13,
-      14
-     ],
-     [
-      "2026-06-29 06:00",
-      27,
-      24
-     ],
-     [
-      "2026-06-29 12:00",
-      47,
-      39
-     ],
-     [
-      "2026-06-29 18:00",
-      49,
-      40
-     ],
-     [
-      "2026-06-30 00:00",
-      42,
-      39
-     ],
-     [
-      "2026-06-30 06:00",
-      34,
-      41
-     ],
-     [
-      "2026-06-30 12:00",
-      23,
-      38
-     ],
-     [
-      "2026-06-30 18:00",
-      8,
-      37
-     ],
-     [
-      "2026-07-01 00:00",
-      8,
-      31
-     ],
-     [
-      "2026-07-01 06:00",
-      8,
-      22
-     ],
-     [
-      "2026-07-01 12:00",
-      5,
-      9
-     ],
-     [
-      "2026-07-01 18:00",
-      5,
-      3
-     ],
-     [
-      "2026-07-02 00:00",
-      5,
-      3
-     ],
-     [
-      "2026-07-02 06:00",
-      4,
-      3
-     ],
-     [
-      "2026-07-02 12:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-02 18:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-03 00:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-03 06:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-03 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-03 18:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-04 00:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-04 06:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-04 12:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-04 18:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-05 00:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-05 06:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-05 12:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-05 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-06 00:00",
-      3,
-      3
-     ]
-    ],
-    "mix": {
-     "mainstream": 0,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 3
-    },
-    "first_seen": "2026-06-24T04:18:36Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
-    "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 12
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "TSM",
-      "label": "TSMC",
-      "class": "equity",
-      "last": 434.478,
-      "last_ts": "2026-07-02T20:00:00Z",
-      "basis": "South Korea chip exports top $100B",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-06-30T17:41:15Z",
-        470.73
-       ],
-       [
-        "2026-06-30T17:53:02Z",
-        471.11
-       ],
-       [
-        "2026-06-30T18:12:02Z",
-        471.1
-       ],
-       [
-        "2026-06-30T18:25:44Z",
-        472.2
-       ],
-       [
-        "2026-06-30T18:30:00Z",
-        474.63
-       ],
-       [
-        "2026-06-30T18:47:14Z",
-        474.75
-       ],
-       [
-        "2026-06-30T19:17:10Z",
-        475.16
-       ],
-       [
-        "2026-06-30T19:30:00Z",
-        475.525
-       ],
-       [
-        "2026-06-30T19:38:20Z",
-        475.445
-       ],
-       [
-        "2026-06-30T19:51:14Z",
-        476.27
-       ],
-       [
-        "2026-06-30T20:00:00Z",
-        477.57
-       ],
-       [
-        "2026-07-01T13:30:00Z",
-        463.955
-       ],
-       [
-        "2026-07-01T13:51:10Z",
-        463.64
-       ],
-       [
-        "2026-07-01T14:19:25Z",
-        458.49
-       ],
-       [
-        "2026-07-01T14:30:00Z",
-        455.675
-       ],
-       [
-        "2026-07-01T14:38:58Z",
-        455.13
-       ],
-       [
-        "2026-07-01T15:05:44Z",
-        451.1
-       ],
-       [
-        "2026-07-01T15:25:16Z",
-        450.2701
-       ],
-       [
-        "2026-07-01T15:30:00Z",
-        449.86
-       ],
-       [
-        "2026-07-01T15:41:36Z",
-        449.62
-       ],
-       [
-        "2026-07-01T15:59:44Z",
-        446.79
-       ],
-       [
-        "2026-07-01T16:25:10Z",
-        448.02
-       ],
-       [
-        "2026-07-01T16:30:00Z",
-        446.78
-       ],
-       [
-        "2026-07-01T16:43:09Z",
-        447.035
-       ],
-       [
-        "2026-07-01T17:08:48Z",
-        445.4853
-       ],
-       [
-        "2026-07-01T17:30:00Z",
-        445.2
-       ],
-       [
-        "2026-07-01T17:36:32Z",
-        445.1
-       ],
-       [
-        "2026-07-01T17:55:10Z",
-        445.9693
-       ],
-       [
-        "2026-07-01T18:13:37Z",
-        446.13
-       ],
-       [
-        "2026-07-01T18:30:00Z",
-        445.58
-       ],
-       [
-        "2026-07-01T18:36:18Z",
-        445.67
-       ],
-       [
-        "2026-07-01T19:07:06Z",
-        447.56
-       ],
-       [
-        "2026-07-01T19:30:00Z",
-        448.86
-       ],
-       [
-        "2026-07-01T19:32:05Z",
-        448.695
-       ],
-       [
-        "2026-07-01T19:56:23Z",
-        446.36
-       ],
-       [
-        "2026-07-01T20:00:00Z",
-        444.23
-       ],
-       [
-        "2026-07-02T13:30:00Z",
-        450.18
-       ],
-       [
-        "2026-07-02T13:32:40Z",
-        450.4
-       ],
-       [
-        "2026-07-02T13:56:18Z",
-        457.52
-       ],
-       [
-        "2026-07-02T14:20:06Z",
-        456.385
-       ],
-       [
-        "2026-07-02T14:30:00Z",
-        447.28
-       ],
-       [
-        "2026-07-02T14:54:53Z",
-        447.7
-       ],
-       [
-        "2026-07-02T15:17:59Z",
-        442.64
-       ],
-       [
-        "2026-07-02T15:30:00Z",
-        444.145
-       ],
-       [
-        "2026-07-02T15:49:15Z",
-        443.82
-       ],
-       [
-        "2026-07-02T16:14:53Z",
-        442.45
-       ],
-       [
-        "2026-07-02T16:30:00Z",
-        434.48
-       ],
-       [
-        "2026-07-02T16:51:07Z",
-        434.62
-       ],
-       [
-        "2026-07-02T17:18:55Z",
-        432.675
-       ],
-       [
-        "2026-07-02T17:30:00Z",
-        432.76
-       ],
-       [
-        "2026-07-02T17:42:39Z",
-        433.24
-       ],
-       [
-        "2026-07-02T18:07:18Z",
-        433.47
-       ],
-       [
-        "2026-07-02T18:08:24Z",
-        433.905
-       ],
-       [
-        "2026-07-02T18:30:00Z",
-        433.93
-       ],
-       [
-        "2026-07-02T18:44:32Z",
-        434.08
-       ],
-       [
-        "2026-07-02T18:48:35Z",
-        433.58
-       ],
-       [
-        "2026-07-02T19:10:09Z",
-        431.52
-       ],
-       [
-        "2026-07-02T19:30:00Z",
-        433.47
-       ],
-       [
-        "2026-07-02T19:38:33Z",
-        433.93
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        434.478
-       ]
-      ]
-     },
-     {
-      "symbol": "NVDA",
-      "label": "Nvidia",
-      "class": "equity",
-      "last": 194.83,
-      "last_ts": "2026-07-02T20:00:00Z",
-      "basis": null,
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-06-30T17:41:14Z",
-        198.18
-       ],
-       [
-        "2026-06-30T17:53:01Z",
-        198.225
-       ],
-       [
-        "2026-06-30T18:12:00Z",
-        198.58
-       ],
-       [
-        "2026-06-30T18:25:43Z",
-        199.1338
-       ],
-       [
-        "2026-06-30T18:30:00Z",
-        198.575
-       ],
-       [
-        "2026-06-30T18:47:14Z",
-        198.5901
-       ],
-       [
-        "2026-06-30T19:17:12Z",
-        199.0201
-       ],
-       [
-        "2026-06-30T19:30:00Z",
-        199.37
-       ],
-       [
-        "2026-06-30T19:38:21Z",
-        199.35
-       ],
-       [
-        "2026-06-30T19:51:15Z",
-        198.54
-       ],
-       [
-        "2026-06-30T20:00:00Z",
-        200.09
-       ],
-       [
-        "2026-07-01T13:30:00Z",
-        195.075
-       ],
-       [
-        "2026-07-01T13:51:09Z",
-        195.085
-       ],
-       [
-        "2026-07-01T14:19:24Z",
-        195.91
-       ],
-       [
-        "2026-07-01T14:30:00Z",
-        195.705
-       ],
-       [
-        "2026-07-01T14:38:57Z",
-        195.66
-       ],
-       [
-        "2026-07-01T15:05:42Z",
-        196.21
-       ],
-       [
-        "2026-07-01T15:25:15Z",
-        196.69
-       ],
-       [
-        "2026-07-01T15:30:00Z",
-        196.845
-       ],
-       [
-        "2026-07-01T15:41:33Z",
-        196.795
-       ],
-       [
-        "2026-07-01T15:59:39Z",
-        197.132
-       ],
-       [
-        "2026-07-01T16:25:09Z",
-        197.25
-       ],
-       [
-        "2026-07-01T16:30:00Z",
-        197.185
-       ],
-       [
-        "2026-07-01T16:43:09Z",
-        197.2
-       ],
-       [
-        "2026-07-01T17:08:48Z",
-        197.365
-       ],
-       [
-        "2026-07-01T17:30:00Z",
-        198.22
-       ],
-       [
-        "2026-07-01T17:36:32Z",
-        198.255
-       ],
-       [
-        "2026-07-01T17:55:08Z",
-        198.66
-       ],
-       [
-        "2026-07-01T18:13:36Z",
-        197.9101
-       ],
-       [
-        "2026-07-01T18:30:00Z",
-        198.4
-       ],
-       [
-        "2026-07-01T18:36:23Z",
-        198.375
-       ],
-       [
-        "2026-07-01T19:07:04Z",
-        199.74
-       ],
-       [
-        "2026-07-01T19:30:00Z",
-        199.485
-       ],
-       [
-        "2026-07-01T19:32:05Z",
-        199.47
-       ],
-       [
-        "2026-07-01T19:56:24Z",
-        197.6001
-       ],
-       [
-        "2026-07-01T20:00:00Z",
-        197.58
-       ],
-       [
-        "2026-07-02T13:30:00Z",
-        197.97
-       ],
-       [
-        "2026-07-02T13:32:41Z",
-        198.0505
-       ],
-       [
-        "2026-07-02T13:56:17Z",
-        198.68
-       ],
-       [
-        "2026-07-02T14:20:06Z",
-        199.245
-       ],
-       [
-        "2026-07-02T14:30:00Z",
-        195.475
-       ],
-       [
-        "2026-07-02T14:54:52Z",
-        195.48
-       ],
-       [
-        "2026-07-02T15:17:59Z",
-        195.01
-       ],
-       [
-        "2026-07-02T15:30:00Z",
-        194.89
-       ],
-       [
-        "2026-07-02T15:49:15Z",
-        194.82
-       ],
-       [
-        "2026-07-02T16:14:54Z",
-        194.53
-       ],
-       [
-        "2026-07-02T16:30:00Z",
-        193.73
-       ],
-       [
-        "2026-07-02T16:51:06Z",
-        193.69
-       ],
-       [
-        "2026-07-02T17:18:57Z",
-        193.275
-       ],
-       [
-        "2026-07-02T17:30:00Z",
-        192.925
-       ],
-       [
-        "2026-07-02T17:42:37Z",
-        193.0
-       ],
-       [
-        "2026-07-02T18:07:18Z",
-        193.3
-       ],
-       [
-        "2026-07-02T18:08:23Z",
-        193.32
-       ],
-       [
-        "2026-07-02T18:30:00Z",
-        193.38
-       ],
-       [
-        "2026-07-02T18:44:32Z",
-        193.41
-       ],
-       [
-        "2026-07-02T18:48:34Z",
-        193.28
-       ],
-       [
-        "2026-07-02T19:10:09Z",
-        192.71
-       ],
-       [
-        "2026-07-02T19:30:00Z",
-        193.61
-       ],
-       [
-        "2026-07-02T19:38:37Z",
-        193.75
-       ],
-       [
-        "2026-07-02T20:00:00Z",
-        194.83
-       ]
-      ]
-     },
-     {
-      "symbol": "DX-Y.NYB",
-      "label": "Dollar Index",
-      "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
-      "basis": "South Korean won steady amid trade",
-      "move_pct": 0.02,
-      "window_h": 24,
-      "measured_from": "2026-07-06T03:11:57Z",
-      "series": [
-       [
-        "2026-07-05T22:00:00Z",
-        100.841
-       ],
-       [
-        "2026-07-05T22:04:03Z",
-        100.841
-       ],
-       [
-        "2026-07-05T22:23:43Z",
-        100.862
-       ],
-       [
-        "2026-07-05T22:32:10Z",
-        100.87
-       ],
-       [
-        "2026-07-05T22:53:34Z",
-        100.866
-       ],
-       [
-        "2026-07-05T22:59:27Z",
-        100.873
-       ],
-       [
-        "2026-07-05T23:00:00Z",
-        100.893
-       ],
-       [
-        "2026-07-05T23:22:37Z",
-        100.893
-       ],
-       [
-        "2026-07-05T23:25:45Z",
-        100.894
-       ],
-       [
-        "2026-07-05T23:49:16Z",
-        100.872
-       ],
-       [
-        "2026-07-05T23:49:53Z",
-        100.874
-       ],
-       [
-        "2026-07-06T00:00:00Z",
-        100.905
-       ],
-       [
-        "2026-07-06T00:12:21Z",
-        100.905
-       ],
-       [
-        "2026-07-06T00:18:14Z",
-        100.864
-       ],
-       [
-        "2026-07-06T00:37:27Z",
-        100.861
-       ],
-       [
-        "2026-07-06T00:47:16Z",
-        100.857
-       ],
-       [
-        "2026-07-06T01:00:00Z",
-        100.876
-       ],
-       [
-        "2026-07-06T01:03:19Z",
-        100.883
-       ],
-       [
-        "2026-07-06T01:17:18Z",
-        100.902
-       ],
-       [
-        "2026-07-06T01:29:56Z",
-        100.941
-       ],
-       [
-        "2026-07-06T01:49:33Z",
-        100.93
-       ],
-       [
-        "2026-07-06T01:55:23Z",
-        100.953
-       ],
-       [
-        "2026-07-06T02:00:00Z",
-        100.96
-       ],
-       [
-        "2026-07-06T02:18:33Z",
-        100.961
-       ],
-       [
-        "2026-07-06T02:18:44Z",
-        100.962
-       ],
-       [
-        "2026-07-06T02:41:53Z",
-        100.964
-       ],
-       [
-        "2026-07-06T02:46:36Z",
-        100.952
-       ],
-       [
-        "2026-07-06T03:00:00Z",
-        100.925
-       ],
-       [
-        "2026-07-06T03:06:57Z",
-        100.925
-       ],
-       [
-        "2026-07-06T03:16:21Z",
-        100.944
-       ],
-       [
-        "2026-07-06T03:33:52Z",
-        100.973
-       ],
-       [
-        "2026-07-06T03:59:53Z",
-        100.951
-       ],
-       [
-        "2026-07-06T04:00:00Z",
-        100.943
-       ],
-       [
-        "2026-07-06T04:20:27Z",
-        100.943
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:33:33Z",
-    "anchor_beat": "2026-07-06T03:11:57Z"
-   },
-   "lead_image": {
-    "url": "https://www.aljazeera.com/wp-content/uploads/2026/06/v2-israeli-flag-raised-wide-thumb-1782740221.png?resize=1920%2C1080&quality=80",
-    "source": "Al Jazeera",
-    "focal": {
-     "x": 49,
-     "y": 48
-    }
-   },
-   "gate": {
-    "score": 3,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 0,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -42886,7 +43005,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:48:31Z",
+    "observed_utc": "2026-07-06T04:54:49Z",
     "anchor_beat": "2026-07-06T00:18:35Z"
    },
    "lead_image": {
@@ -43223,7 +43342,7 @@
     "discovered_days": 0
    },
    "gate": {
-    "score": 3,
+    "score": 4,
     "of": 8,
     "checks": {
      "split": 0,
@@ -43231,7 +43350,7 @@
      "provenance": 1,
      "steelman": 0,
      "history": 1,
-     "report": 0,
+     "report": 1,
      "theories": 0,
      "unknowns": 1
     }
@@ -44152,10 +44271,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "Conflict fuels oil",
-      "move_pct": -0.26,
+      "move_pct": -0.23,
       "window_h": 24,
       "measured_from": "2026-07-05T18:54:30Z",
       "series": [
@@ -44290,6 +44409,10 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      },
@@ -44297,10 +44420,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.18,
-      "last_ts": "2026-07-06T04:19:10Z",
+      "last": 3.179,
+      "last_ts": "2026-07-06T04:26:35Z",
       "basis": "Conflict fuels gas",
-      "move_pct": -2.0,
+      "move_pct": -2.03,
       "window_h": 24,
       "measured_from": "2026-07-05T18:54:30Z",
       "series": [
@@ -44435,6 +44558,10 @@
        [
         "2026-07-06T04:19:10Z",
         3.18
+       ],
+       [
+        "2026-07-06T04:26:35Z",
+        3.179
        ]
       ]
      },
@@ -44442,10 +44569,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4175.2998,
-      "last_ts": "2026-07-06T04:20:22Z",
+      "last": 4172.8999,
+      "last_ts": "2026-07-06T04:26:36Z",
       "basis": "Safe-haven gold",
-      "move_pct": -0.29,
+      "move_pct": -0.34,
       "window_h": 24,
       "measured_from": "2026-07-05T18:54:30Z",
       "series": [
@@ -44584,12 +44711,16 @@
        [
         "2026-07-06T04:20:22Z",
         4175.2998
+       ],
+       [
+        "2026-07-06T04:26:36Z",
+        4172.8999
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:32:45Z",
+    "observed_utc": "2026-07-06T04:39:05Z",
     "anchor_beat": "2026-07-05T18:54:30Z"
    },
    "lead_image": {
@@ -48296,7 +48427,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:37:11Z",
+    "observed_utc": "2026-07-06T04:43:30Z",
     "anchor_beat": "2026-07-06T04:11:08Z"
    },
    "lead_image": {
@@ -48976,10 +49107,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4175.2998,
-      "last_ts": "2026-07-06T04:20:22Z",
+      "last": 4172.8999,
+      "last_ts": "2026-07-06T04:26:36Z",
       "basis": "Rate hike bets pressure gold",
-      "move_pct": -0.36,
+      "move_pct": -0.42,
       "window_h": 24,
       "measured_from": "2026-07-05T22:08:00Z",
       "series": [
@@ -49118,6 +49249,10 @@
        [
         "2026-07-06T04:20:22Z",
         4175.2998
+       ],
+       [
+        "2026-07-06T04:26:36Z",
+        4172.8999
        ]
       ]
      },
@@ -49125,8 +49260,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "Rate hike bets strengthen dollar",
       "move_pct": 0.1,
       "window_h": 24,
@@ -49267,6 +49402,10 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      },
@@ -49525,7 +49664,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:32:38Z",
+    "observed_utc": "2026-07-06T04:38:58Z",
     "anchor_beat": "2026-07-05T22:08:00Z"
    },
    "lead_image": {
@@ -51108,7 +51247,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:33:04Z",
+    "observed_utc": "2026-07-06T04:39:24Z",
     "anchor_beat": "2026-07-05T18:58:35Z"
    },
    "lead_image": {
@@ -52856,7 +52995,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:36:34Z",
+    "observed_utc": "2026-07-06T04:42:51Z",
     "anchor_beat": "2026-07-05T22:49:47Z"
    },
    "lead_image": {
@@ -55169,10 +55308,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "Sanctions on West Bank settlers",
-      "move_pct": 0.0,
+      "move_pct": -0.32,
       "window_h": 24,
       "measured_from": "2026-07-05T11:42:45Z",
       "series": [
@@ -55299,6 +55438,10 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      },
@@ -55557,7 +55700,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:31:43Z",
+    "observed_utc": "2026-07-06T04:38:05Z",
     "anchor_beat": "2026-07-05T11:42:45Z"
    },
    "lead_image": {
@@ -57912,7 +58055,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:44:38Z",
+    "observed_utc": "2026-07-06T04:51:03Z",
     "anchor_beat": "2026-07-05T19:20:03Z"
    },
    "lead_image": {
@@ -60712,7 +60855,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:46:57Z",
+    "observed_utc": "2026-07-06T04:53:17Z",
     "anchor_beat": "2026-07-05T20:19:22Z"
    },
    "lead_image": {
@@ -61533,7 +61676,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:46:52Z",
+    "observed_utc": "2026-07-06T04:53:13Z",
     "anchor_beat": "2026-07-05T12:31:29Z"
    },
    "lead_image": {
@@ -63350,7 +63493,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:34:47Z",
+    "observed_utc": "2026-07-06T04:41:08Z",
     "anchor_beat": "2026-07-05T15:26:00Z"
    },
    "gate": {
@@ -63924,10 +64067,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.18,
-      "last_ts": "2026-07-06T04:19:10Z",
+      "last": 3.179,
+      "last_ts": "2026-07-06T04:26:35Z",
       "basis": "Heat wave boosting natural gas demand",
-      "move_pct": 0.57,
+      "move_pct": 0.54,
       "window_h": 24,
       "measured_from": "2026-07-06T02:47:02Z",
       "series": [
@@ -64062,6 +64205,10 @@
        [
         "2026-07-06T04:19:10Z",
         3.18
+       ],
+       [
+        "2026-07-06T04:26:35Z",
+        3.179
        ]
       ]
      },
@@ -64320,7 +64467,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:35:43Z",
+    "observed_utc": "2026-07-06T04:42:00Z",
     "anchor_beat": "2026-07-06T02:47:02Z"
    },
    "lead_image": {
@@ -65821,7 +65968,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:47:53Z",
+    "observed_utc": "2026-07-06T04:54:13Z",
     "anchor_beat": "2026-07-05T13:00:00Z"
    },
    "gate": {
@@ -65832,775 +65979,6 @@
      "carriers": 0,
      "provenance": 1,
      "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "moscow-car-bomb-kills-military-official",
-   "name": "Moscow car bomb kills military official",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "war",
-    "terrorism"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-23T00:40:30Z",
-    "sentence_count": 11,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Moscow faced one of its largest drone attacks in two years, according to TASS estimates.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/politics/2149741",
-          "ts": "2026-06-22T12:17:26Z",
-          "title": "Moscow faces one of largest drone attacks in two years - TASS estimates"
-         }
-        ]
-       },
-       {
-        "text": "Russian air defense shot down 84 drones approaching the capital, the Moscow mayor said.",
-        "cites": [
-         {
-          "outlet": "Press TV",
-          "kind": "state media",
-          "url": "https://presstv.ir/Detail/2026/06/22/770896/Russia-air-defenses-shoot-down-70-drones-approaching-Moscow-Mayor",
-          "ts": null,
-          "title": "Russian air defense shoots down 84 drones approaching capital: Moscow Mayor"
-         }
-        ]
-       },
-       {
-        "text": "Earlier reports put the figure at nearly 60 drones downed near Moscow.",
-        "cites": [
-         {
-          "outlet": "pajhwok.com",
-          "kind": "journalist",
-          "url": "https://pajhwok.com/2026/06/22/nearly-60-drones-shot-down-near-moscow/",
-          "ts": "2026-06-22T06:45:00Z",
-          "title": "Nearly 60 drones shot down near Moscow"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Four Moscow airports temporarily suspended flights amid the latest drone assault.",
-        "cites": [
-         {
-          "outlet": "The Moscow Times",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObHFiV0I1YzdYZkUxcmxZRjlvSDNNOGd5M1dnRlJTSVZBSS1kRXRvaGhMdWtON2I5VmVLbUVXbjVoMWRCdmgxUkJJT3hLYXVQZWhrT1g5bFIxNThkcFMxcHYwTC0tS3FtWTh3XzJXcnZEYXlXaUFjeHlmOUFLNHpyd0ctVVgwb0k2WWh0eWRkeEpRT2FGV0NxdWhQQW5JcGdCMzRKbDM2aExDVjdGbFpCZnJ4R2l5WENseHc?oc=5",
-          "ts": "2026-06-22T07:58:00Z",
-          "title": "Moscow Airports Temporarily Suspend Flights Amid Latest Drone Assault"
-         }
-        ]
-       },
-       {
-        "text": "A new drone wave hit Moscow as airports cancelled or delayed 367 flights.",
-        "cites": [
-         {
-          "outlet": "The New Voice of Ukraine",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLTE5Z29zb0twMnBGQ3A3WWdMa3dUZWExaDZ0YjRkc3REUTVOWnJvb1JnWWx6Rll0MU1JWTJ2emdwZGdWM2lzUjdLNG5HS2dSMW5UeWtqRnlpSFhGYXBOWXB6djNBc1l5SThKT2pfUzhGZG5BY1NvTjVsYVI5WnRKRjExTVhoazQtTHN4UGU4VUdSRkg1NHM1R3NZczdsbGVtUUFfSEllejhSWmRLZE5YakdkZEJoNlR3MjdiNdIBsgFBVV95cUxONHVDMVh3VE02WElCQmJIRkoyRlZNZFRGZVZwNktWcTA4emRKOUp6MUszWkVfS1pET3RYUkpGd2dWcU44dGNiaXNEWmgtdlE0MzZIX0VqWmZRNzQ4RmtXaHJtbUFlbVlGRzU1NmJIT1oyckRxNkZWcVVKTzZuV0xmd1RHd2t1MzZFMC0xV24wSDViVkJlTUlwMV9LNlZ3aklvcDhtSm04Zy1UY2hTRlJRTGVB?oc=5",
-          "ts": "2026-06-22T09:37:00Z",
-          "title": "Moscow hit by new drone wave as airports cancel or delay 367 flights - video"
-         }
-        ]
-       },
-       {
-        "text": "Russia temporarily closed Moscow airports after intercepting 59 drones.",
-        "cites": [
-         {
-          "outlet": "Daily Beirut",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdlZWTUtnZ0dEN1pPLWhBQjZ6eFVMTldfekpVbE1ZbEpaS05MS0daR2dKb3lPM1g4RGlhUXM2VFVtU3FvUVI0Wl9zWFFJRGUybGwta2tvQTN3WnI2SmV1NU9IRDd1bC04elV0cHhoZGh1ekxQUU5mejg5WV9STjRwdkJjUXhWY0N1cm1jaGZVWGJ1NjF0MDVQLTNla2xKS19xZ1hReTRTbw?oc=5",
-          "ts": "2026-06-22T06:03:38Z",
-          "title": "Russia Temporarily Closes Moscow Airports After Intercepting 59 Drones"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "A drone strike on a Moscow refinery caused what was described as oil rain in the Russian capital.",
-        "cites": [
-         {
-          "outlet": "naturalnews.com",
-          "kind": "journalist",
-          "url": "https://www.naturalnews.com/2026-06-21-drone-strike-moscow-refinery-causes-oil-rain.html",
-          "ts": "2026-06-21T11:30:00Z",
-          "title": "Drone Strike on Moscow Refinery Causes  Oil Rain  in Russian Capital - NaturalNews . com"
-         }
-        ]
-       },
-       {
-        "text": "Moscow is preparing an action plan to maintain its fuel market.",
-        "cites": [
-         {
-          "outlet": "aa.com.tr",
-          "kind": "journalist",
-          "url": "https://aa.com.tr/en/world/moscow-prepares-action-plan-to-maintain-fuel-market/3974610",
-          "ts": "2026-06-22T15:15:00Z",
-          "title": "Moscow prepares action plan to maintain fuel market"
-         }
-        ]
-       },
-       {
-        "text": "Drones also attacked a refinery in Western Siberia.",
-        "cites": [
-         {
-          "outlet": "blue News",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMzBDUS1uRk10MzA0al9NTkpfMDJVdVpDenhTTjdhallMUmZxeXN1ejFpcDVSLUo3YjZUdk9nYjh2bW5KdFRfRVBlYWRiX1NSZUVDekt4M2lYYm9MWnhXRU5mU0ZCUzdwWmNFYWVmX1J3TnhkVWJPcFg0UVU4cE1DN2RBUjlmbXcxZmRiRGoyOEI3MG9NSGFZaUxJX01keFN1bEFZ?oc=5",
-          "ts": "2026-06-20T14:29:33Z",
-          "title": "Drones attack a refinery in Western Siberia"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Russia has withdrawn air defences from the front line to protect Moscow, The Telegraph reports.",
-        "cites": [
-         {
-          "outlet": "The Telegraph",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcDBYdGNUcTBzM0JyZEIwVDIwTkVkWkpOWktHZExfb0NlUEpjN0RVX1V1LWhRUGt1U1kzUHRqRjZjakNkdFZmekQ5eldEMkZ5Zk5FWGMtQXpSN3hwSWoyaEh5V1Ziak93MjNNV0xHa1ktUjJHWkdHcWYydHFJdkIwVktFd0twYXgxX2tFc20xeUp1ZXV5M3RwN2hJOTVjNnM?oc=5",
-          "ts": "2026-06-22T11:40:00Z",
-          "title": "Russia withdraws air defences from front line to protect Moscow"
-         }
-        ]
-       },
-       {
-        "text": "Analysts say Russia appears to be building a new S-400 position inside a Moscow park.",
-        "cites": [
-         {
-          "outlet": "UNITED24 Media",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUnRwV1RRQ2k1ZzR4Y2J0enE5MGFZWFVQZm9hVWFQVVFGOTNORkx0c3Z6VUloOXFoNVJaZVFuaUY1QlctQ21CT0E5bzNQWXpZRXF4d2ZGTHFubEQwcmtsczdKODNILTdWc0loSFg3bDJ3dUhrRFl1U2NkbTFfVVhJV3ZYQjYzQkhnYUxPWGNETHFyZU9reXFfY2FucVgxN3U3NWxhOHU0ODdJcEZxYmg0Nm9ONmhsMFM4UGk1VFEyOUNWTVlBT0E?oc=5",
-          "ts": "2026-06-22T09:27:14Z",
-          "title": "Russia Appears to Be Building New S-400 Position Inside Moscow Park, Analysts Say"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 1,
-   "items_48h": 2,
-   "outlets": 2,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-06T00:30:00Z",
-     "title": "Four more drones downed over Moscow - Sobyanin",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/emergencies/2155987",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-04T04:38:16Z",
-     "title": "'Excellent, Nothing Can\u2026\u2019: Putin Hails Konstantinovka's Capture;Russian Military Shows Final Moments",
-     "outlet": "The Times of India",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNZmNGWXhWbVppaWVjUTAxckp1SmpRZ1czbzdMOGdfX3gteUMtbnAzSDhLbmlqR08yN3ZqUlp2RlRKUV96NDZha0hnSTdNdm05RmxoZ1RMZ1F4X3k1QnRFVGZpSURTX0pPS0hWaDVwTWVyMFhzaTI3Unk0ZDd0Ql9HOXN3Y004Ri1EZ3VTcHM3MDRILXgzbE8xdm12eG01VC1NcFBmY1o5MDlTRTRRMndNTW9PeTl0cDdGMUZvdzNJX1c0TVIwa1RKdlRkUEp0M25MMHl6YnV5REkxQS1TWEZXTGFpZUdIeVBOc18zYjhaOFY5b2ZzNTM5dHVOOFJ6VTJXbU9rMtIBigJBVV95cUxPUWVKS2UxV2tDNy0xei02dVJSbXFlSEY5bURvb2xGb0NPV0ZQdHNBLUdLNjJ4NS03WFFpZ0hzVHlCV05MTlhvQmJNbjJnNUZ5Si1hdDNiTVotRDVfLUQ0RFhqVjdRUVJwbzZ6SzhRelpLQ0tNQXhWZF9BTk52enZjVVJqUi1ITXNpZjVwSWU3bGZtUTB6b1ctejcxclh3ZHVnLVJFWm0ta2xDSldvRzdQc19IaDZUVnhfRTEzenNXai0wOGhyNGpNTHRUc0RneGsyV2syS2dJX1FqQWlrSE4zcE1CTVFNcFJBRmNDeUlVMXlrbC0wd3Q5S1Z2SmluT2M3SlJLZndfUnpmUQ?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T16:16:29Z",
-     "title": "Russian foreign minister outlines what Moscow expects from next UN secretary-general",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/politics/2155183",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T06:54:23Z",
-     "title": "Moscow, Minsk coordinating their efforts to counter external threats - Putin",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/politics/2154833",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T06:50:51Z",
-     "title": "Moscow, Minsk to defend their interests on world stage through partnership - Putin",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/politics/2154829",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-03T01:37:23Z",
-     "title": "Powerful explosion as firefighters probe smoke at Tacoma apartment",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/7/3/powerful-explosion-as-firefighters-probe-smoke-at-tacoma-apartment?traffic_source=rss",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-02T13:39:09Z",
-     "title": "Explosion in Damascus cafe causes casualties",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/explosion-in-damascus-cafe-causes-casualties?traffic_source=rss",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-02T13:28:25Z",
-     "title": "Four people killed in explosion in Damascus near Palace of Justice - news agency",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/world/2154575",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-03T02:10:36Z"
-   },
-   "viewpoints": [
-    {
-     "stance": "Kyiv Independent, NYT World and TASS say Moscow is under drone attack from Ukrainian forces.",
-     "carriers": [
-      {
-       "outlet": "Kyiv Independent",
-       "kind": "journalist",
-       "url": "https://kyivindependent.com/another-mass-attack-repelled-moscow-under-attack-again-mayor-says/",
-       "ts_utc": "2026-06-30T08:38:25Z"
-      },
-      {
-       "outlet": "NYT World",
-       "kind": "journalist",
-       "url": "https://www.nytimes.com/2026/06/30/world/europe/moscow-drone-attack-russia-ukraine-war.html",
-       "ts_utc": "2026-06-30T07:28:05Z"
-      },
-      {
-       "outlet": "TASS",
-       "kind": "state media",
-       "url": "https://tass.com/politics/2153467",
-       "ts_utc": "2026-06-30T10:36:55Z"
-      }
-     ]
-    },
-    {
-     "stance": "Fox News World says the assassinations of Russian generals expose a growing rift inside Putin's security apparatus.",
-     "carriers": [
-      {
-       "outlet": "Fox News World",
-       "kind": "journalist",
-       "url": "https://www.foxnews.com/world/russian-generals-assassinations-expose-growing-rift-inside-putins-security-apparatus",
-       "ts_utc": "2026-07-01T16:22:05Z"
-      }
-     ]
-    },
-    {
-     "stance": "Balkanweb.com reports new EU sanctions package targeting Moscow.",
-     "carriers": [
-      {
-       "outlet": "Balkanweb.com",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaFdJendHQXBXQW5DY01UTXhvSDRyaXdvQlIzZ1pTR2p2Z09xZFJSbWhxN0pRYVpaeHBUcFZPdWg0SEs3YVo4VjFZN1dOUF9IR3JtQW13aDhYUGZJdnlLVG1INDdCTUtZZFRnUExIWGhKN2Zkb1FlOHJLbHNYN1M3dkxSUWRCNlQwZE94NnJqR2NKZ19ZSG5fRzFneXlTN2lSdi1jZHc5MTlZWTVSUDU2MFVNLXdrVkNLdW9Jd0d5LUk1MjFuYVNmMEpPWDJFZw?oc=5",
-       "ts_utc": "2026-07-01T06:34:00Z"
-      }
-     ]
-    }
-   ],
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 13,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "BBC World",
-      "ts": "2026-06-29T09:46:08Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK public broadcaster",
-      "items": 2
-     },
-     {
-      "outlet": "TASS",
-      "ts": "2026-06-29T17:28:57Z",
-      "kind": "state media",
-      "role": "echo",
-      "motive_note": "RU state media",
-      "items": 13
-     },
-     {
-      "outlet": "AFP",
-      "ts": "2026-06-29T21:35:10Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "international wire service",
-      "items": 1
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-06-29T22:51:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 2
-     },
-     {
-      "outlet": "South China Morning Post",
-      "ts": "2026-06-29T22:56:03Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "HK press (Alibaba-owned)",
-      "items": 1
-     },
-     {
-      "outlet": "NYT World",
-      "ts": "2026-06-30T07:28:05Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US press",
-      "items": 1
-     },
-     {
-      "outlet": "Kyiv Independent",
-      "ts": "2026-06-30T11:38:25Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UA regional press",
-      "items": 1
-     },
-     {
-      "outlet": "Balkanweb.com",
-      "ts": "2026-07-01T06:34:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "asean",
-     "situations": [
-      "russia-hosts-asean-summit-diplomatic-push"
-     ]
-    },
-    {
-     "entity": "belarus",
-     "situations": [
-      "russia-hosts-asean-summit-diplomatic-push",
-      "russia-ukraine-war-current"
-     ]
-    },
-    {
-     "entity": "dpr",
-     "situations": [
-      "russia-ukraine-war-current"
-     ]
-    },
-    {
-     "entity": "kazan",
-     "situations": [
-      "russia-hosts-asean-summit-diplomatic-push"
-     ]
-    },
-    {
-     "entity": "kiev",
-     "situations": [
-      "monaco-explosion-wounds-ukrainian-oligarch",
-      "russia-hosts-asean-summit-diplomatic-push",
-      "russia-ukraine-war-current"
-     ]
-    },
-    {
-     "entity": "kremlin",
-     "situations": [
-      "russia-hosts-asean-summit-diplomatic-push",
-      "russia-ukraine-war-current"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "TASS",
-     "n": 1,
-     "class": "state-media"
-    },
-    {
-     "outlet": "The Times of India",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 0
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-22 06:00",
-      10,
-      13
-     ],
-     [
-      "2026-06-22 12:00",
-      18,
-      16
-     ],
-     [
-      "2026-06-22 18:00",
-      19,
-      17
-     ],
-     [
-      "2026-06-23 00:00",
-      19,
-      19
-     ],
-     [
-      "2026-06-23 06:00",
-      16,
-      17
-     ],
-     [
-      "2026-06-23 12:00",
-      9,
-      16
-     ],
-     [
-      "2026-06-24 00:00",
-      6,
-      14
-     ],
-     [
-      "2026-06-27 12:00",
-      5,
-      6
-     ],
-     [
-      "2026-06-27 18:00",
-      7,
-      5
-     ],
-     [
-      "2026-06-28 00:00",
-      7,
-      5
-     ],
-     [
-      "2026-06-28 06:00",
-      7,
-      5
-     ],
-     [
-      "2026-06-28 12:00",
-      5,
-      5
-     ],
-     [
-      "2026-06-28 18:00",
-      3,
-      5
-     ],
-     [
-      "2026-06-29 00:00",
-      2,
-      5
-     ],
-     [
-      "2026-06-29 06:00",
-      4,
-      6
-     ],
-     [
-      "2026-06-29 12:00",
-      4,
-      7
-     ],
-     [
-      "2026-06-29 18:00",
-      7,
-      8
-     ],
-     [
-      "2026-06-30 00:00",
-      9,
-      8
-     ],
-     [
-      "2026-06-30 06:00",
-      13,
-      10
-     ],
-     [
-      "2026-06-30 12:00",
-      13,
-      10
-     ],
-     [
-      "2026-06-30 18:00",
-      11,
-      10
-     ],
-     [
-      "2026-07-01 00:00",
-      7,
-      10
-     ],
-     [
-      "2026-07-01 06:00",
-      6,
-      10
-     ],
-     [
-      "2026-07-01 12:00",
-      5,
-      10
-     ],
-     [
-      "2026-07-01 18:00",
-      5,
-      7
-     ],
-     [
-      "2026-07-02 00:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-02 06:00",
-      6,
-      6
-     ],
-     [
-      "2026-07-02 12:00",
-      9,
-      7
-     ],
-     [
-      "2026-07-02 18:00",
-      9,
-      7
-     ],
-     [
-      "2026-07-03 00:00",
-      9,
-      7
-     ],
-     [
-      "2026-07-03 06:00",
-      10,
-      6
-     ],
-     [
-      "2026-07-03 12:00",
-      8,
-      5
-     ],
-     [
-      "2026-07-03 18:00",
-      4,
-      5
-     ],
-     [
-      "2026-07-04 00:00",
-      4,
-      4
-     ],
-     [
-      "2026-07-04 06:00",
-      4,
-      4
-     ],
-     [
-      "2026-07-04 12:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-04 18:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-05 00:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-05 06:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-05 12:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-05 18:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-06 00:00",
-      1,
-      2
-     ]
-    ],
-    "mix": {
-     "mainstream": 0,
-     "state-media": 1,
-     "regional": 0,
-     "official": 0,
-     "other": 1
-    },
-    "first_seen": "2026-06-11T14:43:24Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-21T05:10:28Z",
-     "a": "NYT World reports video evidence suggests the Moscow refinery blast may have been caused by Russian air defenses misfiring",
-     "b": "Kyiv Independent and The Moscow Times attribute the damage to the largest-ever Ukrainian drone attack on the Russian capital"
-    },
-    {
-     "captured_utc": "2026-06-21T06:20:28Z",
-     "a": "NYT reports video suggests the Moscow refinery blast may have been caused by Russian friendly fire",
-     "b": "Kyiv Independent says Ukraine's General Staff attributes the refinery shutdown to the largest-ever Ukrainian drone strike on Moscow"
-    },
-    {
-     "captured_utc": "2026-06-21T07:22:06Z",
-     "a": "NYT reports video evidence suggests the Moscow refinery blast may have been caused by Russian friendly fire rather than a Ukrainian drone.",
-     "b": "Kyiv Independent calls it the largest-ever drone attack on Moscow; The Moscow Times says the Kremlin praised its air defense performance."
-    },
-    {
-     "captured_utc": "2026-06-21T08:19:47Z",
-     "a": "NYT reports video evidence suggests the Moscow refinery explosion may have resulted from Russian friendly fire, not a Ukrainian drone strike.",
-     "b": "Kyiv Independent frames the incident as the largest-ever Ukrainian drone attack on Moscow; the Kremlin praises its air defense performance."
-    },
-    {
-     "captured_utc": "2026-06-21T09:22:43Z",
-     "a": "Ukraine's General Staff claims the Moscow oil refinery halt as the largest-ever Ukrainian drone attack on the Russian capital.",
-     "b": "NYT reports video suggesting the Moscow refinery blast may have resulted from Russian air-defense fire rather than the strike itself."
-    },
-    {
-     "captured_utc": "2026-06-21T10:28:59Z",
-     "a": "Kyiv Independent reports the Moscow oil refinery blast as Ukraine's largest-ever drone attack on the Russian capital.",
-     "b": "NYT reports video suggests the Moscow refinery blast may have been caused by Russian friendly fire."
-    },
-    {
-     "captured_utc": "2026-06-21T12:15:12Z",
-     "a": "Ukraine's General Staff says the Moscow oil refinery shutdown resulted from the largest-ever Ukrainian drone attack on the Russian capital.",
-     "b": "NYT World reports video evidence suggests the Moscow refinery blast may have been caused by Russian friendly fire, not a Ukrainian drone."
-    },
-    {
-     "captured_utc": "2026-06-21T13:15:42Z",
-     "a": "NYT reports video evidence suggests the Moscow Oil Refinery blast may have resulted from Russian friendly fire, not a Ukrainian attack.",
-     "b": "Ukraine's General Staff, per Kyiv Independent, claims the blast was the largest-ever Ukrainian drone strike on the Russian capital."
-    },
-    {
-     "captured_utc": "2026-06-21T14:18:52Z",
-     "a": "NYT World reports video evidence suggests the Moscow refinery explosion may have been caused by Russian friendly fire",
-     "b": "Kyiv Independent attributes the refinery shutdown to Ukraine's largest-ever drone attack on the Russian capital"
-    },
-    {
-     "captured_utc": "2026-06-21T15:15:52Z",
-     "a": "Ukraine's General Staff says the Moscow oil refinery blast was Ukraine's largest-ever drone attack on the Russian capital",
-     "b": "NYT reports video evidence suggests the Moscow refinery explosion may have been caused by Russian friendly fire, not Ukraine"
-    },
-    {
-     "captured_utc": "2026-06-21T16:08:22Z",
-     "a": "Ukraine's General Staff claims the Moscow oil refinery halt followed the largest-ever Ukrainian drone attack on the Russian capital.",
-     "b": "NYT reports video evidence suggests the Moscow refinery explosion may have been caused by Russian friendly fire, not a Ukrainian strike."
-    },
-    {
-     "captured_utc": "2026-07-02T01:12:21Z",
-     "a": "Kyiv Independent, NYT World and TASS say Moscow is under drone attack from Ukrainian forces.",
-     "b": "Fox News World says the assassinations of Russian generals expose a growing rift inside Putin's security apparatus."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
-   ],
-   "history": {
-    "built": true,
-    "frames": 3,
-    "nodes": 19,
-    "discovered_days": 24
-   },
-   "lead_image": {
-    "url": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20260703/1479553.jpg",
-    "source": "TASS",
-    "focal": {
-     "x": 57,
-     "y": 24
-    }
-   },
-   "gate": {
-    "score": 6,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -67616,7 +66994,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:33:28Z",
+    "observed_utc": "2026-07-06T04:39:47Z",
     "anchor_beat": "2026-07-05T15:59:09Z"
    },
    "lead_image": {
@@ -68557,7 +67935,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:38:26Z",
+    "observed_utc": "2026-07-06T04:44:45Z",
     "anchor_beat": "2026-07-05T07:43:23Z"
    },
    "gate": {
@@ -69914,7 +69292,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:38:44Z",
+    "observed_utc": "2026-07-06T04:45:04Z",
     "anchor_beat": "2026-07-05T21:00:00Z"
    },
    "lead_image": {
@@ -70645,7 +70023,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:39:17Z",
+    "observed_utc": "2026-07-06T04:45:39Z",
     "anchor_beat": "2026-07-05T23:00:01Z"
    },
    "lead_image": {
@@ -71015,6 +70393,774 @@
      "carriers": 0,
      "provenance": 1,
      "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "moscow-car-bomb-kills-military-official",
+   "name": "Moscow car bomb kills military official",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "war",
+    "terrorism"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-23T00:40:30Z",
+    "sentence_count": 11,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Moscow faced one of its largest drone attacks in two years, according to TASS estimates.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/politics/2149741",
+          "ts": "2026-06-22T12:17:26Z",
+          "title": "Moscow faces one of largest drone attacks in two years - TASS estimates"
+         }
+        ]
+       },
+       {
+        "text": "Russian air defense shot down 84 drones approaching the capital, the Moscow mayor said.",
+        "cites": [
+         {
+          "outlet": "Press TV",
+          "kind": "state media",
+          "url": "https://presstv.ir/Detail/2026/06/22/770896/Russia-air-defenses-shoot-down-70-drones-approaching-Moscow-Mayor",
+          "ts": null,
+          "title": "Russian air defense shoots down 84 drones approaching capital: Moscow Mayor"
+         }
+        ]
+       },
+       {
+        "text": "Earlier reports put the figure at nearly 60 drones downed near Moscow.",
+        "cites": [
+         {
+          "outlet": "pajhwok.com",
+          "kind": "journalist",
+          "url": "https://pajhwok.com/2026/06/22/nearly-60-drones-shot-down-near-moscow/",
+          "ts": "2026-06-22T06:45:00Z",
+          "title": "Nearly 60 drones shot down near Moscow"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Four Moscow airports temporarily suspended flights amid the latest drone assault.",
+        "cites": [
+         {
+          "outlet": "The Moscow Times",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObHFiV0I1YzdYZkUxcmxZRjlvSDNNOGd5M1dnRlJTSVZBSS1kRXRvaGhMdWtON2I5VmVLbUVXbjVoMWRCdmgxUkJJT3hLYXVQZWhrT1g5bFIxNThkcFMxcHYwTC0tS3FtWTh3XzJXcnZEYXlXaUFjeHlmOUFLNHpyd0ctVVgwb0k2WWh0eWRkeEpRT2FGV0NxdWhQQW5JcGdCMzRKbDM2aExDVjdGbFpCZnJ4R2l5WENseHc?oc=5",
+          "ts": "2026-06-22T07:58:00Z",
+          "title": "Moscow Airports Temporarily Suspend Flights Amid Latest Drone Assault"
+         }
+        ]
+       },
+       {
+        "text": "A new drone wave hit Moscow as airports cancelled or delayed 367 flights.",
+        "cites": [
+         {
+          "outlet": "The New Voice of Ukraine",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQLTE5Z29zb0twMnBGQ3A3WWdMa3dUZWExaDZ0YjRkc3REUTVOWnJvb1JnWWx6Rll0MU1JWTJ2emdwZGdWM2lzUjdLNG5HS2dSMW5UeWtqRnlpSFhGYXBOWXB6djNBc1l5SThKT2pfUzhGZG5BY1NvTjVsYVI5WnRKRjExTVhoazQtTHN4UGU4VUdSRkg1NHM1R3NZczdsbGVtUUFfSEllejhSWmRLZE5YakdkZEJoNlR3MjdiNdIBsgFBVV95cUxONHVDMVh3VE02WElCQmJIRkoyRlZNZFRGZVZwNktWcTA4emRKOUp6MUszWkVfS1pET3RYUkpGd2dWcU44dGNiaXNEWmgtdlE0MzZIX0VqWmZRNzQ4RmtXaHJtbUFlbVlGRzU1NmJIT1oyckRxNkZWcVVKTzZuV0xmd1RHd2t1MzZFMC0xV24wSDViVkJlTUlwMV9LNlZ3aklvcDhtSm04Zy1UY2hTRlJRTGVB?oc=5",
+          "ts": "2026-06-22T09:37:00Z",
+          "title": "Moscow hit by new drone wave as airports cancel or delay 367 flights - video"
+         }
+        ]
+       },
+       {
+        "text": "Russia temporarily closed Moscow airports after intercepting 59 drones.",
+        "cites": [
+         {
+          "outlet": "Daily Beirut",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdlZWTUtnZ0dEN1pPLWhBQjZ6eFVMTldfekpVbE1ZbEpaS05MS0daR2dKb3lPM1g4RGlhUXM2VFVtU3FvUVI0Wl9zWFFJRGUybGwta2tvQTN3WnI2SmV1NU9IRDd1bC04elV0cHhoZGh1ekxQUU5mejg5WV9STjRwdkJjUXhWY0N1cm1jaGZVWGJ1NjF0MDVQLTNla2xKS19xZ1hReTRTbw?oc=5",
+          "ts": "2026-06-22T06:03:38Z",
+          "title": "Russia Temporarily Closes Moscow Airports After Intercepting 59 Drones"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "A drone strike on a Moscow refinery caused what was described as oil rain in the Russian capital.",
+        "cites": [
+         {
+          "outlet": "naturalnews.com",
+          "kind": "journalist",
+          "url": "https://www.naturalnews.com/2026-06-21-drone-strike-moscow-refinery-causes-oil-rain.html",
+          "ts": "2026-06-21T11:30:00Z",
+          "title": "Drone Strike on Moscow Refinery Causes  Oil Rain  in Russian Capital - NaturalNews . com"
+         }
+        ]
+       },
+       {
+        "text": "Moscow is preparing an action plan to maintain its fuel market.",
+        "cites": [
+         {
+          "outlet": "aa.com.tr",
+          "kind": "journalist",
+          "url": "https://aa.com.tr/en/world/moscow-prepares-action-plan-to-maintain-fuel-market/3974610",
+          "ts": "2026-06-22T15:15:00Z",
+          "title": "Moscow prepares action plan to maintain fuel market"
+         }
+        ]
+       },
+       {
+        "text": "Drones also attacked a refinery in Western Siberia.",
+        "cites": [
+         {
+          "outlet": "blue News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMzBDUS1uRk10MzA0al9NTkpfMDJVdVpDenhTTjdhallMUmZxeXN1ejFpcDVSLUo3YjZUdk9nYjh2bW5KdFRfRVBlYWRiX1NSZUVDekt4M2lYYm9MWnhXRU5mU0ZCUzdwWmNFYWVmX1J3TnhkVWJPcFg0UVU4cE1DN2RBUjlmbXcxZmRiRGoyOEI3MG9NSGFZaUxJX01keFN1bEFZ?oc=5",
+          "ts": "2026-06-20T14:29:33Z",
+          "title": "Drones attack a refinery in Western Siberia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Russia has withdrawn air defences from the front line to protect Moscow, The Telegraph reports.",
+        "cites": [
+         {
+          "outlet": "The Telegraph",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcDBYdGNUcTBzM0JyZEIwVDIwTkVkWkpOWktHZExfb0NlUEpjN0RVX1V1LWhRUGt1U1kzUHRqRjZjakNkdFZmekQ5eldEMkZ5Zk5FWGMtQXpSN3hwSWoyaEh5V1Ziak93MjNNV0xHa1ktUjJHWkdHcWYydHFJdkIwVktFd0twYXgxX2tFc20xeUp1ZXV5M3RwN2hJOTVjNnM?oc=5",
+          "ts": "2026-06-22T11:40:00Z",
+          "title": "Russia withdraws air defences from front line to protect Moscow"
+         }
+        ]
+       },
+       {
+        "text": "Analysts say Russia appears to be building a new S-400 position inside a Moscow park.",
+        "cites": [
+         {
+          "outlet": "UNITED24 Media",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUnRwV1RRQ2k1ZzR4Y2J0enE5MGFZWFVQZm9hVWFQVVFGOTNORkx0c3Z6VUloOXFoNVJaZVFuaUY1QlctQ21CT0E5bzNQWXpZRXF4d2ZGTHFubEQwcmtsczdKODNILTdWc0loSFg3bDJ3dUhrRFl1U2NkbTFfVVhJV3ZYQjYzQkhnYUxPWGNETHFyZU9reXFfY2FucVgxN3U3NWxhOHU0ODdJcEZxYmg0Nm9ONmhsMFM4UGk1VFEyOUNWTVlBT0E?oc=5",
+          "ts": "2026-06-22T09:27:14Z",
+          "title": "Russia Appears to Be Building New S-400 Position Inside Moscow Park, Analysts Say"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 1,
+   "items_48h": 1,
+   "outlets": 1,
+   "kinds": [
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-06T00:30:00Z",
+     "title": "Four more drones downed over Moscow - Sobyanin",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/emergencies/2155987",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-04T04:38:16Z",
+     "title": "'Excellent, Nothing Can\u2026\u2019: Putin Hails Konstantinovka's Capture;Russian Military Shows Final Moments",
+     "outlet": "The Times of India",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNZmNGWXhWbVppaWVjUTAxckp1SmpRZ1czbzdMOGdfX3gteUMtbnAzSDhLbmlqR08yN3ZqUlp2RlRKUV96NDZha0hnSTdNdm05RmxoZ1RMZ1F4X3k1QnRFVGZpSURTX0pPS0hWaDVwTWVyMFhzaTI3Unk0ZDd0Ql9HOXN3Y004Ri1EZ3VTcHM3MDRILXgzbE8xdm12eG01VC1NcFBmY1o5MDlTRTRRMndNTW9PeTl0cDdGMUZvdzNJX1c0TVIwa1RKdlRkUEp0M25MMHl6YnV5REkxQS1TWEZXTGFpZUdIeVBOc18zYjhaOFY5b2ZzNTM5dHVOOFJ6VTJXbU9rMtIBigJBVV95cUxPUWVKS2UxV2tDNy0xei02dVJSbXFlSEY5bURvb2xGb0NPV0ZQdHNBLUdLNjJ4NS03WFFpZ0hzVHlCV05MTlhvQmJNbjJnNUZ5Si1hdDNiTVotRDVfLUQ0RFhqVjdRUVJwbzZ6SzhRelpLQ0tNQXhWZF9BTk52enZjVVJqUi1ITXNpZjVwSWU3bGZtUTB6b1ctejcxclh3ZHVnLVJFWm0ta2xDSldvRzdQc19IaDZUVnhfRTEzenNXai0wOGhyNGpNTHRUc0RneGsyV2syS2dJX1FqQWlrSE4zcE1CTVFNcFJBRmNDeUlVMXlrbC0wd3Q5S1Z2SmluT2M3SlJLZndfUnpmUQ?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T16:16:29Z",
+     "title": "Russian foreign minister outlines what Moscow expects from next UN secretary-general",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2155183",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T06:54:23Z",
+     "title": "Moscow, Minsk coordinating their efforts to counter external threats - Putin",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2154833",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T06:50:51Z",
+     "title": "Moscow, Minsk to defend their interests on world stage through partnership - Putin",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/politics/2154829",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-03T01:37:23Z",
+     "title": "Powerful explosion as firefighters probe smoke at Tacoma apartment",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/7/3/powerful-explosion-as-firefighters-probe-smoke-at-tacoma-apartment?traffic_source=rss",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-02T13:39:09Z",
+     "title": "Explosion in Damascus cafe causes casualties",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/7/2/explosion-in-damascus-cafe-causes-casualties?traffic_source=rss",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-02T13:28:25Z",
+     "title": "Four people killed in explosion in Damascus near Palace of Justice - news agency",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/world/2154575",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-03T02:10:36Z"
+   },
+   "viewpoints": [
+    {
+     "stance": "Kyiv Independent, NYT World and TASS say Moscow is under drone attack from Ukrainian forces.",
+     "carriers": [
+      {
+       "outlet": "Kyiv Independent",
+       "kind": "journalist",
+       "url": "https://kyivindependent.com/another-mass-attack-repelled-moscow-under-attack-again-mayor-says/",
+       "ts_utc": "2026-06-30T08:38:25Z"
+      },
+      {
+       "outlet": "NYT World",
+       "kind": "journalist",
+       "url": "https://www.nytimes.com/2026/06/30/world/europe/moscow-drone-attack-russia-ukraine-war.html",
+       "ts_utc": "2026-06-30T07:28:05Z"
+      },
+      {
+       "outlet": "TASS",
+       "kind": "state media",
+       "url": "https://tass.com/politics/2153467",
+       "ts_utc": "2026-06-30T10:36:55Z"
+      }
+     ]
+    },
+    {
+     "stance": "Fox News World says the assassinations of Russian generals expose a growing rift inside Putin's security apparatus.",
+     "carriers": [
+      {
+       "outlet": "Fox News World",
+       "kind": "journalist",
+       "url": "https://www.foxnews.com/world/russian-generals-assassinations-expose-growing-rift-inside-putins-security-apparatus",
+       "ts_utc": "2026-07-01T16:22:05Z"
+      }
+     ]
+    },
+    {
+     "stance": "Balkanweb.com reports new EU sanctions package targeting Moscow.",
+     "carriers": [
+      {
+       "outlet": "Balkanweb.com",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaFdJendHQXBXQW5DY01UTXhvSDRyaXdvQlIzZ1pTR2p2Z09xZFJSbWhxN0pRYVpaeHBUcFZPdWg0SEs3YVo4VjFZN1dOUF9IR3JtQW13aDhYUGZJdnlLVG1INDdCTUtZZFRnUExIWGhKN2Zkb1FlOHJLbHNYN1M3dkxSUWRCNlQwZE94NnJqR2NKZ19ZSG5fRzFneXlTN2lSdi1jZHc5MTlZWTVSUDU2MFVNLXdrVkNLdW9Jd0d5LUk1MjFuYVNmMEpPWDJFZw?oc=5",
+       "ts_utc": "2026-07-01T06:34:00Z"
+      }
+     ]
+    }
+   ],
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 13,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "BBC World",
+      "ts": "2026-06-29T09:46:08Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "UK public broadcaster",
+      "items": 2
+     },
+     {
+      "outlet": "TASS",
+      "ts": "2026-06-29T17:28:57Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 13
+     },
+     {
+      "outlet": "AFP",
+      "ts": "2026-06-29T21:35:10Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "international wire service",
+      "items": 1
+     },
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-06-29T22:51:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 2
+     },
+     {
+      "outlet": "South China Morning Post",
+      "ts": "2026-06-29T22:56:03Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "HK press (Alibaba-owned)",
+      "items": 1
+     },
+     {
+      "outlet": "NYT World",
+      "ts": "2026-06-30T07:28:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 1
+     },
+     {
+      "outlet": "Kyiv Independent",
+      "ts": "2026-06-30T11:38:25Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UA regional press",
+      "items": 1
+     },
+     {
+      "outlet": "Balkanweb.com",
+      "ts": "2026-07-01T06:34:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "asean",
+     "situations": [
+      "russia-hosts-asean-summit-diplomatic-push"
+     ]
+    },
+    {
+     "entity": "belarus",
+     "situations": [
+      "russia-hosts-asean-summit-diplomatic-push",
+      "russia-ukraine-war-current"
+     ]
+    },
+    {
+     "entity": "dpr",
+     "situations": [
+      "russia-ukraine-war-current"
+     ]
+    },
+    {
+     "entity": "kazan",
+     "situations": [
+      "russia-hosts-asean-summit-diplomatic-push"
+     ]
+    },
+    {
+     "entity": "kiev",
+     "situations": [
+      "monaco-explosion-wounds-ukrainian-oligarch",
+      "russia-hosts-asean-summit-diplomatic-push",
+      "russia-ukraine-war-current"
+     ]
+    },
+    {
+     "entity": "kremlin",
+     "situations": [
+      "russia-hosts-asean-summit-diplomatic-push",
+      "russia-ukraine-war-current"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "TASS",
+     "n": 1,
+     "class": "state-media"
+    },
+    {
+     "outlet": "The Times of India",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-22 06:00",
+      10,
+      13
+     ],
+     [
+      "2026-06-22 12:00",
+      18,
+      16
+     ],
+     [
+      "2026-06-22 18:00",
+      19,
+      17
+     ],
+     [
+      "2026-06-23 00:00",
+      19,
+      19
+     ],
+     [
+      "2026-06-23 06:00",
+      16,
+      17
+     ],
+     [
+      "2026-06-23 12:00",
+      9,
+      16
+     ],
+     [
+      "2026-06-24 00:00",
+      6,
+      14
+     ],
+     [
+      "2026-06-27 12:00",
+      5,
+      6
+     ],
+     [
+      "2026-06-27 18:00",
+      7,
+      5
+     ],
+     [
+      "2026-06-28 00:00",
+      7,
+      5
+     ],
+     [
+      "2026-06-28 06:00",
+      7,
+      5
+     ],
+     [
+      "2026-06-28 12:00",
+      5,
+      5
+     ],
+     [
+      "2026-06-28 18:00",
+      3,
+      5
+     ],
+     [
+      "2026-06-29 00:00",
+      2,
+      5
+     ],
+     [
+      "2026-06-29 06:00",
+      4,
+      6
+     ],
+     [
+      "2026-06-29 12:00",
+      4,
+      7
+     ],
+     [
+      "2026-06-29 18:00",
+      7,
+      8
+     ],
+     [
+      "2026-06-30 00:00",
+      9,
+      8
+     ],
+     [
+      "2026-06-30 06:00",
+      13,
+      10
+     ],
+     [
+      "2026-06-30 12:00",
+      13,
+      10
+     ],
+     [
+      "2026-06-30 18:00",
+      11,
+      10
+     ],
+     [
+      "2026-07-01 00:00",
+      7,
+      10
+     ],
+     [
+      "2026-07-01 06:00",
+      6,
+      10
+     ],
+     [
+      "2026-07-01 12:00",
+      5,
+      10
+     ],
+     [
+      "2026-07-01 18:00",
+      5,
+      7
+     ],
+     [
+      "2026-07-02 00:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-02 06:00",
+      6,
+      6
+     ],
+     [
+      "2026-07-02 12:00",
+      9,
+      7
+     ],
+     [
+      "2026-07-02 18:00",
+      9,
+      7
+     ],
+     [
+      "2026-07-03 00:00",
+      9,
+      7
+     ],
+     [
+      "2026-07-03 06:00",
+      10,
+      6
+     ],
+     [
+      "2026-07-03 12:00",
+      8,
+      5
+     ],
+     [
+      "2026-07-03 18:00",
+      4,
+      5
+     ],
+     [
+      "2026-07-04 00:00",
+      4,
+      4
+     ],
+     [
+      "2026-07-04 06:00",
+      4,
+      4
+     ],
+     [
+      "2026-07-04 12:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-04 18:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-05 00:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-05 06:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-05 12:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-05 18:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-06 00:00",
+      1,
+      2
+     ]
+    ],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 1,
+     "regional": 0,
+     "official": 0,
+     "other": 1
+    },
+    "first_seen": "2026-06-11T14:43:24Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-21T05:10:28Z",
+     "a": "NYT World reports video evidence suggests the Moscow refinery blast may have been caused by Russian air defenses misfiring",
+     "b": "Kyiv Independent and The Moscow Times attribute the damage to the largest-ever Ukrainian drone attack on the Russian capital"
+    },
+    {
+     "captured_utc": "2026-06-21T06:20:28Z",
+     "a": "NYT reports video suggests the Moscow refinery blast may have been caused by Russian friendly fire",
+     "b": "Kyiv Independent says Ukraine's General Staff attributes the refinery shutdown to the largest-ever Ukrainian drone strike on Moscow"
+    },
+    {
+     "captured_utc": "2026-06-21T07:22:06Z",
+     "a": "NYT reports video evidence suggests the Moscow refinery blast may have been caused by Russian friendly fire rather than a Ukrainian drone.",
+     "b": "Kyiv Independent calls it the largest-ever drone attack on Moscow; The Moscow Times says the Kremlin praised its air defense performance."
+    },
+    {
+     "captured_utc": "2026-06-21T08:19:47Z",
+     "a": "NYT reports video evidence suggests the Moscow refinery explosion may have resulted from Russian friendly fire, not a Ukrainian drone strike.",
+     "b": "Kyiv Independent frames the incident as the largest-ever Ukrainian drone attack on Moscow; the Kremlin praises its air defense performance."
+    },
+    {
+     "captured_utc": "2026-06-21T09:22:43Z",
+     "a": "Ukraine's General Staff claims the Moscow oil refinery halt as the largest-ever Ukrainian drone attack on the Russian capital.",
+     "b": "NYT reports video suggesting the Moscow refinery blast may have resulted from Russian air-defense fire rather than the strike itself."
+    },
+    {
+     "captured_utc": "2026-06-21T10:28:59Z",
+     "a": "Kyiv Independent reports the Moscow oil refinery blast as Ukraine's largest-ever drone attack on the Russian capital.",
+     "b": "NYT reports video suggests the Moscow refinery blast may have been caused by Russian friendly fire."
+    },
+    {
+     "captured_utc": "2026-06-21T12:15:12Z",
+     "a": "Ukraine's General Staff says the Moscow oil refinery shutdown resulted from the largest-ever Ukrainian drone attack on the Russian capital.",
+     "b": "NYT World reports video evidence suggests the Moscow refinery blast may have been caused by Russian friendly fire, not a Ukrainian drone."
+    },
+    {
+     "captured_utc": "2026-06-21T13:15:42Z",
+     "a": "NYT reports video evidence suggests the Moscow Oil Refinery blast may have resulted from Russian friendly fire, not a Ukrainian attack.",
+     "b": "Ukraine's General Staff, per Kyiv Independent, claims the blast was the largest-ever Ukrainian drone strike on the Russian capital."
+    },
+    {
+     "captured_utc": "2026-06-21T14:18:52Z",
+     "a": "NYT World reports video evidence suggests the Moscow refinery explosion may have been caused by Russian friendly fire",
+     "b": "Kyiv Independent attributes the refinery shutdown to Ukraine's largest-ever drone attack on the Russian capital"
+    },
+    {
+     "captured_utc": "2026-06-21T15:15:52Z",
+     "a": "Ukraine's General Staff says the Moscow oil refinery blast was Ukraine's largest-ever drone attack on the Russian capital",
+     "b": "NYT reports video evidence suggests the Moscow refinery explosion may have been caused by Russian friendly fire, not Ukraine"
+    },
+    {
+     "captured_utc": "2026-06-21T16:08:22Z",
+     "a": "Ukraine's General Staff claims the Moscow oil refinery halt followed the largest-ever Ukrainian drone attack on the Russian capital.",
+     "b": "NYT reports video evidence suggests the Moscow refinery explosion may have been caused by Russian friendly fire, not a Ukrainian strike."
+    },
+    {
+     "captured_utc": "2026-07-02T01:12:21Z",
+     "a": "Kyiv Independent, NYT World and TASS say Moscow is under drone attack from Ukrainian forces.",
+     "b": "Fox News World says the assassinations of Russian generals expose a growing rift inside Putin's security apparatus."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+   ],
+   "history": {
+    "built": true,
+    "frames": 3,
+    "nodes": 19,
+    "discovered_days": 24
+   },
+   "lead_image": {
+    "url": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20260703/1479553.jpg",
+    "source": "TASS",
+    "focal": {
+     "x": 57,
+     "y": 24
+    }
+   },
+   "gate": {
+    "score": 6,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -71935,10 +72081,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "Colombia oil reserve decline",
-      "move_pct": -0.26,
+      "move_pct": -0.23,
       "window_h": 24,
       "measured_from": "2026-07-05T20:34:04Z",
       "series": [
@@ -72073,6 +72219,10 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      },
@@ -72080,10 +72230,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "South American oil supply",
-      "move_pct": 0.0,
+      "move_pct": -0.32,
       "window_h": 24,
       "measured_from": "2026-07-05T20:34:04Z",
       "series": [
@@ -72210,6 +72360,10 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      },
@@ -72468,7 +72622,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:32:58Z",
+    "observed_utc": "2026-07-06T04:39:20Z",
     "anchor_beat": "2026-07-05T20:34:04Z"
    },
    "lead_image": {
@@ -73498,8 +73652,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "USMCA trade uncertainty impacting dollar",
       "move_pct": 0.02,
       "window_h": 24,
@@ -73640,12 +73794,16 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:34:42Z",
+    "observed_utc": "2026-07-06T04:41:03Z",
     "anchor_beat": "2026-07-06T03:00:00Z"
    },
    "lead_image": {
@@ -74206,10 +74364,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 68.6,
-      "last_ts": "2026-07-06T04:20:24Z",
+      "last": 68.62,
+      "last_ts": "2026-07-06T04:26:24Z",
       "basis": "Hormuz traffic disrupts oil supply",
-      "move_pct": 0.13,
+      "move_pct": 0.16,
       "window_h": 24,
       "measured_from": "2026-07-05T22:19:03Z",
       "series": [
@@ -74344,6 +74502,10 @@
        [
         "2026-07-06T04:20:24Z",
         68.6
+       ],
+       [
+        "2026-07-06T04:26:24Z",
+        68.62
        ]
       ]
      },
@@ -74351,10 +74513,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 72.13,
-      "last_ts": "2026-07-06T04:14:05Z",
+      "last": 71.9,
+      "last_ts": "2026-07-06T04:23:44Z",
       "basis": "Hormuz traffic disrupts oil supply",
-      "move_pct": 0.31,
+      "move_pct": -0.01,
       "window_h": 24,
       "measured_from": "2026-07-05T22:19:03Z",
       "series": [
@@ -74481,12 +74643,16 @@
        [
         "2026-07-06T04:14:05Z",
         72.13
+       ],
+       [
+        "2026-07-06T04:23:44Z",
+        71.9
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:34:56Z",
+    "observed_utc": "2026-07-06T04:41:18Z",
     "anchor_beat": "2026-07-05T22:19:03Z"
    },
    "lead_image": {
@@ -75728,8 +75894,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.943,
-      "last_ts": "2026-07-06T04:20:27Z",
+      "last": 100.946,
+      "last_ts": "2026-07-06T04:26:40Z",
       "basis": "Dollar strength",
       "move_pct": 0.09,
       "window_h": 24,
@@ -75870,12 +76036,16 @@
        [
         "2026-07-06T04:20:27Z",
         100.943
+       ],
+       [
+        "2026-07-06T04:26:40Z",
+        100.946
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:35:01Z",
+    "observed_utc": "2026-07-06T04:41:22Z",
     "anchor_beat": "2026-07-05T10:07:50Z"
    },
    "lead_image": {
@@ -77835,7 +78005,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:38:30Z",
+    "observed_utc": "2026-07-06T04:44:49Z",
     "anchor_beat": "2026-07-05T21:32:00Z"
    },
    "lead_image": {
@@ -81173,7 +81343,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:32:04Z",
+    "observed_utc": "2026-07-06T04:38:26Z",
     "anchor_beat": "2026-07-04T12:59:49Z"
    },
    "lead_image": {
@@ -83035,7 +83205,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:42:17Z",
+    "observed_utc": "2026-07-06T04:48:37Z",
     "anchor_beat": "2026-07-04T18:02:44Z"
    },
    "lead_image": {
@@ -84342,7 +84512,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:47:06Z",
+    "observed_utc": "2026-07-06T04:53:27Z",
     "anchor_beat": "2026-07-04T10:12:45Z"
    },
    "gate": {
@@ -85320,7 +85490,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:47:11Z",
+    "observed_utc": "2026-07-06T04:53:31Z",
     "anchor_beat": "2026-07-04T09:30:46Z"
    },
    "gate": {
@@ -88296,7 +88466,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:36:51Z",
+    "observed_utc": "2026-07-06T04:43:11Z",
     "anchor_beat": "2026-07-04T13:46:58Z"
    },
    "lead_image": {
@@ -89612,7 +89782,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:38:01Z",
+    "observed_utc": "2026-07-06T04:44:22Z",
     "anchor_beat": "2026-07-04T14:23:27Z"
    },
    "lead_image": {
@@ -91047,7 +91217,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:38:11Z",
+    "observed_utc": "2026-07-06T04:44:31Z",
     "anchor_beat": "2026-07-04T09:08:48Z"
    },
    "lead_image": {
@@ -91735,7 +91905,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:39:31Z",
+    "observed_utc": "2026-07-06T04:45:54Z",
     "anchor_beat": "2026-07-04T02:20:15Z"
    },
    "gate": {
@@ -94186,7 +94356,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:43:23Z",
+    "observed_utc": "2026-07-06T04:49:43Z",
     "anchor_beat": "2026-07-04T17:07:20Z"
    },
    "gate": {
@@ -95640,7 +95810,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:43:51Z",
+    "observed_utc": "2026-07-06T04:50:13Z",
     "anchor_beat": "2026-07-04T18:53:00Z"
    },
    "lead_image": {
@@ -96051,7 +96221,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:46:30Z",
+    "observed_utc": "2026-07-06T04:52:50Z",
     "anchor_beat": "2026-07-04T10:45:47Z"
    },
    "gate": {
@@ -97442,18 +97612,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "South China Morning Post",
-      "ts": "2026-06-29T04:39:23Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "HK press (Alibaba-owned)",
-      "items": 2
-     },
-     {
       "outlet": "Lavender Hotel",
       "ts": "2026-06-29T05:23:38Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -97500,6 +97662,14 @@
      {
       "outlet": "TipRanks",
       "ts": "2026-06-29T07:33:38Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "CBC World",
+      "ts": "2026-06-29T07:46:34Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -97979,7 +98149,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:33:45Z",
+    "observed_utc": "2026-07-06T04:40:04Z",
     "anchor_beat": "2026-07-03T16:23:44Z"
    },
    "lead_image": {
@@ -98778,7 +98948,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:33:50Z",
+    "observed_utc": "2026-07-06T04:40:09Z",
     "anchor_beat": "2026-07-02T15:15:05Z"
    },
    "lead_image": {
@@ -100243,7 +100413,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:34:37Z",
+    "observed_utc": "2026-07-06T04:40:57Z",
     "anchor_beat": "2026-07-03T12:54:53Z"
    },
    "lead_image": {
@@ -102218,7 +102388,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:35:33Z",
+    "observed_utc": "2026-07-06T04:41:50Z",
     "anchor_beat": "2026-07-03T17:44:01Z"
    },
    "lead_image": {
@@ -103946,7 +104116,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:36:42Z",
+    "observed_utc": "2026-07-06T04:43:01Z",
     "anchor_beat": "2026-07-03T17:50:22Z"
    },
    "lead_image": {
@@ -105331,7 +105501,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:00Z",
+    "observed_utc": "2026-07-06T04:43:20Z",
     "anchor_beat": "2026-07-03T15:34:32Z"
    },
    "lead_image": {
@@ -106859,7 +107029,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:16Z",
+    "observed_utc": "2026-07-06T04:43:35Z",
     "anchor_beat": "2026-07-03T18:13:15Z"
    },
    "lead_image": {
@@ -108082,7 +108252,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:20Z",
+    "observed_utc": "2026-07-06T04:43:39Z",
     "anchor_beat": "2026-07-02T17:07:00Z"
    },
    "gate": {
@@ -108688,7 +108858,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:25Z",
+    "observed_utc": "2026-07-06T04:43:44Z",
     "anchor_beat": "2026-07-02T20:36:28Z"
    },
    "gate": {
@@ -109464,7 +109634,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:30Z",
+    "observed_utc": "2026-07-06T04:43:48Z",
     "anchor_beat": "2026-06-30T22:30:25Z"
    },
    "gate": {
@@ -110553,7 +110723,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:34Z",
+    "observed_utc": "2026-07-06T04:43:53Z",
     "anchor_beat": "2026-07-03T22:01:03Z"
    },
    "lead_image": {
@@ -111262,7 +111432,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:39Z",
+    "observed_utc": "2026-07-06T04:43:58Z",
     "anchor_beat": "2026-07-01T11:28:57Z"
    },
    "lead_image": {
@@ -112136,7 +112306,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:37:52Z",
+    "observed_utc": "2026-07-06T04:44:12Z",
     "anchor_beat": "2026-07-02T13:20:54Z"
    },
    "lead_image": {
@@ -114359,7 +114529,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:38:57Z",
+    "observed_utc": "2026-07-06T04:45:20Z",
     "anchor_beat": "2026-07-03T13:30:00Z"
    },
    "lead_image": {
@@ -114976,7 +115146,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:39:02Z",
+    "observed_utc": "2026-07-06T04:45:25Z",
     "anchor_beat": "2026-07-02T07:00:00Z"
    },
    "gate": {
@@ -115497,7 +115667,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:39:07Z",
+    "observed_utc": "2026-07-06T04:45:30Z",
     "anchor_beat": "2026-07-01T21:50:15Z"
    },
    "lead_image": {
@@ -116450,7 +116620,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:39:22Z",
+    "observed_utc": "2026-07-06T04:45:44Z",
     "anchor_beat": "2026-07-02T10:35:43Z"
    },
    "gate": {
@@ -116945,7 +117115,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:39:27Z",
+    "observed_utc": "2026-07-06T04:45:49Z",
     "anchor_beat": "2026-07-03T04:01:40Z"
    },
    "lead_image": {
@@ -117633,7 +117803,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:39:36Z",
+    "observed_utc": "2026-07-06T04:45:59Z",
     "anchor_beat": "2026-07-02T06:35:21Z"
    },
    "lead_image": {
@@ -118892,7 +119062,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:40:01Z",
+    "observed_utc": "2026-07-06T04:46:25Z",
     "anchor_beat": "2026-07-03T17:39:01Z"
    },
    "gate": {
@@ -120601,7 +120771,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:40:50Z",
+    "observed_utc": "2026-07-06T04:47:12Z",
     "anchor_beat": "2026-07-02T13:42:44Z"
    },
    "lead_image": {
@@ -121869,7 +122039,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:41:01Z",
+    "observed_utc": "2026-07-06T04:47:22Z",
     "anchor_beat": "2026-07-03T17:34:17Z"
    },
    "gate": {
@@ -122875,7 +123045,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:41:11Z",
+    "observed_utc": "2026-07-06T04:47:31Z",
     "anchor_beat": "2026-07-03T12:20:29Z"
    },
    "gate": {
@@ -123495,7 +123665,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:41:16Z",
+    "observed_utc": "2026-07-06T04:47:35Z",
     "anchor_beat": "2026-07-03T21:52:08Z"
    },
    "lead_image": {
@@ -124555,7 +124725,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:41:20Z",
+    "observed_utc": "2026-07-06T04:47:40Z",
     "anchor_beat": "2026-07-03T22:31:10Z"
    },
    "lead_image": {
@@ -125768,7 +125938,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:41:30Z",
+    "observed_utc": "2026-07-06T04:47:50Z",
     "anchor_beat": "2026-07-02T05:00:00Z"
    },
    "gate": {
@@ -126581,7 +126751,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:41:34Z",
+    "observed_utc": "2026-07-06T04:47:54Z",
     "anchor_beat": "2026-07-03T15:20:25Z"
    },
    "lead_image": {
@@ -128653,7 +128823,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:42:12Z",
+    "observed_utc": "2026-07-06T04:48:32Z",
     "anchor_beat": "2026-06-30T14:45:00Z"
    },
    "gate": {
@@ -130056,7 +130226,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:42:21Z",
+    "observed_utc": "2026-07-06T04:48:42Z",
     "anchor_beat": "2026-07-03T16:44:04Z"
    },
    "gate": {
@@ -130922,7 +131092,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:42:31Z",
+    "observed_utc": "2026-07-06T04:48:51Z",
     "anchor_beat": "2026-07-02T21:56:08Z"
    },
    "gate": {
@@ -131722,7 +131892,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:42:40Z",
+    "observed_utc": "2026-07-06T04:49:01Z",
     "anchor_beat": "2026-07-03T10:00:00Z"
    },
    "lead_image": {
@@ -132499,7 +132669,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:42:50Z",
+    "observed_utc": "2026-07-06T04:49:10Z",
     "anchor_beat": "2026-07-02T19:11:18Z"
    },
    "gate": {
@@ -132964,7 +133134,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:42:59Z",
+    "observed_utc": "2026-07-06T04:49:20Z",
     "anchor_beat": "2026-07-03T07:23:33Z"
    },
    "lead_image": {
@@ -133541,7 +133711,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:43:14Z",
+    "observed_utc": "2026-07-06T04:49:33Z",
     "anchor_beat": "2026-07-03T04:44:55Z"
    },
    "lead_image": {
@@ -134009,7 +134179,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:43:19Z",
+    "observed_utc": "2026-07-06T04:49:38Z",
     "anchor_beat": "2026-07-03T05:05:10Z"
    },
    "lead_image": {
@@ -135319,7 +135489,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:43:46Z",
+    "observed_utc": "2026-07-06T04:50:08Z",
     "anchor_beat": "2026-07-03T06:20:01Z"
    },
    "gate": {
@@ -136585,7 +136755,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:44:15Z",
+    "observed_utc": "2026-07-06T04:50:38Z",
     "anchor_beat": "2026-07-03T00:59:08Z"
    },
    "gate": {
@@ -137607,7 +137777,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:44:29Z",
+    "observed_utc": "2026-07-06T04:50:53Z",
     "anchor_beat": "2026-07-03T08:32:05Z"
    },
    "lead_image": {
@@ -138126,7 +138296,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:44:33Z",
+    "observed_utc": "2026-07-06T04:50:57Z",
     "anchor_beat": "2026-07-03T16:50:52Z"
    },
    "lead_image": {
@@ -138981,7 +139151,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:45:06Z",
+    "observed_utc": "2026-07-06T04:51:31Z",
     "anchor_beat": "2026-07-03T12:53:28Z"
    },
    "gate": {
@@ -140751,7 +140921,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:45:36Z",
+    "observed_utc": "2026-07-06T04:51:58Z",
     "anchor_beat": "2026-07-03T16:41:00Z"
    },
    "lead_image": {
@@ -142232,7 +142402,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:45:51Z",
+    "observed_utc": "2026-07-06T04:52:13Z",
     "anchor_beat": "2026-07-03T05:01:49Z"
    },
    "gate": {
@@ -144009,7 +144179,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:46:16Z",
+    "observed_utc": "2026-07-06T04:52:36Z",
     "anchor_beat": "2026-07-03T19:36:14Z"
    },
    "lead_image": {
@@ -144888,7 +145058,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-06T04:46:43Z",
+    "observed_utc": "2026-07-06T04:53:04Z",
     "anchor_beat": null
    },
    "gate": {
@@ -145263,7 +145433,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-06T04:46:48Z",
+    "observed_utc": "2026-07-06T04:53:08Z",
     "anchor_beat": "2026-07-03T12:14:28Z"
    },
    "lead_image": {
@@ -145290,56 +145460,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Australian PM apologises for 'inappropriate' comments about Kylie Minogue",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Michigan Democrat Mallory McMorrow ends bid for US Senate",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Vatican excommunicates breakaway Catholic bishops who defied Pope Leo XIV",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Why patients are traveling to China for care",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Artificial cell manages a few rounds of cell division",
-   "outlets": 6,
-   "count": 7,
-   "status": "watching"
-  },
-  {
-   "sample": "NASA launched an emergency mission to stop the Swift Observatory from crashing to Earth",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "The World Cup sends prediction market volumes soaring to record highs",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Scientists should recognize their own political biases to build public trust",
-   "outlets": 6,
-   "count": 6,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -145351,12 +145472,12 @@
   "situations": 312,
   "situations_active": 221,
   "discovered": 307,
-  "items": 40441,
-  "developments": 39783,
+  "items": 40453,
+  "developments": 39795,
   "claims": 3952,
   "carriers": 10371,
   "steelmans": 3601,
-  "deep_reports": 311,
+  "deep_reports": 312,
   "entities": 834,
   "edges": 24540,
   "history_nodes": 557,
@@ -145365,12 +145486,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 147,
-  "accepted": 1,
-  "rejected": 9,
-  "existing": 1,
-  "below": 136,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -145385,6 +145500,6 @@
   "edition_utc": "2026-07-05",
   "panels": 12,
   "appendix": 8,
-  "overflow": 629
+  "overflow": 638
  }
 }
