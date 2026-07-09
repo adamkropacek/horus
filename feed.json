@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-09T01:44:05Z",
+ "generated_utc": "2026-07-09T01:48:24Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,6 +32,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -78,6 +79,41 @@
     "id": "unnews",
     "label": "UN News",
     "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-to-pull-fighter-jets-from-nato-europe",
+    "label": "GDELT NATO Faces Key Challenges",
+    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+   },
+   {
+    "id": "gdelt:gaza-israel-war-current",
+    "label": "GDELT Israel-Gaza",
+    "reason": "<urlopen error timed out>"
+   },
+   {
+    "id": "gdelt:nato-summit-in-ankara-focuses-on-unity",
+    "label": "GDELT NATO summit in Ankara focuses on unity",
+    "reason": "<urlopen error timed out>"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+   },
+   {
+    "id": "gdelt:gold-drops-24-goldman-jpmorgan-forecasts-diverge",
+    "label": "GDELT BofA cuts 2026 gold forecast, sees long-term upside",
+    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
    }
   ]
  },
@@ -407,7 +443,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 354,
+   "items_24h": 352,
    "items_48h": 505,
    "outlets": 223,
    "kinds": [
@@ -1094,7 +1130,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran nuclear work sparks concern, Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1109,10 +1145,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.34,
-      "last_ts": "2026-07-09T01:12:30Z",
+      "last": 74.57,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Gulf oil-supply route",
-      "move_pct": 0.07,
+      "move_pct": 0.38,
       "window_h": 24,
       "measured_from": "2026-07-09T00:42:54Z",
       "series": [
@@ -1339,6 +1375,10 @@
        [
         "2026-07-09T01:12:30Z",
         74.34
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        74.57
        ]
       ]
      },
@@ -1346,10 +1386,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Gulf oil-supply route",
-      "move_pct": 0.08,
+      "move_pct": 0.38,
       "window_h": 24,
       "measured_from": "2026-07-09T00:42:54Z",
       "series": [
@@ -1572,12 +1612,16 @@
        [
         "2026-07-09T01:12:23Z",
         78.89
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:24:08Z",
+    "observed_utc": "2026-07-09T01:28:39Z",
     "anchor_beat": "2026-07-09T00:42:54Z"
    },
    "lead_image": {
@@ -2103,18 +2147,10 @@
     "outlets_unplaced": 2,
     "chain": [
      {
-      "outlet": "TASS",
-      "ts": "2026-07-02T01:26:20Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "RU state media",
-      "items": 130
-     },
-     {
       "outlet": "ABC News - Breaking News, Latest News and Videos",
       "ts": "2026-07-02T01:29:09Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 6
      },
@@ -2165,6 +2201,14 @@
       "role": "echo",
       "motive_note": "UK public broadcaster",
       "items": 10
+     },
+     {
+      "outlet": "Institute for the Study of War",
+      "ts": "2026-07-02T02:10:59Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 4
      }
     ],
     "unplaced": [
@@ -2613,7 +2657,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://cdn-media.tass.ru/width/1200_4ce85301/tass/m2/en/uploads/i/20260706/1479847.jpg",
@@ -2931,8 +2975,8 @@
    },
    "discovered": true,
    "items_24h": 96,
-   "items_48h": 290,
-   "outlets": 134,
+   "items_48h": 289,
+   "outlets": 133,
    "kinds": [
     "journalist",
     "state media",
@@ -3598,7 +3642,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT NATO Faces Key Challenges, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -3613,7 +3657,7 @@
       "label": "Dollar Index",
       "class": "fx",
       "last": 101.001,
-      "last_ts": "2026-07-09T01:12:32Z",
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Defense deals boost dollar",
       "move_pct": -0.06,
       "window_h": 24,
@@ -3660,12 +3704,12 @@
         101.156
        ],
        [
-        "2026-07-08T12:52:35Z",
-        101.143
-       ],
-       [
         "2026-07-08T13:00:00Z",
         101.189
+       ],
+       [
+        "2026-07-08T13:05:14Z",
+        101.204
        ],
        [
         "2026-07-08T13:33:16Z",
@@ -3700,10 +3744,6 @@
         101.151
        ],
        [
-        "2026-07-08T15:01:16Z",
-        101.149
-       ],
-       [
         "2026-07-08T15:27:26Z",
         101.199
        ],
@@ -3714,6 +3754,10 @@
        [
         "2026-07-08T15:57:56Z",
         101.242
+       ],
+       [
+        "2026-07-08T15:59:18Z",
+        101.245
        ],
        [
         "2026-07-08T16:00:00Z",
@@ -3740,10 +3784,6 @@
         101.065
        ],
        [
-        "2026-07-08T17:24:35Z",
-        101.003
-       ],
-       [
         "2026-07-08T17:38:01Z",
         101.005
        ],
@@ -3764,6 +3804,10 @@
         100.979
        ],
        [
+        "2026-07-08T18:47:30Z",
+        100.965
+       ],
+       [
         "2026-07-08T18:55:19Z",
         100.978
        ],
@@ -3778,10 +3822,6 @@
        [
         "2026-07-08T19:24:51Z",
         100.963
-       ],
-       [
-        "2026-07-08T19:52:02Z",
-        100.99
        ],
        [
         "2026-07-08T19:55:52Z",
@@ -3812,16 +3852,16 @@
         101.043
        ],
        [
+        "2026-07-08T21:20:04Z",
+        101.036
+       ],
+       [
         "2026-07-08T21:47:04Z",
         101.054
        ],
        [
         "2026-07-08T21:51:12Z",
         101.053
-       ],
-       [
-        "2026-07-08T22:00:00Z",
-        101.065
        ],
        [
         "2026-07-08T22:04:58Z",
@@ -3861,6 +3901,10 @@
        ],
        [
         "2026-07-09T01:12:32Z",
+        101.001
+       ],
+       [
+        "2026-07-09T01:16:57Z",
         101.001
        ]
       ]
@@ -4006,10 +4050,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4084.8,
-      "last_ts": "2026-07-09T01:12:33Z",
+      "last": 4083.8,
+      "last_ts": "2026-07-09T01:16:55Z",
       "basis": "Defense spending boosts gold",
-      "move_pct": 0.02,
+      "move_pct": -0.0,
       "window_h": 24,
       "measured_from": "2026-07-08T22:28:00Z",
       "series": [
@@ -4050,8 +4094,8 @@
         4081.1001
        ],
        [
-        "2026-07-08T12:35:26Z",
-        4082.2
+        "2026-07-08T12:52:33Z",
+        4094.7
        ],
        [
         "2026-07-08T13:00:00Z",
@@ -4086,12 +4130,12 @@
         4069.8999
        ],
        [
-        "2026-07-08T14:52:05Z",
-        4053.1001
-       ],
-       [
         "2026-07-08T15:00:00Z",
         4047.3
+       ],
+       [
+        "2026-07-08T15:01:14Z",
+        4051.1001
        ],
        [
         "2026-07-08T15:27:25Z",
@@ -4118,10 +4162,6 @@
         4051.1001
        ],
        [
-        "2026-07-08T16:26:56Z",
-        4051.0
-       ],
-       [
         "2026-07-08T16:54:21Z",
         4070.8999
        ],
@@ -4132,6 +4172,10 @@
        [
         "2026-07-08T17:02:13Z",
         4071.3999
+       ],
+       [
+        "2026-07-08T17:24:33Z",
+        4078.7
        ],
        [
         "2026-07-08T17:38:01Z",
@@ -4154,10 +4198,6 @@
         4079.0
        ],
        [
-        "2026-07-08T18:47:33Z",
-        4095.7
-       ],
-       [
         "2026-07-08T18:55:23Z",
         4094.0
        ],
@@ -4174,6 +4214,10 @@
         4097.2998
        ],
        [
+        "2026-07-08T19:52:04Z",
+        4091.2
+       ],
+       [
         "2026-07-08T19:55:41Z",
         4092.3
        ],
@@ -4184,10 +4228,6 @@
        [
         "2026-07-08T20:19:44Z",
         4086.2
-       ],
-       [
-        "2026-07-08T20:29:16Z",
-        4085.8999
        ],
        [
         "2026-07-08T20:49:36Z",
@@ -4214,16 +4254,16 @@
         4087.7
        ],
        [
+        "2026-07-08T22:59:22Z",
+        4086.8
+       ],
+       [
         "2026-07-08T23:00:00Z",
         4086.3999
        ],
        [
         "2026-07-08T23:16:25Z",
         4086.3999
-       ],
-       [
-        "2026-07-08T23:32:41Z",
-        4085.3
        ],
        [
         "2026-07-08T23:46:53Z",
@@ -4256,6 +4296,10 @@
        [
         "2026-07-09T01:12:33Z",
         4084.8
+       ],
+       [
+        "2026-07-09T01:16:55Z",
+        4083.8
        ]
       ]
      },
@@ -4263,10 +4307,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Defense deals lift oil",
-      "move_pct": -0.32,
+      "move_pct": -0.01,
       "window_h": 24,
       "measured_from": "2026-07-08T22:28:00Z",
       "series": [
@@ -4311,12 +4355,12 @@
         77.41
        ],
        [
-        "2026-07-08T12:52:32Z",
-        77.28
-       ],
-       [
         "2026-07-08T13:00:00Z",
         77.95
+       ],
+       [
+        "2026-07-08T13:05:15Z",
+        78.06
        ],
        [
         "2026-07-08T13:33:16Z",
@@ -4351,10 +4395,6 @@
         79.79
        ],
        [
-        "2026-07-08T15:01:16Z",
-        79.66
-       ],
-       [
         "2026-07-08T15:27:25Z",
         79.78
        ],
@@ -4365,6 +4405,10 @@
        [
         "2026-07-08T15:57:53Z",
         80.41
+       ],
+       [
+        "2026-07-08T15:59:18Z",
+        80.35
        ],
        [
         "2026-07-08T16:00:00Z",
@@ -4391,10 +4435,6 @@
         78.78
        ],
        [
-        "2026-07-08T17:24:18Z",
-        78.64
-       ],
-       [
         "2026-07-08T17:37:40Z",
         78.45
        ],
@@ -4415,6 +4455,10 @@
         78.15
        ],
        [
+        "2026-07-08T18:47:34Z",
+        78.2
+       ],
+       [
         "2026-07-08T18:55:23Z",
         78.16
        ],
@@ -4429,10 +4473,6 @@
        [
         "2026-07-08T19:24:26Z",
         78.05
-       ],
-       [
-        "2026-07-08T19:52:02Z",
-        78.44
        ],
        [
         "2026-07-08T19:55:29Z",
@@ -4463,16 +4503,16 @@
         79.17
        ],
        [
+        "2026-07-08T22:14:32Z",
+        79.17
+       ],
+       [
         "2026-07-08T22:19:31Z",
         79.14
        ],
        [
         "2026-07-08T22:44:25Z",
         78.95
-       ],
-       [
-        "2026-07-08T22:54:38Z",
-        78.98
        ],
        [
         "2026-07-08T23:00:00Z",
@@ -4513,12 +4553,16 @@
        [
         "2026-07-09T01:12:23Z",
         78.89
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:24:50Z",
+    "observed_utc": "2026-07-09T01:29:21Z",
     "anchor_beat": "2026-07-08T22:28:00Z"
    },
    "lead_image": {
@@ -5342,7 +5386,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:41:35Z",
+    "observed_utc": "2026-07-09T01:45:53Z",
     "anchor_beat": "2026-07-08T22:31:00Z"
    },
    "lead_image": {
@@ -6470,7 +6514,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -6478,10 +6522,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Middle East conflict pressures oil supply",
-      "move_pct": -0.32,
+      "move_pct": -0.01,
       "window_h": 24,
       "measured_from": "2026-07-08T22:30:00Z",
       "series": [
@@ -6526,12 +6570,12 @@
         77.41
        ],
        [
-        "2026-07-08T12:52:32Z",
-        77.28
-       ],
-       [
         "2026-07-08T13:00:00Z",
         77.95
+       ],
+       [
+        "2026-07-08T13:05:15Z",
+        78.06
        ],
        [
         "2026-07-08T13:33:16Z",
@@ -6566,10 +6610,6 @@
         79.79
        ],
        [
-        "2026-07-08T15:01:16Z",
-        79.66
-       ],
-       [
         "2026-07-08T15:27:25Z",
         79.78
        ],
@@ -6580,6 +6620,10 @@
        [
         "2026-07-08T15:57:53Z",
         80.41
+       ],
+       [
+        "2026-07-08T15:59:18Z",
+        80.35
        ],
        [
         "2026-07-08T16:00:00Z",
@@ -6606,10 +6650,6 @@
         78.78
        ],
        [
-        "2026-07-08T17:24:18Z",
-        78.64
-       ],
-       [
         "2026-07-08T17:37:40Z",
         78.45
        ],
@@ -6630,6 +6670,10 @@
         78.15
        ],
        [
+        "2026-07-08T18:47:34Z",
+        78.2
+       ],
+       [
         "2026-07-08T18:55:23Z",
         78.16
        ],
@@ -6644,10 +6688,6 @@
        [
         "2026-07-08T19:24:26Z",
         78.05
-       ],
-       [
-        "2026-07-08T19:52:02Z",
-        78.44
        ],
        [
         "2026-07-08T19:55:29Z",
@@ -6678,16 +6718,16 @@
         79.17
        ],
        [
+        "2026-07-08T22:14:32Z",
+        79.17
+       ],
+       [
         "2026-07-08T22:19:31Z",
         79.14
        ],
        [
         "2026-07-08T22:44:25Z",
         78.95
-       ],
-       [
-        "2026-07-08T22:54:38Z",
-        78.98
        ],
        [
         "2026-07-08T23:00:00Z",
@@ -6728,6 +6768,10 @@
        [
         "2026-07-09T01:12:23Z",
         78.89
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      },
@@ -6735,10 +6779,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.34,
-      "last_ts": "2026-07-09T01:12:30Z",
+      "last": 74.57,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Conflict raises risk for WTI prices",
-      "move_pct": -0.34,
+      "move_pct": -0.03,
       "window_h": 24,
       "measured_from": "2026-07-08T22:30:00Z",
       "series": [
@@ -6779,8 +6823,8 @@
         73.95
        ],
        [
-        "2026-07-08T12:35:28Z",
-        73.44
+        "2026-07-08T12:52:32Z",
+        73.24
        ],
        [
         "2026-07-08T13:00:00Z",
@@ -6815,12 +6859,12 @@
         75.45
        ],
        [
-        "2026-07-08T14:52:05Z",
-        75.37
-       ],
-       [
         "2026-07-08T15:00:00Z",
         75.51
+       ],
+       [
+        "2026-07-08T15:01:16Z",
+        75.35
        ],
        [
         "2026-07-08T15:27:25Z",
@@ -6847,10 +6891,6 @@
         75.19
        ],
        [
-        "2026-07-08T16:26:53Z",
-        75.19
-       ],
-       [
         "2026-07-08T16:54:21Z",
         74.66
        ],
@@ -6861,6 +6901,10 @@
        [
         "2026-07-08T17:02:16Z",
         74.46
+       ],
+       [
+        "2026-07-08T17:24:35Z",
+        74.15
        ],
        [
         "2026-07-08T17:38:01Z",
@@ -6883,10 +6927,6 @@
         73.72
        ],
        [
-        "2026-07-08T18:47:34Z",
-        73.74
-       ],
-       [
         "2026-07-08T18:55:20Z",
         73.67
        ],
@@ -6903,6 +6943,10 @@
         73.57
        ],
        [
+        "2026-07-08T19:52:03Z",
+        74.0
+       ],
+       [
         "2026-07-08T19:55:47Z",
         74.06
        ],
@@ -6913,10 +6957,6 @@
        [
         "2026-07-08T20:19:40Z",
         74.59
-       ],
-       [
-        "2026-07-08T20:29:23Z",
-        74.5
        ],
        [
         "2026-07-08T20:49:42Z",
@@ -6943,16 +6983,16 @@
         74.53
        ],
        [
+        "2026-07-08T22:59:30Z",
+        74.53
+       ],
+       [
         "2026-07-08T23:00:00Z",
         74.51
        ],
        [
         "2026-07-08T23:16:23Z",
         74.51
-       ],
-       [
-        "2026-07-08T23:32:35Z",
-        74.47
        ],
        [
         "2026-07-08T23:46:44Z",
@@ -6985,6 +7025,10 @@
        [
         "2026-07-09T01:12:30Z",
         74.34
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        74.57
        ]
       ]
      },
@@ -6993,7 +7037,7 @@
       "label": "Dollar Index",
       "class": "fx",
       "last": 101.001,
-      "last_ts": "2026-07-09T01:12:32Z",
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Geopolitical tension strengthens dollar",
       "move_pct": -0.06,
       "window_h": 24,
@@ -7040,12 +7084,12 @@
         101.156
        ],
        [
-        "2026-07-08T12:52:35Z",
-        101.143
-       ],
-       [
         "2026-07-08T13:00:00Z",
         101.189
+       ],
+       [
+        "2026-07-08T13:05:14Z",
+        101.204
        ],
        [
         "2026-07-08T13:33:16Z",
@@ -7080,10 +7124,6 @@
         101.151
        ],
        [
-        "2026-07-08T15:01:16Z",
-        101.149
-       ],
-       [
         "2026-07-08T15:27:26Z",
         101.199
        ],
@@ -7094,6 +7134,10 @@
        [
         "2026-07-08T15:57:56Z",
         101.242
+       ],
+       [
+        "2026-07-08T15:59:18Z",
+        101.245
        ],
        [
         "2026-07-08T16:00:00Z",
@@ -7120,10 +7164,6 @@
         101.065
        ],
        [
-        "2026-07-08T17:24:35Z",
-        101.003
-       ],
-       [
         "2026-07-08T17:38:01Z",
         101.005
        ],
@@ -7144,6 +7184,10 @@
         100.979
        ],
        [
+        "2026-07-08T18:47:30Z",
+        100.965
+       ],
+       [
         "2026-07-08T18:55:19Z",
         100.978
        ],
@@ -7158,10 +7202,6 @@
        [
         "2026-07-08T19:24:51Z",
         100.963
-       ],
-       [
-        "2026-07-08T19:52:02Z",
-        100.99
        ],
        [
         "2026-07-08T19:55:52Z",
@@ -7192,16 +7232,16 @@
         101.043
        ],
        [
+        "2026-07-08T21:20:04Z",
+        101.036
+       ],
+       [
         "2026-07-08T21:47:04Z",
         101.054
        ],
        [
         "2026-07-08T21:51:12Z",
         101.053
-       ],
-       [
-        "2026-07-08T22:00:00Z",
-        101.065
        ],
        [
         "2026-07-08T22:04:58Z",
@@ -7241,6 +7281,10 @@
        ],
        [
         "2026-07-09T01:12:32Z",
+        101.001
+       ],
+       [
+        "2026-07-09T01:16:57Z",
         101.001
        ]
       ]
@@ -7448,7 +7492,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:23:41Z",
+    "observed_utc": "2026-07-09T01:28:13Z",
     "anchor_beat": "2026-07-08T22:30:00Z"
    },
    "lead_image": {
@@ -8047,7 +8091,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT NATO summit in Ankara focuses on unity, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8338,7 +8382,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:38:07Z",
+    "observed_utc": "2026-07-09T01:42:24Z",
     "anchor_beat": "2026-07-08T18:45:00Z"
    },
    "lead_image": {
@@ -8582,9 +8626,9 @@
     ]
    },
    "discovered": true,
-   "items_24h": 56,
-   "items_48h": 162,
-   "outlets": 83,
+   "items_24h": 57,
+   "items_48h": 163,
+   "outlets": 84,
    "kinds": [
     "journalist",
     "wire service"
@@ -8851,7 +8895,7 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 11
+      "items": 12
      },
      {
       "outlet": "Motley Fool",
@@ -9236,7 +9280,7 @@
      "state-media": 5,
      "regional": 0,
      "official": 0,
-     "other": 90
+     "other": 91
     },
     "first_seen": "2026-06-12T07:13:55Z"
    },
@@ -9303,7 +9347,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT SpaceX IPO Musk first trillionaire, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -9597,7 +9641,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:24:48Z",
+    "observed_utc": "2026-07-09T01:29:19Z",
     "anchor_beat": "2026-07-08T23:37:00Z"
    },
    "lead_image": {
@@ -10191,7 +10235,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:41:50Z",
+    "observed_utc": "2026-07-09T01:46:09Z",
     "anchor_beat": "2026-07-08T23:37:00Z"
    },
    "lead_image": {
@@ -10804,17 +10848,17 @@
      "class": "other"
     },
     {
-     "outlet": "MSN",
-     "n": 4,
-     "class": "other"
-    },
-    {
      "outlet": "livemint.com",
      "n": 4,
      "class": "other"
     },
     {
      "outlet": "CNBC",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "CryptoRank",
      "n": 3,
      "class": "other"
     }
@@ -11114,7 +11158,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT BofA cuts 2026 gold forecast, sees long-term upside, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -11129,10 +11173,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4084.8,
-      "last_ts": "2026-07-09T01:12:33Z",
+      "last": 4083.8,
+      "last_ts": "2026-07-09T01:16:55Z",
       "basis": "Fed minutes influence gold price outlook",
-      "move_pct": -0.04,
+      "move_pct": -0.06,
       "window_h": 24,
       "measured_from": "2026-07-08T23:25:52Z",
       "series": [
@@ -11217,10 +11261,6 @@
         4033.8
        ],
        [
-        "2026-07-08T15:57:53Z",
-        4042.7
-       ],
-       [
         "2026-07-08T15:59:19Z",
         4043.8
        ],
@@ -11255,6 +11295,10 @@
        [
         "2026-07-08T17:38:01Z",
         4080.7
+       ],
+       [
+        "2026-07-08T17:54:18Z",
+        4078.1001
        ],
        [
         "2026-07-08T18:00:00Z",
@@ -11295,10 +11339,6 @@
        [
         "2026-07-08T19:55:41Z",
         4092.3
-       ],
-       [
-        "2026-07-08T20:00:00Z",
-        4086.3999
        ],
        [
         "2026-07-08T20:19:44Z",
@@ -11379,12 +11419,16 @@
        [
         "2026-07-09T01:12:33Z",
         4084.8
+       ],
+       [
+        "2026-07-09T01:16:55Z",
+        4083.8
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:25:58Z",
+    "observed_utc": "2026-07-09T01:30:26Z",
     "anchor_beat": "2026-07-08T23:25:52Z"
    },
    "lead_image": {
@@ -12399,7 +12443,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:36:07Z",
+    "observed_utc": "2026-07-09T01:40:23Z",
     "anchor_beat": "2026-07-08T20:06:38Z"
    },
    "lead_image": {
@@ -13467,7 +13511,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:49Z",
+    "observed_utc": "2026-07-09T01:44:05Z",
     "anchor_beat": "2026-07-08T20:25:00Z"
    },
    "lead_image": {
@@ -13503,8 +13547,8 @@
    "brief": null,
    "discovered": true,
    "items_24h": 27,
-   "items_48h": 28,
-   "outlets": 24,
+   "items_48h": 27,
+   "outlets": 23,
    "kinds": [
     "journalist",
     "wire service"
@@ -14041,7 +14085,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 21,
+   "items_24h": 20,
    "items_48h": 66,
    "outlets": 38,
    "kinds": [
@@ -14997,7 +15041,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:24:18Z",
+    "observed_utc": "2026-07-09T01:28:49Z",
     "anchor_beat": "2026-07-08T22:17:55Z"
    },
    "lead_image": {
@@ -16787,7 +16831,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:25:03Z",
+    "observed_utc": "2026-07-09T01:29:32Z",
     "anchor_beat": "2026-07-08T19:59:29Z"
    },
    "lead_image": {
@@ -18442,7 +18486,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:25:37Z",
+    "observed_utc": "2026-07-09T01:30:03Z",
     "anchor_beat": "2026-07-08T22:31:18Z"
    },
    "lead_image": {
@@ -19330,7 +19374,7 @@
       "label": "Dollar Index",
       "class": "fx",
       "last": 101.001,
-      "last_ts": "2026-07-09T01:12:32Z",
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Fed minutes influence dollar strength",
       "move_pct": -0.07,
       "window_h": 24,
@@ -19373,8 +19417,8 @@
         101.115
        ],
        [
-        "2026-07-08T11:00:00Z",
-        101.141
+        "2026-07-08T11:11:43Z",
+        101.145
        ],
        [
         "2026-07-08T11:38:12Z",
@@ -19389,8 +19433,8 @@
         101.187
        ],
        [
-        "2026-07-08T12:04:54Z",
-        101.176
+        "2026-07-08T12:15:36Z",
+        101.169
        ],
        [
         "2026-07-08T12:35:28Z",
@@ -19409,8 +19453,8 @@
         101.204
        ],
        [
-        "2026-07-08T13:33:16Z",
-        101.102
+        "2026-07-08T13:37:18Z",
+        101.101
        ],
        [
         "2026-07-08T14:00:00Z",
@@ -19425,12 +19469,12 @@
         101.116
        ],
        [
-        "2026-07-08T14:30:42Z",
-        101.129
-       ],
-       [
         "2026-07-08T14:52:06Z",
         101.135
+       ],
+       [
+        "2026-07-08T15:00:00Z",
+        101.151
        ],
        [
         "2026-07-08T15:01:16Z",
@@ -19441,12 +19485,12 @@
         101.199
        ],
        [
-        "2026-07-08T15:31:27Z",
-        101.235
-       ],
-       [
         "2026-07-08T15:57:56Z",
         101.242
+       ],
+       [
+        "2026-07-08T15:59:18Z",
+        101.245
        ],
        [
         "2026-07-08T16:00:00Z",
@@ -19457,16 +19501,16 @@
         101.191
        ],
        [
-        "2026-07-08T16:26:55Z",
-        101.19
-       ],
-       [
         "2026-07-08T16:54:21Z",
         101.086
        ],
        [
         "2026-07-08T17:00:00Z",
         101.072
+       ],
+       [
+        "2026-07-08T17:02:17Z",
+        101.065
        ],
        [
         "2026-07-08T17:24:35Z",
@@ -19477,12 +19521,12 @@
         101.005
        ],
        [
-        "2026-07-08T17:54:30Z",
-        101.033
-       ],
-       [
         "2026-07-08T18:00:00Z",
         100.977
+       ],
+       [
+        "2026-07-08T18:12:46Z",
+        100.978
        ],
        [
         "2026-07-08T18:25:35Z",
@@ -19493,10 +19537,6 @@
         100.965
        ],
        [
-        "2026-07-08T18:55:19Z",
-        100.978
-       ],
-       [
         "2026-07-08T19:00:00Z",
         100.96
        ],
@@ -19505,12 +19545,12 @@
         100.961
        ],
        [
-        "2026-07-08T19:52:02Z",
-        100.99
+        "2026-07-08T19:24:51Z",
+        100.963
        ],
        [
-        "2026-07-08T19:55:52Z",
-        100.97
+        "2026-07-08T19:52:02Z",
+        100.99
        ],
        [
         "2026-07-08T20:00:00Z",
@@ -19525,12 +19565,12 @@
         101.025
        ],
        [
-        "2026-07-08T21:00:00Z",
-        101.041
+        "2026-07-08T20:49:41Z",
+        101.073
        ],
        [
-        "2026-07-08T21:04:39Z",
-        101.043
+        "2026-07-08T21:00:00Z",
+        101.041
        ],
        [
         "2026-07-08T21:20:04Z",
@@ -19541,12 +19581,12 @@
         101.054
        ],
        [
-        "2026-07-08T22:00:00Z",
-        101.065
+        "2026-07-08T21:51:12Z",
+        101.053
        ],
        [
-        "2026-07-08T22:04:58Z",
-        101.066
+        "2026-07-08T22:00:00Z",
+        101.065
        ],
        [
         "2026-07-08T23:00:00Z",
@@ -19561,8 +19601,8 @@
         100.995
        ],
        [
-        "2026-07-09T00:17:23Z",
-        100.968
+        "2026-07-09T00:06:26Z",
+        100.995
        ],
        [
         "2026-07-09T00:39:31Z",
@@ -19579,12 +19619,16 @@
        [
         "2026-07-09T01:12:32Z",
         101.001
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        101.001
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:25:27Z",
+    "observed_utc": "2026-07-09T01:29:53Z",
     "anchor_beat": "2026-07-08T20:58:00Z"
    },
    "lead_image": {
@@ -21630,11 +21674,6 @@
      "class": "mainstream"
     },
     {
-     "outlet": "CBC",
-     "n": 2,
-     "class": "other"
-    },
-    {
      "outlet": "Investing.com",
      "n": 2,
      "class": "other"
@@ -21666,6 +21705,11 @@
     },
     {
      "outlet": "Business Standard",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "CBC",
      "n": 1,
      "class": "other"
     },
@@ -22991,7 +23035,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:42:54Z",
+    "observed_utc": "2026-07-09T01:47:14Z",
     "anchor_beat": "2026-07-08T20:38:27Z"
    },
    "lead_image": {
@@ -23900,7 +23944,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 44
+     "other": 43
     },
     "first_seen": "2026-06-28T06:27:30Z"
    },
@@ -23952,10 +23996,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.34,
-      "last_ts": "2026-07-09T01:12:30Z",
+      "last": 74.57,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Oil price decline",
-      "move_pct": -0.56,
+      "move_pct": -0.25,
       "window_h": 24,
       "measured_from": "2026-07-08T21:49:38Z",
       "series": [
@@ -24004,8 +24048,8 @@
         74.23
        ],
        [
-        "2026-07-08T12:15:36Z",
-        73.95
+        "2026-07-08T12:35:28Z",
+        73.44
        ],
        [
         "2026-07-08T12:52:32Z",
@@ -24028,8 +24072,8 @@
         73.95
        ],
        [
-        "2026-07-08T14:00:00Z",
-        73.93
+        "2026-07-08T14:01:08Z",
+        73.91
        ],
        [
         "2026-07-08T14:10:39Z",
@@ -24048,12 +24092,12 @@
         75.51
        ],
        [
-        "2026-07-08T15:01:16Z",
-        75.35
-       ],
-       [
         "2026-07-08T15:27:25Z",
         75.47
+       ],
+       [
+        "2026-07-08T15:31:27Z",
+        75.48
        ],
        [
         "2026-07-08T15:57:54Z",
@@ -24072,12 +24116,12 @@
         75.19
        ],
        [
-        "2026-07-08T16:26:53Z",
-        75.19
-       ],
-       [
         "2026-07-08T16:54:21Z",
         74.66
+       ],
+       [
+        "2026-07-08T17:00:00Z",
+        74.49
        ],
        [
         "2026-07-08T17:02:16Z",
@@ -24092,16 +24136,16 @@
         73.87
        ],
        [
-        "2026-07-08T17:54:32Z",
-        73.62
-       ],
-       [
         "2026-07-08T18:00:00Z",
         73.63
        ],
        [
         "2026-07-08T18:12:45Z",
         73.61
+       ],
+       [
+        "2026-07-08T18:25:35Z",
+        73.72
        ],
        [
         "2026-07-08T18:47:34Z",
@@ -24116,10 +24160,6 @@
         73.62
        ],
        [
-        "2026-07-08T19:19:40Z",
-        73.59
-       ],
-       [
         "2026-07-08T19:24:43Z",
         73.57
        ],
@@ -24128,16 +24168,16 @@
         74.0
        ],
        [
+        "2026-07-08T19:55:47Z",
+        74.06
+       ],
+       [
         "2026-07-08T20:00:00Z",
         74.56
        ],
        [
         "2026-07-08T20:19:40Z",
         74.59
-       ],
-       [
-        "2026-07-08T20:29:23Z",
-        74.5
        ],
        [
         "2026-07-08T20:49:42Z",
@@ -24152,15 +24192,15 @@
         74.66
        ],
        [
+        "2026-07-08T22:16:51Z",
+        74.62
+       ],
+       [
         "2026-07-08T22:25:40Z",
         74.59
        ],
        [
         "2026-07-08T22:45:41Z",
-        74.53
-       ],
-       [
-        "2026-07-08T22:59:30Z",
         74.53
        ],
        [
@@ -24176,12 +24216,12 @@
         74.47
        ],
        [
-        "2026-07-09T00:00:00Z",
-        74.31
+        "2026-07-08T23:46:44Z",
+        74.49
        ],
        [
-        "2026-07-09T00:06:26Z",
-        74.32
+        "2026-07-09T00:00:00Z",
+        74.31
        ],
        [
         "2026-07-09T00:17:22Z",
@@ -24202,6 +24242,10 @@
        [
         "2026-07-09T01:12:30Z",
         74.34
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        74.57
        ]
       ]
      },
@@ -24209,10 +24253,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": null,
-      "move_pct": -0.45,
+      "move_pct": -0.15,
       "window_h": 24,
       "measured_from": "2026-07-08T21:49:38Z",
       "series": [
@@ -24241,8 +24285,8 @@
         78.0
        ],
        [
-        "2026-07-08T11:00:00Z",
-        78.4
+        "2026-07-08T11:11:40Z",
+        78.39
        ],
        [
         "2026-07-08T11:38:13Z",
@@ -24265,12 +24309,12 @@
         77.94
        ],
        [
-        "2026-07-08T12:35:21Z",
-        77.41
-       ],
-       [
         "2026-07-08T12:52:32Z",
         77.28
+       ],
+       [
+        "2026-07-08T13:00:00Z",
+        77.95
        ],
        [
         "2026-07-08T13:05:15Z",
@@ -24289,12 +24333,12 @@
         78.1
        ],
        [
-        "2026-07-08T14:01:05Z",
-        78.11
-       ],
-       [
         "2026-07-08T14:10:30Z",
         78.43
+       ],
+       [
+        "2026-07-08T14:30:39Z",
+        79.75
        ],
        [
         "2026-07-08T14:52:05Z",
@@ -24313,16 +24357,16 @@
         79.78
        ],
        [
-        "2026-07-08T15:31:25Z",
-        79.82
-       ],
-       [
         "2026-07-08T15:57:53Z",
         80.41
        ],
        [
         "2026-07-08T15:59:18Z",
         80.35
+       ],
+       [
+        "2026-07-08T16:00:00Z",
+        79.56
        ],
        [
         "2026-07-08T16:26:47Z",
@@ -24337,10 +24381,6 @@
         79.06
        ],
        [
-        "2026-07-08T17:00:00Z",
-        78.86
-       ],
-       [
         "2026-07-08T17:02:15Z",
         78.78
        ],
@@ -24353,16 +24393,16 @@
         78.45
        ],
        [
+        "2026-07-08T17:54:29Z",
+        78.22
+       ],
+       [
         "2026-07-08T18:00:00Z",
         78.04
        ],
        [
         "2026-07-08T18:12:40Z",
         78.04
-       ],
-       [
-        "2026-07-08T18:25:33Z",
-        78.15
        ],
        [
         "2026-07-08T18:47:34Z",
@@ -24377,16 +24417,16 @@
         78.05
        ],
        [
+        "2026-07-08T19:19:05Z",
+        78.05
+       ],
+       [
         "2026-07-08T19:24:26Z",
         78.05
        ],
        [
         "2026-07-08T19:52:02Z",
         78.44
-       ],
-       [
-        "2026-07-08T19:55:29Z",
-        78.51
        ],
        [
         "2026-07-08T20:00:00Z",
@@ -24405,11 +24445,11 @@
         79.23
        ],
        [
-        "2026-07-08T22:00:00Z",
-        79.17
+        "2026-07-08T20:59:55Z",
+        79.25
        ],
        [
-        "2026-07-08T22:14:32Z",
+        "2026-07-08T22:00:00Z",
         79.17
        ],
        [
@@ -24433,8 +24473,8 @@
         78.89
        ],
        [
-        "2026-07-09T00:00:00Z",
-        78.84
+        "2026-07-08T23:45:04Z",
+        78.91
        ],
        [
         "2026-07-09T00:05:32Z",
@@ -24459,12 +24499,16 @@
        [
         "2026-07-09T01:12:23Z",
         78.89
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:26:05Z",
+    "observed_utc": "2026-07-09T01:30:32Z",
     "anchor_beat": "2026-07-08T21:49:38Z"
    },
    "lead_image": {
@@ -25627,7 +25671,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:23:48Z",
+    "observed_utc": "2026-07-09T01:28:20Z",
     "anchor_beat": "2026-07-08T17:32:32Z"
    },
    "lead_image": {
@@ -26784,7 +26828,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:26:36Z",
+    "observed_utc": "2026-07-09T01:31:05Z",
     "anchor_beat": "2026-07-08T22:00:34Z"
    },
    "lead_image": {
@@ -28913,7 +28957,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:49Z",
+    "observed_utc": "2026-07-09T01:34:14Z",
     "anchor_beat": "2026-07-08T20:10:44Z"
    },
    "lead_image": {
@@ -29463,7 +29507,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:43:30Z",
+    "observed_utc": "2026-07-09T01:47:48Z",
     "anchor_beat": "2026-07-08T23:07:25Z"
    },
    "lead_image": {
@@ -31657,10 +31701,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.221,
-      "last_ts": "2026-07-09T01:12:29Z",
+      "last": 3.224,
+      "last_ts": "2026-07-09T01:16:25Z",
       "basis": null,
-      "move_pct": -1.38,
+      "move_pct": -1.29,
       "window_h": 24,
       "measured_from": "2026-07-08T14:21:23Z",
       "series": [
@@ -31701,8 +31745,8 @@
         3.28
        ],
        [
-        "2026-07-08T05:35:39Z",
-        3.274
+        "2026-07-08T06:00:00Z",
+        3.279
        ],
        [
         "2026-07-08T06:01:39Z",
@@ -31717,8 +31761,8 @@
         3.292
        ],
        [
-        "2026-07-08T07:00:00Z",
-        3.293
+        "2026-07-08T07:11:20Z",
+        3.294
        ],
        [
         "2026-07-08T07:27:29Z",
@@ -31737,8 +31781,8 @@
         3.332
        ],
        [
-        "2026-07-08T08:53:18Z",
-        3.331
+        "2026-07-08T09:00:00Z",
+        3.327
        ],
        [
         "2026-07-08T09:18:50Z",
@@ -31753,12 +31797,12 @@
         3.324
        ],
        [
-        "2026-07-08T10:13:59Z",
-        3.324
+        "2026-07-08T10:25:20Z",
+        3.314
        ],
        [
-        "2026-07-08T10:42:49Z",
-        3.311
+        "2026-07-08T10:57:52Z",
+        3.305
        ],
        [
         "2026-07-08T11:00:00Z",
@@ -31769,12 +31813,12 @@
         3.322
        ],
        [
-        "2026-07-08T11:40:53Z",
-        3.311
+        "2026-07-08T12:00:00Z",
+        3.295
        ],
        [
-        "2026-07-08T12:04:54Z",
-        3.295
+        "2026-07-08T12:15:17Z",
+        3.296
        ],
        [
         "2026-07-08T12:35:28Z",
@@ -31789,12 +31833,12 @@
         3.279
        ],
        [
-        "2026-07-08T13:37:19Z",
-        3.27
+        "2026-07-08T14:00:00Z",
+        3.278
        ],
        [
-        "2026-07-08T14:01:01Z",
-        3.278
+        "2026-07-08T14:10:39Z",
+        3.266
        ],
        [
         "2026-07-08T14:30:42Z",
@@ -31805,12 +31849,12 @@
         3.276
        ],
        [
-        "2026-07-08T15:01:07Z",
-        3.275
+        "2026-07-08T15:27:27Z",
+        3.245
        ],
        [
-        "2026-07-08T15:31:22Z",
-        3.246
+        "2026-07-08T15:57:55Z",
+        3.264
        ],
        [
         "2026-07-08T15:59:11Z",
@@ -31821,15 +31865,15 @@
         3.239
        ],
        [
-        "2026-07-08T16:26:48Z",
-        3.239
+        "2026-07-08T16:54:20Z",
+        3.227
        ],
        [
-        "2026-07-08T17:00:00Z",
+        "2026-07-08T17:02:14Z",
         3.224
        ],
        [
-        "2026-07-08T17:24:32Z",
+        "2026-07-08T17:38:01Z",
         3.213
        ],
        [
@@ -31837,76 +31881,76 @@
         3.209
        ],
        [
-        "2026-07-08T18:00:00Z",
+        "2026-07-08T18:12:44Z",
         3.205
        ],
        [
-        "2026-07-08T18:25:29Z",
-        3.209
+        "2026-07-08T18:47:35Z",
+        3.216
        ],
        [
-        "2026-07-08T18:55:19Z",
-        3.219
-       ],
-       [
-        "2026-07-08T19:19:07Z",
+        "2026-07-08T19:00:00Z",
         3.223
+       ],
+       [
+        "2026-07-08T19:24:46Z",
+        3.227
        ],
        [
         "2026-07-08T19:52:01Z",
         3.22
        ],
        [
-        "2026-07-08T19:55:51Z",
-        3.221
-       ],
-       [
-        "2026-07-08T20:19:26Z",
+        "2026-07-08T20:00:00Z",
         3.223
        ],
        [
-        "2026-07-08T20:49:41Z",
-        3.222
+        "2026-07-08T20:29:10Z",
+        3.223
+       ],
+       [
+        "2026-07-08T20:59:57Z",
+        3.218
        ],
        [
         "2026-07-08T22:00:00Z",
         3.215
        ],
        [
-        "2026-07-08T22:16:43Z",
-        3.215
+        "2026-07-08T22:25:00Z",
+        3.216
        ],
        [
-        "2026-07-08T22:40:54Z",
+        "2026-07-08T22:59:03Z",
         3.219
        ],
        [
-        "2026-07-08T23:00:00Z",
+        "2026-07-08T23:16:34Z",
         3.219
-       ],
-       [
-        "2026-07-08T23:26:35Z",
-        3.221
        ],
        [
         "2026-07-08T23:45:47Z",
         3.221
        ],
        [
-        "2026-07-09T00:06:26Z",
-        3.219
+        "2026-07-09T00:00:00Z",
+        3.22
        ],
        [
-        "2026-07-09T00:36:51Z",
-        3.217
+        "2026-07-09T00:17:12Z",
+        3.213
        ],
        [
-        "2026-07-09T01:00:00Z",
-        3.221
+        "2026-07-09T00:46:40Z",
+        3.218
        ],
        [
         "2026-07-09T01:12:29Z",
         3.221
+       ],
+       [
+        "2026-07-09T01:16:25Z",
+        3.224
        ]
       ]
      },
@@ -31914,10 +31958,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.34,
-      "last_ts": "2026-07-09T01:12:30Z",
+      "last": 74.57,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": null,
-      "move_pct": 0.12,
+      "move_pct": 0.43,
       "window_h": 24,
       "measured_from": "2026-07-08T14:21:23Z",
       "series": [
@@ -31958,8 +32002,8 @@
         72.71
        ],
        [
-        "2026-07-08T05:35:32Z",
-        72.74
+        "2026-07-08T06:00:00Z",
+        72.75
        ],
        [
         "2026-07-08T06:01:47Z",
@@ -31974,8 +32018,8 @@
         72.63
        ],
        [
-        "2026-07-08T07:00:00Z",
-        72.45
+        "2026-07-08T07:11:26Z",
+        72.53
        ],
        [
         "2026-07-08T07:27:34Z",
@@ -31994,8 +32038,8 @@
         74.57
        ],
        [
-        "2026-07-08T08:53:14Z",
-        74.49
+        "2026-07-08T09:00:00Z",
+        74.97
        ],
        [
         "2026-07-08T09:19:56Z",
@@ -32010,12 +32054,12 @@
         74.65
        ],
        [
-        "2026-07-08T10:14:01Z",
-        74.73
+        "2026-07-08T10:25:25Z",
+        74.43
        ],
        [
-        "2026-07-08T10:42:49Z",
-        73.92
+        "2026-07-08T10:58:01Z",
+        73.98
        ],
        [
         "2026-07-08T11:00:00Z",
@@ -32026,12 +32070,12 @@
         74.53
        ],
        [
-        "2026-07-08T11:40:56Z",
-        74.48
+        "2026-07-08T12:00:00Z",
+        74.25
        ],
        [
-        "2026-07-08T12:04:55Z",
-        74.23
+        "2026-07-08T12:15:36Z",
+        73.95
        ],
        [
         "2026-07-08T12:35:28Z",
@@ -32046,12 +32090,12 @@
         73.93
        ],
        [
-        "2026-07-08T13:37:16Z",
-        73.95
+        "2026-07-08T14:00:00Z",
+        73.93
        ],
        [
-        "2026-07-08T14:01:08Z",
-        73.91
+        "2026-07-08T14:10:39Z",
+        74.25
        ],
        [
         "2026-07-08T14:30:43Z",
@@ -32062,12 +32106,12 @@
         75.51
        ],
        [
-        "2026-07-08T15:01:16Z",
-        75.35
+        "2026-07-08T15:27:25Z",
+        75.47
        ],
        [
-        "2026-07-08T15:31:27Z",
-        75.48
+        "2026-07-08T15:57:54Z",
+        75.94
        ],
        [
         "2026-07-08T15:59:17Z",
@@ -32078,92 +32122,92 @@
         75.19
        ],
        [
-        "2026-07-08T16:26:53Z",
-        75.19
+        "2026-07-08T16:54:21Z",
+        74.66
        ],
        [
-        "2026-07-08T17:00:00Z",
-        74.49
+        "2026-07-08T17:02:16Z",
+        74.46
        ],
        [
-        "2026-07-08T17:24:35Z",
-        74.15
+        "2026-07-08T17:38:01Z",
+        73.87
        ],
        [
         "2026-07-08T17:54:32Z",
         73.62
        ],
        [
-        "2026-07-08T18:00:00Z",
-        73.63
+        "2026-07-08T18:12:45Z",
+        73.61
        ],
        [
-        "2026-07-08T18:25:35Z",
-        73.72
+        "2026-07-08T18:47:34Z",
+        73.74
        ],
        [
-        "2026-07-08T18:55:20Z",
-        73.67
+        "2026-07-08T19:00:00Z",
+        73.62
        ],
        [
-        "2026-07-08T19:19:40Z",
-        73.59
+        "2026-07-08T19:24:43Z",
+        73.57
        ],
        [
         "2026-07-08T19:52:03Z",
         74.0
        ],
        [
-        "2026-07-08T19:55:47Z",
-        74.06
+        "2026-07-08T20:00:00Z",
+        74.56
        ],
        [
-        "2026-07-08T20:19:40Z",
-        74.59
+        "2026-07-08T20:29:23Z",
+        74.5
        ],
        [
-        "2026-07-08T20:49:42Z",
-        74.75
+        "2026-07-08T20:59:58Z",
+        74.76
        ],
        [
         "2026-07-08T22:00:00Z",
         74.66
        ],
        [
-        "2026-07-08T22:16:51Z",
-        74.62
+        "2026-07-08T22:25:40Z",
+        74.59
        ],
        [
-        "2026-07-08T22:45:41Z",
+        "2026-07-08T22:59:30Z",
         74.53
        ],
        [
-        "2026-07-08T23:00:00Z",
+        "2026-07-08T23:16:23Z",
         74.51
-       ],
-       [
-        "2026-07-08T23:32:35Z",
-        74.47
        ],
        [
         "2026-07-08T23:46:44Z",
         74.49
        ],
        [
-        "2026-07-09T00:06:26Z",
-        74.32
+        "2026-07-09T00:00:00Z",
+        74.31
        ],
        [
-        "2026-07-09T00:39:33Z",
-        74.29
+        "2026-07-09T00:17:22Z",
+        74.12
        ],
        [
-        "2026-07-09T01:00:00Z",
-        74.39
+        "2026-07-09T00:46:57Z",
+        74.25
        ],
        [
         "2026-07-09T01:12:30Z",
         74.34
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        74.57
        ]
       ]
      },
@@ -32171,10 +32215,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": null,
-      "move_pct": 0.59,
+      "move_pct": 0.89,
       "window_h": 24,
       "measured_from": "2026-07-08T14:21:23Z",
       "series": [
@@ -32195,7 +32239,7 @@
         76.09
        ],
        [
-        "2026-07-08T04:00:00Z",
+        "2026-07-08T04:08:27Z",
         76.12
        ],
        [
@@ -32211,8 +32255,8 @@
         76.28
        ],
        [
-        "2026-07-08T05:30:19Z",
-        76.5
+        "2026-07-08T05:35:08Z",
+        76.52
        ],
        [
         "2026-07-08T06:00:00Z",
@@ -32227,8 +32271,8 @@
         76.62
        ],
        [
-        "2026-07-08T06:58:34Z",
-        76.5
+        "2026-07-08T07:00:00Z",
+        76.32
        ],
        [
         "2026-07-08T07:11:10Z",
@@ -32243,8 +32287,8 @@
         77.41
        ],
        [
-        "2026-07-08T08:19:47Z",
-        77.35
+        "2026-07-08T08:25:35Z",
+        78.01
        ],
        [
         "2026-07-08T08:51:24Z",
@@ -32255,11 +32299,11 @@
         78.91
        ],
        [
-        "2026-07-08T09:19:55Z",
-        78.91
+        "2026-07-08T09:20:55Z",
+        78.94
        ],
        [
-        "2026-07-08T09:45:39Z",
+        "2026-07-08T09:51:39Z",
         78.66
        ],
        [
@@ -32271,12 +32315,12 @@
         78.43
        ],
        [
-        "2026-07-08T10:42:46Z",
-        77.91
+        "2026-07-08T10:57:43Z",
+        78.0
        ],
        [
-        "2026-07-08T11:00:00Z",
-        78.4
+        "2026-07-08T11:11:40Z",
+        78.39
        ],
        [
         "2026-07-08T11:38:13Z",
@@ -32287,12 +32331,12 @@
         78.26
        ],
        [
-        "2026-07-08T12:04:50Z",
-        78.28
+        "2026-07-08T12:15:36Z",
+        77.94
        ],
        [
-        "2026-07-08T12:35:21Z",
-        77.41
+        "2026-07-08T12:52:32Z",
+        77.28
        ],
        [
         "2026-07-08T13:00:00Z",
@@ -32303,91 +32347,87 @@
         78.08
        ],
        [
-        "2026-07-08T13:37:12Z",
-        78.16
+        "2026-07-08T14:00:00Z",
+        78.1
        ],
        [
-        "2026-07-08T14:01:05Z",
-        78.11
+        "2026-07-08T14:10:30Z",
+        78.43
        ],
        [
         "2026-07-08T14:30:39Z",
         79.75
        ],
        [
-        "2026-07-08T14:52:05Z",
-        79.57
+        "2026-07-08T15:00:00Z",
+        79.79
        ],
        [
-        "2026-07-08T15:01:16Z",
-        79.66
+        "2026-07-08T15:27:25Z",
+        79.78
        ],
        [
-        "2026-07-08T15:31:25Z",
-        79.82
+        "2026-07-08T15:57:53Z",
+        80.41
        ],
        [
         "2026-07-08T15:59:18Z",
         80.35
        ],
        [
-        "2026-07-08T16:00:00Z",
-        79.56
+        "2026-07-08T16:26:47Z",
+        79.57
        ],
        [
-        "2026-07-08T16:26:53Z",
-        79.56
+        "2026-07-08T16:54:21Z",
+        79.06
        ],
        [
-        "2026-07-08T17:00:00Z",
-        78.86
+        "2026-07-08T17:02:15Z",
+        78.78
        ],
        [
         "2026-07-08T17:24:18Z",
         78.64
        ],
        [
-        "2026-07-08T17:37:40Z",
-        78.45
+        "2026-07-08T17:54:29Z",
+        78.22
        ],
        [
-        "2026-07-08T18:00:00Z",
+        "2026-07-08T18:12:40Z",
         78.04
        ],
        [
-        "2026-07-08T18:25:33Z",
-        78.15
+        "2026-07-08T18:47:34Z",
+        78.2
        ],
        [
         "2026-07-08T18:55:23Z",
         78.16
        ],
        [
-        "2026-07-08T19:00:00Z",
+        "2026-07-08T19:19:05Z",
         78.05
        ],
        [
-        "2026-07-08T19:24:26Z",
-        78.05
-       ],
-       [
-        "2026-07-08T19:55:29Z",
-        78.51
+        "2026-07-08T19:52:02Z",
+        78.44
        ],
        [
         "2026-07-08T20:00:00Z",
         79.13
        ],
        [
-        "2026-07-08T20:29:12Z",
-        78.99
+        "2026-07-08T20:19:14Z",
+        79.13
        ],
        [
-        "2026-07-08T20:59:55Z",
-        79.25
+        "2026-07-08T20:49:41Z",
+        79.23
        ],
        [
-        "2026-07-08T22:14:32Z",
+        "2026-07-08T22:00:00Z",
         79.17
        ],
        [
@@ -32395,38 +32435,42 @@
         79.14
        ],
        [
-        "2026-07-08T22:54:38Z",
-        78.98
+        "2026-07-08T22:44:25Z",
+        78.95
        ],
        [
-        "2026-07-08T23:32:35Z",
+        "2026-07-08T23:00:00Z",
         78.89
        ],
        [
-        "2026-07-09T00:00:00Z",
-        78.84
+        "2026-07-08T23:45:04Z",
+        78.91
        ],
        [
         "2026-07-09T00:05:32Z",
         78.84
        ],
        [
-        "2026-07-09T00:38:53Z",
-        78.83
+        "2026-07-09T00:17:18Z",
+        78.67
        ],
        [
-        "2026-07-09T01:00:00Z",
-        78.91
+        "2026-07-09T00:46:07Z",
+        78.83
        ],
        [
         "2026-07-09T01:12:23Z",
         78.89
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:25:42Z",
+    "observed_utc": "2026-07-09T01:30:09Z",
     "anchor_beat": "2026-07-08T14:21:23Z"
    },
    "lead_image": {
@@ -33495,7 +33539,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:04Z",
+    "observed_utc": "2026-07-09T01:43:20Z",
     "anchor_beat": "2026-07-08T21:07:00Z"
    },
    "lead_image": {
@@ -37204,7 +37248,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:28:14Z",
+    "observed_utc": "2026-07-09T01:32:40Z",
     "anchor_beat": "2026-07-08T23:18:26Z"
    },
    "lead_image": {
@@ -37937,7 +37981,7 @@
      "state-media": 1,
      "regional": 0,
      "official": 0,
-     "other": 27
+     "other": 26
     },
     "first_seen": "2026-06-29T14:39:52Z"
    },
@@ -37958,10 +38002,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 3.221,
-      "last_ts": "2026-07-09T01:12:29Z",
+      "last": 3.224,
+      "last_ts": "2026-07-09T01:16:25Z",
       "basis": "Supply concerns push natural gas prices",
-      "move_pct": -0.03,
+      "move_pct": 0.06,
       "window_h": 24,
       "measured_from": "2026-07-08T20:59:51Z",
       "series": [
@@ -37982,8 +38026,8 @@
         3.334
        ],
        [
-        "2026-07-08T09:51:38Z",
-        3.334
+        "2026-07-08T10:00:00Z",
+        3.324
        ],
        [
         "2026-07-08T10:13:59Z",
@@ -37998,8 +38042,8 @@
         3.311
        ],
        [
-        "2026-07-08T10:57:52Z",
-        3.305
+        "2026-07-08T11:00:00Z",
+        3.319
        ],
        [
         "2026-07-08T11:11:42Z",
@@ -38014,7 +38058,7 @@
         3.311
        ],
        [
-        "2026-07-08T12:00:00Z",
+        "2026-07-08T12:04:54Z",
         3.295
        ],
        [
@@ -38030,12 +38074,12 @@
         3.31
        ],
        [
-        "2026-07-08T13:00:00Z",
-        3.287
-       ],
-       [
         "2026-07-08T13:05:15Z",
         3.292
+       ],
+       [
+        "2026-07-08T13:33:18Z",
+        3.279
        ],
        [
         "2026-07-08T13:37:19Z",
@@ -38046,11 +38090,11 @@
         3.278
        ],
        [
-        "2026-07-08T14:01:01Z",
-        3.278
+        "2026-07-08T14:10:39Z",
+        3.266
        ],
        [
-        "2026-07-08T14:10:39Z",
+        "2026-07-08T14:30:42Z",
         3.266
        ],
        [
@@ -38062,12 +38106,12 @@
         3.276
        ],
        [
-        "2026-07-08T15:01:07Z",
-        3.275
-       ],
-       [
         "2026-07-08T15:27:27Z",
         3.245
+       ],
+       [
+        "2026-07-08T15:31:22Z",
+        3.246
        ],
        [
         "2026-07-08T15:57:55Z",
@@ -38078,11 +38122,11 @@
         3.263
        ],
        [
-        "2026-07-08T16:00:00Z",
+        "2026-07-08T16:26:37Z",
         3.239
        ],
        [
-        "2026-07-08T16:26:37Z",
+        "2026-07-08T16:26:48Z",
         3.239
        ],
        [
@@ -38094,10 +38138,6 @@
         3.224
        ],
        [
-        "2026-07-08T17:02:14Z",
-        3.224
-       ],
-       [
         "2026-07-08T17:24:32Z",
         3.213
        ],
@@ -38106,11 +38146,11 @@
         3.213
        ],
        [
-        "2026-07-08T18:00:00Z",
-        3.205
+        "2026-07-08T17:54:31Z",
+        3.209
        ],
        [
-        "2026-07-08T18:12:44Z",
+        "2026-07-08T18:00:00Z",
         3.205
        ],
        [
@@ -38122,11 +38162,11 @@
         3.216
        ],
        [
-        "2026-07-08T19:00:00Z",
-        3.223
+        "2026-07-08T18:55:19Z",
+        3.219
        ],
        [
-        "2026-07-08T19:19:07Z",
+        "2026-07-08T19:00:00Z",
         3.223
        ],
        [
@@ -38138,11 +38178,11 @@
         3.22
        ],
        [
-        "2026-07-08T20:00:00Z",
-        3.223
+        "2026-07-08T19:55:51Z",
+        3.221
        ],
        [
-        "2026-07-08T20:19:26Z",
+        "2026-07-08T20:00:00Z",
         3.223
        ],
        [
@@ -38158,7 +38198,7 @@
         3.218
        ],
        [
-        "2026-07-08T22:16:43Z",
+        "2026-07-08T22:00:00Z",
         3.215
        ],
        [
@@ -38174,7 +38214,7 @@
         3.219
        ],
        [
-        "2026-07-08T23:16:34Z",
+        "2026-07-08T23:00:00Z",
         3.219
        ],
        [
@@ -38190,8 +38230,8 @@
         3.22
        ],
        [
-        "2026-07-09T00:17:12Z",
-        3.213
+        "2026-07-09T00:06:26Z",
+        3.219
        ],
        [
         "2026-07-09T00:36:51Z",
@@ -38208,12 +38248,16 @@
        [
         "2026-07-09T01:12:29Z",
         3.221
+       ],
+       [
+        "2026-07-09T01:16:25Z",
+        3.224
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:26:41Z",
+    "observed_utc": "2026-07-09T01:31:10Z",
     "anchor_beat": "2026-07-08T20:59:51Z"
    },
    "lead_image": {
@@ -39180,7 +39224,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:26:52Z",
+    "observed_utc": "2026-07-09T01:31:22Z",
     "anchor_beat": "2026-07-08T15:15:42Z"
    },
    "lead_image": {
@@ -41542,7 +41586,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:27:03Z",
+    "observed_utc": "2026-07-09T01:31:32Z",
     "anchor_beat": "2026-07-08T18:00:39Z"
    },
    "lead_image": {
@@ -43911,7 +43955,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:29Z",
+    "observed_utc": "2026-07-09T01:33:53Z",
     "anchor_beat": "2026-07-08T18:31:01Z"
    },
    "lead_image": {
@@ -45578,7 +45622,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:28:00Z",
+    "observed_utc": "2026-07-09T01:32:28Z",
     "anchor_beat": "2026-07-08T17:23:29Z"
    },
    "lead_image": {
@@ -47202,7 +47246,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:23Z",
+    "observed_utc": "2026-07-09T01:33:48Z",
     "anchor_beat": "2026-07-08T20:56:53Z"
    },
    "gate": {
@@ -48643,7 +48687,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:32:21Z",
+    "observed_utc": "2026-07-09T01:36:40Z",
     "anchor_beat": "2026-07-08T20:06:54Z"
    },
    "lead_image": {
@@ -49273,7 +49317,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:42:35Z",
+    "observed_utc": "2026-07-09T01:46:54Z",
     "anchor_beat": "2026-07-08T11:22:46Z"
    },
    "lead_image": {
@@ -50718,7 +50762,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:44:05Z",
+    "observed_utc": "2026-07-09T01:48:24Z",
     "anchor_beat": "2026-07-08T23:45:00Z"
    },
    "lead_image": {
@@ -50730,7 +50774,7 @@
     }
    },
    "gate": {
-    "score": 3,
+    "score": 4,
     "of": 8,
     "checks": {
      "split": 0,
@@ -50738,7 +50782,7 @@
      "provenance": 1,
      "steelman": 0,
      "history": 1,
-     "report": 0,
+     "report": 1,
      "theories": 0,
      "unknowns": 1
     }
@@ -51260,7 +51304,7 @@
      "state-media": 3,
      "regional": 1,
      "official": 0,
-     "other": 57
+     "other": 56
     },
     "first_seen": "2026-07-03T12:25:51Z"
    },
@@ -52050,7 +52094,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:33:33Z",
+    "observed_utc": "2026-07-09T01:37:50Z",
     "anchor_beat": "2026-07-08T08:51:41Z"
    },
    "lead_image": {
@@ -53262,7 +53306,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:30:18Z",
+    "observed_utc": "2026-07-09T01:34:40Z",
     "anchor_beat": "2026-07-08T19:43:00Z"
    },
    "lead_image": {
@@ -54098,7 +54142,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:28:51Z",
+    "observed_utc": "2026-07-09T01:33:17Z",
     "anchor_beat": "2026-07-08T19:28:38Z"
    },
    "lead_image": {
@@ -55583,7 +55627,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:27:29Z",
+    "observed_utc": "2026-07-09T01:31:56Z",
     "anchor_beat": "2026-07-08T18:30:08Z"
    },
    "lead_image": {
@@ -56915,10 +56959,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Russia-ASEAN summit amid geopolitical tensions",
-      "move_pct": 0.56,
+      "move_pct": 0.87,
       "window_h": 24,
       "measured_from": "2026-07-08T17:52:04Z",
       "series": [
@@ -56931,7 +56975,7 @@
         76.56
        ],
        [
-        "2026-07-08T06:04:26Z",
+        "2026-07-08T06:28:41Z",
         76.48
        ],
        [
@@ -56939,167 +56983,163 @@
         76.62
        ],
        [
-        "2026-07-08T06:58:34Z",
-        76.5
+        "2026-07-08T07:00:00Z",
+        76.32
        ],
        [
         "2026-07-08T07:11:10Z",
         76.38
        ],
        [
-        "2026-07-08T07:27:33Z",
-        75.94
+        "2026-07-08T07:45:45Z",
+        75.76
        ],
        [
         "2026-07-08T07:56:39Z",
         75.94
        ],
        [
-        "2026-07-08T08:00:00Z",
-        77.41
+        "2026-07-08T08:19:47Z",
+        77.35
        ],
        [
         "2026-07-08T08:25:35Z",
         78.01
        ],
        [
-        "2026-07-08T08:51:24Z",
-        78.4
+        "2026-07-08T08:53:21Z",
+        78.32
        ],
        [
         "2026-07-08T09:00:00Z",
         78.91
        ],
        [
-        "2026-07-08T09:19:55Z",
-        78.91
+        "2026-07-08T09:20:55Z",
+        78.94
        ],
        [
         "2026-07-08T09:45:39Z",
         78.66
        ],
        [
-        "2026-07-08T09:51:39Z",
-        78.66
+        "2026-07-08T10:00:00Z",
+        78.62
        ],
        [
         "2026-07-08T10:13:57Z",
         78.62
        ],
        [
-        "2026-07-08T10:25:23Z",
-        78.43
+        "2026-07-08T10:42:46Z",
+        77.91
        ],
        [
         "2026-07-08T10:57:43Z",
         78.0
        ],
        [
-        "2026-07-08T11:00:00Z",
-        78.4
+        "2026-07-08T11:11:40Z",
+        78.39
        ],
        [
         "2026-07-08T11:38:13Z",
         78.57
        ],
        [
-        "2026-07-08T11:40:31Z",
-        78.56
+        "2026-07-08T12:00:00Z",
+        78.26
        ],
        [
         "2026-07-08T12:04:50Z",
         78.28
        ],
        [
-        "2026-07-08T12:15:36Z",
-        77.94
+        "2026-07-08T12:35:21Z",
+        77.41
        ],
        [
         "2026-07-08T12:52:32Z",
         77.28
        ],
        [
-        "2026-07-08T13:00:00Z",
-        77.95
+        "2026-07-08T13:05:15Z",
+        78.06
        ],
        [
         "2026-07-08T13:33:16Z",
         78.08
        ],
        [
-        "2026-07-08T13:37:12Z",
-        78.16
+        "2026-07-08T14:00:00Z",
+        78.1
        ],
        [
         "2026-07-08T14:01:05Z",
         78.11
        ],
        [
-        "2026-07-08T14:10:30Z",
-        78.43
+        "2026-07-08T14:30:39Z",
+        79.75
        ],
        [
         "2026-07-08T14:52:05Z",
         79.57
        ],
        [
-        "2026-07-08T15:00:00Z",
-        79.79
-       ],
-       [
         "2026-07-08T15:01:16Z",
         79.66
        ],
        [
-        "2026-07-08T15:31:25Z",
-        79.82
+        "2026-07-08T15:27:25Z",
+        79.78
        ],
        [
         "2026-07-08T15:57:53Z",
         80.41
        ],
        [
-        "2026-07-08T16:00:00Z",
-        79.56
+        "2026-07-08T15:59:18Z",
+        80.35
        ],
        [
         "2026-07-08T16:26:47Z",
         79.57
        ],
        [
-        "2026-07-08T16:54:21Z",
-        79.06
+        "2026-07-08T16:26:53Z",
+        79.56
        ],
        [
         "2026-07-08T17:00:00Z",
         78.86
        ],
        [
-        "2026-07-08T17:24:18Z",
-        78.64
+        "2026-07-08T17:02:15Z",
+        78.78
        ],
        [
         "2026-07-08T17:37:40Z",
         78.45
        ],
        [
-        "2026-07-08T18:00:00Z",
-        78.04
+        "2026-07-08T17:54:29Z",
+        78.22
        ],
        [
         "2026-07-08T18:12:40Z",
         78.04
        ],
        [
-        "2026-07-08T18:47:34Z",
-        78.2
+        "2026-07-08T18:25:33Z",
+        78.15
        ],
        [
         "2026-07-08T18:55:23Z",
         78.16
        ],
        [
-        "2026-07-08T19:19:05Z",
+        "2026-07-08T19:00:00Z",
         78.05
        ],
        [
@@ -57107,39 +57147,39 @@
         78.05
        ],
        [
-        "2026-07-08T19:55:29Z",
-        78.51
+        "2026-07-08T19:52:02Z",
+        78.44
        ],
        [
         "2026-07-08T20:00:00Z",
         79.13
        ],
        [
-        "2026-07-08T20:29:12Z",
-        78.99
+        "2026-07-08T20:19:14Z",
+        79.13
        ],
        [
         "2026-07-08T20:49:41Z",
         79.23
        ],
        [
-        "2026-07-08T22:00:00Z",
-        79.17
+        "2026-07-08T20:59:55Z",
+        79.25
        ],
        [
         "2026-07-08T22:14:32Z",
         79.17
        ],
        [
-        "2026-07-08T22:44:25Z",
-        78.95
+        "2026-07-08T22:19:31Z",
+        79.14
        ],
        [
         "2026-07-08T22:54:38Z",
         78.98
        ],
        [
-        "2026-07-08T23:32:35Z",
+        "2026-07-08T23:00:00Z",
         78.89
        ],
        [
@@ -57147,7 +57187,7 @@
         78.91
        ],
        [
-        "2026-07-09T00:05:32Z",
+        "2026-07-09T00:00:00Z",
         78.84
        ],
        [
@@ -57155,7 +57195,7 @@
         78.67
        ],
        [
-        "2026-07-09T00:46:07Z",
+        "2026-07-09T00:38:53Z",
         78.83
        ],
        [
@@ -57165,6 +57205,10 @@
        [
         "2026-07-09T01:12:23Z",
         78.89
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      },
@@ -57172,10 +57216,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.34,
-      "last_ts": "2026-07-09T01:12:30Z",
+      "last": 74.57,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Russia-ASEAN summit amid geopolitical tensions",
-      "move_pct": 0.64,
+      "move_pct": 0.95,
       "window_h": 24,
       "measured_from": "2026-07-08T17:52:04Z",
       "series": [
@@ -57304,95 +57348,95 @@
         75.35
        ],
        [
-        "2026-07-08T15:27:25Z",
-        75.47
+        "2026-07-08T15:31:27Z",
+        75.48
        ],
        [
         "2026-07-08T15:57:54Z",
         75.94
        ],
        [
-        "2026-07-08T15:59:17Z",
-        75.89
+        "2026-07-08T16:00:00Z",
+        75.21
        ],
        [
         "2026-07-08T16:26:43Z",
         75.19
        ],
        [
-        "2026-07-08T16:26:53Z",
-        75.19
+        "2026-07-08T16:54:21Z",
+        74.66
        ],
        [
         "2026-07-08T17:00:00Z",
         74.49
        ],
        [
-        "2026-07-08T17:02:16Z",
-        74.46
+        "2026-07-08T17:24:35Z",
+        74.15
        ],
        [
         "2026-07-08T17:38:01Z",
         73.87
        ],
        [
-        "2026-07-08T17:54:32Z",
-        73.62
+        "2026-07-08T18:00:00Z",
+        73.63
        ],
        [
         "2026-07-08T18:12:45Z",
         73.61
        ],
        [
-        "2026-07-08T18:25:35Z",
-        73.72
+        "2026-07-08T18:47:34Z",
+        73.74
        ],
        [
         "2026-07-08T18:55:20Z",
         73.67
        ],
        [
-        "2026-07-08T19:00:00Z",
-        73.62
+        "2026-07-08T19:19:40Z",
+        73.59
        ],
        [
         "2026-07-08T19:24:43Z",
         73.57
        ],
        [
-        "2026-07-08T19:52:03Z",
-        74.0
+        "2026-07-08T19:55:47Z",
+        74.06
        ],
        [
         "2026-07-08T20:00:00Z",
         74.56
        ],
        [
-        "2026-07-08T20:19:40Z",
-        74.59
+        "2026-07-08T20:29:23Z",
+        74.5
        ],
        [
         "2026-07-08T20:49:42Z",
         74.75
        ],
        [
-        "2026-07-08T20:59:58Z",
-        74.76
+        "2026-07-08T22:00:00Z",
+        74.66
        ],
        [
         "2026-07-08T22:16:51Z",
         74.62
        ],
        [
-        "2026-07-08T22:25:40Z",
-        74.59
+        "2026-07-08T22:45:41Z",
+        74.53
        ],
        [
         "2026-07-08T22:59:30Z",
         74.53
        ],
        [
-        "2026-07-08T23:00:00Z",
+        "2026-07-08T23:16:23Z",
         74.51
        ],
        [
@@ -57400,34 +57444,34 @@
         74.47
        ],
        [
-        "2026-07-08T23:46:44Z",
-        74.49
+        "2026-07-09T00:00:00Z",
+        74.31
        ],
        [
         "2026-07-09T00:06:26Z",
         74.32
        ],
        [
-        "2026-07-09T00:17:22Z",
-        74.12
+        "2026-07-09T00:39:33Z",
+        74.29
        ],
        [
         "2026-07-09T00:46:57Z",
         74.25
        ],
        [
-        "2026-07-09T01:00:00Z",
-        74.39
-       ],
-       [
         "2026-07-09T01:12:30Z",
         74.34
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        74.57
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:25:06Z",
+    "observed_utc": "2026-07-09T01:29:34Z",
     "anchor_beat": "2026-07-08T17:52:04Z"
    },
    "lead_image": {
@@ -58427,7 +58471,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:26:47Z",
+    "observed_utc": "2026-07-09T01:31:17Z",
     "anchor_beat": "2026-07-08T19:15:25Z"
    },
    "lead_image": {
@@ -59897,7 +59941,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:59Z",
+    "observed_utc": "2026-07-09T01:34:25Z",
     "anchor_beat": "2026-07-08T10:43:32Z"
    },
    "lead_image": {
@@ -59906,721 +59950,6 @@
     "focal": {
      "x": 48,
      "y": 38
-    }
-   },
-   "gate": {
-    "score": 3,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "hk-shanghai-finance-hub-shift",
-   "name": "Hong Kong celebrates July 1 with flag-raising and retail deals",
-   "bucket": "economy",
-   "topic_tags": [
-    "markets",
-    "trade"
-   ],
-   "brief": {
-    "generated_utc": "2026-07-03T14:12:27Z",
-    "sentence_count": 9,
-    "dropped_count": 2,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Hong Kong marked its July 1 anniversary with a flag-raising ceremony and a wave of citywide deals",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/hong-kong/society/article/3358962/hong-kong-mark-july-1-anniversary-flag-raising-ceremony-citywide-deals?utm_source=rss_feed",
-          "ts": "2026-07-01T00:00:49Z",
-          "title": "Hong Kong marks July 1 anniversary with flag-raising ceremony, citywide deals"
-         }
-        ]
-       },
-       {
-        "text": "The event underscored the Communist Party\u2019s role as a \u2018fundamental safeguard\u2019 of prosperity, according to John Lee",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/hong-kong/politics/article/3358999/communist-party-fundamental-safeguard-hong-kongs-prosperity-john-lee?utm_source=rss_feed",
-          "ts": "2026-07-01T05:41:11Z",
-          "title": "Communist Party a \u2018fundamental safeguard\u2019 of Hong Kong\u2019s prosperity: John Lee"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Retail sales grew 7.9% in May, extending a 13-month winning streak",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359172/hong-kong-retail-sales-grow-79-may-extending-winning-streak-13-months?utm_source=rss_feed",
-          "ts": "2026-07-02T09:00:52Z",
-          "title": "Hong Kong retail sales grow 7.9% in May, extending winning streak to 13 months"
-         }
-        ]
-       },
-       {
-        "text": "Hongkongers flocked to mainland China for the holiday, seeking more space and better service",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359028/more-space-better-service-hongkongers-flock-mainland-july-1-holiday?utm_source=rss_feed",
-          "ts": "2026-07-01T08:45:40Z",
-          "title": "\u2018More space, better service\u2019: Hongkongers flock to mainland for July 1 holiday"
-         }
-        ]
-       },
-       {
-        "text": "The city\u2019s biggest listing deals of 2026 so far include AI chips and energy drinks",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/business/markets/article/3359105/ai-chips-energy-drinks-hong-kongs-biggest-listing-deals-2026-so-far?utm_source=rss_feed",
-          "ts": "2026-07-02T04:00:18Z",
-          "title": "From AI chips to energy drinks: Hong Kong\u2019s biggest listing deals of 2026 so far"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Bangchak\u2019s HK$2.1-billion takeover of Caltex petrol stations added to the commercial activity",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359048/thailands-bangchak-fuels-north-asia-push-hk21b-caltex-petrol-stations-deal?utm_source=rss_feed",
-          "ts": "2026-07-01T10:31:08Z",
-          "title": "Thailand\u2019s Bangchak takes over Hong Kong Caltex petrol stations in HK$2.1b deal"
-         }
-        ]
-       },
-       {
-        "text": "A developer lured upmarket homebuyers with Mercedes giveaways",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/business/article/3358917/fast-lane-luxury-hong-kong-developer-lures-upmarket-homebuyers-mercedes-giveaways?utm_source=rss_feed",
-          "ts": "2026-07-01T00:30:06Z",
-          "title": "Fast lane to luxury: Hong Kong developer lures upmarket homebuyers with Mercedes giveaways"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Hongkongers attacked July 1 freebies and discounts with gusto",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359022/hongkongers-attack-july-1-freebies-and-discounts-gusto?utm_source=rss_feed",
-          "ts": "2026-07-01T07:45:04Z",
-          "title": "Hongkongers attack July 1 freebies and discounts with gusto"
-         }
-        ]
-       },
-       {
-        "text": "The 5-year plan will hinge on how success is measured",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/opinion/hong-kong-opinion/article/3358491/hong-kongs-5-year-plan-will-hinge-how-it-measures-success?utm_source=rss_feed",
-          "ts": "2026-07-01T01:30:05Z",
-          "title": "Hong Kong\u2019s 5-year plan will hinge on how it measures success"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 4,
-   "items_48h": 9,
-   "outlets": 1,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-08T23:30:05Z",
-     "title": "When will Hong Kong\u2019s retail leasing market see a turnaround?",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/business/article/3359843/when-will-hong-kongs-retail-leasing-market-see-turnaround?utm_source=rss_feed",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-08T10:15:45Z",
-     "title": "Tourist arrivals in Hong Kong jump by 13% to 26.7 million in first half of year",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359866/tourist-arrivals-hong-kong-jump-13-267-million-first-half-year?utm_source=rss_feed",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-08T06:29:40Z",
-     "title": "Hong Kong\u2019s Paul Chan pledges second trip to Saudi Arabia to build Mideast ties",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359822/hong-kongs-paul-chan-pledges-second-trip-saudi-arabia-build-mideast-ties?utm_source=rss_feed",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-08T04:37:05Z",
-     "title": "Hong Kong stocks rebound as concerns ease over lock-up expiries",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/business/markets/article/3359806/hong-kong-stocks-rebound-concerns-ease-over-lock-expiries?utm_source=rss_feed",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-07T22:00:09Z",
-     "title": "How Hong Kong is fighting to redefine its future with an institutional moat, wealth surge",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/business/banking-finance/article/3359698/how-hong-kong-fighting-redefine-its-future-institutional-moat-wealth-surge?utm_source=rss_feed",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-07T09:53:22Z",
-     "title": "Hong Kong should build AI plan around \u2018competitive\u2019 strengths, industry leaders say",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/news/article/3359735/hong-kong-should-build-ai-plan-around-competitive-strengths-industry-leaders-say?utm_source=rss_feed",
-     "rel": 22,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-07T09:17:51Z",
-     "title": "Hong Kong yuan facility to expand 150% to US$73.6 billion to meet international demand",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/business/banking-finance/article/3359730/hong-kong-yuan-facility-expand-150-us736-billion-meet-international-demand?utm_source=rss_feed",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-07T02:47:55Z",
-     "title": "AI \u2018central plank\u2019 in Hong Kong\u2019s economic development, John Lee says",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359667/ai-central-plank-hong-kongs-economic-development-john-lee-says?utm_source=rss_feed",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": null,
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 1,
-    "outlets_unplaced": 1,
-    "chain": [
-     {
-      "outlet": "South China Morning Post",
-      "ts": "2026-07-02T01:29:06Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "HK press (Alibaba-owned)",
-      "items": 23
-     }
-    ],
-    "unplaced": [
-     {
-      "outlet": "Nikkei Asia",
-      "first_seen": "2026-07-07T20:15:49Z",
-      "kind": "journalist",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ]
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "South China Morning Post",
-     "n": 9,
-     "class": "other"
-    },
-    {
-     "outlet": "Nikkei Asia",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 0
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-03 12:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-03 18:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-04 00:00",
-      5,
-      1
-     ],
-     [
-      "2026-07-04 06:00",
-      2,
-      1
-     ],
-     [
-      "2026-07-04 12:00",
-      2,
-      1
-     ],
-     [
-      "2026-07-04 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-05 00:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-05 06:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-05 12:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-05 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-06 00:00",
-      2,
-      1
-     ],
-     [
-      "2026-07-06 06:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-06 12:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-06 18:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-07 00:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-07 06:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-07 12:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-07 18:00",
-      5,
-      1
-     ],
-     [
-      "2026-07-08 00:00",
-      5,
-      1
-     ],
-     [
-      "2026-07-08 06:00",
-      5,
-      1
-     ],
-     [
-      "2026-07-08 12:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-08 18:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-09 00:00",
-      4,
-      1
-     ]
-    ],
-    "mix": {
-     "mainstream": 0,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 2
-    },
-    "first_seen": "2026-07-03T12:25:51Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 8
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "DX-Y.NYB",
-      "label": "Dollar Index",
-      "class": "fx",
-      "last": 101.001,
-      "last_ts": "2026-07-09T01:16:57Z",
-      "basis": "Hong Kong yuan facility expansion influences dollar index",
-      "move_pct": -0.03,
-      "window_h": 24,
-      "measured_from": "2026-07-08T23:30:05Z",
-      "series": [
-       [
-        "2026-07-08T11:38:12Z",
-        101.23
-       ],
-       [
-        "2026-07-08T11:41:00Z",
-        101.247
-       ],
-       [
-        "2026-07-08T12:00:00Z",
-        101.187
-       ],
-       [
-        "2026-07-08T12:04:54Z",
-        101.176
-       ],
-       [
-        "2026-07-08T12:15:36Z",
-        101.169
-       ],
-       [
-        "2026-07-08T12:35:28Z",
-        101.156
-       ],
-       [
-        "2026-07-08T12:52:35Z",
-        101.143
-       ],
-       [
-        "2026-07-08T13:00:00Z",
-        101.189
-       ],
-       [
-        "2026-07-08T13:05:14Z",
-        101.204
-       ],
-       [
-        "2026-07-08T13:33:16Z",
-        101.102
-       ],
-       [
-        "2026-07-08T13:37:18Z",
-        101.101
-       ],
-       [
-        "2026-07-08T14:00:00Z",
-        101.109
-       ],
-       [
-        "2026-07-08T14:01:10Z",
-        101.105
-       ],
-       [
-        "2026-07-08T14:10:39Z",
-        101.116
-       ],
-       [
-        "2026-07-08T14:30:42Z",
-        101.129
-       ],
-       [
-        "2026-07-08T14:52:06Z",
-        101.135
-       ],
-       [
-        "2026-07-08T15:00:00Z",
-        101.151
-       ],
-       [
-        "2026-07-08T15:01:16Z",
-        101.149
-       ],
-       [
-        "2026-07-08T15:27:26Z",
-        101.199
-       ],
-       [
-        "2026-07-08T15:31:27Z",
-        101.235
-       ],
-       [
-        "2026-07-08T15:57:56Z",
-        101.242
-       ],
-       [
-        "2026-07-08T15:59:18Z",
-        101.245
-       ],
-       [
-        "2026-07-08T16:00:00Z",
-        101.191
-       ],
-       [
-        "2026-07-08T16:26:46Z",
-        101.191
-       ],
-       [
-        "2026-07-08T16:26:55Z",
-        101.19
-       ],
-       [
-        "2026-07-08T16:54:21Z",
-        101.086
-       ],
-       [
-        "2026-07-08T17:00:00Z",
-        101.072
-       ],
-       [
-        "2026-07-08T17:02:17Z",
-        101.065
-       ],
-       [
-        "2026-07-08T17:24:35Z",
-        101.003
-       ],
-       [
-        "2026-07-08T17:38:01Z",
-        101.005
-       ],
-       [
-        "2026-07-08T18:00:00Z",
-        100.977
-       ],
-       [
-        "2026-07-08T18:12:46Z",
-        100.978
-       ],
-       [
-        "2026-07-08T18:25:35Z",
-        100.979
-       ],
-       [
-        "2026-07-08T18:47:30Z",
-        100.965
-       ],
-       [
-        "2026-07-08T18:55:19Z",
-        100.978
-       ],
-       [
-        "2026-07-08T19:00:00Z",
-        100.96
-       ],
-       [
-        "2026-07-08T19:19:41Z",
-        100.961
-       ],
-       [
-        "2026-07-08T19:24:51Z",
-        100.963
-       ],
-       [
-        "2026-07-08T19:52:02Z",
-        100.99
-       ],
-       [
-        "2026-07-08T19:55:52Z",
-        100.97
-       ],
-       [
-        "2026-07-08T20:00:00Z",
-        101.008
-       ],
-       [
-        "2026-07-08T20:19:49Z",
-        101.01
-       ],
-       [
-        "2026-07-08T20:29:22Z",
-        101.025
-       ],
-       [
-        "2026-07-08T20:49:41Z",
-        101.073
-       ],
-       [
-        "2026-07-08T21:00:00Z",
-        101.041
-       ],
-       [
-        "2026-07-08T21:04:39Z",
-        101.043
-       ],
-       [
-        "2026-07-08T21:20:04Z",
-        101.036
-       ],
-       [
-        "2026-07-08T21:47:04Z",
-        101.054
-       ],
-       [
-        "2026-07-08T21:51:12Z",
-        101.053
-       ],
-       [
-        "2026-07-08T22:00:00Z",
-        101.065
-       ],
-       [
-        "2026-07-08T22:04:58Z",
-        101.066
-       ],
-       [
-        "2026-07-08T23:00:00Z",
-        101.028
-       ],
-       [
-        "2026-07-08T23:46:49Z",
-        101.029
-       ],
-       [
-        "2026-07-09T00:00:00Z",
-        100.995
-       ],
-       [
-        "2026-07-09T00:06:26Z",
-        100.995
-       ],
-       [
-        "2026-07-09T00:17:23Z",
-        100.968
-       ],
-       [
-        "2026-07-09T00:39:31Z",
-        100.951
-       ],
-       [
-        "2026-07-09T00:46:56Z",
-        100.98
-       ],
-       [
-        "2026-07-09T01:00:00Z",
-        100.998
-       ],
-       [
-        "2026-07-09T01:12:32Z",
-        101.001
-       ],
-       [
-        "2026-07-09T01:16:57Z",
-        101.001
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:28:06Z",
-    "anchor_beat": "2026-07-08T23:30:05Z"
-   },
-   "lead_image": {
-    "url": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/06/30/d1050173-55f1-420e-a3c9-12a8ca27c855_252d27cd.jpg?itok=te1ddQF7&v=1782790378",
-    "source": "South China Morning Post",
-    "focal": {
-     "x": 48,
-     "y": 50
     }
    },
    "gate": {
@@ -61554,10 +60883,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Lebanon conflict oil supply risk",
-      "move_pct": 1.08,
+      "move_pct": 1.38,
       "window_h": 24,
       "measured_from": "2026-07-08T19:23:06Z",
       "series": [
@@ -61606,8 +60935,8 @@
         78.62
        ],
        [
-        "2026-07-08T10:13:57Z",
-        78.62
+        "2026-07-08T10:25:23Z",
+        78.43
        ],
        [
         "2026-07-08T10:42:46Z",
@@ -61618,8 +60947,8 @@
         78.0
        ],
        [
-        "2026-07-08T11:00:00Z",
-        78.4
+        "2026-07-08T11:11:40Z",
+        78.39
        ],
        [
         "2026-07-08T11:38:13Z",
@@ -61630,8 +60959,8 @@
         78.56
        ],
        [
-        "2026-07-08T12:00:00Z",
-        78.26
+        "2026-07-08T12:04:50Z",
+        78.28
        ],
        [
         "2026-07-08T12:15:36Z",
@@ -61650,8 +60979,8 @@
         78.06
        ],
        [
-        "2026-07-08T13:33:16Z",
-        78.08
+        "2026-07-08T13:37:12Z",
+        78.16
        ],
        [
         "2026-07-08T14:00:00Z",
@@ -61662,8 +60991,8 @@
         78.11
        ],
        [
-        "2026-07-08T14:10:30Z",
-        78.43
+        "2026-07-08T14:30:39Z",
+        79.75
        ],
        [
         "2026-07-08T14:52:05Z",
@@ -61674,63 +61003,63 @@
         79.79
        ],
        [
-        "2026-07-08T15:01:16Z",
-        79.66
+        "2026-07-08T15:27:25Z",
+        79.78
        ],
        [
         "2026-07-08T15:31:25Z",
         79.82
        ],
        [
-        "2026-07-08T15:57:53Z",
-        80.41
-       ],
-       [
         "2026-07-08T15:59:18Z",
         80.35
+       ],
+       [
+        "2026-07-08T16:00:00Z",
+        79.56
        ],
        [
         "2026-07-08T16:26:47Z",
         79.57
        ],
        [
-        "2026-07-08T16:26:53Z",
-        79.56
-       ],
-       [
         "2026-07-08T16:54:21Z",
         79.06
+       ],
+       [
+        "2026-07-08T17:00:00Z",
+        78.86
        ],
        [
         "2026-07-08T17:02:15Z",
         78.78
        ],
        [
-        "2026-07-08T17:24:18Z",
-        78.64
-       ],
-       [
         "2026-07-08T17:37:40Z",
         78.45
+       ],
+       [
+        "2026-07-08T17:54:29Z",
+        78.22
        ],
        [
         "2026-07-08T18:00:00Z",
         78.04
        ],
        [
-        "2026-07-08T18:12:40Z",
-        78.04
+        "2026-07-08T18:25:33Z",
+        78.15
        ],
        [
         "2026-07-08T18:47:34Z",
         78.2
        ],
        [
-        "2026-07-08T18:55:23Z",
-        78.16
+        "2026-07-08T19:00:00Z",
+        78.05
        ],
        [
-        "2026-07-08T19:00:00Z",
+        "2026-07-08T19:19:05Z",
         78.05
        ],
        [
@@ -61738,31 +61067,27 @@
         78.05
        ],
        [
-        "2026-07-08T19:52:02Z",
-        78.44
-       ],
-       [
         "2026-07-08T19:55:29Z",
         78.51
+       ],
+       [
+        "2026-07-08T20:00:00Z",
+        79.13
        ],
        [
         "2026-07-08T20:19:14Z",
         79.13
        ],
        [
-        "2026-07-08T20:29:12Z",
-        78.99
-       ],
-       [
         "2026-07-08T20:49:41Z",
         79.23
        ],
        [
-        "2026-07-08T22:00:00Z",
-        79.17
+        "2026-07-08T20:59:55Z",
+        79.25
        ],
        [
-        "2026-07-08T22:14:32Z",
+        "2026-07-08T22:00:00Z",
         79.17
        ],
        [
@@ -61770,8 +61095,8 @@
         79.14
        ],
        [
-        "2026-07-08T22:54:38Z",
-        78.98
+        "2026-07-08T22:44:25Z",
+        78.95
        ],
        [
         "2026-07-08T23:00:00Z",
@@ -61782,8 +61107,8 @@
         78.89
        ],
        [
-        "2026-07-09T00:00:00Z",
-        78.84
+        "2026-07-08T23:45:04Z",
+        78.91
        ],
        [
         "2026-07-09T00:05:32Z",
@@ -61794,7 +61119,7 @@
         78.67
        ],
        [
-        "2026-07-09T00:46:07Z",
+        "2026-07-09T00:38:53Z",
         78.83
        ],
        [
@@ -61804,6 +61129,10 @@
        [
         "2026-07-09T01:12:23Z",
         78.89
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      },
@@ -61811,10 +61140,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.34,
-      "last_ts": "2026-07-09T01:12:30Z",
+      "last": 74.57,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Lebanon conflict oil supply risk",
-      "move_pct": 1.02,
+      "move_pct": 1.33,
       "window_h": 24,
       "measured_from": "2026-07-08T19:23:06Z",
       "series": [
@@ -61851,8 +61180,8 @@
         74.96
        ],
        [
-        "2026-07-08T09:21:01Z",
-        75.03
+        "2026-07-08T09:45:44Z",
+        74.62
        ],
        [
         "2026-07-08T09:51:43Z",
@@ -61883,8 +61212,8 @@
         74.53
        ],
        [
-        "2026-07-08T11:40:56Z",
-        74.48
+        "2026-07-08T12:00:00Z",
+        74.25
        ],
        [
         "2026-07-08T12:04:55Z",
@@ -61895,16 +61224,16 @@
         73.95
        ],
        [
-        "2026-07-08T12:35:28Z",
-        73.44
+        "2026-07-08T12:52:32Z",
+        73.24
        ],
        [
         "2026-07-08T13:00:00Z",
         73.91
        ],
        [
-        "2026-07-08T13:05:15Z",
-        74.04
+        "2026-07-08T13:33:16Z",
+        73.93
        ],
        [
         "2026-07-08T13:37:16Z",
@@ -61915,8 +61244,8 @@
         73.93
        ],
        [
-        "2026-07-08T14:01:08Z",
-        73.91
+        "2026-07-08T14:10:39Z",
+        74.25
        ],
        [
         "2026-07-08T14:30:43Z",
@@ -61927,16 +61256,16 @@
         75.37
        ],
        [
-        "2026-07-08T15:00:00Z",
-        75.51
+        "2026-07-08T15:01:16Z",
+        75.35
        ],
        [
         "2026-07-08T15:27:25Z",
         75.47
        ],
        [
-        "2026-07-08T15:31:27Z",
-        75.48
+        "2026-07-08T15:57:54Z",
+        75.94
        ],
        [
         "2026-07-08T15:59:17Z",
@@ -61947,7 +61276,7 @@
         75.21
        ],
        [
-        "2026-07-08T16:26:43Z",
+        "2026-07-08T16:26:53Z",
         75.19
        ],
        [
@@ -61955,60 +61284,56 @@
         74.66
        ],
        [
-        "2026-07-08T17:00:00Z",
-        74.49
-       ],
-       [
         "2026-07-08T17:02:16Z",
         74.46
+       ],
+       [
+        "2026-07-08T17:24:35Z",
+        74.15
        ],
        [
         "2026-07-08T17:38:01Z",
         73.87
        ],
        [
-        "2026-07-08T17:54:32Z",
-        73.62
-       ],
-       [
         "2026-07-08T18:00:00Z",
         73.63
+       ],
+       [
+        "2026-07-08T18:12:45Z",
+        73.61
        ],
        [
         "2026-07-08T18:25:35Z",
         73.72
        ],
        [
-        "2026-07-08T18:47:34Z",
-        73.74
+        "2026-07-08T18:55:20Z",
+        73.67
        ],
        [
         "2026-07-08T19:00:00Z",
         73.62
        ],
        [
-        "2026-07-08T19:19:40Z",
-        73.59
-       ],
-       [
         "2026-07-08T19:24:43Z",
         73.57
+       ],
+       [
+        "2026-07-08T19:52:03Z",
+        74.0
        ],
        [
         "2026-07-08T19:55:47Z",
         74.06
        ],
        [
-        "2026-07-08T20:00:00Z",
-        74.56
-       ],
-       [
         "2026-07-08T20:19:40Z",
         74.59
        ],
        [
-        "2026-07-08T20:49:42Z",
-        74.75
+        "2026-07-08T20:29:23Z",
+        74.5
        ],
        [
         "2026-07-08T20:59:58Z",
@@ -62019,11 +61344,15 @@
         74.66
        ],
        [
-        "2026-07-08T22:25:40Z",
-        74.59
+        "2026-07-08T22:16:51Z",
+        74.62
        ],
        [
         "2026-07-08T22:45:41Z",
+        74.53
+       ],
+       [
+        "2026-07-08T22:59:30Z",
         74.53
        ],
        [
@@ -62031,16 +61360,12 @@
         74.51
        ],
        [
-        "2026-07-08T23:16:23Z",
-        74.51
-       ],
-       [
         "2026-07-08T23:32:35Z",
         74.47
        ],
        [
-        "2026-07-09T00:00:00Z",
-        74.31
+        "2026-07-08T23:46:44Z",
+        74.49
        ],
        [
         "2026-07-09T00:06:26Z",
@@ -62051,8 +61376,8 @@
         74.12
        ],
        [
-        "2026-07-09T00:46:57Z",
-        74.25
+        "2026-07-09T00:39:33Z",
+        74.29
        ],
        [
         "2026-07-09T01:00:00Z",
@@ -62061,6 +61386,10 @@
        [
         "2026-07-09T01:12:30Z",
         74.34
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        74.57
        ]
       ]
      },
@@ -62460,7 +61789,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:25:11Z",
+    "observed_utc": "2026-07-09T01:29:38Z",
     "anchor_beat": "2026-07-08T19:23:06Z"
    },
    "lead_image": {
@@ -62480,6 +61809,721 @@
      "provenance": 1,
      "steelman": 1,
      "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "hk-shanghai-finance-hub-shift",
+   "name": "Hong Kong celebrates July 1 with flag-raising and retail deals",
+   "bucket": "economy",
+   "topic_tags": [
+    "markets",
+    "trade"
+   ],
+   "brief": {
+    "generated_utc": "2026-07-03T14:12:27Z",
+    "sentence_count": 9,
+    "dropped_count": 2,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Hong Kong marked its July 1 anniversary with a flag-raising ceremony and a wave of citywide deals",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/hong-kong/society/article/3358962/hong-kong-mark-july-1-anniversary-flag-raising-ceremony-citywide-deals?utm_source=rss_feed",
+          "ts": "2026-07-01T00:00:49Z",
+          "title": "Hong Kong marks July 1 anniversary with flag-raising ceremony, citywide deals"
+         }
+        ]
+       },
+       {
+        "text": "The event underscored the Communist Party\u2019s role as a \u2018fundamental safeguard\u2019 of prosperity, according to John Lee",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/hong-kong/politics/article/3358999/communist-party-fundamental-safeguard-hong-kongs-prosperity-john-lee?utm_source=rss_feed",
+          "ts": "2026-07-01T05:41:11Z",
+          "title": "Communist Party a \u2018fundamental safeguard\u2019 of Hong Kong\u2019s prosperity: John Lee"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Retail sales grew 7.9% in May, extending a 13-month winning streak",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359172/hong-kong-retail-sales-grow-79-may-extending-winning-streak-13-months?utm_source=rss_feed",
+          "ts": "2026-07-02T09:00:52Z",
+          "title": "Hong Kong retail sales grow 7.9% in May, extending winning streak to 13 months"
+         }
+        ]
+       },
+       {
+        "text": "Hongkongers flocked to mainland China for the holiday, seeking more space and better service",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359028/more-space-better-service-hongkongers-flock-mainland-july-1-holiday?utm_source=rss_feed",
+          "ts": "2026-07-01T08:45:40Z",
+          "title": "\u2018More space, better service\u2019: Hongkongers flock to mainland for July 1 holiday"
+         }
+        ]
+       },
+       {
+        "text": "The city\u2019s biggest listing deals of 2026 so far include AI chips and energy drinks",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/business/markets/article/3359105/ai-chips-energy-drinks-hong-kongs-biggest-listing-deals-2026-so-far?utm_source=rss_feed",
+          "ts": "2026-07-02T04:00:18Z",
+          "title": "From AI chips to energy drinks: Hong Kong\u2019s biggest listing deals of 2026 so far"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Bangchak\u2019s HK$2.1-billion takeover of Caltex petrol stations added to the commercial activity",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359048/thailands-bangchak-fuels-north-asia-push-hk21b-caltex-petrol-stations-deal?utm_source=rss_feed",
+          "ts": "2026-07-01T10:31:08Z",
+          "title": "Thailand\u2019s Bangchak takes over Hong Kong Caltex petrol stations in HK$2.1b deal"
+         }
+        ]
+       },
+       {
+        "text": "A developer lured upmarket homebuyers with Mercedes giveaways",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/business/article/3358917/fast-lane-luxury-hong-kong-developer-lures-upmarket-homebuyers-mercedes-giveaways?utm_source=rss_feed",
+          "ts": "2026-07-01T00:30:06Z",
+          "title": "Fast lane to luxury: Hong Kong developer lures upmarket homebuyers with Mercedes giveaways"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Hongkongers attacked July 1 freebies and discounts with gusto",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359022/hongkongers-attack-july-1-freebies-and-discounts-gusto?utm_source=rss_feed",
+          "ts": "2026-07-01T07:45:04Z",
+          "title": "Hongkongers attack July 1 freebies and discounts with gusto"
+         }
+        ]
+       },
+       {
+        "text": "The 5-year plan will hinge on how success is measured",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/opinion/hong-kong-opinion/article/3358491/hong-kongs-5-year-plan-will-hinge-how-it-measures-success?utm_source=rss_feed",
+          "ts": "2026-07-01T01:30:05Z",
+          "title": "Hong Kong\u2019s 5-year plan will hinge on how it measures success"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 4,
+   "items_48h": 8,
+   "outlets": 1,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-08T23:30:05Z",
+     "title": "When will Hong Kong\u2019s retail leasing market see a turnaround?",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/business/article/3359843/when-will-hong-kongs-retail-leasing-market-see-turnaround?utm_source=rss_feed",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-08T10:15:45Z",
+     "title": "Tourist arrivals in Hong Kong jump by 13% to 26.7 million in first half of year",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359866/tourist-arrivals-hong-kong-jump-13-267-million-first-half-year?utm_source=rss_feed",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-08T06:29:40Z",
+     "title": "Hong Kong\u2019s Paul Chan pledges second trip to Saudi Arabia to build Mideast ties",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359822/hong-kongs-paul-chan-pledges-second-trip-saudi-arabia-build-mideast-ties?utm_source=rss_feed",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-08T04:37:05Z",
+     "title": "Hong Kong stocks rebound as concerns ease over lock-up expiries",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/business/markets/article/3359806/hong-kong-stocks-rebound-concerns-ease-over-lock-expiries?utm_source=rss_feed",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-07T22:00:09Z",
+     "title": "How Hong Kong is fighting to redefine its future with an institutional moat, wealth surge",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/business/banking-finance/article/3359698/how-hong-kong-fighting-redefine-its-future-institutional-moat-wealth-surge?utm_source=rss_feed",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-07T09:53:22Z",
+     "title": "Hong Kong should build AI plan around \u2018competitive\u2019 strengths, industry leaders say",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/news/article/3359735/hong-kong-should-build-ai-plan-around-competitive-strengths-industry-leaders-say?utm_source=rss_feed",
+     "rel": 22,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-07T09:17:51Z",
+     "title": "Hong Kong yuan facility to expand 150% to US$73.6 billion to meet international demand",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/business/banking-finance/article/3359730/hong-kong-yuan-facility-expand-150-us736-billion-meet-international-demand?utm_source=rss_feed",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-07T02:47:55Z",
+     "title": "AI \u2018central plank\u2019 in Hong Kong\u2019s economic development, John Lee says",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359667/ai-central-plank-hong-kongs-economic-development-john-lee-says?utm_source=rss_feed",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 1,
+    "outlets_unplaced": 1,
+    "chain": [
+     {
+      "outlet": "South China Morning Post",
+      "ts": "2026-07-02T04:00:18Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "HK press (Alibaba-owned)",
+      "items": 22
+     }
+    ],
+    "unplaced": [
+     {
+      "outlet": "Nikkei Asia",
+      "first_seen": "2026-07-07T20:15:49Z",
+      "kind": "journalist",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ]
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "South China Morning Post",
+     "n": 9,
+     "class": "other"
+    },
+    {
+     "outlet": "Nikkei Asia",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-03 12:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-03 18:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-04 00:00",
+      5,
+      1
+     ],
+     [
+      "2026-07-04 06:00",
+      2,
+      1
+     ],
+     [
+      "2026-07-04 12:00",
+      2,
+      1
+     ],
+     [
+      "2026-07-04 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-05 00:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-05 06:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-05 12:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-05 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-06 00:00",
+      2,
+      1
+     ],
+     [
+      "2026-07-06 06:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-06 12:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-06 18:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-07 00:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-07 06:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-07 12:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-07 18:00",
+      5,
+      1
+     ],
+     [
+      "2026-07-08 00:00",
+      5,
+      1
+     ],
+     [
+      "2026-07-08 06:00",
+      5,
+      1
+     ],
+     [
+      "2026-07-08 12:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-08 18:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-09 00:00",
+      4,
+      1
+     ]
+    ],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 2
+    },
+    "first_seen": "2026-07-03T12:25:51Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 8
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "DX-Y.NYB",
+      "label": "Dollar Index",
+      "class": "fx",
+      "last": 101.001,
+      "last_ts": "2026-07-09T01:16:57Z",
+      "basis": "Hong Kong yuan facility expansion influences dollar index",
+      "move_pct": -0.03,
+      "window_h": 24,
+      "measured_from": "2026-07-08T23:30:05Z",
+      "series": [
+       [
+        "2026-07-08T11:38:12Z",
+        101.23
+       ],
+       [
+        "2026-07-08T11:41:00Z",
+        101.247
+       ],
+       [
+        "2026-07-08T12:00:00Z",
+        101.187
+       ],
+       [
+        "2026-07-08T12:04:54Z",
+        101.176
+       ],
+       [
+        "2026-07-08T12:15:36Z",
+        101.169
+       ],
+       [
+        "2026-07-08T12:35:28Z",
+        101.156
+       ],
+       [
+        "2026-07-08T12:52:35Z",
+        101.143
+       ],
+       [
+        "2026-07-08T13:00:00Z",
+        101.189
+       ],
+       [
+        "2026-07-08T13:05:14Z",
+        101.204
+       ],
+       [
+        "2026-07-08T13:33:16Z",
+        101.102
+       ],
+       [
+        "2026-07-08T13:37:18Z",
+        101.101
+       ],
+       [
+        "2026-07-08T14:00:00Z",
+        101.109
+       ],
+       [
+        "2026-07-08T14:01:10Z",
+        101.105
+       ],
+       [
+        "2026-07-08T14:10:39Z",
+        101.116
+       ],
+       [
+        "2026-07-08T14:30:42Z",
+        101.129
+       ],
+       [
+        "2026-07-08T14:52:06Z",
+        101.135
+       ],
+       [
+        "2026-07-08T15:00:00Z",
+        101.151
+       ],
+       [
+        "2026-07-08T15:01:16Z",
+        101.149
+       ],
+       [
+        "2026-07-08T15:27:26Z",
+        101.199
+       ],
+       [
+        "2026-07-08T15:31:27Z",
+        101.235
+       ],
+       [
+        "2026-07-08T15:57:56Z",
+        101.242
+       ],
+       [
+        "2026-07-08T15:59:18Z",
+        101.245
+       ],
+       [
+        "2026-07-08T16:00:00Z",
+        101.191
+       ],
+       [
+        "2026-07-08T16:26:46Z",
+        101.191
+       ],
+       [
+        "2026-07-08T16:26:55Z",
+        101.19
+       ],
+       [
+        "2026-07-08T16:54:21Z",
+        101.086
+       ],
+       [
+        "2026-07-08T17:00:00Z",
+        101.072
+       ],
+       [
+        "2026-07-08T17:02:17Z",
+        101.065
+       ],
+       [
+        "2026-07-08T17:24:35Z",
+        101.003
+       ],
+       [
+        "2026-07-08T17:38:01Z",
+        101.005
+       ],
+       [
+        "2026-07-08T18:00:00Z",
+        100.977
+       ],
+       [
+        "2026-07-08T18:12:46Z",
+        100.978
+       ],
+       [
+        "2026-07-08T18:25:35Z",
+        100.979
+       ],
+       [
+        "2026-07-08T18:47:30Z",
+        100.965
+       ],
+       [
+        "2026-07-08T18:55:19Z",
+        100.978
+       ],
+       [
+        "2026-07-08T19:00:00Z",
+        100.96
+       ],
+       [
+        "2026-07-08T19:19:41Z",
+        100.961
+       ],
+       [
+        "2026-07-08T19:24:51Z",
+        100.963
+       ],
+       [
+        "2026-07-08T19:52:02Z",
+        100.99
+       ],
+       [
+        "2026-07-08T19:55:52Z",
+        100.97
+       ],
+       [
+        "2026-07-08T20:00:00Z",
+        101.008
+       ],
+       [
+        "2026-07-08T20:19:49Z",
+        101.01
+       ],
+       [
+        "2026-07-08T20:29:22Z",
+        101.025
+       ],
+       [
+        "2026-07-08T20:49:41Z",
+        101.073
+       ],
+       [
+        "2026-07-08T21:00:00Z",
+        101.041
+       ],
+       [
+        "2026-07-08T21:04:39Z",
+        101.043
+       ],
+       [
+        "2026-07-08T21:20:04Z",
+        101.036
+       ],
+       [
+        "2026-07-08T21:47:04Z",
+        101.054
+       ],
+       [
+        "2026-07-08T21:51:12Z",
+        101.053
+       ],
+       [
+        "2026-07-08T22:00:00Z",
+        101.065
+       ],
+       [
+        "2026-07-08T22:04:58Z",
+        101.066
+       ],
+       [
+        "2026-07-08T23:00:00Z",
+        101.028
+       ],
+       [
+        "2026-07-08T23:46:49Z",
+        101.029
+       ],
+       [
+        "2026-07-09T00:00:00Z",
+        100.995
+       ],
+       [
+        "2026-07-09T00:06:26Z",
+        100.995
+       ],
+       [
+        "2026-07-09T00:17:23Z",
+        100.968
+       ],
+       [
+        "2026-07-09T00:39:31Z",
+        100.951
+       ],
+       [
+        "2026-07-09T00:46:56Z",
+        100.98
+       ],
+       [
+        "2026-07-09T01:00:00Z",
+        100.998
+       ],
+       [
+        "2026-07-09T01:12:32Z",
+        101.001
+       ],
+       [
+        "2026-07-09T01:16:57Z",
+        101.001
+       ]
+      ]
+     }
+    ],
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-07-09T01:32:33Z",
+    "anchor_beat": "2026-07-08T23:30:05Z"
+   },
+   "lead_image": {
+    "url": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/06/30/d1050173-55f1-420e-a3c9-12a8ca27c855_252d27cd.jpg?itok=te1ddQF7&v=1782790378",
+    "source": "South China Morning Post",
+    "focal": {
+     "x": 48,
+     "y": 50
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -64183,7 +64227,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:43:59Z",
+    "observed_utc": "2026-07-09T01:48:19Z",
     "anchor_beat": "2026-07-08T23:27:14Z"
    },
    "lead_image": {
@@ -65879,7 +65923,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:40:40Z",
+    "observed_utc": "2026-07-09T01:44:56Z",
     "anchor_beat": "2026-07-08T20:34:35Z"
    },
    "lead_image": {
@@ -68476,7 +68520,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:32:36Z",
+    "observed_utc": "2026-07-09T01:36:55Z",
     "anchor_beat": "2026-07-08T13:38:43Z"
    },
    "lead_image": {
@@ -69646,7 +69690,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:34:04Z",
+    "observed_utc": "2026-07-09T01:38:21Z",
     "anchor_beat": "2026-07-08T15:56:49Z"
    },
    "lead_image": {
@@ -71685,7 +71729,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:18Z",
+    "observed_utc": "2026-07-09T01:33:43Z",
     "anchor_beat": "2026-07-08T17:26:44Z"
    },
    "lead_image": {
@@ -72818,7 +72862,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:32:11Z",
+    "observed_utc": "2026-07-09T01:36:30Z",
     "anchor_beat": "2026-07-08T20:52:56Z"
    },
    "lead_image": {
@@ -73975,7 +74019,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:43:45Z",
+    "observed_utc": "2026-07-09T01:48:03Z",
     "anchor_beat": "2026-07-08T16:39:22Z"
    },
    "lead_image": {
@@ -75207,7 +75251,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:25:21Z",
+    "observed_utc": "2026-07-09T01:29:48Z",
     "anchor_beat": "2026-07-08T16:30:14Z"
    },
    "lead_image": {
@@ -76134,7 +76178,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:27:34Z",
+    "observed_utc": "2026-07-09T01:32:01Z",
     "anchor_beat": "2026-07-08T14:19:00Z"
    },
    "lead_image": {
@@ -78389,7 +78433,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:31:08Z",
+    "observed_utc": "2026-07-09T01:35:30Z",
     "anchor_beat": "2026-07-08T17:02:36Z"
    },
    "lead_image": {
@@ -79236,7 +79280,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:38:12Z",
+    "observed_utc": "2026-07-09T01:42:29Z",
     "anchor_beat": "2026-07-08T20:18:17Z"
    },
    "lead_image": {
@@ -80218,7 +80262,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:28:19Z",
+    "observed_utc": "2026-07-09T01:32:45Z",
     "anchor_beat": "2026-07-08T19:00:00Z"
    },
    "lead_image": {
@@ -81063,7 +81107,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:37:03Z",
+    "observed_utc": "2026-07-09T01:41:20Z",
     "anchor_beat": "2026-07-08T04:00:06Z"
    },
    "lead_image": {
@@ -82470,7 +82514,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:36:47Z",
+    "observed_utc": "2026-07-09T01:41:04Z",
     "anchor_beat": "2026-07-08T11:37:52Z"
    },
    "lead_image": {
@@ -83380,7 +83424,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:44Z",
+    "observed_utc": "2026-07-09T01:34:09Z",
     "anchor_beat": "2026-07-08T12:43:22Z"
    },
    "gate": {
@@ -84021,7 +84065,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:34:45Z",
+    "observed_utc": "2026-07-09T01:39:02Z",
     "anchor_beat": "2026-07-08T16:58:45Z"
    },
    "gate": {
@@ -84793,7 +84837,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:37:42Z",
+    "observed_utc": "2026-07-09T01:41:59Z",
     "anchor_beat": "2026-07-08T09:17:39Z"
    },
    "lead_image": {
@@ -85648,7 +85692,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:59Z",
+    "observed_utc": "2026-07-09T01:44:15Z",
     "anchor_beat": "2026-07-08T14:29:05Z"
    },
    "gate": {
@@ -87713,7 +87757,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:28:40Z",
+    "observed_utc": "2026-07-09T01:33:06Z",
     "anchor_beat": "2026-07-08T15:16:20Z"
    },
    "lead_image": {
@@ -89683,7 +89727,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:34:25Z",
+    "observed_utc": "2026-07-09T01:38:41Z",
     "anchor_beat": "2026-07-08T22:17:55Z"
    },
    "gate": {
@@ -92633,7 +92677,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:32:41Z",
+    "observed_utc": "2026-07-09T01:37:01Z",
     "anchor_beat": "2026-07-08T15:01:02Z"
    },
    "lead_image": {
@@ -93814,7 +93858,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:35:17Z",
+    "observed_utc": "2026-07-09T01:39:33Z",
     "anchor_beat": "2026-07-08T17:57:09Z"
    },
    "gate": {
@@ -94818,7 +94862,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:42:15Z",
+    "observed_utc": "2026-07-09T01:46:35Z",
     "anchor_beat": "2026-07-08T08:31:30Z"
    },
    "lead_image": {
@@ -95538,7 +95582,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:42:49Z",
+    "observed_utc": "2026-07-09T01:47:09Z",
     "anchor_beat": "2026-07-08T12:00:00Z"
    },
    "gate": {
@@ -97371,7 +97415,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:40:45Z",
+    "observed_utc": "2026-07-09T01:45:01Z",
     "anchor_beat": "2026-07-08T16:58:45Z"
    },
    "lead_image": {
@@ -99091,7 +99135,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:07Z",
+    "observed_utc": "2026-07-09T01:33:33Z",
     "anchor_beat": "2026-07-08T15:28:33Z"
    },
    "lead_image": {
@@ -100176,7 +100220,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:41:55Z",
+    "observed_utc": "2026-07-09T01:46:14Z",
     "anchor_beat": "2026-07-08T20:58:05Z"
    },
    "lead_image": {
@@ -100923,7 +100967,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:32:26Z",
+    "observed_utc": "2026-07-09T01:36:45Z",
     "anchor_beat": "2026-07-08T16:21:00Z"
    },
    "lead_image": {
@@ -101715,7 +101759,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:37:47Z",
+    "observed_utc": "2026-07-09T01:42:04Z",
     "anchor_beat": "2026-07-08T07:20:00Z"
    },
    "gate": {
@@ -103715,7 +103759,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:13Z",
+    "observed_utc": "2026-07-09T01:33:38Z",
     "anchor_beat": "2026-07-08T19:15:01Z"
    },
    "lead_image": {
@@ -104931,7 +104975,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:30Z",
+    "observed_utc": "2026-07-09T01:43:45Z",
     "anchor_beat": "2026-07-08T13:55:00Z"
    },
    "lead_image": {
@@ -105637,7 +105681,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:41:26Z",
+    "observed_utc": "2026-07-09T01:45:43Z",
     "anchor_beat": "2026-07-08T12:14:18Z"
    },
    "lead_image": {
@@ -106139,7 +106183,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:41:30Z",
+    "observed_utc": "2026-07-09T01:45:48Z",
     "anchor_beat": "2026-07-08T11:42:26Z"
    },
    "gate": {
@@ -107985,7 +108029,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:33:07Z",
+    "observed_utc": "2026-07-09T01:37:26Z",
     "anchor_beat": "2026-07-08T07:29:00Z"
    },
    "lead_image": {
@@ -108817,7 +108861,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:38:28Z",
+    "observed_utc": "2026-07-09T01:42:44Z",
     "anchor_beat": "2026-07-08T14:32:04Z"
    },
    "gate": {
@@ -113010,7 +113054,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:27:49Z",
+    "observed_utc": "2026-07-09T01:32:17Z",
     "anchor_beat": "2026-07-08T20:40:05Z"
    },
    "lead_image": {
@@ -114398,7 +114442,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:31:19Z",
+    "observed_utc": "2026-07-09T01:35:40Z",
     "anchor_beat": "2026-07-08T16:00:57Z"
    },
    "gate": {
@@ -115437,7 +115481,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:33:53Z",
+    "observed_utc": "2026-07-09T01:38:10Z",
     "anchor_beat": "2026-07-08T12:25:14Z"
    },
    "lead_image": {
@@ -116250,7 +116294,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:34:50Z",
+    "observed_utc": "2026-07-09T01:39:08Z",
     "anchor_beat": "2026-07-08T17:55:18Z"
    },
    "lead_image": {
@@ -117152,7 +117196,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:34:55Z",
+    "observed_utc": "2026-07-09T01:39:13Z",
     "anchor_beat": "2026-07-08T16:58:45Z"
    },
    "lead_image": {
@@ -118077,7 +118121,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:43:54Z",
+    "observed_utc": "2026-07-09T01:48:14Z",
     "anchor_beat": "2026-07-08T22:00:00Z"
    },
    "gate": {
@@ -119110,7 +119154,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:54Z",
+    "observed_utc": "2026-07-09T01:44:10Z",
     "anchor_beat": "2026-07-07T21:04:21Z"
    },
    "lead_image": {
@@ -120158,7 +120202,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:15Z",
+    "observed_utc": "2026-07-09T01:43:30Z",
     "anchor_beat": "2026-07-07T10:47:58Z"
    },
    "lead_image": {
@@ -121034,7 +121078,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:54Z",
+    "observed_utc": "2026-07-09T01:34:20Z",
     "anchor_beat": "2026-07-07T17:49:23Z"
    },
    "lead_image": {
@@ -122311,7 +122355,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:39Z",
+    "observed_utc": "2026-07-09T01:43:54Z",
     "anchor_beat": "2026-07-08T00:49:07Z"
    },
    "lead_image": {
@@ -124012,7 +124056,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:10Z",
+    "observed_utc": "2026-07-09T01:43:25Z",
     "anchor_beat": "2026-07-07T11:02:51Z"
    },
    "lead_image": {
@@ -124878,7 +124922,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:40:04Z",
+    "observed_utc": "2026-07-09T01:44:20Z",
     "anchor_beat": "2026-07-07T15:21:21Z"
    },
    "lead_image": {
@@ -127911,7 +127955,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:40:15Z",
+    "observed_utc": "2026-07-09T01:44:31Z",
     "anchor_beat": "2026-07-07T16:00:00Z"
    },
    "lead_image": {
@@ -128689,7 +128733,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:41:21Z",
+    "observed_utc": "2026-07-09T01:45:38Z",
     "anchor_beat": "2026-07-07T19:00:06Z"
    },
    "gate": {
@@ -130030,7 +130074,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:25:47Z",
+    "observed_utc": "2026-07-09T01:30:15Z",
     "anchor_beat": "2026-07-07T18:00:00Z"
    },
    "lead_image": {
@@ -131917,7 +131961,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:41:40Z",
+    "observed_utc": "2026-07-09T01:45:58Z",
     "anchor_beat": "2026-07-07T13:34:52Z"
    },
    "gate": {
@@ -132925,7 +132969,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:26:10Z",
+    "observed_utc": "2026-07-09T01:30:37Z",
     "anchor_beat": "2026-07-07T13:28:34Z"
    },
    "lead_image": {
@@ -134756,7 +134800,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:31:00Z",
+    "observed_utc": "2026-07-09T01:35:23Z",
     "anchor_beat": "2026-07-07T06:45:00Z"
    },
    "lead_image": {
@@ -135715,7 +135759,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:31:06Z",
+    "observed_utc": "2026-07-09T01:35:28Z",
     "anchor_beat": "2026-07-08T00:28:00Z"
    },
    "gate": {
@@ -136056,16 +136100,6 @@
    "links": [],
    "sources": [
     {
-     "outlet": "Economist Latest",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Newswise",
-     "n": 1,
-     "class": "other"
-    },
-    {
      "outlet": "Phys.org",
      "n": 1,
      "class": "other"
@@ -136078,7 +136112,7 @@
    ],
    "coverage": {
     "non_mainstream": 1,
-    "mainstream": 1
+    "mainstream": 0
    },
    "under_radar": false,
    "attention": {
@@ -136185,11 +136219,11 @@
      ]
     ],
     "mix": {
-     "mainstream": 1,
+     "mainstream": 0,
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 3
+     "other": 2
     },
     "first_seen": "2026-07-01T19:44:19Z"
    },
@@ -137568,7 +137602,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:31:54Z",
+    "observed_utc": "2026-07-09T01:36:15Z",
     "anchor_beat": "2026-07-07T23:21:07Z"
    },
    "gate": {
@@ -139040,7 +139074,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:35:00Z",
+    "observed_utc": "2026-07-09T01:39:18Z",
     "anchor_beat": "2026-07-07T09:48:28Z"
    },
    "lead_image": {
@@ -139618,7 +139652,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:36:18Z",
+    "observed_utc": "2026-07-09T01:40:34Z",
     "anchor_beat": "2026-07-07T21:34:29Z"
    },
    "gate": {
@@ -140807,7 +140841,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:37:08Z",
+    "observed_utc": "2026-07-09T01:41:25Z",
     "anchor_beat": "2026-07-07T04:14:27Z"
    },
    "lead_image": {
@@ -140817,712 +140851,6 @@
      "x": 48,
      "y": 53
     }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "terawulf-lease-deal",
-   "name": "TeraWulf Lease Deal",
-   "bucket": "tech",
-   "topic_tags": [
-    "ai"
-   ],
-   "brief": {
-    "generated_utc": "2026-07-07T13:51:37Z",
-    "sentence_count": 6,
-    "dropped_count": 1,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Anthropic and TeraWulf signed a 20-year, $19 billion lease for an AI infrastructure campus in Kentucky.",
-        "cites": [
-         {
-          "outlet": "The Register",
-          "kind": "journalist",
-          "url": "https://www.theregister.com/ai-and-ml/2026/07/07/ai-startup-thats-never-turned-a-profit-says-itll-totally-be-around-in-2047-to-close-its-19b-lease/5267385",
-          "ts": "2026-07-07T01:37:35Z",
-          "title": "AI startup that\u2019s never turned a profit say's it'll totally be around in 2047 to close its $19B lease"
-         },
-         {
-          "outlet": "Blockspace",
-          "kind": "journalist",
-          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
-          "ts": "2026-07-06T14:20:16Z",
-          "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million"
-         },
-         {
-          "outlet": "Investor's Business Daily",
-          "kind": "journalist",
-          "url": "https://www.investors.com/news/anthropic-terawulf-ai-data-center-lease-neocloud-coreweave-iren/?src=A00220&yptr=yahoo",
-          "ts": "2026-07-06T13:45:30Z",
-          "title": "TeraWulf, Anthropic Sign $19 Billion Data Center Lease. Neocloud Stocks Soar."
-         },
-         {
-          "outlet": "Investing.com",
-          "kind": "journalist",
-          "url": "https://www.investing.com/news/stock-market-news/terawulf-jumps-on-19-billion-data-center-lease-deal-with-anthropic-4776761",
-          "ts": "2026-07-06T13:36:34Z",
-          "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic"
-         },
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-jumps-19-billion-data-133531275.html",
-          "ts": "2026-07-06T13:35:31Z",
-          "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic"
-         },
-         {
-          "outlet": "The Wall Street Journal",
-          "kind": "journalist",
-          "url": "https://www.wsj.com/finance/investing/terawulf-signs-19-billion-lease-with-anthropic-for-ai-infrastructure-campus-ef26be27?siteid=yhoof2&yptr=yahoo",
-          "ts": "2026-07-06T13:07:00Z",
-          "title": "TeraWulf Signs $19 Billion Lease With Anthropic for AI-Infrastructure Campus"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The deal covers 401 megawatts of capacity at TeraWulf's Kentucky data campus.",
-        "cites": [
-         {
-          "outlet": "Blockspace",
-          "kind": "journalist",
-          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
-          "ts": "2026-07-06T14:20:16Z",
-          "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million"
-         },
-         {
-          "outlet": "CNBC",
-          "kind": "journalist",
-          "url": "https://www.cnbc.com/2026/07/06/anthropic-terawulf-data-center-ai.html",
-          "ts": "2026-07-06T12:54:48Z",
-          "title": "TeraWulf shares soar after Anthropic leases data center in Kentucky"
-         }
-        ]
-       },
-       {
-        "text": "Alongside the lease, TeraWulf said it would sell its Abernathy stake for $530 million.",
-        "cites": [
-         {
-          "outlet": "Blockspace",
-          "kind": "journalist",
-          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
-          "ts": "2026-07-06T14:20:16Z",
-          "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "TeraWulf had operated as a crypto mining company before pivoting to AI data center infrastructure.",
-        "cites": [
-         {
-          "outlet": "CNBC",
-          "kind": "journalist",
-          "url": "https://www.cnbc.com/2026/07/06/anthropic-terawulf-data-center-ai.html",
-          "ts": "2026-07-06T12:54:48Z",
-          "title": "TeraWulf shares soar after Anthropic leases data center in Kentucky"
-         }
-        ]
-       },
-       {
-        "text": "The announcement lifted neocloud stocks broadly.",
-        "cites": [
-         {
-          "outlet": "Investor's Business Daily",
-          "kind": "journalist",
-          "url": "https://www.investors.com/news/anthropic-terawulf-ai-data-center-lease-neocloud-coreweave-iren/?src=A00220&yptr=yahoo",
-          "ts": "2026-07-06T13:45:30Z",
-          "title": "TeraWulf, Anthropic Sign $19 Billion Data Center Lease. Neocloud Stocks Soar."
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The Register raised a pointed question: Anthropic has never turned a profit, and the deal would not close until 2047.",
-        "cites": [
-         {
-          "outlet": "The Register",
-          "kind": "journalist",
-          "url": "https://www.theregister.com/ai-and-ml/2026/07/07/ai-startup-thats-never-turned-a-profit-says-itll-totally-be-around-in-2047-to-close-its-19b-lease/5267385",
-          "ts": "2026-07-07T01:37:35Z",
-          "title": "AI startup that\u2019s never turned a profit say's it'll totally be around in 2047 to close its $19B lease"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 0,
-   "items_48h": 2,
-   "outlets": 2,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-07T14:15:29Z",
-     "title": "Citi Assigns Buy Rating to TeraWulf (WULF)",
-     "outlet": "Insider Monkey",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/citi-assigns-buy-rating-terawulf-141529766.html",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T23:37:35Z",
-     "title": "AI startup that\u2019s never turned a profit say's it'll totally be around in 2047 to close its $19B lease",
-     "outlet": "The Register",
-     "kind": "journalist",
-     "url": "https://www.theregister.com/ai-and-ml/2026/07/07/ai-startup-thats-never-turned-a-profit-says-itll-totally-be-around-in-2047-to-close-its-19b-lease/5267385",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T18:19:43Z",
-     "title": "Terawulf Stock Surges After Kentucky Data Center Deal With Anthropic",
-     "outlet": "Schaeffer's Investment Research",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/terawulf-stock-surges-kentucky-data-181943742.html",
-     "rel": 28,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T14:20:16Z",
-     "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million",
-     "outlet": "Blockspace",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
-     "rel": 28,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T13:45:30Z",
-     "title": "TeraWulf, Anthropic Sign $19 Billion Data Center Lease. Neocloud Stocks Soar.",
-     "outlet": "Investor's Business Daily",
-     "kind": "journalist",
-     "url": "https://www.investors.com/news/anthropic-terawulf-ai-data-center-lease-neocloud-coreweave-iren/?src=A00220&yptr=yahoo",
-     "rel": 32,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T13:43:00Z",
-     "title": "Anthropic To Lease TeraWulf Data Centre",
-     "outlet": "CryptoProwl",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-lease-terawulf-data-centre-134300232.html",
-     "rel": 28,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T13:36:34Z",
-     "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/stock-market-news/terawulf-jumps-on-19-billion-data-center-lease-deal-with-anthropic-4776761",
-     "rel": 32,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-06T13:35:31Z",
-     "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic",
-     "outlet": "Reuters",
-     "kind": "wire service",
-     "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-jumps-19-billion-data-133531275.html",
-     "rel": 32,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    }
-   ],
-   "split": null,
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 10,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "CNBC",
-      "ts": "2026-07-06T12:54:48Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "US financial press",
-      "items": 1
-     },
-     {
-      "outlet": "The Wall Street Journal",
-      "ts": "2026-07-06T13:07:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US press",
-      "items": 1
-     },
-     {
-      "outlet": "Reuters",
-      "ts": "2026-07-06T13:35:31Z",
-      "kind": "wire service",
-      "role": "echo",
-      "motive_note": "international wire service",
-      "items": 1
-     },
-     {
-      "outlet": "Investing.com",
-      "ts": "2026-07-06T13:36:34Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "CryptoProwl",
-      "ts": "2026-07-06T13:43:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Investor's Business Daily",
-      "ts": "2026-07-06T13:45:30Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Blockspace",
-      "ts": "2026-07-06T14:20:16Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Schaeffer's Investment Research",
-      "ts": "2026-07-06T18:19:43Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Insider Monkey",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Schaeffer's Investment Research",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "The Register",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 0
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-06 12:00",
-      7,
-      7
-     ],
-     [
-      "2026-07-06 18:00",
-      7,
-      7
-     ],
-     [
-      "2026-07-07 00:00",
-      8,
-      8
-     ],
-     [
-      "2026-07-07 06:00",
-      8,
-      8
-     ],
-     [
-      "2026-07-07 12:00",
-      8,
-      9
-     ],
-     [
-      "2026-07-07 18:00",
-      2,
-      9
-     ],
-     [
-      "2026-07-08 00:00",
-      2,
-      10
-     ],
-     [
-      "2026-07-08 06:00",
-      1,
-      10
-     ],
-     [
-      "2026-07-08 12:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-08 18:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-09 00:00",
-      0,
-      2
-     ]
-    ],
-    "mix": {
-     "mainstream": 0,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 3
-    },
-    "first_seen": "2026-07-06T14:25:57Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
-    "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
-    "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 2
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "NVDA",
-      "label": "Nvidia",
-      "class": "equity",
-      "last": 204.12,
-      "last_ts": "2026-07-08T20:00:00Z",
-      "basis": "TeraWulf Anthropic lease",
-      "move_pct": 2.9,
-      "window_h": 24,
-      "measured_from": "2026-07-07T14:15:29Z",
-      "series": [
-       [
-        "2026-07-07T13:30:00Z",
-        192.18
-       ],
-       [
-        "2026-07-07T13:30:02Z",
-        192.0227
-       ],
-       [
-        "2026-07-07T13:51:56Z",
-        191.9599
-       ],
-       [
-        "2026-07-07T13:58:09Z",
-        191.84
-       ],
-       [
-        "2026-07-07T14:22:38Z",
-        192.03
-       ],
-       [
-        "2026-07-07T14:27:24Z",
-        191.52
-       ],
-       [
-        "2026-07-07T14:30:00Z",
-        191.95
-       ],
-       [
-        "2026-07-07T14:48:28Z",
-        191.995
-       ],
-       [
-        "2026-07-07T15:03:50Z",
-        192.65
-       ],
-       [
-        "2026-07-07T15:14:57Z",
-        193.08
-       ],
-       [
-        "2026-07-07T15:39:39Z",
-        193.0359
-       ],
-       [
-        "2026-07-07T15:47:14Z",
-        193.915
-       ],
-       [
-        "2026-07-07T16:06:30Z",
-        195.32
-       ],
-       [
-        "2026-07-07T16:26:11Z",
-        196.735
-       ],
-       [
-        "2026-07-07T16:30:00Z",
-        197.79
-       ],
-       [
-        "2026-07-07T16:33:52Z",
-        197.67
-       ],
-       [
-        "2026-07-07T16:58:38Z",
-        196.645
-       ],
-       [
-        "2026-07-07T17:02:07Z",
-        197.63
-       ],
-       [
-        "2026-07-07T17:24:26Z",
-        197.92
-       ],
-       [
-        "2026-07-07T17:30:00Z",
-        197.865
-       ],
-       [
-        "2026-07-07T17:51:21Z",
-        197.95
-       ],
-       [
-        "2026-07-07T18:08:58Z",
-        197.325
-       ],
-       [
-        "2026-07-07T18:19:43Z",
-        197.59
-       ],
-       [
-        "2026-07-07T18:30:00Z",
-        197.0779
-       ],
-       [
-        "2026-07-07T18:43:36Z",
-        197.0327
-       ],
-       [
-        "2026-07-07T18:46:21Z",
-        197.185
-       ],
-       [
-        "2026-07-07T19:12:00Z",
-        196.3799
-       ],
-       [
-        "2026-07-07T19:13:50Z",
-        196.52
-       ],
-       [
-        "2026-07-07T19:30:00Z",
-        196.04
-       ],
-       [
-        "2026-07-07T19:38:33Z",
-        196.09
-       ],
-       [
-        "2026-07-07T20:00:00Z",
-        196.93
-       ],
-       [
-        "2026-07-08T13:30:00Z",
-        197.655
-       ],
-       [
-        "2026-07-08T13:43:17Z",
-        198.025
-       ],
-       [
-        "2026-07-08T13:47:20Z",
-        199.35
-       ],
-       [
-        "2026-07-08T14:11:12Z",
-        197.0808
-       ],
-       [
-        "2026-07-08T14:20:40Z",
-        197.4
-       ],
-       [
-        "2026-07-08T14:30:00Z",
-        196.95
-       ],
-       [
-        "2026-07-08T14:40:43Z",
-        196.94
-       ],
-       [
-        "2026-07-08T15:02:07Z",
-        198.66
-       ],
-       [
-        "2026-07-08T15:11:18Z",
-        197.94
-       ],
-       [
-        "2026-07-08T15:37:26Z",
-        197.66
-       ],
-       [
-        "2026-07-08T15:41:27Z",
-        197.52
-       ],
-       [
-        "2026-07-08T16:07:57Z",
-        197.75
-       ],
-       [
-        "2026-07-08T16:09:19Z",
-        197.59
-       ],
-       [
-        "2026-07-08T16:30:00Z",
-        199.4
-       ],
-       [
-        "2026-07-08T16:36:48Z",
-        199.24
-       ],
-       [
-        "2026-07-08T16:36:56Z",
-        199.22
-       ],
-       [
-        "2026-07-08T17:04:21Z",
-        200.34
-       ],
-       [
-        "2026-07-08T17:12:17Z",
-        200.915
-       ],
-       [
-        "2026-07-08T17:30:00Z",
-        202.97
-       ],
-       [
-        "2026-07-08T17:48:02Z",
-        202.2912
-       ],
-       [
-        "2026-07-08T18:04:31Z",
-        202.5894
-       ],
-       [
-        "2026-07-08T18:22:48Z",
-        202.68
-       ],
-       [
-        "2026-07-08T18:30:00Z",
-        202.3
-       ],
-       [
-        "2026-07-08T18:35:37Z",
-        202.395
-       ],
-       [
-        "2026-07-08T18:57:36Z",
-        203.38
-       ],
-       [
-        "2026-07-08T19:05:24Z",
-        204.73
-       ],
-       [
-        "2026-07-08T19:29:41Z",
-        204.44
-       ],
-       [
-        "2026-07-08T19:30:00Z",
-        204.32
-       ],
-       [
-        "2026-07-08T19:34:52Z",
-        204.44
-       ],
-       [
-        "2026-07-08T20:00:00Z",
-        204.12
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:37:23Z",
-    "anchor_beat": "2026-07-07T14:15:29Z"
    },
    "gate": {
     "score": 4,
@@ -142822,7 +142150,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:41:11Z",
+    "observed_utc": "2026-07-09T01:45:28Z",
     "anchor_beat": "2026-07-07T17:58:06Z"
    },
    "gate": {
@@ -143542,8 +142870,8 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 78.89,
-      "last_ts": "2026-07-09T01:12:23Z",
+      "last": 79.13,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Red Sea shipping risk oil",
       "move_pct": 6.69,
       "window_h": 24,
@@ -143618,7 +142946,7 @@
         73.86
        ],
        [
-        "2026-07-07T16:16:00Z",
+        "2026-07-07T16:23:41Z",
         74.1
        ],
        [
@@ -143626,48 +142954,48 @@
         74.1
        ],
        [
-        "2026-07-07T17:40:42Z",
-        74.29
+        "2026-07-07T17:58:54Z",
+        74.11
        ],
        [
         "2026-07-07T18:33:04Z",
         74.23
        ],
        [
-        "2026-07-07T19:01:56Z",
-        75.17
+        "2026-07-07T19:03:38Z",
+        75.28
        ],
        [
         "2026-07-07T19:56:03Z",
         75.72
        ],
        [
-        "2026-07-07T20:25:47Z",
-        75.77
+        "2026-07-07T20:50:11Z",
+        76.01
        ],
        [
         "2026-07-07T22:00:00Z",
         76.08
        ],
        [
-        "2026-07-07T22:30:08Z",
-        76.2
+        "2026-07-07T22:51:53Z",
+        76.24
        ],
        [
         "2026-07-07T23:33:07Z",
         76.13
        ],
        [
-        "2026-07-08T00:14:01Z",
-        76.22
+        "2026-07-08T00:30:45Z",
+        76.15
        ],
        [
         "2026-07-08T01:00:10Z",
         75.68
        ],
        [
-        "2026-07-08T01:55:01Z",
-        75.81
+        "2026-07-08T01:57:05Z",
+        75.82
        ],
        [
         "2026-07-08T02:30:35Z",
@@ -143678,7 +143006,7 @@
         76.1
        ],
        [
-        "2026-07-08T04:00:00Z",
+        "2026-07-08T04:08:27Z",
         76.12
        ],
        [
@@ -143686,31 +143014,31 @@
         76.08
        ],
        [
-        "2026-07-08T05:30:19Z",
-        76.5
+        "2026-07-08T05:35:08Z",
+        76.52
        ],
        [
         "2026-07-08T06:04:26Z",
         76.48
        ],
        [
-        "2026-07-08T06:58:34Z",
-        76.5
+        "2026-07-08T07:00:00Z",
+        76.32
        ],
        [
         "2026-07-08T07:45:45Z",
         75.76
        ],
        [
-        "2026-07-08T08:19:47Z",
-        77.35
+        "2026-07-08T08:25:35Z",
+        78.01
        ],
        [
         "2026-07-08T09:00:00Z",
         78.91
        ],
        [
-        "2026-07-08T09:45:39Z",
+        "2026-07-08T09:51:39Z",
         78.66
        ],
        [
@@ -143718,80 +143046,80 @@
         78.43
        ],
        [
-        "2026-07-08T11:00:00Z",
-        78.4
+        "2026-07-08T11:11:40Z",
+        78.39
        ],
        [
         "2026-07-08T12:00:00Z",
         78.26
        ],
        [
-        "2026-07-08T12:35:21Z",
-        77.41
+        "2026-07-08T12:52:32Z",
+        77.28
        ],
        [
         "2026-07-08T13:33:16Z",
         78.08
        ],
        [
-        "2026-07-08T14:01:05Z",
-        78.11
+        "2026-07-08T14:10:30Z",
+        78.43
        ],
        [
-        "2026-07-08T14:52:05Z",
+        "2026-07-08T15:00:00Z",
+        79.79
+       ],
+       [
+        "2026-07-08T15:57:53Z",
+        80.41
+       ],
+       [
+        "2026-07-08T16:26:47Z",
         79.57
        ],
        [
-        "2026-07-08T15:31:25Z",
-        79.82
+        "2026-07-08T17:02:15Z",
+        78.78
        ],
        [
-        "2026-07-08T16:00:00Z",
-        79.56
+        "2026-07-08T17:54:29Z",
+        78.22
        ],
        [
-        "2026-07-08T17:00:00Z",
-        78.86
+        "2026-07-08T18:47:34Z",
+        78.2
        ],
        [
-        "2026-07-08T17:37:40Z",
-        78.45
-       ],
-       [
-        "2026-07-08T18:25:33Z",
-        78.15
-       ],
-       [
-        "2026-07-08T19:00:00Z",
+        "2026-07-08T19:19:05Z",
         78.05
        ],
        [
-        "2026-07-08T19:55:29Z",
-        78.51
+        "2026-07-08T20:00:00Z",
+        79.13
        ],
        [
-        "2026-07-08T20:29:12Z",
-        78.99
+        "2026-07-08T20:49:41Z",
+        79.23
        ],
        [
-        "2026-07-08T22:14:32Z",
-        79.17
+        "2026-07-08T22:19:31Z",
+        79.14
        ],
        [
-        "2026-07-08T22:54:38Z",
-        78.98
+        "2026-07-08T23:00:00Z",
+        78.89
        ],
        [
-        "2026-07-09T00:00:00Z",
+        "2026-07-09T00:05:32Z",
         78.84
        ],
        [
-        "2026-07-09T00:38:53Z",
+        "2026-07-09T00:46:07Z",
         78.83
        ],
        [
-        "2026-07-09T01:12:23Z",
-        78.89
+        "2026-07-09T01:16:57Z",
+        79.13
        ]
       ]
      },
@@ -143799,8 +143127,8 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.34,
-      "last_ts": "2026-07-09T01:12:30Z",
+      "last": 74.57,
+      "last_ts": "2026-07-09T01:16:57Z",
       "basis": "Oil transport disruption risk",
       "move_pct": 6.04,
       "window_h": 24,
@@ -143851,16 +143179,16 @@
         69.43
        ],
        [
-        "2026-07-07T11:46:52Z",
-        69.12
+        "2026-07-07T12:00:00Z",
+        68.96
        ],
        [
         "2026-07-07T12:32:01Z",
         69.02
        ],
        [
-        "2026-07-07T13:00:33Z",
-        69.17
+        "2026-07-07T13:20:31Z",
+        69.26
        ],
        [
         "2026-07-07T14:00:00Z",
@@ -143887,40 +143215,40 @@
         70.58
        ],
        [
-        "2026-07-07T18:09:41Z",
-        70.46
+        "2026-07-07T18:33:35Z",
+        70.54
        ],
        [
         "2026-07-07T19:01:57Z",
         71.53
        ],
        [
-        "2026-07-07T19:39:39Z",
-        72.11
+        "2026-07-07T19:56:46Z",
+        71.91
        ],
        [
         "2026-07-07T20:26:51Z",
         72.04
        ],
        [
-        "2026-07-07T20:59:57Z",
-        72.2
+        "2026-07-07T22:00:00Z",
+        72.33
        ],
        [
         "2026-07-07T22:42:06Z",
         72.36
        ],
        [
-        "2026-07-07T23:10:47Z",
-        72.44
+        "2026-07-07T23:35:54Z",
+        72.47
        ],
        [
         "2026-07-08T00:14:50Z",
         72.49
        ],
        [
-        "2026-07-08T01:00:00Z",
-        71.84
+        "2026-07-08T01:00:12Z",
+        71.96
        ],
        [
         "2026-07-08T01:55:16Z",
@@ -143931,23 +143259,23 @@
         72.37
        ],
        [
-        "2026-07-08T03:05:09Z",
-        72.32
+        "2026-07-08T03:18:28Z",
+        72.29
        ],
        [
         "2026-07-08T04:00:00Z",
         72.27
        ],
        [
-        "2026-07-08T04:38:23Z",
-        72.25
+        "2026-07-08T04:51:21Z",
+        72.31
        ],
        [
         "2026-07-08T05:30:24Z",
         72.71
        ],
        [
-        "2026-07-08T06:01:47Z",
+        "2026-07-08T06:04:19Z",
         72.72
        ],
        [
@@ -143955,100 +143283,100 @@
         72.63
        ],
        [
-        "2026-07-08T07:27:34Z",
-        72.11
+        "2026-07-08T07:45:45Z",
+        71.89
        ],
        [
         "2026-07-08T08:19:47Z",
         73.46
        ],
        [
-        "2026-07-08T08:53:14Z",
-        74.49
+        "2026-07-08T09:00:00Z",
+        74.97
        ],
        [
-        "2026-07-08T09:45:44Z",
-        74.62
+        "2026-07-08T09:51:43Z",
+        74.66
        ],
        [
-        "2026-07-08T10:14:01Z",
-        74.73
+        "2026-07-08T10:25:25Z",
+        74.43
        ],
        [
-        "2026-07-08T11:00:00Z",
-        74.29
+        "2026-07-08T11:11:42Z",
+        74.28
        ],
        [
-        "2026-07-08T11:40:56Z",
-        74.48
+        "2026-07-08T12:00:00Z",
+        74.25
        ],
        [
-        "2026-07-08T12:35:28Z",
-        73.44
+        "2026-07-08T12:52:32Z",
+        73.24
        ],
        [
         "2026-07-08T13:33:16Z",
         73.93
        ],
        [
-        "2026-07-08T14:01:08Z",
-        73.91
+        "2026-07-08T14:10:39Z",
+        74.25
        ],
        [
         "2026-07-08T15:00:00Z",
         75.51
        ],
        [
-        "2026-07-08T15:31:27Z",
-        75.48
+        "2026-07-08T15:57:54Z",
+        75.94
        ],
        [
         "2026-07-08T16:26:43Z",
         75.19
        ],
        [
-        "2026-07-08T17:00:00Z",
-        74.49
+        "2026-07-08T17:02:16Z",
+        74.46
        ],
        [
-        "2026-07-08T17:54:32Z",
-        73.62
+        "2026-07-08T18:00:00Z",
+        73.63
        ],
        [
-        "2026-07-08T18:25:35Z",
-        73.72
+        "2026-07-08T18:47:34Z",
+        73.74
        ],
        [
-        "2026-07-08T19:19:40Z",
-        73.59
+        "2026-07-08T19:24:43Z",
+        73.57
        ],
        [
-        "2026-07-08T19:55:47Z",
-        74.06
+        "2026-07-08T20:00:00Z",
+        74.56
        ],
        [
-        "2026-07-08T20:49:42Z",
-        74.75
+        "2026-07-08T20:59:58Z",
+        74.76
        ],
        [
-        "2026-07-08T22:16:51Z",
-        74.62
+        "2026-07-08T22:25:40Z",
+        74.59
        ],
        [
-        "2026-07-08T23:00:00Z",
+        "2026-07-08T23:16:23Z",
         74.51
        ],
        [
-        "2026-07-08T23:46:44Z",
-        74.49
+        "2026-07-09T00:00:00Z",
+        74.31
        ],
        [
-        "2026-07-09T00:39:33Z",
-        74.29
+        "2026-07-09T00:46:57Z",
+        74.25
        ],
        [
-        "2026-07-09T01:12:30Z",
-        74.34
+        "2026-07-09T01:16:57Z",
+        74.57
        ]
       ]
      },
@@ -144056,8 +143384,8 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4084.8,
-      "last_ts": "2026-07-09T01:12:33Z",
+      "last": 4083.8,
+      "last_ts": "2026-07-09T01:16:55Z",
       "basis": "Gold safe haven amid conflict",
       "move_pct": -2.05,
       "window_h": 24,
@@ -144100,8 +143428,8 @@
         4140.5
        ],
        [
-        "2026-07-07T10:23:21Z",
-        4147.2002
+        "2026-07-07T10:26:13Z",
+        4147.7998
        ],
        [
         "2026-07-07T11:01:53Z",
@@ -144128,16 +143456,16 @@
         4166.3999
        ],
        [
-        "2026-07-07T15:29:35Z",
-        4153.2998
+        "2026-07-07T15:37:14Z",
+        4154.3999
        ],
        [
         "2026-07-07T16:16:07Z",
         4154.1001
        ],
        [
-        "2026-07-07T16:52:02Z",
-        4157.1001
+        "2026-07-07T17:00:00Z",
+        4154.3999
        ],
        [
         "2026-07-07T17:41:19Z",
@@ -144156,162 +143484,162 @@
         4127.0
        ],
        [
-        "2026-07-07T20:26:50Z",
-        4121.2002
+        "2026-07-07T20:50:46Z",
+        4115.5
        ],
        [
         "2026-07-07T22:00:00Z",
         4114.1001
        ],
        [
-        "2026-07-07T22:42:18Z",
-        4111.7002
+        "2026-07-07T23:00:00Z",
+        4109.1001
        ],
        [
         "2026-07-07T23:35:23Z",
         4112.3999
        ],
        [
-        "2026-07-08T00:02:07Z",
-        4108.7998
+        "2026-07-08T00:14:53Z",
+        4110.2002
        ],
        [
         "2026-07-08T01:00:00Z",
         4126.3999
        ],
        [
-        "2026-07-08T01:29:13Z",
-        4115.7998
+        "2026-07-08T01:55:14Z",
+        4120.1001
        ],
        [
-        "2026-07-08T02:21:19Z",
-        4125.0
+        "2026-07-08T02:30:40Z",
+        4128.8999
        ],
        [
         "2026-07-08T03:05:14Z",
         4136.5
        ],
        [
-        "2026-07-08T03:45:05Z",
-        4137.7998
+        "2026-07-08T04:00:00Z",
+        4139.2002
        ],
        [
         "2026-07-08T04:38:12Z",
         4138.2998
        ],
        [
-        "2026-07-08T05:07:18Z",
-        4144.0
+        "2026-07-08T05:30:25Z",
+        4136.3999
        ],
        [
         "2026-07-08T06:01:45Z",
         4138.7002
        ],
        [
-        "2026-07-08T06:37:47Z",
-        4136.6001
+        "2026-07-08T06:58:57Z",
+        4135.1001
        ],
        [
         "2026-07-08T07:27:35Z",
         4131.3999
        ],
        [
-        "2026-07-08T08:00:00Z",
-        4099.2998
+        "2026-07-08T08:19:47Z",
+        4102.1001
        ],
        [
-        "2026-07-08T08:53:22Z",
-        4079.2
+        "2026-07-08T09:00:00Z",
+        4069.5
        ],
        [
         "2026-07-08T09:45:43Z",
         4058.2
        ],
        [
-        "2026-07-08T10:14:00Z",
-        4052.2
+        "2026-07-08T10:25:25Z",
+        4061.5
        ],
        [
         "2026-07-08T11:00:00Z",
         4059.3
        ],
        [
-        "2026-07-08T11:40:58Z",
-        4054.5
+        "2026-07-08T12:00:00Z",
+        4075.1001
        ],
        [
         "2026-07-08T12:35:26Z",
         4082.2
        ],
        [
-        "2026-07-08T13:05:13Z",
-        4088.5
+        "2026-07-08T13:33:13Z",
+        4089.2
        ],
        [
-        "2026-07-08T14:01:10Z",
-        4077.0
+        "2026-07-08T14:10:35Z",
+        4072.1001
        ],
        [
-        "2026-07-08T14:52:05Z",
-        4053.1001
+        "2026-07-08T15:00:00Z",
+        4047.3
        ],
        [
-        "2026-07-08T15:31:27Z",
-        4033.8
+        "2026-07-08T15:57:53Z",
+        4042.7
        ],
        [
-        "2026-07-08T16:00:00Z",
-        4051.0
+        "2026-07-08T16:26:45Z",
+        4051.1001
        ],
        [
-        "2026-07-08T17:00:00Z",
-        4070.3
+        "2026-07-08T17:02:13Z",
+        4071.3999
        ],
        [
         "2026-07-08T17:54:18Z",
         4078.1001
        ],
        [
-        "2026-07-08T18:25:32Z",
-        4079.0
+        "2026-07-08T18:47:33Z",
+        4095.7
        ],
        [
-        "2026-07-08T19:19:31Z",
-        4096.1001
+        "2026-07-08T19:24:43Z",
+        4097.2998
        ],
        [
-        "2026-07-08T19:55:41Z",
-        4092.3
-       ],
-       [
-        "2026-07-08T20:49:36Z",
-        4085.6001
-       ],
-       [
-        "2026-07-08T22:16:53Z",
-        4088.7
-       ],
-       [
-        "2026-07-08T23:00:00Z",
+        "2026-07-08T20:00:00Z",
         4086.3999
        ],
        [
-        "2026-07-08T23:46:53Z",
-        4081.1001
+        "2026-07-08T20:59:59Z",
+        4086.6001
        ],
        [
-        "2026-07-09T00:39:30Z",
+        "2026-07-08T22:25:11Z",
+        4084.0
+       ],
+       [
+        "2026-07-08T23:16:25Z",
+        4086.3999
+       ],
+       [
+        "2026-07-09T00:00:00Z",
         4088.8
        ],
        [
-        "2026-07-09T01:12:33Z",
-        4084.8
+        "2026-07-09T00:46:41Z",
+        4086.3
+       ],
+       [
+        "2026-07-09T01:16:55Z",
+        4083.8
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:23:54Z",
+    "observed_utc": "2026-07-09T01:28:26Z",
     "anchor_beat": "2026-07-07T16:30:00Z"
    },
    "lead_image": {
@@ -146564,7 +145892,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:27:08Z",
+    "observed_utc": "2026-07-09T01:31:37Z",
     "anchor_beat": "2026-07-07T13:44:29Z"
    },
    "lead_image": {
@@ -147761,7 +147089,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:27:39Z",
+    "observed_utc": "2026-07-09T01:32:07Z",
     "anchor_beat": "2026-07-07T12:35:00Z"
    },
    "lead_image": {
@@ -149475,7 +148803,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:30:44Z",
+    "observed_utc": "2026-07-09T01:35:07Z",
     "anchor_beat": "2026-07-07T15:46:36Z"
    },
    "gate": {
@@ -150255,7 +149583,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:30:55Z",
+    "observed_utc": "2026-07-09T01:35:18Z",
     "anchor_beat": "2026-07-07T16:57:54Z"
    },
    "lead_image": {
@@ -151178,7 +150506,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:31:39Z",
+    "observed_utc": "2026-07-09T01:35:59Z",
     "anchor_beat": "2026-07-07T08:46:39Z"
    },
    "lead_image": {
@@ -154019,7 +153347,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:36:27Z",
+    "observed_utc": "2026-07-09T01:40:44Z",
     "anchor_beat": "2026-07-07T09:54:38Z"
    },
    "lead_image": {
@@ -154411,6 +153739,712 @@
      "x": 51,
      "y": 14
     }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "terawulf-lease-deal",
+   "name": "TeraWulf Lease Deal",
+   "bucket": "tech",
+   "topic_tags": [
+    "ai"
+   ],
+   "brief": {
+    "generated_utc": "2026-07-07T13:51:37Z",
+    "sentence_count": 6,
+    "dropped_count": 1,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Anthropic and TeraWulf signed a 20-year, $19 billion lease for an AI infrastructure campus in Kentucky.",
+        "cites": [
+         {
+          "outlet": "The Register",
+          "kind": "journalist",
+          "url": "https://www.theregister.com/ai-and-ml/2026/07/07/ai-startup-thats-never-turned-a-profit-says-itll-totally-be-around-in-2047-to-close-its-19b-lease/5267385",
+          "ts": "2026-07-07T01:37:35Z",
+          "title": "AI startup that\u2019s never turned a profit say's it'll totally be around in 2047 to close its $19B lease"
+         },
+         {
+          "outlet": "Blockspace",
+          "kind": "journalist",
+          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
+          "ts": "2026-07-06T14:20:16Z",
+          "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million"
+         },
+         {
+          "outlet": "Investor's Business Daily",
+          "kind": "journalist",
+          "url": "https://www.investors.com/news/anthropic-terawulf-ai-data-center-lease-neocloud-coreweave-iren/?src=A00220&yptr=yahoo",
+          "ts": "2026-07-06T13:45:30Z",
+          "title": "TeraWulf, Anthropic Sign $19 Billion Data Center Lease. Neocloud Stocks Soar."
+         },
+         {
+          "outlet": "Investing.com",
+          "kind": "journalist",
+          "url": "https://www.investing.com/news/stock-market-news/terawulf-jumps-on-19-billion-data-center-lease-deal-with-anthropic-4776761",
+          "ts": "2026-07-06T13:36:34Z",
+          "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic"
+         },
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-jumps-19-billion-data-133531275.html",
+          "ts": "2026-07-06T13:35:31Z",
+          "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic"
+         },
+         {
+          "outlet": "The Wall Street Journal",
+          "kind": "journalist",
+          "url": "https://www.wsj.com/finance/investing/terawulf-signs-19-billion-lease-with-anthropic-for-ai-infrastructure-campus-ef26be27?siteid=yhoof2&yptr=yahoo",
+          "ts": "2026-07-06T13:07:00Z",
+          "title": "TeraWulf Signs $19 Billion Lease With Anthropic for AI-Infrastructure Campus"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The deal covers 401 megawatts of capacity at TeraWulf's Kentucky data campus.",
+        "cites": [
+         {
+          "outlet": "Blockspace",
+          "kind": "journalist",
+          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
+          "ts": "2026-07-06T14:20:16Z",
+          "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million"
+         },
+         {
+          "outlet": "CNBC",
+          "kind": "journalist",
+          "url": "https://www.cnbc.com/2026/07/06/anthropic-terawulf-data-center-ai.html",
+          "ts": "2026-07-06T12:54:48Z",
+          "title": "TeraWulf shares soar after Anthropic leases data center in Kentucky"
+         }
+        ]
+       },
+       {
+        "text": "Alongside the lease, TeraWulf said it would sell its Abernathy stake for $530 million.",
+        "cites": [
+         {
+          "outlet": "Blockspace",
+          "kind": "journalist",
+          "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
+          "ts": "2026-07-06T14:20:16Z",
+          "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "TeraWulf had operated as a crypto mining company before pivoting to AI data center infrastructure.",
+        "cites": [
+         {
+          "outlet": "CNBC",
+          "kind": "journalist",
+          "url": "https://www.cnbc.com/2026/07/06/anthropic-terawulf-data-center-ai.html",
+          "ts": "2026-07-06T12:54:48Z",
+          "title": "TeraWulf shares soar after Anthropic leases data center in Kentucky"
+         }
+        ]
+       },
+       {
+        "text": "The announcement lifted neocloud stocks broadly.",
+        "cites": [
+         {
+          "outlet": "Investor's Business Daily",
+          "kind": "journalist",
+          "url": "https://www.investors.com/news/anthropic-terawulf-ai-data-center-lease-neocloud-coreweave-iren/?src=A00220&yptr=yahoo",
+          "ts": "2026-07-06T13:45:30Z",
+          "title": "TeraWulf, Anthropic Sign $19 Billion Data Center Lease. Neocloud Stocks Soar."
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The Register raised a pointed question: Anthropic has never turned a profit, and the deal would not close until 2047.",
+        "cites": [
+         {
+          "outlet": "The Register",
+          "kind": "journalist",
+          "url": "https://www.theregister.com/ai-and-ml/2026/07/07/ai-startup-thats-never-turned-a-profit-says-itll-totally-be-around-in-2047-to-close-its-19b-lease/5267385",
+          "ts": "2026-07-07T01:37:35Z",
+          "title": "AI startup that\u2019s never turned a profit say's it'll totally be around in 2047 to close its $19B lease"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 0,
+   "items_48h": 1,
+   "outlets": 1,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-07T14:15:29Z",
+     "title": "Citi Assigns Buy Rating to TeraWulf (WULF)",
+     "outlet": "Insider Monkey",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/citi-assigns-buy-rating-terawulf-141529766.html",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T23:37:35Z",
+     "title": "AI startup that\u2019s never turned a profit say's it'll totally be around in 2047 to close its $19B lease",
+     "outlet": "The Register",
+     "kind": "journalist",
+     "url": "https://www.theregister.com/ai-and-ml/2026/07/07/ai-startup-thats-never-turned-a-profit-says-itll-totally-be-around-in-2047-to-close-its-19b-lease/5267385",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T18:19:43Z",
+     "title": "Terawulf Stock Surges After Kentucky Data Center Deal With Anthropic",
+     "outlet": "Schaeffer's Investment Research",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/terawulf-stock-surges-kentucky-data-181943742.html",
+     "rel": 28,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T14:20:16Z",
+     "title": "TeraWulf signs 20-year Anthropic lease for 401 MW at Kentucky data campus, sells Abernathy stake for $530 million",
+     "outlet": "Blockspace",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-signs-20-anthropic-lease-142016478.html",
+     "rel": 28,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T13:45:30Z",
+     "title": "TeraWulf, Anthropic Sign $19 Billion Data Center Lease. Neocloud Stocks Soar.",
+     "outlet": "Investor's Business Daily",
+     "kind": "journalist",
+     "url": "https://www.investors.com/news/anthropic-terawulf-ai-data-center-lease-neocloud-coreweave-iren/?src=A00220&yptr=yahoo",
+     "rel": 32,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T13:43:00Z",
+     "title": "Anthropic To Lease TeraWulf Data Centre",
+     "outlet": "CryptoProwl",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-lease-terawulf-data-centre-134300232.html",
+     "rel": 28,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T13:36:34Z",
+     "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/stock-market-news/terawulf-jumps-on-19-billion-data-center-lease-deal-with-anthropic-4776761",
+     "rel": 32,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-06T13:35:31Z",
+     "title": "TeraWulf jumps on $19 billion data center lease deal with Anthropic",
+     "outlet": "Reuters",
+     "kind": "wire service",
+     "url": "https://finance.yahoo.com/technology/ai/articles/terawulf-jumps-19-billion-data-133531275.html",
+     "rel": 32,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 10,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "CNBC",
+      "ts": "2026-07-06T12:54:48Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "US financial press",
+      "items": 1
+     },
+     {
+      "outlet": "The Wall Street Journal",
+      "ts": "2026-07-06T13:07:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 1
+     },
+     {
+      "outlet": "Reuters",
+      "ts": "2026-07-06T13:35:31Z",
+      "kind": "wire service",
+      "role": "echo",
+      "motive_note": "international wire service",
+      "items": 1
+     },
+     {
+      "outlet": "Investing.com",
+      "ts": "2026-07-06T13:36:34Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CryptoProwl",
+      "ts": "2026-07-06T13:43:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Investor's Business Daily",
+      "ts": "2026-07-06T13:45:30Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Blockspace",
+      "ts": "2026-07-06T14:20:16Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Schaeffer's Investment Research",
+      "ts": "2026-07-06T18:19:43Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Insider Monkey",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Schaeffer's Investment Research",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "The Register",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-06 12:00",
+      7,
+      7
+     ],
+     [
+      "2026-07-06 18:00",
+      7,
+      7
+     ],
+     [
+      "2026-07-07 00:00",
+      8,
+      8
+     ],
+     [
+      "2026-07-07 06:00",
+      8,
+      8
+     ],
+     [
+      "2026-07-07 12:00",
+      8,
+      9
+     ],
+     [
+      "2026-07-07 18:00",
+      2,
+      9
+     ],
+     [
+      "2026-07-08 00:00",
+      2,
+      10
+     ],
+     [
+      "2026-07-08 06:00",
+      1,
+      10
+     ],
+     [
+      "2026-07-08 12:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-08 18:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-09 00:00",
+      0,
+      2
+     ]
+    ],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 3
+    },
+    "first_seen": "2026-07-06T14:25:57Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
+    "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 2
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "NVDA",
+      "label": "Nvidia",
+      "class": "equity",
+      "last": 204.12,
+      "last_ts": "2026-07-08T20:00:00Z",
+      "basis": "TeraWulf Anthropic lease",
+      "move_pct": 2.9,
+      "window_h": 24,
+      "measured_from": "2026-07-07T14:15:29Z",
+      "series": [
+       [
+        "2026-07-07T13:30:00Z",
+        192.18
+       ],
+       [
+        "2026-07-07T13:30:02Z",
+        192.0227
+       ],
+       [
+        "2026-07-07T13:51:56Z",
+        191.9599
+       ],
+       [
+        "2026-07-07T13:58:09Z",
+        191.84
+       ],
+       [
+        "2026-07-07T14:22:38Z",
+        192.03
+       ],
+       [
+        "2026-07-07T14:27:24Z",
+        191.52
+       ],
+       [
+        "2026-07-07T14:30:00Z",
+        191.95
+       ],
+       [
+        "2026-07-07T14:48:28Z",
+        191.995
+       ],
+       [
+        "2026-07-07T15:03:50Z",
+        192.65
+       ],
+       [
+        "2026-07-07T15:14:57Z",
+        193.08
+       ],
+       [
+        "2026-07-07T15:39:39Z",
+        193.0359
+       ],
+       [
+        "2026-07-07T15:47:14Z",
+        193.915
+       ],
+       [
+        "2026-07-07T16:06:30Z",
+        195.32
+       ],
+       [
+        "2026-07-07T16:26:11Z",
+        196.735
+       ],
+       [
+        "2026-07-07T16:30:00Z",
+        197.79
+       ],
+       [
+        "2026-07-07T16:33:52Z",
+        197.67
+       ],
+       [
+        "2026-07-07T16:58:38Z",
+        196.645
+       ],
+       [
+        "2026-07-07T17:02:07Z",
+        197.63
+       ],
+       [
+        "2026-07-07T17:24:26Z",
+        197.92
+       ],
+       [
+        "2026-07-07T17:30:00Z",
+        197.865
+       ],
+       [
+        "2026-07-07T17:51:21Z",
+        197.95
+       ],
+       [
+        "2026-07-07T18:08:58Z",
+        197.325
+       ],
+       [
+        "2026-07-07T18:19:43Z",
+        197.59
+       ],
+       [
+        "2026-07-07T18:30:00Z",
+        197.0779
+       ],
+       [
+        "2026-07-07T18:43:36Z",
+        197.0327
+       ],
+       [
+        "2026-07-07T18:46:21Z",
+        197.185
+       ],
+       [
+        "2026-07-07T19:12:00Z",
+        196.3799
+       ],
+       [
+        "2026-07-07T19:13:50Z",
+        196.52
+       ],
+       [
+        "2026-07-07T19:30:00Z",
+        196.04
+       ],
+       [
+        "2026-07-07T19:38:33Z",
+        196.09
+       ],
+       [
+        "2026-07-07T20:00:00Z",
+        196.93
+       ],
+       [
+        "2026-07-08T13:30:00Z",
+        197.655
+       ],
+       [
+        "2026-07-08T13:43:17Z",
+        198.025
+       ],
+       [
+        "2026-07-08T13:47:20Z",
+        199.35
+       ],
+       [
+        "2026-07-08T14:11:12Z",
+        197.0808
+       ],
+       [
+        "2026-07-08T14:20:40Z",
+        197.4
+       ],
+       [
+        "2026-07-08T14:30:00Z",
+        196.95
+       ],
+       [
+        "2026-07-08T14:40:43Z",
+        196.94
+       ],
+       [
+        "2026-07-08T15:02:07Z",
+        198.66
+       ],
+       [
+        "2026-07-08T15:11:18Z",
+        197.94
+       ],
+       [
+        "2026-07-08T15:37:26Z",
+        197.66
+       ],
+       [
+        "2026-07-08T15:41:27Z",
+        197.52
+       ],
+       [
+        "2026-07-08T16:07:57Z",
+        197.75
+       ],
+       [
+        "2026-07-08T16:09:19Z",
+        197.59
+       ],
+       [
+        "2026-07-08T16:30:00Z",
+        199.4
+       ],
+       [
+        "2026-07-08T16:36:48Z",
+        199.24
+       ],
+       [
+        "2026-07-08T16:36:56Z",
+        199.22
+       ],
+       [
+        "2026-07-08T17:04:21Z",
+        200.34
+       ],
+       [
+        "2026-07-08T17:12:17Z",
+        200.915
+       ],
+       [
+        "2026-07-08T17:30:00Z",
+        202.97
+       ],
+       [
+        "2026-07-08T17:48:02Z",
+        202.2912
+       ],
+       [
+        "2026-07-08T18:04:31Z",
+        202.5894
+       ],
+       [
+        "2026-07-08T18:22:48Z",
+        202.68
+       ],
+       [
+        "2026-07-08T18:30:00Z",
+        202.3
+       ],
+       [
+        "2026-07-08T18:35:37Z",
+        202.395
+       ],
+       [
+        "2026-07-08T18:57:36Z",
+        203.38
+       ],
+       [
+        "2026-07-08T19:05:24Z",
+        204.73
+       ],
+       [
+        "2026-07-08T19:29:41Z",
+        204.44
+       ],
+       [
+        "2026-07-08T19:30:00Z",
+        204.32
+       ],
+       [
+        "2026-07-08T19:34:52Z",
+        204.44
+       ],
+       [
+        "2026-07-08T20:00:00Z",
+        204.12
+       ]
+      ]
+     }
+    ],
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-07-09T01:41:39Z",
+    "anchor_beat": "2026-07-07T14:15:29Z"
    },
    "gate": {
     "score": 4,
@@ -155418,7 +155452,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:38:17Z",
+    "observed_utc": "2026-07-09T01:42:34Z",
     "anchor_beat": "2026-07-07T21:10:00Z"
    },
    "lead_image": {
@@ -156249,7 +156283,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:20Z",
+    "observed_utc": "2026-07-09T01:43:35Z",
     "anchor_beat": "2026-07-07T09:28:11Z"
    },
    "lead_image": {
@@ -156694,7 +156728,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:39:34Z",
+    "observed_utc": "2026-07-09T01:43:49Z",
     "anchor_beat": "2026-07-07T16:23:14Z"
    },
    "lead_image": {
@@ -158638,7 +158672,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:29:01Z",
+    "observed_utc": "2026-07-09T01:33:28Z",
     "anchor_beat": "2026-07-06T09:26:03Z"
    },
    "gate": {
@@ -159510,7 +159544,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:30:49Z",
+    "observed_utc": "2026-07-09T01:35:12Z",
     "anchor_beat": "2026-07-06T16:50:52Z"
    },
    "lead_image": {
@@ -161059,7 +161093,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:32:16Z",
+    "observed_utc": "2026-07-09T01:36:35Z",
     "anchor_beat": "2026-07-06T21:33:45Z"
    },
    "gate": {
@@ -162655,7 +162689,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:33:18Z",
+    "observed_utc": "2026-07-09T01:37:36Z",
     "anchor_beat": "2026-07-02T21:56:08Z"
    },
    "gate": {
@@ -164480,7 +164514,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:34:09Z",
+    "observed_utc": "2026-07-09T01:38:26Z",
     "anchor_beat": "2026-07-07T00:00:00Z"
    },
    "lead_image": {
@@ -166088,7 +166122,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:35:22Z",
+    "observed_utc": "2026-07-09T01:39:37Z",
     "anchor_beat": "2026-07-06T07:53:07Z"
    },
    "lead_image": {
@@ -167699,7 +167733,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:35:32Z",
+    "observed_utc": "2026-07-09T01:39:47Z",
     "anchor_beat": "2026-07-06T09:55:03Z"
    },
    "lead_image": {
@@ -169357,7 +169391,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:35:57Z",
+    "observed_utc": "2026-07-09T01:40:13Z",
     "anchor_beat": "2026-07-06T04:24:53Z"
    },
    "lead_image": {
@@ -170099,7 +170133,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:36:52Z",
+    "observed_utc": "2026-07-09T01:41:10Z",
     "anchor_beat": "2026-07-06T09:00:01Z"
    },
    "lead_image": {
@@ -171234,7 +171268,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:36:58Z",
+    "observed_utc": "2026-07-09T01:41:15Z",
     "anchor_beat": "2026-07-06T11:35:13Z"
    },
    "lead_image": {
@@ -171872,7 +171906,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:37:19Z",
+    "observed_utc": "2026-07-09T01:41:34Z",
     "anchor_beat": "2026-07-05T23:15:00Z"
    },
    "gate": {
@@ -173171,7 +173205,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:37:52Z",
+    "observed_utc": "2026-07-09T01:42:09Z",
     "anchor_beat": "2026-07-06T18:45:23Z"
    },
    "lead_image": {
@@ -174680,7 +174714,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-09T01:38:43Z",
+    "observed_utc": "2026-07-09T01:42:58Z",
     "anchor_beat": "2026-07-06T21:10:00Z"
    },
    "gate": {
@@ -175538,7 +175572,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-09T01:40:10Z",
+    "observed_utc": "2026-07-09T01:44:26Z",
     "anchor_beat": null
    },
    "gate": {
@@ -175637,56 +175671,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Starmer gifted gun and ammunition by Turkish president at Nato",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "World leaders, dignitaries pay tribute to America on historic 250th birthday",
-   "outlets": 5,
-   "count": 9,
-   "status": "watching"
-  },
-  {
-   "sample": "Japan's war memory: Remembering pain, forgetting responsibility",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Blue Origin, for the first time, is expected to raise private capital",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "The FTC Settlement With John Deere Is a Huge Win for the Right-to-Repair Movement",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Alphaville LLC initiates coverage of SpaceX with Buy recommendation",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Are stablecoins money?",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "NASA's Hubble spots a stellar sparkler for the Fourth of July",
-   "outlets": 4,
-   "count": 7,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -175703,7 +175688,7 @@
   "claims": 4032,
   "carriers": 10549,
   "steelmans": 3681,
-  "deep_reports": 399,
+  "deep_reports": 400,
   "entities": 893,
   "edges": 25014,
   "history_nodes": 557,
@@ -175712,12 +175697,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 127,
-  "accepted": 1,
-  "rejected": 9,
-  "existing": 0,
-  "below": 117,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -175732,6 +175711,6 @@
   "edition_utc": "2026-07-08",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1730
+  "overflow": 1728
  }
 }
