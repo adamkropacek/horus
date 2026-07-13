@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-13T03:33:39Z",
+ "generated_utc": "2026-07-13T03:36:43Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,6 +32,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -78,6 +79,31 @@
     "id": "unnews",
     "label": "UN News",
     "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:ann-widdecombe-murder",
+    "label": "GDELT Ann Widdecombe Murder",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:gaza-israel-war-current",
+    "label": "GDELT Israel-Gaza",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -720,8 +746,8 @@
     ]
    },
    "discovered": true,
-   "items_24h": 97,
-   "items_48h": 174,
+   "items_24h": 95,
+   "items_48h": 173,
    "outlets": 68,
    "kinds": [
     "journalist",
@@ -1445,7 +1471,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran nuclear work sparks concern, Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1460,12 +1486,12 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.38,
-      "last_ts": "2026-07-13T03:04:58Z",
+      "last": 74.42,
+      "last_ts": "2026-07-13T03:07:43Z",
       "basis": "Gulf oil-supply route",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
+      "move_pct": 0.05,
+      "window_h": 24,
+      "measured_from": "2026-07-13T03:05:27Z",
       "series": [
        [
         "2026-07-12T22:00:00Z",
@@ -1570,6 +1596,10 @@
        [
         "2026-07-13T03:04:58Z",
         74.38
+       ],
+       [
+        "2026-07-13T03:07:43Z",
+        74.42
        ]
       ]
      },
@@ -1577,12 +1607,12 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 79.1,
-      "last_ts": "2026-07-13T03:03:42Z",
+      "last": 79.11,
+      "last_ts": "2026-07-13T03:07:19Z",
       "basis": "Gulf oil-supply route",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
+      "move_pct": 0.01,
+      "window_h": 24,
+      "measured_from": "2026-07-13T03:05:27Z",
       "series": [
        [
         "2026-07-12T22:00:00Z",
@@ -1687,12 +1717,16 @@
        [
         "2026-07-13T03:03:42Z",
         79.1
+       ],
+       [
+        "2026-07-13T03:07:19Z",
+        79.11
        ]
       ]
      }
     ],
-    "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:16:17Z",
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-07-13T03:19:23Z",
     "anchor_beat": "2026-07-13T03:05:27Z"
    },
    "lead_image": {
@@ -2441,7 +2475,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Ann Widdecombe Murder, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -3869,7 +3903,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://static.themoscowtimes.com/image/og/f4/93228__f453499590101702c54190af77b874c0.jpg",
@@ -5015,7 +5049,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -5023,10 +5057,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 79.1,
-      "last_ts": "2026-07-13T03:03:42Z",
+      "last": 79.11,
+      "last_ts": "2026-07-13T03:07:19Z",
       "basis": "Middle East conflict risk",
-      "move_pct": -0.25,
+      "move_pct": -0.24,
       "window_h": 24,
       "measured_from": "2026-07-13T02:38:04Z",
       "series": [
@@ -5133,6 +5167,10 @@
        [
         "2026-07-13T03:03:42Z",
         79.1
+       ],
+       [
+        "2026-07-13T03:07:19Z",
+        79.11
        ]
       ]
      },
@@ -5140,10 +5178,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.38,
-      "last_ts": "2026-07-13T03:04:58Z",
+      "last": 74.42,
+      "last_ts": "2026-07-13T03:07:43Z",
       "basis": "Oil supply disruption",
-      "move_pct": -0.2,
+      "move_pct": -0.15,
       "window_h": 24,
       "measured_from": "2026-07-13T02:38:04Z",
       "series": [
@@ -5250,6 +5288,10 @@
        [
         "2026-07-13T03:04:58Z",
         74.38
+       ],
+       [
+        "2026-07-13T03:07:43Z",
+        74.42
        ]
       ]
      },
@@ -5257,10 +5299,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4072.0,
-      "last_ts": "2026-07-13T03:05:01Z",
+      "last": 4068.1001,
+      "last_ts": "2026-07-13T03:07:47Z",
       "basis": "Safe haven demand",
-      "move_pct": -0.11,
+      "move_pct": -0.21,
       "window_h": 24,
       "measured_from": "2026-07-13T02:38:04Z",
       "series": [
@@ -5367,6 +5409,10 @@
        [
         "2026-07-13T03:05:01Z",
         4072.0
+       ],
+       [
+        "2026-07-13T03:07:47Z",
+        4068.1001
        ]
       ]
      },
@@ -5625,7 +5671,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:15:51Z",
+    "observed_utc": "2026-07-13T03:18:58Z",
     "anchor_beat": "2026-07-13T02:38:04Z"
    },
    "lead_image": {
@@ -6553,7 +6599,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT SpaceX IPO Musk first trillionaire, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -6581,1799 +6627,6 @@
      "report": 1,
      "theories": 0,
      "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "taiwan-strait-tensions-current",
-   "name": "Taiwan Strait",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "diplomacy",
-    "weapons"
-   ],
-   "brief": {
-    "generated_utc": "2026-07-04T15:17:15Z",
-    "sentence_count": 14,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Beijing rotated a new coast guard task force into waters east of Taiwan on Saturday, the second such deployment in about a month, in a move that drew international pushback and sharpened the diplomatic dispute over the island.",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3359426/beijing-sends-new-coastguard-force-waters-east-taiwan?utm_source=rss_feed",
-          "ts": "2026-07-04T12:32:44Z",
-          "title": "Beijing sends new coastguard force into waters east of Taiwan"
-         },
-         {
-          "outlet": "The Hindu Intl",
-          "kind": "journalist",
-          "url": "https://www.thehindu.com/news/international/china-launches-coast-guard-patrol-east-of-taiwan-despite-international-pushback/article71181868.ece",
-          "ts": "2026-07-04T12:06:03Z",
-          "title": "China launches coast guard patrol east of Taiwan despite international pushback"
-         },
-         {
-          "outlet": "Daily Pioneer",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQi1uZ2l1d1VDMWEydHAtRGRDWkRLY3V2NmdDaVBzclA4R3ZUdTdVdlVDQ3VuSHJlSXh6QWhSTFl0N2ZtLWEtN0RWUXF1elYtNFBBTXNWVDJwYmp2QVk5WDFub3lHNUlqQVp1a3VTdzdzUXdJZjYxUWVobm1rSU5KOTJBbGhtZ3o4cVVkeWhTREFlby1GRElKLXoxYVpYVHN0RDRzRnlOLXZjcWZ3WEhDRVNn?oc=5",
-          "ts": "2026-07-04T11:49:44Z",
-          "title": "China launches new coast guard patrol east of Taiwan amid rising regional tensions"
-         },
-         {
-          "outlet": "Devdiscourse",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOU000SzRUckhaU1BlMzctOFBka19ndWRibF9Nb2IwSlNaejZCTGlNaWJ4cFpEbFlkanBIRlRUeTI3Z0w1QmpaRkdFRjlUMkFhbzJJWndFRzk2VFJyQkN6c0hySWVQdC1vRTBnek5RcTg4LThHQVNvS21LU3ZRd0xyQ05Pck1COVFNSXpxalZIcXFFTk9kV2FpTUdLX2NhRXFiRmJQMHIzc0ZWaS1ld3NGeXd2TEx6SWpGTkRJaHdJQVBjcUZ6YTJF0gHHAUFVX3lxTE5TTTRLNFRySFpTUGUzNy04UGRrX2d1ZGJsX01vYjBKU1p6NkJMaU1pYnhwWkRsWWRqcEhGVFR5MjdnTDVCalpGR0VGOVQyQWFvMklad0VHOTZUUnJCQ3pzSHJJZVB0LW9FMGd6TlFxODgtOEdBU29LbUtTdlF3THJDTk9yTUI5UU1JenFqVkhxcUVOT2RXYWlNR0tfY2FFcWJGYlAwcjNzRlZpLWV3c0Z5d3ZMTHpJakZORElod0lBUGNxRnphMkU?oc=5",
-          "ts": "2026-07-04T07:00:35Z",
-          "title": "Taiwan In Tension: China's Coast Guard Patrol Sparks Diplomatic Dispute"
-         },
-         {
-          "outlet": "Crypto Briefing",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb0RmR2RrQThicjhMLTAwUF91eWtfS0RHYzRqYXVIMTMxUlNaX0swTkJhUnYya3NaeUdfZTM5S2lDV2x4MzdBNS1lVWtKTjRmNHRVNk9SWUVCUnBScHdPeEkzcHFNX3NSX1BHN3ZfclVaR3c2bVNKcS1PeDI5dEtpYWRtdlJiWFd4cm02dHE5NUNzRjRVcUxVN2ZBd1dFQmdF?oc=5",
-          "ts": "2026-07-04T04:31:51Z",
-          "title": "China launches coast guard patrol east of Taiwan amid regional tensions"
-         },
-         {
-          "outlet": "Devdiscourse",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOem02eXl3Z2h3QU94R2xfdW9wdlIxVFp3SHMxZk1XQXRGcDZ0dkhabUp0eHdSa0dGN192ZXB0NmpDQ1gweUVIRTRFcEJiNFVlSWZJNk9uWWRqWkgtSldKTU1JWDhxcEVISUxZTnZqdk9DRndMQl9sckpTMkRrSmthWHJVQWZLR3dYbC02MWdqZjZxWEFvZnhwMlRmSTVWTk4zZWNCeEpkTGxaY09ISEtuVnJPWk95QdIBtgFBVV95cUxOem02eXl3Z2h3QU94R2xfdW9wdlIxVFp3SHMxZk1XQXRGcDZ0dkhabUp0eHdSa0dGN192ZXB0NmpDQ1gweUVIRTRFcEJiNFVlSWZJNk9uWWRqWkgtSldKTU1JWDhxcEVISUxZTnZqdk9DRndMQl9sckpTMkRrSmthWHJVQWZLR3dYbC02MWdqZjZxWEFvZnhwMlRmSTVWTk4zZWNCeEpkTGxaY09ISEtuVnJPWk95QQ?oc=5",
-          "ts": "2026-07-04T04:17:33Z",
-          "title": "Tensions Rise Over China's Coast Guard Patrol Near Taiwan"
-         }
-        ]
-       },
-       {
-        "text": "China's Maritime Police said the patrols are carried out to protect the legitimate interests, as well as the lives and property of Chinese fishermen, including what it termed Taiwanese compatriots.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/world/2155469",
-          "ts": "2026-07-04T06:50:50Z",
-          "title": "Chinese Maritime Police to increase activity in waters east of Taiwan"
-         }
-        ]
-       },
-       {
-        "text": "The rotation came days after China's top diplomat urged Washington to exercise utmost prudence on the self-governed island, and close on the heels of high-level talks with the Philippines in which Beijing pressed Manila to match words with deeds.",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/china/diplomacy/article/3359426/beijing-sends-new-coastguard-force-waters-east-taiwan?utm_source=rss_feed",
-          "ts": "2026-07-04T12:32:44Z",
-          "title": "Beijing sends new coastguard force into waters east of Taiwan"
-         }
-        ]
-       },
-       {
-        "text": "Australia said it had raised concerns about the activities directly with Chinese officials, describing them as part of a new strategy.",
-        "cites": [
-         {
-          "outlet": "ABC News AU",
-          "kind": "journalist",
-          "url": "https://www.abc.net.au/news/2026-07-03/australia-concerns-about-china-action-east-of-taiwan/106877030",
-          "ts": "2026-07-03T08:03:05Z",
-          "title": "China's latest activities near Taiwan indicate new strategy"
-         },
-         {
-          "outlet": "ABC News & Headlines - Australian Broadcasting Corporation",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWW42VjA4UEhZY1VNUmlVUlhXMG14T09QUnNRc01kYnVwOXhLMXJ5TGlBbEMyU1F3RFgwd3E3SU9yT2ZqRlltSk5VcHdXS2NFOWJUNXdjY2RwUUk1OEVEelJDTWtuUldEeVJReWlWNFl0Y0pUYUlsb1ZHVGdnY2hiNzQydmZEeTlCdm9TZDQ2UUpPdnd1V3lYQWx3TngtWi1uQ0NR?oc=5",
-          "ts": "2026-07-03T08:03:05Z",
-          "title": "China's latest activities near Taiwan indicate new strategy - ABC News & Headlines - Australian Broadcasting Corporation"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "A US de facto envoy urged Taiwan to build what he called a hornet's nest of drones to deter China.",
-        "cites": [
-         {
-          "outlet": "\u6bce\u65e5\u65b0\u805e",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CUU5rc0NNSXptWHo3LVRHajhFNndST3NuSGFUZnNTVUYtS3JQMzlENm4wbFBzeWU3RGhIVWxDakoxaG9KQzdlQVR2OHZfRks0Z0xiQkdrajdmaTVraVdJMnI5bTdxTWhJc2FmcVpmMzR5NlE?oc=5",
-          "ts": "2026-07-03T01:01:03Z",
-          "title": "US de facto envoy calls for Taiwan to become \"hornet's nest\" of drones"
-         },
-         {
-          "outlet": "Taipei Times",
-          "kind": "journalist",
-          "url": "https://www.taipeitimes.com/News/front/archives/2026/07/03/2003860149",
-          "ts": "2026-07-02T17:07:14Z",
-          "title": "Taiwan needs a \u2018hornet\u2019s nest\u2019 of drones: US envoy"
-         },
-         {
-          "outlet": "Modern Diplomacy",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWm00VW5Zc3RYVXNab3kwX3B6TjQ0eFJ1YXpyVVVfRkMwbFBKVFhlSTlvQWFNWjlYQlNzOXU4bGpoYS1adnNoVVJnWmZua013c3hreHByZ3lWUWxNVWZMYS1pc2RJcDlXT3NXRjFWUTJNYUQtUkhkU1E2Tk1WUGhESDJGeC11ZlNUME00aVlPaDREclBPTGhaLXlzRk16bTRrS2xxRl9XOENmOFE?oc=5",
-          "ts": "2026-07-02T07:06:25Z",
-          "title": "US Envoy Urges Taiwan to Build \u2018Hornet\u2019s Nest\u2019 of Drones to Deter China"
-         }
-        ]
-       },
-       {
-        "text": "Beijing, for its part, condemned Taiwan over the maritime dispute and emphasised its territorial claims.",
-        "cites": [
-         {
-          "outlet": "Dimsum Daily",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoWEEyaXJaMFdsbkZyOW9fVG9FTURSQTdPWkhPbTZxRHZFZ0FkMlRmNDJlaGkyWDJBZnhnWE1scmczZjRHem13SDZrRDJvOGY1OURidGI1OTdIQjE4NXgwWGR5SmUxVnpMUWdlbU14ck9vLUF1Z1gxNFg1bmNZZw?oc=5",
-          "ts": "2026-07-02T07:48:37Z",
-          "title": "Beijing condemns Taiwan over maritime dispute"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Taiwan staged its biggest crisis drill in the same window, rehearsing a scenario combining a Chinese blockade, a major earthquake and cyber warfare.",
-        "cites": [
-         {
-          "outlet": "RBC-Ukraine",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLW1LRnZZSC1tel9hbFZvWk9ucng1UEY3N2c4NmlwRkJFdWlsNjRVSDJOWnA3Q0pjQlVoR1o0WlFXVEZwTkprZHozbG1jTHZVNk8wY3RyU0FMbHNHZndXVmt5YWVIOFRtd09SYnJoVTk5WEVxSHY4UVpRRl9iaDZBZGk4bXZFUFctMk8yVWF1Vzh5NF9jNjBtdQ?oc=5",
-          "ts": "2026-07-04T01:10:56Z",
-          "title": "Taiwan drills for full-scale Chinese invasion as tensions soar"
-         },
-         {
-          "outlet": "WION",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQjJSZGNwYVVucWFOWVEwS1dOdVM3bVI1Z2VQdTc2YzBlXzdWTUVvNlZJRjA4aktDblFXNG1mUl85NlRWbHNvaEpjSE5CLXViQnFoelNXRG9pOEYxc2p2NTExU1E1cjJ6VXVsU2J1Tm1BQnlhQXlGRE9lcVBNbFdDQl9SMEZJNEU1Y1Vyd3hQWVl4cjR2ODhaaGI2cW9DdUJRS0RvYdIBpAFBVV95cUxPQjJSZGNwYVVucWFOWVEwS1dOdVM3bVI1Z2VQdTc2YzBlXzdWTUVvNlZJRjA4aktDblFXNG1mUl85NlRWbHNvaEpjSE5CLXViQnFoelNXRG9pOEYxc2p2NTExU1E1cjJ6VXVsU2J1Tm1BQnlhQXlGRE9lcVBNbFdDQl9SMEZJNEU1Y1Vyd3hQWVl4cjR2ODhaaGI2cW9DdUJRS0RvYQ?oc=5",
-          "ts": "2026-07-03T18:45:06Z",
-          "title": "Taiwan holds biggest crisis drill amid China tensions"
-         },
-         {
-          "outlet": "WION",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNm9lTUJTS0pVdkRjR0NRcHVRRXRLQmJtTzc2QVdRekQ3dmlFazk1Y2lNcFVHUlVlSlU4My03T0hTOXlGUUM1bGhkbTRsUFlQV3l5a0N5Nzgtcl9HeGlOeDA4aC1kLXR3eWVTNVFxRS1QRzdZYmotLWdjRFRNcEFza0wyYVlPYVVkSmZ6NkxvUjB0dzI2a19KYlNUWEtTYTTSAaQBQVVfeXFMT0IyUmRjcGFVbnFhTllRMEtXTnVTN21SNWdlUHU3NmMwZV83Vk1FbzZWSUYwOGpLQ25RVzRtZlJfOTZUVmxzb2hKY0hOQi11YkJxaHpTV0RvaThGMXNqdjUxMVNRNXIyelV1bFNidU5tQUJ5YUF5RkRPZXFQTWxXQ0JfUjBGSTRFNWNVcnd4UFlZeHI0djg4WmhiNnFvQ3VCUUtEb2E?oc=5",
-          "ts": "2026-07-03T18:27:00Z",
-          "title": "Taiwan holds biggest crisis drill amid China tensions"
-         },
-         {
-          "outlet": "WION",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3JWR2tWNHZ1U3RfbjNUVG1tbFllaElLTzJ4X1M0ZEZMOW9VTUs0LTFoUjE2Z2VsdzZFeHZrQ2RMRHVaeDNsRmJPbUlLaE5HbEJTSjBSRkhGZHU1dWtZdHBoX21Nem5BNWRnUzZyODRFYjZmM2tpbUc0UG1fS3hBWjZwZ1dhTzVpVGhBbEZhZE5BcGp2dEZVT0s2NW5UaURZZ3VkY2xYeS1wN1ZNWjk4Vk9pR0jSAbQBQVVfeXFMUEtyVkdrVjR2dVN0X24zVFRtbWxZZWhJS08yeF9TNGRGTDlvVU1LNC0xaFIxNmdlbHc2RXh2a0NkTER1WngzbEZiT21JS2hOR2xCU0owUkZIRmR1NXVrWXRwaF9tTXpuQTVkZ1M2cjg0RWI2ZjNraW1HNFBtX0t4QVo2cGdXYU81aVRoQWxGYWROQXBqdnRGVU9LNjVuVGlEWWd1ZGNsWHktcDdWTVo5OFZPaUdI?oc=5",
-          "ts": "2026-07-03T17:00:42Z",
-          "title": "Taiwan rehearses its worst nightmare: Blockade, quake and cyber war"
-         },
-         {
-          "outlet": "politicstoday.org",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVTQzZXUzR0JTNWV4MEF4Nk4tT2JBX0JvTTRQNVdfamRxQThzSDJJNnk0eFNOQVhZY3Rjd0g0Y2ZjVkxWNVpQQXRJa2JQREEwaTNibGhrOGdPb1FMajBSNE9KYmZaTzg2YXczdlliLU9vZk1xSldEbnpXZFE0QUtlME5kUy1mdzV2djlKSW9TUVR1VWlHMlc2MHhWWFU?oc=5",
-          "ts": "2026-07-03T08:28:33Z",
-          "title": "Taiwan Tests Doomsday Invasion Scenario as China Pressure Intensifies"
-         }
-        ]
-       },
-       {
-        "text": "Reuters reported an exclusive look inside what it called Taiwan's nightmare scenario of blockade, earthquake, sabotage and invasion.",
-        "cites": [
-         {
-          "outlet": "Crypto Briefing",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTWJVOHk5UGRjbGluNGZfQ01xOTFpU1loUWYtNElKZjhLVHZfRkpZMlVDRktDazBoM0ExTW9XVTNXdXBFSXpGZzZnNm9iWEp6S1VqOHRSZEk4NEFOTFBNc0x6ODBicXZpMHlSaFNjNEtpSEJuLW5HSFRIbWlwVGpLajEyazl4WkxyMWVLdmdkSks5eUJ1X29fc3NwcWktdTkzNzlQcjFVQjI?oc=5",
-          "ts": "2026-07-03T03:22:58Z",
-          "title": "Taiwan faces potential Chinese blockade, invasion amid rising tensions: Reuters"
-         },
-         {
-          "outlet": "Global Banking & Finance Review",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUVVhMlNnSjZoRXFFQ18zX05HbTI4aHNHMnRSWnJoTFBsSmQ3Y2c1RVVIZ19DUV9tLWluM19CODBKd0hZX0xPa25KLUt6cHFEZ1lDb0NhR2x6YnRkLVpsc3NESE11NnA3QnFBeVFmN05JY2xlZ0UtbkNZRHdfU1hxZ2VfaXVoRHlRbWRUaDJmSGF2Zk5EcGdkM2ZqeGFpX3YyY01J?oc=5",
-          "ts": "2026-07-03T03:11:56Z",
-          "title": "Inside Taiwan's Nightmare Scenario: Blockade, Disaster & Invasion"
-         },
-         {
-          "outlet": "Investing.com",
-          "kind": "journalist",
-          "url": "https://www.investing.com/news/world-news/exclusiveinside-taiwans-nightmare-scenario-chinese-blockade-earthquake-sabotage-and-invasion-4774988",
-          "ts": "2026-07-03T03:06:50Z",
-          "title": "Exclusive-Inside Taiwan\u2019s nightmare scenario: Chinese blockade, earthquake, sabotage and invasion"
-         },
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNX2tIVDBRWmhSV3BlZlQ1S1Nub0tyOVNaeDMzLS1ZZEF5UkxxMEVadWhQOUotYndyODdxbXJNcGJrekZaZ0hkcVVBdXZEY0VLRE5hdXdQQ2F3UGNmcWpQdXA5UmVBcjhxM3FkX2dLVGhLXzl2emVPOXBaaGJETTdra2dlbnJ2cm5XUDR2cFZXM2lfZmtodGswU2trRnZ3Qnd1WlRvRVJVWTgzNWFVRzYzb1NPdGttWktwY2RWZkFZZzkwQjRxbnc?oc=5",
-          "ts": "2026-07-03T03:05:00Z",
-          "title": "EXCLUSIVE: Inside Taiwan's nightmare scenario: Chinese blockade, earthquake, sabotage and invasion"
-         }
-        ]
-       },
-       {
-        "text": "The government is also requiring reservists to train longer and harder, introducing drones and US-made Himars rocket systems into a revamped 14-day call-up programme to offset worsening troop shortages amid a demographic decline.",
-        "cites": [
-         {
-          "outlet": "South China Morning Post",
-          "kind": "journalist",
-          "url": "https://www.scmp.com/news/china/military/article/3359352/can-taiwan-fix-its-military-manpower-shortage-training-reservists-advanced-weapons?utm_source=rss_feed",
-          "ts": "2026-07-03T22:00:19Z",
-          "title": "Can Taiwan fix its military manpower shortage by training reservists in advanced weapons?"
-         }
-        ]
-       },
-       {
-        "text": "Hindustan Times reported the drills envisaged fighting a war without US support after a warning from Xi Jinping.",
-        "cites": [
-         {
-          "outlet": "Hindustan Times",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMkFxZnRiRmN0dnpZdXFwRkxWVnBGT1lna016UTZ1RGdYZUR6OXg0clpjcWJpRFRETjg1eklOdE9LRlBDVnlvMFJlTWZxWEdtUDZQYXBVZk9EbXBYWjBGVmxWQXNnYXhoeElMVXlwWk1uZWM2VjZhamI3WC1lRUloTVk5TnRVZVI2dWlaQWNqTEhaWFdpZk9wNjRvVlpHRWJpSFRnZTR6dk9ScnpfUFNpcENEUGNIREgzSzR0VkxTcDNacXZKMG9ZcWJtekZqX2FtX3RPa212cE1uWUZXRG9YUHNidmdNQdIB6wFBVV95cUxOc3hNUWxaemktZENGSDVDcDQ3WGJXNmFMV1c3NEQyUDZFRlBMV2VjWmpRYXU3bTMzU2d6X1F4Zm5OZ3FHdUU5Wk1vM2Q0Snlaa1ZHTFZ3M0tFMnFIczZzNkhtcnF4TkktZmZuZUc0QkhYZlgtR0diMUh0TjJtcmNfMUxhcnV3OHVSa05qMmcydHJibnJRc3U4Z2F5cFo2WEdUUC00aUVhSGlNZ1JUd204SmlFbEMwbmZNdmFLUXhTUW4xZV9NUGMxaTlucDB4U0REY1NBMUViM1MwcG5hSEh6QXpqd1JUWlNuUkhJ?oc=5",
-          "ts": "2026-07-03T20:07:08Z",
-          "title": "Spooked Taiwan simulates Chinese invasion, prepares to fight war without US after Xi's warning? | Videos"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Nikkei Asia said the eastward push tests whether Tokyo and Manila can turn coordination into meaningful action, with Beijing betting they cannot.",
-        "cites": [
-         {
-          "outlet": "Nikkei Asia",
-          "kind": "journalist",
-          "url": "https://asia.nikkei.com/opinion/china-s-push-east-of-taiwan-tests-japan-philippines-deterrence",
-          "ts": null,
-          "title": "China's push east of Taiwan tests Japan-Philippines deterrence"
-         }
-        ]
-       },
-       {
-        "text": "In parallel, Taiwan detained Super Micro staff in a probe of alleged smuggling of Nvidia chips, with charges centred on document forgery.",
-        "cites": [
-         {
-          "outlet": "WinBuzzer",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS0d6MDV6a1FTNnFqaGpfbjJZcU9yT0FOY1dELXNuX0JyaFQ4bUI1TWpQQlR3ejlhN2Z0OVBWOHZmd1hwUW1pbzZWYzBYUzNHbi1WRHFTVXVEUzN0V0kwMUNsdVV4a2xrYy15enR5VV82UmxweFhRQzUxcWhic0dIQ1NnalNpMlBTU2xtQUlGNVc3ekhJMTVvenkzQWg?oc=5",
-          "ts": "2026-07-02T16:25:29Z",
-          "title": "Taiwan Detains Super Micro Workers in Nvidia Chip Smuggling Probe"
-         },
-         {
-          "outlet": "The Eastern Herald",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPN0dRNWh4ZFBhcDJsd0RzSnN1c1NEVHVOampVd3c4TmRGZmw0M2V0TC12c0JlQUhreFV1aF9EdUNyejMtUno0MUw0bjhBSm5fLS1NYmwzd2gyb0dpMzhrWXNVS2p1MkdZemk4ZWsyVkhFLXI5VVVuazlOM0FMVlZfTkN0dFFQVWNNVzNpMTRWWk1fZmp0Nlp4Y1Z4aw?oc=5",
-          "ts": "2026-07-02T09:07:16Z",
-          "title": "Taiwan Raided Super Micro Over Nvidia Chip Smuggling. The Charge: Document Forgery."
-         },
-         {
-          "outlet": "simplywall.st",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPd3dKRjV0NkRPU2xCWHlaVFF3ZFdVM3kxazROQUNUMEsyUWliaDRodzI3eHFXT1N4YU1Db3VmT1h1MGpnVGNYWDg2ZmRFdml5cktJWkxpYXF6LU5hZnIwdGh2YTJiZHIzWkl6N2pNcTUwMFJkbzQtLS1ydlpDU3hNQ1E1UEU4dlJqRDRvTmdGSXRIODlQdzJQOGZCTkV2cGx1Q0tCZzA4MVhMd2ktMnM2OFpVODJfcllCS2JPb3VFMWxNUVlzYkdaQzJYYW94Slkw0gHWAUFVX3lxTFBZS1RHTHN5YWlPY0lJVTVZaXJmQ2VQQi1uWU9kSjhvd0l6S0hINC1JRVlLblpDUGU1cE5YUmRhTlpIcEFiWVpxNnI4THhrNmh5Q1BselB6TFpFbmoxR3ZtcHFuS205M1o5ajNyMWZsSmFLamVnQUx1ZmJ2S3BJSDUwREJ2aGpkOU1EdnZ4NmsyR2x3TWt1Ql9mUjd5TEpPdE1wRFhZbU5ST09xOC1hZEFPNGhHX1Z0QjVKMFBUbVRuSm54ODhpTVNVOGlzMFhPaWVxWDg0Q3c?oc=5",
-          "ts": "2026-07-02T08:53:04Z",
-          "title": "Super Micro Computer (SMCI) Faces Escalating Taiwan Probe Over Nvidia Chip Exports"
-         },
-         {
-          "outlet": "Silicon UK",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51U09sVFllYUgtclpXUE5Wamc1Tmd0OTdYZEVNclB3M2xKMVVMMDdpVTlydWh4UUhDOXBJcXAtMlZpUzVvYWNvZG5jT0FSeGZnS2VqdlhkcllQVUtzek1BNGlMaHFWQllxRVczaEFvdUR4TUHSAXhBVV95cUxPOXVoX0U3Y05DM2RyeUdHQjlka0twQ2Z5UHJCb1lzR0h0Tl9wNllOX2ZjeHVPUFE5SUFiWlhZTDUzQVpROE5zb0MtcEtMaWM5Q281WHQ3ME5MRTd2NS0zVnBsZVhaN0NpNTJtSzVWcVViOVZNWFlwVDg?oc=5",
-          "ts": "2026-07-02T07:00:39Z",
-          "title": "Taiwan Detains Two Super Micro Staff In GPU Smuggling Probe"
-         }
-        ]
-       },
-       {
-        "text": "Wealthy Taiwanese are quietly moving billions to Singapore as geopolitical fears reshape Asia's offshore map.",
-        "cites": [
-         {
-          "outlet": "New Fortune Times",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS1ZPMHVSbFJGZi1CckkwZVlBc0lYTnNOcUo2OS1WNzVFZWNjWG41a2R5WnUtd3JDZkd6RHpGTU9GRmpkNjZnRGl4eGtvazdtMTEzdENyaFgtanQxRDZfNmZHaFF2dmNjcHVpZVNEWUN6XzhERjJxZDIwSTlqQmQ4NmU3eVJ5ZWd3VmlpWTB0UkY5R1B3VDF2SjE4d3V6QVdpdlFR?oc=5",
-          "ts": "2026-07-02T19:40:43Z",
-          "title": "Taiwan\u2019s Wealthy Shift Assets to Singapore as Geopolitical Risks Rise"
-         },
-         {
-          "outlet": "slguardian.org",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWlp2eWtnUUMwSXBpWHNyZDZxVlNOQkRWUGYwVUxwU1JJR3piSUluaTFmemdWSGRxbHZxdkE2SW1tUzVDTGxndmJONkhHWS13YlFhbG92OEFTVVE5OEFCOTU1ZEMwOE9kOEpNQnN5QjYyMlNhdnJFRmpHbnV2ZzYxeUR5RzBwQ0tCOGVWRGxub2FoWDlLZHdZeXRQT250MEE2alkxa0MyaU9MSUR0YzRCcVJzYzBjeEM2YVIxWDlpNFA?oc=5",
-          "ts": "2026-07-02T05:43:16Z",
-          "title": "Taiwan\u2019s Wealthy Quietly Move Billions to Singapore as Geopolitical Fears Reshape Asia\u2019s Offshore Map"
-         }
-        ]
-       },
-       {
-        "text": "Singapore's Senior Minister said peace across the Taiwan Strait is of paramount importance.",
-        "cites": [
-         {
-          "outlet": "rti.org.tw",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9wMTJhVG51SENQV0FmOUxyamU3ODFKajRMT0hibGNWS0F0SGF2TDdwMldwRzdFdmpSbzFndVpUTjlJdjBPVWx4akJ1WVZXVlRObmFncm5DSER4Tnc?oc=5",
-          "ts": "2026-07-03T11:41:34Z",
-          "title": "Singapore Senior Minister: Peace across the Taiwan Strait is of paramount importance"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": false,
-   "items_24h": 20,
-   "items_48h": 38,
-   "outlets": 24,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-13T01:49:57Z",
-     "title": "Typhoon Bavi: China Submerged and Taiwan Devastated as 1.8 Million People Displaced",
-     "outlet": "zoomnews.in",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS3JRUTNrby1JVmwtZmxIMjNYdW0yd21ybmFJUlk4SmZQWTRFcnVsMC0xVm8zblJEZzhhenZNQnlyMGtBMGROaGVoNklqaGdlbmdXdWhxWkRGcGpnSG50cnNvSWxMRTJHZHV5XzF1cW5nTEkyUXpCc0FuMXI0NVV5VjdGQ254YkcxaUlnRkdyN1k1Ukh1N1dEUXNfQ0xRdDB1ZkJNeWtzWDFrdGM3eW90YUZ0ajc5N0FFRHBENGVEdVFyR3fSAcgBQVVfeXFMTnczWWw5amR4T2xVOFlWRzFaZG1oYTA0NlZZaFBJVFhRVkxYM3dpRTZmUWNHYjFEMVlkc2RjdzBRVlZWTmlHdjJMUWpYQzNfd2U5Yk9nZlNnendHelhXUU5yZlhNTE81NDB3eG9lU013dG5RNUpuZV9YdF9PQ2lqdy1nTU9hQjE5QU5feFh0cnBSQkRid1htTFl0cmRwU0J1LUVNWmVwc3gtNmtLb2dUVHdMN0UtSU96azNKZUx6QnV4V3RCc2hLVUo?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-13T01:30:00Z",
-     "title": "Taiwan detects 5 Chinese naval vessels , 10 official ships operating around its territory",
-     "outlet": "tribuneindia.com",
-     "kind": "journalist",
-     "url": "https://www.tribuneindia.com/news/world/taiwan-detects-5-chinese-naval-vessels-10-official-ships-operating-around-its-territory/",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-12T19:45:00Z",
-     "title": "\u300a TAIPEI TIMES \u300b Lai touts Taiwan tech role , prowess - \u7126\u9ede",
-     "outlet": "news.ltn.com.tw",
-     "kind": "journalist",
-     "url": "https://news.ltn.com.tw/news/focus/breakingnews/5503012",
-     "rel": 19,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-12T16:55:45Z",
-     "title": "Ten More For Taiwan: Policy Recommendations to Deter Chinese Communist Party Aggression",
-     "outlet": "Small Wars Journal",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOM3JhMFVQZmpoak1PTGlib3c1YW9kcmlNSUo3NVZZT2RaelFjWi1adDhLLU4td3VTXzkzUEF2N3UzTGw3cHZLOHJYZFQ3RloyRU5zQV9NQ0d2NU1WUEpVUWZzMFkxa0dpeVBPaU9Gc3o0R0NHZ0lET0M4UTZ2T1NNMTVLVE9VTWc4U0RZNWpaXzU2RUZQV2pXQjVlWjJTZzVrR3NOYWdSczlwNlZlRmFHaEQxeFpQZDBOR1hhbk9vbEJHZDd1V2c?oc=5",
-     "rel": 27,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-12T16:52:27Z",
-     "title": "Notes from Central Taiwan: PRC expansion: Coming soon to islands near you",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/feat/archives/2026/07/13/2003860647",
-     "rel": 21,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-12T16:52:27Z",
-     "title": "John J. Tkacik, Jr. On Taiwan: Citizen Sun Yat-sen",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/editorials/archives/2026/07/13/2003860641",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-12T16:52:27Z",
-     "title": "Taiwan's fuel prices to remain unchanged this week",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/13/2003860635",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-12T16:52:27Z",
-     "title": "Taiwan takes gold at Physics Olympiad",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/07/13/2003860667",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-11T22:25:13Z"
-   },
-   "viewpoints": [
-    {
-     "stance": "US envoy urges Taiwan to build a 'hornet's nest' of drones to deter China.",
-     "carriers": [
-      {
-       "outlet": "Taipei Times",
-       "kind": "journalist",
-       "url": "https://www.taipeitimes.com/News/feat/archives/2026/07/03/2003860147",
-       "ts_utc": "2026-07-02T17:07:14Z"
-      },
-      {
-       "outlet": "Modern Diplomacy",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWm00VW5Zc3RYVXNab3kwX3B6TjQ0eFJ1YXpyVVVfRkMwbFBKVFhlSTlvQWFNWjlYQlNzOXU4bGpoYS1adnNoVVJnWmZua013c3hreHByZ3lWUWxNVWZMYS1pc2RJcDlXT3NXRjFWUTJNYUQtUkhkU1E2Tk1WUGhESDJGeC11ZlNUME00aVlPaDREclBPTGhaLXlzRk16bTRrS2xxRl9XOENmOFE?oc=5",
-       "ts_utc": "2026-07-02T07:06:25Z"
-      }
-     ]
-    },
-    {
-     "stance": "Beijing condemns Taiwan over maritime disputes, emphasizing its territorial claims.",
-     "carriers": [
-      {
-       "outlet": "Dimsum Daily",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoWEEyaXJaMFdsbkZyOW9fVG9FTURSQTdPWkhPbTZxRHZFZ0FkMlRmNDJlaGkyWDJBZnhnWE1scmczZjRHem13SDZrRDJvOGY1OURidGI1OTdIQjE4NXgwWGR5SmUxVnpMUWdlbU14ck9vLUF1Z1gxNFg1bmNZZw?oc=5",
-       "ts_utc": "2026-07-02T07:48:37Z"
-      }
-     ]
-    },
-    {
-     "stance": "Travel And Tour World highlights tourism tensions as China calls for travel resumption amid political roadblocks.",
-     "carriers": [
-      {
-       "outlet": "Travel And Tour World",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05Y3ZiNGxtbDRSblYxRW9EUkwxTFo3WkJMVmVNdnhHWUt2cjZDVGltbmI2a1NHWEhGNllqcWtTOWxzMjhFc2tQY2M4ZVhzNWlWUFZnS0JlY0Z4ejBZS2RsVXEtWmlyZ2FRMnQyRVZB?oc=5",
-       "ts_utc": "2026-07-02T09:06:37Z"
-      }
-     ]
-    }
-   ],
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 119,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "blockchain.news",
-      "ts": "2026-07-06T03:25:42Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Nikkei Asia",
-      "ts": "2026-07-06T03:46:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 4
-     },
-     {
-      "outlet": "aninews.in",
-      "ts": "2026-07-06T05:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "The Strategist | ASPI's analysis and commentary site",
-      "ts": "2026-07-06T05:43:24Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "Taiwan Insight",
-      "ts": "2026-07-06T08:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "asiaone.com",
-      "ts": "2026-07-06T08:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 4
-     },
-     {
-      "outlet": "ThinkChina",
-      "ts": "2026-07-06T08:30:46Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "thehawk.in",
-      "ts": "2026-07-06T08:55:26Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "beijing",
-     "situations": [
-      "trump-reframes-us-china-relationship-as-peer-pow"
-     ]
-    },
-    {
-     "entity": "cgtn",
-     "situations": [
-      "colombia-runoff-election-armed-conflict-shift",
-      "venezuela-earthquakes-kill-920-amid-political-cr"
-     ]
-    },
-    {
-     "entity": "china",
-     "situations": [
-      "gaza-israel-war-current",
-      "pakistan-air-strikes-afghanistan",
-      "russia-ukraine-war-current",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "typhoon-maysak-storms-cause-deaths-in-china",
-      "us-tanker-strike-gulf-of-oman-india-sailors"
-     ]
-    },
-    {
-     "entity": "donald trump",
-     "situations": [
-      "colombia-runoff-election-armed-conflict-shift",
-      "gaza-israel-war-current",
-      "russia-ukraine-war-current",
-      "trump-crypto-earnings-disclosure",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "us-to-pull-fighter-jets-from-nato-europe"
-     ]
-    },
-    {
-     "entity": "india",
-     "situations": [
-      "oil-prices-fall-to-pre-war-levels",
-      "pakistan-air-strikes-afghanistan",
-      "pakistan-india-indus-waters-treaty-row",
-      "trump-reframes-us-china-relationship-as-peer-pow",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "venezuela-earthquakes-kill-920-amid-political-cr"
-     ]
-    },
-    {
-     "entity": "japan",
-     "situations": [
-      "japan-yen-weakens-to-40-year-low",
-      "trump-reframes-us-china-relationship-as-peer-pow"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "Taipei Times",
-     "n": 12,
-     "class": "other"
-    },
-    {
-     "outlet": "news.ltn.com.tw",
-     "n": 6,
-     "class": "other"
-    },
-    {
-     "outlet": "globalsecurity.org",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "news.webindia123.com",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "DW.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Yahoo",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "aninews.in",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "asiaone.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "internazionale.it",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "AOL.com",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "France 24",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Lavender Hotel",
-     "n": 2,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 3,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-06-29 06:00",
-      6,
-      5
-     ],
-     [
-      "2026-06-29 12:00",
-      22,
-      14
-     ],
-     [
-      "2026-06-29 18:00",
-      30,
-      26
-     ],
-     [
-      "2026-06-30 00:00",
-      31,
-      30
-     ],
-     [
-      "2026-06-30 06:00",
-      40,
-      34
-     ],
-     [
-      "2026-06-30 12:00",
-      45,
-      42
-     ],
-     [
-      "2026-06-30 18:00",
-      37,
-      45
-     ],
-     [
-      "2026-07-01 00:00",
-      24,
-      40
-     ],
-     [
-      "2026-07-01 06:00",
-      25,
-      44
-     ],
-     [
-      "2026-07-01 12:00",
-      21,
-      42
-     ],
-     [
-      "2026-07-01 18:00",
-      21,
-      32
-     ],
-     [
-      "2026-07-02 00:00",
-      23,
-      32
-     ],
-     [
-      "2026-07-02 06:00",
-      24,
-      33
-     ],
-     [
-      "2026-07-02 12:00",
-      23,
-      27
-     ],
-     [
-      "2026-07-02 18:00",
-      17,
-      25
-     ],
-     [
-      "2026-07-03 00:00",
-      17,
-      25
-     ],
-     [
-      "2026-07-03 06:00",
-      15,
-      26
-     ],
-     [
-      "2026-07-03 12:00",
-      15,
-      22
-     ],
-     [
-      "2026-07-03 18:00",
-      14,
-      24
-     ],
-     [
-      "2026-07-04 00:00",
-      14,
-      25
-     ],
-     [
-      "2026-07-04 06:00",
-      14,
-      20
-     ],
-     [
-      "2026-07-04 12:00",
-      18,
-      21
-     ],
-     [
-      "2026-07-04 18:00",
-      18,
-      19
-     ],
-     [
-      "2026-07-05 00:00",
-      16,
-      16
-     ],
-     [
-      "2026-07-05 06:00",
-      16,
-      19
-     ],
-     [
-      "2026-07-05 12:00",
-      18,
-      20
-     ],
-     [
-      "2026-07-05 18:00",
-      15,
-      18
-     ],
-     [
-      "2026-07-06 00:00",
-      13,
-      19
-     ],
-     [
-      "2026-07-06 06:00",
-      14,
-      18
-     ],
-     [
-      "2026-07-06 12:00",
-      13,
-      19
-     ],
-     [
-      "2026-07-06 18:00",
-      12,
-      19
-     ],
-     [
-      "2026-07-07 00:00",
-      11,
-      20
-     ],
-     [
-      "2026-07-07 06:00",
-      11,
-      17
-     ],
-     [
-      "2026-07-07 12:00",
-      11,
-      18
-     ],
-     [
-      "2026-07-07 18:00",
-      11,
-      21
-     ],
-     [
-      "2026-07-08 00:00",
-      9,
-      17
-     ],
-     [
-      "2026-07-08 06:00",
-      12,
-      21
-     ],
-     [
-      "2026-07-08 12:00",
-      15,
-      19
-     ],
-     [
-      "2026-07-08 18:00",
-      15,
-      18
-     ],
-     [
-      "2026-07-09 00:00",
-      15,
-      18
-     ],
-     [
-      "2026-07-09 06:00",
-      15,
-      20
-     ],
-     [
-      "2026-07-09 12:00",
-      16,
-      21
-     ],
-     [
-      "2026-07-09 18:00",
-      16,
-      18
-     ],
-     [
-      "2026-07-10 00:00",
-      30,
-      38
-     ],
-     [
-      "2026-07-10 06:00",
-      30,
-      32
-     ],
-     [
-      "2026-07-10 12:00",
-      20,
-      33
-     ],
-     [
-      "2026-07-10 18:00",
-      21,
-      37
-     ],
-     [
-      "2026-07-11 00:00",
-      20,
-      39
-     ],
-     [
-      "2026-07-11 06:00",
-      19,
-      27
-     ],
-     [
-      "2026-07-11 12:00",
-      16,
-      25
-     ],
-     [
-      "2026-07-11 18:00",
-      16,
-      28
-     ],
-     [
-      "2026-07-12 00:00",
-      14,
-      26
-     ],
-     [
-      "2026-07-12 06:00",
-      14,
-      22
-     ],
-     [
-      "2026-07-12 12:00",
-      19,
-      28
-     ],
-     [
-      "2026-07-12 18:00",
-      21,
-      25
-     ],
-     [
-      "2026-07-13 00:00",
-      21,
-      25
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 1,
-     "regional": 1,
-     "official": 0,
-     "other": 58
-    },
-    "first_seen": "2026-06-10T21:04:09Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-21T07:22:06Z",
-     "a": "Press TV frames Japan's Taiwan remarks as inflammatory moves to appease Trump, casting Japan as a destabilizing provocateur in the strait.",
-     "b": "Taipei Times, Taiwan News, and naval analysts report China escalating maritime and air incursions near Taiwan as the primary source of tension."
-    },
-    {
-     "captured_utc": "2026-06-21T10:28:59Z",
-     "a": "Taiwan's defence ministry reports rising Chinese incursions and Taiwan stages combat readiness drills in response.",
-     "b": "China's Global Times says foreign officials treating Taiwan as a separate entity show an opportunistic mindset."
-    },
-    {
-     "captured_utc": "2026-06-22T13:09:45Z",
-     "a": "Taiwan launches a five-day combat readiness drill and receives MQ-9B drones to bolster deterrence against rising Chinese military pressure.",
-     "b": "Military analysts warn Taiwan's new MQ-9 drones are highly vulnerable in any future Taiwan Strait conflict."
-    },
-    {
-     "captured_utc": "2026-06-22T15:13:55Z",
-     "a": "Taiwan and Western outlets say China's military surge is a genuine threat; Taipei launches five-day combat drills and deploys US-made MQ-9 drones in response",
-     "b": "Chinese state media frames cross-strait ties as shared cultural heritage; analysts warn Taiwan's new drones are highly vulnerable and US backing is uncertain"
-    },
-    {
-     "captured_utc": "2026-06-22T22:43:18Z",
-     "a": "Taipei Times and MSN portray China's military ramp-up around Taiwan as an escalatory threat, with Taiwan stepping up defenses against Chinese repression.",
-     "b": "Press TV analyst frames Japan's pro-Taiwan statements as inflammatory provocations deliberately stoking regional risk."
-    },
-    {
-     "captured_utc": "2026-06-22T23:39:56Z",
-     "a": "An analyst cited by Press TV says Japan's PM is making inflammatory Taiwan remarks to appease Trump, provoking regional tensions.",
-     "b": "Taiwan and Western outlets report China is ramping up military activity around Taiwan, prompting Taiwan to launch combat readiness exercises."
-    },
-    {
-     "captured_utc": "2026-06-23T07:12:34Z",
-     "a": "Press TV analyst says Japan PM's Taiwan remarks are inflammatory provocations made to appease Trump.",
-     "b": "Taipei Times frames Taiwan's combat readiness exercises as a defensive response to rising Chinese repression."
-    },
-    {
-     "captured_utc": "2026-06-23T08:08:06Z",
-     "a": "Taiwan and regional outlets frame five-day combat readiness drills as a necessary response to escalating Chinese military activity in the strait",
-     "b": "Press TV analyst characterizes Japan's Taiwan-supportive statements as inflammatory remarks that risk further destabilizing the region"
-    },
-    {
-     "captured_utc": "2026-06-23T09:10:10Z",
-     "a": "Taiwan frames its five-day combat readiness drills as a defensive response to increased Chinese military activity in the strait.",
-     "b": "A China-aligned analyst quoted by Press TV labels Japan PM's Taiwan remarks as inflammatory provocation stoking cross-strait tensions."
-    },
-    {
-     "captured_utc": "2026-06-30T23:35:11Z",
-     "a": "Taipei Times reports Taiwan\u2019s MOFA says Taiwan\u2019s foreign ties are not China\u2019s concern",
-     "b": "Breitbart.com says Taiwan authorities raided Super Micro offices in expanding investigation of Nvidia AI chip smuggling to China"
-    },
-    {
-     "captured_utc": "2026-07-01T22:41:31Z",
-     "a": "\u6bcf\u65e5\u7ecf\u6d4e reports Xi Jinping reiterated his will to unify Taiwan and build a strong military.",
-     "b": "Anadolu Agency and the South China Morning Post say China urges US caution on Taiwan warns against hegemony."
-    },
-    {
-     "captured_utc": "2026-07-03T01:42:26Z",
-     "a": "US envoy urges Taiwan to build a 'hornet's nest' of drones to deter China.",
-     "b": "Beijing condemns Taiwan over maritime disputes, emphasizing its territorial claims."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
-   ],
-   "market": {
-    "instruments": [
-     {
-      "symbol": "TSM",
-      "label": "TSMC",
-      "class": "equity",
-      "last": 434.11,
-      "last_ts": "2026-07-10T20:00:00Z",
-      "basis": "China naval activity",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-08T18:57:33Z",
-        436.31
-       ],
-       [
-        "2026-07-08T19:05:23Z",
-        436.92
-       ],
-       [
-        "2026-07-08T19:29:43Z",
-        436.93
-       ],
-       [
-        "2026-07-08T19:30:00Z",
-        435.27
-       ],
-       [
-        "2026-07-08T19:34:49Z",
-        435.21
-       ],
-       [
-        "2026-07-08T20:00:00Z",
-        436.98
-       ],
-       [
-        "2026-07-09T13:30:00Z",
-        444.35
-       ],
-       [
-        "2026-07-09T13:37:09Z",
-        443.9
-       ],
-       [
-        "2026-07-09T13:55:17Z",
-        443.6
-       ],
-       [
-        "2026-07-09T14:19:19Z",
-        440.12
-       ],
-       [
-        "2026-07-09T14:30:00Z",
-        442.02
-       ],
-       [
-        "2026-07-09T14:37:58Z",
-        441.605
-       ],
-       [
-        "2026-07-09T15:14:22Z",
-        443.26
-       ],
-       [
-        "2026-07-09T15:15:57Z",
-        443.6479
-       ],
-       [
-        "2026-07-09T15:30:00Z",
-        444.025
-       ],
-       [
-        "2026-07-09T15:49:08Z",
-        444.02
-       ],
-       [
-        "2026-07-09T15:54:06Z",
-        444.779
-       ],
-       [
-        "2026-07-09T16:22:56Z",
-        442.42
-       ],
-       [
-        "2026-07-09T16:30:00Z",
-        441.23
-       ],
-       [
-        "2026-07-09T16:36:12Z",
-        441.16
-       ],
-       [
-        "2026-07-09T16:58:26Z",
-        441.22
-       ],
-       [
-        "2026-07-09T17:18:15Z",
-        442.49
-       ],
-       [
-        "2026-07-09T17:30:00Z",
-        442.42
-       ],
-       [
-        "2026-07-09T17:34:11Z",
-        442.485
-       ],
-       [
-        "2026-07-09T18:07:53Z",
-        440.205
-       ],
-       [
-        "2026-07-09T18:18:59Z",
-        439.225
-       ],
-       [
-        "2026-07-09T18:30:00Z",
-        439.54
-       ],
-       [
-        "2026-07-09T18:40:57Z",
-        439.32
-       ],
-       [
-        "2026-07-09T19:13:51Z",
-        437.99
-       ],
-       [
-        "2026-07-09T19:20:19Z",
-        439.175
-       ],
-       [
-        "2026-07-09T19:30:00Z",
-        438.29
-       ],
-       [
-        "2026-07-09T19:46:14Z",
-        438.32
-       ],
-       [
-        "2026-07-09T20:00:00Z",
-        436.85
-       ],
-       [
-        "2026-07-10T13:30:00Z",
-        434.43
-       ],
-       [
-        "2026-07-10T13:51:15Z",
-        434.385
-       ],
-       [
-        "2026-07-10T13:57:22Z",
-        432.605
-       ],
-       [
-        "2026-07-10T14:30:00Z",
-        432.33
-       ],
-       [
-        "2026-07-10T14:33:52Z",
-        433.0995
-       ],
-       [
-        "2026-07-10T14:34:02Z",
-        433.995
-       ],
-       [
-        "2026-07-10T15:09:45Z",
-        433.52
-       ],
-       [
-        "2026-07-10T15:13:17Z",
-        434.33
-       ],
-       [
-        "2026-07-10T15:30:00Z",
-        432.36
-       ],
-       [
-        "2026-07-10T15:46:26Z",
-        432.57
-       ],
-       [
-        "2026-07-10T15:54:50Z",
-        432.91
-       ],
-       [
-        "2026-07-10T16:24:34Z",
-        435.6
-       ],
-       [
-        "2026-07-10T16:30:00Z",
-        437.09
-       ],
-       [
-        "2026-07-10T16:46:46Z",
-        437.39
-       ],
-       [
-        "2026-07-10T17:03:07Z",
-        438.585
-       ],
-       [
-        "2026-07-10T17:30:00Z",
-        438.3927
-       ],
-       [
-        "2026-07-10T17:38:48Z",
-        439.235
-       ],
-       [
-        "2026-07-10T17:39:48Z",
-        439.27
-       ],
-       [
-        "2026-07-10T18:16:06Z",
-        437.17
-       ],
-       [
-        "2026-07-10T18:23:40Z",
-        437.085
-       ],
-       [
-        "2026-07-10T18:30:00Z",
-        436.18
-       ],
-       [
-        "2026-07-10T18:56:41Z",
-        436.14
-       ],
-       [
-        "2026-07-10T19:10:11Z",
-        436.88
-       ],
-       [
-        "2026-07-10T19:30:00Z",
-        435.865
-       ],
-       [
-        "2026-07-10T19:36:32Z",
-        435.67
-       ],
-       [
-        "2026-07-10T19:56:56Z",
-        435.785
-       ],
-       [
-        "2026-07-10T20:00:00Z",
-        434.11
-       ]
-      ]
-     },
-     {
-      "symbol": "GC=F",
-      "label": "Gold",
-      "class": "commodity",
-      "last": 4072.0,
-      "last_ts": "2026-07-13T03:05:01Z",
-      "basis": "Safe haven demand",
-      "move_pct": -0.5,
-      "window_h": 24,
-      "measured_from": "2026-07-13T01:49:57Z",
-      "series": [
-       [
-        "2026-07-12T22:00:00Z",
-        4091.1001
-       ],
-       [
-        "2026-07-12T22:23:19Z",
-        4090.7
-       ],
-       [
-        "2026-07-12T22:48:26Z",
-        4083.8999
-       ],
-       [
-        "2026-07-12T22:53:03Z",
-        4087.2
-       ],
-       [
-        "2026-07-12T23:00:00Z",
-        4078.2
-       ],
-       [
-        "2026-07-12T23:14:40Z",
-        4078.3
-       ],
-       [
-        "2026-07-12T23:20:50Z",
-        4078.8
-       ],
-       [
-        "2026-07-12T23:41:02Z",
-        4086.7
-       ],
-       [
-        "2026-07-12T23:57:23Z",
-        4091.3999
-       ],
-       [
-        "2026-07-13T00:00:00Z",
-        4096.2002
-       ],
-       [
-        "2026-07-13T00:07:51Z",
-        4096.2002
-       ],
-       [
-        "2026-07-13T00:30:45Z",
-        4082.5
-       ],
-       [
-        "2026-07-13T00:34:39Z",
-        4076.1001
-       ],
-       [
-        "2026-07-13T00:58:47Z",
-        4084.7
-       ],
-       [
-        "2026-07-13T00:59:17Z",
-        4082.3
-       ],
-       [
-        "2026-07-13T01:00:00Z",
-        4082.1001
-       ],
-       [
-        "2026-07-13T01:23:15Z",
-        4082.7
-       ],
-       [
-        "2026-07-13T01:26:15Z",
-        4084.8999
-       ],
-       [
-        "2026-07-13T01:47:38Z",
-        4092.3999
-       ],
-       [
-        "2026-07-13T01:55:08Z",
-        4082.5
-       ],
-       [
-        "2026-07-13T02:00:00Z",
-        4082.3
-       ],
-       [
-        "2026-07-13T02:15:01Z",
-        4080.0
-       ],
-       [
-        "2026-07-13T02:27:49Z",
-        4076.5
-       ],
-       [
-        "2026-07-13T02:42:05Z",
-        4081.1001
-       ],
-       [
-        "2026-07-13T03:00:00Z",
-        4071.3999
-       ],
-       [
-        "2026-07-13T03:05:01Z",
-        4072.0
-       ]
-      ]
-     },
-     {
-      "symbol": "DX-Y.NYB",
-      "label": "Dollar Index",
-      "class": "fx",
-      "last": 101.164,
-      "last_ts": "2026-07-13T03:04:59Z",
-      "basis": "Currency strength",
-      "move_pct": 0.05,
-      "window_h": 24,
-      "measured_from": "2026-07-13T01:49:57Z",
-      "series": [
-       [
-        "2026-07-12T22:00:00Z",
-        101.139
-       ],
-       [
-        "2026-07-12T22:23:24Z",
-        101.141
-       ],
-       [
-        "2026-07-12T22:48:33Z",
-        101.141
-       ],
-       [
-        "2026-07-12T22:53:03Z",
-        101.136
-       ],
-       [
-        "2026-07-12T23:00:00Z",
-        101.135
-       ],
-       [
-        "2026-07-12T23:14:47Z",
-        101.127
-       ],
-       [
-        "2026-07-12T23:21:17Z",
-        101.113
-       ],
-       [
-        "2026-07-12T23:41:07Z",
-        101.111
-       ],
-       [
-        "2026-07-12T23:57:27Z",
-        101.084
-       ],
-       [
-        "2026-07-13T00:00:00Z",
-        101.076
-       ],
-       [
-        "2026-07-13T00:07:58Z",
-        101.079
-       ],
-       [
-        "2026-07-13T00:30:49Z",
-        101.079
-       ],
-       [
-        "2026-07-13T00:34:41Z",
-        101.09
-       ],
-       [
-        "2026-07-13T00:58:50Z",
-        101.138
-       ],
-       [
-        "2026-07-13T00:59:17Z",
-        101.147
-       ],
-       [
-        "2026-07-13T01:00:00Z",
-        101.184
-       ],
-       [
-        "2026-07-13T01:23:17Z",
-        101.183
-       ],
-       [
-        "2026-07-13T01:26:18Z",
-        101.203
-       ],
-       [
-        "2026-07-13T01:47:45Z",
-        101.117
-       ],
-       [
-        "2026-07-13T01:55:08Z",
-        101.134
-       ],
-       [
-        "2026-07-13T02:00:00Z",
-        101.138
-       ],
-       [
-        "2026-07-13T02:15:02Z",
-        101.138
-       ],
-       [
-        "2026-07-13T02:27:50Z",
-        101.143
-       ],
-       [
-        "2026-07-13T02:42:10Z",
-        101.109
-       ],
-       [
-        "2026-07-13T03:00:00Z",
-        101.164
-       ],
-       [
-        "2026-07-13T03:04:59Z",
-        101.164
-       ]
-      ]
-     },
-     {
-      "symbol": "^VIX",
-      "label": "VIX",
-      "class": "index",
-      "last": 15.03,
-      "last_ts": "2026-07-10T20:15:00Z",
-      "basis": "Market volatility",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-09T18:25:46Z",
-        16.04
-       ],
-       [
-        "2026-07-09T18:58:46Z",
-        16.07
-       ],
-       [
-        "2026-07-09T19:00:00Z",
-        16.09
-       ],
-       [
-        "2026-07-09T19:05:16Z",
-        16.09
-       ],
-       [
-        "2026-07-09T19:31:01Z",
-        15.92
-       ],
-       [
-        "2026-07-09T19:52:46Z",
-        15.82
-       ],
-       [
-        "2026-07-09T20:00:00Z",
-        15.86
-       ],
-       [
-        "2026-07-09T20:15:00Z",
-        15.84
-       ],
-       [
-        "2026-07-09T20:15:01Z",
-        15.84
-       ],
-       [
-        "2026-07-10T07:00:00Z",
-        16.04
-       ],
-       [
-        "2026-07-10T07:26:16Z",
-        16.04
-       ],
-       [
-        "2026-07-10T07:28:01Z",
-        16.05
-       ],
-       [
-        "2026-07-10T07:59:01Z",
-        16.14
-       ],
-       [
-        "2026-07-10T08:00:00Z",
-        16.05
-       ],
-       [
-        "2026-07-10T08:13:01Z",
-        16.05
-       ],
-       [
-        "2026-07-10T08:35:16Z",
-        16.09
-       ],
-       [
-        "2026-07-10T09:00:00Z",
-        16.04
-       ],
-       [
-        "2026-07-10T09:00:01Z",
-        16.08
-       ],
-       [
-        "2026-07-10T09:10:01Z",
-        16.04
-       ],
-       [
-        "2026-07-10T09:43:46Z",
-        16.03
-       ],
-       [
-        "2026-07-10T09:47:16Z",
-        16.02
-       ],
-       [
-        "2026-07-10T10:00:00Z",
-        15.95
-       ],
-       [
-        "2026-07-10T10:23:01Z",
-        15.95
-       ],
-       [
-        "2026-07-10T10:26:01Z",
-        15.96
-       ],
-       [
-        "2026-07-10T10:58:01Z",
-        15.87
-       ],
-       [
-        "2026-07-10T11:00:00Z",
-        15.85
-       ],
-       [
-        "2026-07-10T11:07:31Z",
-        15.86
-       ],
-       [
-        "2026-07-10T11:36:46Z",
-        15.95
-       ],
-       [
-        "2026-07-10T11:53:16Z",
-        15.91
-       ],
-       [
-        "2026-07-10T12:00:00Z",
-        15.81
-       ],
-       [
-        "2026-07-10T12:19:01Z",
-        15.8
-       ],
-       [
-        "2026-07-10T12:43:31Z",
-        15.79
-       ],
-       [
-        "2026-07-10T13:00:00Z",
-        15.63
-       ],
-       [
-        "2026-07-10T13:00:46Z",
-        15.78
-       ],
-       [
-        "2026-07-10T13:36:16Z",
-        15.64
-       ],
-       [
-        "2026-07-10T13:42:16Z",
-        15.72
-       ],
-       [
-        "2026-07-10T14:00:00Z",
-        15.55
-       ],
-       [
-        "2026-07-10T14:18:46Z",
-        15.52
-       ],
-       [
-        "2026-07-10T14:54:31Z",
-        15.64
-       ],
-       [
-        "2026-07-10T14:58:01Z",
-        15.72
-       ],
-       [
-        "2026-07-10T15:00:00Z",
-        15.48
-       ],
-       [
-        "2026-07-10T15:31:16Z",
-        15.53
-       ],
-       [
-        "2026-07-10T15:39:46Z",
-        15.55
-       ],
-       [
-        "2026-07-10T16:00:00Z",
-        15.43
-       ],
-       [
-        "2026-07-10T16:09:31Z",
-        15.41
-       ],
-       [
-        "2026-07-10T16:31:46Z",
-        15.37
-       ],
-       [
-        "2026-07-10T16:48:01Z",
-        15.25
-       ],
-       [
-        "2026-07-10T17:00:00Z",
-        15.35
-       ],
-       [
-        "2026-07-10T17:23:31Z",
-        15.35
-       ],
-       [
-        "2026-07-10T17:24:46Z",
-        15.35
-       ],
-       [
-        "2026-07-10T18:00:00Z",
-        15.38
-       ],
-       [
-        "2026-07-10T18:01:01Z",
-        15.38
-       ],
-       [
-        "2026-07-10T18:08:31Z",
-        15.37
-       ],
-       [
-        "2026-07-10T18:41:31Z",
-        15.26
-       ],
-       [
-        "2026-07-10T18:55:01Z",
-        15.26
-       ],
-       [
-        "2026-07-10T19:00:00Z",
-        15.26
-       ],
-       [
-        "2026-07-10T19:21:16Z",
-        15.26
-       ],
-       [
-        "2026-07-10T19:41:46Z",
-        15.15
-       ],
-       [
-        "2026-07-10T20:00:00Z",
-        14.96
-       ],
-       [
-        "2026-07-10T20:15:00Z",
-        15.03
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:15:58Z",
-    "anchor_beat": "2026-07-13T01:49:57Z"
-   },
-   "lead_image": {
-    "url": "https://img.taipeitimes.com/images/2026/07/11/P02-260711-603.jpg",
-    "source": "Taipei Times",
-    "focal": {
-     "x": 55,
-     "y": 35
     }
    }
   },
@@ -9590,10 +7843,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 101.164,
-      "last_ts": "2026-07-13T03:04:59Z",
+      "last": 101.175,
+      "last_ts": "2026-07-13T03:07:48Z",
       "basis": "US-China tensions affect dollar strength",
-      "move_pct": -0.02,
+      "move_pct": -0.01,
       "window_h": 24,
       "measured_from": "2026-07-13T01:00:23Z",
       "series": [
@@ -9700,6 +7953,10 @@
        [
         "2026-07-13T03:04:59Z",
         101.164
+       ],
+       [
+        "2026-07-13T03:07:48Z",
+        101.175
        ]
       ]
      },
@@ -10211,7 +8468,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:16:27Z",
+    "observed_utc": "2026-07-13T03:19:33Z",
     "anchor_beat": "2026-07-13T01:00:23Z"
    },
    "lead_image": {
@@ -10234,6 +8491,1807 @@
      "report": 1,
      "theories": 0,
      "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "taiwan-strait-tensions-current",
+   "name": "Taiwan Strait",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "diplomacy",
+    "weapons"
+   ],
+   "brief": {
+    "generated_utc": "2026-07-04T15:17:15Z",
+    "sentence_count": 14,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Beijing rotated a new coast guard task force into waters east of Taiwan on Saturday, the second such deployment in about a month, in a move that drew international pushback and sharpened the diplomatic dispute over the island.",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3359426/beijing-sends-new-coastguard-force-waters-east-taiwan?utm_source=rss_feed",
+          "ts": "2026-07-04T12:32:44Z",
+          "title": "Beijing sends new coastguard force into waters east of Taiwan"
+         },
+         {
+          "outlet": "The Hindu Intl",
+          "kind": "journalist",
+          "url": "https://www.thehindu.com/news/international/china-launches-coast-guard-patrol-east-of-taiwan-despite-international-pushback/article71181868.ece",
+          "ts": "2026-07-04T12:06:03Z",
+          "title": "China launches coast guard patrol east of Taiwan despite international pushback"
+         },
+         {
+          "outlet": "Daily Pioneer",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQi1uZ2l1d1VDMWEydHAtRGRDWkRLY3V2NmdDaVBzclA4R3ZUdTdVdlVDQ3VuSHJlSXh6QWhSTFl0N2ZtLWEtN0RWUXF1elYtNFBBTXNWVDJwYmp2QVk5WDFub3lHNUlqQVp1a3VTdzdzUXdJZjYxUWVobm1rSU5KOTJBbGhtZ3o4cVVkeWhTREFlby1GRElKLXoxYVpYVHN0RDRzRnlOLXZjcWZ3WEhDRVNn?oc=5",
+          "ts": "2026-07-04T11:49:44Z",
+          "title": "China launches new coast guard patrol east of Taiwan amid rising regional tensions"
+         },
+         {
+          "outlet": "Devdiscourse",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOU000SzRUckhaU1BlMzctOFBka19ndWRibF9Nb2IwSlNaejZCTGlNaWJ4cFpEbFlkanBIRlRUeTI3Z0w1QmpaRkdFRjlUMkFhbzJJWndFRzk2VFJyQkN6c0hySWVQdC1vRTBnek5RcTg4LThHQVNvS21LU3ZRd0xyQ05Pck1COVFNSXpxalZIcXFFTk9kV2FpTUdLX2NhRXFiRmJQMHIzc0ZWaS1ld3NGeXd2TEx6SWpGTkRJaHdJQVBjcUZ6YTJF0gHHAUFVX3lxTE5TTTRLNFRySFpTUGUzNy04UGRrX2d1ZGJsX01vYjBKU1p6NkJMaU1pYnhwWkRsWWRqcEhGVFR5MjdnTDVCalpGR0VGOVQyQWFvMklad0VHOTZUUnJCQ3pzSHJJZVB0LW9FMGd6TlFxODgtOEdBU29LbUtTdlF3THJDTk9yTUI5UU1JenFqVkhxcUVOT2RXYWlNR0tfY2FFcWJGYlAwcjNzRlZpLWV3c0Z5d3ZMTHpJakZORElod0lBUGNxRnphMkU?oc=5",
+          "ts": "2026-07-04T07:00:35Z",
+          "title": "Taiwan In Tension: China's Coast Guard Patrol Sparks Diplomatic Dispute"
+         },
+         {
+          "outlet": "Crypto Briefing",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb0RmR2RrQThicjhMLTAwUF91eWtfS0RHYzRqYXVIMTMxUlNaX0swTkJhUnYya3NaeUdfZTM5S2lDV2x4MzdBNS1lVWtKTjRmNHRVNk9SWUVCUnBScHdPeEkzcHFNX3NSX1BHN3ZfclVaR3c2bVNKcS1PeDI5dEtpYWRtdlJiWFd4cm02dHE5NUNzRjRVcUxVN2ZBd1dFQmdF?oc=5",
+          "ts": "2026-07-04T04:31:51Z",
+          "title": "China launches coast guard patrol east of Taiwan amid regional tensions"
+         },
+         {
+          "outlet": "Devdiscourse",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOem02eXl3Z2h3QU94R2xfdW9wdlIxVFp3SHMxZk1XQXRGcDZ0dkhabUp0eHdSa0dGN192ZXB0NmpDQ1gweUVIRTRFcEJiNFVlSWZJNk9uWWRqWkgtSldKTU1JWDhxcEVISUxZTnZqdk9DRndMQl9sckpTMkRrSmthWHJVQWZLR3dYbC02MWdqZjZxWEFvZnhwMlRmSTVWTk4zZWNCeEpkTGxaY09ISEtuVnJPWk95QdIBtgFBVV95cUxOem02eXl3Z2h3QU94R2xfdW9wdlIxVFp3SHMxZk1XQXRGcDZ0dkhabUp0eHdSa0dGN192ZXB0NmpDQ1gweUVIRTRFcEJiNFVlSWZJNk9uWWRqWkgtSldKTU1JWDhxcEVISUxZTnZqdk9DRndMQl9sckpTMkRrSmthWHJVQWZLR3dYbC02MWdqZjZxWEFvZnhwMlRmSTVWTk4zZWNCeEpkTGxaY09ISEtuVnJPWk95QQ?oc=5",
+          "ts": "2026-07-04T04:17:33Z",
+          "title": "Tensions Rise Over China's Coast Guard Patrol Near Taiwan"
+         }
+        ]
+       },
+       {
+        "text": "China's Maritime Police said the patrols are carried out to protect the legitimate interests, as well as the lives and property of Chinese fishermen, including what it termed Taiwanese compatriots.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/world/2155469",
+          "ts": "2026-07-04T06:50:50Z",
+          "title": "Chinese Maritime Police to increase activity in waters east of Taiwan"
+         }
+        ]
+       },
+       {
+        "text": "The rotation came days after China's top diplomat urged Washington to exercise utmost prudence on the self-governed island, and close on the heels of high-level talks with the Philippines in which Beijing pressed Manila to match words with deeds.",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3359426/beijing-sends-new-coastguard-force-waters-east-taiwan?utm_source=rss_feed",
+          "ts": "2026-07-04T12:32:44Z",
+          "title": "Beijing sends new coastguard force into waters east of Taiwan"
+         }
+        ]
+       },
+       {
+        "text": "Australia said it had raised concerns about the activities directly with Chinese officials, describing them as part of a new strategy.",
+        "cites": [
+         {
+          "outlet": "ABC News AU",
+          "kind": "journalist",
+          "url": "https://www.abc.net.au/news/2026-07-03/australia-concerns-about-china-action-east-of-taiwan/106877030",
+          "ts": "2026-07-03T08:03:05Z",
+          "title": "China's latest activities near Taiwan indicate new strategy"
+         },
+         {
+          "outlet": "ABC News & Headlines - Australian Broadcasting Corporation",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWW42VjA4UEhZY1VNUmlVUlhXMG14T09QUnNRc01kYnVwOXhLMXJ5TGlBbEMyU1F3RFgwd3E3SU9yT2ZqRlltSk5VcHdXS2NFOWJUNXdjY2RwUUk1OEVEelJDTWtuUldEeVJReWlWNFl0Y0pUYUlsb1ZHVGdnY2hiNzQydmZEeTlCdm9TZDQ2UUpPdnd1V3lYQWx3TngtWi1uQ0NR?oc=5",
+          "ts": "2026-07-03T08:03:05Z",
+          "title": "China's latest activities near Taiwan indicate new strategy - ABC News & Headlines - Australian Broadcasting Corporation"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "A US de facto envoy urged Taiwan to build what he called a hornet's nest of drones to deter China.",
+        "cites": [
+         {
+          "outlet": "\u6bce\u65e5\u65b0\u805e",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CUU5rc0NNSXptWHo3LVRHajhFNndST3NuSGFUZnNTVUYtS3JQMzlENm4wbFBzeWU3RGhIVWxDakoxaG9KQzdlQVR2OHZfRks0Z0xiQkdrajdmaTVraVdJMnI5bTdxTWhJc2FmcVpmMzR5NlE?oc=5",
+          "ts": "2026-07-03T01:01:03Z",
+          "title": "US de facto envoy calls for Taiwan to become \"hornet's nest\" of drones"
+         },
+         {
+          "outlet": "Taipei Times",
+          "kind": "journalist",
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/07/03/2003860149",
+          "ts": "2026-07-02T17:07:14Z",
+          "title": "Taiwan needs a \u2018hornet\u2019s nest\u2019 of drones: US envoy"
+         },
+         {
+          "outlet": "Modern Diplomacy",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWm00VW5Zc3RYVXNab3kwX3B6TjQ0eFJ1YXpyVVVfRkMwbFBKVFhlSTlvQWFNWjlYQlNzOXU4bGpoYS1adnNoVVJnWmZua013c3hreHByZ3lWUWxNVWZMYS1pc2RJcDlXT3NXRjFWUTJNYUQtUkhkU1E2Tk1WUGhESDJGeC11ZlNUME00aVlPaDREclBPTGhaLXlzRk16bTRrS2xxRl9XOENmOFE?oc=5",
+          "ts": "2026-07-02T07:06:25Z",
+          "title": "US Envoy Urges Taiwan to Build \u2018Hornet\u2019s Nest\u2019 of Drones to Deter China"
+         }
+        ]
+       },
+       {
+        "text": "Beijing, for its part, condemned Taiwan over the maritime dispute and emphasised its territorial claims.",
+        "cites": [
+         {
+          "outlet": "Dimsum Daily",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoWEEyaXJaMFdsbkZyOW9fVG9FTURSQTdPWkhPbTZxRHZFZ0FkMlRmNDJlaGkyWDJBZnhnWE1scmczZjRHem13SDZrRDJvOGY1OURidGI1OTdIQjE4NXgwWGR5SmUxVnpMUWdlbU14ck9vLUF1Z1gxNFg1bmNZZw?oc=5",
+          "ts": "2026-07-02T07:48:37Z",
+          "title": "Beijing condemns Taiwan over maritime dispute"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Taiwan staged its biggest crisis drill in the same window, rehearsing a scenario combining a Chinese blockade, a major earthquake and cyber warfare.",
+        "cites": [
+         {
+          "outlet": "RBC-Ukraine",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLW1LRnZZSC1tel9hbFZvWk9ucng1UEY3N2c4NmlwRkJFdWlsNjRVSDJOWnA3Q0pjQlVoR1o0WlFXVEZwTkprZHozbG1jTHZVNk8wY3RyU0FMbHNHZndXVmt5YWVIOFRtd09SYnJoVTk5WEVxSHY4UVpRRl9iaDZBZGk4bXZFUFctMk8yVWF1Vzh5NF9jNjBtdQ?oc=5",
+          "ts": "2026-07-04T01:10:56Z",
+          "title": "Taiwan drills for full-scale Chinese invasion as tensions soar"
+         },
+         {
+          "outlet": "WION",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQjJSZGNwYVVucWFOWVEwS1dOdVM3bVI1Z2VQdTc2YzBlXzdWTUVvNlZJRjA4aktDblFXNG1mUl85NlRWbHNvaEpjSE5CLXViQnFoelNXRG9pOEYxc2p2NTExU1E1cjJ6VXVsU2J1Tm1BQnlhQXlGRE9lcVBNbFdDQl9SMEZJNEU1Y1Vyd3hQWVl4cjR2ODhaaGI2cW9DdUJRS0RvYdIBpAFBVV95cUxPQjJSZGNwYVVucWFOWVEwS1dOdVM3bVI1Z2VQdTc2YzBlXzdWTUVvNlZJRjA4aktDblFXNG1mUl85NlRWbHNvaEpjSE5CLXViQnFoelNXRG9pOEYxc2p2NTExU1E1cjJ6VXVsU2J1Tm1BQnlhQXlGRE9lcVBNbFdDQl9SMEZJNEU1Y1Vyd3hQWVl4cjR2ODhaaGI2cW9DdUJRS0RvYQ?oc=5",
+          "ts": "2026-07-03T18:45:06Z",
+          "title": "Taiwan holds biggest crisis drill amid China tensions"
+         },
+         {
+          "outlet": "WION",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNm9lTUJTS0pVdkRjR0NRcHVRRXRLQmJtTzc2QVdRekQ3dmlFazk1Y2lNcFVHUlVlSlU4My03T0hTOXlGUUM1bGhkbTRsUFlQV3l5a0N5Nzgtcl9HeGlOeDA4aC1kLXR3eWVTNVFxRS1QRzdZYmotLWdjRFRNcEFza0wyYVlPYVVkSmZ6NkxvUjB0dzI2a19KYlNUWEtTYTTSAaQBQVVfeXFMT0IyUmRjcGFVbnFhTllRMEtXTnVTN21SNWdlUHU3NmMwZV83Vk1FbzZWSUYwOGpLQ25RVzRtZlJfOTZUVmxzb2hKY0hOQi11YkJxaHpTV0RvaThGMXNqdjUxMVNRNXIyelV1bFNidU5tQUJ5YUF5RkRPZXFQTWxXQ0JfUjBGSTRFNWNVcnd4UFlZeHI0djg4WmhiNnFvQ3VCUUtEb2E?oc=5",
+          "ts": "2026-07-03T18:27:00Z",
+          "title": "Taiwan holds biggest crisis drill amid China tensions"
+         },
+         {
+          "outlet": "WION",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQS3JWR2tWNHZ1U3RfbjNUVG1tbFllaElLTzJ4X1M0ZEZMOW9VTUs0LTFoUjE2Z2VsdzZFeHZrQ2RMRHVaeDNsRmJPbUlLaE5HbEJTSjBSRkhGZHU1dWtZdHBoX21Nem5BNWRnUzZyODRFYjZmM2tpbUc0UG1fS3hBWjZwZ1dhTzVpVGhBbEZhZE5BcGp2dEZVT0s2NW5UaURZZ3VkY2xYeS1wN1ZNWjk4Vk9pR0jSAbQBQVVfeXFMUEtyVkdrVjR2dVN0X24zVFRtbWxZZWhJS08yeF9TNGRGTDlvVU1LNC0xaFIxNmdlbHc2RXh2a0NkTER1WngzbEZiT21JS2hOR2xCU0owUkZIRmR1NXVrWXRwaF9tTXpuQTVkZ1M2cjg0RWI2ZjNraW1HNFBtX0t4QVo2cGdXYU81aVRoQWxGYWROQXBqdnRGVU9LNjVuVGlEWWd1ZGNsWHktcDdWTVo5OFZPaUdI?oc=5",
+          "ts": "2026-07-03T17:00:42Z",
+          "title": "Taiwan rehearses its worst nightmare: Blockade, quake and cyber war"
+         },
+         {
+          "outlet": "politicstoday.org",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVTQzZXUzR0JTNWV4MEF4Nk4tT2JBX0JvTTRQNVdfamRxQThzSDJJNnk0eFNOQVhZY3Rjd0g0Y2ZjVkxWNVpQQXRJa2JQREEwaTNibGhrOGdPb1FMajBSNE9KYmZaTzg2YXczdlliLU9vZk1xSldEbnpXZFE0QUtlME5kUy1mdzV2djlKSW9TUVR1VWlHMlc2MHhWWFU?oc=5",
+          "ts": "2026-07-03T08:28:33Z",
+          "title": "Taiwan Tests Doomsday Invasion Scenario as China Pressure Intensifies"
+         }
+        ]
+       },
+       {
+        "text": "Reuters reported an exclusive look inside what it called Taiwan's nightmare scenario of blockade, earthquake, sabotage and invasion.",
+        "cites": [
+         {
+          "outlet": "Crypto Briefing",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTWJVOHk5UGRjbGluNGZfQ01xOTFpU1loUWYtNElKZjhLVHZfRkpZMlVDRktDazBoM0ExTW9XVTNXdXBFSXpGZzZnNm9iWEp6S1VqOHRSZEk4NEFOTFBNc0x6ODBicXZpMHlSaFNjNEtpSEJuLW5HSFRIbWlwVGpLajEyazl4WkxyMWVLdmdkSks5eUJ1X29fc3NwcWktdTkzNzlQcjFVQjI?oc=5",
+          "ts": "2026-07-03T03:22:58Z",
+          "title": "Taiwan faces potential Chinese blockade, invasion amid rising tensions: Reuters"
+         },
+         {
+          "outlet": "Global Banking & Finance Review",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUVVhMlNnSjZoRXFFQ18zX05HbTI4aHNHMnRSWnJoTFBsSmQ3Y2c1RVVIZ19DUV9tLWluM19CODBKd0hZX0xPa25KLUt6cHFEZ1lDb0NhR2x6YnRkLVpsc3NESE11NnA3QnFBeVFmN05JY2xlZ0UtbkNZRHdfU1hxZ2VfaXVoRHlRbWRUaDJmSGF2Zk5EcGdkM2ZqeGFpX3YyY01J?oc=5",
+          "ts": "2026-07-03T03:11:56Z",
+          "title": "Inside Taiwan's Nightmare Scenario: Blockade, Disaster & Invasion"
+         },
+         {
+          "outlet": "Investing.com",
+          "kind": "journalist",
+          "url": "https://www.investing.com/news/world-news/exclusiveinside-taiwans-nightmare-scenario-chinese-blockade-earthquake-sabotage-and-invasion-4774988",
+          "ts": "2026-07-03T03:06:50Z",
+          "title": "Exclusive-Inside Taiwan\u2019s nightmare scenario: Chinese blockade, earthquake, sabotage and invasion"
+         },
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNX2tIVDBRWmhSV3BlZlQ1S1Nub0tyOVNaeDMzLS1ZZEF5UkxxMEVadWhQOUotYndyODdxbXJNcGJrekZaZ0hkcVVBdXZEY0VLRE5hdXdQQ2F3UGNmcWpQdXA5UmVBcjhxM3FkX2dLVGhLXzl2emVPOXBaaGJETTdra2dlbnJ2cm5XUDR2cFZXM2lfZmtodGswU2trRnZ3Qnd1WlRvRVJVWTgzNWFVRzYzb1NPdGttWktwY2RWZkFZZzkwQjRxbnc?oc=5",
+          "ts": "2026-07-03T03:05:00Z",
+          "title": "EXCLUSIVE: Inside Taiwan's nightmare scenario: Chinese blockade, earthquake, sabotage and invasion"
+         }
+        ]
+       },
+       {
+        "text": "The government is also requiring reservists to train longer and harder, introducing drones and US-made Himars rocket systems into a revamped 14-day call-up programme to offset worsening troop shortages amid a demographic decline.",
+        "cites": [
+         {
+          "outlet": "South China Morning Post",
+          "kind": "journalist",
+          "url": "https://www.scmp.com/news/china/military/article/3359352/can-taiwan-fix-its-military-manpower-shortage-training-reservists-advanced-weapons?utm_source=rss_feed",
+          "ts": "2026-07-03T22:00:19Z",
+          "title": "Can Taiwan fix its military manpower shortage by training reservists in advanced weapons?"
+         }
+        ]
+       },
+       {
+        "text": "Hindustan Times reported the drills envisaged fighting a war without US support after a warning from Xi Jinping.",
+        "cites": [
+         {
+          "outlet": "Hindustan Times",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMkFxZnRiRmN0dnpZdXFwRkxWVnBGT1lna016UTZ1RGdYZUR6OXg0clpjcWJpRFRETjg1eklOdE9LRlBDVnlvMFJlTWZxWEdtUDZQYXBVZk9EbXBYWjBGVmxWQXNnYXhoeElMVXlwWk1uZWM2VjZhamI3WC1lRUloTVk5TnRVZVI2dWlaQWNqTEhaWFdpZk9wNjRvVlpHRWJpSFRnZTR6dk9ScnpfUFNpcENEUGNIREgzSzR0VkxTcDNacXZKMG9ZcWJtekZqX2FtX3RPa212cE1uWUZXRG9YUHNidmdNQdIB6wFBVV95cUxOc3hNUWxaemktZENGSDVDcDQ3WGJXNmFMV1c3NEQyUDZFRlBMV2VjWmpRYXU3bTMzU2d6X1F4Zm5OZ3FHdUU5Wk1vM2Q0Snlaa1ZHTFZ3M0tFMnFIczZzNkhtcnF4TkktZmZuZUc0QkhYZlgtR0diMUh0TjJtcmNfMUxhcnV3OHVSa05qMmcydHJibnJRc3U4Z2F5cFo2WEdUUC00aUVhSGlNZ1JUd204SmlFbEMwbmZNdmFLUXhTUW4xZV9NUGMxaTlucDB4U0REY1NBMUViM1MwcG5hSEh6QXpqd1JUWlNuUkhJ?oc=5",
+          "ts": "2026-07-03T20:07:08Z",
+          "title": "Spooked Taiwan simulates Chinese invasion, prepares to fight war without US after Xi's warning? | Videos"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Nikkei Asia said the eastward push tests whether Tokyo and Manila can turn coordination into meaningful action, with Beijing betting they cannot.",
+        "cites": [
+         {
+          "outlet": "Nikkei Asia",
+          "kind": "journalist",
+          "url": "https://asia.nikkei.com/opinion/china-s-push-east-of-taiwan-tests-japan-philippines-deterrence",
+          "ts": null,
+          "title": "China's push east of Taiwan tests Japan-Philippines deterrence"
+         }
+        ]
+       },
+       {
+        "text": "In parallel, Taiwan detained Super Micro staff in a probe of alleged smuggling of Nvidia chips, with charges centred on document forgery.",
+        "cites": [
+         {
+          "outlet": "WinBuzzer",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPS0d6MDV6a1FTNnFqaGpfbjJZcU9yT0FOY1dELXNuX0JyaFQ4bUI1TWpQQlR3ejlhN2Z0OVBWOHZmd1hwUW1pbzZWYzBYUzNHbi1WRHFTVXVEUzN0V0kwMUNsdVV4a2xrYy15enR5VV82UmxweFhRQzUxcWhic0dIQ1NnalNpMlBTU2xtQUlGNVc3ekhJMTVvenkzQWg?oc=5",
+          "ts": "2026-07-02T16:25:29Z",
+          "title": "Taiwan Detains Super Micro Workers in Nvidia Chip Smuggling Probe"
+         },
+         {
+          "outlet": "The Eastern Herald",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPN0dRNWh4ZFBhcDJsd0RzSnN1c1NEVHVOampVd3c4TmRGZmw0M2V0TC12c0JlQUhreFV1aF9EdUNyejMtUno0MUw0bjhBSm5fLS1NYmwzd2gyb0dpMzhrWXNVS2p1MkdZemk4ZWsyVkhFLXI5VVVuazlOM0FMVlZfTkN0dFFQVWNNVzNpMTRWWk1fZmp0Nlp4Y1Z4aw?oc=5",
+          "ts": "2026-07-02T09:07:16Z",
+          "title": "Taiwan Raided Super Micro Over Nvidia Chip Smuggling. The Charge: Document Forgery."
+         },
+         {
+          "outlet": "simplywall.st",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPd3dKRjV0NkRPU2xCWHlaVFF3ZFdVM3kxazROQUNUMEsyUWliaDRodzI3eHFXT1N4YU1Db3VmT1h1MGpnVGNYWDg2ZmRFdml5cktJWkxpYXF6LU5hZnIwdGh2YTJiZHIzWkl6N2pNcTUwMFJkbzQtLS1ydlpDU3hNQ1E1UEU4dlJqRDRvTmdGSXRIODlQdzJQOGZCTkV2cGx1Q0tCZzA4MVhMd2ktMnM2OFpVODJfcllCS2JPb3VFMWxNUVlzYkdaQzJYYW94Slkw0gHWAUFVX3lxTFBZS1RHTHN5YWlPY0lJVTVZaXJmQ2VQQi1uWU9kSjhvd0l6S0hINC1JRVlLblpDUGU1cE5YUmRhTlpIcEFiWVpxNnI4THhrNmh5Q1BselB6TFpFbmoxR3ZtcHFuS205M1o5ajNyMWZsSmFLamVnQUx1ZmJ2S3BJSDUwREJ2aGpkOU1EdnZ4NmsyR2x3TWt1Ql9mUjd5TEpPdE1wRFhZbU5ST09xOC1hZEFPNGhHX1Z0QjVKMFBUbVRuSm54ODhpTVNVOGlzMFhPaWVxWDg0Q3c?oc=5",
+          "ts": "2026-07-02T08:53:04Z",
+          "title": "Super Micro Computer (SMCI) Faces Escalating Taiwan Probe Over Nvidia Chip Exports"
+         },
+         {
+          "outlet": "Silicon UK",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE51U09sVFllYUgtclpXUE5Wamc1Tmd0OTdYZEVNclB3M2xKMVVMMDdpVTlydWh4UUhDOXBJcXAtMlZpUzVvYWNvZG5jT0FSeGZnS2VqdlhkcllQVUtzek1BNGlMaHFWQllxRVczaEFvdUR4TUHSAXhBVV95cUxPOXVoX0U3Y05DM2RyeUdHQjlka0twQ2Z5UHJCb1lzR0h0Tl9wNllOX2ZjeHVPUFE5SUFiWlhZTDUzQVpROE5zb0MtcEtMaWM5Q281WHQ3ME5MRTd2NS0zVnBsZVhaN0NpNTJtSzVWcVViOVZNWFlwVDg?oc=5",
+          "ts": "2026-07-02T07:00:39Z",
+          "title": "Taiwan Detains Two Super Micro Staff In GPU Smuggling Probe"
+         }
+        ]
+       },
+       {
+        "text": "Wealthy Taiwanese are quietly moving billions to Singapore as geopolitical fears reshape Asia's offshore map.",
+        "cites": [
+         {
+          "outlet": "New Fortune Times",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOS1ZPMHVSbFJGZi1CckkwZVlBc0lYTnNOcUo2OS1WNzVFZWNjWG41a2R5WnUtd3JDZkd6RHpGTU9GRmpkNjZnRGl4eGtvazdtMTEzdENyaFgtanQxRDZfNmZHaFF2dmNjcHVpZVNEWUN6XzhERjJxZDIwSTlqQmQ4NmU3eVJ5ZWd3VmlpWTB0UkY5R1B3VDF2SjE4d3V6QVdpdlFR?oc=5",
+          "ts": "2026-07-02T19:40:43Z",
+          "title": "Taiwan\u2019s Wealthy Shift Assets to Singapore as Geopolitical Risks Rise"
+         },
+         {
+          "outlet": "slguardian.org",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWlp2eWtnUUMwSXBpWHNyZDZxVlNOQkRWUGYwVUxwU1JJR3piSUluaTFmemdWSGRxbHZxdkE2SW1tUzVDTGxndmJONkhHWS13YlFhbG92OEFTVVE5OEFCOTU1ZEMwOE9kOEpNQnN5QjYyMlNhdnJFRmpHbnV2ZzYxeUR5RzBwQ0tCOGVWRGxub2FoWDlLZHdZeXRQT250MEE2alkxa0MyaU9MSUR0YzRCcVJzYzBjeEM2YVIxWDlpNFA?oc=5",
+          "ts": "2026-07-02T05:43:16Z",
+          "title": "Taiwan\u2019s Wealthy Quietly Move Billions to Singapore as Geopolitical Fears Reshape Asia\u2019s Offshore Map"
+         }
+        ]
+       },
+       {
+        "text": "Singapore's Senior Minister said peace across the Taiwan Strait is of paramount importance.",
+        "cites": [
+         {
+          "outlet": "rti.org.tw",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9wMTJhVG51SENQV0FmOUxyamU3ODFKajRMT0hibGNWS0F0SGF2TDdwMldwRzdFdmpSbzFndVpUTjlJdjBPVWx4akJ1WVZXVlRObmFncm5DSER4Tnc?oc=5",
+          "ts": "2026-07-03T11:41:34Z",
+          "title": "Singapore Senior Minister: Peace across the Taiwan Strait is of paramount importance"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": false,
+   "items_24h": 19,
+   "items_48h": 38,
+   "outlets": 24,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-13T01:49:57Z",
+     "title": "Typhoon Bavi: China Submerged and Taiwan Devastated as 1.8 Million People Displaced",
+     "outlet": "zoomnews.in",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS3JRUTNrby1JVmwtZmxIMjNYdW0yd21ybmFJUlk4SmZQWTRFcnVsMC0xVm8zblJEZzhhenZNQnlyMGtBMGROaGVoNklqaGdlbmdXdWhxWkRGcGpnSG50cnNvSWxMRTJHZHV5XzF1cW5nTEkyUXpCc0FuMXI0NVV5VjdGQ254YkcxaUlnRkdyN1k1Ukh1N1dEUXNfQ0xRdDB1ZkJNeWtzWDFrdGM3eW90YUZ0ajc5N0FFRHBENGVEdVFyR3fSAcgBQVVfeXFMTnczWWw5amR4T2xVOFlWRzFaZG1oYTA0NlZZaFBJVFhRVkxYM3dpRTZmUWNHYjFEMVlkc2RjdzBRVlZWTmlHdjJMUWpYQzNfd2U5Yk9nZlNnendHelhXUU5yZlhNTE81NDB3eG9lU013dG5RNUpuZV9YdF9PQ2lqdy1nTU9hQjE5QU5feFh0cnBSQkRid1htTFl0cmRwU0J1LUVNWmVwc3gtNmtLb2dUVHdMN0UtSU96azNKZUx6QnV4V3RCc2hLVUo?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-13T01:30:00Z",
+     "title": "Taiwan detects 5 Chinese naval vessels , 10 official ships operating around its territory",
+     "outlet": "tribuneindia.com",
+     "kind": "journalist",
+     "url": "https://www.tribuneindia.com/news/world/taiwan-detects-5-chinese-naval-vessels-10-official-ships-operating-around-its-territory/",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-12T19:45:00Z",
+     "title": "\u300a TAIPEI TIMES \u300b Lai touts Taiwan tech role , prowess - \u7126\u9ede",
+     "outlet": "news.ltn.com.tw",
+     "kind": "journalist",
+     "url": "https://news.ltn.com.tw/news/focus/breakingnews/5503012",
+     "rel": 19,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-12T16:55:45Z",
+     "title": "Ten More For Taiwan: Policy Recommendations to Deter Chinese Communist Party Aggression",
+     "outlet": "Small Wars Journal",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOM3JhMFVQZmpoak1PTGlib3c1YW9kcmlNSUo3NVZZT2RaelFjWi1adDhLLU4td3VTXzkzUEF2N3UzTGw3cHZLOHJYZFQ3RloyRU5zQV9NQ0d2NU1WUEpVUWZzMFkxa0dpeVBPaU9Gc3o0R0NHZ0lET0M4UTZ2T1NNMTVLVE9VTWc4U0RZNWpaXzU2RUZQV2pXQjVlWjJTZzVrR3NOYWdSczlwNlZlRmFHaEQxeFpQZDBOR1hhbk9vbEJHZDd1V2c?oc=5",
+     "rel": 27,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-12T16:52:27Z",
+     "title": "Notes from Central Taiwan: PRC expansion: Coming soon to islands near you",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/feat/archives/2026/07/13/2003860647",
+     "rel": 21,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-12T16:52:27Z",
+     "title": "John J. Tkacik, Jr. On Taiwan: Citizen Sun Yat-sen",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/editorials/archives/2026/07/13/2003860641",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-12T16:52:27Z",
+     "title": "Taiwan's fuel prices to remain unchanged this week",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/13/2003860635",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-12T16:52:27Z",
+     "title": "Taiwan takes gold at Physics Olympiad",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/07/13/2003860667",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-11T22:25:13Z"
+   },
+   "viewpoints": [
+    {
+     "stance": "US envoy urges Taiwan to build a 'hornet's nest' of drones to deter China.",
+     "carriers": [
+      {
+       "outlet": "Taipei Times",
+       "kind": "journalist",
+       "url": "https://www.taipeitimes.com/News/feat/archives/2026/07/03/2003860147",
+       "ts_utc": "2026-07-02T17:07:14Z"
+      },
+      {
+       "outlet": "Modern Diplomacy",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWm00VW5Zc3RYVXNab3kwX3B6TjQ0eFJ1YXpyVVVfRkMwbFBKVFhlSTlvQWFNWjlYQlNzOXU4bGpoYS1adnNoVVJnWmZua013c3hreHByZ3lWUWxNVWZMYS1pc2RJcDlXT3NXRjFWUTJNYUQtUkhkU1E2Tk1WUGhESDJGeC11ZlNUME00aVlPaDREclBPTGhaLXlzRk16bTRrS2xxRl9XOENmOFE?oc=5",
+       "ts_utc": "2026-07-02T07:06:25Z"
+      }
+     ]
+    },
+    {
+     "stance": "Beijing condemns Taiwan over maritime disputes, emphasizing its territorial claims.",
+     "carriers": [
+      {
+       "outlet": "Dimsum Daily",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoWEEyaXJaMFdsbkZyOW9fVG9FTURSQTdPWkhPbTZxRHZFZ0FkMlRmNDJlaGkyWDJBZnhnWE1scmczZjRHem13SDZrRDJvOGY1OURidGI1OTdIQjE4NXgwWGR5SmUxVnpMUWdlbU14ck9vLUF1Z1gxNFg1bmNZZw?oc=5",
+       "ts_utc": "2026-07-02T07:48:37Z"
+      }
+     ]
+    },
+    {
+     "stance": "Travel And Tour World highlights tourism tensions as China calls for travel resumption amid political roadblocks.",
+     "carriers": [
+      {
+       "outlet": "Travel And Tour World",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE05Y3ZiNGxtbDRSblYxRW9EUkwxTFo3WkJMVmVNdnhHWUt2cjZDVGltbmI2a1NHWEhGNllqcWtTOWxzMjhFc2tQY2M4ZVhzNWlWUFZnS0JlY0Z4ejBZS2RsVXEtWmlyZ2FRMnQyRVZB?oc=5",
+       "ts_utc": "2026-07-02T09:06:37Z"
+      }
+     ]
+    }
+   ],
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 119,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "blockchain.news",
+      "ts": "2026-07-06T03:25:42Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Nikkei Asia",
+      "ts": "2026-07-06T03:46:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 4
+     },
+     {
+      "outlet": "aninews.in",
+      "ts": "2026-07-06T05:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "The Strategist | ASPI's analysis and commentary site",
+      "ts": "2026-07-06T05:43:24Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Taiwan Insight",
+      "ts": "2026-07-06T08:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "asiaone.com",
+      "ts": "2026-07-06T08:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 4
+     },
+     {
+      "outlet": "ThinkChina",
+      "ts": "2026-07-06T08:30:46Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "thehawk.in",
+      "ts": "2026-07-06T08:55:26Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "beijing",
+     "situations": [
+      "trump-reframes-us-china-relationship-as-peer-pow"
+     ]
+    },
+    {
+     "entity": "cgtn",
+     "situations": [
+      "colombia-runoff-election-armed-conflict-shift",
+      "venezuela-earthquakes-kill-920-amid-political-cr"
+     ]
+    },
+    {
+     "entity": "china",
+     "situations": [
+      "gaza-israel-war-current",
+      "pakistan-air-strikes-afghanistan",
+      "russia-ukraine-war-current",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "typhoon-maysak-storms-cause-deaths-in-china",
+      "us-tanker-strike-gulf-of-oman-india-sailors"
+     ]
+    },
+    {
+     "entity": "donald trump",
+     "situations": [
+      "colombia-runoff-election-armed-conflict-shift",
+      "gaza-israel-war-current",
+      "russia-ukraine-war-current",
+      "trump-crypto-earnings-disclosure",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "us-to-pull-fighter-jets-from-nato-europe"
+     ]
+    },
+    {
+     "entity": "india",
+     "situations": [
+      "oil-prices-fall-to-pre-war-levels",
+      "pakistan-air-strikes-afghanistan",
+      "pakistan-india-indus-waters-treaty-row",
+      "trump-reframes-us-china-relationship-as-peer-pow",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "venezuela-earthquakes-kill-920-amid-political-cr"
+     ]
+    },
+    {
+     "entity": "japan",
+     "situations": [
+      "japan-yen-weakens-to-40-year-low",
+      "trump-reframes-us-china-relationship-as-peer-pow"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "Taipei Times",
+     "n": 12,
+     "class": "other"
+    },
+    {
+     "outlet": "news.ltn.com.tw",
+     "n": 6,
+     "class": "other"
+    },
+    {
+     "outlet": "globalsecurity.org",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "news.webindia123.com",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "DW.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Yahoo",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "aninews.in",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "asiaone.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "internazionale.it",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "AOL.com",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "France 24",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Lavender Hotel",
+     "n": 2,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 3,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-06-29 06:00",
+      6,
+      5
+     ],
+     [
+      "2026-06-29 12:00",
+      22,
+      14
+     ],
+     [
+      "2026-06-29 18:00",
+      30,
+      26
+     ],
+     [
+      "2026-06-30 00:00",
+      31,
+      30
+     ],
+     [
+      "2026-06-30 06:00",
+      40,
+      34
+     ],
+     [
+      "2026-06-30 12:00",
+      45,
+      42
+     ],
+     [
+      "2026-06-30 18:00",
+      37,
+      45
+     ],
+     [
+      "2026-07-01 00:00",
+      24,
+      40
+     ],
+     [
+      "2026-07-01 06:00",
+      25,
+      44
+     ],
+     [
+      "2026-07-01 12:00",
+      21,
+      42
+     ],
+     [
+      "2026-07-01 18:00",
+      21,
+      32
+     ],
+     [
+      "2026-07-02 00:00",
+      23,
+      32
+     ],
+     [
+      "2026-07-02 06:00",
+      24,
+      33
+     ],
+     [
+      "2026-07-02 12:00",
+      23,
+      27
+     ],
+     [
+      "2026-07-02 18:00",
+      17,
+      25
+     ],
+     [
+      "2026-07-03 00:00",
+      17,
+      25
+     ],
+     [
+      "2026-07-03 06:00",
+      15,
+      26
+     ],
+     [
+      "2026-07-03 12:00",
+      15,
+      22
+     ],
+     [
+      "2026-07-03 18:00",
+      14,
+      24
+     ],
+     [
+      "2026-07-04 00:00",
+      14,
+      25
+     ],
+     [
+      "2026-07-04 06:00",
+      14,
+      20
+     ],
+     [
+      "2026-07-04 12:00",
+      18,
+      21
+     ],
+     [
+      "2026-07-04 18:00",
+      18,
+      19
+     ],
+     [
+      "2026-07-05 00:00",
+      16,
+      16
+     ],
+     [
+      "2026-07-05 06:00",
+      16,
+      19
+     ],
+     [
+      "2026-07-05 12:00",
+      18,
+      20
+     ],
+     [
+      "2026-07-05 18:00",
+      15,
+      18
+     ],
+     [
+      "2026-07-06 00:00",
+      13,
+      19
+     ],
+     [
+      "2026-07-06 06:00",
+      14,
+      18
+     ],
+     [
+      "2026-07-06 12:00",
+      13,
+      19
+     ],
+     [
+      "2026-07-06 18:00",
+      12,
+      19
+     ],
+     [
+      "2026-07-07 00:00",
+      11,
+      20
+     ],
+     [
+      "2026-07-07 06:00",
+      11,
+      17
+     ],
+     [
+      "2026-07-07 12:00",
+      11,
+      18
+     ],
+     [
+      "2026-07-07 18:00",
+      11,
+      21
+     ],
+     [
+      "2026-07-08 00:00",
+      9,
+      17
+     ],
+     [
+      "2026-07-08 06:00",
+      12,
+      21
+     ],
+     [
+      "2026-07-08 12:00",
+      15,
+      19
+     ],
+     [
+      "2026-07-08 18:00",
+      15,
+      18
+     ],
+     [
+      "2026-07-09 00:00",
+      15,
+      18
+     ],
+     [
+      "2026-07-09 06:00",
+      15,
+      20
+     ],
+     [
+      "2026-07-09 12:00",
+      16,
+      21
+     ],
+     [
+      "2026-07-09 18:00",
+      16,
+      18
+     ],
+     [
+      "2026-07-10 00:00",
+      30,
+      38
+     ],
+     [
+      "2026-07-10 06:00",
+      30,
+      32
+     ],
+     [
+      "2026-07-10 12:00",
+      20,
+      33
+     ],
+     [
+      "2026-07-10 18:00",
+      21,
+      37
+     ],
+     [
+      "2026-07-11 00:00",
+      20,
+      39
+     ],
+     [
+      "2026-07-11 06:00",
+      19,
+      27
+     ],
+     [
+      "2026-07-11 12:00",
+      16,
+      25
+     ],
+     [
+      "2026-07-11 18:00",
+      16,
+      28
+     ],
+     [
+      "2026-07-12 00:00",
+      14,
+      26
+     ],
+     [
+      "2026-07-12 06:00",
+      14,
+      22
+     ],
+     [
+      "2026-07-12 12:00",
+      19,
+      28
+     ],
+     [
+      "2026-07-12 18:00",
+      21,
+      25
+     ],
+     [
+      "2026-07-13 00:00",
+      21,
+      25
+     ]
+    ],
+    "mix": {
+     "mainstream": 1,
+     "state-media": 1,
+     "regional": 1,
+     "official": 0,
+     "other": 58
+    },
+    "first_seen": "2026-06-10T21:04:09Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-21T07:22:06Z",
+     "a": "Press TV frames Japan's Taiwan remarks as inflammatory moves to appease Trump, casting Japan as a destabilizing provocateur in the strait.",
+     "b": "Taipei Times, Taiwan News, and naval analysts report China escalating maritime and air incursions near Taiwan as the primary source of tension."
+    },
+    {
+     "captured_utc": "2026-06-21T10:28:59Z",
+     "a": "Taiwan's defence ministry reports rising Chinese incursions and Taiwan stages combat readiness drills in response.",
+     "b": "China's Global Times says foreign officials treating Taiwan as a separate entity show an opportunistic mindset."
+    },
+    {
+     "captured_utc": "2026-06-22T13:09:45Z",
+     "a": "Taiwan launches a five-day combat readiness drill and receives MQ-9B drones to bolster deterrence against rising Chinese military pressure.",
+     "b": "Military analysts warn Taiwan's new MQ-9 drones are highly vulnerable in any future Taiwan Strait conflict."
+    },
+    {
+     "captured_utc": "2026-06-22T15:13:55Z",
+     "a": "Taiwan and Western outlets say China's military surge is a genuine threat; Taipei launches five-day combat drills and deploys US-made MQ-9 drones in response",
+     "b": "Chinese state media frames cross-strait ties as shared cultural heritage; analysts warn Taiwan's new drones are highly vulnerable and US backing is uncertain"
+    },
+    {
+     "captured_utc": "2026-06-22T22:43:18Z",
+     "a": "Taipei Times and MSN portray China's military ramp-up around Taiwan as an escalatory threat, with Taiwan stepping up defenses against Chinese repression.",
+     "b": "Press TV analyst frames Japan's pro-Taiwan statements as inflammatory provocations deliberately stoking regional risk."
+    },
+    {
+     "captured_utc": "2026-06-22T23:39:56Z",
+     "a": "An analyst cited by Press TV says Japan's PM is making inflammatory Taiwan remarks to appease Trump, provoking regional tensions.",
+     "b": "Taiwan and Western outlets report China is ramping up military activity around Taiwan, prompting Taiwan to launch combat readiness exercises."
+    },
+    {
+     "captured_utc": "2026-06-23T07:12:34Z",
+     "a": "Press TV analyst says Japan PM's Taiwan remarks are inflammatory provocations made to appease Trump.",
+     "b": "Taipei Times frames Taiwan's combat readiness exercises as a defensive response to rising Chinese repression."
+    },
+    {
+     "captured_utc": "2026-06-23T08:08:06Z",
+     "a": "Taiwan and regional outlets frame five-day combat readiness drills as a necessary response to escalating Chinese military activity in the strait",
+     "b": "Press TV analyst characterizes Japan's Taiwan-supportive statements as inflammatory remarks that risk further destabilizing the region"
+    },
+    {
+     "captured_utc": "2026-06-23T09:10:10Z",
+     "a": "Taiwan frames its five-day combat readiness drills as a defensive response to increased Chinese military activity in the strait.",
+     "b": "A China-aligned analyst quoted by Press TV labels Japan PM's Taiwan remarks as inflammatory provocation stoking cross-strait tensions."
+    },
+    {
+     "captured_utc": "2026-06-30T23:35:11Z",
+     "a": "Taipei Times reports Taiwan\u2019s MOFA says Taiwan\u2019s foreign ties are not China\u2019s concern",
+     "b": "Breitbart.com says Taiwan authorities raided Super Micro offices in expanding investigation of Nvidia AI chip smuggling to China"
+    },
+    {
+     "captured_utc": "2026-07-01T22:41:31Z",
+     "a": "\u6bcf\u65e5\u7ecf\u6d4e reports Xi Jinping reiterated his will to unify Taiwan and build a strong military.",
+     "b": "Anadolu Agency and the South China Morning Post say China urges US caution on Taiwan warns against hegemony."
+    },
+    {
+     "captured_utc": "2026-07-03T01:42:26Z",
+     "a": "US envoy urges Taiwan to build a 'hornet's nest' of drones to deter China.",
+     "b": "Beijing condemns Taiwan over maritime disputes, emphasizing its territorial claims."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+   ],
+   "market": {
+    "instruments": [
+     {
+      "symbol": "TSM",
+      "label": "TSMC",
+      "class": "equity",
+      "last": 434.11,
+      "last_ts": "2026-07-10T20:00:00Z",
+      "basis": "China naval activity",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-08T18:57:33Z",
+        436.31
+       ],
+       [
+        "2026-07-08T19:05:23Z",
+        436.92
+       ],
+       [
+        "2026-07-08T19:29:43Z",
+        436.93
+       ],
+       [
+        "2026-07-08T19:30:00Z",
+        435.27
+       ],
+       [
+        "2026-07-08T19:34:49Z",
+        435.21
+       ],
+       [
+        "2026-07-08T20:00:00Z",
+        436.98
+       ],
+       [
+        "2026-07-09T13:30:00Z",
+        444.35
+       ],
+       [
+        "2026-07-09T13:37:09Z",
+        443.9
+       ],
+       [
+        "2026-07-09T13:55:17Z",
+        443.6
+       ],
+       [
+        "2026-07-09T14:19:19Z",
+        440.12
+       ],
+       [
+        "2026-07-09T14:30:00Z",
+        442.02
+       ],
+       [
+        "2026-07-09T14:37:58Z",
+        441.605
+       ],
+       [
+        "2026-07-09T15:14:22Z",
+        443.26
+       ],
+       [
+        "2026-07-09T15:15:57Z",
+        443.6479
+       ],
+       [
+        "2026-07-09T15:30:00Z",
+        444.025
+       ],
+       [
+        "2026-07-09T15:49:08Z",
+        444.02
+       ],
+       [
+        "2026-07-09T15:54:06Z",
+        444.779
+       ],
+       [
+        "2026-07-09T16:22:56Z",
+        442.42
+       ],
+       [
+        "2026-07-09T16:30:00Z",
+        441.23
+       ],
+       [
+        "2026-07-09T16:36:12Z",
+        441.16
+       ],
+       [
+        "2026-07-09T16:58:26Z",
+        441.22
+       ],
+       [
+        "2026-07-09T17:18:15Z",
+        442.49
+       ],
+       [
+        "2026-07-09T17:30:00Z",
+        442.42
+       ],
+       [
+        "2026-07-09T17:34:11Z",
+        442.485
+       ],
+       [
+        "2026-07-09T18:07:53Z",
+        440.205
+       ],
+       [
+        "2026-07-09T18:18:59Z",
+        439.225
+       ],
+       [
+        "2026-07-09T18:30:00Z",
+        439.54
+       ],
+       [
+        "2026-07-09T18:40:57Z",
+        439.32
+       ],
+       [
+        "2026-07-09T19:13:51Z",
+        437.99
+       ],
+       [
+        "2026-07-09T19:20:19Z",
+        439.175
+       ],
+       [
+        "2026-07-09T19:30:00Z",
+        438.29
+       ],
+       [
+        "2026-07-09T19:46:14Z",
+        438.32
+       ],
+       [
+        "2026-07-09T20:00:00Z",
+        436.85
+       ],
+       [
+        "2026-07-10T13:30:00Z",
+        434.43
+       ],
+       [
+        "2026-07-10T13:51:15Z",
+        434.385
+       ],
+       [
+        "2026-07-10T13:57:22Z",
+        432.605
+       ],
+       [
+        "2026-07-10T14:30:00Z",
+        432.33
+       ],
+       [
+        "2026-07-10T14:33:52Z",
+        433.0995
+       ],
+       [
+        "2026-07-10T14:34:02Z",
+        433.995
+       ],
+       [
+        "2026-07-10T15:09:45Z",
+        433.52
+       ],
+       [
+        "2026-07-10T15:13:17Z",
+        434.33
+       ],
+       [
+        "2026-07-10T15:30:00Z",
+        432.36
+       ],
+       [
+        "2026-07-10T15:46:26Z",
+        432.57
+       ],
+       [
+        "2026-07-10T15:54:50Z",
+        432.91
+       ],
+       [
+        "2026-07-10T16:24:34Z",
+        435.6
+       ],
+       [
+        "2026-07-10T16:30:00Z",
+        437.09
+       ],
+       [
+        "2026-07-10T16:46:46Z",
+        437.39
+       ],
+       [
+        "2026-07-10T17:03:07Z",
+        438.585
+       ],
+       [
+        "2026-07-10T17:30:00Z",
+        438.3927
+       ],
+       [
+        "2026-07-10T17:38:48Z",
+        439.235
+       ],
+       [
+        "2026-07-10T17:39:48Z",
+        439.27
+       ],
+       [
+        "2026-07-10T18:16:06Z",
+        437.17
+       ],
+       [
+        "2026-07-10T18:23:40Z",
+        437.085
+       ],
+       [
+        "2026-07-10T18:30:00Z",
+        436.18
+       ],
+       [
+        "2026-07-10T18:56:41Z",
+        436.14
+       ],
+       [
+        "2026-07-10T19:10:11Z",
+        436.88
+       ],
+       [
+        "2026-07-10T19:30:00Z",
+        435.865
+       ],
+       [
+        "2026-07-10T19:36:32Z",
+        435.67
+       ],
+       [
+        "2026-07-10T19:56:56Z",
+        435.785
+       ],
+       [
+        "2026-07-10T20:00:00Z",
+        434.11
+       ]
+      ]
+     },
+     {
+      "symbol": "GC=F",
+      "label": "Gold",
+      "class": "commodity",
+      "last": 4068.1001,
+      "last_ts": "2026-07-13T03:07:47Z",
+      "basis": "Safe haven demand",
+      "move_pct": -0.59,
+      "window_h": 24,
+      "measured_from": "2026-07-13T01:49:57Z",
+      "series": [
+       [
+        "2026-07-12T22:00:00Z",
+        4091.1001
+       ],
+       [
+        "2026-07-12T22:23:19Z",
+        4090.7
+       ],
+       [
+        "2026-07-12T22:48:26Z",
+        4083.8999
+       ],
+       [
+        "2026-07-12T22:53:03Z",
+        4087.2
+       ],
+       [
+        "2026-07-12T23:00:00Z",
+        4078.2
+       ],
+       [
+        "2026-07-12T23:14:40Z",
+        4078.3
+       ],
+       [
+        "2026-07-12T23:20:50Z",
+        4078.8
+       ],
+       [
+        "2026-07-12T23:41:02Z",
+        4086.7
+       ],
+       [
+        "2026-07-12T23:57:23Z",
+        4091.3999
+       ],
+       [
+        "2026-07-13T00:00:00Z",
+        4096.2002
+       ],
+       [
+        "2026-07-13T00:07:51Z",
+        4096.2002
+       ],
+       [
+        "2026-07-13T00:30:45Z",
+        4082.5
+       ],
+       [
+        "2026-07-13T00:34:39Z",
+        4076.1001
+       ],
+       [
+        "2026-07-13T00:58:47Z",
+        4084.7
+       ],
+       [
+        "2026-07-13T00:59:17Z",
+        4082.3
+       ],
+       [
+        "2026-07-13T01:00:00Z",
+        4082.1001
+       ],
+       [
+        "2026-07-13T01:23:15Z",
+        4082.7
+       ],
+       [
+        "2026-07-13T01:26:15Z",
+        4084.8999
+       ],
+       [
+        "2026-07-13T01:47:38Z",
+        4092.3999
+       ],
+       [
+        "2026-07-13T01:55:08Z",
+        4082.5
+       ],
+       [
+        "2026-07-13T02:00:00Z",
+        4082.3
+       ],
+       [
+        "2026-07-13T02:15:01Z",
+        4080.0
+       ],
+       [
+        "2026-07-13T02:27:49Z",
+        4076.5
+       ],
+       [
+        "2026-07-13T02:42:05Z",
+        4081.1001
+       ],
+       [
+        "2026-07-13T03:00:00Z",
+        4071.3999
+       ],
+       [
+        "2026-07-13T03:05:01Z",
+        4072.0
+       ],
+       [
+        "2026-07-13T03:07:47Z",
+        4068.1001
+       ]
+      ]
+     },
+     {
+      "symbol": "DX-Y.NYB",
+      "label": "Dollar Index",
+      "class": "fx",
+      "last": 101.175,
+      "last_ts": "2026-07-13T03:07:48Z",
+      "basis": "Currency strength",
+      "move_pct": 0.06,
+      "window_h": 24,
+      "measured_from": "2026-07-13T01:49:57Z",
+      "series": [
+       [
+        "2026-07-12T22:00:00Z",
+        101.139
+       ],
+       [
+        "2026-07-12T22:23:24Z",
+        101.141
+       ],
+       [
+        "2026-07-12T22:48:33Z",
+        101.141
+       ],
+       [
+        "2026-07-12T22:53:03Z",
+        101.136
+       ],
+       [
+        "2026-07-12T23:00:00Z",
+        101.135
+       ],
+       [
+        "2026-07-12T23:14:47Z",
+        101.127
+       ],
+       [
+        "2026-07-12T23:21:17Z",
+        101.113
+       ],
+       [
+        "2026-07-12T23:41:07Z",
+        101.111
+       ],
+       [
+        "2026-07-12T23:57:27Z",
+        101.084
+       ],
+       [
+        "2026-07-13T00:00:00Z",
+        101.076
+       ],
+       [
+        "2026-07-13T00:07:58Z",
+        101.079
+       ],
+       [
+        "2026-07-13T00:30:49Z",
+        101.079
+       ],
+       [
+        "2026-07-13T00:34:41Z",
+        101.09
+       ],
+       [
+        "2026-07-13T00:58:50Z",
+        101.138
+       ],
+       [
+        "2026-07-13T00:59:17Z",
+        101.147
+       ],
+       [
+        "2026-07-13T01:00:00Z",
+        101.184
+       ],
+       [
+        "2026-07-13T01:23:17Z",
+        101.183
+       ],
+       [
+        "2026-07-13T01:26:18Z",
+        101.203
+       ],
+       [
+        "2026-07-13T01:47:45Z",
+        101.117
+       ],
+       [
+        "2026-07-13T01:55:08Z",
+        101.134
+       ],
+       [
+        "2026-07-13T02:00:00Z",
+        101.138
+       ],
+       [
+        "2026-07-13T02:15:02Z",
+        101.138
+       ],
+       [
+        "2026-07-13T02:27:50Z",
+        101.143
+       ],
+       [
+        "2026-07-13T02:42:10Z",
+        101.109
+       ],
+       [
+        "2026-07-13T03:00:00Z",
+        101.164
+       ],
+       [
+        "2026-07-13T03:04:59Z",
+        101.164
+       ],
+       [
+        "2026-07-13T03:07:48Z",
+        101.175
+       ]
+      ]
+     },
+     {
+      "symbol": "^VIX",
+      "label": "VIX",
+      "class": "index",
+      "last": 15.03,
+      "last_ts": "2026-07-10T20:15:00Z",
+      "basis": "Market volatility",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-09T18:25:46Z",
+        16.04
+       ],
+       [
+        "2026-07-09T18:58:46Z",
+        16.07
+       ],
+       [
+        "2026-07-09T19:00:00Z",
+        16.09
+       ],
+       [
+        "2026-07-09T19:05:16Z",
+        16.09
+       ],
+       [
+        "2026-07-09T19:31:01Z",
+        15.92
+       ],
+       [
+        "2026-07-09T19:52:46Z",
+        15.82
+       ],
+       [
+        "2026-07-09T20:00:00Z",
+        15.86
+       ],
+       [
+        "2026-07-09T20:15:00Z",
+        15.84
+       ],
+       [
+        "2026-07-09T20:15:01Z",
+        15.84
+       ],
+       [
+        "2026-07-10T07:00:00Z",
+        16.04
+       ],
+       [
+        "2026-07-10T07:26:16Z",
+        16.04
+       ],
+       [
+        "2026-07-10T07:28:01Z",
+        16.05
+       ],
+       [
+        "2026-07-10T07:59:01Z",
+        16.14
+       ],
+       [
+        "2026-07-10T08:00:00Z",
+        16.05
+       ],
+       [
+        "2026-07-10T08:13:01Z",
+        16.05
+       ],
+       [
+        "2026-07-10T08:35:16Z",
+        16.09
+       ],
+       [
+        "2026-07-10T09:00:00Z",
+        16.04
+       ],
+       [
+        "2026-07-10T09:00:01Z",
+        16.08
+       ],
+       [
+        "2026-07-10T09:10:01Z",
+        16.04
+       ],
+       [
+        "2026-07-10T09:43:46Z",
+        16.03
+       ],
+       [
+        "2026-07-10T09:47:16Z",
+        16.02
+       ],
+       [
+        "2026-07-10T10:00:00Z",
+        15.95
+       ],
+       [
+        "2026-07-10T10:23:01Z",
+        15.95
+       ],
+       [
+        "2026-07-10T10:26:01Z",
+        15.96
+       ],
+       [
+        "2026-07-10T10:58:01Z",
+        15.87
+       ],
+       [
+        "2026-07-10T11:00:00Z",
+        15.85
+       ],
+       [
+        "2026-07-10T11:07:31Z",
+        15.86
+       ],
+       [
+        "2026-07-10T11:36:46Z",
+        15.95
+       ],
+       [
+        "2026-07-10T11:53:16Z",
+        15.91
+       ],
+       [
+        "2026-07-10T12:00:00Z",
+        15.81
+       ],
+       [
+        "2026-07-10T12:19:01Z",
+        15.8
+       ],
+       [
+        "2026-07-10T12:43:31Z",
+        15.79
+       ],
+       [
+        "2026-07-10T13:00:00Z",
+        15.63
+       ],
+       [
+        "2026-07-10T13:00:46Z",
+        15.78
+       ],
+       [
+        "2026-07-10T13:36:16Z",
+        15.64
+       ],
+       [
+        "2026-07-10T13:42:16Z",
+        15.72
+       ],
+       [
+        "2026-07-10T14:00:00Z",
+        15.55
+       ],
+       [
+        "2026-07-10T14:18:46Z",
+        15.52
+       ],
+       [
+        "2026-07-10T14:54:31Z",
+        15.64
+       ],
+       [
+        "2026-07-10T14:58:01Z",
+        15.72
+       ],
+       [
+        "2026-07-10T15:00:00Z",
+        15.48
+       ],
+       [
+        "2026-07-10T15:31:16Z",
+        15.53
+       ],
+       [
+        "2026-07-10T15:39:46Z",
+        15.55
+       ],
+       [
+        "2026-07-10T16:00:00Z",
+        15.43
+       ],
+       [
+        "2026-07-10T16:09:31Z",
+        15.41
+       ],
+       [
+        "2026-07-10T16:31:46Z",
+        15.37
+       ],
+       [
+        "2026-07-10T16:48:01Z",
+        15.25
+       ],
+       [
+        "2026-07-10T17:00:00Z",
+        15.35
+       ],
+       [
+        "2026-07-10T17:23:31Z",
+        15.35
+       ],
+       [
+        "2026-07-10T17:24:46Z",
+        15.35
+       ],
+       [
+        "2026-07-10T18:00:00Z",
+        15.38
+       ],
+       [
+        "2026-07-10T18:01:01Z",
+        15.38
+       ],
+       [
+        "2026-07-10T18:08:31Z",
+        15.37
+       ],
+       [
+        "2026-07-10T18:41:31Z",
+        15.26
+       ],
+       [
+        "2026-07-10T18:55:01Z",
+        15.26
+       ],
+       [
+        "2026-07-10T19:00:00Z",
+        15.26
+       ],
+       [
+        "2026-07-10T19:21:16Z",
+        15.26
+       ],
+       [
+        "2026-07-10T19:41:46Z",
+        15.15
+       ],
+       [
+        "2026-07-10T20:00:00Z",
+        14.96
+       ],
+       [
+        "2026-07-10T20:15:00Z",
+        15.03
+       ]
+      ]
+     }
+    ],
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-07-13T03:19:04Z",
+    "anchor_beat": "2026-07-13T01:49:57Z"
+   },
+   "lead_image": {
+    "url": "https://img.taipeitimes.com/images/2026/07/11/P02-260711-603.jpg",
+    "source": "Taipei Times",
+    "focal": {
+     "x": 55,
+     "y": 35
     }
    }
   },
@@ -10904,11 +10962,6 @@
      "class": "other"
     },
     {
-     "outlet": "CGTN",
-     "n": 4,
-     "class": "state-media"
-    },
-    {
      "outlet": "Gulf News",
      "n": 4,
      "class": "other"
@@ -10930,6 +10983,11 @@
     },
     {
      "outlet": "Anadolu Agency",
+     "n": 2,
+     "class": "state-media"
+    },
+    {
+     "outlet": "CGTN",
      "n": 2,
      "class": "state-media"
     },
@@ -11574,7 +11632,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:18:13Z",
+    "observed_utc": "2026-07-13T03:21:07Z",
     "anchor_beat": "2026-07-13T01:20:16Z"
    },
    "lead_image": {
@@ -12625,22 +12683,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 108,
+    "outlets_timed": 107,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Kavout | AI",
-      "ts": "2026-07-06T03:18:25Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "FXStreet",
       "ts": "2026-07-06T03:49:26Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 20
      },
@@ -12691,6 +12741,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 31
+     },
+     {
+      "outlet": "The Times of India",
+      "ts": "2026-07-06T06:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "IN press",
+      "items": 14
      }
     ],
     "unplaced": []
@@ -12788,11 +12846,6 @@
      "class": "other"
     },
     {
-     "outlet": "AOL.com",
-     "n": 1,
-     "class": "other"
-    },
-    {
      "outlet": "CryptoRank",
      "n": 1,
      "class": "other"
@@ -12809,6 +12862,11 @@
     },
     {
      "outlet": "FXEmpire",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Fortune",
      "n": 1,
      "class": "other"
     }
@@ -13106,7 +13164,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 32
+     "other": 30
     },
     "first_seen": "2026-06-24T04:18:36Z"
    },
@@ -14046,7 +14104,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:18:11Z",
+    "observed_utc": "2026-07-13T03:21:05Z",
     "anchor_beat": "2026-07-13T02:01:24Z"
    },
    "lead_image": {
@@ -16571,7 +16629,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:17:48Z",
+    "observed_utc": "2026-07-13T03:20:44Z",
     "anchor_beat": "2026-07-12T22:29:59Z"
    },
    "lead_image": {
@@ -17523,10 +17581,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 101.164,
-      "last_ts": "2026-07-13T03:04:59Z",
+      "last": 101.175,
+      "last_ts": "2026-07-13T03:07:48Z",
       "basis": "Fed rate outlook",
-      "move_pct": 0.02,
+      "move_pct": 0.03,
       "window_h": 24,
       "measured_from": "2026-07-13T02:40:53Z",
       "series": [
@@ -17633,6 +17691,10 @@
        [
         "2026-07-13T03:04:59Z",
         101.164
+       ],
+       [
+        "2026-07-13T03:07:48Z",
+        101.175
        ]
       ]
      },
@@ -17893,10 +17955,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4072.0,
-      "last_ts": "2026-07-13T03:05:01Z",
+      "last": 4068.1001,
+      "last_ts": "2026-07-13T03:07:47Z",
       "basis": "Inflation and rates",
-      "move_pct": -0.11,
+      "move_pct": -0.21,
       "window_h": 24,
       "measured_from": "2026-07-13T02:40:53Z",
       "series": [
@@ -18003,6 +18065,10 @@
        [
         "2026-07-13T03:05:01Z",
         4072.0
+       ],
+       [
+        "2026-07-13T03:07:47Z",
+        4068.1001
        ]
       ]
      },
@@ -18261,7 +18327,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:17:37Z",
+    "observed_utc": "2026-07-13T03:20:34Z",
     "anchor_beat": "2026-07-13T02:40:53Z"
    },
    "lead_image": {
@@ -20035,7 +20101,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:22:50Z",
+    "observed_utc": "2026-07-13T03:25:48Z",
     "anchor_beat": "2026-07-12T20:14:13Z"
    },
    "lead_image": {
@@ -21200,7 +21266,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:24:44Z",
+    "observed_utc": "2026-07-13T03:27:42Z",
     "anchor_beat": "2026-07-12T12:17:42Z"
    },
    "lead_image": {
@@ -23444,10 +23510,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 101.164,
-      "last_ts": "2026-07-13T03:04:59Z",
+      "last": 101.175,
+      "last_ts": "2026-07-13T03:07:48Z",
       "basis": "Russia-ASEAN summit geopolitical tension",
-      "move_pct": 0.07,
+      "move_pct": 0.08,
       "window_h": 24,
       "measured_from": "2026-07-13T00:45:06Z",
       "series": [
@@ -23554,12 +23620,16 @@
        [
         "2026-07-13T03:04:59Z",
         101.164
+       ],
+       [
+        "2026-07-13T03:07:48Z",
+        101.175
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:17:15Z",
+    "observed_utc": "2026-07-13T03:20:15Z",
     "anchor_beat": "2026-07-13T00:45:06Z"
    },
    "lead_image": {
@@ -24294,11 +24364,6 @@
      "class": "mainstream"
     },
     {
-     "outlet": "CGTN",
-     "n": 1,
-     "class": "state-media"
-    },
-    {
      "outlet": "Euronews",
      "n": 1,
      "class": "other"
@@ -24634,7 +24699,7 @@
     ],
     "mix": {
      "mainstream": 2,
-     "state-media": 2,
+     "state-media": 1,
      "regional": 0,
      "official": 0,
      "other": 8
@@ -25635,7 +25700,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:22:12Z",
+    "observed_utc": "2026-07-13T03:25:07Z",
     "anchor_beat": "2026-07-13T00:36:28Z"
    },
    "lead_image": {
@@ -26392,7 +26457,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:31:02Z",
+    "observed_utc": "2026-07-13T03:33:57Z",
     "anchor_beat": "2026-07-12T12:26:46Z"
    },
    "lead_image": {
@@ -29043,7 +29108,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:18:37Z",
+    "observed_utc": "2026-07-13T03:21:31Z",
     "anchor_beat": "2026-07-13T01:01:00Z"
    },
    "lead_image": {
@@ -30124,7 +30189,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:20:58Z",
+    "observed_utc": "2026-07-13T03:23:52Z",
     "anchor_beat": "2026-07-12T19:21:14Z"
    },
    "lead_image": {
@@ -32081,10 +32146,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.38,
-      "last_ts": "2026-07-13T03:04:58Z",
+      "last": 74.42,
+      "last_ts": "2026-07-13T03:07:43Z",
       "basis": "Sudan oil output disruption",
-      "move_pct": 0.38,
+      "move_pct": 0.43,
       "window_h": 24,
       "measured_from": "2026-07-13T00:36:25Z",
       "series": [
@@ -32191,6 +32256,10 @@
        [
         "2026-07-13T03:04:58Z",
         74.38
+       ],
+       [
+        "2026-07-13T03:07:43Z",
+        74.42
        ]
       ]
      },
@@ -32198,10 +32267,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 79.1,
-      "last_ts": "2026-07-13T03:03:42Z",
+      "last": 79.11,
+      "last_ts": "2026-07-13T03:07:19Z",
       "basis": "Russian oil supply risk",
-      "move_pct": 0.41,
+      "move_pct": 0.42,
       "window_h": 24,
       "measured_from": "2026-07-13T00:36:25Z",
       "series": [
@@ -32308,6 +32377,10 @@
        [
         "2026-07-13T03:03:42Z",
         79.1
+       ],
+       [
+        "2026-07-13T03:07:19Z",
+        79.11
        ]
       ]
      },
@@ -32315,10 +32388,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4072.0,
-      "last_ts": "2026-07-13T03:05:01Z",
+      "last": 4068.1001,
+      "last_ts": "2026-07-13T03:07:47Z",
       "basis": "Safe-haven gold demand",
-      "move_pct": -0.1,
+      "move_pct": -0.2,
       "window_h": 24,
       "measured_from": "2026-07-13T00:36:25Z",
       "series": [
@@ -32425,6 +32498,10 @@
        [
         "2026-07-13T03:05:01Z",
         4072.0
+       ],
+       [
+        "2026-07-13T03:07:47Z",
+        4068.1001
        ]
       ]
      },
@@ -32432,10 +32509,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 101.164,
-      "last_ts": "2026-07-13T03:04:59Z",
+      "last": 101.175,
+      "last_ts": "2026-07-13T03:07:48Z",
       "basis": "USD strength due to risk",
-      "move_pct": 0.07,
+      "move_pct": 0.08,
       "window_h": 24,
       "measured_from": "2026-07-13T00:36:25Z",
       "series": [
@@ -32542,12 +32619,16 @@
        [
         "2026-07-13T03:04:59Z",
         101.164
+       ],
+       [
+        "2026-07-13T03:07:48Z",
+        101.175
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:16:12Z",
+    "observed_utc": "2026-07-13T03:19:17Z",
     "anchor_beat": "2026-07-13T00:36:25Z"
    },
    "lead_image": {
@@ -34718,7 +34799,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:20:32Z",
+    "observed_utc": "2026-07-13T03:23:26Z",
     "anchor_beat": "2026-07-12T20:24:00Z"
    },
    "lead_image": {
@@ -36200,7 +36281,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:21:25Z",
+    "observed_utc": "2026-07-13T03:24:19Z",
     "anchor_beat": "2026-07-13T00:15:37Z"
    },
    "lead_image": {
@@ -37264,7 +37345,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:24:59Z",
+    "observed_utc": "2026-07-13T03:27:57Z",
     "anchor_beat": "2026-07-13T02:47:09Z"
    },
    "lead_image": {
@@ -39590,7 +39671,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:19:50Z",
+    "observed_utc": "2026-07-13T03:22:47Z",
     "anchor_beat": "2026-07-12T16:52:27Z"
    },
    "lead_image": {
@@ -43690,7 +43771,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:20:11Z",
+    "observed_utc": "2026-07-13T03:23:05Z",
     "anchor_beat": "2026-07-12T14:37:00Z"
    },
    "lead_image": {
@@ -44645,7 +44726,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:30:00Z",
+    "observed_utc": "2026-07-13T03:32:56Z",
     "anchor_beat": "2026-07-12T10:00:16Z"
    },
    "gate": {
@@ -46675,7 +46756,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:17:07Z",
+    "observed_utc": "2026-07-13T03:20:12Z",
     "anchor_beat": "2026-07-12T23:05:25Z"
    },
    "lead_image": {
@@ -48510,7 +48591,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:19:24Z",
+    "observed_utc": "2026-07-13T03:22:20Z",
     "anchor_beat": "2026-07-12T14:25:00Z"
    },
    "lead_image": {
@@ -49500,8 +49581,8 @@
    },
    "discovered": true,
    "items_24h": 1,
-   "items_48h": 19,
-   "outlets": 16,
+   "items_48h": 18,
+   "outlets": 15,
    "kinds": [
     "journalist",
     "state media"
@@ -50415,7 +50496,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:25:11Z",
+    "observed_utc": "2026-07-13T03:28:08Z",
     "anchor_beat": "2026-07-12T16:52:27Z"
    },
    "lead_image": {
@@ -52427,10 +52508,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.38,
-      "last_ts": "2026-07-13T03:04:58Z",
+      "last": 74.42,
+      "last_ts": "2026-07-13T03:07:43Z",
       "basis": "Lebanon Hezbollah conflict",
-      "move_pct": 4.01,
+      "move_pct": 4.07,
       "window_h": 24,
       "measured_from": "2026-07-12T21:50:28Z",
       "series": [
@@ -52537,6 +52618,10 @@
        [
         "2026-07-13T03:04:58Z",
         74.38
+       ],
+       [
+        "2026-07-13T03:07:43Z",
+        74.42
        ]
       ]
      },
@@ -52544,10 +52629,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 79.1,
-      "last_ts": "2026-07-13T03:03:42Z",
+      "last": 79.11,
+      "last_ts": "2026-07-13T03:07:19Z",
       "basis": "Lebanon Hezbollah conflict",
-      "move_pct": 4.08,
+      "move_pct": 4.09,
       "window_h": 24,
       "measured_from": "2026-07-12T21:50:28Z",
       "series": [
@@ -52654,12 +52739,16 @@
        [
         "2026-07-13T03:03:42Z",
         79.1
+       ],
+       [
+        "2026-07-13T03:07:19Z",
+        79.11
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:17:21Z",
+    "observed_utc": "2026-07-13T03:20:19Z",
     "anchor_beat": "2026-07-12T21:50:28Z"
    },
    "lead_image": {
@@ -54662,7 +54751,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:16:45Z",
+    "observed_utc": "2026-07-13T03:19:51Z",
     "anchor_beat": "2026-07-12T06:00:35Z"
    },
    "lead_image": {
@@ -55771,7 +55860,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:20:05Z",
+    "observed_utc": "2026-07-13T03:22:59Z",
     "anchor_beat": "2026-07-12T05:37:15Z"
    },
    "lead_image": {
@@ -57567,7 +57656,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:21:30Z",
+    "observed_utc": "2026-07-13T03:24:24Z",
     "anchor_beat": "2026-07-12T20:04:35Z"
    },
    "lead_image": {
@@ -59925,7 +60014,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:19:29Z",
+    "observed_utc": "2026-07-13T03:22:26Z",
     "anchor_beat": "2026-07-12T10:00:00Z"
    },
    "lead_image": {
@@ -61233,7 +61322,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:19:40Z",
+    "observed_utc": "2026-07-13T03:22:36Z",
     "anchor_beat": "2026-07-12T07:49:17Z"
    },
    "lead_image": {
@@ -63017,7 +63106,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:21:09Z",
+    "observed_utc": "2026-07-13T03:24:03Z",
     "anchor_beat": "2026-07-12T13:26:41Z"
    },
    "lead_image": {
@@ -63948,7 +64037,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:21:20Z",
+    "observed_utc": "2026-07-13T03:24:14Z",
     "anchor_beat": "2026-07-12T07:26:38Z"
    },
    "gate": {
@@ -66321,7 +66410,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:25:22Z",
+    "observed_utc": "2026-07-13T03:28:17Z",
     "anchor_beat": "2026-07-12T07:16:56Z"
    },
    "lead_image": {
@@ -69969,7 +70058,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:22:06Z",
+    "observed_utc": "2026-07-13T03:25:01Z",
     "anchor_beat": "2026-07-13T00:30:49Z"
    },
    "lead_image": {
@@ -71025,7 +71114,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:23:06Z",
+    "observed_utc": "2026-07-13T03:26:05Z",
     "anchor_beat": "2026-07-12T16:30:00Z"
    },
    "lead_image": {
@@ -73237,7 +73326,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:25:49Z",
+    "observed_utc": "2026-07-13T03:28:41Z",
     "anchor_beat": "2026-07-12T15:16:00Z"
    },
    "gate": {
@@ -74718,7 +74807,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:33:04Z",
+    "observed_utc": "2026-07-13T03:36:07Z",
     "anchor_beat": "2026-07-12T12:34:49Z"
    },
    "gate": {
@@ -75709,7 +75798,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:30:27Z",
+    "observed_utc": "2026-07-13T03:33:22Z",
     "anchor_beat": "2026-07-11T14:05:06Z"
    },
    "lead_image": {
@@ -78069,7 +78158,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:30:52Z",
+    "observed_utc": "2026-07-13T03:33:47Z",
     "anchor_beat": "2026-07-11T15:36:57Z"
    },
    "lead_image": {
@@ -78988,7 +79077,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:18:42Z",
+    "observed_utc": "2026-07-13T03:21:36Z",
     "anchor_beat": "2026-07-11T17:35:00Z"
    },
    "lead_image": {
@@ -80142,7 +80231,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:17:43Z",
+    "observed_utc": "2026-07-13T03:20:39Z",
     "anchor_beat": "2026-07-11T11:57:17Z"
    },
    "lead_image": {
@@ -80860,7 +80949,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:25:32Z",
+    "observed_utc": "2026-07-13T03:28:27Z",
     "anchor_beat": "2026-07-11T16:24:49Z"
    },
    "lead_image": {
@@ -81454,7 +81543,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:27:23Z",
+    "observed_utc": "2026-07-13T03:30:14Z",
     "anchor_beat": "2026-07-11T05:34:53Z"
    },
    "lead_image": {
@@ -82669,7 +82758,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:32:49Z",
+    "observed_utc": "2026-07-13T03:35:51Z",
     "anchor_beat": "2026-07-12T02:09:11Z"
    },
    "lead_image": {
@@ -83203,11 +83292,6 @@
      "class": "other"
     },
     {
-     "outlet": "Oil and Gas 360",
-     "n": 1,
-     "class": "other"
-    },
-    {
      "outlet": "THISDAYLIVE",
      "n": 1,
      "class": "other"
@@ -83506,7 +83590,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 5
+     "other": 4
     },
     "first_seen": "2026-06-29T14:39:52Z"
    },
@@ -83698,7 +83782,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:18:48Z",
+    "observed_utc": "2026-07-13T03:21:41Z",
     "anchor_beat": "2026-07-12T00:30:00Z"
    },
    "lead_image": {
@@ -84450,7 +84534,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:20:48Z",
+    "observed_utc": "2026-07-13T03:23:42Z",
     "anchor_beat": "2026-07-11T16:56:56Z"
    },
    "lead_image": {
@@ -86500,7 +86584,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:22:14Z",
+    "observed_utc": "2026-07-13T03:25:10Z",
     "anchor_beat": "2026-07-11T21:00:00Z"
    },
    "lead_image": {
@@ -87519,7 +87603,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:22:25Z",
+    "observed_utc": "2026-07-13T03:25:22Z",
     "anchor_beat": "2026-07-11T12:54:17Z"
    },
    "gate": {
@@ -88315,7 +88399,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:22:55Z",
+    "observed_utc": "2026-07-13T03:25:53Z",
     "anchor_beat": "2026-07-11T12:15:28Z"
    },
    "lead_image": {
@@ -89040,8 +89124,8 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 79.1,
-      "last_ts": "2026-07-13T03:03:42Z",
+      "last": 79.11,
+      "last_ts": "2026-07-13T03:07:19Z",
       "basis": "Red Sea shipping risk oil",
       "move_pct": 3.5,
       "window_h": 24,
@@ -89105,8 +89189,8 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 74.38,
-      "last_ts": "2026-07-13T03:04:58Z",
+      "last": 74.42,
+      "last_ts": "2026-07-13T03:07:43Z",
       "basis": "Oil transport disruption risk",
       "move_pct": 3.2,
       "window_h": 24,
@@ -89170,8 +89254,8 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4072.0,
-      "last_ts": "2026-07-13T03:05:01Z",
+      "last": 4068.1001,
+      "last_ts": "2026-07-13T03:07:47Z",
       "basis": "Gold safe haven amid conflict",
       "move_pct": -0.92,
       "window_h": 24,
@@ -89233,7 +89317,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:16:04Z",
+    "observed_utc": "2026-07-13T03:19:10Z",
     "anchor_beat": "2026-07-11T12:53:27Z"
    },
    "lead_image": {
@@ -90878,7 +90962,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:17:31Z",
+    "observed_utc": "2026-07-13T03:20:28Z",
     "anchor_beat": "2026-07-11T12:53:35Z"
    },
    "lead_image": {
@@ -95064,7 +95148,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:21:04Z",
+    "observed_utc": "2026-07-13T03:23:57Z",
     "anchor_beat": "2026-07-11T13:00:00Z"
    },
    "gate": {
@@ -95824,7 +95908,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:23:16Z",
+    "observed_utc": "2026-07-13T03:26:16Z",
     "anchor_beat": "2026-07-12T00:01:45Z"
    },
    "lead_image": {
@@ -96445,7 +96529,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:23:52Z",
+    "observed_utc": "2026-07-13T03:26:53Z",
     "anchor_beat": "2026-07-11T13:19:31Z"
    },
    "lead_image": {
@@ -98020,7 +98104,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:24:13Z",
+    "observed_utc": "2026-07-13T03:27:13Z",
     "anchor_beat": "2026-07-11T23:06:43Z"
    },
    "gate": {
@@ -98867,7 +98951,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:24:33Z",
+    "observed_utc": "2026-07-13T03:27:32Z",
     "anchor_beat": "2026-07-11T05:27:00Z"
    },
    "lead_image": {
@@ -99827,7 +99911,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:25:17Z",
+    "observed_utc": "2026-07-13T03:28:13Z",
     "anchor_beat": "2026-07-11T13:40:00Z"
    },
    "lead_image": {
@@ -101616,7 +101700,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:27:03Z",
+    "observed_utc": "2026-07-13T03:29:51Z",
     "anchor_beat": "2026-07-12T02:15:11Z"
    },
    "lead_image": {
@@ -103847,7 +103931,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:28:21Z",
+    "observed_utc": "2026-07-13T03:31:14Z",
     "anchor_beat": "2026-07-12T01:09:50Z"
    },
    "lead_image": {
@@ -105346,7 +105430,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:29:21Z",
+    "observed_utc": "2026-07-13T03:32:16Z",
     "anchor_beat": "2026-07-11T18:05:51Z"
    },
    "lead_image": {
@@ -106243,7 +106327,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:30:13Z",
+    "observed_utc": "2026-07-13T03:33:07Z",
     "anchor_beat": "2026-07-11T19:28:29Z"
    },
    "gate": {
@@ -107324,7 +107408,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:31:33Z",
+    "observed_utc": "2026-07-13T03:34:30Z",
     "anchor_beat": "2026-07-11T14:15:00Z"
    },
    "gate": {
@@ -109390,7 +109474,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:18:16Z",
+    "observed_utc": "2026-07-13T03:21:10Z",
     "anchor_beat": "2026-07-11T02:45:58Z"
    },
    "lead_image": {
@@ -110855,7 +110939,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:18:53Z",
+    "observed_utc": "2026-07-13T03:21:47Z",
     "anchor_beat": "2026-07-10T22:01:00Z"
    },
    "lead_image": {
@@ -112031,7 +112115,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:19:03Z",
+    "observed_utc": "2026-07-13T03:21:58Z",
     "anchor_beat": "2026-07-10T10:09:53Z"
    },
    "lead_image": {
@@ -113092,7 +113176,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:19:09Z",
+    "observed_utc": "2026-07-13T03:22:03Z",
     "anchor_beat": "2026-07-10T16:00:00Z"
    },
    "lead_image": {
@@ -116139,7 +116223,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:22:00Z",
+    "observed_utc": "2026-07-13T03:24:56Z",
     "anchor_beat": "2026-07-10T03:47:02Z"
    },
    "lead_image": {
@@ -118136,7 +118220,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:22:45Z",
+    "observed_utc": "2026-07-13T03:25:43Z",
     "anchor_beat": "2026-07-10T13:56:43Z"
    },
    "gate": {
@@ -119468,7 +119552,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:23:01Z",
+    "observed_utc": "2026-07-13T03:25:59Z",
     "anchor_beat": "2026-07-09T19:01:00Z"
    },
    "gate": {
@@ -122204,7 +122288,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:23:32Z",
+    "observed_utc": "2026-07-13T03:26:32Z",
     "anchor_beat": "2026-07-10T12:32:04Z"
    },
    "lead_image": {
@@ -122811,7 +122895,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:23:42Z",
+    "observed_utc": "2026-07-13T03:26:42Z",
     "anchor_beat": "2026-07-11T02:09:14Z"
    },
    "lead_image": {
@@ -123718,7 +123802,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:23:47Z",
+    "observed_utc": "2026-07-13T03:26:47Z",
     "anchor_beat": "2026-07-10T15:09:56Z"
    },
    "lead_image": {
@@ -124948,7 +125032,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:24:02Z",
+    "observed_utc": "2026-07-13T03:27:04Z",
     "anchor_beat": "2026-07-09T12:56:58Z"
    },
    "lead_image": {
@@ -125328,22 +125412,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 42,
+    "outlets_timed": 41,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "Audacy",
-      "ts": "2026-07-06T03:26:05Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Newsday",
       "ts": "2026-07-06T03:31:17Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -125394,6 +125470,14 @@
       "role": "echo",
       "motive_note": "US press",
       "items": 1
+     },
+     {
+      "outlet": "NBC News",
+      "ts": "2026-07-06T04:58:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
      }
     ],
     "unplaced": [
@@ -128172,7 +128256,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:24:38Z",
+    "observed_utc": "2026-07-13T03:27:37Z",
     "anchor_beat": "2026-07-10T17:34:19Z"
    },
    "lead_image": {
@@ -129448,7 +129532,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:24:54Z",
+    "observed_utc": "2026-07-13T03:27:52Z",
     "anchor_beat": "2026-07-10T23:02:59Z"
    },
    "lead_image": {
@@ -130148,7 +130232,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:25:27Z",
+    "observed_utc": "2026-07-13T03:28:22Z",
     "anchor_beat": "2026-07-10T17:16:16Z"
    },
    "lead_image": {
@@ -131069,7 +131153,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:25:38Z",
+    "observed_utc": "2026-07-13T03:28:32Z",
     "anchor_beat": "2026-07-08T20:18:17Z"
    },
    "lead_image": {
@@ -131561,7 +131645,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:25:54Z",
+    "observed_utc": "2026-07-13T03:28:46Z",
     "anchor_beat": "2026-07-10T13:23:00Z"
    },
    "gate": {
@@ -133337,7 +133421,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:26:11Z",
+    "observed_utc": "2026-07-13T03:29:02Z",
     "anchor_beat": "2026-07-10T19:00:00Z"
    },
    "lead_image": {
@@ -134195,7 +134279,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:26:22Z",
+    "observed_utc": "2026-07-13T03:29:12Z",
     "anchor_beat": "2026-07-10T14:15:00Z"
    },
    "lead_image": {
@@ -136522,7 +136606,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:26:53Z",
+    "observed_utc": "2026-07-13T03:29:41Z",
     "anchor_beat": "2026-07-09T16:20:41Z"
    },
    "lead_image": {
@@ -138947,7 +139031,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:27:18Z",
+    "observed_utc": "2026-07-13T03:30:08Z",
     "anchor_beat": "2026-07-09T14:25:39Z"
    },
    "lead_image": {
@@ -139996,7 +140080,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:27:37Z",
+    "observed_utc": "2026-07-13T03:30:29Z",
     "anchor_beat": "2026-07-09T13:03:07Z"
    },
    "lead_image": {
@@ -141432,7 +141516,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:27:47Z",
+    "observed_utc": "2026-07-13T03:30:38Z",
     "anchor_beat": "2026-07-09T00:48:58Z"
    },
    "lead_image": {
@@ -142166,7 +142250,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:28:01Z",
+    "observed_utc": "2026-07-13T03:30:53Z",
     "anchor_beat": "2026-07-08T12:00:00Z"
    },
    "gate": {
@@ -143282,7 +143366,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:28:16Z",
+    "observed_utc": "2026-07-13T03:31:09Z",
     "anchor_beat": "2026-07-08T20:23:34Z"
    },
    "lead_image": {
@@ -144476,7 +144560,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:28:26Z",
+    "observed_utc": "2026-07-13T03:31:19Z",
     "anchor_beat": "2026-07-08T23:45:00Z"
    },
    "lead_image": {
@@ -144818,7 +144902,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:28:41Z",
+    "observed_utc": "2026-07-13T03:31:35Z",
     "anchor_beat": "2026-07-11T02:31:20Z"
    },
    "lead_image": {
@@ -145287,7 +145371,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:28:51Z",
+    "observed_utc": "2026-07-13T03:31:45Z",
     "anchor_beat": "2026-07-10T17:51:07Z"
    },
    "lead_image": {
@@ -146690,7 +146774,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:29:01Z",
+    "observed_utc": "2026-07-13T03:31:54Z",
     "anchor_beat": "2026-07-10T04:01:00Z"
    },
    "lead_image": {
@@ -147306,7 +147390,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:29:06Z",
+    "observed_utc": "2026-07-13T03:31:59Z",
     "anchor_beat": "2026-07-09T16:10:00Z"
    },
    "gate": {
@@ -148200,7 +148284,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:29:11Z",
+    "observed_utc": "2026-07-13T03:32:05Z",
     "anchor_beat": "2026-07-09T17:18:30Z"
    },
    "gate": {
@@ -149554,7 +149638,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:29:35Z",
+    "observed_utc": "2026-07-13T03:32:31Z",
     "anchor_beat": "2026-07-10T14:00:00Z"
    },
    "gate": {
@@ -150502,7 +150586,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:29:40Z",
+    "observed_utc": "2026-07-13T03:32:36Z",
     "anchor_beat": "2026-07-10T20:24:21Z"
    },
    "lead_image": {
@@ -151650,7 +151734,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:30:07Z",
+    "observed_utc": "2026-07-13T03:33:02Z",
     "anchor_beat": "2026-07-10T21:41:43Z"
    },
    "lead_image": {
@@ -152174,7 +152258,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:30:23Z",
+    "observed_utc": "2026-07-13T03:33:17Z",
     "anchor_beat": "2026-07-10T10:22:56Z"
    },
    "lead_image": {
@@ -153581,7 +153665,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-13T03:31:23Z",
+    "observed_utc": "2026-07-13T03:34:20Z",
     "anchor_beat": "2026-07-10T21:25:08Z"
    },
    "lead_image": {
@@ -154588,7 +154672,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:31:53Z",
+    "observed_utc": "2026-07-13T03:34:51Z",
     "anchor_beat": "2026-07-10T22:32:14Z"
    },
    "gate": {
@@ -155256,7 +155340,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-13T03:32:03Z",
+    "observed_utc": "2026-07-13T03:35:01Z",
     "anchor_beat": "2026-07-10T17:00:00Z"
    },
    "lead_image": {
@@ -155505,56 +155589,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Trump administration subpoenas New York Times journalists over Air Force One reporting",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "South Africa World Cup midfielder Adams dies aged 25",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "More than 40 kidnapped children and teachers freed after Nigerian army operation",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "How a viral seal called Neil caused mayhem in Australia",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Drone offensive hits Russian oil tankers and refineries at 'industrial scale' as Moscow bans diesel exports",
-   "outlets": 5,
-   "count": 8,
-   "status": "watching"
-  },
-  {
-   "sample": "Protest on London\u2019s Tower Bridge demands release of Dr Hussam Abu Safia",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "TASS: Terrorist attacks prevented in Moscow",
-   "outlets": 10,
-   "count": 10,
-   "status": "watching"
-  },
-  {
-   "sample": "Ransomware negotiator hired to represent victims was working for the attackers",
-   "outlets": 5,
-   "count": 7,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -155580,12 +155615,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 150,
-  "accepted": 0,
-  "rejected": 8,
-  "existing": 0,
-  "below": 142,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -155600,6 +155629,6 @@
   "edition_utc": "2026-07-12",
   "panels": 12,
   "appendix": 8,
-  "overflow": 780
+  "overflow": 778
  }
 }
