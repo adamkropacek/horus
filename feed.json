@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-14T20:42:53Z",
+ "generated_utc": "2026-07-14T20:44:34Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,6 +32,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -74,6 +75,36 @@
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-fed-rate-hike-bets-push-dollar-to-one-year-hi",
+    "label": "GDELT Warsh and inflation data shape Fed's July decision",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:gold-drops-24-goldman-jpmorgan-forecasts-diverge",
+    "label": "GDELT Gold prices drop 25 percent from peak amid ETF inflows rebound",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:gaza-israel-war-current",
+    "label": "GDELT Israel-Gaza",
+    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -570,30 +601,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 368,
+    "outlets_timed": 367,
     "outlets_unplaced": 1,
     "chain": [
-     {
-      "outlet": "The New York Times",
-      "ts": "2026-07-07T20:21:41Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "US press",
-      "items": 8
-     },
-     {
-      "outlet": "The Wall Street Journal",
-      "ts": "2026-07-07T20:22:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US press",
-      "items": 1
-     },
      {
       "outlet": "The Hindu Intl",
       "ts": "2026-07-07T20:30:19Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 26
      },
@@ -636,6 +651,22 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 11
+     },
+     {
+      "outlet": "Reuters",
+      "ts": "2026-07-07T21:06:09Z",
+      "kind": "wire service",
+      "role": "echo",
+      "motive_note": "international wire service",
+      "items": 25
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-07-07T21:21:16Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 61
      }
     ],
     "unplaced": [
@@ -1134,7 +1165,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran nuclear work sparks concern, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1150,7 +1181,7 @@
       "label": "Brent Crude",
       "class": "commodity",
       "last": 85.39,
-      "last_ts": "2026-07-14T20:08:20Z",
+      "last_ts": "2026-07-14T20:11:24Z",
       "basis": "Iran-Hormuz attacks raising oil supply risk",
       "move_pct": 0.0,
       "window_h": 24,
@@ -1379,6 +1410,10 @@
        [
         "2026-07-14T20:08:20Z",
         85.39
+       ],
+       [
+        "2026-07-14T20:11:24Z",
+        85.39
        ]
       ]
      },
@@ -1386,10 +1421,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.86,
-      "last_ts": "2026-07-14T20:08:25Z",
+      "last": 79.83,
+      "last_ts": "2026-07-14T20:11:27Z",
       "basis": "Iran-Hormuz attacks raising oil supply risk",
-      "move_pct": 0.04,
+      "move_pct": 0.0,
       "window_h": 24,
       "measured_from": "2026-07-14T20:00:54Z",
       "series": [
@@ -1616,6 +1651,10 @@
        [
         "2026-07-14T20:08:25Z",
         79.86
+       ],
+       [
+        "2026-07-14T20:11:27Z",
+        79.83
        ]
       ]
      },
@@ -1754,7 +1793,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:21:24Z",
+    "observed_utc": "2026-07-14T20:23:33Z",
     "anchor_beat": "2026-07-14T20:00:54Z"
    },
    "lead_image": {
@@ -4104,7 +4143,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Warsh and inflation data shape Fed's July decision, Times of Israel.",
     "Deep history not yet built - story discovered 21 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5009,7 +5048,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:22:54Z",
+    "observed_utc": "2026-07-14T20:24:52Z",
     "anchor_beat": "2026-07-14T18:57:54Z"
    },
    "lead_image": {
@@ -5377,7 +5416,7 @@
    },
    "discovered": false,
    "items_24h": 77,
-   "items_48h": 150,
+   "items_48h": 149,
    "outlets": 48,
    "kinds": [
     "journalist",
@@ -6078,7 +6117,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -6086,10 +6125,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.86,
-      "last_ts": "2026-07-14T20:08:25Z",
+      "last": 79.83,
+      "last_ts": "2026-07-14T20:11:27Z",
       "basis": "Oil prices react to Ukraine conflict",
-      "move_pct": 0.33,
+      "move_pct": 0.29,
       "window_h": 24,
       "measured_from": "2026-07-14T19:31:08Z",
       "series": [
@@ -6324,6 +6363,10 @@
        [
         "2026-07-14T20:08:25Z",
         79.86
+       ],
+       [
+        "2026-07-14T20:11:27Z",
+        79.83
        ]
       ]
      },
@@ -6331,10 +6374,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 2.924,
-      "last_ts": "2026-07-14T20:08:31Z",
+      "last": 2.922,
+      "last_ts": "2026-07-14T20:11:38Z",
       "basis": "Oil prices react to Ukraine conflict",
-      "move_pct": 0.31,
+      "move_pct": 0.24,
       "window_h": 24,
       "measured_from": "2026-07-14T19:31:08Z",
       "series": [
@@ -6565,6 +6608,10 @@
        [
         "2026-07-14T20:08:31Z",
         2.924
+       ],
+       [
+        "2026-07-14T20:11:38Z",
+        2.922
        ]
       ]
      },
@@ -6573,7 +6620,7 @@
       "label": "Brent Crude",
       "class": "commodity",
       "last": 85.39,
-      "last_ts": "2026-07-14T20:08:20Z",
+      "last_ts": "2026-07-14T20:11:24Z",
       "basis": "Oil prices react to Ukraine conflict",
       "move_pct": 0.19,
       "window_h": 24,
@@ -6810,12 +6857,16 @@
        [
         "2026-07-14T20:08:20Z",
         85.39
+       ],
+       [
+        "2026-07-14T20:11:24Z",
+        85.39
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:20:45Z",
+    "observed_utc": "2026-07-14T20:23:00Z",
     "anchor_beat": "2026-07-14T19:31:08Z"
    },
    "lead_image": {
@@ -7797,7 +7848,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Gold prices drop 25 percent from peak amid ETF inflows rebound, Times of Israel.",
     "Deep history not yet built - story discovered 20 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8055,7 +8106,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:23:33Z",
+    "observed_utc": "2026-07-14T20:25:31Z",
     "anchor_beat": "2026-07-14T19:50:48Z"
    },
    "lead_image": {
@@ -8479,18 +8530,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Barrons.com",
-      "ts": "2026-07-07T20:23:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 20
-     },
-     {
       "outlet": "Motley Fool",
       "ts": "2026-07-07T20:25:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 53
      },
@@ -8541,6 +8584,14 @@
       "role": "echo",
       "motive_note": "US press",
       "items": 2
+     },
+     {
+      "outlet": "StartupHub.ai",
+      "ts": "2026-07-07T21:22:32Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -9000,7 +9051,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT SpaceX IPO Musk first trillionaire, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -9539,7 +9590,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:22:11Z",
+    "observed_utc": "2026-07-14T20:24:12Z",
     "anchor_beat": "2026-07-14T17:48:17Z"
    },
    "lead_image": {
@@ -10733,7 +10784,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -10742,7 +10793,7 @@
       "label": "Brent Crude",
       "class": "commodity",
       "last": 85.39,
-      "last_ts": "2026-07-14T20:08:20Z",
+      "last_ts": "2026-07-14T20:11:24Z",
       "basis": "Middle East conflict oil",
       "move_pct": 1.14,
       "window_h": 24,
@@ -10829,10 +10880,6 @@
         86.95
        ],
        [
-        "2026-07-14T11:15:47Z",
-        86.89
-       ],
-       [
         "2026-07-14T11:24:28Z",
         86.55
        ],
@@ -10867,6 +10914,10 @@
        [
         "2026-07-14T13:09:47Z",
         86.8
+       ],
+       [
+        "2026-07-14T13:32:52Z",
+        86.47
        ],
        [
         "2026-07-14T13:47:53Z",
@@ -10907,10 +10958,6 @@
        [
         "2026-07-14T15:39:08Z",
         84.87
-       ],
-       [
-        "2026-07-14T16:00:00Z",
-        85.38
        ],
        [
         "2026-07-14T16:05:43Z",
@@ -10991,6 +11038,10 @@
        [
         "2026-07-14T20:08:20Z",
         85.39
+       ],
+       [
+        "2026-07-14T20:11:24Z",
+        85.39
        ]
       ]
      },
@@ -10998,10 +11049,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.86,
-      "last_ts": "2026-07-14T20:08:25Z",
+      "last": 79.83,
+      "last_ts": "2026-07-14T20:11:27Z",
       "basis": "Middle East conflict oil",
-      "move_pct": 1.05,
+      "move_pct": 1.01,
       "window_h": 24,
       "measured_from": "2026-07-14T18:30:00Z",
       "series": [
@@ -11086,10 +11137,6 @@
         80.6
        ],
        [
-        "2026-07-14T11:15:45Z",
-        80.52
-       ],
-       [
         "2026-07-14T11:24:31Z",
         80.1
        ],
@@ -11124,6 +11171,10 @@
        [
         "2026-07-14T13:09:48Z",
         80.82
+       ],
+       [
+        "2026-07-14T13:32:51Z",
+        80.34
        ],
        [
         "2026-07-14T13:47:51Z",
@@ -11164,10 +11215,6 @@
        [
         "2026-07-14T15:39:17Z",
         79.51
-       ],
-       [
-        "2026-07-14T16:00:00Z",
-        79.55
        ],
        [
         "2026-07-14T16:05:43Z",
@@ -11248,12 +11295,16 @@
        [
         "2026-07-14T20:08:25Z",
         79.86
+       ],
+       [
+        "2026-07-14T20:11:27Z",
+        79.83
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:20:48Z",
+    "observed_utc": "2026-07-14T20:23:04Z",
     "anchor_beat": "2026-07-14T18:30:00Z"
    },
    "lead_image": {
@@ -12365,7 +12416,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:21:39Z",
+    "observed_utc": "2026-07-14T20:23:44Z",
     "anchor_beat": "2026-07-14T18:40:57Z"
    },
    "lead_image": {
@@ -13856,7 +13907,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:22:31Z",
+    "observed_utc": "2026-07-14T20:24:30Z",
     "anchor_beat": "2026-07-14T18:04:08Z"
    },
    "lead_image": {
@@ -14945,7 +14996,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:23:56Z",
+    "observed_utc": "2026-07-14T20:25:55Z",
     "anchor_beat": "2026-07-14T16:10:10Z"
    },
    "lead_image": {
@@ -16108,7 +16159,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:24:02Z",
+    "observed_utc": "2026-07-14T20:26:02Z",
     "anchor_beat": "2026-07-14T19:06:53Z"
    },
    "lead_image": {
@@ -17883,7 +17934,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:23:39Z",
+    "observed_utc": "2026-07-14T20:25:37Z",
     "anchor_beat": "2026-07-14T19:18:30Z"
    },
    "lead_image": {
@@ -20626,10 +20677,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.86,
-      "last_ts": "2026-07-14T20:08:25Z",
+      "last": 79.83,
+      "last_ts": "2026-07-14T20:11:27Z",
       "basis": "Sudan oil output disruption",
-      "move_pct": 0.33,
+      "move_pct": 0.29,
       "window_h": 24,
       "measured_from": "2026-07-14T19:15:00Z",
       "series": [
@@ -20868,6 +20919,10 @@
        [
         "2026-07-14T20:08:25Z",
         79.86
+       ],
+       [
+        "2026-07-14T20:11:27Z",
+        79.83
        ]
       ]
      },
@@ -20876,7 +20931,7 @@
       "label": "Brent Crude",
       "class": "commodity",
       "last": 85.39,
-      "last_ts": "2026-07-14T20:08:20Z",
+      "last_ts": "2026-07-14T20:11:24Z",
       "basis": "Russian oil supply risk",
       "move_pct": 0.19,
       "window_h": 24,
@@ -21117,6 +21172,10 @@
        [
         "2026-07-14T20:08:20Z",
         85.39
+       ],
+       [
+        "2026-07-14T20:11:24Z",
+        85.39
        ]
       ]
      },
@@ -21124,10 +21183,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4062.0,
-      "last_ts": "2026-07-14T20:08:20Z",
+      "last": 4060.5,
+      "last_ts": "2026-07-14T20:11:28Z",
       "basis": "Safe-haven gold demand",
-      "move_pct": 0.05,
+      "move_pct": 0.01,
       "window_h": 24,
       "measured_from": "2026-07-14T19:15:00Z",
       "series": [
@@ -21366,6 +21425,10 @@
        [
         "2026-07-14T20:08:20Z",
         4062.0
+       ],
+       [
+        "2026-07-14T20:11:28Z",
+        4060.5
        ]
       ]
      },
@@ -21373,10 +21436,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.945,
-      "last_ts": "2026-07-14T20:08:28Z",
+      "last": 100.926,
+      "last_ts": "2026-07-14T20:11:40Z",
       "basis": "USD strength due to risk",
-      "move_pct": 0.03,
+      "move_pct": 0.01,
       "window_h": 24,
       "measured_from": "2026-07-14T19:15:00Z",
       "series": [
@@ -21615,12 +21678,16 @@
        [
         "2026-07-14T20:08:28Z",
         100.945
+       ],
+       [
+        "2026-07-14T20:11:40Z",
+        100.926
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:21:16Z",
+    "observed_utc": "2026-07-14T20:23:26Z",
     "anchor_beat": "2026-07-14T19:15:00Z"
    },
    "lead_image": {
@@ -23898,7 +23965,7 @@
       "label": "Brent Crude",
       "class": "commodity",
       "last": 85.39,
-      "last_ts": "2026-07-14T20:08:20Z",
+      "last_ts": "2026-07-14T20:11:24Z",
       "basis": "Red Sea tensions oil supply",
       "move_pct": 2.09,
       "window_h": 24,
@@ -23965,8 +24032,8 @@
         86.21
        ],
        [
-        "2026-07-14T08:00:00Z",
-        86.05
+        "2026-07-14T08:02:54Z",
+        86.07
        ],
        [
         "2026-07-14T08:09:01Z",
@@ -23981,8 +24048,8 @@
         86.39
        ],
        [
-        "2026-07-14T09:00:00Z",
-        86.92
+        "2026-07-14T09:08:28Z",
+        87.01
        ],
        [
         "2026-07-14T09:13:51Z",
@@ -23997,8 +24064,8 @@
         86.65
        ],
        [
-        "2026-07-14T10:00:00Z",
-        87.2
+        "2026-07-14T10:15:32Z",
+        87.21
        ],
        [
         "2026-07-14T10:36:03Z",
@@ -24013,8 +24080,8 @@
         86.95
        ],
        [
-        "2026-07-14T11:15:47Z",
-        86.89
+        "2026-07-14T11:24:28Z",
+        86.55
        ],
        [
         "2026-07-14T11:53:19Z",
@@ -24025,12 +24092,12 @@
         86.22
        ],
        [
-        "2026-07-14T12:00:00Z",
-        86.28
-       ],
-       [
         "2026-07-14T12:25:48Z",
         86.27
+       ],
+       [
+        "2026-07-14T12:28:54Z",
+        86.48
        ],
        [
         "2026-07-14T12:59:58Z",
@@ -24041,12 +24108,12 @@
         86.83
        ],
        [
-        "2026-07-14T13:09:47Z",
-        86.8
-       ],
-       [
         "2026-07-14T13:32:52Z",
         86.47
+       ],
+       [
+        "2026-07-14T13:47:53Z",
+        85.58
        ],
        [
         "2026-07-14T14:00:00Z",
@@ -24057,12 +24124,12 @@
         85.37
        ],
        [
-        "2026-07-14T14:28:16Z",
-        85.12
-       ],
-       [
         "2026-07-14T14:39:42Z",
         84.89
+       ],
+       [
+        "2026-07-14T15:00:00Z",
+        83.86
        ],
        [
         "2026-07-14T15:06:57Z",
@@ -24073,20 +24140,16 @@
         83.64
        ],
        [
-        "2026-07-14T15:36:55Z",
-        84.85
-       ],
-       [
         "2026-07-14T15:39:08Z",
         84.87
        ],
        [
-        "2026-07-14T16:05:43Z",
-        85.4
+        "2026-07-14T16:00:00Z",
+        85.38
        ],
        [
-        "2026-07-14T16:08:06Z",
-        85.33
+        "2026-07-14T16:05:43Z",
+        85.4
        ],
        [
         "2026-07-14T16:37:12Z",
@@ -24097,12 +24160,12 @@
         84.86
        ],
        [
-        "2026-07-14T17:04:19Z",
-        84.85
+        "2026-07-14T17:00:00Z",
+        84.75
        ],
        [
-        "2026-07-14T17:10:41Z",
-        84.56
+        "2026-07-14T17:04:19Z",
+        84.85
        ],
        [
         "2026-07-14T17:34:50Z",
@@ -24113,12 +24176,12 @@
         84.61
        ],
        [
-        "2026-07-14T18:05:25Z",
+        "2026-07-14T18:00:00Z",
         84.49
        ],
        [
-        "2026-07-14T18:18:51Z",
-        84.43
+        "2026-07-14T18:05:25Z",
+        84.49
        ],
        [
         "2026-07-14T18:36:10Z",
@@ -24129,12 +24192,12 @@
         85.15
        ],
        [
-        "2026-07-14T19:08:08Z",
-        85.23
+        "2026-07-14T19:00:00Z",
+        85.26
        ],
        [
-        "2026-07-14T19:33:41Z",
-        85.42
+        "2026-07-14T19:08:08Z",
+        85.23
        ],
        [
         "2026-07-14T19:40:37Z",
@@ -24147,6 +24210,10 @@
        [
         "2026-07-14T20:08:20Z",
         85.39
+       ],
+       [
+        "2026-07-14T20:11:24Z",
+        85.39
        ]
       ]
      },
@@ -24154,10 +24221,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.86,
-      "last_ts": "2026-07-14T20:08:25Z",
+      "last": 79.83,
+      "last_ts": "2026-07-14T20:11:27Z",
       "basis": "Red Sea tensions oil supply",
-      "move_pct": 2.32,
+      "move_pct": 2.28,
       "window_h": 24,
       "measured_from": "2026-07-14T15:20:28Z",
       "series": [
@@ -24222,8 +24289,8 @@
         80.83
        ],
        [
-        "2026-07-14T08:00:00Z",
-        80.58
+        "2026-07-14T08:02:56Z",
+        80.56
        ],
        [
         "2026-07-14T08:09:02Z",
@@ -24238,8 +24305,8 @@
         80.36
        ],
        [
-        "2026-07-14T09:00:00Z",
-        80.72
+        "2026-07-14T09:08:31Z",
+        80.87
        ],
        [
         "2026-07-14T09:13:50Z",
@@ -24254,8 +24321,8 @@
         80.46
        ],
        [
-        "2026-07-14T10:00:00Z",
-        80.99
+        "2026-07-14T10:15:32Z",
+        81.03
        ],
        [
         "2026-07-14T10:36:03Z",
@@ -24270,8 +24337,8 @@
         80.6
        ],
        [
-        "2026-07-14T11:15:45Z",
-        80.52
+        "2026-07-14T11:24:31Z",
+        80.1
        ],
        [
         "2026-07-14T11:53:26Z",
@@ -24282,12 +24349,12 @@
         79.67
        ],
        [
-        "2026-07-14T12:00:00Z",
+        "2026-07-14T12:25:48Z",
         79.82
        ],
        [
-        "2026-07-14T12:25:48Z",
-        79.82
+        "2026-07-14T12:28:57Z",
+        80.01
        ],
        [
         "2026-07-14T12:59:57Z",
@@ -24298,12 +24365,12 @@
         80.83
        ],
        [
-        "2026-07-14T13:09:48Z",
-        80.82
-       ],
-       [
         "2026-07-14T13:32:51Z",
         80.34
+       ],
+       [
+        "2026-07-14T13:47:51Z",
+        80.0
        ],
        [
         "2026-07-14T14:00:00Z",
@@ -24314,12 +24381,12 @@
         79.68
        ],
        [
-        "2026-07-14T14:28:16Z",
-        79.41
-       ],
-       [
         "2026-07-14T14:39:45Z",
         79.06
+       ],
+       [
+        "2026-07-14T15:00:00Z",
+        78.27
        ],
        [
         "2026-07-14T15:06:57Z",
@@ -24330,20 +24397,16 @@
         78.05
        ],
        [
-        "2026-07-14T15:37:01Z",
-        79.45
-       ],
-       [
         "2026-07-14T15:39:17Z",
         79.51
        ],
        [
-        "2026-07-14T16:05:43Z",
-        79.61
+        "2026-07-14T16:00:00Z",
+        79.55
        ],
        [
-        "2026-07-14T16:08:11Z",
-        79.5
+        "2026-07-14T16:05:43Z",
+        79.61
        ],
        [
         "2026-07-14T16:37:19Z",
@@ -24354,12 +24417,12 @@
         79.14
        ],
        [
-        "2026-07-14T17:04:34Z",
-        79.19
+        "2026-07-14T17:00:00Z",
+        79.11
        ],
        [
-        "2026-07-14T17:10:41Z",
-        79.03
+        "2026-07-14T17:04:34Z",
+        79.19
        ],
        [
         "2026-07-14T17:35:14Z",
@@ -24370,12 +24433,12 @@
         78.92
        ],
        [
-        "2026-07-14T18:05:28Z",
+        "2026-07-14T18:00:00Z",
         79.06
        ],
        [
-        "2026-07-14T18:18:53Z",
-        79.03
+        "2026-07-14T18:05:28Z",
+        79.06
        ],
        [
         "2026-07-14T18:36:14Z",
@@ -24386,12 +24449,12 @@
         79.67
        ],
        [
-        "2026-07-14T19:08:08Z",
-        79.6
+        "2026-07-14T19:00:00Z",
+        79.59
        ],
        [
-        "2026-07-14T19:33:45Z",
-        79.88
+        "2026-07-14T19:08:08Z",
+        79.6
        ],
        [
         "2026-07-14T19:40:41Z",
@@ -24404,12 +24467,16 @@
        [
         "2026-07-14T20:08:25Z",
         79.86
+       ],
+       [
+        "2026-07-14T20:11:27Z",
+        79.83
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:21:06Z",
+    "observed_utc": "2026-07-14T20:23:18Z",
     "anchor_beat": "2026-07-14T15:20:28Z"
    },
    "lead_image": {
@@ -24534,8 +24601,8 @@
    },
    "discovered": true,
    "items_24h": 11,
-   "items_48h": 30,
-   "outlets": 21,
+   "items_48h": 29,
+   "outlets": 20,
    "kinds": [
     "journalist",
     "state media"
@@ -25835,7 +25902,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:23:50Z",
+    "observed_utc": "2026-07-14T20:25:49Z",
     "anchor_beat": "2026-07-14T19:24:49Z"
    },
    "lead_image": {
@@ -26987,7 +27054,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:26:40Z",
+    "observed_utc": "2026-07-14T20:28:39Z",
     "anchor_beat": "2026-07-14T19:38:29Z"
    },
    "lead_image": {
@@ -27007,6 +27074,462 @@
      "provenance": 1,
      "steelman": 0,
      "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "ann-widdecombe-murder",
+   "name": "Ann Widdecombe Murder",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "war"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 9,
+   "items_48h": 55,
+   "outlets": 32,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-14T19:08:26Z",
+     "title": "Reform UK\u2019s Ann Widdecombe murdered in targeted attack, police say",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/news/world/europe/article/3360579/reform-uks-ann-widdecombe-murdered-targeted-attack-police-say?utm_source=rss_feed",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-14T16:53:29Z",
+     "title": "Ann Widdecombe killing: police investigating possible leftwing motivation",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/uk-news/2026/jul/14/ann-widdecombe-killing-police-investigating-possible-leftwing-motivation",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-14T16:45:46Z",
+     "title": "Murder of UK politician Ann Widdecombe was \u2018targeted attack\u2019, police say",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/7/14/murder-of-uk-politician-ann-widdecombe-was-targeted-attack-police-say?traffic_source=rss",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-14T15:50:39Z",
+     "title": "Ann Widdecombe Was Killed in \u2018Targeted Attack,\u2019 UK Police Say",
+     "outlet": "NYT World",
+     "kind": "journalist",
+     "url": "https://www.nytimes.com/2026/07/14/world/europe/ann-widdecombe-targeted-attack.html",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-14T11:43:43Z",
+     "title": "What we know about UK politician Ann Widdecombe\u2019s murder",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdEN3bEV1M2pDWkNSRDJBc3NlckhLZnpxbFV0UHZER2FuWFpmRUxfbXlmX0dIVEw4LUpSbnVqMEZrcUhXQU04ZkNKVF9LUExyOXRYZ1I5emlwb3A3NEVoREE1RlY2OHZUSVU4MlZBeG01em9IcEFrNUpaNm1hY0pKRU1EQWFnUzNsSkYwdWVzZER1MWIwU3Q4ZUIySk3SAaIBQVVfeXFMUDRWaUR2Ulk2aXUwd3B0UTBFbzBIMXhuNHNsVGR0X3JHS2ZGU1FUUmdyMzdtSjVPOW8wLTJRTWNwcWlkNUV5c0xiVzBuUUtiaUt2RWhMLWRkbm5KbGZPVXJ5UUZUWmJBNGVSaHBBVmhVVjhFWVFGWGE2ZE1EOWhSenNBaXZmbkduRklUVWhLMzRHd1JuM3E2Z29ndkt5T1A5SFVR?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-14T11:40:56Z",
+     "title": "What we know about UK politician Ann Widdecombe\u2019s murder",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/7/14/what-we-know-about-uk-politician-ann-widdecombes-murder?traffic_source=rss",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-14T10:32:00Z",
+     "title": "Ann Widdecombe murder investigation: What the media can and can\u2019t report",
+     "outlet": "The Independent",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWEpyeDRDQk5DUzVvMVJ5amF3OWpxQ2gyOHg3aWw1ZFg4OWlrMGl0dUV5VllQaUd2djhQMEVSSkkyTGdveklkYjBXMVVGdzZoa21sbzRLQnZBTG1tQ0lreVdja253MEV1Vmg4TWFrZ000MWYzRXBPZDMtRDRWcnplSHlRZmF5UllULUI4MzRLdEFfVG04QXN0NGpyUjdTSzdSeTU0dnF5OGd6Zm1pY1Zoay05Q0RWM0NWRy1zTlh6LW9URG42TVBfek5B?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-14T05:59:00Z",
+     "title": "Ann Widdecombe suspect continues to be quizzed by police in murder investigation",
+     "outlet": "Yahoo News UK",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbnN0aXRVdjNFZGl6aEsxY05OTVczS0Y4M1h1M00zMGdDcUdkSkkyWnVZeXdSQUFvRmRRWHZ2LUpWQ1lxUWNmR2VYd29VNkNKOE9vRGFaMmVJLVlzM21DZHZwOTFRNGpTX2lnRG5Pa1drUnZWNlpRbXJrdXhtcWZhWGYwWDFHRGlV?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-14T20:15:48Z"
+   },
+   "viewpoints": [
+    {
+     "stance": "UK police arrested a 28-year-old man on suspicion of killing Ann Widdecombe.",
+     "carriers": [
+      {
+       "outlet": "Investing.com",
+       "kind": "journalist",
+       "url": "https://www.investing.com/news/world-news/uk-police-arrest-man-on-suspicion-of-killing-former-minister-widdecombe-4787312",
+       "ts_utc": "2026-07-11T23:30:27Z"
+      },
+      {
+       "outlet": "ABC News AU",
+       "kind": "journalist",
+       "url": "https://www.abc.net.au/news/2026-07-11/ann-widdecombe-murder-suspect-released/106905454",
+       "ts_utc": "2026-07-11T06:59:44Z"
+      },
+      {
+       "outlet": "The Hindu Intl",
+       "kind": "journalist",
+       "url": "https://www.thehindu.com/news/international/police-in-uk-arrest-suspect-in-former-mps-murder/article71209462.ece",
+       "ts_utc": "2026-07-11T06:26:24Z"
+      },
+      {
+       "outlet": "AP",
+       "kind": "journalist",
+       "url": "https://www.france24.com/en/europe/20260710-police-arrest-suspect-in-killing-of-former-uk-minister-ann-widdecombe",
+       "ts_utc": "2026-07-10T20:25:29Z"
+      }
+     ]
+    },
+    {
+     "stance": "UK police previously arrested a 26-year-old man but later released him, stating he is no longer part of the investigation.",
+     "carriers": [
+      {
+       "outlet": "Al Jazeera",
+       "kind": "journalist",
+       "url": "https://www.aljazeera.com/news/2026/7/11/uk-police-free-suspect-in-ex-mp-ann-widdecombe-murder-investigation?traffic_source=rss",
+       "ts_utc": "2026-07-11T14:25:14Z"
+      },
+      {
+       "outlet": "NYT World",
+       "kind": "journalist",
+       "url": "https://www.nytimes.com/2026/07/11/world/europe/uk-ann-widdecombe-suspect-released.html",
+       "ts_utc": "2026-07-11T13:16:54Z"
+      },
+      {
+       "outlet": "Guardian World",
+       "kind": "journalist",
+       "url": "https://www.theguardian.com/uk-news/2026/jul/11/man-arrested-on-suspicion-of-ann-widdecombes-is-released-not-part-of-investigation",
+       "ts_utc": "2026-07-11T06:02:05Z"
+      },
+      {
+       "outlet": "ABC News AU",
+       "kind": "journalist",
+       "url": "https://www.abc.net.au/news/2026-07-11/ann-widdecombe-murder-suspect-released/106905454",
+       "ts_utc": "2026-07-11T06:59:44Z"
+      }
+     ]
+    }
+   ],
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 104,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "MSN",
+      "ts": "2026-07-09T07:00:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 108
+     },
+     {
+      "outlet": "Financial Times",
+      "ts": "2026-07-10T06:18:53Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK financial press",
+      "items": 2
+     },
+     {
+      "outlet": "lancashiretelegraph.co.uk",
+      "ts": "2026-07-10T06:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 5
+     },
+     {
+      "outlet": "thetelegraphandargus.co.uk",
+      "ts": "2026-07-10T06:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "echo-news.co.uk",
+      "ts": "2026-07-10T06:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 4
+     },
+     {
+      "outlet": "liverpoolecho.co.uk",
+      "ts": "2026-07-10T06:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "oxfordmail.co.uk",
+      "ts": "2026-07-10T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "hellomagazine.com",
+      "ts": "2026-07-10T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "MSN",
+     "n": 33,
+     "class": "other"
+    },
+    {
+     "outlet": "AOL.com",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "The Independent",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "BBC",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "NYT World",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Premier Christian News",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "The Dialog",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "The Guardian",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "ABC News - Breaking News, Latest News and Videos",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "ABC News AU",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-10 18:00",
+      9,
+      8
+     ],
+     [
+      "2026-07-11 00:00",
+      9,
+      8
+     ],
+     [
+      "2026-07-11 06:00",
+      11,
+      8
+     ],
+     [
+      "2026-07-11 12:00",
+      12,
+      8
+     ],
+     [
+      "2026-07-11 18:00",
+      10,
+      10
+     ],
+     [
+      "2026-07-12 00:00",
+      66,
+      45
+     ],
+     [
+      "2026-07-12 06:00",
+      74,
+      77
+     ],
+     [
+      "2026-07-12 12:00",
+      98,
+      74
+     ],
+     [
+      "2026-07-12 18:00",
+      105,
+      50
+     ],
+     [
+      "2026-07-13 00:00",
+      84,
+      47
+     ],
+     [
+      "2026-07-13 06:00",
+      72,
+      44
+     ],
+     [
+      "2026-07-13 12:00",
+      46,
+      46
+     ],
+     [
+      "2026-07-13 18:00",
+      44,
+      41
+     ],
+     [
+      "2026-07-14 00:00",
+      44,
+      41
+     ],
+     [
+      "2026-07-14 06:00",
+      42,
+      35
+     ],
+     [
+      "2026-07-14 12:00",
+      29,
+      31
+     ],
+     [
+      "2026-07-14 18:00",
+      13,
+      32
+     ]
+    ],
+    "mix": {
+     "mainstream": 5,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 33
+    },
+    "first_seen": "2026-07-10T18:06:44Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-07-12T00:11:55Z",
+     "a": "UK police arrested a 28-year-old man on suspicion of killing Ann Widdecombe.",
+     "b": "UK police previously arrested a 26-year-old man but later released him, stating he is no longer part of the investigation."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 4
+   },
+   "lead_image": {
+    "url": "https://i.cbc.ca/ais/88605ee9-7294-4495-833d-91d81c5d7517,1783955894983/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C410%2C6048%2C3402%29%3BResize%3D620",
+    "source": "CBC World",
+    "focal": {
+     "x": 53,
+     "y": 53
+    }
+   },
+   "gate": {
+    "score": 7,
+    "of": 8,
+    "checks": {
+     "split": 1,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 1,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -27136,7 +27659,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 10,
+   "items_24h": 9,
    "items_48h": 36,
    "outlets": 28,
    "kinds": [
@@ -28031,7 +28554,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:26:58Z",
+    "observed_utc": "2026-07-14T20:28:58Z",
     "anchor_beat": "2026-07-14T17:36:40Z"
    },
    "lead_image": {
@@ -28051,462 +28574,6 @@
      "provenance": 1,
      "steelman": 0,
      "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "ann-widdecombe-murder",
-   "name": "Ann Widdecombe Murder",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "war"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 9,
-   "items_48h": 55,
-   "outlets": 32,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-14T19:08:26Z",
-     "title": "Reform UK\u2019s Ann Widdecombe murdered in targeted attack, police say",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/news/world/europe/article/3360579/reform-uks-ann-widdecombe-murdered-targeted-attack-police-say?utm_source=rss_feed",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-14T16:53:29Z",
-     "title": "Ann Widdecombe killing: police investigating possible leftwing motivation",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/uk-news/2026/jul/14/ann-widdecombe-killing-police-investigating-possible-leftwing-motivation",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-14T16:45:46Z",
-     "title": "Murder of UK politician Ann Widdecombe was \u2018targeted attack\u2019, police say",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/news/2026/7/14/murder-of-uk-politician-ann-widdecombe-was-targeted-attack-police-say?traffic_source=rss",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-14T15:50:39Z",
-     "title": "Ann Widdecombe Was Killed in \u2018Targeted Attack,\u2019 UK Police Say",
-     "outlet": "NYT World",
-     "kind": "journalist",
-     "url": "https://www.nytimes.com/2026/07/14/world/europe/ann-widdecombe-targeted-attack.html",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-14T11:43:43Z",
-     "title": "What we know about UK politician Ann Widdecombe\u2019s murder",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdEN3bEV1M2pDWkNSRDJBc3NlckhLZnpxbFV0UHZER2FuWFpmRUxfbXlmX0dIVEw4LUpSbnVqMEZrcUhXQU04ZkNKVF9LUExyOXRYZ1I5emlwb3A3NEVoREE1RlY2OHZUSVU4MlZBeG01em9IcEFrNUpaNm1hY0pKRU1EQWFnUzNsSkYwdWVzZER1MWIwU3Q4ZUIySk3SAaIBQVVfeXFMUDRWaUR2Ulk2aXUwd3B0UTBFbzBIMXhuNHNsVGR0X3JHS2ZGU1FUUmdyMzdtSjVPOW8wLTJRTWNwcWlkNUV5c0xiVzBuUUtiaUt2RWhMLWRkbm5KbGZPVXJ5UUZUWmJBNGVSaHBBVmhVVjhFWVFGWGE2ZE1EOWhSenNBaXZmbkduRklUVWhLMzRHd1JuM3E2Z29ndkt5T1A5SFVR?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-14T11:40:56Z",
-     "title": "What we know about UK politician Ann Widdecombe\u2019s murder",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/news/2026/7/14/what-we-know-about-uk-politician-ann-widdecombes-murder?traffic_source=rss",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-14T10:32:00Z",
-     "title": "Ann Widdecombe murder investigation: What the media can and can\u2019t report",
-     "outlet": "The Independent",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWEpyeDRDQk5DUzVvMVJ5amF3OWpxQ2gyOHg3aWw1ZFg4OWlrMGl0dUV5VllQaUd2djhQMEVSSkkyTGdveklkYjBXMVVGdzZoa21sbzRLQnZBTG1tQ0lreVdja253MEV1Vmg4TWFrZ000MWYzRXBPZDMtRDRWcnplSHlRZmF5UllULUI4MzRLdEFfVG04QXN0NGpyUjdTSzdSeTU0dnF5OGd6Zm1pY1Zoay05Q0RWM0NWRy1zTlh6LW9URG42TVBfek5B?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-14T05:59:00Z",
-     "title": "Ann Widdecombe suspect continues to be quizzed by police in murder investigation",
-     "outlet": "Yahoo News UK",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbnN0aXRVdjNFZGl6aEsxY05OTVczS0Y4M1h1M00zMGdDcUdkSkkyWnVZeXdSQUFvRmRRWHZ2LUpWQ1lxUWNmR2VYd29VNkNKOE9vRGFaMmVJLVlzM21DZHZwOTFRNGpTX2lnRG5Pa1drUnZWNlpRbXJrdXhtcWZhWGYwWDFHRGlV?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-14T20:15:48Z"
-   },
-   "viewpoints": [
-    {
-     "stance": "UK police arrested a 28-year-old man on suspicion of killing Ann Widdecombe.",
-     "carriers": [
-      {
-       "outlet": "Investing.com",
-       "kind": "journalist",
-       "url": "https://www.investing.com/news/world-news/uk-police-arrest-man-on-suspicion-of-killing-former-minister-widdecombe-4787312",
-       "ts_utc": "2026-07-11T23:30:27Z"
-      },
-      {
-       "outlet": "ABC News AU",
-       "kind": "journalist",
-       "url": "https://www.abc.net.au/news/2026-07-11/ann-widdecombe-murder-suspect-released/106905454",
-       "ts_utc": "2026-07-11T06:59:44Z"
-      },
-      {
-       "outlet": "The Hindu Intl",
-       "kind": "journalist",
-       "url": "https://www.thehindu.com/news/international/police-in-uk-arrest-suspect-in-former-mps-murder/article71209462.ece",
-       "ts_utc": "2026-07-11T06:26:24Z"
-      },
-      {
-       "outlet": "AP",
-       "kind": "journalist",
-       "url": "https://www.france24.com/en/europe/20260710-police-arrest-suspect-in-killing-of-former-uk-minister-ann-widdecombe",
-       "ts_utc": "2026-07-10T20:25:29Z"
-      }
-     ]
-    },
-    {
-     "stance": "UK police previously arrested a 26-year-old man but later released him, stating he is no longer part of the investigation.",
-     "carriers": [
-      {
-       "outlet": "Al Jazeera",
-       "kind": "journalist",
-       "url": "https://www.aljazeera.com/news/2026/7/11/uk-police-free-suspect-in-ex-mp-ann-widdecombe-murder-investigation?traffic_source=rss",
-       "ts_utc": "2026-07-11T14:25:14Z"
-      },
-      {
-       "outlet": "NYT World",
-       "kind": "journalist",
-       "url": "https://www.nytimes.com/2026/07/11/world/europe/uk-ann-widdecombe-suspect-released.html",
-       "ts_utc": "2026-07-11T13:16:54Z"
-      },
-      {
-       "outlet": "Guardian World",
-       "kind": "journalist",
-       "url": "https://www.theguardian.com/uk-news/2026/jul/11/man-arrested-on-suspicion-of-ann-widdecombes-is-released-not-part-of-investigation",
-       "ts_utc": "2026-07-11T06:02:05Z"
-      },
-      {
-       "outlet": "ABC News AU",
-       "kind": "journalist",
-       "url": "https://www.abc.net.au/news/2026-07-11/ann-widdecombe-murder-suspect-released/106905454",
-       "ts_utc": "2026-07-11T06:59:44Z"
-      }
-     ]
-    }
-   ],
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 104,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "MSN",
-      "ts": "2026-07-09T07:00:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 108
-     },
-     {
-      "outlet": "Financial Times",
-      "ts": "2026-07-10T06:18:53Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK financial press",
-      "items": 2
-     },
-     {
-      "outlet": "lancashiretelegraph.co.uk",
-      "ts": "2026-07-10T06:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "thetelegraphandargus.co.uk",
-      "ts": "2026-07-10T06:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "echo-news.co.uk",
-      "ts": "2026-07-10T06:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 4
-     },
-     {
-      "outlet": "liverpoolecho.co.uk",
-      "ts": "2026-07-10T06:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "oxfordmail.co.uk",
-      "ts": "2026-07-10T07:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "hellomagazine.com",
-      "ts": "2026-07-10T07:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "MSN",
-     "n": 33,
-     "class": "other"
-    },
-    {
-     "outlet": "AOL.com",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 4,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 3,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "The Guardian",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "The Independent",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "BBC",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "NYT World",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Premier Christian News",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "The Dialog",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "ABC News - Breaking News, Latest News and Videos",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "ABC News AU",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-10 18:00",
-      9,
-      8
-     ],
-     [
-      "2026-07-11 00:00",
-      9,
-      8
-     ],
-     [
-      "2026-07-11 06:00",
-      11,
-      8
-     ],
-     [
-      "2026-07-11 12:00",
-      12,
-      8
-     ],
-     [
-      "2026-07-11 18:00",
-      10,
-      10
-     ],
-     [
-      "2026-07-12 00:00",
-      66,
-      45
-     ],
-     [
-      "2026-07-12 06:00",
-      74,
-      77
-     ],
-     [
-      "2026-07-12 12:00",
-      98,
-      74
-     ],
-     [
-      "2026-07-12 18:00",
-      105,
-      50
-     ],
-     [
-      "2026-07-13 00:00",
-      84,
-      47
-     ],
-     [
-      "2026-07-13 06:00",
-      72,
-      44
-     ],
-     [
-      "2026-07-13 12:00",
-      46,
-      46
-     ],
-     [
-      "2026-07-13 18:00",
-      44,
-      41
-     ],
-     [
-      "2026-07-14 00:00",
-      44,
-      41
-     ],
-     [
-      "2026-07-14 06:00",
-      42,
-      35
-     ],
-     [
-      "2026-07-14 12:00",
-      29,
-      31
-     ],
-     [
-      "2026-07-14 18:00",
-      13,
-      32
-     ]
-    ],
-    "mix": {
-     "mainstream": 5,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 33
-    },
-    "first_seen": "2026-07-10T18:06:44Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-07-12T00:11:55Z",
-     "a": "UK police arrested a 28-year-old man on suspicion of killing Ann Widdecombe.",
-     "b": "UK police previously arrested a 26-year-old man but later released him, stating he is no longer part of the investigation."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
-    "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 4
-   },
-   "lead_image": {
-    "url": "https://i.cbc.ca/ais/88605ee9-7294-4495-833d-91d81c5d7517,1783955894983/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C410%2C6048%2C3402%29%3BResize%3D620",
-    "source": "CBC World",
-    "focal": {
-     "x": 53,
-     "y": 53
-    }
-   },
-   "gate": {
-    "score": 7,
-    "of": 8,
-    "checks": {
-     "split": 1,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
-     "history": 1,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -29703,7 +29770,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:20:56Z",
+    "observed_utc": "2026-07-14T20:23:12Z",
     "anchor_beat": "2026-07-14T18:20:18Z"
    },
    "lead_image": {
@@ -33520,7 +33587,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:22:36Z",
+    "observed_utc": "2026-07-14T20:24:35Z",
     "anchor_beat": "2026-07-14T15:35:15Z"
    },
    "lead_image": {
@@ -34515,7 +34582,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:24:45Z",
+    "observed_utc": "2026-07-14T20:26:48Z",
     "anchor_beat": "2026-07-14T18:33:31Z"
    },
    "lead_image": {
@@ -36461,7 +36528,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:23:14Z",
+    "observed_utc": "2026-07-14T20:25:11Z",
     "anchor_beat": "2026-07-14T14:30:04Z"
    },
    "lead_image": {
@@ -38121,7 +38188,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:23:34Z",
+    "observed_utc": "2026-07-14T20:25:33Z",
     "anchor_beat": "2026-07-14T19:37:15Z"
    },
    "lead_image": {
@@ -40125,7 +40192,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:22:28Z",
+    "observed_utc": "2026-07-14T20:24:27Z",
     "anchor_beat": "2026-07-14T18:42:54Z"
    },
    "lead_image": {
@@ -41053,7 +41120,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:27:06Z",
+    "observed_utc": "2026-07-14T20:29:05Z",
     "anchor_beat": "2026-07-14T15:40:27Z"
    },
    "lead_image": {
@@ -42533,7 +42600,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-14T20:40:39Z",
+    "observed_utc": "2026-07-14T20:42:21Z",
     "anchor_beat": "2026-07-14T20:03:00Z"
    },
    "lead_image": {
@@ -45235,7 +45302,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:24:27Z",
+    "observed_utc": "2026-07-14T20:26:29Z",
     "anchor_beat": "2026-07-14T18:16:53Z"
    },
    "lead_image": {
@@ -46281,7 +46348,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:25:12Z",
+    "observed_utc": "2026-07-14T20:27:15Z",
     "anchor_beat": "2026-07-14T13:30:21Z"
    },
    "lead_image": {
@@ -48214,7 +48281,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:34:57Z",
+    "observed_utc": "2026-07-14T20:36:51Z",
     "anchor_beat": "2026-07-14T16:04:54Z"
    },
    "lead_image": {
@@ -50509,7 +50576,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-14T20:41:13Z",
+    "observed_utc": "2026-07-14T20:42:54Z",
     "anchor_beat": "2026-07-14T18:40:22Z"
    },
    "lead_image": {
@@ -51657,7 +51724,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:25:35Z",
+    "observed_utc": "2026-07-14T20:27:37Z",
     "anchor_beat": "2026-07-14T17:15:00Z"
    },
    "lead_image": {
@@ -54003,7 +54070,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:41:59Z",
+    "observed_utc": "2026-07-14T20:43:41Z",
     "anchor_beat": "2026-07-14T14:36:04Z"
    },
    "lead_image": {
@@ -55424,7 +55491,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:24:09Z",
+    "observed_utc": "2026-07-14T20:26:10Z",
     "anchor_beat": "2026-07-14T15:54:00Z"
    },
    "lead_image": {
@@ -56148,7 +56215,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:42:36Z",
+    "observed_utc": "2026-07-14T20:44:17Z",
     "anchor_beat": "2026-07-14T16:01:38Z"
    },
    "lead_image": {
@@ -56856,7 +56923,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:41:48Z",
+    "observed_utc": "2026-07-14T20:43:30Z",
     "anchor_beat": "2026-07-14T08:24:06Z"
    },
    "lead_image": {
@@ -57620,7 +57687,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:42:41Z",
+    "observed_utc": "2026-07-14T20:44:22Z",
     "anchor_beat": "2026-07-14T15:47:36Z"
    },
    "lead_image": {
@@ -61623,7 +61690,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:22:03Z",
+    "observed_utc": "2026-07-14T20:24:04Z",
     "anchor_beat": "2026-07-14T12:54:35Z"
    },
    "lead_image": {
@@ -62833,7 +62900,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:25:54Z",
+    "observed_utc": "2026-07-14T20:27:55Z",
     "anchor_beat": "2026-07-14T14:56:21Z"
    },
    "lead_image": {
@@ -63919,7 +63986,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:35:12Z",
+    "observed_utc": "2026-07-14T20:37:03Z",
     "anchor_beat": "2026-07-14T16:00:29Z"
    },
    "gate": {
@@ -64675,7 +64742,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:26:27Z",
+    "observed_utc": "2026-07-14T20:28:28Z",
     "anchor_beat": "2026-07-14T13:29:28Z"
    },
    "lead_image": {
@@ -65529,7 +65596,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:26:52Z",
+    "observed_utc": "2026-07-14T20:28:51Z",
     "anchor_beat": "2026-07-14T17:00:07Z"
    },
    "gate": {
@@ -67471,7 +67538,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:28:31Z",
+    "observed_utc": "2026-07-14T20:30:37Z",
     "anchor_beat": "2026-07-14T16:36:26Z"
    },
    "lead_image": {
@@ -68714,7 +68781,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:42:12Z",
+    "observed_utc": "2026-07-14T20:43:52Z",
     "anchor_beat": "2026-07-14T12:25:23Z"
    },
    "lead_image": {
@@ -69686,7 +69753,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:42:30Z",
+    "observed_utc": "2026-07-14T20:44:11Z",
     "anchor_beat": "2026-07-14T12:11:39Z"
    },
    "lead_image": {
@@ -70887,7 +70954,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:42:47Z",
+    "observed_utc": "2026-07-14T20:44:28Z",
     "anchor_beat": "2026-07-14T17:09:55Z"
    },
    "lead_image": {
@@ -71363,7 +71430,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:39:15Z",
+    "observed_utc": "2026-07-14T20:40:58Z",
     "anchor_beat": "2026-07-14T15:18:23Z"
    },
    "lead_image": {
@@ -73693,7 +73760,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:26:34Z",
+    "observed_utc": "2026-07-14T20:28:33Z",
     "anchor_beat": "2026-07-14T14:08:06Z"
    },
    "lead_image": {
@@ -74569,7 +74636,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:30:41Z",
+    "observed_utc": "2026-07-14T20:32:38Z",
     "anchor_beat": "2026-07-14T09:13:21Z"
    },
    "lead_image": {
@@ -75329,7 +75396,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:40:21Z",
+    "observed_utc": "2026-07-14T20:42:02Z",
     "anchor_beat": "2026-07-14T04:43:23Z"
    },
    "lead_image": {
@@ -77284,7 +77351,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:22:47Z",
+    "observed_utc": "2026-07-14T20:24:46Z",
     "anchor_beat": "2026-07-14T16:56:48Z"
    },
    "lead_image": {
@@ -78164,7 +78231,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:34:39Z",
+    "observed_utc": "2026-07-14T20:36:34Z",
     "anchor_beat": "2026-07-14T11:38:49Z"
    },
    "lead_image": {
@@ -79885,7 +79952,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:25:05Z",
+    "observed_utc": "2026-07-14T20:27:08Z",
     "anchor_beat": "2026-07-14T17:46:48Z"
    },
    "lead_image": {
@@ -82017,7 +82084,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:27:52Z",
+    "observed_utc": "2026-07-14T20:29:52Z",
     "anchor_beat": "2026-07-14T13:20:00Z"
    },
    "lead_image": {
@@ -83493,7 +83560,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:28:49Z",
+    "observed_utc": "2026-07-14T20:30:56Z",
     "anchor_beat": "2026-07-14T13:35:00Z"
    },
    "lead_image": {
@@ -84285,7 +84352,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:30:11Z",
+    "observed_utc": "2026-07-14T20:32:13Z",
     "anchor_beat": "2026-07-14T15:45:17Z"
    },
    "lead_image": {
@@ -85155,7 +85222,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:31:15Z",
+    "observed_utc": "2026-07-14T20:33:11Z",
     "anchor_beat": "2026-07-14T17:55:59Z"
    },
    "lead_image": {
@@ -86868,7 +86935,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:39:27Z",
+    "observed_utc": "2026-07-14T20:41:11Z",
     "anchor_beat": "2026-07-14T10:00:00Z"
    },
    "gate": {
@@ -87612,7 +87679,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:42:24Z",
+    "observed_utc": "2026-07-14T20:44:05Z",
     "anchor_beat": "2026-07-14T13:00:02Z"
    },
    "lead_image": {
@@ -89396,7 +89463,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:29:24Z",
+    "observed_utc": "2026-07-14T20:31:29Z",
     "anchor_beat": "2026-07-14T14:32:34Z"
    },
    "lead_image": {
@@ -91129,7 +91196,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:30:54Z",
+    "observed_utc": "2026-07-14T20:32:50Z",
     "anchor_beat": "2026-07-14T03:04:21Z"
    },
    "lead_image": {
@@ -91462,7 +91529,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:42:06Z",
+    "observed_utc": "2026-07-14T20:43:47Z",
     "anchor_beat": "2026-07-14T12:15:00Z"
    },
    "lead_image": {
@@ -92854,7 +92921,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:31:00Z",
+    "observed_utc": "2026-07-14T20:32:57Z",
     "anchor_beat": "2026-07-14T19:00:58Z"
    },
    "lead_image": {
@@ -93759,7 +93826,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:23:00Z",
+    "observed_utc": "2026-07-14T20:24:58Z",
     "anchor_beat": "2026-07-14T05:21:02Z"
    },
    "lead_image": {
@@ -96337,7 +96404,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:28:55Z",
+    "observed_utc": "2026-07-14T20:31:03Z",
     "anchor_beat": "2026-07-14T11:20:05Z"
    },
    "lead_image": {
@@ -96954,7 +97021,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:33:41Z",
+    "observed_utc": "2026-07-14T20:35:40Z",
     "anchor_beat": "2026-07-14T15:30:00Z"
    },
    "lead_image": {
@@ -99690,7 +99757,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:26:21Z",
+    "observed_utc": "2026-07-14T20:28:21Z",
     "anchor_beat": "2026-07-14T05:44:11Z"
    },
    "lead_image": {
@@ -100500,7 +100567,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:29:30Z",
+    "observed_utc": "2026-07-14T20:31:35Z",
     "anchor_beat": "2026-07-14T10:32:05Z"
    },
    "lead_image": {
@@ -101666,7 +101733,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:29:43Z",
+    "observed_utc": "2026-07-14T20:31:47Z",
     "anchor_beat": "2026-07-14T10:51:21Z"
    },
    "lead_image": {
@@ -103284,7 +103351,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:30:34Z",
+    "observed_utc": "2026-07-14T20:32:32Z",
     "anchor_beat": "2026-07-13T23:59:40Z"
    },
    "lead_image": {
@@ -104943,7 +105010,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:41:36Z",
+    "observed_utc": "2026-07-14T20:43:18Z",
     "anchor_beat": "2026-07-14T01:32:47Z"
    },
    "gate": {
@@ -107254,7 +107321,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:31:09Z",
+    "observed_utc": "2026-07-14T20:33:03Z",
     "anchor_beat": "2026-07-14T12:24:20Z"
    },
    "lead_image": {
@@ -108517,7 +108584,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:31:28Z",
+    "observed_utc": "2026-07-14T20:33:23Z",
     "anchor_beat": "2026-07-14T01:15:48Z"
    },
    "gate": {
@@ -109561,7 +109628,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:32:20Z",
+    "observed_utc": "2026-07-14T20:34:13Z",
     "anchor_beat": "2026-07-14T11:05:09Z"
    },
    "lead_image": {
@@ -110955,15 +111022,15 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:33:18Z",
+    "observed_utc": "2026-07-14T20:35:13Z",
     "anchor_beat": "2026-07-14T17:45:38Z"
    },
    "lead_image": {
-    "url": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/07/08/5335dc96-f8a1-42c1-abf3-4aea6a83b233_b7062eb1.jpg?itok=EN8ysCW4&v=1783504579",
-    "source": "South China Morning Post",
+    "url": "https://www.engadget.com/img/gallery/apple-loses-legal-fight-over-its-app-store-gatekeeper-status-in-europe/l-intro-1783509531.jpg",
+    "source": "Engadget",
     "focal": {
-     "x": 38,
-     "y": 55
+     "x": 56,
+     "y": 49
     }
    },
    "gate": {
@@ -112314,7 +112381,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:34:20Z",
+    "observed_utc": "2026-07-14T20:36:17Z",
     "anchor_beat": "2026-07-14T01:55:24Z"
    },
    "lead_image": {
@@ -113584,7 +113651,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:34:51Z",
+    "observed_utc": "2026-07-14T20:36:45Z",
     "anchor_beat": "2026-07-14T14:08:44Z"
    },
    "gate": {
@@ -114963,7 +115030,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:37:04Z",
+    "observed_utc": "2026-07-14T20:38:48Z",
     "anchor_beat": "2026-07-14T11:14:32Z"
    },
    "lead_image": {
@@ -115912,7 +115979,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:37:56Z",
+    "observed_utc": "2026-07-14T20:39:42Z",
     "anchor_beat": "2026-07-14T05:29:01Z"
    },
    "gate": {
@@ -117084,7 +117151,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:28:43Z",
+    "observed_utc": "2026-07-14T20:30:50Z",
     "anchor_beat": "2026-07-13T19:08:36Z"
    },
    "lead_image": {
@@ -117350,17 +117417,17 @@
      "class": "other"
     },
     {
-     "outlet": "Barrie 360",
-     "n": 1,
-     "class": "other"
-    },
-    {
      "outlet": "CGTN",
      "n": 1,
      "class": "state-media"
     },
     {
      "outlet": "CTV News",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "FOX Carolina News",
      "n": 1,
      "class": "other"
     }
@@ -117438,7 +117505,7 @@
      "state-media": 1,
      "regional": 0,
      "official": 0,
-     "other": 51
+     "other": 50
     },
     "first_seen": "2026-07-12T02:16:23Z"
    },
@@ -118907,7 +118974,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:39:01Z",
+    "observed_utc": "2026-07-14T20:40:47Z",
     "anchor_beat": "2026-07-13T13:04:00Z"
    },
    "gate": {
@@ -119819,7 +119886,7 @@
     "built": false,
     "frames": 0,
     "nodes": 0,
-    "discovered_days": 13
+    "discovered_days": 14
    },
    "lead_image": {
     "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/07/06/thumbs_b_c_488dec838ab4d9919ed106604ccf9787.jpg",
@@ -122686,7 +122753,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:33:48Z",
+    "observed_utc": "2026-07-14T20:35:46Z",
     "anchor_beat": "2026-07-13T18:28:13Z"
    },
    "lead_image": {
@@ -124079,7 +124146,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:40:10Z",
+    "observed_utc": "2026-07-14T20:41:51Z",
     "anchor_beat": "2026-07-13T16:38:07Z"
    },
    "lead_image": {
@@ -125841,7 +125908,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:27:43Z",
+    "observed_utc": "2026-07-14T20:29:44Z",
     "anchor_beat": "2026-07-13T10:23:17Z"
    },
    "lead_image": {
@@ -127425,7 +127492,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:33:04Z",
+    "observed_utc": "2026-07-14T20:34:57Z",
     "anchor_beat": "2026-07-13T15:53:51Z"
    },
    "lead_image": {
@@ -128903,7 +128970,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:36:05Z",
+    "observed_utc": "2026-07-14T20:37:50Z",
     "anchor_beat": "2026-07-13T08:53:41Z"
    },
    "lead_image": {
@@ -129602,7 +129669,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:41:19Z",
+    "observed_utc": "2026-07-14T20:43:00Z",
     "anchor_beat": "2026-07-13T17:04:55Z"
    },
    "gate": {
@@ -131772,7 +131839,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:24:51Z",
+    "observed_utc": "2026-07-14T20:26:54Z",
     "anchor_beat": "2026-07-13T16:16:22Z"
    },
    "lead_image": {
@@ -135162,7 +135229,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:28:06Z",
+    "observed_utc": "2026-07-14T20:30:07Z",
     "anchor_beat": "2026-07-13T08:43:00Z"
    },
    "gate": {
@@ -137061,7 +137128,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:32:26Z",
+    "observed_utc": "2026-07-14T20:34:20Z",
     "anchor_beat": "2026-07-13T15:58:05Z"
    },
    "lead_image": {
@@ -138897,7 +138964,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:34:32Z",
+    "observed_utc": "2026-07-14T20:36:28Z",
     "anchor_beat": "2026-07-13T05:43:44Z"
    },
    "gate": {
@@ -140184,7 +140251,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:35:19Z",
+    "observed_utc": "2026-07-14T20:37:09Z",
     "anchor_beat": "2026-07-13T08:00:06Z"
    },
    "lead_image": {
@@ -141053,7 +141120,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:35:34Z",
+    "observed_utc": "2026-07-14T20:37:22Z",
     "anchor_beat": "2026-07-13T12:02:45Z"
    },
    "lead_image": {
@@ -143043,7 +143110,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:38:43Z",
+    "observed_utc": "2026-07-14T20:40:31Z",
     "anchor_beat": "2026-07-13T00:00:00Z"
    },
    "lead_image": {
@@ -145933,7 +146000,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:26:14Z",
+    "observed_utc": "2026-07-14T20:28:14Z",
     "anchor_beat": "2026-07-11T16:56:56Z"
    },
    "lead_image": {
@@ -146754,7 +146821,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:28:37Z",
+    "observed_utc": "2026-07-14T20:30:44Z",
     "anchor_beat": "2026-07-11T12:15:28Z"
    },
    "lead_image": {
@@ -147680,7 +147747,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:29:17Z",
+    "observed_utc": "2026-07-14T20:31:23Z",
     "anchor_beat": "2026-07-11T02:09:14Z"
    },
    "lead_image": {
@@ -149082,7 +149149,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:30:19Z",
+    "observed_utc": "2026-07-14T20:32:20Z",
     "anchor_beat": "2026-07-11T05:27:00Z"
    },
    "lead_image": {
@@ -149984,7 +150051,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:31:34Z",
+    "observed_utc": "2026-07-14T20:33:29Z",
     "anchor_beat": "2026-07-10T13:23:00Z"
    },
    "gate": {
@@ -151332,7 +151399,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:31:47Z",
+    "observed_utc": "2026-07-14T20:33:41Z",
     "anchor_beat": "2026-07-10T19:00:00Z"
    },
    "lead_image": {
@@ -152869,7 +152936,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:32:14Z",
+    "observed_utc": "2026-07-14T20:34:06Z",
     "anchor_beat": "2026-07-09T16:20:41Z"
    },
    "lead_image": {
@@ -153901,7 +153968,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:32:33Z",
+    "observed_utc": "2026-07-14T20:34:26Z",
     "anchor_beat": "2026-07-09T14:25:39Z"
    },
    "lead_image": {
@@ -154467,7 +154534,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:32:38Z",
+    "observed_utc": "2026-07-14T20:34:32Z",
     "anchor_beat": "2026-07-11T05:34:53Z"
    },
    "lead_image": {
@@ -155336,7 +155403,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:32:44Z",
+    "observed_utc": "2026-07-14T20:34:38Z",
     "anchor_beat": "2026-07-12T06:55:31Z"
    },
    "gate": {
@@ -155840,7 +155907,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:34:07Z",
+    "observed_utc": "2026-07-14T20:36:05Z",
     "anchor_beat": "2026-07-11T02:31:20Z"
    },
    "lead_image": {
@@ -156985,7 +157052,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:36:23Z",
+    "observed_utc": "2026-07-14T20:38:08Z",
     "anchor_beat": "2026-07-10T21:25:08Z"
    },
    "lead_image": {
@@ -158040,7 +158107,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:36:52Z",
+    "observed_utc": "2026-07-14T20:38:37Z",
     "anchor_beat": "2026-07-12T19:30:00Z"
    },
    "lead_image": {
@@ -159606,7 +159673,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-14T20:38:49Z",
+    "observed_utc": "2026-07-14T20:40:36Z",
     "anchor_beat": null
    },
    "gate": {
@@ -160000,7 +160067,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-14T20:40:03Z",
+    "observed_utc": "2026-07-14T20:41:45Z",
     "anchor_beat": "2026-07-08T19:13:37Z"
    },
    "gate": {
@@ -160238,56 +160305,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Mahmoud Khalil sues Trump officials and pro-Israel groups over \u2018conspiracy\u2019 to target him",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Sheikh Hamad bin Khalifa, Ruler Who Transformed Qatar, Dies at 74",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Jude Bellingham Station unveiled ahead of World Cup semi-final",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "West enlists Ukrainian militants to undermine Russia-Sahel relations - Lavrov",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Meta accused of using biased AI targeting for mass layoffs",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Lucid Motors denies report it\u2019s considering bankruptcy",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Nukes in space? Orbital detector could sniff out warheads",
-   "outlets": 12,
-   "count": 12,
-   "status": "watching"
-  },
-  {
-   "sample": "Scrawled signature names a Maya astronomer for the first time",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -160313,12 +160331,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 153,
-  "accepted": 0,
-  "rejected": 6,
-  "existing": 3,
-  "below": 144,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -160333,6 +160345,6 @@
   "edition_utc": "2026-07-14",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1253
+  "overflow": 1252
  }
 }
