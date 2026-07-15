@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-15T01:35:48Z",
+ "generated_utc": "2026-07-15T01:38:25Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -26,12 +26,12 @@
    "economist-fin",
    "economist-latest",
    "engadget",
-   "euronews",
    "forbes-biz",
    "fortune",
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -74,6 +74,41 @@
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "euronews",
+    "label": "Euronews",
+    "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:bangkok-bar-fire",
+    "label": "GDELT Bangkok Bar Fire",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:ebola-spreads-dr-congo-cases-top-676",
+    "label": "GDELT Ebola spreads DR Congo, cases top 676",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-fed-rate-hike-bets-push-dollar-to-one-year-hi",
+    "label": "GDELT Warsh and inflation data shape Fed's July decision",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -585,26 +620,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "The Guardian",
-      "ts": "2026-07-08T01:15:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 4
-     },
-     {
-      "outlet": "Discovery Alert",
-      "ts": "2026-07-08T01:16:21Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
       "outlet": "Muslim Network TV",
       "ts": "2026-07-08T01:18:45Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -647,6 +666,22 @@
       "role": "echo",
       "motive_note": "US financial press",
       "items": 24
+     },
+     {
+      "outlet": "Awani International",
+      "ts": "2026-07-08T01:43:56Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Newswav",
+      "ts": "2026-07-08T01:51:17Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": [
@@ -1145,7 +1180,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Iran nuclear work sparks concern, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1160,10 +1195,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.64,
-      "last_ts": "2026-07-15T01:02:07Z",
+      "last": 85.58,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "US blockade of Iran shipping routes",
-      "move_pct": -0.62,
+      "move_pct": -0.68,
       "window_h": 24,
       "measured_from": "2026-07-15T00:44:54Z",
       "series": [
@@ -1374,6 +1409,10 @@
        [
         "2026-07-15T01:02:07Z",
         85.64
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        85.58
        ]
       ]
      },
@@ -1381,10 +1420,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.02,
-      "last_ts": "2026-07-15T01:02:18Z",
+      "last": 79.92,
+      "last_ts": "2026-07-15T01:04:49Z",
       "basis": "US blockade of Iran shipping routes",
-      "move_pct": -0.52,
+      "move_pct": -0.65,
       "window_h": 24,
       "measured_from": "2026-07-15T00:44:54Z",
       "series": [
@@ -1599,6 +1638,10 @@
        [
         "2026-07-15T01:02:18Z",
         80.02
+       ],
+       [
+        "2026-07-15T01:04:49Z",
+        79.92
        ]
       ]
      },
@@ -1607,7 +1650,7 @@
       "label": "Natural Gas",
       "class": "commodity",
       "last": 2.922,
-      "last_ts": "2026-07-15T01:01:48Z",
+      "last_ts": "2026-07-15T01:04:20Z",
       "basis": "US blockade of Iran shipping routes",
       "move_pct": -0.34,
       "window_h": 24,
@@ -1820,12 +1863,16 @@
        [
         "2026-07-15T01:01:48Z",
         2.922
+       ],
+       [
+        "2026-07-15T01:04:20Z",
+        2.922
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:14:12Z",
+    "observed_utc": "2026-07-15T01:17:27Z",
     "anchor_beat": "2026-07-15T00:44:54Z"
    },
    "lead_image": {
@@ -1861,8 +1908,8 @@
    "brief": null,
    "discovered": true,
    "items_24h": 114,
-   "items_48h": 388,
-   "outlets": 230,
+   "items_48h": 386,
+   "outlets": 228,
    "kinds": [
     "journalist",
     "state media",
@@ -2282,7 +2329,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Bangkok Bar Fire, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -3237,7 +3284,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Ebola spreads DR Congo, cases top 676, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -3394,7 +3441,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:15:04Z",
+    "observed_utc": "2026-07-15T01:18:22Z",
     "anchor_beat": "2026-07-15T01:00:00Z"
    },
    "lead_image": {
@@ -4332,7 +4379,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Warsh and inflation data shape Fed's July decision, Times of Israel.",
     "Deep history not yet built - story discovered 21 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5249,7 +5296,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:15:44Z",
+    "observed_utc": "2026-07-15T01:18:52Z",
     "anchor_beat": "2026-07-14T21:42:00Z"
    },
    "lead_image": {
@@ -6318,7 +6365,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT Russia-Ukraine, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -6326,10 +6373,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.02,
-      "last_ts": "2026-07-15T01:02:18Z",
+      "last": 79.92,
+      "last_ts": "2026-07-15T01:04:49Z",
       "basis": "Russian oil supply concerns",
-      "move_pct": -0.52,
+      "move_pct": -0.65,
       "window_h": 24,
       "measured_from": "2026-07-15T00:51:00Z",
       "series": [
@@ -6544,6 +6591,10 @@
        [
         "2026-07-15T01:02:18Z",
         80.02
+       ],
+       [
+        "2026-07-15T01:04:49Z",
+        79.92
        ]
       ]
      },
@@ -6552,7 +6603,7 @@
       "label": "Natural Gas",
       "class": "commodity",
       "last": 2.922,
-      "last_ts": "2026-07-15T01:01:48Z",
+      "last_ts": "2026-07-15T01:04:20Z",
       "basis": "Gas supply disruptions",
       "move_pct": -0.34,
       "window_h": 24,
@@ -6765,6 +6816,10 @@
        [
         "2026-07-15T01:01:48Z",
         2.922
+       ],
+       [
+        "2026-07-15T01:04:20Z",
+        2.922
        ]
       ]
      },
@@ -6772,8 +6827,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.821,
-      "last_ts": "2026-07-15T01:02:19Z",
+      "last": 100.818,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "Safe-haven currency",
       "move_pct": -0.04,
       "window_h": 24,
@@ -6990,12 +7045,16 @@
        [
         "2026-07-15T01:02:19Z",
         100.821
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        100.818
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:13:39Z",
+    "observed_utc": "2026-07-15T01:16:38Z",
     "anchor_beat": "2026-07-15T00:51:00Z"
    },
    "lead_image": {
@@ -7977,7 +8036,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 20 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8613,7 +8672,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:16:31Z",
+    "observed_utc": "2026-07-15T01:19:27Z",
     "anchor_beat": "2026-07-15T00:24:00Z"
    },
    "lead_image": {
@@ -8857,7 +8916,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 43,
+   "items_24h": 41,
    "items_48h": 125,
    "outlets": 71,
    "kinds": [
@@ -9619,7 +9678,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, GDELT SpaceX IPO Musk first trillionaire, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -10195,7 +10254,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:14:53Z",
+    "observed_utc": "2026-07-15T01:18:13Z",
     "anchor_beat": "2026-07-14T22:07:46Z"
    },
    "lead_image": {
@@ -10615,7 +10674,7 @@
     ]
    },
    "discovered": false,
-   "items_24h": 40,
+   "items_24h": 39,
    "items_48h": 87,
    "outlets": 47,
    "kinds": [
@@ -11349,7 +11408,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -11490,8 +11549,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.821,
-      "last_ts": "2026-07-15T01:02:19Z",
+      "last": 100.818,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "Israel-Gaza conflict",
       "move_pct": -0.07,
       "window_h": 24,
@@ -11728,12 +11787,16 @@
        [
         "2026-07-15T01:02:19Z",
         100.821
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        100.818
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:13:42Z",
+    "observed_utc": "2026-07-15T01:16:41Z",
     "anchor_beat": "2026-07-14T23:30:00Z"
    },
    "lead_image": {
@@ -12151,7 +12214,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -13129,7 +13192,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -13283,7 +13346,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:14:24Z",
+    "observed_utc": "2026-07-15T01:17:39Z",
     "anchor_beat": "2026-07-14T23:06:16Z"
    },
    "lead_image": {
@@ -13961,7 +14024,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -14372,7 +14435,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:16:56Z",
+    "observed_utc": "2026-07-15T01:19:50Z",
     "anchor_beat": "2026-07-14T22:45:35Z"
    },
    "lead_image": {
@@ -15348,7 +15411,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "History gap: era \"ASEAN-Russia strategic track\" shipped without its beats - 4 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -16256,7 +16319,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -17269,7 +17332,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 16 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -18053,7 +18116,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:16:38Z",
+    "observed_utc": "2026-07-15T01:19:33Z",
     "anchor_beat": "2026-07-14T19:54:11Z"
    },
    "lead_image": {
@@ -18954,7 +19017,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -19481,7 +19544,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:17:09Z",
+    "observed_utc": "2026-07-15T01:19:56Z",
     "anchor_beat": "2026-07-14T21:43:21Z"
    },
    "lead_image": {
@@ -20296,7 +20359,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 21 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -20620,7 +20683,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -21119,18 +21182,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "sana.sy",
-      "ts": "2026-07-08T01:15:00Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "SY state media",
-      "items": 2
-     },
-     {
       "outlet": "AllAfrica",
       "ts": "2026-07-08T04:50:01Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 19
      },
@@ -21181,6 +21236,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "UN News - Global perspective Human stories",
+      "ts": "2026-07-08T12:00:00Z",
+      "kind": "official record",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: official record",
+      "items": 3
      }
     ],
     "unplaced": []
@@ -21665,7 +21728,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -21673,10 +21736,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.02,
-      "last_ts": "2026-07-15T01:02:18Z",
+      "last": 79.92,
+      "last_ts": "2026-07-15T01:04:49Z",
       "basis": "Sudan oil output disruption",
-      "move_pct": 0.24,
+      "move_pct": 0.11,
       "window_h": 24,
       "measured_from": "2026-07-14T20:26:31Z",
       "series": [
@@ -21737,7 +21800,7 @@
         79.67
        ],
        [
-        "2026-07-14T12:00:00Z",
+        "2026-07-14T12:25:48Z",
         79.82
        ],
        [
@@ -21757,8 +21820,8 @@
         80.82
        ],
        [
-        "2026-07-14T13:32:51Z",
-        80.34
+        "2026-07-14T13:47:51Z",
+        80.0
        ],
        [
         "2026-07-14T14:00:00Z",
@@ -21777,8 +21840,8 @@
         79.06
        ],
        [
-        "2026-07-14T15:00:00Z",
-        78.27
+        "2026-07-14T15:06:57Z",
+        78.28
        ],
        [
         "2026-07-14T15:10:17Z",
@@ -21793,12 +21856,12 @@
         79.51
        ],
        [
-        "2026-07-14T16:00:00Z",
-        79.55
-       ],
-       [
         "2026-07-14T16:05:43Z",
         79.61
+       ],
+       [
+        "2026-07-14T16:08:11Z",
+        79.5
        ],
        [
         "2026-07-14T16:37:19Z",
@@ -21813,12 +21876,12 @@
         79.11
        ],
        [
-        "2026-07-14T17:04:34Z",
-        79.19
-       ],
-       [
         "2026-07-14T17:10:41Z",
         79.03
+       ],
+       [
+        "2026-07-14T17:35:14Z",
+        79.13
        ],
        [
         "2026-07-14T17:45:06Z",
@@ -21826,10 +21889,6 @@
        ],
        [
         "2026-07-14T18:00:00Z",
-        79.06
-       ],
-       [
-        "2026-07-14T18:05:28Z",
         79.06
        ],
        [
@@ -21841,16 +21900,16 @@
         79.39
        ],
        [
+        "2026-07-14T18:53:40Z",
+        79.67
+       ],
+       [
         "2026-07-14T19:00:00Z",
         79.59
        ],
        [
         "2026-07-14T19:08:08Z",
         79.6
-       ],
-       [
-        "2026-07-14T19:33:45Z",
-        79.88
        ],
        [
         "2026-07-14T19:40:41Z",
@@ -21861,16 +21920,16 @@
         79.83
        ],
        [
+        "2026-07-14T20:08:25Z",
+        79.86
+       ],
+       [
         "2026-07-14T20:11:27Z",
         79.83
        ],
        [
         "2026-07-14T20:41:10Z",
         80.03
-       ],
-       [
-        "2026-07-14T20:41:23Z",
-        80.02
        ],
        [
         "2026-07-14T20:59:57Z",
@@ -21881,12 +21940,12 @@
         79.91
        ],
        [
-        "2026-07-14T22:33:27Z",
-        79.92
+        "2026-07-14T22:20:31Z",
+        79.98
        ],
        [
-        "2026-07-14T22:54:14Z",
-        79.94
+        "2026-07-14T22:33:27Z",
+        79.92
        ],
        [
         "2026-07-14T23:00:00Z",
@@ -21901,12 +21960,12 @@
         79.74
        ],
        [
-        "2026-07-15T00:00:00Z",
-        79.73
+        "2026-07-14T23:50:04Z",
+        79.84
        ],
        [
-        "2026-07-15T00:01:16Z",
-        79.74
+        "2026-07-15T00:00:00Z",
+        79.73
        ],
        [
         "2026-07-15T00:27:16Z",
@@ -21923,6 +21982,10 @@
        [
         "2026-07-15T01:02:18Z",
         80.02
+       ],
+       [
+        "2026-07-15T01:04:49Z",
+        79.92
        ]
       ]
      },
@@ -21930,10 +21993,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.64,
-      "last_ts": "2026-07-15T01:02:07Z",
+      "last": 85.58,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "Russian oil supply risk",
-      "move_pct": 0.29,
+      "move_pct": 0.22,
       "window_h": 24,
       "measured_from": "2026-07-14T20:26:31Z",
       "series": [
@@ -21958,8 +22021,8 @@
         86.45
        ],
        [
-        "2026-07-14T09:42:28Z",
-        86.42
+        "2026-07-14T09:52:06Z",
+        86.65
        ],
        [
         "2026-07-14T10:00:00Z",
@@ -21978,8 +22041,8 @@
         87.08
        ],
        [
-        "2026-07-14T11:00:00Z",
-        86.95
+        "2026-07-14T11:15:47Z",
+        86.89
        ],
        [
         "2026-07-14T11:24:28Z",
@@ -21998,12 +22061,12 @@
         86.28
        ],
        [
-        "2026-07-14T12:25:48Z",
-        86.27
-       ],
-       [
         "2026-07-14T12:28:54Z",
         86.48
+       ],
+       [
+        "2026-07-14T12:59:58Z",
+        86.92
        ],
        [
         "2026-07-14T13:00:00Z",
@@ -22018,12 +22081,12 @@
         86.47
        ],
        [
-        "2026-07-14T13:47:53Z",
-        85.58
-       ],
-       [
         "2026-07-14T14:00:00Z",
         85.31
+       ],
+       [
+        "2026-07-14T14:05:43Z",
+        85.37
        ],
        [
         "2026-07-14T14:28:16Z",
@@ -22038,16 +22101,16 @@
         83.86
        ],
        [
-        "2026-07-14T15:06:57Z",
-        83.86
-       ],
-       [
         "2026-07-14T15:10:15Z",
         83.64
        ],
        [
         "2026-07-14T15:36:55Z",
         84.85
+       ],
+       [
+        "2026-07-14T15:39:08Z",
+        84.87
        ],
        [
         "2026-07-14T16:00:00Z",
@@ -22058,10 +22121,6 @@
         85.4
        ],
        [
-        "2026-07-14T16:08:06Z",
-        85.33
-       ],
-       [
         "2026-07-14T16:37:12Z",
         84.81
        ],
@@ -22070,16 +22129,16 @@
         84.86
        ],
        [
+        "2026-07-14T17:00:00Z",
+        84.75
+       ],
+       [
         "2026-07-14T17:04:19Z",
         84.85
        ],
        [
         "2026-07-14T17:10:41Z",
         84.56
-       ],
-       [
-        "2026-07-14T17:34:50Z",
-        84.64
        ],
        [
         "2026-07-14T17:45:02Z",
@@ -22094,12 +22153,12 @@
         84.49
        ],
        [
-        "2026-07-14T18:36:10Z",
-        84.83
+        "2026-07-14T18:18:51Z",
+        84.43
        ],
        [
-        "2026-07-14T18:53:39Z",
-        85.15
+        "2026-07-14T18:36:10Z",
+        84.83
        ],
        [
         "2026-07-14T19:00:00Z",
@@ -22114,11 +22173,11 @@
         85.42
        ],
        [
-        "2026-07-14T20:00:00Z",
-        85.39
+        "2026-07-14T19:40:37Z",
+        85.33
        ],
        [
-        "2026-07-14T20:08:20Z",
+        "2026-07-14T20:00:00Z",
         85.39
        ],
        [
@@ -22138,8 +22197,8 @@
         85.45
        ],
        [
-        "2026-07-14T22:26:05Z",
-        85.56
+        "2026-07-14T22:18:57Z",
+        85.45
        ],
        [
         "2026-07-14T22:40:23Z",
@@ -22158,8 +22217,8 @@
         85.21
        ],
        [
-        "2026-07-15T00:00:00Z",
-        85.14
+        "2026-07-14T23:42:05Z",
+        85.3
        ],
        [
         "2026-07-15T00:01:09Z",
@@ -22180,6 +22239,10 @@
        [
         "2026-07-15T01:02:07Z",
         85.64
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        85.58
        ]
       ]
      },
@@ -22187,10 +22250,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4064.7,
-      "last_ts": "2026-07-15T01:02:18Z",
+      "last": 4063.3,
+      "last_ts": "2026-07-15T01:04:50Z",
       "basis": "Safe-haven gold demand",
-      "move_pct": 0.1,
+      "move_pct": 0.07,
       "window_h": 24,
       "measured_from": "2026-07-14T20:26:31Z",
       "series": [
@@ -22251,8 +22314,8 @@
         4036.3999
        ],
        [
-        "2026-07-14T12:00:00Z",
-        4035.0
+        "2026-07-14T12:25:51Z",
+        4034.2
        ],
        [
         "2026-07-14T12:28:58Z",
@@ -22271,8 +22334,8 @@
         4084.5
        ],
        [
-        "2026-07-14T13:32:51Z",
-        4085.8
+        "2026-07-14T13:47:52Z",
+        4091.6001
        ],
        [
         "2026-07-14T14:00:00Z",
@@ -22291,8 +22354,8 @@
         4087.6001
        ],
        [
-        "2026-07-14T15:00:00Z",
-        4101.1001
+        "2026-07-14T15:06:58Z",
+        4101.2998
        ],
        [
         "2026-07-14T15:10:17Z",
@@ -22307,12 +22370,12 @@
         4086.0
        ],
        [
-        "2026-07-14T16:00:00Z",
-        4066.8999
-       ],
-       [
         "2026-07-14T16:05:43Z",
         4066.7
+       ],
+       [
+        "2026-07-14T16:08:08Z",
+        4065.5
        ],
        [
         "2026-07-14T16:37:18Z",
@@ -22327,12 +22390,12 @@
         4067.2
        ],
        [
-        "2026-07-14T17:04:36Z",
-        4066.8
-       ],
-       [
         "2026-07-14T17:10:39Z",
         4066.2
+       ],
+       [
+        "2026-07-14T17:35:14Z",
+        4068.8999
        ],
        [
         "2026-07-14T17:45:03Z",
@@ -22343,16 +22406,16 @@
         4068.0
        ],
        [
-        "2026-07-14T18:05:25Z",
-        4068.8999
-       ],
-       [
         "2026-07-14T18:18:49Z",
         4068.7
        ],
        [
         "2026-07-14T18:36:14Z",
         4062.5
+       ],
+       [
+        "2026-07-14T18:53:36Z",
+        4057.6001
        ],
        [
         "2026-07-14T19:00:00Z",
@@ -22363,16 +22426,16 @@
         4060.0
        ],
        [
-        "2026-07-14T19:33:43Z",
-        4056.7
-       ],
-       [
         "2026-07-14T19:40:29Z",
         4057.5
        ],
        [
         "2026-07-14T20:00:00Z",
         4061.3999
+       ],
+       [
+        "2026-07-14T20:08:20Z",
+        4062.0
        ],
        [
         "2026-07-14T20:11:28Z",
@@ -22383,10 +22446,6 @@
         4057.8
        ],
        [
-        "2026-07-14T20:41:30Z",
-        4057.3
-       ],
-       [
         "2026-07-14T20:59:58Z",
         4058.3
        ],
@@ -22395,12 +22454,12 @@
         4057.5
        ],
        [
-        "2026-07-14T22:33:28Z",
-        4058.8999
+        "2026-07-14T22:20:38Z",
+        4057.2
        ],
        [
-        "2026-07-14T22:54:13Z",
-        4056.0
+        "2026-07-14T22:33:28Z",
+        4058.8999
        ],
        [
         "2026-07-14T23:00:00Z",
@@ -22415,12 +22474,12 @@
         4057.8
        ],
        [
-        "2026-07-15T00:00:00Z",
-        4058.8
+        "2026-07-14T23:49:43Z",
+        4058.7
        ],
        [
-        "2026-07-15T00:01:11Z",
-        4059.0
+        "2026-07-15T00:00:00Z",
+        4058.8
        ],
        [
         "2026-07-15T00:27:12Z",
@@ -22437,6 +22496,10 @@
        [
         "2026-07-15T01:02:18Z",
         4064.7
+       ],
+       [
+        "2026-07-15T01:04:50Z",
+        4063.3
        ]
       ]
      },
@@ -22444,10 +22507,10 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.821,
-      "last_ts": "2026-07-15T01:02:19Z",
+      "last": 100.818,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "USD strength due to risk",
-      "move_pct": -0.1,
+      "move_pct": -0.11,
       "window_h": 24,
       "measured_from": "2026-07-14T20:26:31Z",
       "series": [
@@ -22508,8 +22571,8 @@
         101.043
        ],
        [
-        "2026-07-14T12:00:00Z",
-        101.002
+        "2026-07-14T12:25:49Z",
+        100.995
        ],
        [
         "2026-07-14T12:28:59Z",
@@ -22528,8 +22591,8 @@
         100.714
        ],
        [
-        "2026-07-14T13:32:52Z",
-        100.717
+        "2026-07-14T13:47:52Z",
+        100.711
        ],
        [
         "2026-07-14T14:00:00Z",
@@ -22548,8 +22611,8 @@
         100.727
        ],
        [
-        "2026-07-14T15:00:00Z",
-        100.715
+        "2026-07-14T15:06:56Z",
+        100.711
        ],
        [
         "2026-07-14T15:10:17Z",
@@ -22564,12 +22627,12 @@
         100.784
        ],
        [
-        "2026-07-14T16:00:00Z",
-        100.912
-       ],
-       [
         "2026-07-14T16:05:44Z",
         100.917
+       ],
+       [
+        "2026-07-14T16:08:11Z",
+        100.925
        ],
        [
         "2026-07-14T16:37:19Z",
@@ -22584,12 +22647,12 @@
         100.862
        ],
        [
-        "2026-07-14T17:04:36Z",
-        100.874
-       ],
-       [
         "2026-07-14T17:10:38Z",
         100.901
+       ],
+       [
+        "2026-07-14T17:35:16Z",
+        100.916
        ],
        [
         "2026-07-14T17:45:06Z",
@@ -22600,16 +22663,16 @@
         100.918
        ],
        [
-        "2026-07-14T18:05:31Z",
-        100.919
-       ],
-       [
         "2026-07-14T18:18:54Z",
         100.905
        ],
        [
         "2026-07-14T18:36:15Z",
         100.93
+       ],
+       [
+        "2026-07-14T18:53:41Z",
+        100.95
        ],
        [
         "2026-07-14T19:00:00Z",
@@ -22620,10 +22683,6 @@
         100.918
        ],
        [
-        "2026-07-14T19:33:46Z",
-        100.925
-       ],
-       [
         "2026-07-14T19:40:48Z",
         100.917
        ],
@@ -22632,15 +22691,15 @@
         100.946
        ],
        [
+        "2026-07-14T20:08:28Z",
+        100.945
+       ],
+       [
         "2026-07-14T20:11:40Z",
         100.926
        ],
        [
         "2026-07-14T20:41:11Z",
-        100.928
-       ],
-       [
-        "2026-07-14T20:41:27Z",
         100.928
        ],
        [
@@ -22652,12 +22711,12 @@
         100.927
        ],
        [
-        "2026-07-14T21:42:58Z",
-        100.928
+        "2026-07-14T21:15:42Z",
+        100.926
        ],
        [
-        "2026-07-14T21:48:58Z",
-        100.93
+        "2026-07-14T21:42:58Z",
+        100.928
        ],
        [
         "2026-07-14T22:00:00Z",
@@ -22672,12 +22731,12 @@
         100.892
        ],
        [
-        "2026-07-15T00:00:00Z",
-        100.889
+        "2026-07-14T23:50:07Z",
+        100.891
        ],
        [
-        "2026-07-15T00:01:13Z",
-        100.885
+        "2026-07-15T00:00:00Z",
+        100.889
        ],
        [
         "2026-07-15T00:27:19Z",
@@ -22694,12 +22753,16 @@
        [
         "2026-07-15T01:02:19Z",
         100.821
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        100.818
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:14:05Z",
+    "observed_utc": "2026-07-15T01:17:10Z",
     "anchor_beat": "2026-07-14T20:26:31Z"
    },
    "lead_image": {
@@ -23335,7 +23398,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -24084,7 +24147,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:20:06Z",
+    "observed_utc": "2026-07-15T01:22:45Z",
     "anchor_beat": "2026-07-14T21:26:40Z"
    },
    "lead_image": {
@@ -24867,7 +24930,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -25552,7 +25615,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:19:47Z",
+    "observed_utc": "2026-07-15T01:22:29Z",
     "anchor_beat": "2026-07-14T22:26:00Z"
    },
    "lead_image": {
@@ -26323,7 +26386,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -27398,7 +27461,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "lead_image": {
     "url": "https://img.taipeitimes.com/images/2026/07/11/P02-260711-603.jpg",
@@ -28296,7 +28359,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -29148,7 +29211,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -29508,7 +29571,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:18:03Z",
+    "observed_utc": "2026-07-15T01:20:42Z",
     "anchor_beat": "2026-07-15T00:51:42Z"
    },
    "lead_image": {
@@ -30328,7 +30391,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -30336,10 +30399,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.64,
-      "last_ts": "2026-07-15T01:02:07Z",
+      "last": 85.58,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "Red Sea tensions oil supply",
-      "move_pct": 2.39,
+      "move_pct": 2.32,
       "window_h": 24,
       "measured_from": "2026-07-14T15:20:28Z",
       "series": [
@@ -30388,16 +30451,16 @@
         85.53
        ],
        [
-        "2026-07-14T07:23:18Z",
-        85.87
+        "2026-07-14T07:36:20Z",
+        86.21
        ],
        [
         "2026-07-14T08:00:00Z",
         86.05
        ],
        [
-        "2026-07-14T08:02:54Z",
-        86.07
+        "2026-07-14T08:09:01Z",
+        86.49
        ],
        [
         "2026-07-14T08:39:06Z",
@@ -30424,40 +30487,40 @@
         87.21
        ],
        [
-        "2026-07-14T10:36:03Z",
-        87.12
+        "2026-07-14T10:49:43Z",
+        87.08
        ],
        [
         "2026-07-14T11:00:00Z",
         86.95
        ],
        [
-        "2026-07-14T11:15:47Z",
-        86.89
+        "2026-07-14T11:24:28Z",
+        86.55
        ],
        [
         "2026-07-14T11:53:19Z",
         86.23
        ],
        [
-        "2026-07-14T11:55:35Z",
-        86.22
+        "2026-07-14T12:00:00Z",
+        86.28
        ],
        [
         "2026-07-14T12:25:48Z",
         86.27
        ],
        [
-        "2026-07-14T12:28:54Z",
-        86.48
+        "2026-07-14T12:59:58Z",
+        86.92
        ],
        [
         "2026-07-14T13:00:00Z",
         86.83
        ],
        [
-        "2026-07-14T13:09:47Z",
-        86.8
+        "2026-07-14T13:32:52Z",
+        86.47
        ],
        [
         "2026-07-14T13:47:53Z",
@@ -30468,75 +30531,75 @@
         85.37
        ],
        [
-        "2026-07-14T14:28:16Z",
-        85.12
+        "2026-07-14T14:39:42Z",
+        84.89
        ],
        [
         "2026-07-14T15:00:00Z",
         83.86
        ],
        [
-        "2026-07-14T15:06:57Z",
-        83.86
+        "2026-07-14T15:10:15Z",
+        83.64
        ],
        [
         "2026-07-14T15:36:55Z",
         84.85
        ],
        [
-        "2026-07-14T15:39:08Z",
-        84.87
+        "2026-07-14T16:00:00Z",
+        85.38
        ],
        [
         "2026-07-14T16:05:43Z",
         85.4
        ],
        [
-        "2026-07-14T16:08:06Z",
-        85.33
+        "2026-07-14T16:37:12Z",
+        84.81
        ],
        [
         "2026-07-14T16:37:18Z",
         84.86
        ],
        [
-        "2026-07-14T17:00:00Z",
-        84.75
-       ],
-       [
-        "2026-07-14T17:10:41Z",
-        84.56
+        "2026-07-14T17:04:19Z",
+        84.85
        ],
        [
         "2026-07-14T17:34:50Z",
         84.64
        ],
        [
-        "2026-07-14T18:00:00Z",
-        84.49
+        "2026-07-14T17:45:02Z",
+        84.61
        ],
        [
         "2026-07-14T18:05:25Z",
         84.49
        ],
        [
-        "2026-07-14T18:36:10Z",
-        84.83
+        "2026-07-14T18:18:51Z",
+        84.43
+       ],
+       [
+        "2026-07-14T18:53:39Z",
+        85.15
        ],
        [
         "2026-07-14T19:00:00Z",
         85.26
        ],
        [
-        "2026-07-14T19:08:08Z",
-        85.23
+        "2026-07-14T19:33:41Z",
+        85.42
        ],
        [
         "2026-07-14T19:40:37Z",
         85.33
        ],
        [
-        "2026-07-14T20:00:00Z",
+        "2026-07-14T20:08:20Z",
         85.39
        ],
        [
@@ -30544,35 +30607,31 @@
         85.39
        ],
        [
-        "2026-07-14T20:40:26Z",
-        85.62
-       ],
-       [
-        "2026-07-14T22:00:00Z",
-        85.45
+        "2026-07-14T20:59:58Z",
+        85.34
        ],
        [
         "2026-07-14T22:18:57Z",
         85.45
        ],
        [
-        "2026-07-14T22:40:23Z",
-        85.44
+        "2026-07-14T22:26:05Z",
+        85.56
        ],
        [
         "2026-07-14T23:00:00Z",
         85.43
        ],
        [
-        "2026-07-14T23:28:50Z",
-        85.21
+        "2026-07-14T23:12:12Z",
+        85.45
        ],
        [
         "2026-07-14T23:42:05Z",
         85.3
        ],
        [
-        "2026-07-15T00:01:09Z",
+        "2026-07-15T00:00:00Z",
         85.14
        ],
        [
@@ -30580,12 +30639,16 @@
         85.96
        ],
        [
-        "2026-07-15T01:00:00Z",
-        85.74
+        "2026-07-15T00:33:13Z",
+        86.17
        ],
        [
         "2026-07-15T01:02:07Z",
         85.64
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        85.58
        ]
       ]
      },
@@ -30593,10 +30656,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.02,
-      "last_ts": "2026-07-15T01:02:18Z",
+      "last": 79.92,
+      "last_ts": "2026-07-15T01:04:49Z",
       "basis": "Red Sea tensions oil supply",
-      "move_pct": 2.52,
+      "move_pct": 2.4,
       "window_h": 24,
       "measured_from": "2026-07-14T15:20:28Z",
       "series": [
@@ -30637,8 +30700,8 @@
         79.93
        ],
        [
-        "2026-07-14T06:43:26Z",
-        80.27
+        "2026-07-14T07:00:00Z",
+        80.42
        ],
        [
         "2026-07-14T07:01:49Z",
@@ -30665,16 +30728,16 @@
         80.72
        ],
        [
-        "2026-07-14T09:08:31Z",
-        80.87
+        "2026-07-14T09:13:50Z",
+        80.28
        ],
        [
         "2026-07-14T09:42:34Z",
         80.24
        ],
        [
-        "2026-07-14T09:52:09Z",
-        80.46
+        "2026-07-14T10:00:00Z",
+        80.99
        ],
        [
         "2026-07-14T10:15:32Z",
@@ -30693,162 +30756,162 @@
         80.1
        ],
        [
-        "2026-07-14T11:53:26Z",
-        79.64
+        "2026-07-14T11:55:42Z",
+        79.67
        ],
        [
         "2026-07-14T12:00:00Z",
         79.82
        ],
        [
-        "2026-07-14T12:25:48Z",
-        79.82
+        "2026-07-14T12:28:57Z",
+        80.01
        ],
        [
         "2026-07-14T12:59:57Z",
         80.69
        ],
        [
-        "2026-07-14T13:00:00Z",
-        80.83
+        "2026-07-14T13:09:48Z",
+        80.82
        ],
        [
         "2026-07-14T13:32:51Z",
         80.34
        ],
        [
-        "2026-07-14T13:47:51Z",
-        80.0
+        "2026-07-14T14:00:00Z",
+        79.64
        ],
        [
-        "2026-07-14T14:05:42Z",
-        79.68
+        "2026-07-14T14:28:16Z",
+        79.41
        ],
        [
         "2026-07-14T14:39:45Z",
         79.06
        ],
        [
-        "2026-07-14T15:00:00Z",
-        78.27
+        "2026-07-14T15:06:57Z",
+        78.28
        ],
        [
         "2026-07-14T15:10:17Z",
         78.05
        ],
        [
-        "2026-07-14T15:37:01Z",
-        79.45
+        "2026-07-14T15:39:17Z",
+        79.51
        ],
        [
         "2026-07-14T16:00:00Z",
         79.55
        ],
        [
-        "2026-07-14T16:05:43Z",
-        79.61
+        "2026-07-14T16:08:11Z",
+        79.5
        ],
        [
         "2026-07-14T16:37:19Z",
         79.14
        ],
        [
-        "2026-07-14T16:37:21Z",
-        79.14
+        "2026-07-14T17:00:00Z",
+        79.11
        ],
        [
-        "2026-07-14T17:04:34Z",
-        79.19
+        "2026-07-14T17:10:41Z",
+        79.03
        ],
        [
         "2026-07-14T17:35:14Z",
         79.13
        ],
        [
-        "2026-07-14T17:45:06Z",
-        78.92
+        "2026-07-14T18:00:00Z",
+        79.06
        ],
        [
         "2026-07-14T18:05:28Z",
         79.06
        ],
        [
-        "2026-07-14T18:18:53Z",
-        79.03
+        "2026-07-14T18:36:14Z",
+        79.39
        ],
        [
         "2026-07-14T18:53:40Z",
         79.67
        ],
        [
-        "2026-07-14T19:00:00Z",
-        79.59
-       ],
-       [
-        "2026-07-14T19:33:45Z",
-        79.88
+        "2026-07-14T19:08:08Z",
+        79.6
        ],
        [
         "2026-07-14T19:40:41Z",
         79.78
        ],
        [
-        "2026-07-14T20:08:25Z",
-        79.86
+        "2026-07-14T20:00:00Z",
+        79.83
        ],
        [
         "2026-07-14T20:11:27Z",
         79.83
        ],
        [
-        "2026-07-14T20:41:23Z",
-        80.02
+        "2026-07-14T20:41:10Z",
+        80.03
+       ],
+       [
+        "2026-07-14T20:59:57Z",
+        79.83
        ],
        [
         "2026-07-14T22:00:00Z",
         79.91
        ],
        [
-        "2026-07-14T22:20:31Z",
-        79.98
-       ],
-       [
-        "2026-07-14T22:54:14Z",
-        79.94
+        "2026-07-14T22:33:27Z",
+        79.92
        ],
        [
         "2026-07-14T23:00:00Z",
         79.93
        ],
        [
-        "2026-07-14T23:29:35Z",
-        79.74
+        "2026-07-14T23:12:43Z",
+        79.93
        ],
        [
         "2026-07-14T23:50:04Z",
         79.84
        ],
        [
-        "2026-07-15T00:01:16Z",
-        79.74
+        "2026-07-15T00:00:00Z",
+        79.73
        ],
        [
         "2026-07-15T00:27:16Z",
         80.22
        ],
        [
-        "2026-07-15T01:00:00Z",
-        80.07
+        "2026-07-15T00:33:35Z",
+        80.44
        ],
        [
         "2026-07-15T01:02:18Z",
         80.02
+       ],
+       [
+        "2026-07-15T01:04:49Z",
+        79.92
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:13:56Z",
+    "observed_utc": "2026-07-15T01:16:55Z",
     "anchor_beat": "2026-07-14T15:20:28Z"
    },
    "lead_image": {
@@ -31518,7 +31581,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -32302,7 +32365,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:16:50Z",
+    "observed_utc": "2026-07-15T01:19:44Z",
     "anchor_beat": "2026-07-14T19:24:49Z"
    },
    "lead_image": {
@@ -32905,7 +32968,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -33467,7 +33530,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -33928,7 +33991,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -34572,7 +34635,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -34846,7 +34909,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -35825,7 +35888,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "History gap: era \"Border conflict roots\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -36095,7 +36158,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:15:23Z",
+    "observed_utc": "2026-07-15T01:18:35Z",
     "anchor_beat": "2026-07-14T15:35:15Z"
    },
    "lead_image": {
@@ -36444,18 +36507,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Crypto Briefing",
-      "ts": "2026-07-08T01:15:45Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
       "outlet": "Bitcoin World",
       "ts": "2026-07-08T01:40:11Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 4
      },
@@ -36506,6 +36561,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 4
+     },
+     {
+      "outlet": "Statista",
+      "ts": "2026-07-08T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -36872,7 +36935,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -37780,7 +37843,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:15:12Z",
+    "observed_utc": "2026-07-15T01:18:28Z",
     "anchor_beat": "2026-07-14T18:42:54Z"
    },
    "lead_image": {
@@ -38841,7 +38904,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -39082,7 +39145,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -40209,7 +40272,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 20 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -40937,7 +41000,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:16:08Z",
+    "observed_utc": "2026-07-15T01:19:10Z",
     "anchor_beat": "2026-07-15T00:20:31Z"
    },
    "lead_image": {
@@ -41592,7 +41655,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -42287,7 +42350,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -42510,7 +42573,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -42755,7 +42818,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -42901,7 +42964,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:35:32Z",
+    "observed_utc": "2026-07-15T01:38:07Z",
     "anchor_beat": "2026-07-14T21:42:54Z"
    },
    "lead_image": {
@@ -43139,7 +43202,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -43293,7 +43356,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:35:43Z",
+    "observed_utc": "2026-07-15T01:38:20Z",
     "anchor_beat": "2026-07-14T21:18:23Z"
    },
    "lead_image": {
@@ -44073,7 +44136,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -45226,7 +45289,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 17 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -45753,7 +45816,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:16:33Z",
+    "observed_utc": "2026-07-15T01:19:29Z",
     "anchor_beat": "2026-07-14T20:47:54Z"
    },
    "lead_image": {
@@ -46076,7 +46139,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -46713,7 +46776,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -47008,7 +47071,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:18:49Z",
+    "observed_utc": "2026-07-15T01:21:28Z",
     "anchor_beat": "2026-07-14T20:24:08Z"
    },
    "lead_image": {
@@ -48068,7 +48131,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 23 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -48402,7 +48465,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -48842,7 +48905,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:32:52Z",
+    "observed_utc": "2026-07-15T01:35:26Z",
     "anchor_beat": "2026-07-14T20:03:00Z"
    },
    "lead_image": {
@@ -49174,7 +49237,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -49328,7 +49391,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:31:28Z",
+    "observed_utc": "2026-07-15T01:34:00Z",
     "anchor_beat": "2026-07-15T00:13:27Z"
    },
    "lead_image": {
@@ -49678,7 +49741,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -50422,7 +50485,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -50949,7 +51012,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:17:43Z",
+    "observed_utc": "2026-07-15T01:20:24Z",
     "anchor_beat": "2026-07-14T18:16:53Z"
    },
    "lead_image": {
@@ -51725,7 +51788,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -51995,7 +52058,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:18:29Z",
+    "observed_utc": "2026-07-15T01:21:07Z",
     "anchor_beat": "2026-07-14T13:30:21Z"
    },
    "lead_image": {
@@ -52660,7 +52723,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -53633,7 +53696,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:19:41Z",
+    "observed_utc": "2026-07-15T01:22:23Z",
     "anchor_beat": "2026-07-14T22:18:05Z"
    },
    "lead_image": {
@@ -54220,7 +54283,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -54864,7 +54927,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -55248,7 +55311,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -56041,7 +56104,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:27:19Z",
+    "observed_utc": "2026-07-15T01:29:51Z",
     "anchor_beat": "2026-07-14T16:04:54Z"
    },
    "lead_image": {
@@ -56692,7 +56755,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 20 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -56954,7 +57017,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -57473,7 +57536,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:13Z",
+    "observed_utc": "2026-07-15T01:36:50Z",
     "anchor_beat": "2026-07-14T14:36:04Z"
    },
    "lead_image": {
@@ -58367,7 +58430,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -58894,7 +58957,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:17:22Z",
+    "observed_utc": "2026-07-15T01:20:03Z",
     "anchor_beat": "2026-07-14T15:54:00Z"
    },
    "lead_image": {
@@ -59124,7 +59187,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -59394,7 +59457,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:49Z",
+    "observed_utc": "2026-07-15T01:37:25Z",
     "anchor_beat": "2026-07-14T16:01:38Z"
    },
    "lead_image": {
@@ -59592,7 +59655,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -60111,7 +60174,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:00Z",
+    "observed_utc": "2026-07-15T01:36:38Z",
     "anchor_beat": "2026-07-14T08:24:06Z"
    },
    "lead_image": {
@@ -60303,7 +60366,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -60880,7 +60943,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:54Z",
+    "observed_utc": "2026-07-15T01:37:30Z",
     "anchor_beat": "2026-07-14T15:47:36Z"
    },
    "lead_image": {
@@ -61068,7 +61131,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -61288,7 +61351,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -61622,7 +61685,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -62239,7 +62302,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -62837,7 +62900,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 10 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -63484,7 +63547,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -63771,7 +63834,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:20:13Z",
+    "observed_utc": "2026-07-15T01:22:51Z",
     "anchor_beat": "2026-07-14T15:40:27Z"
    },
    "lead_image": {
@@ -64089,7 +64152,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -64235,7 +64298,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:33:27Z",
+    "observed_utc": "2026-07-15T01:36:00Z",
     "anchor_beat": "2026-07-14T18:40:22Z"
    },
    "lead_image": {
@@ -65000,7 +65063,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -65647,7 +65710,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -66447,7 +66510,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "History gap: era \"War on Terror era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Soviet war and aftermath\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Durand Line era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
@@ -66464,10 +66527,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.64,
-      "last_ts": "2026-07-15T01:02:07Z",
+      "last": 85.58,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "Oil supply risk from conflict",
-      "move_pct": -0.97,
+      "move_pct": -1.04,
       "window_h": 24,
       "measured_from": "2026-07-14T12:54:35Z",
       "series": [
@@ -66488,8 +66551,8 @@
         83.96
        ],
        [
-        "2026-07-14T02:12:38Z",
-        83.98
+        "2026-07-14T02:19:28Z",
+        83.97
        ],
        [
         "2026-07-14T02:44:01Z",
@@ -66504,7 +66567,7 @@
         85.0
        ],
        [
-        "2026-07-14T04:00:00Z",
+        "2026-07-14T04:14:32Z",
         84.74
        ],
        [
@@ -66520,8 +66583,8 @@
         84.8
        ],
        [
-        "2026-07-14T05:23:21Z",
-        84.87
+        "2026-07-14T05:52:11Z",
+        84.24
        ],
        [
         "2026-07-14T06:00:00Z",
@@ -66536,8 +66599,8 @@
         85.53
        ],
        [
-        "2026-07-14T07:01:45Z",
-        85.53
+        "2026-07-14T07:23:18Z",
+        85.87
        ],
        [
         "2026-07-14T07:36:20Z",
@@ -66548,12 +66611,12 @@
         86.07
        ],
        [
-        "2026-07-14T08:09:01Z",
-        86.49
+        "2026-07-14T08:39:06Z",
+        86.39
        ],
        [
-        "2026-07-14T08:39:14Z",
-        86.39
+        "2026-07-14T09:00:00Z",
+        86.92
        ],
        [
         "2026-07-14T09:08:28Z",
@@ -66564,12 +66627,12 @@
         86.42
        ],
        [
-        "2026-07-14T09:52:06Z",
-        86.65
+        "2026-07-14T10:00:00Z",
+        87.2
        ],
        [
-        "2026-07-14T10:15:32Z",
-        87.21
+        "2026-07-14T10:36:03Z",
+        87.12
        ],
        [
         "2026-07-14T10:49:43Z",
@@ -66580,12 +66643,12 @@
         86.89
        ],
        [
-        "2026-07-14T11:24:28Z",
-        86.55
+        "2026-07-14T11:53:19Z",
+        86.23
        ],
        [
-        "2026-07-14T11:55:35Z",
-        86.22
+        "2026-07-14T12:00:00Z",
+        86.28
        ],
        [
         "2026-07-14T12:25:48Z",
@@ -66596,59 +66659,59 @@
         86.92
        ],
        [
-        "2026-07-14T13:00:00Z",
-        86.83
+        "2026-07-14T13:09:47Z",
+        86.8
        ],
        [
-        "2026-07-14T13:32:52Z",
-        86.47
+        "2026-07-14T13:47:53Z",
+        85.58
        ],
        [
         "2026-07-14T14:00:00Z",
         85.31
        ],
        [
-        "2026-07-14T14:05:43Z",
-        85.37
+        "2026-07-14T14:28:16Z",
+        85.12
        ],
        [
-        "2026-07-14T14:39:42Z",
-        84.89
-       ],
-       [
-        "2026-07-14T15:06:57Z",
+        "2026-07-14T15:00:00Z",
         83.86
+       ],
+       [
+        "2026-07-14T15:10:15Z",
+        83.64
        ],
        [
         "2026-07-14T15:36:55Z",
         84.85
        ],
        [
-        "2026-07-14T15:39:08Z",
-        84.87
+        "2026-07-14T16:00:00Z",
+        85.38
        ],
        [
-        "2026-07-14T16:05:43Z",
-        85.4
+        "2026-07-14T16:08:06Z",
+        85.33
        ],
        [
-        "2026-07-14T16:37:12Z",
-        84.81
+        "2026-07-14T16:37:18Z",
+        84.86
        ],
        [
         "2026-07-14T17:00:00Z",
         84.75
        ],
        [
-        "2026-07-14T17:04:19Z",
-        84.85
+        "2026-07-14T17:10:41Z",
+        84.56
        ],
        [
-        "2026-07-14T17:34:50Z",
-        84.64
+        "2026-07-14T17:45:02Z",
+        84.61
        ],
        [
-        "2026-07-14T18:00:00Z",
+        "2026-07-14T18:05:25Z",
         84.49
        ],
        [
@@ -66656,64 +66719,64 @@
         84.43
        ],
        [
-        "2026-07-14T18:36:10Z",
-        84.83
+        "2026-07-14T18:53:39Z",
+        85.15
        ],
        [
-        "2026-07-14T19:00:00Z",
-        85.26
-       ],
-       [
-        "2026-07-14T19:33:41Z",
-        85.42
+        "2026-07-14T19:08:08Z",
+        85.23
        ],
        [
         "2026-07-14T19:40:37Z",
         85.33
        ],
        [
-        "2026-07-14T20:08:20Z",
+        "2026-07-14T20:00:00Z",
         85.39
        ],
        [
-        "2026-07-14T20:40:26Z",
-        85.62
+        "2026-07-14T20:11:24Z",
+        85.39
        ],
        [
-        "2026-07-14T22:00:00Z",
-        85.45
+        "2026-07-14T20:59:58Z",
+        85.34
        ],
        [
         "2026-07-14T22:18:57Z",
         85.45
        ],
        [
-        "2026-07-14T22:40:23Z",
-        85.44
+        "2026-07-14T22:26:05Z",
+        85.56
        ],
        [
-        "2026-07-14T23:12:12Z",
-        85.45
+        "2026-07-14T23:00:00Z",
+        85.43
        ],
        [
-        "2026-07-14T23:42:05Z",
-        85.3
+        "2026-07-14T23:28:50Z",
+        85.21
        ],
        [
         "2026-07-15T00:00:00Z",
         85.14
        ],
        [
-        "2026-07-15T00:27:02Z",
-        85.96
+        "2026-07-15T00:01:09Z",
+        85.14
        ],
        [
-        "2026-07-15T01:00:00Z",
-        85.74
+        "2026-07-15T00:33:13Z",
+        86.17
        ],
        [
         "2026-07-15T01:02:07Z",
         85.64
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        85.58
        ]
       ]
      },
@@ -66721,10 +66784,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.02,
-      "last_ts": "2026-07-15T01:02:18Z",
+      "last": 79.92,
+      "last_ts": "2026-07-15T01:04:49Z",
       "basis": "Crude demand uncertainty",
-      "move_pct": 0.01,
+      "move_pct": -0.11,
       "window_h": 24,
       "measured_from": "2026-07-14T12:54:35Z",
       "series": [
@@ -66797,8 +66860,8 @@
         80.48
        ],
        [
-        "2026-07-14T07:36:39Z",
-        80.83
+        "2026-07-14T08:00:00Z",
+        80.58
        ],
        [
         "2026-07-14T08:02:56Z",
@@ -66813,8 +66876,8 @@
         80.72
        ],
        [
-        "2026-07-14T09:08:31Z",
-        80.87
+        "2026-07-14T09:13:50Z",
+        80.28
        ],
        [
         "2026-07-14T09:42:34Z",
@@ -66829,8 +66892,8 @@
         80.75
        ],
        [
-        "2026-07-14T10:49:35Z",
-        80.78
+        "2026-07-14T11:00:00Z",
+        80.6
        ],
        [
         "2026-07-14T11:15:45Z",
@@ -66845,12 +66908,12 @@
         79.82
        ],
        [
-        "2026-07-14T12:25:48Z",
-        79.82
+        "2026-07-14T12:28:57Z",
+        80.01
        ],
        [
-        "2026-07-14T12:59:57Z",
-        80.69
+        "2026-07-14T13:00:00Z",
+        80.83
        ],
        [
         "2026-07-14T13:09:48Z",
@@ -66861,12 +66924,12 @@
         80.0
        ],
        [
-        "2026-07-14T14:00:00Z",
-        79.64
+        "2026-07-14T14:05:42Z",
+        79.68
        ],
        [
-        "2026-07-14T14:28:16Z",
-        79.41
+        "2026-07-14T14:39:45Z",
+        79.06
        ],
        [
         "2026-07-14T15:00:00Z",
@@ -66877,12 +66940,12 @@
         78.05
        ],
        [
-        "2026-07-14T15:37:01Z",
-        79.45
+        "2026-07-14T15:39:17Z",
+        79.51
        ],
        [
-        "2026-07-14T16:00:00Z",
-        79.55
+        "2026-07-14T16:05:43Z",
+        79.61
        ],
        [
         "2026-07-14T16:08:11Z",
@@ -66893,12 +66956,12 @@
         79.14
        ],
        [
-        "2026-07-14T17:00:00Z",
-        79.11
+        "2026-07-14T17:04:34Z",
+        79.19
        ],
        [
-        "2026-07-14T17:10:41Z",
-        79.03
+        "2026-07-14T17:35:14Z",
+        79.13
        ],
        [
         "2026-07-14T17:45:06Z",
@@ -66909,68 +66972,68 @@
         79.06
        ],
        [
-        "2026-07-14T18:18:53Z",
-        79.03
+        "2026-07-14T18:36:14Z",
+        79.39
        ],
        [
-        "2026-07-14T18:53:40Z",
-        79.67
+        "2026-07-14T19:00:00Z",
+        79.59
        ],
        [
-        "2026-07-14T19:08:08Z",
-        79.6
+        "2026-07-14T19:33:45Z",
+        79.88
        ],
        [
         "2026-07-14T19:40:41Z",
         79.78
        ],
        [
-        "2026-07-14T20:00:00Z",
-        79.83
+        "2026-07-14T20:08:25Z",
+        79.86
        ],
        [
-        "2026-07-14T20:11:27Z",
-        79.83
+        "2026-07-14T20:41:10Z",
+        80.03
        ],
        [
-        "2026-07-14T20:41:23Z",
-        80.02
+        "2026-07-14T20:59:57Z",
+        79.83
        ],
        [
         "2026-07-14T22:00:00Z",
         79.91
        ],
        [
-        "2026-07-14T22:20:31Z",
-        79.98
+        "2026-07-14T22:33:27Z",
+        79.92
        ],
        [
-        "2026-07-14T22:54:14Z",
-        79.94
-       ],
-       [
-        "2026-07-14T23:12:43Z",
+        "2026-07-14T23:00:00Z",
         79.93
+       ],
+       [
+        "2026-07-14T23:29:35Z",
+        79.74
        ],
        [
         "2026-07-14T23:50:04Z",
         79.84
        ],
        [
-        "2026-07-15T00:00:00Z",
-        79.73
+        "2026-07-15T00:01:16Z",
+        79.74
        ],
        [
-        "2026-07-15T00:27:16Z",
-        80.22
-       ],
-       [
-        "2026-07-15T01:00:00Z",
-        80.07
+        "2026-07-15T00:33:35Z",
+        80.44
        ],
        [
         "2026-07-15T01:02:18Z",
         80.02
+       ],
+       [
+        "2026-07-15T01:04:49Z",
+        79.92
        ]
       ]
      },
@@ -67109,7 +67172,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:14:45Z",
+    "observed_utc": "2026-07-15T01:18:03Z",
     "anchor_beat": "2026-07-14T12:54:35Z"
    },
    "lead_image": {
@@ -67809,7 +67872,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 21 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -67963,7 +68026,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:15:51Z",
+    "observed_utc": "2026-07-15T01:18:57Z",
     "anchor_beat": "2026-07-14T22:07:42Z"
    },
    "lead_image": {
@@ -68270,7 +68333,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -69054,7 +69117,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:27:31Z",
+    "observed_utc": "2026-07-15T01:30:07Z",
     "anchor_beat": "2026-07-14T16:00:29Z"
    },
    "gate": {
@@ -69299,7 +69362,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -69894,7 +69957,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -70164,7 +70227,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:19:58Z",
+    "observed_utc": "2026-07-15T01:22:40Z",
     "anchor_beat": "2026-07-14T17:00:07Z"
    },
    "gate": {
@@ -71065,7 +71128,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -72106,7 +72169,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:21:36Z",
+    "observed_utc": "2026-07-15T01:24:06Z",
     "anchor_beat": "2026-07-14T16:36:26Z"
    },
    "lead_image": {
@@ -72792,7 +72855,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -73659,7 +73722,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -73673,10 +73736,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4064.7,
-      "last_ts": "2026-07-15T01:02:18Z",
+      "last": 4063.3,
+      "last_ts": "2026-07-15T01:04:50Z",
       "basis": "Geopolitical tensions",
-      "move_pct": 0.18,
+      "move_pct": 0.15,
       "window_h": 24,
       "measured_from": "2026-07-14T22:23:59Z",
       "series": [
@@ -73741,10 +73804,6 @@
         4091.6001
        ],
        [
-        "2026-07-14T14:00:00Z",
-        4083.7
-       ],
-       [
         "2026-07-14T14:05:40Z",
         4082.6001
        ],
@@ -73759,6 +73818,10 @@
        [
         "2026-07-14T15:00:00Z",
         4101.1001
+       ],
+       [
+        "2026-07-14T15:06:58Z",
+        4101.2998
        ],
        [
         "2026-07-14T15:10:17Z",
@@ -73801,10 +73864,6 @@
         4066.8
        ],
        [
-        "2026-07-14T17:10:39Z",
-        4066.2
-       ],
-       [
         "2026-07-14T17:35:14Z",
         4068.8999
        ],
@@ -73841,6 +73900,10 @@
         4060.0
        ],
        [
+        "2026-07-14T19:33:43Z",
+        4056.7
+       ],
+       [
         "2026-07-14T19:40:29Z",
         4057.5
        ],
@@ -73859,10 +73922,6 @@
        [
         "2026-07-14T20:41:03Z",
         4057.8
-       ],
-       [
-        "2026-07-14T20:41:30Z",
-        4057.3
        ],
        [
         "2026-07-14T20:59:58Z",
@@ -73923,6 +73982,10 @@
        [
         "2026-07-15T01:02:18Z",
         4064.7
+       ],
+       [
+        "2026-07-15T01:04:50Z",
+        4063.3
        ]
       ]
      },
@@ -73930,8 +73993,8 @@
       "symbol": "DX-Y.NYB",
       "label": "Dollar Index",
       "class": "fx",
-      "last": 100.821,
-      "last_ts": "2026-07-15T01:02:19Z",
+      "last": 100.818,
+      "last_ts": "2026-07-15T01:04:51Z",
       "basis": "dollar reaction",
       "move_pct": -0.12,
       "window_h": 24,
@@ -73998,10 +74061,6 @@
         100.711
        ],
        [
-        "2026-07-14T14:00:00Z",
-        100.664
-       ],
-       [
         "2026-07-14T14:05:43Z",
         100.665
        ],
@@ -74016,6 +74075,10 @@
        [
         "2026-07-14T15:00:00Z",
         100.715
+       ],
+       [
+        "2026-07-14T15:06:56Z",
+        100.711
        ],
        [
         "2026-07-14T15:10:17Z",
@@ -74058,10 +74121,6 @@
         100.874
        ],
        [
-        "2026-07-14T17:10:38Z",
-        100.901
-       ],
-       [
         "2026-07-14T17:35:16Z",
         100.916
        ],
@@ -74098,6 +74157,10 @@
         100.918
        ],
        [
+        "2026-07-14T19:33:46Z",
+        100.925
+       ],
+       [
         "2026-07-14T19:40:48Z",
         100.917
        ],
@@ -74115,10 +74178,6 @@
        ],
        [
         "2026-07-14T20:41:11Z",
-        100.928
-       ],
-       [
-        "2026-07-14T20:41:27Z",
         100.928
        ],
        [
@@ -74180,6 +74239,10 @@
        [
         "2026-07-15T01:02:19Z",
         100.821
+       ],
+       [
+        "2026-07-15T01:04:51Z",
+        100.818
        ]
       ]
      },
@@ -74374,7 +74437,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:14:10Z",
+    "observed_utc": "2026-07-15T01:17:20Z",
     "anchor_beat": "2026-07-14T22:23:59Z"
    },
    "lead_image": {
@@ -74912,7 +74975,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -75086,7 +75149,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -75522,7 +75585,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:35:00Z",
+    "observed_utc": "2026-07-15T01:37:35Z",
     "anchor_beat": "2026-07-14T17:09:55Z"
    },
    "lead_image": {
@@ -75686,7 +75749,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -76330,7 +76393,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -76907,7 +76970,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:19:08Z",
+    "observed_utc": "2026-07-15T01:21:47Z",
     "anchor_beat": "2026-07-14T14:56:21Z"
    },
    "lead_image": {
@@ -77552,7 +77615,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -78176,7 +78239,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -78322,7 +78385,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:19:36Z",
+    "observed_utc": "2026-07-15T01:22:17Z",
     "anchor_beat": "2026-07-14T13:29:28Z"
    },
    "lead_image": {
@@ -78570,7 +78633,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -79229,7 +79292,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 21 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -79665,7 +79728,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:15:37Z",
+    "observed_utc": "2026-07-15T01:18:46Z",
     "anchor_beat": "2026-07-14T16:56:48Z"
    },
    "lead_image": {
@@ -80388,7 +80451,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -80752,7 +80815,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -81279,7 +81342,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:26:59Z",
+    "observed_utc": "2026-07-15T01:29:35Z",
     "anchor_beat": "2026-07-14T11:38:49Z"
    },
    "lead_image": {
@@ -81576,7 +81639,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -82041,7 +82104,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:29:53Z",
+    "observed_utc": "2026-07-15T01:32:38Z",
     "anchor_beat": "2026-07-14T23:23:53Z"
    },
    "lead_image": {
@@ -82248,7 +82311,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -83289,7 +83352,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:25Z",
+    "observed_utc": "2026-07-15T01:37:01Z",
     "anchor_beat": "2026-07-14T12:25:23Z"
    },
    "lead_image": {
@@ -83482,7 +83545,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -84266,7 +84329,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:43Z",
+    "observed_utc": "2026-07-15T01:37:19Z",
     "anchor_beat": "2026-07-14T12:11:39Z"
    },
    "lead_image": {
@@ -84503,7 +84566,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -85206,7 +85269,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -86239,7 +86302,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:18:23Z",
+    "observed_utc": "2026-07-15T01:20:59Z",
     "anchor_beat": "2026-07-14T17:46:48Z"
    },
    "lead_image": {
@@ -86809,7 +86872,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -87345,7 +87408,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -87872,7 +87935,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:20:50Z",
+    "observed_utc": "2026-07-15T01:23:24Z",
     "anchor_beat": "2026-07-14T20:23:49Z"
    },
    "lead_image": {
@@ -88911,7 +88974,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -89438,7 +89501,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:20:58Z",
+    "observed_utc": "2026-07-15T01:23:32Z",
     "anchor_beat": "2026-07-14T13:20:00Z"
    },
    "lead_image": {
@@ -90000,7 +90063,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -90577,7 +90640,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:21:54Z",
+    "observed_utc": "2026-07-15T01:24:23Z",
     "anchor_beat": "2026-07-14T13:35:00Z"
    },
    "lead_image": {
@@ -91104,7 +91167,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 10 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -91374,7 +91437,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:03Z",
+    "observed_utc": "2026-07-15T01:25:36Z",
     "anchor_beat": "2026-07-14T15:45:17Z"
    },
    "lead_image": {
@@ -91979,7 +92042,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -92249,7 +92312,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:53Z",
+    "observed_utc": "2026-07-15T01:26:30Z",
     "anchor_beat": "2026-07-14T17:55:59Z"
    },
    "lead_image": {
@@ -92573,7 +92636,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -92759,7 +92822,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -93336,7 +93399,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:37Z",
+    "observed_utc": "2026-07-15T01:37:14Z",
     "anchor_beat": "2026-07-14T13:00:02Z"
    },
    "lead_image": {
@@ -94116,7 +94179,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -94462,7 +94525,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -95045,7 +95108,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -95448,7 +95511,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:22:24Z",
+    "observed_utc": "2026-07-15T01:24:51Z",
     "anchor_beat": "2026-07-14T14:32:34Z"
    },
    "lead_image": {
@@ -95764,7 +95827,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -95958,7 +96021,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -96104,7 +96167,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:34:19Z",
+    "observed_utc": "2026-07-15T01:36:55Z",
     "anchor_beat": "2026-07-14T12:15:00Z"
    },
    "lead_image": {
@@ -96440,7 +96503,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -96713,7 +96776,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -96990,12 +97053,12 @@
      "class": "other"
     },
     {
-     "outlet": "KVPR",
+     "outlet": "Metro.co.uk",
      "n": 1,
      "class": "other"
     },
     {
-     "outlet": "LinkedIn",
+     "outlet": "NZ Herald",
      "n": 1,
      "class": "other"
     }
@@ -97078,13 +97141,13 @@
      "state-media": 1,
      "regional": 0,
      "official": 0,
-     "other": 35
+     "other": 33
     },
     "first_seen": "2026-07-12T02:16:23Z"
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -97765,7 +97828,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -98347,7 +98410,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -98642,7 +98705,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:25Z",
+    "observed_utc": "2026-07-15T01:26:00Z",
     "anchor_beat": "2026-07-14T09:13:21Z"
    },
    "lead_image": {
@@ -99142,7 +99205,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -99296,7 +99359,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:42Z",
+    "observed_utc": "2026-07-15T01:26:19Z",
     "anchor_beat": "2026-07-14T19:00:58Z"
    },
    "lead_image": {
@@ -99534,7 +99597,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -100061,7 +100124,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:32:34Z",
+    "observed_utc": "2026-07-15T01:35:07Z",
     "anchor_beat": "2026-07-14T04:43:23Z"
    },
    "lead_image": {
@@ -100496,7 +100559,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -101108,7 +101171,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -101360,7 +101423,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -101936,7 +101999,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -102463,7 +102526,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:21:59Z",
+    "observed_utc": "2026-07-15T01:24:29Z",
     "anchor_beat": "2026-07-14T11:20:05Z"
    },
    "lead_image": {
@@ -103064,7 +103127,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -103538,7 +103601,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -103692,7 +103755,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:26:07Z",
+    "observed_utc": "2026-07-15T01:28:41Z",
     "anchor_beat": "2026-07-14T15:30:00Z"
    },
    "lead_image": {
@@ -103994,7 +104057,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -104236,7 +104299,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -104531,7 +104594,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:31:40Z",
+    "observed_utc": "2026-07-15T01:34:13Z",
     "anchor_beat": "2026-07-14T10:00:00Z"
    },
    "gate": {
@@ -104734,7 +104797,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -105440,7 +105503,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -105976,7 +106039,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:19:30Z",
+    "observed_utc": "2026-07-15T01:22:12Z",
     "anchor_beat": "2026-07-14T05:44:11Z"
    },
    "lead_image": {
@@ -106521,7 +106584,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -106791,7 +106854,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:22:29Z",
+    "observed_utc": "2026-07-15T01:24:56Z",
     "anchor_beat": "2026-07-14T10:32:05Z"
    },
    "lead_image": {
@@ -107314,7 +107377,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -107966,7 +108029,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:22:41Z",
+    "observed_utc": "2026-07-15T01:25:10Z",
     "anchor_beat": "2026-07-14T10:51:21Z"
    },
    "lead_image": {
@@ -108532,7 +108595,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 10 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -109067,7 +109130,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -109594,7 +109657,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:20Z",
+    "observed_utc": "2026-07-15T01:25:54Z",
     "anchor_beat": "2026-07-13T23:59:40Z"
    },
    "lead_image": {
@@ -110097,7 +110160,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -110881,7 +110944,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:37Z",
+    "observed_utc": "2026-07-15T01:26:13Z",
     "anchor_beat": "2026-07-14T03:04:21Z"
    },
    "lead_image": {
@@ -111232,7 +111295,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -111527,7 +111590,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:27:43Z",
+    "observed_utc": "2026-07-15T01:30:21Z",
     "anchor_beat": "2026-07-14T23:43:12Z"
    },
    "lead_image": {
@@ -111849,7 +111912,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -112050,7 +112113,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -112586,7 +112649,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -113147,7 +113210,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -113597,7 +113660,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -114241,7 +114304,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -114893,7 +114956,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:48Z",
+    "observed_utc": "2026-07-15T01:26:25Z",
     "anchor_beat": "2026-07-14T12:24:20Z"
    },
    "lead_image": {
@@ -115327,7 +115390,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -115813,7 +115876,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -116390,7 +116453,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:24:46Z",
+    "observed_utc": "2026-07-15T01:27:25Z",
     "anchor_beat": "2026-07-14T11:05:09Z"
    },
    "lead_image": {
@@ -117024,7 +117087,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -117499,7 +117562,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -117794,7 +117857,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:25:42Z",
+    "observed_utc": "2026-07-15T01:28:19Z",
     "anchor_beat": "2026-07-14T17:45:38Z"
    },
    "lead_image": {
@@ -118225,7 +118288,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -118628,7 +118691,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -119155,7 +119218,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:26:42Z",
+    "observed_utc": "2026-07-15T01:29:17Z",
     "anchor_beat": "2026-07-14T01:55:24Z"
    },
    "lead_image": {
@@ -119513,7 +119576,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -120430,7 +120493,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:27:13Z",
+    "observed_utc": "2026-07-15T01:29:46Z",
     "anchor_beat": "2026-07-14T14:08:44Z"
    },
    "gate": {
@@ -120762,7 +120825,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -121094,7 +121157,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -121497,7 +121560,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:29:06Z",
+    "observed_utc": "2026-07-15T01:31:49Z",
     "anchor_beat": "2026-07-14T11:14:32Z"
    },
    "lead_image": {
@@ -121667,7 +121730,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -122451,7 +122514,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:29:59Z",
+    "observed_utc": "2026-07-15T01:32:44Z",
     "anchor_beat": "2026-07-14T05:29:01Z"
    },
    "gate": {
@@ -123100,7 +123163,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -123628,7 +123691,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:21:48Z",
+    "observed_utc": "2026-07-15T01:24:18Z",
     "anchor_beat": "2026-07-13T19:08:36Z"
    },
    "lead_image": {
@@ -123955,7 +124018,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -124234,7 +124297,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -124593,7 +124656,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -124930,7 +124993,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -125438,7 +125501,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:31:16Z",
+    "observed_utc": "2026-07-15T01:33:49Z",
     "anchor_beat": "2026-07-14T00:44:37Z"
    },
    "gate": {
@@ -125868,7 +125931,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -126098,7 +126161,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -126305,7 +126368,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -126536,7 +126599,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -126751,7 +126814,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -126969,7 +127032,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -127375,7 +127438,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -128417,7 +128480,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:26:13Z",
+    "observed_utc": "2026-07-15T01:28:47Z",
     "anchor_beat": "2026-07-13T18:28:13Z"
    },
    "lead_image": {
@@ -128790,7 +128853,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -129010,7 +129073,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -129281,7 +129344,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:32:22Z",
+    "observed_utc": "2026-07-15T01:34:54Z",
     "anchor_beat": "2026-07-13T16:38:07Z"
    },
    "lead_image": {
@@ -129739,7 +129802,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -130262,7 +130325,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -130790,7 +130853,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:25:30Z",
+    "observed_utc": "2026-07-15T01:28:07Z",
     "anchor_beat": "2026-07-13T15:53:51Z"
    },
    "lead_image": {
@@ -131198,7 +131261,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -131547,7 +131610,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -131900,7 +131963,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -132685,7 +132748,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:28:13Z",
+    "observed_utc": "2026-07-15T01:30:54Z",
     "anchor_beat": "2026-07-13T08:53:41Z"
    },
    "lead_image": {
@@ -133007,7 +133070,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -133337,7 +133400,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -133520,7 +133583,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -134040,7 +134103,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:33:32Z",
+    "observed_utc": "2026-07-15T01:36:07Z",
     "anchor_beat": "2026-07-13T17:04:55Z"
    },
    "gate": {
@@ -134260,7 +134323,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -134788,7 +134851,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:33:49Z",
+    "observed_utc": "2026-07-15T01:36:26Z",
     "anchor_beat": "2026-07-14T01:32:47Z"
    },
    "gate": {
@@ -135358,7 +135421,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 20 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -135921,7 +135984,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -136963,7 +137026,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:18:10Z",
+    "observed_utc": "2026-07-15T01:20:48Z",
     "anchor_beat": "2026-07-13T16:16:22Z"
    },
    "lead_image": {
@@ -137518,7 +137581,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -138180,7 +138243,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -138675,7 +138738,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -139304,7 +139367,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -139845,7 +139908,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -140373,7 +140436,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:21:12Z",
+    "observed_utc": "2026-07-15T01:23:43Z",
     "anchor_beat": "2026-07-13T08:43:00Z"
    },
    "gate": {
@@ -140958,7 +141021,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -141449,7 +141512,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -142234,7 +142297,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:24:05Z",
+    "observed_utc": "2026-07-15T01:26:42Z",
     "anchor_beat": "2026-07-14T01:15:48Z"
    },
    "gate": {
@@ -142672,7 +142735,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -143201,7 +143264,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -143814,7 +143877,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -144085,7 +144148,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:24:51Z",
+    "observed_utc": "2026-07-15T01:27:31Z",
     "anchor_beat": "2026-07-13T15:58:05Z"
    },
    "lead_image": {
@@ -144612,7 +144675,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -145039,7 +145102,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -145567,7 +145630,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:26:53Z",
+    "observed_utc": "2026-07-15T01:29:29Z",
     "anchor_beat": "2026-07-13T05:43:44Z"
    },
    "gate": {
@@ -145993,7 +146056,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -146344,7 +146407,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -146864,7 +146927,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:27:37Z",
+    "observed_utc": "2026-07-15T01:30:14Z",
     "anchor_beat": "2026-07-13T08:00:06Z"
    },
    "lead_image": {
@@ -147212,7 +147275,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -147549,7 +147612,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -147844,7 +147907,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -148184,7 +148247,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -148441,7 +148504,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -148626,7 +148689,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -149154,7 +149217,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:30:56Z",
+    "observed_utc": "2026-07-15T01:33:31Z",
     "anchor_beat": "2026-07-13T00:00:00Z"
    },
    "lead_image": {
@@ -149286,7 +149349,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -150081,7 +150144,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -150678,7 +150741,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 15 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -151197,7 +151260,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 14 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -151513,7 +151576,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:19:24Z",
+    "observed_utc": "2026-07-15T01:22:05Z",
     "anchor_beat": "2026-07-11T16:56:56Z"
    },
    "lead_image": {
@@ -152211,7 +152274,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -152339,7 +152402,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:21:42Z",
+    "observed_utc": "2026-07-15T01:24:12Z",
     "anchor_beat": "2026-07-11T12:15:28Z"
    },
    "lead_image": {
@@ -152893,7 +152956,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -153270,7 +153333,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:22:18Z",
+    "observed_utc": "2026-07-15T01:24:45Z",
     "anchor_beat": "2026-07-11T02:09:14Z"
    },
    "lead_image": {
@@ -153796,7 +153859,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 11 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -154338,7 +154401,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 10 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -154682,7 +154745,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:23:09Z",
+    "observed_utc": "2026-07-15T01:25:42Z",
     "anchor_beat": "2026-07-11T05:27:00Z"
    },
    "lead_image": {
@@ -155093,7 +155156,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -155844,7 +155907,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -156461,7 +156524,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:24:17Z",
+    "observed_utc": "2026-07-15T01:26:54Z",
     "anchor_beat": "2026-07-10T19:00:00Z"
    },
    "lead_image": {
@@ -156878,7 +156941,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -157307,7 +157370,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -158008,7 +158071,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:24:40Z",
+    "observed_utc": "2026-07-15T01:27:19Z",
     "anchor_beat": "2026-07-09T16:20:41Z"
    },
    "lead_image": {
@@ -158549,7 +158612,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -159045,7 +159108,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:24:56Z",
+    "observed_utc": "2026-07-15T01:27:38Z",
     "anchor_beat": "2026-07-09T14:25:39Z"
    },
    "lead_image": {
@@ -159545,7 +159608,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -159616,7 +159679,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:25:03Z",
+    "observed_utc": "2026-07-15T01:27:43Z",
     "anchor_beat": "2026-07-11T05:34:53Z"
    },
    "lead_image": {
@@ -160137,7 +160200,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -160490,7 +160553,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:25:10Z",
+    "observed_utc": "2026-07-15T01:27:49Z",
     "anchor_beat": "2026-07-12T06:55:31Z"
    },
    "gate": {
@@ -160763,7 +160826,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -160999,7 +161062,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:26:31Z",
+    "observed_utc": "2026-07-15T01:29:05Z",
     "anchor_beat": "2026-07-11T02:31:20Z"
    },
    "lead_image": {
@@ -161350,7 +161413,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -161632,7 +161695,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -162417,7 +162480,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:28:53Z",
+    "observed_utc": "2026-07-15T01:31:38Z",
     "anchor_beat": "2026-07-12T19:30:00Z"
    },
    "lead_image": {
@@ -162711,7 +162774,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -163022,7 +163085,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 3 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -163250,7 +163313,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -163436,7 +163499,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -163541,7 +163604,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -164314,7 +164377,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:31:03Z",
+    "observed_utc": "2026-07-15T01:33:36Z",
     "anchor_beat": null
    },
    "gate": {
@@ -164442,7 +164505,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -164713,7 +164776,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-15T01:32:16Z",
+    "observed_utc": "2026-07-15T01:34:48Z",
     "anchor_beat": "2026-07-08T19:13:37Z"
    },
    "gate": {
@@ -164805,7 +164868,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -164935,7 +164998,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -165010,7 +165073,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Euronews, Times of Israel.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -165277,7 +165340,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-15T01:35:26Z",
+    "observed_utc": "2026-07-15T01:38:00Z",
     "anchor_beat": null
    },
    "gate": {
@@ -165296,56 +165359,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Daylight saving time made permanent by US House vote: \u2018Americans are tired of the clock change\u2019",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Sheikh Hamad bin Khalifa, Ruler Who Transformed Qatar, Dies at 74",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "West enlists Ukrainian militants to undermine Russia-Sahel relations - Lavrov",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Russia to fulfill grain supply commitments to foreign partners",
-   "outlets": 5,
-   "count": 6,
-   "status": "watching"
-  },
-  {
-   "sample": "Your monthly Netflix bill is up 29% in just over a year. Critics say Washington needs to fix it.",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "US troop withdrawal from Iraq set for September, 30",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Thailand Needs to Soak Its Own Rich, Not Just Wealthy Tourists",
-   "outlets": 3,
-   "count": 6,
-   "status": "watching"
-  },
-  {
-   "sample": "Japan's largest taxi operator shuts systems after cyberattack",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -165371,12 +165385,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 129,
-  "accepted": 0,
-  "rejected": 11,
-  "existing": 0,
-  "below": 118,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -165391,6 +165399,6 @@
   "edition_utc": "2026-07-14",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1285
+  "overflow": 1281
  }
 }
