@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-17T19:18:17Z",
+ "generated_utc": "2026-07-17T19:22:21Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,6 +32,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -78,6 +79,41 @@
     "id": "unnews",
     "label": "UN News",
     "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "gdelt:starship-launch-aborted",
+    "label": "GDELT Starship Launch Aborted",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "Expecting value: line 1 column 1 (char 0)"
+   },
+   {
+    "id": "gdelt:trump-reframes-us-china-relationship-as-peer-pow",
+    "label": "GDELT China boosts military, asserts global influence under Xi",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:cyclosporiasis-outbreak-linked-to-taco-bell",
+    "label": "GDELT Cyclosporiasis outbreak linked to Taco Bell",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:cyclospora-outbreak",
+    "label": "GDELT Cyclospora Outbreak",
+    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -428,7 +464,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Starship Launch Aborted, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -868,22 +904,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 226,
+    "outlets_timed": 225,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-07-10T18:51:44Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 1
-     },
      {
       "outlet": "Benzinga",
       "ts": "2026-07-10T19:28:45Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 16
      },
@@ -934,6 +962,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "WFTV",
+      "ts": "2026-07-11T02:21:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
      }
     ],
     "unplaced": []
@@ -1393,7 +1429,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT SpaceX IPO Musk first trillionaire, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -1859,38 +1895,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 233,
+    "outlets_timed": 232,
     "outlets_unplaced": 2,
     "chain": [
-     {
-      "outlet": "The Straits Times",
-      "ts": "2026-07-10T18:51:29Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "SG press",
-      "items": 5
-     },
-     {
-      "outlet": "The Times of Israel",
-      "ts": "2026-07-10T18:52:14Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "IL regional press",
-      "items": 1
-     },
-     {
-      "outlet": "MSN",
-      "ts": "2026-07-10T18:54:47Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 4
-     },
      {
       "outlet": "Al Jazeera",
       "ts": "2026-07-10T19:02:01Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "Qatar state-funded international broadcaster",
       "items": 57
      },
@@ -1925,6 +1937,30 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
+     },
+     {
+      "outlet": "Honolulu Star-Advertiser",
+      "ts": "2026-07-10T19:21:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Barchart",
+      "ts": "2026-07-10T19:23:04Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 5
+     },
+     {
+      "outlet": "Yahoo Finance",
+      "ts": "2026-07-10T19:23:04Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 9
      }
     ],
     "unplaced": [
@@ -2426,7 +2462,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran nuclear work sparks concern, Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -2441,10 +2477,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 87.93,
-      "last_ts": "2026-07-17T18:38:35Z",
+      "last": 87.7,
+      "last_ts": "2026-07-17T18:42:43Z",
       "basis": "Oil supply disruption fears",
-      "move_pct": -0.23,
+      "move_pct": -0.49,
       "window_h": 24,
       "measured_from": "2026-07-17T18:15:35Z",
       "series": [
@@ -2651,6 +2687,10 @@
        [
         "2026-07-17T18:38:35Z",
         87.93
+       ],
+       [
+        "2026-07-17T18:42:43Z",
+        87.7
        ]
       ]
      },
@@ -2658,10 +2698,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 81.6,
-      "last_ts": "2026-07-17T18:38:38Z",
+      "last": 81.38,
+      "last_ts": "2026-07-17T18:43:00Z",
       "basis": "Oil supply disruption fears",
-      "move_pct": -0.35,
+      "move_pct": -0.62,
       "window_h": 24,
       "measured_from": "2026-07-17T18:15:35Z",
       "series": [
@@ -2868,12 +2908,16 @@
        [
         "2026-07-17T18:38:38Z",
         81.6
+       ],
+       [
+        "2026-07-17T18:43:00Z",
+        81.38
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:51:09Z",
+    "observed_utc": "2026-07-17T18:54:56Z",
     "anchor_beat": "2026-07-17T18:15:35Z"
    },
    "lead_image": {
@@ -3944,7 +3988,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT China boosts military, asserts global influence under Xi, Times of Israel, UN News.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -3959,10 +4003,10 @@
       "symbol": "NVDA",
       "label": "Nvidia",
       "class": "equity",
-      "last": 203.33,
-      "last_ts": "2026-07-17T18:48:42Z",
+      "last": 203.24,
+      "last_ts": "2026-07-17T18:53:03Z",
       "basis": "AI tech competition between US and China",
-      "move_pct": -0.59,
+      "move_pct": -0.63,
       "window_h": 24,
       "measured_from": "2026-07-17T18:11:29Z",
       "series": [
@@ -4053,6 +4097,10 @@
        [
         "2026-07-17T18:48:42Z",
         203.33
+       ],
+       [
+        "2026-07-17T18:53:03Z",
+        203.24
        ]
       ]
      },
@@ -4060,10 +4108,10 @@
       "symbol": "AMD",
       "label": "AMD",
       "class": "equity",
-      "last": 497.32,
-      "last_ts": "2026-07-17T18:48:41Z",
+      "last": 497.04,
+      "last_ts": "2026-07-17T18:52:59Z",
       "basis": "US tech access restrictions impact global AI",
-      "move_pct": -0.64,
+      "move_pct": -0.7,
       "window_h": 24,
       "measured_from": "2026-07-17T18:11:29Z",
       "series": [
@@ -4154,6 +4202,10 @@
        [
         "2026-07-17T18:48:41Z",
         497.32
+       ],
+       [
+        "2026-07-17T18:52:59Z",
+        497.04
        ]
       ]
      },
@@ -4161,10 +4213,10 @@
       "symbol": "MSFT",
       "label": "Microsoft",
       "class": "equity",
-      "last": 394.73,
-      "last_ts": "2026-07-17T18:48:40Z",
+      "last": 394.935,
+      "last_ts": "2026-07-17T18:53:02Z",
       "basis": "China AI influence on global tech",
-      "move_pct": -0.13,
+      "move_pct": -0.08,
       "window_h": 24,
       "measured_from": "2026-07-17T18:11:29Z",
       "series": [
@@ -4255,6 +4307,10 @@
        [
         "2026-07-17T18:48:40Z",
         394.73
+       ],
+       [
+        "2026-07-17T18:53:02Z",
+        394.935
        ]
       ]
      },
@@ -4262,10 +4318,10 @@
       "symbol": "GOOGL",
       "label": "Alphabet",
       "class": "equity",
-      "last": 344.7001,
-      "last_ts": "2026-07-17T18:48:41Z",
+      "last": 344.93,
+      "last_ts": "2026-07-17T18:53:03Z",
       "basis": "US-China tech rivalry drives market volatility",
-      "move_pct": 0.03,
+      "move_pct": 0.09,
       "window_h": 24,
       "measured_from": "2026-07-17T18:11:29Z",
       "series": [
@@ -4356,12 +4412,16 @@
        [
         "2026-07-17T18:48:41Z",
         344.7001
+       ],
+       [
+        "2026-07-17T18:53:03Z",
+        344.93
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:51:13Z",
+    "observed_utc": "2026-07-17T18:54:59Z",
     "anchor_beat": "2026-07-17T18:11:29Z"
    },
    "lead_image": {
@@ -4675,7 +4735,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Cyclosporiasis outbreak linked to Taco Bell, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5778,7 +5838,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -5786,10 +5846,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 87.93,
-      "last_ts": "2026-07-17T18:38:35Z",
+      "last": 87.7,
+      "last_ts": "2026-07-17T18:42:43Z",
       "basis": "Russia-Ukraine conflict",
-      "move_pct": -0.23,
+      "move_pct": -0.49,
       "window_h": 24,
       "measured_from": "2026-07-17T18:19:37Z",
       "series": [
@@ -5996,6 +6056,10 @@
        [
         "2026-07-17T18:38:35Z",
         87.93
+       ],
+       [
+        "2026-07-17T18:42:43Z",
+        87.7
        ]
       ]
      },
@@ -6003,10 +6067,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 81.6,
-      "last_ts": "2026-07-17T18:38:38Z",
+      "last": 81.38,
+      "last_ts": "2026-07-17T18:43:00Z",
       "basis": "Russia-Ukraine conflict",
-      "move_pct": -0.35,
+      "move_pct": -0.62,
       "window_h": 24,
       "measured_from": "2026-07-17T18:19:37Z",
       "series": [
@@ -6213,6 +6277,10 @@
        [
         "2026-07-17T18:38:38Z",
         81.6
+       ],
+       [
+        "2026-07-17T18:43:00Z",
+        81.38
        ]
       ]
      },
@@ -6220,10 +6288,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 2.92,
-      "last_ts": "2026-07-17T18:38:41Z",
+      "last": 2.914,
+      "last_ts": "2026-07-17T18:43:03Z",
       "basis": "Russia-Ukraine conflict",
-      "move_pct": 0.27,
+      "move_pct": 0.07,
       "window_h": 24,
       "measured_from": "2026-07-17T18:19:37Z",
       "series": [
@@ -6430,12 +6498,16 @@
        [
         "2026-07-17T18:38:41Z",
         2.92
+       ],
+       [
+        "2026-07-17T18:43:03Z",
+        2.914
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:50:35Z",
+    "observed_utc": "2026-07-17T18:54:24Z",
     "anchor_beat": "2026-07-17T18:19:37Z"
    },
    "lead_image": {
@@ -6909,7 +6981,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Cyclospora Outbreak, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 6 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8090,10 +8162,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4017.1001,
-      "last_ts": "2026-07-17T18:38:31Z",
+      "last": 4013.6001,
+      "last_ts": "2026-07-17T18:43:01Z",
       "basis": "Conflict raises risk premium",
-      "move_pct": 0.06,
+      "move_pct": -0.02,
       "window_h": 24,
       "measured_from": "2026-07-17T18:30:15Z",
       "series": [
@@ -8292,12 +8364,16 @@
        [
         "2026-07-17T18:38:31Z",
         4017.1001
+       ],
+       [
+        "2026-07-17T18:43:01Z",
+        4013.6001
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:50:38Z",
+    "observed_utc": "2026-07-17T18:54:27Z",
     "anchor_beat": "2026-07-17T18:30:15Z"
    },
    "lead_image": {
@@ -9294,10 +9370,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4017.1001,
-      "last_ts": "2026-07-17T18:38:31Z",
+      "last": 4013.6001,
+      "last_ts": "2026-07-17T18:43:01Z",
       "basis": "gold prices",
-      "move_pct": -0.14,
+      "move_pct": -0.23,
       "window_h": 24,
       "measured_from": "2026-07-17T16:50:22Z",
       "series": [
@@ -9528,12 +9604,16 @@
        [
         "2026-07-17T18:38:31Z",
         4017.1001
+       ],
+       [
+        "2026-07-17T18:43:01Z",
+        4013.6001
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:52:59Z",
+    "observed_utc": "2026-07-17T18:56:45Z",
     "anchor_beat": "2026-07-17T16:50:22Z"
    },
    "lead_image": {
@@ -13480,22 +13560,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 71,
+    "outlets_timed": 70,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Pioneer Press",
-      "ts": "2026-07-10T18:53:55Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Winston Taylor",
       "ts": "2026-07-11T04:22:27Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -13542,6 +13614,14 @@
      {
       "outlet": "Yahoo Finance Singapore",
       "ts": "2026-07-12T03:33:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Today's Medical Developments",
+      "ts": "2026-07-12T05:00:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -14709,7 +14789,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:06:49Z",
+    "observed_utc": "2026-07-17T19:10:52Z",
     "anchor_beat": "2026-07-17T05:58:29Z"
    },
    "lead_image": {
@@ -16235,7 +16315,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:53:06Z",
+    "observed_utc": "2026-07-17T18:56:51Z",
     "anchor_beat": "2026-07-17T16:06:08Z"
    },
    "lead_image": {
@@ -17395,7 +17475,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:53:32Z",
+    "observed_utc": "2026-07-17T18:57:17Z",
     "anchor_beat": "2026-07-17T16:41:08Z"
    },
    "lead_image": {
@@ -19878,7 +19958,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:53:25Z",
+    "observed_utc": "2026-07-17T18:57:10Z",
     "anchor_beat": "2026-07-17T09:20:29Z"
    },
    "lead_image": {
@@ -21397,10 +21477,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 87.93,
-      "last_ts": "2026-07-17T18:38:35Z",
+      "last": 87.7,
+      "last_ts": "2026-07-17T18:42:43Z",
       "basis": null,
-      "move_pct": -0.28,
+      "move_pct": -0.54,
       "window_h": 24,
       "measured_from": "2026-07-17T18:00:59Z",
       "series": [
@@ -21607,6 +21687,10 @@
        [
         "2026-07-17T18:38:35Z",
         87.93
+       ],
+       [
+        "2026-07-17T18:42:43Z",
+        87.7
        ]
       ]
      },
@@ -21614,10 +21698,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 81.6,
-      "last_ts": "2026-07-17T18:38:38Z",
+      "last": 81.38,
+      "last_ts": "2026-07-17T18:43:00Z",
       "basis": null,
-      "move_pct": -0.4,
+      "move_pct": -0.67,
       "window_h": 24,
       "measured_from": "2026-07-17T18:00:59Z",
       "series": [
@@ -21824,6 +21908,10 @@
        [
         "2026-07-17T18:38:38Z",
         81.6
+       ],
+       [
+        "2026-07-17T18:43:00Z",
+        81.38
        ]
       ]
      },
@@ -21831,10 +21919,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 2.92,
-      "last_ts": "2026-07-17T18:38:41Z",
+      "last": 2.914,
+      "last_ts": "2026-07-17T18:43:03Z",
       "basis": null,
-      "move_pct": 0.27,
+      "move_pct": 0.07,
       "window_h": 24,
       "measured_from": "2026-07-17T18:00:59Z",
       "series": [
@@ -22041,12 +22129,16 @@
        [
         "2026-07-17T18:38:41Z",
         2.92
+       ],
+       [
+        "2026-07-17T18:43:03Z",
+        2.914
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:50:53Z",
+    "observed_utc": "2026-07-17T18:54:41Z",
     "anchor_beat": "2026-07-17T18:00:59Z"
    },
    "lead_image": {
@@ -22793,7 +22885,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:55:40Z",
+    "observed_utc": "2026-07-17T18:59:24Z",
     "anchor_beat": "2026-07-17T11:15:00Z"
    },
    "lead_image": {
@@ -23763,7 +23855,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:54:18Z",
+    "observed_utc": "2026-07-17T18:58:05Z",
     "anchor_beat": "2026-07-17T13:44:22Z"
    },
    "lead_image": {
@@ -24841,10 +24933,10 @@
       "symbol": "TSM",
       "label": "TSMC",
       "class": "equity",
-      "last": 397.32,
-      "last_ts": "2026-07-17T18:48:42Z",
+      "last": 396.69,
+      "last_ts": "2026-07-17T18:53:02Z",
       "basis": "Taiwan chip manufacturing expansion",
-      "move_pct": -1.07,
+      "move_pct": -1.23,
       "window_h": 24,
       "measured_from": "2026-07-17T16:49:47Z",
       "series": [
@@ -24935,6 +25027,10 @@
        [
         "2026-07-17T18:48:42Z",
         397.32
+       ],
+       [
+        "2026-07-17T18:53:02Z",
+        396.69
        ]
       ]
      },
@@ -24942,10 +25038,10 @@
       "symbol": "NVDA",
       "label": "Nvidia",
       "class": "equity",
-      "last": 203.33,
-      "last_ts": "2026-07-17T18:48:42Z",
+      "last": 203.24,
+      "last_ts": "2026-07-17T18:53:03Z",
       "basis": "Taiwan chip manufacturing expansion",
-      "move_pct": -0.82,
+      "move_pct": -0.87,
       "window_h": 24,
       "measured_from": "2026-07-17T16:49:47Z",
       "series": [
@@ -25036,6 +25132,10 @@
        [
         "2026-07-17T18:48:42Z",
         203.33
+       ],
+       [
+        "2026-07-17T18:53:03Z",
+        203.24
        ]
       ]
      },
@@ -25043,10 +25143,10 @@
       "symbol": "AMD",
       "label": "AMD",
       "class": "equity",
-      "last": 497.32,
-      "last_ts": "2026-07-17T18:48:41Z",
+      "last": 497.04,
+      "last_ts": "2026-07-17T18:52:59Z",
       "basis": "Taiwan chip manufacturing expansion",
-      "move_pct": -0.29,
+      "move_pct": -0.34,
       "window_h": 24,
       "measured_from": "2026-07-17T16:49:47Z",
       "series": [
@@ -25137,12 +25237,16 @@
        [
         "2026-07-17T18:48:41Z",
         497.32
+       ],
+       [
+        "2026-07-17T18:52:59Z",
+        497.04
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:50:46Z",
+    "observed_utc": "2026-07-17T18:54:34Z",
     "anchor_beat": "2026-07-17T16:49:47Z"
    },
    "lead_image": {
@@ -25288,8 +25392,8 @@
    },
    "discovered": true,
    "items_24h": 10,
-   "items_48h": 43,
-   "outlets": 21,
+   "items_48h": 42,
+   "outlets": 20,
    "kinds": [
     "journalist",
     "wire service"
@@ -26271,7 +26375,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:55:07Z",
+    "observed_utc": "2026-07-17T18:58:53Z",
     "anchor_beat": "2026-07-17T17:42:55Z"
    },
    "lead_image": {
@@ -28349,10 +28453,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 87.93,
-      "last_ts": "2026-07-17T18:38:35Z",
+      "last": 87.7,
+      "last_ts": "2026-07-17T18:42:43Z",
       "basis": "Venezuela earthquake impact",
-      "move_pct": -0.23,
+      "move_pct": -0.49,
       "window_h": 24,
       "measured_from": "2026-07-17T18:12:54Z",
       "series": [
@@ -28559,6 +28663,10 @@
        [
         "2026-07-17T18:38:35Z",
         87.93
+       ],
+       [
+        "2026-07-17T18:42:43Z",
+        87.7
        ]
       ]
      },
@@ -28566,10 +28674,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 81.6,
-      "last_ts": "2026-07-17T18:38:38Z",
+      "last": 81.38,
+      "last_ts": "2026-07-17T18:43:00Z",
       "basis": "Venezuela earthquake impact",
-      "move_pct": -0.35,
+      "move_pct": -0.62,
       "window_h": 24,
       "measured_from": "2026-07-17T18:12:54Z",
       "series": [
@@ -28776,12 +28884,16 @@
        [
         "2026-07-17T18:38:38Z",
         81.6
+       ],
+       [
+        "2026-07-17T18:43:00Z",
+        81.38
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:53:02Z",
+    "observed_utc": "2026-07-17T18:56:47Z",
     "anchor_beat": "2026-07-17T18:12:54Z"
    },
    "lead_image": {
@@ -29784,7 +29896,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:53:45Z",
+    "observed_utc": "2026-07-17T18:57:32Z",
     "anchor_beat": "2026-07-17T13:19:19Z"
    },
    "lead_image": {
@@ -31037,7 +31149,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:54:59Z",
+    "observed_utc": "2026-07-17T18:58:47Z",
     "anchor_beat": "2026-07-17T15:48:46Z"
    },
    "lead_image": {
@@ -32184,7 +32296,7 @@
       "label": "EUR/USD",
       "class": "fx",
       "last": 1.1439,
-      "last_ts": "2026-07-17T18:48:02Z",
+      "last_ts": "2026-07-17T18:52:02Z",
       "basis": "European heatwave",
       "move_pct": -0.02,
       "window_h": 24,
@@ -32421,6 +32533,10 @@
        [
         "2026-07-17T18:48:02Z",
         1.1439
+       ],
+       [
+        "2026-07-17T18:52:02Z",
+        1.1439
        ]
       ]
      },
@@ -32579,7 +32695,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:52:46Z",
+    "observed_utc": "2026-07-17T18:56:33Z",
     "anchor_beat": "2026-07-17T16:15:18Z"
    },
    "lead_image": {
@@ -33796,7 +33912,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:53:57Z",
+    "observed_utc": "2026-07-17T18:57:46Z",
     "anchor_beat": "2026-07-17T17:52:37Z"
    },
    "lead_image": {
@@ -34972,7 +35088,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:53:39Z",
+    "observed_utc": "2026-07-17T18:57:24Z",
     "anchor_beat": "2026-07-17T13:18:05Z"
    },
    "lead_image": {
@@ -34992,1037 +35108,6 @@
      "provenance": 1,
      "steelman": 1,
      "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "bank-of-japan-raises-rates-to-31-year-high",
-   "name": "Bank of Japan raises rates to 31-year high",
-   "bucket": "economy",
-   "topic_tags": [
-    "markets",
-    "currency",
-    "inflation"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-23T11:57:17Z",
-    "sentence_count": 14,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "The Federal Reserve has left its benchmark interest rate unchanged.",
-        "cites": [
-         {
-          "outlet": "HarianBasis.co",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU2lzUHY5cE1sSW1ncENaQ2JOcWVUQjBzWlJUejdEVUFUaXNnc1JFQlFacGVBbzZ5WFRKTk1CTS1LNjFnRXNrTWt1TkoweTJObHJjQnRjVUxUb3NXaUtXM3lOMTFFTHVsWkFoMjYwTDU1ZGhHR2h2UFdHbjlaOGxJdjBlQQ?oc=5",
-          "ts": "2026-06-22T19:29:55Z",
-          "title": "Federal Reserve Leaves Benchmark Interest Rate Unchanged"
-         }
-        ]
-       },
-       {
-        "text": "The Fed flagged a potential hike amid inflation concerns.",
-        "cites": [
-         {
-          "outlet": "citybuzz -",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdEV1b2E1aVF1c0hHWkhfd1FOVVVuazhiYk04SEVyamhRTnpxbzladkZlcEpFdWxNejVxVl9GUzRScHlJeDNMallQUjQxMURMSGV2dm5XZWViRUdVUjZzYnduOE9Yb0NLSjAtZGVFZFZTU0p1U0lpMVgwS2JkUjRYMkhzTERNTnFsa1NmLV9WOGhPVzFScGNjN1plbEowQy1IYTl2UDFSR2hJU1pTd1NlM1pR?oc=5",
-          "ts": "2026-06-22T18:27:39Z",
-          "title": "Fed Holds Interest Rates Steady, Flags Potential Hike Amid Inflation Concerns"
-         }
-        ]
-       },
-       {
-        "text": "Kevin Warsh is the new Federal Reserve chairman.",
-        "cites": [
-         {
-          "outlet": "sekbernews.id",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSWhKZTFEbjFKeGczb3UtM2RyYTV3LWRORDZuY1V6QzkzWGZ4bmpLNnc3bElHYWlUN25OS3NkQzNaMF9mZ2NxYUhNR3p6cWZLTy0yT0hsS05aS3hpbDBkNGNmR2M3OEtIX3NVVDdKUTI2NVdmQzV3eG5wQUNZYmJKNUV3?oc=5",
-          "ts": "2026-06-22T10:39:04Z",
-          "title": "Federal Reserve Holds Interest Rate Unchanged Under New Chairman Kevin Warsh"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Bank of America expects the Fed to hike interest rates 75 basis points in 2026.",
-        "cites": [
-         {
-          "outlet": "Asharq Al-Awsat English",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRWVZbVJ4MHpzUGVpUjc5RkFVaUJvZVhSMFhaWTdBMGtJUTRQdG4tTDQzQlBtYkhreVFuV0F1M01ueEFiUVFLZWpYMVRZWVRUMU9pcEdSaWctZHp3SmZkcnZSVXMwYllJYUJVclB3MTJDazhzaWtPMHBTclg0ZW1rZ0tvNEpXVUktRHFYbDJjMzc3bmFHdkVwQTV2WGhMMEk1c3VB?oc=5",
-          "ts": "2026-06-23T05:17:39Z",
-          "title": "BofA Expects Fed to Hike Interest Rates 75 Basis Points in 2026"
-         }
-        ]
-       },
-       {
-        "text": "BofA now expects the Fed to hike interest rates three times this year.",
-        "cites": [
-         {
-          "outlet": "investingLive",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNFdkREMxc3RrNjNOa1JHTG45Yi1CQVZ4QWFtNVpob3B0OS1LVXhyNENSZnN2VkRDMm1nRm1ZRUo4S1BNQ1BfUWUzbU9QaFZ6TnZYY1ZLOVlWVWdwV3VaOTI3dGdJY3NRNi1nemlyamx1dk1Nb05Od1RxVFFvRVBYUHUwVHBCREgycEM2cUgwM2NOY0tDR3ZCRDl2Ukc5eGpuMTh0YUhaaVJPZw?oc=5",
-          "ts": "2026-06-22T17:57:33Z",
-          "title": "BofA now expects Fed to hike interest rates three times this year"
-         }
-        ]
-       },
-       {
-        "text": "Deutsche Bank now expects Fed rate hikes in 2026.",
-        "cites": [
-         {
-          "outlet": "CUToday",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMGplUS0yci03S1AwY2F1dTV0MzhTX1ktbkZIUkkzYTFrNk5yemhVeXFXUUNDMF9sLXNqcURLOUY3aVFhTHk1QjljakZvYlVMTVpjSmkzSS1Pd0FtcGRaTS1YT0oxYW9YTE5UUnV1RGYzVTloNkx2eTJ4dnBzZnpabG5RZ2JMQWprYUJubWR2Tm9xbUk?oc=5",
-          "ts": "2026-06-22T15:37:23Z",
-          "title": "BofA, Deutsche Bank Now Expect Fed Rate Hikes In 2026"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Several major banks including RBC have raised their expectations for Federal Reserve rate hikes.",
-        "cites": [
-         {
-          "outlet": "\u5bcc\u9014\u725b\u725b",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSkFYQ0lyc2xZNVFDaUYwN21Bd1RRLXNKaTRwMkM1NE8tVWcwQy1rMkFYLTh1LXVCNERpdUR2azBWRkVUZ3BfdGphMjFQYnN2c2dDb1BQc1VRaEJVQzExNW1mVmZYdzMwaVluckJYbUZQZ1NWZl94MC1yOVBaZTNFUmV6X1RFMW5TZWZKU1c1U2JWS1RLdzJvWDh3dHhpWEpMRjd0QnFhSUZKR3ZFZFhFQg?oc=5",
-          "ts": "2026-06-22T20:55:39Z",
-          "title": "Several major banks have raised their expectations for Federal Reserve rate hikes; RBC"
-         }
-        ]
-       },
-       {
-        "text": "CMB International says the probability of the Federal Reserve raising interest rates this year is low.",
-        "cites": [
-         {
-          "outlet": "Bitget",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0xakV6QmxOa011TWkxX21EWndINVJCU3FUNnA1bFRreDcyRnN6OTVkTlFyR0plR1RYVi1NQ3F4eXBDMVpUUnBraDlwU1dZdmRjWDl5aFFkamRLcUtYLXfSAWNBVV95cUxPeldZQkpya01vUW5vMW1fUmE2NnVkOXpZb1RVdGdvNkh6MG5feC1YLWh0VS1idHR2LVBLdkZPR3JTUmF1WGpudXV3ekFVTzF0ajhoY2xoSzREbEFZdmgwd2lxN3c?oc=5",
-          "ts": "2026-06-22T21:17:11Z",
-          "title": "CMB International: The probability of the Federal Reserve raising interest rates this year is low"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "London shares fell to an over one-week low on rate hike concerns.",
-        "cites": [
-         {
-          "outlet": "Reuters",
-          "kind": "wire service",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOajc1SWtMZW84Q1JVS0ZIVVZZbE1jRjhubFFWUDBtYzJONWthbzRVbG5NdG5oV3hpZFpiUlpkQ05zUTRNOTFxd3haVWZCWEU5RGFhZm1Vc0ZzaVZGR2VxTWExZXdjeDJ5SmJscllZNGkwLW5UTGM5VUJuanJHUnVXZ2YyVFJEUFdoMzdDZmZLZHozZ21PVTkyUkdqclZ5ck1mTURIZHloN2VSSVZYb3RMVXF3?oc=5",
-          "ts": "2026-06-23T09:40:05Z",
-          "title": "London shares at over one-week low on rate hike concerns; leadership in focus"
-         }
-        ]
-       },
-       {
-        "text": "European shares dropped following Federal Reserve interest rate hike fears.",
-        "cites": [
-         {
-          "outlet": "world.infonasional.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04MGFMcS02Rkx5LXpCWFNPdU8xQW9jVExZMmVYWVhMc1l4bndyc1pmeHduNnV3cjhKR2Q0N191NTVJVWdDOXdtR1hHWXhsNnVXV0dFdDZOTmtRTGUtT2dtcFUxTHJmTm9LcFZjSjFoNU5pWEJC?oc=5",
-          "ts": "2026-06-23T07:59:20Z",
-          "title": "European Shares Drop Following Federal Reserve Interest Rate Hike Fears"
-         }
-        ]
-       },
-       {
-        "text": "Asian shares slipped as Fed rate hike bets rose.",
-        "cites": [
-         {
-          "outlet": "Global Banking & Finance Review",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS2Z0X0d3UFVHVTNsQ1JmclRJTjZmblA5amV1VXBoS0lTMFRsR2gtdlEzNmc1U2FJcnpfWUNDVGZpNjRKckdzOHJ4Qzd4Smw3ZWFNWlBWWndic0QzRDAtMkwwbWVmdUJKeGdCd19XazFzWGs5MUJjTXRjUENFOGhGNDc5QUcyVzVjcGZhMkNjVm40d1RkWUZDY0VqNDRWN2EtZ2c?oc=5",
-          "ts": "2026-06-23T06:51:14Z",
-          "title": "Asia Shares Slip as Fed Rate Hike Bets Rise and Oil Prices Rebound"
-         }
-        ]
-       },
-       {
-        "text": "Gold fell 1% as forecasts grew for higher US interest rates.",
-        "cites": [
-         {
-          "outlet": "\u0623\u0631\u0642\u0627\u0645",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ZeFpqYVZQNW5PMXlXdTFRTTJ6V2YzU3JJemkxY1hEcVdRV0c5bG83S2h0anNoZTVJOVV3VnNOWFlwOV9ocEttZWt1bWd3aTJQZHMxY2N4Z0pEblczVkxLc3VTTDJoYkZZcldGN3phVQ?oc=5",
-          "ts": "2026-06-22T14:51:09Z",
-          "title": "Gold falls 1% as forecasts grow for higher US interest rates"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Treasury yields fell despite rate hike concerns hitting tech stocks.",
-        "cites": [
-         {
-          "outlet": "CNBC",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQTN6VUFYenpib1A2VWY0d3NFVy1HYmJ3Q205ekJfQnpBZzZSd0NoTlg0c2ZrOE9YeEg1LUN6cXl1aTM0NjFiMDVlZm56QW9IdHpoT3VkbXAwYWRZUGRFc2xDV1VGcWp6UmZoOVNhTGVFR2FtMmJTUTA4dUZiV1NobXFCZXpva0d5TF85QnZ4eTZUY1VqUlHSAZsBQVVfeXFMTWxFdlRyZ1gyNTBGeWpQU2VqNzlLUGpaMGdKNjkzWkNNM2NkZ1JDMjVyMXl4b2FVZUp4MTNQVDQzVDd0SFlpVzE2RHh5T3FKX2Rob3hiazB2VDRTbWJNSGJERjhnUjdyUXAyZEJ6Y3VDMUxRNV9lQlhKSGZPcEFpdkM4QnFkc2JydTlCS3VoaDdhMkVlamlBbGpKMlk?oc=5",
-          "ts": "2026-06-23T09:08:16Z",
-          "title": "Treasury yields fall despite rate hike concerns hitting tech stocks"
-         }
-        ]
-       },
-       {
-        "text": "The Swiss Franc held onto losses below 0.8100 amid firm Fed interest rate hike bets.",
-        "cites": [
-         {
-          "outlet": "FXStreet",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdmhsWVAyZzJEN3BWQkNCVmlNYVJHbzh3REhEOVBrZjRuc19nNV9BSkx2ei0yZ2RvVjZtY21ZVUJ4UHpwdzNCaUFzSVR4Z0VaQlpTWk9Ud3pUeXctQmE1aklqOHBtZGdUbzJwUFpnMVRfa21ucE5YbXNPZ1FDbFdkUDRIZ29CSE5rc3FkR25BcEo1SUlKcHdtZ3BWcEVPY2UxbTRtNEYtMl85YV9aX0xJRThHWktnZjM3SDc3dmdpdw?oc=5",
-          "ts": "2026-06-23T03:25:19Z",
-          "title": "Swiss Franc holds onto losses below 0.8100 amid firm Fed interest rate hike bets"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 8,
-   "items_48h": 25,
-   "outlets": 18,
-   "kinds": [
-    "journalist",
-    "state media",
-    "wire service"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-17T16:49:47Z",
-     "title": "Bank of Japan tipped to increase growth forecast",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/18/2003860926",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-17T16:02:11Z",
-     "title": "Bank of Russia raises dollar exchange rate to 78.4 rubles for July 18-20",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/economy/2161777",
-     "rel": 19,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-17T05:10:03Z",
-     "title": "ECB Interest Rate Decision: Key Questions for the July 2024 Meeting",
-     "outlet": "Global Banking & Finance Review",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNejhmTFJpczY5YkNJR3JxWG80SGtGejVkTTkwMk5WSHl3dExPaDJtN05OcTZJYXB5NFRDQ09Ed1pDcS1SNVRKYXE3MldJTmhlWGJlRXpaNEdSclcxcGRZWENzNWxmMEZsUFZ2czRPRHB0YXg2VWNyNzc4cnNINjNFWA?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-17T04:25:17Z",
-     "title": "BNN Special Coverage Of Bank Of Canada Interest Rate Decision Gary Rowett (JArZk2dnFL)",
-     "outlet": "Mshale",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5iclVlT2pINF9rU1hQTjFjQ2JzZ0I2UlpmcFY0Rkt2TUtxMXh5LWlNRDFMaEljem11OFlCTEhWdU9Za29XZzhBa0NySzZKMkZ3UkpvM2M4SXhsY1k?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-17T03:24:34Z",
-     "title": "Japan to leave monetary policy tools to BOJ in economic blueprint, document shows",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/economy-news/japan-to-leave-monetary-policy-tools-to-boj-in-economic-blueprint-document-shows-4797360",
-     "rel": 22,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-17T00:14:08Z",
-     "title": "Federal Reserve's Lorie Logan calls for modestly higher interest rates, raising pressure on risk assets",
-     "outlet": "Crypto Briefing",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00NzRXbXdRZmhlNE5lRUozd1J6d1ctaVpZSEhJcTBfNWc5QUpRXzZuc2d4LUxkelZiQlcyYloxZURla1VTZnQ2VHlEdllEdnltSXk2Y1IzTEU3Rnp3cFV1bkJVWXNJYmFXNnp0RElKamJ1Z3RndE1maTNjM3BGZw?oc=5",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-16T19:38:18Z",
-     "title": "Should the Fed aim to 'modestly' raise interest rates?",
-     "outlet": "Yahoo! Finance Canada",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSWw0VlBHbWgwcW00dExDdEhSTTJiajlwQkxBb2phMmltdE9DSmJqVGJ2WkxJZHVnUjYyRGp3ckRheV9iZTVWN3N0TWFwMzBKYmY4dmZYTTJydk1DQ0pmbXFHeENnb1hOc2pEUHZXeUNEQ1dPTVJYYUtwcFN0Uk5wRGNYMjBXRDFTY01lSUpYZWFkRHpnS3poM21iSlpsX0xST2lj?oc=5",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-16T17:19:46Z",
-     "title": "Fed's Logan calls for 'modestly higher' interest rates",
-     "outlet": "Reuters",
-     "kind": "wire service",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQjd1T3g0MW1NTU5Uei1LUlRXeG1OMlhtdm1sN1VZMHozdk5nZ1ktNXRBRGN1czJwUmlTZUZWbjFoNEhmeXg4YVlJWDJFRkVxYTJKTHYxcm5uT2lSa1BhSE9RSmRrVE9Vbk1WX1NMajZoOExsNHZLdUU1X1Q0VkNKU0JWN3kzNnUwaDA0bEpGaFltSjV0Mmo0?oc=5",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-08T04:58:11Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 52,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "Bitget",
-      "ts": "2026-07-11T01:22:52Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
-      "outlet": "IOL",
-      "ts": "2026-07-12T07:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Yahoo Finance",
-      "ts": "2026-07-12T10:03:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "InvestorsHub",
-      "ts": "2026-07-12T10:03:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "GhanaWeb",
-      "ts": "2026-07-12T15:06:04Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "econotimes.com",
-      "ts": "2026-07-13T05:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Yahoo Personal Finance",
-      "ts": "2026-07-13T10:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "CHCH",
-      "ts": "2026-07-13T13:22:19Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Investing.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "Reuters",
-     "n": 3,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "TASS",
-     "n": 3,
-     "class": "state-media"
-    },
-    {
-     "outlet": "MSN",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "TMGM trading",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Yahoo Personal Finance",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "arabnews.jp",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Baystreet.ca",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Bitget",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "CNA",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "CNBC",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "CTV News",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 3,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-04 00:00",
-      4,
-      10
-     ],
-     [
-      "2026-07-04 06:00",
-      4,
-      6
-     ],
-     [
-      "2026-07-04 12:00",
-      4,
-      4
-     ],
-     [
-      "2026-07-04 18:00",
-      0,
-      3
-     ],
-     [
-      "2026-07-05 00:00",
-      0,
-      3
-     ],
-     [
-      "2026-07-05 06:00",
-      1,
-      4
-     ],
-     [
-      "2026-07-05 12:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-05 18:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-06 00:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-06 06:00",
-      3,
-      4
-     ],
-     [
-      "2026-07-06 12:00",
-      4,
-      4
-     ],
-     [
-      "2026-07-06 18:00",
-      7,
-      6
-     ],
-     [
-      "2026-07-07 00:00",
-      6,
-      6
-     ],
-     [
-      "2026-07-07 06:00",
-      9,
-      9
-     ],
-     [
-      "2026-07-07 12:00",
-      9,
-      10
-     ],
-     [
-      "2026-07-07 18:00",
-      9,
-      11
-     ],
-     [
-      "2026-07-08 00:00",
-      14,
-      16
-     ],
-     [
-      "2026-07-08 06:00",
-      18,
-      20
-     ],
-     [
-      "2026-07-08 12:00",
-      18,
-      19
-     ],
-     [
-      "2026-07-08 18:00",
-      23,
-      24
-     ],
-     [
-      "2026-07-09 00:00",
-      21,
-      25
-     ],
-     [
-      "2026-07-09 06:00",
-      10,
-      22
-     ],
-     [
-      "2026-07-09 12:00",
-      8,
-      21
-     ],
-     [
-      "2026-07-09 18:00",
-      9,
-      20
-     ],
-     [
-      "2026-07-10 00:00",
-      7,
-      14
-     ],
-     [
-      "2026-07-10 06:00",
-      8,
-      15
-     ],
-     [
-      "2026-07-10 12:00",
-      8,
-      15
-     ],
-     [
-      "2026-07-10 18:00",
-      8,
-      12
-     ],
-     [
-      "2026-07-11 00:00",
-      7,
-      12
-     ],
-     [
-      "2026-07-11 06:00",
-      7,
-      9
-     ],
-     [
-      "2026-07-11 12:00",
-      3,
-      8
-     ],
-     [
-      "2026-07-11 18:00",
-      2,
-      8
-     ],
-     [
-      "2026-07-12 00:00",
-      1,
-      6
-     ],
-     [
-      "2026-07-12 06:00",
-      0,
-      3
-     ],
-     [
-      "2026-07-12 12:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-12 18:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-13 00:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-13 06:00",
-      4,
-      4
-     ],
-     [
-      "2026-07-13 12:00",
-      6,
-      9
-     ],
-     [
-      "2026-07-13 18:00",
-      7,
-      11
-     ],
-     [
-      "2026-07-14 00:00",
-      7,
-      11
-     ],
-     [
-      "2026-07-14 06:00",
-      7,
-      10
-     ],
-     [
-      "2026-07-14 12:00",
-      6,
-      11
-     ],
-     [
-      "2026-07-14 18:00",
-      6,
-      11
-     ],
-     [
-      "2026-07-15 00:00",
-      7,
-      12
-     ],
-     [
-      "2026-07-15 06:00",
-      5,
-      10
-     ],
-     [
-      "2026-07-15 12:00",
-      23,
-      25
-     ],
-     [
-      "2026-07-15 18:00",
-      27,
-      29
-     ],
-     [
-      "2026-07-16 00:00",
-      32,
-      29
-     ],
-     [
-      "2026-07-16 06:00",
-      36,
-      32
-     ],
-     [
-      "2026-07-16 12:00",
-      36,
-      35
-     ],
-     [
-      "2026-07-16 18:00",
-      16,
-      35
-     ],
-     [
-      "2026-07-17 00:00",
-      12,
-      37
-     ],
-     [
-      "2026-07-17 06:00",
-      11,
-      38
-     ],
-     [
-      "2026-07-17 12:00",
-      10,
-      19
-     ],
-     [
-      "2026-07-17 18:00",
-      8,
-      18
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 1,
-     "regional": 1,
-     "official": 0,
-     "other": 26
-    },
-    "first_seen": "2026-06-16T13:21:41Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
-   ],
-   "history": {
-    "built": true,
-    "frames": 3,
-    "nodes": 24,
-    "discovered_days": 31
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "DX-Y.NYB",
-      "label": "Dollar Index",
-      "class": "fx",
-      "last": 100.762,
-      "last_ts": "2026-07-17T18:38:40Z",
-      "basis": "BOJ rate hike pressures USD index",
-      "move_pct": 0.01,
-      "window_h": 24,
-      "measured_from": "2026-07-17T16:49:47Z",
-      "series": [
-       [
-        "2026-07-17T04:58:06Z",
-        100.788
-       ],
-       [
-        "2026-07-17T05:00:00Z",
-        100.789
-       ],
-       [
-        "2026-07-17T05:13:29Z",
-        100.785
-       ],
-       [
-        "2026-07-17T05:41:57Z",
-        100.733
-       ],
-       [
-        "2026-07-17T05:49:53Z",
-        100.739
-       ],
-       [
-        "2026-07-17T06:00:00Z",
-        100.698
-       ],
-       [
-        "2026-07-17T06:21:46Z",
-        100.703
-       ],
-       [
-        "2026-07-17T06:26:28Z",
-        100.675
-       ],
-       [
-        "2026-07-17T06:59:38Z",
-        100.677
-       ],
-       [
-        "2026-07-17T07:00:00Z",
-        100.656
-       ],
-       [
-        "2026-07-17T07:01:40Z",
-        100.65
-       ],
-       [
-        "2026-07-17T07:37:09Z",
-        100.702
-       ],
-       [
-        "2026-07-17T07:38:00Z",
-        100.705
-       ],
-       [
-        "2026-07-17T08:00:00Z",
-        100.719
-       ],
-       [
-        "2026-07-17T08:12:07Z",
-        100.726
-       ],
-       [
-        "2026-07-17T08:18:04Z",
-        100.769
-       ],
-       [
-        "2026-07-17T08:47:52Z",
-        100.748
-       ],
-       [
-        "2026-07-17T08:58:40Z",
-        100.748
-       ],
-       [
-        "2026-07-17T09:00:00Z",
-        100.778
-       ],
-       [
-        "2026-07-17T09:24:40Z",
-        100.767
-       ],
-       [
-        "2026-07-17T09:41:36Z",
-        100.789
-       ],
-       [
-        "2026-07-17T10:00:00Z",
-        100.796
-       ],
-       [
-        "2026-07-17T10:02:41Z",
-        100.791
-       ],
-       [
-        "2026-07-17T10:23:34Z",
-        100.803
-       ],
-       [
-        "2026-07-17T10:40:28Z",
-        100.823
-       ],
-       [
-        "2026-07-17T11:00:00Z",
-        100.857
-       ],
-       [
-        "2026-07-17T11:05:23Z",
-        100.854
-       ],
-       [
-        "2026-07-17T11:17:19Z",
-        100.832
-       ],
-       [
-        "2026-07-17T11:45:05Z",
-        100.787
-       ],
-       [
-        "2026-07-17T11:54:37Z",
-        100.788
-       ],
-       [
-        "2026-07-17T12:00:00Z",
-        100.799
-       ],
-       [
-        "2026-07-17T12:23:54Z",
-        100.803
-       ],
-       [
-        "2026-07-17T12:31:04Z",
-        100.794
-       ],
-       [
-        "2026-07-17T13:00:00Z",
-        100.823
-       ],
-       [
-        "2026-07-17T13:01:48Z",
-        100.847
-       ],
-       [
-        "2026-07-17T13:08:24Z",
-        100.844
-       ],
-       [
-        "2026-07-17T13:41:38Z",
-        100.805
-       ],
-       [
-        "2026-07-17T13:44:32Z",
-        100.804
-       ],
-       [
-        "2026-07-17T14:00:00Z",
-        100.74
-       ],
-       [
-        "2026-07-17T14:19:03Z",
-        100.737
-       ],
-       [
-        "2026-07-17T14:19:38Z",
-        100.734
-       ],
-       [
-        "2026-07-17T14:56:20Z",
-        100.75
-       ],
-       [
-        "2026-07-17T15:00:00Z",
-        100.74
-       ],
-       [
-        "2026-07-17T15:02:48Z",
-        100.746
-       ],
-       [
-        "2026-07-17T15:33:30Z",
-        100.723
-       ],
-       [
-        "2026-07-17T15:43:48Z",
-        100.756
-       ],
-       [
-        "2026-07-17T16:00:00Z",
-        100.766
-       ],
-       [
-        "2026-07-17T16:09:46Z",
-        100.752
-       ],
-       [
-        "2026-07-17T16:26:12Z",
-        100.753
-       ],
-       [
-        "2026-07-17T16:49:07Z",
-        100.753
-       ],
-       [
-        "2026-07-17T17:00:00Z",
-        100.763
-       ],
-       [
-        "2026-07-17T17:08:31Z",
-        100.76
-       ],
-       [
-        "2026-07-17T17:27:50Z",
-        100.764
-       ],
-       [
-        "2026-07-17T17:54:21Z",
-        100.775
-       ],
-       [
-        "2026-07-17T18:00:00Z",
-        100.779
-       ],
-       [
-        "2026-07-17T18:05:32Z",
-        100.781
-       ],
-       [
-        "2026-07-17T18:38:40Z",
-        100.762
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:52:00Z",
-    "anchor_beat": "2026-07-17T16:49:47Z"
-   },
-   "lead_image": {
-    "url": "https://news.cgtn.com/news/2026-06-16/Japan-s-central-bank-hikes-policy-rate-to-31-year-high-of-1-0--1O1kgZb1ICk/img/d2c1996508fa431cbe333253b9f0b037/d2c1996508fa431cbe333253b9f0b037-1920.png",
-    "source": "CGTN",
-    "focal": {
-     "x": 49,
-     "y": 43
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -37134,6 +36219,1041 @@
     "focal": {
      "x": 57,
      "y": 35
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "bank-of-japan-raises-rates-to-31-year-high",
+   "name": "Bank of Japan raises rates to 31-year high",
+   "bucket": "economy",
+   "topic_tags": [
+    "markets",
+    "currency",
+    "inflation"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-23T11:57:17Z",
+    "sentence_count": 14,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "The Federal Reserve has left its benchmark interest rate unchanged.",
+        "cites": [
+         {
+          "outlet": "HarianBasis.co",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQU2lzUHY5cE1sSW1ncENaQ2JOcWVUQjBzWlJUejdEVUFUaXNnc1JFQlFacGVBbzZ5WFRKTk1CTS1LNjFnRXNrTWt1TkoweTJObHJjQnRjVUxUb3NXaUtXM3lOMTFFTHVsWkFoMjYwTDU1ZGhHR2h2UFdHbjlaOGxJdjBlQQ?oc=5",
+          "ts": "2026-06-22T19:29:55Z",
+          "title": "Federal Reserve Leaves Benchmark Interest Rate Unchanged"
+         }
+        ]
+       },
+       {
+        "text": "The Fed flagged a potential hike amid inflation concerns.",
+        "cites": [
+         {
+          "outlet": "citybuzz -",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdEV1b2E1aVF1c0hHWkhfd1FOVVVuazhiYk04SEVyamhRTnpxbzladkZlcEpFdWxNejVxVl9GUzRScHlJeDNMallQUjQxMURMSGV2dm5XZWViRUdVUjZzYnduOE9Yb0NLSjAtZGVFZFZTU0p1U0lpMVgwS2JkUjRYMkhzTERNTnFsa1NmLV9WOGhPVzFScGNjN1plbEowQy1IYTl2UDFSR2hJU1pTd1NlM1pR?oc=5",
+          "ts": "2026-06-22T18:27:39Z",
+          "title": "Fed Holds Interest Rates Steady, Flags Potential Hike Amid Inflation Concerns"
+         }
+        ]
+       },
+       {
+        "text": "Kevin Warsh is the new Federal Reserve chairman.",
+        "cites": [
+         {
+          "outlet": "sekbernews.id",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSWhKZTFEbjFKeGczb3UtM2RyYTV3LWRORDZuY1V6QzkzWGZ4bmpLNnc3bElHYWlUN25OS3NkQzNaMF9mZ2NxYUhNR3p6cWZLTy0yT0hsS05aS3hpbDBkNGNmR2M3OEtIX3NVVDdKUTI2NVdmQzV3eG5wQUNZYmJKNUV3?oc=5",
+          "ts": "2026-06-22T10:39:04Z",
+          "title": "Federal Reserve Holds Interest Rate Unchanged Under New Chairman Kevin Warsh"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Bank of America expects the Fed to hike interest rates 75 basis points in 2026.",
+        "cites": [
+         {
+          "outlet": "Asharq Al-Awsat English",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRWVZbVJ4MHpzUGVpUjc5RkFVaUJvZVhSMFhaWTdBMGtJUTRQdG4tTDQzQlBtYkhreVFuV0F1M01ueEFiUVFLZWpYMVRZWVRUMU9pcEdSaWctZHp3SmZkcnZSVXMwYllJYUJVclB3MTJDazhzaWtPMHBTclg0ZW1rZ0tvNEpXVUktRHFYbDJjMzc3bmFHdkVwQTV2WGhMMEk1c3VB?oc=5",
+          "ts": "2026-06-23T05:17:39Z",
+          "title": "BofA Expects Fed to Hike Interest Rates 75 Basis Points in 2026"
+         }
+        ]
+       },
+       {
+        "text": "BofA now expects the Fed to hike interest rates three times this year.",
+        "cites": [
+         {
+          "outlet": "investingLive",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNFdkREMxc3RrNjNOa1JHTG45Yi1CQVZ4QWFtNVpob3B0OS1LVXhyNENSZnN2VkRDMm1nRm1ZRUo4S1BNQ1BfUWUzbU9QaFZ6TnZYY1ZLOVlWVWdwV3VaOTI3dGdJY3NRNi1nemlyamx1dk1Nb05Od1RxVFFvRVBYUHUwVHBCREgycEM2cUgwM2NOY0tDR3ZCRDl2Ukc5eGpuMTh0YUhaaVJPZw?oc=5",
+          "ts": "2026-06-22T17:57:33Z",
+          "title": "BofA now expects Fed to hike interest rates three times this year"
+         }
+        ]
+       },
+       {
+        "text": "Deutsche Bank now expects Fed rate hikes in 2026.",
+        "cites": [
+         {
+          "outlet": "CUToday",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMGplUS0yci03S1AwY2F1dTV0MzhTX1ktbkZIUkkzYTFrNk5yemhVeXFXUUNDMF9sLXNqcURLOUY3aVFhTHk1QjljakZvYlVMTVpjSmkzSS1Pd0FtcGRaTS1YT0oxYW9YTE5UUnV1RGYzVTloNkx2eTJ4dnBzZnpabG5RZ2JMQWprYUJubWR2Tm9xbUk?oc=5",
+          "ts": "2026-06-22T15:37:23Z",
+          "title": "BofA, Deutsche Bank Now Expect Fed Rate Hikes In 2026"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Several major banks including RBC have raised their expectations for Federal Reserve rate hikes.",
+        "cites": [
+         {
+          "outlet": "\u5bcc\u9014\u725b\u725b",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSkFYQ0lyc2xZNVFDaUYwN21Bd1RRLXNKaTRwMkM1NE8tVWcwQy1rMkFYLTh1LXVCNERpdUR2azBWRkVUZ3BfdGphMjFQYnN2c2dDb1BQc1VRaEJVQzExNW1mVmZYdzMwaVluckJYbUZQZ1NWZl94MC1yOVBaZTNFUmV6X1RFMW5TZWZKU1c1U2JWS1RLdzJvWDh3dHhpWEpMRjd0QnFhSUZKR3ZFZFhFQg?oc=5",
+          "ts": "2026-06-22T20:55:39Z",
+          "title": "Several major banks have raised their expectations for Federal Reserve rate hikes; RBC"
+         }
+        ]
+       },
+       {
+        "text": "CMB International says the probability of the Federal Reserve raising interest rates this year is low.",
+        "cites": [
+         {
+          "outlet": "Bitget",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0xakV6QmxOa011TWkxX21EWndINVJCU3FUNnA1bFRreDcyRnN6OTVkTlFyR0plR1RYVi1NQ3F4eXBDMVpUUnBraDlwU1dZdmRjWDl5aFFkamRLcUtYLXfSAWNBVV95cUxPeldZQkpya01vUW5vMW1fUmE2NnVkOXpZb1RVdGdvNkh6MG5feC1YLWh0VS1idHR2LVBLdkZPR3JTUmF1WGpudXV3ekFVTzF0ajhoY2xoSzREbEFZdmgwd2lxN3c?oc=5",
+          "ts": "2026-06-22T21:17:11Z",
+          "title": "CMB International: The probability of the Federal Reserve raising interest rates this year is low"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "London shares fell to an over one-week low on rate hike concerns.",
+        "cites": [
+         {
+          "outlet": "Reuters",
+          "kind": "wire service",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOajc1SWtMZW84Q1JVS0ZIVVZZbE1jRjhubFFWUDBtYzJONWthbzRVbG5NdG5oV3hpZFpiUlpkQ05zUTRNOTFxd3haVWZCWEU5RGFhZm1Vc0ZzaVZGR2VxTWExZXdjeDJ5SmJscllZNGkwLW5UTGM5VUJuanJHUnVXZ2YyVFJEUFdoMzdDZmZLZHozZ21PVTkyUkdqclZ5ck1mTURIZHloN2VSSVZYb3RMVXF3?oc=5",
+          "ts": "2026-06-23T09:40:05Z",
+          "title": "London shares at over one-week low on rate hike concerns; leadership in focus"
+         }
+        ]
+       },
+       {
+        "text": "European shares dropped following Federal Reserve interest rate hike fears.",
+        "cites": [
+         {
+          "outlet": "world.infonasional.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04MGFMcS02Rkx5LXpCWFNPdU8xQW9jVExZMmVYWVhMc1l4bndyc1pmeHduNnV3cjhKR2Q0N191NTVJVWdDOXdtR1hHWXhsNnVXV0dFdDZOTmtRTGUtT2dtcFUxTHJmTm9LcFZjSjFoNU5pWEJC?oc=5",
+          "ts": "2026-06-23T07:59:20Z",
+          "title": "European Shares Drop Following Federal Reserve Interest Rate Hike Fears"
+         }
+        ]
+       },
+       {
+        "text": "Asian shares slipped as Fed rate hike bets rose.",
+        "cites": [
+         {
+          "outlet": "Global Banking & Finance Review",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQS2Z0X0d3UFVHVTNsQ1JmclRJTjZmblA5amV1VXBoS0lTMFRsR2gtdlEzNmc1U2FJcnpfWUNDVGZpNjRKckdzOHJ4Qzd4Smw3ZWFNWlBWWndic0QzRDAtMkwwbWVmdUJKeGdCd19XazFzWGs5MUJjTXRjUENFOGhGNDc5QUcyVzVjcGZhMkNjVm40d1RkWUZDY0VqNDRWN2EtZ2c?oc=5",
+          "ts": "2026-06-23T06:51:14Z",
+          "title": "Asia Shares Slip as Fed Rate Hike Bets Rise and Oil Prices Rebound"
+         }
+        ]
+       },
+       {
+        "text": "Gold fell 1% as forecasts grew for higher US interest rates.",
+        "cites": [
+         {
+          "outlet": "\u0623\u0631\u0642\u0627\u0645",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ZeFpqYVZQNW5PMXlXdTFRTTJ6V2YzU3JJemkxY1hEcVdRV0c5bG83S2h0anNoZTVJOVV3VnNOWFlwOV9ocEttZWt1bWd3aTJQZHMxY2N4Z0pEblczVkxLc3VTTDJoYkZZcldGN3phVQ?oc=5",
+          "ts": "2026-06-22T14:51:09Z",
+          "title": "Gold falls 1% as forecasts grow for higher US interest rates"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Treasury yields fell despite rate hike concerns hitting tech stocks.",
+        "cites": [
+         {
+          "outlet": "CNBC",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQTN6VUFYenpib1A2VWY0d3NFVy1HYmJ3Q205ekJfQnpBZzZSd0NoTlg0c2ZrOE9YeEg1LUN6cXl1aTM0NjFiMDVlZm56QW9IdHpoT3VkbXAwYWRZUGRFc2xDV1VGcWp6UmZoOVNhTGVFR2FtMmJTUTA4dUZiV1NobXFCZXpva0d5TF85QnZ4eTZUY1VqUlHSAZsBQVVfeXFMTWxFdlRyZ1gyNTBGeWpQU2VqNzlLUGpaMGdKNjkzWkNNM2NkZ1JDMjVyMXl4b2FVZUp4MTNQVDQzVDd0SFlpVzE2RHh5T3FKX2Rob3hiazB2VDRTbWJNSGJERjhnUjdyUXAyZEJ6Y3VDMUxRNV9lQlhKSGZPcEFpdkM4QnFkc2JydTlCS3VoaDdhMkVlamlBbGpKMlk?oc=5",
+          "ts": "2026-06-23T09:08:16Z",
+          "title": "Treasury yields fall despite rate hike concerns hitting tech stocks"
+         }
+        ]
+       },
+       {
+        "text": "The Swiss Franc held onto losses below 0.8100 amid firm Fed interest rate hike bets.",
+        "cites": [
+         {
+          "outlet": "FXStreet",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdmhsWVAyZzJEN3BWQkNCVmlNYVJHbzh3REhEOVBrZjRuc19nNV9BSkx2ei0yZ2RvVjZtY21ZVUJ4UHpwdzNCaUFzSVR4Z0VaQlpTWk9Ud3pUeXctQmE1aklqOHBtZGdUbzJwUFpnMVRfa21ucE5YbXNPZ1FDbFdkUDRIZ29CSE5rc3FkR25BcEo1SUlKcHdtZ3BWcEVPY2UxbTRtNEYtMl85YV9aX0xJRThHWktnZjM3SDc3dmdpdw?oc=5",
+          "ts": "2026-06-23T03:25:19Z",
+          "title": "Swiss Franc holds onto losses below 0.8100 amid firm Fed interest rate hike bets"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 7,
+   "items_48h": 25,
+   "outlets": 18,
+   "kinds": [
+    "journalist",
+    "state media",
+    "wire service"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-17T16:49:47Z",
+     "title": "Bank of Japan tipped to increase growth forecast",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/18/2003860926",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-17T16:02:11Z",
+     "title": "Bank of Russia raises dollar exchange rate to 78.4 rubles for July 18-20",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/economy/2161777",
+     "rel": 19,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-17T05:10:03Z",
+     "title": "ECB Interest Rate Decision: Key Questions for the July 2024 Meeting",
+     "outlet": "Global Banking & Finance Review",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNejhmTFJpczY5YkNJR3JxWG80SGtGejVkTTkwMk5WSHl3dExPaDJtN05OcTZJYXB5NFRDQ09Ed1pDcS1SNVRKYXE3MldJTmhlWGJlRXpaNEdSclcxcGRZWENzNWxmMEZsUFZ2czRPRHB0YXg2VWNyNzc4cnNINjNFWA?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-17T04:25:17Z",
+     "title": "BNN Special Coverage Of Bank Of Canada Interest Rate Decision Gary Rowett (JArZk2dnFL)",
+     "outlet": "Mshale",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5iclVlT2pINF9rU1hQTjFjQ2JzZ0I2UlpmcFY0Rkt2TUtxMXh5LWlNRDFMaEljem11OFlCTEhWdU9Za29XZzhBa0NySzZKMkZ3UkpvM2M4SXhsY1k?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-17T03:24:34Z",
+     "title": "Japan to leave monetary policy tools to BOJ in economic blueprint, document shows",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/economy-news/japan-to-leave-monetary-policy-tools-to-boj-in-economic-blueprint-document-shows-4797360",
+     "rel": 22,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-17T00:14:08Z",
+     "title": "Federal Reserve's Lorie Logan calls for modestly higher interest rates, raising pressure on risk assets",
+     "outlet": "Crypto Briefing",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00NzRXbXdRZmhlNE5lRUozd1J6d1ctaVpZSEhJcTBfNWc5QUpRXzZuc2d4LUxkelZiQlcyYloxZURla1VTZnQ2VHlEdllEdnltSXk2Y1IzTEU3Rnp3cFV1bkJVWXNJYmFXNnp0RElKamJ1Z3RndE1maTNjM3BGZw?oc=5",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-16T19:38:18Z",
+     "title": "Should the Fed aim to 'modestly' raise interest rates?",
+     "outlet": "Yahoo! Finance Canada",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSWw0VlBHbWgwcW00dExDdEhSTTJiajlwQkxBb2phMmltdE9DSmJqVGJ2WkxJZHVnUjYyRGp3ckRheV9iZTVWN3N0TWFwMzBKYmY4dmZYTTJydk1DQ0pmbXFHeENnb1hOc2pEUHZXeUNEQ1dPTVJYYUtwcFN0Uk5wRGNYMjBXRDFTY01lSUpYZWFkRHpnS3poM21iSlpsX0xST2lj?oc=5",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-16T17:19:46Z",
+     "title": "Fed's Logan calls for 'modestly higher' interest rates",
+     "outlet": "Reuters",
+     "kind": "wire service",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQjd1T3g0MW1NTU5Uei1LUlRXeG1OMlhtdm1sN1VZMHozdk5nZ1ktNXRBRGN1czJwUmlTZUZWbjFoNEhmeXg4YVlJWDJFRkVxYTJKTHYxcm5uT2lSa1BhSE9RSmRrVE9Vbk1WX1NMajZoOExsNHZLdUU1X1Q0VkNKU0JWN3kzNnUwaDA0bEpGaFltSjV0Mmo0?oc=5",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-08T04:58:11Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 52,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Bitget",
+      "ts": "2026-07-11T01:22:52Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "IOL",
+      "ts": "2026-07-12T07:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Yahoo Finance",
+      "ts": "2026-07-12T10:03:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "InvestorsHub",
+      "ts": "2026-07-12T10:03:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "GhanaWeb",
+      "ts": "2026-07-12T15:06:04Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "econotimes.com",
+      "ts": "2026-07-13T05:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Yahoo Personal Finance",
+      "ts": "2026-07-13T10:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 5
+     },
+     {
+      "outlet": "CHCH",
+      "ts": "2026-07-13T13:22:19Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Investing.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "Reuters",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "TASS",
+     "n": 3,
+     "class": "state-media"
+    },
+    {
+     "outlet": "MSN",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "TMGM trading",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Yahoo Personal Finance",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "arabnews.jp",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Baystreet.ca",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Bitget",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "CNA",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "CNBC",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "CTV News",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 3,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-04 00:00",
+      4,
+      10
+     ],
+     [
+      "2026-07-04 06:00",
+      4,
+      6
+     ],
+     [
+      "2026-07-04 12:00",
+      4,
+      4
+     ],
+     [
+      "2026-07-04 18:00",
+      0,
+      3
+     ],
+     [
+      "2026-07-05 00:00",
+      0,
+      3
+     ],
+     [
+      "2026-07-05 06:00",
+      1,
+      4
+     ],
+     [
+      "2026-07-05 12:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-05 18:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-06 00:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-06 06:00",
+      3,
+      4
+     ],
+     [
+      "2026-07-06 12:00",
+      4,
+      4
+     ],
+     [
+      "2026-07-06 18:00",
+      7,
+      6
+     ],
+     [
+      "2026-07-07 00:00",
+      6,
+      6
+     ],
+     [
+      "2026-07-07 06:00",
+      9,
+      9
+     ],
+     [
+      "2026-07-07 12:00",
+      9,
+      10
+     ],
+     [
+      "2026-07-07 18:00",
+      9,
+      11
+     ],
+     [
+      "2026-07-08 00:00",
+      14,
+      16
+     ],
+     [
+      "2026-07-08 06:00",
+      18,
+      20
+     ],
+     [
+      "2026-07-08 12:00",
+      18,
+      19
+     ],
+     [
+      "2026-07-08 18:00",
+      23,
+      24
+     ],
+     [
+      "2026-07-09 00:00",
+      21,
+      25
+     ],
+     [
+      "2026-07-09 06:00",
+      10,
+      22
+     ],
+     [
+      "2026-07-09 12:00",
+      8,
+      21
+     ],
+     [
+      "2026-07-09 18:00",
+      9,
+      20
+     ],
+     [
+      "2026-07-10 00:00",
+      7,
+      14
+     ],
+     [
+      "2026-07-10 06:00",
+      8,
+      15
+     ],
+     [
+      "2026-07-10 12:00",
+      8,
+      15
+     ],
+     [
+      "2026-07-10 18:00",
+      8,
+      12
+     ],
+     [
+      "2026-07-11 00:00",
+      7,
+      12
+     ],
+     [
+      "2026-07-11 06:00",
+      7,
+      9
+     ],
+     [
+      "2026-07-11 12:00",
+      3,
+      8
+     ],
+     [
+      "2026-07-11 18:00",
+      2,
+      8
+     ],
+     [
+      "2026-07-12 00:00",
+      1,
+      6
+     ],
+     [
+      "2026-07-12 06:00",
+      0,
+      3
+     ],
+     [
+      "2026-07-12 12:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-12 18:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-13 00:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-13 06:00",
+      4,
+      4
+     ],
+     [
+      "2026-07-13 12:00",
+      6,
+      9
+     ],
+     [
+      "2026-07-13 18:00",
+      7,
+      11
+     ],
+     [
+      "2026-07-14 00:00",
+      7,
+      11
+     ],
+     [
+      "2026-07-14 06:00",
+      7,
+      10
+     ],
+     [
+      "2026-07-14 12:00",
+      6,
+      11
+     ],
+     [
+      "2026-07-14 18:00",
+      6,
+      11
+     ],
+     [
+      "2026-07-15 00:00",
+      7,
+      12
+     ],
+     [
+      "2026-07-15 06:00",
+      5,
+      10
+     ],
+     [
+      "2026-07-15 12:00",
+      23,
+      25
+     ],
+     [
+      "2026-07-15 18:00",
+      27,
+      29
+     ],
+     [
+      "2026-07-16 00:00",
+      32,
+      29
+     ],
+     [
+      "2026-07-16 06:00",
+      36,
+      32
+     ],
+     [
+      "2026-07-16 12:00",
+      36,
+      35
+     ],
+     [
+      "2026-07-16 18:00",
+      16,
+      35
+     ],
+     [
+      "2026-07-17 00:00",
+      12,
+      37
+     ],
+     [
+      "2026-07-17 06:00",
+      11,
+      38
+     ],
+     [
+      "2026-07-17 12:00",
+      10,
+      19
+     ],
+     [
+      "2026-07-17 18:00",
+      8,
+      18
+     ]
+    ],
+    "mix": {
+     "mainstream": 1,
+     "state-media": 1,
+     "regional": 1,
+     "official": 0,
+     "other": 26
+    },
+    "first_seen": "2026-06-16T13:21:41Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News."
+   ],
+   "history": {
+    "built": true,
+    "frames": 3,
+    "nodes": 24,
+    "discovered_days": 31
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "DX-Y.NYB",
+      "label": "Dollar Index",
+      "class": "fx",
+      "last": 100.768,
+      "last_ts": "2026-07-17T18:43:01Z",
+      "basis": "BOJ rate hike pressures USD index",
+      "move_pct": 0.01,
+      "window_h": 24,
+      "measured_from": "2026-07-17T16:49:47Z",
+      "series": [
+       [
+        "2026-07-17T04:58:06Z",
+        100.788
+       ],
+       [
+        "2026-07-17T05:00:00Z",
+        100.789
+       ],
+       [
+        "2026-07-17T05:13:29Z",
+        100.785
+       ],
+       [
+        "2026-07-17T05:41:57Z",
+        100.733
+       ],
+       [
+        "2026-07-17T05:49:53Z",
+        100.739
+       ],
+       [
+        "2026-07-17T06:00:00Z",
+        100.698
+       ],
+       [
+        "2026-07-17T06:21:46Z",
+        100.703
+       ],
+       [
+        "2026-07-17T06:26:28Z",
+        100.675
+       ],
+       [
+        "2026-07-17T06:59:38Z",
+        100.677
+       ],
+       [
+        "2026-07-17T07:00:00Z",
+        100.656
+       ],
+       [
+        "2026-07-17T07:01:40Z",
+        100.65
+       ],
+       [
+        "2026-07-17T07:37:09Z",
+        100.702
+       ],
+       [
+        "2026-07-17T07:38:00Z",
+        100.705
+       ],
+       [
+        "2026-07-17T08:00:00Z",
+        100.719
+       ],
+       [
+        "2026-07-17T08:12:07Z",
+        100.726
+       ],
+       [
+        "2026-07-17T08:18:04Z",
+        100.769
+       ],
+       [
+        "2026-07-17T08:47:52Z",
+        100.748
+       ],
+       [
+        "2026-07-17T08:58:40Z",
+        100.748
+       ],
+       [
+        "2026-07-17T09:00:00Z",
+        100.778
+       ],
+       [
+        "2026-07-17T09:24:40Z",
+        100.767
+       ],
+       [
+        "2026-07-17T09:41:36Z",
+        100.789
+       ],
+       [
+        "2026-07-17T10:00:00Z",
+        100.796
+       ],
+       [
+        "2026-07-17T10:02:41Z",
+        100.791
+       ],
+       [
+        "2026-07-17T10:23:34Z",
+        100.803
+       ],
+       [
+        "2026-07-17T10:40:28Z",
+        100.823
+       ],
+       [
+        "2026-07-17T11:00:00Z",
+        100.857
+       ],
+       [
+        "2026-07-17T11:05:23Z",
+        100.854
+       ],
+       [
+        "2026-07-17T11:17:19Z",
+        100.832
+       ],
+       [
+        "2026-07-17T11:45:05Z",
+        100.787
+       ],
+       [
+        "2026-07-17T11:54:37Z",
+        100.788
+       ],
+       [
+        "2026-07-17T12:00:00Z",
+        100.799
+       ],
+       [
+        "2026-07-17T12:23:54Z",
+        100.803
+       ],
+       [
+        "2026-07-17T12:31:04Z",
+        100.794
+       ],
+       [
+        "2026-07-17T13:00:00Z",
+        100.823
+       ],
+       [
+        "2026-07-17T13:01:48Z",
+        100.847
+       ],
+       [
+        "2026-07-17T13:08:24Z",
+        100.844
+       ],
+       [
+        "2026-07-17T13:41:38Z",
+        100.805
+       ],
+       [
+        "2026-07-17T13:44:32Z",
+        100.804
+       ],
+       [
+        "2026-07-17T14:00:00Z",
+        100.74
+       ],
+       [
+        "2026-07-17T14:19:03Z",
+        100.737
+       ],
+       [
+        "2026-07-17T14:19:38Z",
+        100.734
+       ],
+       [
+        "2026-07-17T14:56:20Z",
+        100.75
+       ],
+       [
+        "2026-07-17T15:00:00Z",
+        100.74
+       ],
+       [
+        "2026-07-17T15:02:48Z",
+        100.746
+       ],
+       [
+        "2026-07-17T15:33:30Z",
+        100.723
+       ],
+       [
+        "2026-07-17T15:43:48Z",
+        100.756
+       ],
+       [
+        "2026-07-17T16:00:00Z",
+        100.766
+       ],
+       [
+        "2026-07-17T16:09:46Z",
+        100.752
+       ],
+       [
+        "2026-07-17T16:26:12Z",
+        100.753
+       ],
+       [
+        "2026-07-17T16:49:07Z",
+        100.753
+       ],
+       [
+        "2026-07-17T17:00:00Z",
+        100.763
+       ],
+       [
+        "2026-07-17T17:08:31Z",
+        100.76
+       ],
+       [
+        "2026-07-17T17:27:50Z",
+        100.764
+       ],
+       [
+        "2026-07-17T17:54:21Z",
+        100.775
+       ],
+       [
+        "2026-07-17T18:00:00Z",
+        100.779
+       ],
+       [
+        "2026-07-17T18:05:32Z",
+        100.781
+       ],
+       [
+        "2026-07-17T18:38:40Z",
+        100.762
+       ],
+       [
+        "2026-07-17T18:43:01Z",
+        100.768
+       ]
+      ]
+     }
+    ],
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-07-17T18:55:48Z",
+    "anchor_beat": "2026-07-17T16:49:47Z"
+   },
+   "lead_image": {
+    "url": "https://news.cgtn.com/news/2026-06-16/Japan-s-central-bank-hikes-policy-rate-to-31-year-high-of-1-0--1O1kgZb1ICk/img/d2c1996508fa431cbe333253b9f0b037/d2c1996508fa431cbe333253b9f0b037-1920.png",
+    "source": "CGTN",
+    "focal": {
+     "x": 49,
+     "y": 43
     }
    },
    "gate": {
@@ -39147,10 +39267,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 87.93,
-      "last_ts": "2026-07-17T18:38:35Z",
+      "last": 87.7,
+      "last_ts": "2026-07-17T18:42:43Z",
       "basis": "Lebanon Hezbollah conflict oil",
-      "move_pct": 0.58,
+      "move_pct": 0.32,
       "window_h": 24,
       "measured_from": "2026-07-17T16:11:34Z",
       "series": [
@@ -39389,6 +39509,10 @@
        [
         "2026-07-17T18:38:35Z",
         87.93
+       ],
+       [
+        "2026-07-17T18:42:43Z",
+        87.7
        ]
       ]
      },
@@ -39396,10 +39520,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 81.6,
-      "last_ts": "2026-07-17T18:38:38Z",
+      "last": 81.38,
+      "last_ts": "2026-07-17T18:43:00Z",
       "basis": "Lebanon Hezbollah conflict oil",
-      "move_pct": 0.31,
+      "move_pct": 0.04,
       "window_h": 24,
       "measured_from": "2026-07-17T16:11:34Z",
       "series": [
@@ -39638,6 +39762,10 @@
        [
         "2026-07-17T18:38:38Z",
         81.6
+       ],
+       [
+        "2026-07-17T18:43:00Z",
+        81.38
        ]
       ]
      },
@@ -39645,10 +39773,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4017.1001,
-      "last_ts": "2026-07-17T18:38:31Z",
+      "last": 4013.6001,
+      "last_ts": "2026-07-17T18:43:01Z",
       "basis": "Lebanon Hezbollah conflict safe haven",
-      "move_pct": -0.15,
+      "move_pct": -0.24,
       "window_h": 24,
       "measured_from": "2026-07-17T16:11:34Z",
       "series": [
@@ -39887,12 +40015,16 @@
        [
         "2026-07-17T18:38:31Z",
         4017.1001
+       ],
+       [
+        "2026-07-17T18:43:01Z",
+        4013.6001
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:52:09Z",
+    "observed_utc": "2026-07-17T18:55:55Z",
     "anchor_beat": "2026-07-17T16:11:34Z"
    },
    "lead_image": {
@@ -42077,7 +42209,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:14:38Z",
+    "observed_utc": "2026-07-17T19:18:56Z",
     "anchor_beat": "2026-07-16T23:10:32Z"
    },
    "lead_image": {
@@ -42988,7 +43120,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:57:15Z",
+    "observed_utc": "2026-07-17T19:01:12Z",
     "anchor_beat": "2026-07-17T18:00:03Z"
    },
    "lead_image": {
@@ -43600,7 +43732,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:12:08Z",
+    "observed_utc": "2026-07-17T19:16:08Z",
     "anchor_beat": "2026-07-17T06:08:23Z"
    },
    "gate": {
@@ -45795,17 +45927,12 @@
      "class": "other"
     },
     {
-     "outlet": "The Straits Times",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "CNA",
+     "outlet": "MSN",
      "n": 3,
      "class": "other"
     },
     {
-     "outlet": "MSN",
+     "outlet": "The Straits Times",
      "n": 3,
      "class": "other"
     },
@@ -45816,6 +45943,11 @@
     },
     {
      "outlet": "Bangkok Post",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "CNA",
      "n": 2,
      "class": "other"
     },
@@ -45840,12 +45972,12 @@
      "class": "other"
     },
     {
-     "outlet": "The Independent",
+     "outlet": "The Star",
      "n": 2,
      "class": "other"
     },
     {
-     "outlet": "The Star",
+     "outlet": "WGAU Radio",
      "n": 2,
      "class": "other"
     }
@@ -45963,7 +46095,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 54
+     "other": 53
     },
     "first_seen": "2026-07-13T02:56:59Z"
    },
@@ -46286,8 +46418,8 @@
    },
    "discovered": true,
    "items_24h": 5,
-   "items_48h": 25,
-   "outlets": 18,
+   "items_48h": 24,
+   "outlets": 17,
    "kinds": [
     "journalist",
     "wire service"
@@ -47069,10 +47201,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4017.1001,
-      "last_ts": "2026-07-17T18:38:31Z",
+      "last": 4013.6001,
+      "last_ts": "2026-07-17T18:43:01Z",
       "basis": "Fed rate bets gold price",
-      "move_pct": 0.46,
+      "move_pct": 0.38,
       "window_h": 24,
       "measured_from": "2026-07-17T10:45:00Z",
       "series": [
@@ -47121,8 +47253,8 @@
         3987.6001
        ],
        [
-        "2026-07-17T02:08:10Z",
-        3986.1001
+        "2026-07-17T02:39:53Z",
+        3975.7
        ],
        [
         "2026-07-17T02:50:39Z",
@@ -47133,8 +47265,8 @@
         4000.2
        ],
        [
-        "2026-07-17T03:18:32Z",
-        3999.3999
+        "2026-07-17T03:33:03Z",
+        4003.8
        ],
        [
         "2026-07-17T03:55:27Z",
@@ -47145,8 +47277,8 @@
         3991.3
        ],
        [
-        "2026-07-17T04:16:08Z",
-        3992.7
+        "2026-07-17T04:34:18Z",
+        3987.8
        ],
        [
         "2026-07-17T04:58:02Z",
@@ -47165,8 +47297,8 @@
         3992.0
        ],
        [
-        "2026-07-17T06:00:00Z",
-        4007.8
+        "2026-07-17T06:21:44Z",
+        4008.0
        ],
        [
         "2026-07-17T06:26:25Z",
@@ -47177,8 +47309,8 @@
         4002.5
        ],
        [
-        "2026-07-17T07:00:00Z",
-        4004.6001
+        "2026-07-17T07:01:38Z",
+        4004.8999
        ],
        [
         "2026-07-17T07:37:07Z",
@@ -47189,104 +47321,100 @@
         3998.6001
        ],
        [
-        "2026-07-17T08:00:00Z",
-        3997.3999
+        "2026-07-17T08:12:08Z",
+        3995.6001
        ],
        [
         "2026-07-17T08:18:03Z",
         3994.1001
        ],
        [
-        "2026-07-17T08:47:53Z",
-        3999.0
-       ],
-       [
         "2026-07-17T08:58:37Z",
         4000.7
+       ],
+       [
+        "2026-07-17T09:00:00Z",
+        4005.7
        ],
        [
         "2026-07-17T09:24:41Z",
         4005.3999
        ],
        [
-        "2026-07-17T09:41:24Z",
-        4001.8999
-       ],
-       [
         "2026-07-17T10:00:00Z",
         3999.7
+       ],
+       [
+        "2026-07-17T10:02:40Z",
+        4000.0
        ],
        [
         "2026-07-17T10:23:25Z",
         3998.8
        ],
        [
-        "2026-07-17T10:40:23Z",
-        3998.6001
-       ],
-       [
         "2026-07-17T11:00:00Z",
         3996.0
+       ],
+       [
+        "2026-07-17T11:05:22Z",
+        3995.2
        ],
        [
         "2026-07-17T11:17:14Z",
         3995.5
        ],
        [
-        "2026-07-17T11:44:59Z",
-        3995.8
+        "2026-07-17T11:54:36Z",
+        4002.3
        ],
        [
         "2026-07-17T12:00:00Z",
         3988.3999
        ],
        [
-        "2026-07-17T12:23:53Z",
-        3988.3
-       ],
-       [
         "2026-07-17T12:31:05Z",
         3990.2
+       ],
+       [
+        "2026-07-17T13:00:00Z",
+        3965.6001
        ],
        [
         "2026-07-17T13:01:47Z",
         3963.8999
        ],
        [
-        "2026-07-17T13:08:22Z",
-        3974.2
-       ],
-       [
         "2026-07-17T13:41:39Z",
         3994.1001
+       ],
+       [
+        "2026-07-17T13:44:31Z",
+        3987.3999
        ],
        [
         "2026-07-17T14:00:00Z",
         4001.5
        ],
        [
-        "2026-07-17T14:19:02Z",
-        4003.5
-       ],
-       [
         "2026-07-17T14:19:37Z",
         4001.7
+       ],
+       [
+        "2026-07-17T14:56:16Z",
+        4000.0
        ],
        [
         "2026-07-17T15:00:00Z",
         4004.7
        ],
        [
-        "2026-07-17T15:02:49Z",
-        4003.7
-       ],
-       [
         "2026-07-17T15:33:30Z",
         4015.6001
        ],
        [
-        "2026-07-17T16:00:00Z",
-        4022.5
+        "2026-07-17T15:43:49Z",
+        4018.7
        ],
        [
         "2026-07-17T16:09:43Z",
@@ -47297,8 +47425,8 @@
         4024.0
        ],
        [
-        "2026-07-17T17:00:00Z",
-        4022.3999
+        "2026-07-17T16:49:03Z",
+        4022.8
        ],
        [
         "2026-07-17T17:08:12Z",
@@ -47309,8 +47437,8 @@
         4019.8999
        ],
        [
-        "2026-07-17T18:00:00Z",
-        4015.0
+        "2026-07-17T17:54:19Z",
+        4015.3999
        ],
        [
         "2026-07-17T18:05:24Z",
@@ -47319,6 +47447,10 @@
        [
         "2026-07-17T18:38:31Z",
         4017.1001
+       ],
+       [
+        "2026-07-17T18:43:01Z",
+        4013.6001
        ]
       ]
      },
@@ -47327,7 +47459,7 @@
       "label": "US 10Y Yield",
       "class": "rate",
       "last": 4.537,
-      "last_ts": "2026-07-17T18:33:34Z",
+      "last_ts": "2026-07-17T18:37:55Z",
       "basis": "Fed rate bets 10Y yield",
       "move_pct": -0.7,
       "window_h": 24,
@@ -47436,12 +47568,16 @@
        [
         "2026-07-17T18:33:34Z",
         4.537
+       ],
+       [
+        "2026-07-17T18:37:55Z",
+        4.537
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:52:28Z",
+    "observed_utc": "2026-07-17T18:56:14Z",
     "anchor_beat": "2026-07-17T10:45:00Z"
    },
    "lead_image": {
@@ -48585,7 +48721,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:55:28Z",
+    "observed_utc": "2026-07-17T18:59:12Z",
     "anchor_beat": "2026-07-17T15:13:56Z"
    },
    "lead_image": {
@@ -50105,7 +50241,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:17:48Z",
+    "observed_utc": "2026-07-17T19:21:52Z",
     "anchor_beat": "2026-07-17T13:48:01Z"
    },
    "gate": {
@@ -53751,7 +53887,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:56:26Z",
+    "observed_utc": "2026-07-17T19:00:15Z",
     "anchor_beat": "2026-07-17T11:07:33Z"
    },
    "lead_image": {
@@ -54882,7 +55018,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:59:13Z",
+    "observed_utc": "2026-07-17T19:03:16Z",
     "anchor_beat": "2026-07-17T13:37:15Z"
    },
    "lead_image": {
@@ -58297,7 +58433,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:11:06Z",
+    "observed_utc": "2026-07-17T19:14:58Z",
     "anchor_beat": "2026-07-17T17:21:51Z"
    },
    "lead_image": {
@@ -59352,7 +59488,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:54:44Z",
+    "observed_utc": "2026-07-17T18:58:32Z",
     "anchor_beat": "2026-07-17T06:49:06Z"
    },
    "lead_image": {
@@ -60245,7 +60381,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:55:34Z",
+    "observed_utc": "2026-07-17T18:59:18Z",
     "anchor_beat": "2026-07-17T17:47:05Z"
    },
    "lead_image": {
@@ -61376,7 +61512,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:02:58Z",
+    "observed_utc": "2026-07-17T19:06:59Z",
     "anchor_beat": "2026-07-17T16:00:29Z"
    },
    "gate": {
@@ -62653,7 +62789,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:54:37Z",
+    "observed_utc": "2026-07-17T18:58:25Z",
     "anchor_beat": "2026-07-17T15:30:02Z"
    },
    "lead_image": {
@@ -64392,7 +64528,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:09:07Z",
+    "observed_utc": "2026-07-17T19:13:04Z",
     "anchor_beat": "2026-07-17T17:42:52Z"
    },
    "lead_image": {
@@ -65047,7 +65183,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:15:46Z",
+    "observed_utc": "2026-07-17T19:20:00Z",
     "anchor_beat": "2026-07-17T14:33:00Z"
    },
    "lead_image": {
@@ -66285,7 +66421,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:56:06Z",
+    "observed_utc": "2026-07-17T18:59:51Z",
     "anchor_beat": "2026-07-17T14:18:57Z"
    },
    "lead_image": {
@@ -70009,7 +70145,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:55:53Z",
+    "observed_utc": "2026-07-17T18:59:37Z",
     "anchor_beat": "2026-07-17T14:51:58Z"
    },
    "lead_image": {
@@ -71572,7 +71708,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:14:00Z",
+    "observed_utc": "2026-07-17T19:18:19Z",
     "anchor_beat": "2026-07-16T20:40:00Z"
    },
    "lead_image": {
@@ -74686,7 +74822,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:57:17Z",
+    "observed_utc": "2026-07-17T19:01:15Z",
     "anchor_beat": "2026-07-17T17:12:11Z"
    },
    "lead_image": {
@@ -75879,7 +76015,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:13:24Z",
+    "observed_utc": "2026-07-17T19:17:35Z",
     "anchor_beat": "2026-07-17T16:49:47Z"
    },
    "lead_image": {
@@ -78661,7 +78797,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:01:20Z",
+    "observed_utc": "2026-07-17T19:05:19Z",
     "anchor_beat": "2026-07-17T16:45:01Z"
    },
    "lead_image": {
@@ -80181,7 +80317,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:10:13Z",
+    "observed_utc": "2026-07-17T19:14:07Z",
     "anchor_beat": "2026-07-17T07:19:00Z"
    },
    "gate": {
@@ -81446,7 +81582,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:55:59Z",
+    "observed_utc": "2026-07-17T18:59:44Z",
     "anchor_beat": "2026-07-17T18:32:43Z"
    },
    "lead_image": {
@@ -82417,7 +82553,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:15:20Z",
+    "observed_utc": "2026-07-17T19:19:35Z",
     "anchor_beat": "2026-07-17T07:00:00Z"
    },
    "lead_image": {
@@ -84032,7 +84168,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:07:23Z",
+    "observed_utc": "2026-07-17T19:11:25Z",
     "anchor_beat": "2026-07-17T07:08:12Z"
    },
    "gate": {
@@ -87011,7 +87147,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:58:18Z",
+    "observed_utc": "2026-07-17T19:02:17Z",
     "anchor_beat": "2026-07-16T21:50:06Z"
    },
    "lead_image": {
@@ -87854,7 +87990,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:14:19Z",
+    "observed_utc": "2026-07-17T19:18:37Z",
     "anchor_beat": "2026-07-16T17:00:00Z"
    },
    "lead_image": {
@@ -88574,10 +88710,10 @@
       "symbol": "MSFT",
       "label": "Microsoft",
       "class": "equity",
-      "last": 394.73,
-      "last_ts": "2026-07-17T18:48:40Z",
+      "last": 394.935,
+      "last_ts": "2026-07-17T18:53:02Z",
       "basis": "OpenAI licensing deal",
-      "move_pct": -1.59,
+      "move_pct": -1.54,
       "window_h": 24,
       "measured_from": "2026-07-17T08:38:30Z",
       "series": [
@@ -88668,12 +88804,16 @@
        [
         "2026-07-17T18:48:40Z",
         394.73
+       ],
+       [
+        "2026-07-17T18:53:02Z",
+        394.935
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:52:34Z",
+    "observed_utc": "2026-07-17T18:56:21Z",
     "anchor_beat": "2026-07-17T08:38:30Z"
    },
    "lead_image": {
@@ -91797,7 +91937,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:08:21Z",
+    "observed_utc": "2026-07-17T19:12:21Z",
     "anchor_beat": "2026-07-17T04:55:29Z"
    },
    "lead_image": {
@@ -93817,7 +93957,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:56:13Z",
+    "observed_utc": "2026-07-17T18:59:57Z",
     "anchor_beat": "2026-07-17T11:14:16Z"
    },
    "lead_image": {
@@ -95278,7 +95418,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:58:12Z",
+    "observed_utc": "2026-07-17T19:02:11Z",
     "anchor_beat": "2026-07-17T14:10:30Z"
    },
    "lead_image": {
@@ -96140,7 +96280,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:58:43Z",
+    "observed_utc": "2026-07-17T19:02:43Z",
     "anchor_beat": "2026-07-17T06:53:37Z"
    },
    "lead_image": {
@@ -97105,7 +97245,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:00:45Z",
+    "observed_utc": "2026-07-17T19:04:42Z",
     "anchor_beat": "2026-07-17T13:30:47Z"
    },
    "lead_image": {
@@ -98493,7 +98633,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:04:23Z",
+    "observed_utc": "2026-07-17T19:08:26Z",
     "anchor_beat": "2026-07-16T23:02:50Z"
    },
    "gate": {
@@ -101603,7 +101743,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:57:59Z",
+    "observed_utc": "2026-07-17T19:01:56Z",
     "anchor_beat": "2026-07-17T03:49:23Z"
    },
    "lead_image": {
@@ -103406,7 +103546,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:59:44Z",
+    "observed_utc": "2026-07-17T19:03:50Z",
     "anchor_beat": "2026-07-17T16:51:50Z"
    },
    "lead_image": {
@@ -105153,7 +105293,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:00:07Z",
+    "observed_utc": "2026-07-17T19:04:10Z",
     "anchor_beat": "2026-07-16T22:00:44Z"
    },
    "lead_image": {
@@ -106064,7 +106204,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:02:06Z",
+    "observed_utc": "2026-07-17T19:06:06Z",
     "anchor_beat": "2026-07-16T20:26:23Z"
    },
    "lead_image": {
@@ -107207,7 +107347,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:05:30Z",
+    "observed_utc": "2026-07-17T19:09:32Z",
     "anchor_beat": "2026-07-17T15:00:00Z"
    },
    "gate": {
@@ -107977,7 +108117,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:06:24Z",
+    "observed_utc": "2026-07-17T19:10:25Z",
     "anchor_beat": "2026-07-17T10:01:37Z"
    },
    "gate": {
@@ -109336,7 +109476,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:11:49Z",
+    "observed_utc": "2026-07-17T19:15:47Z",
     "anchor_beat": "2026-07-17T14:37:56Z"
    },
    "lead_image": {
@@ -110193,7 +110333,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:58:49Z",
+    "observed_utc": "2026-07-17T19:02:50Z",
     "anchor_beat": "2026-07-17T09:01:52Z"
    },
    "lead_image": {
@@ -111891,18 +112031,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "The Hill",
-      "ts": "2026-07-10T19:05:44Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "US press",
-      "items": 4
-     },
-     {
       "outlet": "foxnews.com",
       "ts": "2026-07-10T19:45:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "US press",
       "items": 1
      },
@@ -111913,6 +112045,14 @@
       "role": "echo",
       "motive_note": "Qatar state-funded international broadcaster",
       "items": 1
+     },
+     {
+      "outlet": "The Hill",
+      "ts": "2026-07-11T12:59:31Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 3
      },
      {
       "outlet": "CNBC",
@@ -113215,7 +113355,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:04:29Z",
+    "observed_utc": "2026-07-17T19:08:33Z",
     "anchor_beat": "2026-07-17T02:56:58Z"
    },
    "lead_image": {
@@ -114392,7 +114532,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:09:27Z",
+    "observed_utc": "2026-07-17T19:13:24Z",
     "anchor_beat": "2026-07-16T20:36:12Z"
    },
    "lead_image": {
@@ -115081,8 +115221,8 @@
       "symbol": "AAPL",
       "label": "Apple",
       "class": "equity",
-      "last": 334.55,
-      "last_ts": "2026-07-17T18:48:42Z",
+      "last": 334.31,
+      "last_ts": "2026-07-17T18:53:03Z",
       "basis": "Mass layoffs in big tech",
       "move_pct": -0.61,
       "window_h": 24,
@@ -115291,6 +115431,10 @@
        [
         "2026-07-17T18:48:42Z",
         334.55
+       ],
+       [
+        "2026-07-17T18:53:03Z",
+        334.31
        ]
       ]
      },
@@ -115298,8 +115442,8 @@
       "symbol": "MSFT",
       "label": "Microsoft",
       "class": "equity",
-      "last": 394.73,
-      "last_ts": "2026-07-17T18:48:40Z",
+      "last": 394.935,
+      "last_ts": "2026-07-17T18:53:02Z",
       "basis": "Mass layoffs in big tech",
       "move_pct": -2.39,
       "window_h": 24,
@@ -115508,6 +115652,10 @@
        [
         "2026-07-17T18:48:40Z",
         394.73
+       ],
+       [
+        "2026-07-17T18:53:02Z",
+        394.935
        ]
       ]
      },
@@ -115515,8 +115663,8 @@
       "symbol": "META",
       "label": "Meta",
       "class": "equity",
-      "last": 646.82,
-      "last_ts": "2026-07-17T18:48:34Z",
+      "last": 647.42,
+      "last_ts": "2026-07-17T18:52:59Z",
       "basis": "Mass layoffs in big tech",
       "move_pct": -3.08,
       "window_h": 24,
@@ -115725,6 +115873,10 @@
        [
         "2026-07-17T18:48:34Z",
         646.82
+       ],
+       [
+        "2026-07-17T18:52:59Z",
+        647.42
        ]
       ]
      },
@@ -115732,8 +115884,8 @@
       "symbol": "AMZN",
       "label": "Amazon",
       "class": "equity",
-      "last": 247.55,
-      "last_ts": "2026-07-17T18:48:38Z",
+      "last": 247.68,
+      "last_ts": "2026-07-17T18:53:02Z",
       "basis": "Mass layoffs in big tech",
       "move_pct": -2.87,
       "window_h": 24,
@@ -115942,12 +116094,16 @@
        [
         "2026-07-17T18:48:38Z",
         247.55
+       ],
+       [
+        "2026-07-17T18:53:02Z",
+        247.68
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:52:21Z",
+    "observed_utc": "2026-07-17T18:56:07Z",
     "anchor_beat": "2026-07-16T17:04:06Z"
    },
    "lead_image": {
@@ -117445,7 +117601,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:59:31Z",
+    "observed_utc": "2026-07-17T19:03:37Z",
     "anchor_beat": "2026-07-16T14:12:25Z"
    },
    "gate": {
@@ -118697,7 +118853,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:13:54Z",
+    "observed_utc": "2026-07-17T19:18:12Z",
     "anchor_beat": "2026-07-16T11:42:42Z"
    },
    "gate": {
@@ -120141,7 +120297,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:00:23Z",
+    "observed_utc": "2026-07-17T19:04:23Z",
     "anchor_beat": "2026-07-16T15:14:13Z"
    },
    "gate": {
@@ -121590,7 +121746,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:02:45Z",
+    "observed_utc": "2026-07-17T19:06:46Z",
     "anchor_beat": "2026-07-15T23:13:20Z"
    },
    "lead_image": {
@@ -122183,7 +122339,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:05:17Z",
+    "observed_utc": "2026-07-17T19:09:19Z",
     "anchor_beat": "2026-07-16T12:30:32Z"
    },
    "lead_image": {
@@ -122954,7 +123110,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:11:37Z",
+    "observed_utc": "2026-07-17T19:15:33Z",
     "anchor_beat": "2026-07-16T05:01:36Z"
    },
    "lead_image": {
@@ -124138,7 +124294,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:14:32Z",
+    "observed_utc": "2026-07-17T19:18:50Z",
     "anchor_beat": "2026-07-16T16:11:20Z"
    },
    "lead_image": {
@@ -125406,7 +125562,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:00:51Z",
+    "observed_utc": "2026-07-17T19:04:48Z",
     "anchor_beat": "2026-07-16T11:21:14Z"
    },
    "lead_image": {
@@ -125985,7 +126141,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:09:52Z",
+    "observed_utc": "2026-07-17T19:13:48Z",
     "anchor_beat": "2026-07-16T12:53:49Z"
    },
    "lead_image": {
@@ -127347,7 +127503,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:14:06Z",
+    "observed_utc": "2026-07-17T19:18:25Z",
     "anchor_beat": "2026-07-16T14:42:58Z"
    },
    "lead_image": {
@@ -128569,7 +128725,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:15:12Z",
+    "observed_utc": "2026-07-17T19:19:28Z",
     "anchor_beat": "2026-07-16T16:48:26Z"
    },
    "gate": {
@@ -129416,7 +129572,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:57:32Z",
+    "observed_utc": "2026-07-17T19:01:30Z",
     "anchor_beat": "2026-07-16T15:30:55Z"
    },
    "gate": {
@@ -130839,7 +130995,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:58:06Z",
+    "observed_utc": "2026-07-17T19:02:04Z",
     "anchor_beat": "2026-07-16T18:17:42Z"
    },
    "lead_image": {
@@ -131939,7 +132095,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:06:16Z",
+    "observed_utc": "2026-07-17T19:10:19Z",
     "anchor_beat": "2026-07-16T00:00:11Z"
    },
    "lead_image": {
@@ -133189,7 +133345,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:08:53Z",
+    "observed_utc": "2026-07-17T19:12:52Z",
     "anchor_beat": "2026-07-15T21:11:37Z"
    },
    "lead_image": {
@@ -133473,231 +133629,6 @@
     "focal": {
      "x": 51,
      "y": 55
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "uk-far-right-terror-plot-targets-mosques",
-   "name": "UK far-right terror plot targets mosques",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "terrorism",
-    "court"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 0,
-   "items_48h": 2,
-   "outlets": 2,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-15T19:32:52Z",
-     "title": "Police charge 14-year-old boy over alleged terror plot targeting London mosques",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/uk-news/2026/jul/15/police-charge-boy-over-alleged-terror-plot-targeting-london-mosques",
-     "rel": 29,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-15T19:15:24Z",
-     "title": "Teen, 14, charged with preparing terror acts linked to far-right plot against mosques in London",
-     "outlet": "Anadolu Ajans\u0131",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRVJQYm1sdUF6OGJxMVpKOWpPSnY2WFppUFlyZW5YakNjcVBFN1dZRDRzY21vWE02c3JaQU94RjB6bXVQZmQweC1NZGhTVjROaXozS3FzTzBrYWZWYzdKRnFyYldjdWtBZ1FaX3BPRFV6SlUtUlREbnFsMmJuLUVBLWxpQVpISm8tQnVZUy04SG44V3c5MmZGdVNrcHZCcW9wbUpWX193NC1PVVFvV2JmM1Vfa1JzMG5Md1lrMHZZckZ2b3hSS2t1Mlp6SXFNQQ?oc=5",
-     "rel": 33,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-14T10:43:21Z",
-     "title": "UK Arrests 12 Suspects for Alleged Far-Right Terror Plot Targeting Muslim Gathering",
-     "outlet": "Morocco World News",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSEpoSmVSaFo0NXhIdDE3WnMtMDg0T1dGclpGcTJqYy00S25Pa1NvUjhmQk8xNjB2b2hKZ25NRzlpdlcyYnEtc2VWeGt6ZWoxV3JMaGRnaUh2Rkh1blJxcThEUWdBLWR5OG9Fb3N3UUpUUHZ4LUJSUTFVQ1diaFdfeWdXaDFUZXRfb0hSemdxWWZ1dG9ZMkdJS2RoNkxPUXBDVk1OMHRfdXRuZ04wNVVRaGREQzhDMXZSbThJbDJRMExwaWlPZ3puaHFBc1I?oc=5",
-     "rel": 33,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-14T08:50:39Z",
-     "title": "UK arrests 12 over alleged far-right plot targeting Muslim gathering",
-     "outlet": "Yabiladi.com",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN1pncXB2MnBZUFRTN3k2SWNPNVBoTzQ1MTZmMFlpeDZVNEFDdjA3Ym81THBwdHpGS2tROHBlaVFBU1JsS1FvUHVhX28zdWZhbm4tSkhwd1pwdnhLQ3Y5WmRiWlFwdk9MTUVKMGZRY3ZpNHZNWV9rN1B2RU9aOUpTVEd6aEFkcVE4Q1AzN1drN0g5QQ?oc=5",
-     "rel": 29,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": null,
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 4,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "Yabiladi.com",
-      "ts": "2026-07-14T08:50:39Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Morocco World News",
-      "ts": "2026-07-14T10:43:21Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Anadolu Ajans\u0131",
-      "ts": "2026-07-15T19:15:24Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-07-15T19:32:52Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Anadolu Ajans\u0131",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Morocco World News",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Yabiladi.com",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-16 00:00",
-      2,
-      4
-     ],
-     [
-      "2026-07-16 06:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-16 12:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-16 18:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-17 00:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-17 06:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-17 12:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-17 18:00",
-      0,
-      2
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 3
-    },
-    "first_seen": "2026-07-16T05:34:43Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
-    "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
-    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 1
-   },
-   "lead_image": {
-    "url": "https://i.guim.co.uk/img/media/4fca3e8c9f622c97fc19b4392a2f945a1035bbc7/2176_85_3058_2446/master/3058.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8ff735dcc86936da7378c0e8f8430552",
-    "source": "Guardian World",
-    "focal": {
-     "x": 45,
-     "y": 52
     }
    },
    "gate": {
@@ -137374,7 +137305,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:54:24Z",
+    "observed_utc": "2026-07-17T18:58:12Z",
     "anchor_beat": "2026-07-15T19:52:00Z"
    },
    "lead_image": {
@@ -139379,7 +139310,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:59:01Z",
+    "observed_utc": "2026-07-17T19:03:03Z",
     "anchor_beat": "2026-07-16T10:50:51Z"
    },
    "lead_image": {
@@ -140226,7 +140157,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:59:19Z",
+    "observed_utc": "2026-07-17T19:03:23Z",
     "anchor_beat": "2026-07-16T15:36:30Z"
    },
    "lead_image": {
@@ -140558,18 +140489,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Spectrum News NY1",
-      "ts": "2026-07-10T19:00:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 3
-     },
-     {
       "outlet": "Gothamist",
       "ts": "2026-07-10T21:52:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -140620,6 +140543,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
+     },
+     {
+      "outlet": "NBC New York",
+      "ts": "2026-07-13T14:22:24Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
      }
     ],
     "unplaced": []
@@ -142125,7 +142056,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:59:57Z",
+    "observed_utc": "2026-07-17T19:04:03Z",
     "anchor_beat": "2026-07-16T11:30:43Z"
    },
    "lead_image": {
@@ -144560,7 +144491,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:06:03Z",
+    "observed_utc": "2026-07-17T19:10:04Z",
     "anchor_beat": "2026-07-16T13:45:43Z"
    },
    "gate": {
@@ -145859,7 +145790,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:07:54Z",
+    "observed_utc": "2026-07-17T19:11:56Z",
     "anchor_beat": "2026-07-15T17:49:00Z"
    },
    "lead_image": {
@@ -146455,7 +146386,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:08:41Z",
+    "observed_utc": "2026-07-17T19:12:39Z",
     "anchor_beat": "2026-07-15T21:06:45Z"
    },
    "lead_image": {
@@ -147187,7 +147118,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:11:43Z",
+    "observed_utc": "2026-07-17T19:15:40Z",
     "anchor_beat": "2026-07-15T19:59:48Z"
    },
    "lead_image": {
@@ -147408,6 +147339,231 @@
     "focal": {
      "x": 48,
      "y": 55
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "uk-far-right-terror-plot-targets-mosques",
+   "name": "UK far-right terror plot targets mosques",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "terrorism",
+    "court"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 0,
+   "items_48h": 1,
+   "outlets": 1,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-15T19:32:52Z",
+     "title": "Police charge 14-year-old boy over alleged terror plot targeting London mosques",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/uk-news/2026/jul/15/police-charge-boy-over-alleged-terror-plot-targeting-london-mosques",
+     "rel": 29,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-15T19:15:24Z",
+     "title": "Teen, 14, charged with preparing terror acts linked to far-right plot against mosques in London",
+     "outlet": "Anadolu Ajans\u0131",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRVJQYm1sdUF6OGJxMVpKOWpPSnY2WFppUFlyZW5YakNjcVBFN1dZRDRzY21vWE02c3JaQU94RjB6bXVQZmQweC1NZGhTVjROaXozS3FzTzBrYWZWYzdKRnFyYldjdWtBZ1FaX3BPRFV6SlUtUlREbnFsMmJuLUVBLWxpQVpISm8tQnVZUy04SG44V3c5MmZGdVNrcHZCcW9wbUpWX193NC1PVVFvV2JmM1Vfa1JzMG5Md1lrMHZZckZ2b3hSS2t1Mlp6SXFNQQ?oc=5",
+     "rel": 33,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-14T10:43:21Z",
+     "title": "UK Arrests 12 Suspects for Alleged Far-Right Terror Plot Targeting Muslim Gathering",
+     "outlet": "Morocco World News",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSEpoSmVSaFo0NXhIdDE3WnMtMDg0T1dGclpGcTJqYy00S25Pa1NvUjhmQk8xNjB2b2hKZ25NRzlpdlcyYnEtc2VWeGt6ZWoxV3JMaGRnaUh2Rkh1blJxcThEUWdBLWR5OG9Fb3N3UUpUUHZ4LUJSUTFVQ1diaFdfeWdXaDFUZXRfb0hSemdxWWZ1dG9ZMkdJS2RoNkxPUXBDVk1OMHRfdXRuZ04wNVVRaGREQzhDMXZSbThJbDJRMExwaWlPZ3puaHFBc1I?oc=5",
+     "rel": 33,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-14T08:50:39Z",
+     "title": "UK arrests 12 over alleged far-right plot targeting Muslim gathering",
+     "outlet": "Yabiladi.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN1pncXB2MnBZUFRTN3k2SWNPNVBoTzQ1MTZmMFlpeDZVNEFDdjA3Ym81THBwdHpGS2tROHBlaVFBU1JsS1FvUHVhX28zdWZhbm4tSkhwd1pwdnhLQ3Y5WmRiWlFwdk9MTUVKMGZRY3ZpNHZNWV9rN1B2RU9aOUpTVEd6aEFkcVE4Q1AzN1drN0g5QQ?oc=5",
+     "rel": 29,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 4,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Yabiladi.com",
+      "ts": "2026-07-14T08:50:39Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Morocco World News",
+      "ts": "2026-07-14T10:43:21Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Anadolu Ajans\u0131",
+      "ts": "2026-07-15T19:15:24Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-07-15T19:32:52Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Anadolu Ajans\u0131",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Morocco World News",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Yabiladi.com",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-16 00:00",
+      2,
+      4
+     ],
+     [
+      "2026-07-16 06:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-16 12:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-16 18:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-17 00:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-17 06:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-17 12:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-17 18:00",
+      0,
+      2
+     ]
+    ],
+    "mix": {
+     "mainstream": 1,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 3
+    },
+    "first_seen": "2026-07-16T05:34:43Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Times of Israel, UN News.",
+    "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
+    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 1
+   },
+   "lead_image": {
+    "url": "https://i.guim.co.uk/img/media/4fca3e8c9f622c97fc19b4392a2f945a1035bbc7/2176_85_3058_2446/master/3058.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=8ff735dcc86936da7378c0e8f8430552",
+    "source": "Guardian World",
+    "focal": {
+     "x": 45,
+     "y": 52
     }
    },
    "gate": {
@@ -148997,7 +149153,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:57:08Z",
+    "observed_utc": "2026-07-17T19:01:05Z",
     "anchor_beat": "2026-07-14T20:23:49Z"
    },
    "lead_image": {
@@ -149758,7 +149914,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T18:58:31Z",
+    "observed_utc": "2026-07-17T19:02:30Z",
     "anchor_beat": "2026-07-11T02:09:14Z"
    },
    "lead_image": {
@@ -151678,7 +151834,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:00:38Z",
+    "observed_utc": "2026-07-17T19:04:35Z",
     "anchor_beat": "2026-07-10T21:46:33Z"
    },
    "lead_image": {
@@ -153071,7 +153227,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:01:05Z",
+    "observed_utc": "2026-07-17T19:05:03Z",
     "anchor_beat": "2026-07-12T06:55:31Z"
    },
    "gate": {
@@ -153794,7 +153950,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:01:34Z",
+    "observed_utc": "2026-07-17T19:05:32Z",
     "anchor_beat": "2026-07-14T17:45:38Z"
    },
    "lead_image": {
@@ -155014,7 +155170,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:01:59Z",
+    "observed_utc": "2026-07-17T19:05:58Z",
     "anchor_beat": "2026-07-14T15:30:00Z"
    },
    "lead_image": {
@@ -156467,7 +156623,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:02:26Z",
+    "observed_utc": "2026-07-17T19:06:27Z",
     "anchor_beat": "2026-07-15T14:02:00Z"
    },
    "lead_image": {
@@ -157388,7 +157544,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:03:05Z",
+    "observed_utc": "2026-07-17T19:07:06Z",
     "anchor_beat": "2026-07-14T23:43:12Z"
    },
    "lead_image": {
@@ -159649,7 +159805,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:04:35Z",
+    "observed_utc": "2026-07-17T19:08:39Z",
     "anchor_beat": "2026-07-15T07:57:33Z"
    },
    "gate": {
@@ -161542,7 +161698,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:05:09Z",
+    "observed_utc": "2026-07-17T19:09:12Z",
     "anchor_beat": "2026-07-15T14:33:40Z"
    },
    "gate": {
@@ -162399,7 +162555,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:05:23Z",
+    "observed_utc": "2026-07-17T19:09:25Z",
     "anchor_beat": "2026-07-13T23:24:30Z"
    },
    "gate": {
@@ -163498,7 +163654,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:06:10Z",
+    "observed_utc": "2026-07-17T19:10:12Z",
     "anchor_beat": "2026-07-13T16:38:07Z"
    },
    "lead_image": {
@@ -164105,7 +164261,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:07:10Z",
+    "observed_utc": "2026-07-17T19:11:12Z",
     "anchor_beat": "2026-07-14T18:40:22Z"
    },
    "lead_image": {
@@ -165114,7 +165270,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:07:17Z",
+    "observed_utc": "2026-07-17T19:11:18Z",
     "anchor_beat": "2026-07-13T17:04:55Z"
    },
    "gate": {
@@ -166147,7 +166303,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:07:35Z",
+    "observed_utc": "2026-07-17T19:11:38Z",
     "anchor_beat": "2026-07-14T01:32:47Z"
    },
    "gate": {
@@ -168015,7 +168171,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:08:14Z",
+    "observed_utc": "2026-07-17T19:12:15Z",
     "anchor_beat": "2026-07-15T10:32:48Z"
    },
    "lead_image": {
@@ -168695,7 +168851,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-17T19:08:47Z",
+    "observed_utc": "2026-07-17T19:12:46Z",
     "anchor_beat": null
    },
    "gate": {
@@ -169669,7 +169825,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:09:20Z",
+    "observed_utc": "2026-07-17T19:13:18Z",
     "anchor_beat": "2026-07-15T02:05:43Z"
    },
    "lead_image": {
@@ -170656,7 +170812,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:09:33Z",
+    "observed_utc": "2026-07-17T19:13:30Z",
     "anchor_beat": "2026-07-14T23:08:13Z"
    },
    "lead_image": {
@@ -171884,7 +172040,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:10:59Z",
+    "observed_utc": "2026-07-17T19:14:52Z",
     "anchor_beat": "2026-07-15T16:20:18Z"
    },
    "lead_image": {
@@ -172795,7 +172951,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-17T19:12:20Z",
+    "observed_utc": "2026-07-17T19:16:21Z",
     "anchor_beat": "2026-07-15T21:26:08Z"
    },
    "lead_image": {
@@ -173395,7 +173551,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-17T19:15:52Z",
+    "observed_utc": "2026-07-17T19:20:08Z",
     "anchor_beat": null
    },
    "gate": {
@@ -173494,56 +173650,7 @@
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "EU proposes slowing down cuts to carbon emissions for businesses",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Philippines condemns monkey video on Chinese media as racist",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "ICE arrests human rights lawyer who fled Chinese crackdown",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Sibiga appointed Ukraine\u2019s acting foreign minister, Khmara acting defense minister - PM",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "EU backs ICC, rejects Trump's campaign to dismantle war crimes court",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "The manosphere&#8217;s testosterone obsession reaches the highest levels of US military",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Storm clouds gather over America\u2019s financial supremacy",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Beyond lithium: how sodium-ion batteries could change the world",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -173569,12 +173676,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 128,
-  "accepted": 0,
-  "rejected": 7,
-  "existing": 3,
-  "below": 118,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -173589,6 +173690,6 @@
   "edition_utc": "2026-07-17",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1413
+  "overflow": 1409
  }
 }
