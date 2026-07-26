@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-07-26T12:24:04Z",
+ "generated_utc": "2026-07-26T12:24:50Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,6 +32,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -82,6 +83,31 @@
     "id": "unnews",
     "label": "UN News",
     "reason": "not well-formed (invalid token): line 1, column 0"
+   },
+   {
+    "id": "gdelt:berlin-pride-attack",
+    "label": "GDELT Berlin Pride Attack",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:nato-intern-arrested-for-spying",
+    "label": "GDELT NATO intern arrested for spying",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:gaza-israel-war-current",
+    "label": "GDELT Israel-Gaza",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "Expecting value: line 1 column 1 (char 0)"
    }
   ]
  },
@@ -742,7 +768,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Berlin Pride Attack, Press TV, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -1257,18 +1283,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "France 24",
-      "ts": "2026-07-19T11:54:09Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "FR state-funded international broadcaster",
-      "items": 17
-     },
-     {
       "outlet": "Reuters",
       "ts": "2026-07-19T11:59:03Z",
       "kind": "wire service",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "international wire service",
       "items": 7
      },
@@ -1319,6 +1337,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 9
+     },
+     {
+      "outlet": "TASS",
+      "ts": "2026-07-19T13:13:28Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 124
      }
     ],
     "unplaced": [
@@ -1808,7 +1834,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Press TV, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -2826,7 +2852,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:53:59Z",
+    "observed_utc": "2026-07-26T11:54:55Z",
     "anchor_beat": "2026-07-26T11:06:06Z"
    },
    "lead_image": {
@@ -3128,7 +3154,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT NATO intern arrested for spying, Press TV, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -3394,7 +3420,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:22:58Z",
+    "observed_utc": "2026-07-26T12:23:48Z",
     "anchor_beat": "2026-07-26T06:43:12Z"
    },
    "lead_image": {
@@ -4556,7 +4582,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Israel-Gaza, Press TV, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
@@ -5574,7 +5600,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:54:04Z",
+    "observed_utc": "2026-07-26T11:54:58Z",
     "anchor_beat": "2026-07-26T11:12:23Z"
    },
    "lead_image": {
@@ -7492,7 +7518,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran nuclear work sparks concern, Press TV, Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -8517,7 +8543,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:54:34Z",
+    "observed_utc": "2026-07-26T11:55:33Z",
     "anchor_beat": "2026-07-26T10:58:39Z"
    },
    "lead_image": {
@@ -11219,7 +11245,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:54:19Z",
+    "observed_utc": "2026-07-26T11:55:16Z",
     "anchor_beat": "2026-07-26T08:10:38Z"
    },
    "lead_image": {
@@ -13948,7 +13974,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:55:07Z",
+    "observed_utc": "2026-07-26T11:56:03Z",
     "anchor_beat": "2026-07-26T04:30:00Z"
    },
    "lead_image": {
@@ -16283,7 +16309,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:56:59Z",
+    "observed_utc": "2026-07-26T11:57:51Z",
     "anchor_beat": "2026-07-26T07:13:45Z"
    },
    "lead_image": {
@@ -17225,7 +17251,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:56:46Z",
+    "observed_utc": "2026-07-26T11:57:37Z",
     "anchor_beat": "2026-07-26T11:43:00Z"
    },
    "lead_image": {
@@ -19051,7 +19077,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:55:32Z",
+    "observed_utc": "2026-07-26T11:56:24Z",
     "anchor_beat": "2026-07-26T02:44:11Z"
    },
    "lead_image": {
@@ -19603,7 +19629,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:22:37Z",
+    "observed_utc": "2026-07-26T12:23:27Z",
     "anchor_beat": "2026-07-26T09:17:50Z"
    },
    "lead_image": {
@@ -21369,7 +21395,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:56:33Z",
+    "observed_utc": "2026-07-26T11:57:25Z",
     "anchor_beat": "2026-07-26T09:06:41Z"
    },
    "lead_image": {
@@ -23110,7 +23136,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:54:38Z",
+    "observed_utc": "2026-07-26T11:55:36Z",
     "anchor_beat": "2026-07-26T08:02:37Z"
    },
    "lead_image": {
@@ -24068,7 +24094,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:56:53Z",
+    "observed_utc": "2026-07-26T11:57:44Z",
     "anchor_beat": "2026-07-26T09:00:13Z"
    },
    "lead_image": {
@@ -25232,7 +25258,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:20:49Z",
+    "observed_utc": "2026-07-26T12:21:39Z",
     "anchor_beat": "2026-07-26T05:33:33Z"
    },
    "lead_image": {
@@ -27162,7 +27188,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:55:58Z",
+    "observed_utc": "2026-07-26T11:56:49Z",
     "anchor_beat": "2026-07-26T07:17:24Z"
    },
    "lead_image": {
@@ -28569,7 +28595,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:56:19Z",
+    "observed_utc": "2026-07-26T11:57:10Z",
     "anchor_beat": "2026-07-26T10:24:52Z"
    },
    "lead_image": {
@@ -30275,7 +30301,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:01:33Z",
+    "observed_utc": "2026-07-26T12:02:31Z",
     "anchor_beat": "2026-07-26T09:52:09Z"
    },
    "lead_image": {
@@ -31451,7 +31477,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:05:27Z",
+    "observed_utc": "2026-07-26T12:06:20Z",
     "anchor_beat": "2026-07-26T07:13:12Z"
    },
    "lead_image": {
@@ -33501,7 +33527,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:59:09Z",
+    "observed_utc": "2026-07-26T12:00:00Z",
     "anchor_beat": "2026-07-26T08:07:01Z"
    },
    "lead_image": {
@@ -36606,7 +36632,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:56:39Z",
+    "observed_utc": "2026-07-26T11:57:30Z",
     "anchor_beat": "2026-07-26T08:15:54Z"
    },
    "lead_image": {
@@ -39100,7 +39126,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:05:11Z",
+    "observed_utc": "2026-07-26T12:06:05Z",
     "anchor_beat": "2026-07-26T10:10:25Z"
    },
    "lead_image": {
@@ -44017,7 +44043,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:55:11Z",
+    "observed_utc": "2026-07-26T11:56:05Z",
     "anchor_beat": "2026-07-26T08:06:24Z"
    },
    "lead_image": {
@@ -45544,7 +45570,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:23:57Z",
+    "observed_utc": "2026-07-26T12:24:43Z",
     "anchor_beat": "2026-07-26T11:19:33Z"
    },
    "lead_image": {
@@ -45556,7 +45582,7 @@
     }
    },
    "gate": {
-    "score": 3,
+    "score": 4,
     "of": 8,
     "checks": {
      "split": 0,
@@ -45564,7 +45590,7 @@
      "provenance": 1,
      "steelman": 0,
      "history": 1,
-     "report": 0,
+     "report": 1,
      "theories": 0,
      "unknowns": 1
     }
@@ -47961,7 +47987,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:54:12Z",
+    "observed_utc": "2026-07-26T11:55:09Z",
     "anchor_beat": "2026-07-26T01:00:18Z"
    },
    "lead_image": {
@@ -49676,7 +49702,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:58:46Z",
+    "observed_utc": "2026-07-26T11:59:39Z",
     "anchor_beat": "2026-07-26T04:00:15Z"
    },
    "lead_image": {
@@ -52164,7 +52190,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:22:51Z",
+    "observed_utc": "2026-07-26T12:23:41Z",
     "anchor_beat": "2026-07-25T15:44:38Z"
    },
    "lead_image": {
@@ -53883,7 +53909,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:00:32Z",
+    "observed_utc": "2026-07-26T12:01:36Z",
     "anchor_beat": "2026-07-26T02:37:00Z"
    },
    "lead_image": {
@@ -55934,7 +55960,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:10:45Z",
+    "observed_utc": "2026-07-26T12:11:39Z",
     "anchor_beat": "2026-07-25T19:58:39Z"
    },
    "lead_image": {
@@ -58756,7 +58782,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:57:51Z",
+    "observed_utc": "2026-07-26T11:58:44Z",
     "anchor_beat": "2026-07-25T14:43:19Z"
    },
    "lead_image": {
@@ -60301,7 +60327,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:58:39Z",
+    "observed_utc": "2026-07-26T11:59:32Z",
     "anchor_beat": "2026-07-26T09:00:00Z"
    },
    "lead_image": {
@@ -63944,7 +63970,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:05:01Z",
+    "observed_utc": "2026-07-26T12:05:56Z",
     "anchor_beat": "2026-07-25T13:00:19Z"
    },
    "lead_image": {
@@ -65459,7 +65485,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:05:19Z",
+    "observed_utc": "2026-07-26T12:06:12Z",
     "anchor_beat": "2026-07-26T10:00:16Z"
    },
    "gate": {
@@ -66183,7 +66209,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:21:04Z",
+    "observed_utc": "2026-07-26T12:21:53Z",
     "anchor_beat": "2026-07-26T10:20:23Z"
    },
    "lead_image": {
@@ -69408,7 +69434,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:03:32Z",
+    "observed_utc": "2026-07-26T12:04:26Z",
     "anchor_beat": "2026-07-26T05:03:42Z"
    },
    "lead_image": {
@@ -71386,7 +71412,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T11:55:28Z",
+    "observed_utc": "2026-07-26T11:56:21Z",
     "anchor_beat": "2026-07-26T11:00:00Z"
    },
    "lead_image": {
@@ -72538,7 +72564,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:57:07Z",
+    "observed_utc": "2026-07-26T11:57:58Z",
     "anchor_beat": "2026-07-25T16:39:10Z"
    },
    "lead_image": {
@@ -74346,7 +74372,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:55:51Z",
+    "observed_utc": "2026-07-26T11:56:42Z",
     "anchor_beat": "2026-07-25T17:10:00Z"
    },
    "lead_image": {
@@ -77077,7 +77103,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:22:09Z",
+    "observed_utc": "2026-07-26T12:22:56Z",
     "anchor_beat": "2026-07-26T09:18:34Z"
    },
    "lead_image": {
@@ -77097,6 +77123,3051 @@
      "provenance": 1,
      "steelman": 0,
      "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "china-robot-drive",
+   "name": "China Robot Drive",
+   "bucket": "tech",
+   "topic_tags": [
+    "ai"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 1,
+   "items_48h": 5,
+   "outlets": 4,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-26T04:00:08Z",
+     "title": "Why workers are nostalgic for life before AI",
+     "outlet": "Financial Times",
+     "kind": "journalist",
+     "url": "https://www.ft.com/content/2ddef625-df80-4690-9475-f3ce86171593?syn-25a6b1a6=1",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-24T21:48:45Z",
+     "title": "Uber and Waymo to end exclusivity arrangement in Atlanta and Austin",
+     "outlet": "CNBC",
+     "kind": "journalist",
+     "url": "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T20:43:35Z",
+     "title": "Waymo reportedly mulling a breakup with Uber",
+     "outlet": "TechCrunch",
+     "kind": "journalist",
+     "url": "https://techcrunch.com/2026/07/24/waymo-reportedly-mulling-a-breakup-with-uber/",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T19:27:07Z",
+     "title": "Uber under pressure: Waymo partnership on the brink",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/stock-market-news/uber-under-pressure-waymo-partnership-on-the-brink-4812422",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T19:15:14Z",
+     "title": "Waymo explores split with Uber as robotaxi tensions deepen",
+     "outlet": "Financial Times",
+     "kind": "journalist",
+     "url": "https://www.ft.com/content/9dcb5d72-13aa-4f9c-ac6d-e022860df5ea?syn-25a6b1a6=1",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-24T08:11:01Z",
+     "title": "This Silicon Valley city is quietly becoming Robot Row. Here's who's clanking around.",
+     "outlet": "Business Insider",
+     "kind": "journalist",
+     "url": "https://www.businessinsider.com/robot-row-humanoid-hub-location-fremont-silicon-valley-agility-tesla-2026-7",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-23T11:44:54Z",
+     "title": "Uber lays off 10 percent of its customer service team in favor of using AI",
+     "outlet": "Engadget",
+     "kind": "journalist",
+     "url": "https://www.engadget.com/2221547/uber-lays-off-10-percent-customer-service-team-ai/",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-20T16:49:35Z",
+     "title": "Uber still offering illegal scooter rides: TPP",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/07/21/2003861107",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 7,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "TechCrunch",
+      "ts": "2026-07-19T16:05:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Taipei Times",
+      "ts": "2026-07-20T16:49:35Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "TW regional press",
+      "items": 1
+     },
+     {
+      "outlet": "Engadget",
+      "ts": "2026-07-23T11:44:54Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Business Insider",
+      "ts": "2026-07-24T08:11:01Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Financial Times",
+      "ts": "2026-07-24T19:15:14Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK financial press",
+      "items": 2
+     },
+     {
+      "outlet": "Investing.com",
+      "ts": "2026-07-24T19:27:07Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CNBC",
+      "ts": "2026-07-24T21:48:45Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Financial Times",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "CNBC",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Investing.com",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "TechCrunch",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-13 12:00",
+      3,
+      2
+     ],
+     [
+      "2026-07-13 18:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-14 00:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-14 06:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-14 12:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-14 18:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-15 00:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-15 06:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-15 12:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-15 18:00",
+      0,
+      2
+     ],
+     [
+      "2026-07-16 00:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-16 06:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-16 12:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-16 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-17 00:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-17 06:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-17 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-17 18:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-18 00:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-18 06:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-18 12:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-18 18:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-19 00:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-19 06:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-19 12:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-19 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-20 00:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-20 06:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-20 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-20 18:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-21 00:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-21 06:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-21 12:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-21 18:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-22 00:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-22 06:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-22 12:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-22 18:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-23 00:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-23 06:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-23 12:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-23 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-24 00:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-24 06:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-24 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-24 18:00",
+      4,
+      5
+     ],
+     [
+      "2026-07-25 00:00",
+      5,
+      6
+     ],
+     [
+      "2026-07-25 06:00",
+      5,
+      6
+     ],
+     [
+      "2026-07-25 12:00",
+      4,
+      5
+     ],
+     [
+      "2026-07-25 18:00",
+      4,
+      5
+     ],
+     [
+      "2026-07-26 00:00",
+      1,
+      5
+     ],
+     [
+      "2026-07-26 06:00",
+      1,
+      4
+     ]
+    ],
+    "mix": {
+     "mainstream": 1,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 3
+    },
+    "first_seen": "2026-07-13T13:17:56Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 12
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "NVDA",
+      "label": "Nvidia",
+      "class": "equity",
+      "last": 206.84,
+      "last_ts": "2026-07-24T20:00:00Z",
+      "basis": "Autonomous vehicle AI development",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-22T17:30:00Z",
+        214.13
+       ],
+       [
+        "2026-07-22T17:31:41Z",
+        214.32
+       ],
+       [
+        "2026-07-22T17:42:19Z",
+        213.89
+       ],
+       [
+        "2026-07-22T18:12:55Z",
+        213.595
+       ],
+       [
+        "2026-07-22T18:30:00Z",
+        213.655
+       ],
+       [
+        "2026-07-22T18:31:10Z",
+        213.58
+       ],
+       [
+        "2026-07-22T18:57:43Z",
+        213.74
+       ],
+       [
+        "2026-07-22T19:21:06Z",
+        213.32
+       ],
+       [
+        "2026-07-22T19:30:00Z",
+        212.715
+       ],
+       [
+        "2026-07-22T19:42:16Z",
+        212.7301
+       ],
+       [
+        "2026-07-22T20:00:00Z",
+        212.06
+       ],
+       [
+        "2026-07-23T13:30:00Z",
+        209.58
+       ],
+       [
+        "2026-07-23T13:48:47Z",
+        209.395
+       ],
+       [
+        "2026-07-23T14:12:42Z",
+        208.84
+       ],
+       [
+        "2026-07-23T14:30:00Z",
+        207.445
+       ],
+       [
+        "2026-07-23T14:34:04Z",
+        207.44
+       ],
+       [
+        "2026-07-23T15:02:01Z",
+        206.97
+       ],
+       [
+        "2026-07-23T15:19:20Z",
+        207.02
+       ],
+       [
+        "2026-07-23T15:30:00Z",
+        207.68
+       ],
+       [
+        "2026-07-23T15:52:13Z",
+        207.7799
+       ],
+       [
+        "2026-07-23T16:04:20Z",
+        208.91
+       ],
+       [
+        "2026-07-23T16:30:00Z",
+        210.2201
+       ],
+       [
+        "2026-07-23T16:40:20Z",
+        210.22
+       ],
+       [
+        "2026-07-23T16:47:45Z",
+        209.7199
+       ],
+       [
+        "2026-07-23T17:25:17Z",
+        210.2684
+       ],
+       [
+        "2026-07-23T17:30:00Z",
+        208.87
+       ],
+       [
+        "2026-07-23T17:30:32Z",
+        210.1
+       ],
+       [
+        "2026-07-23T18:13:56Z",
+        208.78
+       ],
+       [
+        "2026-07-23T18:14:00Z",
+        208.76
+       ],
+       [
+        "2026-07-23T18:30:00Z",
+        207.51
+       ],
+       [
+        "2026-07-23T18:57:27Z",
+        207.46
+       ],
+       [
+        "2026-07-23T19:00:50Z",
+        207.69
+       ],
+       [
+        "2026-07-23T19:30:00Z",
+        207.0905
+       ],
+       [
+        "2026-07-23T19:43:28Z",
+        207.13
+       ],
+       [
+        "2026-07-23T19:53:28Z",
+        207.52
+       ],
+       [
+        "2026-07-23T20:00:00Z",
+        208.76
+       ],
+       [
+        "2026-07-24T13:30:00Z",
+        207.5201
+       ],
+       [
+        "2026-07-24T13:51:13Z",
+        207.31
+       ],
+       [
+        "2026-07-24T14:12:15Z",
+        208.24
+       ],
+       [
+        "2026-07-24T14:30:00Z",
+        207.8
+       ],
+       [
+        "2026-07-24T14:39:07Z",
+        207.7401
+       ],
+       [
+        "2026-07-24T14:58:39Z",
+        209.035
+       ],
+       [
+        "2026-07-24T15:29:48Z",
+        209.14
+       ],
+       [
+        "2026-07-24T15:30:00Z",
+        209.155
+       ],
+       [
+        "2026-07-24T15:44:34Z",
+        209.33
+       ],
+       [
+        "2026-07-24T16:20:25Z",
+        210.79
+       ],
+       [
+        "2026-07-24T16:30:00Z",
+        209.72
+       ],
+       [
+        "2026-07-24T16:30:51Z",
+        210.49
+       ],
+       [
+        "2026-07-24T17:08:17Z",
+        209.685
+       ],
+       [
+        "2026-07-24T17:16:27Z",
+        209.6401
+       ],
+       [
+        "2026-07-24T17:30:00Z",
+        209.98
+       ],
+       [
+        "2026-07-24T17:57:36Z",
+        209.96
+       ],
+       [
+        "2026-07-24T17:58:29Z",
+        209.76
+       ],
+       [
+        "2026-07-24T18:30:00Z",
+        206.53
+       ],
+       [
+        "2026-07-24T18:42:49Z",
+        206.46
+       ],
+       [
+        "2026-07-24T18:43:42Z",
+        206.49
+       ],
+       [
+        "2026-07-24T19:27:49Z",
+        205.44
+       ],
+       [
+        "2026-07-24T19:30:00Z",
+        205.8001
+       ],
+       [
+        "2026-07-24T19:35:57Z",
+        205.9
+       ],
+       [
+        "2026-07-24T20:00:00Z",
+        206.84
+       ]
+      ]
+     },
+     {
+      "symbol": "AMD",
+      "label": "AMD",
+      "class": "equity",
+      "last": 521.95,
+      "last_ts": "2026-07-24T20:00:00Z",
+      "basis": "Robotaxi technology progress",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-22T16:56:43Z",
+        556.12
+       ],
+       [
+        "2026-07-22T17:30:00Z",
+        557.07
+       ],
+       [
+        "2026-07-22T17:31:39Z",
+        557.045
+       ],
+       [
+        "2026-07-22T17:42:16Z",
+        556.565
+       ],
+       [
+        "2026-07-22T18:12:55Z",
+        555.01
+       ],
+       [
+        "2026-07-22T18:30:00Z",
+        554.05
+       ],
+       [
+        "2026-07-22T18:31:11Z",
+        553.86
+       ],
+       [
+        "2026-07-22T18:57:41Z",
+        556.77
+       ],
+       [
+        "2026-07-22T19:21:06Z",
+        556.165
+       ],
+       [
+        "2026-07-22T19:30:00Z",
+        554.35
+       ],
+       [
+        "2026-07-22T19:42:15Z",
+        554.425
+       ],
+       [
+        "2026-07-22T20:00:00Z",
+        552.33
+       ],
+       [
+        "2026-07-23T13:30:00Z",
+        553.765
+       ],
+       [
+        "2026-07-23T13:48:47Z",
+        552.355
+       ],
+       [
+        "2026-07-23T14:12:41Z",
+        552.27
+       ],
+       [
+        "2026-07-23T14:30:00Z",
+        548.48
+       ],
+       [
+        "2026-07-23T14:34:04Z",
+        548.715
+       ],
+       [
+        "2026-07-23T15:02:01Z",
+        544.02
+       ],
+       [
+        "2026-07-23T15:19:18Z",
+        540.49
+       ],
+       [
+        "2026-07-23T15:30:00Z",
+        538.975
+       ],
+       [
+        "2026-07-23T15:52:14Z",
+        539.53
+       ],
+       [
+        "2026-07-23T16:04:21Z",
+        542.58
+       ],
+       [
+        "2026-07-23T16:30:00Z",
+        547.9999
+       ],
+       [
+        "2026-07-23T16:40:21Z",
+        546.95
+       ],
+       [
+        "2026-07-23T16:47:45Z",
+        537.2
+       ],
+       [
+        "2026-07-23T17:25:18Z",
+        534.975
+       ],
+       [
+        "2026-07-23T17:30:00Z",
+        536.84
+       ],
+       [
+        "2026-07-23T17:30:33Z",
+        535.0
+       ],
+       [
+        "2026-07-23T18:13:57Z",
+        536.295
+       ],
+       [
+        "2026-07-23T18:30:00Z",
+        534.82
+       ],
+       [
+        "2026-07-23T18:57:24Z",
+        534.9
+       ],
+       [
+        "2026-07-23T19:00:45Z",
+        534.99
+       ],
+       [
+        "2026-07-23T19:30:00Z",
+        537.72
+       ],
+       [
+        "2026-07-23T19:43:29Z",
+        537.92
+       ],
+       [
+        "2026-07-23T19:53:29Z",
+        537.9435
+       ],
+       [
+        "2026-07-23T20:00:00Z",
+        539.69
+       ],
+       [
+        "2026-07-24T13:30:00Z",
+        526.2699
+       ],
+       [
+        "2026-07-24T13:51:14Z",
+        525.33
+       ],
+       [
+        "2026-07-24T14:12:14Z",
+        530.55
+       ],
+       [
+        "2026-07-24T14:30:00Z",
+        524.395
+       ],
+       [
+        "2026-07-24T14:39:07Z",
+        524.385
+       ],
+       [
+        "2026-07-24T14:58:40Z",
+        528.9368
+       ],
+       [
+        "2026-07-24T15:29:48Z",
+        527.6
+       ],
+       [
+        "2026-07-24T15:30:00Z",
+        530.4
+       ],
+       [
+        "2026-07-24T15:44:32Z",
+        531.07
+       ],
+       [
+        "2026-07-24T16:20:25Z",
+        538.65
+       ],
+       [
+        "2026-07-24T16:30:00Z",
+        532.9
+       ],
+       [
+        "2026-07-24T16:30:52Z",
+        537.825
+       ],
+       [
+        "2026-07-24T17:08:18Z",
+        533.455
+       ],
+       [
+        "2026-07-24T17:16:27Z",
+        532.15
+       ],
+       [
+        "2026-07-24T17:30:00Z",
+        533.755
+       ],
+       [
+        "2026-07-24T17:57:37Z",
+        533.305
+       ],
+       [
+        "2026-07-24T17:58:30Z",
+        532.78
+       ],
+       [
+        "2026-07-24T18:30:00Z",
+        522.32
+       ],
+       [
+        "2026-07-24T18:42:50Z",
+        522.405
+       ],
+       [
+        "2026-07-24T18:43:41Z",
+        522.7
+       ],
+       [
+        "2026-07-24T19:27:50Z",
+        522.1
+       ],
+       [
+        "2026-07-24T19:30:00Z",
+        523.34
+       ],
+       [
+        "2026-07-24T19:35:59Z",
+        523.34
+       ],
+       [
+        "2026-07-24T20:00:00Z",
+        521.95
+       ]
+      ]
+     },
+     {
+      "symbol": "^IXIC",
+      "label": "Nasdaq",
+      "class": "index",
+      "last": 24975.8242,
+      "last_ts": "2026-07-24T20:00:00Z",
+      "basis": "Nasdaq index movement",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-22T16:56:41Z",
+        25821.8828
+       ],
+       [
+        "2026-07-22T17:30:00Z",
+        25806.2109
+       ],
+       [
+        "2026-07-22T17:31:40Z",
+        25810.4023
+       ],
+       [
+        "2026-07-22T17:42:15Z",
+        25795.2891
+       ],
+       [
+        "2026-07-22T18:12:52Z",
+        25748.4609
+       ],
+       [
+        "2026-07-22T18:30:00Z",
+        25742.1602
+       ],
+       [
+        "2026-07-22T18:31:08Z",
+        25739.3477
+       ],
+       [
+        "2026-07-22T18:57:41Z",
+        25755.2227
+       ],
+       [
+        "2026-07-22T19:21:03Z",
+        25741.0645
+       ],
+       [
+        "2026-07-22T19:30:00Z",
+        25718.8145
+       ],
+       [
+        "2026-07-22T19:42:15Z",
+        25723.7305
+       ],
+       [
+        "2026-07-22T20:00:00Z",
+        25690.9023
+       ],
+       [
+        "2026-07-23T13:30:00Z",
+        25301.9883
+       ],
+       [
+        "2026-07-23T13:48:39Z",
+        25278.9258
+       ],
+       [
+        "2026-07-23T14:12:41Z",
+        25211.4316
+       ],
+       [
+        "2026-07-23T14:30:00Z",
+        25136.7598
+       ],
+       [
+        "2026-07-23T14:34:01Z",
+        25136.7832
+       ],
+       [
+        "2026-07-23T15:01:53Z",
+        25060.7402
+       ],
+       [
+        "2026-07-23T15:19:15Z",
+        25025.6797
+       ],
+       [
+        "2026-07-23T15:30:00Z",
+        25036.7539
+       ],
+       [
+        "2026-07-23T15:52:09Z",
+        25041.7656
+       ],
+       [
+        "2026-07-23T16:04:16Z",
+        25111.4531
+       ],
+       [
+        "2026-07-23T16:30:00Z",
+        25197.9199
+       ],
+       [
+        "2026-07-23T16:40:19Z",
+        25191.5977
+       ],
+       [
+        "2026-07-23T16:47:44Z",
+        25140.6016
+       ],
+       [
+        "2026-07-23T17:25:13Z",
+        25176.8027
+       ],
+       [
+        "2026-07-23T17:30:00Z",
+        25107.0664
+       ],
+       [
+        "2026-07-23T17:30:30Z",
+        25160.2207
+       ],
+       [
+        "2026-07-23T18:13:56Z",
+        25103.8789
+       ],
+       [
+        "2026-07-23T18:30:00Z",
+        25071.4062
+       ],
+       [
+        "2026-07-23T18:57:24Z",
+        25070.2109
+       ],
+       [
+        "2026-07-23T19:00:49Z",
+        25087.6016
+       ],
+       [
+        "2026-07-23T19:30:00Z",
+        25044.9375
+       ],
+       [
+        "2026-07-23T19:43:24Z",
+        25041.0605
+       ],
+       [
+        "2026-07-23T19:53:24Z",
+        25056.832
+       ],
+       [
+        "2026-07-23T20:00:00Z",
+        25137.6934
+       ],
+       [
+        "2026-07-24T13:30:00Z",
+        25056.9551
+       ],
+       [
+        "2026-07-24T13:51:08Z",
+        25049.4297
+       ],
+       [
+        "2026-07-24T14:12:14Z",
+        25042.0117
+       ],
+       [
+        "2026-07-24T14:30:00Z",
+        24964.9043
+       ],
+       [
+        "2026-07-24T14:39:06Z",
+        24964.8652
+       ],
+       [
+        "2026-07-24T14:58:35Z",
+        25041.3809
+       ],
+       [
+        "2026-07-24T15:29:48Z",
+        25135.2852
+       ],
+       [
+        "2026-07-24T15:30:00Z",
+        25129.623
+       ],
+       [
+        "2026-07-24T15:44:33Z",
+        25138.4336
+       ],
+       [
+        "2026-07-24T16:20:23Z",
+        25187.4902
+       ],
+       [
+        "2026-07-24T16:30:00Z",
+        25090.0762
+       ],
+       [
+        "2026-07-24T16:30:47Z",
+        25167.168
+       ],
+       [
+        "2026-07-24T17:08:13Z",
+        25083.8848
+       ],
+       [
+        "2026-07-24T17:16:22Z",
+        25087.1953
+       ],
+       [
+        "2026-07-24T17:30:00Z",
+        25122.1094
+       ],
+       [
+        "2026-07-24T17:57:34Z",
+        25120.9473
+       ],
+       [
+        "2026-07-24T17:58:25Z",
+        25116.4805
+       ],
+       [
+        "2026-07-24T18:30:00Z",
+        24955.3887
+       ],
+       [
+        "2026-07-24T18:42:46Z",
+        24952.0918
+       ],
+       [
+        "2026-07-24T18:43:40Z",
+        24968.0078
+       ],
+       [
+        "2026-07-24T19:27:48Z",
+        24939.5723
+       ],
+       [
+        "2026-07-24T19:30:00Z",
+        24959.8887
+       ],
+       [
+        "2026-07-24T19:35:57Z",
+        24971.832
+       ],
+       [
+        "2026-07-24T20:00:00Z",
+        24975.8242
+       ]
+      ]
+     }
+    ],
+    "note": "Instruments mapped to this topic; correlation pending price history.",
+    "observed_utc": "2026-07-26T12:06:57Z",
+    "anchor_beat": "2026-07-26T04:00:08Z"
+   },
+   "lead_image": {
+    "url": "https://i.insider.com/6a626ee354f98752617790fd?width=1200&format=jpeg",
+    "source": "Business Insider",
+    "focal": {
+     "x": 52,
+     "y": 50
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "eu-charges-tiktok-over-child-safety-rules",
+   "name": "EU charges TikTok over child safety rules",
+   "bucket": "power-money",
+   "topic_tags": [
+    "court",
+    "censorship",
+    "media"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 1,
+   "items_48h": 5,
+   "outlets": 5,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-25T18:19:40Z",
+     "title": "EU says TikTok hasn't done enough to ensure minors' safety",
+     "outlet": "Engadget",
+     "kind": "journalist",
+     "url": "https://www.engadget.com/2223242/eu-says-tiktok-hasnt-done-enough-to-ensure-minors-safety/",
+     "rel": 23,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T17:50:21Z",
+     "title": "What if Facebook just becomes TikTok? We may find out soon.",
+     "outlet": "Business Insider",
+     "kind": "journalist",
+     "url": "https://www.businessinsider.com/facebook-tiktok-test-video-advertising-2026-7",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T14:30:00Z",
+     "title": "EU says TikTok failed to shield minors\u2019 accounts from adults, exposing kids to predators",
+     "outlet": "Fortune",
+     "kind": "journalist",
+     "url": "https://fortune.com/2026/07/24/eu-tiktok-children-privacy-dsa-violation/",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T11:50:10Z",
+     "title": "TikTok&#8217;s protection of minors should not be opt-in, warns EU",
+     "outlet": "The Verge",
+     "kind": "journalist",
+     "url": "https://www.theverge.com/tech/970519/tiktok-eu-dsa-child-safety-age-account-privacy",
+     "rel": 19,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T11:43:15Z",
+     "title": "EU preliminarily finds TikTok in breach of digital rules over minors\u2019 safety",
+     "outlet": "Anadolu Agency",
+     "kind": "state media",
+     "url": "https://www.aa.com.tr/en/europe/eu-preliminarily-finds-tiktok-in-breach-of-digital-rules-over-minors-safety/4008127",
+     "rel": 33,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T11:42:33Z",
+     "title": "EU finds TikTok violates its digital rulebook by failing to protect privacy of minors",
+     "outlet": "The Hindu Intl",
+     "kind": "journalist",
+     "url": "https://www.thehindu.com/sci-tech/technology/eu-finds-tiktok-violates-its-digital-rulebook-by-failing-to-protect-privacy-of-minors/article71261979.ece",
+     "rel": 28,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T10:52:26Z",
+     "title": "TikTok charged with breaching EU tech rules on online safety for kids, EU says",
+     "outlet": "CNBC",
+     "kind": "journalist",
+     "url": "https://www.cnbc.com/2026/07/24/tiktok-charged-with-breaching-eu-tech-rules-on-online-safety-for-kids-eu-says.html",
+     "rel": 27,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 7,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "The Verge",
+      "ts": "2026-07-24T07:50:10Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CNBC",
+      "ts": "2026-07-24T10:52:26Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 1
+     },
+     {
+      "outlet": "Fortune",
+      "ts": "2026-07-24T14:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Anadolu Agency",
+      "ts": "2026-07-24T14:43:15Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "TR state news agency",
+      "items": 1
+     },
+     {
+      "outlet": "The Hindu Intl",
+      "ts": "2026-07-24T17:12:33Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Business Insider",
+      "ts": "2026-07-24T17:50:21Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Engadget",
+      "ts": "2026-07-25T18:19:40Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Business Insider",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Engadget",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Fortune",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-24 12:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-24 18:00",
+      6,
+      6
+     ],
+     [
+      "2026-07-25 00:00",
+      6,
+      6
+     ],
+     [
+      "2026-07-25 06:00",
+      6,
+      6
+     ],
+     [
+      "2026-07-25 12:00",
+      4,
+      6
+     ],
+     [
+      "2026-07-25 18:00",
+      1,
+      7
+     ],
+     [
+      "2026-07-26 00:00",
+      1,
+      7
+     ],
+     [
+      "2026-07-26 06:00",
+      1,
+      5
+     ]
+    ],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 3
+    },
+    "first_seen": "2026-07-24T13:11:09Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 2
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "META",
+      "label": "Meta",
+      "class": "equity",
+      "last": 595.19,
+      "last_ts": "2026-07-24T20:00:00Z",
+      "basis": "EU regulation on child safety affecting social media stocks",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-22T17:30:00Z",
+        628.05
+       ],
+       [
+        "2026-07-22T17:31:40Z",
+        628.0
+       ],
+       [
+        "2026-07-22T17:42:15Z",
+        627.34
+       ],
+       [
+        "2026-07-22T18:12:54Z",
+        626.25
+       ],
+       [
+        "2026-07-22T18:30:00Z",
+        626.5
+       ],
+       [
+        "2026-07-22T18:31:10Z",
+        626.54
+       ],
+       [
+        "2026-07-22T18:57:42Z",
+        626.38
+       ],
+       [
+        "2026-07-22T19:21:02Z",
+        626.4134
+       ],
+       [
+        "2026-07-22T19:30:00Z",
+        626.65
+       ],
+       [
+        "2026-07-22T19:42:15Z",
+        626.58
+       ],
+       [
+        "2026-07-22T20:00:00Z",
+        627.17
+       ],
+       [
+        "2026-07-23T13:30:00Z",
+        612.35
+       ],
+       [
+        "2026-07-23T13:48:47Z",
+        612.08
+       ],
+       [
+        "2026-07-23T14:12:42Z",
+        606.72
+       ],
+       [
+        "2026-07-23T14:30:00Z",
+        605.45
+       ],
+       [
+        "2026-07-23T14:34:03Z",
+        605.2501
+       ],
+       [
+        "2026-07-23T15:01:59Z",
+        601.195
+       ],
+       [
+        "2026-07-23T15:19:17Z",
+        601.07
+       ],
+       [
+        "2026-07-23T15:30:00Z",
+        599.83
+       ],
+       [
+        "2026-07-23T15:52:14Z",
+        599.8879
+       ],
+       [
+        "2026-07-23T16:04:15Z",
+        601.7633
+       ],
+       [
+        "2026-07-23T16:30:00Z",
+        602.855
+       ],
+       [
+        "2026-07-23T16:40:20Z",
+        602.665
+       ],
+       [
+        "2026-07-23T16:47:44Z",
+        602.79
+       ],
+       [
+        "2026-07-23T17:25:17Z",
+        606.875
+       ],
+       [
+        "2026-07-23T17:30:00Z",
+        606.7601
+       ],
+       [
+        "2026-07-23T17:30:31Z",
+        605.625
+       ],
+       [
+        "2026-07-23T18:13:57Z",
+        606.85
+       ],
+       [
+        "2026-07-23T18:13:59Z",
+        606.77
+       ],
+       [
+        "2026-07-23T18:30:00Z",
+        607.03
+       ],
+       [
+        "2026-07-23T18:57:19Z",
+        606.945
+       ],
+       [
+        "2026-07-23T19:00:49Z",
+        606.7851
+       ],
+       [
+        "2026-07-23T19:30:00Z",
+        604.955
+       ],
+       [
+        "2026-07-23T19:43:28Z",
+        604.945
+       ],
+       [
+        "2026-07-23T19:53:28Z",
+        605.1
+       ],
+       [
+        "2026-07-23T20:00:00Z",
+        606.1
+       ],
+       [
+        "2026-07-24T13:30:00Z",
+        604.045
+       ],
+       [
+        "2026-07-24T13:51:14Z",
+        603.51
+       ],
+       [
+        "2026-07-24T14:12:14Z",
+        601.685
+       ],
+       [
+        "2026-07-24T14:30:00Z",
+        604.85
+       ],
+       [
+        "2026-07-24T14:39:06Z",
+        604.895
+       ],
+       [
+        "2026-07-24T14:58:40Z",
+        606.52
+       ],
+       [
+        "2026-07-24T15:29:43Z",
+        609.06
+       ],
+       [
+        "2026-07-24T15:30:00Z",
+        608.045
+       ],
+       [
+        "2026-07-24T15:44:32Z",
+        607.975
+       ],
+       [
+        "2026-07-24T16:20:22Z",
+        603.35
+       ],
+       [
+        "2026-07-24T16:30:00Z",
+        602.485
+       ],
+       [
+        "2026-07-24T16:30:51Z",
+        602.37
+       ],
+       [
+        "2026-07-24T17:08:18Z",
+        602.025
+       ],
+       [
+        "2026-07-24T17:16:28Z",
+        602.5275
+       ],
+       [
+        "2026-07-24T17:30:00Z",
+        601.495
+       ],
+       [
+        "2026-07-24T17:57:36Z",
+        601.27
+       ],
+       [
+        "2026-07-24T17:58:30Z",
+        601.48
+       ],
+       [
+        "2026-07-24T18:30:00Z",
+        600.06
+       ],
+       [
+        "2026-07-24T18:42:49Z",
+        600.2199
+       ],
+       [
+        "2026-07-24T18:43:40Z",
+        600.07
+       ],
+       [
+        "2026-07-24T19:27:49Z",
+        600.4044
+       ],
+       [
+        "2026-07-24T19:30:00Z",
+        600.6
+       ],
+       [
+        "2026-07-24T19:35:58Z",
+        600.5859
+       ],
+       [
+        "2026-07-24T20:00:00Z",
+        595.19
+       ]
+      ]
+     },
+     {
+      "symbol": "GOOGL",
+      "label": "Alphabet",
+      "class": "equity",
+      "last": 319.74,
+      "last_ts": "2026-07-24T20:00:00Z",
+      "basis": "EU regulation on child safety affecting social media stocks",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-22T17:30:00Z",
+        347.98
+       ],
+       [
+        "2026-07-22T17:31:42Z",
+        347.9
+       ],
+       [
+        "2026-07-22T17:42:18Z",
+        347.97
+       ],
+       [
+        "2026-07-22T18:12:55Z",
+        346.675
+       ],
+       [
+        "2026-07-22T18:30:00Z",
+        346.64
+       ],
+       [
+        "2026-07-22T18:31:10Z",
+        346.64
+       ],
+       [
+        "2026-07-22T18:57:43Z",
+        346.51
+       ],
+       [
+        "2026-07-22T19:21:06Z",
+        345.375
+       ],
+       [
+        "2026-07-22T19:30:00Z",
+        345.26
+       ],
+       [
+        "2026-07-22T19:42:16Z",
+        345.44
+       ],
+       [
+        "2026-07-22T20:00:00Z",
+        342.09
+       ],
+       [
+        "2026-07-23T13:30:00Z",
+        319.51
+       ],
+       [
+        "2026-07-23T13:48:46Z",
+        318.97
+       ],
+       [
+        "2026-07-23T14:12:42Z",
+        319.14
+       ],
+       [
+        "2026-07-23T14:30:00Z",
+        317.44
+       ],
+       [
+        "2026-07-23T14:34:04Z",
+        317.49
+       ],
+       [
+        "2026-07-23T15:02:01Z",
+        316.685
+       ],
+       [
+        "2026-07-23T15:19:21Z",
+        316.11
+       ],
+       [
+        "2026-07-23T15:30:00Z",
+        319.535
+       ],
+       [
+        "2026-07-23T15:52:14Z",
+        319.59
+       ],
+       [
+        "2026-07-23T16:04:21Z",
+        318.9879
+       ],
+       [
+        "2026-07-23T16:30:00Z",
+        319.59
+       ],
+       [
+        "2026-07-23T16:40:20Z",
+        319.585
+       ],
+       [
+        "2026-07-23T16:47:45Z",
+        319.105
+       ],
+       [
+        "2026-07-23T17:25:17Z",
+        320.81
+       ],
+       [
+        "2026-07-23T17:30:00Z",
+        319.915
+       ],
+       [
+        "2026-07-23T17:30:33Z",
+        320.055
+       ],
+       [
+        "2026-07-23T18:13:57Z",
+        320.14
+       ],
+       [
+        "2026-07-23T18:14:01Z",
+        320.135
+       ],
+       [
+        "2026-07-23T18:30:00Z",
+        318.6125
+       ],
+       [
+        "2026-07-23T18:57:27Z",
+        318.75
+       ],
+       [
+        "2026-07-23T19:00:50Z",
+        318.975
+       ],
+       [
+        "2026-07-23T19:30:00Z",
+        317.47
+       ],
+       [
+        "2026-07-23T19:43:29Z",
+        317.625
+       ],
+       [
+        "2026-07-23T19:53:28Z",
+        318.41
+       ],
+       [
+        "2026-07-23T20:00:00Z",
+        317.69
+       ],
+       [
+        "2026-07-24T13:30:00Z",
+        322.4003
+       ],
+       [
+        "2026-07-24T13:51:13Z",
+        322.27
+       ],
+       [
+        "2026-07-24T14:12:15Z",
+        320.53
+       ],
+       [
+        "2026-07-24T14:30:00Z",
+        318.83
+       ],
+       [
+        "2026-07-24T14:39:07Z",
+        318.85
+       ],
+       [
+        "2026-07-24T14:58:39Z",
+        319.49
+       ],
+       [
+        "2026-07-24T15:29:48Z",
+        321.75
+       ],
+       [
+        "2026-07-24T15:30:00Z",
+        320.99
+       ],
+       [
+        "2026-07-24T15:44:34Z",
+        321.07
+       ],
+       [
+        "2026-07-24T16:20:24Z",
+        319.83
+       ],
+       [
+        "2026-07-24T16:30:00Z",
+        319.59
+       ],
+       [
+        "2026-07-24T16:30:51Z",
+        319.025
+       ],
+       [
+        "2026-07-24T17:08:18Z",
+        319.39
+       ],
+       [
+        "2026-07-24T17:16:27Z",
+        319.96
+       ],
+       [
+        "2026-07-24T17:30:00Z",
+        320.0226
+       ],
+       [
+        "2026-07-24T17:57:36Z",
+        320.105
+       ],
+       [
+        "2026-07-24T17:58:30Z",
+        320.04
+       ],
+       [
+        "2026-07-24T18:30:00Z",
+        319.52
+       ],
+       [
+        "2026-07-24T18:42:50Z",
+        319.53
+       ],
+       [
+        "2026-07-24T18:43:42Z",
+        319.46
+       ],
+       [
+        "2026-07-24T19:27:50Z",
+        319.56
+       ],
+       [
+        "2026-07-24T19:30:00Z",
+        319.6
+       ],
+       [
+        "2026-07-24T19:35:58Z",
+        319.83
+       ],
+       [
+        "2026-07-24T20:00:00Z",
+        319.74
+       ]
+      ]
+     }
+    ],
+    "note": "Instruments mapped to this topic; correlation pending price history.",
+    "observed_utc": "2026-07-26T12:20:41Z",
+    "anchor_beat": "2026-07-25T18:19:40Z"
+   },
+   "lead_image": {
+    "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/07/24/thumbs_b_c_688e4c8d2b450d995f9537d5e5789fe4.jpg",
+    "source": "Anadolu Agency",
+    "focal": {
+     "x": 49,
+     "y": 55
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "trump-orders-smithsonian-history-disclaimers",
+   "name": "Trump orders Smithsonian history disclaimers",
+   "bucket": "info-wars",
+   "topic_tags": [
+    "censorship",
+    "media"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 1,
+   "items_48h": 5,
+   "outlets": 5,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-25T10:12:03Z",
+     "title": "Trump orders warning signs outside Smithsonian history museum",
+     "outlet": "Anadolu Agency",
+     "kind": "state media",
+     "url": "https://www.aa.com.tr/en/americas/trump-orders-warning-signs-outside-smithsonian-history-museum/4009004",
+     "rel": 21,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-25T01:55:30Z",
+     "title": "Trump orders Smithsonian to post warnings about 'inaccurate' US history",
+     "outlet": "BBC World",
+     "kind": "journalist",
+     "url": "https://www.bbc.co.uk/news/articles/c1w10gwnj74o?at_medium=RSS&at_campaign=rss",
+     "rel": 25,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-25T00:43:32Z",
+     "title": "Trump cites \u2018white, male, Christian\u2019 audit in Smithsonian disclaimer push",
+     "outlet": "South China Morning Post",
+     "kind": "journalist",
+     "url": "https://www.scmp.com/news/world/united-states-canada/article/3361815/trump-cites-white-male-christian-audit-smithsonian-disclaimer-push?utm_source=rss_feed",
+     "rel": 19,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-25T00:01:38Z",
+     "title": "Trump escalates Smithsonian attack with order for signs outside history museum",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/us-news/2026/jul/24/trump-smithsonian-history-museum",
+     "rel": 21,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-24T23:23:12Z",
+     "title": "Trump orders disclaimers outside Smithsonian's Museum of American History",
+     "outlet": "The Hill",
+     "kind": "journalist",
+     "url": "https://thehill.com/homenews/administration/5989724-trump-orders-smithsonian-disclaimer/",
+     "rel": 26,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 5,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "The Hill",
+      "ts": "2026-07-24T23:23:12Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "US press",
+      "items": 1
+     },
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-07-25T00:01:38Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
+     },
+     {
+      "outlet": "South China Morning Post",
+      "ts": "2026-07-25T00:43:32Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "HK press (Alibaba-owned)",
+      "items": 1
+     },
+     {
+      "outlet": "BBC World",
+      "ts": "2026-07-25T01:55:30Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK public broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "Anadolu Agency",
+      "ts": "2026-07-25T13:12:03Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "TR state news agency",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Anadolu Agency",
+     "n": 1,
+     "class": "state-media"
+    },
+    {
+     "outlet": "BBC World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "South China Morning Post",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "The Hill",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-25 00:00",
+      4,
+      4
+     ],
+     [
+      "2026-07-25 06:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-25 12:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-25 18:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-26 00:00",
+      3,
+      5
+     ],
+     [
+      "2026-07-26 06:00",
+      1,
+      5
+     ]
+    ],
+    "mix": {
+     "mainstream": 2,
+     "state-media": 1,
+     "regional": 0,
+     "official": 0,
+     "other": 2
+    },
+    "first_seen": "2026-07-25T03:15:10Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 1
+   },
+   "lead_image": {
+    "url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3f40/live/1db05e30-87c9-11f1-99ba-0b79ef9b9895.jpg",
+    "source": "BBC World",
+    "focal": {
+     "x": 37,
+     "y": 55
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "uk-defence-spending-plan-criticised",
+   "name": "Global developments and applications of drone technology",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "war",
+    "weapons"
+   ],
+   "brief": {
+    "generated_utc": "2026-07-04T16:06:57Z",
+    "sentence_count": 3,
+    "dropped_count": 2,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "Defence Secretary Dan Jarvis is facing questions over the funding gap and whether Burnham was blindsided by it.",
+        "cites": [
+         {
+          "outlet": "Al Jazeera",
+          "kind": "journalist",
+          "url": "https://www.aljazeera.com/news/2026/7/2/uk-leader-hopeful-andy-burnham-faces-defence-funding-gap?traffic_source=rss",
+          "ts": "2026-07-02T18:59:33Z",
+          "title": "UK\u2019s likely next PM Andy Burnham faces defence funding gap"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Party bosses have been warned that a Burnham coronation will anger some Labour members, with the National Executive Committee told it must take steps to address those concerns, including not hiring Everton's stadium to announce the new leader before nominations open.",
+        "cites": [
+         {
+          "outlet": "Guardian World",
+          "kind": "journalist",
+          "url": "https://www.theguardian.com/politics/2026/jul/02/labour-mps-nec-andy-burnham-leadership-contest-no-10",
+          "ts": "2026-07-02T18:01:27Z",
+          "title": "Burnham \u2018coronation\u2019 will anger some Labour members, party bosses warned"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Against that backdrop, Defence Holdings has secured its first contract with the UK defence ministry.",
+        "cites": [
+         {
+          "outlet": "Investing.com",
+          "kind": "journalist",
+          "url": "https://www.investing.com/news/company-news/defence-holdings-secures-first-uk-defence-ministry-contract-93CH-4775098",
+          "ts": "2026-07-03T08:16:33Z",
+          "title": "Defence Holdings secures first UK defence ministry contract"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 1,
+   "items_48h": 4,
+   "outlets": 2,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-07-25T14:39:40Z",
+     "title": "Over 1,400 Moscow-bound drones downed in past week - mayor",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/emergencies/2165251",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T17:38:18Z",
+     "title": "Over 250 drones flying toward Moscow Region taken down during past day - mayor",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/emergencies/2165013",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T12:38:16Z",
+     "title": "Drones have created a new energy security landscape",
+     "outlet": "Axios",
+     "kind": "journalist",
+     "url": "https://www.axios.com/2026/07/24/drones-energy-security-prices-iran-ukraine",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-24T11:42:18Z",
+     "title": "Yak-130M aircraft can effectively engage heavy drones - Rostec",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/economy/2164761",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-23T07:00:00Z",
+     "title": "UK swaps tanks for drones in the Baltics :  The way of war is changing",
+     "outlet": "lrt.lt",
+     "kind": "journalist",
+     "url": "https://www.lrt.lt/en/news-in-english/19/2998285/uk-swaps-tanks-for-drones-in-the-baltics-the-way-of-war-is-changing",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-23T06:24:58Z",
+     "title": "Dengue: What is the mosquito-borne disease that Sri Lanka is using drones to fight?",
+     "outlet": "BBC",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLRmNIVXVVYjBvamJObjU3MUZiUzhRMGV4dnhVSC1KbnNyU3pWM3lfbTNleTVkWnE0UkFtZ2lsc3ViRm94SlRJdUVKa3V4OTNhZG5qSUM4YmtyUQ?oc=5",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-22T09:00:11Z",
+     "title": "Germany\u2019s Military Buyers Look to Reduce Caution and Embrace Drones",
+     "outlet": "NYT World",
+     "kind": "journalist",
+     "url": "https://www.nytimes.com/2026/07/22/world/europe/germany-rearmament-innovation-reinvention-arms.html",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-07-21T23:48:51Z",
+     "title": "US tentatively decides to ban imports of some military-grade drones",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/world-news/us-tentatively-decides-to-ban-imports-of-some-militarygrade-drones-4804472",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-20T03:06:26Z"
+   },
+   "viewpoints": [
+    {
+     "stance": "British premier says the defense spending plan is justified despite opposition questioning funding.",
+     "carriers": [
+      {
+       "outlet": "Anadolu Agency",
+       "kind": "state media",
+       "url": "https://www.aa.com.tr/en/europe/british-premier-defends-defense-spending-plan-as-opposition-questions-funding/3983539",
+       "ts_utc": "2026-07-01T15:29:24Z"
+      },
+      {
+       "outlet": "Breaking The News",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUmtmUHFLaWpZajB3WElOek5MNlpuS28waXNmMEFaaW9GYmNQZlBJMmozdk5qWGdfZllmWXk5SXJsQTNFT1dwUlpSd1o2ZVhRYWd0M0JBaUNKVEt5cXIxZ1FFa1pYcmJhdWVoSjJQNjZtMmk5eHlOd2lyZ25nZVlQRWxSbGJoeFpZY0ZLNw?oc=5",
+       "ts_utc": "2026-06-30T10:41:00Z"
+      },
+      {
+       "outlet": "South China Morning Post",
+       "kind": "journalist",
+       "url": "https://www.scmp.com/news/world/europe/article/3358903/uk-lays-out-defence-plan-drones-self-flying-fighter-jets-no-crew-submarines?utm_source=rss_feed",
+       "ts_utc": "2026-06-30T09:39:24Z"
+      },
+      {
+       "outlet": "SRN News",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdEJXYjE4bXNvN1RjSXBDZG5GdlpNUEhGaG9aUUFZRlE2NW9IRi1vcGZrMW5oME5qUW9oZ0FzYW1pcmhYajdJeWcyVG9fTVo3Nnc4by1Rd3VsNGpLVVVLcXMza2ZhcXp5WUhxZjdhTUVEU0FPeVExeFBkZjFqcGFmQmI5NFdtT2FUdVdlS09YR19EQmIxVFFNN2lhV0pXckhYMVFwVHd1TWhCZ0JvUmc?oc=5",
+       "ts_utc": "2026-06-30T09:26:22Z"
+      },
+      {
+       "outlet": "The Washington Post",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQclJwXzI4ZmZTT1V6R3hTdFVYamttMEwyUDc0T0t0cWc5bHdRMUJOWGJ0dFVrMEpxblp2cUFzdkszME0xSEEyUFViMllZdlNLSHI1b3VKLWJBc0NmTkg1b3d2UVp2Rmg0MHpRZ0RfZ09YWFJXRGdpaWZLX1UwUHk5bEJYU0tQUG5QaGxjOWI4ZEtxNHJlNGVPaGlndE1kRnpEOXVTN0RGbWJ5cFA2MjRYZ3JRWVl3Y3RDckp0NA?oc=5",
+       "ts_utc": "2026-06-30T11:45:02Z"
+      },
+      {
+       "outlet": "Economist Latest",
+       "kind": "journalist",
+       "url": "https://www.economist.com/britain/2026/06/30/britain-hopes-drones-will-help-it-escape-its-defence-budget-bind",
+       "ts_utc": "2026-06-30T20:12:09Z"
+      }
+     ]
+    },
+    {
+     "stance": "Critics warn that funding defence via infrastructure cuts will cost 10,000 jobs and anger Labour members.",
+     "carriers": [
+      {
+       "outlet": "Al Jazeera",
+       "kind": "journalist",
+       "url": "https://www.aljazeera.com/news/2026/7/2/uk-leader-hopeful-andy-burnham-faces-defence-funding-gap?traffic_source=rss",
+       "ts_utc": "2026-07-02T18:59:33Z"
+      },
+      {
+       "outlet": "Guardian World",
+       "kind": "journalist",
+       "url": "https://www.theguardian.com/politics/2026/jul/02/labour-mps-nec-andy-burnham-leadership-contest-no-10",
+       "ts_utc": "2026-07-02T18:01:27Z"
+      }
+     ]
+    }
+   ],
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 14,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-07-19T18:00:33Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "UK press",
+      "items": 1
+     },
+     {
+      "outlet": "TASS",
+      "ts": "2026-07-20T03:20:17Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "RU state media",
+      "items": 6
+     },
+     {
+      "outlet": "AllAfrica",
+      "ts": "2026-07-20T05:12:11Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The European Conservative",
+      "ts": "2026-07-20T12:26:53Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "France 24",
+      "ts": "2026-07-20T18:47:30Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "FR state-funded international broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "The Guardian",
+      "ts": "2026-07-20T19:14:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
+     },
+     {
+      "outlet": "Ars Technica",
+      "ts": "2026-07-20T21:55:52Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "South China Morning Post",
+      "ts": "2026-07-21T01:48:05Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "HK press (Alibaba-owned)",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "anadolu agency",
+     "situations": [
+      "europe-record-heatwave-deaths-electricity-surge",
+      "gaza-israel-war-current",
+      "gold-drops-24-goldman-jpmorgan-forecasts-diverge",
+      "pakistan-air-strikes-afghanistan",
+      "red-sea-houthi-shipping-current",
+      "russia-ukraine-war-current",
+      "south-africa-migration-pressure",
+      "sudan-civil-war-current",
+      "trump-crypto-earnings-disclosure",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "us-to-pull-fighter-jets-from-nato-europe",
+      "venezuela-earthquakes-kill-920-amid-political-cr",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "andy burnham",
+     "situations": [
+      "uk-defence-secretary-resigns-over-spending",
+      "uk-pm-race-burnham-gains-traction"
+     ]
+    },
+    {
+     "entity": "britain",
+     "situations": [
+      "uk-defence-secretary-resigns-over-spending",
+      "us-to-pull-fighter-jets-from-nato-europe"
+     ]
+    },
+    {
+     "entity": "guardian",
+     "situations": [
+      "gaza-israel-war-current",
+      "monaco-explosion-wounds-ukrainian-oligarch",
+      "russia-ukraine-war-current",
+      "trump-crypto-earnings-disclosure",
+      "uk-defence-secretary-resigns-over-spending",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "venezuela-earthquakes-kill-920-amid-political-cr"
+     ]
+    },
+    {
+     "entity": "guardian world",
+     "situations": [
+      "gaza-israel-war-current",
+      "trump-reframes-us-china-relationship-as-peer-pow"
+     ]
+    },
+    {
+     "entity": "labour",
+     "situations": [
+      "uk-defence-secretary-resigns-over-spending"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "TASS",
+     "n": 3,
+     "class": "state-media"
+    },
+    {
+     "outlet": "Axios",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "lrt.lt",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-12 12:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-12 18:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-13 00:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-13 06:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-13 12:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-13 18:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-14 00:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-14 06:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-14 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-14 18:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-15 00:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-15 06:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-15 12:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-15 18:00",
+      3,
+      2
+     ],
+     [
+      "2026-07-16 00:00",
+      3,
+      2
+     ],
+     [
+      "2026-07-16 06:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-16 12:00",
+      3,
+      4
+     ],
+     [
+      "2026-07-16 18:00",
+      3,
+      4
+     ],
+     [
+      "2026-07-17 00:00",
+      3,
+      4
+     ],
+     [
+      "2026-07-17 06:00",
+      3,
+      5
+     ],
+     [
+      "2026-07-17 12:00",
+      3,
+      4
+     ],
+     [
+      "2026-07-17 18:00",
+      1,
+      4
+     ],
+     [
+      "2026-07-18 00:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-18 06:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-18 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-18 18:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-19 00:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-19 06:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-19 12:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-19 18:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-20 00:00",
+      5,
+      3
+     ],
+     [
+      "2026-07-20 06:00",
+      6,
+      4
+     ],
+     [
+      "2026-07-20 12:00",
+      6,
+      5
+     ],
+     [
+      "2026-07-20 18:00",
+      7,
+      7
+     ],
+     [
+      "2026-07-21 00:00",
+      9,
+      9
+     ],
+     [
+      "2026-07-21 06:00",
+      6,
+      8
+     ],
+     [
+      "2026-07-21 12:00",
+      5,
+      9
+     ],
+     [
+      "2026-07-21 18:00",
+      5,
+      8
+     ],
+     [
+      "2026-07-22 00:00",
+      3,
+      8
+     ],
+     [
+      "2026-07-22 06:00",
+      3,
+      8
+     ],
+     [
+      "2026-07-22 12:00",
+      3,
+      7
+     ],
+     [
+      "2026-07-22 18:00",
+      3,
+      4
+     ],
+     [
+      "2026-07-23 00:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-23 06:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-23 12:00",
+      0,
+      3
+     ],
+     [
+      "2026-07-23 18:00",
+      1,
+      3
+     ],
+     [
+      "2026-07-24 00:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-24 06:00",
+      1,
+      1
+     ],
+     [
+      "2026-07-24 12:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-24 18:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-25 00:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-25 06:00",
+      3,
+      2
+     ],
+     [
+      "2026-07-25 12:00",
+      3,
+      2
+     ],
+     [
+      "2026-07-25 18:00",
+      2,
+      2
+     ],
+     [
+      "2026-07-26 00:00",
+      1,
+      2
+     ],
+     [
+      "2026-07-26 06:00",
+      1,
+      2
+     ]
+    ],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 1,
+     "regional": 0,
+     "official": 0,
+     "other": 2
+    },
+    "first_seen": "2026-06-30T14:27:30Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-06-30T14:58:13Z",
+     "a": "Breaking The News reports that Rutte welcomes the UK defense spending plan",
+     "b": "Guardian World reports that the UK defence investment plan is criticised as \u2018too little, too late\u2019"
+    },
+    {
+     "captured_utc": "2026-06-30T20:59:20Z",
+     "a": "Guardian World says the UK defence investment plan is criticised as 'too little, too late'",
+     "b": "Breaking The News says Rutte welcomes the UK defense spending plan"
+    },
+    {
+     "captured_utc": "2026-07-02T19:38:38Z",
+     "a": "British premier says the defense spending plan is justified despite opposition questioning funding.",
+     "b": "Critics warn that funding defence via infrastructure cuts will cost 10,000 jobs and anger Labour members."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 26 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 26
+   },
+   "lead_image": {
+    "url": "https://i.insider.com/6a47f6b265e65d39ff1c9848?width=1200&format=jpeg",
+    "source": "Business Insider",
+    "focal": {
+     "x": 56,
+     "y": 50
+    }
+   },
+   "gate": {
+    "score": 5,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 0,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -77192,8 +80263,8 @@
    },
    "discovered": true,
    "items_24h": 1,
-   "items_48h": 5,
-   "outlets": 4,
+   "items_48h": 4,
+   "outlets": 3,
    "kinds": [
     "journalist",
     "state media"
@@ -78729,7 +81800,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:03:17Z",
+    "observed_utc": "2026-07-26T12:04:11Z",
     "anchor_beat": "2026-07-25T14:42:09Z"
    },
    "lead_image": {
@@ -78748,3051 +81819,6 @@
      "carriers": 0,
      "provenance": 1,
      "steelman": 0,
-     "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "china-robot-drive",
-   "name": "China Robot Drive",
-   "bucket": "tech",
-   "topic_tags": [
-    "ai"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 1,
-   "items_48h": 5,
-   "outlets": 4,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-26T04:00:08Z",
-     "title": "Why workers are nostalgic for life before AI",
-     "outlet": "Financial Times",
-     "kind": "journalist",
-     "url": "https://www.ft.com/content/2ddef625-df80-4690-9475-f3ce86171593?syn-25a6b1a6=1",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-24T21:48:45Z",
-     "title": "Uber and Waymo to end exclusivity arrangement in Atlanta and Austin",
-     "outlet": "CNBC",
-     "kind": "journalist",
-     "url": "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T20:43:35Z",
-     "title": "Waymo reportedly mulling a breakup with Uber",
-     "outlet": "TechCrunch",
-     "kind": "journalist",
-     "url": "https://techcrunch.com/2026/07/24/waymo-reportedly-mulling-a-breakup-with-uber/",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T19:27:07Z",
-     "title": "Uber under pressure: Waymo partnership on the brink",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/stock-market-news/uber-under-pressure-waymo-partnership-on-the-brink-4812422",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T19:15:14Z",
-     "title": "Waymo explores split with Uber as robotaxi tensions deepen",
-     "outlet": "Financial Times",
-     "kind": "journalist",
-     "url": "https://www.ft.com/content/9dcb5d72-13aa-4f9c-ac6d-e022860df5ea?syn-25a6b1a6=1",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-24T08:11:01Z",
-     "title": "This Silicon Valley city is quietly becoming Robot Row. Here's who's clanking around.",
-     "outlet": "Business Insider",
-     "kind": "journalist",
-     "url": "https://www.businessinsider.com/robot-row-humanoid-hub-location-fremont-silicon-valley-agility-tesla-2026-7",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-23T11:44:54Z",
-     "title": "Uber lays off 10 percent of its customer service team in favor of using AI",
-     "outlet": "Engadget",
-     "kind": "journalist",
-     "url": "https://www.engadget.com/2221547/uber-lays-off-10-percent-customer-service-team-ai/",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-20T16:49:35Z",
-     "title": "Uber still offering illegal scooter rides: TPP",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/07/21/2003861107",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": null,
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 7,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "TechCrunch",
-      "ts": "2026-07-19T16:05:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "Taipei Times",
-      "ts": "2026-07-20T16:49:35Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "TW regional press",
-      "items": 1
-     },
-     {
-      "outlet": "Engadget",
-      "ts": "2026-07-23T11:44:54Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Business Insider",
-      "ts": "2026-07-24T08:11:01Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Financial Times",
-      "ts": "2026-07-24T19:15:14Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK financial press",
-      "items": 2
-     },
-     {
-      "outlet": "Investing.com",
-      "ts": "2026-07-24T19:27:07Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "CNBC",
-      "ts": "2026-07-24T21:48:45Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US financial press",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Financial Times",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "CNBC",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Investing.com",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "TechCrunch",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-13 12:00",
-      3,
-      2
-     ],
-     [
-      "2026-07-13 18:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-14 00:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-14 06:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-14 12:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-14 18:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-15 00:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-15 06:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-15 12:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-15 18:00",
-      0,
-      2
-     ],
-     [
-      "2026-07-16 00:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-16 06:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-16 12:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-16 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-17 00:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-17 06:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-17 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-17 18:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-18 00:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-18 06:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-18 12:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-18 18:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-19 00:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-19 06:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-19 12:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-19 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-20 00:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-20 06:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-20 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-20 18:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-21 00:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-21 06:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-21 12:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-21 18:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-22 00:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-22 06:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-22 12:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-22 18:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-23 00:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-23 06:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-23 12:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-23 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-24 00:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-24 06:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-24 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-24 18:00",
-      4,
-      5
-     ],
-     [
-      "2026-07-25 00:00",
-      5,
-      6
-     ],
-     [
-      "2026-07-25 06:00",
-      5,
-      6
-     ],
-     [
-      "2026-07-25 12:00",
-      4,
-      5
-     ],
-     [
-      "2026-07-25 18:00",
-      4,
-      5
-     ],
-     [
-      "2026-07-26 00:00",
-      1,
-      5
-     ],
-     [
-      "2026-07-26 06:00",
-      1,
-      4
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 3
-    },
-    "first_seen": "2026-07-13T13:17:56Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 12
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "NVDA",
-      "label": "Nvidia",
-      "class": "equity",
-      "last": 206.84,
-      "last_ts": "2026-07-24T20:00:00Z",
-      "basis": "Autonomous vehicle AI development",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-22T17:30:00Z",
-        214.13
-       ],
-       [
-        "2026-07-22T17:31:41Z",
-        214.32
-       ],
-       [
-        "2026-07-22T17:42:19Z",
-        213.89
-       ],
-       [
-        "2026-07-22T18:12:55Z",
-        213.595
-       ],
-       [
-        "2026-07-22T18:30:00Z",
-        213.655
-       ],
-       [
-        "2026-07-22T18:31:10Z",
-        213.58
-       ],
-       [
-        "2026-07-22T18:57:43Z",
-        213.74
-       ],
-       [
-        "2026-07-22T19:21:06Z",
-        213.32
-       ],
-       [
-        "2026-07-22T19:30:00Z",
-        212.715
-       ],
-       [
-        "2026-07-22T19:42:16Z",
-        212.7301
-       ],
-       [
-        "2026-07-22T20:00:00Z",
-        212.06
-       ],
-       [
-        "2026-07-23T13:30:00Z",
-        209.58
-       ],
-       [
-        "2026-07-23T13:48:47Z",
-        209.395
-       ],
-       [
-        "2026-07-23T14:12:42Z",
-        208.84
-       ],
-       [
-        "2026-07-23T14:30:00Z",
-        207.445
-       ],
-       [
-        "2026-07-23T14:34:04Z",
-        207.44
-       ],
-       [
-        "2026-07-23T15:02:01Z",
-        206.97
-       ],
-       [
-        "2026-07-23T15:19:20Z",
-        207.02
-       ],
-       [
-        "2026-07-23T15:30:00Z",
-        207.68
-       ],
-       [
-        "2026-07-23T15:52:13Z",
-        207.7799
-       ],
-       [
-        "2026-07-23T16:04:20Z",
-        208.91
-       ],
-       [
-        "2026-07-23T16:30:00Z",
-        210.2201
-       ],
-       [
-        "2026-07-23T16:40:20Z",
-        210.22
-       ],
-       [
-        "2026-07-23T16:47:45Z",
-        209.7199
-       ],
-       [
-        "2026-07-23T17:25:17Z",
-        210.2684
-       ],
-       [
-        "2026-07-23T17:30:00Z",
-        208.87
-       ],
-       [
-        "2026-07-23T17:30:32Z",
-        210.1
-       ],
-       [
-        "2026-07-23T18:13:56Z",
-        208.78
-       ],
-       [
-        "2026-07-23T18:14:00Z",
-        208.76
-       ],
-       [
-        "2026-07-23T18:30:00Z",
-        207.51
-       ],
-       [
-        "2026-07-23T18:57:27Z",
-        207.46
-       ],
-       [
-        "2026-07-23T19:00:50Z",
-        207.69
-       ],
-       [
-        "2026-07-23T19:30:00Z",
-        207.0905
-       ],
-       [
-        "2026-07-23T19:43:28Z",
-        207.13
-       ],
-       [
-        "2026-07-23T19:53:28Z",
-        207.52
-       ],
-       [
-        "2026-07-23T20:00:00Z",
-        208.76
-       ],
-       [
-        "2026-07-24T13:30:00Z",
-        207.5201
-       ],
-       [
-        "2026-07-24T13:51:13Z",
-        207.31
-       ],
-       [
-        "2026-07-24T14:12:15Z",
-        208.24
-       ],
-       [
-        "2026-07-24T14:30:00Z",
-        207.8
-       ],
-       [
-        "2026-07-24T14:39:07Z",
-        207.7401
-       ],
-       [
-        "2026-07-24T14:58:39Z",
-        209.035
-       ],
-       [
-        "2026-07-24T15:29:48Z",
-        209.14
-       ],
-       [
-        "2026-07-24T15:30:00Z",
-        209.155
-       ],
-       [
-        "2026-07-24T15:44:34Z",
-        209.33
-       ],
-       [
-        "2026-07-24T16:20:25Z",
-        210.79
-       ],
-       [
-        "2026-07-24T16:30:00Z",
-        209.72
-       ],
-       [
-        "2026-07-24T16:30:51Z",
-        210.49
-       ],
-       [
-        "2026-07-24T17:08:17Z",
-        209.685
-       ],
-       [
-        "2026-07-24T17:16:27Z",
-        209.6401
-       ],
-       [
-        "2026-07-24T17:30:00Z",
-        209.98
-       ],
-       [
-        "2026-07-24T17:57:36Z",
-        209.96
-       ],
-       [
-        "2026-07-24T17:58:29Z",
-        209.76
-       ],
-       [
-        "2026-07-24T18:30:00Z",
-        206.53
-       ],
-       [
-        "2026-07-24T18:42:49Z",
-        206.46
-       ],
-       [
-        "2026-07-24T18:43:42Z",
-        206.49
-       ],
-       [
-        "2026-07-24T19:27:49Z",
-        205.44
-       ],
-       [
-        "2026-07-24T19:30:00Z",
-        205.8001
-       ],
-       [
-        "2026-07-24T19:35:57Z",
-        205.9
-       ],
-       [
-        "2026-07-24T20:00:00Z",
-        206.84
-       ]
-      ]
-     },
-     {
-      "symbol": "AMD",
-      "label": "AMD",
-      "class": "equity",
-      "last": 521.95,
-      "last_ts": "2026-07-24T20:00:00Z",
-      "basis": "Robotaxi technology progress",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-22T16:56:43Z",
-        556.12
-       ],
-       [
-        "2026-07-22T17:30:00Z",
-        557.07
-       ],
-       [
-        "2026-07-22T17:31:39Z",
-        557.045
-       ],
-       [
-        "2026-07-22T17:42:16Z",
-        556.565
-       ],
-       [
-        "2026-07-22T18:12:55Z",
-        555.01
-       ],
-       [
-        "2026-07-22T18:30:00Z",
-        554.05
-       ],
-       [
-        "2026-07-22T18:31:11Z",
-        553.86
-       ],
-       [
-        "2026-07-22T18:57:41Z",
-        556.77
-       ],
-       [
-        "2026-07-22T19:21:06Z",
-        556.165
-       ],
-       [
-        "2026-07-22T19:30:00Z",
-        554.35
-       ],
-       [
-        "2026-07-22T19:42:15Z",
-        554.425
-       ],
-       [
-        "2026-07-22T20:00:00Z",
-        552.33
-       ],
-       [
-        "2026-07-23T13:30:00Z",
-        553.765
-       ],
-       [
-        "2026-07-23T13:48:47Z",
-        552.355
-       ],
-       [
-        "2026-07-23T14:12:41Z",
-        552.27
-       ],
-       [
-        "2026-07-23T14:30:00Z",
-        548.48
-       ],
-       [
-        "2026-07-23T14:34:04Z",
-        548.715
-       ],
-       [
-        "2026-07-23T15:02:01Z",
-        544.02
-       ],
-       [
-        "2026-07-23T15:19:18Z",
-        540.49
-       ],
-       [
-        "2026-07-23T15:30:00Z",
-        538.975
-       ],
-       [
-        "2026-07-23T15:52:14Z",
-        539.53
-       ],
-       [
-        "2026-07-23T16:04:21Z",
-        542.58
-       ],
-       [
-        "2026-07-23T16:30:00Z",
-        547.9999
-       ],
-       [
-        "2026-07-23T16:40:21Z",
-        546.95
-       ],
-       [
-        "2026-07-23T16:47:45Z",
-        537.2
-       ],
-       [
-        "2026-07-23T17:25:18Z",
-        534.975
-       ],
-       [
-        "2026-07-23T17:30:00Z",
-        536.84
-       ],
-       [
-        "2026-07-23T17:30:33Z",
-        535.0
-       ],
-       [
-        "2026-07-23T18:13:57Z",
-        536.295
-       ],
-       [
-        "2026-07-23T18:30:00Z",
-        534.82
-       ],
-       [
-        "2026-07-23T18:57:24Z",
-        534.9
-       ],
-       [
-        "2026-07-23T19:00:45Z",
-        534.99
-       ],
-       [
-        "2026-07-23T19:30:00Z",
-        537.72
-       ],
-       [
-        "2026-07-23T19:43:29Z",
-        537.92
-       ],
-       [
-        "2026-07-23T19:53:29Z",
-        537.9435
-       ],
-       [
-        "2026-07-23T20:00:00Z",
-        539.69
-       ],
-       [
-        "2026-07-24T13:30:00Z",
-        526.2699
-       ],
-       [
-        "2026-07-24T13:51:14Z",
-        525.33
-       ],
-       [
-        "2026-07-24T14:12:14Z",
-        530.55
-       ],
-       [
-        "2026-07-24T14:30:00Z",
-        524.395
-       ],
-       [
-        "2026-07-24T14:39:07Z",
-        524.385
-       ],
-       [
-        "2026-07-24T14:58:40Z",
-        528.9368
-       ],
-       [
-        "2026-07-24T15:29:48Z",
-        527.6
-       ],
-       [
-        "2026-07-24T15:30:00Z",
-        530.4
-       ],
-       [
-        "2026-07-24T15:44:32Z",
-        531.07
-       ],
-       [
-        "2026-07-24T16:20:25Z",
-        538.65
-       ],
-       [
-        "2026-07-24T16:30:00Z",
-        532.9
-       ],
-       [
-        "2026-07-24T16:30:52Z",
-        537.825
-       ],
-       [
-        "2026-07-24T17:08:18Z",
-        533.455
-       ],
-       [
-        "2026-07-24T17:16:27Z",
-        532.15
-       ],
-       [
-        "2026-07-24T17:30:00Z",
-        533.755
-       ],
-       [
-        "2026-07-24T17:57:37Z",
-        533.305
-       ],
-       [
-        "2026-07-24T17:58:30Z",
-        532.78
-       ],
-       [
-        "2026-07-24T18:30:00Z",
-        522.32
-       ],
-       [
-        "2026-07-24T18:42:50Z",
-        522.405
-       ],
-       [
-        "2026-07-24T18:43:41Z",
-        522.7
-       ],
-       [
-        "2026-07-24T19:27:50Z",
-        522.1
-       ],
-       [
-        "2026-07-24T19:30:00Z",
-        523.34
-       ],
-       [
-        "2026-07-24T19:35:59Z",
-        523.34
-       ],
-       [
-        "2026-07-24T20:00:00Z",
-        521.95
-       ]
-      ]
-     },
-     {
-      "symbol": "^IXIC",
-      "label": "Nasdaq",
-      "class": "index",
-      "last": 24975.8242,
-      "last_ts": "2026-07-24T20:00:00Z",
-      "basis": "Nasdaq index movement",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-22T16:56:41Z",
-        25821.8828
-       ],
-       [
-        "2026-07-22T17:30:00Z",
-        25806.2109
-       ],
-       [
-        "2026-07-22T17:31:40Z",
-        25810.4023
-       ],
-       [
-        "2026-07-22T17:42:15Z",
-        25795.2891
-       ],
-       [
-        "2026-07-22T18:12:52Z",
-        25748.4609
-       ],
-       [
-        "2026-07-22T18:30:00Z",
-        25742.1602
-       ],
-       [
-        "2026-07-22T18:31:08Z",
-        25739.3477
-       ],
-       [
-        "2026-07-22T18:57:41Z",
-        25755.2227
-       ],
-       [
-        "2026-07-22T19:21:03Z",
-        25741.0645
-       ],
-       [
-        "2026-07-22T19:30:00Z",
-        25718.8145
-       ],
-       [
-        "2026-07-22T19:42:15Z",
-        25723.7305
-       ],
-       [
-        "2026-07-22T20:00:00Z",
-        25690.9023
-       ],
-       [
-        "2026-07-23T13:30:00Z",
-        25301.9883
-       ],
-       [
-        "2026-07-23T13:48:39Z",
-        25278.9258
-       ],
-       [
-        "2026-07-23T14:12:41Z",
-        25211.4316
-       ],
-       [
-        "2026-07-23T14:30:00Z",
-        25136.7598
-       ],
-       [
-        "2026-07-23T14:34:01Z",
-        25136.7832
-       ],
-       [
-        "2026-07-23T15:01:53Z",
-        25060.7402
-       ],
-       [
-        "2026-07-23T15:19:15Z",
-        25025.6797
-       ],
-       [
-        "2026-07-23T15:30:00Z",
-        25036.7539
-       ],
-       [
-        "2026-07-23T15:52:09Z",
-        25041.7656
-       ],
-       [
-        "2026-07-23T16:04:16Z",
-        25111.4531
-       ],
-       [
-        "2026-07-23T16:30:00Z",
-        25197.9199
-       ],
-       [
-        "2026-07-23T16:40:19Z",
-        25191.5977
-       ],
-       [
-        "2026-07-23T16:47:44Z",
-        25140.6016
-       ],
-       [
-        "2026-07-23T17:25:13Z",
-        25176.8027
-       ],
-       [
-        "2026-07-23T17:30:00Z",
-        25107.0664
-       ],
-       [
-        "2026-07-23T17:30:30Z",
-        25160.2207
-       ],
-       [
-        "2026-07-23T18:13:56Z",
-        25103.8789
-       ],
-       [
-        "2026-07-23T18:30:00Z",
-        25071.4062
-       ],
-       [
-        "2026-07-23T18:57:24Z",
-        25070.2109
-       ],
-       [
-        "2026-07-23T19:00:49Z",
-        25087.6016
-       ],
-       [
-        "2026-07-23T19:30:00Z",
-        25044.9375
-       ],
-       [
-        "2026-07-23T19:43:24Z",
-        25041.0605
-       ],
-       [
-        "2026-07-23T19:53:24Z",
-        25056.832
-       ],
-       [
-        "2026-07-23T20:00:00Z",
-        25137.6934
-       ],
-       [
-        "2026-07-24T13:30:00Z",
-        25056.9551
-       ],
-       [
-        "2026-07-24T13:51:08Z",
-        25049.4297
-       ],
-       [
-        "2026-07-24T14:12:14Z",
-        25042.0117
-       ],
-       [
-        "2026-07-24T14:30:00Z",
-        24964.9043
-       ],
-       [
-        "2026-07-24T14:39:06Z",
-        24964.8652
-       ],
-       [
-        "2026-07-24T14:58:35Z",
-        25041.3809
-       ],
-       [
-        "2026-07-24T15:29:48Z",
-        25135.2852
-       ],
-       [
-        "2026-07-24T15:30:00Z",
-        25129.623
-       ],
-       [
-        "2026-07-24T15:44:33Z",
-        25138.4336
-       ],
-       [
-        "2026-07-24T16:20:23Z",
-        25187.4902
-       ],
-       [
-        "2026-07-24T16:30:00Z",
-        25090.0762
-       ],
-       [
-        "2026-07-24T16:30:47Z",
-        25167.168
-       ],
-       [
-        "2026-07-24T17:08:13Z",
-        25083.8848
-       ],
-       [
-        "2026-07-24T17:16:22Z",
-        25087.1953
-       ],
-       [
-        "2026-07-24T17:30:00Z",
-        25122.1094
-       ],
-       [
-        "2026-07-24T17:57:34Z",
-        25120.9473
-       ],
-       [
-        "2026-07-24T17:58:25Z",
-        25116.4805
-       ],
-       [
-        "2026-07-24T18:30:00Z",
-        24955.3887
-       ],
-       [
-        "2026-07-24T18:42:46Z",
-        24952.0918
-       ],
-       [
-        "2026-07-24T18:43:40Z",
-        24968.0078
-       ],
-       [
-        "2026-07-24T19:27:48Z",
-        24939.5723
-       ],
-       [
-        "2026-07-24T19:30:00Z",
-        24959.8887
-       ],
-       [
-        "2026-07-24T19:35:57Z",
-        24971.832
-       ],
-       [
-        "2026-07-24T20:00:00Z",
-        24975.8242
-       ]
-      ]
-     }
-    ],
-    "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:06:04Z",
-    "anchor_beat": "2026-07-26T04:00:08Z"
-   },
-   "lead_image": {
-    "url": "https://i.insider.com/6a626ee354f98752617790fd?width=1200&format=jpeg",
-    "source": "Business Insider",
-    "focal": {
-     "x": 52,
-     "y": 50
-    }
-   },
-   "gate": {
-    "score": 3,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "eu-charges-tiktok-over-child-safety-rules",
-   "name": "EU charges TikTok over child safety rules",
-   "bucket": "power-money",
-   "topic_tags": [
-    "court",
-    "censorship",
-    "media"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 1,
-   "items_48h": 5,
-   "outlets": 5,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-25T18:19:40Z",
-     "title": "EU says TikTok hasn't done enough to ensure minors' safety",
-     "outlet": "Engadget",
-     "kind": "journalist",
-     "url": "https://www.engadget.com/2223242/eu-says-tiktok-hasnt-done-enough-to-ensure-minors-safety/",
-     "rel": 23,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T17:50:21Z",
-     "title": "What if Facebook just becomes TikTok? We may find out soon.",
-     "outlet": "Business Insider",
-     "kind": "journalist",
-     "url": "https://www.businessinsider.com/facebook-tiktok-test-video-advertising-2026-7",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T14:30:00Z",
-     "title": "EU says TikTok failed to shield minors\u2019 accounts from adults, exposing kids to predators",
-     "outlet": "Fortune",
-     "kind": "journalist",
-     "url": "https://fortune.com/2026/07/24/eu-tiktok-children-privacy-dsa-violation/",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T11:50:10Z",
-     "title": "TikTok&#8217;s protection of minors should not be opt-in, warns EU",
-     "outlet": "The Verge",
-     "kind": "journalist",
-     "url": "https://www.theverge.com/tech/970519/tiktok-eu-dsa-child-safety-age-account-privacy",
-     "rel": 19,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T11:43:15Z",
-     "title": "EU preliminarily finds TikTok in breach of digital rules over minors\u2019 safety",
-     "outlet": "Anadolu Agency",
-     "kind": "state media",
-     "url": "https://www.aa.com.tr/en/europe/eu-preliminarily-finds-tiktok-in-breach-of-digital-rules-over-minors-safety/4008127",
-     "rel": 33,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T11:42:33Z",
-     "title": "EU finds TikTok violates its digital rulebook by failing to protect privacy of minors",
-     "outlet": "The Hindu Intl",
-     "kind": "journalist",
-     "url": "https://www.thehindu.com/sci-tech/technology/eu-finds-tiktok-violates-its-digital-rulebook-by-failing-to-protect-privacy-of-minors/article71261979.ece",
-     "rel": 28,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T10:52:26Z",
-     "title": "TikTok charged with breaching EU tech rules on online safety for kids, EU says",
-     "outlet": "CNBC",
-     "kind": "journalist",
-     "url": "https://www.cnbc.com/2026/07/24/tiktok-charged-with-breaching-eu-tech-rules-on-online-safety-for-kids-eu-says.html",
-     "rel": 27,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": null,
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 7,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "The Verge",
-      "ts": "2026-07-24T07:50:10Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "CNBC",
-      "ts": "2026-07-24T10:52:26Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US financial press",
-      "items": 1
-     },
-     {
-      "outlet": "Fortune",
-      "ts": "2026-07-24T14:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Anadolu Agency",
-      "ts": "2026-07-24T14:43:15Z",
-      "kind": "state media",
-      "role": "echo",
-      "motive_note": "TR state news agency",
-      "items": 1
-     },
-     {
-      "outlet": "The Hindu Intl",
-      "ts": "2026-07-24T17:12:33Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Business Insider",
-      "ts": "2026-07-24T17:50:21Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Engadget",
-      "ts": "2026-07-25T18:19:40Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Business Insider",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Engadget",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Fortune",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 0
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-24 12:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-24 18:00",
-      6,
-      6
-     ],
-     [
-      "2026-07-25 00:00",
-      6,
-      6
-     ],
-     [
-      "2026-07-25 06:00",
-      6,
-      6
-     ],
-     [
-      "2026-07-25 12:00",
-      4,
-      6
-     ],
-     [
-      "2026-07-25 18:00",
-      1,
-      7
-     ],
-     [
-      "2026-07-26 00:00",
-      1,
-      7
-     ],
-     [
-      "2026-07-26 06:00",
-      1,
-      5
-     ]
-    ],
-    "mix": {
-     "mainstream": 0,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 3
-    },
-    "first_seen": "2026-07-24T13:11:09Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 2
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "META",
-      "label": "Meta",
-      "class": "equity",
-      "last": 595.19,
-      "last_ts": "2026-07-24T20:00:00Z",
-      "basis": "EU regulation on child safety affecting social media stocks",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-22T17:30:00Z",
-        628.05
-       ],
-       [
-        "2026-07-22T17:31:40Z",
-        628.0
-       ],
-       [
-        "2026-07-22T17:42:15Z",
-        627.34
-       ],
-       [
-        "2026-07-22T18:12:54Z",
-        626.25
-       ],
-       [
-        "2026-07-22T18:30:00Z",
-        626.5
-       ],
-       [
-        "2026-07-22T18:31:10Z",
-        626.54
-       ],
-       [
-        "2026-07-22T18:57:42Z",
-        626.38
-       ],
-       [
-        "2026-07-22T19:21:02Z",
-        626.4134
-       ],
-       [
-        "2026-07-22T19:30:00Z",
-        626.65
-       ],
-       [
-        "2026-07-22T19:42:15Z",
-        626.58
-       ],
-       [
-        "2026-07-22T20:00:00Z",
-        627.17
-       ],
-       [
-        "2026-07-23T13:30:00Z",
-        612.35
-       ],
-       [
-        "2026-07-23T13:48:47Z",
-        612.08
-       ],
-       [
-        "2026-07-23T14:12:42Z",
-        606.72
-       ],
-       [
-        "2026-07-23T14:30:00Z",
-        605.45
-       ],
-       [
-        "2026-07-23T14:34:03Z",
-        605.2501
-       ],
-       [
-        "2026-07-23T15:01:59Z",
-        601.195
-       ],
-       [
-        "2026-07-23T15:19:17Z",
-        601.07
-       ],
-       [
-        "2026-07-23T15:30:00Z",
-        599.83
-       ],
-       [
-        "2026-07-23T15:52:14Z",
-        599.8879
-       ],
-       [
-        "2026-07-23T16:04:15Z",
-        601.7633
-       ],
-       [
-        "2026-07-23T16:30:00Z",
-        602.855
-       ],
-       [
-        "2026-07-23T16:40:20Z",
-        602.665
-       ],
-       [
-        "2026-07-23T16:47:44Z",
-        602.79
-       ],
-       [
-        "2026-07-23T17:25:17Z",
-        606.875
-       ],
-       [
-        "2026-07-23T17:30:00Z",
-        606.7601
-       ],
-       [
-        "2026-07-23T17:30:31Z",
-        605.625
-       ],
-       [
-        "2026-07-23T18:13:57Z",
-        606.85
-       ],
-       [
-        "2026-07-23T18:13:59Z",
-        606.77
-       ],
-       [
-        "2026-07-23T18:30:00Z",
-        607.03
-       ],
-       [
-        "2026-07-23T18:57:19Z",
-        606.945
-       ],
-       [
-        "2026-07-23T19:00:49Z",
-        606.7851
-       ],
-       [
-        "2026-07-23T19:30:00Z",
-        604.955
-       ],
-       [
-        "2026-07-23T19:43:28Z",
-        604.945
-       ],
-       [
-        "2026-07-23T19:53:28Z",
-        605.1
-       ],
-       [
-        "2026-07-23T20:00:00Z",
-        606.1
-       ],
-       [
-        "2026-07-24T13:30:00Z",
-        604.045
-       ],
-       [
-        "2026-07-24T13:51:14Z",
-        603.51
-       ],
-       [
-        "2026-07-24T14:12:14Z",
-        601.685
-       ],
-       [
-        "2026-07-24T14:30:00Z",
-        604.85
-       ],
-       [
-        "2026-07-24T14:39:06Z",
-        604.895
-       ],
-       [
-        "2026-07-24T14:58:40Z",
-        606.52
-       ],
-       [
-        "2026-07-24T15:29:43Z",
-        609.06
-       ],
-       [
-        "2026-07-24T15:30:00Z",
-        608.045
-       ],
-       [
-        "2026-07-24T15:44:32Z",
-        607.975
-       ],
-       [
-        "2026-07-24T16:20:22Z",
-        603.35
-       ],
-       [
-        "2026-07-24T16:30:00Z",
-        602.485
-       ],
-       [
-        "2026-07-24T16:30:51Z",
-        602.37
-       ],
-       [
-        "2026-07-24T17:08:18Z",
-        602.025
-       ],
-       [
-        "2026-07-24T17:16:28Z",
-        602.5275
-       ],
-       [
-        "2026-07-24T17:30:00Z",
-        601.495
-       ],
-       [
-        "2026-07-24T17:57:36Z",
-        601.27
-       ],
-       [
-        "2026-07-24T17:58:30Z",
-        601.48
-       ],
-       [
-        "2026-07-24T18:30:00Z",
-        600.06
-       ],
-       [
-        "2026-07-24T18:42:49Z",
-        600.2199
-       ],
-       [
-        "2026-07-24T18:43:40Z",
-        600.07
-       ],
-       [
-        "2026-07-24T19:27:49Z",
-        600.4044
-       ],
-       [
-        "2026-07-24T19:30:00Z",
-        600.6
-       ],
-       [
-        "2026-07-24T19:35:58Z",
-        600.5859
-       ],
-       [
-        "2026-07-24T20:00:00Z",
-        595.19
-       ]
-      ]
-     },
-     {
-      "symbol": "GOOGL",
-      "label": "Alphabet",
-      "class": "equity",
-      "last": 319.74,
-      "last_ts": "2026-07-24T20:00:00Z",
-      "basis": "EU regulation on child safety affecting social media stocks",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-22T17:30:00Z",
-        347.98
-       ],
-       [
-        "2026-07-22T17:31:42Z",
-        347.9
-       ],
-       [
-        "2026-07-22T17:42:18Z",
-        347.97
-       ],
-       [
-        "2026-07-22T18:12:55Z",
-        346.675
-       ],
-       [
-        "2026-07-22T18:30:00Z",
-        346.64
-       ],
-       [
-        "2026-07-22T18:31:10Z",
-        346.64
-       ],
-       [
-        "2026-07-22T18:57:43Z",
-        346.51
-       ],
-       [
-        "2026-07-22T19:21:06Z",
-        345.375
-       ],
-       [
-        "2026-07-22T19:30:00Z",
-        345.26
-       ],
-       [
-        "2026-07-22T19:42:16Z",
-        345.44
-       ],
-       [
-        "2026-07-22T20:00:00Z",
-        342.09
-       ],
-       [
-        "2026-07-23T13:30:00Z",
-        319.51
-       ],
-       [
-        "2026-07-23T13:48:46Z",
-        318.97
-       ],
-       [
-        "2026-07-23T14:12:42Z",
-        319.14
-       ],
-       [
-        "2026-07-23T14:30:00Z",
-        317.44
-       ],
-       [
-        "2026-07-23T14:34:04Z",
-        317.49
-       ],
-       [
-        "2026-07-23T15:02:01Z",
-        316.685
-       ],
-       [
-        "2026-07-23T15:19:21Z",
-        316.11
-       ],
-       [
-        "2026-07-23T15:30:00Z",
-        319.535
-       ],
-       [
-        "2026-07-23T15:52:14Z",
-        319.59
-       ],
-       [
-        "2026-07-23T16:04:21Z",
-        318.9879
-       ],
-       [
-        "2026-07-23T16:30:00Z",
-        319.59
-       ],
-       [
-        "2026-07-23T16:40:20Z",
-        319.585
-       ],
-       [
-        "2026-07-23T16:47:45Z",
-        319.105
-       ],
-       [
-        "2026-07-23T17:25:17Z",
-        320.81
-       ],
-       [
-        "2026-07-23T17:30:00Z",
-        319.915
-       ],
-       [
-        "2026-07-23T17:30:33Z",
-        320.055
-       ],
-       [
-        "2026-07-23T18:13:57Z",
-        320.14
-       ],
-       [
-        "2026-07-23T18:14:01Z",
-        320.135
-       ],
-       [
-        "2026-07-23T18:30:00Z",
-        318.6125
-       ],
-       [
-        "2026-07-23T18:57:27Z",
-        318.75
-       ],
-       [
-        "2026-07-23T19:00:50Z",
-        318.975
-       ],
-       [
-        "2026-07-23T19:30:00Z",
-        317.47
-       ],
-       [
-        "2026-07-23T19:43:29Z",
-        317.625
-       ],
-       [
-        "2026-07-23T19:53:28Z",
-        318.41
-       ],
-       [
-        "2026-07-23T20:00:00Z",
-        317.69
-       ],
-       [
-        "2026-07-24T13:30:00Z",
-        322.4003
-       ],
-       [
-        "2026-07-24T13:51:13Z",
-        322.27
-       ],
-       [
-        "2026-07-24T14:12:15Z",
-        320.53
-       ],
-       [
-        "2026-07-24T14:30:00Z",
-        318.83
-       ],
-       [
-        "2026-07-24T14:39:07Z",
-        318.85
-       ],
-       [
-        "2026-07-24T14:58:39Z",
-        319.49
-       ],
-       [
-        "2026-07-24T15:29:48Z",
-        321.75
-       ],
-       [
-        "2026-07-24T15:30:00Z",
-        320.99
-       ],
-       [
-        "2026-07-24T15:44:34Z",
-        321.07
-       ],
-       [
-        "2026-07-24T16:20:24Z",
-        319.83
-       ],
-       [
-        "2026-07-24T16:30:00Z",
-        319.59
-       ],
-       [
-        "2026-07-24T16:30:51Z",
-        319.025
-       ],
-       [
-        "2026-07-24T17:08:18Z",
-        319.39
-       ],
-       [
-        "2026-07-24T17:16:27Z",
-        319.96
-       ],
-       [
-        "2026-07-24T17:30:00Z",
-        320.0226
-       ],
-       [
-        "2026-07-24T17:57:36Z",
-        320.105
-       ],
-       [
-        "2026-07-24T17:58:30Z",
-        320.04
-       ],
-       [
-        "2026-07-24T18:30:00Z",
-        319.52
-       ],
-       [
-        "2026-07-24T18:42:50Z",
-        319.53
-       ],
-       [
-        "2026-07-24T18:43:42Z",
-        319.46
-       ],
-       [
-        "2026-07-24T19:27:50Z",
-        319.56
-       ],
-       [
-        "2026-07-24T19:30:00Z",
-        319.6
-       ],
-       [
-        "2026-07-24T19:35:58Z",
-        319.83
-       ],
-       [
-        "2026-07-24T20:00:00Z",
-        319.74
-       ]
-      ]
-     }
-    ],
-    "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:19:46Z",
-    "anchor_beat": "2026-07-25T18:19:40Z"
-   },
-   "lead_image": {
-    "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/07/24/thumbs_b_c_688e4c8d2b450d995f9537d5e5789fe4.jpg",
-    "source": "Anadolu Agency",
-    "focal": {
-     "x": 49,
-     "y": 55
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "trump-orders-smithsonian-history-disclaimers",
-   "name": "Trump orders Smithsonian history disclaimers",
-   "bucket": "info-wars",
-   "topic_tags": [
-    "censorship",
-    "media"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 1,
-   "items_48h": 5,
-   "outlets": 5,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-25T10:12:03Z",
-     "title": "Trump orders warning signs outside Smithsonian history museum",
-     "outlet": "Anadolu Agency",
-     "kind": "state media",
-     "url": "https://www.aa.com.tr/en/americas/trump-orders-warning-signs-outside-smithsonian-history-museum/4009004",
-     "rel": 21,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-25T01:55:30Z",
-     "title": "Trump orders Smithsonian to post warnings about 'inaccurate' US history",
-     "outlet": "BBC World",
-     "kind": "journalist",
-     "url": "https://www.bbc.co.uk/news/articles/c1w10gwnj74o?at_medium=RSS&at_campaign=rss",
-     "rel": 25,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-25T00:43:32Z",
-     "title": "Trump cites \u2018white, male, Christian\u2019 audit in Smithsonian disclaimer push",
-     "outlet": "South China Morning Post",
-     "kind": "journalist",
-     "url": "https://www.scmp.com/news/world/united-states-canada/article/3361815/trump-cites-white-male-christian-audit-smithsonian-disclaimer-push?utm_source=rss_feed",
-     "rel": 19,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-25T00:01:38Z",
-     "title": "Trump escalates Smithsonian attack with order for signs outside history museum",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/us-news/2026/jul/24/trump-smithsonian-history-museum",
-     "rel": 21,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-24T23:23:12Z",
-     "title": "Trump orders disclaimers outside Smithsonian's Museum of American History",
-     "outlet": "The Hill",
-     "kind": "journalist",
-     "url": "https://thehill.com/homenews/administration/5989724-trump-orders-smithsonian-disclaimer/",
-     "rel": 26,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": null,
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 5,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "The Hill",
-      "ts": "2026-07-24T23:23:12Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "US press",
-      "items": 1
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-07-25T00:01:38Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 1
-     },
-     {
-      "outlet": "South China Morning Post",
-      "ts": "2026-07-25T00:43:32Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "HK press (Alibaba-owned)",
-      "items": 1
-     },
-     {
-      "outlet": "BBC World",
-      "ts": "2026-07-25T01:55:30Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK public broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "Anadolu Agency",
-      "ts": "2026-07-25T13:12:03Z",
-      "kind": "state media",
-      "role": "echo",
-      "motive_note": "TR state news agency",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Anadolu Agency",
-     "n": 1,
-     "class": "state-media"
-    },
-    {
-     "outlet": "BBC World",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "South China Morning Post",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "The Hill",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-25 00:00",
-      4,
-      4
-     ],
-     [
-      "2026-07-25 06:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-25 12:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-25 18:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-26 00:00",
-      3,
-      5
-     ],
-     [
-      "2026-07-26 06:00",
-      1,
-      5
-     ]
-    ],
-    "mix": {
-     "mainstream": 2,
-     "state-media": 1,
-     "regional": 0,
-     "official": 0,
-     "other": 2
-    },
-    "first_seen": "2026-07-25T03:15:10Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 1
-   },
-   "lead_image": {
-    "url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/3f40/live/1db05e30-87c9-11f1-99ba-0b79ef9b9895.jpg",
-    "source": "BBC World",
-    "focal": {
-     "x": 37,
-     "y": 55
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "uk-defence-spending-plan-criticised",
-   "name": "Global developments and applications of drone technology",
-   "bucket": "geopolitics",
-   "topic_tags": [
-    "war",
-    "weapons"
-   ],
-   "brief": {
-    "generated_utc": "2026-07-04T16:06:57Z",
-    "sentence_count": 3,
-    "dropped_count": 2,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "Defence Secretary Dan Jarvis is facing questions over the funding gap and whether Burnham was blindsided by it.",
-        "cites": [
-         {
-          "outlet": "Al Jazeera",
-          "kind": "journalist",
-          "url": "https://www.aljazeera.com/news/2026/7/2/uk-leader-hopeful-andy-burnham-faces-defence-funding-gap?traffic_source=rss",
-          "ts": "2026-07-02T18:59:33Z",
-          "title": "UK\u2019s likely next PM Andy Burnham faces defence funding gap"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Party bosses have been warned that a Burnham coronation will anger some Labour members, with the National Executive Committee told it must take steps to address those concerns, including not hiring Everton's stadium to announce the new leader before nominations open.",
-        "cites": [
-         {
-          "outlet": "Guardian World",
-          "kind": "journalist",
-          "url": "https://www.theguardian.com/politics/2026/jul/02/labour-mps-nec-andy-burnham-leadership-contest-no-10",
-          "ts": "2026-07-02T18:01:27Z",
-          "title": "Burnham \u2018coronation\u2019 will anger some Labour members, party bosses warned"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Against that backdrop, Defence Holdings has secured its first contract with the UK defence ministry.",
-        "cites": [
-         {
-          "outlet": "Investing.com",
-          "kind": "journalist",
-          "url": "https://www.investing.com/news/company-news/defence-holdings-secures-first-uk-defence-ministry-contract-93CH-4775098",
-          "ts": "2026-07-03T08:16:33Z",
-          "title": "Defence Holdings secures first UK defence ministry contract"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 1,
-   "items_48h": 4,
-   "outlets": 2,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-07-25T14:39:40Z",
-     "title": "Over 1,400 Moscow-bound drones downed in past week - mayor",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/emergencies/2165251",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T17:38:18Z",
-     "title": "Over 250 drones flying toward Moscow Region taken down during past day - mayor",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/emergencies/2165013",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T12:38:16Z",
-     "title": "Drones have created a new energy security landscape",
-     "outlet": "Axios",
-     "kind": "journalist",
-     "url": "https://www.axios.com/2026/07/24/drones-energy-security-prices-iran-ukraine",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-24T11:42:18Z",
-     "title": "Yak-130M aircraft can effectively engage heavy drones - Rostec",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/economy/2164761",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-23T07:00:00Z",
-     "title": "UK swaps tanks for drones in the Baltics :  The way of war is changing",
-     "outlet": "lrt.lt",
-     "kind": "journalist",
-     "url": "https://www.lrt.lt/en/news-in-english/19/2998285/uk-swaps-tanks-for-drones-in-the-baltics-the-way-of-war-is-changing",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-23T06:24:58Z",
-     "title": "Dengue: What is the mosquito-borne disease that Sri Lanka is using drones to fight?",
-     "outlet": "BBC",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBLRmNIVXVVYjBvamJObjU3MUZiUzhRMGV4dnhVSC1KbnNyU3pWM3lfbTNleTVkWnE0UkFtZ2lsc3ViRm94SlRJdUVKa3V4OTNhZG5qSUM4YmtyUQ?oc=5",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-22T09:00:11Z",
-     "title": "Germany\u2019s Military Buyers Look to Reduce Caution and Embrace Drones",
-     "outlet": "NYT World",
-     "kind": "journalist",
-     "url": "https://www.nytimes.com/2026/07/22/world/europe/germany-rearmament-innovation-reinvention-arms.html",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-07-21T23:48:51Z",
-     "title": "US tentatively decides to ban imports of some military-grade drones",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/world-news/us-tentatively-decides-to-ban-imports-of-some-militarygrade-drones-4804472",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-20T03:06:26Z"
-   },
-   "viewpoints": [
-    {
-     "stance": "British premier says the defense spending plan is justified despite opposition questioning funding.",
-     "carriers": [
-      {
-       "outlet": "Anadolu Agency",
-       "kind": "state media",
-       "url": "https://www.aa.com.tr/en/europe/british-premier-defends-defense-spending-plan-as-opposition-questions-funding/3983539",
-       "ts_utc": "2026-07-01T15:29:24Z"
-      },
-      {
-       "outlet": "Breaking The News",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUmtmUHFLaWpZajB3WElOek5MNlpuS28waXNmMEFaaW9GYmNQZlBJMmozdk5qWGdfZllmWXk5SXJsQTNFT1dwUlpSd1o2ZVhRYWd0M0JBaUNKVEt5cXIxZ1FFa1pYcmJhdWVoSjJQNjZtMmk5eHlOd2lyZ25nZVlQRWxSbGJoeFpZY0ZLNw?oc=5",
-       "ts_utc": "2026-06-30T10:41:00Z"
-      },
-      {
-       "outlet": "South China Morning Post",
-       "kind": "journalist",
-       "url": "https://www.scmp.com/news/world/europe/article/3358903/uk-lays-out-defence-plan-drones-self-flying-fighter-jets-no-crew-submarines?utm_source=rss_feed",
-       "ts_utc": "2026-06-30T09:39:24Z"
-      },
-      {
-       "outlet": "SRN News",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdEJXYjE4bXNvN1RjSXBDZG5GdlpNUEhGaG9aUUFZRlE2NW9IRi1vcGZrMW5oME5qUW9oZ0FzYW1pcmhYajdJeWcyVG9fTVo3Nnc4by1Rd3VsNGpLVVVLcXMza2ZhcXp5WUhxZjdhTUVEU0FPeVExeFBkZjFqcGFmQmI5NFdtT2FUdVdlS09YR19EQmIxVFFNN2lhV0pXckhYMVFwVHd1TWhCZ0JvUmc?oc=5",
-       "ts_utc": "2026-06-30T09:26:22Z"
-      },
-      {
-       "outlet": "The Washington Post",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQclJwXzI4ZmZTT1V6R3hTdFVYamttMEwyUDc0T0t0cWc5bHdRMUJOWGJ0dFVrMEpxblp2cUFzdkszME0xSEEyUFViMllZdlNLSHI1b3VKLWJBc0NmTkg1b3d2UVp2Rmg0MHpRZ0RfZ09YWFJXRGdpaWZLX1UwUHk5bEJYU0tQUG5QaGxjOWI4ZEtxNHJlNGVPaGlndE1kRnpEOXVTN0RGbWJ5cFA2MjRYZ3JRWVl3Y3RDckp0NA?oc=5",
-       "ts_utc": "2026-06-30T11:45:02Z"
-      },
-      {
-       "outlet": "Economist Latest",
-       "kind": "journalist",
-       "url": "https://www.economist.com/britain/2026/06/30/britain-hopes-drones-will-help-it-escape-its-defence-budget-bind",
-       "ts_utc": "2026-06-30T20:12:09Z"
-      }
-     ]
-    },
-    {
-     "stance": "Critics warn that funding defence via infrastructure cuts will cost 10,000 jobs and anger Labour members.",
-     "carriers": [
-      {
-       "outlet": "Al Jazeera",
-       "kind": "journalist",
-       "url": "https://www.aljazeera.com/news/2026/7/2/uk-leader-hopeful-andy-burnham-faces-defence-funding-gap?traffic_source=rss",
-       "ts_utc": "2026-07-02T18:59:33Z"
-      },
-      {
-       "outlet": "Guardian World",
-       "kind": "journalist",
-       "url": "https://www.theguardian.com/politics/2026/jul/02/labour-mps-nec-andy-burnham-leadership-contest-no-10",
-       "ts_utc": "2026-07-02T18:01:27Z"
-      }
-     ]
-    }
-   ],
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 14,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-07-19T18:00:33Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 1
-     },
-     {
-      "outlet": "TASS",
-      "ts": "2026-07-20T03:20:17Z",
-      "kind": "state media",
-      "role": "echo",
-      "motive_note": "RU state media",
-      "items": 6
-     },
-     {
-      "outlet": "AllAfrica",
-      "ts": "2026-07-20T05:12:11Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "The European Conservative",
-      "ts": "2026-07-20T12:26:53Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "France 24",
-      "ts": "2026-07-20T18:47:30Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "FR state-funded international broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "The Guardian",
-      "ts": "2026-07-20T19:14:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 1
-     },
-     {
-      "outlet": "Ars Technica",
-      "ts": "2026-07-20T21:55:52Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "South China Morning Post",
-      "ts": "2026-07-21T01:48:05Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "HK press (Alibaba-owned)",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "anadolu agency",
-     "situations": [
-      "europe-record-heatwave-deaths-electricity-surge",
-      "gaza-israel-war-current",
-      "gold-drops-24-goldman-jpmorgan-forecasts-diverge",
-      "pakistan-air-strikes-afghanistan",
-      "red-sea-houthi-shipping-current",
-      "russia-ukraine-war-current",
-      "south-africa-migration-pressure",
-      "sudan-civil-war-current",
-      "trump-crypto-earnings-disclosure",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "us-to-pull-fighter-jets-from-nato-europe",
-      "venezuela-earthquakes-kill-920-amid-political-cr",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "andy burnham",
-     "situations": [
-      "uk-defence-secretary-resigns-over-spending",
-      "uk-pm-race-burnham-gains-traction"
-     ]
-    },
-    {
-     "entity": "britain",
-     "situations": [
-      "uk-defence-secretary-resigns-over-spending",
-      "us-to-pull-fighter-jets-from-nato-europe"
-     ]
-    },
-    {
-     "entity": "guardian",
-     "situations": [
-      "gaza-israel-war-current",
-      "monaco-explosion-wounds-ukrainian-oligarch",
-      "russia-ukraine-war-current",
-      "trump-crypto-earnings-disclosure",
-      "uk-defence-secretary-resigns-over-spending",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "venezuela-earthquakes-kill-920-amid-political-cr"
-     ]
-    },
-    {
-     "entity": "guardian world",
-     "situations": [
-      "gaza-israel-war-current",
-      "trump-reframes-us-china-relationship-as-peer-pow"
-     ]
-    },
-    {
-     "entity": "labour",
-     "situations": [
-      "uk-defence-secretary-resigns-over-spending"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "TASS",
-     "n": 3,
-     "class": "state-media"
-    },
-    {
-     "outlet": "Axios",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "lrt.lt",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 0
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-12 12:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-12 18:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-13 00:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-13 06:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-13 12:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-13 18:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-14 00:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-14 06:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-14 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-14 18:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-15 00:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-15 06:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-15 12:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-15 18:00",
-      3,
-      2
-     ],
-     [
-      "2026-07-16 00:00",
-      3,
-      2
-     ],
-     [
-      "2026-07-16 06:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-16 12:00",
-      3,
-      4
-     ],
-     [
-      "2026-07-16 18:00",
-      3,
-      4
-     ],
-     [
-      "2026-07-17 00:00",
-      3,
-      4
-     ],
-     [
-      "2026-07-17 06:00",
-      3,
-      5
-     ],
-     [
-      "2026-07-17 12:00",
-      3,
-      4
-     ],
-     [
-      "2026-07-17 18:00",
-      1,
-      4
-     ],
-     [
-      "2026-07-18 00:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-18 06:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-18 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-18 18:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-19 00:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-19 06:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-19 12:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-19 18:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-20 00:00",
-      5,
-      3
-     ],
-     [
-      "2026-07-20 06:00",
-      6,
-      4
-     ],
-     [
-      "2026-07-20 12:00",
-      6,
-      5
-     ],
-     [
-      "2026-07-20 18:00",
-      7,
-      7
-     ],
-     [
-      "2026-07-21 00:00",
-      9,
-      9
-     ],
-     [
-      "2026-07-21 06:00",
-      6,
-      8
-     ],
-     [
-      "2026-07-21 12:00",
-      5,
-      9
-     ],
-     [
-      "2026-07-21 18:00",
-      5,
-      8
-     ],
-     [
-      "2026-07-22 00:00",
-      3,
-      8
-     ],
-     [
-      "2026-07-22 06:00",
-      3,
-      8
-     ],
-     [
-      "2026-07-22 12:00",
-      3,
-      7
-     ],
-     [
-      "2026-07-22 18:00",
-      3,
-      4
-     ],
-     [
-      "2026-07-23 00:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-23 06:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-23 12:00",
-      0,
-      3
-     ],
-     [
-      "2026-07-23 18:00",
-      1,
-      3
-     ],
-     [
-      "2026-07-24 00:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-24 06:00",
-      1,
-      1
-     ],
-     [
-      "2026-07-24 12:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-24 18:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-25 00:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-25 06:00",
-      3,
-      2
-     ],
-     [
-      "2026-07-25 12:00",
-      3,
-      2
-     ],
-     [
-      "2026-07-25 18:00",
-      2,
-      2
-     ],
-     [
-      "2026-07-26 00:00",
-      1,
-      2
-     ],
-     [
-      "2026-07-26 06:00",
-      1,
-      2
-     ]
-    ],
-    "mix": {
-     "mainstream": 0,
-     "state-media": 1,
-     "regional": 0,
-     "official": 0,
-     "other": 2
-    },
-    "first_seen": "2026-06-30T14:27:30Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-06-30T14:58:13Z",
-     "a": "Breaking The News reports that Rutte welcomes the UK defense spending plan",
-     "b": "Guardian World reports that the UK defence investment plan is criticised as \u2018too little, too late\u2019"
-    },
-    {
-     "captured_utc": "2026-06-30T20:59:20Z",
-     "a": "Guardian World says the UK defence investment plan is criticised as 'too little, too late'",
-     "b": "Breaking The News says Rutte welcomes the UK defense spending plan"
-    },
-    {
-     "captured_utc": "2026-07-02T19:38:38Z",
-     "a": "British premier says the defense spending plan is justified despite opposition questioning funding.",
-     "b": "Critics warn that funding defence via infrastructure cuts will cost 10,000 jobs and anger Labour members."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
-    "Deep history not yet built - story discovered 26 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 26
-   },
-   "lead_image": {
-    "url": "https://i.insider.com/6a47f6b265e65d39ff1c9848?width=1200&format=jpeg",
-    "source": "Business Insider",
-    "focal": {
-     "x": 56,
-     "y": 50
-    }
-   },
-   "gate": {
-    "score": 5,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
      "history": 0,
      "report": 1,
      "theories": 0,
@@ -82683,7 +82709,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:07:54Z",
+    "observed_utc": "2026-07-26T12:08:49Z",
     "anchor_beat": "2026-07-25T17:47:22Z"
    },
    "lead_image": {
@@ -83967,7 +83993,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:58:14Z",
+    "observed_utc": "2026-07-26T11:59:05Z",
     "anchor_beat": "2026-07-25T18:34:53Z"
    },
    "lead_image": {
@@ -86203,7 +86229,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:13:10Z",
+    "observed_utc": "2026-07-26T12:13:58Z",
     "anchor_beat": "2026-07-25T17:33:00Z"
    },
    "lead_image": {
@@ -87752,7 +87778,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:59:39Z",
+    "observed_utc": "2026-07-26T12:00:42Z",
     "anchor_beat": "2026-07-26T04:18:05Z"
    },
    "lead_image": {
@@ -89122,7 +89148,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:59:46Z",
+    "observed_utc": "2026-07-26T12:00:52Z",
     "anchor_beat": "2026-07-25T20:35:00Z"
    },
    "lead_image": {
@@ -92105,7 +92131,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:58:21Z",
+    "observed_utc": "2026-07-26T11:59:12Z",
     "anchor_beat": "2026-07-26T01:30:24Z"
    },
    "lead_image": {
@@ -93100,7 +93126,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:59:31Z",
+    "observed_utc": "2026-07-26T12:00:33Z",
     "anchor_beat": "2026-07-25T13:20:51Z"
    },
    "lead_image": {
@@ -95812,7 +95838,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:07:27Z",
+    "observed_utc": "2026-07-26T12:08:19Z",
     "anchor_beat": "2026-07-25T09:34:07Z"
    },
    "lead_image": {
@@ -97118,7 +97144,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:15:40Z",
+    "observed_utc": "2026-07-26T12:16:29Z",
     "anchor_beat": "2026-07-25T12:38:55Z"
    },
    "lead_image": {
@@ -97913,7 +97939,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:17:13Z",
+    "observed_utc": "2026-07-26T12:18:10Z",
     "anchor_beat": "2026-07-25T15:49:53Z"
    },
    "lead_image": {
@@ -100177,7 +100203,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:18:53Z",
+    "observed_utc": "2026-07-26T12:19:46Z",
     "anchor_beat": "2026-07-25T10:00:03Z"
    },
    "lead_image": {
@@ -100902,7 +100928,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:18:46Z",
+    "observed_utc": "2026-07-26T12:19:39Z",
     "anchor_beat": "2026-07-25T01:21:25Z"
    },
    "lead_image": {
@@ -102667,7 +102693,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:04:00Z",
+    "observed_utc": "2026-07-26T12:04:55Z",
     "anchor_beat": "2026-07-25T04:25:35Z"
    },
    "lead_image": {
@@ -103869,7 +103895,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:19:01Z",
+    "observed_utc": "2026-07-26T12:19:53Z",
     "anchor_beat": "2026-07-24T20:29:10Z"
    },
    "lead_image": {
@@ -104881,7 +104907,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:08:33Z",
+    "observed_utc": "2026-07-26T12:09:27Z",
     "anchor_beat": "2026-07-25T00:35:00Z"
    },
    "lead_image": {
@@ -105735,7 +105761,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:18:18Z",
+    "observed_utc": "2026-07-26T12:19:09Z",
     "anchor_beat": "2026-07-25T14:21:30Z"
    },
    "lead_image": {
@@ -106327,7 +106353,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:21:20Z",
+    "observed_utc": "2026-07-26T12:22:08Z",
     "anchor_beat": "2026-07-24T21:30:51Z"
    },
    "lead_image": {
@@ -108842,7 +108868,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:57:15Z",
+    "observed_utc": "2026-07-26T11:58:07Z",
     "anchor_beat": "2026-07-25T10:01:14Z"
    },
    "lead_image": {
@@ -109889,7 +109915,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T11:58:54Z",
+    "observed_utc": "2026-07-26T11:59:46Z",
     "anchor_beat": "2026-07-24T17:00:00Z"
    },
    "lead_image": {
@@ -110922,7 +110948,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:11:33Z",
+    "observed_utc": "2026-07-26T12:12:24Z",
     "anchor_beat": "2026-07-24T22:41:15Z"
    },
    "lead_image": {
@@ -111741,7 +111767,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:19:09Z",
+    "observed_utc": "2026-07-26T12:20:00Z",
     "anchor_beat": "2026-07-25T00:15:01Z"
    },
    "lead_image": {
@@ -114532,7 +114558,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:00:22Z",
+    "observed_utc": "2026-07-26T12:01:28Z",
     "anchor_beat": "2026-07-25T11:41:36Z"
    },
    "gate": {
@@ -115696,7 +115722,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:01:17Z",
+    "observed_utc": "2026-07-26T12:02:16Z",
     "anchor_beat": "2026-07-24T19:34:00Z"
    },
    "lead_image": {
@@ -118201,7 +118227,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:09:26Z",
+    "observed_utc": "2026-07-26T12:10:22Z",
     "anchor_beat": "2026-07-24T21:34:31Z"
    },
    "lead_image": {
@@ -120185,7 +120211,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:23:06Z",
+    "observed_utc": "2026-07-26T12:23:54Z",
     "anchor_beat": "2026-07-25T09:27:16Z"
    },
    "lead_image": {
@@ -122649,7 +122675,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:57:37Z",
+    "observed_utc": "2026-07-26T11:58:29Z",
     "anchor_beat": "2026-07-25T03:16:25Z"
    },
    "lead_image": {
@@ -123694,7 +123720,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:57:58Z",
+    "observed_utc": "2026-07-26T11:58:51Z",
     "anchor_beat": "2026-07-24T21:20:02Z"
    },
    "lead_image": {
@@ -124651,7 +124677,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T11:59:53Z",
+    "observed_utc": "2026-07-26T12:01:02Z",
     "anchor_beat": "2026-07-24T23:29:43Z"
    },
    "lead_image": {
@@ -125754,7 +125780,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:00:41Z",
+    "observed_utc": "2026-07-26T12:01:44Z",
     "anchor_beat": "2026-07-24T21:45:00Z"
    },
    "lead_image": {
@@ -127316,7 +127342,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:01:37Z",
+    "observed_utc": "2026-07-26T12:02:34Z",
     "anchor_beat": "2026-07-25T08:48:00Z"
    },
    "lead_image": {
@@ -128291,7 +128317,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:02:01Z",
+    "observed_utc": "2026-07-26T12:02:56Z",
     "anchor_beat": "2026-07-24T17:20:00Z"
    },
    "gate": {
@@ -128611,22 +128637,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 66,
+    "outlets_timed": 65,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "ABC7 Chicago",
-      "ts": "2026-07-19T12:03:34Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "amNewYork",
       "ts": "2026-07-19T12:24:03Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 3
      },
@@ -128672,6 +128690,14 @@
      },
      {
       "outlet": "FOX8 WGHP",
+      "ts": "2026-07-19T16:08:10Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "WFTV",
       "ts": "2026-07-19T16:08:10Z",
       "kind": "journalist",
       "role": "echo",
@@ -129840,7 +129866,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:05:57Z",
+    "observed_utc": "2026-07-26T12:06:50Z",
     "anchor_beat": "2026-07-24T22:24:56Z"
    },
    "lead_image": {
@@ -133344,7 +133370,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:21:54Z",
+    "observed_utc": "2026-07-26T12:22:42Z",
     "anchor_beat": "2026-07-24T20:56:49Z"
    },
    "lead_image": {
@@ -133544,7 +133570,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:23:50Z",
+    "observed_utc": "2026-07-26T12:24:36Z",
     "anchor_beat": "2026-07-25T05:45:00Z"
    },
    "gate": {
@@ -135838,7 +135864,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:00:50Z",
+    "observed_utc": "2026-07-26T12:01:52Z",
     "anchor_beat": "2026-07-24T17:00:22Z"
    },
    "lead_image": {
@@ -136519,7 +136545,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:00:59Z",
+    "observed_utc": "2026-07-26T12:01:59Z",
     "anchor_beat": "2026-07-25T05:15:08Z"
    },
    "lead_image": {
@@ -137979,7 +138005,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:02:32Z",
+    "observed_utc": "2026-07-26T12:03:26Z",
     "anchor_beat": "2026-07-25T02:29:37Z"
    },
    "lead_image": {
@@ -138837,7 +138863,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:04:16Z",
+    "observed_utc": "2026-07-26T12:05:12Z",
     "anchor_beat": "2026-07-24T15:57:14Z"
    },
    "lead_image": {
@@ -139970,7 +139996,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:06:20Z",
+    "observed_utc": "2026-07-26T12:07:13Z",
     "anchor_beat": "2026-07-24T08:06:15Z"
    },
    "lead_image": {
@@ -141482,7 +141508,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:10:22Z",
+    "observed_utc": "2026-07-26T12:11:16Z",
     "anchor_beat": "2026-07-24T19:55:55Z"
    },
    "lead_image": {
@@ -143228,7 +143254,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:11:10Z",
+    "observed_utc": "2026-07-26T12:12:00Z",
     "anchor_beat": "2026-07-24T09:20:05Z"
    },
    "lead_image": {
@@ -144325,7 +144351,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:12:41Z",
+    "observed_utc": "2026-07-26T12:13:30Z",
     "anchor_beat": "2026-07-24T16:55:58Z"
    },
    "lead_image": {
@@ -145415,7 +145441,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:12:48Z",
+    "observed_utc": "2026-07-26T12:13:37Z",
     "anchor_beat": "2026-07-24T12:15:00Z"
    },
    "lead_image": {
@@ -145944,7 +145970,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:13:17Z",
+    "observed_utc": "2026-07-26T12:14:06Z",
     "anchor_beat": "2026-07-24T23:01:06Z"
    },
    "lead_image": {
@@ -147354,7 +147380,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:14:38Z",
+    "observed_utc": "2026-07-26T12:15:29Z",
     "anchor_beat": "2026-07-24T17:30:10Z"
    },
    "lead_image": {
@@ -148377,7 +148403,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:15:47Z",
+    "observed_utc": "2026-07-26T12:16:37Z",
     "anchor_beat": "2026-07-24T19:00:00Z"
    },
    "lead_image": {
@@ -149774,7 +149800,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:21:47Z",
+    "observed_utc": "2026-07-26T12:22:35Z",
     "anchor_beat": "2026-07-25T02:00:19Z"
    },
    "lead_image": {
@@ -151679,7 +151705,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:00:01Z",
+    "observed_utc": "2026-07-26T12:01:11Z",
     "anchor_beat": "2026-07-24T06:24:49Z"
    },
    "lead_image": {
@@ -152535,7 +152561,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:00:12Z",
+    "observed_utc": "2026-07-26T12:01:20Z",
     "anchor_beat": "2026-07-23T20:27:14Z"
    },
    "lead_image": {
@@ -154367,7 +154393,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:01:53Z",
+    "observed_utc": "2026-07-26T12:02:48Z",
     "anchor_beat": "2026-07-22T13:00:00Z"
    },
    "lead_image": {
@@ -155800,7 +155826,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:02:24Z",
+    "observed_utc": "2026-07-26T12:03:18Z",
     "anchor_beat": "2026-07-24T06:30:00Z"
    },
    "lead_image": {
@@ -157928,7 +157954,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:03:24Z",
+    "observed_utc": "2026-07-26T12:04:18Z",
     "anchor_beat": "2026-07-24T08:21:23Z"
    },
    "gate": {
@@ -159132,7 +159158,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:03:46Z",
+    "observed_utc": "2026-07-26T12:04:41Z",
     "anchor_beat": "2026-07-23T14:37:00Z"
    },
    "lead_image": {
@@ -160926,7 +160952,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:04:47Z",
+    "observed_utc": "2026-07-26T12:05:42Z",
     "anchor_beat": "2026-07-23T21:51:40Z"
    },
    "lead_image": {
@@ -161684,7 +161710,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:04:54Z",
+    "observed_utc": "2026-07-26T12:05:49Z",
     "anchor_beat": "2026-07-23T14:31:57Z"
    },
    "gate": {
@@ -162380,7 +162406,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:06:27Z",
+    "observed_utc": "2026-07-26T12:07:20Z",
     "anchor_beat": "2026-07-23T17:56:01Z"
    },
    "lead_image": {
@@ -163694,7 +163720,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:06:50Z",
+    "observed_utc": "2026-07-26T12:07:40Z",
     "anchor_beat": "2026-07-23T21:52:49Z"
    },
    "lead_image": {
@@ -166887,7 +166913,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:09:41Z",
+    "observed_utc": "2026-07-26T12:10:37Z",
     "anchor_beat": "2026-07-23T15:59:37Z"
    },
    "lead_image": {
@@ -170466,7 +170492,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:12:03Z",
+    "observed_utc": "2026-07-26T12:12:54Z",
     "anchor_beat": "2026-07-23T11:45:00Z"
    },
    "lead_image": {
@@ -171860,7 +171886,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:12:19Z",
+    "observed_utc": "2026-07-26T12:13:09Z",
     "anchor_beat": "2026-07-23T12:40:37Z"
    },
    "lead_image": {
@@ -172450,7 +172476,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:12:34Z",
+    "observed_utc": "2026-07-26T12:13:23Z",
     "anchor_beat": "2026-07-24T03:10:22Z"
    },
    "lead_image": {
@@ -173758,7 +173784,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:13:03Z",
+    "observed_utc": "2026-07-26T12:13:51Z",
     "anchor_beat": "2026-07-23T14:52:44Z"
    },
    "lead_image": {
@@ -174753,7 +174779,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:13:25Z",
+    "observed_utc": "2026-07-26T12:14:13Z",
     "anchor_beat": "2026-07-23T21:55:26Z"
    },
    "gate": {
@@ -175559,7 +175585,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:13:39Z",
+    "observed_utc": "2026-07-26T12:14:28Z",
     "anchor_beat": "2026-07-22T22:01:54Z"
    },
    "gate": {
@@ -176370,7 +176396,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:14:23Z",
+    "observed_utc": "2026-07-26T12:15:13Z",
     "anchor_beat": "2026-07-22T17:16:26Z"
    },
    "lead_image": {
@@ -177283,7 +177309,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:15:00Z",
+    "observed_utc": "2026-07-26T12:15:51Z",
     "anchor_beat": "2026-07-24T10:00:00Z"
    },
    "gate": {
@@ -178289,7 +178315,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:15:25Z",
+    "observed_utc": "2026-07-26T12:16:14Z",
     "anchor_beat": "2026-07-23T16:10:12Z"
    },
    "lead_image": {
@@ -179446,7 +179472,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:15:33Z",
+    "observed_utc": "2026-07-26T12:16:22Z",
     "anchor_beat": "2026-07-22T21:34:34Z"
    },
    "gate": {
@@ -181095,7 +181121,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:16:27Z",
+    "observed_utc": "2026-07-26T12:17:23Z",
     "anchor_beat": "2026-07-24T05:40:00Z"
    },
    "gate": {
@@ -181809,7 +181835,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:16:33Z",
+    "observed_utc": "2026-07-26T12:17:31Z",
     "anchor_beat": "2026-07-23T13:05:25Z"
    },
    "lead_image": {
@@ -182708,7 +182734,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:16:40Z",
+    "observed_utc": "2026-07-26T12:17:38Z",
     "anchor_beat": null
    },
    "gate": {
@@ -183218,7 +183244,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:16:47Z",
+    "observed_utc": "2026-07-26T12:17:46Z",
     "anchor_beat": "2026-07-23T19:14:25Z"
    },
    "lead_image": {
@@ -183926,7 +183952,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:17:22Z",
+    "observed_utc": "2026-07-26T12:18:17Z",
     "anchor_beat": "2026-07-24T02:35:54Z"
    },
    "lead_image": {
@@ -185603,7 +185629,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-07-26T12:18:39Z",
+    "observed_utc": "2026-07-26T12:19:32Z",
     "anchor_beat": null
    },
    "gate": {
@@ -187028,7 +187054,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-07-26T12:19:39Z",
+    "observed_utc": "2026-07-26T12:20:34Z",
     "anchor_beat": "2026-07-24T04:54:18Z"
    },
    "gate": {
@@ -187200,7 +187226,7 @@
     "discovered_days": 0
    },
    "gate": {
-    "score": 2,
+    "score": 3,
     "of": 8,
     "checks": {
      "split": 0,
@@ -187208,63 +187234,14 @@
      "provenance": 0,
      "steelman": 0,
      "history": 1,
-     "report": 0,
+     "report": 1,
      "theories": 0,
      "unknowns": 1
     }
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Nigeria's president approves largest military expansion in recent times",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Andy Burnham says he will disagree with Trump in public if necessary",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Phones in Hand, India\u2019s Young Protesters Blast Through Modi\u2019s Media Control",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Japan\u2019s ancient capitals put on UNESCO World Heritage List",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Call for public health emergency amid Dengue outbreak in Sudan\u2019s Blue Nile state",
-   "outlets": 7,
-   "count": 7,
-   "status": "watching"
-  },
-  {
-   "sample": "Caracas notifies UN of ICC withdrawal",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Contagious Cancer Found in North American Catfish",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "The people testing AI for danger are having a hard time keeping up",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -187281,7 +187258,7 @@
   "claims": 4454,
   "carriers": 11558,
   "steelmans": 4100,
-  "deep_reports": 796,
+  "deep_reports": 798,
   "entities": 1127,
   "edges": 27519,
   "history_nodes": 557,
@@ -187290,12 +187267,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 128,
-  "accepted": 2,
-  "rejected": 3,
-  "existing": 1,
-  "below": 122,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
