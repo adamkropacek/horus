@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-03T12:41:31Z",
+ "generated_utc": "2026-08-03T12:43:21Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -32,6 +32,7 @@
    "fox-world",
    "france24",
    "ft",
+   "gdelt",
    "globaltimes",
    "gnews",
    "guardian-world",
@@ -78,6 +79,36 @@
     "id": "timesofisrael",
     "label": "Times of Israel",
     "reason": "HTTP Error 403: Forbidden"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT Iran nuclear work sparks concern",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:japan-yen-weakens-to-40-year-low",
+    "label": "GDELT Japan yen weakens to 40-year low",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-fed-rate-hike-bets-push-dollar-to-one-year-hi",
+    "label": "GDELT Dollar Weakens Against Yen",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
+    "label": "GDELT SpaceX IPO Musk first trillionaire",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:trump-reframes-us-china-relationship-as-peer-pow",
+    "label": "GDELT China boosts military, asserts global influence under Xi",
+    "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
  },
@@ -296,7 +327,7 @@
     ]
    },
    "discovered": true,
-   "items_24h": 104,
+   "items_24h": 103,
    "items_48h": 195,
    "outlets": 163,
    "kinds": [
@@ -1284,7 +1315,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:10:08Z",
+    "observed_utc": "2026-08-03T12:12:28Z",
     "anchor_beat": "2026-08-03T11:24:00Z"
    },
    "lead_image": {
@@ -1755,18 +1786,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Anadolu Agency",
-      "ts": "2026-07-27T12:11:22Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "TR state news agency",
-      "items": 36
-     },
-     {
       "outlet": "nbcnews.com",
       "ts": "2026-07-27T12:15:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "US press",
       "items": 1
      },
@@ -1817,6 +1840,14 @@
       "role": "echo",
       "motive_note": "HK press (Alibaba-owned)",
       "items": 7
+     },
+     {
+      "outlet": "The Hill",
+      "ts": "2026-07-27T13:12:04Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 27
      }
     ],
     "unplaced": []
@@ -2304,7 +2335,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Iran nuclear work sparks concern, Press TV, Times of Israel.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -2319,10 +2350,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.26,
-      "last_ts": "2026-08-03T11:57:54Z",
+      "last": 79.05,
+      "last_ts": "2026-08-03T11:59:58Z",
       "basis": "Iran tensions affect oil supply",
-      "move_pct": -0.36,
+      "move_pct": -0.63,
       "window_h": 24,
       "measured_from": "2026-08-03T11:52:56Z",
       "series": [
@@ -2505,6 +2536,10 @@
        [
         "2026-08-03T11:57:54Z",
         79.26
+       ],
+       [
+        "2026-08-03T11:59:58Z",
+        79.05
        ]
       ]
      },
@@ -2512,10 +2547,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 83.1,
-      "last_ts": "2026-08-03T11:57:30Z",
+      "last": 82.89,
+      "last_ts": "2026-08-03T11:59:55Z",
       "basis": "US-Iran talks influence oil prices",
-      "move_pct": -0.47,
+      "move_pct": -0.72,
       "window_h": 24,
       "measured_from": "2026-08-03T11:52:56Z",
       "series": [
@@ -2586,6 +2621,10 @@
        [
         "2026-08-03T11:57:30Z",
         83.1
+       ],
+       [
+        "2026-08-03T11:59:55Z",
+        82.89
        ]
       ]
      },
@@ -2593,12 +2632,12 @@
       "symbol": "^VIX",
       "label": "VIX",
       "class": "index",
-      "last": 16.03,
-      "last_ts": "2026-08-03T11:52:46Z",
+      "last": 16.06,
+      "last_ts": "2026-08-03T11:54:46Z",
       "basis": "Middle East tensions raise volatility",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
+      "move_pct": 0.19,
+      "window_h": 24,
+      "measured_from": "2026-08-03T11:52:56Z",
       "series": [
        [
         "2026-08-03T07:00:00Z",
@@ -2667,12 +2706,16 @@
        [
         "2026-08-03T11:52:46Z",
         16.03
+       ],
+       [
+        "2026-08-03T11:54:46Z",
+        16.06
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:09:56Z",
+    "observed_utc": "2026-08-03T12:12:19Z",
     "anchor_beat": "2026-08-03T11:52:56Z"
    },
    "lead_image": {
@@ -3763,7 +3806,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine, Press TV, Times of Israel."
    ],
    "market": {
     "instruments": [
@@ -3771,10 +3814,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 83.1,
-      "last_ts": "2026-08-03T11:57:30Z",
+      "last": 82.89,
+      "last_ts": "2026-08-03T11:59:55Z",
       "basis": "War disrupts energy supply",
-      "move_pct": -0.38,
+      "move_pct": -0.64,
       "window_h": 24,
       "measured_from": "2026-08-03T11:18:17Z",
       "series": [
@@ -3845,6 +3888,10 @@
        [
         "2026-08-03T11:57:30Z",
         83.1
+       ],
+       [
+        "2026-08-03T11:59:55Z",
+        82.89
        ]
       ]
      },
@@ -3852,10 +3899,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.26,
-      "last_ts": "2026-08-03T11:57:54Z",
+      "last": 79.05,
+      "last_ts": "2026-08-03T11:59:58Z",
       "basis": "War disrupts energy supply",
-      "move_pct": -0.33,
+      "move_pct": -0.59,
       "window_h": 24,
       "measured_from": "2026-08-03T11:18:17Z",
       "series": [
@@ -4046,6 +4093,10 @@
        [
         "2026-08-03T11:57:54Z",
         79.26
+       ],
+       [
+        "2026-08-03T11:59:58Z",
+        79.05
        ]
       ]
      },
@@ -4053,10 +4104,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 2.767,
-      "last_ts": "2026-08-03T11:57:53Z",
+      "last": 2.773,
+      "last_ts": "2026-08-03T11:59:56Z",
       "basis": "War disrupts energy supply",
-      "move_pct": 0.44,
+      "move_pct": 0.65,
       "window_h": 24,
       "measured_from": "2026-08-03T11:18:17Z",
       "series": [
@@ -4243,6 +4294,10 @@
        [
         "2026-08-03T11:57:53Z",
         2.767
+       ],
+       [
+        "2026-08-03T11:59:56Z",
+        2.773
        ]
       ]
      },
@@ -4250,10 +4305,10 @@
       "symbol": "^VIX",
       "label": "VIX",
       "class": "index",
-      "last": 16.03,
-      "last_ts": "2026-08-03T11:52:46Z",
+      "last": 16.06,
+      "last_ts": "2026-08-03T11:54:46Z",
       "basis": null,
-      "move_pct": 0.31,
+      "move_pct": 0.5,
       "window_h": 24,
       "measured_from": "2026-08-03T11:18:17Z",
       "series": [
@@ -4324,12 +4379,16 @@
        [
         "2026-08-03T11:52:46Z",
         16.03
+       ],
+       [
+        "2026-08-03T11:54:46Z",
+        16.06
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:09:19Z",
+    "observed_utc": "2026-08-03T12:11:42Z",
     "anchor_beat": "2026-08-03T11:18:17Z"
    },
    "lead_image": {
@@ -5080,7 +5139,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Japan yen weakens to 40-year low, Press TV, Times of Israel.",
     "Deep history not yet built - story discovered 34 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5310,7 +5369,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:14:11Z",
+    "observed_utc": "2026-08-03T12:16:27Z",
     "anchor_beat": "2026-08-03T10:30:05Z"
    },
    "lead_image": {
@@ -6468,10 +6527,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.26,
-      "last_ts": "2026-08-03T11:57:54Z",
+      "last": 79.05,
+      "last_ts": "2026-08-03T11:59:58Z",
       "basis": "Geopolitical tension in Middle East",
-      "move_pct": -0.33,
+      "move_pct": -0.59,
       "window_h": 24,
       "measured_from": "2026-08-03T11:12:34Z",
       "series": [
@@ -6662,6 +6721,10 @@
        [
         "2026-08-03T11:57:54Z",
         79.26
+       ],
+       [
+        "2026-08-03T11:59:58Z",
+        79.05
        ]
       ]
      },
@@ -6669,10 +6732,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 83.1,
-      "last_ts": "2026-08-03T11:57:30Z",
+      "last": 82.89,
+      "last_ts": "2026-08-03T11:59:55Z",
       "basis": "Geopolitical tension in Middle East",
-      "move_pct": -0.38,
+      "move_pct": -0.64,
       "window_h": 24,
       "measured_from": "2026-08-03T11:12:34Z",
       "series": [
@@ -6743,12 +6806,16 @@
        [
         "2026-08-03T11:57:30Z",
         83.1
+       ],
+       [
+        "2026-08-03T11:59:55Z",
+        82.89
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:09:23Z",
+    "observed_utc": "2026-08-03T12:11:46Z",
     "anchor_beat": "2026-08-03T11:12:34Z"
    },
    "lead_image": {
@@ -7647,7 +7714,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Dollar Weakens Against Yen, Press TV, Times of Israel.",
     "Deep history not yet built - story discovered 41 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -7950,7 +8017,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:11:26Z",
+    "observed_utc": "2026-08-03T12:13:39Z",
     "anchor_beat": "2026-08-03T11:25:04Z"
    },
    "lead_image": {
@@ -8507,11 +8574,6 @@
      "class": "mainstream"
     },
     {
-     "outlet": "Yahoo",
-     "n": 3,
-     "class": "other"
-    },
-    {
      "outlet": "Yahoo Finance UK",
      "n": 3,
      "class": "other"
@@ -8523,6 +8585,11 @@
     },
     {
      "outlet": "CNBC",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Investing.com",
      "n": 2,
      "class": "other"
     }
@@ -8820,7 +8887,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 57
+     "other": 55
     },
     "first_seen": "2026-06-12T07:13:55Z"
    },
@@ -8887,7 +8954,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT SpaceX IPO Musk first trillionaire, Press TV, Times of Israel."
    ],
    "history": {
     "built": true,
@@ -9860,7 +9927,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT China boosts military, asserts global influence under Xi, Press TV, Times of Israel.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -9875,8 +9942,8 @@
       "symbol": "^VIX",
       "label": "VIX",
       "class": "index",
-      "last": 16.03,
-      "last_ts": "2026-08-03T11:52:46Z",
+      "last": 16.06,
+      "last_ts": "2026-08-03T11:54:46Z",
       "basis": "China military buildup geopolitical tension",
       "move_pct": null,
       "window_h": null,
@@ -9949,6 +10016,10 @@
        [
         "2026-08-03T11:52:46Z",
         16.03
+       ],
+       [
+        "2026-08-03T11:54:46Z",
+        16.06
        ]
       ]
      },
@@ -10462,8 +10533,8 @@
       "symbol": "^GDAXI",
       "label": "DAX",
       "class": "index",
-      "last": 26010.2402,
-      "last_ts": "2026-08-03T11:52:55Z",
+      "last": 26012.0898,
+      "last_ts": "2026-08-03T11:54:59Z",
       "basis": "China military buildup geopolitical tension",
       "move_pct": null,
       "window_h": null,
@@ -10544,12 +10615,16 @@
        [
         "2026-08-03T11:52:55Z",
         26010.2402
+       ],
+       [
+        "2026-08-03T11:54:59Z",
+        26012.0898
        ]
       ]
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:10:00Z",
+    "observed_utc": "2026-08-03T12:12:23Z",
     "anchor_beat": "2026-08-03T12:00:06Z"
    },
    "lead_image": {
@@ -13168,7 +13243,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:10:16Z",
+    "observed_utc": "2026-08-03T12:12:36Z",
     "anchor_beat": "2026-08-03T10:46:44Z"
    },
    "lead_image": {
@@ -13796,8 +13871,8 @@
    },
    "discovered": true,
    "items_24h": 15,
-   "items_48h": 55,
-   "outlets": 46,
+   "items_48h": 54,
+   "outlets": 45,
    "kinds": [
     "journalist",
     "state media"
@@ -15755,7 +15830,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:16:39Z",
+    "observed_utc": "2026-08-03T12:19:06Z",
     "anchor_beat": "2026-08-03T10:08:01Z"
    },
    "lead_image": {
@@ -16983,7 +17058,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:12:05Z",
+    "observed_utc": "2026-08-03T12:14:18Z",
     "anchor_beat": "2026-08-03T10:50:00Z"
    },
    "lead_image": {
@@ -17722,16 +17797,16 @@
    "sources": [
     {
      "outlet": "Anadolu Agency",
-     "n": 5,
+     "n": 4,
      "class": "state-media"
     },
     {
-     "outlet": "France 24",
-     "n": 4,
+     "outlet": "Al Jazeera",
+     "n": 3,
      "class": "mainstream"
     },
     {
-     "outlet": "Al Jazeera",
+     "outlet": "France 24",
      "n": 3,
      "class": "mainstream"
     },
@@ -18669,7 +18744,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:11:47Z",
+    "observed_utc": "2026-08-03T12:13:59Z",
     "anchor_beat": "2026-08-03T10:24:23Z"
    },
    "lead_image": {
@@ -21440,7 +21515,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:14:40Z",
+    "observed_utc": "2026-08-03T12:16:57Z",
     "anchor_beat": "2026-08-03T11:56:24Z"
    },
    "lead_image": {
@@ -23892,7 +23967,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:21:41Z",
+    "observed_utc": "2026-08-03T12:23:50Z",
     "anchor_beat": "2026-08-03T11:17:19Z"
    },
    "lead_image": {
@@ -25550,7 +25625,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:21:24Z",
+    "observed_utc": "2026-08-03T12:23:33Z",
     "anchor_beat": "2026-08-03T07:38:53Z"
    },
    "lead_image": {
@@ -26044,7 +26119,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:40:09Z",
+    "observed_utc": "2026-08-03T12:42:01Z",
     "anchor_beat": "2026-08-03T11:47:06Z"
    },
    "lead_image": {
@@ -27670,7 +27745,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:12:12Z",
+    "observed_utc": "2026-08-03T12:14:24Z",
     "anchor_beat": "2026-08-03T10:00:25Z"
    },
    "lead_image": {
@@ -30317,10 +30392,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 83.1,
-      "last_ts": "2026-08-03T11:57:30Z",
+      "last": 82.89,
+      "last_ts": "2026-08-03T11:59:55Z",
       "basis": "Sudan conflict oil supply",
-      "move_pct": -0.47,
+      "move_pct": -0.72,
       "window_h": 24,
       "measured_from": "2026-08-03T11:28:04Z",
       "series": [
@@ -30391,6 +30466,10 @@
        [
         "2026-08-03T11:57:30Z",
         83.1
+       ],
+       [
+        "2026-08-03T11:59:55Z",
+        82.89
        ]
       ]
      },
@@ -30398,10 +30477,10 @@
       "symbol": "^VIX",
       "label": "VIX",
       "class": "index",
-      "last": 16.03,
-      "last_ts": "2026-08-03T11:52:46Z",
+      "last": 16.06,
+      "last_ts": "2026-08-03T11:54:46Z",
       "basis": "Geopolitical risk increases",
-      "move_pct": 0.31,
+      "move_pct": 0.5,
       "window_h": 24,
       "measured_from": "2026-08-03T11:28:04Z",
       "series": [
@@ -30472,12 +30551,16 @@
        [
         "2026-08-03T11:52:46Z",
         16.03
+       ],
+       [
+        "2026-08-03T11:54:46Z",
+        16.06
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:09:48Z",
+    "observed_utc": "2026-08-03T12:12:11Z",
     "anchor_beat": "2026-08-03T11:28:04Z"
    },
    "lead_image": {
@@ -31995,7 +32078,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:13:02Z",
+    "observed_utc": "2026-08-03T12:15:16Z",
     "anchor_beat": "2026-08-03T11:32:03Z"
    },
    "lead_image": {
@@ -33860,7 +33943,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:11:43Z",
+    "observed_utc": "2026-08-03T12:13:56Z",
     "anchor_beat": "2026-08-03T08:42:58Z"
    },
    "lead_image": {
@@ -33887,6 +33970,2104 @@
    }
   },
   {
+   "id": "fifa-20bn-world-cup-plan-sparks-eu-probe",
+   "name": "FIFA $20bn World Cup plan sparks EU probe",
+   "bucket": "power-money",
+   "topic_tags": [
+    "corruption"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 5,
+   "items_48h": 11,
+   "outlets": 7,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-03T11:55:21Z",
+     "title": "UEFA threatens Gianni Infantino, Josh Kushner with legal action: Report",
+     "outlet": "Anadolu Agency",
+     "kind": "state media",
+     "url": "https://www.aa.com.tr/en/sports/uefa-threatens-gianni-infantino-josh-kushner-with-legal-action-report/4017090",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T10:00:00Z",
+     "title": "FIFA backs off World Cup private equity pitch after global fury: 5 things to know",
+     "outlet": "The Hill",
+     "kind": "journalist",
+     "url": "https://thehill.com/newsletters/keeping-score/6002849-fifa-world-cup-private-equity/",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T09:52:19Z",
+     "title": "Infantino's grip on FIFA weakened following investor plan controversy",
+     "outlet": "France 24",
+     "kind": "journalist",
+     "url": "https://www.france24.com/en/infantino-s-grip-on-fifa-weakened-following-investor-plan-controversy",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-03T06:41:24Z",
+     "title": "Infantino under growing pressure after FIFA scraps World Cup investor proposal",
+     "outlet": "France 24",
+     "kind": "journalist",
+     "url": "https://www.france24.com/en/tv-shows/sports/20260803-infantino-under-growing-pressure-after-fifa-scraps-world-cup-investor-proposal",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-02T22:01:57Z",
+     "title": "Uefa threatens legal action over Infantino\u2019s failed Fifa commercialisation",
+     "outlet": "Financial Times",
+     "kind": "journalist",
+     "url": "https://www.ft.com/content/ddb7c0d4-c156-48a0-b30f-d03f605a1a9c?syn-25a6b1a6=1",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-02T04:34:19Z",
+     "title": "Why isn\u2019t anyone challenging Infantino for FIFA\u2019s top job?",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/why-isnt-anyone-challenging-infantino-for-fifas-top-job?traffic_source=rss",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-01T16:58:19Z",
+     "title": "UEFA looks for candidates to replace Infantino - The Telegraph",
+     "outlet": "TASS",
+     "kind": "state media",
+     "url": "https://tass.com/sports/2168013",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-01T16:48:01Z",
+     "title": "FIFA head ditches private equity plan",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/sport/archives/2026/08/02/2003861788",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-08-01T09:28:18Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 49,
+    "outlets_unplaced": 1,
+    "chain": [
+     {
+      "outlet": "CBC World",
+      "ts": "2026-07-28T13:57:29Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "twincities.com",
+      "ts": "2026-07-28T17:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "ocregister.com",
+      "ts": "2026-07-28T19:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "nbcbayarea.com",
+      "ts": "2026-07-28T19:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "pilotonline.com",
+      "ts": "2026-07-28T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "nbclosangeles.com",
+      "ts": "2026-07-28T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "nbcchicago.com",
+      "ts": "2026-07-28T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "nbcconnecticut.com",
+      "ts": "2026-07-28T20:15:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": [
+     {
+      "outlet": "Nikkei Asia",
+      "first_seen": "2026-07-31T11:26:50Z",
+      "kind": "journalist",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ]
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "n": 3,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "France 24",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "TASS",
+     "n": 2,
+     "class": "state-media"
+    },
+    {
+     "outlet": "The Hill",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Anadolu Agency",
+     "n": 1,
+     "class": "state-media"
+    },
+    {
+     "outlet": "Financial Times",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Taipei Times",
+     "n": 1,
+     "class": "regional"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 3,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-29 12:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-29 18:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-30 00:00",
+      5,
+      5
+     ],
+     [
+      "2026-07-30 06:00",
+      4,
+      5
+     ],
+     [
+      "2026-07-30 12:00",
+      7,
+      8
+     ],
+     [
+      "2026-07-30 18:00",
+      13,
+      13
+     ],
+     [
+      "2026-07-31 00:00",
+      14,
+      12
+     ],
+     [
+      "2026-07-31 06:00",
+      17,
+      14
+     ],
+     [
+      "2026-07-31 12:00",
+      37,
+      31
+     ],
+     [
+      "2026-07-31 18:00",
+      30,
+      31
+     ],
+     [
+      "2026-08-01 00:00",
+      27,
+      29
+     ],
+     [
+      "2026-08-01 06:00",
+      26,
+      29
+     ],
+     [
+      "2026-08-01 12:00",
+      22,
+      26
+     ],
+     [
+      "2026-08-01 18:00",
+      18,
+      23
+     ],
+     [
+      "2026-08-02 00:00",
+      14,
+      20
+     ],
+     [
+      "2026-08-02 06:00",
+      11,
+      17
+     ],
+     [
+      "2026-08-02 12:00",
+      7,
+      13
+     ],
+     [
+      "2026-08-02 18:00",
+      2,
+      11
+     ],
+     [
+      "2026-08-03 00:00",
+      2,
+      8
+     ],
+     [
+      "2026-08-03 06:00",
+      4,
+      6
+     ],
+     [
+      "2026-08-03 12:00",
+      4,
+      6
+     ]
+    ],
+    "mix": {
+     "mainstream": 3,
+     "state-media": 2,
+     "regional": 1,
+     "official": 0,
+     "other": 1
+    },
+    "first_seen": "2026-07-29T12:58:34Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 5
+   },
+   "lead_image": {
+    "url": "https://www.aljazeera.com/wp-content/uploads/2026/08/AP685942727926-1785568851.jpg?resize=1920%2C1440",
+    "source": "Al Jazeera",
+    "focal": {
+     "x": 25,
+     "y": 54
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "analysts-claim-israel-seeks-regional-instability",
+   "name": "US House debates Israel aid amid party divisions",
+   "bucket": "info-wars",
+   "topic_tags": [
+    "censorship",
+    "media"
+   ],
+   "brief": {
+    "generated_utc": "2026-06-30T06:04:35Z",
+    "sentence_count": 6,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "UN Security Council live session highlighted Israeli settlements in occupied Palestinian territory.",
+        "cites": [
+         {
+          "outlet": "UN News",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9CMG54cVg1LXA0cTVpaGlKQW1NMzhTdGxBYnJpQ09COTFsa2RELUU3WF9XSGRnRUhsWVNhX2t1c3lxcnhJa0lNOXhKNmVwbDV5bDFfcDd1UQ?oc=5",
+          "ts": "2026-06-29T14:05:27Z",
+          "title": "Security Council LIVE: Spotlight on Israeli settlements in occupied Palestinian territory"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "France ONU called for Israel to immediately and completely cease all settlement activities.",
+        "cites": [
+         {
+          "outlet": "France ONU",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOV0lwOTRTUmNBeHU2QUphRklLOHBIVDByeXl2cW85N2lPQmtWNDZTZ244NmVUZHZxRGtFOVhwRmtyQndpTGJST1U2THliRmtJYm1YWUtQT0NDOVFVVFBzOU1jN3RPOVdRd2VFeTgzczhUMGZ1eVp5TWVwdVRJUVZvd3FfQWgtX1J4c1h3b2hEQXZwLXdELWxDUG1SYlYxUVE?oc=5",
+          "ts": "2026-06-29T21:54:44Z",
+          "title": "Israel must immediately and completely cease all settlement activities"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "\"Time for condemning is over,\" Palestine's UN envoy said, demanding an end to Israeli annexation of Palestinian land.",
+        "cites": [
+         {
+          "outlet": "Anadolu Agency",
+          "kind": "state media",
+          "url": "https://www.aa.com.tr/en/middle-east/time-for-condemning-is-over-palestines-un-envoy-demands-end-to-israeli-annexation-of-palestinian-land/3981670",
+          "ts": "2026-06-29T22:19:09Z",
+          "title": "'Time for condemning is over': Palestine's UN envoy demands end to Israeli annexation of Palestinian land"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Israel moved to formally recognize Armenian World War I deaths as a genocide.",
+        "cites": [
+         {
+          "outlet": "KUOW",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZEpybFF4bmZMUUU2WUJISWtBMDdwVUt1OWVNQjhaWmxzaDFURGZYclRKY2F0OF9lbU1NanFESWxMNEN6bnBWaFowbXJSYVNBeXl5ckd6UmZra1FNcjlFZUY5Z1QzUHNpNEFITVUwZ0VUYWJaTkF0TFJhQUcxZUVheFF2THU4TW15M2dOeXhhcnhjdThrNjhSb0tTWVFZZw?oc=5",
+          "ts": "2026-06-29T14:29:58Z",
+          "title": "Israel moves to formally recognize Armenian WWI deaths as a genocide"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Azerbaijan slammed Israel's recognition of the Armenian genocide.",
+        "cites": [
+         {
+          "outlet": "The Hindu Intl",
+          "kind": "journalist",
+          "url": "https://www.thehindu.com/news/international/azerbaijan-slams-ally-israels-recognition-of-armenian-genocide/article71162775.ece",
+          "ts": "2026-06-29T23:08:42Z",
+          "title": "Azerbaijan slams ally Israel\u2019s recognition of Armenian genocide"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The Turkish Parliament speaker said Israeli aggression threatens global peace.",
+        "cites": [
+         {
+          "outlet": "Daily Sabah",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSnNSWF9JMnJ0OWNYZW1HS0p4VjNEU1Rpd2puTWhrbTcyWmJNZW9JSkNWaEtmREF1UWpWZ1A2UXNuanFYeWNmUG9iRWR1QmtPMFlyVUUtQ0ZxNlZnMUFJU2lwQlNoQ0NOMGYxWEpnZ0NZTVFjbjZsVTRRNGU3V012Vzc5ZmlUbUZ5MmF4X0loTlpwWDZsdTlXdG9wM2FEOElnY0dYS09uZWJYQ2VUS09DZEFKONIBswFBVV95cUxOSnNSWF9JMnJ0OWNYZW1HS0p4VjNEU1Rpd2puTWhrbTcyWmJNZW9JSkNWaEtmREF1UWpWZ1A2UXNuanFYeWNmUG9iRWR1QmtPMFlyVUUtQ0ZxNlZnMUFJU2lwQlNoQ0NOMGYxWEpnZ0NZTVFjbjZsVTRRNGU3V012Vzc5ZmlUbUZ5MmF4X0loTlpwWDZsdTlXdG9wM2FEOElnY0dYS09uZWJYQ2VUS09DZEFKOA?oc=5",
+          "ts": "2026-06-29T07:11:00Z",
+          "title": "Israeli aggression threatens global peace: Turkish Parliament speaker | Daily Sabah"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "discovered": true,
+   "items_24h": 5,
+   "items_48h": 7,
+   "outlets": 5,
+   "kinds": [
+    "journalist",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-03T11:53:18Z",
+     "title": "Here Are Monday\u2019s Top Wall Street Analyst Research Calls: Best Buy, Circle Internet, Corning, Eaton Corporation, eBay, Ingersoll-Rand, NXP Semiconductors, Starbucks, and More",
+     "outlet": "24/7 Wall St.",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/monday-top-wall-street-analyst-115318506.html",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T10:00:14Z",
+     "title": "Abandoned by the US: Palestinian Americans trapped in a surge of Israeli settler violence",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/world/2026/aug/03/palestinian-village-trapped-surge-settler-violence-turmus-ayya-west-bank",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-02T19:39:32Z",
+     "title": "Israelis attack Armenian monastery in Jerusalem\u2019s Old City",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/israelis-attack-armenian-monastery-in-jerusalems-old-city?traffic_source=rss",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-02T15:00:00Z",
+     "title": "An Analyst Just Called Meta a Top Large-Cap Buy. Here\u2019s Why We Agree.",
+     "outlet": "24/7 Wall St.",
+     "kind": "journalist",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-just-called-meta-top-150000569.html",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-02T12:02:04Z",
+     "title": "Israel\u2019s influence industry in the US",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/video/the-listening-post/2026/8/2/israels-influence-industry-in-the-us?traffic_source=rss",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-02T11:11:50Z",
+     "title": "Comparing Israel to Nazi regime is not a criminal offense, German court rules",
+     "outlet": "Anadolu Agency",
+     "kind": "state media",
+     "url": "https://www.aa.com.tr/en/europe/comparing-israel-to-nazi-regime-is-not-a-criminal-offense-german-court-rules/4016284",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-02T08:14:39Z",
+     "title": "5 big analyst AI moves: AI rally to resume but S&P 500 faces pullback by end-2027",
+     "outlet": "Investing.com",
+     "kind": "journalist",
+     "url": "https://www.investing.com/news/stock-market-news/5-big-analyst-ai-moves-ai-rally-to-resume-but-sp-500-faces-pullback-by-end2027-4829636",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-01T11:40:10Z",
+     "title": "Spanish commentators accuse Israel and US of involvement in Ceuta crisis",
+     "outlet": "Middle East Eye",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNGtvREw0bzVWZnNTZXplRkdCNHYxMWN3WHBmTVFhVldXbDJXZzJSWm53dEVYVC1OZ1Rmd2NpT05lYkh4aUhFbTk4WjlmcXBScmt4OXFWSzdJSHdnU19EaXJfa3B4bjVYNF9RMUVMdHJOMGstQlpjS2tQcy1ZWkVIcU9NS2dSVVJYT0lVazNCWFNsZU8zSHQ3MVBUN0lQOVNmV3JaVENUZzBIYnUzVm1qXzcyYw?oc=5",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-07-30T07:40:17Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 27,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-07-27T14:31:12Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "UK press",
+      "items": 2
+     },
+     {
+      "outlet": "The Guardian",
+      "ts": "2026-07-27T14:33:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 2
+     },
+     {
+      "outlet": "Investing.com",
+      "ts": "2026-07-27T14:55:03Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "24/7 Wall St.",
+      "ts": "2026-07-27T17:20:52Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 5
+     },
+     {
+      "outlet": "The New York Times",
+      "ts": "2026-07-27T17:22:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 1
+     },
+     {
+      "outlet": "AOL.com",
+      "ts": "2026-07-27T17:40:20Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Argus Research",
+      "ts": "2026-07-27T17:47:32Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 35
+     },
+     {
+      "outlet": "CGTN",
+      "ts": "2026-07-27T20:42:02Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "CN state media",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "24/7 Wall St.",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Al Jazeera",
+     "n": 2,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Barchart",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Anadolu Agency",
+     "n": 1,
+     "class": "state-media"
+    },
+    {
+     "outlet": "Barrons.com",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Investing.com",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Middle East Eye",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-20 18:00",
+      14,
+      18
+     ],
+     [
+      "2026-07-21 00:00",
+      12,
+      18
+     ],
+     [
+      "2026-07-21 06:00",
+      13,
+      14
+     ],
+     [
+      "2026-07-21 12:00",
+      8,
+      13
+     ],
+     [
+      "2026-07-21 18:00",
+      11,
+      15
+     ],
+     [
+      "2026-07-22 00:00",
+      10,
+      15
+     ],
+     [
+      "2026-07-22 06:00",
+      12,
+      14
+     ],
+     [
+      "2026-07-22 12:00",
+      19,
+      16
+     ],
+     [
+      "2026-07-22 18:00",
+      21,
+      18
+     ],
+     [
+      "2026-07-23 00:00",
+      23,
+      18
+     ],
+     [
+      "2026-07-23 06:00",
+      23,
+      22
+     ],
+     [
+      "2026-07-23 12:00",
+      20,
+      22
+     ],
+     [
+      "2026-07-23 18:00",
+      17,
+      22
+     ],
+     [
+      "2026-07-24 00:00",
+      17,
+      21
+     ],
+     [
+      "2026-07-24 06:00",
+      18,
+      22
+     ],
+     [
+      "2026-07-24 12:00",
+      17,
+      18
+     ],
+     [
+      "2026-07-24 18:00",
+      17,
+      16
+     ],
+     [
+      "2026-07-25 00:00",
+      18,
+      19
+     ],
+     [
+      "2026-07-25 06:00",
+      16,
+      15
+     ],
+     [
+      "2026-07-25 12:00",
+      12,
+      13
+     ],
+     [
+      "2026-07-25 18:00",
+      9,
+      15
+     ],
+     [
+      "2026-07-26 00:00",
+      9,
+      15
+     ],
+     [
+      "2026-07-26 06:00",
+      9,
+      15
+     ],
+     [
+      "2026-07-26 12:00",
+      9,
+      13
+     ],
+     [
+      "2026-07-26 18:00",
+      9,
+      12
+     ],
+     [
+      "2026-07-27 00:00",
+      6,
+      9
+     ],
+     [
+      "2026-07-27 06:00",
+      6,
+      10
+     ],
+     [
+      "2026-07-27 12:00",
+      10,
+      14
+     ],
+     [
+      "2026-07-27 18:00",
+      17,
+      11
+     ],
+     [
+      "2026-07-28 00:00",
+      18,
+      12
+     ],
+     [
+      "2026-07-28 06:00",
+      19,
+      11
+     ],
+     [
+      "2026-07-28 12:00",
+      19,
+      12
+     ],
+     [
+      "2026-07-28 18:00",
+      14,
+      14
+     ],
+     [
+      "2026-07-29 00:00",
+      15,
+      15
+     ],
+     [
+      "2026-07-29 06:00",
+      17,
+      18
+     ],
+     [
+      "2026-07-29 12:00",
+      19,
+      17
+     ],
+     [
+      "2026-07-29 18:00",
+      17,
+      15
+     ],
+     [
+      "2026-07-30 00:00",
+      12,
+      16
+     ],
+     [
+      "2026-07-30 06:00",
+      11,
+      15
+     ],
+     [
+      "2026-07-30 12:00",
+      13,
+      14
+     ],
+     [
+      "2026-07-30 18:00",
+      17,
+      15
+     ],
+     [
+      "2026-07-31 00:00",
+      17,
+      12
+     ],
+     [
+      "2026-07-31 06:00",
+      17,
+      10
+     ],
+     [
+      "2026-07-31 12:00",
+      12,
+      10
+     ],
+     [
+      "2026-07-31 18:00",
+      13,
+      10
+     ],
+     [
+      "2026-08-01 00:00",
+      13,
+      10
+     ],
+     [
+      "2026-08-01 06:00",
+      13,
+      8
+     ],
+     [
+      "2026-08-01 12:00",
+      8,
+      5
+     ],
+     [
+      "2026-08-01 18:00",
+      7,
+      6
+     ],
+     [
+      "2026-08-02 00:00",
+      1,
+      6
+     ],
+     [
+      "2026-08-02 06:00",
+      3,
+      7
+     ],
+     [
+      "2026-08-02 12:00",
+      4,
+      7
+     ],
+     [
+      "2026-08-02 18:00",
+      5,
+      5
+     ],
+     [
+      "2026-08-03 00:00",
+      5,
+      5
+     ],
+     [
+      "2026-08-03 06:00",
+      5,
+      6
+     ],
+     [
+      "2026-08-03 12:00",
+      5,
+      6
+     ]
+    ],
+    "mix": {
+     "mainstream": 2,
+     "state-media": 1,
+     "regional": 0,
+     "official": 0,
+     "other": 5
+    },
+    "first_seen": "2026-06-29T14:28:06Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Deep history not yet built - story discovered 34 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 34
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "^VIX",
+      "label": "VIX",
+      "class": "index",
+      "last": 16.06,
+      "last_ts": "2026-08-03T11:54:46Z",
+      "basis": "Israel aid debate increases geopolitical risk",
+      "move_pct": 0.19,
+      "window_h": 24,
+      "measured_from": "2026-08-03T11:53:18Z",
+      "series": [
+       [
+        "2026-08-03T07:00:00Z",
+        16.1
+       ],
+       [
+        "2026-08-03T07:47:16Z",
+        16.1
+       ],
+       [
+        "2026-08-03T07:57:01Z",
+        16.04
+       ],
+       [
+        "2026-08-03T08:00:00Z",
+        16.22
+       ],
+       [
+        "2026-08-03T08:28:31Z",
+        16.18
+       ],
+       [
+        "2026-08-03T08:43:16Z",
+        16.09
+       ],
+       [
+        "2026-08-03T09:00:00Z",
+        16.06
+       ],
+       [
+        "2026-08-03T09:09:46Z",
+        16.06
+       ],
+       [
+        "2026-08-03T09:29:16Z",
+        16.05
+       ],
+       [
+        "2026-08-03T09:50:31Z",
+        16.05
+       ],
+       [
+        "2026-08-03T10:00:00Z",
+        15.96
+       ],
+       [
+        "2026-08-03T10:19:01Z",
+        15.96
+       ],
+       [
+        "2026-08-03T10:31:01Z",
+        15.97
+       ],
+       [
+        "2026-08-03T11:00:00Z",
+        15.98
+       ],
+       [
+        "2026-08-03T11:06:01Z",
+        15.98
+       ],
+       [
+        "2026-08-03T11:14:31Z",
+        15.98
+       ],
+       [
+        "2026-08-03T11:52:46Z",
+        16.03
+       ],
+       [
+        "2026-08-03T11:54:46Z",
+        16.06
+       ]
+      ]
+     },
+     {
+      "symbol": "^TNX",
+      "label": "US 10Y Yield",
+      "class": "rate",
+      "last": 4.743,
+      "last_ts": "2026-07-31T18:37:45Z",
+      "basis": "Israel aid debate increases geopolitical risk",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-07-29T16:38:45Z",
+        4.649
+       ],
+       [
+        "2026-07-29T16:52:05Z",
+        4.651
+       ],
+       [
+        "2026-07-29T17:19:35Z",
+        4.647
+       ],
+       [
+        "2026-07-29T17:20:00Z",
+        4.643
+       ],
+       [
+        "2026-07-29T17:38:45Z",
+        4.645
+       ],
+       [
+        "2026-07-29T18:00:05Z",
+        4.618
+       ],
+       [
+        "2026-07-29T18:20:00Z",
+        4.647
+       ],
+       [
+        "2026-07-29T18:24:15Z",
+        4.647
+       ],
+       [
+        "2026-07-29T18:40:45Z",
+        4.627
+       ],
+       [
+        "2026-07-30T12:20:00Z",
+        4.667
+       ],
+       [
+        "2026-07-30T12:28:05Z",
+        4.667
+       ],
+       [
+        "2026-07-30T12:29:55Z",
+        4.673
+       ],
+       [
+        "2026-07-30T13:05:45Z",
+        4.675
+       ],
+       [
+        "2026-07-30T13:12:05Z",
+        4.677
+       ],
+       [
+        "2026-07-30T13:20:00Z",
+        4.659
+       ],
+       [
+        "2026-07-30T13:47:25Z",
+        4.661
+       ],
+       [
+        "2026-07-30T13:59:05Z",
+        4.667
+       ],
+       [
+        "2026-07-30T14:20:00Z",
+        4.657
+       ],
+       [
+        "2026-07-30T14:29:25Z",
+        4.657
+       ],
+       [
+        "2026-07-30T14:44:25Z",
+        4.661
+       ],
+       [
+        "2026-07-30T15:11:05Z",
+        4.679
+       ],
+       [
+        "2026-07-30T15:20:00Z",
+        4.669
+       ],
+       [
+        "2026-07-30T15:30:25Z",
+        4.669
+       ],
+       [
+        "2026-07-30T15:52:05Z",
+        4.661
+       ],
+       [
+        "2026-07-30T16:20:00Z",
+        4.657
+       ],
+       [
+        "2026-07-30T16:21:15Z",
+        4.657
+       ],
+       [
+        "2026-07-30T16:32:35Z",
+        4.659
+       ],
+       [
+        "2026-07-30T17:06:05Z",
+        4.661
+       ],
+       [
+        "2026-07-30T17:14:45Z",
+        4.663
+       ],
+       [
+        "2026-07-30T17:20:00Z",
+        4.667
+       ],
+       [
+        "2026-07-30T17:50:35Z",
+        4.669
+       ],
+       [
+        "2026-07-30T17:56:05Z",
+        4.669
+       ],
+       [
+        "2026-07-30T18:20:00Z",
+        4.665
+       ],
+       [
+        "2026-07-30T18:34:05Z",
+        4.665
+       ],
+       [
+        "2026-07-30T18:34:35Z",
+        4.665
+       ],
+       [
+        "2026-07-30T18:59:55Z",
+        4.663
+       ],
+       [
+        "2026-07-31T12:20:00Z",
+        4.698
+       ],
+       [
+        "2026-07-31T12:40:25Z",
+        4.698
+       ],
+       [
+        "2026-07-31T12:54:25Z",
+        4.698
+       ],
+       [
+        "2026-07-31T13:20:00Z",
+        4.704
+       ],
+       [
+        "2026-07-31T13:24:25Z",
+        4.706
+       ],
+       [
+        "2026-07-31T13:44:45Z",
+        4.733
+       ],
+       [
+        "2026-07-31T14:09:15Z",
+        4.729
+       ],
+       [
+        "2026-07-31T14:20:00Z",
+        4.729
+       ],
+       [
+        "2026-07-31T14:38:55Z",
+        4.729
+       ],
+       [
+        "2026-07-31T14:53:55Z",
+        4.729
+       ],
+       [
+        "2026-07-31T15:20:00Z",
+        4.737
+       ],
+       [
+        "2026-07-31T15:26:05Z",
+        4.737
+       ],
+       [
+        "2026-07-31T15:34:35Z",
+        4.737
+       ],
+       [
+        "2026-07-31T16:11:55Z",
+        4.733
+       ],
+       [
+        "2026-07-31T16:16:05Z",
+        4.735
+       ],
+       [
+        "2026-07-31T16:20:00Z",
+        4.737
+       ],
+       [
+        "2026-07-31T16:57:15Z",
+        4.737
+       ],
+       [
+        "2026-07-31T16:59:15Z",
+        4.737
+       ],
+       [
+        "2026-07-31T17:20:00Z",
+        4.741
+       ],
+       [
+        "2026-07-31T17:38:25Z",
+        4.745
+       ],
+       [
+        "2026-07-31T17:50:35Z",
+        4.747
+       ],
+       [
+        "2026-07-31T18:20:00Z",
+        4.743
+       ],
+       [
+        "2026-07-31T18:22:45Z",
+        4.743
+       ],
+       [
+        "2026-07-31T18:37:45Z",
+        4.743
+       ]
+      ]
+     }
+    ],
+    "note": "Co-movement observed around the latest beat, not a proven cause.",
+    "observed_utc": "2026-08-03T12:14:40Z",
+    "anchor_beat": "2026-08-03T11:53:18Z"
+   },
+   "lead_image": {
+    "url": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1785520869.jpg?resize=1920%2C1080&quality=80",
+    "source": "Al Jazeera",
+    "focal": {
+     "x": 59,
+     "y": 31
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "liberia-seizes-record-cocaine-haul",
+   "name": "Liberia seizes record cocaine haul",
+   "bucket": "power-money",
+   "topic_tags": [
+    "corruption"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 5,
+   "items_48h": 5,
+   "outlets": 2,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-03T11:41:12Z",
+     "title": "Liberia: A Bill Liberia Cannot Afford to Pass in the Dark",
+     "outlet": "AllAfrica",
+     "kind": "journalist",
+     "url": "https://allafrica.com/stories/202608030552.html",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T11:38:39Z",
+     "title": "Liberia: Inside Liberia's Cocaine Scandal - Where the Police Became 'Suspects' - - Who Gave the Order?",
+     "outlet": "AllAfrica",
+     "kind": "journalist",
+     "url": "https://allafrica.com/stories/202608030549.html",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T11:15:55Z",
+     "title": "Liberia: Weah Urges Boakai to Match CDC's Drug Crackdown",
+     "outlet": "AllAfrica",
+     "kind": "journalist",
+     "url": "https://allafrica.com/stories/202608030512.html",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T09:48:27Z",
+     "title": "Liberia: Senator Konneh Alarms Over Involvement of State Security Actors, Former and Current Senior Government Officials Linked to Cocaine Trafficking",
+     "outlet": "AllAfrica",
+     "kind": "journalist",
+     "url": "https://allafrica.com/stories/202608030427.html",
+     "rel": 23,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-02T13:05:06Z",
+     "title": "Has the New Cocaine Arrived?",
+     "outlet": "Hacker News",
+     "kind": "journalist",
+     "url": "https://playboy.substack.com/p/has-the-new-cocaine-finally-arrived",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-31T17:11:31Z",
+     "title": "Liberia sacks officials after record cocaine seizures worth $336 million",
+     "outlet": "Euronews",
+     "kind": "journalist",
+     "url": "http://www.euronews.com/2026/07/31/liberia-sacks-officials-after-record-cocaine-seizures-worth-336-million",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-31T11:22:22Z",
+     "title": "Liberia: Weah's Comeback Speech Lands in the Middle of Liberia's Biggest Drug Scandal Yet",
+     "outlet": "AllAfrica",
+     "kind": "journalist",
+     "url": "https://allafrica.com/stories/202607310245.html",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-31T11:06:53Z",
+     "title": "Liberia: 'Education Opens Doors, but Demands Responsibility'",
+     "outlet": "AllAfrica",
+     "kind": "journalist",
+     "url": "https://allafrica.com/stories/202607310231.html",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 4,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "AllAfrica",
+      "ts": "2026-07-28T10:35:08Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 22
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-07-31T07:26:17Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "Euronews",
+      "ts": "2026-07-31T19:11:31Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Hacker News",
+      "ts": "2026-08-02T13:05:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "AllAfrica",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "Hacker News",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-07-22 12:00",
+      6,
+      3
+     ],
+     [
+      "2026-07-22 18:00",
+      6,
+      3
+     ],
+     [
+      "2026-07-23 00:00",
+      5,
+      4
+     ],
+     [
+      "2026-07-23 06:00",
+      5,
+      4
+     ],
+     [
+      "2026-07-23 12:00",
+      2,
+      5
+     ],
+     [
+      "2026-07-23 18:00",
+      2,
+      5
+     ],
+     [
+      "2026-07-24 00:00",
+      2,
+      4
+     ],
+     [
+      "2026-07-24 06:00",
+      2,
+      3
+     ],
+     [
+      "2026-07-24 12:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-24 18:00",
+      3,
+      3
+     ],
+     [
+      "2026-07-25 00:00",
+      3,
+      2
+     ],
+     [
+      "2026-07-25 06:00",
+      3,
+      2
+     ],
+     [
+      "2026-07-25 12:00",
+      2,
+      1
+     ],
+     [
+      "2026-07-25 18:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-26 00:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-26 06:00",
+      0,
+      1
+     ],
+     [
+      "2026-07-26 12:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-26 18:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-27 00:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-27 06:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-27 12:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-27 18:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-28 00:00",
+      0,
+      0
+     ],
+     [
+      "2026-07-28 06:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-28 12:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-28 18:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-29 00:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-29 06:00",
+      4,
+      1
+     ],
+     [
+      "2026-07-29 12:00",
+      6,
+      1
+     ],
+     [
+      "2026-07-29 18:00",
+      5,
+      1
+     ],
+     [
+      "2026-07-30 00:00",
+      5,
+      1
+     ],
+     [
+      "2026-07-30 06:00",
+      5,
+      1
+     ],
+     [
+      "2026-07-30 12:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-30 18:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-31 00:00",
+      3,
+      1
+     ],
+     [
+      "2026-07-31 06:00",
+      5,
+      2
+     ],
+     [
+      "2026-07-31 12:00",
+      6,
+      2
+     ],
+     [
+      "2026-07-31 18:00",
+      7,
+      3
+     ],
+     [
+      "2026-08-01 00:00",
+      7,
+      3
+     ],
+     [
+      "2026-08-01 06:00",
+      7,
+      3
+     ],
+     [
+      "2026-08-01 12:00",
+      1,
+      3
+     ],
+     [
+      "2026-08-01 18:00",
+      1,
+      3
+     ],
+     [
+      "2026-08-02 00:00",
+      0,
+      3
+     ],
+     [
+      "2026-08-02 06:00",
+      0,
+      1
+     ],
+     [
+      "2026-08-02 12:00",
+      1,
+      2
+     ],
+     [
+      "2026-08-02 18:00",
+      1,
+      1
+     ],
+     [
+      "2026-08-03 00:00",
+      1,
+      1
+     ],
+     [
+      "2026-08-03 06:00",
+      3,
+      2
+     ],
+     [
+      "2026-08-03 12:00",
+      3,
+      2
+     ]
+    ],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 2
+    },
+    "first_seen": "2026-07-22T12:57:42Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 12
+   },
+   "lead_image": {
+    "url": "https://cdn.allafrica.com/download/pic/main/main/csiid/00681988:accbec01ac0e391c3a619d629a607234:arc614x376:w1200.jpg",
+    "source": "AllAfrica",
+    "focal": {
+     "x": 43,
+     "y": 51
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "south-korea-records-highest-temperature",
+   "name": "South Korea records highest temperature",
+   "bucket": "science-health",
+   "topic_tags": [
+    "climate",
+    "health"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 5,
+   "items_48h": 5,
+   "outlets": 5,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-03T07:13:28Z",
+     "title": "South Korea records its highest-ever temperature of 42.5 C",
+     "outlet": "Phys.org",
+     "kind": "journalist",
+     "url": "https://phys.org/news/2026-08-south-korea-highest-temperature.html",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T06:05:10Z",
+     "title": "\u2018Stop all outdoor activities\u2019: South Korea temperatures hit record 42.5\u00b0C",
+     "outlet": "Times of India",
+     "kind": "journalist",
+     "url": "https://timesofindia.indiatimes.com/world/stop-all-outdoor-activities-south-korea-issues-emergency-alert-as-temperatures-hit-record-42-5c/articleshow/132819570.cms",
+     "rel": 21,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T05:17:47Z",
+     "title": "\u2018Stop all outdoor activities\u2019: South Korea records its highest ever temperature",
+     "outlet": "Guardian World",
+     "kind": "journalist",
+     "url": "https://www.theguardian.com/world/2026/aug/03/south-korea-highest-temperature",
+     "rel": 21,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-03T05:08:28Z",
+     "title": "Koreans told to stop all outdoor activities as heat hits record high",
+     "outlet": "ABC News AU",
+     "kind": "journalist",
+     "url": "https://www.abc.net.au/news/2026-08-03/south-korea-heatwave-hottest-day-on-record/106989934",
+     "rel": 17,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-03T00:00:00Z",
+     "title": "S Korea heat reaches record high 42\u00b0C",
+     "outlet": "Taipei Times",
+     "kind": "journalist",
+     "url": "https://www.taipeitimes.com/News/world/archives/2026/08/03/2003861857",
+     "rel": 15,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-08-03T07:24:43Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 5,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Phys.org",
+      "ts": "2026-08-03T03:13:28Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "ABC News AU",
+      "ts": "2026-08-03T05:08:28Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Guardian World",
+      "ts": "2026-08-03T05:17:47Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UK press",
+      "items": 1
+     },
+     {
+      "outlet": "Taipei Times",
+      "ts": "2026-08-03T08:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "TW regional press",
+      "items": 1
+     },
+     {
+      "outlet": "Times of India",
+      "ts": "2026-08-03T11:35:10Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "IN press",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "ABC News AU",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Guardian World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Phys.org",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Taipei Times",
+     "n": 1,
+     "class": "regional"
+    },
+    {
+     "outlet": "Times of India",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 2,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-08-03 06:00",
+      5,
+      5
+     ],
+     [
+      "2026-08-03 12:00",
+      5,
+      5
+     ]
+    ],
+    "mix": {
+     "mainstream": 1,
+     "state-media": 0,
+     "regional": 1,
+     "official": 0,
+     "other": 3
+    },
+    "first_seen": "2026-08-03T07:58:42Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
+    "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 0
+   },
+   "lead_image": {
+    "url": "https://i.guim.co.uk/img/media/82b77a560b1fc5c2931801dab2d53a69422648a5/670_138_4819_3856/master/4819.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=253b702f5b4a1c54ebfffec6d0071f05",
+    "source": "Guardian World",
+    "focal": {
+     "x": 39,
+     "y": 55
+    }
+   },
+   "gate": {
+    "score": 4,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
    "id": "ceuta-migrant-surge-border-crisis",
    "name": "Ceuta migrant surge border crisis",
    "bucket": "geopolitics",
@@ -33896,7 +36077,7 @@
    ],
    "brief": null,
    "discovered": true,
-   "items_24h": 5,
+   "items_24h": 4,
    "items_48h": 13,
    "outlets": 8,
    "kinds": [
@@ -34644,7 +36825,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:32:53Z",
+    "observed_utc": "2026-08-03T12:34:46Z",
     "anchor_beat": "2026-08-02T18:52:22Z"
    },
    "lead_image": {
@@ -34653,2104 +36834,6 @@
     "focal": {
      "x": 49,
      "y": 53
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "fifa-20bn-world-cup-plan-sparks-eu-probe",
-   "name": "FIFA $20bn World Cup plan sparks EU probe",
-   "bucket": "power-money",
-   "topic_tags": [
-    "corruption"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 5,
-   "items_48h": 11,
-   "outlets": 7,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-08-03T11:55:21Z",
-     "title": "UEFA threatens Gianni Infantino, Josh Kushner with legal action: Report",
-     "outlet": "Anadolu Agency",
-     "kind": "state media",
-     "url": "https://www.aa.com.tr/en/sports/uefa-threatens-gianni-infantino-josh-kushner-with-legal-action-report/4017090",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T10:00:00Z",
-     "title": "FIFA backs off World Cup private equity pitch after global fury: 5 things to know",
-     "outlet": "The Hill",
-     "kind": "journalist",
-     "url": "https://thehill.com/newsletters/keeping-score/6002849-fifa-world-cup-private-equity/",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T09:52:19Z",
-     "title": "Infantino's grip on FIFA weakened following investor plan controversy",
-     "outlet": "France 24",
-     "kind": "journalist",
-     "url": "https://www.france24.com/en/infantino-s-grip-on-fifa-weakened-following-investor-plan-controversy",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-03T06:41:24Z",
-     "title": "Infantino under growing pressure after FIFA scraps World Cup investor proposal",
-     "outlet": "France 24",
-     "kind": "journalist",
-     "url": "https://www.france24.com/en/tv-shows/sports/20260803-infantino-under-growing-pressure-after-fifa-scraps-world-cup-investor-proposal",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-02T22:01:57Z",
-     "title": "Uefa threatens legal action over Infantino\u2019s failed Fifa commercialisation",
-     "outlet": "Financial Times",
-     "kind": "journalist",
-     "url": "https://www.ft.com/content/ddb7c0d4-c156-48a0-b30f-d03f605a1a9c?syn-25a6b1a6=1",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-02T04:34:19Z",
-     "title": "Why isn\u2019t anyone challenging Infantino for FIFA\u2019s top job?",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/why-isnt-anyone-challenging-infantino-for-fifas-top-job?traffic_source=rss",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-01T16:58:19Z",
-     "title": "UEFA looks for candidates to replace Infantino - The Telegraph",
-     "outlet": "TASS",
-     "kind": "state media",
-     "url": "https://tass.com/sports/2168013",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-01T16:48:01Z",
-     "title": "FIFA head ditches private equity plan",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/sport/archives/2026/08/02/2003861788",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-08-01T09:28:18Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 49,
-    "outlets_unplaced": 1,
-    "chain": [
-     {
-      "outlet": "CBC World",
-      "ts": "2026-07-28T13:57:29Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "twincities.com",
-      "ts": "2026-07-28T17:45:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "ocregister.com",
-      "ts": "2026-07-28T19:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "nbcbayarea.com",
-      "ts": "2026-07-28T19:30:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "pilotonline.com",
-      "ts": "2026-07-28T20:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "nbclosangeles.com",
-      "ts": "2026-07-28T20:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "nbcchicago.com",
-      "ts": "2026-07-28T20:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "nbcconnecticut.com",
-      "ts": "2026-07-28T20:15:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": [
-     {
-      "outlet": "Nikkei Asia",
-      "first_seen": "2026-07-31T11:26:50Z",
-      "kind": "journalist",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ]
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Al Jazeera",
-     "n": 3,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "France 24",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "TASS",
-     "n": 2,
-     "class": "state-media"
-    },
-    {
-     "outlet": "The Hill",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Anadolu Agency",
-     "n": 1,
-     "class": "state-media"
-    },
-    {
-     "outlet": "Financial Times",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Taipei Times",
-     "n": 1,
-     "class": "regional"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 3,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-29 12:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-29 18:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-30 00:00",
-      5,
-      5
-     ],
-     [
-      "2026-07-30 06:00",
-      4,
-      5
-     ],
-     [
-      "2026-07-30 12:00",
-      7,
-      8
-     ],
-     [
-      "2026-07-30 18:00",
-      13,
-      13
-     ],
-     [
-      "2026-07-31 00:00",
-      14,
-      12
-     ],
-     [
-      "2026-07-31 06:00",
-      17,
-      14
-     ],
-     [
-      "2026-07-31 12:00",
-      37,
-      31
-     ],
-     [
-      "2026-07-31 18:00",
-      30,
-      31
-     ],
-     [
-      "2026-08-01 00:00",
-      27,
-      29
-     ],
-     [
-      "2026-08-01 06:00",
-      26,
-      29
-     ],
-     [
-      "2026-08-01 12:00",
-      22,
-      26
-     ],
-     [
-      "2026-08-01 18:00",
-      18,
-      23
-     ],
-     [
-      "2026-08-02 00:00",
-      14,
-      20
-     ],
-     [
-      "2026-08-02 06:00",
-      11,
-      17
-     ],
-     [
-      "2026-08-02 12:00",
-      7,
-      13
-     ],
-     [
-      "2026-08-02 18:00",
-      2,
-      11
-     ],
-     [
-      "2026-08-03 00:00",
-      2,
-      8
-     ],
-     [
-      "2026-08-03 06:00",
-      4,
-      6
-     ],
-     [
-      "2026-08-03 12:00",
-      4,
-      6
-     ]
-    ],
-    "mix": {
-     "mainstream": 3,
-     "state-media": 2,
-     "regional": 1,
-     "official": 0,
-     "other": 1
-    },
-    "first_seen": "2026-07-29T12:58:34Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
-    "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 5
-   },
-   "lead_image": {
-    "url": "https://www.aljazeera.com/wp-content/uploads/2026/08/AP685942727926-1785568851.jpg?resize=1920%2C1440",
-    "source": "Al Jazeera",
-    "focal": {
-     "x": 25,
-     "y": 54
-    }
-   },
-   "gate": {
-    "score": 4,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "analysts-claim-israel-seeks-regional-instability",
-   "name": "US House debates Israel aid amid party divisions",
-   "bucket": "info-wars",
-   "topic_tags": [
-    "censorship",
-    "media"
-   ],
-   "brief": {
-    "generated_utc": "2026-06-30T06:04:35Z",
-    "sentence_count": 6,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "UN Security Council live session highlighted Israeli settlements in occupied Palestinian territory.",
-        "cites": [
-         {
-          "outlet": "UN News",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9CMG54cVg1LXA0cTVpaGlKQW1NMzhTdGxBYnJpQ09COTFsa2RELUU3WF9XSGRnRUhsWVNhX2t1c3lxcnhJa0lNOXhKNmVwbDV5bDFfcDd1UQ?oc=5",
-          "ts": "2026-06-29T14:05:27Z",
-          "title": "Security Council LIVE: Spotlight on Israeli settlements in occupied Palestinian territory"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "France ONU called for Israel to immediately and completely cease all settlement activities.",
-        "cites": [
-         {
-          "outlet": "France ONU",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOV0lwOTRTUmNBeHU2QUphRklLOHBIVDByeXl2cW85N2lPQmtWNDZTZ244NmVUZHZxRGtFOVhwRmtyQndpTGJST1U2THliRmtJYm1YWUtQT0NDOVFVVFBzOU1jN3RPOVdRd2VFeTgzczhUMGZ1eVp5TWVwdVRJUVZvd3FfQWgtX1J4c1h3b2hEQXZwLXdELWxDUG1SYlYxUVE?oc=5",
-          "ts": "2026-06-29T21:54:44Z",
-          "title": "Israel must immediately and completely cease all settlement activities"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "\"Time for condemning is over,\" Palestine's UN envoy said, demanding an end to Israeli annexation of Palestinian land.",
-        "cites": [
-         {
-          "outlet": "Anadolu Agency",
-          "kind": "state media",
-          "url": "https://www.aa.com.tr/en/middle-east/time-for-condemning-is-over-palestines-un-envoy-demands-end-to-israeli-annexation-of-palestinian-land/3981670",
-          "ts": "2026-06-29T22:19:09Z",
-          "title": "'Time for condemning is over': Palestine's UN envoy demands end to Israeli annexation of Palestinian land"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Israel moved to formally recognize Armenian World War I deaths as a genocide.",
-        "cites": [
-         {
-          "outlet": "KUOW",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZEpybFF4bmZMUUU2WUJISWtBMDdwVUt1OWVNQjhaWmxzaDFURGZYclRKY2F0OF9lbU1NanFESWxMNEN6bnBWaFowbXJSYVNBeXl5ckd6UmZra1FNcjlFZUY5Z1QzUHNpNEFITVUwZ0VUYWJaTkF0TFJhQUcxZUVheFF2THU4TW15M2dOeXhhcnhjdThrNjhSb0tTWVFZZw?oc=5",
-          "ts": "2026-06-29T14:29:58Z",
-          "title": "Israel moves to formally recognize Armenian WWI deaths as a genocide"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Azerbaijan slammed Israel's recognition of the Armenian genocide.",
-        "cites": [
-         {
-          "outlet": "The Hindu Intl",
-          "kind": "journalist",
-          "url": "https://www.thehindu.com/news/international/azerbaijan-slams-ally-israels-recognition-of-armenian-genocide/article71162775.ece",
-          "ts": "2026-06-29T23:08:42Z",
-          "title": "Azerbaijan slams ally Israel\u2019s recognition of Armenian genocide"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The Turkish Parliament speaker said Israeli aggression threatens global peace.",
-        "cites": [
-         {
-          "outlet": "Daily Sabah",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSnNSWF9JMnJ0OWNYZW1HS0p4VjNEU1Rpd2puTWhrbTcyWmJNZW9JSkNWaEtmREF1UWpWZ1A2UXNuanFYeWNmUG9iRWR1QmtPMFlyVUUtQ0ZxNlZnMUFJU2lwQlNoQ0NOMGYxWEpnZ0NZTVFjbjZsVTRRNGU3V012Vzc5ZmlUbUZ5MmF4X0loTlpwWDZsdTlXdG9wM2FEOElnY0dYS09uZWJYQ2VUS09DZEFKONIBswFBVV95cUxOSnNSWF9JMnJ0OWNYZW1HS0p4VjNEU1Rpd2puTWhrbTcyWmJNZW9JSkNWaEtmREF1UWpWZ1A2UXNuanFYeWNmUG9iRWR1QmtPMFlyVUUtQ0ZxNlZnMUFJU2lwQlNoQ0NOMGYxWEpnZ0NZTVFjbjZsVTRRNGU3V012Vzc5ZmlUbUZ5MmF4X0loTlpwWDZsdTlXdG9wM2FEOElnY0dYS09uZWJYQ2VUS09DZEFKOA?oc=5",
-          "ts": "2026-06-29T07:11:00Z",
-          "title": "Israeli aggression threatens global peace: Turkish Parliament speaker | Daily Sabah"
-         }
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   "discovered": true,
-   "items_24h": 5,
-   "items_48h": 7,
-   "outlets": 5,
-   "kinds": [
-    "journalist",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-08-03T11:53:18Z",
-     "title": "Here Are Monday\u2019s Top Wall Street Analyst Research Calls: Best Buy, Circle Internet, Corning, Eaton Corporation, eBay, Ingersoll-Rand, NXP Semiconductors, Starbucks, and More",
-     "outlet": "24/7 Wall St.",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/monday-top-wall-street-analyst-115318506.html",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T10:00:14Z",
-     "title": "Abandoned by the US: Palestinian Americans trapped in a surge of Israeli settler violence",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/world/2026/aug/03/palestinian-village-trapped-surge-settler-violence-turmus-ayya-west-bank",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-02T19:39:32Z",
-     "title": "Israelis attack Armenian monastery in Jerusalem\u2019s Old City",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/8/2/israelis-attack-armenian-monastery-in-jerusalems-old-city?traffic_source=rss",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-02T15:00:00Z",
-     "title": "An Analyst Just Called Meta a Top Large-Cap Buy. Here\u2019s Why We Agree.",
-     "outlet": "24/7 Wall St.",
-     "kind": "journalist",
-     "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-just-called-meta-top-150000569.html",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-02T12:02:04Z",
-     "title": "Israel\u2019s influence industry in the US",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/video/the-listening-post/2026/8/2/israels-influence-industry-in-the-us?traffic_source=rss",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-02T11:11:50Z",
-     "title": "Comparing Israel to Nazi regime is not a criminal offense, German court rules",
-     "outlet": "Anadolu Agency",
-     "kind": "state media",
-     "url": "https://www.aa.com.tr/en/europe/comparing-israel-to-nazi-regime-is-not-a-criminal-offense-german-court-rules/4016284",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-02T08:14:39Z",
-     "title": "5 big analyst AI moves: AI rally to resume but S&P 500 faces pullback by end-2027",
-     "outlet": "Investing.com",
-     "kind": "journalist",
-     "url": "https://www.investing.com/news/stock-market-news/5-big-analyst-ai-moves-ai-rally-to-resume-but-sp-500-faces-pullback-by-end2027-4829636",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-01T11:40:10Z",
-     "title": "Spanish commentators accuse Israel and US of involvement in Ceuta crisis",
-     "outlet": "Middle East Eye",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNGtvREw0bzVWZnNTZXplRkdCNHYxMWN3WHBmTVFhVldXbDJXZzJSWm53dEVYVC1OZ1Rmd2NpT05lYkh4aUhFbTk4WjlmcXBScmt4OXFWSzdJSHdnU19EaXJfa3B4bjVYNF9RMUVMdHJOMGstQlpjS2tQcy1ZWkVIcU9NS2dSVVJYT0lVazNCWFNsZU8zSHQ3MVBUN0lQOVNmV3JaVENUZzBIYnUzVm1qXzcyYw?oc=5",
-     "rel": 0,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-07-30T07:40:17Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 27,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-07-27T14:31:12Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UK press",
-      "items": 2
-     },
-     {
-      "outlet": "The Guardian",
-      "ts": "2026-07-27T14:33:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 2
-     },
-     {
-      "outlet": "Investing.com",
-      "ts": "2026-07-27T14:55:03Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "24/7 Wall St.",
-      "ts": "2026-07-27T17:20:52Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "The New York Times",
-      "ts": "2026-07-27T17:22:06Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "US press",
-      "items": 1
-     },
-     {
-      "outlet": "AOL.com",
-      "ts": "2026-07-27T17:40:20Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Argus Research",
-      "ts": "2026-07-27T17:47:32Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 35
-     },
-     {
-      "outlet": "CGTN",
-      "ts": "2026-07-27T20:42:02Z",
-      "kind": "state media",
-      "role": "echo",
-      "motive_note": "CN state media",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "Barchart",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "24/7 Wall St.",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "n": 2,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Anadolu Agency",
-     "n": 1,
-     "class": "state-media"
-    },
-    {
-     "outlet": "Barrons.com",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Investing.com",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Middle East Eye",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-20 18:00",
-      14,
-      18
-     ],
-     [
-      "2026-07-21 00:00",
-      12,
-      18
-     ],
-     [
-      "2026-07-21 06:00",
-      13,
-      14
-     ],
-     [
-      "2026-07-21 12:00",
-      8,
-      13
-     ],
-     [
-      "2026-07-21 18:00",
-      11,
-      15
-     ],
-     [
-      "2026-07-22 00:00",
-      10,
-      15
-     ],
-     [
-      "2026-07-22 06:00",
-      12,
-      14
-     ],
-     [
-      "2026-07-22 12:00",
-      19,
-      16
-     ],
-     [
-      "2026-07-22 18:00",
-      21,
-      18
-     ],
-     [
-      "2026-07-23 00:00",
-      23,
-      18
-     ],
-     [
-      "2026-07-23 06:00",
-      23,
-      22
-     ],
-     [
-      "2026-07-23 12:00",
-      20,
-      22
-     ],
-     [
-      "2026-07-23 18:00",
-      17,
-      22
-     ],
-     [
-      "2026-07-24 00:00",
-      17,
-      21
-     ],
-     [
-      "2026-07-24 06:00",
-      18,
-      22
-     ],
-     [
-      "2026-07-24 12:00",
-      17,
-      18
-     ],
-     [
-      "2026-07-24 18:00",
-      17,
-      16
-     ],
-     [
-      "2026-07-25 00:00",
-      18,
-      19
-     ],
-     [
-      "2026-07-25 06:00",
-      16,
-      15
-     ],
-     [
-      "2026-07-25 12:00",
-      12,
-      13
-     ],
-     [
-      "2026-07-25 18:00",
-      9,
-      15
-     ],
-     [
-      "2026-07-26 00:00",
-      9,
-      15
-     ],
-     [
-      "2026-07-26 06:00",
-      9,
-      15
-     ],
-     [
-      "2026-07-26 12:00",
-      9,
-      13
-     ],
-     [
-      "2026-07-26 18:00",
-      9,
-      12
-     ],
-     [
-      "2026-07-27 00:00",
-      6,
-      9
-     ],
-     [
-      "2026-07-27 06:00",
-      6,
-      10
-     ],
-     [
-      "2026-07-27 12:00",
-      10,
-      14
-     ],
-     [
-      "2026-07-27 18:00",
-      17,
-      11
-     ],
-     [
-      "2026-07-28 00:00",
-      18,
-      12
-     ],
-     [
-      "2026-07-28 06:00",
-      19,
-      11
-     ],
-     [
-      "2026-07-28 12:00",
-      19,
-      12
-     ],
-     [
-      "2026-07-28 18:00",
-      14,
-      14
-     ],
-     [
-      "2026-07-29 00:00",
-      15,
-      15
-     ],
-     [
-      "2026-07-29 06:00",
-      17,
-      18
-     ],
-     [
-      "2026-07-29 12:00",
-      19,
-      17
-     ],
-     [
-      "2026-07-29 18:00",
-      17,
-      15
-     ],
-     [
-      "2026-07-30 00:00",
-      12,
-      16
-     ],
-     [
-      "2026-07-30 06:00",
-      11,
-      15
-     ],
-     [
-      "2026-07-30 12:00",
-      13,
-      14
-     ],
-     [
-      "2026-07-30 18:00",
-      17,
-      15
-     ],
-     [
-      "2026-07-31 00:00",
-      17,
-      12
-     ],
-     [
-      "2026-07-31 06:00",
-      17,
-      10
-     ],
-     [
-      "2026-07-31 12:00",
-      12,
-      10
-     ],
-     [
-      "2026-07-31 18:00",
-      13,
-      10
-     ],
-     [
-      "2026-08-01 00:00",
-      13,
-      10
-     ],
-     [
-      "2026-08-01 06:00",
-      13,
-      8
-     ],
-     [
-      "2026-08-01 12:00",
-      8,
-      5
-     ],
-     [
-      "2026-08-01 18:00",
-      7,
-      6
-     ],
-     [
-      "2026-08-02 00:00",
-      1,
-      6
-     ],
-     [
-      "2026-08-02 06:00",
-      3,
-      7
-     ],
-     [
-      "2026-08-02 12:00",
-      4,
-      7
-     ],
-     [
-      "2026-08-02 18:00",
-      5,
-      5
-     ],
-     [
-      "2026-08-03 00:00",
-      5,
-      5
-     ],
-     [
-      "2026-08-03 06:00",
-      5,
-      6
-     ],
-     [
-      "2026-08-03 12:00",
-      5,
-      6
-     ]
-    ],
-    "mix": {
-     "mainstream": 2,
-     "state-media": 1,
-     "regional": 0,
-     "official": 0,
-     "other": 5
-    },
-    "first_seen": "2026-06-29T14:28:06Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
-    "Deep history not yet built - story discovered 34 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 34
-   },
-   "market": {
-    "instruments": [
-     {
-      "symbol": "^VIX",
-      "label": "VIX",
-      "class": "index",
-      "last": 16.06,
-      "last_ts": "2026-08-03T11:54:46Z",
-      "basis": "Israel aid debate increases geopolitical risk",
-      "move_pct": 0.19,
-      "window_h": 24,
-      "measured_from": "2026-08-03T11:53:18Z",
-      "series": [
-       [
-        "2026-08-03T07:00:00Z",
-        16.1
-       ],
-       [
-        "2026-08-03T07:47:16Z",
-        16.1
-       ],
-       [
-        "2026-08-03T07:57:01Z",
-        16.04
-       ],
-       [
-        "2026-08-03T08:00:00Z",
-        16.22
-       ],
-       [
-        "2026-08-03T08:28:31Z",
-        16.18
-       ],
-       [
-        "2026-08-03T08:43:16Z",
-        16.09
-       ],
-       [
-        "2026-08-03T09:00:00Z",
-        16.06
-       ],
-       [
-        "2026-08-03T09:09:46Z",
-        16.06
-       ],
-       [
-        "2026-08-03T09:29:16Z",
-        16.05
-       ],
-       [
-        "2026-08-03T09:50:31Z",
-        16.05
-       ],
-       [
-        "2026-08-03T10:00:00Z",
-        15.96
-       ],
-       [
-        "2026-08-03T10:19:01Z",
-        15.96
-       ],
-       [
-        "2026-08-03T10:31:01Z",
-        15.97
-       ],
-       [
-        "2026-08-03T11:00:00Z",
-        15.98
-       ],
-       [
-        "2026-08-03T11:06:01Z",
-        15.98
-       ],
-       [
-        "2026-08-03T11:14:31Z",
-        15.98
-       ],
-       [
-        "2026-08-03T11:52:46Z",
-        16.03
-       ],
-       [
-        "2026-08-03T11:54:46Z",
-        16.06
-       ]
-      ]
-     },
-     {
-      "symbol": "^TNX",
-      "label": "US 10Y Yield",
-      "class": "rate",
-      "last": 4.743,
-      "last_ts": "2026-07-31T18:37:45Z",
-      "basis": "Israel aid debate increases geopolitical risk",
-      "move_pct": null,
-      "window_h": null,
-      "measured_from": null,
-      "series": [
-       [
-        "2026-07-29T16:38:45Z",
-        4.649
-       ],
-       [
-        "2026-07-29T16:52:05Z",
-        4.651
-       ],
-       [
-        "2026-07-29T17:19:35Z",
-        4.647
-       ],
-       [
-        "2026-07-29T17:20:00Z",
-        4.643
-       ],
-       [
-        "2026-07-29T17:38:45Z",
-        4.645
-       ],
-       [
-        "2026-07-29T18:00:05Z",
-        4.618
-       ],
-       [
-        "2026-07-29T18:20:00Z",
-        4.647
-       ],
-       [
-        "2026-07-29T18:24:15Z",
-        4.647
-       ],
-       [
-        "2026-07-29T18:40:45Z",
-        4.627
-       ],
-       [
-        "2026-07-30T12:20:00Z",
-        4.667
-       ],
-       [
-        "2026-07-30T12:28:05Z",
-        4.667
-       ],
-       [
-        "2026-07-30T12:29:55Z",
-        4.673
-       ],
-       [
-        "2026-07-30T13:05:45Z",
-        4.675
-       ],
-       [
-        "2026-07-30T13:12:05Z",
-        4.677
-       ],
-       [
-        "2026-07-30T13:20:00Z",
-        4.659
-       ],
-       [
-        "2026-07-30T13:47:25Z",
-        4.661
-       ],
-       [
-        "2026-07-30T13:59:05Z",
-        4.667
-       ],
-       [
-        "2026-07-30T14:20:00Z",
-        4.657
-       ],
-       [
-        "2026-07-30T14:29:25Z",
-        4.657
-       ],
-       [
-        "2026-07-30T14:44:25Z",
-        4.661
-       ],
-       [
-        "2026-07-30T15:11:05Z",
-        4.679
-       ],
-       [
-        "2026-07-30T15:20:00Z",
-        4.669
-       ],
-       [
-        "2026-07-30T15:30:25Z",
-        4.669
-       ],
-       [
-        "2026-07-30T15:52:05Z",
-        4.661
-       ],
-       [
-        "2026-07-30T16:20:00Z",
-        4.657
-       ],
-       [
-        "2026-07-30T16:21:15Z",
-        4.657
-       ],
-       [
-        "2026-07-30T16:32:35Z",
-        4.659
-       ],
-       [
-        "2026-07-30T17:06:05Z",
-        4.661
-       ],
-       [
-        "2026-07-30T17:14:45Z",
-        4.663
-       ],
-       [
-        "2026-07-30T17:20:00Z",
-        4.667
-       ],
-       [
-        "2026-07-30T17:50:35Z",
-        4.669
-       ],
-       [
-        "2026-07-30T17:56:05Z",
-        4.669
-       ],
-       [
-        "2026-07-30T18:20:00Z",
-        4.665
-       ],
-       [
-        "2026-07-30T18:34:05Z",
-        4.665
-       ],
-       [
-        "2026-07-30T18:34:35Z",
-        4.665
-       ],
-       [
-        "2026-07-30T18:59:55Z",
-        4.663
-       ],
-       [
-        "2026-07-31T12:20:00Z",
-        4.698
-       ],
-       [
-        "2026-07-31T12:40:25Z",
-        4.698
-       ],
-       [
-        "2026-07-31T12:54:25Z",
-        4.698
-       ],
-       [
-        "2026-07-31T13:20:00Z",
-        4.704
-       ],
-       [
-        "2026-07-31T13:24:25Z",
-        4.706
-       ],
-       [
-        "2026-07-31T13:44:45Z",
-        4.733
-       ],
-       [
-        "2026-07-31T14:09:15Z",
-        4.729
-       ],
-       [
-        "2026-07-31T14:20:00Z",
-        4.729
-       ],
-       [
-        "2026-07-31T14:38:55Z",
-        4.729
-       ],
-       [
-        "2026-07-31T14:53:55Z",
-        4.729
-       ],
-       [
-        "2026-07-31T15:20:00Z",
-        4.737
-       ],
-       [
-        "2026-07-31T15:26:05Z",
-        4.737
-       ],
-       [
-        "2026-07-31T15:34:35Z",
-        4.737
-       ],
-       [
-        "2026-07-31T16:11:55Z",
-        4.733
-       ],
-       [
-        "2026-07-31T16:16:05Z",
-        4.735
-       ],
-       [
-        "2026-07-31T16:20:00Z",
-        4.737
-       ],
-       [
-        "2026-07-31T16:57:15Z",
-        4.737
-       ],
-       [
-        "2026-07-31T16:59:15Z",
-        4.737
-       ],
-       [
-        "2026-07-31T17:20:00Z",
-        4.741
-       ],
-       [
-        "2026-07-31T17:38:25Z",
-        4.745
-       ],
-       [
-        "2026-07-31T17:50:35Z",
-        4.747
-       ],
-       [
-        "2026-07-31T18:20:00Z",
-        4.743
-       ],
-       [
-        "2026-07-31T18:22:45Z",
-        4.743
-       ],
-       [
-        "2026-07-31T18:37:45Z",
-        4.743
-       ]
-      ]
-     }
-    ],
-    "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:12:29Z",
-    "anchor_beat": "2026-08-03T11:53:18Z"
-   },
-   "lead_image": {
-    "url": "https://www.aljazeera.com/wp-content/uploads/2026/07/image-1785520869.jpg?resize=1920%2C1080&quality=80",
-    "source": "Al Jazeera",
-    "focal": {
-     "x": 59,
-     "y": 31
-    }
-   },
-   "gate": {
-    "score": 3,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "liberia-seizes-record-cocaine-haul",
-   "name": "Liberia seizes record cocaine haul",
-   "bucket": "power-money",
-   "topic_tags": [
-    "corruption"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 5,
-   "items_48h": 5,
-   "outlets": 2,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-08-03T11:41:12Z",
-     "title": "Liberia: A Bill Liberia Cannot Afford to Pass in the Dark",
-     "outlet": "AllAfrica",
-     "kind": "journalist",
-     "url": "https://allafrica.com/stories/202608030552.html",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T11:38:39Z",
-     "title": "Liberia: Inside Liberia's Cocaine Scandal - Where the Police Became 'Suspects' - - Who Gave the Order?",
-     "outlet": "AllAfrica",
-     "kind": "journalist",
-     "url": "https://allafrica.com/stories/202608030549.html",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T11:15:55Z",
-     "title": "Liberia: Weah Urges Boakai to Match CDC's Drug Crackdown",
-     "outlet": "AllAfrica",
-     "kind": "journalist",
-     "url": "https://allafrica.com/stories/202608030512.html",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T09:48:27Z",
-     "title": "Liberia: Senator Konneh Alarms Over Involvement of State Security Actors, Former and Current Senior Government Officials Linked to Cocaine Trafficking",
-     "outlet": "AllAfrica",
-     "kind": "journalist",
-     "url": "https://allafrica.com/stories/202608030427.html",
-     "rel": 23,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-02T13:05:06Z",
-     "title": "Has the New Cocaine Arrived?",
-     "outlet": "Hacker News",
-     "kind": "journalist",
-     "url": "https://playboy.substack.com/p/has-the-new-cocaine-finally-arrived",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-31T17:11:31Z",
-     "title": "Liberia sacks officials after record cocaine seizures worth $336 million",
-     "outlet": "Euronews",
-     "kind": "journalist",
-     "url": "http://www.euronews.com/2026/07/31/liberia-sacks-officials-after-record-cocaine-seizures-worth-336-million",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-31T11:22:22Z",
-     "title": "Liberia: Weah's Comeback Speech Lands in the Middle of Liberia's Biggest Drug Scandal Yet",
-     "outlet": "AllAfrica",
-     "kind": "journalist",
-     "url": "https://allafrica.com/stories/202607310245.html",
-     "rel": 18,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-07-31T11:06:53Z",
-     "title": "Liberia: 'Education Opens Doors, but Demands Responsibility'",
-     "outlet": "AllAfrica",
-     "kind": "journalist",
-     "url": "https://allafrica.com/stories/202607310231.html",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": null,
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 4,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "AllAfrica",
-      "ts": "2026-07-28T10:35:08Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 22
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-07-31T07:26:17Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 1
-     },
-     {
-      "outlet": "Euronews",
-      "ts": "2026-07-31T19:11:31Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Hacker News",
-      "ts": "2026-08-02T13:05:06Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "AllAfrica",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "Hacker News",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 1,
-    "mainstream": 0
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-07-22 12:00",
-      6,
-      3
-     ],
-     [
-      "2026-07-22 18:00",
-      6,
-      3
-     ],
-     [
-      "2026-07-23 00:00",
-      5,
-      4
-     ],
-     [
-      "2026-07-23 06:00",
-      5,
-      4
-     ],
-     [
-      "2026-07-23 12:00",
-      2,
-      5
-     ],
-     [
-      "2026-07-23 18:00",
-      2,
-      5
-     ],
-     [
-      "2026-07-24 00:00",
-      2,
-      4
-     ],
-     [
-      "2026-07-24 06:00",
-      2,
-      3
-     ],
-     [
-      "2026-07-24 12:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-24 18:00",
-      3,
-      3
-     ],
-     [
-      "2026-07-25 00:00",
-      3,
-      2
-     ],
-     [
-      "2026-07-25 06:00",
-      3,
-      2
-     ],
-     [
-      "2026-07-25 12:00",
-      2,
-      1
-     ],
-     [
-      "2026-07-25 18:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-26 00:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-26 06:00",
-      0,
-      1
-     ],
-     [
-      "2026-07-26 12:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-26 18:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-27 00:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-27 06:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-27 12:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-27 18:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-28 00:00",
-      0,
-      0
-     ],
-     [
-      "2026-07-28 06:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-28 12:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-28 18:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-29 00:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-29 06:00",
-      4,
-      1
-     ],
-     [
-      "2026-07-29 12:00",
-      6,
-      1
-     ],
-     [
-      "2026-07-29 18:00",
-      5,
-      1
-     ],
-     [
-      "2026-07-30 00:00",
-      5,
-      1
-     ],
-     [
-      "2026-07-30 06:00",
-      5,
-      1
-     ],
-     [
-      "2026-07-30 12:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-30 18:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-31 00:00",
-      3,
-      1
-     ],
-     [
-      "2026-07-31 06:00",
-      5,
-      2
-     ],
-     [
-      "2026-07-31 12:00",
-      6,
-      2
-     ],
-     [
-      "2026-07-31 18:00",
-      7,
-      3
-     ],
-     [
-      "2026-08-01 00:00",
-      7,
-      3
-     ],
-     [
-      "2026-08-01 06:00",
-      7,
-      3
-     ],
-     [
-      "2026-08-01 12:00",
-      1,
-      3
-     ],
-     [
-      "2026-08-01 18:00",
-      1,
-      3
-     ],
-     [
-      "2026-08-02 00:00",
-      0,
-      3
-     ],
-     [
-      "2026-08-02 06:00",
-      0,
-      1
-     ],
-     [
-      "2026-08-02 12:00",
-      1,
-      2
-     ],
-     [
-      "2026-08-02 18:00",
-      1,
-      1
-     ],
-     [
-      "2026-08-03 00:00",
-      1,
-      1
-     ],
-     [
-      "2026-08-03 06:00",
-      3,
-      2
-     ],
-     [
-      "2026-08-03 12:00",
-      3,
-      2
-     ]
-    ],
-    "mix": {
-     "mainstream": 0,
-     "state-media": 0,
-     "regional": 0,
-     "official": 0,
-     "other": 2
-    },
-    "first_seen": "2026-07-22T12:57:42Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
-    "Deep history not yet built - story discovered 12 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 12
-   },
-   "lead_image": {
-    "url": "https://cdn.allafrica.com/download/pic/main/main/csiid/00681988:accbec01ac0e391c3a619d629a607234:arc614x376:w1200.jpg",
-    "source": "AllAfrica",
-    "focal": {
-     "x": 43,
-     "y": 51
-    }
-   },
-   "gate": {
-    "score": 3,
-    "of": 8,
-    "checks": {
-     "split": 0,
-     "carriers": 0,
-     "provenance": 1,
-     "steelman": 0,
-     "history": 0,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "south-korea-records-highest-temperature",
-   "name": "South Korea records highest temperature",
-   "bucket": "science-health",
-   "topic_tags": [
-    "climate",
-    "health"
-   ],
-   "brief": null,
-   "discovered": true,
-   "items_24h": 5,
-   "items_48h": 5,
-   "outlets": 5,
-   "kinds": [
-    "journalist"
-   ],
-   "latest": [
-    {
-     "ts": "2026-08-03T07:13:28Z",
-     "title": "South Korea records its highest-ever temperature of 42.5 C",
-     "outlet": "Phys.org",
-     "kind": "journalist",
-     "url": "https://phys.org/news/2026-08-south-korea-highest-temperature.html",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T06:05:10Z",
-     "title": "\u2018Stop all outdoor activities\u2019: South Korea temperatures hit record 42.5\u00b0C",
-     "outlet": "Times of India",
-     "kind": "journalist",
-     "url": "https://timesofindia.indiatimes.com/world/stop-all-outdoor-activities-south-korea-issues-emergency-alert-as-temperatures-hit-record-42-5c/articleshow/132819570.cms",
-     "rel": 21,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T05:17:47Z",
-     "title": "\u2018Stop all outdoor activities\u2019: South Korea records its highest ever temperature",
-     "outlet": "Guardian World",
-     "kind": "journalist",
-     "url": "https://www.theguardian.com/world/2026/aug/03/south-korea-highest-temperature",
-     "rel": 21,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-03T05:08:28Z",
-     "title": "Koreans told to stop all outdoor activities as heat hits record high",
-     "outlet": "ABC News AU",
-     "kind": "journalist",
-     "url": "https://www.abc.net.au/news/2026-08-03/south-korea-heatwave-hottest-day-on-record/106989934",
-     "rel": 17,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-03T00:00:00Z",
-     "title": "S Korea heat reaches record high 42\u00b0C",
-     "outlet": "Taipei Times",
-     "kind": "journalist",
-     "url": "https://www.taipeitimes.com/News/world/archives/2026/08/03/2003861857",
-     "rel": 15,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-08-03T07:24:43Z"
-   },
-   "viewpoints": null,
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 5,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "Phys.org",
-      "ts": "2026-08-03T03:13:28Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "ABC News AU",
-      "ts": "2026-08-03T05:08:28Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Guardian World",
-      "ts": "2026-08-03T05:17:47Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "UK press",
-      "items": 1
-     },
-     {
-      "outlet": "Taipei Times",
-      "ts": "2026-08-03T08:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "TW regional press",
-      "items": 1
-     },
-     {
-      "outlet": "Times of India",
-      "ts": "2026-08-03T11:35:10Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "IN press",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [],
-   "sources": [
-    {
-     "outlet": "ABC News AU",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Guardian World",
-     "n": 1,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "Phys.org",
-     "n": 1,
-     "class": "other"
-    },
-    {
-     "outlet": "Taipei Times",
-     "n": 1,
-     "class": "regional"
-    },
-    {
-     "outlet": "Times of India",
-     "n": 1,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 2,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-08-03 06:00",
-      5,
-      5
-     ],
-     [
-      "2026-08-03 12:00",
-      5,
-      5
-     ]
-    ],
-    "mix": {
-     "mainstream": 1,
-     "state-media": 0,
-     "regional": 1,
-     "official": 0,
-     "other": 3
-    },
-    "first_seen": "2026-08-03T07:58:42Z"
-   },
-   "drift": [],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel.",
-    "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
-   ],
-   "history": {
-    "built": false,
-    "frames": 0,
-    "nodes": 0,
-    "discovered_days": 0
-   },
-   "lead_image": {
-    "url": "https://i.guim.co.uk/img/media/82b77a560b1fc5c2931801dab2d53a69422648a5/670_138_4819_3856/master/4819.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=253b702f5b4a1c54ebfffec6d0071f05",
-    "source": "Guardian World",
-    "focal": {
-     "x": 39,
-     "y": 55
     }
    },
    "gate": {
@@ -38011,7 +38094,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:11:55Z",
+    "observed_utc": "2026-08-03T12:14:09Z",
     "anchor_beat": "2026-08-03T05:20:16Z"
    },
    "lead_image": {
@@ -39803,7 +39886,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:38:49Z",
+    "observed_utc": "2026-08-03T12:40:48Z",
     "anchor_beat": "2026-08-03T08:08:18Z"
    },
    "lead_image": {
@@ -41111,7 +41194,7 @@
      "outlet": "24/7 Wall St.",
      "kind": "journalist",
      "url": "https://finance.yahoo.com/markets/stocks/articles/buy-oracle-since-promises-100-175426790.html",
-     "rel": 15,
+     "rel": 14,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -41235,18 +41318,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Motley Fool",
-      "ts": "2026-07-27T12:13:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
       "outlet": "Barchart",
       "ts": "2026-07-27T12:14:49Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -41285,6 +41360,14 @@
      {
       "outlet": "Investor's Business Daily",
       "ts": "2026-07-30T18:38:03Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Motley Fool",
+      "ts": "2026-08-02T18:35:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -42155,7 +42238,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:11:17Z",
+    "observed_utc": "2026-08-03T12:13:30Z",
     "anchor_beat": "2026-08-03T10:18:53Z"
    },
    "lead_image": {
@@ -43086,7 +43169,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:18:13Z",
+    "observed_utc": "2026-08-03T12:20:30Z",
     "anchor_beat": "2026-08-03T11:37:22Z"
    },
    "gate": {
@@ -44703,7 +44786,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:14:19Z",
+    "observed_utc": "2026-08-03T12:16:36Z",
     "anchor_beat": "2026-08-03T08:30:05Z"
    },
    "lead_image": {
@@ -45599,7 +45682,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:35:00Z",
+    "observed_utc": "2026-08-03T12:36:58Z",
     "anchor_beat": "2026-08-03T06:13:24Z"
    },
    "lead_image": {
@@ -47541,7 +47624,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:12:45Z",
+    "observed_utc": "2026-08-03T12:14:56Z",
     "anchor_beat": "2026-08-03T10:50:37Z"
    },
    "lead_image": {
@@ -49348,7 +49431,7 @@
      "class": "other"
     },
     {
-     "outlet": "KSAT",
+     "outlet": "Michigan Public",
      "n": 1,
      "class": "other"
     }
@@ -49646,7 +49729,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 26
+     "other": 25
     },
     "first_seen": "2026-06-16T13:21:41Z"
    },
@@ -49749,7 +49832,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:10:49Z",
+    "observed_utc": "2026-08-03T12:13:05Z",
     "anchor_beat": "2026-08-03T10:00:00Z"
    },
    "lead_image": {
@@ -50118,11 +50201,6 @@
      "class": "other"
     },
     {
-     "outlet": "Mises Institute",
-     "n": 1,
-     "class": "other"
-    },
-    {
      "outlet": "Morningstar",
      "n": 1,
      "class": "other"
@@ -50436,7 +50514,7 @@
      "state-media": 0,
      "regional": 0,
      "official": 0,
-     "other": 9
+     "other": 8
     },
     "first_seen": "2026-07-03T12:25:51Z"
    },
@@ -50793,7 +50871,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:16:04Z",
+    "observed_utc": "2026-08-03T12:18:30Z",
     "anchor_beat": "2026-08-03T10:05:42Z"
    },
    "lead_image": {
@@ -51677,7 +51755,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:16:31Z",
+    "observed_utc": "2026-08-03T12:18:56Z",
     "anchor_beat": "2026-08-03T11:44:10Z"
    },
    "lead_image": {
@@ -52975,7 +53053,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:24:26Z",
+    "observed_utc": "2026-08-03T12:26:39Z",
     "anchor_beat": "2026-08-03T10:08:45Z"
    },
    "lead_image": {
@@ -53688,7 +53766,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:39:58Z",
+    "observed_utc": "2026-08-03T12:41:53Z",
     "anchor_beat": "2026-08-02T22:25:32Z"
    },
    "gate": {
@@ -55882,7 +55960,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:10:59Z",
+    "observed_utc": "2026-08-03T12:13:15Z",
     "anchor_beat": "2026-08-02T21:18:03Z"
    },
    "lead_image": {
@@ -56841,7 +56919,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:15:07Z",
+    "observed_utc": "2026-08-03T12:17:37Z",
     "anchor_beat": "2026-08-02T14:00:00Z"
    },
    "lead_image": {
@@ -58352,7 +58430,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:16:43Z",
+    "observed_utc": "2026-08-03T12:19:10Z",
     "anchor_beat": "2026-08-03T09:09:00Z"
    },
    "lead_image": {
@@ -59408,7 +59486,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:18:21Z",
+    "observed_utc": "2026-08-03T12:20:39Z",
     "anchor_beat": "2026-08-03T10:49:56Z"
    },
    "lead_image": {
@@ -61008,7 +61086,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:22:42Z",
+    "observed_utc": "2026-08-03T12:24:50Z",
     "anchor_beat": "2026-08-03T11:58:48Z"
    },
    "lead_image": {
@@ -61645,7 +61723,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:27:45Z",
+    "observed_utc": "2026-08-03T12:29:51Z",
     "anchor_beat": "2026-08-03T10:00:00Z"
    },
    "gate": {
@@ -62789,7 +62867,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:29:08Z",
+    "observed_utc": "2026-08-03T12:31:27Z",
     "anchor_beat": "2026-08-03T11:47:18Z"
    },
    "lead_image": {
@@ -63615,7 +63693,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:41:06Z",
+    "observed_utc": "2026-08-03T12:42:55Z",
     "anchor_beat": "2026-08-03T08:16:38Z"
    },
    "lead_image": {
@@ -65029,7 +65107,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:12:53Z",
+    "observed_utc": "2026-08-03T12:15:06Z",
     "anchor_beat": "2026-08-03T06:45:00Z"
    },
    "lead_image": {
@@ -66050,7 +66128,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:13:20Z",
+    "observed_utc": "2026-08-03T12:15:35Z",
     "anchor_beat": "2026-08-03T10:31:24Z"
    },
    "lead_image": {
@@ -68374,7 +68452,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:18:30Z",
+    "observed_utc": "2026-08-03T12:20:48Z",
     "anchor_beat": "2026-08-02T15:03:58Z"
    },
    "lead_image": {
@@ -70462,7 +70540,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:31:40Z",
+    "observed_utc": "2026-08-03T12:33:39Z",
     "anchor_beat": "2026-08-02T11:37:14Z"
    },
    "lead_image": {
@@ -71030,7 +71108,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:40:42Z",
+    "observed_utc": "2026-08-03T12:42:33Z",
     "anchor_beat": "2026-08-03T10:35:29Z"
    },
    "gate": {
@@ -71948,7 +72026,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:41:23Z",
+    "observed_utc": "2026-08-03T12:43:12Z",
     "anchor_beat": "2026-08-03T10:18:13Z"
    },
    "gate": {
@@ -72829,7 +72907,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:38:06Z",
+    "observed_utc": "2026-08-03T12:40:08Z",
     "anchor_beat": "2026-08-02T22:27:31Z"
    },
    "lead_image": {
@@ -73985,7 +74063,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:37:48Z",
+    "observed_utc": "2026-08-03T12:39:48Z",
     "anchor_beat": "2026-08-03T10:44:53Z"
    },
    "lead_image": {
@@ -76518,10 +76596,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 79.26,
-      "last_ts": "2026-08-03T11:57:54Z",
+      "last": 79.05,
+      "last_ts": "2026-08-03T11:59:58Z",
       "basis": "Houthi attacks threaten Red Sea oil shipping",
-      "move_pct": -0.46,
+      "move_pct": -0.73,
       "window_h": 24,
       "measured_from": "2026-08-03T08:24:57Z",
       "series": [
@@ -76736,6 +76814,10 @@
        [
         "2026-08-03T11:57:54Z",
         79.26
+       ],
+       [
+        "2026-08-03T11:59:58Z",
+        79.05
        ]
       ]
      },
@@ -76743,10 +76825,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 83.1,
-      "last_ts": "2026-08-03T11:57:30Z",
+      "last": 82.89,
+      "last_ts": "2026-08-03T11:59:55Z",
       "basis": "Houthi attacks threaten Red Sea oil shipping",
-      "move_pct": -0.63,
+      "move_pct": -0.88,
       "window_h": 24,
       "measured_from": "2026-08-03T08:24:57Z",
       "series": [
@@ -76817,12 +76899,16 @@
        [
         "2026-08-03T11:57:30Z",
         83.1
+       ],
+       [
+        "2026-08-03T11:59:55Z",
+        82.89
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:09:39Z",
+    "observed_utc": "2026-08-03T12:12:00Z",
     "anchor_beat": "2026-08-03T08:24:57Z"
    },
    "lead_image": {
@@ -78593,7 +78679,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:12:37Z",
+    "observed_utc": "2026-08-03T12:14:47Z",
     "anchor_beat": "2026-08-03T08:03:13Z"
    },
    "lead_image": {
@@ -79739,7 +79825,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:20:37Z",
+    "observed_utc": "2026-08-03T12:22:50Z",
     "anchor_beat": "2026-08-03T06:37:21Z"
    },
    "lead_image": {
@@ -80758,7 +80844,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:21:49Z",
+    "observed_utc": "2026-08-03T12:23:58Z",
     "anchor_beat": "2026-08-02T16:03:00Z"
    },
    "lead_image": {
@@ -82035,7 +82121,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:24:52Z",
+    "observed_utc": "2026-08-03T12:27:06Z",
     "anchor_beat": "2026-08-02T15:30:03Z"
    },
    "lead_image": {
@@ -82702,7 +82788,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:28:22Z",
+    "observed_utc": "2026-08-03T12:30:36Z",
     "anchor_beat": "2026-08-02T14:09:22Z"
    },
    "lead_image": {
@@ -83329,7 +83415,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:28:31Z",
+    "observed_utc": "2026-08-03T12:30:46Z",
     "anchor_beat": "2026-08-03T08:40:22Z"
    },
    "lead_image": {
@@ -84715,7 +84801,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:13:45Z",
+    "observed_utc": "2026-08-03T12:16:01Z",
     "anchor_beat": "2026-08-02T18:12:31Z"
    },
    "lead_image": {
@@ -84940,22 +85026,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 7,
+    "outlets_timed": 6,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "The Hindu Intl",
-      "ts": "2026-07-27T12:20:26Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Anadolu Agency",
       "ts": "2026-07-27T14:15:29Z",
       "kind": "state media",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "TR state news agency",
       "items": 2
      },
@@ -85360,7 +85438,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:19:57Z",
+    "observed_utc": "2026-08-03T12:22:16Z",
     "anchor_beat": "2026-08-03T10:12:13Z"
    },
    "lead_image": {
@@ -86482,7 +86560,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:26:43Z",
+    "observed_utc": "2026-08-03T12:28:51Z",
     "anchor_beat": "2026-08-03T07:50:37Z"
    },
    "lead_image": {
@@ -87044,7 +87122,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:28:40Z",
+    "observed_utc": "2026-08-03T12:30:57Z",
     "anchor_beat": "2026-08-02T16:00:00Z"
    },
    "lead_image": {
@@ -88730,7 +88808,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:14:57Z",
+    "observed_utc": "2026-08-03T12:17:26Z",
     "anchor_beat": "2026-08-02T21:45:06Z"
    },
    "lead_image": {
@@ -89803,7 +89881,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:19:48Z",
+    "observed_utc": "2026-08-03T12:22:08Z",
     "anchor_beat": "2026-08-02T23:42:59Z"
    },
    "gate": {
@@ -93700,7 +93778,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:33:57Z",
+    "observed_utc": "2026-08-03T12:35:50Z",
     "anchor_beat": "2026-08-03T09:47:34Z"
    },
    "lead_image": {
@@ -95122,7 +95200,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:37:32Z",
+    "observed_utc": "2026-08-03T12:39:32Z",
     "anchor_beat": "2026-08-02T12:00:38Z"
    },
    "lead_image": {
@@ -95805,7 +95883,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:28:49Z",
+    "observed_utc": "2026-08-03T12:31:07Z",
     "anchor_beat": "2026-08-02T09:07:20Z"
    },
    "lead_image": {
@@ -96997,7 +97075,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:13:36Z",
+    "observed_utc": "2026-08-03T12:15:52Z",
     "anchor_beat": "2026-08-01T20:30:15Z"
    },
    "lead_image": {
@@ -97991,7 +98069,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:38:57Z",
+    "observed_utc": "2026-08-03T12:40:56Z",
     "anchor_beat": "2026-08-02T11:42:29Z"
    },
    "lead_image": {
@@ -99943,7 +100021,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:37:16Z",
+    "observed_utc": "2026-08-03T12:39:16Z",
     "anchor_beat": "2026-08-01T16:57:17Z"
    },
    "lead_image": {
@@ -100992,7 +101070,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:37:24Z",
+    "observed_utc": "2026-08-03T12:39:24Z",
     "anchor_beat": "2026-08-01T15:23:52Z"
    },
    "lead_image": {
@@ -101948,7 +102026,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:37:40Z",
+    "observed_utc": "2026-08-03T12:39:40Z",
     "anchor_beat": "2026-08-01T16:51:59Z"
    },
    "lead_image": {
@@ -104501,7 +104579,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:17:00Z",
+    "observed_utc": "2026-08-03T12:19:26Z",
     "anchor_beat": "2026-08-01T20:37:00Z"
    },
    "gate": {
@@ -104931,7 +105009,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:33:25Z",
+    "observed_utc": "2026-08-03T12:35:18Z",
     "anchor_beat": "2026-08-02T00:56:57Z"
    },
    "lead_image": {
@@ -105655,7 +105733,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:37:07Z",
+    "observed_utc": "2026-08-03T12:39:07Z",
     "anchor_beat": "2026-08-02T00:00:00Z"
    },
    "lead_image": {
@@ -106316,7 +106394,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:38:24Z",
+    "observed_utc": "2026-08-03T12:40:25Z",
     "anchor_beat": "2026-08-02T10:28:00Z"
    },
    "lead_image": {
@@ -107127,7 +107205,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:38:40Z",
+    "observed_utc": "2026-08-03T12:40:40Z",
     "anchor_beat": "2026-08-02T10:12:54Z"
    },
    "lead_image": {
@@ -108232,7 +108310,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:14:02Z",
+    "observed_utc": "2026-08-03T12:16:18Z",
     "anchor_beat": "2026-08-02T00:26:39Z"
    },
    "lead_image": {
@@ -111401,7 +111479,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:18:04Z",
+    "observed_utc": "2026-08-03T12:20:20Z",
     "anchor_beat": "2026-08-01T19:05:32Z"
    },
    "lead_image": {
@@ -112792,7 +112870,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:18:56Z",
+    "observed_utc": "2026-08-03T12:21:16Z",
     "anchor_beat": "2026-08-01T19:00:00Z"
    },
    "lead_image": {
@@ -114427,7 +114505,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:19:31Z",
+    "observed_utc": "2026-08-03T12:21:50Z",
     "anchor_beat": "2026-08-02T03:14:56Z"
    },
    "lead_image": {
@@ -115900,7 +115978,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:20:27Z",
+    "observed_utc": "2026-08-03T12:22:42Z",
     "anchor_beat": "2026-08-01T18:59:35Z"
    },
    "lead_image": {
@@ -117171,7 +117249,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:21:58Z",
+    "observed_utc": "2026-08-03T12:24:08Z",
     "anchor_beat": "2026-08-01T13:33:01Z"
    },
    "lead_image": {
@@ -118172,7 +118250,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:25:30Z",
+    "observed_utc": "2026-08-03T12:27:41Z",
     "anchor_beat": "2026-08-02T04:30:00Z"
    },
    "gate": {
@@ -120147,7 +120225,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:30:43Z",
+    "observed_utc": "2026-08-03T12:32:51Z",
     "anchor_beat": "2026-08-01T17:39:12Z"
    },
    "lead_image": {
@@ -121715,7 +121793,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:36:57Z",
+    "observed_utc": "2026-08-03T12:38:55Z",
     "anchor_beat": "2026-08-01T12:44:03Z"
    },
    "lead_image": {
@@ -122915,7 +122993,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:10:30Z",
+    "observed_utc": "2026-08-03T12:12:48Z",
     "anchor_beat": "2026-08-01T05:22:21Z"
    },
    "lead_image": {
@@ -123934,7 +124012,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:11:35Z",
+    "observed_utc": "2026-08-03T12:13:47Z",
     "anchor_beat": "2026-07-31T22:47:26Z"
    },
    "lead_image": {
@@ -124875,7 +124953,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:13:28Z",
+    "observed_utc": "2026-08-03T12:15:44Z",
     "anchor_beat": "2026-07-31T18:30:41Z"
    },
    "lead_image": {
@@ -125717,7 +125795,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:14:24Z",
+    "observed_utc": "2026-08-03T12:16:40Z",
     "anchor_beat": "2026-08-01T01:28:57Z"
    },
    "lead_image": {
@@ -128808,7 +128886,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:17:38Z",
+    "observed_utc": "2026-08-03T12:19:51Z",
     "anchor_beat": "2026-08-01T09:58:12Z"
    },
    "lead_image": {
@@ -130684,7 +130762,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:18:48Z",
+    "observed_utc": "2026-08-03T12:21:06Z",
     "anchor_beat": "2026-08-01T11:00:00Z"
    },
    "lead_image": {
@@ -131586,7 +131664,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:19:40Z",
+    "observed_utc": "2026-08-03T12:21:58Z",
     "anchor_beat": "2026-07-31T16:36:57Z"
    },
    "lead_image": {
@@ -132312,7 +132390,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:20:55Z",
+    "observed_utc": "2026-08-03T12:23:07Z",
     "anchor_beat": "2026-07-31T23:10:00Z"
    },
    "lead_image": {
@@ -134832,7 +134910,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:22:07Z",
+    "observed_utc": "2026-08-03T12:24:16Z",
     "anchor_beat": "2026-07-29T10:09:54Z"
    },
    "lead_image": {
@@ -137388,7 +137466,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:23:25Z",
+    "observed_utc": "2026-08-03T12:25:37Z",
     "anchor_beat": "2026-07-31T12:38:17Z"
    },
    "lead_image": {
@@ -138936,7 +139014,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:23:34Z",
+    "observed_utc": "2026-08-03T12:25:46Z",
     "anchor_beat": "2026-07-30T21:00:00Z"
    },
    "lead_image": {
@@ -139903,7 +139981,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:24:00Z",
+    "observed_utc": "2026-08-03T12:26:13Z",
     "anchor_beat": "2026-07-29T13:19:41Z"
    },
    "lead_image": {
@@ -141436,7 +141514,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:25:39Z",
+    "observed_utc": "2026-08-03T12:27:49Z",
     "anchor_beat": "2026-07-31T15:34:00Z"
    },
    "lead_image": {
@@ -142761,7 +142839,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:25:48Z",
+    "observed_utc": "2026-08-03T12:27:57Z",
     "anchor_beat": "2026-07-31T11:04:41Z"
    },
    "lead_image": {
@@ -144659,7 +144737,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:26:25Z",
+    "observed_utc": "2026-08-03T12:28:34Z",
     "anchor_beat": "2026-07-30T09:08:30Z"
    },
    "lead_image": {
@@ -145424,7 +145502,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:26:34Z",
+    "observed_utc": "2026-08-03T12:28:42Z",
     "anchor_beat": "2026-07-31T18:39:47Z"
    },
    "lead_image": {
@@ -146287,7 +146365,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:27:01Z",
+    "observed_utc": "2026-08-03T12:29:09Z",
     "anchor_beat": "2026-07-31T03:04:39Z"
    },
    "lead_image": {
@@ -149233,7 +149311,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:29:16Z",
+    "observed_utc": "2026-08-03T12:31:35Z",
     "anchor_beat": "2026-07-31T15:47:46Z"
    },
    "lead_image": {
@@ -149878,7 +149956,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:29:25Z",
+    "observed_utc": "2026-08-03T12:31:44Z",
     "anchor_beat": "2026-07-31T07:06:42Z"
    },
    "lead_image": {
@@ -151113,7 +151191,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:30:13Z",
+    "observed_utc": "2026-08-03T12:32:28Z",
     "anchor_beat": "2026-07-31T19:59:42Z"
    },
    "lead_image": {
@@ -151767,7 +151845,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:30:24Z",
+    "observed_utc": "2026-08-03T12:32:36Z",
     "anchor_beat": "2026-07-31T17:44:30Z"
    },
    "lead_image": {
@@ -152420,7 +152498,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:30:34Z",
+    "observed_utc": "2026-08-03T12:32:43Z",
     "anchor_beat": "2026-07-31T15:30:50Z"
    },
    "lead_image": {
@@ -153362,7 +153440,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:30:54Z",
+    "observed_utc": "2026-08-03T12:32:58Z",
     "anchor_beat": "2026-07-31T12:31:49Z"
    },
    "lead_image": {
@@ -153771,7 +153849,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:31:04Z",
+    "observed_utc": "2026-08-03T12:33:07Z",
     "anchor_beat": "2026-07-31T15:01:07Z"
    },
    "lead_image": {
@@ -154680,7 +154758,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:31:13Z",
+    "observed_utc": "2026-08-03T12:33:16Z",
     "anchor_beat": "2026-07-31T17:34:58Z"
    },
    "lead_image": {
@@ -155447,7 +155525,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:31:54Z",
+    "observed_utc": "2026-08-03T12:33:52Z",
     "anchor_beat": "2026-07-30T07:24:38Z"
    },
    "gate": {
@@ -156166,7 +156244,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:32:12Z",
+    "observed_utc": "2026-08-03T12:34:08Z",
     "anchor_beat": "2026-07-30T18:36:37Z"
    },
    "lead_image": {
@@ -157672,7 +157750,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:32:30Z",
+    "observed_utc": "2026-08-03T12:34:24Z",
     "anchor_beat": "2026-07-31T17:47:35Z"
    },
    "lead_image": {
@@ -158347,7 +158425,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:32:45Z",
+    "observed_utc": "2026-08-03T12:34:39Z",
     "anchor_beat": "2026-07-31T22:32:51Z"
    },
    "lead_image": {
@@ -158860,7 +158938,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:33:10Z",
+    "observed_utc": "2026-08-03T12:35:01Z",
     "anchor_beat": "2026-07-30T16:33:53Z"
    },
    "gate": {
@@ -159381,7 +159459,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:33:18Z",
+    "observed_utc": "2026-08-03T12:35:10Z",
     "anchor_beat": "2026-07-31T20:20:33Z"
    },
    "lead_image": {
@@ -160628,7 +160706,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:34:06Z",
+    "observed_utc": "2026-08-03T12:35:59Z",
     "anchor_beat": "2026-07-31T16:08:18Z"
    },
    "lead_image": {
@@ -161599,7 +161677,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:34:22Z",
+    "observed_utc": "2026-08-03T12:36:17Z",
     "anchor_beat": "2026-07-31T21:22:55Z"
    },
    "lead_image": {
@@ -162599,7 +162677,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:34:38Z",
+    "observed_utc": "2026-08-03T12:36:33Z",
     "anchor_beat": "2026-07-31T17:11:51Z"
    },
    "gate": {
@@ -163276,7 +163354,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:34:45Z",
+    "observed_utc": "2026-08-03T12:36:42Z",
     "anchor_beat": "2026-07-31T23:51:25Z"
    },
    "lead_image": {
@@ -163785,7 +163863,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:34:53Z",
+    "observed_utc": "2026-08-03T12:36:50Z",
     "anchor_beat": "2026-07-31T16:37:31Z"
    },
    "gate": {
@@ -164227,7 +164305,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:35:17Z",
+    "observed_utc": "2026-08-03T12:37:17Z",
     "anchor_beat": "2026-07-30T14:58:03Z"
    },
    "lead_image": {
@@ -164906,7 +164984,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-03T12:35:41Z",
+    "observed_utc": "2026-08-03T12:37:40Z",
     "anchor_beat": "2026-08-01T01:55:27Z"
    },
    "lead_image": {
@@ -166608,7 +166686,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-03T12:37:56Z",
+    "observed_utc": "2026-08-03T12:39:57Z",
     "anchor_beat": "2026-07-31T22:10:06Z"
    },
    "gate": {
@@ -166765,7 +166843,7 @@
     "discovered_days": 0
    },
    "gate": {
-    "score": 2,
+    "score": 3,
     "of": 8,
     "checks": {
      "split": 0,
@@ -166773,63 +166851,14 @@
      "provenance": 0,
      "steelman": 0,
      "history": 1,
-     "report": 0,
+     "report": 1,
      "theories": 0,
      "unknowns": 1
     }
    }
   }
  ],
- "candidates": [
-  {
-   "sample": "Suspected mass bird flu deaths found in second state as Murray Watt warns \u2018this is the beginning\u2019",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Archaeologists Find Hundreds of Ancient Glyphs in the Amazon",
-   "outlets": 5,
-   "count": 5,
-   "status": "watching"
-  },
-  {
-   "sample": "Wildberries CEO speaks out after week of Ukrainian warehouse strikes",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Paramount+ Coupon Codes and Deals for August 2026",
-   "outlets": 4,
-   "count": 16,
-   "status": "watching"
-  },
-  {
-   "sample": "'Spider-Man: Brand New Day' chases 'Avengers: Endgame' opening record with $355 million domestic debut",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "A digital iron curtain is threatening the global economy",
-   "outlets": 4,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Miniaturizing and modifying natural proteins with Raygun",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Three rising stars of nanoscience and nanotechnology",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -166846,7 +166875,7 @@
   "claims": 4604,
   "carriers": 11905,
   "steelmans": 4250,
-  "deep_reports": 959,
+  "deep_reports": 960,
   "entities": 1203,
   "edges": 28406,
   "history_nodes": 557,
@@ -166855,12 +166884,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 151,
-  "accepted": 1,
-  "rejected": 9,
-  "existing": 3,
-  "below": 138,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
