@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-25T23:47:35Z",
+ "generated_utc": "2026-08-25T23:55:29Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -82,46 +82,6 @@
     "id": "unnews",
     "label": "UN News",
     "reason": "not well-formed (invalid token): line 1, column 0"
-   },
-   {
-    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
-    "label": "GDELT US Economic Pressure on Iran",
-    "reason": "<urlopen error timed out>"
-   },
-   {
-    "id": "gdelt:russia-ukraine-war-current",
-    "label": "GDELT Russia-Ukraine War",
-    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
-   },
-   {
-    "id": "gdelt:oil-prices-fall-to-pre-war-levels",
-    "label": "GDELT Oil prices fall to pre-war levels",
-    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
-   },
-   {
-    "id": "gdelt:gold-drops-24-goldman-jpmorgan-forecasts-diverge",
-    "label": "GDELT Gold prices drop 25 percent from peak amid ETF inflows rebou",
-    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
-   },
-   {
-    "id": "gdelt:gaza-israel-war-current",
-    "label": "GDELT Gaza Conflict: Civilian Casualties and Humanitarian Crisis",
-    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
-   },
-   {
-    "id": "gdelt:spacex-ipo-musk-first-trillionaire",
-    "label": "GDELT SpaceX stock performance and valuation",
-    "reason": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "id": "gdelt:trump-reframes-us-china-relationship-as-peer-pow",
-    "label": "GDELT Trump to Meet Kim Jong Un",
-    "reason": "HTTP Error 429: Too Many Requests"
-   },
-   {
-    "id": "gdelt:us-india-trade-pact-negotiations-progress",
-    "label": "GDELT US announces new tariffs on 60 countries",
-    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
    }
   ]
  },
@@ -560,7 +520,7 @@
    ],
    "split": {
     "axis_type": "none",
-    "checked_utc": "2026-08-25T17:31:18Z"
+    "checked_utc": "2026-08-25T23:30:18Z"
    },
    "viewpoints": [
     {
@@ -613,22 +573,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 501,
+    "outlets_timed": 500,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "KPIC",
-      "ts": "2026-08-18T23:34:35Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "India Today",
       "ts": "2026-08-18T23:41:14Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -679,6 +631,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
+     },
+     {
+      "outlet": "Business Today",
+      "ts": "2026-08-19T02:26:29Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -1166,7 +1126,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US Economic Pressure on Iran, Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1181,10 +1141,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.97,
-      "last_ts": "2026-08-25T23:14:35Z",
+      "last": 81.0,
+      "last_ts": "2026-08-25T23:23:02Z",
       "basis": "oil supply routes",
-      "move_pct": -0.01,
+      "move_pct": 0.02,
       "window_h": 24,
       "measured_from": "2026-08-25T23:07:04Z",
       "series": [
@@ -1343,6 +1303,10 @@
        [
         "2026-08-25T23:14:35Z",
         80.97
+       ],
+       [
+        "2026-08-25T23:23:02Z",
+        81.0
        ]
       ]
      },
@@ -1350,10 +1314,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.86,
-      "last_ts": "2026-08-25T23:13:08Z",
+      "last": 85.88,
+      "last_ts": "2026-08-25T23:23:00Z",
       "basis": "oil prices",
-      "move_pct": 0.0,
+      "move_pct": 0.02,
       "window_h": 24,
       "measured_from": "2026-08-25T23:07:04Z",
       "series": [
@@ -1508,12 +1472,16 @@
        [
         "2026-08-25T23:13:08Z",
         85.86
+       ],
+       [
+        "2026-08-25T23:23:00Z",
+        85.88
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:27:18Z",
+    "observed_utc": "2026-08-25T23:35:22Z",
     "anchor_beat": "2026-08-25T23:07:04Z"
    },
    "lead_image": {
@@ -1883,7 +1851,7 @@
    },
    "discovered": false,
    "items_24h": 94,
-   "items_48h": 277,
+   "items_48h": 276,
    "outlets": 98,
    "kinds": [
     "journalist",
@@ -1991,7 +1959,7 @@
    ],
    "split": {
     "axis_type": "none",
-    "checked_utc": "2026-08-25T17:31:18Z"
+    "checked_utc": "2026-08-25T23:30:18Z"
    },
    "viewpoints": [
     {
@@ -2577,18 +2545,199 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine War, Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
    ],
    "market": {
     "instruments": [
      {
+      "symbol": "BZ=F",
+      "label": "Brent Crude",
+      "class": "commodity",
+      "last": 85.88,
+      "last_ts": "2026-08-25T23:23:00Z",
+      "basis": "Geopolitical risk to energy supply",
+      "move_pct": -0.31,
+      "window_h": 24,
+      "measured_from": "2026-08-25T22:15:01Z",
+      "series": [
+       [
+        "2026-08-25T10:34:20Z",
+        88.06
+       ],
+       [
+        "2026-08-25T10:59:14Z",
+        88.04
+       ],
+       [
+        "2026-08-25T11:00:00Z",
+        88.11
+       ],
+       [
+        "2026-08-25T11:24:42Z",
+        88.13
+       ],
+       [
+        "2026-08-25T11:27:47Z",
+        88.21
+       ],
+       [
+        "2026-08-25T11:57:22Z",
+        87.66
+       ],
+       [
+        "2026-08-25T12:00:00Z",
+        88.19
+       ],
+       [
+        "2026-08-25T12:25:25Z",
+        88.19
+       ],
+       [
+        "2026-08-25T12:51:27Z",
+        87.88
+       ],
+       [
+        "2026-08-25T13:00:00Z",
+        87.9
+       ],
+       [
+        "2026-08-25T13:19:24Z",
+        87.83
+       ],
+       [
+        "2026-08-25T13:44:07Z",
+        87.81
+       ],
+       [
+        "2026-08-25T14:00:00Z",
+        88.01
+       ],
+       [
+        "2026-08-25T14:10:15Z",
+        87.98
+       ],
+       [
+        "2026-08-25T14:35:13Z",
+        88.28
+       ],
+       [
+        "2026-08-25T14:59:11Z",
+        87.86
+       ],
+       [
+        "2026-08-25T15:00:00Z",
+        87.74
+       ],
+       [
+        "2026-08-25T15:26:07Z",
+        87.73
+       ],
+       [
+        "2026-08-25T15:53:42Z",
+        87.16
+       ],
+       [
+        "2026-08-25T16:00:00Z",
+        87.33
+       ],
+       [
+        "2026-08-25T16:19:30Z",
+        87.31
+       ],
+       [
+        "2026-08-25T16:45:24Z",
+        87.29
+       ],
+       [
+        "2026-08-25T17:00:00Z",
+        87.01
+       ],
+       [
+        "2026-08-25T17:10:52Z",
+        87.01
+       ],
+       [
+        "2026-08-25T17:23:17Z",
+        87.09
+       ],
+       [
+        "2026-08-25T17:40:25Z",
+        87.15
+       ],
+       [
+        "2026-08-25T18:00:00Z",
+        87.0
+       ],
+       [
+        "2026-08-25T18:06:29Z",
+        87.0
+       ],
+       [
+        "2026-08-25T18:33:41Z",
+        87.25
+       ],
+       [
+        "2026-08-25T19:00:00Z",
+        87.16
+       ],
+       [
+        "2026-08-25T19:02:37Z",
+        87.16
+       ],
+       [
+        "2026-08-25T19:30:40Z",
+        87.22
+       ],
+       [
+        "2026-08-25T19:57:08Z",
+        86.47
+       ],
+       [
+        "2026-08-25T20:00:00Z",
+        85.11
+       ],
+       [
+        "2026-08-25T20:24:29Z",
+        85.04
+       ],
+       [
+        "2026-08-25T20:51:45Z",
+        85.9
+       ],
+       [
+        "2026-08-25T20:59:30Z",
+        85.86
+       ],
+       [
+        "2026-08-25T22:00:00Z",
+        86.01
+       ],
+       [
+        "2026-08-25T22:07:02Z",
+        86.15
+       ],
+       [
+        "2026-08-25T23:00:00Z",
+        85.86
+       ],
+       [
+        "2026-08-25T23:13:08Z",
+        85.86
+       ],
+       [
+        "2026-08-25T23:23:00Z",
+        85.88
+       ]
+      ]
+     },
+     {
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.97,
-      "last_ts": "2026-08-25T23:14:35Z",
-      "basis": "oil supply disruption",
-      "move_pct": -0.22,
+      "last": 81.0,
+      "last_ts": "2026-08-25T23:23:02Z",
+      "basis": "Geopolitical risk to energy supply",
+      "move_pct": -0.18,
       "window_h": 24,
       "measured_from": "2026-08-25T22:15:01Z",
       "series": [
@@ -2759,193 +2908,398 @@
        [
         "2026-08-25T23:14:35Z",
         80.97
+       ],
+       [
+        "2026-08-25T23:23:02Z",
+        81.0
        ]
       ]
      },
      {
-      "symbol": "NG=F",
-      "label": "Natural Gas",
+      "symbol": "GC=F",
+      "label": "Gold",
       "class": "commodity",
-      "last": 2.845,
-      "last_ts": "2026-08-25T23:14:21Z",
-      "basis": "European gas",
-      "move_pct": 0.07,
+      "last": 4720.6001,
+      "last_ts": "2026-08-25T23:23:03Z",
+      "basis": "Safe-haven asset demand",
+      "move_pct": -0.06,
       "window_h": 24,
       "measured_from": "2026-08-25T22:15:01Z",
       "series": [
        [
-        "2026-08-25T10:34:11Z",
-        2.797
+        "2026-08-25T10:34:20Z",
+        4691.2998
        ],
        [
-        "2026-08-25T10:59:38Z",
-        2.804
+        "2026-08-25T10:59:40Z",
+        4695.6001
        ],
        [
         "2026-08-25T11:00:00Z",
-        2.8
+        4697.8999
        ],
        [
         "2026-08-25T11:24:31Z",
-        2.8
+        4697.7002
        ],
        [
-        "2026-08-25T11:28:45Z",
-        2.8
+        "2026-08-25T11:28:44Z",
+        4696.7998
        ],
        [
-        "2026-08-25T11:57:32Z",
-        2.794
+        "2026-08-25T11:57:31Z",
+        4699.2002
        ],
        [
         "2026-08-25T12:00:00Z",
-        2.78
+        4691.1001
        ],
        [
-        "2026-08-25T12:25:31Z",
-        2.779
+        "2026-08-25T12:25:29Z",
+        4689.3999
        ],
        [
-        "2026-08-25T12:51:32Z",
-        2.75
+        "2026-08-25T12:51:33Z",
+        4699.5
        ],
        [
         "2026-08-25T13:00:00Z",
-        2.758
+        4681.1001
        ],
        [
         "2026-08-25T13:19:24Z",
-        2.758
+        4682.8999
        ],
        [
-        "2026-08-25T13:44:17Z",
-        2.752
+        "2026-08-25T13:44:16Z",
+        4667.0
        ],
        [
         "2026-08-25T14:00:00Z",
-        2.762
+        4680.7998
        ],
        [
-        "2026-08-25T14:10:19Z",
-        2.763
+        "2026-08-25T14:10:22Z",
+        4678.7002
        ],
        [
         "2026-08-25T14:35:31Z",
-        2.771
+        4687.0
        ],
        [
         "2026-08-25T14:59:21Z",
-        2.775
+        4691.3999
        ],
        [
         "2026-08-25T15:00:00Z",
-        2.793
+        4693.8999
        ],
        [
-        "2026-08-25T15:26:14Z",
-        2.792
+        "2026-08-25T15:26:10Z",
+        4695.7002
        ],
        [
-        "2026-08-25T15:53:52Z",
-        2.801
+        "2026-08-25T15:53:54Z",
+        4708.0
        ],
        [
         "2026-08-25T16:00:00Z",
-        2.798
+        4699.7998
        ],
        [
-        "2026-08-25T16:19:48Z",
-        2.798
+        "2026-08-25T16:19:53Z",
+        4699.5
        ],
        [
         "2026-08-25T16:45:28Z",
-        2.826
+        4699.5
        ],
        [
         "2026-08-25T17:00:00Z",
-        2.825
+        4693.5
        ],
        [
-        "2026-08-25T17:11:31Z",
-        2.825
+        "2026-08-25T17:11:28Z",
+        4691.5
        ],
        [
-        "2026-08-25T17:23:39Z",
-        2.819
+        "2026-08-25T17:23:43Z",
+        4697.8999
        ],
        [
-        "2026-08-25T17:40:26Z",
-        2.824
+        "2026-08-25T17:40:31Z",
+        4698.5
        ],
        [
         "2026-08-25T18:00:00Z",
-        2.827
+        4703.3999
        ],
        [
-        "2026-08-25T18:06:53Z",
-        2.827
+        "2026-08-25T18:06:50Z",
+        4703.3999
        ],
        [
-        "2026-08-25T18:34:02Z",
-        2.825
+        "2026-08-25T18:34:01Z",
+        4703.6001
        ],
        [
         "2026-08-25T19:00:00Z",
-        2.837
+        4712.2998
        ],
        [
-        "2026-08-25T19:02:38Z",
-        2.837
+        "2026-08-25T19:02:41Z",
+        4712.5
        ],
        [
-        "2026-08-25T19:30:40Z",
-        2.847
+        "2026-08-25T19:30:53Z",
+        4717.5
        ],
        [
-        "2026-08-25T19:57:15Z",
-        2.846
+        "2026-08-25T19:57:19Z",
+        4720.3999
        ],
        [
         "2026-08-25T20:00:00Z",
-        2.839
+        4723.2998
        ],
        [
-        "2026-08-25T20:24:40Z",
-        2.838
+        "2026-08-25T20:24:32Z",
+        4724.7002
        ],
        [
-        "2026-08-25T20:51:45Z",
-        2.841
+        "2026-08-25T20:51:44Z",
+        4717.2002
        ],
        [
-        "2026-08-25T20:59:58Z",
-        2.845
+        "2026-08-25T20:59:59Z",
+        4715.8999
        ],
        [
         "2026-08-25T22:00:00Z",
-        2.843
+        4723.6001
        ],
        [
-        "2026-08-25T22:16:02Z",
-        2.843
+        "2026-08-25T22:17:35Z",
+        4723.3999
        ],
        [
-        "2026-08-25T22:44:48Z",
-        2.845
+        "2026-08-25T22:45:14Z",
+        4727.5
        ],
        [
         "2026-08-25T23:00:00Z",
-        2.845
+        4725.1001
        ],
        [
-        "2026-08-25T23:14:21Z",
-        2.845
+        "2026-08-25T23:14:38Z",
+        4725.0
+       ],
+       [
+        "2026-08-25T23:23:03Z",
+        4720.6001
+       ]
+      ]
+     },
+     {
+      "symbol": "EURUSD=X",
+      "label": "EUR/USD",
+      "class": "fx",
+      "last": 1.1678,
+      "last_ts": "2026-08-25T23:33:05Z",
+      "basis": "European geopolitical instability impact",
+      "move_pct": 0.0,
+      "window_h": 24,
+      "measured_from": "2026-08-25T22:15:01Z",
+      "series": [
+       [
+        "2026-08-25T10:16:33Z",
+        1.1667
+       ],
+       [
+        "2026-08-25T10:43:29Z",
+        1.1666
+       ],
+       [
+        "2026-08-25T11:00:00Z",
+        1.1665
+       ],
+       [
+        "2026-08-25T11:09:29Z",
+        1.1666
+       ],
+       [
+        "2026-08-25T11:34:30Z",
+        1.1666
+       ],
+       [
+        "2026-08-25T11:38:30Z",
+        1.1665
+       ],
+       [
+        "2026-08-25T12:00:00Z",
+        1.1666
+       ],
+       [
+        "2026-08-25T12:07:30Z",
+        1.1667
+       ],
+       [
+        "2026-08-25T12:35:31Z",
+        1.1666
+       ],
+       [
+        "2026-08-25T13:00:00Z",
+        1.167
+       ],
+       [
+        "2026-08-25T13:01:32Z",
+        1.1669
+       ],
+       [
+        "2026-08-25T13:28:32Z",
+        1.1675
+       ],
+       [
+        "2026-08-25T13:53:33Z",
+        1.1674
+       ],
+       [
+        "2026-08-25T14:00:00Z",
+        1.1675
+       ],
+       [
+        "2026-08-25T14:19:33Z",
+        1.1675
+       ],
+       [
+        "2026-08-25T14:45:29Z",
+        1.1674
+       ],
+       [
+        "2026-08-25T15:00:00Z",
+        1.1673
+       ],
+       [
+        "2026-08-25T15:08:29Z",
+        1.1674
+       ],
+       [
+        "2026-08-25T15:35:30Z",
+        1.1678
+       ],
+       [
+        "2026-08-25T16:00:00Z",
+        1.1677
+       ],
+       [
+        "2026-08-25T16:03:31Z",
+        1.1675
+       ],
+       [
+        "2026-08-25T16:29:31Z",
+        1.1673
+       ],
+       [
+        "2026-08-25T16:54:32Z",
+        1.1674
+       ],
+       [
+        "2026-08-25T17:00:00Z",
+        1.1675
+       ],
+       [
+        "2026-08-25T17:20:32Z",
+        1.1675
+       ],
+       [
+        "2026-08-25T17:33:32Z",
+        1.1673
+       ],
+       [
+        "2026-08-25T17:49:33Z",
+        1.1677
+       ],
+       [
+        "2026-08-25T18:00:00Z",
+        1.1678
+       ],
+       [
+        "2026-08-25T18:16:33Z",
+        1.1678
+       ],
+       [
+        "2026-08-25T18:43:34Z",
+        1.1677
+       ],
+       [
+        "2026-08-25T19:00:00Z",
+        1.1681
+       ],
+       [
+        "2026-08-25T19:12:29Z",
+        1.1681
+       ],
+       [
+        "2026-08-25T19:40:30Z",
+        1.1673
+       ],
+       [
+        "2026-08-25T20:00:00Z",
+        1.168
+       ],
+       [
+        "2026-08-25T20:06:30Z",
+        1.168
+       ],
+       [
+        "2026-08-25T20:34:31Z",
+        1.168
+       ],
+       [
+        "2026-08-25T21:00:00Z",
+        1.1689
+       ],
+       [
+        "2026-08-25T21:01:31Z",
+        1.1689
+       ],
+       [
+        "2026-08-25T21:29:32Z",
+        1.1677
+       ],
+       [
+        "2026-08-25T21:55:32Z",
+        1.1678
+       ],
+       [
+        "2026-08-25T22:00:00Z",
+        1.1678
+       ],
+       [
+        "2026-08-25T22:27:04Z",
+        1.1678
+       ],
+       [
+        "2026-08-25T22:55:04Z",
+        1.1681
+       ],
+       [
+        "2026-08-25T23:00:00Z",
+        1.168
+       ],
+       [
+        "2026-08-25T23:24:05Z",
+        1.168
+       ],
+       [
+        "2026-08-25T23:33:05Z",
+        1.1678
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:26:36Z",
+    "observed_utc": "2026-08-25T23:34:41Z",
     "anchor_beat": "2026-08-25T22:15:01Z"
    },
    "lead_image": {
@@ -3491,22 +3845,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 172,
+    "outlets_timed": 171,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "1059thebrew.iheart.com",
-      "ts": "2026-08-18T23:30:00Z",
-      "kind": "state media",
-      "role": "origin",
-      "motive_note": "RU state media",
-      "items": 1
-     },
      {
       "outlet": "WCMU Public Media",
       "ts": "2026-08-18T23:52:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -3557,6 +3903,14 @@
       "role": "echo",
       "motive_note": "RU state media",
       "items": 1
+     },
+     {
+      "outlet": "Yahoo Finance",
+      "ts": "2026-08-19T03:05:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 19
      }
     ],
     "unplaced": []
@@ -4002,7 +4356,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Oil prices fall to pre-war levels, Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 58 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -4017,10 +4371,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.97,
-      "last_ts": "2026-08-25T23:14:35Z",
+      "last": 81.0,
+      "last_ts": "2026-08-25T23:23:02Z",
       "basis": "oil price",
-      "move_pct": -0.2,
+      "move_pct": -0.16,
       "window_h": 24,
       "measured_from": "2026-08-25T22:40:00Z",
       "series": [
@@ -4187,6 +4541,10 @@
        [
         "2026-08-25T23:14:35Z",
         80.97
+       ],
+       [
+        "2026-08-25T23:23:02Z",
+        81.0
        ]
       ]
      },
@@ -4194,10 +4552,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.86,
-      "last_ts": "2026-08-25T23:13:08Z",
+      "last": 85.88,
+      "last_ts": "2026-08-25T23:23:00Z",
       "basis": "oil price",
-      "move_pct": -0.34,
+      "move_pct": -0.31,
       "window_h": 24,
       "measured_from": "2026-08-25T22:40:00Z",
       "series": [
@@ -4360,12 +4718,16 @@
        [
         "2026-08-25T23:13:08Z",
         85.86
+       ],
+       [
+        "2026-08-25T23:23:00Z",
+        85.88
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:29:44Z",
+    "observed_utc": "2026-08-25T23:37:45Z",
     "anchor_beat": "2026-08-25T22:40:00Z"
    },
    "lead_image": {
@@ -5375,7 +5737,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Gold prices drop 25 percent from peak amid ETF inflows rebou, Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 62 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -5390,10 +5752,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4725.0,
-      "last_ts": "2026-08-25T23:14:38Z",
+      "last": 4720.6001,
+      "last_ts": "2026-08-25T23:23:03Z",
       "basis": "Gold price movements, market sentiment",
-      "move_pct": 0.19,
+      "move_pct": 0.1,
       "window_h": 24,
       "measured_from": "2026-08-25T21:41:53Z",
       "series": [
@@ -5572,12 +5934,16 @@
        [
         "2026-08-25T23:14:38Z",
         4725.0
+       ],
+       [
+        "2026-08-25T23:23:03Z",
+        4720.6001
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:29:37Z",
+    "observed_utc": "2026-08-25T23:37:38Z",
     "anchor_beat": "2026-08-25T21:41:53Z"
    },
    "lead_image": {
@@ -5999,7 +6365,7 @@
     "bullets": []
    },
    "discovered": false,
-   "items_24h": 49,
+   "items_24h": 46,
    "items_48h": 159,
    "outlets": 81,
    "kinds": [
@@ -6108,7 +6474,7 @@
    ],
    "split": {
     "axis_type": "none",
-    "checked_utc": "2026-08-25T17:31:18Z"
+    "checked_utc": "2026-08-25T23:30:18Z"
    },
    "viewpoints": [
     {
@@ -6748,7 +7114,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Gaza Conflict: Civilian Casualties and Humanitarian Crisis, Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
    ],
    "lead_image": {
     "url": "https://web-cdnprod.aa.com.tr/uploads/Contents/2026/08/22/thumbs_b_c_16ed7ff7851cc872874d04edb8ae2b1c.jpg",
@@ -7680,7 +8046,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT SpaceX stock performance and valuation, Press TV, Times of Israel, UN News."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
    ],
    "history": {
     "built": true,
@@ -7902,7 +8268,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:27:49Z",
+    "observed_utc": "2026-08-25T23:35:53Z",
     "anchor_beat": "2026-08-25T22:36:04Z"
    },
    "lead_image": {
@@ -8269,7 +8635,7 @@
    ],
    "split": {
     "axis_type": "none",
-    "checked_utc": "2026-08-25T17:31:18Z"
+    "checked_utc": "2026-08-25T23:30:18Z"
    },
    "viewpoints": [
     {
@@ -8326,20 +8692,20 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "South China Morning Post",
-      "ts": "2026-08-18T23:27:39Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "HK press (Alibaba-owned)",
-      "items": 40
-     },
-     {
       "outlet": "The Washington Post",
       "ts": "2026-08-18T23:59:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "US press",
       "items": 2
+     },
+     {
+      "outlet": "South China Morning Post",
+      "ts": "2026-08-19T00:00:21Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "HK press (Alibaba-owned)",
+      "items": 39
      },
      {
       "outlet": "Defense One",
@@ -8873,7 +9239,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump to Meet Kim Jong Un, Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -9087,7 +9453,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:27:22Z",
+    "observed_utc": "2026-08-25T23:35:27Z",
     "anchor_beat": "2026-08-25T20:46:19Z"
    },
    "lead_image": {
@@ -9956,7 +10322,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US announces new tariffs on 60 countries, Press TV, Times of Israel, UN News.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
     "Deep history not yet built - story discovered 57 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -10263,7 +10629,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:30:18Z",
+    "observed_utc": "2026-08-25T23:38:12Z",
     "anchor_beat": "2026-08-25T21:38:00Z"
    },
    "lead_image": {
@@ -11088,7 +11454,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:32:20Z",
+    "observed_utc": "2026-08-25T23:39:54Z",
     "anchor_beat": "2026-08-25T20:20:44Z"
    },
    "lead_image": {
@@ -11800,6 +12166,309 @@
    }
   },
   {
+   "id": "spacex-acquires-land-for-louisiana-site",
+   "name": "SpaceX acquires land for Louisiana site",
+   "bucket": "tech",
+   "topic_tags": [
+    "space"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 35,
+   "items_48h": 37,
+   "outlets": 34,
+   "kinds": [
+    "journalist",
+    "wire service"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-25T22:24:00Z",
+     "title": "SpaceX plans to build the \u2018biggest launch site on Earth\u2019 for $100 billion in Louisiana",
+     "outlet": "WKOW",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcUxsV1FDV1J5RnlaQ0ViblJjZVlLSW85clV5U2tOODlWeUxUbUZRbUg1d2wyay1BamowZS1JSUJLY2VRMmdLUUxhYzh1WHpheWhLcDY2LTlHVzFPVkZvTXFzLThMdGk4SlVZUk9YNkZNVWxESEsybUVWdUtjYXpRM0RyblVSR29xS0dJdEdjOGoxZnNJa082QmRScUFBYXMwMVpSLXRUWjFna1lXRDVuMUh5QXFlc2lXTi1iVzBpN2s3cmRCRXEzNmZHRXdjVTBxRWIzaFp0a1dNYnpSUlhTMWhrSEc0YzdJeGpfVUtFQTBicFRIaElCc1pHYmg?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T22:09:01Z",
+     "title": "SpaceX plans to build a $100 billion spaceport in Louisiana",
+     "outlet": "CNBC",
+     "kind": "journalist",
+     "url": "https://www.cnbc.com/2026/08/25/spacex-louisiana-spaceport.html",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T21:59:03Z",
+     "title": "SpaceX to build $100 billion Starship rocket complex in Louisiana",
+     "outlet": "Reuters",
+     "kind": "wire service",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORG1YdF9QNURIQTAzUGlMYjJjRDNEUTl5MUxDV0h6bEZvb042NXpHeW1ZbUtvRW9LbjZfWHM1cjdLSURFN0hZclBpOXFVSGV1N2lSQ0ZlQXEyUXZhU3RQR1gxa1JDNVRKZFFOUlpSaHFOVmk4TGt3UUlmTnViWlNqYVNnSDJKaGZpenpYVERzRTUzTWJybS10aE9CZlo4NHJNSGc?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-25T21:06:29Z",
+     "title": "SpaceX Now Building 17 Starship Pads Targeting 15,000+ Launches a Year",
+     "outlet": "BASENOR - Tesla Accessories",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTY1ZFZ1azdkMUM0aUNZWGlTWjFiUzRSVndhUXVjM2FmbllQcFJxRXJ0WVIzODh2eWN2Uzg2dEpDQ3FYb29Ud2pCVFF6R0V5Q0ZyNUk2V21LV0h3SDFvNENVZVBZa29jMTNBV2FqMVprZTdzQ2tKX3NaMUJyNTZMTlZCMzZPTTByby1wWmJ0LXl5cTQzT01feDFDZTZzZlVrUnAwUmNfdw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T20:39:33Z",
+     "title": "SpaceX plans $100B Louisiana Starship spaceport with 10 launch pads",
+     "outlet": "AeroTime",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVWVfSG1SbGt0cmo5N0doTlZlblNtTGhuakJ1eXkyRDl2RjZRVU5jN1dlMkFFVTBUM3ZCckNXRkkzNHlyNG9yenBpeUdUckdwSFNudWNXdEhBNmwzRlZUWlJ4VFk5cTJWMDJwdDVhUjhIR3JiSG9mZHgyVUxaZDVzeTRRX0IyWkRPRWhDa2ZR0gGTAUFVX3lxTE95cVZzWXZBVzNFS2lkSG5JaXpyMnNlZUZYeE1xMnVoYmRIYlJsSUR4UmNOQmJEaFNPczRhMnZhM1h6Vzdxd1Z0djFWbEVaODlVbjJndnI3bHAzNEZiMXBTeXgwVUVBYThURGtHMXZfOEl6MTMyakY1NWVHUGdsSTFZZUh6cm1FMnYyV28zVnAxa0NBTQ?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T20:10:00Z",
+     "title": "Elon Musk\u2019s SpaceX to expand beyond Texas Starbase with new Louisiana spaceport dedicated to Starship",
+     "outlet": "Scientific American",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOaVVYVzdMUzQ4TUVfZ015ZThSRGxoM2hBX0ZBaHFzaXhCYUpUazJZU2RrNlJrUXdJZWt0TkEwMXl0dUxxY1hjeWgxemM2Nm1aNmlKS2ZPdF9Pa0dzUGo3UUhjLWtPcW1RSHRyT1lXRUZQdWVxMHBfcmc2NzlTSHhCTDlSS19IbGw5TzRCRVNUbEdiQjlpRjVBWHVDSGllZTkweGhSaFc1UHl3WHFGZk85OUlWTGZaa2FTeU9qWlB0UDR4ajBmMmlkcEFaTVNHSEJ0eUs0azNYeWFuWXl0?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T20:04:06Z",
+     "title": "SpaceX announces new Starbase for \u2018thousands of Starship launches annually\u2019",
+     "outlet": "Teslarati",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONTlEVFJnMnhUcFZROXcyLUY0eVZjVnMwLUliOFpRMlU0dTVGN1YtaEk3VnpERENnU3N3dWlYVFZQX2tjX0RIUXhMcFMyUUFzaVF4NkZKY1k2dlRiVVZWbjFZemRic2lNVzFVeEdfRGxhVTZIdWoyb1ZQOVRQMG1hRF9TUkROYTBKSXNkakU0V0pzUDJmMjJiXw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T19:46:00Z",
+     "title": "'End of an era:' SpaceX official marks final Falcon 9 Starlink launch from Florida, says Starship will replace it",
+     "outlet": "WESH",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZjg4LV8zdV8tMDZhNDJ0RWU2STNLUWNyWkNWb0d6MTU0UWcyNVdFSkN6eURFc1hSd0hrZE82ZWdQNmFTUWc4TXBpV214Qy1wVHByMWVuYmZ1RDl1VmpkNnhDM3NzaW1GZnVZRUF2ZU5DNkZXUjBFa0RBU3dWbERIZGY0TW1sMm5Xczkw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 34,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "NextBigFuture.com",
+      "ts": "2026-08-23T00:07:46Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "BASENOR - Tesla Accessories",
+      "ts": "2026-08-23T21:03:58Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Defense One",
+      "ts": "2026-08-24T04:55:16Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "San Antonio Express-News",
+      "ts": "2026-08-24T09:07:38Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Oz Arab Media",
+      "ts": "2026-08-25T06:03:44Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "starlust.org",
+      "ts": "2026-08-25T12:53:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Forbes Business",
+      "ts": "2026-08-25T14:57:12Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Phys.org",
+      "ts": "2026-08-25T15:15:04Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "BASENOR - Tesla Accessories",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "IndexBox",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Spectrum News 13",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Yahoo Finance",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "AeroTime",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "American Journal of Transportation",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Aviation Week",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Axios",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "CNBC",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Defense One",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Financial Times",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Florida Today",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [],
+    "mix": {
+     "mainstream": 2,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 33
+    },
+    "first_seen": "2026-08-04T10:16:00Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 21 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 21
+   },
+   "lead_image": {
+    "url": "https://image.cnbcfm.com/api/v1/image/108339153-1784809147521-gettyimages-2286629926-mathalone-notitle260722_npJI3.jpeg?v=1784809187&w=1920&h=1080",
+    "source": "CNBC",
+    "focal": {
+     "x": 46,
+     "y": 52
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
    "id": "openai-getty-images-licensing-deal",
    "name": "OpenAI introduces new hardware and ChatGPT features",
    "bucket": "tech",
@@ -12131,26 +12800,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "OpenAI",
-      "ts": "2026-08-18T23:30:34Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 5
-     },
-     {
-      "outlet": "The Register",
-      "ts": "2026-08-18T23:36:36Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 4
-     },
-     {
       "outlet": "PYMNTS.com",
       "ts": "2026-08-19T00:31:37Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -12165,6 +12818,14 @@
      {
       "outlet": "SiliconANGLE",
       "ts": "2026-08-19T01:25:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "The Register",
+      "ts": "2026-08-19T01:36:36Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -12189,6 +12850,14 @@
      {
       "outlet": "marketing-interactive.com",
       "ts": "2026-08-19T03:45:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "edition.cnn.com",
+      "ts": "2026-08-19T04:45:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -12704,7 +13373,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:29:03Z",
+    "observed_utc": "2026-08-25T23:37:05Z",
     "anchor_beat": "2026-08-25T21:17:23Z"
    },
    "lead_image": {
@@ -13943,10 +14612,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4725.0,
-      "last_ts": "2026-08-25T23:14:38Z",
+      "last": 4720.6001,
+      "last_ts": "2026-08-25T23:23:03Z",
       "basis": "Inflation hedge",
-      "move_pct": -0.0,
+      "move_pct": -0.1,
       "window_h": 24,
       "measured_from": "2026-08-25T23:04:10Z",
       "series": [
@@ -14105,12 +14774,16 @@
        [
         "2026-08-25T23:14:38Z",
         4725.0
+       ],
+       [
+        "2026-08-25T23:23:03Z",
+        4720.6001
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:28:52Z",
+    "observed_utc": "2026-08-25T23:36:55Z",
     "anchor_beat": "2026-08-25T23:04:10Z"
    },
    "lead_image": {
@@ -14495,22 +15168,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 81,
+    "outlets_timed": 80,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "Phys.org",
-      "ts": "2026-08-18T23:30:01Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Times Herald",
       "ts": "2026-08-19T02:21:28Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -14557,6 +15222,14 @@
      {
       "outlet": "MarketBeat",
       "ts": "2026-08-19T13:03:20Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Targeted Oncology",
+      "ts": "2026-08-19T16:06:18Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -15150,7 +15823,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:29:14Z",
+    "observed_utc": "2026-08-25T23:37:14Z",
     "anchor_beat": "2026-08-25T21:32:00Z"
    },
    "lead_image": {
@@ -16434,7 +17107,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:26:51Z",
+    "observed_utc": "2026-08-25T23:34:55Z",
     "anchor_beat": "2026-08-25T19:02:42Z"
    },
    "lead_image": {
@@ -18956,10 +19629,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 2.845,
-      "last_ts": "2026-08-25T23:14:21Z",
+      "last": 2.848,
+      "last_ts": "2026-08-25T23:22:11Z",
       "basis": "Natural gas price movements, supply/demand dynamics",
-      "move_pct": 0.0,
+      "move_pct": 0.11,
       "window_h": 24,
       "measured_from": "2026-08-25T21:29:58Z",
       "series": [
@@ -19142,6 +19815,10 @@
        [
         "2026-08-25T23:14:21Z",
         2.845
+       ],
+       [
+        "2026-08-25T23:22:11Z",
+        2.848
        ]
       ]
      },
@@ -19149,10 +19826,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.97,
-      "last_ts": "2026-08-25T23:14:35Z",
+      "last": 81.0,
+      "last_ts": "2026-08-25T23:23:02Z",
       "basis": "Broader energy market sentiment, fuel price outlook",
-      "move_pct": -0.17,
+      "move_pct": -0.14,
       "window_h": 24,
       "measured_from": "2026-08-25T21:29:58Z",
       "series": [
@@ -19335,6 +20012,10 @@
        [
         "2026-08-25T23:14:35Z",
         80.97
+       ],
+       [
+        "2026-08-25T23:23:02Z",
+        81.0
        ]
       ]
      },
@@ -19342,10 +20023,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.86,
-      "last_ts": "2026-08-25T23:13:08Z",
+      "last": 85.88,
+      "last_ts": "2026-08-25T23:23:00Z",
       "basis": "Broader energy market sentiment, fuel price outlook",
-      "move_pct": 0.0,
+      "move_pct": 0.02,
       "window_h": 24,
       "measured_from": "2026-08-25T21:29:58Z",
       "series": [
@@ -19524,12 +20205,16 @@
        [
         "2026-08-25T23:13:08Z",
         85.86
+       ],
+       [
+        "2026-08-25T23:23:00Z",
+        85.88
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:30:29Z",
+    "observed_utc": "2026-08-25T23:38:21Z",
     "anchor_beat": "2026-08-25T21:29:58Z"
    },
    "lead_image": {
@@ -20622,7 +21307,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:28:15Z",
+    "observed_utc": "2026-08-25T23:36:18Z",
     "anchor_beat": "2026-08-25T20:59:49Z"
    },
    "lead_image": {
@@ -20642,995 +21327,6 @@
      "carriers": 0,
      "provenance": 1,
      "steelman": 0,
-     "history": 1,
-     "report": 1,
-     "theories": 0,
-     "unknowns": 1
-    }
-   }
-  },
-  {
-   "id": "ebola-spreads-dr-congo-cases-top-676",
-   "name": "Ebola spreads DR Congo, cases top 676",
-   "bucket": "science-health",
-   "topic_tags": [
-    "health",
-    "pandemic"
-   ],
-   "brief": {
-    "generated_utc": "2026-07-04T14:49:26Z",
-    "sentence_count": 9,
-    "dropped_count": 0,
-    "paragraphs": [
-     {
-      "sentences": [
-       {
-        "text": "The World Health Organization launched its first clinical trial of experimental treatments for the Bundibugyo strain of Ebola in the Democratic Republic of Congo, enrolling its first patient Thursday.",
-        "cites": [
-         {
-          "outlet": "France 24",
-          "kind": "journalist",
-          "url": "https://www.france24.com/en/video/20260703-ebola-treatment-trial-begins-in-drc-who-says",
-          "ts": "2026-07-03T13:47:57Z",
-          "title": "Ebola treatment trial begins in DRC, WHO says"
-         },
-         {
-          "outlet": "CGTN",
-          "kind": "state media",
-          "url": "https://newsaf.cgtn.com/news/2026-07-03/WHO-starts-first-Ebola-drug-trials-in-DR-Congo-amid-insecurity-1Ou2266lICA/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "ts": "2026-07-03T13:47:08Z",
-          "title": "WHO starts first Ebola drug trials in DR Congo amid insecurity"
-         }
-        ]
-       },
-       {
-        "text": "The trial will evaluate Mapp Biopharmaceutical's experimental MBP134 antibody as a standalone treatment and in combination with Gilead Sciences' antiviral drug remdesivir, WHO said.",
-        "cites": [
-         {
-          "outlet": "The Hindu Intl",
-          "kind": "journalist",
-          "url": "https://www.thehindu.com/sci-tech/health/trial-for-bundibugyo-ebola-treatment-starts-in-drc-who-says/article71182211.ece",
-          "ts": "2026-07-04T14:07:44Z",
-          "title": "Trial for Bundibugyo Ebola treatment starts in DRC, WHO says"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "Congo says confirmed cases have risen to 1,502, while the WHO says the outbreak has claimed 452 lives.",
-        "cites": [
-         {
-          "outlet": "News On AIR",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1QN0lxeWRJWk5CcU9IdlNIY0YwRDAtbUx1QW9vV0p1QUhDbHltSlJVY0s1c1laY25zRkQ1aFY5aTd2T0o3X0lzdENhZmQ2VkhaTFBXOXlWSkZWTUVNTk90RWZkYmJLeWk5NHQ5UGY2Q3pfLTQ4c1E5MQ?oc=5",
-          "ts": "2026-07-04T07:11:10Z",
-          "title": "Confirmed Ebola cases in Congo rise to 1,502"
-         },
-         {
-          "outlet": "AsiaOne",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUXM1cmUyN0gxbThvMDBYcXZWVUF5cm1jX2RPQVplZWFaZ0NkQ0Q1Wm5KdjMzVk5QZXFPMG5NZGhvZXlyNVB6MC1PMGJ3d01UN1U2ODVMVFNfbnp6bkItOHZZV056QXpOX05MN3U1Q0FSME1fdkJEQXZqRkw3dDdqY3BEYzNYU00?oc=5",
-          "ts": "2026-07-04T03:00:09Z",
-          "title": "Congo says number of confirmed Ebola cases rises to 1,502, World News"
-         },
-         {
-          "outlet": "China.org.cn",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9JS0xpUEZmeU8xaFBaRHkySm41bEFxOXdzNTZaWW9LalJDNnk5RFNTNzlEYXRXNnhQbEhRSDJ0X0dsbk91U1hHZ1c5OVVHa0JKbTExak1WRFVtNjh5clhKbUQ4cU5aQjdiU2c?oc=5",
-          "ts": "2026-07-04T05:58:11Z",
-          "title": "DRC Ebola claims 452 lives, says WHO"
-         },
-         {
-          "outlet": "The Peninsula Qatar",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdVdldmI1Z1VGM1dUUVNSeGZ2WTFUekhXZmlubzVpZkdVX1kzRF9QenJUUERBVVk5MktjNHNpZ25xcEtaZUIwcXBSQmJCZjlfY0NOTGhwSzZ0SmwzTW1hZ19mNnFzWFliMXVsWlVDdElkVC12U1JZVXMtWXIwZy0tQmgtYl9KbVhPZlZtaQ?oc=5",
-          "ts": "2026-07-03T21:50:04Z",
-          "title": "DRC Ebola claims 452 lives, says WHO"
-         }
-        ]
-       },
-       {
-        "text": "Anadolu Agency and The Express Tribune report cases have jumped to over 1,500 with 473 deaths, alongside 213 recoveries and 628 patients still under care.",
-        "cites": [
-         {
-          "outlet": "Anadolu Agency",
-          "kind": "state media",
-          "url": "https://www.aa.com.tr/en/africa/ebola-cases-in-dr-congo-jump-to-over-1-500-death-toll-rises-to-473/3985974",
-          "ts": "2026-07-04T13:07:37Z",
-          "title": "Ebola cases in DR Congo jump to over 1,500, death toll rises to 473"
-         },
-         {
-          "outlet": "The Express Tribune",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa2Y0UFVrMDVsTTVCNzRWY2MzWFFvUW43MFdzUHFpNFBPeHEtZjhvMU5MMEFXYm5uSzRrLVB1U2hFQ3B0YmVVMkM1LWtDbHhyXzlBZlFaVGowMXRBRURqT1lKTjQ3WlA4QTBEdm1mWXVtRW5tNmNuZUpTTC02QWNISnBRemY2UmJ3OTdlX0NwM1FMc1A1dUgtbTAyOTlaOXVSOTR0dtIBrAFBVV95cUxPc2xHTktSRmdfdzNHNXVUSG5fbFVYamJkMWJia0ZweDFZLUpRSURtTmVhRlg0Ump5N1lzVHNuanJMTW55ejhGbTBOcGdpY045cWdQUDZsRGlGSWk3N1Q2bnp2QzBVbnJmRHRkRU1wWmsydmZLc2hKenhmM3VTQ0tpT2dNWHBUZVFLVHVYbjdYYnJIaU5zeVhFbzdRZW9ueEVBNkJ4OEVOTXF2a3FH?oc=5",
-          "ts": "2026-07-04T11:24:53Z",
-          "title": "Ebola cases in DR Congo jump to over 1,500, death toll rises to 473"
-         }
-        ]
-       },
-       {
-        "text": "TASS and Report.az report cases have surpassed 1,500, while CGTN reports 1,460 cases and 447 deaths, and Health and Me reports 1,427 cases and 440 deaths.",
-        "cites": [
-         {
-          "outlet": "TASS",
-          "kind": "state media",
-          "url": "https://tass.com/society/2155485",
-          "ts": "2026-07-04T09:53:17Z",
-          "title": "Ebola cases in DR Congo surpass 1,500"
-         },
-         {
-          "outlet": "Report.az",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcUQ5RzIwdHpXOUlXcF8xSlB0X091NzF2X2JhY0FPMDlaN2hEaGhHaUFsa2JRS3BUZVM5Ujc3eEkwcE5xclRfdXhRVnRRRDdQVXFhTmthbFpkSEpJd1BvOER4WjNLd0tqZGY0TzdETTdFVklrSUJteUdoaTkzVG0yMUp0ajHSAYQBQVVfeXFMTnFEOUcyMHR6VzlJV3BfMUpQdF9PdTcxdl9iYWNBTzA5WjdoRGhoR2lBbGtiUUtwVGVTOVI3N3hJMHBOcXJUX3V4UVZ0UUQ3UFVxYU5rYWxaZEhKSXdQbzhEeFozS3dLamRmNE83RE03RVZJa0lCbXlHaGk5M1RtMjFKdGox?oc=5",
-          "ts": "2026-07-04T07:47:04Z",
-          "title": "Ebola cases in DR Congo surpass 1,500"
-         },
-         {
-          "outlet": "CGTN",
-          "kind": "state media",
-          "url": "https://newsaf.cgtn.com/news/2026-07-03/DR-Congo-Ebola-deaths-climb-to-447-1OtHRRWLJNC/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
-          "ts": "2026-07-03T12:45:26Z",
-          "title": "DR Congo Ebola deaths climb to 447"
-         },
-         {
-          "outlet": "Health and Me",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObmdfZXlVRnpMTVVUeUJGMS1oTm5mU1VUMXF4S3NzN2tsS21NWWtCLUtwWWpNblR5MEpoUTdRUi02REdlX2oyOEM5ZnVFbUxZU3VCc3I4ck5TNUpHcEVkaHpXbHFkMWJ4VUpIaEpUWWRfUlFoWXNRS2NTSFlZMU9WbllrT2NfcHZqck5iX2o3alJBdi1JbU00TGpORWUwWjlkMW5ZOW9pRTFENXBYc3MxbmF4VU96Z2RoRTQwMndSa1hZQnV1R2c?oc=5",
-          "ts": "2026-07-03T18:30:00Z",
-          "title": "Congo Starts Ebola Treatment Trial As Cases Reach 1,427, Deaths Hit 440"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The outbreak is spreading beyond its original hotspot, with a new case detected nearly 600 kilometers away, and Congo reported 54 new confirmed cases.",
-        "cites": [
-         {
-          "outlet": "France 24",
-          "kind": "journalist",
-          "url": "https://www.france24.com/en/more-than-400-dead-in-dr-congo-s-ebola-outbreak",
-          "ts": "2026-07-03T21:39:49Z",
-          "title": "More than 400 dead in DR Congo's Ebola outbreak"
-         },
-         {
-          "outlet": "Outbreak News Today",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbUFZclRZWFpoOVlJU2QzNHJLa05WeVRzZkRJRS1mRVFJckxuaFlNR3V4amxiUHJ0NG1WYlJXVVZLLXRDZUZrLWc2NXlZY1VXZ3Y1cDJGQnlQMWNkckRlNnlrdjRyXzcwLXdORzhZWlFWX0xPRldVb052eXUxZXZGZFVZcw?oc=5",
-          "ts": "2026-07-04T11:37:21Z",
-          "title": "Congo reports 54 new confirmed Ebola cases"
-         }
-        ]
-       },
-       {
-        "text": "AU Champion Ramaphosa has backed the DRC in the fight against the outbreak.",
-        "cites": [
-         {
-          "outlet": "Central News South Africa",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRkJpb3U0TWNwX0M0OVFZMjN1S05hdkVuVTQwMEtnaHczZmhWc211UDczRkNELWE2UHg0V1ZlVzZRZFZCcURINmt5TnJZLVlfV2JUalVSVXN1Q3FzdnVMeTVxbWptNEZBeGRCN2VrcnNrUV9RLVpWRVphZnZOMTZJSzZjdWZ4TmhEaHBoaVhyVWhtX2tJVlV6cGlZODFwanFHTko0UA?oc=5",
-          "ts": "2026-07-04T08:38:50Z",
-          "title": "AU Champion Ramaphosa Backs DR Congo in Fight Against Deadly Ebola Outbreak"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "sentences": [
-       {
-        "text": "The UN warns the outbreak could cost Africa up to $3.6 billion and put 300,000 jobs at risk.",
-        "cites": [
-         {
-          "outlet": "The Business Standard",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORkpxUWhQVzZwcU9ESk5BandhS1B1VG1ibm9OSm1ZNzU5NlA4TTB6R1Vnc21wVHpIak92TkV5TGRhb0xvMWp4VFBBeXVlTGhHb01YaXpMR0pENGlEOWcwejU2VDg3WXVtMjhGVE1RZWRaX0prdDNCdVJYRGpNVm1KeGI0WUFKSEN1d1IySndTNW7SAZYBQVVfeXFMTzRNaURBYW5HcURIblhxeUt4VmVMSTJwdXBMNEptdmY0YThtem5FSWhEeVhwbjdHY0FHQm9mb3VGOXhWUnJSTks4MTRlajdQSk5Eb1cycGl6M3pvRnpVXzh6LUx3bHBUaFhUd0h3eTBTYWVWOERvTVVZSTdJWEVRMjFPaEduNGJ6X0thUERoV1hDX3A5RW5R?oc=5",
-          "ts": "2026-07-03T19:13:52Z",
-          "title": "Ebola outbreak could cost Africa up to $3.6b: UN"
-         },
-         {
-          "outlet": "allAfrica.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81OXR5bkg5SkZpR05Rd3cwUWd5UVNQUlZqNkM2TDhtZUxQcnJIb0dmTDA0Rkl4ano2dzVFSzVZZWlRZGlzNHZnMW5zWjBSbXJzUzdDS3pFRzYyOHJTVXlwSkRNemwxNHdCY0dz?oc=5",
-          "ts": "2026-07-03T12:57:51Z",
-          "title": "UN Warns Ebola Outbreak in DR Congo Threatens 300,000 Jobs"
-         },
-         {
-          "outlet": "allAfrica.com",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBNbllJZ1ZYT2hXNDgwZ0ZXdHJpQThfVGdTem9vMi1XQnVkNFhnbl85WDloSUdYek9RUEMteHdqcjZWUmhycDVqY2h2V3p6Z3RFUjJRdE5UNE9BUnc?oc=5",
-          "ts": "2026-07-03T10:30:45Z",
-          "title": "Congo-Kinshasa: UN - Ebola Outbreak in DRC Could Cost Africa $3.6 Bln, Put 300,000 Jobs At Risk"
-         }
-        ]
-       },
-       {
-        "text": "The WHO has listed the first diagnostic test for the Bundibugyo strain, after 438 deaths.",
-        "cites": [
-         {
-          "outlet": "Tech Times",
-          "kind": "journalist",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPLVpSYWo4YnFUM28wV2NqazQ1YnRxejBqcDRyUDNGZ2lXdjV6V3RqZVJOMFoxYkZkMHhTN2RmdkxJc003RURaZDd2c3NLZVRUcUJ0WkVXN002a29MUkhYcHlsSm5aWlV1Y2JDOGhRanBvc1RqRGpNWGJMSFE5cHZwdGNwSEJvQnJVaFN6TktVbXBSaU96LXk4SWlEdWxaQ1NsVGFXbTFQYlEwZHJ5R2NBdEVFVERSdVBkZEFmYWE1ZWE3NXJJZUVZTmk4UF8?oc=5",
-          "ts": "2026-07-03T19:09:10Z",
-          "title": "Bundibugyo Ebola Finally Has a Diagnostic: WHO Lists First Test After 438 Deaths"
-         }
-        ]
-       }
-      ]
-     }
-    ],
-    "bullets": []
-   },
-   "discovered": true,
-   "items_24h": 13,
-   "items_48h": 67,
-   "outlets": 54,
-   "kinds": [
-    "journalist",
-    "official record",
-    "state media"
-   ],
-   "latest": [
-    {
-     "ts": "2026-08-25T22:04:35Z",
-     "title": "DRC Ebola outbreak update: 57 health zones in 6 provinces",
-     "outlet": "Outbreak News Today",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNjVRX01pZkIxNlBUQVhyVFU1S1YyYmxKaHVueEtDN2pOMEh2WVZpMTMtelNBNjUtSXltRmlwQkRaeHpra3VtTW1na0FQWmpWTU9MbTlOR2MtWVdjMVpTSkxKT1B4QUpGeFFXWU14VTRKak5yMlpKdHdfMmNHTWNnSHhR?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-25T20:19:14Z",
-     "title": "DR Congo suffers deadliest week in its Ebola outbreak",
-     "outlet": "CIDRAP",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWTM0bi1XaUxmYWM1UVpDVnQzdnhmczV5eUV4UGVxQ3lCeWJwMjRNeVhiZElPYWxmS3loUl9HN21fQmRnVnl6SnptSUVEdzhiT2tDMWxuQ1hVRlNkQUxlVDl3V2pXTHBwQWZRQ1BrRHllNFBRVlI5MTFwMmdhVU1oUl9xX1hoSE9ZM2pz?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-25T15:27:36Z",
-     "title": "Ebola At 100 Days: Lessons, Challenges And Achievements",
-     "outlet": "Health Policy Watch",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOa0E2Sk1RMHprN0lhVzNwZ0FRb2ZiTGVJZC10NE5qaFMycnlCSjJwSFhYMUFGWXpVc216RGNtMVRoSk01QzBFa3BNcXBfOWpUX0RBLWNoNlVVZWl2MHJTbTJXdE9Xa2dxekYzUU9PM2h4SmV3RXduMnNITDZkNlh6WW5yd3NudWZSRXpDa2gwSQ?oc=5",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-25T12:17:56Z",
-     "title": "Rwanda accuses DR Congo of supporting an armed group on its soil",
-     "outlet": "Al Jazeera",
-     "kind": "journalist",
-     "url": "https://www.aljazeera.com/news/2026/8/25/rwanda-accuses-dr-congo-of-supporting-an-armed-group-on-its-soil?traffic_source=rss",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-25T11:08:48Z",
-     "title": "Kenya: Mobile Money Features in Half of Reported Fraud Cases As Kenya Steps Up Cybercrime Fight",
-     "outlet": "AllAfrica",
-     "kind": "journalist",
-     "url": "https://allafrica.com/stories/202608250381.html",
-     "rel": 14,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-25T09:24:14Z",
-     "title": "DR Congo sees breakthrough as officials and rebels agree to peace talk roadmap",
-     "outlet": "France 24",
-     "kind": "journalist",
-     "url": "https://www.france24.com/en/dr-congo-sees-breakthrough-as-officials-and-rebels-agree-to-peace-talk-roadmap",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 0,
-      "mainstream": 1
-     }
-    },
-    {
-     "ts": "2026-08-25T09:02:48Z",
-     "title": "DR Congo sees breakthrough as officials and rebels agree to peace talk roadmap",
-     "outlet": "France 24",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN3ZuQ1dOYmRXRWNjTjNJX3Z5bVJ0dUpBYjlxR0laU1BQcEF4Z1JyVUE3N01kQnVub0lDNmYtVm5idEI3QUVMRHU4X0dnQlZ6TG5MTFJzOGVUOEdFdURQOWhIOWhTc1hsNG54eENGMjdLVjN6VW9Vam5meUZpTExzSGZ4Wnk4UWozb2ttN0pFV2I2d014VElKZVJKSHFpeFhlYThqZ1NZS0xBZw?oc=5",
-     "rel": 20,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    },
-    {
-     "ts": "2026-08-25T08:34:19Z",
-     "title": "The deadliest Bundibugyo Ebola outbreak can be stopped",
-     "outlet": "World Health Organization (WHO)",
-     "kind": "journalist",
-     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdEUtTDNLVVlwZnJic1ItWHN4OW0yS0VJcjIzMkJIbDRwOGtQSVl4blM2ZUJiXzU0MTdpN2hBd01yOFU3Qk9fNXpuRkVjdjJieUtOa3FhX3NUZGZZdjBuZ2ZMTVRVVG9JYUlmYWU4Z3JHU1BlemQxUExaRkR2SjRqZHdma1A2ZzI3SS1qZ0Y4eXFkM1NOOGVfZUFtZ18yZldwWVhWWG93SQ?oc=5",
-     "rel": 24,
-     "coverage": {
-      "non_mainstream": 1,
-      "mainstream": 0
-     }
-    }
-   ],
-   "split": {
-    "axis_type": "none",
-    "checked_utc": "2026-08-25T11:32:16Z"
-   },
-   "viewpoints": [
-    {
-     "stance": "Uganda declares itself free of Ebola after the last patient was discharged in mid-June, citing successful containment efforts.",
-     "carriers": [
-      {
-       "outlet": "Al Jazeera",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaFJ2OGhWVUJzdXNndWZmclpCT1NPd2hXejBMOTRNTm10ay1EeXpWRVFGMENoTmJUeGxPS0RXNE03RzZDa2NVOW9vNTlxRjlTWTN0cGcxdkN6QnRYbHRzZnJHeXdVRTJ5X09teFB3Y1oxemlHUzBMTWh3Zm1kSjUwUW5LQkHSAYoBQVVfeXFMTUxCUzM5Q1BCcFVlWFhPdFhtWFF1YU0wdEpXTkUxMXBaRk04b2FBX1EyODJwVUtJXzVOdlJzeVpXd3FSZ0xtcFB3Nk5sVVpkeHExYVQtOFFJZk94VnlLSG93MkFqYXB3TGxrTjBUeS04ZmFiU0hKWjBmbUV3M3daWmxscTNWLUdDdHZB?oc=5",
-       "ts_utc": "2026-07-28T18:06:11Z"
-      },
-      {
-       "outlet": "ChimpReports",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5EZzFiZVBtRF9lVUI3XzRrZURFYmlsa1VBNU1LN19yTEhxT3RLRGdSdlhjd1ZQMTh1TXRmcWlOaUVGSHB6ZkUzOExyeVVsckhRUGQ2REwxX1ExdzN3QUVTVXlaQ24zSUNjY1R1NlBNcDc2TUVM?oc=5",
-       "ts_utc": "2026-07-28T16:48:13Z"
-      },
-      {
-       "outlet": "Uganda Media Centre",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM0Npb2RNMTBLNXFPTGtVVEo4SXMwbzY0eWphTXZ1cU9NaDJYU0VNMW5lOFJ2OHZXMFc4cHVPVG5jQWFNSU1hZ1RWc00zekQ0TVQ2XzEtZUg3ZlZWTUhiVEdJc1ZHdFBhN1N4T09Za2VEcTd6bzNfR2kwTlZHb0tlemZ5VmlPZXh6T3N4QkppZDhqa3ZOWHV5OHYzeVZEOGtwQXc?oc=5",
-       "ts_utc": "2026-07-28T16:27:38Z"
-      },
-      {
-       "outlet": "abcnews.com",
-       "kind": "journalist",
-       "url": "https://abcnews.com/Health/wireStory/uganda-declares-free-ebola-after-patient-discharged-mid-135153039",
-       "ts_utc": "2026-07-28T15:15:00Z"
-      },
-      {
-       "outlet": "newvision.co.ug",
-       "kind": "journalist",
-       "url": "https://www.newvision.co.ug/category/news/uganda-is-officially-ebola-free-minister-bary-NV_237841_072026",
-       "ts_utc": "2026-07-28T15:00:00Z"
-      },
-      {
-       "outlet": "The Hans India",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSFV5YmVxMEdnN2k1THFISTBlUW5VUzlfckJSaTlnOGkxVTVuU2pzeEFzb3BxSDhYOU9ROXNMcVlOZzlJQWNRM211aFM4WUI1R3VpZ2wxSFZmbndyS0g4ZWNEZ0ljSng3SVgwaEJjQXVNa3ZBT2hvRG55WXRGTGg4ZFJyQkhZa2tVRDU3TmVmaW9fYWZoTDUzS1pZbWlxUdIBngFBVV95cUxQSFV5YmVxMEdnN2k1THFISTBlUW5VUzlfckJSaTlnOGkxVTVuU2pzeEFzb3BxSDhYOU9ROXNMcVlOZzlJQWNRM211aFM4WUI1R3VpZ2wxSFZmbndyS0g4ZWNEZ0ljSng3SVgwaEJjQXVNa3ZBT2hvRG55WXRGTGg4ZFJyQkhZa2tVRDU3TmVmaW9fYWZoTDUzS1pZbWlxUQ?oc=5",
-       "ts_utc": "2026-07-28T14:36:38Z"
-      }
-     ]
-    },
-    {
-     "stance": "Ebola cases in Congo top 3,200, nearing the record of the country's worst outbreak, highlighting ongoing challenges.",
-     "carriers": [
-      {
-       "outlet": "Inshorts",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWkhDTktSa2drVTlGZ284TFZGX0g1U1lfMV9sbDd4YS1TanZTa09mMDRqQzFfUGd6bEZXclZtNUhOcDFBeUV0LUVtYzgwM3IzMlJ3Sk9CRFBPSkZOaTRyN2JwczlQY0djS1ptd0tydF9DSFpQLWpWNWNydGRadlQxQzhjeldPSFQ4aHlyLXVabk1WTEtiZHkydHZaNmhUcE13dmfSAaIBQVVfeXFMTlpIQ05LUmtna1U5RmdvOExWRl9INVNZXzFfbGw3eGEtU2p2U2tPZjA0akMxX1BnemxGV3JWbTVITnAxQXlFdC1FbWM4MDNyMzJSd0pPQkRQT0pGTmk0cjdicHM5UGNHY0tabXdLcnRfQ0haUC1qVjVjcnRkWnZUMUM4Y3pXT0hUOGh5ci11Wm5NVkxLYmR5MnR2WjZoVHBNd3Zn?oc=5",
-       "ts_utc": "2026-07-28T15:56:49Z"
-      },
-      {
-       "outlet": "nypost.com",
-       "kind": "journalist",
-       "url": "https://nypost.com/2026/07/28/world-news/ebola-cases-in-congo-top-3200-nearing-record-of-the-countrys-worst-outbreak/",
-       "ts_utc": "2026-07-28T15:15:00Z"
-      },
-      {
-       "outlet": "forbes.com",
-       "kind": "journalist",
-       "url": "https://www.forbes.com/sites/unicefusa/2026/07/28/building-trust-to-stop-the-spread-of-ebola-in-drc/",
-       "ts_utc": "2026-07-28T15:00:00Z"
-      },
-      {
-       "outlet": "New York Post",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQzRQZURhVGZyeDBQbVdHOHhhVm80aTBmRk1yMXF3NmRRTlNzaURLN3FBWVpydzBOWVo3N3M0TnA0N1J3S2FrTkxWTHAtZVJqbGxrdDRQM1ZIVTBpUmdnQkM3dUZyZVpTaWdmSVA5X2htbXhZcnJjU0c2VTN4Rmdod3h2ZVdxdng2ZDFUZHJKVlZwQkxRSWNKb2dxSWNGeHB0cXQ1SVJ2WDItelFLNkhlcDFVTVI5WS1m?oc=5",
-       "ts_utc": "2026-07-28T14:27:00Z"
-      },
-      {
-       "outlet": "CNBC Africa",
-       "kind": "journalist",
-       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPallKLUVQNTIybTc1eFVkWVBRa0lwTGJpdDNJbnNPMmNIcWdCZ0E1TnJ2YU5MTzlWQnZNNUxFUnc2a3ZpdWNSWXdpS3hUY1kwQkc2Q3ZtdXNZU09HSUlMSlRMUXFXSy1GUGViUDFWcVNPVWZ1RWI2aF8wbTd3MzNwb1M4RDJ6d2JmcXRaNXdsTVVTc1VfWEg0RmZ4V2VDU1U?oc=5",
-       "ts_utc": "2026-07-28T14:09:30Z"
-      }
-     ]
-    }
-   ],
-   "scenarios": [],
-   "provenance": {
-    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
-    "window_hours": 168,
-    "outlets_timed": 212,
-    "outlets_unplaced": 0,
-    "chain": [
-     {
-      "outlet": "ReliefWeb",
-      "ts": "2026-08-19T00:00:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 6
-     },
-     {
-      "outlet": "Citizen Digital",
-      "ts": "2026-08-19T00:12:14Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
-     {
-      "outlet": "Al Jazeera",
-      "ts": "2026-08-19T00:53:34Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 19
-     },
-     {
-      "outlet": "nypost.com",
-      "ts": "2026-08-19T02:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "chinadailyasia.com",
-      "ts": "2026-08-19T02:50:42Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "CN state media",
-      "items": 2
-     },
-     {
-      "outlet": "Free Malaysia Today",
-      "ts": "2026-08-19T03:31:39Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 10
-     },
-     {
-      "outlet": "CBC World",
-      "ts": "2026-08-19T04:00:00Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 2
-     },
-     {
-      "outlet": "Jacaranda FM",
-      "ts": "2026-08-19T04:12:19Z",
-      "kind": "journalist",
-      "role": "echo",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     }
-    ],
-    "unplaced": []
-   },
-   "links": [
-    {
-     "entity": "africa",
-     "situations": [
-      "russia-ukraine-war-current"
-     ]
-    },
-    {
-     "entity": "canada",
-     "situations": [
-      "russia-ukraine-war-current",
-      "us-fed-rate-hike-bets-push-dollar-to-one-year-hi",
-      "us-imposes-50-tariffs-on-canada",
-      "us-india-trade-pact-negotiations-progress",
-      "usmca-renewal-debate-raises-tariff-uncertainty",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "cdc",
-     "situations": [
-      "cyclospora-outbreak"
-     ]
-    },
-    {
-     "entity": "france",
-     "situations": [
-      "ceuta-migrant-crisis",
-      "europe-considers-social-media-ban-for-children",
-      "europe-record-heatwave-deaths-electricity-surge",
-      "europe-wildfires",
-      "gaza-israel-war-current",
-      "le-pen",
-      "major-wildfires-rage-in-southern-france",
-      "russia-ukraine-war-current",
-      "uk-seizes-russian-shadow-fleet-tanker",
-      "us-iran-strikes-israel-lebanon-escalation",
-      "us-tanker-strike-gulf-of-oman-india-sailors",
-      "west-bank-settler-sanctions-ethnic-cleansing"
-     ]
-    },
-    {
-     "entity": "health ministry",
-     "situations": [
-      "gaza-israel-war-current"
-     ]
-    },
-    {
-     "entity": "kenya",
-     "situations": [
-      "sudan-civil-war-current",
-      "taiwan-strait-tensions-current"
-     ]
-    }
-   ],
-   "sources": [
-    {
-     "outlet": "Al Jazeera",
-     "n": 5,
-     "class": "mainstream"
-    },
-    {
-     "outlet": "AllAfrica",
-     "n": 5,
-     "class": "other"
-    },
-    {
-     "outlet": "WHO | Regional Office for Africa",
-     "n": 4,
-     "class": "other"
-    },
-    {
-     "outlet": "Euronews.com",
-     "n": 3,
-     "class": "other"
-    },
-    {
-     "outlet": "ABC News - Breaking News, Latest News and Videos",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "ACI Africa",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "CIDRAP",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "France 24",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "GeoPoll",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "Los Angeles Times",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "ReliefWeb",
-     "n": 2,
-     "class": "other"
-    },
-    {
-     "outlet": "The Guardian",
-     "n": 2,
-     "class": "other"
-    }
-   ],
-   "coverage": {
-    "non_mainstream": 3,
-    "mainstream": 1
-   },
-   "under_radar": false,
-   "attention": {
-    "series": [
-     [
-      "2026-08-12 00:00",
-      116,
-      119
-     ],
-     [
-      "2026-08-12 06:00",
-      116,
-      126
-     ],
-     [
-      "2026-08-12 12:00",
-      88,
-      119
-     ],
-     [
-      "2026-08-12 18:00",
-      55,
-      126
-     ],
-     [
-      "2026-08-13 00:00",
-      61,
-      131
-     ],
-     [
-      "2026-08-13 06:00",
-      64,
-      127
-     ],
-     [
-      "2026-08-13 12:00",
-      73,
-      108
-     ],
-     [
-      "2026-08-13 18:00",
-      80,
-      112
-     ],
-     [
-      "2026-08-14 00:00",
-      80,
-      119
-     ],
-     [
-      "2026-08-14 06:00",
-      73,
-      117
-     ],
-     [
-      "2026-08-14 12:00",
-      67,
-      117
-     ],
-     [
-      "2026-08-14 18:00",
-      46,
-      107
-     ],
-     [
-      "2026-08-15 00:00",
-      42,
-      97
-     ],
-     [
-      "2026-08-15 06:00",
-      45,
-      86
-     ],
-     [
-      "2026-08-15 12:00",
-      40,
-      65
-     ],
-     [
-      "2026-08-15 18:00",
-      31,
-      56
-     ],
-     [
-      "2026-08-16 00:00",
-      29,
-      56
-     ],
-     [
-      "2026-08-16 06:00",
-      29,
-      44
-     ],
-     [
-      "2026-08-16 12:00",
-      19,
-      39
-     ],
-     [
-      "2026-08-16 18:00",
-      16,
-      35
-     ],
-     [
-      "2026-08-17 00:00",
-      33,
-      55
-     ],
-     [
-      "2026-08-17 06:00",
-      59,
-      64
-     ],
-     [
-      "2026-08-17 12:00",
-      83,
-      77
-     ],
-     [
-      "2026-08-17 18:00",
-      96,
-      88
-     ],
-     [
-      "2026-08-18 00:00",
-      88,
-      94
-     ],
-     [
-      "2026-08-18 06:00",
-      78,
-      108
-     ],
-     [
-      "2026-08-18 12:00",
-      64,
-      117
-     ],
-     [
-      "2026-08-18 18:00",
-      44,
-      120
-     ],
-     [
-      "2026-08-19 00:00",
-      60,
-      115
-     ],
-     [
-      "2026-08-19 06:00",
-      65,
-      109
-     ],
-     [
-      "2026-08-19 12:00",
-      67,
-      94
-     ],
-     [
-      "2026-08-19 18:00",
-      70,
-      93
-     ],
-     [
-      "2026-08-20 00:00",
-      64,
-      97
-     ],
-     [
-      "2026-08-20 06:00",
-      58,
-      93
-     ],
-     [
-      "2026-08-20 12:00",
-      57,
-      99
-     ],
-     [
-      "2026-08-20 18:00",
-      58,
-      100
-     ],
-     [
-      "2026-08-21 00:00",
-      62,
-      97
-     ],
-     [
-      "2026-08-21 06:00",
-      71,
-      93
-     ],
-     [
-      "2026-08-21 12:00",
-      77,
-      102
-     ],
-     [
-      "2026-08-21 18:00",
-      78,
-      110
-     ],
-     [
-      "2026-08-22 00:00",
-      84,
-      118
-     ],
-     [
-      "2026-08-22 06:00",
-      86,
-      113
-     ],
-     [
-      "2026-08-22 12:00",
-      77,
-      98
-     ],
-     [
-      "2026-08-22 18:00",
-      48,
-      88
-     ],
-     [
-      "2026-08-23 00:00",
-      37,
-      87
-     ],
-     [
-      "2026-08-23 06:00",
-      31,
-      76
-     ],
-     [
-      "2026-08-23 12:00",
-      20,
-      51
-     ],
-     [
-      "2026-08-23 18:00",
-      16,
-      47
-     ],
-     [
-      "2026-08-24 00:00",
-      25,
-      44
-     ],
-     [
-      "2026-08-24 06:00",
-      28,
-      39
-     ],
-     [
-      "2026-08-24 12:00",
-      27,
-      40
-     ],
-     [
-      "2026-08-24 18:00",
-      42,
-      58
-     ],
-     [
-      "2026-08-25 00:00",
-      54,
-      69
-     ],
-     [
-      "2026-08-25 06:00",
-      50,
-      64
-     ],
-     [
-      "2026-08-25 12:00",
-      44,
-      53
-     ],
-     [
-      "2026-08-25 18:00",
-      23,
-      54
-     ]
-    ],
-    "mix": {
-     "mainstream": 5,
-     "state-media": 2,
-     "regional": 0,
-     "official": 1,
-     "other": 71
-    },
-    "first_seen": "2026-06-12T17:18:26Z"
-   },
-   "drift": [
-    {
-     "captured_utc": "2026-07-14T12:39:04Z",
-     "a": "WHO estimates the true number of Ebola cases in the DRC could be up to four times higher than the official toll.",
-     "b": "Official figures report 1,926 cases of Ebola in the DRC."
-    },
-    {
-     "captured_utc": "2026-07-14T14:38:20Z",
-     "a": "WHO says the real number of Ebola cases in the DR Congo may be two to four times higher than the official tally, citing underreporting and unreported deaths.",
-     "b": "The official tally from the DR Congo government reports 676 Ebola cases, with no confirmation of underreporting."
-    },
-    {
-     "captured_utc": "2026-07-15T09:48:23Z",
-     "a": "News outlets report that confirmed Ebola cases in DR Congo have topped 2,000, including 754 deaths.",
-     "b": "The World Health Organization (WHO) warns that the Ebola outbreak in DR Congo could be two to four times larger than official figures, citing that 80% of new cases emerge from unknown transmission chains."
-    },
-    {
-     "captured_utc": "2026-07-16T11:15:36Z",
-     "a": "The World Health Organization (WHO) suggests the true number of Ebola cases in the Democratic Republic of Congo could be at least double, and possibly four times, the official tally.",
-     "b": "Official figures report a lower number of Ebola cases in the Democratic Republic of Congo."
-    },
-    {
-     "captured_utc": "2026-07-16T13:10:28Z",
-     "a": "MSF warns delays in response are costing lives as Ebola deaths surpass 700 in the DRC.",
-     "b": "Uganda calls for lifting travel restrictions after discharging its last Ebola patient, citing progress in containment."
-    },
-    {
-     "captured_utc": "2026-07-16T14:20:53Z",
-     "a": "MSF warns delays in response are costing lives as Ebola deaths in DRC exceed 700, with the outbreak spreading rapidly.",
-     "b": "Uganda calls for lifting travel restrictions after discharging its last Ebola patient, starting a 42-day countdown to end the outbreak."
-    },
-    {
-     "captured_utc": "2026-07-19T19:07:48Z",
-     "a": "Kenya is implementing a policy to quarantine foreign nationals, including American aid workers, who have been in the Democratic Republic of the Congo due to Ebola risk.",
-     "b": "The quarantine of healthy American aid workers by Kenya is being questioned, as it occurs despite a court order."
-    },
-    {
-     "captured_utc": "2026-07-27T12:03:33Z",
-     "a": "The DRC Health Ministry says Ebola cases have reached 3,200, with 1,405 deaths, citing recent outbreak data.",
-     "b": "Reports indicate Ebola cases in DR Congo have surpassed 3,000, with over 1,300 deaths, citing health worker strikes and disrupted care."
-    },
-    {
-     "captured_utc": "2026-07-27T14:07:16Z",
-     "a": "Health Ministry says Ebola cases have reached 3,200 with over 1,400 deaths since the outbreak began.",
-     "b": "Reports suggest cases are nearing 3,000 with over 1,300 deaths, as health workers strike over pay."
-    },
-    {
-     "captured_utc": "2026-07-28T14:09:47Z",
-     "a": "MKFM claims the Ebola outbreak in DR Congo is the fastest on record.",
-     "b": "South China Morning Post and The Hindu Intl report that the outbreak has reached 3,262 cases, nearing the record of the country's worst outbreak."
-    },
-    {
-     "captured_utc": "2026-07-28T14:54:39Z",
-     "a": "New York Post and South China Morning Post report over 3,200 cases, nearing the record of the country's worst outbreak.",
-     "b": "Radio Royal and MKFM describe the outbreak as the 'fastest on record,' emphasizing its rapid spread."
-    },
-    {
-     "captured_utc": "2026-07-28T18:34:24Z",
-     "a": "Uganda declares itself free of Ebola after the last patient was discharged in mid-June, citing successful containment efforts.",
-     "b": "Ebola cases in Congo top 3,200, nearing the record of the country's worst outbreak, highlighting ongoing challenges."
-    }
-   ],
-   "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
-   ],
-   "history": {
-    "built": true,
-    "frames": 4,
-    "nodes": 23,
-    "discovered_days": 74
-   },
-   "lead_image": {
-    "url": "https://www.aljazeera.com/wp-content/uploads/2026/08/Congo-horizontal-thumb-1787487037.jpg?resize=1920%2C1080&quality=80",
-    "source": "Al Jazeera",
-    "focal": {
-     "x": 49,
-     "y": 54
-    }
-   },
-   "brief_stale": true,
-   "gate": {
-    "score": 7,
-    "of": 8,
-    "checks": {
-     "split": 1,
-     "carriers": 1,
-     "provenance": 1,
-     "steelman": 1,
      "history": 1,
      "report": 1,
      "theories": 0,
@@ -22790,10 +22486,10 @@
       "symbol": "EURUSD=X",
       "label": "EUR/USD",
       "class": "fx",
-      "last": 1.168,
-      "last_ts": "2026-08-25T23:24:05Z",
+      "last": 1.1678,
+      "last_ts": "2026-08-25T23:33:05Z",
       "basis": "trade war impact",
-      "move_pct": -0.01,
+      "move_pct": -0.02,
       "window_h": 24,
       "measured_from": "2026-08-25T19:24:00Z",
       "series": [
@@ -23012,12 +22708,16 @@
        [
         "2026-08-25T23:24:05Z",
         1.168
+       ],
+       [
+        "2026-08-25T23:33:05Z",
+        1.1678
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:30:40Z",
+    "observed_utc": "2026-08-25T23:38:30Z",
     "anchor_beat": "2026-08-25T19:24:00Z"
    },
    "lead_image": {
@@ -23718,10 +23418,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.86,
-      "last_ts": "2026-08-25T23:13:08Z",
+      "last": 85.88,
+      "last_ts": "2026-08-25T23:23:00Z",
       "basis": "Geopolitical tension fuels oil",
-      "move_pct": 0.0,
+      "move_pct": 0.02,
       "window_h": 24,
       "measured_from": "2026-08-25T21:17:37Z",
       "series": [
@@ -23900,6 +23600,10 @@
        [
         "2026-08-25T23:13:08Z",
         85.86
+       ],
+       [
+        "2026-08-25T23:23:00Z",
+        85.88
        ]
       ]
      },
@@ -23907,10 +23611,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.97,
-      "last_ts": "2026-08-25T23:14:35Z",
+      "last": 81.0,
+      "last_ts": "2026-08-25T23:23:02Z",
       "basis": "Geopolitical tension fuels oil",
-      "move_pct": -0.17,
+      "move_pct": -0.14,
       "window_h": 24,
       "measured_from": "2026-08-25T21:17:37Z",
       "series": [
@@ -24093,6 +23797,10 @@
        [
         "2026-08-25T23:14:35Z",
         80.97
+       ],
+       [
+        "2026-08-25T23:23:02Z",
+        81.0
        ]
       ]
      },
@@ -24100,10 +23808,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 2.845,
-      "last_ts": "2026-08-25T23:14:21Z",
+      "last": 2.848,
+      "last_ts": "2026-08-25T23:22:11Z",
       "basis": "Geopolitical tension fuels oil",
-      "move_pct": 0.0,
+      "move_pct": 0.11,
       "window_h": 24,
       "measured_from": "2026-08-25T21:17:37Z",
       "series": [
@@ -24286,12 +23994,16 @@
        [
         "2026-08-25T23:14:21Z",
         2.845
+       ],
+       [
+        "2026-08-25T23:22:11Z",
+        2.848
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:30:06Z",
+    "observed_utc": "2026-08-25T23:38:04Z",
     "anchor_beat": "2026-08-25T21:17:37Z"
    },
    "lead_image": {
@@ -25497,7 +25209,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:33:28Z",
+    "observed_utc": "2026-08-25T23:40:59Z",
     "anchor_beat": "2026-08-25T20:36:34Z"
    },
    "lead_image": {
@@ -26314,6 +26026,995 @@
      "provenance": 1,
      "steelman": 0,
      "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "ebola-spreads-dr-congo-cases-top-676",
+   "name": "Ebola spreads DR Congo, cases top 676",
+   "bucket": "science-health",
+   "topic_tags": [
+    "health",
+    "pandemic"
+   ],
+   "brief": {
+    "generated_utc": "2026-07-04T14:49:26Z",
+    "sentence_count": 9,
+    "dropped_count": 0,
+    "paragraphs": [
+     {
+      "sentences": [
+       {
+        "text": "The World Health Organization launched its first clinical trial of experimental treatments for the Bundibugyo strain of Ebola in the Democratic Republic of Congo, enrolling its first patient Thursday.",
+        "cites": [
+         {
+          "outlet": "France 24",
+          "kind": "journalist",
+          "url": "https://www.france24.com/en/video/20260703-ebola-treatment-trial-begins-in-drc-who-says",
+          "ts": "2026-07-03T13:47:57Z",
+          "title": "Ebola treatment trial begins in DRC, WHO says"
+         },
+         {
+          "outlet": "CGTN",
+          "kind": "state media",
+          "url": "https://newsaf.cgtn.com/news/2026-07-03/WHO-starts-first-Ebola-drug-trials-in-DR-Congo-amid-insecurity-1Ou2266lICA/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "ts": "2026-07-03T13:47:08Z",
+          "title": "WHO starts first Ebola drug trials in DR Congo amid insecurity"
+         }
+        ]
+       },
+       {
+        "text": "The trial will evaluate Mapp Biopharmaceutical's experimental MBP134 antibody as a standalone treatment and in combination with Gilead Sciences' antiviral drug remdesivir, WHO said.",
+        "cites": [
+         {
+          "outlet": "The Hindu Intl",
+          "kind": "journalist",
+          "url": "https://www.thehindu.com/sci-tech/health/trial-for-bundibugyo-ebola-treatment-starts-in-drc-who-says/article71182211.ece",
+          "ts": "2026-07-04T14:07:44Z",
+          "title": "Trial for Bundibugyo Ebola treatment starts in DRC, WHO says"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "Congo says confirmed cases have risen to 1,502, while the WHO says the outbreak has claimed 452 lives.",
+        "cites": [
+         {
+          "outlet": "News On AIR",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1QN0lxeWRJWk5CcU9IdlNIY0YwRDAtbUx1QW9vV0p1QUhDbHltSlJVY0s1c1laY25zRkQ1aFY5aTd2T0o3X0lzdENhZmQ2VkhaTFBXOXlWSkZWTUVNTk90RWZkYmJLeWk5NHQ5UGY2Q3pfLTQ4c1E5MQ?oc=5",
+          "ts": "2026-07-04T07:11:10Z",
+          "title": "Confirmed Ebola cases in Congo rise to 1,502"
+         },
+         {
+          "outlet": "AsiaOne",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUXM1cmUyN0gxbThvMDBYcXZWVUF5cm1jX2RPQVplZWFaZ0NkQ0Q1Wm5KdjMzVk5QZXFPMG5NZGhvZXlyNVB6MC1PMGJ3d01UN1U2ODVMVFNfbnp6bkItOHZZV056QXpOX05MN3U1Q0FSME1fdkJEQXZqRkw3dDdqY3BEYzNYU00?oc=5",
+          "ts": "2026-07-04T03:00:09Z",
+          "title": "Congo says number of confirmed Ebola cases rises to 1,502, World News"
+         },
+         {
+          "outlet": "China.org.cn",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9JS0xpUEZmeU8xaFBaRHkySm41bEFxOXdzNTZaWW9LalJDNnk5RFNTNzlEYXRXNnhQbEhRSDJ0X0dsbk91U1hHZ1c5OVVHa0JKbTExak1WRFVtNjh5clhKbUQ4cU5aQjdiU2c?oc=5",
+          "ts": "2026-07-04T05:58:11Z",
+          "title": "DRC Ebola claims 452 lives, says WHO"
+         },
+         {
+          "outlet": "The Peninsula Qatar",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdVdldmI1Z1VGM1dUUVNSeGZ2WTFUekhXZmlubzVpZkdVX1kzRF9QenJUUERBVVk5MktjNHNpZ25xcEtaZUIwcXBSQmJCZjlfY0NOTGhwSzZ0SmwzTW1hZ19mNnFzWFliMXVsWlVDdElkVC12U1JZVXMtWXIwZy0tQmgtYl9KbVhPZlZtaQ?oc=5",
+          "ts": "2026-07-03T21:50:04Z",
+          "title": "DRC Ebola claims 452 lives, says WHO"
+         }
+        ]
+       },
+       {
+        "text": "Anadolu Agency and The Express Tribune report cases have jumped to over 1,500 with 473 deaths, alongside 213 recoveries and 628 patients still under care.",
+        "cites": [
+         {
+          "outlet": "Anadolu Agency",
+          "kind": "state media",
+          "url": "https://www.aa.com.tr/en/africa/ebola-cases-in-dr-congo-jump-to-over-1-500-death-toll-rises-to-473/3985974",
+          "ts": "2026-07-04T13:07:37Z",
+          "title": "Ebola cases in DR Congo jump to over 1,500, death toll rises to 473"
+         },
+         {
+          "outlet": "The Express Tribune",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa2Y0UFVrMDVsTTVCNzRWY2MzWFFvUW43MFdzUHFpNFBPeHEtZjhvMU5MMEFXYm5uSzRrLVB1U2hFQ3B0YmVVMkM1LWtDbHhyXzlBZlFaVGowMXRBRURqT1lKTjQ3WlA4QTBEdm1mWXVtRW5tNmNuZUpTTC02QWNISnBRemY2UmJ3OTdlX0NwM1FMc1A1dUgtbTAyOTlaOXVSOTR0dtIBrAFBVV95cUxPc2xHTktSRmdfdzNHNXVUSG5fbFVYamJkMWJia0ZweDFZLUpRSURtTmVhRlg0Ump5N1lzVHNuanJMTW55ejhGbTBOcGdpY045cWdQUDZsRGlGSWk3N1Q2bnp2QzBVbnJmRHRkRU1wWmsydmZLc2hKenhmM3VTQ0tpT2dNWHBUZVFLVHVYbjdYYnJIaU5zeVhFbzdRZW9ueEVBNkJ4OEVOTXF2a3FH?oc=5",
+          "ts": "2026-07-04T11:24:53Z",
+          "title": "Ebola cases in DR Congo jump to over 1,500, death toll rises to 473"
+         }
+        ]
+       },
+       {
+        "text": "TASS and Report.az report cases have surpassed 1,500, while CGTN reports 1,460 cases and 447 deaths, and Health and Me reports 1,427 cases and 440 deaths.",
+        "cites": [
+         {
+          "outlet": "TASS",
+          "kind": "state media",
+          "url": "https://tass.com/society/2155485",
+          "ts": "2026-07-04T09:53:17Z",
+          "title": "Ebola cases in DR Congo surpass 1,500"
+         },
+         {
+          "outlet": "Report.az",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcUQ5RzIwdHpXOUlXcF8xSlB0X091NzF2X2JhY0FPMDlaN2hEaGhHaUFsa2JRS3BUZVM5Ujc3eEkwcE5xclRfdXhRVnRRRDdQVXFhTmthbFpkSEpJd1BvOER4WjNLd0tqZGY0TzdETTdFVklrSUJteUdoaTkzVG0yMUp0ajHSAYQBQVVfeXFMTnFEOUcyMHR6VzlJV3BfMUpQdF9PdTcxdl9iYWNBTzA5WjdoRGhoR2lBbGtiUUtwVGVTOVI3N3hJMHBOcXJUX3V4UVZ0UUQ3UFVxYU5rYWxaZEhKSXdQbzhEeFozS3dLamRmNE83RE03RVZJa0lCbXlHaGk5M1RtMjFKdGox?oc=5",
+          "ts": "2026-07-04T07:47:04Z",
+          "title": "Ebola cases in DR Congo surpass 1,500"
+         },
+         {
+          "outlet": "CGTN",
+          "kind": "state media",
+          "url": "https://newsaf.cgtn.com/news/2026-07-03/DR-Congo-Ebola-deaths-climb-to-447-1OtHRRWLJNC/p.html?UTM_Source=cgtn&UTM_Medium=rss&UTM_Campaign=World",
+          "ts": "2026-07-03T12:45:26Z",
+          "title": "DR Congo Ebola deaths climb to 447"
+         },
+         {
+          "outlet": "Health and Me",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObmdfZXlVRnpMTVVUeUJGMS1oTm5mU1VUMXF4S3NzN2tsS21NWWtCLUtwWWpNblR5MEpoUTdRUi02REdlX2oyOEM5ZnVFbUxZU3VCc3I4ck5TNUpHcEVkaHpXbHFkMWJ4VUpIaEpUWWRfUlFoWXNRS2NTSFlZMU9WbllrT2NfcHZqck5iX2o3alJBdi1JbU00TGpORWUwWjlkMW5ZOW9pRTFENXBYc3MxbmF4VU96Z2RoRTQwMndSa1hZQnV1R2c?oc=5",
+          "ts": "2026-07-03T18:30:00Z",
+          "title": "Congo Starts Ebola Treatment Trial As Cases Reach 1,427, Deaths Hit 440"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The outbreak is spreading beyond its original hotspot, with a new case detected nearly 600 kilometers away, and Congo reported 54 new confirmed cases.",
+        "cites": [
+         {
+          "outlet": "France 24",
+          "kind": "journalist",
+          "url": "https://www.france24.com/en/more-than-400-dead-in-dr-congo-s-ebola-outbreak",
+          "ts": "2026-07-03T21:39:49Z",
+          "title": "More than 400 dead in DR Congo's Ebola outbreak"
+         },
+         {
+          "outlet": "Outbreak News Today",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbUFZclRZWFpoOVlJU2QzNHJLa05WeVRzZkRJRS1mRVFJckxuaFlNR3V4amxiUHJ0NG1WYlJXVVZLLXRDZUZrLWc2NXlZY1VXZ3Y1cDJGQnlQMWNkckRlNnlrdjRyXzcwLXdORzhZWlFWX0xPRldVb052eXUxZXZGZFVZcw?oc=5",
+          "ts": "2026-07-04T11:37:21Z",
+          "title": "Congo reports 54 new confirmed Ebola cases"
+         }
+        ]
+       },
+       {
+        "text": "AU Champion Ramaphosa has backed the DRC in the fight against the outbreak.",
+        "cites": [
+         {
+          "outlet": "Central News South Africa",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRkJpb3U0TWNwX0M0OVFZMjN1S05hdkVuVTQwMEtnaHczZmhWc211UDczRkNELWE2UHg0V1ZlVzZRZFZCcURINmt5TnJZLVlfV2JUalVSVXN1Q3FzdnVMeTVxbWptNEZBeGRCN2VrcnNrUV9RLVpWRVphZnZOMTZJSzZjdWZ4TmhEaHBoaVhyVWhtX2tJVlV6cGlZODFwanFHTko0UA?oc=5",
+          "ts": "2026-07-04T08:38:50Z",
+          "title": "AU Champion Ramaphosa Backs DR Congo in Fight Against Deadly Ebola Outbreak"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "sentences": [
+       {
+        "text": "The UN warns the outbreak could cost Africa up to $3.6 billion and put 300,000 jobs at risk.",
+        "cites": [
+         {
+          "outlet": "The Business Standard",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORkpxUWhQVzZwcU9ESk5BandhS1B1VG1ibm9OSm1ZNzU5NlA4TTB6R1Vnc21wVHpIak92TkV5TGRhb0xvMWp4VFBBeXVlTGhHb01YaXpMR0pENGlEOWcwejU2VDg3WXVtMjhGVE1RZWRaX0prdDNCdVJYRGpNVm1KeGI0WUFKSEN1d1IySndTNW7SAZYBQVVfeXFMTzRNaURBYW5HcURIblhxeUt4VmVMSTJwdXBMNEptdmY0YThtem5FSWhEeVhwbjdHY0FHQm9mb3VGOXhWUnJSTks4MTRlajdQSk5Eb1cycGl6M3pvRnpVXzh6LUx3bHBUaFhUd0h3eTBTYWVWOERvTVVZSTdJWEVRMjFPaEduNGJ6X0thUERoV1hDX3A5RW5R?oc=5",
+          "ts": "2026-07-03T19:13:52Z",
+          "title": "Ebola outbreak could cost Africa up to $3.6b: UN"
+         },
+         {
+          "outlet": "allAfrica.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81OXR5bkg5SkZpR05Rd3cwUWd5UVNQUlZqNkM2TDhtZUxQcnJIb0dmTDA0Rkl4ano2dzVFSzVZZWlRZGlzNHZnMW5zWjBSbXJzUzdDS3pFRzYyOHJTVXlwSkRNemwxNHdCY0dz?oc=5",
+          "ts": "2026-07-03T12:57:51Z",
+          "title": "UN Warns Ebola Outbreak in DR Congo Threatens 300,000 Jobs"
+         },
+         {
+          "outlet": "allAfrica.com",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBNbllJZ1ZYT2hXNDgwZ0ZXdHJpQThfVGdTem9vMi1XQnVkNFhnbl85WDloSUdYek9RUEMteHdqcjZWUmhycDVqY2h2V3p6Z3RFUjJRdE5UNE9BUnc?oc=5",
+          "ts": "2026-07-03T10:30:45Z",
+          "title": "Congo-Kinshasa: UN - Ebola Outbreak in DRC Could Cost Africa $3.6 Bln, Put 300,000 Jobs At Risk"
+         }
+        ]
+       },
+       {
+        "text": "The WHO has listed the first diagnostic test for the Bundibugyo strain, after 438 deaths.",
+        "cites": [
+         {
+          "outlet": "Tech Times",
+          "kind": "journalist",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPLVpSYWo4YnFUM28wV2NqazQ1YnRxejBqcDRyUDNGZ2lXdjV6V3RqZVJOMFoxYkZkMHhTN2RmdkxJc003RURaZDd2c3NLZVRUcUJ0WkVXN002a29MUkhYcHlsSm5aWlV1Y2JDOGhRanBvc1RqRGpNWGJMSFE5cHZwdGNwSEJvQnJVaFN6TktVbXBSaU96LXk4SWlEdWxaQ1NsVGFXbTFQYlEwZHJ5R2NBdEVFVERSdVBkZEFmYWE1ZWE3NXJJZUVZTmk4UF8?oc=5",
+          "ts": "2026-07-03T19:09:10Z",
+          "title": "Bundibugyo Ebola Finally Has a Diagnostic: WHO Lists First Test After 438 Deaths"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "bullets": []
+   },
+   "discovered": true,
+   "items_24h": 11,
+   "items_48h": 67,
+   "outlets": 54,
+   "kinds": [
+    "journalist",
+    "official record",
+    "state media"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-25T22:04:35Z",
+     "title": "DRC Ebola outbreak update: 57 health zones in 6 provinces",
+     "outlet": "Outbreak News Today",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNjVRX01pZkIxNlBUQVhyVFU1S1YyYmxKaHVueEtDN2pOMEh2WVZpMTMtelNBNjUtSXltRmlwQkRaeHpra3VtTW1na0FQWmpWTU9MbTlOR2MtWVdjMVpTSkxKT1B4QUpGeFFXWU14VTRKak5yMlpKdHdfMmNHTWNnSHhR?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T20:19:14Z",
+     "title": "DR Congo suffers deadliest week in its Ebola outbreak",
+     "outlet": "CIDRAP",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWTM0bi1XaUxmYWM1UVpDVnQzdnhmczV5eUV4UGVxQ3lCeWJwMjRNeVhiZElPYWxmS3loUl9HN21fQmRnVnl6SnptSUVEdzhiT2tDMWxuQ1hVRlNkQUxlVDl3V2pXTHBwQWZRQ1BrRHllNFBRVlI5MTFwMmdhVU1oUl9xX1hoSE9ZM2pz?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T15:27:36Z",
+     "title": "Ebola At 100 Days: Lessons, Challenges And Achievements",
+     "outlet": "Health Policy Watch",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOa0E2Sk1RMHprN0lhVzNwZ0FRb2ZiTGVJZC10NE5qaFMycnlCSjJwSFhYMUFGWXpVc216RGNtMVRoSk01QzBFa3BNcXBfOWpUX0RBLWNoNlVVZWl2MHJTbTJXdE9Xa2dxekYzUU9PM2h4SmV3RXduMnNITDZkNlh6WW5yd3NudWZSRXpDa2gwSQ?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T12:17:56Z",
+     "title": "Rwanda accuses DR Congo of supporting an armed group on its soil",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/8/25/rwanda-accuses-dr-congo-of-supporting-an-armed-group-on-its-soil?traffic_source=rss",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-25T11:08:48Z",
+     "title": "Kenya: Mobile Money Features in Half of Reported Fraud Cases As Kenya Steps Up Cybercrime Fight",
+     "outlet": "AllAfrica",
+     "kind": "journalist",
+     "url": "https://allafrica.com/stories/202608250381.html",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T09:24:14Z",
+     "title": "DR Congo sees breakthrough as officials and rebels agree to peace talk roadmap",
+     "outlet": "France 24",
+     "kind": "journalist",
+     "url": "https://www.france24.com/en/dr-congo-sees-breakthrough-as-officials-and-rebels-agree-to-peace-talk-roadmap",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-25T09:02:48Z",
+     "title": "DR Congo sees breakthrough as officials and rebels agree to peace talk roadmap",
+     "outlet": "France 24",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNN3ZuQ1dOYmRXRWNjTjNJX3Z5bVJ0dUpBYjlxR0laU1BQcEF4Z1JyVUE3N01kQnVub0lDNmYtVm5idEI3QUVMRHU4X0dnQlZ6TG5MTFJzOGVUOEdFdURQOWhIOWhTc1hsNG54eENGMjdLVjN6VW9Vam5meUZpTExzSGZ4Wnk4UWozb2ttN0pFV2I2d014VElKZVJKSHFpeFhlYThqZ1NZS0xBZw?oc=5",
+     "rel": 20,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T08:34:19Z",
+     "title": "The deadliest Bundibugyo Ebola outbreak can be stopped",
+     "outlet": "World Health Organization (WHO)",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdEUtTDNLVVlwZnJic1ItWHN4OW0yS0VJcjIzMkJIbDRwOGtQSVl4blM2ZUJiXzU0MTdpN2hBd01yOFU3Qk9fNXpuRkVjdjJieUtOa3FhX3NUZGZZdjBuZ2ZMTVRVVG9JYUlmYWU4Z3JHU1BlemQxUExaRkR2SjRqZHdma1A2ZzI3SS1qZ0Y4eXFkM1NOOGVfZUFtZ18yZldwWVhWWG93SQ?oc=5",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-08-25T11:32:16Z"
+   },
+   "viewpoints": [
+    {
+     "stance": "Uganda declares itself free of Ebola after the last patient was discharged in mid-June, citing successful containment efforts.",
+     "carriers": [
+      {
+       "outlet": "Al Jazeera",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaFJ2OGhWVUJzdXNndWZmclpCT1NPd2hXejBMOTRNTm10ay1EeXpWRVFGMENoTmJUeGxPS0RXNE03RzZDa2NVOW9vNTlxRjlTWTN0cGcxdkN6QnRYbHRzZnJHeXdVRTJ5X09teFB3Y1oxemlHUzBMTWh3Zm1kSjUwUW5LQkHSAYoBQVVfeXFMTUxCUzM5Q1BCcFVlWFhPdFhtWFF1YU0wdEpXTkUxMXBaRk04b2FBX1EyODJwVUtJXzVOdlJzeVpXd3FSZ0xtcFB3Nk5sVVpkeHExYVQtOFFJZk94VnlLSG93MkFqYXB3TGxrTjBUeS04ZmFiU0hKWjBmbUV3M3daWmxscTNWLUdDdHZB?oc=5",
+       "ts_utc": "2026-07-28T18:06:11Z"
+      },
+      {
+       "outlet": "ChimpReports",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5EZzFiZVBtRF9lVUI3XzRrZURFYmlsa1VBNU1LN19yTEhxT3RLRGdSdlhjd1ZQMTh1TXRmcWlOaUVGSHB6ZkUzOExyeVVsckhRUGQ2REwxX1ExdzN3QUVTVXlaQ24zSUNjY1R1NlBNcDc2TUVM?oc=5",
+       "ts_utc": "2026-07-28T16:48:13Z"
+      },
+      {
+       "outlet": "Uganda Media Centre",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM0Npb2RNMTBLNXFPTGtVVEo4SXMwbzY0eWphTXZ1cU9NaDJYU0VNMW5lOFJ2OHZXMFc4cHVPVG5jQWFNSU1hZ1RWc00zekQ0TVQ2XzEtZUg3ZlZWTUhiVEdJc1ZHdFBhN1N4T09Za2VEcTd6bzNfR2kwTlZHb0tlemZ5VmlPZXh6T3N4QkppZDhqa3ZOWHV5OHYzeVZEOGtwQXc?oc=5",
+       "ts_utc": "2026-07-28T16:27:38Z"
+      },
+      {
+       "outlet": "abcnews.com",
+       "kind": "journalist",
+       "url": "https://abcnews.com/Health/wireStory/uganda-declares-free-ebola-after-patient-discharged-mid-135153039",
+       "ts_utc": "2026-07-28T15:15:00Z"
+      },
+      {
+       "outlet": "newvision.co.ug",
+       "kind": "journalist",
+       "url": "https://www.newvision.co.ug/category/news/uganda-is-officially-ebola-free-minister-bary-NV_237841_072026",
+       "ts_utc": "2026-07-28T15:00:00Z"
+      },
+      {
+       "outlet": "The Hans India",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSFV5YmVxMEdnN2k1THFISTBlUW5VUzlfckJSaTlnOGkxVTVuU2pzeEFzb3BxSDhYOU9ROXNMcVlOZzlJQWNRM211aFM4WUI1R3VpZ2wxSFZmbndyS0g4ZWNEZ0ljSng3SVgwaEJjQXVNa3ZBT2hvRG55WXRGTGg4ZFJyQkhZa2tVRDU3TmVmaW9fYWZoTDUzS1pZbWlxUdIBngFBVV95cUxQSFV5YmVxMEdnN2k1THFISTBlUW5VUzlfckJSaTlnOGkxVTVuU2pzeEFzb3BxSDhYOU9ROXNMcVlOZzlJQWNRM211aFM4WUI1R3VpZ2wxSFZmbndyS0g4ZWNEZ0ljSng3SVgwaEJjQXVNa3ZBT2hvRG55WXRGTGg4ZFJyQkhZa2tVRDU3TmVmaW9fYWZoTDUzS1pZbWlxUQ?oc=5",
+       "ts_utc": "2026-07-28T14:36:38Z"
+      }
+     ]
+    },
+    {
+     "stance": "Ebola cases in Congo top 3,200, nearing the record of the country's worst outbreak, highlighting ongoing challenges.",
+     "carriers": [
+      {
+       "outlet": "Inshorts",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWkhDTktSa2drVTlGZ284TFZGX0g1U1lfMV9sbDd4YS1TanZTa09mMDRqQzFfUGd6bEZXclZtNUhOcDFBeUV0LUVtYzgwM3IzMlJ3Sk9CRFBPSkZOaTRyN2JwczlQY0djS1ptd0tydF9DSFpQLWpWNWNydGRadlQxQzhjeldPSFQ4aHlyLXVabk1WTEtiZHkydHZaNmhUcE13dmfSAaIBQVVfeXFMTlpIQ05LUmtna1U5RmdvOExWRl9INVNZXzFfbGw3eGEtU2p2U2tPZjA0akMxX1BnemxGV3JWbTVITnAxQXlFdC1FbWM4MDNyMzJSd0pPQkRQT0pGTmk0cjdicHM5UGNHY0tabXdLcnRfQ0haUC1qVjVjcnRkWnZUMUM4Y3pXT0hUOGh5ci11Wm5NVkxLYmR5MnR2WjZoVHBNd3Zn?oc=5",
+       "ts_utc": "2026-07-28T15:56:49Z"
+      },
+      {
+       "outlet": "nypost.com",
+       "kind": "journalist",
+       "url": "https://nypost.com/2026/07/28/world-news/ebola-cases-in-congo-top-3200-nearing-record-of-the-countrys-worst-outbreak/",
+       "ts_utc": "2026-07-28T15:15:00Z"
+      },
+      {
+       "outlet": "forbes.com",
+       "kind": "journalist",
+       "url": "https://www.forbes.com/sites/unicefusa/2026/07/28/building-trust-to-stop-the-spread-of-ebola-in-drc/",
+       "ts_utc": "2026-07-28T15:00:00Z"
+      },
+      {
+       "outlet": "New York Post",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQzRQZURhVGZyeDBQbVdHOHhhVm80aTBmRk1yMXF3NmRRTlNzaURLN3FBWVpydzBOWVo3N3M0TnA0N1J3S2FrTkxWTHAtZVJqbGxrdDRQM1ZIVTBpUmdnQkM3dUZyZVpTaWdmSVA5X2htbXhZcnJjU0c2VTN4Rmdod3h2ZVdxdng2ZDFUZHJKVlZwQkxRSWNKb2dxSWNGeHB0cXQ1SVJ2WDItelFLNkhlcDFVTVI5WS1m?oc=5",
+       "ts_utc": "2026-07-28T14:27:00Z"
+      },
+      {
+       "outlet": "CNBC Africa",
+       "kind": "journalist",
+       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPallKLUVQNTIybTc1eFVkWVBRa0lwTGJpdDNJbnNPMmNIcWdCZ0E1TnJ2YU5MTzlWQnZNNUxFUnc2a3ZpdWNSWXdpS3hUY1kwQkc2Q3ZtdXNZU09HSUlMSlRMUXFXSy1GUGViUDFWcVNPVWZ1RWI2aF8wbTd3MzNwb1M4RDJ6d2JmcXRaNXdsTVVTc1VfWEg0RmZ4V2VDU1U?oc=5",
+       "ts_utc": "2026-07-28T14:09:30Z"
+      }
+     ]
+    }
+   ],
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 212,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "ReliefWeb",
+      "ts": "2026-08-19T00:00:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 6
+     },
+     {
+      "outlet": "Citizen Digital",
+      "ts": "2026-08-19T00:12:14Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-08-19T00:53:34Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 19
+     },
+     {
+      "outlet": "nypost.com",
+      "ts": "2026-08-19T02:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "chinadailyasia.com",
+      "ts": "2026-08-19T02:50:42Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "CN state media",
+      "items": 2
+     },
+     {
+      "outlet": "Free Malaysia Today",
+      "ts": "2026-08-19T03:31:39Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 10
+     },
+     {
+      "outlet": "CBC World",
+      "ts": "2026-08-19T04:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Jacaranda FM",
+      "ts": "2026-08-19T04:12:19Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [
+    {
+     "entity": "africa",
+     "situations": [
+      "russia-ukraine-war-current"
+     ]
+    },
+    {
+     "entity": "canada",
+     "situations": [
+      "russia-ukraine-war-current",
+      "us-fed-rate-hike-bets-push-dollar-to-one-year-hi",
+      "us-imposes-50-tariffs-on-canada",
+      "us-india-trade-pact-negotiations-progress",
+      "usmca-renewal-debate-raises-tariff-uncertainty",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "cdc",
+     "situations": [
+      "cyclospora-outbreak"
+     ]
+    },
+    {
+     "entity": "france",
+     "situations": [
+      "ceuta-migrant-crisis",
+      "europe-considers-social-media-ban-for-children",
+      "europe-record-heatwave-deaths-electricity-surge",
+      "europe-wildfires",
+      "gaza-israel-war-current",
+      "le-pen",
+      "major-wildfires-rage-in-southern-france",
+      "russia-ukraine-war-current",
+      "uk-seizes-russian-shadow-fleet-tanker",
+      "us-iran-strikes-israel-lebanon-escalation",
+      "us-tanker-strike-gulf-of-oman-india-sailors",
+      "west-bank-settler-sanctions-ethnic-cleansing"
+     ]
+    },
+    {
+     "entity": "health ministry",
+     "situations": [
+      "gaza-israel-war-current"
+     ]
+    },
+    {
+     "entity": "kenya",
+     "situations": [
+      "sudan-civil-war-current",
+      "taiwan-strait-tensions-current"
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "n": 5,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "AllAfrica",
+     "n": 5,
+     "class": "other"
+    },
+    {
+     "outlet": "WHO | Regional Office for Africa",
+     "n": 4,
+     "class": "other"
+    },
+    {
+     "outlet": "Euronews.com",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "ABC News - Breaking News, Latest News and Videos",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "ACI Africa",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "CIDRAP",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "France 24",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "GeoPoll",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Los Angeles Times",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "ReliefWeb",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "The Guardian",
+     "n": 2,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 3,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [
+     [
+      "2026-08-12 00:00",
+      116,
+      119
+     ],
+     [
+      "2026-08-12 06:00",
+      116,
+      126
+     ],
+     [
+      "2026-08-12 12:00",
+      88,
+      119
+     ],
+     [
+      "2026-08-12 18:00",
+      55,
+      126
+     ],
+     [
+      "2026-08-13 00:00",
+      61,
+      131
+     ],
+     [
+      "2026-08-13 06:00",
+      64,
+      127
+     ],
+     [
+      "2026-08-13 12:00",
+      73,
+      108
+     ],
+     [
+      "2026-08-13 18:00",
+      80,
+      112
+     ],
+     [
+      "2026-08-14 00:00",
+      80,
+      119
+     ],
+     [
+      "2026-08-14 06:00",
+      73,
+      117
+     ],
+     [
+      "2026-08-14 12:00",
+      67,
+      117
+     ],
+     [
+      "2026-08-14 18:00",
+      46,
+      107
+     ],
+     [
+      "2026-08-15 00:00",
+      42,
+      97
+     ],
+     [
+      "2026-08-15 06:00",
+      45,
+      86
+     ],
+     [
+      "2026-08-15 12:00",
+      40,
+      65
+     ],
+     [
+      "2026-08-15 18:00",
+      31,
+      56
+     ],
+     [
+      "2026-08-16 00:00",
+      29,
+      56
+     ],
+     [
+      "2026-08-16 06:00",
+      29,
+      44
+     ],
+     [
+      "2026-08-16 12:00",
+      19,
+      39
+     ],
+     [
+      "2026-08-16 18:00",
+      16,
+      35
+     ],
+     [
+      "2026-08-17 00:00",
+      33,
+      55
+     ],
+     [
+      "2026-08-17 06:00",
+      59,
+      64
+     ],
+     [
+      "2026-08-17 12:00",
+      83,
+      77
+     ],
+     [
+      "2026-08-17 18:00",
+      96,
+      88
+     ],
+     [
+      "2026-08-18 00:00",
+      88,
+      94
+     ],
+     [
+      "2026-08-18 06:00",
+      78,
+      108
+     ],
+     [
+      "2026-08-18 12:00",
+      64,
+      117
+     ],
+     [
+      "2026-08-18 18:00",
+      44,
+      120
+     ],
+     [
+      "2026-08-19 00:00",
+      60,
+      115
+     ],
+     [
+      "2026-08-19 06:00",
+      65,
+      109
+     ],
+     [
+      "2026-08-19 12:00",
+      67,
+      94
+     ],
+     [
+      "2026-08-19 18:00",
+      70,
+      93
+     ],
+     [
+      "2026-08-20 00:00",
+      64,
+      97
+     ],
+     [
+      "2026-08-20 06:00",
+      58,
+      93
+     ],
+     [
+      "2026-08-20 12:00",
+      57,
+      99
+     ],
+     [
+      "2026-08-20 18:00",
+      58,
+      100
+     ],
+     [
+      "2026-08-21 00:00",
+      62,
+      97
+     ],
+     [
+      "2026-08-21 06:00",
+      71,
+      93
+     ],
+     [
+      "2026-08-21 12:00",
+      77,
+      102
+     ],
+     [
+      "2026-08-21 18:00",
+      78,
+      110
+     ],
+     [
+      "2026-08-22 00:00",
+      84,
+      118
+     ],
+     [
+      "2026-08-22 06:00",
+      86,
+      113
+     ],
+     [
+      "2026-08-22 12:00",
+      77,
+      98
+     ],
+     [
+      "2026-08-22 18:00",
+      48,
+      88
+     ],
+     [
+      "2026-08-23 00:00",
+      37,
+      87
+     ],
+     [
+      "2026-08-23 06:00",
+      31,
+      76
+     ],
+     [
+      "2026-08-23 12:00",
+      20,
+      51
+     ],
+     [
+      "2026-08-23 18:00",
+      16,
+      47
+     ],
+     [
+      "2026-08-24 00:00",
+      25,
+      44
+     ],
+     [
+      "2026-08-24 06:00",
+      28,
+      39
+     ],
+     [
+      "2026-08-24 12:00",
+      27,
+      40
+     ],
+     [
+      "2026-08-24 18:00",
+      42,
+      58
+     ],
+     [
+      "2026-08-25 00:00",
+      54,
+      69
+     ],
+     [
+      "2026-08-25 06:00",
+      50,
+      64
+     ],
+     [
+      "2026-08-25 12:00",
+      44,
+      53
+     ],
+     [
+      "2026-08-25 18:00",
+      23,
+      54
+     ]
+    ],
+    "mix": {
+     "mainstream": 5,
+     "state-media": 2,
+     "regional": 0,
+     "official": 1,
+     "other": 71
+    },
+    "first_seen": "2026-06-12T17:18:26Z"
+   },
+   "drift": [
+    {
+     "captured_utc": "2026-07-14T12:39:04Z",
+     "a": "WHO estimates the true number of Ebola cases in the DRC could be up to four times higher than the official toll.",
+     "b": "Official figures report 1,926 cases of Ebola in the DRC."
+    },
+    {
+     "captured_utc": "2026-07-14T14:38:20Z",
+     "a": "WHO says the real number of Ebola cases in the DR Congo may be two to four times higher than the official tally, citing underreporting and unreported deaths.",
+     "b": "The official tally from the DR Congo government reports 676 Ebola cases, with no confirmation of underreporting."
+    },
+    {
+     "captured_utc": "2026-07-15T09:48:23Z",
+     "a": "News outlets report that confirmed Ebola cases in DR Congo have topped 2,000, including 754 deaths.",
+     "b": "The World Health Organization (WHO) warns that the Ebola outbreak in DR Congo could be two to four times larger than official figures, citing that 80% of new cases emerge from unknown transmission chains."
+    },
+    {
+     "captured_utc": "2026-07-16T11:15:36Z",
+     "a": "The World Health Organization (WHO) suggests the true number of Ebola cases in the Democratic Republic of Congo could be at least double, and possibly four times, the official tally.",
+     "b": "Official figures report a lower number of Ebola cases in the Democratic Republic of Congo."
+    },
+    {
+     "captured_utc": "2026-07-16T13:10:28Z",
+     "a": "MSF warns delays in response are costing lives as Ebola deaths surpass 700 in the DRC.",
+     "b": "Uganda calls for lifting travel restrictions after discharging its last Ebola patient, citing progress in containment."
+    },
+    {
+     "captured_utc": "2026-07-16T14:20:53Z",
+     "a": "MSF warns delays in response are costing lives as Ebola deaths in DRC exceed 700, with the outbreak spreading rapidly.",
+     "b": "Uganda calls for lifting travel restrictions after discharging its last Ebola patient, starting a 42-day countdown to end the outbreak."
+    },
+    {
+     "captured_utc": "2026-07-19T19:07:48Z",
+     "a": "Kenya is implementing a policy to quarantine foreign nationals, including American aid workers, who have been in the Democratic Republic of the Congo due to Ebola risk.",
+     "b": "The quarantine of healthy American aid workers by Kenya is being questioned, as it occurs despite a court order."
+    },
+    {
+     "captured_utc": "2026-07-27T12:03:33Z",
+     "a": "The DRC Health Ministry says Ebola cases have reached 3,200, with 1,405 deaths, citing recent outbreak data.",
+     "b": "Reports indicate Ebola cases in DR Congo have surpassed 3,000, with over 1,300 deaths, citing health worker strikes and disrupted care."
+    },
+    {
+     "captured_utc": "2026-07-27T14:07:16Z",
+     "a": "Health Ministry says Ebola cases have reached 3,200 with over 1,400 deaths since the outbreak began.",
+     "b": "Reports suggest cases are nearing 3,000 with over 1,300 deaths, as health workers strike over pay."
+    },
+    {
+     "captured_utc": "2026-07-28T14:09:47Z",
+     "a": "MKFM claims the Ebola outbreak in DR Congo is the fastest on record.",
+     "b": "South China Morning Post and The Hindu Intl report that the outbreak has reached 3,262 cases, nearing the record of the country's worst outbreak."
+    },
+    {
+     "captured_utc": "2026-07-28T14:54:39Z",
+     "a": "New York Post and South China Morning Post report over 3,200 cases, nearing the record of the country's worst outbreak.",
+     "b": "Radio Royal and MKFM describe the outbreak as the 'fastest on record,' emphasizing its rapid spread."
+    },
+    {
+     "captured_utc": "2026-07-28T18:34:24Z",
+     "a": "Uganda declares itself free of Ebola after the last patient was discharged in mid-June, citing successful containment efforts.",
+     "b": "Ebola cases in Congo top 3,200, nearing the record of the country's worst outbreak, highlighting ongoing challenges."
+    }
+   ],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News."
+   ],
+   "history": {
+    "built": true,
+    "frames": 4,
+    "nodes": 23,
+    "discovered_days": 74
+   },
+   "lead_image": {
+    "url": "https://www.aljazeera.com/wp-content/uploads/2026/08/Congo-horizontal-thumb-1787487037.jpg?resize=1920%2C1080&quality=80",
+    "source": "Al Jazeera",
+    "focal": {
+     "x": 49,
+     "y": 54
+    }
+   },
+   "brief_stale": true,
+   "gate": {
+    "score": 7,
+    "of": 8,
+    "checks": {
+     "split": 1,
+     "carriers": 1,
+     "provenance": 1,
+     "steelman": 1,
+     "history": 1,
      "report": 1,
      "theories": 0,
      "unknowns": 1
@@ -27754,10 +28455,10 @@
       "symbol": "EURUSD=X",
       "label": "EUR/USD",
       "class": "fx",
-      "last": 1.168,
-      "last_ts": "2026-08-25T23:24:05Z",
+      "last": 1.1678,
+      "last_ts": "2026-08-25T23:33:05Z",
       "basis": "Currency market reaction",
-      "move_pct": 0.02,
+      "move_pct": 0.01,
       "window_h": 24,
       "measured_from": "2026-08-25T21:50:08Z",
       "series": [
@@ -27948,6 +28649,10 @@
        [
         "2026-08-25T23:24:05Z",
         1.168
+       ],
+       [
+        "2026-08-25T23:33:05Z",
+        1.1678
        ]
       ]
      },
@@ -28219,7 +28924,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:28:18Z",
+    "observed_utc": "2026-08-25T23:36:21Z",
     "anchor_beat": "2026-08-25T21:50:08Z"
    },
    "lead_image": {
@@ -29239,7 +29944,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:46:58Z",
+    "observed_utc": "2026-08-25T23:54:34Z",
     "anchor_beat": "2026-08-25T20:14:16Z"
    },
    "lead_image": {
@@ -29260,6 +29965,601 @@
      "steelman": 0,
      "history": 1,
      "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "apple-launches-new-m6-chips-macs-for-ai",
+   "name": "Apple launches new M6 chips, Macs for AI",
+   "bucket": "tech",
+   "topic_tags": [
+    "ai",
+    "chips"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 10,
+   "items_48h": 10,
+   "outlets": 7,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-25T20:18:19Z",
+     "title": "Apple defies memory shortage with new Mac minis",
+     "outlet": "The Register",
+     "kind": "journalist",
+     "url": "https://www.theregister.com/ai-and-ml/2026/08/25/apple-defies-memory-shortage-with-new-mac-minis/5292406",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T15:30:00Z",
+     "title": "Apple M5 Ultra vs M3 Ultra: What's changed?",
+     "outlet": "Engadget",
+     "kind": "journalist",
+     "url": "https://www.engadget.com/2243702/apple-m5-ultra-vs-m3-ultra-whats-changed/",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T14:10:36Z",
+     "title": "Apple debuts its \u2018most powerful chip ever\u2019 in M5 Ultra and M6",
+     "outlet": "TechCrunch",
+     "kind": "journalist",
+     "url": "https://techcrunch.com/2026/08/25/apple-debuts-its-most-powerful-chip-ever-in-m5-ultra-and-m6/",
+     "rel": 22,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T13:55:06Z",
+     "title": "Apple\u2019s latest Mac Mini runs on a new M6 chip, and starts at $899",
+     "outlet": "TechCrunch",
+     "kind": "journalist",
+     "url": "https://techcrunch.com/2026/08/25/apples-latest-mac-mini-runs-on-a-new-m6-chip-and-starts-at-899/",
+     "rel": 24,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T13:13:00Z",
+     "title": "New Mac mini, featuring M6 and M5 Pro",
+     "outlet": "Hacker News",
+     "kind": "journalist",
+     "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T13:03:17Z",
+     "title": "New Mac Studio with M5 Max and M5 Ultra",
+     "outlet": "Hacker News",
+     "kind": "journalist",
+     "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
+     "rel": 19,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T13:01:22Z",
+     "title": "Apple introduces M6 and M5 Ultra",
+     "outlet": "Hacker News",
+     "kind": "journalist",
+     "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T13:00:11Z",
+     "title": "Apple's new desktop computers are designed specifically for local AI development",
+     "outlet": "Ars Technica",
+     "kind": "journalist",
+     "url": "https://arstechnica.com/apple/2026/08/with-new-mac-studio-and-mac-mini-apple-leans-hard-into-local-ai-inference/",
+     "rel": 18,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-08-25T23:30:18Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 7,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Wired",
+      "ts": "2026-08-25T13:00:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CNBC",
+      "ts": "2026-08-25T13:00:01Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US financial press",
+      "items": 1
+     },
+     {
+      "outlet": "Ars Technica",
+      "ts": "2026-08-25T13:00:11Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Hacker News",
+      "ts": "2026-08-25T13:01:22Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 3
+     },
+     {
+      "outlet": "TechCrunch",
+      "ts": "2026-08-25T13:55:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 2
+     },
+     {
+      "outlet": "Engadget",
+      "ts": "2026-08-25T15:30:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "The Register",
+      "ts": "2026-08-25T22:18:19Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Hacker News",
+     "n": 3,
+     "class": "other"
+    },
+    {
+     "outlet": "TechCrunch",
+     "n": 2,
+     "class": "other"
+    },
+    {
+     "outlet": "Ars Technica",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "CNBC",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Engadget",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "The Register",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Wired",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 7
+    },
+    "first_seen": "2026-08-25T23:26:26Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 0
+   },
+   "market": {
+    "instruments": [
+     {
+      "symbol": "AAPL",
+      "label": "Apple",
+      "class": "equity",
+      "last": 309.9,
+      "last_ts": "2026-08-25T20:00:00Z",
+      "basis": "New product launch, AI hardware focus",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-08-25T13:30:00Z",
+        310.92
+       ],
+       [
+        "2026-08-25T13:54:19Z",
+        311.07
+       ],
+       [
+        "2026-08-25T14:20:23Z",
+        310.36
+       ],
+       [
+        "2026-08-25T14:30:00Z",
+        309.8568
+       ],
+       [
+        "2026-08-25T14:45:33Z",
+        309.85
+       ],
+       [
+        "2026-08-25T15:09:24Z",
+        309.13
+       ],
+       [
+        "2026-08-25T15:30:00Z",
+        309.5
+       ],
+       [
+        "2026-08-25T15:36:15Z",
+        309.51
+       ],
+       [
+        "2026-08-25T16:03:54Z",
+        309.7
+       ],
+       [
+        "2026-08-25T16:29:59Z",
+        309.9551
+       ],
+       [
+        "2026-08-25T16:30:00Z",
+        309.93
+       ],
+       [
+        "2026-08-25T16:55:30Z",
+        309.86
+       ],
+       [
+        "2026-08-25T17:21:32Z",
+        309.765
+       ],
+       [
+        "2026-08-25T17:30:00Z",
+        309.665
+       ],
+       [
+        "2026-08-25T17:33:44Z",
+        309.675
+       ],
+       [
+        "2026-08-25T17:50:33Z",
+        309.545
+       ],
+       [
+        "2026-08-25T18:16:53Z",
+        309.345
+       ],
+       [
+        "2026-08-25T18:30:00Z",
+        309.22
+       ],
+       [
+        "2026-08-25T18:44:07Z",
+        309.28
+       ],
+       [
+        "2026-08-25T19:12:43Z",
+        308.555
+       ],
+       [
+        "2026-08-25T19:30:00Z",
+        308.84
+       ],
+       [
+        "2026-08-25T19:40:55Z",
+        308.9
+       ],
+       [
+        "2026-08-25T20:00:00Z",
+        309.9
+       ]
+      ]
+     },
+     {
+      "symbol": "TSM",
+      "label": "TSMC",
+      "class": "equity",
+      "last": 417.38,
+      "last_ts": "2026-08-25T20:00:00Z",
+      "basis": "Key chip manufacturing partner",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-08-25T13:30:00Z",
+        416.85
+       ],
+       [
+        "2026-08-25T13:54:18Z",
+        416.46
+       ],
+       [
+        "2026-08-25T14:20:20Z",
+        416.73
+       ],
+       [
+        "2026-08-25T14:30:00Z",
+        416.13
+       ],
+       [
+        "2026-08-25T14:45:29Z",
+        416.13
+       ],
+       [
+        "2026-08-25T15:09:24Z",
+        415.105
+       ],
+       [
+        "2026-08-25T15:30:00Z",
+        415.605
+       ],
+       [
+        "2026-08-25T15:36:15Z",
+        415.64
+       ],
+       [
+        "2026-08-25T16:03:54Z",
+        416.079
+       ],
+       [
+        "2026-08-25T16:29:57Z",
+        417.275
+       ],
+       [
+        "2026-08-25T16:30:00Z",
+        415.59
+       ],
+       [
+        "2026-08-25T16:55:28Z",
+        415.68
+       ],
+       [
+        "2026-08-25T17:21:33Z",
+        415.05
+       ],
+       [
+        "2026-08-25T17:30:00Z",
+        415.65
+       ],
+       [
+        "2026-08-25T17:33:46Z",
+        415.585
+       ],
+       [
+        "2026-08-25T17:50:32Z",
+        415.8
+       ],
+       [
+        "2026-08-25T18:16:54Z",
+        415.24
+       ],
+       [
+        "2026-08-25T18:30:00Z",
+        416.9
+       ],
+       [
+        "2026-08-25T18:44:06Z",
+        416.86
+       ],
+       [
+        "2026-08-25T19:12:41Z",
+        417.0
+       ],
+       [
+        "2026-08-25T19:30:00Z",
+        415.82
+       ],
+       [
+        "2026-08-25T19:40:55Z",
+        415.89
+       ],
+       [
+        "2026-08-25T20:00:00Z",
+        417.38
+       ]
+      ]
+     },
+     {
+      "symbol": "^IXIC",
+      "label": "Nasdaq",
+      "class": "index",
+      "last": 26151.2988,
+      "last_ts": "2026-08-25T20:00:00Z",
+      "basis": "Major tech component, AI hardware trend",
+      "move_pct": null,
+      "window_h": null,
+      "measured_from": null,
+      "series": [
+       [
+        "2026-08-25T13:30:00Z",
+        26193.8789
+       ],
+       [
+        "2026-08-25T13:54:16Z",
+        26190.4395
+       ],
+       [
+        "2026-08-25T14:20:20Z",
+        26122.8125
+       ],
+       [
+        "2026-08-25T14:30:00Z",
+        26086.4902
+       ],
+       [
+        "2026-08-25T14:45:31Z",
+        26084.7422
+       ],
+       [
+        "2026-08-25T15:09:20Z",
+        26072.8145
+       ],
+       [
+        "2026-08-25T15:30:00Z",
+        26131.373
+       ],
+       [
+        "2026-08-25T15:36:13Z",
+        26131.3809
+       ],
+       [
+        "2026-08-25T16:03:53Z",
+        26141.8086
+       ],
+       [
+        "2026-08-25T16:29:52Z",
+        26142.8555
+       ],
+       [
+        "2026-08-25T16:30:00Z",
+        26128.8027
+       ],
+       [
+        "2026-08-25T16:55:26Z",
+        26129.7363
+       ],
+       [
+        "2026-08-25T17:21:28Z",
+        26119.998
+       ],
+       [
+        "2026-08-25T17:30:00Z",
+        26099.4238
+       ],
+       [
+        "2026-08-25T17:33:44Z",
+        26102.7812
+       ],
+       [
+        "2026-08-25T17:50:31Z",
+        26102.7715
+       ],
+       [
+        "2026-08-25T18:16:50Z",
+        26086.9023
+       ],
+       [
+        "2026-08-25T18:30:00Z",
+        26119.0703
+       ],
+       [
+        "2026-08-25T18:44:04Z",
+        26121.1777
+       ],
+       [
+        "2026-08-25T19:12:41Z",
+        26105.0742
+       ],
+       [
+        "2026-08-25T19:30:00Z",
+        26110.3535
+       ],
+       [
+        "2026-08-25T19:40:51Z",
+        26116.4316
+       ],
+       [
+        "2026-08-25T20:00:00Z",
+        26151.2988
+       ]
+      ]
+     }
+    ],
+    "note": "Instruments mapped to this topic; correlation pending price history.",
+    "observed_utc": "2026-08-25T23:55:19Z",
+    "anchor_beat": "2026-08-25T20:18:19Z"
+   },
+   "lead_image": {
+    "url": "https://www.apple.com/newsroom/images/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/tile/Apple-M6-and-M5-Ultra-hero-260825-lp.jpg.og.jpg?202608251727",
+    "source": "Hacker News",
+    "focal": {
+     "x": 40,
+     "y": 42
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 0,
      "theories": 0,
      "unknowns": 1
     }
@@ -30045,7 +31345,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:41:59Z",
+    "observed_utc": "2026-08-25T23:49:27Z",
     "anchor_beat": "2026-08-25T21:06:33Z"
    },
    "lead_image": {
@@ -33477,8 +34777,8 @@
    "brief": null,
    "discovered": true,
    "items_24h": 7,
-   "items_48h": 37,
-   "outlets": 15,
+   "items_48h": 36,
+   "outlets": 14,
    "kinds": [
     "journalist",
     "state media"
@@ -34372,7 +35672,7 @@
      "outlet": "Taipei Times",
      "kind": "journalist",
      "url": "https://www.taipeitimes.com/News/front/archives/2026/08/26/2003863141",
-     "rel": 23,
+     "rel": 22,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -34517,22 +35817,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 34,
+    "outlets_timed": 33,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "AP",
-      "ts": "2026-08-18T23:34:08Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "international wire service",
-      "items": 1
-     },
      {
       "outlet": "Phys.org",
       "ts": "2026-08-19T04:50:01Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 8
      },
@@ -34579,6 +35871,14 @@
      {
       "outlet": "Korea IT Times",
       "ts": "2026-08-20T05:27:15Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Euronews.com",
+      "ts": "2026-08-20T05:47:46Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -35099,10 +36399,10 @@
       "symbol": "NG=F",
       "label": "Natural Gas",
       "class": "commodity",
-      "last": 2.845,
-      "last_ts": "2026-08-25T23:14:21Z",
+      "last": 2.848,
+      "last_ts": "2026-08-25T23:22:11Z",
       "basis": "Direct impact on European natural gas prices",
-      "move_pct": 0.71,
+      "move_pct": 0.81,
       "window_h": 24,
       "measured_from": "2026-08-25T18:40:01Z",
       "series": [
@@ -35321,6 +36621,10 @@
        [
         "2026-08-25T23:14:21Z",
         2.845
+       ],
+       [
+        "2026-08-25T23:22:11Z",
+        2.848
        ]
       ]
      },
@@ -35328,10 +36632,10 @@
       "symbol": "EURUSD=X",
       "label": "EUR/USD",
       "class": "fx",
-      "last": 1.168,
-      "last_ts": "2026-08-25T23:24:05Z",
+      "last": 1.1678,
+      "last_ts": "2026-08-25T23:33:05Z",
       "basis": "European economic health impacts currency",
-      "move_pct": 0.01,
+      "move_pct": 0.0,
       "window_h": 24,
       "measured_from": "2026-08-25T18:40:01Z",
       "series": [
@@ -35558,6 +36862,10 @@
        [
         "2026-08-25T23:24:05Z",
         1.168
+       ],
+       [
+        "2026-08-25T23:33:05Z",
+        1.1678
        ]
       ]
      },
@@ -35821,7 +37129,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:29:18Z",
+    "observed_utc": "2026-08-25T23:37:18Z",
     "anchor_beat": "2026-08-25T18:40:01Z"
    },
    "lead_image": {
@@ -37261,10 +38569,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4725.0,
-      "last_ts": "2026-08-25T23:14:38Z",
+      "last": 4720.6001,
+      "last_ts": "2026-08-25T23:23:03Z",
       "basis": "Safe-haven asset demand",
-      "move_pct": 0.19,
+      "move_pct": 0.1,
       "window_h": 24,
       "measured_from": "2026-08-25T21:25:42Z",
       "series": [
@@ -37810,7 +39118,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:33:08Z",
+    "observed_utc": "2026-08-25T23:40:40Z",
     "anchor_beat": "2026-08-25T21:25:42Z"
    },
    "lead_image": {
@@ -39949,7 +41257,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:35:46Z",
+    "observed_utc": "2026-08-25T23:43:09Z",
     "anchor_beat": "2026-08-25T23:10:36Z"
    },
    "lead_image": {
@@ -41244,7 +42552,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:31:23Z",
+    "observed_utc": "2026-08-25T23:39:06Z",
     "anchor_beat": "2026-08-25T16:48:37Z"
    },
    "lead_image": {
@@ -42822,10 +44130,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.97,
-      "last_ts": "2026-08-25T23:14:35Z",
+      "last": 81.0,
+      "last_ts": "2026-08-25T23:23:02Z",
       "basis": "Red Sea shipping threat",
-      "move_pct": -1.57,
+      "move_pct": -1.53,
       "window_h": 24,
       "measured_from": "2026-08-25T19:06:29Z",
       "series": [
@@ -43036,6 +44344,10 @@
        [
         "2026-08-25T23:14:35Z",
         80.97
+       ],
+       [
+        "2026-08-25T23:23:02Z",
+        81.0
        ]
       ]
      },
@@ -43043,10 +44355,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.86,
-      "last_ts": "2026-08-25T23:13:08Z",
+      "last": 85.88,
+      "last_ts": "2026-08-25T23:23:00Z",
       "basis": "Red Sea shipping threat",
-      "move_pct": -1.49,
+      "move_pct": -1.47,
       "window_h": 24,
       "measured_from": "2026-08-25T19:06:29Z",
       "series": [
@@ -43253,12 +44565,16 @@
        [
         "2026-08-25T23:13:08Z",
         85.86
+       ],
+       [
+        "2026-08-25T23:23:00Z",
+        85.88
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:26:58Z",
+    "observed_utc": "2026-08-25T23:35:02Z",
     "anchor_beat": "2026-08-25T19:06:29Z"
    },
    "lead_image": {
@@ -44790,7 +46106,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:33:51Z",
+    "observed_utc": "2026-08-25T23:41:23Z",
     "anchor_beat": "2026-08-25T14:03:00Z"
    },
    "lead_image": {
@@ -45735,7 +47051,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:42:30Z",
+    "observed_utc": "2026-08-25T23:49:56Z",
     "anchor_beat": "2026-08-25T20:34:51Z"
    },
    "lead_image": {
@@ -46700,7 +48016,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:31:50Z",
+    "observed_utc": "2026-08-25T23:39:29Z",
     "anchor_beat": "2026-08-25T19:37:37Z"
    },
    "lead_image": {
@@ -48196,18 +49512,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Al Jazeera",
-      "ts": "2026-08-18T23:45:16Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "Qatar state-funded international broadcaster",
-      "items": 2
-     },
-     {
       "outlet": "Business Insider",
       "ts": "2026-08-20T12:59:06Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -48257,6 +49565,14 @@
       "kind": "journalist",
       "role": "echo",
       "motive_note": "IN press",
+      "items": 1
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-08-25T05:19:24Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
       "items": 1
      }
     ],
@@ -49405,7 +50721,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:46:15Z",
+    "observed_utc": "2026-08-25T23:53:47Z",
     "anchor_beat": "2026-08-25T09:43:27Z"
    },
    "lead_image": {
@@ -51768,7 +53084,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:47:08Z",
+    "observed_utc": "2026-08-25T23:54:43Z",
     "anchor_beat": "2026-08-25T17:52:56Z"
    },
    "lead_image": {
@@ -52413,7 +53729,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:47:17Z",
+    "observed_utc": "2026-08-25T23:54:51Z",
     "anchor_beat": "2026-08-25T21:43:53Z"
    },
    "lead_image": {
@@ -55820,7 +57136,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:38:01Z",
+    "observed_utc": "2026-08-25T23:45:16Z",
     "anchor_beat": "2026-08-25T17:32:03Z"
    },
    "lead_image": {
@@ -56570,7 +57886,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:33:18Z",
+    "observed_utc": "2026-08-25T23:40:50Z",
     "anchor_beat": "2026-08-25T14:26:43Z"
    },
    "brief_stale": true,
@@ -57955,7 +59271,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:35:56Z",
+    "observed_utc": "2026-08-25T23:43:18Z",
     "anchor_beat": "2026-08-25T10:54:00Z"
    },
    "gate": {
@@ -58654,212 +59970,107 @@
    "market": {
     "instruments": [
      {
-      "symbol": "AAPL",
-      "label": "Apple",
+      "symbol": "AMZN",
+      "label": "Amazon",
       "class": "equity",
-      "last": 309.9,
+      "last": 261.06,
       "last_ts": "2026-08-25T20:00:00Z",
-      "basis": "Amazon AI policy",
-      "move_pct": 0.13,
-      "window_h": 24,
-      "measured_from": "2026-08-25T15:30:22Z",
-      "series": [
-       [
-        "2026-08-25T13:30:00Z",
-        310.92
-       ],
-       [
-        "2026-08-25T13:54:19Z",
-        311.07
-       ],
-       [
-        "2026-08-25T14:20:23Z",
-        310.36
-       ],
-       [
-        "2026-08-25T14:30:00Z",
-        309.8568
-       ],
-       [
-        "2026-08-25T14:45:33Z",
-        309.85
-       ],
-       [
-        "2026-08-25T15:09:24Z",
-        309.13
-       ],
-       [
-        "2026-08-25T15:30:00Z",
-        309.5
-       ],
-       [
-        "2026-08-25T15:36:15Z",
-        309.51
-       ],
-       [
-        "2026-08-25T16:03:54Z",
-        309.7
-       ],
-       [
-        "2026-08-25T16:29:59Z",
-        309.9551
-       ],
-       [
-        "2026-08-25T16:30:00Z",
-        309.93
-       ],
-       [
-        "2026-08-25T16:55:30Z",
-        309.86
-       ],
-       [
-        "2026-08-25T17:21:32Z",
-        309.765
-       ],
-       [
-        "2026-08-25T17:30:00Z",
-        309.665
-       ],
-       [
-        "2026-08-25T17:33:44Z",
-        309.675
-       ],
-       [
-        "2026-08-25T17:50:33Z",
-        309.545
-       ],
-       [
-        "2026-08-25T18:16:53Z",
-        309.345
-       ],
-       [
-        "2026-08-25T18:30:00Z",
-        309.22
-       ],
-       [
-        "2026-08-25T18:44:07Z",
-        309.28
-       ],
-       [
-        "2026-08-25T19:12:43Z",
-        308.555
-       ],
-       [
-        "2026-08-25T19:30:00Z",
-        308.84
-       ],
-       [
-        "2026-08-25T19:40:55Z",
-        308.9
-       ],
-       [
-        "2026-08-25T20:00:00Z",
-        309.9
-       ]
-      ]
-     },
-     {
-      "symbol": "GOOGL",
-      "label": "Alphabet",
-      "class": "equity",
-      "last": 346.96,
-      "last_ts": "2026-08-25T20:00:00Z",
-      "basis": "Alphabet AI policy",
+      "basis": "Company-specific operational developments",
       "move_pct": 0.14,
       "window_h": 24,
       "measured_from": "2026-08-25T15:30:22Z",
       "series": [
        [
         "2026-08-25T13:30:00Z",
-        348.675
+        262.5099
        ],
        [
-        "2026-08-25T13:54:16Z",
-        348.675
+        "2026-08-25T13:54:18Z",
+        262.48
        ],
        [
-        "2026-08-25T14:20:22Z",
-        348.345
+        "2026-08-25T14:20:23Z",
+        260.86
        ],
        [
         "2026-08-25T14:30:00Z",
-        346.935
+        261.09
        ],
        [
-        "2026-08-25T14:45:29Z",
-        346.695
+        "2026-08-25T14:45:33Z",
+        260.95
        ],
        [
         "2026-08-25T15:09:24Z",
-        346.06
+        260.72
        ],
        [
         "2026-08-25T15:30:00Z",
-        346.48
+        260.685
        ],
        [
-        "2026-08-25T15:36:14Z",
-        346.615
+        "2026-08-25T15:36:15Z",
+        260.705
        ],
        [
         "2026-08-25T16:03:55Z",
-        346.61
+        261.245
        ],
        [
         "2026-08-25T16:29:55Z",
-        346.76
+        260.88
        ],
        [
         "2026-08-25T16:30:00Z",
-        346.83
+        260.68
        ],
        [
-        "2026-08-25T16:55:30Z",
-        346.93
+        "2026-08-25T16:55:29Z",
+        260.73
        ],
        [
-        "2026-08-25T17:21:32Z",
-        347.07
+        "2026-08-25T17:21:28Z",
+        260.74
        ],
        [
         "2026-08-25T17:30:00Z",
-        346.6801
+        260.14
        ],
        [
-        "2026-08-25T17:33:47Z",
-        346.75
+        "2026-08-25T17:33:46Z",
+        260.1
        ],
        [
-        "2026-08-25T17:50:33Z",
-        346.815
+        "2026-08-25T17:50:32Z",
+        260.27
        ],
        [
-        "2026-08-25T18:16:53Z",
-        346.06
+        "2026-08-25T18:16:54Z",
+        260.475
        ],
        [
         "2026-08-25T18:30:00Z",
-        346.11
+        260.497
        ],
        [
-        "2026-08-25T18:44:08Z",
-        346.125
+        "2026-08-25T18:44:04Z",
+        260.505
        ],
        [
-        "2026-08-25T19:12:43Z",
-        346.1066
+        "2026-08-25T19:12:42Z",
+        260.075
        ],
        [
         "2026-08-25T19:30:00Z",
-        346.88
+        260.6
        ],
        [
-        "2026-08-25T19:40:53Z",
-        346.98
+        "2026-08-25T19:40:51Z",
+        260.56
        ],
        [
         "2026-08-25T20:00:00Z",
-        346.96
+        261.06
        ]
       ]
      },
@@ -58869,7 +60080,7 @@
       "class": "equity",
       "last": 491.71,
       "last_ts": "2026-08-25T20:00:00Z",
-      "basis": "Microsoft cloud strategy",
+      "basis": "Company-specific AI and cloud performance",
       "move_pct": 0.56,
       "window_h": 24,
       "measured_from": "2026-08-25T15:30:22Z",
@@ -58969,205 +60180,113 @@
       ]
      },
      {
-      "symbol": "^VIX",
-      "label": "VIX",
+      "symbol": "^IXIC",
+      "label": "Nasdaq",
       "class": "index",
-      "last": 15.45,
-      "last_ts": "2026-08-25T20:15:00Z",
-      "basis": "market volatility",
-      "move_pct": -1.34,
+      "last": 26151.2988,
+      "last_ts": "2026-08-25T20:00:00Z",
+      "basis": "Major tech components, AI/cloud trends",
+      "move_pct": 0.08,
       "window_h": 24,
       "measured_from": "2026-08-25T15:30:22Z",
       "series": [
        [
-        "2026-08-25T07:00:00Z",
-        15.74
+        "2026-08-25T13:30:00Z",
+        26193.8789
        ],
        [
-        "2026-08-25T07:18:16Z",
-        15.75
+        "2026-08-25T13:54:16Z",
+        26190.4395
        ],
        [
-        "2026-08-25T07:45:16Z",
-        15.74
+        "2026-08-25T14:20:20Z",
+        26122.8125
        ],
        [
-        "2026-08-25T08:00:00Z",
-        15.82
+        "2026-08-25T14:30:00Z",
+        26086.4902
        ],
        [
-        "2026-08-25T08:13:46Z",
-        15.81
+        "2026-08-25T14:45:31Z",
+        26084.7422
        ],
        [
-        "2026-08-25T08:41:16Z",
-        15.8
+        "2026-08-25T15:09:20Z",
+        26072.8145
        ],
        [
-        "2026-08-25T09:00:00Z",
-        15.76
+        "2026-08-25T15:30:00Z",
+        26131.373
        ],
        [
-        "2026-08-25T09:08:31Z",
-        15.76
+        "2026-08-25T15:36:13Z",
+        26131.3809
        ],
        [
-        "2026-08-25T09:36:01Z",
-        15.79
+        "2026-08-25T16:03:53Z",
+        26141.8086
        ],
        [
-        "2026-08-25T10:00:00Z",
-        15.88
+        "2026-08-25T16:29:52Z",
+        26142.8555
        ],
        [
-        "2026-08-25T10:02:16Z",
-        15.88
+        "2026-08-25T16:30:00Z",
+        26128.8027
        ],
        [
-        "2026-08-25T10:29:16Z",
-        15.85
+        "2026-08-25T16:55:26Z",
+        26129.7363
        ],
        [
-        "2026-08-25T10:54:31Z",
-        15.81
+        "2026-08-25T17:21:28Z",
+        26119.998
        ],
        [
-        "2026-08-25T11:00:00Z",
-        15.81
+        "2026-08-25T17:30:00Z",
+        26099.4238
        ],
        [
-        "2026-08-25T11:19:31Z",
-        15.8
+        "2026-08-25T17:33:44Z",
+        26102.7812
        ],
        [
-        "2026-08-25T11:23:31Z",
-        15.79
+        "2026-08-25T17:50:31Z",
+        26102.7715
        ],
        [
-        "2026-08-25T11:52:31Z",
-        15.75
+        "2026-08-25T18:16:50Z",
+        26086.9023
        ],
        [
-        "2026-08-25T12:00:00Z",
-        15.76
+        "2026-08-25T18:30:00Z",
+        26119.0703
        ],
        [
-        "2026-08-25T12:20:31Z",
-        15.77
+        "2026-08-25T18:44:04Z",
+        26121.1777
        ],
        [
-        "2026-08-25T12:46:31Z",
-        15.85
+        "2026-08-25T19:12:41Z",
+        26105.0742
        ],
        [
-        "2026-08-25T13:00:00Z",
-        15.79
+        "2026-08-25T19:30:00Z",
+        26110.3535
        ],
        [
-        "2026-08-25T13:14:16Z",
-        15.79
-       ],
-       [
-        "2026-08-25T13:39:01Z",
-        15.13
-       ],
-       [
-        "2026-08-25T14:00:00Z",
-        15.83
-       ],
-       [
-        "2026-08-25T14:05:16Z",
-        15.82
-       ],
-       [
-        "2026-08-25T14:30:16Z",
-        15.81
-       ],
-       [
-        "2026-08-25T14:54:16Z",
-        15.73
-       ],
-       [
-        "2026-08-25T15:00:00Z",
-        15.66
-       ],
-       [
-        "2026-08-25T15:21:01Z",
-        15.66
-       ],
-       [
-        "2026-08-25T15:48:46Z",
-        15.61
-       ],
-       [
-        "2026-08-25T16:00:00Z",
-        15.54
-       ],
-       [
-        "2026-08-25T16:14:46Z",
-        15.52
-       ],
-       [
-        "2026-08-25T16:40:16Z",
-        15.46
-       ],
-       [
-        "2026-08-25T17:00:00Z",
-        15.5
-       ],
-       [
-        "2026-08-25T17:06:16Z",
-        15.51
-       ],
-       [
-        "2026-08-25T17:18:31Z",
-        15.53
-       ],
-       [
-        "2026-08-25T17:35:31Z",
-        15.56
-       ],
-       [
-        "2026-08-25T18:00:00Z",
-        15.55
-       ],
-       [
-        "2026-08-25T18:01:46Z",
-        15.57
-       ],
-       [
-        "2026-08-25T18:29:01Z",
-        15.52
-       ],
-       [
-        "2026-08-25T18:57:31Z",
-        15.46
-       ],
-       [
-        "2026-08-25T19:00:00Z",
-        15.49
-       ],
-       [
-        "2026-08-25T19:25:46Z",
-        15.48
-       ],
-       [
-        "2026-08-25T19:52:16Z",
-        15.45
+        "2026-08-25T19:40:51Z",
+        26116.4316
        ],
        [
         "2026-08-25T20:00:00Z",
-        15.45
-       ],
-       [
-        "2026-08-25T20:15:00Z",
-        15.45
+        26151.2988
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:32:30Z",
+    "observed_utc": "2026-08-25T23:40:03Z",
     "anchor_beat": "2026-08-25T15:30:22Z"
    },
    "lead_image": {
@@ -59876,7 +60995,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:46:24Z",
+    "observed_utc": "2026-08-25T23:53:55Z",
     "anchor_beat": "2026-08-25T05:09:25Z"
    },
    "lead_image": {
@@ -60673,10 +61792,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 85.86,
-      "last_ts": "2026-08-25T23:13:08Z",
+      "last": 85.88,
+      "last_ts": "2026-08-25T23:23:00Z",
       "basis": "Hormuz traffic slowdown impacts oil exports",
-      "move_pct": -2.14,
+      "move_pct": -2.12,
       "window_h": 24,
       "measured_from": "2026-08-25T15:06:56Z",
       "series": [
@@ -60729,16 +61848,16 @@
         91.47
        ],
        [
-        "2026-08-25T07:00:00Z",
-        91.5
-       ],
-       [
         "2026-08-25T07:21:41Z",
         91.5
        ],
        [
         "2026-08-25T07:50:07Z",
         90.01
+       ],
+       [
+        "2026-08-25T08:00:00Z",
+        90.11
        ],
        [
         "2026-08-25T08:18:31Z",
@@ -60777,10 +61896,6 @@
         88.04
        ],
        [
-        "2026-08-25T11:00:00Z",
-        88.11
-       ],
-       [
         "2026-08-25T11:24:42Z",
         88.13
        ],
@@ -60799,6 +61914,10 @@
        [
         "2026-08-25T12:25:25Z",
         88.19
+       ],
+       [
+        "2026-08-25T12:51:27Z",
+        87.88
        ],
        [
         "2026-08-25T13:00:00Z",
@@ -60823,10 +61942,6 @@
        [
         "2026-08-25T14:35:13Z",
         88.28
-       ],
-       [
-        "2026-08-25T14:59:11Z",
-        87.86
        ],
        [
         "2026-08-25T15:00:00Z",
@@ -60861,6 +61976,10 @@
         87.01
        ],
        [
+        "2026-08-25T17:23:17Z",
+        87.09
+       ],
+       [
         "2026-08-25T17:40:25Z",
         87.15
        ],
@@ -60871,10 +61990,6 @@
        [
         "2026-08-25T18:06:29Z",
         87.0
-       ],
-       [
-        "2026-08-25T18:33:41Z",
-        87.25
        ],
        [
         "2026-08-25T19:00:00Z",
@@ -60923,6 +62038,10 @@
        [
         "2026-08-25T23:13:08Z",
         85.86
+       ],
+       [
+        "2026-08-25T23:23:00Z",
+        85.88
        ]
       ]
      },
@@ -60930,10 +62049,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 80.97,
-      "last_ts": "2026-08-25T23:14:35Z",
+      "last": 81.0,
+      "last_ts": "2026-08-25T23:23:02Z",
       "basis": "Hormuz traffic slowdown impacts oil exports",
-      "move_pct": -1.65,
+      "move_pct": -1.62,
       "window_h": 24,
       "measured_from": "2026-08-25T15:06:56Z",
       "series": [
@@ -60978,12 +62097,12 @@
         84.16
        ],
        [
-        "2026-08-25T06:24:37Z",
-        84.16
-       ],
-       [
         "2026-08-25T06:54:19Z",
         84.28
+       ],
+       [
+        "2026-08-25T07:00:00Z",
+        84.35
        ],
        [
         "2026-08-25T07:23:09Z",
@@ -61018,10 +62137,6 @@
         82.25
        ],
        [
-        "2026-08-25T10:00:00Z",
-        82.49
-       ],
-       [
         "2026-08-25T10:07:27Z",
         82.57
        ],
@@ -61032,6 +62147,10 @@
        [
         "2026-08-25T10:59:41Z",
         82.46
+       ],
+       [
+        "2026-08-25T11:00:00Z",
+        82.45
        ],
        [
         "2026-08-25T11:24:42Z",
@@ -61058,10 +62177,6 @@
         82.33
        ],
        [
-        "2026-08-25T13:00:00Z",
-        82.36
-       ],
-       [
         "2026-08-25T13:19:23Z",
         82.29
        ],
@@ -61082,6 +62197,10 @@
         82.77
        ],
        [
+        "2026-08-25T14:59:23Z",
+        82.46
+       ],
+       [
         "2026-08-25T15:00:00Z",
         82.33
        ],
@@ -61095,10 +62214,6 @@
        ],
        [
         "2026-08-25T16:00:00Z",
-        82.19
-       ],
-       [
-        "2026-08-25T16:19:58Z",
         82.19
        ],
        [
@@ -61130,15 +62245,15 @@
         82.12
        ],
        [
+        "2026-08-25T18:34:03Z",
+        82.34
+       ],
+       [
         "2026-08-25T19:00:00Z",
         82.28
        ],
        [
         "2026-08-25T19:02:37Z",
-        82.26
-       ],
-       [
-        "2026-08-25T19:30:43Z",
         82.26
        ],
        [
@@ -61180,12 +62295,16 @@
        [
         "2026-08-25T23:14:35Z",
         80.97
+       ],
+       [
+        "2026-08-25T23:23:02Z",
+        81.0
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:31:12Z",
+    "observed_utc": "2026-08-25T23:38:56Z",
     "anchor_beat": "2026-08-25T15:06:56Z"
    },
    "lead_image": {
@@ -62004,10 +63123,10 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4725.0,
-      "last_ts": "2026-08-25T23:14:38Z",
+      "last": 4720.6001,
+      "last_ts": "2026-08-25T23:23:03Z",
       "basis": "Afghanistan conflict may raise risk premium",
-      "move_pct": 0.94,
+      "move_pct": 0.84,
       "window_h": 24,
       "measured_from": "2026-08-25T13:07:19Z",
       "series": [
@@ -62068,7 +63187,7 @@
         4698.7002
        ],
        [
-        "2026-08-25T06:00:00Z",
+        "2026-08-25T06:24:36Z",
         4707.8999
        ],
        [
@@ -62088,8 +63207,8 @@
         4692.0
        ],
        [
-        "2026-08-25T08:00:00Z",
-        4686.0
+        "2026-08-25T08:18:51Z",
+        4685.7002
        ],
        [
         "2026-08-25T08:46:23Z",
@@ -62108,8 +63227,8 @@
         4689.2002
        ],
        [
-        "2026-08-25T10:00:00Z",
-        4690.5
+        "2026-08-25T10:07:28Z",
+        4688.7998
        ],
        [
         "2026-08-25T10:34:20Z",
@@ -62124,12 +63243,12 @@
         4697.8999
        ],
        [
-        "2026-08-25T11:24:31Z",
-        4697.7002
-       ],
-       [
         "2026-08-25T11:28:44Z",
         4696.7998
+       ],
+       [
+        "2026-08-25T11:57:31Z",
+        4699.2002
        ],
        [
         "2026-08-25T12:00:00Z",
@@ -62144,12 +63263,12 @@
         4699.5
        ],
        [
-        "2026-08-25T13:00:00Z",
-        4681.1001
-       ],
-       [
         "2026-08-25T13:19:24Z",
         4682.8999
+       ],
+       [
+        "2026-08-25T13:44:16Z",
+        4667.0
        ],
        [
         "2026-08-25T14:00:00Z",
@@ -62160,16 +63279,16 @@
         4678.7002
        ],
        [
-        "2026-08-25T14:35:31Z",
-        4687.0
-       ],
-       [
         "2026-08-25T14:59:21Z",
         4691.3999
        ],
        [
         "2026-08-25T15:00:00Z",
         4693.8999
+       ],
+       [
+        "2026-08-25T15:26:10Z",
+        4695.7002
        ],
        [
         "2026-08-25T15:53:54Z",
@@ -62180,16 +63299,16 @@
         4699.7998
        ],
        [
-        "2026-08-25T16:19:53Z",
-        4699.5
-       ],
-       [
         "2026-08-25T16:45:28Z",
         4699.5
        ],
        [
         "2026-08-25T17:00:00Z",
         4693.5
+       ],
+       [
+        "2026-08-25T17:11:28Z",
+        4691.5
        ],
        [
         "2026-08-25T17:23:43Z",
@@ -62200,10 +63319,6 @@
         4698.5
        ],
        [
-        "2026-08-25T18:00:00Z",
-        4703.3999
-       ],
-       [
         "2026-08-25T18:06:50Z",
         4703.3999
        ],
@@ -62212,12 +63327,12 @@
         4703.6001
        ],
        [
-        "2026-08-25T19:02:41Z",
-        4712.5
+        "2026-08-25T19:00:00Z",
+        4712.2998
        ],
        [
-        "2026-08-25T19:30:53Z",
-        4717.5
+        "2026-08-25T19:02:41Z",
+        4712.5
        ],
        [
         "2026-08-25T19:57:19Z",
@@ -62232,12 +63347,12 @@
         4724.7002
        ],
        [
-        "2026-08-25T20:59:59Z",
-        4715.8999
+        "2026-08-25T20:51:44Z",
+        4717.2002
        ],
        [
-        "2026-08-25T22:00:00Z",
-        4723.6001
+        "2026-08-25T20:59:59Z",
+        4715.8999
        ],
        [
         "2026-08-25T22:17:35Z",
@@ -62254,12 +63369,16 @@
        [
         "2026-08-25T23:14:38Z",
         4725.0
+       ],
+       [
+        "2026-08-25T23:23:03Z",
+        4720.6001
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:27:37Z",
+    "observed_utc": "2026-08-25T23:35:41Z",
     "anchor_beat": "2026-08-25T13:07:19Z"
    },
    "lead_image": {
@@ -63495,7 +64614,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:39:20Z",
+    "observed_utc": "2026-08-25T23:46:40Z",
     "anchor_beat": "2026-08-25T09:18:29Z"
    },
    "lead_image": {
@@ -65477,7 +66596,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:41:15Z",
+    "observed_utc": "2026-08-25T23:48:36Z",
     "anchor_beat": "2026-08-25T17:22:02Z"
    },
    "gate": {
@@ -66754,7 +67873,7 @@
      "outlet": "Hometown News Treasure Coast",
      "kind": "journalist",
      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbFFWYTlhQ2VVT1MyU3J2S1pybEpLRTFaem5tOXFGVDZnQ1NHOFdESmRsRW1sU2RlcEpFRXM1VHQ2V2xEZDlicjMybjVXeXUwdWJUMERGRTFGdUF5dGRyVmd6VEN5MzZkcVpuYlgyR1JRSmRKdUkyZU84MjJPSXV2Y0k5d1BGWF9xclNsa1EwN1paaTZKZ1BmQmlneVBxRllFcXNRVDJMc1FuazlZQ0pnTG9UWml4THZISWdWTTY2N2tXdw?oc=5",
-     "rel": 20,
+     "rel": 19,
      "coverage": {
       "non_mainstream": 1,
       "mainstream": 0
@@ -66830,22 +67949,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 15,
+    "outlets_timed": 14,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "chronicleonline.com",
-      "ts": "2026-08-18T23:37:00Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Spectrum News 13",
       "ts": "2026-08-19T00:11:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -66892,6 +68003,14 @@
      {
       "outlet": "Democracy Now!",
       "ts": "2026-08-19T12:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "CAWP",
+      "ts": "2026-08-19T13:45:00Z",
       "kind": "journalist",
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
@@ -67336,6 +68455,385 @@
      "steelman": 1,
      "history": 0,
      "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "india-gen-z-protests",
+   "name": "India Gen Z Protests",
+   "bucket": "geopolitics",
+   "topic_tags": [
+    "protest"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 3,
+   "items_48h": 4,
+   "outlets": 4,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-25T19:24:43Z",
+     "title": "India police clash with protesters a month after Gen Z demonstrations",
+     "outlet": "Al Jazeera",
+     "kind": "journalist",
+     "url": "https://www.aljazeera.com/news/2026/8/25/india-police-clash-with-protesters-a-month-after-gen-z-demonstrations?traffic_source=rss",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-25T17:59:06Z",
+     "title": "India\u2019s Summer of Youth Protests Is Boiling Over",
+     "outlet": "NYT World",
+     "kind": "journalist",
+     "url": "https://www.nytimes.com/2026/08/25/world/asia/indias-youth-protests-cockroach.html",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 0,
+      "mainstream": 1
+     }
+    },
+    {
+     "ts": "2026-08-25T12:57:00Z",
+     "title": "India\u2019s Gen Z Protests: When Youth Rage Becomes a Beacon of Hope",
+     "outlet": "The Diplomat",
+     "kind": "journalist",
+     "url": "https://thediplomat.com/2026/08/indias-gen-z-protests-when-youth-rage-becomes-a-beacon-of-hope/",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-24T05:11:43Z",
+     "title": "Indian police used excessive force during protests, Amnesty International says",
+     "outlet": "Euronews",
+     "kind": "journalist",
+     "url": "http://www.euronews.com/2026/08/24/indian-police-used-excessive-force-during-protests-amnesty-international-says",
+     "rel": 0,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-07-28T09:46:43Z",
+     "title": "Maharashtra Cyber Identifies 500+ Social Media Profiles Linked to Pakistan, Malaysia in Fake News Campaign...",
+     "outlet": "lokmattimes.com",
+     "kind": "journalist",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSnR2R1B5WkIyZzNTVUZYNF9BNmhSVUJmWnpQcURzTHlPRTJDakl4NUxEdkpoc0E0TmVXQlFuMS15QXlpQVo4djkzTC1KTk5UQlJZWDJCOVF1SzRSV2hRSkNxaDZWN01IWVZDT0J6cGo0TVBjX1B2UXVxQU03aE1ZcXJuUU5mcDllVk0yMDhVNHQ3MThWeVRndjVrZERveDZDRGc4LUlodjNhdFUwejM5a0ZIa2RlNXRLaFA3Tm1zNkJ4eDRuS2RBUWtnbGZnU0Q4cEZJV2pjRXRsRmI5aGQxZWlJR3dJcms0Q1ZLUzlzdkdiVnhLRWp30gH8AUFVX3lxTE9tLXhVUE5id183b0hrSWpqQi1DNW9LcFJmei1COXBONGx6N2lILTBNNjJxYlFqM2dTN2dCa3ZNTmd1YmpvRkpTYkdWZ1o5bVdSUTJvUnFTTG5vd295SWVBUUJfRTFFTXhaeDZ5ZnIzWFdoQ295Z1BzYlJmVG9TWmVXekZ1YmtsRDhJUkhLb3pyRmFQYndLSzU2bDR4QlJRTWFfNTdpOHVCOGZKT2ltajRQUmxXbjA1VmR5Q1ZIM3VpeVFTUVFxTTFPckx0emJyell4QkNFVXc0c2VPRjJHQkMwNW80ZzBhbzV6a3NNWmFRbEFBYWtMZzktTGJ5UA?oc=5",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": null,
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 4,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Euronews",
+      "ts": "2026-08-24T07:11:43Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "NYT World",
+      "ts": "2026-08-25T17:59:06Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "US press",
+      "items": 1
+     },
+     {
+      "outlet": "Al Jazeera",
+      "ts": "2026-08-25T19:24:43Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "Qatar state-funded international broadcaster",
+      "items": 1
+     },
+     {
+      "outlet": "The Diplomat",
+      "ts": "2026-08-25T21:57:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Al Jazeera",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "Euronews",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "NYT World",
+     "n": 1,
+     "class": "mainstream"
+    },
+    {
+     "outlet": "The Diplomat",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 1
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [],
+    "mix": {
+     "mainstream": 2,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 2
+    },
+    "first_seen": "2026-07-28T14:42:00Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 28 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 28
+   },
+   "lead_image": {
+    "url": "https://thediplomat.com/wp-content/uploads/2026/08/sizes/td-story-s-2/thediplomat_2026-08-25-215823.jpg",
+    "source": "The Diplomat",
+    "focal": {
+     "x": 42,
+     "y": 53
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 0,
+     "report": 1,
+     "theories": 0,
+     "unknowns": 1
+    }
+   }
+  },
+  {
+   "id": "widespread-fraud-in-antibody-catalogues",
+   "name": "Report of manipulated images in antibody catalogues",
+   "bucket": "science-health",
+   "topic_tags": [
+    "health"
+   ],
+   "brief": null,
+   "discovered": true,
+   "items_24h": 3,
+   "items_48h": 3,
+   "outlets": 3,
+   "kinds": [
+    "journalist"
+   ],
+   "latest": [
+    {
+     "ts": "2026-08-25T16:16:57Z",
+     "title": "Lab supply companies have been selling antibodies using manipulated images",
+     "outlet": "Ars Technica",
+     "kind": "journalist",
+     "url": "https://arstechnica.com/science/2026/08/lab-supply-companies-have-been-selling-antibodies-using-manipulated-images/",
+     "rel": 27,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T09:00:00Z",
+     "title": "Fraudulent images are rife on antibody sellers\u2019 websites, researcher says",
+     "outlet": "Science (AAAS)",
+     "kind": "journalist",
+     "url": "https://www.science.org/content/article/fraudulent-images-are-rife-antibody-sellers-websites-researcher-says",
+     "rel": 26,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-25T00:00:00Z",
+     "title": "More than 18,000 questionable images found in antibody catalogues of 15 companies",
+     "outlet": "Nature, Published online: 2026-08-25; | doi:10.1038/d41586-026-02635-w",
+     "kind": "journalist",
+     "url": "https://www.nature.com/articles/d41586-026-02635-w",
+     "rel": 19,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    },
+    {
+     "ts": "2026-08-21T00:00:00Z",
+     "title": "Sleuth identifies dozens of studies that used the wrong antibody",
+     "outlet": "Nature, Published online: 2026-08-21; | doi:10.1038/d41586-026-02352-4",
+     "kind": "journalist",
+     "url": "https://www.nature.com/articles/d41586-026-02352-4",
+     "rel": 14,
+     "coverage": {
+      "non_mainstream": 1,
+      "mainstream": 0
+     }
+    }
+   ],
+   "split": {
+    "axis_type": "none",
+    "checked_utc": "2026-08-25T23:30:18Z"
+   },
+   "viewpoints": null,
+   "scenarios": [],
+   "provenance": {
+    "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
+    "window_hours": 168,
+    "outlets_timed": 4,
+    "outlets_unplaced": 0,
+    "chain": [
+     {
+      "outlet": "Nature, Published online: 2026-08-21; | doi:10.1038/d41586-026-02352-4",
+      "ts": "2026-08-21T00:00:00Z",
+      "kind": "journalist",
+      "role": "origin",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Nature, Published online: 2026-08-25; | doi:10.1038/d41586-026-02635-w",
+      "ts": "2026-08-25T00:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Science (AAAS)",
+      "ts": "2026-08-25T09:00:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     },
+     {
+      "outlet": "Ars Technica",
+      "ts": "2026-08-25T16:16:57Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
+     }
+    ],
+    "unplaced": []
+   },
+   "links": [],
+   "sources": [
+    {
+     "outlet": "Ars Technica",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Nature, Published online: 2026-08-21; | doi:10.1038/d41586-0",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Nature, Published online: 2026-08-25; | doi:10.1038/d41586-0",
+     "n": 1,
+     "class": "other"
+    },
+    {
+     "outlet": "Science (AAAS)",
+     "n": 1,
+     "class": "other"
+    }
+   ],
+   "coverage": {
+    "non_mainstream": 1,
+    "mainstream": 0
+   },
+   "under_radar": false,
+   "attention": {
+    "series": [],
+    "mix": {
+     "mainstream": 0,
+     "state-media": 0,
+     "regional": 0,
+     "official": 0,
+     "other": 4
+    },
+    "first_seen": "2026-08-25T23:26:27Z"
+   },
+   "drift": [],
+   "unknowns": [
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Times of Israel, UN News.",
+    "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
+   ],
+   "history": {
+    "built": false,
+    "frames": 0,
+    "nodes": 0,
+    "discovered_days": 0
+   },
+   "lead_image": {
+    "url": "https://media.nature.com/lw1200/magazine-assets/d41586-026-02635-w/d41586-026-02635-w_53160616.jpg",
+    "source": "Nature, Published online: 2026-08-25; | doi:10.1038/d41586-026-02635-w",
+    "focal": {
+     "x": 50,
+     "y": 48
+    }
+   },
+   "gate": {
+    "score": 3,
+    "of": 8,
+    "checks": {
+     "split": 0,
+     "carriers": 0,
+     "provenance": 1,
+     "steelman": 0,
+     "history": 1,
+     "report": 0,
      "theories": 0,
      "unknowns": 1
     }
@@ -68830,7 +70328,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:37:52Z",
+    "observed_utc": "2026-08-25T23:45:05Z",
     "anchor_beat": "2026-08-25T16:40:01Z"
    },
    "lead_image": {
@@ -71433,7 +72931,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:28:43Z",
+    "observed_utc": "2026-08-25T23:36:45Z",
     "anchor_beat": "2026-08-25T16:09:00Z"
    },
    "lead_image": {
@@ -73225,7 +74723,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:40:29Z",
+    "observed_utc": "2026-08-25T23:47:51Z",
     "anchor_beat": "2026-08-25T19:00:03Z"
    },
    "lead_image": {
@@ -74987,7 +76485,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:34:28Z",
+    "observed_utc": "2026-08-25T23:41:58Z",
     "anchor_beat": "2026-08-25T15:48:29Z"
    },
    "lead_image": {
@@ -76001,7 +77499,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:38:10Z",
+    "observed_utc": "2026-08-25T23:45:26Z",
     "anchor_beat": "2026-08-25T17:20:07Z"
    },
    "lead_image": {
@@ -77867,7 +79365,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:31:33Z",
+    "observed_utc": "2026-08-25T23:39:15Z",
     "anchor_beat": "2026-08-25T17:27:00Z"
    },
    "lead_image": {
@@ -79904,7 +81402,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-08-25T23:38:27Z",
+    "observed_utc": "2026-08-25T23:45:44Z",
     "anchor_beat": "2026-08-25T22:07:58Z"
    },
    "lead_image": {
@@ -80418,7 +81916,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:42:22Z",
+    "observed_utc": "2026-08-25T23:49:48Z",
     "anchor_beat": "2026-08-25T17:02:17Z"
    },
    "lead_image": {
@@ -84051,7 +85549,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:34:46Z",
+    "observed_utc": "2026-08-25T23:42:18Z",
     "anchor_beat": "2026-08-25T14:44:49Z"
    },
    "lead_image": {
@@ -86155,7 +87653,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:35:17Z",
+    "observed_utc": "2026-08-25T23:42:43Z",
     "anchor_beat": "2026-08-25T11:16:01Z"
    },
    "lead_image": {
@@ -87143,7 +88641,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:35:27Z",
+    "observed_utc": "2026-08-25T23:42:51Z",
     "anchor_beat": "2026-08-25T06:46:57Z"
    },
    "lead_image": {
@@ -91496,7 +92994,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:36:17Z",
+    "observed_utc": "2026-08-25T23:43:37Z",
     "anchor_beat": "2026-08-24T14:30:54Z"
    },
    "lead_image": {
@@ -94248,7 +95746,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:38:19Z",
+    "observed_utc": "2026-08-25T23:45:35Z",
     "anchor_beat": "2026-08-24T09:11:25Z"
    },
    "lead_image": {
@@ -96970,7 +98468,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:36:36Z",
+    "observed_utc": "2026-08-25T23:43:54Z",
     "anchor_beat": "2026-08-24T13:25:10Z"
    },
    "lead_image": {
@@ -97602,7 +99100,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:36:55Z",
+    "observed_utc": "2026-08-25T23:44:12Z",
     "anchor_beat": "2026-08-24T10:38:48Z"
    },
    "lead_image": {
@@ -99642,7 +101140,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:34:37Z",
+    "observed_utc": "2026-08-25T23:42:08Z",
     "anchor_beat": "2026-08-23T22:06:30Z"
    },
    "lead_image": {
@@ -101576,7 +103074,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:41:41Z",
+    "observed_utc": "2026-08-25T23:49:01Z",
     "anchor_beat": "2026-08-23T15:50:28Z"
    },
    "lead_image": {
@@ -102039,7 +103537,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-08-25T23:41:50Z",
+    "observed_utc": "2026-08-25T23:49:19Z",
     "anchor_beat": "2026-08-23T16:53:30Z"
    },
    "lead_image": {
@@ -111065,7 +112563,56 @@
    "last_ts": "2026-08-22T04:40:48Z"
   }
  ],
- "candidates": [],
+ "candidates": [
+  {
+   "sample": "Lockerbie bombing trial postponed days before it was due to start",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "US deports 20 people to Liberia, the first of 1,200 migrants under Trump deal",
+   "outlets": 3,
+   "count": 4,
+   "status": "watching"
+  },
+  {
+   "sample": "US strikes a vessel in the eastern Pacific, killing 2 people in first attack in months",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Trump threatens to demolish Kennedy Center if $250m renovation not done",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "Australia Bans Generative A.I. From Official Music Charts",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  },
+  {
+   "sample": "The Price of Bread",
+   "outlets": 4,
+   "count": 6,
+   "status": "watching"
+  },
+  {
+   "sample": "Massive garbage heap collapses onto homes, killing at least 30 as rescuers search for survivors",
+   "outlets": 4,
+   "count": 4,
+   "status": "watching"
+  },
+  {
+   "sample": "State Duma promises Russia will strip Armenia of all 'gifts' if it pivots to West",
+   "outlets": 3,
+   "count": 3,
+   "status": "watching"
+  }
+ ],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -111077,8 +112624,8 @@
   "situations": 1074,
   "situations_active": 146,
   "discovered": 1069,
-  "items": 129808,
-  "developments": 128497,
+  "items": 129824,
+  "developments": 128513,
   "claims": 4682,
   "carriers": 12087,
   "steelmans": 4328,
@@ -111091,6 +112638,12 @@
   "backend": "st"
  },
  "gate": {
+  "clusters": 173,
+  "accepted": 2,
+  "rejected": 3,
+  "existing": 8,
+  "below": 159,
+  "pending": 1,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
@@ -111105,6 +112658,6 @@
   "edition_utc": "2026-08-25",
   "panels": 12,
   "appendix": 8,
-  "overflow": 1261
+  "overflow": 1271
  }
 }
