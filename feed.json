@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-23T05:50:38Z",
+ "generated_utc": "2026-09-23T05:52:56Z",
  "window_hours": 168,
  "lenses": {
   "ok": [
@@ -60,6 +60,7 @@
    "thehindu-intl",
    "theverge",
    "toi-world",
+   "unnews",
    "whonews",
    "wired",
    "yahoofinance"
@@ -81,11 +82,6 @@
     "reason": "HTTP Error 403: Forbidden"
    },
    {
-    "id": "unnews",
-    "label": "UN News",
-    "reason": "not well-formed (invalid token): line 1, column 0"
-   },
-   {
     "id": "theregister",
     "label": "The Register",
     "reason": "DOCTYPE/ENTITY in feed rejected (XXE/billion-laughs guard)"
@@ -93,6 +89,46 @@
    {
     "id": "venturebeat",
     "label": "VentureBeat",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:us-tanker-strike-gulf-of-oman-india-sailors",
+    "label": "GDELT US Economic Pressure on Iran",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:russia-ukraine-war-current",
+    "label": "GDELT Russia-Ukraine War",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:trump-reframes-us-china-relationship-as-peer-pow",
+    "label": "GDELT Trump on AI development and US-China rivalry",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:gaza-israel-war-current",
+    "label": "GDELT Gaza Humanitarian Crisis Deepens Amid Israeli Occupation Plans",
+    "reason": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+   },
+   {
+    "id": "gdelt:red-sea-houthi-shipping-current",
+    "label": "GDELT Yemen Conflict: Houthi Attacks and Government Response",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:climate-change-health-impacts-worldwide",
+    "label": "GDELT Climate change health impacts worldwide",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:gold-drops-24-goldman-jpmorgan-forecasts-diverge",
+    "label": "GDELT Gold prices under pressure as markets await US inflation data",
+    "reason": "HTTP Error 429: Too Many Requests"
+   },
+   {
+    "id": "gdelt:oil-prices-fall-to-pre-war-levels",
+    "label": "GDELT Oil prices fall to pre-war levels",
     "reason": "HTTP Error 429: Too Many Requests"
    }
   ]
@@ -1161,7 +1197,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT US Economic Pressure on Iran, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "History gap: era \"Revolution and isolation\" shipped without its beats - 6 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -1176,10 +1212,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 89.24,
-      "last_ts": "2026-09-23T05:19:35Z",
+      "last": 89.11,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Gulf oil-supply route disruption",
-      "move_pct": 0.3,
+      "move_pct": 0.16,
       "window_h": 24,
       "measured_from": "2026-09-23T04:22:30Z",
       "series": [
@@ -1354,6 +1390,10 @@
        [
         "2026-09-23T05:19:35Z",
         89.24
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        89.11
        ]
       ]
      },
@@ -1361,10 +1401,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 98.44,
-      "last_ts": "2026-09-23T05:19:43Z",
+      "last": 98.3,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Gulf oil-supply route disruption",
-      "move_pct": 0.33,
+      "move_pct": 0.18,
       "window_h": 24,
       "measured_from": "2026-09-23T04:22:30Z",
       "series": [
@@ -1531,12 +1571,16 @@
        [
         "2026-09-23T05:19:43Z",
         98.44
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        98.3
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:32:14Z",
+    "observed_utc": "2026-09-23T05:34:29Z",
     "anchor_beat": "2026-09-23T04:22:30Z"
    },
    "lead_image": {
@@ -2076,18 +2120,10 @@
     "outlets_unplaced": 0,
     "chain": [
      {
-      "outlet": "Kyiv Independent",
-      "ts": "2026-09-16T05:33:10Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "UA regional press",
-      "items": 69
-     },
-     {
       "outlet": "Kyiv Post",
       "ts": "2026-09-16T05:48:41Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "UA regional press",
       "items": 4
      },
@@ -2130,6 +2166,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 8
+     },
+     {
+      "outlet": "Kyiv Independent",
+      "ts": "2026-09-16T09:28:23Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "UA regional press",
+      "items": 68
      },
      {
       "outlet": "Al Jazeera",
@@ -2616,7 +2660,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Russia-Ukraine War, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "market": {
     "instruments": [
@@ -2624,10 +2668,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 98.44,
-      "last_ts": "2026-09-23T05:19:43Z",
+      "last": 98.3,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Russian oil supply disruption risk",
-      "move_pct": 0.0,
+      "move_pct": -0.14,
       "window_h": 24,
       "measured_from": "2026-09-23T05:02:45Z",
       "series": [
@@ -2782,6 +2826,10 @@
        [
         "2026-09-23T05:19:43Z",
         98.44
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        98.3
        ]
       ]
      },
@@ -2789,10 +2837,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 89.24,
-      "last_ts": "2026-09-23T05:19:35Z",
+      "last": 89.11,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Russian oil supply disruption risk",
-      "move_pct": 0.01,
+      "move_pct": -0.13,
       "window_h": 24,
       "measured_from": "2026-09-23T05:02:45Z",
       "series": [
@@ -2955,12 +3003,16 @@
        [
         "2026-09-23T05:19:35Z",
         89.24
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        89.11
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:31:24Z",
+    "observed_utc": "2026-09-23T05:33:51Z",
     "anchor_beat": "2026-09-23T05:02:45Z"
    },
    "lead_image": {
@@ -3424,18 +3476,10 @@
     "outlets_unplaced": 1,
     "chain": [
      {
-      "outlet": "Times of India",
-      "ts": "2026-09-16T05:33:32Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "IN press",
-      "items": 16
-     },
-     {
       "outlet": "Business Insider Africa",
       "ts": "2026-09-16T06:07:14Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 1
      },
@@ -3486,6 +3530,14 @@
       "role": "echo",
       "motive_note": "RU state media",
       "items": 21
+     },
+     {
+      "outlet": "Anadolu Agency",
+      "ts": "2026-09-16T07:03:04Z",
+      "kind": "state media",
+      "role": "echo",
+      "motive_note": "TR state news agency",
+      "items": 23
      }
     ],
     "unplaced": [
@@ -3971,7 +4023,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Trump on AI development and US-China rivalry, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "History gap: era \"G7 friction and peer-power language\" shipped without its beats - 5 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -4155,15 +4207,15 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:32:18Z",
+    "observed_utc": "2026-09-23T05:34:33Z",
     "anchor_beat": "2026-09-23T05:22:23Z"
    },
    "lead_image": {
-    "url": "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2026/09/19/8586e6f8-3c95-4513-b1b1-ee228bedaeae_2d193aaf.jpg?itok=IE3w2_eH&v=1789803467",
-    "source": "South China Morning Post",
+    "url": "https://i.insider.com/6ab34581d15f8a57297496bd?width=1200&format=jpeg",
+    "source": "Business Insider",
     "focal": {
-     "x": 50,
-     "y": 55
+     "x": 55,
+     "y": 14
     }
    },
    "brief_stale": true,
@@ -4578,7 +4630,7 @@
    },
    "discovered": false,
    "items_24h": 73,
-   "items_48h": 111,
+   "items_48h": 110,
    "outlets": 69,
    "kinds": [
     "journalist",
@@ -5339,7 +5391,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Gaza Humanitarian Crisis Deepens Amid Israeli Occupation Plans, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "market": {
     "instruments": [
@@ -5347,10 +5399,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 98.44,
-      "last_ts": "2026-09-23T05:19:43Z",
+      "last": 98.3,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Hormuz Strait closure threat impacts global oil supply",
-      "move_pct": -0.37,
+      "move_pct": -0.52,
       "window_h": 24,
       "measured_from": "2026-09-23T03:30:25Z",
       "series": [
@@ -5529,6 +5581,10 @@
        [
         "2026-09-23T05:19:43Z",
         98.44
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        98.3
        ]
       ]
      },
@@ -5536,10 +5592,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 89.24,
-      "last_ts": "2026-09-23T05:19:35Z",
+      "last": 89.11,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Hormuz Strait closure threat impacts global oil supply",
-      "move_pct": -0.61,
+      "move_pct": -0.76,
       "window_h": 24,
       "measured_from": "2026-09-23T03:30:25Z",
       "series": [
@@ -5726,12 +5782,16 @@
        [
         "2026-09-23T05:19:35Z",
         89.24
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        89.11
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:31:31Z",
+    "observed_utc": "2026-09-23T05:33:55Z",
     "anchor_beat": "2026-09-23T03:30:25Z"
    },
    "lead_image": {
@@ -5841,7 +5901,7 @@
     "bullets": []
    },
    "discovered": false,
-   "items_24h": 40,
+   "items_24h": 39,
    "items_48h": 101,
    "outlets": 57,
    "kinds": [
@@ -6013,22 +6073,14 @@
    "provenance": {
     "note": "best-effort: outlets ordered by the earliest PUBLISHED timestamp HORUS collected; the true origin may precede our first sighting. Items without a published timestamp are listed unplaced, never guessed into the chain. Volume never moves credibility.",
     "window_hours": 168,
-    "outlets_timed": 213,
+    "outlets_timed": 212,
     "outlets_unplaced": 0,
     "chain": [
-     {
-      "outlet": "thediplomaticinsight.com",
-      "ts": "2026-09-16T05:34:03Z",
-      "kind": "journalist",
-      "role": "origin",
-      "motive_note": "position not catalogued - evidence kind: journalist",
-      "items": 1
-     },
      {
       "outlet": "Free Malaysia Today",
       "ts": "2026-09-16T05:38:00Z",
       "kind": "journalist",
-      "role": "echo",
+      "role": "origin",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 2
      },
@@ -6079,6 +6131,14 @@
       "role": "echo",
       "motive_note": "position not catalogued - evidence kind: journalist",
       "items": 32
+     },
+     {
+      "outlet": "Daily Sabah",
+      "ts": "2026-09-16T08:12:00Z",
+      "kind": "journalist",
+      "role": "echo",
+      "motive_note": "position not catalogued - evidence kind: journalist",
+      "items": 1
      }
     ],
     "unplaced": []
@@ -6571,7 +6631,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Yemen Conflict: Houthi Attacks and Government Response, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "market": {
     "instruments": [
@@ -6579,10 +6639,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 98.44,
-      "last_ts": "2026-09-23T05:19:43Z",
+      "last": 98.3,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Red Sea shipping lane disruption",
-      "move_pct": -0.13,
+      "move_pct": -0.27,
       "window_h": 24,
       "measured_from": "2026-09-23T03:57:28Z",
       "series": [
@@ -6757,6 +6817,10 @@
        [
         "2026-09-23T05:19:43Z",
         98.44
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        98.3
        ]
       ]
      },
@@ -6764,10 +6828,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 89.24,
-      "last_ts": "2026-09-23T05:19:35Z",
+      "last": 89.11,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Middle East oil supply concerns",
-      "move_pct": -0.27,
+      "move_pct": -0.41,
       "window_h": 24,
       "measured_from": "2026-09-23T03:57:28Z",
       "series": [
@@ -6950,12 +7014,16 @@
        [
         "2026-09-23T05:19:35Z",
         89.24
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        89.11
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:31:48Z",
+    "observed_utc": "2026-09-23T05:34:09Z",
     "anchor_beat": "2026-09-23T03:57:28Z"
    },
    "lead_image": {
@@ -7730,7 +7798,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Climate change health impacts worldwide, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -8793,7 +8861,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Oil prices fall to pre-war levels, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 86 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -9353,7 +9421,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:34:30Z",
+    "observed_utc": "2026-09-23T05:36:41Z",
     "anchor_beat": "2026-09-23T04:42:39Z"
    },
    "lead_image": {
@@ -9953,7 +10021,7 @@
     },
     {
      "outlet": "FXStreet",
-     "n": 8,
+     "n": 7,
      "class": "other"
     },
     {
@@ -10367,7 +10435,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): GDELT Gold prices under pressure as markets await US inflation data, Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 91 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -10581,7 +10649,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:34:26Z",
+    "observed_utc": "2026-09-23T05:36:37Z",
     "anchor_beat": "2026-09-23T03:35:00Z"
    },
    "lead_image": {
@@ -11651,7 +11719,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "market": {
     "instruments": [
@@ -11803,7 +11871,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:31:42Z",
+    "observed_utc": "2026-09-23T05:34:04Z",
     "anchor_beat": "2026-09-23T03:48:11Z"
    },
    "lead_image": {
@@ -12726,7 +12794,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "history": {
     "built": true,
@@ -12913,7 +12981,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:32:43Z",
+    "observed_utc": "2026-09-23T05:34:54Z",
     "anchor_beat": "2026-09-23T05:07:35Z"
    },
    "lead_image": {
@@ -13819,7 +13887,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -14620,7 +14688,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:35:07Z",
+    "observed_utc": "2026-09-23T05:37:20Z",
     "anchor_beat": "2026-09-23T01:14:00Z"
    },
    "lead_image": {
@@ -15566,7 +15634,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "History gap: era \"ASEAN-Russia strategic track\" shipped without its beats - 4 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -16287,7 +16355,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:33:11Z",
+    "observed_utc": "2026-09-23T05:35:20Z",
     "anchor_beat": "2026-09-23T05:03:15Z"
    },
    "lead_image": {
@@ -17104,7 +17172,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 91 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -17553,7 +17621,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:34:03Z",
+    "observed_utc": "2026-09-23T05:36:15Z",
     "anchor_beat": "2026-09-23T00:26:38Z"
    },
    "lead_image": {
@@ -18240,7 +18308,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -19028,7 +19096,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -19368,7 +19436,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:35:26Z",
+    "observed_utc": "2026-09-23T05:37:39Z",
     "anchor_beat": "2026-09-23T01:07:48Z"
    },
    "lead_image": {
@@ -20074,7 +20142,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -20642,7 +20710,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:36:40Z",
+    "observed_utc": "2026-09-23T05:38:49Z",
     "anchor_beat": "2026-09-23T04:19:27Z"
    },
    "lead_image": {
@@ -21686,7 +21754,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "market": {
     "instruments": [
@@ -21694,8 +21762,8 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4379.3999,
-      "last_ts": "2026-09-23T05:19:45Z",
+      "last": 4379.2002,
+      "last_ts": "2026-09-23T05:22:32Z",
       "basis": "Geopolitical uncertainty, safe-haven demand",
       "move_pct": 0.14,
       "window_h": 24,
@@ -21900,6 +21968,10 @@
        [
         "2026-09-23T05:19:45Z",
         4379.3999
+       ],
+       [
+        "2026-09-23T05:22:32Z",
+        4379.2002
        ]
       ]
      },
@@ -21907,10 +21979,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 98.44,
-      "last_ts": "2026-09-23T05:19:43Z",
+      "last": 98.3,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Regional instability, broader geopolitical risk",
-      "move_pct": -0.39,
+      "move_pct": -0.54,
       "window_h": 24,
       "measured_from": "2026-09-23T02:00:11Z",
       "series": [
@@ -22105,6 +22177,10 @@
        [
         "2026-09-23T05:19:43Z",
         98.44
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        98.3
        ]
       ]
      },
@@ -22112,10 +22188,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 89.24,
-      "last_ts": "2026-09-23T05:19:35Z",
+      "last": 89.11,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Regional instability, broader geopolitical risk",
-      "move_pct": -0.79,
+      "move_pct": -0.93,
       "window_h": 24,
       "measured_from": "2026-09-23T02:00:11Z",
       "series": [
@@ -22318,12 +22394,16 @@
        [
         "2026-09-23T05:19:35Z",
         89.24
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        89.11
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:31:58Z",
+    "observed_utc": "2026-09-23T05:34:18Z",
     "anchor_beat": "2026-09-23T02:00:11Z"
    },
    "lead_image": {
@@ -23006,7 +23086,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -23543,7 +23623,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:38:13Z",
+    "observed_utc": "2026-09-23T05:40:28Z",
     "anchor_beat": "2026-09-23T03:57:17Z"
    },
    "lead_image": {
@@ -24358,7 +24438,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 91 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -25066,7 +25146,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -25977,7 +26057,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -27052,7 +27132,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "history": {
     "built": true,
@@ -27321,7 +27401,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:32:47Z",
+    "observed_utc": "2026-09-23T05:34:57Z",
     "anchor_beat": "2026-09-22T20:44:29Z"
    },
    "lead_image": {
@@ -27997,7 +28077,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 77 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -28446,7 +28526,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:41:10Z",
+    "observed_utc": "2026-09-23T05:43:21Z",
     "anchor_beat": "2026-09-22T19:09:11Z"
    },
    "lead_image": {
@@ -28746,7 +28826,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -29409,7 +29489,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 80 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -29702,7 +29782,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -30655,7 +30735,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "history": {
     "built": true,
@@ -31344,7 +31424,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 83 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -31847,7 +31927,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 77 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -32107,7 +32187,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 77 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -32229,7 +32309,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:40:51Z",
+    "observed_utc": "2026-09-23T05:43:03Z",
     "anchor_beat": "2026-09-22T17:08:15Z"
    },
    "lead_image": {
@@ -33142,7 +33222,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -33373,7 +33453,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:35:54Z",
+    "observed_utc": "2026-09-23T05:38:07Z",
     "anchor_beat": "2026-09-22T22:05:42Z"
    },
    "lead_image": {
@@ -34234,7 +34314,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -34611,7 +34691,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:34:56Z",
+    "observed_utc": "2026-09-23T05:37:10Z",
     "anchor_beat": "2026-09-23T04:51:54Z"
    },
    "lead_image": {
@@ -35205,7 +35285,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 82 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -36246,7 +36326,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:39:04Z",
+    "observed_utc": "2026-09-23T05:41:21Z",
     "anchor_beat": "2026-09-22T18:48:41Z"
    },
    "lead_image": {
@@ -36824,7 +36904,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 81 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -37097,7 +37177,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 63 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -38103,7 +38183,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 91 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -38992,7 +39072,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:33:44Z",
+    "observed_utc": "2026-09-23T05:35:54Z",
     "anchor_beat": "2026-09-22T19:50:02Z"
    },
    "lead_image": {
@@ -39745,7 +39825,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -40264,7 +40344,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:37:18Z",
+    "observed_utc": "2026-09-23T05:39:29Z",
     "anchor_beat": "2026-09-23T05:00:33Z"
    },
    "lead_image": {
@@ -41185,7 +41265,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "history": {
     "built": true,
@@ -41199,10 +41279,10 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 89.24,
-      "last_ts": "2026-09-23T05:19:35Z",
+      "last": 89.11,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Middle East geopolitical instability, potential regional esc",
-      "move_pct": -2.21,
+      "move_pct": -2.36,
       "window_h": 24,
       "measured_from": "2026-09-22T17:34:14Z",
       "series": [
@@ -41287,8 +41367,8 @@
         90.33
        ],
        [
-        "2026-09-22T13:00:44Z",
-        90.28
+        "2026-09-22T13:27:21Z",
+        89.99
        ],
        [
         "2026-09-22T13:52:38Z",
@@ -41299,8 +41379,8 @@
         90.78
        ],
        [
-        "2026-09-22T14:18:16Z",
-        90.7
+        "2026-09-22T14:43:35Z",
+        91.57
        ],
        [
         "2026-09-22T15:00:00Z",
@@ -41311,8 +41391,8 @@
         91.22
        ],
        [
-        "2026-09-22T15:35:33Z",
-        91.47
+        "2026-09-22T16:00:00Z",
+        91.77
        ],
        [
         "2026-09-22T16:01:48Z",
@@ -41323,8 +41403,8 @@
         91.72
        ],
        [
-        "2026-09-22T16:55:29Z",
-        91.33
+        "2026-09-22T17:00:00Z",
+        91.23
        ],
        [
         "2026-09-22T17:21:47Z",
@@ -41335,8 +41415,8 @@
         91.26
        ],
        [
-        "2026-09-22T17:52:31Z",
-        90.61
+        "2026-09-22T18:00:00Z",
+        90.17
        ],
        [
         "2026-09-22T18:19:42Z",
@@ -41347,8 +41427,8 @@
         90.69
        ],
        [
-        "2026-09-22T19:00:00Z",
-        90.36
+        "2026-09-22T19:11:39Z",
+        90.41
        ],
        [
         "2026-09-22T19:37:37Z",
@@ -41359,27 +41439,23 @@
         89.65
        ],
        [
-        "2026-09-22T20:03:23Z",
-        89.68
+        "2026-09-22T20:31:54Z",
+        89.93
        ],
        [
         "2026-09-22T20:57:16Z",
         89.84
        ],
        [
-        "2026-09-22T20:59:59Z",
-        89.85
-       ],
-       [
         "2026-09-22T22:00:00Z",
         89.64
        ],
        [
-        "2026-09-22T22:45:00Z",
-        89.66
+        "2026-09-22T22:19:14Z",
+        89.7
        ],
        [
-        "2026-09-22T23:00:00Z",
+        "2026-09-22T22:45:00Z",
         89.66
        ],
        [
@@ -41387,60 +41463,60 @@
         89.65
        ],
        [
-        "2026-09-22T23:40:07Z",
-        89.63
+        "2026-09-22T23:20:42Z",
+        89.67
        ],
        [
-        "2026-09-23T00:00:00Z",
-        89.68
+        "2026-09-22T23:40:07Z",
+        89.63
        ],
        [
         "2026-09-23T00:08:03Z",
         89.72
        ],
        [
-        "2026-09-23T00:58:24Z",
-        90.03
+        "2026-09-23T00:34:12Z",
+        89.94
        ],
        [
-        "2026-09-23T01:00:00Z",
-        90.14
+        "2026-09-23T00:58:24Z",
+        90.03
        ],
        [
         "2026-09-23T01:24:39Z",
         90.13
        ],
        [
-        "2026-09-23T02:00:00Z",
-        89.95
+        "2026-09-23T01:51:27Z",
+        90.0
        ],
        [
-        "2026-09-23T02:17:28Z",
-        90.0
+        "2026-09-23T02:00:00Z",
+        89.95
        ],
        [
         "2026-09-23T02:42:48Z",
         89.93
        ],
        [
-        "2026-09-23T03:08:46Z",
-        89.79
+        "2026-09-23T03:00:00Z",
+        89.8
        ],
        [
-        "2026-09-23T03:34:40Z",
-        89.48
+        "2026-09-23T03:08:46Z",
+        89.79
        ],
        [
         "2026-09-23T03:59:26Z",
         89.33
        ],
        [
-        "2026-09-23T04:27:05Z",
-        88.98
+        "2026-09-23T04:00:00Z",
+        88.97
        ],
        [
-        "2026-09-23T04:54:10Z",
-        88.83
+        "2026-09-23T04:27:05Z",
+        88.98
        ],
        [
         "2026-09-23T05:00:00Z",
@@ -41449,6 +41525,10 @@
        [
         "2026-09-23T05:19:35Z",
         89.24
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        89.11
        ]
       ]
      },
@@ -41456,10 +41536,10 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 98.44,
-      "last_ts": "2026-09-23T05:19:43Z",
+      "last": 98.3,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "Middle East geopolitical instability, potential regional esc",
-      "move_pct": -1.54,
+      "move_pct": -1.68,
       "window_h": 24,
       "measured_from": "2026-09-22T17:34:14Z",
       "series": [
@@ -41516,8 +41596,8 @@
         98.09
        ],
        [
-        "2026-09-22T10:22:27Z",
-        98.01
+        "2026-09-22T10:46:21Z",
+        97.93
        ],
        [
         "2026-09-22T11:00:00Z",
@@ -41528,8 +41608,8 @@
         98.63
        ],
        [
-        "2026-09-22T11:22:49Z",
-        98.58
+        "2026-09-22T11:41:15Z",
+        98.41
        ],
        [
         "2026-09-22T12:00:00Z",
@@ -41540,8 +41620,8 @@
         98.58
        ],
        [
-        "2026-09-22T12:34:16Z",
-        98.62
+        "2026-09-22T13:00:00Z",
+        98.76
        ],
        [
         "2026-09-22T13:00:41Z",
@@ -41556,7 +41636,7 @@
         99.02
        ],
        [
-        "2026-09-22T14:00:00Z",
+        "2026-09-22T14:17:56Z",
         99.21
        ],
        [
@@ -41568,8 +41648,8 @@
         100.06
        ],
        [
-        "2026-09-22T15:09:43Z",
-        100.02
+        "2026-09-22T15:35:00Z",
+        100.11
        ],
        [
         "2026-09-22T16:00:00Z",
@@ -41580,8 +41660,8 @@
         100.36
        ],
        [
-        "2026-09-22T16:29:26Z",
-        100.36
+        "2026-09-22T16:55:08Z",
+        100.04
        ],
        [
         "2026-09-22T17:00:00Z",
@@ -41592,36 +41672,36 @@
         99.94
        ],
        [
-        "2026-09-22T17:26:51Z",
-        99.98
-       ],
-       [
         "2026-09-22T17:52:31Z",
         99.38
+       ],
+       [
+        "2026-09-22T18:00:00Z",
+        99.01
        ],
        [
         "2026-09-22T18:19:40Z",
         98.98
        ],
        [
-        "2026-09-22T18:45:00Z",
-        99.48
-       ],
-       [
         "2026-09-22T19:00:00Z",
         99.12
+       ],
+       [
+        "2026-09-22T19:11:31Z",
+        99.15
        ],
        [
         "2026-09-22T19:37:27Z",
         97.74
        ],
        [
-        "2026-09-22T20:00:00Z",
+        "2026-09-22T20:02:48Z",
         98.42
        ],
        [
-        "2026-09-22T20:02:48Z",
-        98.42
+        "2026-09-22T20:31:13Z",
+        98.67
        ],
        [
         "2026-09-22T20:56:37Z",
@@ -41632,23 +41712,23 @@
         98.65
        ],
        [
-        "2026-09-22T22:00:00Z",
+        "2026-09-22T22:19:14Z",
         98.54
        ],
        [
-        "2026-09-22T22:19:14Z",
-        98.54
+        "2026-09-22T22:35:12Z",
+        98.44
        ],
        [
         "2026-09-22T23:00:00Z",
         98.58
        ],
        [
-        "2026-09-22T23:10:05Z",
-        98.52
+        "2026-09-23T00:00:00Z",
+        98.64
        ],
        [
-        "2026-09-23T00:00:00Z",
+        "2026-09-23T00:07:42Z",
         98.64
        ],
        [
@@ -41656,20 +41736,16 @@
         99.0
        ],
        [
-        "2026-09-23T00:55:58Z",
-        99.13
+        "2026-09-23T01:00:00Z",
+        99.22
        ],
        [
-        "2026-09-23T01:00:00Z",
+        "2026-09-23T01:23:10Z",
         99.22
        ],
        [
         "2026-09-23T01:51:24Z",
         99.02
-       ],
-       [
-        "2026-09-23T02:00:00Z",
-        98.83
        ],
        [
         "2026-09-23T02:12:58Z",
@@ -41680,7 +41756,7 @@
         98.99
        ],
        [
-        "2026-09-23T03:08:08Z",
+        "2026-09-23T03:00:00Z",
         98.81
        ],
        [
@@ -41692,7 +41768,7 @@
         98.44
        ],
        [
-        "2026-09-23T04:25:59Z",
+        "2026-09-23T04:00:00Z",
         98.12
        ],
        [
@@ -41706,6 +41782,10 @@
        [
         "2026-09-23T05:19:43Z",
         98.44
+       ],
+       [
+        "2026-09-23T05:22:33Z",
+        98.3
        ]
       ]
      },
@@ -41713,8 +41793,8 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4379.3999,
-      "last_ts": "2026-09-23T05:19:45Z",
+      "last": 4379.2002,
+      "last_ts": "2026-09-23T05:22:32Z",
       "basis": "Safe-haven asset during regional geopolitical instability.",
       "move_pct": 0.11,
       "window_h": 24,
@@ -41801,8 +41881,8 @@
         4370.3999
        ],
        [
-        "2026-09-22T13:00:42Z",
-        4370.0
+        "2026-09-22T13:27:21Z",
+        4370.3999
        ],
        [
         "2026-09-22T13:52:46Z",
@@ -41813,8 +41893,8 @@
         4364.7002
        ],
        [
-        "2026-09-22T14:18:17Z",
-        4365.7002
+        "2026-09-22T14:43:36Z",
+        4355.5
        ],
        [
         "2026-09-22T15:00:00Z",
@@ -41825,8 +41905,8 @@
         4375.1001
        ],
        [
-        "2026-09-22T15:35:32Z",
-        4367.2998
+        "2026-09-22T16:00:00Z",
+        4365.7002
        ],
        [
         "2026-09-22T16:01:45Z",
@@ -41837,7 +41917,7 @@
         4363.8999
        ],
        [
-        "2026-09-22T16:55:26Z",
+        "2026-09-22T17:00:00Z",
         4376.6001
        ],
        [
@@ -41849,8 +41929,8 @@
         4374.5
        ],
        [
-        "2026-09-22T17:52:31Z",
-        4380.3999
+        "2026-09-22T18:00:00Z",
+        4396.2998
        ],
        [
         "2026-09-22T18:19:40Z",
@@ -41861,8 +41941,8 @@
         4388.2998
        ],
        [
-        "2026-09-22T19:00:00Z",
-        4395.8999
+        "2026-09-22T19:11:38Z",
+        4395.5
        ],
        [
         "2026-09-22T19:37:38Z",
@@ -41873,63 +41953,59 @@
         4400.3999
        ],
        [
-        "2026-09-22T20:03:26Z",
-        4400.8999
+        "2026-09-22T20:31:57Z",
+        4398.0
        ],
        [
         "2026-09-22T20:57:09Z",
         4396.8999
        ],
        [
-        "2026-09-22T20:59:59Z",
-        4396.2002
-       ],
-       [
         "2026-09-22T22:00:00Z",
         4402.0
+       ],
+       [
+        "2026-09-22T22:19:28Z",
+        4401.3999
        ],
        [
         "2026-09-22T22:45:50Z",
         4401.1001
        ],
        [
-        "2026-09-22T23:00:00Z",
-        4401.0
-       ],
-       [
         "2026-09-22T23:11:09Z",
         4400.8999
+       ],
+       [
+        "2026-09-22T23:20:40Z",
+        4401.8999
        ],
        [
         "2026-09-22T23:39:40Z",
         4402.0
        ],
        [
-        "2026-09-23T00:00:00Z",
-        4399.7998
-       ],
-       [
         "2026-09-23T00:08:00Z",
         4399.3999
+       ],
+       [
+        "2026-09-23T00:34:18Z",
+        4396.7998
        ],
        [
         "2026-09-23T00:58:26Z",
         4394.8999
        ],
        [
-        "2026-09-23T01:00:00Z",
-        4385.1001
-       ],
-       [
         "2026-09-23T01:24:28Z",
         4385.1001
        ],
        [
-        "2026-09-23T02:00:00Z",
-        4373.2002
+        "2026-09-23T01:51:27Z",
+        4383.0
        ],
        [
-        "2026-09-23T02:17:36Z",
+        "2026-09-23T02:00:00Z",
         4373.2002
        ],
        [
@@ -41937,24 +42013,24 @@
         4373.2998
        ],
        [
-        "2026-09-23T03:08:41Z",
+        "2026-09-23T03:00:00Z",
         4372.2002
        ],
        [
-        "2026-09-23T03:34:36Z",
-        4376.6001
+        "2026-09-23T03:08:41Z",
+        4372.2002
        ],
        [
         "2026-09-23T03:59:22Z",
         4380.0
        ],
        [
-        "2026-09-23T04:27:11Z",
+        "2026-09-23T04:00:00Z",
         4382.0
        ],
        [
-        "2026-09-23T04:54:07Z",
-        4381.1001
+        "2026-09-23T04:27:11Z",
+        4382.0
        ],
        [
         "2026-09-23T05:00:00Z",
@@ -41963,12 +42039,16 @@
        [
         "2026-09-23T05:19:45Z",
         4379.3999
+       ],
+       [
+        "2026-09-23T05:22:32Z",
+        4379.2002
        ]
       ]
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:32:10Z",
+    "observed_utc": "2026-09-23T05:34:27Z",
     "anchor_beat": "2026-09-22T17:34:14Z"
    },
    "lead_image": {
@@ -42598,7 +42678,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -43061,7 +43141,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:34:39Z",
+    "observed_utc": "2026-09-23T05:36:51Z",
     "anchor_beat": "2026-09-23T01:20:46Z"
    },
    "lead_image": {
@@ -43599,7 +43679,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 73 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -44391,7 +44471,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "history": {
     "built": true,
@@ -44742,7 +44822,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:33:08Z",
+    "observed_utc": "2026-09-23T05:35:18Z",
     "anchor_beat": "2026-09-23T03:55:19Z"
    },
    "lead_image": {
@@ -45693,7 +45773,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -46009,7 +46089,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:35:17Z",
+    "observed_utc": "2026-09-23T05:37:29Z",
     "anchor_beat": "2026-09-23T04:41:37Z"
    },
    "lead_image": {
@@ -46693,7 +46773,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -47721,7 +47801,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 93 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -48417,7 +48497,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -48757,7 +48837,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:36:49Z",
+    "observed_utc": "2026-09-23T05:38:59Z",
     "anchor_beat": "2026-09-22T22:20:04Z"
    },
    "lead_image": {
@@ -49310,7 +49390,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 75 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -50094,7 +50174,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:41:38Z",
+    "observed_utc": "2026-09-23T05:43:48Z",
     "anchor_beat": "2026-09-22T19:09:29Z"
    },
    "lead_image": {
@@ -50967,7 +51047,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat."
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat."
    ],
    "history": {
     "built": true,
@@ -51354,7 +51434,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -51607,7 +51687,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 24 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -52344,7 +52424,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:46:11Z",
+    "observed_utc": "2026-09-23T05:48:27Z",
     "anchor_beat": "2026-09-23T01:36:15Z"
    },
    "lead_image": {
@@ -52958,7 +53038,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -53636,7 +53716,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 82 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -53906,7 +53986,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:38:54Z",
+    "observed_utc": "2026-09-23T05:41:12Z",
     "anchor_beat": "2026-09-22T21:09:23Z"
    },
    "lead_image": {
@@ -54477,7 +54557,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -55066,7 +55146,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 71 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -55971,7 +56051,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "History gap: era \"War on Terror era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Soviet war and aftermath\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified.",
     "History gap: era \"Durand Line era\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
@@ -56978,7 +57058,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 83 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -57505,7 +57585,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:38:44Z",
+    "observed_utc": "2026-09-23T05:41:02Z",
     "anchor_beat": "2026-09-22T15:50:00Z"
    },
    "lead_image": {
@@ -58654,7 +58734,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 91 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -59571,7 +59651,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:34:07Z",
+    "observed_utc": "2026-09-23T05:36:19Z",
     "anchor_beat": "2026-09-22T18:53:19Z"
    },
    "lead_image": {
@@ -60037,7 +60117,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -60662,7 +60742,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -61057,7 +61137,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:37:27Z",
+    "observed_utc": "2026-09-23T05:39:39Z",
     "anchor_beat": "2026-09-22T23:43:51Z"
    },
    "lead_image": {
@@ -61669,7 +61749,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 82 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -62208,7 +62288,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 56 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -62548,7 +62628,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:45:23Z",
+    "observed_utc": "2026-09-23T05:47:41Z",
     "anchor_beat": "2026-09-22T20:21:10Z"
    },
    "lead_image": {
@@ -62792,7 +62872,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 1 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -63433,7 +63513,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -63882,7 +63962,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:37:54Z",
+    "observed_utc": "2026-09-23T05:40:07Z",
     "anchor_beat": "2026-09-22T11:15:36Z"
    },
    "lead_image": {
@@ -64133,7 +64213,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 66 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -64809,7 +64889,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 71 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -65149,7 +65229,7 @@
      }
     ],
     "note": "Instruments mapped to this topic; correlation pending price history.",
-    "observed_utc": "2026-09-23T05:42:07Z",
+    "observed_utc": "2026-09-23T05:44:17Z",
     "anchor_beat": "2026-09-23T00:16:54Z"
    },
    "lead_image": {
@@ -65915,7 +65995,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 82 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -66407,7 +66487,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 80 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -66686,7 +66766,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:40:00Z",
+    "observed_utc": "2026-09-23T05:42:18Z",
     "anchor_beat": "2026-09-22T14:40:47Z"
    },
    "lead_image": {
@@ -67488,7 +67568,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 91 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -67610,7 +67690,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:33:34Z",
+    "observed_utc": "2026-09-23T05:35:44Z",
     "anchor_beat": "2026-09-22T17:16:48Z"
    },
    "lead_image": {
@@ -68327,7 +68407,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -68824,7 +68904,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 57 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -69417,7 +69497,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:44:43Z",
+    "observed_utc": "2026-09-23T05:47:04Z",
     "anchor_beat": "2026-09-22T10:00:00Z"
    },
    "lead_image": {
@@ -70160,7 +70240,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -70687,7 +70767,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:35:45Z",
+    "observed_utc": "2026-09-23T05:37:57Z",
     "anchor_beat": "2026-09-22T22:23:41Z"
    },
    "lead_image": {
@@ -71288,7 +71368,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 91 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -71932,7 +72012,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -72459,7 +72539,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:35:35Z",
+    "observed_utc": "2026-09-23T05:37:48Z",
     "anchor_beat": "2026-09-22T14:15:20Z"
    },
    "lead_image": {
@@ -73185,7 +73265,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 85 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -73705,7 +73785,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:36:12Z",
+    "observed_utc": "2026-09-23T05:38:22Z",
     "anchor_beat": "2026-09-23T03:00:00Z"
    },
    "lead_image": {
@@ -74180,7 +74260,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 64 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -74524,7 +74604,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -75252,7 +75332,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:37:45Z",
+    "observed_utc": "2026-09-23T05:39:57Z",
     "anchor_beat": "2026-09-22T15:07:03Z"
    },
    "lead_image": {
@@ -75842,7 +75922,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 75 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -76472,7 +76552,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 71 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -76703,7 +76783,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:42:16Z",
+    "observed_utc": "2026-09-23T05:44:26Z",
     "anchor_beat": "2026-09-22T17:06:16Z"
    },
    "lead_image": {
@@ -76853,7 +76933,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 57 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -76991,7 +77071,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -77314,7 +77394,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 71 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -77545,7 +77625,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:42:25Z",
+    "observed_utc": "2026-09-23T05:44:35Z",
     "anchor_beat": "2026-09-22T17:17:05Z"
    },
    "lead_image": {
@@ -78602,7 +78682,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "History gap: era \"Border conflict roots\" shipped without its beats - 7 of them failed the live citation check. The record ships incomplete rather than unverified."
    ],
    "history": {
@@ -79386,7 +79466,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:33:18Z",
+    "observed_utc": "2026-09-23T05:35:27Z",
     "anchor_beat": "2026-09-22T08:42:47Z"
    },
    "lead_image": {
@@ -80011,7 +80091,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 79 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -80795,7 +80875,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:40:32Z",
+    "observed_utc": "2026-09-23T05:42:45Z",
     "anchor_beat": "2026-09-22T10:15:01Z"
    },
    "lead_image": {
@@ -81283,7 +81363,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 19 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -81618,7 +81698,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -82081,7 +82161,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 80 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -82604,7 +82684,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:40:22Z",
+    "observed_utc": "2026-09-23T05:42:36Z",
     "anchor_beat": "2026-09-22T05:12:59Z"
    },
    "lead_image": {
@@ -83234,7 +83314,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 82 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -83671,7 +83751,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 76 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -84302,7 +84382,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 68 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -84810,7 +84890,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 64 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -85223,7 +85303,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -85750,7 +85830,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:47:55Z",
+    "observed_utc": "2026-09-23T05:50:12Z",
     "anchor_beat": "2026-09-22T15:15:23Z"
    },
    "lead_image": {
@@ -86374,7 +86454,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 79 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -87025,7 +87105,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 64 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -87404,7 +87484,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:43:20Z",
+    "observed_utc": "2026-09-23T05:45:36Z",
     "anchor_beat": "2026-09-22T10:50:59Z"
    },
    "lead_image": {
@@ -87870,7 +87950,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 64 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -88323,7 +88403,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 60 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -88811,7 +88891,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -89182,7 +89262,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
    "history": {
@@ -89431,7 +89511,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 0 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -89783,7 +89863,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:50:28Z",
+    "observed_utc": "2026-09-23T05:52:47Z",
     "anchor_beat": "2026-09-22T04:29:22Z"
    },
    "lead_image": {
@@ -90340,7 +90420,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 62 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -90646,7 +90726,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 52 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -90946,7 +91026,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 71 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -91266,7 +91346,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -91735,7 +91815,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:37:36Z",
+    "observed_utc": "2026-09-23T05:39:48Z",
     "anchor_beat": "2026-09-22T04:52:34Z"
    },
    "lead_image": {
@@ -92155,7 +92235,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 53 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -92579,7 +92659,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:45:33Z",
+    "observed_utc": "2026-09-23T05:47:50Z",
     "anchor_beat": "2026-09-21T16:00:00Z"
    },
    "lead_image": {
@@ -92887,7 +92967,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -93401,7 +93481,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 56 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -93928,7 +94008,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 23 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -94338,7 +94418,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 7 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -95123,7 +95203,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:48:05Z",
+    "observed_utc": "2026-09-23T05:50:23Z",
     "anchor_beat": "2026-09-21T18:22:05Z"
    },
    "lead_image": {
@@ -95486,7 +95566,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 84 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -96496,7 +96576,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:38:03Z",
+    "observed_utc": "2026-09-23T05:40:17Z",
     "anchor_beat": "2026-09-21T19:14:42Z"
    },
    "gate": {
@@ -96986,7 +97066,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 37 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -97266,7 +97346,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 32 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -97796,7 +97876,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 18 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -98213,7 +98293,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 9 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -98787,7 +98867,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -99263,7 +99343,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:47:37Z",
+    "observed_utc": "2026-09-23T05:49:53Z",
     "anchor_beat": "2026-09-21T20:38:22Z"
    },
    "lead_image": {
@@ -99651,7 +99731,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 8 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -100008,7 +100088,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -100307,7 +100387,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -101079,7 +101159,7 @@
     }
    ],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm."
    ],
    "history": {
@@ -101094,8 +101174,8 @@
       "symbol": "CL=F",
       "label": "WTI Crude",
       "class": "commodity",
-      "last": 89.24,
-      "last_ts": "2026-09-23T05:19:35Z",
+      "last": 89.11,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "US-Iran tensions, potential oil supply disruption.",
       "move_pct": -2.6,
       "window_h": 24,
@@ -101351,8 +101431,8 @@
       "symbol": "BZ=F",
       "label": "Brent Crude",
       "class": "commodity",
-      "last": 98.44,
-      "last_ts": "2026-09-23T05:19:43Z",
+      "last": 98.3,
+      "last_ts": "2026-09-23T05:22:33Z",
       "basis": "US-Iran tensions, potential oil supply disruption.",
       "move_pct": 2.15,
       "window_h": 24,
@@ -101608,8 +101688,8 @@
       "symbol": "GC=F",
       "label": "Gold",
       "class": "commodity",
-      "last": 4379.3999,
-      "last_ts": "2026-09-23T05:19:45Z",
+      "last": 4379.2002,
+      "last_ts": "2026-09-23T05:22:32Z",
       "basis": "Safe-haven asset during escalating geopolitical conflict.",
       "move_pct": -0.34,
       "window_h": 24,
@@ -102060,7 +102140,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:32:02Z",
+    "observed_utc": "2026-09-23T05:34:21Z",
     "anchor_beat": "2026-09-20T12:50:50Z"
    },
    "lead_image": {
@@ -102391,7 +102471,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 80 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -102919,7 +102999,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:40:11Z",
+    "observed_utc": "2026-09-23T05:42:27Z",
     "anchor_beat": "2026-09-21T05:14:38Z"
    },
    "gate": {
@@ -103426,7 +103506,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 70 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -103948,7 +104028,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 63 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -104477,7 +104557,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:44:07Z",
+    "observed_utc": "2026-09-23T05:46:24Z",
     "anchor_beat": "2026-09-20T16:54:05Z"
    },
    "lead_image": {
@@ -104731,7 +104811,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 56 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -105036,7 +105116,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 13 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -106002,7 +106082,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:47:10Z",
+    "observed_utc": "2026-09-23T05:49:26Z",
     "anchor_beat": "2026-09-20T07:19:27Z"
    },
    "lead_image": {
@@ -106352,7 +106432,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 5 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -106623,7 +106703,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:48:44Z",
+    "observed_utc": "2026-09-23T05:51:01Z",
     "anchor_beat": "2026-09-21T04:50:35Z"
    },
    "lead_image": {
@@ -106869,7 +106949,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 4 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -107397,7 +107477,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:49:02Z",
+    "observed_utc": "2026-09-23T05:51:22Z",
     "anchor_beat": "2026-09-20T20:39:40Z"
    },
    "lead_image": {
@@ -107628,7 +107708,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -107852,7 +107932,7 @@
    },
    "drift": [],
    "unknowns": [
-    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, UN News, VentureBeat.",
+    "Lenses dark this run (could not be fetched, not excluded by choice): Press TV, Taipei Times, The Register, Times of Israel, VentureBeat.",
     "No fresh items in the last 24h reached the collector - silence here is a data gap, not proof of calm.",
     "Deep history not yet built - story discovered 2 days ago. The how-it-got-here panel stays a placeholder until a build passes the live citation gate."
    ],
@@ -108123,7 +108203,7 @@
      }
     ],
     "note": "Co-movement observed around the latest beat, not a proven cause.",
-    "observed_utc": "2026-09-23T05:49:48Z",
+    "observed_utc": "2026-09-23T05:52:10Z",
     "anchor_beat": "2026-09-21T06:46:27Z"
    },
    "lead_image": {
@@ -116472,56 +116552,7 @@
    "last_ts": "2026-09-19T01:10:33Z"
   }
  ],
- "candidates": [
-  {
-   "sample": "How Ceuta, football and Israel are shaping Morocco's election",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Why is the Bab al-Mandab Strait so important?",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "US fighter jet crashes at air base in western Germany",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Cuban officials walk out after Trump calls the nation a \u2018failed state\u2019 in his speech.",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Third person dies after mosquito is reportedly trapped on plane to Germany in 'airport malaria' phenomenon",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  },
-  {
-   "sample": "Japan plans to examine use of humanoid robots in defense - news agency",
-   "outlets": 3,
-   "count": 4,
-   "status": "watching"
-  },
-  {
-   "sample": "Stolen passwords are exposing America\u2019s water providers to hackers",
-   "outlets": 5,
-   "count": 5,
-   "status": "watching"
-  },
-  {
-   "sample": "Microsoft and Anthropic dominate Nscale's $103B IPO contract backlog",
-   "outlets": 3,
-   "count": 3,
-   "status": "watching"
-  }
- ],
+ "candidates": [],
  "track_record": {
   "logged": 0,
   "resolved": 0,
@@ -116547,12 +116578,6 @@
   "backend": "st"
  },
  "gate": {
-  "clusters": 142,
-  "accepted": 0,
-  "rejected": 6,
-  "existing": 7,
-  "below": 129,
-  "pending": 0,
   "embedding_lead_gate": "on"
  },
  "gate_summary": {
